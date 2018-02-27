@@ -1,4 +1,4 @@
-### 6. Use open standards and solutions
+# 6. Use open standards and solutions
 
 **[TODO: Add/revise introductory text]**
 
@@ -22,7 +22,7 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 6.1 Leverage open standards and embrace leading practices
+## 6.1 Leverage open standards and embrace leading practices
 
 **Related (temporary for mapping purposes; remove later): **
 
@@ -54,7 +54,7 @@ Using open standards and common government platforms means you:
 
 Open standards and open source software are published publicly, freely available for use by anyone, and are developed and maintained using a collaborative approach.
 
-#### Why it matters
+### Why it matters
 
 Using open standards and common government platforms will help the government:
 
@@ -70,7 +70,7 @@ Using open standards and common government platforms will help the government:
 
 - eliminate potentially restrictive long-term contracts
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -112,7 +112,7 @@ Using open standards and common government platforms will help the government:
 
 - identify common platforms to use **(Digital Service Standard (Ontario))**
 
-#### Laws and rules to follow **(Digital Service Standard (Ontario))**
+### Laws and rules to follow **(Digital Service Standard (Ontario))**
 
 - [Ontario's Open Data Directive](https://www.ontario.ca/page/ontarios-open-data-directive)
 
@@ -124,7 +124,7 @@ Using open standards and common government platforms will help the government:
 
     - Open data - [Data catalogue](https://www.ontario.ca/search/data-catalogue)
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -136,7 +136,7 @@ Find out more about:
 
 - [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
 
-### 6.2 Use and reuse common, proven government solutions, approaches, and platforms
+## 6.2 Use and reuse common, proven government solutions, approaches, and platforms
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -162,7 +162,7 @@ Find out more about:
 
 **Digital Services Playbook (US):** The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -174,7 +174,7 @@ Find out more about:
 
 - [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - What is your development stack and why did you choose it?
 
@@ -182,11 +182,11 @@ Find out more about:
 
 - How long does it take for a new team member to start developing?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 6.3 Design for interoperability, allowing services to be discovered and leveraged by the community
+## 6.3 Design for interoperability, allowing services to be discovered and leveraged by the community
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -204,7 +204,7 @@ Find out more about:
 
 **OneGC product design criteria:** Application Program Interfaces (APIs) are a means by which business functionality is exposed digitally. They are building blocks that are critical to the successful delivery of government online digital services and expanding service delivery to third party providers. They can also enable greater interoperability between services, optimized experiences across devices and can even lead to innovative new services by enabling third party products to work seamlessly with Government of Canada systems.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -220,7 +220,7 @@ Find out more about:
 
 - Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible. **(OneGC product design criteria)**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -236,19 +236,19 @@ Find out more about:
 
 - Leverage existing procurement vehicles
 
-### 6.4 Open up the data, transactions, and business rules that underpin a service
+## 6.4 Open up the data, transactions, and business rules that underpin a service
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 6.5 Design, build and test end-to-end digital services
+## 6.5 Design, build and test end-to-end digital services
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -272,7 +272,7 @@ Find out more about:
 
 **Digital Service Standard (Ontario) (Design the service from start to finish):** Understand what users are trying to achieve and the steps required to complete that task. Every encounter should move the user closer towards their goal. Where possible, each step of the journey should be completed online.
 
-#### Why it matters
+### Why it matters
 
 It's important to understand what users are trying to do when they access a service and how that service fits within the broader context of their life.
 
@@ -290,7 +290,7 @@ This means you're more likely to build something which works for your users.
 
 Be sure to test with the browsers and devices that people will use to access the service, including assistive devices. An assistive device is a piece of equipment a person with a disability uses to help them with daily living (e.g., a screen reader or hearing aid).
 
-#### Why it matters
+### Why it matters
 
 Don't wait until users discover an error in the online service. Monitor the service and avoid any downtime in the service. Users expect modern digital services to be online 24/7.
 
@@ -298,7 +298,7 @@ This means more satisfied users that have trust in government services.
 
 **Digital Services Playbook (US) (Automating testing and deployments):** Today, developers write automated scripts that can verify thousands of scenarios in minutes and then deploy updated code into production environments multiple times a day. They use automated performance tests which simulate surges in traffic to identify performance bottlenecks. While manual tests and quality assurance are still necessary, automated tests provide consistent and reliable protection against unintentional regressions, and make it possible for developers to confidently release frequent updates to the service.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -390,7 +390,7 @@ This means more satisfied users that have trust in government services.
 
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - What percentage of the code base is covered by automated tests?
 
@@ -412,7 +412,7 @@ This means more satisfied users that have trust in government services.
 
 - What is your scaling strategy when demand increases suddenly?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -434,7 +434,7 @@ Find out more about:
 
 - [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
 
-### 6.6 Cloud first
+## 6.6 Cloud first
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -466,7 +466,7 @@ Find out more about:
 
 **Digital Services Playbook (US):** Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. Our digital services are crippled when we host them in data centers that market themselves as "cloud hosting" but require us to manage and maintain hardware directly. This outdated practice wastes time, weakens our disaster recovery plans, and results in significantly higher costs.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -484,7 +484,7 @@ Find out more about:
 
 - Application is hosted on commodity hardware **(Digital Services Playbook (US))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - Where is your service hosted?
 
@@ -512,6 +512,6 @@ Find out more about:
 
 - How often do you need to contact a person from your hosting provider to get resources or to fix an issue?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
