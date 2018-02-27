@@ -1,3 +1,5 @@
+[Français](#user-content-guide-numérique-du-gouvernement-du-canada-ébauche)
+
 # Government of Canada Digital Playbook (draft)
 
 **Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. This Digital Playbook, and the Digital Principles it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey.
