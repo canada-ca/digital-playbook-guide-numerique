@@ -1,6 +1,6 @@
 ## 10. Be good data stewards
 
-[**[TODO: Add/revise introductory text]**]
+**[TODO: Add/revise introductory text]**
 
 **Guidelines:**
 
