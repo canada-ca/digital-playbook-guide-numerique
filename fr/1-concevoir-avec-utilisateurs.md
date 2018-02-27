@@ -1,8 +1,8 @@
 ## 1. Concevoir avec les utilisateurs
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-**Des lignes directrices :**
+**Lignes directrices :**
 
 [1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué](#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqué)
 
@@ -20,9 +20,9 @@
 
 [1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens](#user-content-18-soutenir-les-personnes-qui-ne-peuvent-pas-utiliser-les-services-numériques-par-leurs-propres-moyens)
 
-**Directives connexes :**
+**Lignes directrices connexes :**
 
-**[TODO: Identifier les directives liées au format "\#.\# Nom de la ligne directric (Principe \# : Nom du principe)"]**
+**\[TODO: Identifier les directives liées au format \"\#.\# Nom de la ligne directric (Principe \# : Nom du principe)\"\]**
 
 ### 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
 
@@ -30,7 +30,7 @@
 
 - Testé par l'utilisateur (critères de conception du produit OneGC)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -40,7 +40,7 @@ Les utilisateurs doivent être impliqués dans un long cycle de la vie du servic
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Interviewer les utilisateurs potentiels pour aider à développer les éléments suivants pour le service **(critères de conception du produit OneGC)** :
 
@@ -70,7 +70,7 @@ Les utilisateurs doivent être impliqués dans un long cycle de la vie du servic
 
 - [Faire des recherches en cours sur les utilisateurs - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -84,7 +84,7 @@ Faire de la recherche continue sur les utilisateurs signifie que vous pouvez :
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Étape Alpha
 
@@ -116,7 +116,7 @@ Faire de la recherche continue sur les utilisateurs signifie que vous pouvez :
 
 #### Guides d'application
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 En savoir plus sur:
 
@@ -142,7 +142,7 @@ En savoir plus sur:
 
 - [Comprendre les utilisateurs et leurs besoins (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-2%23section-2#section-2)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -189,7 +189,7 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Testez des prototypes de solutions avec des personnes réelles, sur le terrain si possible **(Playbook de services numériques (US))**
 
@@ -280,7 +280,7 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
 
 #### Guides d'application
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Commencez par apprendre les besoins des utilisateurs](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Norme de service numérique (Royaume-Uni))**
 
@@ -300,7 +300,7 @@ En savoir plus sur:
 
 - [Aborder toute l'expérience, le début de la fin - Playbook Playbook Digital (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play2%23play2#play2)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -308,7 +308,7 @@ En savoir plus sur:
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Comprendre les différents points qui permettent aux gens de s'interagir avec le service - à la fois en ligne et en personne **(Digital Services Playbook (États-Unis))**
 
@@ -330,7 +330,7 @@ En savoir plus sur:
 
 #### Guides d'application
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
 
@@ -340,15 +340,15 @@ En savoir plus sur:
 
 - Tout appareil - Mobilité (principes EA)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 #### Guides d'application
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### 1.6 Rendre les services simples, intuitifs et cohérents
 
@@ -364,7 +364,7 @@ En savoir plus sur:
 
 - [GOV.UK - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -411,7 +411,7 @@ En utilisant le même langage et les mêmes modèles de conception que le reste 
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Donner aux utilisateurs des informations claires sur l'endroit où ils se trouvent à chaque étape du processus **(Playbook sur les services numériques (États-Unis))**
 
@@ -514,7 +514,7 @@ En utilisant le même langage et les mêmes modèles de conception que le reste 
 
 #### Guides d'application
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Comment la recherche de l'utilisateur améliore la conception du service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Norme de service numérique (Royaume-Uni))**
 
@@ -544,7 +544,7 @@ En savoir plus sur:
 
 - [Encourager les gens à utiliser les services numériques (Digital Service Standard (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-12%23section-12#section-12)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -572,7 +572,7 @@ Encourager les gens à utiliser le service numérique:
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Étape Alpha:
 
@@ -617,7 +617,7 @@ Encourager les gens à utiliser le service numérique:
   - mesurer l'impact attendu sur d'autres points de service, tels que le téléphone et en personne, et comment cela pourrait avoir un impact sur le financement et l'allocation des ressources **(Norme de service numérique (Ontario))**
 
 #### Guides d'implémentation
-- **[TODO: Ajouter / réviser les éléments du guide de mise en  œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Comment mesurer l'adoption numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Norme de service numérique (Royaume-Uni))**)
 
@@ -637,7 +637,7 @@ En savoir plus sur:
 
 - [Faire un plan pour être hors ligne - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -655,7 +655,7 @@ Vous devez avoir un plan pour savoir ce qu'il faut faire si votre service se dé
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Tirer parti des opportunités sur plusieurs canaux, en appliquant les exigences pertinentes de la politique du GC pour chaque canal **(critères de conception du produit OneGC)**
 
@@ -724,7 +724,7 @@ Vous devez avoir un plan pour savoir ce qu'il faut faire si votre service se dé
 - [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario, Norme d'information et de communication](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/r11191%2523BK9%23BK9#BK9)
 
 #### Guides d'implémentation
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [garder votre service en ligne](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Norme de service numérique (Royaume-Uni))**
 
