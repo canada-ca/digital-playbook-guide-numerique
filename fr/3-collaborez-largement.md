@@ -4,13 +4,13 @@
 
 **Des lignes directrices:**
 
-3.1 [Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses](#user-content-31habiliter-des-équipes-multidisciplinaires-avec-des-perspectives-et-des-compétences-diverses)
+3.1 [Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses](#user-content-31-habiliter-des-équipes-multidisciplinaires-avec-des-perspectives-et-des-compétences-diverses)
 
-3.2 [Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires](#user-content-32reconnaître-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-idées-créer-des-partenariats-et-collaborer-avec-un-large-éventail-de-partenaires)
+3.2 [Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires](#user-content-32-reconnaître-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-idées-créer-des-partenariats-et-collaborer-avec-un-large-éventail-de-partenaires)
 
-3.3 [Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation](#user-content-33renforcer-la-capacité-à-attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
+3.3 [Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation](#user-content-33-renforcer-la-capacité-à-attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
 
-3.4 [Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser](#user-content-34partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
+3.4 [Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser](#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
 
 **Directives connexes:**
 
@@ -18,7 +18,7 @@
 
 
 
-### 3.1     Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses
+### 3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -33,7 +33,7 @@
 
 
 
-### 3.2     Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires
+### 3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -50,7 +50,7 @@
 
 
 
-### 3.3     Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation
+### 3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -65,7 +65,7 @@
 
 
 
-### 3.4     Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser
+### 3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
