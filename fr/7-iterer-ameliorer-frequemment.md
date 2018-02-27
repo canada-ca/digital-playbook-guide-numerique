@@ -1,4 +1,4 @@
-## 7.        Itérer et améliorer fréquemment
+# 7. Itérer et améliorer fréquemment
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -18,7 +18,7 @@
 
 
 
-### 7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs
+## 7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -54,7 +54,7 @@ Il s'agit d'une approche beaucoup moins risquée que l'approche traditionnelle �
 
 Les méthodes centrées sur l'utilisateur, telles que la recherche par les utilisateurs et les tests d'utilisabilité, mettent l'accent sur la réalisation de services faciles à utiliser. Les services gouvernementaux traditionnels se concentrent sur la satisfaction des besoins opérationnels et l'alignement sur les objectifs stratégiques. Une approche centrée sur l'utilisateur garantit que les besoins de l'entreprise sont également équilibrés par rapport aux besoins des utilisateurs. Cela contribue à augmenter l'acceptation du service numérique.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Les méthodes agiles créent des services qui:
 
@@ -72,7 +72,7 @@ Les méthodes agiles créent des services qui:
 
 
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -125,7 +125,7 @@ Les méthodes agiles créent des services qui:
 
 - Utilisez les révisions de code pour assurer la qualité **(Digital Service Playbook (US))**
 
-#### Questions clés **(Digital Playbook Playbook (US))**
+### Questions clés **(Digital Playbook Playbook (US))**
 
 - Combien de temps a-t-il fallu pour expédier le MVP? S'il n'a pas encore été expédié, quand le fera-t-il?
 
@@ -147,7 +147,7 @@ Les méthodes agiles créent des services qui:
 - À chaque étape du test d'utilisabilité, quelles lacunes ont été
     identifiées pour répondre aux besoins des utilisateurs?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
@@ -162,37 +162,37 @@ En savoir plus sur:
 
 
 
-### 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements
+## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité
+## 7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération
+## 7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -211,7 +211,7 @@ améliorer afin de pouvoir:
 
 - assurez-vous que votre service continue de répondre aux besoins des utilisateurs
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -252,7 +252,7 @@ améliorer afin de pouvoir:
     - assurez-vous d'avoir suffisamment de personnel pour continuer à
         améliorer le service **(Digital Service Standard (UK))**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
