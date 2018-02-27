@@ -348,4 +348,4 @@ En savoir plus sur:
 
 - [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
 
-- [s ise l'équipe droite  ](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/the-team) **(Norme de service numérique (Royaume-Uni))**
+- [établir l'équipe correcte](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/the-team) **(Norme de service numérique (Royaume-Uni))**
