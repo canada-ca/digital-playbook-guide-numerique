@@ -1,6 +1,6 @@
 ## 3. Collaborate widely
 
-[**[TODO: Add/revise introductory text]**]
+**[TODO: Add/revise introductory text]**
 
 **Guidelines:**
 
