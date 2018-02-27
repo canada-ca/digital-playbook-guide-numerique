@@ -8,7 +8,7 @@
 
 4.2 [Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover](#user-content-42-assurez-vous-que-le-personnel-aaccès-aux-outils-et-aux-technologies-dont-il-a-besoin-pour-innover)
 
-4.3 [Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer](#user-content-43assurez-vous-que-les-bons-systèmes-et-processus-sont-en-place-pour-que-léquipe-puissecréer)
+4.3 [Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer](#user-content-43-assurez-vous-que-les-bons-systèmes-et-processus-sont-en-place-pour-que-léquipe-puisse-créer)
 
 4.4 [Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs](#user-content-44-permettre-aux-équipes-de-prendre-des-décisions-tout-au-long-de-la-conception-de-la-construction-et-du-fonctionnement-du-service-et-leur-permettre-dapprendre-de-leurs-erreurs)
 
