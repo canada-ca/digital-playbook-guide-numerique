@@ -18,7 +18,7 @@
 
 **Related guidelines:**
 
-[6.4 Open up the data, transactions, and business rules that underpin a service (Principle 6: Use open standards and solutions)](principle06-en.md#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
+[6.4 Open up the data, transactions, and business rules that underpin a service (Principle 6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
