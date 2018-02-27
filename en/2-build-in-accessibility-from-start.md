@@ -1,7 +1,7 @@
 ## 2. Build in accessibility from the start
 
 
-[**[TODO: Add/revise introductory text]**]
+**[TODO: Add/revise introductory text]**
 
 **Guidelines:**
 
