@@ -68,21 +68,19 @@ Users won't use a service unless they have a guarantee:
 
 - Alpha stage
 
-    - determine what data is being collected (name, address, postal code, etc.) **(Digital Service Standard (Ontario))**
+  - determine what data is being collected (name, address, postal code, etc.) **(Digital Service Standard (Ontario))**
 
-    - determine how the data is being transmitted **(Digital Service Standard (Ontario))**
+  - determine how the data is being transmitted **(Digital Service Standard (Ontario))**
 
-    - determine where and how the data is being stored **(Digital Service Standard (Ontario))**
+  - determine where and how the data is being stored **(Digital Service Standard (Ontario))**
 
-    - determine how the data will be used **(Digital Service Standard (Ontario))**
+  - determine how the data will be used **(Digital Service Standard (Ontario))**
 
-    - identify security threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
+  - identify security threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
 
-    - plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
+  - plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
 
-    - identify any threats of fraud that exist and the controls being prototyped to address them **(Digital Service Standard (Ontario))**
-
-
+  - identify any threats of fraud that exist and the controls being prototyped to address them **(Digital Service Standard (Ontario))**
 
 - document the approach to security and risk management **(Digital Service Standard (Ontario))**
 
@@ -104,15 +102,15 @@ Users won't use a service unless they have a guarantee:
 
 - Live stage
 
-    - document the approach to security and risk management **(Digital Service Standard (Ontario))**
+  - document the approach to security and risk management **(Digital Service Standard (Ontario))**
 
-    - make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
+  - make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
 
-    - document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
+  - document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
 
-    - document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
+  - document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
 
-    - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
+  - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
 
 ### Laws and rules to follow **(Digital Service Standard (Ontario))**
 
@@ -166,21 +164,19 @@ Users won't use a service unless they have a guarantee:
 
 - Alpha stage
 
-    - determine what data is being collected (name, address, postal code, etc.) **(Digital Service Standard (Ontario))**
+  - determine what data is being collected (name, address, postal code, etc.) **(Digital Service Standard (Ontario))**
 
-    - determine how the data is being transmitted **(Digital Service Standard (Ontario))**
+  - determine how the data is being transmitted **(Digital Service Standard (Ontario))**
 
-    - determine where and how the data is being stored **(Digital Service Standard (Ontario))**
+  - determine where and how the data is being stored **(Digital Service Standard (Ontario))**
 
-    - determine how the data will be used **(Digital Service Standard (Ontario))**
+  - determine how the data will be used **(Digital Service Standard (Ontario))**
 
-    - identify security threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
+  - identify security threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
 
-    - plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
+  - plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
 
-    - identify any threats of fraud that exist and the controls being prototyped to address them **(Digital Service Standard (Ontario))**
-
-
+  - identify any threats of fraud that exist and the controls being prototyped to address them **(Digital Service Standard (Ontario))**
 
 - document the approach to security and risk management **(Digital Service Standard (Ontario))**
 
@@ -202,15 +198,15 @@ Users won't use a service unless they have a guarantee:
 
 - Live stage
 
-    - document the approach to security and risk management **(Digital Service Standard (Ontario))**
+  - document the approach to security and risk management **(Digital Service Standard (Ontario))**
 
-    - make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
+  - make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
 
-    - document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
+  - document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
 
-    - document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
+  - document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
 
-    - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
+  - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
 
 ### Laws and rules to follow **(Digital Service Standard (Ontario))**
 
@@ -260,8 +256,6 @@ The following checklist provides a starting point, but teams should work closely
 
 - Implement protective measures to enable the secure processing and sharing of data and information across government **(OneGC product design criteria)**
 
-
-
 - Contact the appropriate privacy or legal officer of the department or agency to determine whether a System of Records Notice (SORN), Privacy Impact Assessment, or other review should be conducted **(Digital Services Playbook (US))**
 
 - Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept **(Digital Services Playbook (US))**
@@ -274,37 +268,33 @@ The following checklist provides a starting point, but teams should work closely
 
 - Use deployment scripts to ensure configuration of production environment remains consistent and controllable **(Digital Services Playbook (US))**
 
-
-
 - Alpha stage
 
-    - identify threats to your service, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (UK))**
+  - identify threats to your service, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (UK))**
 
-    - keep up to date about threats to your service and how to deal with them **(Digital Service Standard (UK))**
+  - keep up to date about threats to your service and how to deal with them **(Digital Service Standard (UK))**
 
-    - identify threats of fraud (fraud vectors) which exist and the controls to prototype to address them **(Digital Service Standard (UK))**
+  - identify threats of fraud (fraud vectors) which exist and the controls to prototype to address them **(Digital Service Standard (UK))**
 
 - Beta stage
 
-    - determine your team's approach to security and risk management **(Digital Service Standard (UK))**
+  - determine your team's approach to security and risk management **(Digital Service Standard (UK))**
 
-    - identify security and privacy threats to your service **(Digital Service Standard (UK))**
+  - identify security and privacy threats to your service **(Digital Service Standard (UK))**
 
-    - identify the fraud vectors that exist and the controls you're putting in place to address them **(Digital Service Standard (UK))**
+  - identify the fraud vectors that exist and the controls you're putting in place to address them **(Digital Service Standard (UK))**
 
-    - work with the business and information risk teams eg senior information risk owner (SIRO), information asset owner (IAO) and data guardians, and work to meet any security regulations without putting delivery at risk **(Digital Service Standard (UK))**
+  - work with the business and information risk teams eg senior information risk owner (SIRO), information asset owner (IAO) and data guardians, and work to meet any security regulations without putting delivery at risk **(Digital Service Standard (UK))**
 
-    - identify any outstanding legal concerns, eg how you'll protect data or your policy on sharing it **(Digital Service Standard (UK))**
+  - identify any outstanding legal concerns, eg how you'll protect data or your policy on sharing it **(Digital Service Standard (UK))**
 
-    - document your cookie and privacy policy and how you arrived at it **(Digital Service Standard (UK))**
+  - document your cookie and privacy policy and how you arrived at it **(Digital Service Standard (UK))**
 
 - Live stage
 
-    - determine your team's approach to security and risk management **(Digital Service Standard (UK))**
+  - determine your team's approach to security and risk management **(Digital Service Standard (UK))**
 
-    - make sure there are ongoing interactions with the business and information risk teams, eg SIRO, IAO and data guardians **(Digital Service Standard (UK))**
-
-
+  - make sure there are ongoing interactions with the business and information risk teams, eg SIRO, IAO and data guardians **(Digital Service Standard (UK))**
 
 - identify any outstanding legal concerns, eg data protection or data sharing **(Digital Service Standard (UK))**
 
