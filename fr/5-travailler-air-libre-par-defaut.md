@@ -1,4 +1,4 @@
-## 5.        Travailler à l'air libre par défaut
+# 5. Travailler à l'air libre par défaut
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -24,7 +24,7 @@
 
 
 
-### 5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte
+## 5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -32,7 +32,7 @@
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -46,29 +46,29 @@
 
 - S'assurer que nous maintenons les droits sur toutes les données développées par des tiers d'une manière qui soit disponible et réutilisable sans frais pour le public   **(**   **Playbook de services numériques (US)**   **)**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel
+## 5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement
+## 5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -86,7 +86,7 @@ La définition d'indicateurs de performance vous permet d'améliorer continuelle
 
 - en utilisant des données pour soutenir les améliorations que vous faites
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -117,7 +117,7 @@ La définition d'indicateurs de performance vous permet d'améliorer continuelle
     - suivre les personnes passant du service hors ligne à celui en ligne   **(**   **Norme de service numérique (UK)**   **)**
 
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
@@ -138,11 +138,11 @@ En savoir plus sur:
 
 
 
-### 5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez
+## 5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -150,14 +150,14 @@ En savoir plus sur:
 
 
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 5.5 Ouvrir par défaut
+## 5.5 Ouvrir par défaut
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -182,7 +182,7 @@ Toutes les solutions doivent utiliser des standards ouverts pour assurer l'inter
 l'ouverture et publions nos données publiquement, nous pouvons améliorer le gouvernement ensemble. En édifiant les services plus ouvertement et en publiant des données ouvertes, nous simplifions l'accès du public aux services et à
 l' information gouvernementaux , permettons au public de contribuer facilement et favorisons la réutilisation par les entrepreneurs, les organismes sans but lucratif, les autres organismes et le public.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -196,7 +196,7 @@ l' information gouvernementaux , permettons au public de contribuer facilement e
 
 - Le cas échéant, créez une API pour que les tiers et les utilisateurs internes interagissent directement avec le service   **(**   **Playbook de services numériques (US)**   **)**
 
-#### Questions clés   **(**   **Playbook de services numériques (US)**   **)**               
+### Questions clés   **(**   **Playbook de services numériques (US)**   **)**               
 
 - Comment collectez-vous les commentaires des utilisateurs sur les bugs et les problèmes?
 
@@ -208,14 +208,14 @@ l' information gouvernementaux , permettons au public de contribuer facilement e
 
 - Quels ensembles de données sont mis à la disposition du public?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 5.6 Rendre tout le nouveau code source ouvert (Digital Service Standard (UK))
+## 5.6 Rendre tout le nouveau code source ouvert (Digital Service Standard (UK))
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -235,7 +235,7 @@ Rendre votre code source ouvert signifie   :
 
 - vous évitez de commencer des contrats de technologie que vous ne pouvez pas terminer facilement
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -279,7 +279,7 @@ Rendre votre code source ouvert signifie   :
 
     - déterminer comment une équipe d'un autre département peut réutiliser votre code **(Digital Service Standard (UK))**      **)**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**

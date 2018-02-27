@@ -1,4 +1,4 @@
-## 2. Build in accessibility from the start
+# 2. Build in accessibility from the start
 
 
 **[TODO: Add/revise introductory text]**
@@ -17,7 +17,7 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 2.1 Build for those with the greatest needs and it will work for everyone else
+## 2.1 Build for those with the greatest needs and it will work for everyone else
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -33,7 +33,7 @@ The Government of Canada is committed to ensuring that a high level of accessibi
 
 Development of accessible (regardless of ability, device or environment) digital services enhances the overall experience for everyone by improving and simplifying the overall design.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -51,11 +51,11 @@ Development of accessible (regardless of ability, device or environment) digital
 
 - Use ongoing research, testing and analytics to continually assess and improve the accessibility of the service.
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use
+## 2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -67,7 +67,7 @@ Development of accessible (regardless of ability, device or environment) digital
 
 **Digital Service Standard (Ontario):** Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment.
 
-#### Why it matters
+### Why it matters
 
 All users should be able to complete the service the first time they try, as quickly and easily as possible.
 
@@ -75,7 +75,7 @@ This includes users with disabilities or those who need help accessing digital t
 
 If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -105,7 +105,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - demonstrate how your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
-#### Laws and rules to follow **(Digital Service Standard (Ontario))**
+### Laws and rules to follow **(Digital Service Standard (Ontario))**
 
 - [Accessibility for Ontarians with Disabilities Act](https://www.ontario.ca/laws/statute/05a11)
 
@@ -119,30 +119,30 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/WAI/intro/wcag)
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 2.3 Co-create with people who have distinct needs, being inclusive from the very beginning
+## 2.3 Co-create with people who have distinct needs, being inclusive from the very beginning
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 2.4 Take into consideration a user's possible constraints when designing services
+## 2.4 Take into consideration a user's possible constraints when designing services
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**

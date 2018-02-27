@@ -1,4 +1,4 @@
-## 8. Design ethical services
+# 8. Design ethical services
 
 **[TODO: Add/revise introductory text]**
 
@@ -16,54 +16,54 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 8.1 Be transparent about personal and organizational biases and indicate how they are being addressed
+## 8.1 Be transparent about personal and organizational biases and indicate how they are being addressed
 
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 8.2 Assess the full impact on users and communities
+## 8.2 Assess the full impact on users and communities
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 8.3 Comply with ethical guidelines in the design of automated systems
+## 8.3 Comply with ethical guidelines in the design of automated systems
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
 - Design and deliver transparent and ethical services - Be open and transparent in the use of automated systems and comply with ethical guidelines. **(OneGC product design criteria)**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 8.4 Balance trade-offs between innovation and inclusiveness
+## 8.4 Balance trade-offs between innovation and inclusiveness
 
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**

@@ -1,4 +1,4 @@
-## 4.        Habiliter le personnel à fournir de meilleurs services
+# 4. Habiliter le personnel à fournir de meilleurs services
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -20,19 +20,19 @@
 
 **\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
-### 4.1 Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
+## 4.1 Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-### 4.2 Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover
+## 4.2 Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -52,7 +52,7 @@ L'évaluation des outils et des systèmes que vous utilisez pour créer votre se
 
 - Construire un système durable que vous pouvez facilement gérer après la mise en service de votre service
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -94,7 +94,7 @@ L'évaluation des outils et des systèmes que vous utilisez pour créer votre se
 
     - documentez toutes les décisions que vous avez sous-traitées et pourquoi vous avez choisi de le faire **(Norme de service numérique (Royaume-Uni)))**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
@@ -106,7 +106,7 @@ En savoir plus sur:
 
 
 
-### 4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
+## 4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -120,7 +120,7 @@ En savoir plus sur:
 
 [Le manuel TechFAR](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://techfarhub.cio.gov/handbook/) fournit une explication détaillée des flexibilités du règlement fédéral sur les acquisitions (FAR) qui peuvent aider les agences à mettre en œuvre ce jeu.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -144,7 +144,7 @@ En savoir plus sur:
 
 - Le contrat comprend une période de transition de services et un plan de transition **(Digital Services Playbook (US))**
 
-#### Questions clés **(Digital Services Playbook (US))**
+### Questions clés **(Digital Services Playbook (US))**
 
 - Quelle est la portée du projet? Quels sont les livrables clés?
 
@@ -152,16 +152,16 @@ En savoir plus sur:
 
 - Quelles sont les mesures de performance définies dans le contrat (par exemple, temps de réponse, disponibilité du système, période de temps pour traiter les problèmes prioritaires)?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
-### 4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs
+## 4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -169,13 +169,13 @@ En savoir plus sur:
 
 - Mettre l'accent sur l'innovation et la durabilité **(critères de conception des produits OneGC)**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
 
-### 4.5 Rendre une personne responsable du service
+## 4.5 Rendre une personne responsable du service
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -191,7 +191,7 @@ En savoir plus sur:
 
 **Digital Playbook Playbook (US) :** Il doit y avoir un seul propriétaire de produit qui a l'autorité et la responsabilité d'assigner des tâches et des éléments de travail; prendre des décisions d'affaires, de produits et techniques; et être responsable du succès ou de l'échec de l'ensemble du service. Le propriétaire du produit est responsable de l'adéquation du service aux besoins de ses utilisateurs, ce qui explique l'évaluation d'un service. Le responsable du produit est responsable de la création et de la gestion des fonctionnalités et des backlogs de bogues.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -229,7 +229,7 @@ En savoir plus sur:
 
     - Comprend la capacité d'améliorer le service de façon fréquente grâce à une itération permise par la bonne capacité, les ressources et la flexibilité technique **(critères de conception du produit OneGC)**
 
-#### Questions clés **(Digital Playbook Playbook (US))**                
+### Questions clés **(Digital Playbook Playbook (US))**                
 
 - Qui est le propriétaire du produit?
 
@@ -237,11 +237,11 @@ En savoir plus sur:
 
 - Que faut-il pour que le propriétaire du produit ajoute ou supprime une fonctionnalité du service?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
-### 4.6 Construire et maintenir une équipe multidisciplinaire expérimentée
+## 4.6 Construire et maintenir une équipe multidisciplinaire expérimentée
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -274,7 +274,7 @@ Les chefs de produit définissent la stratégie et définissent les fonctionnali
 
 Un produit est quelque chose de créé pour un groupe défini d'utilisateurs. Dans la présente norme, produit désigne toute information en ligne ou service transactionnel utilisé par la population de l'Ontario.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Il est important de mettre en place une solide équipe multidisciplinaire dirigée par une personne responsable et habilitée à prendre des décisions en fonction des résultats de la recherche, des essais et des prototypes note 1 \[1\].
 
@@ -290,7 +290,7 @@ Pour réussir, construisez une équipe avec:
 
 
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -338,7 +338,7 @@ Pour réussir, construisez une équipe avec:
 
 - impliquer l'équipe de maintenance pour le service dès le début du projet **(Norme de service numérique (Ontario))**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 

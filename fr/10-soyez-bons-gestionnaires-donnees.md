@@ -1,4 +1,4 @@
-## 10. Soyez de bons gestionnaires de données
+# 10. Soyez de bons gestionnaires de données
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -18,7 +18,7 @@
 
 **\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
 
-### 10.1 Collecter les données une fois pour éviter la duplication
+## 10.1 Collecter les données une fois pour éviter la duplication
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -28,18 +28,18 @@
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision
+## 10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -51,7 +51,7 @@
 
 **Digital Services Playbook (US): **À chaque étape d'un projet, nous devrions mesurer dans quelle mesure notre service fonctionne pour nos utilisateurs. Cela comprend la mesure de la performance d'un système et de la façon dont les gens interagissent avec lui en temps réel. Le leadership de nos équipes et de nos agences doit surveiller attentivement ces mesures pour identifier les problèmes et identifier les correctifs et les améliorations à apporter en priorité. En plus des outils de surveillance, un mécanisme de rétroaction devrait être en place pour que les gens puissent signaler les problèmes directement.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -71,7 +71,7 @@
 
 - Utilisez un outil d'expérimentation prenant en charge les tests multivariés en production **(Digital Services Playbook (US))**    **)**
 
-#### Questions clés **(Digital Playbook Playbook (US )**    **)**               
+### Questions clés **(Digital Playbook Playbook (US )**    **)**               
 
 - Quelles sont les statistiques clés pour le service?
 
@@ -99,14 +99,14 @@
 
 - Comment mesurez-vous la satisfaction du client?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
+## 10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -128,7 +128,7 @@ La collecte de données sur les performances signifie que vous pouvez améliorer
 
 **Norme de service numérique ( Ontario ) : **Capturez et surveillez en permanence les données de performance afin d'améliorer les améliorations continues du service.   
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Mesurer la performance signifie améliorer continuellement un service en:
 
@@ -138,7 +138,7 @@ Mesurer la performance signifie améliorer continuellement un service en:
 
 
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -188,7 +188,7 @@ Mesurer la performance signifie améliorer continuellement un service en:
 
 - partagez les résultats de votre revue avec le leadership   **(**   **Norme de service numérique (Ontario**   **)**   **)**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
@@ -211,22 +211,22 @@ En savoir plus sur [les évaluations de services](https://translate.google.com/t
 
 
 
-### 10.4 Tenir dûment compte de la conservation et de la conservation numériques
+## 10.4 Tenir dûment compte de la conservation et de la conservation numériques
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 10.5 Assurer les données et dans la formation est complète, précise et à jour
+## 10.5 Assurer les données et dans la formation est complète, précise et à jour
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -234,11 +234,11 @@ En savoir plus sur [les évaluations de services](https://translate.google.com/t
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
