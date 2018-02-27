@@ -6,13 +6,13 @@
 
 1.1 [Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué](#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqué)
 
-1.2 [S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer](#user-content-12simpliquer-auprès-des-personnes-qui-ont-le-service-et-le-faire-participer-à-toutes-les-étapes-de-la-planification-à-lamélioration-continuer)
+1.2 [S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer](#user-content-12-simpliquer-auprès-des-personnes-qui-ont-le-service-et-le-faire-participer-à-toutes-les-étapes-de-la-planification-à-lamélioration-continuer)
 
-1.3 [Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins](#user-content-13comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-conçoivent-des-solutions-adaptées-à-leurs-besoins)
+1.3 [Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins](#user-content-13-comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-conçoivent-des-solutions-adaptées-à-leurs-besoins)
 
 1.4 [Clairement articuler and understand the problem of about and use the data for evidence](#user-content-14-clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence)
 
-1.5 [Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil](#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quelappareil)
+1.5 [Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil](#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
 
 1.6 [Rendre les services simples, intuitifs et cohérents](#user-content-16-rendre-lesservices-simples-intuitifsetcohérents)
 
@@ -73,7 +73,7 @@ Les utilisateurs doivent être impliqués dans un long cycle de la vie du servic
 
 
 
-### 1.2      S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
+### 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -143,7 +143,7 @@ En savoir plus sur:
 
 
 
-### 1.3      Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
+### 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -358,7 +358,7 @@ En savoir plus sur:
 
 
 
-### 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel   appareil
+### 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -379,7 +379,7 @@ En savoir plus sur:
 
 
 
-### 1.6 Rendre les   services simples, intuitifs et cohérents
+### 1.6 Rendre les services simples, intuitifs et cohérents
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
