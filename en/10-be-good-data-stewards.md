@@ -1,4 +1,4 @@
-## 10. Be good data stewards
+# 10. Be good data stewards
 
 **[TODO: Add/revise introductory text]**
 
@@ -18,7 +18,7 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 10.1 Collect data once to avoid duplication
+## 10.1 Collect data once to avoid duplication
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -28,15 +28,15 @@
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 10.2 Make relevant government information and data easily accessible to help support decision making
+## 10.2 Make relevant government information and data easily accessible to help support decision making
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -48,7 +48,7 @@
 
 **Digital Services Playbook (US):** At every stage of a project, we should measure how well our service is working for our users. This includes measuring how well a system performs and how people are interacting with it in real-time. Our teams and agency leadership should carefully watch these metrics to find issues and identify which bug fixes and improvements should be prioritized. Along with monitoring tools, a feedback mechanism should be in place for people to report issues directly.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -68,7 +68,7 @@
 
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - What are the key metrics for the service?
 
@@ -97,11 +97,11 @@
 
 - How do you measure customer satisfaction?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others
+## 10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -123,7 +123,7 @@ Collecting performance data means you can continuously improve your service by:
 
 **Digital Service Standard (Ontario):** Continuously capture and monitor performance data to inform ongoing service improvements.
 
-#### Why it matters
+### Why it matters
 
 Measuring performance means continuously improving a service by:
 
@@ -131,7 +131,7 @@ Measuring performance means continuously improving a service by:
 
 - using data to support changes
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -180,7 +180,7 @@ Measuring performance means continuously improving a service by:
 
 - share your review findings with leadership **(Digital Service Standard (Ontario))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -201,19 +201,19 @@ Measuring performance means continuously improving a service by:
 Find out more about [service assessments](https://www.gov.uk/service-manual/service-assessments). **(Digital Service Standard (UK))**
 
 
-### 10.4 Give due consideration to digital preservation and retention
+## 10.4 Give due consideration to digital preservation and retention
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 10.5 Ensure data and information is complete, accurate and up-to-date
+## 10.5 Ensure data and information is complete, accurate and up-to-date
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -221,10 +221,10 @@ Find out more about [service assessments](https://www.gov.uk/service-manual/serv
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
