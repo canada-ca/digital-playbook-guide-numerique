@@ -1,4 +1,4 @@
-## 2. Construire dans l'accessibilité dès le début
+# 2. Construire dans l'accessibilité dès le début
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -17,7 +17,7 @@
 **\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
 
-### 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
+## 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -34,7 +34,7 @@ Le gouvernement du Canada est déterminé à faire en sorte qu'un niveau
 
 Le développement de services numériques accessibles (indépendamment de la capacité, de l'appareil ou de l'environnement) améliore l'expérience globale pour tout le monde en améliorant et en simplifiant la conception globale.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -52,12 +52,12 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 - Utilisez des recherches, des tests et des analyses en continu pour évaluer et améliorer continuellement l'accessibilité du service.
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
-### 2.2 Les services devraient respecter ou dépasser les normes d'accessibilité, et ne devraient pas être pénibles à utiliser
+## 2.2 Les services devraient respecter ou dépasser les normes d'accessibilité, et ne devraient pas être pénibles à utiliser
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -69,7 +69,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 **Norme de service numérique (Ontario) :** L'accessibilité n'est pas seulement requise par la loi, c'est aussi une bonne conception. La création de produits et de services numériques entièrement accessibles améliore l'expérience pour tous. Assurez-vous que le service est accessible à tous les utilisateurs, indépendamment de leurs capacités, de leur périphérique ou de leur environnement.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Tous les utilisateurs devraient être en mesure de terminer le service la première fois qu'ils essaient, aussi rapidement et facilement que possible.
 
@@ -78,7 +78,7 @@ consiste à fournir un soutien à ceux qui ne peuvent pas utiliser les services 
 
 Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils peuvent éviter d'utiliser le service ou contacter votre organisation pour obtenir de l'aide.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -108,7 +108,7 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 
 - démontrer comment votre personnel sera doté d'une connaissance des obstacles à l'accessibilité et sera formé pour aider les utilisateurs handicapés à accomplir les tâches et à accéder à l'information **(Norme de service numérique (Ontario))**
 
-#### Lois et règles à suivre **(Norme de service numérique (Ontario))**
+### Lois et règles à suivre **(Norme de service numérique (Ontario))**
 
 - [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/05a11)
 
@@ -123,30 +123,30 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 
 - [Directives d'accessibilité au contenu Web (WCAG) 2.0](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.w3.org/WAI/intro/wcag)
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-### 2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début
+## 2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-### 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
+## 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
