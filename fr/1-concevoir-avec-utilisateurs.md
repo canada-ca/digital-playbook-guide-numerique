@@ -14,7 +14,7 @@
 
 1.5 [Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil](#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
 
-1.6 [Rendre les services simples, intuitifs et cohérents](#user-content-16-rendre-lesservices-simples-intuitifsetcohérents)
+1.6 [Rendre les services simples, intuitifs et cohérents](#user-content-16-rendre-les-services-simples-intuitifsetcohérents)
 
 1.7 [Rendre plus pratique et pratique l'utilisation des services numériques](#user-content-17-rendre-plus-pratique-et-pratique-lutilisation-des-services-numériques)
 
@@ -677,7 +677,7 @@ En savoir plus sur:
 
 
 
-### 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens numériques par leurs propres moyens
+### 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
