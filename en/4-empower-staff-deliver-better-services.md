@@ -1,4 +1,4 @@
-## 4. Empower staff to deliver better services
+# 4. Empower staff to deliver better services
 
 **[TODO: Add/revise introductory text]**
 
@@ -20,20 +20,20 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network
+## 4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network
 
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 4.2 Make sure that staff have access to the tools and technologies they need to be innovative
+## 4.2 Make sure that staff have access to the tools and technologies they need to be innovative
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -53,7 +53,7 @@ Evaluating the tools and systems you use to build your service helps you to:
 
 - build a sustainable system which you can easily manage after your service goes live
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -95,7 +95,7 @@ Evaluating the tools and systems you use to build your service helps you to:
 
     - document any decisions you've outsourced and why you chose to do this **(Digital Service Standard (UK))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -105,7 +105,7 @@ Find out more about:
 
 - [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
 
-### 4.3 Ensure that the right systems and processes are in place so the team can create
+## 4.3 Ensure that the right systems and processes are in place so the team can create
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -119,7 +119,7 @@ Find out more about:
 
 [The TechFAR Handbook](https://techfarhub.cio.gov/handbook/) provides a detailed explanation of the flexibilities in the Federal Acquisition Regulation (FAR) that can help agencies implement this play.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -143,7 +143,7 @@ Find out more about:
 
 - Contract includes a transition of services period and transition-out plan **(Digital Services Playbook (US))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - What is the scope of the project? What are the key deliverables?
 
@@ -151,15 +151,15 @@ Find out more about:
 
 - What are the performance metrics defined in the contract (e.g., response time, system uptime, time period to address priority issues)?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 4.4 Empower teams to make decisions throughout the design, build, and operation of the service and allow them to learn from their mistakes
+## 4.4 Empower teams to make decisions throughout the design, build, and operation of the service and allow them to learn from their mistakes
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -167,11 +167,11 @@ Find out more about:
 
 - Focus on innovation and sustainability **(OneGC product design criteria)**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 4.5 Make one person accountable for the service
+## 4.5 Make one person accountable for the service
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -187,7 +187,7 @@ Find out more about:
 
 **Digital Services Playbook (US):** There must be a single product owner who has the authority and responsibility to assign tasks and work elements; make business, product, and technical decisions; and be accountable for the success or failure of the overall service. This product owner is ultimately responsible for how well the service meets needs of its users, which is how a service should be evaluated. The product owner is responsible for ensuring that features are built and managing the feature and bug backlogs.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -225,7 +225,7 @@ Find out more about:
 
     - Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility **(OneGC product design criteria)**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - Who is the product owner?
 
@@ -233,9 +233,9 @@ Find out more about:
 
 - What does it take for the product owner to add or remove a feature from the service?
 
-#### Implementation guides
+### Implementation guides
 
-### 4.6 Build and maintain an experienced multidisciplinary team
+## 4.6 Build and maintain an experienced multidisciplinary team
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -267,7 +267,7 @@ Product managers set the strategy for and define features of a service. They are
 
 A product is anything created for a defined group of users. In this standard, product refers to any online information or transactional service used by the people of Ontario.
 
-#### Why it matters
+### Why it matters
 
 It's important to have a strong multidisciplinary team in place, led by one person who is accountable and has the authority to make decisions based on the outcomes of research, testing and prototypes footnote 1
 \[1\] .
@@ -282,7 +282,7 @@ To be successful, build a team with:
 
 - the resources and ability to deliver the product
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -331,7 +331,7 @@ To be successful, build a team with:
 
 - involve the maintenance team for the service early on in the project **(Digital Service Standard (Ontario))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
