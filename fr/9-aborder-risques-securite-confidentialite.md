@@ -1,4 +1,4 @@
-## 9.        Aborder les risques de sécurité et de confidentialité
+# 9. Aborder les risques de sécurité et de confidentialité
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -18,7 +18,7 @@
 
 
 
-### 9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées
+## 9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -26,20 +26,20 @@
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Permettre un partage sécurisé des informations et des données **(critères de conception du produit OneGC)**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données
+## 9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -55,7 +55,7 @@
 
 **Norme de service numérique (Ontario): **Identifiez les données que le service utilisera, conservera ou créera. Mettre en place les mesures juridiques, de confidentialité et de sécurité appropriées afin que les utilisateurs soient assurés que leurs informations personnelles seront sécurisées et que leur vie privée sera respectée.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
@@ -67,7 +67,7 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 - que leur vie privée est protégée pendant qu'ils utilisent le service, et après
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -122,7 +122,7 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
     - assurez-vous que la politique de confidentialité demeure à
         jour **(Normes de service numérique (Ontario)**    **)**
 
-#### Lois et règles à suivre **(Norme de service numérique (Ontario )**    **)**
+### Lois et règles à suivre **(Norme de service numérique (Ontario )**    **)**
 
 - [Loi sur l'accès à l'information et la protection de la vie privée](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/90f31)
 
@@ -135,14 +135,14 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 - [La législation anti-pourriel du Canada](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttp://fightspam.gc.ca/eic/site/030.nsf/eng/home)
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité
+## 9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -160,7 +160,7 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 **Norme de service numérique (Ontario): **Identifiez les données que le service utilisera, conservera ou créera. Mettre en place les mesures juridiques, de confidentialité et de sécurité appropriées afin que les utilisateurs soient assurés que leurs informations personnelles seront sécurisées et que leur vie privée sera respectée.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
@@ -172,7 +172,7 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 - que leur vie privée est protégée pendant qu'ils utilisent le service, et après
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -228,7 +228,7 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
     - assurez-vous que la politique de confidentialité reste à
         jour   **(**   **Service numérique Sta ndard (Ontario))**
 
-#### Lois et règles à suivre   **(**   **Service numérique Standard (Ontario))**
+### Lois et règles à suivre   **(**   **Service numérique Standard (Ontario))**
 
 - [Loi sur l'accès à l'information et la protection de la vie privée](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/90f31)
 
@@ -241,14 +241,14 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 - [La législation anti-pourriel du Canada](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttp://fightspam.gc.ca/eic/site/030.nsf/eng/home)
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires
+## 9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -272,12 +272,12 @@ Les utilisateurs n'utiliseront pas votre service à moins que vous ne puissiez g
 et la confidentialité grâce à des processus réutilisables**   **)**   **:**   Nos services numériques doivent protéger les informations sensibles et sécuriser les systèmes. C'est typiquement un processus de un examen et une amélioration continus qui devraient être intégrés au développement et à la maintenance du service. Au début de la conception d'un nouveau service ou d'une nouvelle fonctionnalité, le chef d'équipe doit engager le (s) responsable (s) juridique (s) concerné (s) pour discuter du type d'informations collectées, de la manière dont elles doivent être sécurisées, il peut
 être utilisé et partagé. L'engagement soutenu d'un spécialiste de la confidentialité contribue à garantir que les données personnelles sont correctement gérées. En outre, un processus clé pour la création d'un service sécurisé consiste à tester et à certifier complètement les composants de chaque couche de la pile technologique pour détecter les failles de sécurité, puis à réutiliser ces mêmes composants pré-certifiés pour plusieurs services.
 
-La #### Liste de contrôle suivante fournit un point de départ, mais les
+La ### Liste de contrôle suivante fournit un point de départ, mais les
 équipes doivent travailler en étroite collaboration avec leur spécialiste de la confidentialité et leur ingénieur de sécurité pour répondre aux besoins spécifiques du service.
 
 
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -339,7 +339,7 @@ La #### Liste de contrôle suivante fournit un point de départ, mais les
 
 - maintenez votre politique de cookies et votre politique de confidentialité à jour **(Digital Service Standard (UK))**
 
-#### Questions clés **(Digital Playbook Playbook (US))**                
+### Questions clés **(Digital Playbook Playbook (US))**                
 
 - Le service collecte-t-il des informations personnelles auprès de l'utilisateur? Comment l'utilisateur est-il informé de cette collection?
 
@@ -353,7 +353,7 @@ La #### Liste de contrôle suivante fournit un point de départ, mais les
 
 - Comment quelqu'un du public peut-il signaler un problème de sécurité?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
