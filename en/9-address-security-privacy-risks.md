@@ -1,6 +1,6 @@
 ## 9. Address security and privacy risks
 
-[**[TODO: Add/revise introductory text]**]
+**[TODO: Add/revise introductory text]**
 
 **Guidelines:**
 

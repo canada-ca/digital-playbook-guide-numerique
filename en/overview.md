@@ -26,13 +26,13 @@ The Government of Canada Digital Playbook provides practical and measurable guid
 
 **Digital Principles:**
 
-1. [Design with users](principle01-en.md)
-1. [Build in accessibility from the start](principle02-en.md)
-1. [Collaborate widely](principle03-en.md)
-1. [Empower staff to deliver better services](principle04-en.md)
-1. [Work in the open by default](principle05-en.md)
-1. [Use open standards and solutions](principle06-en.md)
-1. [Iterate and improve frequently](principle07-en.md)
-1. [Design ethical services](principle08-en.md)
-1. [Address security and privacy risks](principle09-en.md)
-1. [Be good data stewards](principle10-en.md)
+1. [Design with users](1-design-with-users.md)
+1. [Build in accessibility from the start](2-build-in-accessibility-from-start.md	)
+1. [Collaborate widely](3-collaborate-widely.md)
+1. [Empower staff to deliver better services](4-empower-staff-deliver-better-services.md)
+1. [Work in the open by default](5-work-in-open-by-default.md)
+1. [Use open standards and solutions](6-use-open-standards-solutions.md)
+1. [Iterate and improve frequently](7-iterate-improve-frequently.md)
+1. [Design ethical services](8-design-ethical-services.md)
+1. [Address security and privacy risks](9-address-security-privacy-risks.md)
+1. [Be good data stewards](10-be-good-data-stewards.md)

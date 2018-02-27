@@ -1,6 +1,6 @@
 ## 7. Iterate and improve frequently
 
-[**[TODO: Add/revise introductory text]**]
+**[TODO: Add/revise introductory text]**
 
 **Guidelines:**
 

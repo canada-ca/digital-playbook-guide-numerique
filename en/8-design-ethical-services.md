@@ -1,6 +1,6 @@
 ## 8. Design ethical services
 
-[**[TODO: Add/revise introductory text]**]
+**[TODO: Add/revise introductory text]**
 
 **Guidelines:**
 
