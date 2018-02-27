@@ -18,7 +18,6 @@
 
 ## 7.1 Build in an agile manner and continuously improve in response to user needs
 
-
 **Related (temporary for mapping purposes; remove later): **
 
 - Agile -- Small chunks -- Iterate (GC EA Principles)
@@ -75,15 +74,15 @@ Agile methods build services that:
 
 - Alpha, beta and live stages:
 
-    - work in an agile way, using agile tools and techniques, continuing to do so when the service is live **(Digital Service Standard (UK)) /** work in an agile way, using agile tools and techniques, and continue to do so when the service is live **(Digital Service Standard (Ontario))**
+  - work in an agile way, using agile tools and techniques, continuing to do so when the service is live **(Digital Service Standard (UK)) /** work in an agile way, using agile tools and techniques, and continue to do so when the service is live **(Digital Service Standard (Ontario))**
 
-    - review and iterate the ways the team works to fix problems **(Digital Service Standard (UK)) /** ensure the team reviews and iterates the ways problems are fixed **(Digital Service Standard (Ontario))**
+  - review and iterate the ways the team works to fix problems **(Digital Service Standard (UK)) /** ensure the team reviews and iterates the ways problems are fixed **(Digital Service Standard (Ontario))**
 
-    - use agile tools and techniques to communicate with each other **(Digital Service Standard (UK))**
+  - use agile tools and techniques to communicate with each other **(Digital Service Standard (UK))**
 
-    - make sure the team responds to user research and usability testing **(Digital Service Standard (UK)) /** give an example of how the team has responded to user research and usability testing **(Digital Service Standard (Ontario))**
+  - make sure the team responds to user research and usability testing **(Digital Service Standard (UK)) /** give an example of how the team has responded to user research and usability testing **(Digital Service Standard (Ontario))**
 
-    - make sure the governance is agile, based on clear and measurable goals, and has a clear focus on managing change and risk in real time **(Digital Service Standard (UK)) /** show that your service governance is agile, based on clear and measurable goals **(Digital Service Standard (Ontario))**
+  - make sure the governance is agile, based on clear and measurable goals, and has a clear focus on managing change and risk in real time **(Digital Service Standard (UK)) /** show that your service governance is agile, based on clear and measurable goals **(Digital Service Standard (Ontario))**
 
 - document the design options you explored for your prototype and the reasons you discarded some **(Digital Service Standard (UK)) /** explore design options for your prototype and explain why some are discarded **(Digital Service Standard (Ontario))**
 
@@ -96,8 +95,6 @@ Agile methods build services that:
 - have a quality assurance testing and rollback plan that supports frequent iterations to the service **(Digital Service Standard (Ontario))**
 
 - use a phased approach to test changes to part of service, when feature-based changes are not feasible **(Digital Service Standard (Ontario))**
-
-
 
 - Ship a functioning "minimum viable product" (MVP) that solves a core user need as soon as possible, no longer than three months from the beginning of the project, using a "beta" or "test" period if needed **(Digital Service Playbook (US))**
 
@@ -195,41 +192,37 @@ You need to build a service which you can iterate and keep improving so that you
 
 - **[TODO: Add/revise checklist items]**
 
-
-
 - Alpha, beta and live stages
 
-    - document what you've built in each phase and why you built it **(Digital Service Standard (UK))**
+  - document what you've built in each phase and why you built it **(Digital Service Standard (UK))**
 
-    - document the lifecycle of a user story from user research to production **(Digital Service Standard (UK))**
+  - document the lifecycle of a user story from user research to production **(Digital Service Standard (UK))**
 
-    - make sure your service is built to meet user needs **(Digital Service Standard (UK))**
+  - make sure your service is built to meet user needs **(Digital Service Standard (UK))**
 
-    - identify and prioritize insights from user research **(Digital Service Standard (UK))**
+  - identify and prioritize insights from user research **(Digital Service Standard (UK))**
 
-    - move user stories quickly and smoothly between user research and production **(Digital Service Standard (UK))**
+  - move user stories quickly and smoothly between user research and production **(Digital Service Standard (UK))**
 
-    - make sure there is minimal risk associated with the technology you chose **(Digital Service Standard (UK))**
+  - make sure there is minimal risk associated with the technology you chose **(Digital Service Standard (UK))**
 
-    - make sure you have the ability to deploy software frequently with minimal disruption to users **(Digital Service Standard (UK))**
+  - make sure you have the ability to deploy software frequently with minimal disruption to users **(Digital Service Standard (UK))**
 
-    - analyze user research and use it to improve your service **(Digital Service Standard (UK))**
+  - analyze user research and use it to improve your service **(Digital Service Standard (UK))**
 
-    - solve any technical problems you've found **(Digital Service Standard (UK))**
+  - solve any technical problems you've found **(Digital Service Standard (UK))**
 
 - Beta stage
 
-    - determine how long you expect your service to be in beta and why **(Digital Service Standard (UK))**
+  - determine how long you expect your service to be in beta and why **(Digital Service Standard (UK))**
 
-    - document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users **(Digital Service Standard (UK))**
-
-
+  - document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users **(Digital Service Standard (UK))**
 
 - Live stage
 
-    - make sure deployments have zero downtime in a way that doesn't stop users using the service **(Digital Service Standard (UK))**
+  - make sure deployments have zero downtime in a way that doesn't stop users using the service **(Digital Service Standard (UK))**
 
-    - make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
+  - make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
 
 ### Implementation guides
 
