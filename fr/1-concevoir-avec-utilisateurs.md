@@ -1,4 +1,4 @@
-## 1. Concevoir avec les utilisateurs
+# 1. Concevoir avec les utilisateurs
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -24,7 +24,7 @@
 
 **\[TODO: Identifier les directives liées au format \"\#.\# Nom de la ligne directric (Principe \# : Nom du principe)\"\]**
 
-### 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
+## 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -38,7 +38,7 @@
 
 Les utilisateurs doivent être impliqués dans un long cycle de la vie du service, les recherches et les tests des utilisateurs informent les premières phases de la conception aux améliorations continue après le lancement du service.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -60,11 +60,11 @@ Les utilisateurs doivent être impliqués dans un long cycle de la vie du servic
 
 - Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer **(critères de conception du produit OneGC)**
 
-#### Guides d'application
+### Guides d'application
 
 - **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
 
-### 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
+## 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -82,7 +82,7 @@ Faire de la recherche continue sur les utilisateurs signifie que vous pouvez :
 
 - continuer à améliorer le service en fonction des besoins des utilisateurs
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -114,7 +114,7 @@ Faire de la recherche continue sur les utilisateurs signifie que vous pouvez :
 
   - Documentez tous les problèmes que vous ne pouvez pas résoudre en version bêta et commentez vous le traiterez en version bêta publique **(Norme de service numérique (Royaume-Uni))**
 
-#### Guides d'application
+### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
@@ -126,7 +126,7 @@ En savoir plus sur:
 
 - [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
 
-### 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
+## 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -158,7 +158,7 @@ Vous devez comprendre le besoin de vos utilisateurs pour pouvoir créer un servi
 
 **Norme de service numérique (Ontario) :** Commencez avec les utilisateurs pour définir le problème. Faire des recherches pour développer une compréhension profonde de qui sont les utilisateurs, commentent- ils cela et ce que cela signifie pour la conception du service.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Comprendre les personnes qui servent un service et ce qu'ils désirent est essentiel à la construction d'un service qui leur convient. Les exemples d'utilisateurs d'un service de renouvellement de permis autorisent tous les Ontariens ayant un permis de conduire.
 
@@ -187,7 +187,7 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
 
 - profils d'utilisateurs - afficher les groupes d'utilisateurs en fonction des données démographiques telles que le sexe, l'âge, l'emplacement, le revenu et la taille de la famille
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -260,7 +260,7 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
 
   - démontrer les améliorations à ces domaines et comment ceux-ci ont été testés et recherchés **(Norme de service numérique (Ontario))**
 
-#### Questions clés **(Playbook numérique (US))**
+### Questions clés **(Playbook numérique (US))**
 
 - Qui sont vos principaux utilisateurs?
 
@@ -278,7 +278,7 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
 
 - À quelle fréquence testez-vous avec de vraies personnes?
 
-#### Guides d'application
+### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
@@ -294,7 +294,7 @@ En savoir plus sur:
 
 - [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
 
-### 1.4 Clairement articuler and understand the problem of about and use the data for evidence
+## 1.4 Clairement articuler and understand the problem of about and use the data for evidence
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -306,7 +306,7 @@ En savoir plus sur:
 
 **Playbook de services numériques (US) :** Nous devons comprendre les différentes façons dont les personnes s'organisent avec nos services, y compris les actions en ligne, via une application mobile, sur un téléphone ou en personne. Chaque rencontre, qu'elle soit en ligne ou hors ligne, devrait rapprocher l'utilisateur de son objectif.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -318,7 +318,7 @@ En savoir plus sur:
 
 - Développer des mesures qui permettent de mesurer dans quelle mesure le service répond aux besoins des utilisateurs à chaque étape du service **(Digital Services Playbook (États-Unis))**
 
-#### Questions clés **(Digital Services Playbook (États-Unis))**
+### Questions clés **(Digital Services Playbook (États-Unis))**
 
 - Quelles sont les différentes manières (à la fois en ligne et hors ligne) que les gens sont actuellement chargés de la tâche pour aider le service?
 
@@ -328,11 +328,11 @@ En savoir plus sur:
 
 - Quelles statistiques effectueront le meilleur fonctionnement du service pour ses utilisateurs?
 
-#### Guides d'application
+### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-### 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
+## 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -342,15 +342,15 @@ En savoir plus sur:
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'application
+### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-### 1.6 Rendre les services simples, intuitifs et cohérents
+## 1.6 Rendre les services simples, intuitifs et cohérents
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -372,7 +372,7 @@ En savoir plus sur:
 
 **Norme de service numérique (Ontario) (Soyez cohérent) :** Lorsque le public interagit avec le gouvernement de l'Ontario, son expérience a été cohérente, positive et cohérente.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Les utilisateurs doivent savoir quand ils sont sur un site Web officiel du gouvernement.
 
@@ -390,7 +390,7 @@ Si les utilisateurs ont le mal à terminer la tâche pour la première fois, ils
 
 **Norme de service numérique (Ontario) (S'assurer que les utilisateurs réussissent la première fois) :** L'utilisation d'un service gouvernemental devrait être une expérience intuitive et sans stress. Un bon service devrait être si simple que les utilisateurs peuvent avoir leur première tentative sans besoin d'aide.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Il est important de vérifier que le service est aussi simple et direct que possible. Tous les utilisateurs, même ceux qui ont besoin d'une accessibilité ou d'une expérience numérique, peuvent être en mesure de compléter un service facilement.
 
@@ -409,7 +409,7 @@ En utilisant le même langage et les mêmes modèles de conception que le reste 
 - Vous utilisez des modèles et un style basé sur des recherches de données et d'utilisateurs.
 
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -490,7 +490,7 @@ En utilisant le même langage et les mêmes modèles de conception que le reste 
 
   - -vous que les en-têtes et les pieds de page correspondent au style GOV.UK **(Norme de service numérique (Royaume-Uni))**
 
-#### Questions clés **(Playbook sur les services numériques (États-Unis))**
+### Questions clés **(Playbook sur les services numériques (États-Unis))**
 
 - Quelles sont les tâches principales que l'utilisateur tente de faire?
 
@@ -502,7 +502,7 @@ En utilisant le même langage et les mêmes modèles de conception que le reste 
 
 - Comment la conception du service se rapporte-t-elle visuellement à d'autres services gouvernementaux?
 
-#### Lois et règles à suivre **(Norme de service numérique (Ontario))**
+### Lois et règles à suivre **(Norme de service numérique (Ontario))**
 
 - Accessibilité - [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario, Norme d'information et de communication](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/r11191%2523BK9%23BK9#BK9)
 
@@ -512,7 +512,7 @@ En utilisant le même langage et les mêmes modèles de conception que le reste 
 
 - Médias sociaux - [Lignes directrices sur les médias sociaux de la fonction publique de l'Ontario](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/ontario-public-service-social-media-guidelines)
 
-#### Guides d'application
+### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
@@ -536,7 +536,7 @@ En savoir plus sur:
 
 - [conception](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/design) **(Norme de service numérique (Royaume-Uni))**
 
-### 1.7 Rendre plus pratique et pratique l'utilisation des services numériques
+## 1.7 Rendre plus pratique et pratique l'utilisation des services numériques
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -560,7 +560,7 @@ Encourager les gens à utiliser votre service numérique vous permet de :
 
 **Norme de service numérique (Ontario) :** Encourager les gens à choisir le service numérique dans toutes leurs interactions avec le gouvernement.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Encourager les gens à utiliser le service numérique:
 
@@ -570,7 +570,7 @@ Encourager les gens à utiliser le service numérique:
 
 - donner un meilleur soutien à ceux qui ne peuvent pas utiliser les services numériques de leur propre chef
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -616,7 +616,7 @@ Encourager les gens à utiliser le service numérique:
 
   - mesurer l'impact attendu sur d'autres points de service, tels que le téléphone et en personne, et comment cela pourrait avoir un impact sur le financement et l'allocation des ressources **(Norme de service numérique (Ontario))**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Comment mesurer l'adoption numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Norme de service numérique (Royaume-Uni))**)
@@ -629,7 +629,7 @@ En savoir plus sur:
 
 - [évaluations de services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**)
 
-### 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
+## 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
@@ -643,7 +643,7 @@ En savoir plus sur:
 
 **Norme de service numérique (Ontario) (Soutenez ceux qui en ont besoin ) :** Mettre en place des outils sur tous les canaux pour soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Tout le monde n'aura pas le même accès, le même confort et le même niveau de compétence pour utiliser le service numérique par défaut. Comprenez comment et où les utilisateurs ont besoin d'assistance, mettez ce support à disposition et sensibilisez à ce support.
 
@@ -653,7 +653,7 @@ Les utilisateurs peuvent s'attendre à ce qu'un service en ligne soit disponible
 
 Vous devez avoir un plan pour savoir ce qu'il faut faire si votre service se déconnecte afin que vous sachiez comment les utilisateurs seront affectés et comment le récupérer en ligne.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -720,10 +720,10 @@ Vous devez avoir un plan pour savoir ce qu'il faut faire si votre service se dé
 
 - déterminez votre stratégie pour gérer les pannes, y compris les responsables et les décisions qu'ils peuvent prendre **(Norme de service numérique (Royaume-Uni))**
 
-#### Lois et règles à suivre **(Norme de service numérique (Ontario))**
+### Lois et règles à suivre **(Norme de service numérique (Ontario))**
 - [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario, Norme d'information et de communication](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/r11191%2523BK9%23BK9#BK9)
 
-#### Guides d'implémentation
+### Guides d'implémentation
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [garder votre service en ligne](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Norme de service numérique (Royaume-Uni))**
