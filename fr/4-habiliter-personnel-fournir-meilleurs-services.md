@@ -16,9 +16,9 @@
 
 4.6 [Construire et maintenir une équipe multidisciplinaire expérimentée](#user-content-46-construire-et-maintenir-une-équipe-multidisciplinaire-expérimentée)
 
-**Directives connexes:**
+**Lignes directrices connexes:**
 
-**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
+**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
 ### 4.1 Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
 
