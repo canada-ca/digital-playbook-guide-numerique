@@ -4,21 +4,21 @@
 
 **Des lignes directrices:**
 
-10.1 [Collecter les données une fois pour éviter la duplication](#user-content-101collecter-les-données-une-fois-pour-éviter-la-duplication)
+10.1 [Collecter les données une fois pour éviter la duplication](#user-content-101-collecter-les-données-une-fois-pour-éviter-la-duplication)
 
-10.2 [Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision](#user-content-102rendre-les-informations-et-les-données-gouvernementales-pertinentes-facilement-accessibles-pour-aider-à-la-prise-de-décision)
+10.2 [Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision](#user-content-102-rendre-les-informations-et-les-données-gouvernementales-pertinentes-facilement-accessibles-pour-aider-à-la-prise-de-décision)
 
-10.3 [Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres](#user-content-103assurez-vous-que-les-données-sont-collectées-de-manière-standard-afin-quelles-puissent-être-facilement-intégrées-et-réutilisées-par-dautres)
+10.3 [Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres](#user-content-103-assurez-vous-que-les-données-sont-collectées-de-manière-standard-afin-quelles-puissent-être-facilement-intégrées-et-réutilisées-par-dautres)
 
-10.4 [Tenir dûment compte de la conservation et de la conservation numériques](#user-content-104tenir-dûment-compte-de-la-conservation-et-de-la-conservation-numériques)
+10.4 [Tenir dûment compte de la conservation et de la conservation numériques](#user-content-104-tenir-dûment-compte-de-la-conservation-et-de-la-conservation-numériques)
 
-10.5 [Assurer les données et dans la formation est complète, précise et à jour](#user-content-105assurer-les-données-etdansla-formation-est-complète-préciseet-à-jour)
+10.5 [Assurer les données et dans la formation est complète, précise et à jour](#user-content-105-assurer-les-données-et-dans-la-formation-est-complète-précise-et-à-jour)
 
 **Directives connexes:**
 
 **\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
 
-### 10.1        Collecter les données une fois pour éviter la duplication
+### 10.1 Collecter les données une fois pour éviter la duplication
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -39,7 +39,7 @@
 
 
 
-### 10.2        Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision
+### 10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -106,7 +106,7 @@
 
 
 
-### 10.3        Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
+### 10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -211,7 +211,7 @@ En savoir plus sur [les évaluations de services](https://translate.google.com/t
 
 
 
-### 10.4        Tenir dûment compte de la conservation et de la conservation numériques
+### 10.4 Tenir dûment compte de la conservation et de la conservation numériques
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

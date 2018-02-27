@@ -4,23 +4,23 @@
 
 **Des lignes directrices:**
 
-4.1 [Offrir des possibilités de formation continue etd'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi](#user-content-41offrir-des-possibilités-de-formation-continue-et-dapprentissage-pour-améliorer-continuellement-les-compétences-de-léquipe-et-du-réseau-élargi)
+4.1 [Offrir des possibilités de formation continue etd'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi](#user-content-41-offrir-des-possibilités-de-formation-continue-et-dapprentissage-pour-améliorer-continuellement-les-compétences-de-léquipe-et-du-réseau-élargi)
 
-4.2 [Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover](#user-content-42assurez-vous-que-lepersonnel-aaccès-aux-outils-et-aux-technologies-dont-il-a-besoin-pour-innover)
+4.2 [Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover](#user-content-42-assurez-vous-que-le-personnel-a-accès-aux-outils-et-aux-technologies-dont-il-a-besoin-pour-innover)
 
-4.3 [Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer](#user-content-43assurez-vous-que-les-bons-systèmes-et-processus-sont-en-place-pour-que-léquipe-puissecréer)
+4.3 [Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer](#user-content-43-assurez-vous-que-les-bons-systèmes-et-processus-sont-en-place-pour-que-léquipe-puisse-créer)
 
-4.4 [Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs](#user-content-44permettre-aux-équipes-de-prendre-des-décisions-tout-au-long-de-la-conception-de-la-construction-et-du-fonctionnement-du-service-et-leur-permettre-dapprendre-de-leurs-erreurs)
+4.4 [Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs](#user-content-44-permettre-aux-équipes-de-prendre-des-décisions-tout-au-long-de-la-conception-de-la-construction-et-du-fonctionnement-du-service-et-leur-permettre-dapprendre-de-leurs-erreurs)
 
-4.5 [Rendre une personne responsable du service](#user-content-45rendre-une-personne-responsable-du-service)
+4.5 [Rendre une personne responsable du service](#user-content-45-rendre-une-personne-responsable-du-service)
 
-4.6 [Construire et maintenir une équipe multidisciplinaire expérimentée](#user-content-46construire-et-maintenir-une-équipe-multidisciplinaire-expérimentée)
+4.6 [Construire et maintenir une équipe multidisciplinaire expérimentée](#user-content-46-construire-et-maintenir-une-équipe-multidisciplinaire-expérimentée)
 
 **Directives connexes:**
 
 **\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
 
-### 4.1     Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
+### 4.1 Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -33,7 +33,7 @@
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
-### 4.2     Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover
+### 4.2 Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -108,7 +108,7 @@ En savoir plus sur:
 
 
 
-### 4.3     Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
+### 4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -162,7 +162,7 @@ construire un service, un contrat bien défini peut faciliter de bonnes pratique
 
 
 
-### 4.4     Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs
+### 4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -181,7 +181,7 @@ construire un service, un contrat bien défini peut faciliter de bonnes pratique
 
 
 
-### 4.5     Rendre une personne responsable du service
+### 4.5 Rendre une personne responsable du service
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -249,7 +249,7 @@ construire un service, un contrat bien défini peut faciliter de bonnes pratique
 
 
 
-### 4.6     Construire et maintenir une équipe multidisciplinaire expérimentée
+### 4.6 Construire et maintenir une équipe multidisciplinaire expérimentée
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 

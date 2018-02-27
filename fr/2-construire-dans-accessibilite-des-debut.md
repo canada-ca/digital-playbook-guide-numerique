@@ -10,7 +10,7 @@
 
 2.3 [Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début](#user-content-23-co-créer-avec-des-personnes-ayant-des-besoins-distincts-en-étant-inclusif-dès-le-début)
 
-2.4 [Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services](#user-content-24prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
+2.4 [Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services](#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
 
 **Directives connexes:**
 
@@ -18,7 +18,7 @@
 
 
 
-### 2.1  Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
+### 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -150,7 +150,7 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
-### 2.4     Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
+### 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
