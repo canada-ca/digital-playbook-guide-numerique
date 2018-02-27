@@ -4,27 +4,27 @@
 
 **Des lignes directrices:**
 
-6.1 [Tirer parti des normes ouvertes et adopter des pratiques exemplaires](#user-content-61tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+6.1 [Tirer parti des normes ouvertes et adopter des pratiques exemplaires](#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
 
-6.2 [Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées](#user-content-62utiliser-et-réutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-éprouvées)
+6.2 [Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées](#user-content-62-utiliser-et-réutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-éprouvées)
 
-6.3 [Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté](#user-content-63conception-pour-linteropérabilité-permettant-aux-services-dêtre-découverts-et-exploités-par-la-communauté)
+6.3 [Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté](#user-content-63-conception-pour-linteropérabilité-permettant-aux-services-dêtre-découverts-et-exploités-par-la-communauté)
 
-6.4 [Ouvrez les données, les transactions et les règles métier qui sous-tendent un service](#user-content-64ouvrez-les-données-les-transactions-et-les-règles-métier-qui-sous-tendent-un-service)
+6.4 [Ouvrez les données, les transactions et les règles métier qui sous-tendent un service](#user-content-64-ouvrez-les-données-les-transactions-et-les-règles-métier-qui-sous-tendent-un-service)
 
-6.5 [Concevoir, créer et tester des services numériques de bout en bout](#user-content-65concevoir-créer-et-tester-des-services-numériques-de-bout-en-bout)
+6.5 [Concevoir, créer et tester des services numériques de bout en bout](#user-content-65-concevoir-créer-et-tester-des-services-numériques-de-bout-en-bout)
 
-6.6 [Nuage d'abord](#user-content-66nuage-dabord)     
+6.6 [Nuage d'abord](#user-content-66-nuage-dabord)     
 
 **Directives connexes:**
 
-5.1 [Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous licence ouverte (Principe 5: Travailler à l'extérieur par défaut)](principe05-fr.md#user-content-51rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
+5.1 [Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous licence ouverte (Principe 5: Travailler à l'extérieur par défaut)](5-travailler-air-libre-par-defaut.md#user-content-51-rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
 
 **\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
 
 
 
-### 6.1     Tirer parti des normes ouvertes et adopter des pratiques exemplaires
+### 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -150,7 +150,7 @@ En savoir plus sur:
 
 
 
-### 6.2     Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
+### 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -207,7 +207,7 @@ En savoir plus sur:
 
 
 
-### 6.3     Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté
+### 6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -262,7 +262,7 @@ entre les services, optimiser les expériences entre les appareils et même mene
 
 
 
-### 6.4     Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
+### 6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -277,7 +277,7 @@ entre les services, optimiser les expériences entre les appareils et même mene
 
 
 
-### 6.5     Concevoir, créer et tester des services numériques de bout en bout
+### 6.5 Concevoir, créer et tester des services numériques de bout en bout
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -477,7 +477,7 @@ En savoir plus sur:
 
 
 
-### 6.6     Nuage d'abord
+### 6.6 Nuage d'abord
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
