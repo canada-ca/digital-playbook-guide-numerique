@@ -14,7 +14,7 @@
 
 1.5 [Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil](#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
 
-1.6 [Rendre les services simples, intuitifs et cohérents](#user-content-16-rendre-les-services-simples-intuitifsetcohérents)
+1.6 [Rendre les services simples, intuitifs et cohérents](#user-content-16-rendre-les-services-simples-intuitifs-et-cohérents)
 
 1.7 [Rendre plus pratique et pratique l'utilisation des services numériques](#user-content-17-rendre-plus-pratique-et-pratique-lutilisation-des-services-numériques)
 
