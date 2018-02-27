@@ -12,7 +12,7 @@
 
 10.4 [Tenir dûment compte de la conservation et de la conservation numériques](#user-content-104-tenir-dûment-compte-de-la-conservation-et-de-la-conservation-numériques)
 
-10.5 [Assurer les données et dans la formation est complète, précise et à jour](#user-content-105-assurer-les-données-etdansla-formation-est-complète-préciseet-à-jour)
+10.5 [Assurer les données et dans la formation est complète, précise et à jour](#user-content-105-assurer-les-données-et-dans-la-formation-est-complète-précise-et-à-jour)
 
 **Directives connexes:**
 
