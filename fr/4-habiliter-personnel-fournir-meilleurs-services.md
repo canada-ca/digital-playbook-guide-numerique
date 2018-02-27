@@ -6,7 +6,7 @@
 
 4.1 [Offrir des possibilités de formation continue etd'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi](#user-content-41-offrir-des-possibilités-de-formation-continue-et-dapprentissage-pour-améliorer-continuellement-les-compétences-de-léquipe-et-du-réseau-élargi)
 
-4.2 [Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover](#user-content-42-assurez-vous-que-le-personnel-aaccès-aux-outils-et-aux-technologies-dont-il-a-besoin-pour-innover)
+4.2 [Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover](#user-content-42-assurez-vous-que-le-personnel-a-accès-aux-outils-et-aux-technologies-dont-il-a-besoin-pour-innover)
 
 4.3 [Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer](#user-content-43-assurez-vous-que-les-bons-systèmes-et-processus-sont-en-place-pour-que-léquipe-puisse-créer)
 
