@@ -16,8 +16,6 @@
 
 **\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
 
-
-
 ## 7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
@@ -38,7 +36,7 @@
 
 **Exemples d'introduction :**
 
-**Digital Service Standard (UK): **Construisez votre service en utilisant les méthodes agiles, itératives et centrées sur l'utilisateur définies dans le manuel.
+**Digital Service Standard (UK):** Construisez votre service en utilisant les méthodes agiles, itératives et centrées sur l'utilisateur définies dans le manuel.
 
 L'utilisation de méthodes agiles vous aide à créer des services qui:
 
@@ -52,7 +50,7 @@ L'utilisation de méthodes agiles vous aide à créer des services qui:
 
 - coûte moins cher et sont plus responsables
 
-**Norme de service numérique (Ontario): **Concevoir et élaborer le service en utilisant une approche agile et centrée sur l'utilisateur. Agile est une approche de la construction de services qui divise le travail en plus petits morceaux connus sous le nom d'itérations. Construire une fonctionnalité du service à la fois jusqu'à ce que l'ensemble du service est terminé.
+**Norme de service numérique (Ontario):** Concevoir et élaborer le service en utilisant une approche agile et centrée sur l'utilisateur. Agile est une approche de la construction de services qui divise le travail en plus petits morceaux connus sous le nom d'itérations. Construire une fonctionnalité du service à la fois jusqu'à ce que l'ensemble du service est terminé.
 
 Il s'agit d'une approche beaucoup moins risquée que l'approche traditionnelle «cascade» car les itérations fréquentes exposent les défauts du plan d'origine beaucoup plus rapidement (par exemple, ne pas obtenir les approbations, pas assez de ressources, pas les bonnes personnes). équipe, etc.)
 
@@ -74,96 +72,54 @@ Les méthodes agiles créent des services qui:
 
 **Digital Service Playbook (US):** Nous devrions utiliser un style de développement logiciel incrémental et rapide pour réduire le risque d'échec. Nous voulons mettre le logiciel de travail dans les mains des utilisateurs le plus tôt possible afin de permettre à l'équipe de conception et de développement de s'ajuster en fonction des commentaires des utilisateurs sur le service. Une capacité critique est de pouvoir tester et déployer automatiquement le service afin que de nouvelles fonctionnalités puissent être ajoutées fréquemment et être mises en production facilement.
 
-**3. Review and improve services continually (Think - Digital Design Playbook (ISED)):** The [TBS Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916) and the [TBS Management Accountability Framework (MAF)](http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp) require regular reviews of priority services in order to identify opportunities for service redesign." By reviewing services regularly, service providers can ensure that services continue to be relevant, effective and efficient, and deliver best value to clients.
-
-Use quantitative and qualitative data to help with regular reviews of your service. User needs and technology evolve. There will always be room for improvement.
-
-**3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)):** Applying agile involves continuous improvement by analyzing data, making adjustments and iterating to identify and test improvements. Core principles of agile include defining a measurable goal; sharing ownership of the problem; taking small steps with visible impact; validating ideas/solutions with the target audience (e.g., the client); measuring success; reflecting, adjusting and iterating.
-
-Start with a representation or prototype of the solution that will be tested and revised based on feedback and insights. Each iteration improves on the previous version. Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Taking an iterative approach also helps you reduce risks. It makes big failures less likely and turns mistakes into learning opportunities.
-
 ### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Alpha, beta et stades en direct   :
+- Alpha, beta et stades en direct:
 
-    - travail   d'une manière agile, en utilisant des outils et des techniques agiles, en continuant à le faire lorsque le service est en ligne      **(**   **Norme de service numérique (UK)**   **)**   **/**   travailler de manière agile, en utilisant des outils et des techniques agiles, et continuer à
-        le faire lorsque le service est en ligne   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+  - travail d'une manière agile, en utilisant des outils et des techniques agiles, en continuant à le faire lorsque le service est en ligne  **(Norme de service numérique (UK))/** travailler de manière agile, en utilisant des outils et des techniques agiles, et continuer à le faire lorsque le service est en ligne **(Norme de service numérique ( Ontario))**
 
-    - revoir et itérer les moyens de l'équipe      travail   s pour résoudre les problèmes    **(**   **Norme de service numérique (UK)**   **)**   **/**   s'assurer que l'équipe examine et répare les façons dont les problèmes sont résolus   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+  - revoir et itérer les moyens de l'équipe travail s pour résoudre les problèmes **(Norme de service numérique (UK))/**  s'assurer que l'équipe examine et répare les façons dont les problèmes sont résolus  **(Norme de service numérique ( Ontario))**
 
-    - utiliser des outils et des techniques agiles pour communiquer les uns avec les autres    **(**   **Norme de service numérique (UK)**   **)**
+  - utiliser des outils et des techniques agiles pour communiquer les uns avec les autres  **(Norme de service numérique (UK))**
 
-    - assurez-vous que l'équipe répond aux recherches de l'utilisateur et aux tests d'utilisabilité    **(**   **Norme de service numérique (UK)**   **)**   **/**   donner un exemple de la façon dont l'équipe a répondu aux recherches de l'utilisateur et aux tests d'utilisabilité   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+  - assurez-vous que l'équipe répond aux recherches de l'utilisateur et aux tests d'utilisabilité **(Norme de service numérique (UK))/** donner un exemple de la façon dont l'équipe a répondu aux recherches de l'utilisateur et aux tests d'utilisabilité **(Norme de service numérique ( Ontario))**
 
-    - S'assurer que la gouvernance est agile, basée sur des objectifs clairs et mesurables, et se concentre clairement sur la gestion du changement et des risques en temps réel    **(**   **Norme de service numérique (UK)**   **)**   **/**   montrer que la gouvernance de votre service est agile, basée sur des objectifs clairs et mesurables   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+  - S'assurer que la gouvernance est agile, basée sur des objectifs clairs et mesurables, et se concentre clairement sur la gestion du changement et des risques en temps réel **(Norme de service numérique (UK))/** montrer que la gouvernance de votre service est agile, basée sur des objectifs clairs et mesurables **(Norme de service numérique ( Ontario))**
 
-- Documentez les options de conception que vous avez explorées pour votre prototype et les raisons pour lesquelles vous en avez
-    éliminé    **(**   **Norme de service numérique (UK)**   **)**   **/**   explorez les options de conception de votre prototype et expliquez pourquoi certains sont jetés   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+- Documentez les options de conception que vous avez explorées pour votre prototype et les raisons pour lesquelles vous en avez éliminé  **(Norme de service numérique (UK))/** explorez les options de conception de votre prototype et expliquez pourquoi certains sont jetés **(Norme de service numérique ( Ontario))**
 
-- documenter comment la conception du service a changé au fil du temps en raison de ce que vous avez trouvé dans la recherche des utilisateurs    **(**   **Norme de service numérique (UK)**   **)**   **/**   montrer comment la conception du service a changé au fil du temps en raison des résultats de la recherche des utilisateurs   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+- documenter comment la conception du service a changé au fil du temps en raison de ce que vous avez trouvé dans la recherche des utilisateurs **(Norme de service numérique (UK))/** montrer comment la conception du service a changé au fil du temps en raison des résultats de la recherche des utilisateurs **(Norme de service numérique ( Ontario))**
 
-- Documentez les options de conception que vous envisagez pour votre assistance numérique assistée    **(**   **Norme de service numérique (UK)**   **)**
+- Documentez les options de conception que vous envisagez pour votre assistance numérique assistée **(Norme de service numérique (UK))**
 
-- Documentez tous les problèmes que vous avez trouvés dans la recherche que vous devrez résoudre pour concevoir le service, et comment vous prévoyez de les résoudre    **(**   **Norme de service numérique (UK)**   **)**   **/**   identifier les problèmes rencontrés dans la recherche et les solutions pour améliorer le service   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+- Documentez tous les problèmes que vous avez trouvés dans la recherche que vous devrez résoudre pour concevoir le service, et comment vous prévoyez de les résoudre  **(Norme de service numérique (UK))/**  identifier les problèmes rencontrés dans la recherche et les solutions pour améliorer le service **(Norme de service numérique ( Ontario))**
 
-- Avoir un test d'assurance qualité et un plan de restauration qui prend en charge les itérations fréquentes du service   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+- Avoir un test d'assurance qualité et un plan de restauration qui prend en charge les itérations fréquentes du service **(Norme de service numérique ( Ontario))**
 
-- utiliser une approche progressive pour tester les modifications apportées à une partie du service, lorsque les modifications basées sur les caractéristiques ne sont pas réalisables   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
+- utiliser une approche progressive pour tester les modifications apportées à une partie du service, lorsque les modifications basées sur les caractéristiques ne sont pas réalisables **(Norme de service numérique ( Ontario))**
 
 - Expédier un «produit minimum viable» fonctionnel (MVP) qui répond aux besoins des utilisateurs principaux le plus rapidement possible, pas plus de trois mois après le début du projet, en utilisant une période «beta» ou «test» si nécessaire **(Digital Service Playbook (NOUS))**
 
 - Effectuez des tests de convivialité fréquemment pour vérifier le bon fonctionnement du service et identifier les améliorations à
-    apporter **(Digital Service Playbook (US))**
+  apporter **(Digital Service Playbook (US))**
 
 - Assurez-vous que les personnes qui créent le service communiquent
-    étroitement en utilisant des techniques telles que des réunions de lancement, des salles de guerre, des présentations quotidiennes et des outils de discussion en équipe **(Digital Service Playbook (US))**
+  étroitement en utilisant des techniques telles que des réunions de lancement, des salles de guerre, des présentations quotidiennes et des outils de discussion en équipe **(Digital Service Playbook (US))**
 
 - Gardez les équipes de livraison petites et concentrées; limiter les couches organisationnelles qui séparent ces équipes des propriétaires d'entreprise **(Digital Service Playbook (US))**
 
 - Libérez les fonctionnalités et les améliorations plusieurs fois par mois **(Digital Service Playbook (US))**
 
 - Créer une liste de fonctionnalités et de bogues classés par ordre de priorité, également appelés «backlog de fonctionnalités» et
-    «backlog de bogues» **(Digital Service Playbook (US))**
+  «backlog de bogues» **(Digital Service Playbook (US))**
 
 - Utiliser un système de contrôle de version de code source **(Digital Service Playbook (US))**
 
 - Donner à l'ensemble de l'équipe de projet l'accès au système de suivi des problèmes et de contrôle de version **(Digital Service Playbook (US))**
 
 - Utilisez les révisions de code pour assurer la qualité **(Digital Service Playbook (US))**
-
-- Explore opportunities for improved usability of service. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- Review how other departments and governments approach service delivery and adapt/incorporate best practices where appropriate. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- Explore interdepartmental and/or interjurisdictional partnership arrangements to identify opportunities for joined-up services. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- Design the website or web application iteratively; the process should start with low-fidelity methods, such as quick sketches, and progressively moves to higher-fidelity methods, such as prototypes. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- Evaluate the design of the website or web application regularly and improve it throughout its life cycle through various methods such as observing users completing tasks during **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- Consider other service channels, such as telephone and in-person, used to obtain information and services from the Government of Canada. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- Explore opportunities for channel integration and mobile optimization. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- Consult the TBS Technical Specifications for the Web and Mobile Presence. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- Websites and web applications are optimized for mobile devices by: **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-  - Using the Web Experience Toolkit (WET) for adapting the layout and design of websites and web applications for small, medium and large screen sizes, and for different input methods, such as touch input, and keyboard and mouse input.
-  - Designing the content and interface of websites and web applications for small, medium and large screen sizes and for different input methods, such as touch input and keyboard and mouse input.
-
-- Start with a prototype **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs.
-
-- When iterating, focus on workable solutions over comprehensive documentation. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - Having a workable solution that can be tested and validated will give you useful information for improving your service. Whenever possible, focus on results rather than unnecessary documentation and reporting (while staying within policy and regulatory limits).
-
-- When you can, use [agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques). **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - Techniques can include: daily stand ups, issue trackers, code reviews, rapid prototyping, design sprints, usability testing, user stories, retrospective meetings.
-
-- Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
 
 ### Questions clés **(Digital Playbook Playbook (US))**
 
@@ -172,7 +128,7 @@ Start with a representation or prototype of the solution that will be tested and
 - Combien de temps faut-il pour un déploiement de production?
 
 - Combien de jours ou de semaines y a-t-il dans chaque itération /
-    sprint?
+  sprint?
 
 - Quel système de contrôle de version est utilisé?
 
@@ -185,60 +141,20 @@ Start with a representation or prototype of the solution that will be tested and
 - Comment collectez-vous les commentaires des utilisateurs pendant le développement? Comment cette rétroaction est-elle utilisée pour améliorer le service?
 
 - À chaque étape du test d'utilisabilité, quelles lacunes ont été
-    identifiées pour répondre aux besoins des utilisateurs?
-
-### Decision Making Questions: **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Is there a persistent issue identified by several clients?
-- Are there any clear improvements that are possible that clients may not have identified yet?
-- Have there been any recommendations from audits or evaluations that require services to be redesigned?
-- Has technology evolved to permit new capabilities that would enhance the client experience?
-
-### Decision Making Questions: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- How are service problems tracked and prioritized?
-- How often are clients problems reviewed and features assessed for effectiveness?
-- What process is in place for clients to provide ongoing feedback?
-- How is feedback used to improve the service?
-- What is the scope of the project? What can be achieved in the first iteration or design sprint?
-- At what point after the initial release will planning/development of future releases take place?
-- How long are iterations and sprints?
+  identifiées pour répondre aux besoins des utilisateurs?
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-- [247 different checklists for usability testing](http://www.userfocus.co.uk/resources/guidelines.html) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- [Technical Specifications for Web and Mobile Presence (optimization)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-eng.asp) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- [TBS Standard on Web Usability](http://tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- [Agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-
-- [Agile Principles & Practices](https://pages.18f.gov/agile/index.html) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-
-- Example of Agile Methods: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - [Scrum](https://www.scrumalliance.org/)
-  - [Lean](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
-  - [Kanban](http://www.djaa.com/principles-kanban-method-0)
-- [GCpedia Community of Practice Agile Methods](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- [CRA Agile Framework](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework)) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- Treasury Board Secretariat (TBS) – Management Accountability Framework (MAF): **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp
-  - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en
+  œuvre\]**
 
 En savoir plus sur:
 
-- [livraison agile](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/agile-delivery)   **(**   **Norme de service numérique (UK)**   **)**
+- [livraison agile](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/agile-delivery)  **(Norme de service numérique (UK))**
 
-- [évaluations](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work)   **(**   **Norme de service numérique (UK)**   **)**
+- [évaluations](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (UK))**
 
-- [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction)   **(**   **Norme de service numérique (UK)**   **)**
-
-Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- [Is your project using "agilefall"?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
-- [Agile Manifesto](http://agilemanifesto.org/principles.html)
+- [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (UK))**
 
 ## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements
 
@@ -252,35 +168,17 @@ Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digit
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-
-
 ## 7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité
 
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
-
-- [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
-
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-**Exemples d'introduction :**
-
-**2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)):** Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology.
 
 ### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Continuously measure client experience and create a customer-prioritized improvement plan. **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
-
-- Commit to regular service reviews **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
-
-- Identify opportunities to improve the service based on the results of regular test **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
-
 ### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-- [TBS Guideline on Service Management – Priority Service Review Tool (page 58)](http://www.gcpedia.gc.ca/gcwiki/images/f/f9/Guideline_on_Service_Management-Final.pdf)
 
 ## 7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération
 
@@ -296,7 +194,7 @@ Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digit
 
 **Exemples d'introduction:**
 
-**Digital Service Standard (Royaume-Uni): **Construisez un service qui peut être itéré et amélioré fréquemment et assurez-vous d'avoir la capacité, les ressources et la flexibilité technique pour le faire.
+**Digital Service Standard (Royaume-Uni):** Construisez un service qui peut être itéré et amélioré fréquemment et assurez-vous d'avoir la capacité, les ressources et la flexibilité technique pour le faire.
 
 Vous devez créer un service que vous pouvez parcourir et continuer à
 améliorer afin de pouvoir:
@@ -305,100 +203,45 @@ améliorer afin de pouvoir:
 
 - assurez-vous que votre service continue de répondre aux besoins des utilisateurs
 
-**1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED))**: Services should be simple, inclusive and easy to use. Services should help clients achieve the outcomes that matter most. Assessing prototypes while the service is being designed will help you discover shortcomings that may deter clients from using the service or glitches that may affect the user experience. Assessing the service before it is officially launched will also help you make improvements that can go a long way in ensuring clients are satisfied when using the service. Rigorously and comprehensively testing the service from end-to-end is part of good service design.
-
 ### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Start small and build upon successes. **(General design principles - Digital Design Playbook (ISED))**
-
-- Don’t wait for a fully developed service to start testing. **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.
-
-- Define your testing objective **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Define the purpose of the test and what you want to learn? The purpose of the test is often determined by your business goals and user needs identified through feedback, analytics and other sources.
-  - Identify top or critical tasks to test. Main outcomes and features your clients want to achieve should be prioritized.
-
-- Test with clients and others **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - You need to ensure that the service works from technical perspective and from the perspective of the user and the service provider (including the help desk agent who assists clients when they face challenges using the service). By testing with a diverse group and different type of users, you can capture a more comprehensive understanding of how your service is working.
-  - Make sure the participants are representative of your clients.
-  - Utilize user experience testing services offered by the Chief Information Office and the Communications team
-
-- Plan and deliver client testing cycles **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Pilot your test: Make sure it all works
-  - Implement the test.
-  - Test often (e.g., six month or yearly intervals), apply the findings and keep on testing.
-
-- Test under realistic conditions **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**  
-  - Create realistic scenarios that reflect the context and environment in which clients would use the service.
-
-- Use different types of tests to assess the service **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Identify the best testing method based on your needs. Examples of tests include:
-    - Tree Testing - A test in which participants are asked to find a resource based on a series of menus.
-    - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
-    - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
-
 - Alpha, beta et stades en direct
 
-    - documentez ce que vous avez construit dans chaque phase et pourquoi vous l'avez construit **(Digital Service Standard (UK))**
+  - documentez ce que vous avez construit dans chaque phase et pourquoi vous l'avez construit **(Digital Service Standard (UK))**
 
-    - documenter le cycle de vie d'une user story de la recherche de l'utilisateur à la production **(Digital Service Standard (UK))**
+  - documenter le cycle de vie d'une user story de la recherche de l'utilisateur à la production **(Digital Service Standard (UK))**
 
-    - assurez-vous que votre service est conçu pour répondre aux besoins des utilisateurs **(Digital Service Standard (UK))**
+  - assurez-vous que votre service est conçu pour répondre aux besoins des utilisateurs **(Digital Service Standard (UK))**
 
-    - identifier et prioriser les informations issues de la recherche des utilisateurs **(Digital Service Standard (UK))**
+  - identifier et prioriser les informations issues de la recherche des utilisateurs **(Digital Service Standard (UK))**
 
-    - Transférer les histoires des utilisateurs rapidement et en douceur entre la recherche et la production des utilisateurs **(Digital Service Standard (UK))**
+  - Transférer les histoires des utilisateurs rapidement et en douceur entre la recherche et la production des utilisateurs **(Digital Service Standard (UK))**
 
-    - assurez-vous que le risque associé à la technologie que vous avez choisie est minime **(Digital Service Standard (UK))**
+  - assurez-vous que le risque associé à la technologie que vous avez choisie est minime **(Digital Service Standard (UK))**
 
-    - assurez-vous que vous avez la possibilité de déployer le logiciel fréquemment avec un minimum de perturbation pour les utilisateurs **(Digital Service Standard (UK))**
+  - assurez-vous que vous avez la possibilité de déployer le logiciel fréquemment avec un minimum de perturbation pour les utilisateurs **(Digital Service Standard (UK))**
 
-    - analyser les recherches des utilisateurs et les utiliser pour améliorer votre service **(Digital Service Standard (UK))**
+  - analyser les recherches des utilisateurs et les utiliser pour améliorer votre service **(Digital Service Standard (UK))**
 
-    - résoudre tous les problèmes techniques que vous avez trouvés **(Digital Service Standard (UK))**
+  - résoudre tous les problèmes techniques que vous avez trouvés **(Digital Service Standard (UK))**
 
 - Étape bêta
 
-    - déterminer combien de temps vous attendez que votre service soit en version bêta et pourquoi **(Digital Service Standard (UK))**
+  - déterminer combien de temps vous attendez que votre service soit en version bêta et pourquoi **(Digital Service Standard (UK))**
 
-    - documentez votre façon de [déployer le logiciel](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/deployment.html) , c.-à-d. comment vous pouvez déployer fréquemment avec un impact minimal sur les utilisateurs **(Digital Service Standard (UK))**     
+  - documentez votre façon de [déployer le logiciel](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/deployment.html) , c.-à-d. comment vous pouvez déployer fréquemment avec un impact minimal sur les utilisateurs **(Digital Service Standard (UK))**
 
 - Scène en direct
 
-    - assurez-vous que les déploiements n'ont pas de temps d'arrêt d'une manière qui n'empêche pas les utilisateurs d'utiliser le service **(Digital Service Standard (UK))**
+  - assurez-vous que les déploiements n'ont pas de temps d'arrêt d'une manière qui n'empêche pas les utilisateurs d'utiliser le service **(Digital Service Standard (UK))**
 
-    - assurez-vous d'avoir suffisamment de personnel pour continuer à
-        améliorer le service **(Digital Service Standard (UK))**
-
-### Decision Making Questions: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-- Is the service stable, secure and responsive, regardless of how many people are using it?
-- Is the service [accessible](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)?
-- How will you recruit clients for user testing?
-- What method(s) will you use to test the service?
-- How frequently will you test the service?
-- Where will the testing take place?
-- Did you test for user experience in addition to testing for technical aspects (e.g., does the code work)?
-- How will you apply the findings from user testing to improve the service?
+  - assurez-vous d'avoir suffisamment de personnel pour continuer à améliorer le service **(Digital Service Standard (UK))**
 
 ### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-- [Gov.UK Test your service’s performance]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-
-- [Gov.UK Testing your service regularly]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-
-- [Gov.UK Exploratory Testing]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-
-- [18F Testing Cookbook]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-
-- [26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-
-- User centric design GC community of practice: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs
-  - http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing
 
 En savoir plus sur:
 
