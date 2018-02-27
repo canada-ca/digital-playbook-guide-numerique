@@ -18,7 +18,7 @@
 
 **Related guidelines:**
 
-[5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Principle 5: Work in the open by default)](principle05-en.md#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
+[5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Principle 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
