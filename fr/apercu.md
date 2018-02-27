@@ -27,22 +27,22 @@ ses citoyens.   Il a fallu une communauté de personnes, avec des antécédents 
 
 **Principes**   **numériques**
 
-1. [Concevoir avec les utilisateurs](principe01-fr.md)
+1. [Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
 
-2. [Construire dans l'accessibilité dès le début](principe02-fr.md)
+2. [Construire dans l'accessibilité dès le début](2-construire-dans-accessibilite-des-debut.md)
 
-3. [Collaborez](principe03-fr.md)
+3. [Collaborez](3-collaborez-largement.md)
 
-4. [Habiliter le personnel à fournir des meilleurs services](principe04-fr.md)
+4. [Habiliter le personnel à fournir des meilleurs services](4-habiliter-personnel-fournir-meilleurs-services.md)
 
-5. [Travailler à l'air libre par défaut](principe05-fr.md)
+5. [Travailler à l'air libre par défaut](5-travailler-air-libre-par-defaut.md)
 
-6. [Utiliser des standards ouverts et des solutions](principe06-fr.md)
+6. [Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md)
 
-7. [Itérer et l'autre](principe07-fr.md)
+7. [Itérer et l'autre](7-iterer-ameliorer-frequemment.md)
 
-8. [Concevoir des services éthiques](principe08-fr.md)
+8. [Concevoir des services éthiques](8-concevoir-services-ethiques.md)
 
-9. [Aborder les risques de sécurité et de confidentialité](principe09-fr.md)
+9. [Aborder les risques de sécurité et de confidentialité](9-aborder-risques-securite-confidentialite.md)
 
-10. [Soyez de bons gestionnaires de données](principe10-fr.md)
+10. [Soyez de bons gestionnaires de données](10-soyez-bons-gestionnaires-donnees.md)
