@@ -1,4 +1,4 @@
-## 10.Soyez de bons gestionnaires de données
+## 10. Soyez de bons gestionnaires de données
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
