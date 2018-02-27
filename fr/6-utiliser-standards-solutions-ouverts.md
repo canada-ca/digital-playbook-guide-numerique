@@ -1,4 +1,4 @@
-## 6.        Utiliser des standards ouverts et des solutions
+## 6.        Utiliser des standards et solutions ouverts
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
