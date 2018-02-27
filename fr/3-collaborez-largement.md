@@ -12,7 +12,7 @@
 
 3.4 [Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser](#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
 
-**Lignes directrices connexes connexes :**
+**Lignes directrices connexes :**
 
 **\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
