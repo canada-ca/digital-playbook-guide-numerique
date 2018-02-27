@@ -1,4 +1,4 @@
-## 6.        Utiliser des standards et solutions ouverts
+# 6. Utiliser des standards et solutions ouverts
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -24,7 +24,7 @@
 
 
 
-### 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
+## 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -58,7 +58,7 @@ L'utilisation de standards ouverts et de plates-formes gouvernementales communes
 
 Les standards ouverts et les logiciels libres sont publiés publiquement, librement disponibles pour être utilisés par n'importe qui, et sont développés et maintenus en utilisant une approche collaborative.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 L'utilisation de normes ouvertes et de plateformes gouvernementales communes aidera le gouvernement:
 
@@ -77,7 +77,7 @@ L'utilisation de normes ouvertes et de plateformes gouvernementales communes aid
 
 
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -123,7 +123,7 @@ L'utilisation de normes ouvertes et de plateformes gouvernementales communes aid
 
 - identifier les plates-formes communes à utiliser   **(**   **Norme de service numérique (Ontario**   **)**   **)**
 
-#### Lois et règles à suivre   **(**   **Norme de service numérique (Ontario**   **)**   **)**
+### Lois et règles à suivre   **(**   **Norme de service numérique (Ontario**   **)**   **)**
 
 - [Directive sur les données ouvertes de l'Ontario](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/ontarios-open-data-directive)
 
@@ -135,7 +135,7 @@ L'utilisation de normes ouvertes et de plateformes gouvernementales communes aid
 
     - Open data - [Catalogue de données](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/search/data-catalogue)
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
@@ -150,7 +150,7 @@ En savoir plus sur:
 
 
 
-### 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
+## 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -178,7 +178,7 @@ En savoir plus sur:
 
 **Digital Services Playbook (US): **Les décisions technologiques que nous prenons doivent permettre aux équipes de développement de travailler efficacement et permettre aux services d'évoluer facilement et de manière rentable. Nos choix pour l' infrastructure d' hébergement , les bases de données, les langages de programmation, les langages de programmation et le reste de la pile technologique devraient éviter le verrouillage des fournisseurs et correspondre à ce que les entreprises modernes de logiciels grand public choisissent aujourd'hui. En particulier, les équipes de services numériques devraient envisager d'utiliser des solutions open source, basées sur le cloud et des produits de base dans toute la pile technologique, en raison de leur adoption généralisée et de leur soutien par les entreprises technologiques du secteur privé.   
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -192,7 +192,7 @@ En savoir plus sur:
 - [Envisager des solutions logicielles open source](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) à
     chaque couche de la pile    **(**   **Playbook de services numériques (US)**   **)**
 
-#### Questions clés   **(**   **Playbook de services numériques (US)**   **)**               
+### Questions clés   **(**   **Playbook de services numériques (US)**   **)**               
 
 - Quelle est votre pile de développement et pourquoi l'avez-vous choisie?
 
@@ -200,14 +200,14 @@ En savoir plus sur:
 
 - Combien de temps faut-il pour qu'un nouveau membre de l'équipe commence à se développer?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté
+## 6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -227,7 +227,7 @@ En savoir plus sur:
 à l'expansion de la prestation de services à des fournisseurs tiers. Ils peuvent également permettre une plus grande interopérabilité
 entre les services, optimiser les expériences entre les appareils et même mener à de nouveaux services novateurs en permettant à des produits tiers de fonctionner de façon transparente avec les systèmes du gouvernement du Canada.
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -243,7 +243,7 @@ entre les services, optimiser les expériences entre les appareils et même mene
 
 - Les API de conception sont faciles à mémoriser en implémentant une convention de nommage cohérente et précise. Utilisez un langage simple et des modèles et des concepts reconnaissables, en évitant les abréviations si possible. **(Critères de conception du produit OneGC**    **)**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
@@ -262,22 +262,22 @@ entre les services, optimiser les expériences entre les appareils et même mene
 
 
 
-### 6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
+## 6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
 
 
-### 6.5 Concevoir, créer et tester des services numériques de bout en bout
+## 6.5 Concevoir, créer et tester des services numériques de bout en bout
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -302,7 +302,7 @@ entre les services, optimiser les expériences entre les appareils et même mene
 **Norme de service numérique (Ontario) (Concevoir le service du début à
 la fin )**    **:**   Comprenez ce que les utilisateurs essaient d'accomplir et les étapes nécessaires pour accomplir cette tâche. Chaque rencontre devrait rapprocher l'utilisateur de son objectif. Lorsque cela est possible, chaque étape du voyage devrait être complétée en ligne.
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 Il est important de comprendre ce que les utilisateurs essaient de faire lorsqu'ils accèdent à un service et comment ce service s'inscrit dans le contexte plus large de leur vie.
 
@@ -320,7 +320,7 @@ Cela signifie que vous êtes plus susceptible de créer quelque chose qui foncti
 
 Assurez-vous de tester avec les navigateurs et les appareils que les utilisateurs utiliseront pour accéder au service, y compris les appareils fonctionnels. Un appareil fonctionnel est une pièce d'équipement qu'une personne handicapée utilise pour l'aider dans sa vie quotidienne (p. Ex. Un lecteur d'écran ou une aide auditive).
 
-#### Pourquoi c'est important
+### Pourquoi c'est important
 
 N'attendez pas que les utilisateurs découvrent une erreur dans le service en ligne. Surveillez le service et évitez toute indisponibilité
 dans le service. Les utilisateurs s'attendent à ce que les services numériques modernes soient en ligne 24/7.
@@ -331,7 +331,7 @@ Cela signifie des utilisateurs plus satisfaits qui ont confiance dans les servic
 
 
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -430,7 +430,7 @@ Cela signifie des utilisateurs plus satisfaits qui ont confiance dans les servic
 
 - Effectuer des tests de charge et de performance à intervalles réguliers, y compris avant le lancement public **(Digital Services Playbook (US))**
 
-#### Questions clés **(Digital Playbook Playbook (US))**                
+### Questions clés **(Digital Playbook Playbook (US))**                
 
 - Quel pourcentage de la base de code est couvert par des tests automatisés?
 
@@ -452,7 +452,7 @@ Cela signifie des utilisateurs plus satisfaits qui ont confiance dans les servic
 
 - Quelle est votre stratégie de mise à l'échelle lorsque la demande augmente soudainement?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
@@ -477,7 +477,7 @@ En savoir plus sur:
 
 
 
-### 6.6 Nuage d'abord
+## 6.6 Nuage d'abord
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
@@ -513,7 +513,7 @@ la demande des utilisateurs.    . Les services cloud publics offrent des avantag
 
 
 
-#### Liste de contrôle
+### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
@@ -531,7 +531,7 @@ la demande des utilisateurs.    . Les services cloud publics offrent des avantag
 
 - L'application est hébergée sur du matériel de base   **(**   **Playbook de services numériques (US)**   **)**
 
-#### Questions clés   **(**   **Playbook de services numériques (US)**   **)**               
+### Questions clés   **(**   **Playbook de services numériques (US)**   **)**               
 
 - Où votre service est-il hébergé?
 
@@ -559,7 +559,7 @@ la demande des utilisateurs.    . Les services cloud publics offrent des avantag
 
 - À quelle fréquence avez-vous besoin de contacter une personne de votre fournisseur d'hébergement pour obtenir des ressources ou pour résoudre un problème?
 
-#### Guides d'implémentation
+### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
