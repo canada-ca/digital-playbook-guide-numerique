@@ -1,5 +1,5 @@
 
-## 1. Design with users
+# 1. Design with users
 
 **[TODO: Add/revise introductory text]**
 
@@ -25,7 +25,7 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 1.1 Build nothing for the user, without the user being involved
+## 1.1 Build nothing for the user, without the user being involved
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -39,7 +39,7 @@
 
 Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -61,11 +61,11 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 - Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement **(OneGC product design criteria)**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements
+## 1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements
 
 **Related (temporary for** **mapping purposes; remove later):**
 
@@ -83,7 +83,7 @@ Doing ongoing user research means you can:
 
 - keep improving the service based on users' needs
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -115,7 +115,7 @@ Doing ongoing user research means you can:
 
     - document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -127,7 +127,7 @@ Find out more about:
 
 - [assisted digital support](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Digital Service Standard (UK))**
 
-### 1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs
+## 1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -159,7 +159,7 @@ You need to understand the needs of your users so that you can build a service t
 
 **Digital Service Standard (Ontario):** Start with users to define the problem. Do research to develop a deep understanding of who the users are, how they behave and what that means for the design of the service.
 
-#### Why it matters
+### Why it matters
 
 Understanding the people who use a service and what they want is critical to building a service that works for them. For example, users of a driver's license renewal service include any Ontarian with a driver's license.
 
@@ -188,7 +188,7 @@ To inform service features, interview users and gather data to develop:
 
 - user profiles - show user groups based on demographics such as gender, age, location, income and family size
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -264,7 +264,7 @@ To inform service features, interview users and gather data to develop:
 
     - demonstrate improvements to those areas and how those were tested and researched **(Digital Service Standard (Ontario))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - Who are your primary users?
 
@@ -282,7 +282,7 @@ To inform service features, interview users and gather data to develop:
 
 - How often are you testing with real people?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -298,7 +298,7 @@ Find out more about:
 
 - [assisted digital support](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Digital Service Standard (UK))**
 
-### 1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved
+## 1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -310,7 +310,7 @@ Find out more about:
 
 **Digital Services Playbook (US):** We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -322,7 +322,7 @@ Find out more about:
 
 - Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - What are the different ways (both online and offline) that people currently accomplish the task the digital service is designed to help with?
 
@@ -332,11 +332,11 @@ Find out more about:
 
 - What metrics will best indicate how well the service is working for its users?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 1.5 Provide services that can be obtained anytime, anywhere and on any device
+## 1.5 Provide services that can be obtained anytime, anywhere and on any device
 
 
 **Related (temporary for mapping purposes; remove later):**
@@ -347,15 +347,15 @@ Find out more about:
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 1.6 Make services simple, intuitive and consistent
+## 1.6 Make services simple, intuitive and consistent
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -377,7 +377,7 @@ Find out more about:
 
 **Digital Service Standard (Ontario) (Be consistent):** When the public interacts with the Ontario government, their experience should feel cohesive, positive and consistent.
 
-#### Why it matters
+### Why it matters
 
 Users should know when they are on an official government website.
 
@@ -395,7 +395,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 **Digital Service Standard (Ontario) (Ensure users succeed the first time):** Using a government service should be an intuitive and stress-free experience. Good service should be so simple that users can succeed on their very first attempt without the need for any assistance.
 
-#### Why it matters
+### Why it matters
 
 It's important to make sure service is as simple and straightforward as possible. All users, even those who have accessibility needs or lack digital experience, should be able to complete a service easily.
 
@@ -413,7 +413,7 @@ Using the same language and design patterns as the rest of GOV.UK means:
 
 - you're using patterns and style which are based on data and user research.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -501,7 +501,7 @@ Using the same language and design patterns as the rest of GOV.UK means:
 
     - make sure the headers and footers match the GOV.UK style **(Digital Service Standard (UK))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - What primary tasks are the user trying to accomplish?
 
@@ -513,7 +513,7 @@ Using the same language and design patterns as the rest of GOV.UK means:
 
 - How does the service's design visually relate to other government services?
 
-#### Laws and rules to follow **(Digital Service Standard (Ontario))**
+### Laws and rules to follow **(Digital Service Standard (Ontario))**
 
 - Accessibility - [Accessibility for Ontarians with Disabilities Act, Information and Communication Standard](https://www.ontario.ca/laws/regulation/r11191#BK9)
 
@@ -523,7 +523,7 @@ Using the same language and design patterns as the rest of GOV.UK means:
 
 - Social Media - [Ontario Public Service social media guidelines](https://www.ontario.ca/page/ontario-public-service-social-media-guidelines)
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -547,7 +547,7 @@ Find out more about:
 
 - [design](https://www.gov.uk/service-manual/design) **(Digital Service Standard (UK))**
 
-### 1.7 Make it more convenient and practical to use digital services
+## 1.7 Make it more convenient and practical to use digital services
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -581,7 +581,7 @@ Encouraging people to use digital service will:
 
 - give better support to those who can't use digital services on their own
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -627,7 +627,7 @@ Encouraging people to use digital service will:
 
     - measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation **(Digital Service Standard (Ontario))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -655,7 +655,7 @@ Find out more about:
 
 **Digital Service Standard (Ontario) (Support those who need it):** Put tools in place across all channels to support people who cannot use digital services on their own.
 
-#### Why it matters
+### Why it matters
 
 Not everyone will have the same access, comfort and skill level to use digital service by default. Understand how and where users require support, make that support available, and raise awareness of that support.
 
@@ -665,7 +665,7 @@ Users may expect that an online service is available 24 hours a day, 365 days a 
 
 You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -733,11 +733,11 @@ You need to have a plan for what to do if your service goes offline so that you 
 
     - determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
-#### Laws and rules to follow **(Digital Service Standard (Ontario))**
+### Laws and rules to follow **(Digital Service Standard (Ontario))**
 
 - [Accessibility for Ontarians with Disabilities Act, Information and Communication Standard](https://www.ontario.ca/laws/regulation/r11191#BK9)
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
