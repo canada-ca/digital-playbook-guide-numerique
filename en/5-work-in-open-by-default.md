@@ -22,7 +22,9 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence **Related (temporary for mapping purposes; remove later):**
+### 5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence
+
+**Related (temporary for mapping purposes; remove later):**
 
 - Release data by default (Build it Digital Principles (initial thoughts))
 
