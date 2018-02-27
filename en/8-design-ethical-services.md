@@ -18,7 +18,6 @@
 
 ## 8.1 Be transparent about personal and organizational biases and indicate how they are being addressed
 
-
 **[TODO: Add/revise introductory text]**
 
 ### Checklist
@@ -56,7 +55,6 @@
 - **[TODO: Add/revise implementation guide items]**
 
 ## 8.4 Balance trade-offs between innovation and inclusiveness
-
 
 **[TODO: Add/revise introductory text]**
 

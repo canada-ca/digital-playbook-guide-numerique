@@ -89,31 +89,31 @@ Doing ongoing user research means you can:
 
 - Alpha stage
 
-    - determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
+  - determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
 
-    - pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
+  - pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
 
-    - carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
+  - carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
-    - develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
+  - develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
 - Beta and live stages
 
-    - pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
+  - pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
 
-    - carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
+  - carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
-    - develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
+  - develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
-    - do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**
+  - do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**
 
-    - test with users who need assisted digital support **(Digital Service Standard (UK))**
+  - test with users who need assisted digital support **(Digital Service Standard (UK))**
 
-    - use analytics data in your user research plan for the service **(Digital Service Standard (UK))**
+  - use analytics data in your user research plan for the service **(Digital Service Standard (UK))**
 
-    - document any problems you've found through testing and how you solved them **(Digital Service Standard (UK))**
+  - document any problems you've found through testing and how you solved them **(Digital Service Standard (UK))**
 
-    - document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
+  - document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
 
 ### Implementation guides
 
@@ -200,69 +200,65 @@ To inform service features, interview users and gather data to develop:
 
 - Alpha stage
 
-    - spend time with current and prospective users of the service **(Digital Services Playbook (US))**
+  - spend time with current and prospective users of the service **(Digital Services Playbook (US))**
 
-    - document the user needs you've found for your service in discovery and how you found those needs, including any needs for assisted digital users **(Digital Service Standard (UK)) /** list a complete set of users and their needs **(Digital Service Standard (Ontario)) /** Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors; be thoughtful about the time spent **(Digital Services Playbook (US)) /** Document the findings about user goals, needs, behaviors, and preferences **(Digital Services Playbook (US))**
+  - document the user needs you've found for your service in discovery and how you found those needs, including any needs for assisted digital users **(Digital Service Standard (UK)) /** list a complete set of users and their needs **(Digital Service Standard (Ontario)) /** Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors; be thoughtful about the time spent **(Digital Services Playbook (US)) /** Document the findings about user goals, needs, behaviors, and preferences **(Digital Services Playbook (US))**
 
-    - write user stories for your service - including for users who need assisted digital support **(Digital Service Standard (UK)) /** document user stories, personas and profiles for the service **(Digital Service Standard (Ontario)) /** Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
+  - write user stories for your service - including for users who need assisted digital support **(Digital Service Standard (UK)) /** document user stories, personas and profiles for the service **(Digital Service Standard (Ontario)) /** Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
 
-    - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
+  - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
 
-    - identify any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
+  - identify any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
 
-    - show what groups contributed and what groups did not **(Digital Service Standard (Ontario))**
+  - show what groups contributed and what groups did not **(Digital Service Standard (Ontario))**
 
-    - address any gaps when testing during the beta stage **(Digital Service Standard (Ontario))**
+  - address any gaps when testing during the beta stage **(Digital Service Standard (Ontario))**
 
 - Beta stage
 
-    - document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK)) /** test the service with real users, and be able to explain **(Digital Service Standard (Ontario))**:
+  - document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK)) /** test the service with real users, and be able to explain **(Digital Service Standard (Ontario))**:
 
-        - number of test participants and their basic demographic characteristics
+    - number of test participants and their basic demographic characteristics
 
-        - how many users involved in testing had accessibility challenges or needed assisted digital support
+    - how many users involved in testing had accessibility challenges or needed assisted digital support
 
-        - how they were recruited
+    - how they were recruited
 
-        - how analytics were used in research
+    - how analytics were used in research
 
-        - any new insights and lessons
+    - any new insights and lessons
 
-    - document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
+  - document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
 
+  - document any changes to user needs you've identified as a result of researching with users **(Digital Service Standard (UK)) /** document any changes identified as a result of researching with users **(Digital Service Standard (Ontario))**
 
+  - identify the users of your service whose needs are most difficult to meet, and how you've been learning about those needs **(Digital Service Standard (UK)) /** identify user needs that are most difficult to meet **(Digital Service Standard (Ontario))**
 
-    - document any changes to user needs you've identified as a result of researching with users **(Digital Service Standard (UK)) /** document any changes identified as a result of researching with users **(Digital Service Standard (Ontario))**
+  - document the design challenges your users' needs pose for your service **(Digital Service Standard (UK)) /** document the design challenges users' needs pose for the service **(Digital Service Standard (Ontario))**
 
-    - identify the users of your service whose needs are most difficult to meet, and how you've been learning about those needs **(Digital Service Standard (UK)) /** identify user needs that are most difficult to meet **(Digital Service Standard (Ontario))**
+  - research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-    - document the design challenges your users' needs pose for your service **(Digital Service Standard (UK)) /** document the design challenges users' needs pose for the service **(Digital Service Standard (Ontario))**
+  - document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
 
+  - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
 
+  - document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
 
-    - research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
+  - document the research you did to understand whether your support model meets user needs and how that research informed iteration and testing **(Digital Service Standard (UK))**
 
-    - document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
-
-    - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
-
-    - document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
-
-    - document the research you did to understand whether your support model meets user needs and how that research informed iteration and testing **(Digital Service Standard (UK))**
-
-    - document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
+  - document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
 
 - Live stage
 
-    - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the task that users find difficult **(Digital Service Standard (Ontario))**
+  - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the task that users find difficult **(Digital Service Standard (Ontario))**
 
-    - use the results of the research done in the public beta to continuously improve your service **(Digital Service Standard (UK)) /** use research results to continuously improve the service (e.g. participants, frequency, location, timing) **(Digital Service Standard (Ontario))**
+  - use the results of the research done in the public beta to continuously improve your service **(Digital Service Standard (UK)) /** use research results to continuously improve the service (e.g. participants, frequency, location, timing) **(Digital Service Standard (Ontario))**
 
-    - document the user stories for your service - ie identify someone who needs to use the service and what they use it for - include assisted digital users **(Digital Service Standard (UK))**
+  - document the user stories for your service - ie identify someone who needs to use the service and what they use it for - include assisted digital users **(Digital Service Standard (UK))**
 
-    - document the user needs you've found for your service, including for users who need assisted digital support **(Digital Service Standard (UK))**
+  - document the user needs you've found for your service, including for users who need assisted digital support **(Digital Service Standard (UK))**
 
-    - demonstrate improvements to those areas and how those were tested and researched **(Digital Service Standard (Ontario))**
+  - demonstrate improvements to those areas and how those were tested and researched **(Digital Service Standard (Ontario))**
 
 ### Key Questions **(Digital Services Playbook (US))**
 
@@ -337,7 +333,6 @@ Find out more about:
 - **[TODO: Add/revise implementation guide items]**
 
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
-
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -437,8 +432,6 @@ Using the same language and design patterns as the rest of GOV.UK means:
 
 - demonstrate that the service is responsive, with the same content and functionality on all devices, and works on mobile devices **(Digital Service Standard (Ontario))**
 
-
-
 - make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK)) /** make sure people can get through the service from start to finish without assistance **(Digital Service Standard (Ontario))**
 
 - test your assisted digital support model (the way you plan to help people who lack the skills, confidence or internet access to complete the service on their own) **(Digital Service Standard (UK))**
@@ -455,51 +448,45 @@ Using the same language and design patterns as the rest of GOV.UK means:
 
 - Alpha, beta and live stages:
 
-    - document your service and what it does **(Digital Service Standard (UK)) /** explain the service including who it is for, how it works and how to use it **(Digital Service Standard (Ontario))**
+  - document your service and what it does **(Digital Service Standard (UK)) /** explain the service including who it is for, how it works and how to use it **(Digital Service Standard (Ontario))**
 
-    - ensure the majority of users of your service are succeeding the first time they try to use it **(Digital Service Standard (UK)) /** show that the majority of users are succeeding the first time they try to use it **(Digital Service Standard (Ontario))**
+  - ensure the majority of users of your service are succeeding the first time they try to use it **(Digital Service Standard (UK)) /** show that the majority of users are succeeding the first time they try to use it **(Digital Service Standard (Ontario))**
 
-    - use research, testing and analytics to make substantial iterations to your service, including the assisted digital support model **(Digital Service Standard (UK))**
+  - use research, testing and analytics to make substantial iterations to your service, including the assisted digital support model **(Digital Service Standard (UK))**
 
-    - document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK)) /** demonstrate that all end-to-end user experiences work and test them, including for people who need help accessing digital tools **(Digital Service Standard (Ontario))**
+  - document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK)) /** demonstrate that all end-to-end user experiences work and test them, including for people who need help accessing digital tools **(Digital Service Standard (Ontario))**
 
-    - document the design options you considered for your assisted digital support **(Digital Service Standard (UK))**
+  - document the design options you considered for your assisted digital support **(Digital Service Standard (UK))**
 
-    - design your assisted digital support model to meet user needs and provide it through multiple channels such as by telephone, face-to-face, talk through and on-behalf-of **(Digital Service Standard (UK))**
+  - design your assisted digital support model to meet user needs and provide it through multiple channels such as by telephone, face-to-face, talk through and on-behalf-of **(Digital Service Standard (UK))**
 
-    - document how your assisted digital support will be sustainably funded and free to users **(Digital Service Standard (UK))**
-
-
+  - document how your assisted digital support will be sustainably funded and free to users **(Digital Service Standard (UK))**
 
 - Alpha stage
 
-    - make sure your team has included designers, content designers and frontend developers **(Digital Service Standard (UK))**
+  - make sure your team has included designers, content designers and frontend developers **(Digital Service Standard (UK))**
 
-    - make sure you've got a start and end page on GOV.UK and that both are optimised for users **(Digital Service Standard (UK))**
+  - make sure you've got a start and end page on GOV.UK and that both are optimised for users **(Digital Service Standard (UK))**
 
-    - make sure the service has used the GOV.UK design patterns, frontend toolkit and elements **(Digital Service Standard (UK))**
-
-
+  - make sure the service has used the GOV.UK design patterns, frontend toolkit and elements **(Digital Service Standard (UK))**
 
 - Beta and live stages:
 
-    - ensure your service is accessible **(Digital Service Standard (UK)) /** make the service accessible, including for users with lower levels of digital skills **(Digital Service Standard (Ontario))**
+  - ensure your service is accessible **(Digital Service Standard (UK)) /** make the service accessible, including for users with lower levels of digital skills **(Digital Service Standard (Ontario))**
 
-    - do usability testing, including with users with the lowest level of digital skills **(Digital Service Standard (UK)) /** do usability testing at least once before and after the service goes live and make improvements accordingly **(Digital Service Standard (Ontario))**
+  - do usability testing, including with users with the lowest level of digital skills **(Digital Service Standard (UK)) /** do usability testing at least once before and after the service goes live and make improvements accordingly **(Digital Service Standard (Ontario))**
 
-    - test your assisted digital support model **(Digital Service Standard (UK))**
+  - test your assisted digital support model **(Digital Service Standard (UK))**
 
-    - make design and content decisions based on user research, usability testing and analytics **(Digital Service Standard (UK)) /** make design and content decisions based on research, testing and analytics **(Digital Service Standard (Ontario))**
+  - make design and content decisions based on user research, usability testing and analytics **(Digital Service Standard (UK)) /** make design and content decisions based on research, testing and analytics **(Digital Service Standard (Ontario))**
 
-    - document how many rounds of usability testing you've done, the users you included, the tasks you set, and the materials you gave them to complete the task **(Digital Service Standard (UK)) /** explain the frequency you will use research, testing and analytics to make regular improvements to the service **(Digital Service Standard (Ontario))**
+  - document how many rounds of usability testing you've done, the users you included, the tasks you set, and the materials you gave them to complete the task **(Digital Service Standard (UK)) /** explain the frequency you will use research, testing and analytics to make regular improvements to the service **(Digital Service Standard (Ontario))**
 
-    - change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK)) /** do usability testing at least once before and after the service goes live and make improvements accordingly **(Digital Service Standard (Ontario))**
+  - change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK)) /** do usability testing at least once before and after the service goes live and make improvements accordingly **(Digital Service Standard (Ontario))**
 
+  - make sure the service is responsive and works on mobile devices **(Digital Service Standard (UK))**
 
-
-    - make sure the service is responsive and works on mobile devices **(Digital Service Standard (UK))**
-
-    - make sure the headers and footers match the GOV.UK style **(Digital Service Standard (UK))**
+  - make sure the headers and footers match the GOV.UK style **(Digital Service Standard (UK))**
 
 ### Key Questions **(Digital Services Playbook (US))**
 
@@ -587,45 +574,45 @@ Encouraging people to use digital service will:
 
 - Alpha stage:
 
-    - plan for increasing digital take-up **(Digital Service Standard (UK)) /** plan to increase how many people use the digital service **(Digital Service Standard (Ontario))**
+  - plan for increasing digital take-up **(Digital Service Standard (UK)) /** plan to increase how many people use the digital service **(Digital Service Standard (Ontario))**
 
-    - identify the other channels your service is delivered through **(Digital Service Standard (UK)) /** understand other channels that the service is delivered through **(Digital Service Standard (Ontario))**
+  - identify the other channels your service is delivered through **(Digital Service Standard (UK)) /** understand other channels that the service is delivered through **(Digital Service Standard (Ontario))**
 
-    - collect data on your other channels **(Digital Service Standard (UK)) /** describe the data collected on other channels and how usage data is collected for each **(Digital Service Standard (Ontario))**
+  - collect data on your other channels **(Digital Service Standard (UK)) /** describe the data collected on other channels and how usage data is collected for each **(Digital Service Standard (Ontario))**
 
-    - collect data on service usage for each channel **(Digital Service Standard (UK))**
+  - collect data on service usage for each channel **(Digital Service Standard (UK))**
 
-    - identify the organisations and groups that help your user with the existing digital or non-digital services **(Digital Service Standard (UK)) /** identify organizations and groups that help users with existing digital or non-digital services **(Digital Service Standard (Ontario))**
+  - identify the organisations and groups that help your user with the existing digital or non-digital services **(Digital Service Standard (UK)) /** identify organizations and groups that help users with existing digital or non-digital services **(Digital Service Standard (Ontario))**
 
-    - document insights from research with real users, user demographics, attitudes, behaviours and channel preferences, and user journey maps **(Digital Service Standard (UK)) /** gather insights from research with users, including demographics, attitudes, behaviours and channel preferences, and user journey maps footnote 3 \[3\] **(Digital Service Standard (Ontario))**
+  - document insights from research with real users, user demographics, attitudes, behaviours and channel preferences, and user journey maps **(Digital Service Standard (UK)) /** gather insights from research with users, including demographics, attitudes, behaviours and channel preferences, and user journey maps footnote 3 \[3\] **(Digital Service Standard (Ontario))**
 
-    - identify how each channel meets different users' needs **(Digital Service Standard (UK)) /** understand how each channel meets different users' needs **(Digital Service Standard (Ontario))**
+  - identify how each channel meets different users' needs **(Digital Service Standard (UK)) /** understand how each channel meets different users' needs **(Digital Service Standard (Ontario))**
 
-    - design the digital service in a way that gives it clear advantages over other channels **(Digital Service Standard (UK)) /** design the digital service in a way that gives it clear advantages over other channels **(Digital Service Standard (Ontario))**
+  - design the digital service in a way that gives it clear advantages over other channels **(Digital Service Standard (UK)) /** design the digital service in a way that gives it clear advantages over other channels **(Digital Service Standard (Ontario))**
 
 - Beta stage
 
-    - plan for increasing digital take-up **(Digital Service Standard (UK)) /** plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (Ontario))**
+  - plan for increasing digital take-up **(Digital Service Standard (UK)) /** plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (Ontario))**
 
-    - collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
+  - collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
 
-    - improve the way you communicate with users based on user insight **(Digital Service Standard (UK)) /** improve communications with users based on user insights **(Digital Service Standard (Ontario))**
+  - improve the way you communicate with users based on user insight **(Digital Service Standard (UK)) /** improve communications with users based on user insights **(Digital Service Standard (Ontario))**
 
-    - collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))** / discuss analytics data about how communication is performing **(Digital Service Standard (Ontario))**
+  - collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))** / discuss analytics data about how communication is performing **(Digital Service Standard (Ontario))**
 
-    - plan to promote digital take-up **(Digital Service Standard (UK))**
+  - plan to promote digital take-up **(Digital Service Standard (UK))**
 
 - Live stage
 
-    - plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK)) /** plan to move and increase users to the digital service and include yearly targets for 5 years **(Digital Service Standard (Ontario))**
+  - plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK)) /** plan to move and increase users to the digital service and include yearly targets for 5 years **(Digital Service Standard (Ontario))**
 
-    - plan to phase out non-digital channels as digital take-up increases in the next 5 years **(Digital Service Standard (UK))**
+  - plan to phase out non-digital channels as digital take-up increases in the next 5 years **(Digital Service Standard (UK))**
 
-    - plan for increasing digital take-up and phasing out non-digital channels **(Digital Service Standard (UK))**
+  - plan for increasing digital take-up and phasing out non-digital channels **(Digital Service Standard (UK))**
 
-    - measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
+  - measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
 
-    - measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation **(Digital Service Standard (Ontario))**
+  - measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation **(Digital Service Standard (Ontario))**
 
 ### Implementation guides
 
@@ -673,65 +660,63 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 - Do user research as early as possible to: **(Digital Service Standard (Ontario))**
 
-    - understand users' digital skill, confidence and access **(Digital Service Standard (Ontario))**
+  - understand users' digital skill, confidence and access **(Digital Service Standard (Ontario))**
 
-    - find out why some users can't use the digital service independently, for example language or internet barriers **(Digital Service Standard (Ontario))**
+  - find out why some users can't use the digital service independently, for example language or internet barriers **(Digital Service Standard (Ontario))**
 
-    - find out user needs for support **(Digital Service Standard (Ontario))**
+  - find out user needs for support **(Digital Service Standard (Ontario))**
 
 - In later stages of development, make sure assisted digital support is: **(Digital Service Standard (Ontario))**
 
-    - Sustainable
+  - Sustainable
 
-    - well understood and documented
+  - well understood and documented
 
-    - supported by appropriate recruitment and research methods
+  - supported by appropriate recruitment and research methods
 
-    - selected and explained through stories, personas and profiles of people who need it
+  - selected and explained through stories, personas and profiles of people who need it
 
 - Conduct research with users who: **(Digital Service Standard (Ontario))**
 
-    - already use the service or would use it
+  - already use the service or would use it
 
-    - have the lowest level of digital skills, confidence and access
+  - have the lowest level of digital skills, confidence and access
 
-    - currently seek assisted digital support from others (like friends and family, colleagues, companies or charities)
+  - currently seek assisted digital support from others (like friends and family, colleagues, companies or charities)
 
 - Respond to user research by: **(Digital Service Standard (Ontario))**
 
-    - learning from it and supporting testing to improve assisted digital support
+  - learning from it and supporting testing to improve assisted digital support
 
-    - committing one person to do ongoing user research into assisted digital support needs
-
-
+  - committing one person to do ongoing user research into assisted digital support needs
 
 - Alpha stage
 
-    - document how users would be affected if your service was unavailable for any length of time. **(Digital Service Standard (UK))**
+  - document how users would be affected if your service was unavailable for any length of time. **(Digital Service Standard (UK))**
 
 - Beta stage
 
-    - document how users of the beta service would be affected if the service was unavailable for any length of time **(Digital Service Standard (UK))**
+  - document how users of the beta service would be affected if the service was unavailable for any length of time **(Digital Service Standard (UK))**
 
-    - document how you're selecting technology and platforms that meet your availability requirements **(Digital Service Standard (UK))**
+  - document how you're selecting technology and platforms that meet your availability requirements **(Digital Service Standard (UK))**
 
-    - document your data recovery strategy and how you've tested it **(Digital Service Standard (UK))**
+  - document your data recovery strategy and how you've tested it **(Digital Service Standard (UK))**
 
-    - determine the most likely causes for the service going offline and how you plan to stop them from happening **(Digital Service Standard (UK))**
+  - determine the most likely causes for the service going offline and how you plan to stop them from happening **(Digital Service Standard (UK))**
 
-    - determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
+  - determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 - Live stage
 
-    - document how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
+  - document how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
 
-    - document how you're making sure the technology and platforms you've selected still meet your availability requirements **(Digital Service Standard (UK))**
+  - document how you're making sure the technology and platforms you've selected still meet your availability requirements **(Digital Service Standard (UK))**
 
-    - document your data recovery strategy and how often you're testing it **(Digital Service Standard (UK))**
+  - document your data recovery strategy and how often you're testing it **(Digital Service Standard (UK))**
 
-    - determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
+  - determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
 
-    - determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
+  - determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 ### Laws and rules to follow **(Digital Service Standard (Ontario))**
 

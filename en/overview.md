@@ -27,7 +27,7 @@ The Government of Canada Digital Playbook provides practical and measurable guid
 **Digital Principles:**
 
 1. [Design with users](1-design-with-users.md)
-1. [Build in accessibility from the start](2-build-in-accessibility-from-start.md	)
+1. [Build in accessibility from the start](2-build-in-accessibility-from-start.md)
 1. [Collaborate widely](3-collaborate-widely.md)
 1. [Empower staff to deliver better services](4-empower-staff-deliver-better-services.md)
 1. [Work in the open by default](5-work-in-open-by-default.md)

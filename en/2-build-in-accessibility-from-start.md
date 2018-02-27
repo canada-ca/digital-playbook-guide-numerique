@@ -1,6 +1,5 @@
 # 2. Build in accessibility from the start
 
-
 **[TODO: Add/revise introductory text]**
 
 **Guidelines:**
@@ -109,11 +108,11 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - [Accessibility for Ontarians with Disabilities Act](https://www.ontario.ca/laws/statute/05a11)
 
-    - [Integrated Accessibility Standards Regulation](https://www.ontario.ca/laws/regulation/110191)
+  - [Integrated Accessibility Standards Regulation](https://www.ontario.ca/laws/regulation/110191)
 
-    - [Information and Communications Standards](https://www.ontario.ca/laws/regulation/110191#BK8)
+  - [Information and Communications Standards](https://www.ontario.ca/laws/regulation/110191#BK8)
 
-    - [Customer Service Standards](https://www.ontario.ca/laws/regulation/110191#BK148)
+  - [Customer Service Standards](https://www.ontario.ca/laws/regulation/110191#BK148)
 
 - [Ontario Human Rights Code](https://www.ontario.ca/laws/statute/90h19)
 

@@ -76,37 +76,37 @@ Using open standards and common government platforms will help the government:
 
 - Alpha stage:
 
-    - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
+  - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
 
-    - use common platforms for your system, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
+  - use common platforms for your system, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
 
-    - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
+  - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 
 - Beta stage:
 
-    - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
+  - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
 
-    - manage what the service outputs to users is and in what format **(Digital Service Standard (UK)) /** show what the service provides to users and in what format (for example, a driver's licence) **(Digital Service Standard (Ontario))**
+  - manage what the service outputs to users is and in what format **(Digital Service Standard (UK)) /** show what the service provides to users and in what format (for example, a driver's licence) **(Digital Service Standard (Ontario))**
 
-    - manage common data you hold and your commitment to publishing it **(Digital Service Standard (UK)) /** explain what data is used and/or collected and when it will be published as part of the Open Data Directive **(Digital Service Standard (Ontario))**
+  - manage common data you hold and your commitment to publishing it **(Digital Service Standard (UK)) /** explain what data is used and/or collected and when it will be published as part of the Open Data Directive **(Digital Service Standard (Ontario))**
 
-    - use common government platforms, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
+  - use common government platforms, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
 
-    - integrate with any legacy systems **(Digital Service Standard (UK)) /** integrate with any legacy systems **(Digital Service Standard (Ontario))**
+  - integrate with any legacy systems **(Digital Service Standard (UK)) /** integrate with any legacy systems **(Digital Service Standard (Ontario))**
 
-    - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
+  - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 
 - Live stage:
 
-    - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
+  - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
 
-    - use common government platforms, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
+  - use common government platforms, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
 
-    - integrate with any external systems **(Digital Service Standard (UK)) /** integrate with any legacy systems **(Digital Service Standard (Ontario))**
+  - integrate with any external systems **(Digital Service Standard (UK)) /** integrate with any legacy systems **(Digital Service Standard (Ontario))**
 
-    - manage the common data you hold and meet your open data responsibility **(Digital Service Standard (UK)) /** explain what data is used and/or collected and when it will be published as part of the Open Data Directive **(Digital Service Standard (Ontario))**
+  - manage the common data you hold and meet your open data responsibility **(Digital Service Standard (UK)) /** explain what data is used and/or collected and when it will be published as part of the Open Data Directive **(Digital Service Standard (Ontario))**
 
-    - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
+  - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 
 - favour open tools that are accessible and have a strong developer community supporting them **(Digital Service Standard (Ontario))**
 
@@ -118,11 +118,11 @@ Using open standards and common government platforms will help the government:
 
 - Standard platforms
 
-    - Web publishing - [Ontario.ca](http://www.ontario.ca/)
+  - Web publishing - [Ontario.ca](http://www.ontario.ca/)
 
-    - News - [Ontario Newsroom](https://www.ontario.ca/news)
+  - News - [Ontario Newsroom](https://www.ontario.ca/news)
 
-    - Open data - [Data catalogue](https://www.ontario.ca/search/data-catalogue)
+  - Open data - [Data catalogue](https://www.ontario.ca/search/data-catalogue)
 
 ### Implementation guides
 
@@ -306,13 +306,11 @@ This means more satisfied users that have trust in government services.
 
 - Design the digital service in a way that gives it clear advantages over other channels **(OneGC product design criteria)**
 
-    - use data to understand other channels that the service is delivered through **(OneGC product design criteria)** / examine other channels to understand the steps users take to complete their goal and how your service fits **(Digital Service Standard (Ontario))**
+  - use data to understand other channels that the service is delivered through **(OneGC product design criteria)** / examine other channels to understand the steps users take to complete their goal and how your service fits **(Digital Service Standard (Ontario))**
 
-    - identify organizations and groups that help users with existing digital or non-digital services **(OneGC product design criteria)**
+  - identify organizations and groups that help users with existing digital or non-digital services **(OneGC product design criteria)**
 
-    - show a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(OneGC product design criteria)** / show a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(Digital Service Standard (Ontario))**
-
-
+  - show a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(OneGC product design criteria)** / show a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(Digital Service Standard (Ontario))**
 
 - Use familiar language and simple design consistently throughout the service, including online and offline touch points, by ensuring consistent design across related digital services **(OneGC product design criteria)**
 
