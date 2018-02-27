@@ -150,7 +150,7 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
     œuvre\]**
 
-### 2.4     Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
+### 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
