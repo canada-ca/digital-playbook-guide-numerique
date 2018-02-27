@@ -22,7 +22,6 @@
 
 ## 4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network
 
-
 **[TODO: Add/revise introductory text]**
 
 ### Checklist
@@ -61,39 +60,39 @@ Evaluating the tools and systems you use to build your service helps you to:
 
 - Alpha stage
 
-    - document the languages, frameworks and other technical choices you've made in alpha, and how this will affect the decisions you make in beta **(Digital Service Standard (UK))**
+  - document the languages, frameworks and other technical choices you've made in alpha, and how this will affect the decisions you make in beta **(Digital Service Standard (UK))**
 
-    - document the set of programming tools you'd like to choose for beta and why **(Digital Service Standard (UK))**
+  - document the set of programming tools you'd like to choose for beta and why **(Digital Service Standard (UK))**
 
-    - document how you'll get value for money when buying any tools **(Digital Service Standard (UK))**
+  - document how you'll get value for money when buying any tools **(Digital Service Standard (UK))**
 
-    - document how you'll monitor the status of your service **(Digital Service Standard (UK))**
+  - document how you'll monitor the status of your service **(Digital Service Standard (UK))**
 
 - Beta stage
 
-    - document how you're managing the limits placed on your service by the technology stack and development toolchain you've chosen **(Digital Service Standard (UK))**
+  - document how you're managing the limits placed on your service by the technology stack and development toolchain you've chosen **(Digital Service Standard (UK))**
 
-    - document what you've bought and how you're getting value for money **(Digital Service Standard (UK))**
+  - document what you've bought and how you're getting value for money **(Digital Service Standard (UK))**
 
-    - document how you'll monitor the status of your service **(Digital Service Standard (UK))**
+  - document how you'll monitor the status of your service **(Digital Service Standard (UK))**
 
-    - document the support arrangements you have in place, in normal hours and out of hours **(Digital Service Standard (UK))**
+  - document the support arrangements you have in place, in normal hours and out of hours **(Digital Service Standard (UK))**
 
-    - document any decisions you've outsourced to third parties and why you chose to do this **(Digital Service Standard (UK))**
+  - document any decisions you've outsourced to third parties and why you chose to do this **(Digital Service Standard (UK))**
 
 - Live stage
 
-    - document the tech stack changes you made during beta and why **(Digital Service Standard (UK))**
+  - document the tech stack changes you made during beta and why **(Digital Service Standard (UK))**
 
-    - document the development toolchain changes you've made during beta and why **(Digital Service Standard (UK))**
+  - document the development toolchain changes you've made during beta and why **(Digital Service Standard (UK))**
 
-    - document how you're continuing to get value for money from the systems you chose and bought at beta **(Digital Service Standard (UK))**
+  - document how you're continuing to get value for money from the systems you chose and bought at beta **(Digital Service Standard (UK))**
 
-    - document how you'll check if the service is healthy **(Digital Service Standard (UK))**
+  - document how you'll check if the service is healthy **(Digital Service Standard (UK))**
 
-    - document the support arrangements that you've set up for live **(Digital Service Standard (UK))**
+  - document the support arrangements that you've set up for live **(Digital Service Standard (UK))**
 
-    - document any decisions you've outsourced and why you chose to do this **(Digital Service Standard (UK))**
+  - document any decisions you've outsourced and why you chose to do this **(Digital Service Standard (UK))**
 
 ### Implementation guides
 
@@ -209,21 +208,21 @@ Find out more about:
 
 - The product owner has a work plan that includes budget estimates and identifies funding sources **(Digital Services Playbook (US))**
 
-    - The product owner has a strong relationship with the contracting officer
+  - The product owner has a strong relationship with the contracting officer
 
 - Put in place a sustainable multidisciplinary team that can design, build and operate the service:
 
-    - Includes expertise in agile digital service delivery and possesses technical, user experience and policy skills **(OneGC product design criteria)**
+  - Includes expertise in agile digital service delivery and possesses technical, user experience and policy skills **(OneGC product design criteria)**
 
-    - Embeds expertise from other business areas and departments (e.g., finance, legal, policy, communications) **(OneGC product design criteria)**
+  - Embeds expertise from other business areas and departments (e.g., finance, legal, policy, communications) **(OneGC product design criteria)**
 
-    - Develops a plan and capabilities to track concurrent users in real-time, and monitor user behaviors in the aggregate to determine how well the service meets user needs **(OneGC product design criteria)**
+  - Develops a plan and capabilities to track concurrent users in real-time, and monitor user behaviors in the aggregate to determine how well the service meets user needs **(OneGC product design criteria)**
 
-    - Identifies data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service **(OneGC product design criteria)**
+  - Identifies data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service **(OneGC product design criteria)**
 
-    - Develops an ongoing roadmap for performance analysis and designate responsibility for identifying actionable data insights **(OneGC product design criteria)**
+  - Develops an ongoing roadmap for performance analysis and designate responsibility for identifying actionable data insights **(OneGC product design criteria)**
 
-    - Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility **(OneGC product design criteria)**
+  - Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility **(OneGC product design criteria)**
 
 ### Key Questions **(Digital Services Playbook (US))**
 
@@ -304,14 +303,14 @@ To be successful, build a team with:
 
 - Alpha, beta and live stages:
 
-    - employ people in the following roles on the delivery team:
+  - employ people in the following roles on the delivery team:
         service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, front-end developer **(Digital Service Standard (UK))**
 
-    - make sure you have a service owner with the knowledge and power to make day-to-day decisions to improve the service **(Digital Service Standard (UK)) /** have a manager with the ability to make day-to-day decisions to improve the service **(Digital Service Standard (Ontario))**
+  - make sure you have a service owner with the knowledge and power to make day-to-day decisions to improve the service **(Digital Service Standard (UK)) /** have a manager with the ability to make day-to-day decisions to improve the service **(Digital Service Standard (Ontario))**
 
-    - make sure you have at least one user researcher working at least 3 days each week / dedicate one user researcher on the project for at least 3 days each week **(Digital Service Standard (Ontario))**
+  - make sure you have at least one user researcher working at least 3 days each week / dedicate one user researcher on the project for at least 3 days each week **(Digital Service Standard (Ontario))**
 
-    - make sure there is separation of key roles in the team, meaning that nobody is performing multiple roles **(Digital Service Standard (UK))**
+  - make sure there is separation of key roles in the team, meaning that nobody is performing multiple roles **(Digital Service Standard (UK))**
 
 - understand where gaps may emerge in the team and how to fill them **(Digital Service Standard (UK)) /** identify gaps in the team and fill them **(Digital Service Standard (Ontario))**
 
