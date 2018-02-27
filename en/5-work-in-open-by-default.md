@@ -1,6 +1,6 @@
 ## 5. Work in the open by default
 
-[**[TODO: Add/revise introductory text]**]
+**[TODO: Add/revise introductory text]**
 
 **Guidelines:**
 
