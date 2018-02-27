@@ -1,4 +1,4 @@
-## 5. Work in the open by default
+# 5. Work in the open by default
 
 **[TODO: Add/revise introductory text]**
 
@@ -22,7 +22,7 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence
+## 5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -30,7 +30,7 @@
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -44,23 +44,23 @@
 
 - Ensure that we maintain the rights to all data developed by third parties in a manner that is releasable and reusable at no cost to the public **(Digital Services Playbook (US))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 5.2 Be transparent with goals and publish real-time performance data
+## 5.2 Be transparent with goals and publish real-time performance data
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 5.3 Measure and monitor the effectiveness, value, and consequences of your service and report publicly
+## 5.3 Measure and monitor the effectiveness, value, and consequences of your service and report publicly
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -78,7 +78,7 @@ Setting performance indicators allows you to continuously improve your service b
 
 - using data to support improvements you make
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -108,7 +108,7 @@ Setting performance indicators allows you to continuously improve your service b
 
     - track people moving from using the offline service to the online one **(Digital Service Standard (UK))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -126,21 +126,21 @@ Find out more about:
 
 - [service assessments](https://www.gov.uk/service-manual/service-assessments) **(Digital Service Standard (UK))**
 
-### 5.4 Be transparent about how you work and justify the decisions you make
+## 5.4 Be transparent about how you work and justify the decisions you make
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
 - When appropriate, share your development process and progress publicly **(Digital Services Playbook (US))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 5.5 Open by default (OneGC product design criteria) / Open By Default, Proprietary by Necessity (Current GC EARB Principles) / Default to open (Digital Services Playbook (US))
+## 5.5 Open by default (OneGC product design criteria) / Open By Default, Proprietary by Necessity (Current GC EARB Principles) / Default to open (Digital Services Playbook (US))
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -162,7 +162,7 @@ All solutions must use open standards to ensure interoperability across the OneG
 
 **Digital Services Playbook (US):** When we collaborate in the open and publish our data publicly, we can improve Government together. By building services more openly and publishing open data, we simplify the public's access to government services and information, allow the public to contribute easily, and enable reuse by entrepreneurs, nonprofits, other agencies, and the public.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -176,7 +176,7 @@ All solutions must use open standards to ensure interoperability across the OneG
 
 - When appropriate, create an API for third parties and internal users to interact with the service directly **(Digital Services Playbook (US))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - How are you collecting user feedback for bugs and issues?
 
@@ -189,11 +189,11 @@ All solutions must use open standards to ensure interoperability across the OneG
 
 - What datasets are made available to the public?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 5.6 Make all new source code open (Digital Service Standard (UK))
+## 5.6 Make all new source code open (Digital Service Standard (UK))
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -213,7 +213,7 @@ Making your source code open means:
 
 - you avoid starting technology contracts that you can't end easily
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -255,7 +255,7 @@ Making your source code open means:
 
     - determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
