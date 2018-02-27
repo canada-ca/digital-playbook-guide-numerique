@@ -1,4 +1,4 @@
-## 9. Address security and privacy risks
+# 9. Address security and privacy risks
 
 **[TODO: Add/revise introductory text]**
 
@@ -16,7 +16,7 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 9.1 Take a balanced approach to managing risk by implementing appropriate privacy and security measures
+## 9.1 Take a balanced approach to managing risk by implementing appropriate privacy and security measures
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -24,17 +24,17 @@
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
 - Allow for secure sharing of information and data **(OneGC product design criteria)**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected
+## 9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -50,7 +50,7 @@
 
 **Digital Service Standard (Ontario):** Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
 
-#### Why it matters
+### Why it matters
 
 Users won't use a service unless they have a guarantee:
 
@@ -62,7 +62,7 @@ Users won't use a service unless they have a guarantee:
 
 - that their privacy is protected while they use the service, and afterwards
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -114,7 +114,7 @@ Users won't use a service unless they have a guarantee:
 
     - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
 
-#### Laws and rules to follow **(Digital Service Standard (Ontario))**
+### Laws and rules to follow **(Digital Service Standard (Ontario))**
 
 - [Freedom of Information and Protection of Privacy Act](https://www.ontario.ca/laws/statute/90f31)
 
@@ -126,11 +126,11 @@ Users won't use a service unless they have a guarantee:
 
 - [Canada's Anti-Spam Legislation](http://fightspam.gc.ca/eic/site/030.nsf/eng/home)
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 9.3 Make security seamless and frictionless, balancing security and convenience
+## 9.3 Make security seamless and frictionless, balancing security and convenience
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -148,7 +148,7 @@ Users won't use a service unless they have a guarantee:
 
 **Digital Service Standard (Ontario):** Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
 
-#### Why it matters
+### Why it matters
 
 Users won't use a service unless they have a guarantee:
 
@@ -160,7 +160,7 @@ Users won't use a service unless they have a guarantee:
 
 - that their privacy is protected while they use the service, and afterwards
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -212,7 +212,7 @@ Users won't use a service unless they have a guarantee:
 
     - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
 
-#### Laws and rules to follow **(Digital Service Standard (Ontario))**
+### Laws and rules to follow **(Digital Service Standard (Ontario))**
 
 - [Freedom of Information and Protection of Privacy Act](https://www.ontario.ca/laws/statute/90f31)
 
@@ -224,11 +224,11 @@ Users won't use a service unless they have a guarantee:
 
 - [Canada's Anti-Spam Legislation](http://fightspam.gc.ca/eic/site/030.nsf/eng/home)
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 9.4 Ensure services comply with all legislated and regulatory requirements
+## 9.4 Ensure services comply with all legislated and regulatory requirements
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -252,7 +252,7 @@ Users won't use your service unless you can guarantee:
 
 The following checklist provides a starting point, but teams should work closely with their privacy specialist and security engineer to meet the needs of the specific service.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -312,7 +312,7 @@ The following checklist provides a starting point, but teams should work closely
 
 - keep your cookie policy and privacy policy up to date **(Digital Service Standard (UK))**
 
-#### Key Questions **(Digital Services Playbook (US))**
+### Key Questions **(Digital Services Playbook (US))**
 
 - Does the service collect personal information from the user? How is the user notified of this collection?
 
@@ -326,7 +326,7 @@ The following checklist provides a starting point, but teams should work closely
 
 - How can someone from the public report a security issue?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
