@@ -1,8 +1,8 @@
 ## 2. Construire dans l'accessibilité dès le début
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-**Des lignes directrices:**
+**Lignes directrices :**
 
 2.1 [Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde](#user-content-21-construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
 
@@ -12,9 +12,9 @@
 
 2.4 [Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services](#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
 
-**Directives connexes:**
+**Lignes directrices :**
 
-**[TODO: Identifier les directives connexes au format "\#.\# Nom de ligne directrice (Principe #: Nom du principe)"]**
+**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
 
 ### 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
@@ -25,7 +25,7 @@
 
 - Concevoir l'accessibilité et le mobile dès le départ (Construire des principes numériques (premières réflexions))
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -36,7 +36,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - S'assurer que les ressources de conception et de développement possèdent les connaissances et l'expertise nécessaires pour créer des services accessibles et résoudre les problèmes d'accessibilité.
 
@@ -54,7 +54,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 #### Guides d'implémentation
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
 ### 2.2 Les services devraient respecter ou dépasser les normes d'accessibilité, et ne devraient pas être pénibles à utiliser
@@ -63,7 +63,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 - [Rendre accessible - Norme de service numérique (Ontario)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-8%23section-8#section-8)
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
@@ -80,7 +80,7 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - respecter les [instructions](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/how-make-information-accessible) de la Direction générale de l'accessibilité de l'Ontario sur la [façon de rendre l'information accessible](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/how-make-information-accessible) **(Norme de service numérique (Ontario))**   
 
@@ -125,28 +125,28 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 
 #### Guides d'implémentation
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### 2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 #### Guides d'implémentation
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
 
-**[TODO: Ajouter / réviser le texte d'introduction]**
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 #### Liste de contrôle
 
-- **[TODO: Ajouter / modifier les éléments de la liste de contrôle]**
+- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 #### Guides d'implémentation
 
-- **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
