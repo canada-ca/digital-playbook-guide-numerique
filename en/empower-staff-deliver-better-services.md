@@ -1,6 +1,6 @@
 ## 4. Empower staff to deliver better services
 
-[**[TODO: Add/revise introductory text]**]
+**[TODO: Add/revise introductory text]**
 
 **Guidelines:**
 
