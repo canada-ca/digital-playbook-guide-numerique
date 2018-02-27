@@ -334,7 +334,6 @@ Find out more about:
 
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
 
-
 **Related (temporary for mapping purposes; remove later):**
 
 - Mobility Preferred (Current GC EARB Principles)
@@ -432,8 +431,6 @@ Using the same language and design patterns as the rest of GOV.UK means:
 - show core content on \[Canada.ca\] that's easy to find, understand and use **(Digital Service Standard (Ontario))**
 
 - demonstrate that the service is responsive, with the same content and functionality on all devices, and works on mobile devices **(Digital Service Standard (Ontario))**
-
-
 
 - make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK)) /** make sure people can get through the service from start to finish without assistance **(Digital Service Standard (Ontario))**
 
