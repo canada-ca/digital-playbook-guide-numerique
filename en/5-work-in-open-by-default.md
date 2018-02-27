@@ -84,29 +84,29 @@ Setting performance indicators allows you to continuously improve your service b
 
 - Alpha, beta and live stages
 
-    - set a performance baseline for the old service, if there was one **(Digital Service Standard (UK))**
+  - set a performance baseline for the old service, if there was one **(Digital Service Standard (UK))**
 
-    - plan to lower [cost per transaction](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) or equivalent, for non-transactional user journeys **(Digital Service Standard (UK))**
+  - plan to lower [cost per transaction](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) or equivalent, for non-transactional user journeys **(Digital Service Standard (UK))**
 
-    - plan to [improve user satisfaction](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction) **(Digital Service Standard (UK))**
+  - plan to [improve user satisfaction](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction) **(Digital Service Standard (UK))**
 
-    - plan to [increase completion rate](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) or equivalent, for non-transactional user journeys **(Digital Service Standard (UK))**
+  - plan to [increase completion rate](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) or equivalent, for non-transactional user journeys **(Digital Service Standard (UK))**
 
-    - plan to [increase digital take-up](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) and reduce reliance on assisted digital **(Digital Service Standard (UK))**
+  - plan to [increase digital take-up](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) and reduce reliance on assisted digital **(Digital Service Standard (UK))**
 
-    - assess the potential for channel shift and the level of assisted digital your service needs **(Digital Service Standard (UK))**
+  - assess the potential for channel shift and the level of assisted digital your service needs **(Digital Service Standard (UK))**
 
-    - document other metrics that you'll measure, when you'll start, and how you'll use them to improve your service **(Digital Service Standard (UK))**
+  - document other metrics that you'll measure, when you'll start, and how you'll use them to improve your service **(Digital Service Standard (UK))**
 
-    - document where you're getting the data for your metrics **(Digital Service Standard (UK))**
+  - document where you're getting the data for your metrics **(Digital Service Standard (UK))**
 
-    - set up your analytics package to collect user journey data **(Digital Service Standard (UK))**
+  - set up your analytics package to collect user journey data **(Digital Service Standard (UK))**
 
-    - make sure all stakeholders are actively involved in promoting or supporting digital delivery of the new service **(Digital Service Standard (UK))**
+  - make sure all stakeholders are actively involved in promoting or supporting digital delivery of the new service **(Digital Service Standard (UK))**
 
 - Beta stage
 
-    - track people moving from using the offline service to the online one **(Digital Service Standard (UK))**
+  - track people moving from using the offline service to the online one **(Digital Service Standard (UK))**
 
 ### Implementation guides
 
@@ -168,8 +168,6 @@ All solutions must use open standards to ensure interoperability across the OneG
 
 - Build in an open and interoperable way - Give equal consideration for open source. Use open standards. Build in an interoperable and reusable way. **(OneGC product design criteria)**
 
-
-
 - Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
 
 - Ensure that we maintain contractual rights to all custom software developed by third parties in a manner that is publishable and reusable at no cost **(Digital Services Playbook (US))**
@@ -225,35 +223,35 @@ Making your source code open means:
 
 - Alpha stage
 
-    - make new source code open and reusable **(Digital Service Standard (UK))**
+  - make new source code open and reusable **(Digital Service Standard (UK))**
 
-    - put your code in an open internet source code repository **(Digital Service Standard (UK))**
+  - put your code in an open internet source code repository **(Digital Service Standard (UK))**
 
-    - determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
+  - determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
 
-    - confirm that you own the intellectual property **(Digital Service Standard (UK))**
+  - confirm that you own the intellectual property **(Digital Service Standard (UK))**
 
-    - determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
+  - determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
 
-    - determine how you're using code from other teams or services **(Digital Service Standard (UK))**
+  - determine how you're using code from other teams or services **(Digital Service Standard (UK))**
 
 - Live stage
 
-    - make new source code open and reusable **(Digital Service Standard (UK))**
+  - make new source code open and reusable **(Digital Service Standard (UK))**
 
-    - put your code in an open internet source code repository **(Digital Service Standard (UK))**
+  - put your code in an open internet source code repository **(Digital Service Standard (UK))**
 
-    - document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
+  - document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
 
-    - document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
+  - document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
 
-    - determine the licences you're using to release code **(Digital Service Standard (UK))**
+  - determine the licences you're using to release code **(Digital Service Standard (UK))**
 
-    - confirm that you own the intellectual property **(Digital Service Standard (UK))**
+  - confirm that you own the intellectual property **(Digital Service Standard (UK))**
 
-    - document the code you've not made open and why **(Digital Service Standard (UK))**
+  - document the code you've not made open and why **(Digital Service Standard (UK))**
 
-    - determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
+  - determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
 
 ### Implementation guides
 
