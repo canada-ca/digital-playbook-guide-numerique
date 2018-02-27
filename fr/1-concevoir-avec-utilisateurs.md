@@ -256,7 +256,7 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
 
   - documenter les histoires d'utilisateurs pour votre service - c.-à-d. identifier une personne qui a besoin d'utiliser le service et pour quoi elles servent **(Norme de service numérique (Royaume-Uni))**
 
-  - documenter les besoins de votre service, y compris pour les utilisateurs qui ont besoin d'aide numérique assistée **((Norme de service numérique (Royaume-Uni))**
+  - documenter les besoins de votre service, y compris pour les utilisateurs qui ont besoin d'aide numérique assistée **(Norme de service numérique (Royaume-Uni))**
 
   - démontrer les améliorations à ces domaines et comment ceux-ci ont été testés et recherchés **(Norme de service numérique (Ontario))**
 
