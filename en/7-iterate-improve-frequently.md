@@ -1,4 +1,4 @@
-## 7. Iterate and improve frequently
+# 7. Iterate and improve frequently
 
 **[TODO: Add/revise introductory text]**
 
@@ -16,7 +16,7 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-### 7.1 Build in an agile manner and continuously improve in response to user needs
+## 7.1 Build in an agile manner and continuously improve in response to user needs
 
 
 **Related (temporary for mapping purposes; remove later): **
@@ -53,7 +53,7 @@ It is a much lower risk approach than traditional build-it-all-at-once approach 
 
 User-centred methods such as user research and usability testing put the focus on making services that are easy-to-use. Traditional government services focus on meeting business needs and aligning with policy goals. A user-centred approach ensures business needs are also balanced against user needs. This helps to increase digital service uptake.
 
-#### Why it matters
+### Why it matters
 
 Agile methods build services that:
 
@@ -69,7 +69,7 @@ Agile methods build services that:
 
 **Digital Service Playbook (US):** We should use an incremental, fast-paced style of software development to reduce the risk of failure. We want to get working software into users' hands as early as possible to give the design and development team opportunities to adjust based on user feedback about the service. A critical capability is being able to automatically test and deploy the service so that new features can be added often and be put into production easily.
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -117,7 +117,7 @@ Agile methods build services that:
 
 - Use code reviews to ensure quality **(Digital Service Playbook (US))**
 
-#### Key Questions **(Digital Service Playbook (US))**
+### Key Questions **(Digital Service Playbook (US))**
 
 - How long did it take to ship the MVP? If it hasn't shipped yet, when will it?
 
@@ -137,7 +137,7 @@ Agile methods build services that:
 
 - At each stage of usability testing, which gaps were identified in addressing user needs?
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
@@ -149,31 +149,31 @@ Find out more about:
 
 - [assisted digital support](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Digital Service Standard (UK))**
 
-### 7.2 Accept that change is inevitable and use adaptive strategies and tools for new development
+## 7.2 Accept that change is inevitable and use adaptive strategies and tools for new development
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 7.3 Embrace and react to changes in the environment and design for sustainability
+## 7.3 Embrace and react to changes in the environment and design for sustainability
 
 **[TODO: Add/revise introductory text]**
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
-### 7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration
+## 7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration
 
 **Related (temporary for mapping purposes; remove later):**
 
@@ -191,7 +191,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 - make sure your service keeps meeting user needs
 
-#### Checklist
+### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
@@ -231,7 +231,7 @@ You need to build a service which you can iterate and keep improving so that you
 
     - make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
 
-#### Implementation guides
+### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
 
