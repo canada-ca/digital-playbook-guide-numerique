@@ -2,7 +2,7 @@
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-**Des lignes directrices:**
+**Lignes directrices :**
 
 3.1 [Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses](#user-content-31-habiliter-des-équipes-multidisciplinaires-avec-des-perspectives-et-des-compétences-diverses)
 
@@ -12,10 +12,9 @@
 
 3.4 [Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser](#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
 
-**Directives connexes:**
+**Lignes directrices connexes :**
 
-**\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
-
+**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
 
 ### 3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses
@@ -28,14 +27,13 @@
 
 #### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
 
 ### 3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires
 
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
+**\TODO: Ajouter / réviser le texte d'introduction\]**
 
 #### Liste de contrôle
 
@@ -45,9 +43,7 @@
 
 #### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
-
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
 ### 3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation
@@ -60,8 +56,7 @@
 
 #### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
 
@@ -75,5 +70,4 @@
 
 #### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
