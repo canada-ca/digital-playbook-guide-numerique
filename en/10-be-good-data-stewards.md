@@ -137,29 +137,29 @@ Measuring performance means continuously improving a service by:
 
 - Alpha, beta and live stages
 
-    - determine the data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service **(Digital Service Standard (UK))** / determine data needs, sources and collection **(Digital Service Standard (Ontario))**
+  - determine the data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service **(Digital Service Standard (UK))** / determine data needs, sources and collection **(Digital Service Standard (Ontario))**
 
-    - have an ongoing roadmap for performance analysis and someone in the team responsible for identifying actionable data insights during alpha, including assisted digital support **(Digital Service Standard (UK))**
+  - have an ongoing roadmap for performance analysis and someone in the team responsible for identifying actionable data insights during alpha, including assisted digital support **(Digital Service Standard (UK))**
 
-    - use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement **(Digital Service Standard (UK)) /** use qualitative and quantitative data to understand user needs and identify areas for change **(Digital Service Standard (Ontario))**
+  - use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement **(Digital Service Standard (UK)) /** use qualitative and quantitative data to understand user needs and identify areas for change **(Digital Service Standard (Ontario))**
 
-    - choose suitable data analysis tools **(Digital Service Standard (UK))**
+  - choose suitable data analysis tools **(Digital Service Standard (UK))**
 
-    - address information security and privacy issues appropriately **(Digital Service Standard (UK))**
+  - address information security and privacy issues appropriately **(Digital Service Standard (UK))**
 
-    - map user journeys through the service and track them to identify completions and areas of poor performance **(Digital Service Standard (UK))**
+  - map user journeys through the service and track them to identify completions and areas of poor performance **(Digital Service Standard (UK))**
 
-    - measure assisted digital support **(Digital Service Standard (UK))**
+  - measure assisted digital support **(Digital Service Standard (UK))**
 
-    - document the next user story related to performance analysis **(Digital Service Standard (UK))**
+  - document the next user story related to performance analysis **(Digital Service Standard (UK))**
 
 - Beta stage
 
-    - discuss a start page and feedback page with GOV.UK **(Digital Service Standard (UK))**
+  - discuss a start page and feedback page with GOV.UK **(Digital Service Standard (UK))**
 
 - Live stage
 
-    - collect feedback from users, during and after their user journey **(Digital Service Standard (UK))**
+  - collect feedback from users, during and after their user journey **(Digital Service Standard (UK))**
 
 - use web analytics to capture information about user behaviour online **(Digital Service Standard (Ontario))**
 
@@ -199,7 +199,6 @@ Measuring performance means continuously improving a service by:
 - [Sharing data on the Performance Platform](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Digital Service Standard (UK))**
 
 Find out more about [service assessments](https://www.gov.uk/service-manual/service-assessments). **(Digital Service Standard (UK))**
-
 
 ## 10.4 Give due consideration to digital preservation and retention
 
