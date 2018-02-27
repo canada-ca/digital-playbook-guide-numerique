@@ -12,9 +12,9 @@
 
 3.4 [Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser](#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
 
-**Directives connexes :**
+**Lignes directrices connexes connexes :**
 
-**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
+**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
 
 ### 3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses
