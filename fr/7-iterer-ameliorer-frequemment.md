@@ -4,13 +4,13 @@
 
 **Des lignes directrices:**
 
-7.1 [Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs](#user-content-71-construire-de-manière-agile-et-améliorer-continuellement-en-réponse-aux-besoins-des-utilisateurs)
+[7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs](#user-content-71-construire-de-manière-agile-et-améliorer-continuellement-en-réponse-aux-besoins-des-utilisateurs)
 
-7.2 [Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements](#user-content-72-accepter-que-le-changement-est-inévitable-et-utiliser-des-stratégies-et-des-outils-adaptatifs-pour-de-nouveaux-développements)
+[7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements](#user-content-72-accepter-que-le-changement-est-inévitable-et-utiliser-des-stratégies-et-des-outils-adaptatifs-pour-de-nouveaux-développements)
 
-7.3 [Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité](#user-content-73-embrasser-et-réagir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilité)
+[7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité](#user-content-73-embrasser-et-réagir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilité)
 
-7.4 [Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération](#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothèses-en-utilisant-les-preuves-comme-base-de-litération)
+[7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération](#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothèses-en-utilisant-les-preuves-comme-base-de-litération)
 
 **Directives connexes:**
 
