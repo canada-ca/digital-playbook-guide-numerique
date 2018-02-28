@@ -12,7 +12,7 @@
 
 [5.4 Be transparent about how you work and justify the decisions you make](#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
 
-[5.5 Open by default](#user-content-55-open-by-default-onegc-product-design-criteria--open-by-default-proprietary-by-necessity-current-gc-earb-principles--default-to-open-digital-services-playbook-us)
+[5.5 Open by default](#user-content-55-open-by-default)
 
 [5.6 Make all new source code open (Digital Service Standard (UK))](#user-content-56-make-all-new-source-code-open-digital-service-standard-uk)
 
@@ -64,7 +64,7 @@
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Identify performance indicators -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
+- [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
 
 **[TODO: Add/revise introductory text]**
 
@@ -140,15 +140,15 @@ Find out more about:
 
 - **[TODO: Add/revise implementation guide items]**
 
-## 5.5 Open by default (OneGC product design criteria) / Open By Default, Proprietary by Necessity (Current GC EARB Principles) / Default to open (Digital Services Playbook (US))
+## 5.5 Open by default
 
 **Related (temporary for mapping purposes; remove later):**
 
-- OneGC product design criteria
+- Open by default (OneGC product design criteria)
 
 - Open By Default, Proprietary by Necessity (Current GC EARB Principles)
 
-- [Default to open -- Digital Services Playbook (US)](https://playbook.cio.gov/#play13)
+- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 
 **[TODO: Add/revise introductory text]**
 
@@ -195,7 +195,7 @@ All solutions must use open standards to ensure interoperability across the OneG
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Make all new source code open -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 
 **[TODO: Add/revise introductory text]**
 
