@@ -141,7 +141,7 @@ Find out more about:
 
 - [2. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
 
-- [1. Understand what people need -- Digital Services Playbook (US)](https://playbook.cio.gov/#play1)
+- [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
 
 **[TODO: Add/revise introductory text]**
 
