@@ -4,21 +4,21 @@
 
 **Des lignes directrices:**
 
-5.1 [Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte](#user-content-51-rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
+[5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte](#user-content-51-rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
 
-5.2 [Soyez transparent avec les objectifs et publiez les données de performance en temps réel](#user-content-52-soyez-transparent-avec-les-objectifs-et-publiez-les-données-de-performance-en-temps-réel)
+[5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel](#user-content-52-soyez-transparent-avec-les-objectifs-et-publiez-les-données-de-performance-en-temps-réel)
 
-5.3 [Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement](#user-content-53-mesurez-et-surveillez-lefficacité-la-valeur-et-les-conséquences-de-votre-service-et-signalez-publiquement)
+[5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement](#user-content-53-mesurez-et-surveillez-lefficacité-la-valeur-et-les-conséquences-de-votre-service-et-signalez-publiquement)
 
-5.4 [Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez](#user-content-54-soyez-transparent-sur-la-façon-dont-vous-travaillez-et-justifiez-les-décisions-que-vous-prenez)
+[5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez](#user-content-54-soyez-transparent-sur-la-façon-dont-vous-travaillez-et-justifiez-les-décisions-que-vous-prenez)
 
-5.5 [Ouvrir par défaut](#user-content-55-ouvrir-par-défaut)
+[5.5 Ouvrir par défaut](#user-content-55-ouvrir-par-défaut)
 
-5.6 [Rendre tout le nouveau code source ouvert (Digital Service Standard (UK))](#user-content-56-rendre-tout-le-nouveau-code-source-ouvert-digital-service-standard-uk)
+[5.6 Rendre tout le nouveau code source ouvert (Digital Service Standard (UK))](#user-content-56-rendre-tout-le-nouveau-code-source-ouvert-digital-service-standard-uk)
 
 **Directives connexes:**
 
-6.4 [Ouvrir les données, les transactions et les règles métier qui sous-tendent un service (Principe 6: Utiliser des normes et des solutions ouvertes))](6-utiliser-standards-solutions-ouverts.md#user-content-64-ouvrez-les-données-les-transactions-et-les-règles-métier-qui-sous-tendent-un-service)
+[6.4 Ouvrir les données, les transactions et les règles métier qui sous-tendent un service (Principe 6: Utiliser des normes et des solutions ouvertes))](6-utiliser-standards-solutions-ouverts.md#user-content-64-ouvrez-les-données-les-transactions-et-les-règles-métier-qui-sous-tendent-un-service)
 
 **\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
 
