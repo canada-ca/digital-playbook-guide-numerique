@@ -40,7 +40,7 @@
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Use data to drive decisions -- Digital Services Playbook (US)](https://playbook.cio.gov/#play12)
+- [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
 **[TODO: Add/revise introductory text]**
 
@@ -105,9 +105,9 @@
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Collect performance data -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
+- [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 
-- [Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-14)
+- [14. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-14)
 
 **[TODO: Add/revise introductory text]**
 
