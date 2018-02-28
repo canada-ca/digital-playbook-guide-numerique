@@ -42,7 +42,7 @@
 
 - Privacy Aware (GC EA Principles)
 
-- [Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
+- [11. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
 **[TODO: Add/revise introductory text]**
 
@@ -138,7 +138,7 @@ Users won't use a service unless they have a guarantee:
 
 - Secure by Design (GC EA Principles)
 
-- [Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
+- [11. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
 **[TODO: Add/revise introductory text]**
 
@@ -228,9 +228,9 @@ Users won't use a service unless they have a guarantee:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Understand security and privacy issues -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
+- [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 
-- [Manage security and privacy through reusable processes -- Digital Services Playbook (US)](https://playbook.cio.gov/#play11)
+- [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 
 **[TODO: Add/revise introductory text]**
 
