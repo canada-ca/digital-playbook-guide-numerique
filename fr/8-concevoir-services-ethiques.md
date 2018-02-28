@@ -4,13 +4,13 @@
 
 **Des lignes directrices:**
 
-8.1 [Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités](#user-content-81-soyez-transparent-au-sujet-des-préjugés-personnels-et-organisationnels-et-indiquez-comment-ils-sont-traités)
+[8.1 Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités](#user-content-81-soyez-transparent-au-sujet-des-préjugés-personnels-et-organisationnels-et-indiquez-comment-ils-sont-traités)
 
-8.2 [Évaluer l'impact total sur les utilisateurs et les communautés](#user-content-82-Évaluer-limpact-total-sur-les-utilisateurs-et-les-communautés)
+[8.2 Évaluer l'impact total sur les utilisateurs et les communautés](#user-content-82-Évaluer-limpact-total-sur-les-utilisateurs-et-les-communautés)
 
-8.3 [Se conformer aux directives éthiques dans la conception de systèmes automatisés](#user-content-83-se-conformer-aux-directives-éthiques-dans-la-conception-de-systèmes-automatisés)
+[8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés](#user-content-83-se-conformer-aux-directives-éthiques-dans-la-conception-de-systèmes-automatisés)
 
-8.4 [Équilibrer les compromis entre innovation et inclusivité](#user-content-84-Équilibrer-les-compromis-entre-innovation-et-inclusivité)
+[8.4 Équilibrer les compromis entre innovation et inclusivité](#user-content-84-Équilibrer-les-compromis-entre-innovation-et-inclusivité)
 
 **Directives connexes:**
 
