@@ -22,11 +22,11 @@
 
 - Agile -- Small chunks -- Iterate (GC EA Principles)
 
-- [Use agile methods -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
+- [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
 
-- [Be agile and user-centred (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
+- [9. Be agile and user-centred (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
 
-- [Build the service using agile and iterative practices -- Digital Services Playbook (US)](https://playbook.cio.gov/#play4)
+- [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
 
 **[TODO: Add/revise introductory text]**
 
@@ -174,7 +174,7 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Iterate and improve frequently -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
+- [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
 
 **[TODO: Add/revise introductory text]**
 
