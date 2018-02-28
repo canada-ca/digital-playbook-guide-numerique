@@ -135,7 +135,7 @@ Find out more about:
 
 - Services & client orientation (Current GC EARB Principles)
 
-- Business User first (EA principles)
+- Business User first (GC EA principles)
 
 - [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
 
@@ -338,7 +338,7 @@ Find out more about:
 
 - Mobility Preferred (Current GC EARB Principles)
 
-- Any Device - Mobility (EA principles)
+- Any Device - Mobility (GC EA principles)
 
 **[TODO: Add/revise introductory text]**
 
