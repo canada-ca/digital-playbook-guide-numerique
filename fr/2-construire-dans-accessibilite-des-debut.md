@@ -4,13 +4,13 @@
 
 **Lignes directrices :**
 
-2.1 [Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde](#user-content-21-construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
+[2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde](#user-content-21-construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
 
-2.2 [Les services devraient respecter ou dépasser les normes d'accessibilité et ne devraient pas être pénibles à utiliser](#user-content-22-les-services-devraient-respecter-ou-dépasser-les-normes-daccessibilité-et-ne-devraient-pas-être-pénibles-à-utiliser)
+[2.2 Les services devraient respecter ou dépasser les normes d'accessibilité et ne devraient pas être pénibles à utiliser](#user-content-22-les-services-devraient-respecter-ou-dépasser-les-normes-daccessibilité-et-ne-devraient-pas-être-pénibles-à-utiliser)
 
-2.3 [Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début](#user-content-23-co-créer-avec-des-personnes-ayant-des-besoins-distincts-en-étant-inclusif-dès-le-début)
+[2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début](#user-content-23-co-créer-avec-des-personnes-ayant-des-besoins-distincts-en-étant-inclusif-dès-le-début)
 
-2.4 [Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services](#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
+[2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services](#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
 
 **Lignes directrices connexes :**
 
