@@ -69,7 +69,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 **Related (temporary for** **mapping purposes; remove later):**
 
-- [Do ongoing user research -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
+- [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
 **[TODO: Add/revise introductory text]**
 
@@ -137,11 +137,11 @@ Find out more about:
 
 - Business User first (EA principles)
 
-- [Understand what people need -- Digital Services Playbook (US)](https://playbook.cio.gov/#play1)
+- [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
 
-- [Understand user needs -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
+- [2. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
 
-- [Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
+- [1. Understand what people need -- Digital Services Playbook (US)](https://playbook.cio.gov/#play1)
 
 **[TODO: Add/revise introductory text]**
 
@@ -298,7 +298,7 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Address the whole experience, from start to finish -- Digital Services Playbook (US)](https://playbook.cio.gov/#play2)
+- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 
 **[TODO: Add/revise introductory text]**
 
@@ -354,15 +354,15 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Make it simple and intuitive -- Digital Services Playbook (US)](https://playbook.cio.gov/#play3)
+- [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 
-- [Be consistent (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
+- [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
 
-- [Make sure users succeed first time -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
+- [4. Be consistent (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
 
-- [Ensure users succeed the first time (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
+- [6. Ensure users succeed the first time (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
 
-- [Make the user experience consistent with GOV.UK -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
+- [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
 
 **[TODO: Add/revise introductory text]**
 
