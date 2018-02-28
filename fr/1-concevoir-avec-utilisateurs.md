@@ -68,7 +68,7 @@ Les utilisateurs doivent être impliqués dans un long cycle de la vie du servic
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [Faire des recherches en cours sur les utilisateurs - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
+- [2. Faire des recherches en cours sur les utilisateurs (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -134,13 +134,13 @@ En savoir plus sur:
 
 - Services et orientation client (Principes EARB actuels du GC)
 
-- L'utilisateur professionnel d'abord
+- L'utilisateur professionnel d'abord (Principes EA)
 
-- [Comprendre ce que les gens ont besoin - Digital Playbook Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play1%23play1#play1)
+- [1. Comprendre les besoins des utilisateurs (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/understand-user-needs)
 
-- [Comprendre les besoins des utilisateurs - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/understand-user-needs)
+- [2. Comprendre les utilisateurs et leurs besoins (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-2%23section-2#section-2)
 
-- [Comprendre les utilisateurs et leurs besoins (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-2%23section-2#section-2)
+- [1. Comprendre ce que les gens ont besoin (Playbook sur les services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play1%23play1#play1)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -298,7 +298,9 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [Aborder toute l'expérience, le début de la fin - Playbook Playbook Digital (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play2%23play2#play2)
+- [2. Aborder toute l'expérience, le début de la fin (Playbook de services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play1%23play1#play1)
+
+](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play2%23play2#play2)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -338,7 +340,7 @@ En savoir plus sur:
 
 - Mobilité préférée (Principes EARB actuels du GC)
 
-- Tout appareil - Mobilité (principes EA)
+- Tout appareil - Mobilité (Principes EA)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -354,15 +356,16 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [Rendez-le simple et intuitif - Playbook des services numériques (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play3%23play3#play3)
+- [12. Assurez-vous que les utilisateurs réussissent la première fois (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 
-- [Soyez cohérent (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-4%23section-4#section-4)
+- [13. GOV.UK (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
 
-- [Assurez-vous que les utilisateurs réussissent la première fois - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
+- [4. Soyez cohérent (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-4%23section-4#section-4)
 
-- [Veiller à ce que les utilisateurs réussissent la première fois (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-6%23section-6#section-6)
+- [6. Veiller à ce que les utilisateurs réussissent la première fois (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-6%23section-6#section-6)
 
-- [GOV.UK - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
+- [3. Rendez-le simple et intuitif (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play3%23play3#play3)
+
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
