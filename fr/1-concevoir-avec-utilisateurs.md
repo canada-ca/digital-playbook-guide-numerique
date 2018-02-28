@@ -134,7 +134,7 @@ En savoir plus sur:
 
 - Services et orientation client (Principes EARB actuels du GC)
 
-- L'utilisateur professionnel d'abord (Principes EA)
+- L'utilisateur professionnel d'abord (Principes EA du GC)
 
 - [1. Comprendre les besoins des utilisateurs (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/understand-user-needs)
 
@@ -340,7 +340,7 @@ En savoir plus sur:
 
 - Mobilité préférée (Principes EARB actuels du GC)
 
-- Tout appareil - Mobilité (Principes EA)
+- Tout appareil - Mobilité (Principes EA du GC)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
