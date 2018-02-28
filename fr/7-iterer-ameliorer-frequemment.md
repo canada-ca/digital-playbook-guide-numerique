@@ -4,13 +4,13 @@
 
 **Des lignes directrices:**
 
-7.1 [Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs](#user-content-71-construire-de-manière-agile-et-améliorer-continuellement-en-réponse-aux-besoins-des-utilisateurs)
+[7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs](#user-content-71-construire-de-manière-agile-et-améliorer-continuellement-en-réponse-aux-besoins-des-utilisateurs)
 
-7.2 [Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements](#user-content-72-accepter-que-le-changement-est-inévitable-et-utiliser-des-stratégies-et-des-outils-adaptatifs-pour-de-nouveaux-développements)
+[7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements](#user-content-72-accepter-que-le-changement-est-inévitable-et-utiliser-des-stratégies-et-des-outils-adaptatifs-pour-de-nouveaux-développements)
 
-7.3 [Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité](#user-content-73-embrasser-et-réagir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilité)
+[7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité](#user-content-73-embrasser-et-réagir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilité)
 
-7.4 [Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération](#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothèses-en-utilisant-les-preuves-comme-base-de-litération)
+[7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération](#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothèses-en-utilisant-les-preuves-comme-base-de-litération)
 
 **Directives connexes:**
 
@@ -24,11 +24,11 @@
 
 - Agile - Petits morceaux - Iterate (GC EA Principes)
 
-- [Utiliser des méthodes agiles - Digital Service Standard (UK)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/use-agile-methods)
+- [4. Utiliser des méthodes agiles (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/use-agile-methods)
 
-- [Soyez agile et centré sur l'utilisateur (Digital Service Standard (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-9%23section-9#section-9)
+- [9. Soyez agile et centré sur l'utilisateur (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-9%23section-9#section-9)
 
-- [Construire le service en utilisant des pratiques agiles et itératives - Digital Services Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play4%23play4#play4)
+- [4. Construire le service en utilisant des pratiques agiles et itératives (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play4%23play4#play4)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -196,7 +196,7 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [Itérer et améliorer fréquemment - Digital Service Standard (UK)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
+- [5. Itérer et améliorer fréquemment (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
