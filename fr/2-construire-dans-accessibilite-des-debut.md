@@ -61,7 +61,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [Rendre accessible - Norme de service numérique (Ontario)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-8%23section-8#section-8)
+- [Rendre accessible (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-8%23section-8#section-8)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
