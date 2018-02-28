@@ -19,6 +19,7 @@
 - [8. Design ethical services](en/8-design-ethical-services.md)
 - [9. Address security and privacy risks](en/9-address-security-privacy-risks.md)
 - [10. Be good data stewards](en/10-be-good-data-stewards.md)
+- [Comparison tables](en/comparison-tables.md)
 
 
 # Guide numérique du gouvernement du Canada (ébauche)
@@ -40,3 +41,4 @@
 - [8. Concevoir des services éthiques](fr/8-concevoir-services-ethiques.md)
 - [9. Aborder les risques de sécurité et de confidentialité](fr/9-aborder-risques-securite-confidentialite.md)
 - [10. Soyez de bons gestionnaires de données](fr/10-soyez-bons-gestionnaires-donnees.md)
+- [Comparison tables (anglais seulement)](en/comparison-tables.md)
