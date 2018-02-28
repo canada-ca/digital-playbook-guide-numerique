@@ -36,7 +36,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [6. Evaluate tools and systems (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
+- [Evaluate tools and systems -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -100,17 +100,15 @@ L'évaluation des outils et des systèmes que vous utilisez pour créer votre se
 
 En savoir plus sur:
 
-- [choix de la technologie](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Norme de service numérique (Royaume-Uni))**
+- [choosing technology (en anglais seulement)](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Norme de service numérique (Royaume-Uni))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
 
 ## 4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
-
-- [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
+- [Structure budgets and contracts to support delivery -- Digital Services Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play5)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -118,7 +116,7 @@ En savoir plus sur:
 
 **Digital Services Playbook (États-Unis) :** Pour améliorer nos chances de réussite lors de la sous-traitance des travaux de développement, nous devons travailler avec des responsables de la budgétisation et des contrats. Dans les cas où nous utilisons des tiers pour aider à construire un service, un contrat bien défini peut faciliter de bonnes pratiques de développement comme mener une phase de recherche et de prototypage, affiner les exigences du produit au fur et à mesure de la construction du service, et permettant la flexibilité d'acheter des ressources de cloud computing.
 
-[Le manuel TechFAR](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://techfarhub.cio.gov/handbook/) fournit une explication détaillée des flexibilités du règlement fédéral sur les acquisitions (FAR) qui peuvent aider les agences à mettre en œuvre ce jeu.
+[The TechFAR Handbook (en anglais seulement)](https://techfarhub.cio.gov/handbook/) fournit une explication détaillée des flexibilités du règlement fédéral sur les acquisitions (FAR) qui peuvent aider les agences à mettre en œuvre ce jeu.
 
 ### Liste de contrôle
 
@@ -178,7 +176,7 @@ En savoir plus sur:
 
 - One business owner (OneGC product design criteria)
 
-- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
+- [Assign one leader and hold that person accountable -- Digital Services Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play6)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -242,11 +240,11 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
+- [Bring in experienced teams -- Digital Services Playbook (US) (en anglais seulement) ](https://playbook.cio.gov/#play7)
 
-- [2. Former une équipe adaptée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-3)
+- [Have a multidisciplinary team -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
 
-- [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
+- [Former une équipe adaptée (norme de service numérique (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-3)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -339,8 +337,8 @@ Pour réussir, construisez une équipe avec:
 
 En savoir plus sur:
 
-- [recherche d'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
+- [user research (en anglais seulement)](https://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
 
-- [établir l'équipe correcte](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/the-team) **(Norme de service numérique (Royaume-Uni))**
+- [setting up the right team (en anglais seulement)](https://www.gov.uk/service-manual/the-team) **(Norme de service numérique (Royaume-Uni))**

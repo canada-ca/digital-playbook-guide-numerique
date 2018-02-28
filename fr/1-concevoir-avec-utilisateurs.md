@@ -133,11 +133,11 @@ Faire de la recherche continue sur les utilisateurs signifie que vous pouvez :
 
 En savoir plus sur:
 
-- [recherche d'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
+- [user research(en anglais seulement)](https://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
+- [service assements(en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
 
-- [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
+- [assisted digital support(en anglais seulement)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
 
 ## 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
 
@@ -149,15 +149,11 @@ En savoir plus sur:
 
 - Business User first (GC EA principles)
 
-- [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
+- [Understand what people need - Digital Services Playbook (US)(en anglais seulement)](https://playbook.cio.gov/#play1)
 
-- [1. Comprendre les utilisateurs et leurs besoins (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-2)
+- [Understand user needs - Digital Service Standard (UK)(en anglais seulement)](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
 
-- [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
-
-- [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-- [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
+- [Comprendre les utilisateurs et leurs besoins (Norme de service numérique (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -323,23 +319,23 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Commencez par apprendre les besoins des utilisateurs](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Norme de service numérique (Royaume-Uni))**
+- [Start by learning user needs(en anglais seulement)](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Norme de service numérique (Royaume-Uni))**
 
-- [Améliorer la conception du service avec la recherche de l'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Norme de service numérique (Royaume-Uni))**
+- [Improve service design with user research(en anglais seulement)](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Norme de service numérique (Royaume-Uni))**
 
 En savoir plus sur:
 
-- [recherche d'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
+- [user research(en anglais seulement)](https://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
+- [service assessments(en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
 
-- [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
+- [assisted digital support(en anglais seulement)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
 
 ## 1.4 Clairement articuler and understand the problem of about and use the data for evidence
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
+- [Address the whole experience, from start to finish -- Digital Services Playbook (US)(en anglais seulement)](https://playbook.cio.gov/#play2)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -397,19 +393,15 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
+- [Make it simple and intuitive -- Digital Services Playbook (US)(en anglais seulement)](https://playbook.cio.gov/#play3)
 
-- [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
+- [Fair preuve de constance (Norme des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-4)
 
-- [3. Faire preuve de constance (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-4)
+- [Make sure users succeed first time -- Digital Service Standard (UK)(en anglais seulement)](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 
-- [5. Réussite assurée dès le premier essai des utilisateurs (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-6)
+- [Réussite assurée dès le premier essai des utilisateurs (Norme des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-6)
 
-- [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
-
-- [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-- [A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [Make the user experience consistent with GOV.UK --Digital Service Standard(UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -473,7 +465,7 @@ En utilisant le même langage et les mêmes modèles de conception que le reste 
 
 - utiliser \[Canada.ca\] comme porte d'entrée pour toutes les applications transactionnelles sur d'autres plateformes **(Norme de service numérique (Ontario))**
 
-- appliquer la [spécification de l'architecture de l'information et du contenu de Canada.ca](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html) et le [Guide de style de contenu de  Canada.ca](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
+- appliquer la [Spécifications du contenu et de l'architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html) et le [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
 
 - afficher le contenu de base sur \[Canada.ca\] facile à trouver, à comprendre et à utiliser **(Norme de service numérique (Ontario))**
 
@@ -553,45 +545,51 @@ En utilisant le même langage et les mêmes modèles de conception que le reste 
 
 ### Lois et règles à suivre **(Norme de service numérique (Ontario))**
 
-- Accessibilité - [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario, Norme d'information et de communication](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/r11191%2523BK9%23BK9#BK9)
+- Accessibilité - [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario, Norme d'information et de communication](https://www.ontario.ca/fr/lois/reglement/r11191#BK9)
 
-- Langue française - [Loi sur les](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/90f32)[services en français](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/government-services-french)  , [Services gouvernementaux en français](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/government-services-french)
+- Langue française - [Loi sur les services en français, Services gouvernementaux en français](https://www.ontario.ca/fr/lois/loi/90f32)
 
-- Données ouvertes - [Directive sur les résultats](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/ontarios-open-data-directive)
+- Données ouvertes - [Directive sur les données ouvertes de l’Ontario](https://www.ontario.ca/fr/page/directive-sur-les-donnees-ouvertes-de-lontario)
 
-- Médias sociaux - [Lignes directrices sur les médias sociaux de la fonction publique de l'Ontario](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/ontario-public-service-social-media-guidelines)
+- Médias sociaux - [Lignes directrices relatives aux médias sociaux pour la fonction publique de l'Ontario](https://www.ontario.ca/fr/page/lignes-directrices-relatives-aux-medias-sociaux-pour-la-fonction-publique-de-lontario)
 
 ### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Comment la recherche de l'utilisateur améliore la conception du service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Norme de service numérique (Royaume-Uni))**
+- [How user research improves service design (en anglais seulement)](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Norme de service numérique (Royaume-Uni))**
 
-- [Commencez par apprendre les besoins des utilisateurs](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Norme de service numérique (Royaume-Uni))**
+- [Start by learning user needs (en anglais seulement)](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Norme de service numérique (Royaume-Uni))**
 
-- [Comprendre les utilisateurs qui utilisent les services numériques](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services) **(Norme de service numérique (Royaume-Uni))**
+- [Understanding users who don't use digital services (en anglais seulement)](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services) **(Norme de service numérique (Royaume-Uni))**
 
-- [Assistance numérique assistée: une introduction](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
+- [Assisted digital support: an introduction (en anglais seulement)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
 
-- [Modèles de conception](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html) **(Norme de service numérique (Royaume-Uni))**
+- [Design patterns (en anglais seulement)](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html) **(Norme de service numérique (Royaume-Uni))**
 
-- [GOV.UK style](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style) **(Norme de service numérique (Royaume-Uni))**
+- [GOV.UK style (en anglais seulement)](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style) **(Norme de service numérique (Royaume-Uni))**
 
 En savoir plus sur:
 
-- [recherche d'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
+- [user research (en anglais seulement)](https://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
 
-- [conception](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/design) **(Norme de service numérique (Royaume-Uni))**
+- [design (en anglais seulement)](https://www.gov.uk/service-manual/design) **(Norme de service numérique (Royaume-Uni))**
 
 ## 1.7 Rendre plus pratique et pratique l'utilisation des services numériques
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
+<<<<<<< HEAD
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 
 - [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
+=======
+- [Encourage everyone to use the digital service -- Digital Service Standard(UK) (en anglais seulement))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
+
+- [Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
+>>>>>>> Fixed external links on french side
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -669,23 +667,29 @@ Encourager les gens à utiliser le service numérique:
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Comment mesurer l'adoption numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Norme de service numérique (Royaume-Uni))**)
+- [How to measure digital take-up (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Norme de service numérique (Royaume-Uni))**)
 
-- [Encourager les gens à utiliser votre service numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Norme de service numérique (Royaume-Uni))**)
+- [Encouraging people to use digital services (en anglais seulement)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Norme de service numérique (Royaume-Uni))**)
 
 En savoir plus sur:
 
-- [aider les gens à utiliser votre service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Norme de service numérique (Royaume-Uni))**)
+- [helping people to use your service (en anglais seulement)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Norme de service numérique (Royaume-Uni))**)
 
-- [évaluations de services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**)
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**)
 
 ## 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
+<<<<<<< HEAD
 - [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
 - [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
+=======
+- [Soutenir ceux qui en ont besoin (Norme de service numérique (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
+
+- [Make a plan for being offline -- Digital Service Standard (UK)(en anglais seulement)](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
+>>>>>>> Fixed external links on french side
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -771,16 +775,16 @@ Vous devez avoir un plan pour savoir ce qu'il faut faire si votre service se dé
 
 ### Lois et règles à suivre **(Norme de service numérique (Ontario))**
 
-- [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario, Norme d'information et de communication](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/r11191%2523BK9%23BK9#BK9)
+- [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario, Norme d'information et de communication](https://www.ontario.ca/fr/lois/reglement/r11191#BK9)
 
 ### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [garder votre service en ligne](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Norme de service numérique (Royaume-Uni))**
+- [keeping your service online (en anglais seulement)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Norme de service numérique (Royaume-Uni))**
 
 En savoir plus sur:
 
-- [technologie pour les services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Norme de service numérique (Royaume-Uni))**
+- [technology for services (en anglais seulement)](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Norme de service numérique (Royaume-Uni))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**

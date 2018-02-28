@@ -68,7 +68,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
+- [Identify performance indicators -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -90,13 +90,13 @@ La définition d'indicateurs de performance vous permet d'améliorer continuelle
 
   - définir une référence de performance pour l'ancien service, s'il y en avait un  **(Norme de service numérique (UK))**
 
-  - prévoir de réduire les [coûts par transaction](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) ou l'équivalent, pour les trajets non transactionnels   **(Norme de service numérique (UK))**
+  - prévoir de réduire les [coûts par transaction (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) ou l'équivalent, pour les trajets non transactionnels   **(Norme de service numérique (UK))**
 
-  - plan pour [améliorer la satisfaction des utilisateurs](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction)  **(Norme de service numérique (UK))**
+  - plan pour [améliorer la satisfaction des utilisateurs (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction)  **(Norme de service numérique (UK))**
 
-  - prévoir d' [augmenter le taux d'achèvement](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) ou l'équivalent, pour les voyages d'utilisateur non transactionnels   **(Norme de service numérique (UK))**
+  - prévoir d' [augmenter le taux d'achèvement (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) ou l'équivalent, pour les voyages d'utilisateur non transactionnels   **(Norme de service numérique (UK))**
 
-  - planifier une [augmentation](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) de l' [adoption du numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) et réduire le recours au numérique assisté   **(Norme de service numérique (UK))**
+  - planifier une [augmentation de l'adoption du numérique (en anglais seulement)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service)  et réduire le recours au numérique assisté   **(Norme de service numérique (UK))**
 
   - évaluer le potentiel de changement de canal et le niveau de besoin de services numériques assistés **(Digital Service Standard (UK))**
 
@@ -116,19 +116,19 @@ La définition d'indicateurs de performance vous permet d'améliorer continuelle
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise enœuvre\]**
 
-- [Utiliser les données pour améliorer votre service: une introduction](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)  **(Norme de service numérique (UK))**
+- [Using data to improve your service: an introduction (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)  **(Norme de service numérique (UK))**
 
-- [Choisir des outils d'analyse numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)  **(Norme de service numérique (UK))**
+- [Choosing digital analytics tools (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)  **(Norme de service numérique (UK))**
 
-- [Mesurer l'adoption numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)  **(Norme de service numérique (UK))**
+- [Measuring digital take-up (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)  **(Norme de service numérique (UK))**
 
-- [Partage de données sur la plate-forme de performance](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform)  **(Norme de service numérique (UK))**
+- [Sharing data on the Performance Platform (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform)  **(Norme de service numérique (UK))**
 
 En savoir plus sur:
 
-- [mesurer le succès](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)  **(Norme de service numérique (UK))**
+- [measuring success (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)  **(Norme de service numérique (UK))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments)  **(Norme de service numérique (UK))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments)  **(Norme de service numérique (UK))**
 
 ## 5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez
 
@@ -152,7 +152,7 @@ En savoir plus sur:
 
 - Open By Default, Proprietary by Necessity (Current GC EARB Principles)
 
-- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
+- [Default to open - Digital Playbook Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play13)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -201,7 +201,7 @@ l' information gouvernementaux , permettons au public de contribuer facilement e
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+- [Make all new source code open -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-openn)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -266,14 +266,14 @@ Rendre votre code source ouvert signifie  :
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
   œuvre\]**
 
-- [Rendre le code source ouvert et réutilisable](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable) **(Digital Service Standard (UK)))**
+- [Making source code open and reusable (en anglais seulement) ](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable) **(Digital Service Standard (UK)))**
 
-- [Utilisation de logiciels open source](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/open-source.html) **(Digital Service Standard (UK)))**
+- [Using open source software (en anglais seulement)](https://www.gov.uk/service-manual/making-software/open-source.html) **(Digital Service Standard (UK)))**
 
-- [Choisir la technologie: une introduction](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK)))**
+- [Choosing technology: an introduction (en anglais seulement)](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK)))**
 
 En savoir plus sur:
 
-- [technologie pour les services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK)))**
+- [technology for services (en anglais seulement) ](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK)))**
 
-- [évaluations de services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK)))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK)))**

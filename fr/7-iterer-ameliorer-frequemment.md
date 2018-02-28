@@ -22,15 +22,11 @@
 
 - Agile - Small chunks - Iterate (GC EA Principles)
 
-- [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
+- [Use agile methods -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
 
-- [8. Souplesse et orientation sur l’utilisateur (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-9)
+- [Souplesse et orientation sur l’utilisateur (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-9)
 
-- [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
-
-- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
-
-- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
+- [Build the service using agile and iterative practices -- Digital Services Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play4)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -150,11 +146,11 @@ Les méthodes agiles créent des services qui:
 
 En savoir plus sur:
 
-- [livraison agile](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/agile-delivery)  **(Norme de service numérique (UK))**
+- [agile delivery (en anglais seulement)](https://www.gov.uk/service-manual/agile-delivery)  **(Norme de service numérique (UK))**
 
-- [évaluations](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (UK))**
+- [assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (UK))**
 
-- [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (UK))**
+- [assisted digital support (en anglais seulement)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (UK))**
 
 ## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements
 
@@ -184,11 +180,7 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
-
-- [Iterate. Then iterate again for ongoing service improvement (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-- [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
+- [Iterate and improve frequently -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -231,7 +223,7 @@ améliorer afin de pouvoir:
 
   - déterminer combien de temps vous attendez que votre service soit en version bêta et pourquoi **(Digital Service Standard (UK))**
 
-  - documentez votre façon de [déployer le logiciel](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/deployment.html) , c.-à-d. comment vous pouvez déployer fréquemment avec un impact minimal sur les utilisateurs **(Digital Service Standard (UK))**
+  - documentez votre façon de [deploying software (en anglais seulement)](https://www.gov.uk/service-manual/making-software/deployment.html) , c.-à-d. comment vous pouvez déployer fréquemment avec un impact minimal sur les utilisateurs **(Digital Service Standard (UK))**
 
 - Scène en direct
 
@@ -245,6 +237,6 @@ améliorer afin de pouvoir:
 
 En savoir plus sur:
 
-- [livraison agile](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
+- [agile delivery (en anglais seulement)](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**

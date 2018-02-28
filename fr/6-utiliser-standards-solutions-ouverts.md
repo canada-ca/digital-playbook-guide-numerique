@@ -26,7 +26,11 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Open Source & Open Standards (Build it Digital Principles (initial thoughts))
+- [Use open standards and common platforms -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
+
+- [Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-10)
+
+- Open Source & Open Standards (Construire des principes numériques (premières réflexions))
 
 - Open Source Standards (GC EA Principles)
 
@@ -42,7 +46,7 @@
 
 L'utilisation de standards ouverts et de plates-formes gouvernementales communes signifie que vous:
 
-- de gagner du temps et de l' argent en réutilisant les choses qui sont déjà disponibles, comme [GOV.UK Vérifier](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://govuk-verify.cloudapps.digital/) l'assurance identité
+- de gagner du temps et de l' argent en réutilisant les choses qui sont déjà disponibles, comme [GOV.UK Verify (en anglais seulement)](https://govuk-verify.cloudapps.digital/) l'assurance identité
 
 - peut passer d'une technologie à l'autre quand vous en avez besoin et ne vous enfermez pas dans des contrats qui sont difficiles à
   mettre fin
@@ -81,7 +85,7 @@ L'utilisation de normes ouvertes et de plateformes gouvernementales communes aid
   - utiliser des normes ouvertes et des plates-formes communes pour
     éviter d'être enfermé dans des contrats  **(Digital Service Standard (UK) ) / **utiliser des standards ouverts et des plates-formes communes   **(Norme de service numérique (Ontario))**
 
-  - utiliser des plates-formes communes pour votre système, telles que [GOV.UK Verify](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://govuk-verify.cloudapps.digital/) comme une option pour l'assurance de l'identité   **(Digital Service Standard (UK) ) / **utiliser des plates-formes gouvernementales communes (p. Ex. Ontario.ca, Ontario Newsroom)   **(Norme de service numérique (Ontario))**
+  - utiliser des plates-formes communes pour votre système, telles que [GOV.UK Verify (en anglais seulement)](https://govuk-verify.cloudapps.digital/) comme une option pour l'assurance de l'identité   **(Digital Service Standard (UK) ) / **utiliser des plates-formes gouvernementales communes (p. Ex. Ontario.ca, Ontario Newsroom)   **(Norme de service numérique (Ontario))**
 
   - identifier les besoins communs de l'utilisateur que votre service rencontre et ce que vous réutilisez dans l'ensemble du gouvernement pour aider à répondre aux besoins des utilisateurs  **(Digital Service Standard (UK) ) / **comprendre les besoins communs des utilisateurs avec d'autres services et répondre à ces besoins de façon cohérente avec le reste du gouvernement   **(Norme de service numérique (Ontario))**
 
@@ -95,7 +99,7 @@ L'utilisation de normes ouvertes et de plateformes gouvernementales communes aid
   - gérer les données communes que vous détenez et votre engagement
     à les publier  **(Digital Service Standard (UK) ) / **expliquer quelles données sont utilisées et / ou collectées et quand elles seront publiées dans le cadre de la directive sur les données ouvertes   **(Norme de service numérique (Ontario))**
 
-  - utiliser des plates-formes gouvernementales communes, telles que [GOV.UK Verify](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://govuk-verify.cloudapps.digital/) comme une option pour l'assurance de l'identité   **(Digital Service Standard (UK) ) / **utiliser des plates-formes gouvernementales communes (p. Ex. Ontario.ca, Ontario Newsroom)   **(Norme de service numérique (Ontario))**
+  - utiliser des plates-formes gouvernementales communes, telles que [GOV.UK Verify (en anglais seulement)](https://govuk-verify.cloudapps.digital/) comme une option pour l'assurance de l'identité   **(Digital Service Standard (UK) ) / **utiliser des plates-formes gouvernementales communes (p. Ex. Ontario.ca, Ontario Newsroom)   **(Norme de service numérique (Ontario))**
 
   - intégrer avec tous les systèmes existants  **(Digital Service Standard (UK) ) / **intégrer avec tous les systèmes existants   **(Norme de service numérique (Ontario))**
 
@@ -120,27 +124,27 @@ L'utilisation de normes ouvertes et de plateformes gouvernementales communes aid
 
 ### Lois et règles à suivre  **(Norme de service numérique (Ontario))**
 
-- [Directive sur les données ouvertes de l'Ontario](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/ontarios-open-data-directive)
+- [Directive sur les données ouvertes de l'Ontario](https://www.ontario.ca/fr/page/directive-sur-les-donnees-ouvertes-de-lontario)
 
 - Plateformes standards
 
-  - Publication Web     - [Ontario.ca](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttp://www.ontario.ca/)
+  - Publication Web     - [Ontario.ca](https://www.ontario.ca/)
 
-  - Nouvelles - [Salle de presse de l'Ontario](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/news)
+  - Nouvelles - [Salle de presse de l'Ontario](https://news.ontario.ca/newsroom/fr)
 
-  - Open data - [Catalogue de données](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/search/data-catalogue)
+  - Open data - [Catalogue de données](https://www.ontario.ca/fr/recherche/donnees-publiques)
 
 ### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Travailler avec des standards ouverts](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html)  **(Norme de service numérique (UK))**
+- [Working with open standards (en anglais seulement)](https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html)  **(Norme de service numérique (UK))**
 
 En savoir plus sur:
 
-- [technologie pour les services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)  **(Norme de service numérique (UK))**
+- [technology for services (en anglais seulement)](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)  **(Norme de service numérique (UK))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work)  **(Norme de service numérique (UK))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work)  **(Norme de service numérique (UK))**
 
 ## 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
 
@@ -162,11 +166,7 @@ En savoir plus sur:
 
 - Architecturally Fit for the GC Enterprise (GC EA Principles)
 
-- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
-
-- [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
-
-- [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
+- [Choose a modern technology stack -- Digital Services Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play8)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -185,7 +185,7 @@ En savoir plus sur:
 
 - Assurez-vous que chaque projet dispose d'instructions claires et compréhensibles pour la mise en place d'un environnement de développement local, et que les membres de l'équipe peuvent être rapidement ajoutés ou supprimés des projets  **(Playbook de services numériques (US))**
 
-- [Envisager des solutions logicielles open source](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) à
+- [Consider open source software solutions (en anglais seulement)](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) à
   chaque couche de la pile  **(Playbook de services numériques (US))**
 
 ### Questions clés  **(Playbook de services numériques (US))**
@@ -270,13 +270,13 @@ entre les services, optimiser les expériences entre les appareils et même mene
 
 - End-to-end digital (OneGC product design criteria)
 
-- DevOps (automated test and deployment tool) (GC EA Principles)
+- [Conception du service du début à la fin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-5)
 
-- [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
+- [Test the end-to-end service (Digital Service Standard (UK)) (en anglais seulement))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
 
-- [4. Conception du service du début à la fin (Normes des services numériques (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-5)
+- [Tester le service de bout en bout (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-7)
 
-- [6. Tester le service de bout en bout (Normes des services numériques (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
+- [Automate testing and deployments -- Digital Services Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play10)
 
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 
@@ -436,23 +436,23 @@ Cela signifie des utilisateurs plus satisfaits qui ont confiance dans les servic
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Assurance qualité: tester régulièrement votre service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)  **(Norme de service numérique (UK))**
+- [Quality assurance: testing your service regularly (en anglais seulement)](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)  **(Norme de service numérique (UK))**
 
-- [Concevoir pour différents navigateurs et appareils](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices)  **(Norme de service numérique (UK))**
+- [Designing for different browsers and devices (en anglais seulement)](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices)  **(Norme de service numérique (UK))**
 
-- [Test de performance](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/test-your-services-performance)  **(Norme de service numérique (UK))**
+- [Performance testing (en anglais seulement)](https://www.gov.uk/service-manual/technology/test-your-services-performance)  **(Norme de service numérique (UK))**
 
-- [Tests exploratoires](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/exploratory-testing)  **(Norme de service numérique (UK))**
+- [Exploratory testing (en anglais seulement)](https://www.gov.uk/service-manual/technology/exploratory-testing)  **(Norme de service numérique (UK))**
 
-- [Environnements de déploiement](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/deployment.html)  **(Norme de service numérique (UK))**
+- [Deployment environments (en anglais seulement)](https://www.gov.uk/service-manual/making-software/deployment.html)  **(Norme de service numérique (UK))**
 
-- [Vulnérabilité et test de pénétration](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing)  **(Norme de service numérique (UK))**
+- [Vulnerability and penetration testing (en anglais seulement)](https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing)  **(Norme de service numérique (UK))**
 
 En savoir plus sur:
 
-- [technologie pour les services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)  **(Norme de service numérique (UK))**
+- [technology for services (en anglais seulement)](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)  **(Norme de service numérique (UK))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work)  **(Norme de service numérique (UK))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work)  **(Norme de service numérique (UK))**
 
 ## 6.6 Nuage d'abord
 
@@ -466,7 +466,7 @@ En savoir plus sur:
 
 - (Public) Cloud First: SaaS -- PaaS -- IaaS (GC EA Principles)
 
-- [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
+- [Deploy in a flexible hosting environment -- Digital Services Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play9)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

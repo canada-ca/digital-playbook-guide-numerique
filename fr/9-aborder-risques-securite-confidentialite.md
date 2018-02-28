@@ -42,7 +42,7 @@
 
 - Privacy Aware (GC EA Principles)
 
-- [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
+- [Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -114,15 +114,15 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 ### Lois et règles à suivre **(Norme de service numérique (Ontario ))**
 
-- [Loi sur l'accès à l'information et la protection de la vie privée](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/90f31)
+- [Loi sur l'accès à l'information et la protection de la vie privée](https://www.ontario.ca/fr/lois/loi/90f31)
 
-- [Loi sur les archives et la tenue de documents](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/06a34)
+- [Loi sur les archives et la tenue de documents](https://www.ontario.ca/fr/lois/loi/06a34)
 
-- [Loi sur la protection des renseignements personnels sur la santé](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/04p03)
+- [Loi sur la protection des renseignements personnels sur la santé](https://www.ontario.ca/fr/lois/loi/04p03)
 
-- [Loi sur la protection des renseignements personnels et les documents électroniques](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/r_o_p/)
+- [Loi sur la protection des renseignements personnels et les documents électroniques](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-loi-sur-la-protection-des-renseignements-personnels-et-les-documents-electroniques-lprpde/r_o_p/)
 
-- [La législation anti-pourriel du Canada](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttp://fightspam.gc.ca/eic/site/030.nsf/eng/home)
+- [La Loi canadienne anti-pourriel](http://fightspam.gc.ca/eic/site/030.nsf/fra/accueil)
 
 ### Guides d'implémentation
 
@@ -138,7 +138,7 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 - Secure by Design (GC EA Principles)
 
-- [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
+- [Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -210,16 +210,15 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 ### Lois et règles à suivre **(Service numérique Standard (Ontario))**
 
-- [Loi sur l'accès à l'information et la protection de la vie privée](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/90f31)
+- [Loi sur l'accès à l'information et la protection de la vie privée](https://www.ontario.ca/fr/lois/loi/90f31)
 
-- [Loi sur les archives et la tenue de documents](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/06a34)
+- [Loi sur les archives et la tenue de documents](https://www.ontario.ca/fr/lois/loi/06a34)
 
-- [Loi sur la protection des renseignements personnels sur la santé](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/04p03)
+- [Loi sur la protection des renseignements personnels sur la santé](https://www.ontario.ca/fr/lois/loi/04p03)
 
-- [Loi sur la protection des renseignements personnels et les documents
-  électroniques](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/r_o_p/)
+- [Loi sur la protection des renseignements personnels et les documents électroniques](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-loi-sur-la-protection-des-renseignements-personnels-et-les-documents-electroniques-lprpde/r_o_p/)
 
-- [La législation anti-pourriel du Canada](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttp://fightspam.gc.ca/eic/site/030.nsf/eng/home)
+- [La Loi canadienne anti-pourriel](http://fightspam.gc.ca/eic/site/030.nsf/fra/accueil)
 
 ### Guides d'implémentation
 
@@ -229,9 +228,9 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
+- [Understand security and privacy issues -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 
-- [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
+- [Manage security and privacy through reusable processes -- Digital Services Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -322,14 +321,14 @@ La ### Liste de contrôle suivante fournit un point de départ, mais les équipe
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Sécurité de l'information](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
+- [Information security (en anglais seulement)](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
 
-- [Sécurité dans le cloud](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/operations/cloud-security.html) **(Digital Service Standard (UK))**
+- [Cloud security (en anglais seulement)](https://www.gov.uk/service-manual/operations/cloud-security.html) **(Digital Service Standard (UK))**
 
-- [Comptes d'utilisateurs et connexions](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
+- [User accounts and logins (en anglais seulement)](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
 
 En savoir plus sur:
 
-- [la technologie pour les services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
+- [technology for services (en anglais seulement)](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**

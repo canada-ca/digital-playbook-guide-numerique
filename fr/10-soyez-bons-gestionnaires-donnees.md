@@ -40,7 +40,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
+- [Use data to drive decisions -- Digital Services Playbook (US) (en anglais seulement)](https://playbook.cio.gov/#play12)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -104,9 +104,9 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
+- [Collect performance data -- Digital Service Standard (UK) (en anglais seulement)](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 
-- [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-14)
+- [Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-14)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -182,21 +182,21 @@ Mesurer la performance signifie améliorer continuellement un service en:
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Utiliser les données pour améliorer votre service: une introduction](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction) **(Norme de service numérique (UK))**
+- [Using data to improve your service: an introduction (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction) **(Norme de service numérique (UK))**
 
-- [Choisir des outils d'analyse numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools) **(Norme de service numérique (UK))**
+- [Choosing digital analytics tools (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools) **(Norme de service numérique (UK))**
 
-- [Mesurer l'adoption numérique](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Norme de service numérique (UK))**
+- [Measuring digital take-up (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Norme de service numérique (UK))**
 
-- [Mesurer la satisfaction des utilisateurs](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction) **(Norme de service numérique (UK))**
+- [Measuring user satisfaction (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction) **(Norme de service numérique (UK))**
 
-- [Mesurer le coût par transaction](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) **(Norme de service numérique (UK))**
+- [Measuring cost per transaction (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) **(Norme de service numérique (UK))**
 
-- [Mesurer le taux d'achèvement](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) **(Norme de service numérique (UK))**
+- [Measuring completion rate (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) **(Norme de service numérique (UK))**
 
-- [Partage de données sur la plate-forme de performance](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Norme de service numérique (UK))**
+- [Sharing data on the Performance Platform (en anglais seulement)](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Norme de service numérique (UK))**
 
-En savoir plus sur [les évaluations de services](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments). **(Norme de service numérique (UK))**
+En savoir plus sur [service assessments. (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments). **(Norme de service numérique (UK))**
 
 ## 10.4 Tenir dûment compte de la conservation et de la conservation numériques
 
