@@ -4,13 +4,13 @@
 
 **Des lignes directrices:**
 
-9.1 [Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées](#user-content-91-adopter-une-approche-équilibrée-de-gestion-des-risques-en-mettant-en-œuvre-des-mesures-de-sécurité-et-de-confidentialité-appropriées)
+[9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées](#user-content-91-adopter-une-approche-équilibrée-de-gestion-des-risques-en-mettant-en-œuvre-des-mesures-de-sécurité-et-de-confidentialité-appropriées)
 
-9.2 [Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données](#user-content-92-innover-et-saméliorer-tout-en-répondant-aux-attentes-du-public-quant-à-la-protection-de-la-confidentialité-des-données)
+[9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données](#user-content-92-innover-et-saméliorer-tout-en-répondant-aux-attentes-du-public-quant-à-la-protection-de-la-confidentialité-des-données)
 
-9.3 [Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité](#user-content-93-faites-en-sorte-que-la-sécurité-soit-fluide-et-sans-friction-en-équilibrant-sécurité-et-commodité)
+[9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité](#user-content-93-faites-en-sorte-que-la-sécurité-soit-fluide-et-sans-friction-en-équilibrant-sécurité-et-commodité)
 
-9.4 [S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires](#user-content-94-sassurer-que-les-services-sont-conformes-à-toutes-les-exigences-législatives-et-réglementaires)
+[9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires](#user-content-94-sassurer-que-les-services-sont-conformes-à-toutes-les-exigences-législatives-et-réglementaires)
 
 **Directives connexes:**
 
