@@ -47,7 +47,7 @@
 
 - Protection de la vie privée (principes de l'évaluation environnementale de la GC)
 
-- [Intégrer la confidentialité et la sécurité dès la conception (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-11%23section-11#section-11)
+- [11. Intégrer la confidentialité et la sécurité dès la conception (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-11%23section-11#section-11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -152,7 +152,7 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 - Sécuriser par la conception (Principes d'ÉE du GC)
 
-- [Intégrer la confidentialité et la sécurité dès la conception (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-11%23section-11#section-11)
+- [11. Intégrer la confidentialité et la sécurité dès la conception (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-11%23section-11#section-11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -252,9 +252,9 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [Comprendre les questions de sécurité et de confidentialité - Digital Service Standard (UK)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
+- [7. Comprendre les questions de sécurité et de confidentialité (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 
-- [Gérez la sécurité et la confidentialité grâce à des processus réutilisables - Digital Services Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play11%23play11#play11)
+- [11. Gérez la sécurité et la confidentialité grâce à des processus réutilisables (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play11%23play11#play11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
