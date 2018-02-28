@@ -9,6 +9,7 @@
 1. Current GC EARB Principles (GC) comparison table
 1. Build It Digital Principles (GC) comparison table
 1. EA Principles (GC) comparison table
+1. Digital Services Design Playbook (ISED) comparison table
 
 ## Government of Canada Digital Playbook comparison table
 <table>
@@ -30,6 +31,7 @@
 			<td>
 				<ul>
 					<li>User tested (OneGC product design criteria)</li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback">2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -55,6 +57,8 @@
 					<li><a href="https://www.gov.uk/service-manual/service-standard/understand-user-needs">1.&#160;Understand user needs (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-2">2.&#160;Understand users and their needs (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play1">1.&#160;Understand what people need (Digital Services Playbook (US))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs">1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -74,7 +78,8 @@
 			</td>
 			<td>
 				<ul>
-					<li>Mobility Preferred (Current GC EARB Principles)</li>						<li>Any Device - Mobility (GC EA principles)</li>
+					<li>Mobility Preferred (Current GC EARB Principles)</li>										<li>Any Device - Mobility (GC EA principles)</li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -89,6 +94,8 @@
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-4">4.&#160;Be consistent (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-6">6.&#160;Ensure users succeed the first time (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play3">3.&#160;Make it simple and intuitive  (Digital Services Playbook (US))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -188,6 +195,7 @@
 			<td>
 				<ul>
 					<li><a href="https://playbook.cio.gov/#play5"> 5.&#160;Structure budgets and contracts to support delivery (Digital Services Playbook (US))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#-9._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.">1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -231,6 +239,7 @@
 			<td>
 				<ul>
 					<li>Release data by default (Build it Digital Principles (initial thoughts))</li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -256,6 +265,9 @@
 				<a href="5-work-in-open-by-default.md#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make">5.4&#160;Be transparent about how you work and justify the decisions you make</a>
 			</td>
 			<td>
+				<ul>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices">2. Share best practices (ISED)) (internal to GC only)</a></li>
+				</ul>
 			</td>
 		</tr>
 		<tr>
@@ -310,6 +322,8 @@
 					<li>Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)</li>
 					<li>Architecturally Fit for the GC Enterprise (GC EA Principles)</li>
 					<li><a href="https://playbook.cio.gov/#play8">8.&#160;Choose a modern technology stack (Digital Services Playbook (US))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives">1. Comply with Government of Canada acts, policies, standards and directives (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2. Reuse, improve and share technological solutions where appropriate">2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -375,6 +389,8 @@
 					<li><a href="https://www.gov.uk/service-manual/service-standard/use-agile-methods">4.&#160;Use agile methods (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-9">9.&#160;Be agile and user-centred (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play4">4. Build the service using agile and iterative practices (Digital Services Playbook (US))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually">3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.">3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -390,6 +406,9 @@
 				<a href="7-iterate-improve-frequently.md#user-content-73-embrace-and-react-to-changes-in-the-environment-and-design-for-sustainability">7.3&#160;Embrace and react to changes in the environment and design for sustainability</a>
 			</td>
 			<td>
+				<ul>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.">2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+				</ul>
 			</td>
 		</tr>
 		<tr>
@@ -399,6 +418,8 @@
 			<td>
 				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently">5.&#160;Iterate and improve frequently (Digital Service Standard (UK))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Iterate. Then iterate again for ongoing service improvement (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.">1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
