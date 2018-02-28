@@ -26,13 +26,13 @@
 
 **Related (temporary for mapping purposes; remove later): **
 
-- [Use open standards and common platforms -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
-
-- [Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
-
 - Open Source & Open Standards (Build it Digital Principles (initial thoughts))
 
 - Open Source Standards (GC EA Principles)
+
+- [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
+
+- [Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 
 **[TODO: Add/revise introductory text]**
 
@@ -154,7 +154,7 @@ Find out more about:
 
 - Architecturally Fit for the GC Enterprise (GC EA Principles)
 
-- [Choose a modern technology stack -- Digital Services Playbook (US)](https://playbook.cio.gov/#play8)
+- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 
 **[TODO: Add/revise introductory text]**
 
@@ -192,11 +192,11 @@ Find out more about:
 
 - API enabled (OneGC product design criteria)
 
-- Create API's in the developer's space (Build it Digital Principles (initial thoughts))
+- Create APIs in the developer's space (Build it Digital Principles (initial thoughts))
 
-- Interoperability) (Current GC EARB Principles)
+- Interoperability (Current GC EARB Principles)
 
-- Interoperability (- ESB/APIs -- Micro Services) (GC EA Principles)
+- Interoperability (ESB/APIs -- Micro Services) (GC EA Principles)
 
 **[TODO: Add/revise introductory text]**
 
@@ -252,17 +252,17 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- OneGC product design criteria
-
-- [Design the service from start to finish (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-5)
-
-- [Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
-
-- [Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
-
-- [Automate testing and deployments -- Digital Services Playbook (US)](https://playbook.cio.gov/#play10)
+- End-to-end digital (OneGC product design criteria)
 
 - DevOps (automated test and deployment tool) (GC EA Principles)
+
+- [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
+
+- [5. Design the service from start to finish (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-5)
+
+- [7. Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
+
+- [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 
 **[TODO: Add/revise introductory text]**
 
@@ -436,7 +436,7 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- OneGC product design criteria
+- Cloud first (OneGC product design criteria)
 
 - Cloud First (Current GC EARB Principles)
 
@@ -444,7 +444,7 @@ Find out more about:
 
 - (Public) Cloud First: SaaS -- PaaS -- IaaS (GC EA Principles)
 
-- [Deploy in a flexible hosting environment -- Digital Services Playbook (US)](https://playbook.cio.gov/#play9)
+- [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
 
 **[TODO: Add/revise introductory text]**
 

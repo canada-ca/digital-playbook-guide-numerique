@@ -36,7 +36,7 @@
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Evaluate tools and systems -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
+- [Evaluate tools and systems (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
 
 **[TODO: Add/revise introductory text]**
 
@@ -108,7 +108,7 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Structure budgets and contracts to support delivery -- Digital Services Playbook (US)](https://playbook.cio.gov/#play5)
+- [Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 
 **[TODO: Add/revise introductory text]**
 
@@ -174,9 +174,9 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- OneGC product design criteria
+- One business owner (OneGC product design criteria)
 
-- [Assign one leader and hold that person accountable -- Digital Services Playbook (US)](https://playbook.cio.gov/#play6)
+- [Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 **[TODO: Add/revise introductory text]**
 
@@ -238,9 +238,9 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Bring in experienced teams -- Digital Services Playbook (US)](https://playbook.cio.gov/#play7)
+- [Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
 
-- [Have a multidisciplinary team -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
+- [Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
 
 - [Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-3)
 

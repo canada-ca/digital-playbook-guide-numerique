@@ -72,7 +72,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [Identifier les indicateurs de performance - Digital Service Standard (UK)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
+- [16. Identifier les indicateurs de performance (Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -161,11 +161,11 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Critères de conception du produit OneGC
+- Ouvrir par défaut (Critères de conception du produit OneGC)
 
 - Ouvert par défaut, propriété par nécessité (Principes EARB actuels du GC)
 
-- [Par défaut pour ouvrir - Digital Playbook Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play13%23play13#play13)
+- [13. Par défaut pour ouvrir (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play13%23play13#play13)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -219,7 +219,7 @@ l' information gouvernementaux , permettons au public de contribuer facilement e
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [Rendre tout le nouveau code source ouvert - Digital Service Standard (UK)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+- [8. Rendre tout le nouveau code source ouvert (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

@@ -28,13 +28,13 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [Utiliser des standards ouverts et des plates-formes communes - Digital Service Standard (UK)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
-
-- [Utiliser des standards ouverts et des plateformes communes (Digital Service Standard (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-10%23section-10#section-10)
-
 - Open Source & Open Standards (Construire des principes numériques (premières réflexions))
 
 - Normes Open Source (Principes d'ÉE du GC)
+
+- [8. Utiliser des standards ouverts et des plates-formes communes (Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
+
+- [10. Utiliser des standards ouverts et des plateformes communes (Digital Service Standard (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-10%23section-10#section-10)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -170,7 +170,7 @@ En savoir plus sur:
 
 - Architecturalement adapté à GC Enterprise (Principes d'EA de GC)
 
-- [Choisissez une pile technologique moderne - Digital Services Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play8%23play8#play8)
+- [8. Choisissez une pile technologique moderne (Playbook de services numériques (États Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play8%23play8#play8)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -215,9 +215,9 @@ En savoir plus sur:
 
 - Créer des API dans l'espace du développeur (Build it Digital Principles (premières réflexions))
 
-- Interopérabilité ) (Principes EARB actuels du GC)
+- Interopérabilité (Principes EARB actuels du GC)
 
-- Interopérabilité (- ESB / APIs - Micro Services) (Principes EA du GC)
+- Interopérabilité (ESB / APIs - Micro Services) (Principes EA du GC)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -281,17 +281,17 @@ entre les services, optimiser les expériences entre les appareils et même mene
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Critères de conception du produit OneGC
+- Numérique de bout en bout (Critères de conception du produit OneGC)
 
-- [Concevoir le service du début à la fin (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-5%23section-5#section-5)
+- DevOps (outil de test et de déploiement automatisé) (Principes EA du GC)
 
-- [Testez le service de bout en bout (Digital Service Standard (UK))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
+- [10. Testez le service de bout en bout (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
 
-- [Testez le service de bout en bout (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-7%23section-7#section-7)
+- [5. Concevoir le service du début à la fin (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-5%23section-5#section-5)
 
-- [Automatisez les tests et les déploiements - Digital Services Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play10%23play10#play10)
+- [7. Testez le service de bout en bout (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-7%23section-7#section-7)
 
-- DevOps (outil de test et de déploiement automatisé) (GC EA Principes)
+- [10. Automatisez les tests et les déploiements (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play10%23play10#play10)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -481,7 +481,7 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Critères de conception du produit OneGC
+- Nuage d'abord (Critères de conception du produit OneGC)
 
 - Cloud First (Principes GC EARB actuels)
 
@@ -489,7 +489,7 @@ En savoir plus sur:
 
 - (Public) Cloud First: SaaS - PaaS - IaaS (Principes d'EA du GC)
 
-- [Déployer dans un environnement d'hébergement flexible - Digital Services Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play9%23play9#play9)
+- [9. Déployer dans un environnement d'hébergement flexible (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play9%23play9#play9)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
