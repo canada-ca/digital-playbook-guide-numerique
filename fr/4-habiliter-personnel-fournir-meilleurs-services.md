@@ -36,7 +36,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [Évaluer les outils et les systèmes - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
+- [6. Évaluer les outils et les systèmes (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -110,7 +110,7 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [Structurer les budgets et les contrats pour soutenir la livraison - Digital Services Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play5%23play5#play5)
+- [5. Structurer les budgets et les contrats pour soutenir la livraison (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play5%23play5#play5)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -179,9 +179,9 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- Critères de conception du produit OneGC
+- Un propriétaire d'entreprise (Critères de conception du produit OneGC)
 
-- [Assignez un chef et tenez cette personne responsable - Digital Services Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play6%23play6#play6)
+- [6. Assignez un chef et tenez cette personne responsable (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play6%23play6#play6)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -245,11 +245,11 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [Intégrez des équipes expérimentées - Digital Services Playbook (US)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play7%23play7#play7)
+- [3. Avoir une équipe multidisciplinaire (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
 
-- [Avoir une équipe multidisciplinaire - Digital Service Standard (UK)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
+- [3. Établir la bonne équipe (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-3%23section-3#section-3)
 
-- [Établir la bonne équipe (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-3%23section-3#section-3)
+- [7. Intégrez des équipes expérimentées (Playbook des services numériques (États-Unis)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play7%23play7#play7)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
