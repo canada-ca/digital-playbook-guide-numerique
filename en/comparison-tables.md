@@ -195,7 +195,7 @@
 			<td>
 				<ul>
 					<li><a href="https://playbook.cio.gov/#play5"> 5.&#160;Structure budgets and contracts to support delivery (Digital Services Playbook (US))</a></li>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#-9._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.">1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.">1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
