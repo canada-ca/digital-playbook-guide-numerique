@@ -30,6 +30,8 @@
 
 - Libérer les données par défaut (Build it Digital Principles (premières réflexions))
 
+- [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 ### Liste de contrôle
@@ -45,6 +47,8 @@
 - Cataloguez les données dans l'inventaire des données d'entreprise de l'agence et ajoutez les ensembles de données publics à la liste de données publiques de l'agence.   **(**   **Playbook de services numériques (US)**   **)**
 
 - S'assurer que nous maintenons les droits sur toutes les données développées par des tiers d'une manière qui soit disponible et réutilisable sans frais pour le public   **(**   **Playbook de services numériques (US)**   **)**
+
+- Data and code is shared so that clients can extract/create value. **(General design principles - Digital Design Playbook (ISED))**
 
 ### Guides d'implémentation
 
@@ -140,7 +144,15 @@ En savoir plus sur:
 
 ## 5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez
 
+**Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
+
+- [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+**Exemples d'introduction:**
+
+**Plan - Digital Design Playbook (ISED):** Share your experiences with colleagues across the Government of Canada, other levels of government, clients and service providers. Sharing experiences and best practices helps to raise the overall service quality. It helps to reduce duplication of effort and save costs. So share ideas, share intentions, share failures and learn together.
 
 ### Liste de contrôle
 
@@ -148,14 +160,34 @@ En savoir plus sur:
 
 - Le cas échéant, partagez votre processus de développement et progressez publiquement   **(**   **Playbook de services numériques (US)**   **)**
 
+- Document and show your work. **(Plan - Digital Design Playbook (ISED))**
 
+- If you are redesigning a service document the changes and show how these changes will enhance the client experience when using the service. **(Plan - Digital Design Playbook (ISED))**
+
+- Embrace sharing platforms (e.g., GCconnex, GCpedia, Twitter, etc.) to get inspiration and feedback on your ideas. **(Plan - Digital Design Playbook (ISED))**
+
+- Before you start your own project, do an environmental scan to see how other programs and services are embracing digital service delivery. **(Plan - Digital Design Playbook (ISED))**
+
+- Identify lessons learned throughout the project and not just at the end. **(Plan - Digital Design Playbook (ISED))**
+
+- Make it easier to share data across ISED by collecting service and client information in a consistent manner and following best practices (e.g., the business number as a common identifier and practices related to Identity Management (IDM)). **(Plan - Digital Design Playbook (ISED))**
+
+### Decision Making Questions: **(Plan - Digital Design Playbook (ISED))**
+#### Sharing
+- How can the team share what was learned during this project?
+- Can the lessons-learned from this experience contribute to better service delivery for other ISED services or services offered by other departments or governments?
+- Is there a valid reason not to share? If you cannot share everything, what can you share without breaching privacy, security and information management rules?
+- Have you researched other services for business to identify other approaches to digital services and service delivery?
+- Is there already a GCconnex group or GCpedia group exploring a similar service challenge or innovative approach to service delivery?
+- Have you reached out to other digital government teams or researched case studies that document the journey of other services?
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-
+Inspriation Examples: **(Plan - Digital Design Playbook (ISED))**
+- [How sharing helps us improve digital services](https://gds.blog.gov.uk/2014/08/22/how-sharing-helps-us-improve-digital-services/)
+- [There's nothing wrong with being unoriginal](https://medium.com/ontariodigital/theres-nothing-wrong-with-being-unoriginal-b540fa20aaf0#.ifvv8l7mi)
 
 ## 5.5 Ouvrir par défaut
 
