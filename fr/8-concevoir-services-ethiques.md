@@ -16,8 +16,6 @@
 
 **\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
 
-
-
 ## 8.1 Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
@@ -28,10 +26,7 @@
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
-
-
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 8.2 Évaluer l'impact total sur les utilisateurs et les communautés
 
@@ -43,10 +38,7 @@
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
-
-
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés
 
@@ -60,10 +52,7 @@
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
-
-
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 8.4 Équilibrer les compromis entre innovation et inclusivité
 
