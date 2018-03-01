@@ -67,45 +67,37 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 - **[TODO: Add/revise checklist items]**
 
-- Alpha stage
+#### Alpha stage
 
-  - determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
+- determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
 
-  - pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
+- pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
 
-  - carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
+- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
-  - develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
+- develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
-- Beta and live stages
+#### Beta and live stages
 
-  - pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
+- pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
 
-  - carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
+- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
-  - develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
+- develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
-  - do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**
+- do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**
 
-  - test with users who need assisted digital support **(Digital Service Standard (UK))**
+- test with users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - use analytics data in your user research plan for the service **(Digital Service Standard (UK))**
+- use analytics data in your user research plan for the service **(Digital Service Standard (UK))**
 
-  - document any problems you've found through testing and how you solved them **(Digital Service Standard (UK))**
+- document any problems you've found through testing and how you solved them **(Digital Service Standard (UK))**
 
-  - document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
+- document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
 
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
-
-Find out more about:
-
-- [user research](https://www.gov.uk/service-manual/user-research) **(Digital Service Standard (UK))**
-
-- [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
-
-- [assisted digital support](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Digital Service Standard (UK))**
 
 ### Similar resources
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
