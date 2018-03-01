@@ -22,7 +22,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Utiliser un niveau de sécurité approprié (Construire des principes numériques (pensées initiales))
+- Use appropriate level of security (Build it Digital Principles (initial thoughts))
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -43,11 +43,11 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Protection de la vie privée (Principes EARB actuels du GC)
+- Privacy Aware (Current GC EARB Principles)
 
-- Protection de la vie privée (principes de l'évaluation environnementale de la GC)
+- Privacy Aware (GC EA Principles)
 
-- [11. Intégrer la confidentialité et la sécurité dès la conception (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-11%23section-11#section-11)
+- [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -146,13 +146,13 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Fournir une gestion commune des identités et des accès dans tous les systèmes (Construire des principes numériques (premières réflexions))
+- Provide common identity & Access management across all systems (Build it Digital Principles (initial thoughts))
 
-- Sécuriser par la conception (principes EARB actuels du GC)
+- Secure by Design (Current GC EARB Principles)
 
-- Sécuriser par la conception (Principes d'ÉE du GC)
+- Secure by Design (GC EA Principles)
 
-- [11. Intégrer la confidentialité et la sécurité dès la conception (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-11%23section-11#section-11)
+- [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -252,9 +252,9 @@ Les utilisateurs n'utiliseront pas un service à moins d'avoir une garantie:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [7. Comprendre les questions de sécurité et de confidentialité (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
+- [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 
-- [11. Gérez la sécurité et la confidentialité grâce à des processus réutilisables (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play11%23play11#play11)
+- [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
