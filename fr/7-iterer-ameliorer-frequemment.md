@@ -36,7 +36,7 @@
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-**Exemples d'introduction:**
+**Exemples d'introduction :**
 
 **Digital Service Standard (UK): **Construisez votre service en utilisant les méthodes agiles, itératives et centrées sur l'utilisateur définies dans le manuel.
 
@@ -250,31 +250,47 @@ Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digit
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 
 
 ## 7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité
 
+**Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
+
+- [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+**Exemples d'introduction :**
+
+**2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)):** Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology.
 
 ### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- Continuously measure client experience and create a customer-prioritized improvement plan. **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
+
+- Commit to regular service reviews **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
+
+- Identify opportunities to improve the service based on the results of regular test **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
+
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-
+- [TBS Guideline on Service Management – Priority Service Review Tool (page 58)](http://www.gcpedia.gc.ca/gcwiki/images/f/f9/Guideline_on_Service_Management-Final.pdf)
 
 ## 7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
 - [5. Itérer et améliorer fréquemment (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
+
+- [Iterate. Then iterate again for ongoing service improvement (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+
+- [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -289,11 +305,39 @@ améliorer afin de pouvoir:
 
 - assurez-vous que votre service continue de répondre aux besoins des utilisateurs
 
+**1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED))**: Services should be simple, inclusive and easy to use. Services should help clients achieve the outcomes that matter most. Assessing prototypes while the service is being designed will help you discover shortcomings that may deter clients from using the service or glitches that may affect the user experience. Assessing the service before it is officially launched will also help you make improvements that can go a long way in ensuring clients are satisfied when using the service. Rigorously and comprehensively testing the service from end-to-end is part of good service design.
+
 ### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- Start small and build upon successes. **(General design principles - Digital Design Playbook (ISED))**
 
+- Don’t wait for a fully developed service to start testing. **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+  - Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.
+
+- Define your testing objective **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+  - Define the purpose of the test and what you want to learn? The purpose of the test is often determined by your business goals and user needs identified through feedback, analytics and other sources.
+  - Identify top or critical tasks to test. Main outcomes and features your clients want to achieve should be prioritized.
+
+- Test with clients and others **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+  - You need to ensure that the service works from technical perspective and from the perspective of the user and the service provider (including the help desk agent who assists clients when they face challenges using the service). By testing with a diverse group and different type of users, you can capture a more comprehensive understanding of how your service is working.
+  - Make sure the participants are representative of your clients.
+  - Utilize user experience testing services offered by the Chief Information Office and the Communications team
+
+- Plan and deliver client testing cycles **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+  - Pilot your test: Make sure it all works
+  - Implement the test.
+  - Test often (e.g., six month or yearly intervals), apply the findings and keep on testing.
+
+- Test under realistic conditions **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**  
+  - Create realistic scenarios that reflect the context and environment in which clients would use the service.
+
+- Use different types of tests to assess the service **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+  - Identify the best testing method based on your needs. Examples of tests include:
+    - Tree Testing - A test in which participants are asked to find a resource based on a series of menus.
+    - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
+    - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
 
 - Alpha, beta et stades en direct
 
@@ -321,8 +365,6 @@ améliorer afin de pouvoir:
 
     - documentez votre façon de [déployer le logiciel](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/deployment.html) , c.-à-d. comment vous pouvez déployer fréquemment avec un impact minimal sur les utilisateurs **(Digital Service Standard (UK))**     
 
-
-
 - Scène en direct
 
     - assurez-vous que les déploiements n'ont pas de temps d'arrêt d'une manière qui n'empêche pas les utilisateurs d'utiliser le service **(Digital Service Standard (UK))**
@@ -330,10 +372,33 @@ améliorer afin de pouvoir:
     - assurez-vous d'avoir suffisamment de personnel pour continuer à
         améliorer le service **(Digital Service Standard (UK))**
 
+### Decision Making Questions: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- Is the service stable, secure and responsive, regardless of how many people are using it?
+- Is the service [accessible](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)?
+- How will you recruit clients for user testing?
+- What method(s) will you use to test the service?
+- How frequently will you test the service?
+- Where will the testing take place?
+- Did you test for user experience in addition to testing for technical aspects (e.g., does the code work)?
+- How will you apply the findings from user testing to improve the service?
+
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+- [Gov.UK Test your service’s performance]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+
+- [Gov.UK Testing your service regularly]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+
+- [Gov.UK Exploratory Testing]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+
+- [18F Testing Cookbook]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+
+- [26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+
+- User centric design GC community of practice: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+  - http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs
+  - http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing
 
 En savoir plus sur:
 
