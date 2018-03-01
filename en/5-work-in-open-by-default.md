@@ -28,6 +28,8 @@
 
 - Release data by default (Build it Digital Principles (initial thoughts))
 
+- [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+
 **[TODO: Add/revise introductory text]**
 
 ### Checklist
@@ -43,6 +45,8 @@
 - Catalog data in the agency's enterprise data inventory and add any public datasets to the agency's public data listing **(Digital Services Playbook (US))**
 
 - Ensure that we maintain the rights to all data developed by third parties in a manner that is releasable and reusable at no cost to the public **(Digital Services Playbook (US))**
+
+- Data and code is shared so that clients can extract/create value. **(General design principles - Digital Design Playbook (ISED))**
 
 ### Implementation guides
 
@@ -128,7 +132,15 @@ Find out more about:
 
 ## 5.4 Be transparent about how you work and justify the decisions you make
 
+**Related (temporary for mapping purposes; remove later):**
+
+- [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
+
 **[TODO: Add/revise introductory text]**
+
+**Introduction examples:**
+
+**Plan - Digital Design Playbook (ISED):** Share your experiences with colleagues across the Government of Canada, other levels of government, clients and service providers. Sharing experiences and best practices helps to raise the overall service quality. It helps to reduce duplication of effort and save costs. So share ideas, share intentions, share failures and learn together.
 
 ### Checklist
 
@@ -136,9 +148,35 @@ Find out more about:
 
 - When appropriate, share your development process and progress publicly **(Digital Services Playbook (US))**
 
+- Document and show your work. **(Plan - Digital Design Playbook (ISED))**
+
+- If you are redesigning a service document the changes and show how these changes will enhance the client experience when using the service. **(Plan - Digital Design Playbook (ISED))**
+
+- Embrace sharing platforms (e.g., GCconnex, GCpedia, Twitter, etc.) to get inspiration and feedback on your ideas. **(Plan - Digital Design Playbook (ISED))**
+
+- Before you start your own project, do an environmental scan to see how other programs and services are embracing digital service delivery. **(Plan - Digital Design Playbook (ISED))**
+
+- Identify lessons learned throughout the project and not just at the end. **(Plan - Digital Design Playbook (ISED))**
+
+- Make it easier to share data across ISED by collecting service and client information in a consistent manner and following best practices (e.g., the business number as a common identifier and practices related to Identity Management (IDM)). **(Plan - Digital Design Playbook (ISED))**
+
+### Decision Making Questions: **(Plan - Digital Design Playbook (ISED))**
+#### Sharing
+- How can the team share what was learned during this project?
+- Can the lessons-learned from this experience contribute to better service delivery for other ISED services or services offered by other departments or governments?
+- Is there a valid reason not to share? If you cannot share everything, what can you share without breaching privacy, security and information management rules?
+- Have you researched other services for business to identify other approaches to digital services and service delivery?
+- Is there already a GCconnex group or GCpedia group exploring a similar service challenge or innovative approach to service delivery?
+- Have you reached out to other digital government teams or researched case studies that document the journey of other services?
+
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
+
+Inspriation Examples: **(Plan - Digital Design Playbook (ISED))**
+- [How sharing helps us improve digital services](https://gds.blog.gov.uk/2014/08/22/how-sharing-helps-us-improve-digital-services/)
+- [There's nothing wrong with being unoriginal](https://medium.com/ontariodigital/theres-nothing-wrong-with-being-unoriginal-b540fa20aaf0#.ifvv8l7mi)
+
 
 ## 5.5 Open by default
 
