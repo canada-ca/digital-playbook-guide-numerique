@@ -104,24 +104,6 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 ## 1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs
 
-**Related (temporary for mapping purposes; remove later):**
-
-- Stakeholders/Users requirements based solutions (Current GC EARB Principles)
-
-- Services & client orientation (Current GC EARB Principles)
-
-- Business User first (GC EA principles)
-
-- [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
-
-- [1. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
-
-- [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
-
-- [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-- [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
-
 **[TODO: Add/revise introductory text]**
 
 **Introduction examples:**
@@ -203,93 +185,67 @@ To inform service features, interview users and gather data to develop:
   - Accessible design is good design.
   - Make services that are simple and easy to use so that clients want to use it.
 
-- Alpha stage
+#### Alpha stage
 
-  - spend time with current and prospective users of the service **(Digital Services Playbook (US))**
+- spend time with current and prospective users of the service **(Digital Services Playbook (US))**
 
-  - document the user needs you've found for your service in discovery and how you found those needs, including any needs for assisted digital users **(Digital Service Standard (UK)) /** list a complete set of users and their needs **(Digital Service Standard (Ontario)) /** Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors; be thoughtful about the time spent **(Digital Services Playbook (US)) /** Document the findings about user goals, needs, behaviors, and preferences **(Digital Services Playbook (US))**
+- document the user needs you've found for your service in discovery and how you found those needs, including any needs for assisted digital users **(Digital Service Standard (UK)) /** list a complete set of users and their needs **(Digital Service Standard (Ontario)) /** Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors; be thoughtful about the time spent **(Digital Services Playbook (US)) /** Document the findings about user goals, needs, behaviors, and preferences **(Digital Services Playbook (US))**
 
-  - write user stories for your service - including for users who need assisted digital support **(Digital Service Standard (UK)) /** document user stories, personas and profiles for the service **(Digital Service Standard (Ontario)) /** Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
+- write user stories for your service - including for users who need assisted digital support **(Digital Service Standard (UK)) /** document user stories, personas and profiles for the service **(Digital Service Standard (Ontario)) /** Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
 
-  - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
+- identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
 
-  - identify any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
+- identify any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
 
-  - show what groups contributed and what groups did not **(Digital Service Standard (Ontario))**
+- show what groups contributed and what groups did not **(Digital Service Standard (Ontario))**
 
-  - address any gaps when testing during the beta stage **(Digital Service Standard (Ontario))**
+- address any gaps when testing during the beta stage **(Digital Service Standard (Ontario))**
 
-- Beta stage
+#### Beta stage
 
-  - document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK)) /** test the service with real users, and be able to explain **(Digital Service Standard (Ontario))**:
+- document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK)) /** test the service with real users, and be able to explain **(Digital Service Standard (Ontario))**:
 
-    - number of test participants and their basic demographic characteristics
+  - number of test participants and their basic demographic characteristics
 
-    - how many users involved in testing had accessibility challenges or needed assisted digital support
+  - how many users involved in testing had accessibility challenges or needed assisted digital support
 
-    - how they were recruited
+  - how they were recruited
 
-    - how analytics were used in research
+  - how analytics were used in research
 
-    - any new insights and lessons
+  - any new insights and lessons
 
-  - document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
+- document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - document any changes to user needs you've identified as a result of researching with users **(Digital Service Standard (UK)) /** document any changes identified as a result of researching with users **(Digital Service Standard (Ontario))**
+- document any changes to user needs you've identified as a result of researching with users **(Digital Service Standard (UK)) /** document any changes identified as a result of researching with users **(Digital Service Standard (Ontario))**
 
-  - identify the users of your service whose needs are most difficult to meet, and how you've been learning about those needs **(Digital Service Standard (UK)) /** identify user needs that are most difficult to meet **(Digital Service Standard (Ontario))**
+- identify the users of your service whose needs are most difficult to meet, and how you've been learning about those needs **(Digital Service Standard (UK)) /** identify user needs that are most difficult to meet **(Digital Service Standard (Ontario))**
 
-  - document the design challenges your users' needs pose for your service **(Digital Service Standard (UK)) /** document the design challenges users' needs pose for the service **(Digital Service Standard (Ontario))**
+- document the design challenges your users' needs pose for your service **(Digital Service Standard (UK)) /** document the design challenges users' needs pose for the service **(Digital Service Standard (Ontario))**
 
-  - research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
+- research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
+- document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
+- identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
 
-  - document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
+- document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
 
-  - document the research you did to understand whether your support model meets user needs and how that research informed iteration and testing **(Digital Service Standard (UK))**
+- document the research you did to understand whether your support model meets user needs and how that research informed iteration and testing **(Digital Service Standard (UK))**
 
-  - document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
+- document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
 
-- Live stage
+#### Live stage
 
-  - identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the task that users find difficult **(Digital Service Standard (Ontario))**
+- identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the task that users find difficult **(Digital Service Standard (Ontario))**
 
-  - use the results of the research done in the public beta to continuously improve your service **(Digital Service Standard (UK)) /** use research results to continuously improve the service (e.g. participants, frequency, location, timing) **(Digital Service Standard (Ontario))**
+- use the results of the research done in the public beta to continuously improve your service **(Digital Service Standard (UK)) /** use research results to continuously improve the service (e.g. participants, frequency, location, timing) **(Digital Service Standard (Ontario))**
 
-  - document the user stories for your service - ie identify someone who needs to use the service and what they use it for - include assisted digital users **(Digital Service Standard (UK))**
+- document the user stories for your service - ie identify someone who needs to use the service and what they use it for - include assisted digital users **(Digital Service Standard (UK))**
 
-  - document the user needs you've found for your service, including for users who need assisted digital support **(Digital Service Standard (UK))**
+- document the user needs you've found for your service, including for users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - demonstrate improvements to those areas and how those were tested and researched **(Digital Service Standard (Ontario))**
-
-### Key Questions **(Digital Services Playbook (US))**
-
-- Who are your primary users?
-
-- What user needs will this service address?
-
-- Why does the user want or need this service?
-
-- Which people will have the most difficulty with the service?
-
-- Which research methods were used?
-
-- What were the key findings?
-
-- How were the findings documented? Where can future team members access the documentation?
-
-- How often are you testing with real people?
-
-### Decision Making Questions: **(Think - Digital Design Playbook (ISED))**
-- How will you conduct user research?
-- Who uses the service? Do you have data about client behaviours and expectations? Who are the current clients / target audience for the service? Do you have personas to include key details about your clients?
-- Are you aware of the challenges clients face when accessing or using the service? How do these challenges affect the overall user experience?
-- What are the work-arounds that clients and service providers have devised to address challenges with the service? Can you incorporate the work-arounds in the new service design?
-- Have you considered the unique needs of some client groups? Is the service designed to be as inclusive as possible?
-- Is the service delivered in non-digital channels (e.g., in-person, telephone)?
+- demonstrate improvements to those areas and how those were tested and researched **(Digital Service Standard (Ontario))**
 
 ### Implementation guides
 
@@ -298,14 +254,6 @@ To inform service features, interview users and gather data to develop:
 - [Start by learning user needs](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Digital Service Standard (UK))**
 
 - [Improve service design with user research](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Digital Service Standard (UK))**
-
-Find out more about:
-
-- [user research](https://www.gov.uk/service-manual/user-research) **(Digital Service Standard (UK))**
-
-- [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
-
-- [assisted digital support](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Digital Service Standard (UK))**
 
 User Research and user-centred design: **(Think - Digital Design Playbook (ISED))**
 - [Standards and Guidelines for Data Collection](http://www.tpsgc-pwgsc.gc.ca/rop-por/rapports-reports/comiteenligne-panelonline/page-04-eng.html)
@@ -342,11 +290,16 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 - [Consider the range of people that will use your product or service](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
 - [Building for inclusion](https://gds.blog.gov.uk/2012/10/01/building-for-inclusion/)
 
+### Similar resources
+- [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
+
+- [1. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
+
+- [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
+
+- [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
+
 ## 1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved
-
-**Related (temporary for mapping purposes; remove later):**
-
-- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 
 **[TODO: Add/revise introductory text]**
 
@@ -380,15 +333,10 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 
 - **[TODO: Add/revise implementation guide items]**
 
+### Similar resources
+- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
+
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
-
-**Related (temporary for mapping purposes; remove later):**
-
-- Mobility Preferred (Current GC EARB Principles)
-
-- Any Device - Mobility (GC EA principles)
-
-- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 **[TODO: Add/revise introductory text]**
 
@@ -401,6 +349,9 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
+
+### Similar resources
+- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 ## 1.6 Make services simple, intuitive and consistent
 
