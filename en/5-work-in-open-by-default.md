@@ -177,7 +177,6 @@ Inspriation Examples: **(Plan - Digital Design Playbook (ISED))**
 - [How sharing helps us improve digital services](https://gds.blog.gov.uk/2014/08/22/how-sharing-helps-us-improve-digital-services/)
 - [There's nothing wrong with being unoriginal](https://medium.com/ontariodigital/theres-nothing-wrong-with-being-unoriginal-b540fa20aaf0#.ifvv8l7mi)
 
-
 ## 5.5 Open by default
 
 **Related (temporary for mapping purposes; remove later):**
