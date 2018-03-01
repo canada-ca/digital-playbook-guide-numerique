@@ -36,7 +36,7 @@
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Evaluate tools and systems (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
+- [6. Evaluate tools and systems (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
 
 **[TODO: Add/revise introductory text]**
 
@@ -108,7 +108,7 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
+- [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
 
@@ -203,7 +203,7 @@ Find out more about:
 
 - One business owner (OneGC product design criteria)
 
-- [Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
+- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 **[TODO: Add/revise introductory text]**
 
@@ -265,11 +265,11 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
+- [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
 
-- [Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
+- [2. Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-3)
 
-- [Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-3)
+- [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
 
 **[TODO: Add/revise introductory text]**
 
