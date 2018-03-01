@@ -22,19 +22,17 @@
 
 **\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
 
-
-
 ## 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Open Source & Open Standards (Construire des principes numériques (premières réflexions))
+- Open Source & Open Standards (Build it Digital Principles (initial thoughts))
 
-- Normes Open Source (Principes d'ÉE du GC)
+- Open Source Standards (GC EA Principles)
 
-- [8. Utiliser des standards ouverts et des plates-formes communes (Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
+- [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 
-- [10. Utiliser des standards ouverts et des plateformes communes (Digital Service Standard (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-10%23section-10#section-10)
+- [9. Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-10)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -44,8 +42,7 @@
 
 L'utilisation de standards ouverts et de plates-formes gouvernementales communes signifie que vous:
 
-- de gagner du temps et de l' argent en réutilisant les choses qui sont déjà disponibles, comme [GOV.UK Vérifier](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://govuk-verify.cloudapps.digital/) l'
-    assurance identité   
+- de gagner du temps et de l' argent en réutilisant les choses qui sont déjà disponibles, comme [GOV.UK Vérifier](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://govuk-verify.cloudapps.digital/) l'assurance identité   
 
 - peut passer d'une technologie à l'autre quand vous en avez besoin et ne vous enfermez pas dans des contrats qui sont difficiles à
     mettre fin
@@ -74,8 +71,6 @@ L'utilisation de normes ouvertes et de plateformes gouvernementales communes aid
 - accéder à un plus large éventail de fournisseurs de logiciels open source et propriétaires
 
 - éliminer les contrats à long terme potentiellement restrictifs
-
-
 
 ### Liste de contrôle
 
@@ -137,8 +132,7 @@ L'utilisation de normes ouvertes et de plateformes gouvernementales communes aid
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Travailler avec des standards ouverts](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html)   **(**   **Norme de service numérique (UK)**   **)**
 
@@ -148,29 +142,25 @@ En savoir plus sur:
 
 - [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work)   **(**   **Norme de service numérique (UK)**   **)**
 
-
-
 ## 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- GC Enterprise First, Enterprise Cluster, deuxième, Unicité
-    ministérielle en dernier (Principes EARB actuels du GC)
+- GC Enterprise First, Enterprise Cluster second, Departmental uniqueness last (Current GC EARB Principles)
 
-- L'entreprise d'abord, Enterprise Cluster seconde, l'unicité
-    ministérielle dernière (Build it Digital Principes (pensées initiales))
+- Enterprise First, Enterprise Cluster second, Departmental uniqueness last (Build it Digital Principles (initial thoughts))
 
-- Fournir un accès à guichet unique à tous les contenus et services du GC (Construire des principes numériques (premières réflexions))
+- Provide a Single Window Access to all GC Content & Services (Build it Digital Principles (initial thoughts))
 
-- Réutiliser d'abord, acheter en deuxième, construire en dernier (principes EARB actuels du GC)
+- Reuse First, Buy Second, Build Last (Current GC EARB Principles)
 
-- Gestion de la dette liée à la technologie (Principes actuels de l'EARB du GC)
+- Technology Debt Managed (Current GC EARB Principles)
 
-- Containerized par défaut - Plate-forme Indépendance Lift & Shift (GC EA Principes)
+- Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)
 
-- Architecturalement adapté à GC Enterprise (Principes d'EA de GC)
+- Architecturally Fit for the GC Enterprise (GC EA Principles)
 
-- [8. Choisissez une pile technologique moderne (Playbook de services numériques (États Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play8%23play8#play8)
+- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 
@@ -306,13 +296,13 @@ Inspiration Examples **(2. Reuse, improve and share technological solutions wher
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- API activée (critères de conception de produit OneGC)
+- API enabled (OneGC product design criteria)
 
-- Créer des API dans l'espace du développeur (Build it Digital Principles (premières réflexions))
+- Create APIs in the developer's space (Build it Digital Principles (initial thoughts))
 
-- Interopérabilité (Principes EARB actuels du GC)
+- Interoperability (Current GC EARB Principles)
 
-- Interopérabilité (ESB / APIs - Micro Services) (Principes EA du GC)
+- Interoperability (ESB/APIs -- Micro Services) (GC EA Principles)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -376,17 +366,17 @@ entre les services, optimiser les expériences entre les appareils et même mene
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Numérique de bout en bout (Critères de conception du produit OneGC)
+- End-to-end digital (OneGC product design criteria)
 
-- DevOps (outil de test et de déploiement automatisé) (Principes EA du GC)
+- DevOps (automated test and deployment tool) (GC EA Principles)
 
-- [10. Testez le service de bout en bout (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
+- [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
 
-- [5. Concevoir le service du début à la fin (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-5%23section-5#section-5)
+- [4. Conception du service du début à la fin (Normes des services numériques (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-5)
 
-- [7. Testez le service de bout en bout (norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-7%23section-7#section-7)
+- [6. Tester le service de bout en bout (Normes des services numériques (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
 
-- [10. Automatisez les tests et les déploiements (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play10%23play10#play10)
+- [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -576,15 +566,15 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Nuage d'abord (Critères de conception du produit OneGC)
+- Cloud first (OneGC product design criteria)
 
-- Cloud First (Principes GC EARB actuels)
+- Cloud First (Current GC EARB Principles)
 
-- Cloud First (Construire des principes numériques (pensées initiales))
+- Cloud First (Build it Digital Principles (initial thoughts))
 
-- (Public) Cloud First: SaaS - PaaS - IaaS (Principes d'EA du GC)
+- (Public) Cloud First: SaaS -- PaaS -- IaaS (GC EA Principles)
 
-- [9. Déployer dans un environnement d'hébergement flexible (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play9%23play9#play9)
+- [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
