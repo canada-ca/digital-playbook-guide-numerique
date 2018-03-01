@@ -36,7 +36,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [6. Évaluer les outils et les systèmes (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
+- [6. Evaluate tools and systems (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -110,7 +110,7 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [5. Structurer les budgets et les contrats pour soutenir la livraison (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play5%23play5#play5)
+- [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
 
@@ -190,15 +190,13 @@ En savoir plus sur:
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-
-
 ## 4.5 Rendre une personne responsable du service
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- Un propriétaire d'entreprise (Critères de conception du produit OneGC)
+- One business owner (OneGC product design criteria)
 
-- [6. Assignez un chef et tenez cette personne responsable (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play6%23play6#play6)
+- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -257,16 +255,15 @@ En savoir plus sur:
 ### Guides d'implémentation
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-
 ## 4.6 Construire et maintenir une équipe multidisciplinaire expérimentée
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [3. Avoir une équipe multidisciplinaire (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
+- [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
 
-- [3. Établir la bonne équipe (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-3%23section-3#section-3)
+- [2. Former une équipe adaptée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-3)
 
-- [7. Intégrez des équipes expérimentées (Playbook des services numériques (États-Unis)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play7%23play7#play7)
+- [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -304,8 +301,6 @@ Pour réussir, construisez une équipe avec:
 - des processus décisionnels rapides et la capacité de changer et de s'adapter à mesure que le service évolue
 
 - les ressources et la capacité de livrer le produit
-
-
 
 ### Liste de contrôle
 
