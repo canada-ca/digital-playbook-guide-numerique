@@ -26,26 +26,13 @@
 
 ## 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
 
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
+Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes agiles, itératives et centrées sur l'utilisateur lors de la construction d'un service. Commencez par une recherche et une analyse approfondies pour vous aider à comprendre qui utilise le service, quels sont ses besoins et comment le service affectera sa vie pour mieux comprendre comment le service devrait être conçu. L'absence de la voix de l'utilisateur conduit à des hypothèses qui peuvent être incorrectes et coûteuses.
 
-- User tested (OneGC product design criteria)
-- [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-**Exemples d'introduction :**
-
-**Critères de conception du produit OneGC :** Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes agiles, itératives et centrées sur l'utilisateur lors de la construction d'un service. Pour un service de recherche et une analyse approfondies pour vous aider à comprendre comment utiliser le service, il estimportant que le service affecte sa vie pour mieux comprendre comment le service devrait être conçu.
-
-Les utilisateurs doivent être impliqués dans un long cycle de la vie du service, les recherches et les tests des utilisateurs informent les premières phases de la conception aux améliorations continue après le lancement du service.
-
-**Think - Digital Design Playbook (ISED):** The absence of the client voice leads to assumptions that may be incorrect and costly. One way to challenge assumptions is to have quality qualitative and quantitative data. Data informed by client behaviours and needs will help you make the right decisions when designing and redesigning digital services. Service and digital performance and usage must be continuously measured in order to effectively direct transformation efforts. Client feedback should be collected and analyzed on an ongoing basis. Measurement and data analysis must remain integral to your service throughout its lifecycle. 
+Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service. 
 
 ### Liste de contrôle
 
-- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Interviewer les utilisateurs potentiels pour aider à développer les éléments suivants pour le service **(critères de conception du produit OneGC)** :
+- Interviewer les utilisateurs potentiels pour aider à développer les éléments suivants pour le service :
 
   a. Les objectifs de l'utilisateur (par exemple, en tant que \[type d'utilisateur\], je veux \[un certain mais\] de sorte que \[une raison quelconque\])
 
@@ -53,86 +40,28 @@ Les utilisateurs doivent être impliqués dans un long cycle de la vie du servic
 
   c. Profils d'utilisateurs (Ex., En fonction de données démographiques telles que le sexe, l'âge, l'emplacement, le revenu et la taille de la famille)
 
-- Utiliser une gamme de méthodes de recherche qualitative et quantitative pour déterminer les objectifs, les besoins et les comportements des personnes **(critères de conception du produit OneGC)**
+- Utiliser une gamme de méthodes de recherche qualitative et quantitative pour déterminer les objectifs, les besoins et les comportements des personnes
 
-- Créer et maintenir une liste des tâches prioritaires que les utilisateurs tentent de faire (c.-à-d., « User stories ») **(critères de conception de produits OneGC)**
+- Créer et maintenir une liste des tâches prioritaires que les utilisateurs tentent de faire (c.-à-d., « User stories »)
 
-- Tester régulièrement avec les utilisateurs lors de la construction du service et après le lancement du service pour vérifier qu'il répond aux besoins de l'utilisateur et pour identifier les parties du service que les utilisateurs peuvent trouver difficiles **(critères de conception du produit OneGC)**
+- Tester régulièrement avec les utilisateurs lors de la construction du service et après le lancement du service pour vérifier qu'il répond aux besoins de l'utilisateur et pour identifier les parties du service que les utilisateurs peuvent trouver difficiles
 
-- Mettre en place un plan de paiement pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après sa construction **(critères de conception du produit OneGC)**
+- Mettre en place un plan de paiement pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après sa construction
 
-- Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer **(critères de conception du produit OneGC)**
+- Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer
 
-- Research what data is available **(Think - Digital Design Playbook (ISED))**
-  - Start with existing data before collecting new data. For example, use ISED data sources such as AWESOME and Client Enquiry Reporting Tool (CERT) to collect information on website usage and understanding ISED website, how clients interact with it, as well as their user experience.
-
-- Define what data types should be collected and collect data in a consistent manner (e.g., client experience related to tasks or problems, client feedback and usability testing). **(Think - Digital Design Playbook (ISED))**
-  - Collecting data about your service allows you to measure its performance. You can use data to validate the following:
-    - the service is meeting user needs
-    - the service allows users to easily complete the task it provides
-    - there are enough people using the service to make it cost-efficient
-    - people know about the service and are choosing to use it
-
-- Ensure data completeness and quality. **(Think - Digital Design Playbook (ISED))**
-  - Understand the limitations of data and use data appropriately.
-  - To ensure the completeness and quality of data, consult with the Chief Information Officer (CIO), the Results and Delivery Unit and other internal data experts.
-
-- Evaluate data quality by methods, such as certification or validation, or studies of the sources of error. **(Think - Digital Design Playbook (ISED))**
-  - Consult with the CIO and internal experts about data to develop or select a suitable methodology to validate and certify your data. 
-
-- Continuously measure client experience and use this information to inform future service redesigns and service improvements **(Think - Digital Design Playbook (ISED))**
-  - Measure the service attributes (e.g., timeliness, completeness, usability, etc.) that matter to the client. Focus on customers' success metrics to drive priorities.
-    - Use ISED's Service Management Strategy Key Performance Indicators (e.g., client satisfaction, increase in digital service uptake and service standards met) and the [Canada.ca](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp) performance indicators.
-    - Have a mechanism in place for clients to provide feedback and to address client service issues in a timely manner. This is a [requirement](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916b) under the Policy on Service
-
-### Decision Making Questions: **(Think - Digital Design Playbook (ISED))**
-#### Data
-- What are the existing sources of data?
-- Is there an opportunity to collect data and what tools can be used?
-- Can the team analyze the data? Does the team need assistance?
-- How will data be shared across ISED?
-- Have the clients been profiled (including segmentation)?
-- Have KPIs been identified, in addition to the mandatory KPIs (i.e. client satisfaction, increase in digital services uptake, service standards met)?
-
-#### Acting on Feedback
-- How will the feedback mechanism be implemented and delivered?
-- What tools are available for collecting feedback?
-- At what point during the process will feedback be collected?
-- How will clients know that their feedback has been received and is being used to inform service improvements? How often will service improvements take place?
+- Fournir un mécanisme aux utilisateurs permettant de recevoir une rétroaction et de régler en temps opportun les problèmes de services
+(comme l'exige la [Politique sur les services](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27916b#cha7))
 
 ### Guides d'application
-
 - **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
-- [Quality Services Guide II - Measuring Client Satisfaction](http://www.collectionscanada.gc.ca/eppp-archive/100/201/301/tbs-sct/tb_manual-ef/Pubs_pol/opepubs/TB_O/2QG1-1E.html) **(Think - Digital Design Playbook (ISED))**
-- [Data quality evaluation](http://www.statcan.gc.ca/pub/12-539-x/2009001/quality-qualite-eng.htm) **(Think - Digital Design Playbook (ISED))**
-- [2003 April Report of the Auditor General of Canada](http://www.oag-bvg.gc.ca/internet/English/att_20030402xe01_e_12685.html) **(Think - Digital Design Playbook (ISED))**
-- [TBS Performance Monitoring and Reporting Standard](http://www.tpsgc-pwgsc.gc.ca/biens-property/sngp-npms/ti-it/normesurveilrend-perfmonitorstandard-4-eng.html) **(Think - Digital Design Playbook (ISED))**
-- [Key Performance Indicators](http://www.gcpedia.gc.ca/wiki/Web_Renewal_Performance_Measurement_KPIs) **(Think - Digital Design Playbook (ISED)) (internal to GC only)**
-- [Big Data Community of Practice](http://www.gcpedia.gc.ca/wiki/Big_Data_Community) **(Think - Digital Design Playbook (ISED)) (internal to GC only)**
-- [Standards and Guidelines for Data Collection](http://www.tpsgc-pwgsc.gc.ca/rop-por/rapports-reports/comiteenligne-panelonline/page-04-eng.html) **(Think - Digital Design Playbook (ISED))**
 
-Inspiration Examples:
-- [Using data to improve your service: an introduction](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction) **(Service manual (UK) via Think - Digital Design Playbook (ISED))**
-- [18F Dashboard](https://analytics.usa.gov/) **(Think - Digital Design Playbook (ISED))**
-- [City of Edmonton's Citizen Dashboard](https://dashboard.edmonton.ca/) **(Think - Digital Design Playbook (ISED))**
+### Ressources similaires
+- [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
 
 ## 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
 
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
-
-- [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-**Exemples d'introduction :**
-
-**Norme de service numérique (Royaume-Uni) :** Mettre en place un plan pour la recherche continuer les utilisateurs et les tests d'utilisabilité pour obtenir des commentaires permanents pour améliorer le service.
-
-Faire de la recherche continue sur les utilisateurs signifie que vous pouvez :
-
-- vérifier que votre service aide les utilisateurs à faire les tâches dont ils ont besoin
-
-- continuer à améliorer le service en fonction des besoins des utilisateurs
+Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est important de planifier la recherche continue des utilisateurs et les tests d'utilisabilité. Impliquer les utilisateurs à toutes les étapes, en recherchant continuellement des commentaires pour s'assurer que le service aide les utilisateurs à accomplir leurs tâches et continuer à améliorer le service pour mieux répondre aux besoins des utilisateurs.
 
 ### Liste de contrôle
 
@@ -177,6 +106,9 @@ En savoir plus sur:
 - [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
 
 - [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
+
+### Ressources similaires
+- [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
 ## 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
 
