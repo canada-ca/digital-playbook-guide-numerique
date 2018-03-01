@@ -16,7 +16,6 @@
 
 **\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
-
 ## 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
@@ -56,7 +55,6 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-
 ## 2.2 Les services devraient respecter ou dépasser les normes d'accessibilité, et ne devraient pas être pénibles à utiliser
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
@@ -82,7 +80,7 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- respecter les [instructions](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/how-make-information-accessible) de la Direction générale de l'accessibilité de l'Ontario sur la [façon de rendre l'information accessible](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/how-make-information-accessible) **(Norme de service numérique (Ontario))**   
+- respecter les [instructions](https://www.ontario.ca/fr/page/comment-rendre-linformation-accessible) de la Direction générale de l'accessibilité de l'Ontario sur la [façon de rendre l'information accessible] **(Norme de service numérique (Ontario))**
 
 - formaliser une approche pour intégrer les outils de test automatisés dans le processus de développement et de maintien des TIC du gouvernement **(Norme de service numérique (Ontario))**
 
@@ -110,18 +108,18 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 
 ### Lois et règles à suivre **(Norme de service numérique (Ontario))**
 
-- [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/05a11)
+- [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario](https://www.ontario.ca/fr/lois/loi/05a11)
 
-    - [Règlement sur les normes d'accessibilité
-        intégrées](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/110191)
+  - [Règlement sur les normes d'accessibilité
+        intégrées](https://www.ontario.ca/fr/lois/reglement/110191)
 
-    - [Normes d'information et de communication](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/110191%2523BK8%23BK8#BK8)
+  - [Normes d'information et de communication](https://www.ontario.ca/fr/lois/reglement/110191#BK8)
 
-    - [Normes de service client](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/110191%2523BK148%23BK148#BK148)
+  - [Normes de service client](https://www.ontario.ca/fr/lois/reglement/110191#BK148)
 
-- [Code des droits de la personne](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/90h19)
+- [Code des droits de la personne](https://www.ontario.ca/fr/lois/loi/90h19)
 
-- [Directives d'accessibilité au contenu Web (WCAG) 2.0](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.w3.org/WAI/intro/wcag)
+- [Directives d'accessibilité au contenu Web (WCAG) 2.0 (en anglais seulement)](https://www.w3.org/WAI/intro/wcag)
 
 ### Guides d'implémentation
 

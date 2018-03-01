@@ -60,39 +60,39 @@ L'évaluation des outils et des systèmes que vous utilisez pour créer votre se
 
 - Étape Alpha
 
-    - documenter les langages, les cadres et les autres choix techniques que vous avez faits en alpha, et comment cela affectera les décisions que vous prenez en version bêta **(Norme de service numérique (Royaume-Uni))**
+  - documenter les langages, les cadres et les autres choix techniques que vous avez faits en alpha, et comment cela affectera les décisions que vous prenez en version bêta **(Norme de service numérique (Royaume-Uni))**
 
-    - documenter l'ensemble des outils de programmation que vous souhaitez choisir pour la version bêta et pourquoi **(Norme de service numérique (Royaume-Uni))**
+  - documenter l'ensemble des outils de programmation que vous souhaitez choisir pour la version bêta et pourquoi **(Norme de service numérique (Royaume-Uni))**
 
-    - documentez comment vous obtiendrez un bon rapport qualité-prix lors de l'achat d'outils **(Norme de service numérique (Royaume-Uni))**
+  - documentez comment vous obtiendrez un bon rapport qualité-prix lors de l'achat d'outils **(Norme de service numérique (Royaume-Uni))**
 
-    - documentez comment vous surveillerez le statut de votre service **(Norme de service numérique (Royaume-Uni))**
+  - documentez comment vous surveillerez le statut de votre service **(Norme de service numérique (Royaume-Uni))**
 
 - Étape bêta
 
-    - Documentez comment vous gérez les limites imposées à votre service par la pile technologique et l'outil de développement que vous avez choisi **(Norme de service numérique (Royaume-Uni))**
+  - Documentez comment vous gérez les limites imposées à votre service par la pile technologique et l'outil de développement que vous avez choisi **(Norme de service numérique (Royaume-Uni))**
 
-    - documentez ce que vous avez acheté et comment vous en avez pour votre argent **(Norme de service numérique (Royaume-Uni))**
+  - documentez ce que vous avez acheté et comment vous en avez pour votre argent **(Norme de service numérique (Royaume-Uni))**
 
-    - documentez comment vous surveillerez le statut de votre service **(Norme de service numérique (Royaume-Uni))**
+  - documentez comment vous surveillerez le statut de votre service **(Norme de service numérique (Royaume-Uni))**
 
-    - Documentez les arrangements de soutien que vous avez en place, en heures normales et en dehors des heures d'ouverture **(Norme de service numérique (Royaume-Uni))**
+  - Documentez les arrangements de soutien que vous avez en place, en heures normales et en dehors des heures d'ouverture **(Norme de service numérique (Royaume-Uni))**
 
-    - Documenter toutes les décisions que vous avez confiées à des tiers et pourquoi vous avez choisi de le faire **(Norme de service numérique (Royaume-Uni))**
+  - Documenter toutes les décisions que vous avez confiées à des tiers et pourquoi vous avez choisi de le faire **(Norme de service numérique (Royaume-Uni))**
 
 - Scène en direct
 
-    - Documentez les changements de pile de technologie que vous avez faits pendant la bêta et pourquoi **(Norme de service numérique (Royaume-Uni))**
+  - Documentez les changements de pile de technologie que vous avez faits pendant la bêta et pourquoi **(Norme de service numérique (Royaume-Uni))**
 
-    - Documentez les changements apportés à la chaîne d'outils de développement pendant la version bêta et pourquoi **(Norme de service numérique (Royaume-Uni))**
+  - Documentez les changements apportés à la chaîne d'outils de développement pendant la version bêta et pourquoi **(Norme de service numérique (Royaume-Uni))**
 
-    - documentez comment vous continuez à optimiser les ressources des systèmes que vous avez choisis et achetés en version bêta **(Norme de service numérique (Royaume-Uni))**
+  - documentez comment vous continuez à optimiser les ressources des systèmes que vous avez choisis et achetés en version bêta **(Norme de service numérique (Royaume-Uni))**
 
-    - documentez comment vous allez vérifier si le service est en bonne santé **(Norme de service numérique (Royaume-Uni))**
+  - documentez comment vous allez vérifier si le service est en bonne santé **(Norme de service numérique (Royaume-Uni))**
 
-    - documentez les modalités de support que vous avez configurées pour la diffusion en direct **(Norme de service numérique (Royaume-Uni))**
+  - documentez les modalités de support que vous avez configurées pour la diffusion en direct **(Norme de service numérique (Royaume-Uni))**
 
-    - documentez toutes les décisions que vous avez sous-traitées et pourquoi vous avez choisi de le faire **(Norme de service numérique (Royaume-Uni)))**
+  - documentez toutes les décisions que vous avez sous-traitées et pourquoi vous avez choisi de le faire **(Norme de service numérique (Royaume-Uni)))**
 
 ### Guides d'implémentation
 
@@ -100,17 +100,15 @@ L'évaluation des outils et des systèmes que vous utilisez pour créer votre se
 
 En savoir plus sur:
 
-- [choix de la technologie](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Norme de service numérique (Royaume-Uni))**
+- [choix de la technologie](https://playbook.cio.gov/#play5) **(Norme de service numérique (Royaume-Uni))**
 
 - [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
-
-
 
 ## 4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
+- [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US)) (en anglais seulement)](https://playbook.cio.gov/#play5)
 
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
 
@@ -120,7 +118,7 @@ En savoir plus sur:
 
 **Digital Services Playbook (États-Unis) :** Pour améliorer nos chances de réussite lors de la sous-traitance des travaux de développement, nous devons travailler avec des responsables de la budgétisation et des contrats. Dans les cas où nous utilisons des tiers pour aider à construire un service, un contrat bien défini peut faciliter de bonnes pratiques de développement comme mener une phase de recherche et de prototypage, affiner les exigences du produit au fur et à mesure de la construction du service, et permettant la flexibilité d'acheter des ressources de cloud computing.
 
-[Le manuel TechFAR](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://techfarhub.cio.gov/handbook/) fournit une explication détaillée des flexibilités du règlement fédéral sur les acquisitions (FAR) qui peuvent aider les agences à mettre en œuvre ce jeu.
+[The TechFAR handbook (en anglais seulement)](https://techfarhub.cio.gov/handbook/) fournit une explication détaillée des flexibilités du règlement fédéral sur les acquisitions (FAR) qui peuvent aider les agences à mettre en œuvre ce jeu.
 
 ### Liste de contrôle
 
@@ -222,29 +220,29 @@ En savoir plus sur:
 
 - Créer un plan de travail qui comprend des estimations budgétaires et identifie les sources de financement **(critères de conception du produit OneGC)**
 
-- Utiliser des processus d'approvisionnement rationalisés et utiliser des ressources expérimentées en budgétisation et en passation de marchés lors de la sous-traitance de travaux de développement **(critères de conception de produits OneGC)**       
+- Utiliser des processus d'approvisionnement rationalisés et utiliser des ressources expérimentées en budgétisation et en passation de marchés lors de la sous-traitance de travaux de développement **(critères de conception de produits OneGC)**
 
-- Utiliser des métriques pour identifier les problèmes et identifier les correctifs et les améliorations à apporter en priorité **(critères de conception du produit OneGC)**   
+- Utiliser des métriques pour identifier les problèmes et identifier les correctifs et les améliorations à apporter en priorité **(critères de conception du produit OneGC)**
 
 - Le propriétaire du produit dispose d'un plan de travail qui inclut des estimations budgétaires et identifie les sources de financement **(Digital Services Playbook (US))**
 
-    - Le propriétaire du produit entretient une relation étroite avec l'agent de négociation des contrats
+  - Le propriétaire du produit entretient une relation étroite avec l'agent de négociation des contrats
 
-- Mettre en place une équipe pluridisciplinaire durable capable de concevoir, construire et exploiter le service:   
+- Mettre en place une équipe pluridisciplinaire durable capable de concevoir, construire et exploiter le service:
 
-    - Comprend une expertise dans la prestation de services numériques agiles et possède des compétences techniques, de l'expérience utilisateur et des compétences stratégiques **(critères de conception de produits OneGC)**       
+  - Comprend une expertise dans la prestation de services numériques agiles et possède des compétences techniques, de l'expérience utilisateur et des compétences stratégiques **(critères de conception de produits OneGC)**
 
-    - Intègre une expertise provenant d'autres secteurs d'activité et départements (par ex., finance, juridique, politique, communications) **(Critères de conception du produit OneGC)**
+  - Intègre une expertise provenant d'autres secteurs d'activité et départements (par ex., finance, juridique, politique, communications) **(Critères de conception du produit OneGC)**
 
-    - Développe un plan et des fonctionnalités pour héberger les utilisateurs simultanés en temps réel et surveiller les comportements des utilisateurs dans l'ensemble pour déterminer dans quelle mesure le service répond aux besoins des utilisateurs **(critères de conception de produit OneGC)**   
+  - Développe un plan et des fonctionnalités pour héberger les utilisateurs simultanés en temps réel et surveiller les comportements des utilisateurs dans l'ensemble pour déterminer dans quelle mesure le service répond aux besoins des utilisateurs **(critères de conception de produit OneGC)**
 
-    - Identifie les données que vous devez capturer, où vous devez les capturer et comment vous allez les capturer en fonction de la taille et de la forme projetées du service **(critères de conception du produit OneGC)**
+  - Identifie les données que vous devez capturer, où vous devez les capturer et comment vous allez les capturer en fonction de la taille et de la forme projetées du service **(critères de conception du produit OneGC)**
 
-    - Élabore une feuille de route continue pour l'analyse du rendement et désigne la responsabilité d'identifier les données **exploitables (critères de conception du produit OneGC)**
+  - Élabore une feuille de route continue pour l'analyse du rendement et désigne la responsabilité d'identifier les données **exploitables (critères de conception du produit OneGC)**
 
-    - Comprend la capacité d'améliorer le service de façon fréquente grâce à une itération permise par la bonne capacité, les ressources et la flexibilité technique **(critères de conception du produit OneGC)**
+  - Comprend la capacité d'améliorer le service de façon fréquente grâce à une itération permise par la bonne capacité, les ressources et la flexibilité technique **(critères de conception du produit OneGC)**
 
-### Questions clés **(Digital Playbook Playbook (US))**                
+### Questions clés **(Digital Playbook Playbook (US))**
 
 - Qui est le propriétaire du produit?
 
@@ -253,6 +251,7 @@ En savoir plus sur:
 - Que faut-il pour que le propriétaire du produit ajoute ou supprime une fonctionnalité du service?
 
 ### Guides d'implémentation
+
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 4.6 Construire et maintenir une équipe multidisciplinaire expérimentée
@@ -324,13 +323,13 @@ Pour réussir, construisez une équipe avec:
 
 - Alpha, beta et live stades:
 
-    - employer des personnes dans les rôles suivants dans l'équipe de livraison: propriétaire de service, chef de produit, gestionnaire de livraison, architecte technique, responsable numérique assisté, concepteur, chercheur utilisateur, développeur, concepteur de contenu, ingénieur des opérations web, analyste de performance, développeur front-end **(Norme de service numérique (Royaume-Uni))**
+  - employer des personnes dans les rôles suivants dans l'équipe de livraison: propriétaire de service, chef de produit, gestionnaire de livraison, architecte technique, responsable numérique assisté, concepteur, chercheur utilisateur, développeur, concepteur de contenu, ingénieur des opérations web, analyste de performance, développeur front-end **(Norme de service numérique (Royaume-Uni))**
 
-    - assurez-vous d'avoir un propriétaire de service ayant les connaissances et le pouvoir de prendre des décisions au jour le jour pour améliorer le service   **(Norme de service numérique (Royaume-Uni)) /** avoir un gestionnaire ayant la capacité de prendre des décisions au jour le jour pour améliorer le service **(Norme de service numérique (Ontario))**
+  - assurez-vous d'avoir un propriétaire de service ayant les connaissances et le pouvoir de prendre des décisions au jour le jour pour améliorer le service   **(Norme de service numérique (Royaume-Uni)) /** avoir un gestionnaire ayant la capacité de prendre des décisions au jour le jour pour améliorer le service **(Norme de service numérique (Ontario))**
 
-    - assurez-vous d'avoir au moins un chercheur utilisateur travaillant au moins 3 jours par semaine / dédiez un chercheur utilisateur sur le projet pendant au moins 3 jours par semaine **(Norme de service numérique (Ontario))**
+  - assurez-vous d'avoir au moins un chercheur utilisateur travaillant au moins 3 jours par semaine / dédiez un chercheur utilisateur sur le projet pendant au moins 3 jours par semaine **(Norme de service numérique (Ontario))**
 
-    - assurez-vous qu'il y a séparation des rôles clés dans l'équipe, ce qui signifie que personne n'exécute plusieurs rôles **(Norme de service numérique (Royaume-Uni))**
+  - assurez-vous qu'il y a séparation des rôles clés dans l'équipe, ce qui signifie que personne n'exécute plusieurs rôles **(Norme de service numérique (Royaume-Uni))**
 
 - comprendre où les lacunes peuvent apparaître dans l'équipe et comment les remplir **(Norme de service numérique (Royaume-Uni)) /**   identifier les lacunes dans l'équipe et les remplir **(Norme de service numérique (Ontario))**
 
@@ -356,8 +355,8 @@ Pour réussir, construisez une équipe avec:
 
 En savoir plus sur:
 
-- [recherche d'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
+- [user research (en anglais seulement)](https://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
 
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
+- [service assessments (en anglais seulement)](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
 
-- [établir l'équipe correcte](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/the-team) **(Norme de service numérique (Royaume-Uni))**
+- [setting up the right team (en anglais seulement)](https://www.gov.uk/service-manual/the-team) **(Norme de service numérique (Royaume-Uni))**
