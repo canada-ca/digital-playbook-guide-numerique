@@ -190,7 +190,7 @@ Find out more about:
 
 - [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
 
-- [2. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
+- [1. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
 
 - [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
 
@@ -486,9 +486,9 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 
 - [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
 
-- [4. Be consistent (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
+- [3. Be consistent (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
 
-- [6. Ensure users succeed the first time (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
+- [5. Ensure users succeed the first time (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
 
 - [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
 
@@ -674,9 +674,9 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [Encourage everyone to use the digital service -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
+- [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 
-- [Encourage people to use digital services (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-12)
+- [11. Encourage people to use digital services (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-12)
 
 **[TODO: Add/revise introductory text]**
 
@@ -768,9 +768,9 @@ Find out more about:
 
 **Related (temporary for mapping purposes; remove later): **
 
-- [Support those who need it (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
+- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
-- [Make a plan for being offline -- Digital Service Standard (UK)](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
+- [12. Support those who need it (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
 
 **[TODO: Add/revise introductory text]**
 

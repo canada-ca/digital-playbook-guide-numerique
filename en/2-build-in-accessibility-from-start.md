@@ -58,7 +58,7 @@ Development of accessible (regardless of ability, device or environment) digital
 
 **Related (temporary for mapping purposes; remove later):**
 
-- [8. Make it accessible (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-8)
+- [7. Make it accessible (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-8)
 
 **[TODO: Add/revise introductory text]**
 

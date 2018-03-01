@@ -22,9 +22,9 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Activer le partage des données «Dites-nous une fois» dans tous les systèmes (GC Construire les principes numériques (premières réflexions))
+- Enable "Tell us once" data sharing across all systems (GC Build it Digital Principles (initial thoughts))
 
-- Dites-moi une fois - Centricité des données et de l'information (Principes d'ÉE du GC)
+- Tell me once -- Data/Information centricity (GC EA Principles)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -43,7 +43,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [12. Utilisez les données pour prendre des décisions (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play12%23play12#play12)
+- [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -110,9 +110,9 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [15. Collecter des données de performance (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/collect-performance-data)
+- [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 
-- [14. Mesurer la performance (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-14%23section-14#section-14)
+- [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-14)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -230,7 +230,7 @@ En savoir plus sur [les évaluations de services](https://translate.google.com/t
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Information / Données est un atout (Principes EARB actuels du GC)
+- Information/Data is an asset (Current GC EARB Principles)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

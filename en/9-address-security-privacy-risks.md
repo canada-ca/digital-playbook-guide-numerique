@@ -42,7 +42,7 @@
 
 - Privacy Aware (GC EA Principles)
 
-- [11. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
+- [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
 **[TODO: Add/revise introductory text]**
 
