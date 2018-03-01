@@ -30,6 +30,10 @@
 
 - [4. Construire le service en utilisant des pratiques agiles et itératives (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play4%23play4#play4)
 
+- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
+
+- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction:**
@@ -68,9 +72,15 @@ Les méthodes agiles créent des services qui:
 
 - peut être construit rapidement avec un minimum de fonctionnalités, et amélioré avec plus de fonctionnalités après la mise en service du service
 
-**Digital Service Playbook (US): **Nous devrions utiliser un style de développement logiciel incrémental et rapide pour réduire le risque d'échec. Nous voulons mettre le logiciel de travail dans les mains des utilisateurs le plus tôt possible afin de permettre à l'équipe de conception et de développement de s'ajuster en fonction des commentaires des utilisateurs sur le service. Une capacité critique est de pouvoir tester et déployer automatiquement le service afin que de nouvelles fonctionnalités puissent être ajoutées fréquemment et être mises en production facilement.
+**Digital Service Playbook (US):** Nous devrions utiliser un style de développement logiciel incrémental et rapide pour réduire le risque d'échec. Nous voulons mettre le logiciel de travail dans les mains des utilisateurs le plus tôt possible afin de permettre à l'équipe de conception et de développement de s'ajuster en fonction des commentaires des utilisateurs sur le service. Une capacité critique est de pouvoir tester et déployer automatiquement le service afin que de nouvelles fonctionnalités puissent être ajoutées fréquemment et être mises en production facilement.
 
+**3. Review and improve services continually (Think - Digital Design Playbook (ISED)):** The [TBS Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916) and the [TBS Management Accountability Framework (MAF)](http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp) require regular reviews of priority services in order to identify opportunities for service redesign." By reviewing services regularly, service providers can ensure that services continue to be relevant, effective and efficient, and deliver best value to clients.
 
+Use quantitative and qualitative data to help with regular reviews of your service. User needs and technology evolve. There will always be room for improvement.
+
+**3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)):** Applying agile involves continuous improvement by analyzing data, making adjustments and iterating to identify and test improvements. Core principles of agile include defining a measurable goal; sharing ownership of the problem; taking small steps with visible impact; validating ideas/solutions with the target audience (e.g., the client); measuring success; reflecting, adjusting and iterating.
+
+Start with a representation or prototype of the solution that will be tested and revised based on feedback and insights. Each iteration improves on the previous version. Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Taking an iterative approach also helps you reduce risks. It makes big failures less likely and turns mistakes into learning opportunities.
 
 ### Liste de contrôle
 
@@ -102,8 +112,6 @@ Les méthodes agiles créent des services qui:
 
 - utiliser une approche progressive pour tester les modifications apportées à une partie du service, lorsque les modifications basées sur les caractéristiques ne sont pas réalisables   **(**   **Norme de service numérique ( Ontario**    **)**   **)**
 
-
-
 - Expédier un «produit minimum viable» fonctionnel (MVP) qui répond aux besoins des utilisateurs principaux le plus rapidement possible, pas plus de trois mois après le début du projet, en utilisant une période «beta» ou «test» si nécessaire **(Digital Service Playbook (NOUS))**
 
 - Effectuez des tests de convivialité fréquemment pour vérifier le bon fonctionnement du service et identifier les améliorations à
@@ -124,6 +132,38 @@ Les méthodes agiles créent des services qui:
 - Donner à l'ensemble de l'équipe de projet l'accès au système de suivi des problèmes et de contrôle de version **(Digital Service Playbook (US))**
 
 - Utilisez les révisions de code pour assurer la qualité **(Digital Service Playbook (US))**
+
+- Explore opportunities for improved usability of service. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- Review how other departments and governments approach service delivery and adapt/incorporate best practices where appropriate. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- Explore interdepartmental and/or interjurisdictional partnership arrangements to identify opportunities for joined-up services. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- Design the website or web application iteratively; the process should start with low-fidelity methods, such as quick sketches, and progressively moves to higher-fidelity methods, such as prototypes. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- Evaluate the design of the website or web application regularly and improve it throughout its life cycle through various methods such as observing users completing tasks during **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- Consider other service channels, such as telephone and in-person, used to obtain information and services from the Government of Canada. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- Explore opportunities for channel integration and mobile optimization. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- Consult the TBS Technical Specifications for the Web and Mobile Presence. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- Websites and web applications are optimized for mobile devices by: **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+  - Using the Web Experience Toolkit (WET) for adapting the layout and design of websites and web applications for small, medium and large screen sizes, and for different input methods, such as touch input, and keyboard and mouse input.
+  - Designing the content and interface of websites and web applications for small, medium and large screen sizes and for different input methods, such as touch input and keyboard and mouse input.
+
+- Start with a prototype **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+  - Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs.
+
+- When iterating, focus on workable solutions over comprehensive documentation. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+  - Having a workable solution that can be tested and validated will give you useful information for improving your service. Whenever possible, focus on results rather than unnecessary documentation and reporting (while staying within policy and regulatory limits).
+
+- When you can, use [agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques). **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+  - Techniques can include: daily stand ups, issue trackers, code reviews, rapid prototyping, design sprints, usability testing, user stories, retrospective meetings.
+
+- Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+  - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
 
 ### Questions clés **(Digital Playbook Playbook (US))**
 
@@ -147,10 +187,46 @@ Les méthodes agiles créent des services qui:
 - À chaque étape du test d'utilisabilité, quelles lacunes ont été
     identifiées pour répondre aux besoins des utilisateurs?
 
+### Decision Making Questions: **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+- Is there a persistent issue identified by several clients?
+- Are there any clear improvements that are possible that clients may not have identified yet?
+- Have there been any recommendations from audits or evaluations that require services to be redesigned?
+- Has technology evolved to permit new capabilities that would enhance the client experience?
+
+### Decision Making Questions: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+- How are service problems tracked and prioritized?
+- How often are clients problems reviewed and features assessed for effectiveness?
+- What process is in place for clients to provide ongoing feedback?
+- How is feedback used to improve the service?
+- What is the scope of the project? What can be achieved in the first iteration or design sprint?
+- At what point after the initial release will planning/development of future releases take place?
+- How long are iterations and sprints?
+
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+- [247 different checklists for usability testing](http://www.userfocus.co.uk/resources/guidelines.html) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- [Technical Specifications for Web and Mobile Presence (optimization)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-eng.asp) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- [TBS Standard on Web Usability](http://tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
+- [Agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+
+- [Agile Principles & Practices](https://pages.18f.gov/agile/index.html) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+
+- Example of Agile Methods: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+  - [Scrum](https://www.scrumalliance.org/)
+  - [Lean](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
+  - [Kanban](http://www.djaa.com/principles-kanban-method-0)
+- [GCpedia Community of Practice Agile Methods](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+- [CRA Agile Framework](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework)) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+- Treasury Board Secretariat (TBS) – Management Accountability Framework (MAF): **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+  - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp
+  - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp
 
 En savoir plus sur:
 
@@ -160,7 +236,9 @@ En savoir plus sur:
 
 - [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction)   **(**   **Norme de service numérique (UK)**   **)**
 
-
+Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+- [Is your project using "agilefall"?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
+- [Agile Manifesto](http://agilemanifesto.org/principles.html)
 
 ## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements
 
