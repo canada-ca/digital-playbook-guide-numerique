@@ -28,7 +28,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- Testé par l'utilisateur (critères de conception du produit OneGC)
+- User tested (OneGC product design criteria)
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
@@ -120,7 +120,7 @@ Inspiration Examples:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [2. Faire des recherches en cours sur les utilisateurs (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
+- [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -182,17 +182,17 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- Solutions sur les besoins des intervenants / utilisateurs (Principes EARB actuels du GC)
+- Stakeholders/Users requirements based solutions (Current GC EARB Principles)
 
-- Services et orientation client (Principes EARB actuels du GC)
+- Services & client orientation (Current GC EARB Principles)
 
-- L'utilisateur professionnel d'abord (Principes EA du GC)
+- Business User first (GC EA principles)
 
-- [1. Comprendre les besoins des utilisateurs (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/understand-user-needs)
+- [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
 
-- [2. Comprendre les utilisateurs et leurs besoins (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-2%23section-2#section-2)
+- [1. Comprendre les utilisateurs et leurs besoins (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-2)
 
-- [1. Comprendre ce que les gens ont besoin (Playbook sur les services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play1%23play1#play1)
+- [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
 
 - [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
@@ -423,9 +423,7 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [2. Aborder toute l'expérience, le début de la fin (Playbook de services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play1%23play1#play1)
-
-](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play2%23play2#play2)
+- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -463,9 +461,9 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- Mobilité préférée (Principes EARB actuels du GC)
+- Mobility Preferred (Current GC EARB Principles)
 
-- Tout appareil - Mobilité (Principes EA du GC)
+- Any Device - Mobility (GC EA principles)
 
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
@@ -485,15 +483,15 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [12. Assurez-vous que les utilisateurs réussissent la première fois (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
+- [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 
-- [13. GOV.UK (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
+- [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
 
-- [4. Soyez cohérent (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-4%23section-4#section-4)
+- [3. Faire preuve de constance (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-4)
 
-- [6. Veiller à ce que les utilisateurs réussissent la première fois (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-6%23section-6#section-6)
+- [5. Réussite assurée dès le premier essai des utilisateurs (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-6)
 
-- [3. Rendez-le simple et intuitif (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play3%23play3#play3)
+- [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
 
 - [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
@@ -679,9 +677,9 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [Encourager tout le monde à utiliser le service numérique - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
+- [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 
-- [Encourager les gens à utiliser les services numériques (Digital Service Standard (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-12%23section-12#section-12)
+- [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -772,9 +770,9 @@ En savoir plus sur:
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [Soutenir ceux qui en ont besoin (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-13%23section-13#section-13)
+- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
-- [Faire un plan pour être hors ligne - Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
+- [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
