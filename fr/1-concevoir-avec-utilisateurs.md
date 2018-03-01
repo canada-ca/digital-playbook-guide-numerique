@@ -26,26 +26,13 @@
 
 ## 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
 
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
+Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes agiles, itératives et centrées sur l'utilisateur lors de la construction d'un service. Commencez par une recherche et une analyse approfondies pour vous aider à comprendre qui utilise le service, quels sont ses besoins et comment le service affectera sa vie pour mieux comprendre comment le service devrait être conçu. L'absence de la voix de l'utilisateur conduit à des hypothèses qui peuvent être incorrectes et coûteuses.
 
-- User tested (OneGC product design criteria)
-- [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-**Exemples d'introduction :**
-
-**Critères de conception du produit OneGC :** Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes agiles, itératives et centrées sur l'utilisateur lors de la construction d'un service. Pour un service de recherche et une analyse approfondies pour vous aider à comprendre comment utiliser le service, il estimportant que le service affecte sa vie pour mieux comprendre comment le service devrait être conçu.
-
-Les utilisateurs doivent être impliqués dans un long cycle de la vie du service, les recherches et les tests des utilisateurs informent les premières phases de la conception aux améliorations continue après le lancement du service.
-
-**Think - Digital Design Playbook (ISED):** The absence of the client voice leads to assumptions that may be incorrect and costly. One way to challenge assumptions is to have quality qualitative and quantitative data. Data informed by client behaviours and needs will help you make the right decisions when designing and redesigning digital services. Service and digital performance and usage must be continuously measured in order to effectively direct transformation efforts. Client feedback should be collected and analyzed on an ongoing basis. Measurement and data analysis must remain integral to your service throughout its lifecycle. 
+Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service. 
 
 ### Liste de contrôle
 
-- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Interviewer les utilisateurs potentiels pour aider à développer les éléments suivants pour le service **(critères de conception du produit OneGC)** :
+- Interviewer les utilisateurs potentiels pour aider à développer les éléments suivants pour le service :
 
   a. Les objectifs de l'utilisateur (par exemple, en tant que \[type d'utilisateur\], je veux \[un certain mais\] de sorte que \[une raison quelconque\])
 
@@ -53,150 +40,69 @@ Les utilisateurs doivent être impliqués dans un long cycle de la vie du servic
 
   c. Profils d'utilisateurs (Ex., En fonction de données démographiques telles que le sexe, l'âge, l'emplacement, le revenu et la taille de la famille)
 
-- Utiliser une gamme de méthodes de recherche qualitative et quantitative pour déterminer les objectifs, les besoins et les comportements des personnes **(critères de conception du produit OneGC)**
+- Utiliser une gamme de méthodes de recherche qualitative et quantitative pour déterminer les objectifs, les besoins et les comportements des personnes
 
-- Créer et maintenir une liste des tâches prioritaires que les utilisateurs tentent de faire (c.-à-d., « User stories ») **(critères de conception de produits OneGC)**
+- Créer et maintenir une liste des tâches prioritaires que les utilisateurs tentent de faire (c.-à-d., « User stories »)
 
-- Tester régulièrement avec les utilisateurs lors de la construction du service et après le lancement du service pour vérifier qu'il répond aux besoins de l'utilisateur et pour identifier les parties du service que les utilisateurs peuvent trouver difficiles **(critères de conception du produit OneGC)**
+- Tester régulièrement avec les utilisateurs lors de la construction du service et après le lancement du service pour vérifier qu'il répond aux besoins de l'utilisateur et pour identifier les parties du service que les utilisateurs peuvent trouver difficiles
 
-- Mettre en place un plan de paiement pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après sa construction **(critères de conception du produit OneGC)**
+- Mettre en place un plan de paiement pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après sa construction
 
-- Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer **(critères de conception du produit OneGC)**
+- Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer
 
-- Research what data is available **(Think - Digital Design Playbook (ISED))**
-  - Start with existing data before collecting new data. For example, use ISED data sources such as AWESOME and Client Enquiry Reporting Tool (CERT) to collect information on website usage and understanding ISED website, how clients interact with it, as well as their user experience.
-
-- Define what data types should be collected and collect data in a consistent manner (e.g., client experience related to tasks or problems, client feedback and usability testing). **(Think - Digital Design Playbook (ISED))**
-  - Collecting data about your service allows you to measure its performance. You can use data to validate the following:
-    - the service is meeting user needs
-    - the service allows users to easily complete the task it provides
-    - there are enough people using the service to make it cost-efficient
-    - people know about the service and are choosing to use it
-
-- Ensure data completeness and quality. **(Think - Digital Design Playbook (ISED))**
-  - Understand the limitations of data and use data appropriately.
-  - To ensure the completeness and quality of data, consult with the Chief Information Officer (CIO), the Results and Delivery Unit and other internal data experts.
-
-- Evaluate data quality by methods, such as certification or validation, or studies of the sources of error. **(Think - Digital Design Playbook (ISED))**
-  - Consult with the CIO and internal experts about data to develop or select a suitable methodology to validate and certify your data. 
-
-- Continuously measure client experience and use this information to inform future service redesigns and service improvements **(Think - Digital Design Playbook (ISED))**
-  - Measure the service attributes (e.g., timeliness, completeness, usability, etc.) that matter to the client. Focus on customers' success metrics to drive priorities.
-    - Use ISED's Service Management Strategy Key Performance Indicators (e.g., client satisfaction, increase in digital service uptake and service standards met) and the [Canada.ca](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp) performance indicators.
-    - Have a mechanism in place for clients to provide feedback and to address client service issues in a timely manner. This is a [requirement](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916b) under the Policy on Service
-
-### Decision Making Questions: **(Think - Digital Design Playbook (ISED))**
-#### Data
-- What are the existing sources of data?
-- Is there an opportunity to collect data and what tools can be used?
-- Can the team analyze the data? Does the team need assistance?
-- How will data be shared across ISED?
-- Have the clients been profiled (including segmentation)?
-- Have KPIs been identified, in addition to the mandatory KPIs (i.e. client satisfaction, increase in digital services uptake, service standards met)?
-
-#### Acting on Feedback
-- How will the feedback mechanism be implemented and delivered?
-- What tools are available for collecting feedback?
-- At what point during the process will feedback be collected?
-- How will clients know that their feedback has been received and is being used to inform service improvements? How often will service improvements take place?
+- Fournir un mécanisme aux utilisateurs permettant de recevoir une rétroaction et de régler en temps opportun les problèmes de services
+(comme l'exige la [Politique sur les services](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27916b#cha7))
 
 ### Guides d'application
-
 - **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
-- [Quality Services Guide II - Measuring Client Satisfaction](http://www.collectionscanada.gc.ca/eppp-archive/100/201/301/tbs-sct/tb_manual-ef/Pubs_pol/opepubs/TB_O/2QG1-1E.html) **(Think - Digital Design Playbook (ISED))**
-- [Data quality evaluation](http://www.statcan.gc.ca/pub/12-539-x/2009001/quality-qualite-eng.htm) **(Think - Digital Design Playbook (ISED))**
-- [2003 April Report of the Auditor General of Canada](http://www.oag-bvg.gc.ca/internet/English/att_20030402xe01_e_12685.html) **(Think - Digital Design Playbook (ISED))**
-- [TBS Performance Monitoring and Reporting Standard](http://www.tpsgc-pwgsc.gc.ca/biens-property/sngp-npms/ti-it/normesurveilrend-perfmonitorstandard-4-eng.html) **(Think - Digital Design Playbook (ISED))**
-- [Key Performance Indicators](http://www.gcpedia.gc.ca/wiki/Web_Renewal_Performance_Measurement_KPIs) **(Think - Digital Design Playbook (ISED)) (internal to GC only)**
-- [Big Data Community of Practice](http://www.gcpedia.gc.ca/wiki/Big_Data_Community) **(Think - Digital Design Playbook (ISED)) (internal to GC only)**
-- [Standards and Guidelines for Data Collection](http://www.tpsgc-pwgsc.gc.ca/rop-por/rapports-reports/comiteenligne-panelonline/page-04-eng.html) **(Think - Digital Design Playbook (ISED))**
 
-Inspiration Examples:
-- [Using data to improve your service: an introduction](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction) **(Service manual (UK) via Think - Digital Design Playbook (ISED))**
-- [18F Dashboard](https://analytics.usa.gov/) **(Think - Digital Design Playbook (ISED))**
-- [City of Edmonton's Citizen Dashboard](https://dashboard.edmonton.ca/) **(Think - Digital Design Playbook (ISED))**
+### Ressources similaires
+- [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
 
 ## 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
 
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
-
-- [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-**Exemples d'introduction :**
-
-**Norme de service numérique (Royaume-Uni) :** Mettre en place un plan pour la recherche continuer les utilisateurs et les tests d'utilisabilité pour obtenir des commentaires permanents pour améliorer le service.
-
-Faire de la recherche continue sur les utilisateurs signifie que vous pouvez :
-
-- vérifier que votre service aide les utilisateurs à faire les tâches dont ils ont besoin
-
-- continuer à améliorer le service en fonction des besoins des utilisateurs
+Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est important de planifier la recherche continue des utilisateurs et les tests d'utilisabilité. Impliquer les utilisateurs à toutes les étapes, en recherchant continuellement des commentaires pour s'assurer que le service aide les utilisateurs à accomplir leurs tâches et continuer à améliorer le service pour mieux répondre aux besoins des utilisateurs.
 
 ### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Étape Alpha
+#### Stage alpha
 
-  - déterminer à quoi ressembler votre version bêta privée et comment vous utilisez ce que vous avez trouvé pour améliorer le service **(Norme de service numérique (Royaume-Uni))**
+- determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
 
-  - payeur pour la recherche des utilisateurs et des tests d'utilisabilité tout au long de la conception du service et après sa construction **(Norme de service numérique (Royaume-Uni))**
+- pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
 
-  - tester régulièrement des tests de recherche et de convivialité et utiliser les résultats pour améliorer la conception de votre service **(Norme de service numérique (Royaume-Uni)****
+- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
-  - élaborer un plan de recherche pour l'utilisateur privé et un plan pour mener des recherches sur le service en direct **(Norme de service numérique (Royaume-Uni))**
+- develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
-- Bêta et étapes en direct
+#### Stages bêta et en direct
 
-  - payeur pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après la construction du service **(Norme de service numérique (Royaume-Uni))**
+- pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
 
-  - tester régulièrement des tests de recherche et de convivialité et utiliser les résultats pour améliorer la conception de votre service **(Norme de service numérique (Royaume-Uni))**
+- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
-  - élaborer un plan de recherche d'utilisateur pour le service à la prochaine étape et un plan pour mener des recherches sur le service en direct **(Norme de service numérique (Royaume-Uni))**
+- develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
-  - faire des recherches auprès des utilisateurs ayant des besoins en matière d'accessibilité dès le début de la conception du service **(Norme de service numérique (Royaume-Uni))**
+- do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**
 
-  - test avec les utilisateurs besoin d'un support numérique assisté **(Norme de service numérique (Royaume-Uni))**
+- test with users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - utiliser des données analytiques dans votre plan de recherche pour le service **(Norme de service numérique (Royaume-Uni))**
+- use analytics data in your user research plan for the service **(Digital Service Standard (UK))**
 
-  - Documentez les problèmes que vous avez rencontrés lors des tests et comment vous les avez résolus **(Norme de service numérique (Royaume-Uni))**
+- document any problems you've found through testing and how you solved them **(Digital Service Standard (UK))**
 
-  - Documentez tous les problèmes que vous ne pouvez pas résoudre en version bêta et commentez vous le traiterez en version bêta publique **(Norme de service numérique (Royaume-Uni))**
+- document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
 
 ### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-En savoir plus sur:
-
-- [recherche d'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
-
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
-
-- [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
+### Ressources similaires
+- [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
 ## 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
-
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
-
-- Stakeholders/Users requirements based solutions (Current GC EARB Principles)
-
-- Services & client orientation (Current GC EARB Principles)
-
-- Business User first (GC EA principles)
-
-- [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
-
-- [1. Comprendre les utilisateurs et leurs besoins (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-2)
-
-- [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
-
-- [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-- [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -249,11 +155,11 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Testez des prototypes de solutions avec des personnes réelles, sur le terrain si possible **(Playbook de services numériques (US))**
+- Test prototypes of solutions with real people, in the field if possible **(Digital Services Playbook (US))**
 
-- Partager les résultats avec le leadership de l'équipe et de l'agence **(Playbook de services numériques (US))**
+- Share findings with the team and agency leadership **(Digital Services Playbook (US))**
 
-- Au fur et à mesure de la construction du service numérique, de vérifier régulièrement auprès des utilisateurs **(Playbook de services numériques (US))**
+- As the digital service is being built, regularly test it with potential users to ensure it meets people's needs **(Digital Services Playbook (US))**
 
 - Ensure user-centric approaches to service design, involving clients in the service design process where possible. **(General design principles - Digital Design Playbook (ISED))**
 
@@ -279,110 +185,75 @@ Pour informateur les fonctionnalités de service, interroger les utilisateurs et
   - Accessible design is good design.
   - Make services that are simple and easy to use so that clients want to use it.
 
-- Étape Alpha
+#### Stage alpha
 
-  - passer du temps avec les utilisateurs actuels et potentiels du service **(Playbook sur les services numériques (États-Unis))**
+- spend time with current and prospective users of the service **(Digital Services Playbook (US))**
 
-  - documenter les besoins de l'utilisateur que vous avez trouvés pour votre service de découverte et commentez vous avez trouvé
-    ce besoin, y compris les besoins des utilisateurs numériques assistés **(Norme de service numérique (Royaume-Uni)) /** listez un ensemble complet d'utilisateurs et de leurs besoins **(Norme de service numérique (Ontario)) /** Utiliser une gamme de méthodes de recherche qualitative et quantitative pour déterminer les buts, les besoins et les comportements des gens; Soyez attentif au temps passé **(Playbook de services numériques (US)) /** Documentez les résultats sur les objectifs, les besoins, les comportements et les préférences des utilisateurs **(Playbook de services numériques (US))**
+- document the user needs you've found for your service in discovery and how you found those needs, including any needs for assisted digital users **(Digital Service Standard (UK)) /** list a complete set of users and their needs **(Digital Service Standard (Ontario)) /** Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors; be thoughtful about the time spent **(Digital Services Playbook (US)) /** Document the findings about user goals, needs, behaviors, and preferences **(Digital Services Playbook (US))**
 
-  - rédiger des histoires d'utilisateur pour votre service - y compris pour les utilisateurs qui ont besoin d'aide numérique assistée **(Norme de service numérique (Royaume-Uni)) /** document user stories, personas et profils pour le service **(Norme de service numérique (Ontario)) /** Créer une liste de tâches prioritaires l'utilisateur tente de réaliser, également connu sous le nom de « user stories » **(Playbook de services numériques (US))**
+- write user stories for your service - including for users who need assisted digital support **(Digital Service Standard (UK)) /** document user stories, personas and profiles for the service **(Digital Service Standard (Ontario)) /** Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
 
-  - identifier les parties de la tâche que les utilisateurs rendent difficile et changer le service pour rendre ces parties de la tâche plus facile pour les utilisateurs, testeur et rechercher pour **(Norme de service numérique (Royaume-Uni)) /** identifier les parties du service qui sont les utilisateurs difficiles et les problèmes qui doivent être surmontés pour concevoir le service **(Norme de service numérique (Ontario))**
+- identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
 
-  - identifier les problèmes que vous avez trouvés dans la recherche que vous avez surmonté pour concevoir le service **(Norme de service numérique (Royaume-Uni)) /** identifiant les parties du service que les utilisateurs les problèmes qui doivent être surmontés pour concevoir le service **(Norme de service numérique (Ontario))**
+- identify any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK)) /** identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
 
-  - Montrez que les groupes ont contribué et que les groupes n'ont pas fait **(Norme de service numérique (Ontario))**
+- show what groups contributed and what groups did not **(Digital Service Standard (Ontario))**
 
-  - combler toute lacune lors des tests durant la phase bêta **(Norme de service numérique (Ontario))**
+- address any gaps when testing during the beta stage **(Digital Service Standard (Ontario))**
 
-- Étape bêta
+#### Stage bêta
 
-  - documenter le processus utilisé pour la version bêta privée, y compris le nombre d'utilisateurs avec vous avez testé, comment vous avez les recrutés, comment vous avez utilisé les analyses dans votre recherche et ce que vous avez trouvé en alpha **(Norme de service numérique (Royaume-Uni)) /** tester le service avec de vrais utilisateurs et être capable d'expliquer **(Norme de service numérique (Ontario))** :
+- document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK)) /** test the service with real users, and be able to explain **(Digital Service Standard (Ontario))**:
 
-    - nombre de participants au test et leurs caractéristiques démographiques de base
+  - number of test participants and their basic demographic characteristics
 
-    - combien d'utilisateurs impliqués dans les tests ont eu des problèmes d'accessibilité ou ont eu besoin d'un support numérique assisté
+  - how many users involved in testing had accessibility challenges or needed assisted digital support
 
-    - comment ils ont été recrutés
+  - how they were recruited
 
-    - comment l'analytique a été utilisé dans la recherche
+  - how analytics were used in research
 
-    - de nouvelles idées et leçons
+  - any new insights and lessons
 
-  - documenter qui sont vos utilisateurs et ce que vous avez fait pour comprendre leurs besoins, y compris les utilisateurs qui ont besoin d'une aide numérique assistée **(Norme de service numérique (Royaume-Uni))**
+- document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - documenter tout changement aux besoins des utilisateurs que vous avez identifié à la suite d'une recherche avec les utilisateurs **(Norme de service numérique (Royaume-Uni)) /** documenter tout changement identifié à la suite d'une recherche avec les utilisateurs **(Norme de service numérique (Ontario))**
+- document any changes to user needs you've identified as a result of researching with users **(Digital Service Standard (UK)) /** document any changes identified as a result of researching with users **(Digital Service Standard (Ontario))**
 
-  - identifier les utilisateurs de votre service qui sont les plus difficiles à satisfaire et comment vous avez appris ces besoins **(Norme de service numérique (Royaume-Uni)) /** identifier les besoins des utilisateurs les plus difficiles à satisfaire **(Norme de service numérique (Ontario))**
+- identify the users of your service whose needs are most difficult to meet, and how you've been learning about those needs **(Digital Service Standard (UK)) /** identify user needs that are most difficult to meet **(Digital Service Standard (Ontario))**
 
-  - documenter les défis de la conception que le besoin de vos utilisateurs pour votre service **(Norme de service numérique (Royaume-Uni)) /** documenter les défis de la conception que les besoins des utilisateurs pour le service **(Norme de service numérique (Ontario))**
+- document the design challenges your users' needs pose for your service **(Digital Service Standard (UK)) /** document the design challenges users' needs pose for the service **(Digital Service Standard (Ontario))**
 
-  - la recherche avec les utilisateurs pendent la version bêta privée, y compris les **(Norme de service numérique (Royaume-Uni))**
+- research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - documenter des user stories, des personnages ou des profils pour votre service - c.-à-d. identifier les personnes qui ont besoin d'utiliser le service et à quoi elles ont besoin **(Norme de service numérique (Royaume-Uni))**
+- document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - identifier les parties de la tâche que les utilisateurs rendent difficile et changer le service pour rendre ces parties de la tâche plus faciles pour les utilisateurs, testeur et rechercher pour **(Norme de service numérique (Royaume-Uni))**
+- identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
 
-  - Documentez les problèmes que vous avez trouvés dans la recherche et que vous avez surmonté pour concevoir le service **(Norme de service numérique (Royaume-Uni))**
+- document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
 
-  - Documentez les recherches que vous avez effectuées pour comprendre si votre modèle de support répond aux besoins des utilisateurs et commenter cette recherche a informé l'épreuve et les tests **(Norme de service numérique (RU))**
+- document the research you did to understand whether your support model meets user needs and how that research informed iteration and testing **(Digital Service Standard (UK))**
 
-  - documenter commenter la conception du service a changé au fil du temps en raison de ce que vous avez trouvé dans la recherche des utilisateurs **(Norme de service numérique (Royaume-Uni))**
+- document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
 
-- Scène en direct
+#### Stage en direct
 
-  - identifier les parties de la tâche que les utilisateurs rendent difficile et changer le service pour rendre ces parties de la tâche plus faciles pour les utilisateurs, testeur et rechercher pour **(Norme de service numérique (Royaume-Uni)) /** identifier les parties de la tâche que les **(Norme numérique de service (Ontario))**
+- identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK)) /** identify parts of the task that users find difficult **(Digital Service Standard (Ontario))**
 
-  - utiliser les résultats de la recherche dans la version bêta publique pour améliorer continuellement votre service **(Norme de service numérique (Royaume-Uni)) /** utiliser les résultats de la recherche pour améliorer continuellement le service (p.ex. participants, fréquence, lieu, moment) **(Normes de service numérique (Ontario))**
+- use the results of the research done in the public beta to continuously improve your service **(Digital Service Standard (UK)) /** use research results to continuously improve the service (e.g. participants, frequency, location, timing) **(Digital Service Standard (Ontario))**
 
-  - documenter les histoires d'utilisateurs pour votre service - c.-à-d. identifier une personne qui a besoin d'utiliser le service et pour quoi elles servent **(Norme de service numérique (Royaume-Uni))**
+- document the user stories for your service - ie identify someone who needs to use the service and what they use it for - include assisted digital users **(Digital Service Standard (UK))**
 
-  - documenter les besoins de votre service, y compris pour les utilisateurs qui ont besoin d'aide numérique assistée **(Norme de service numérique (Royaume-Uni))**
+- document the user needs you've found for your service, including for users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - démontrer les améliorations à ces domaines et comment ceux-ci ont été testés et recherchés **(Norme de service numérique (Ontario))**
-
-### Questions clés **(Playbook numérique (US))**
-
-- Qui sont vos principaux utilisateurs?
-
-- Quel utilisateur a besoin de ce service?
-
-- Pourquoi l'utilisateur veut-il ou a-t-il besoin de ce service?
-
-- Quelles personnes ont plus de difficulté avec le service?
-
-- Quelles méthodes de recherche ont été utilisées?
-
-- Quelles ont été les principales conclusions?
-
-- Comment les résultats ont-ils été documentés? Où les membres de l'équipe peuvent-ils accéder à la documentation?
-
-- À quelle fréquence testez-vous avec de vraies personnes?
-
-### Decision Making Questions: **(Think - Digital Design Playbook (ISED))**
-- How will you conduct user research?
-- Who uses the service? Do you have data about client behaviours and expectations? Who are the current clients / target audience for the service? Do you have personas to include key details about your clients?
-- Are you aware of the challenges clients face when accessing or using the service? How do these challenges affect the overall user experience?
-- What are the work-arounds that clients and service providers have devised to address challenges with the service? Can you incorporate the work-arounds in the new service design?
-- Have you considered the unique needs of some client groups? Is the service designed to be as inclusive as possible?
-- Is the service delivered in non-digital channels (e.g., in-person, telephone)?
+- demonstrate improvements to those areas and how those were tested and researched **(Digital Service Standard (Ontario))**
 
 ### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Commencez par apprendre les besoins des utilisateurs](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Norme de service numérique (Royaume-Uni))**
+- [Start by learning user needs](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Digital Service Standard (UK))**
 
-- [Améliorer la conception du service avec la recherche de l'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Norme de service numérique (Royaume-Uni))**
-
-En savoir plus sur:
-
-- [recherche d'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
-
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
-
-- [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
+- [Improve service design with user research](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Digital Service Standard (UK))**
 
 User Research and user-centred design: **(Think - Digital Design Playbook (ISED))**
 - [Standards and Guidelines for Data Collection](http://www.tpsgc-pwgsc.gc.ca/rop-por/rapports-reports/comiteenligne-panelonline/page-04-eng.html)
@@ -419,53 +290,54 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 - [Consider the range of people that will use your product or service](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
 - [Building for inclusion](https://gds.blog.gov.uk/2012/10/01/building-for-inclusion/)
 
+### Ressources similaires
+
+- [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
+
+- [1. Comprendre les utilisateurs et leurs besoins (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-2)
+
+- [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
+
+- [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
+
 ## 1.4 Clairement articuler and understand the problem of about and use the data for evidence
-
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
-
-- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
 
-**Playbook de services numériques (US) :** Nous devons comprendre les différentes façons dont les personnes s'organisent avec nos services, y compris les actions en ligne, via une application mobile, sur un téléphone ou en personne. Chaque rencontre, qu'elle soit en ligne ou hors ligne, devrait rapprocher l'utilisateur de son objectif.
+**Digital Services Playbook (US):** We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal.
 
 ### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Comprendre les différents points qui permettent aux gens de s'interagir avec le service - à la fois en ligne et en personne **(Digital Services Playbook (États-Unis))**
+- Understand the different points at which people will interact with the service -- both online and in person **(Digital Services Playbook (US))**
 
-- Identifier les points douloureux de la manière actuelle dont les utilisateurs interagissent avec le service, et les hiérarchiser en fonction des besoins des utilisateurs **(Digital Services Playbook (États-Unis))**
+- Identify pain points in the current way users interact with the service, and prioritize these according to user needs **(Digital Services Playbook (US))**
 
-- Concevoir les parties numériques du service pour qu'elles soient intégrées aux points de contact hors ligne utilisés pour interagir avec le service **(Digital Services Playbook (États-Unis))**
+- Design the digital parts of the service so that they are integrated with the offline touch points people use to interact with the service **(Digital Services Playbook (US))**
 
-- Développer des mesures qui permettent de mesurer dans quelle mesure le service répond aux besoins des utilisateurs à chaque étape du service **(Digital Services Playbook (États-Unis))**
+- Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
 
-### Questions clés **(Digital Services Playbook (États-Unis))**
+### Key Questions **(Digital Services Playbook (US))**
 
-- Quelles sont les différentes manières (à la fois en ligne et hors ligne) que les gens sont actuellement chargés de la tâche pour aider le service?
+- What are the different ways (both online and offline) that people currently accomplish the task the digital service is designed to help with?
 
-- Où sont les points de douleur de l'utilisateur de la manière actuelle accomplir la tâche?
+- Where are user pain points in the current way people accomplish the task?
 
-- Où ce projet spécifique s'intègre-t-il dans la plus grande façon dont les gens obtiennent actuellement le service offert?
+- Where does this specific project fit into the larger way people currently obtain the service being offered?
 
-- Quelles statistiques effectueront le meilleur fonctionnement du service pour ses utilisateurs?
+- What metrics will best indicate how well the service is working for its users?
 
 ### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+### Ressources similaires
+- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
+
 ## 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
-
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
-
-- Mobility Preferred (Current GC EARB Principles)
-
-- Any Device - Mobility (GC EA principles)
-
-- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -478,6 +350,9 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 ### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+### Ressources similaires
+- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 ## 1.6 Rendre les services simples, intuitifs et cohérents
 
