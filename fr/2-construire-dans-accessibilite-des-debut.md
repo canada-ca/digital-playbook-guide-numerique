@@ -21,9 +21,9 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- Accessible par conception (critères de conception de produits OneGC)
+- Accessible by design (OneGC product design criteria)
 
-- Concevoir l'accessibilité et le mobile dès le départ (Construire des principes numériques (premières réflexions))
+- Design for accessibility and mobile first from the start (Build it Digital Principles (initial thoughts))
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -61,7 +61,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
 
-- [Rendre accessible (Norme de service numérique (Ontario))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/digital-service-standard%2523section-8%23section-8#section-8)
+- [7. Rendre le service accessible (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-8)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
