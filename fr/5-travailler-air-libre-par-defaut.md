@@ -28,7 +28,7 @@
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Libérer les données par défaut (Build it Digital Principles (premières réflexions))
+- Release data by default (Build it Digital Principles (initial thoughts))
 
 - [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
@@ -52,10 +52,7 @@
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
-
-
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel
 
@@ -67,16 +64,13 @@
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
-
-
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [16. Identifier les indicateurs de performance (Norme de service numérique (Royaume-Uni)](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
+- [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -120,7 +114,6 @@ La définition d'indicateurs de performance vous permet d'améliorer continuelle
 
     - suivre les personnes passant du service hors ligne à celui en ligne   **(**   **Norme de service numérique (UK)**   **)**
 
-
 ### Guides d'implémentation
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en
@@ -139,8 +132,6 @@ En savoir plus sur:
 - [mesurer le succès](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)   **(**   **Norme de service numérique (UK)**   **)**
 
 - [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments)   **(**   **Norme de service numérique (UK)**   **)**
-
-
 
 ## 5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez
 
@@ -193,11 +184,11 @@ Inspriation Examples: **(Plan - Digital Design Playbook (ISED))**
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- Ouvrir par défaut (Critères de conception du produit OneGC)
+- Open by default (OneGC product design criteria)
 
-- Ouvert par défaut, propriété par nécessité (Principes EARB actuels du GC)
+- Open By Default, Proprietary by Necessity (Current GC EARB Principles)
 
-- [13. Par défaut pour ouvrir (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play13%23play13#play13)
+- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -220,8 +211,6 @@ l' information gouvernementaux , permettons au public de contribuer facilement e
 
 - Construire de manière ouverte et interopérable - Accorder une attention égale à l'open source. Utilisez des standards ouverts. Construire de manière interopérable et réutilisable. **(Critères de conception du produit OneGC)**
 
-
-
 - Proposer aux utilisateurs un mécanisme de signalement des bogues et des problèmes, et être réactif à ces rapports   **(**   **Playbook de services numériques (US)**   **)**
 
 - S'assurer que nous conservons les droits contractuels sur tous les logiciels personnalisés développés par des tiers d'une manière publiable et réutilisable sans frais   **(**   **Playbook de services numériques (US)**   **)**
@@ -242,16 +231,13 @@ l' information gouvernementaux , permettons au public de contribuer facilement e
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en
-    œuvre\]**
-
-
+- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 5.6 Rendre tout le nouveau code source ouvert (Digital Service Standard (UK))
 
 **Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
 
-- [8. Rendre tout le nouveau code source ouvert (Norme de service numérique (Royaume-Uni))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -259,7 +245,7 @@ l' information gouvernementaux , permettons au public de contribuer facilement e
 
 **Norme de service numérique (RU): **Rendre tout le nouveau code source ouvert et réutilisable, et le publier sous les licences appropriées (ou fournir une explication convaincante pour expliquer pourquoi cela ne peut pas être fait pour des sous-ensembles spécifiques du code source).
 
-Rendre votre code source ouvert signifie   :
+Rendre votre code source ouvert signifie :
 
 - d'autres services peuvent réutiliser le logiciel que vous avez créé
 
@@ -279,7 +265,7 @@ Rendre votre code source ouvert signifie   :
 
 - Étape Alpha
 
-    - faire   nouveau code source ouvert et réutilisable **(Digital Service Standard (UK))**    **)**
+    - faire nouveau code source ouvert et réutilisable **(Digital Service Standard (UK))**    **)**
 
     - Placez votre code dans un référentiel de code source Internet ouvert **(Digital Service Standard (UK))**      **)**
 
