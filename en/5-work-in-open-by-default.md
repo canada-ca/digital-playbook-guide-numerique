@@ -161,7 +161,9 @@ Find out more about:
 - Make it easier to share data across ISED by collecting service and client information in a consistent manner and following best practices (e.g., the business number as a common identifier and practices related to Identity Management (IDM)). **(Plan - Digital Design Playbook (ISED))**
 
 ### Decision Making Questions: **(Plan - Digital Design Playbook (ISED))**
+
 #### Sharing
+
 - How can the team share what was learned during this project?
 - Can the lessons-learned from this experience contribute to better service delivery for other ISED services or services offered by other departments or governments?
 - Is there a valid reason not to share? If you cannot share everything, what can you share without breaching privacy, security and information management rules?
@@ -174,6 +176,7 @@ Find out more about:
 - **[TODO: Add/revise implementation guide items]**
 
 Inspriation Examples: **(Plan - Digital Design Playbook (ISED))**
+
 - [How sharing helps us improve digital services](https://gds.blog.gov.uk/2014/08/22/how-sharing-helps-us-improve-digital-services/)
 - [There's nothing wrong with being unoriginal](https://medium.com/ontariodigital/theres-nothing-wrong-with-being-unoriginal-b540fa20aaf0#.ifvv8l7mi)
 

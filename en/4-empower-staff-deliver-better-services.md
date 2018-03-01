@@ -167,6 +167,7 @@ Find out more about:
 - What are the performance metrics defined in the contract (e.g., response time, system uptime, time period to address priority issues)?
 
 ### Decision Making Questions: **(Do - Digital Design Playbook (ISED))**
+
 - Has client feedback been solicited and have you incorporated client feedback in the service design/redesign?
 - What service delivery models have been adopted elsewhere?
 - What are the opportunities for efficiencies and improvement?

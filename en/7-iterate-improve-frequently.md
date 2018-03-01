@@ -179,12 +179,14 @@ Start with a representation or prototype of the solution that will be tested and
 - At each stage of usability testing, which gaps were identified in addressing user needs?
 
 ### Decision Making Questions: **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+
 - Is there a persistent issue identified by several clients?
 - Are there any clear improvements that are possible that clients may not have identified yet?
 - Have there been any recommendations from audits or evaluations that require services to be redesigned?
 - Has technology evolved to permit new capabilities that would enhance the client experience?
 
 ### Decision Making Questions: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+
 - How are service problems tracked and prioritized?
 - How often are clients problems reviewed and features assessed for effectiveness?
 - What process is in place for clients to provide ongoing feedback?
@@ -216,8 +218,8 @@ Start with a representation or prototype of the solution that will be tested and
 - [GCpedia Community of Practice Agile Methods](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
 - [CRA Agile Framework](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework)) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
 - Treasury Board Secretariat (TBS) – Management Accountability Framework (MAF): **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp
-  - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp
+  - <http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp>
+  - <http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp>
 
 Find out more about:
 
@@ -228,6 +230,7 @@ Find out more about:
 - [assisted digital support](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Digital Service Standard (UK))**
 
 Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+
 - [Is your project using "agilefall"?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
 - [Agile Manifesto](http://agilemanifesto.org/principles.html)
 
@@ -318,7 +321,7 @@ You need to build a service which you can iterate and keep improving so that you
   - Implement the test.
   - Test often (e.g., six month or yearly intervals), apply the findings and keep on testing.
 
-- Test under realistic conditions **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**  
+- Test under realistic conditions **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
   - Create realistic scenarios that reflect the context and environment in which clients would use the service.
 
 - Use different types of tests to assess the service **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
@@ -360,6 +363,7 @@ You need to build a service which you can iterate and keep improving so that you
   - make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
 
 ### Decision Making Questions: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+
 - Is the service stable, secure and responsive, regardless of how many people are using it?
 - Is the service [accessible](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)?
 - How will you recruit clients for user testing?
@@ -384,8 +388,8 @@ You need to build a service which you can iterate and keep improving so that you
 - [26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
 
 - User centric design GC community of practice: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs
-  - http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing
+  - <http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs>
+  - <http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing>
 
 Find out more about:
 

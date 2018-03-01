@@ -40,8 +40,6 @@
 
 Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched.
 
-**Think - Digital Design Playbook (ISED):** The absence of the client voice leads to assumptions that may be incorrect and costly. One way to challenge assumptions is to have quality qualitative and quantitative data. Data informed by client behaviours and needs will help you make the right decisions when designing and redesigning digital services. Service and digital performance and usage must be continuously measured in order to effectively direct transformation efforts. Client feedback should be collected and analyzed on an ongoing basis. Measurement and data analysis must remain integral to your service throughout its lifecycle. 
-
 ### Checklist
 
 - **[TODO: Add/revise checklist items]**
@@ -64,44 +62,8 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 - Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement **(OneGC product design criteria)**
 
-- Research what data is available **(Think - Digital Design Playbook (ISED))**
-  - Start with existing data before collecting new data. For example, use ISED data sources such as AWESOME and Client Enquiry Reporting Tool (CERT) to collect information on website usage and understanding ISED website, how clients interact with it, as well as their user experience.
-
-- Define what data types should be collected and collect data in a consistent manner (e.g., client experience related to tasks or problems, client feedback and usability testing). **(Think - Digital Design Playbook (ISED))**
-  - Collecting data about your service allows you to measure its performance. You can use data to validate the following:
-    - the service is meeting user needs
-    - the service allows users to easily complete the task it provides
-    - there are enough people using the service to make it cost-efficient
-    - people know about the service and are choosing to use it
-
-- Ensure data completeness and quality. **(Think - Digital Design Playbook (ISED))**
-  - Understand the limitations of data and use data appropriately.
-  - To ensure the completeness and quality of data, consult with the Chief Information Officer (CIO), the Results and Delivery Unit and other internal data experts.
-
-- Evaluate data quality by methods, such as certification or validation, or studies of the sources of error. **(Think - Digital Design Playbook (ISED))**
-  - Consult with the CIO and internal experts about data to develop or select a suitable methodology to validate and certify your data. 
-
-- Continuously measure client experience and use this information to inform future service redesigns and service improvements **(Think - Digital Design Playbook (ISED))**
-  - Measure the service attributes (e.g., timeliness, completeness, usability, etc.) that matter to the client. Focus on customers' success metrics to drive priorities.
-    - Use ISED's Service Management Strategy Key Performance Indicators (e.g., client satisfaction, increase in digital service uptake and service standards met) and the [Canada.ca](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp) performance indicators.
-    - Have a mechanism in place for clients to provide feedback and to address client service issues in a timely manner. This is a [requirement](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916b) under the Policy on Service
-
-### Decision Making Questions: **(Think - Digital Design Playbook (ISED))**
-#### Data
-- What are the existing sources of data?
-- Is there an opportunity to collect data and what tools can be used?
-- Can the team analyze the data? Does the team need assistance?
-- How will data be shared across ISED?
-- Have the clients been profiled (including segmentation)?
-- Have KPIs been identified, in addition to the mandatory KPIs (i.e. client satisfaction, increase in digital services uptake, service standards met)?
-
-#### Acting on Feedback
-- How will the feedback mechanism be implemented and delivered?
-- What tools are available for collecting feedback?
-- At what point during the process will feedback be collected?
-- How will clients know that their feedback has been received and is being used to inform service improvements? How often will service improvements take place?
-
 ### Implementation guides
+
 - **[TODO: Add/revise implementation guide items]**
 - [Quality Services Guide II - Measuring Client Satisfaction](http://www.collectionscanada.gc.ca/eppp-archive/100/201/301/tbs-sct/tb_manual-ef/Pubs_pol/opepubs/TB_O/2QG1-1E.html) **(Think - Digital Design Playbook (ISED))**
 - [Data quality evaluation](http://www.statcan.gc.ca/pub/12-539-x/2009001/quality-qualite-eng.htm) **(Think - Digital Design Playbook (ISED))**
@@ -110,11 +72,6 @@ Users should be involved throughout the lifecycle of the service, with user rese
 - [Key Performance Indicators](http://www.gcpedia.gc.ca/wiki/Web_Renewal_Performance_Measurement_KPIs) **(Think - Digital Design Playbook (ISED)) (internal to GC only)**
 - [Big Data Community of Practice](http://www.gcpedia.gc.ca/wiki/Big_Data_Community) **(Think - Digital Design Playbook (ISED)) (internal to GC only)**
 - [Standards and Guidelines for Data Collection](http://www.tpsgc-pwgsc.gc.ca/rop-por/rapports-reports/comiteenligne-panelonline/page-04-eng.html) **(Think - Digital Design Playbook (ISED))**
-
-Inspiration Examples:
-- [Using data to improve your service: an introduction](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction) **(Service manual (UK) via Think - Digital Design Playbook (ISED))**
-- [18F Dashboard](https://analytics.usa.gov/) **(Think - Digital Design Playbook (ISED))**
-- [City of Edmonton's Citizen Dashboard](https://dashboard.edmonton.ca/) **(Think - Digital Design Playbook (ISED))**
 
 ## 1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements
 
@@ -243,8 +200,6 @@ To inform service features, interview users and gather data to develop:
 
 - user profiles - show user groups based on demographics such as gender, age, location, income and family size
 
-**Think - Digital Design Playbook (ISED):** A digital service must be designed in response to the needs of your clients. The team creating the service will require in-depth knowledge regarding the clients' experience. Dedicate a specific period of time (e.g., several weeks or a few months) to conduct client research to challenge assumptions that you may have about clients or the service. Throughout this Play, have empathy for the users of the service. Be open to new ways of thinking and be willing to collaborate with clients, service providers and colleagues across the Department, the Government of Canada, other levels of government and so forth as you address problems and identify solutions.
-
 ### Checklist
 
 - **[TODO: Add/revise checklist items]**
@@ -256,30 +211,6 @@ To inform service features, interview users and gather data to develop:
 - As the digital service is being built, regularly test it with potential users to ensure it meets people's needs **(Digital Services Playbook (US))**
 
 - Ensure user-centric approaches to service design, involving clients in the service design process where possible. **(General design principles - Digital Design Playbook (ISED))**
-
-- Diagnose the problem **(Think - Digital Design Playbook (ISED))**
-  - Separate the problem from the symptom.
-  - Do user research in order to identify the problem from the user/client perspective.
-  - Experiment with different approaches for diagnosing the problem. Look for dependencies and interrelationships that may be contributing the problem
-
-- Engage directly with clients and co-design services with your clients (where possible) **(Think - Digital Design Playbook (ISED))**
-  - Take time to identify and understand your clients. Collect and analyze data related to the client (i.e., if it is a business client, this could include size of a business, the frequency with which the client uses a service, preferred channels and other key information).
-  - Develop client segments and use this information to gather additional insights and tailor services to client behaviours and needs. This information can also be useful for creating [User Personas](http://www.gcpedia.gc.ca/wiki/Personas) that describe a client’s behavior patterns, goals, skills, attitudes, and environment. This helps make a realistic character that will guide decisions about how a service will be used and delivered.
-  - Recruit a diverse group of clients (e.g., very familiar with your service, use the service infrequently, occasional users, etc.) for co-design sessions.
-  - Observe clients/users as they use the service. This helps the service design to see things that the client may not tell you but are important.
-  - Visualize/Map the service experience journey from the client’s perspective and the perspective of the various parts involved in how the service is delivered.
-    - Use the [user journey map](http://uxmastery.com/how-to-create-a-customer-journey-map/) to see the entire client journey when using a service and to identify points of happiness and points of frustration with the service.
-    - Use the [Service Blueprint](http://www.practicalservicedesign.com/the-guide) to have a holistic picture of all the parts involved in delivering the service. Service Blueprints provide a “behind-the-scenes” view of what is involved in shaping the client experience. Being aware of the underlying actors, systems, touchpoints, policies involved in service delivery is key step for improving government services.
-
-- Understand and appreciate context **(Think - Digital Design Playbook (ISED))**
-  - Services are not websites. Websites are platforms for delivering a service. Design your service for people and the context in which they will use the service. Your goal should be to develop and deliver services that meet client needs.
-
-- Be inclusive. Design services that are accessible for everyone **(Think - Digital Design Playbook (ISED))**
-  - Services for business need to be inclusive and accessible by everyone.
-  - Accessible design is good design.
-  - Make services that are simple and easy to use so that clients want to use it.
-
-- Alpha stage
 
   - spend time with current and prospective users of the service **(Digital Services Playbook (US))**
 
@@ -295,7 +226,7 @@ To inform service features, interview users and gather data to develop:
 
   - address any gaps when testing during the beta stage **(Digital Service Standard (Ontario))**
 
-- Beta stage
+  - write user stories for your service - including for users who need assisted digital support **(Digital Service Standard (UK)) /** document user stories, personas and profiles for the service **(Digital Service Standard (Ontario)) /** Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
 
   - document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK)) /** test the service with real users, and be able to explain **(Digital Service Standard (Ontario))**:
 
@@ -359,14 +290,6 @@ To inform service features, interview users and gather data to develop:
 
 - How often are you testing with real people?
 
-### Decision Making Questions: **(Think - Digital Design Playbook (ISED))**
-- How will you conduct user research?
-- Who uses the service? Do you have data about client behaviours and expectations? Who are the current clients / target audience for the service? Do you have personas to include key details about your clients?
-- Are you aware of the challenges clients face when accessing or using the service? How do these challenges affect the overall user experience?
-- What are the work-arounds that clients and service providers have devised to address challenges with the service? Can you incorporate the work-arounds in the new service design?
-- Have you considered the unique needs of some client groups? Is the service designed to be as inclusive as possible?
-- Is the service delivered in non-digital channels (e.g., in-person, telephone)?
-
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
@@ -382,41 +305,6 @@ Find out more about:
 - [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
 
 - [assisted digital support](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Digital Service Standard (UK))**
-
-User Research and user-centred design: **(Think - Digital Design Playbook (ISED))**
-- [Standards and Guidelines for Data Collection](http://www.tpsgc-pwgsc.gc.ca/rop-por/rapports-reports/comiteenligne-panelonline/page-04-eng.html)
-- [Introduction to User-centred Design](http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/)
-- [User Research Skills](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team)
-- [How Users Read](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read)
-- [Designing government services](https://www.gov.uk/service-manual/design/introduction-designing-government-services)
-
-Understanding user needs: **(Think - Digital Design Playbook (ISED))**
-- [Start by understanding user needs](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
-- [Practical Guide to Service Blueprints](http://www.practicalservicedesign.com/the-guide)
-  - http://www.gcpedia.gc.ca/wiki/Personas
-  - http://www.gcpedia.gc.ca/wiki/Personas/Personas_Workshop_Workshop
-  - https://webtoolkit.govt.nz/guidance/service-design/tools/personas/
-- Creating user journey maps
-  - http://uxmastery.com/how-to-create-a-customer-journey-map/
-   - http://www.servicedesigntools.org/tools/8
-- [101 Design Methods](http://www.101designmethods.com/)
-
-Accessible and Inclusive Design: **(Think - Digital Design Playbook (ISED))**
-- [Standard on Web Accessibility]()
-- [Web Experience Toolkit (WET)]()
-- [Canada.ca Content and Information Architecture Specification]()
-- Gender-Based Analysis Plus - and 
-  - http://www.swc-cfc.gc.ca/gba-acs/index-en.html
-  - http://wiki.ic.gc.ca/pages/viewpage.action?pageId=136052841
-   - http://www.swc-cfc.gc.ca/gba-acs/index-en.html
-- [Inclusive Design at Microsoft](https://www.microsoft.com/en-us/design/inclusive)
-
-Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
-- [The journey to government's digital transformation](https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/PublicSector/deloitte-uk-government-digital-transformation-journey.pdf)
-- [6 case studies: using research and data to improve a live service](https://userresearch.blog.gov.uk/2014/09/17/6-case-studies-using-research-and-data-to-improve-a-live-service/)
-- [What we mean when we talk about accessibility](https://accessibility.blog.gov.uk/2016/05/16/what-we-mean-when-we-talk-about-accessibility-2/)
-- [Consider the range of people that will use your product or service](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
-- [Building for inclusion](https://gds.blog.gov.uk/2012/10/01/building-for-inclusion/)
 
 ## 1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved
 
@@ -471,8 +359,6 @@ Inspiration Examples: **(Think - Digital Design Playbook (ISED))**
 ### Checklist
 
 - **[TODO: Add/revise checklist items]**
-
-- Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
 
 ### Implementation guides
 
@@ -579,10 +465,6 @@ Using the same language and design patterns as the rest of GOV.UK means:
 - scale your testing to match the importance of the service and volume of users **(Digital Service Standard (Ontario))**
 
 - Services must be designed from the “outside in”. Government must make the effort so that clients can complete services easily. **(General design principles - Digital Design Playbook (ISED))**
-
-- Offer a consistent client experience so that services are predictable for clients, regardless of the service they access.  **(General design principles - Digital Design Playbook (ISED))**
-
-- Alpha, beta and live stages:
 
   - document your service and what it does **(Digital Service Standard (UK)) /** explain the service including who it is for, how it works and how to use it **(Digital Service Standard (Ontario))**
 
@@ -694,7 +576,7 @@ Encouraging people to use your digital service allows you to:
 
 **Digital Service Standard (Ontario):** Encourage people to choose the digital service through every interaction they have with government.
 
-#### Why it matters
+### Why it matters
 
 Encouraging people to use digital service will:
 
