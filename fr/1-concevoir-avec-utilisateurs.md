@@ -67,45 +67,37 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Étape Alpha
+#### Stage alpha
 
-  - déterminer à quoi ressembler votre version bêta privée et comment vous utilisez ce que vous avez trouvé pour améliorer le service **(Norme de service numérique (Royaume-Uni))**
+- determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
 
-  - payeur pour la recherche des utilisateurs et des tests d'utilisabilité tout au long de la conception du service et après sa construction **(Norme de service numérique (Royaume-Uni))**
+- pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
 
-  - tester régulièrement des tests de recherche et de convivialité et utiliser les résultats pour améliorer la conception de votre service **(Norme de service numérique (Royaume-Uni)****
+- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
-  - élaborer un plan de recherche pour l'utilisateur privé et un plan pour mener des recherches sur le service en direct **(Norme de service numérique (Royaume-Uni))**
+- develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
-- Bêta et étapes en direct
+#### Stages bêta et en direct
 
-  - payeur pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après la construction du service **(Norme de service numérique (Royaume-Uni))**
+- pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
 
-  - tester régulièrement des tests de recherche et de convivialité et utiliser les résultats pour améliorer la conception de votre service **(Norme de service numérique (Royaume-Uni))**
+- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
-  - élaborer un plan de recherche d'utilisateur pour le service à la prochaine étape et un plan pour mener des recherches sur le service en direct **(Norme de service numérique (Royaume-Uni))**
+- develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
-  - faire des recherches auprès des utilisateurs ayant des besoins en matière d'accessibilité dès le début de la conception du service **(Norme de service numérique (Royaume-Uni))**
+- do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**
 
-  - test avec les utilisateurs besoin d'un support numérique assisté **(Norme de service numérique (Royaume-Uni))**
+- test with users who need assisted digital support **(Digital Service Standard (UK))**
 
-  - utiliser des données analytiques dans votre plan de recherche pour le service **(Norme de service numérique (Royaume-Uni))**
+- use analytics data in your user research plan for the service **(Digital Service Standard (UK))**
 
-  - Documentez les problèmes que vous avez rencontrés lors des tests et comment vous les avez résolus **(Norme de service numérique (Royaume-Uni))**
+- document any problems you've found through testing and how you solved them **(Digital Service Standard (UK))**
 
-  - Documentez tous les problèmes que vous ne pouvez pas résoudre en version bêta et commentez vous le traiterez en version bêta publique **(Norme de service numérique (Royaume-Uni))**
+- document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
 
 ### Guides d'application
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-En savoir plus sur:
-
-- [recherche d'utilisateur](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/user-research) **(Norme de service numérique (Royaume-Uni))**
-
-- [évaluations de service](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Norme de service numérique (Royaume-Uni))**
-
-- [support numérique assisté](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Norme de service numérique (Royaume-Uni))**
 
 ### Ressources similaires
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
