@@ -156,11 +156,21 @@ Find out more about:
 
 - [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 
+- [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
+
+- [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
+
 **[TODO: Add/revise introductory text]**
 
 **Introduction examples:**
 
 **Digital Services Playbook (US):** The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector.
+
+**1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)):** The design and delivery of client-centric services must incorporate the legal and policy requirements of the Government of Canada. The policies, acts, standards and directives support public sector values, including respect for Parliament, people, integrity and stewardship, as well as other management values such as sound governance, transparency and value for money.
+
+While the entire list may not always apply, it is important to be familiar with the following list of common acts, policies, standards and directives as they contain rules for management in the federal public service and include guidance for officials to undertake a specific activity or task that collectively supports the instrument’s objectives and expected results. Being familiar with these policies, acts, standards and directives will help ensure that services you design or redesign meet client needs while also adhering to the rules of the Government of Canada.
+
+**2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)):** In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged, where appropriate. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level.
 
 ### Checklist
 
@@ -174,6 +184,63 @@ Find out more about:
 
 - [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
 
+- Related to Information technology and information management including websites and online Government of Canada services: **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+  - [Policy on Information Management](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742): Aims to achieve efficient and effective information management to support program and service delivery; foster informed decision making, facilitate accountability transparency and collaboration; and preserve and ensure access to information and records for the benefit of present and future generations.
+  - [Standard on Web Accessibility](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601): Ensures the uniform application of a high level of web accessibility across Government of Canada websites and web applications.
+  - [Standard on Web Interoperability](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875): Improves Canadians’ web experience by using technologies that support mobile devices and by making information technology easier to use in order to find government information.
+  - [Standard on Web Usability](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227): Describes the usability requirements for Government of Canada websites, including requirements for domain names, terms, conditions and archiving online web content, as well as common page layouts and visual design elements.
+  - [Standard on Privacy and Web Analytics](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26761): Aims to facilitate the use of web analytics in accordance with sound privacy practices that safeguard the privacy of visitors to Government of Canada websites.
+  - [Standard on Optimizing Websites and Applications for Mobile Devices](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27088): Sets out requirements for ensuring the optimization of Government of Canada websites and applications with respect to mobile devices, and permits only the justifiable use of device-based mobile applications.
+  - [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp): establishes the rules you must use to develop and edit web content published on the Canada.ca website. It sets out writing rules that are different from practices adapted to print in order to support the writing principles for Canada.ca.
+  - [Canada.ca Content and Information Architecture Specification](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/cia-sca-eng.asp): contains templates and rules that show how content on Canada.ca needs to look and be organized. It ensures that we publish web content consistently. It’s a requirement under the Directive on the Management of Communications.
+
+- Government Communications and Official Languages **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+  - [Directive on the Implementation of the Official Languages (Communications with and Services to the Public) Regulations](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26163): Enables the Government of Canada to minimize the risks of applications for remedy before the courts because of an institutions’ violation of the public’s rights to communicate with that institutions and receive services from it in the official language of their choice.
+  - [Directive on the Management of Communications](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682): Provides rules for managing and coordinating communications, including procedures for advertising, public opinion research, social media and web communications.
+  - [Directive on Official Languages for Communications and Services](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26164): Gives sound and consistent practices and procedures for deputy heads (or their delegates) in the area of communications with the public and employees, as well as the services provided to them.
+  - [Policy on Communications and Federal Identity](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683): Gives context and rules for how the Government of Canada (GC) enables communication with the public about policies, programs, services and initiatives, including the administration of the GC official symbols.
+  - [Policy on Official Languages](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26160): Facilitates institutions’ compliance with and ensures effective implementation of the Official Languages Act and its regulations.
+
+- Service Delivery **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+  - [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916): Establishes a strategic and coherent approach to the design and delivery of Government of Canada external and internal enterprise services.
+  - [Guideline on Service Management (October 2016 - Draft)](http://www.gcpedia.gc.ca/gcwiki/images/f/f9/Guideline_on_Service_Management-Final.pdf): Provides guidance to departments on managing their services and implementing the Treasury Board Policy
+
+- Privacy **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+  - [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/): the federal privacy law for private-sector organizations. It sets out the ground rules for how businesses must handle personal information in the course of commercial activity.
+  - [Privacy Act](http://laws-lois.justice.gc.ca/eng/acts/P-21/index.html): to extend the present laws of Canada that protect the privacy of individuals with respect to personal information about themselves held by a government institution and that provide individuals with a right of access to that information.
+
+- Open Government **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+  - [Directive on Open Government](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108): Promotes information management practices that enable the proactive and ongoing release of government information.
+
+- Other **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+  - [Introduction to Gender-Based Analysis Plus (GBA+)](http://swc-cfc.gc.ca/gba-acs/course-cours/eng/mod00/mod00_01_01.html): Provides essential information on GBA+ and its related concepts, the knowledge and tools to use GBA+ to enhance your work.
+
+- Use departmental/GC standards. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+  - Adopt the business number as the client identifier - do not create other unique identifiers. This enables data sharing across service lines, departments and jurisdictions.
+  - Authenticated services must use only the federated credentials (e.g., SecureKey, GCKey). This enables a single login so clients do not need to re-authenticate their identity for each ISED service. It also ensures a sufficient level of security.
+  - Build in client relationship management (e.g., MS Dynamics). This enables many capabilities such as the “Tell-me-once” feature, real-time status updates and omni-channel service delivery.
+  - Utilize resources offered by the Chief Information Office (e.g., Master Data Management) to retrieve information that can help you have a holistic view of clients across the department.
+  - Follow the [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp)
+  - For services that receive payments, adopt the departmental standard e-payment system. This provides a consistent client experience across ISED services.
+  - Build in real-time status updates to your services, where appropriate.
+
+- Use device-agnostic and modular technology. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+  - Use technology that allows your service to function regardless of the device or operating system. Make sure mobile apps can function on all devices.
+  - Modular technology can be reused, in part or in whole to innovate new solutions and uses for it. It also allows you to add new capabilities and capacities to your technology in response to changing operational environments.
+
+- Choose solutions or parts thereof that are re-usable in another service context. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+  - Use technology solutions that other business lines can reuse or adapt to their needs. This is both economical and practical as it permits future interoperability, and reduces the overall cost of follow-on digital transformation initiatives.
+
+- Consider open source where feasible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+  - Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
+  - Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.
+
+- Consider open data to the extent possible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+  - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
+  - Open data increases transparency.</li.
+  - Open data leverages public sector information to develop consumer and commercial products.
+  - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
+
 ### Key Questions **(Digital Services Playbook (US))**
 
 - What is your development stack and why did you choose it?
@@ -182,9 +249,40 @@ Find out more about:
 
 - How long does it take for a new team member to start developing?
 
+### Decision Making Questions: **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+- Have you considered the relevant TB Policies, Standards and or Directives?
+- Have you considered privacy implications?
+- Is the service available in both official languages?
+- Are you adhering to the best practices outlined in the Canada.ca style guide?
+
+### Decision Making Questions: **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+- Does website design adhere to principles and best practices in the Canada.ca Content Style Guide?
+- Is the service accessible and functional on any mobile device (i.e. does it use device-agnostic and modular technology?)
+- Are there opportunities to better integrate technology?
+- Is the code open and shareable?
+- Can other software developers use the code to make improvements or to build apps that work with the service?
+- How have partners, other GC entities and other digital government teams used open data and technology to improve services?
+
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
+
+- Beyond the tools and selected policies listed above, you may wish to also consult with the [Treasury Board policies, directives, standards and guidelines](https://www.tbs-sct.gc.ca/pol/index-eng.aspx) for a full list. **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+
+- [Principles Guiding Information Structure Design Decisions](http://www.gcpedia.gc.ca/wiki/Principles_Guiding_Information_Structure_Design_Decisions) **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+
+- [GCpedia Open Source Community of Practice](http://www.gcpedia.gc.ca/wiki/Open_Source_Community) **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+
+- [Open Data 101](http://open.canada.ca/en/open-data-principles) **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+
+Inspiration Examples **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+- [GDS, USDS and sharing expertise](https://gds.blog.gov.uk/2015/01/20/gds-usds/)
+- [Open Data App Gallery](http://open.canada.ca/en/apps)
+- [The journey to government's digital transformation](https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/PublicSector/deloitte-uk-government-digital-transformation-journey.pdf)
+- [6 case studies: using research and data to improve a live service](https://userresearch.blog.gov.uk/2014/09/17/6-case-studies-using-research-and-data-to-improve-a-live-service/)
+- [What we mean when we talk about accessibility](https://accessibility.blog.gov.uk/2016/05/16/what-we-mean-when-we-talk-about-accessibility-2/)
+- [Consider the range of people that will use your product or service](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
+- [Building for inclusion](https://gds.blog.gov.uk/2012/10/01/building-for-inclusion/)
 
 ## 6.3 Design for interoperability, allowing services to be discovered and leveraged by the community
 

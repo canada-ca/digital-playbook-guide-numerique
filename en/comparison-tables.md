@@ -194,8 +194,8 @@
 			</td>
 			<td>
 				<ul>
-					<li><a href="https://playbook.cio.gov/#play5"> 5.&#160;Structure budgets and contracts to support delivery (Digital Services Playbook (US))</a></li>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#-9._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.">1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="https://playbook.cio.gov/#play5">5.&#160;Structure budgets and contracts to support delivery (Digital Services Playbook (US))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.">1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -266,7 +266,7 @@
 			</td>
 			<td>
 				<ul>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices">2. Share best practices (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices">2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -322,8 +322,8 @@
 					<li>Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)</li>
 					<li>Architecturally Fit for the GC Enterprise (GC EA Principles)</li>
 					<li><a href="https://playbook.cio.gov/#play8">8.&#160;Choose a modern technology stack (Digital Services Playbook (US))</a></li>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives">1. Comply with Government of Canada acts, policies, standards and directives (ISED)) (internal to GC only)</a></li>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2. Reuse, improve and share technological solutions where appropriate">2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives">1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate">2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>

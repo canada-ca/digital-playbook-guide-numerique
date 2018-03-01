@@ -110,6 +110,8 @@ Find out more about:
 
 - [Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 
+- [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
+
 **[TODO: Add/revise introductory text]**
 
 **Introduction examples:**
@@ -117,6 +119,8 @@ Find out more about:
 **Digital Services Playbook (US):** To improve our chances of success when contracting out development work, we need to work with experienced budgeting and contracting officers. In cases where we use third parties to help build a service, a well-defined contract can facilitate good development practices like conducting a research and prototyping phase, refining product requirements as the service is built, evaluating open source alternatives, ensuring frequent delivery milestones, and allowing the flexibility to purchase cloud computing resources.
 
 [The TechFAR Handbook](https://techfarhub.cio.gov/handbook/) provides a detailed explanation of the flexibilities in the Federal Acquisition Regulation (FAR) that can help agencies implement this play.
+
+**Do - Digital Design Playbook (ISED):** It is essential that business processes be reviewed to identify opportunities to improve service delivery. A website is not a service; it is just one channel for accessing or delivering a service. Designing new or redesigning existing digital services should also facilitate service delivery best practices (e.g., open data and joined-up services).
 
 ### Checklist
 
@@ -142,6 +146,18 @@ Find out more about:
 
 - Contract includes a transition of services period and transition-out plan **(Digital Services Playbook (US))**
 
+- Uncover user needs and confirm with clients their understanding of the desired result. **(Do - Digital Design Playbook (ISED))**
+
+- Look for opportunities to integrate with other relevant or similar services (i.e. joined-up services) to simplify the client experience **(Do - Digital Design Playbook (ISED))**
+
+- Look for opportunities to use business intelligence and analytics (BI/BA) to improve the client experience. **(Do - Digital Design Playbook (ISED))**
+
+- Identify policy constraints. **(Do - Digital Design Playbook (ISED))**
+
+- Identify opportunities for improving processes and reducing complexity. **(Do - Digital Design Playbook (ISED))**
+
+- Improve the service first and consider if a policy change or update might be needed. Second, build the digital platform/website. **(Do - Digital Design Playbook (ISED))**
+
 ### Key Questions **(Digital Services Playbook (US))**
 
 - What is the scope of the project? What are the key deliverables?
@@ -150,9 +166,20 @@ Find out more about:
 
 - What are the performance metrics defined in the contract (e.g., response time, system uptime, time period to address priority issues)?
 
+### Decision Making Questions: **(Do - Digital Design Playbook (ISED))**
+- Has client feedback been solicited and have you incorporated client feedback in the service design/redesign?
+- What service delivery models have been adopted elsewhere?
+- What are the opportunities for efficiencies and improvement?
+- Have new or revised IM/IT approaches been considered?
+- Have you tested prototypes with clients before launching the new website?
+
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
+
+- [Understanding the problem is key to fixing it](http://wiki.ic.gc.ca/pages/viewpage.action?pageId=566756956) **(Do - Digital Design Playbook (ISED))**
+
+- [Six Sigma - An Overview](http://www.sixsigmaonline.org/six-sigma-training-certification-information/what-is-six-sigma-an-overview-of-six-sigma-methodology/) **(Do - Digital Design Playbook (ISED))**
 
 ## 4.4 Empower teams to make decisions throughout the design, build, and operation of the service and allow them to learn from their mistakes
 

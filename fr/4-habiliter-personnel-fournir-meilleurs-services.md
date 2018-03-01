@@ -112,6 +112,8 @@ En savoir plus sur:
 
 - [5. Structurer les budgets et les contrats pour soutenir la livraison (Playbook des services numériques (États-Unis))](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://playbook.cio.gov/%2523play5%23play5#play5)
 
+- [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Exemples d'introduction :**
@@ -144,6 +146,18 @@ En savoir plus sur:
 
 - Le contrat comprend une période de transition de services et un plan de transition **(Digital Services Playbook (US))**
 
+- Uncover user needs and confirm with clients their understanding of the desired result. **(Do - Digital Design Playbook (ISED))**
+
+- Look for opportunities to integrate with other relevant or similar services (i.e. joined-up services) to simplify the client experience **(Do - Digital Design Playbook (ISED))**
+
+- Look for opportunities to use business intelligence and analytics (BI/BA) to improve the client experience. **(Do - Digital Design Playbook (ISED))**
+
+- Identify policy constraints. **(Do - Digital Design Playbook (ISED))**
+
+- Identify opportunities for improving processes and reducing complexity. **(Do - Digital Design Playbook (ISED))**
+
+- Improve the service first and consider if a policy change or update might be needed. Second, build the digital platform/website. **(Do - Digital Design Playbook (ISED))**
+
 ### Questions clés **(Digital Services Playbook (US))**
 
 - Quelle est la portée du projet? Quels sont les livrables clés?
@@ -156,6 +170,9 @@ En savoir plus sur:
 
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+- [Understanding the problem is key to fixing it](http://wiki.ic.gc.ca/pages/viewpage.action?pageId=566756956) **(Do - Digital Design Playbook (ISED))**
+
+- [Six Sigma - An Overview](http://www.sixsigmaonline.org/six-sigma-training-certification-information/what-is-six-sigma-an-overview-of-six-sigma-methodology/) **(Do - Digital Design Playbook (ISED))**
 
 ## 4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs
 
