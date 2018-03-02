@@ -18,20 +18,6 @@
 
 ## 7.1 Build in an agile manner and continuously improve in response to user needs
 
-**Related (temporary for mapping purposes; remove later): **
-
-- Agile - Small chunks - Iterate (GC EA Principles)
-
-- [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
-
-- [8. Be agile and user-centred (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
-
-- [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
-
-- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
-
-- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
-
 **[TODO: Add/revise introductory text]**
 
 **Introduction examples:**
@@ -82,7 +68,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 - Alpha, beta and live stages:
 
@@ -158,50 +144,13 @@ Start with a representation or prototype of the solution that will be tested and
 - Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
 
-### Key Questions **(Digital Service Playbook (US))**
-
-- How long did it take to ship the MVP? If it hasn't shipped yet, when will it?
-
-- How long does it take for a production deployment?
-
-- How many days or weeks are in each iteration/sprint?
-
-- Which version control system is being used?
-
-- How are bugs tracked and tickets issued? What tool is used?
-
-- How is the feature backlog managed? What tool is used?
-
-- How often do you review and reprioritize the feature and bug backlog?
-
-- How do you collect user feedback during development? How is that feedback used to improve the service?
-
-- At each stage of usability testing, which gaps were identified in addressing user needs?
-
-### Decision Making Questions: **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Is there a persistent issue identified by several clients?
-- Are there any clear improvements that are possible that clients may not have identified yet?
-- Have there been any recommendations from audits or evaluations that require services to be redesigned?
-- Has technology evolved to permit new capabilities that would enhance the client experience?
-
-### Decision Making Questions: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- How are service problems tracked and prioritized?
-- How often are clients problems reviewed and features assessed for effectiveness?
-- What process is in place for clients to provide ongoing feedback?
-- How is feedback used to improve the service?
-- What is the scope of the project? What can be achieved in the first iteration or design sprint?
-- At what point after the initial release will planning/development of future releases take place?
-- How long are iterations and sprints?
-
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 - [247 different checklists for usability testing](http://www.userfocus.co.uk/resources/guidelines.html) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
 
 - [Technical Specifications for Web and Mobile Presence (optimization)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-eng.asp) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-
-- [TBS Standard on Web Usability](http://tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
 
 - [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
 
@@ -219,17 +168,22 @@ Start with a representation or prototype of the solution that will be tested and
   - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp
   - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp
 
-Find out more about:
-
 - [agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
-
-- [assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
-
-- [assisted digital support](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) **(Digital Service Standard (UK))**
 
 Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
 - [Is your project using "agilefall"?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
 - [Agile Manifesto](http://agilemanifesto.org/principles.html)
+
+### Similar ressources
+- [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
+
+- [8. Be agile and user-centred (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
+
+- [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
+
+- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
+
+- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 
 ## 7.2 Accept that change is inevitable and use adaptive strategies and tools for new development
 
@@ -237,27 +191,21 @@ Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digit
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 ## 7.3 Embrace and react to changes in the environment and design for sustainability
 
-**Related (temporary for mapping purposes; remove later): **
-
-- [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
-
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
-
-**2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)):** Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology.
+Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology. **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 - Continuously measure client experience and create a customer-prioritized improvement plan. **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
 
@@ -267,19 +215,13 @@ Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digit
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
-- [TBS Guideline on Service Management – Priority Service Review Tool (page 58)](http://www.gcpedia.gc.ca/gcwiki/images/f/f9/Guideline_on_Service_Management-Final.pdf)
+### Similar resources
+
+- [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
 
 ## 7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration
-
-**Related (temporary for mapping purposes; remove later):**
-
-- [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
-
-- [Iterate. Then iterate again for ongoing service improvement (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-- [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
 
 **[TODO: Add/revise introductory text]**
 
@@ -297,7 +239,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 - Start small and build upon successes. **(General design principles - Digital Design Playbook (ISED))**
 
@@ -359,19 +301,9 @@ You need to build a service which you can iterate and keep improving so that you
 
   - make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
 
-### Decision Making Questions: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-- Is the service stable, secure and responsive, regardless of how many people are using it?
-- Is the service [accessible](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)?
-- How will you recruit clients for user testing?
-- What method(s) will you use to test the service?
-- How frequently will you test the service?
-- Where will the testing take place?
-- Did you test for user experience in addition to testing for technical aspects (e.g., does the code work)?
-- How will you apply the findings from user testing to improve the service?
-
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 - [Gov.UK Test your service’s performance]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
 
@@ -391,4 +323,7 @@ Find out more about:
 
 - [agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
-- [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
+### Similar resources
+- [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
+
+- [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
