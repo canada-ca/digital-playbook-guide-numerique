@@ -128,11 +128,11 @@ A key part of building digital services that work for users is developing a good
 
 - Research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-- Document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK))
+- Document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK))**
 
 - Document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
 
-- Document the design challenges your users' needs pose for your service **(Digital Service Standard (UK))
+- Document the design challenges your users' needs pose for your service **(Digital Service Standard (UK))**
 
 - Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
 
@@ -146,7 +146,7 @@ A key part of building digital services that work for users is developing a good
 
 - Use research and testing results to continuously improve the service **(Digital Service Standard (Ontario))**
 
-- Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))
+- Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
 
 ### Implementation guides
 
@@ -258,7 +258,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - Make design and content decisions based on research, testing and analytics **(Digital Service Standard (Ontario))**
 
-- change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))
+- change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
 
 - Make sure the service is responsive and works on mobile devices **(Digital Service Standard (UK))**
 
