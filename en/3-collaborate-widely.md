@@ -22,11 +22,11 @@
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 ## 3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners
 
@@ -34,13 +34,13 @@
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
-- Develop open and innovative partnerships - Recognize that an organization can't have all the best ideas. Create partnerships and collaborate. **(OneGC product design criteria)**
+- Develop open and innovative partnerships - Recognize that an organization can't have all the best ideas. Create partnerships and collaborate.
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 ## 3.3 Build the capacity to dynamically pull in new partners for co-innovation
 
@@ -48,11 +48,11 @@
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 ## 3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse
 
@@ -60,8 +60,8 @@
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**

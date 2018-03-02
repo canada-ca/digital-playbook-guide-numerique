@@ -20,37 +20,25 @@
 
 ## 10.1 Collect data once to avoid duplication
 
-**Related (temporary for mapping purposes; remove later):**
-
-- Enable "Tell us once" data sharing across all systems (GC Build it Digital Principles (initial thoughts))
-
-- Tell me once -- Data/Information centricity (GC EA Principles)
-
 **[TODO: Add/revise introductory text]**
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 ## 10.2 Make relevant government information and data easily accessible to help support decision making
 
-**Related (temporary for mapping purposes; remove later):**
-
-- [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
-
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
-
-**Digital Services Playbook (US):** At every stage of a project, we should measure how well our service is working for our users. This includes measuring how well a system performs and how people are interacting with it in real-time. Our teams and agency leadership should carefully watch these metrics to find issues and identify which bug fixes and improvements should be prioritized. Along with monitoring tools, a feedback mechanism should be in place for people to report issues directly.
+At every stage of a project, we should measure how well our service is working for our users. This includes measuring how well a system performs and how people are interacting with it in real-time. Our teams and agency leadership should carefully watch these metrics to find issues and identify which bug fixes and improvements should be prioritized. Along with monitoring tools, a feedback mechanism should be in place for people to report issues directly. **(Digital Services Playbook (US))**
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 - Monitor system-level resource utilization in real time **(Digital Services Playbook (US))**
 
@@ -68,46 +56,14 @@
 
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
-### Key Questions **(Digital Services Playbook (US))**
-
-- What are the key metrics for the service?
-
-- How have these metrics performed over the life of the service?
-
-- Which system monitoring tools are in place?
-
-- What is the targeted average response time for your service? What percent of requests take more than 1 second, 2 seconds, 4 seconds, and 8 seconds?
-
-- What is the average response time and percentile breakdown (percent of requests taking more than 1s, 2s, 4s, and 8s) for the top 10 transactions?
-
-- What is the volume of each of your service's top 10 transactions?
-    What is the percentage of transactions started vs. completed?
-
-- What is your service's monthly uptime target?
-
-- What is your service's monthly uptime percentage, including scheduled maintenance? Excluding scheduled maintenance?
-
-- How does your team receive automated alerts when incidents occur?
-
-- How does your team respond to incidents? What is your post-mortem process?
-
-- Which tools are in place to measure user behavior?
-
-- What tools or technologies are used for A/B testing?
-
-- How do you measure customer satisfaction?
-
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
+
+### Similar resources
+- [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
 ## 10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others
-
-**Related (temporary for mapping purposes; remove later):**
-
-- [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
-
-- [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-14)
 
 **[TODO: Add/revise introductory text]**
 
@@ -133,7 +89,7 @@ Measuring performance means continuously improving a service by:
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 - Alpha, beta and live stages
 
@@ -182,7 +138,7 @@ Measuring performance means continuously improving a service by:
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 - [Using data to improve your service: an introduction](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction) **(Digital Service Standard (UK))**
 
@@ -198,7 +154,10 @@ Measuring performance means continuously improving a service by:
 
 - [Sharing data on the Performance Platform](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Digital Service Standard (UK))**
 
-Find out more about [service assessments](https://www.gov.uk/service-manual/service-assessments). **(Digital Service Standard (UK))**
+### Similar resources
+- [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
+
+- [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-14)
 
 ## 10.4 Give due consideration to digital preservation and retention
 
@@ -206,24 +165,20 @@ Find out more about [service assessments](https://www.gov.uk/service-manual/serv
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 ## 10.5 Ensure data and information is complete, accurate and up-to-date
-
-**Related (temporary for mapping purposes; remove later):**
-
-- Information/Data is an asset (Current GC EARB Principles)
 
 **[TODO: Add/revise introductory text]**
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**

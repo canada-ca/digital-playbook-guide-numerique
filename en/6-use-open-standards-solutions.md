@@ -24,37 +24,11 @@
 
 ## 6.1 Leverage open standards and embrace leading practices
 
-**Related (temporary for mapping purposes; remove later): **
-
-- Open Source & Open Standards (Build it Digital Principles (initial thoughts))
-
-- Open Source Standards (GC EA Principles)
-
-- [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
-
-- [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
-
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
-
-**Digital Service Standard (UK):** Use open standards and common government platforms where available, including GOV.UK Verify as an option for identity assurance.
-
-Using open standards and common government platforms means you:
-
-- save time and money by reusing things that are already available, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) for identity assurance
-
-- can move between different technologies when you need to and don't get locked into contracts which are difficult to end
-
-- can quickly and easily change your service when you need to
-
-- can give your users a more consistent experience when using government services online - this builds trust
-
-**Digital Service Standard (Ontario):** Use open standards, open source software and common government platforms where available.
+Use open standards, open source software and common government platforms where available.
 
 Open standards and open source software are published publicly, freely available for use by anyone, and are developed and maintained using a collaborative approach.
-
-### Why it matters
 
 Using open standards and common government platforms will help the government:
 
@@ -70,107 +44,36 @@ Using open standards and common government platforms will help the government:
 
 - eliminate potentially restrictive long-term contracts
 
+**(Digital Service Standard (Ontario))**
+
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
-- Alpha stage:
+- use open standards and common platforms **(Digital Service Standard (Ontario))**
 
-  - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
-
-  - use common platforms for your system, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
-
-  - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
-
-- Beta stage:
-
-  - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
-
-  - manage what the service outputs to users is and in what format **(Digital Service Standard (UK)) /** show what the service provides to users and in what format (for example, a driver's licence) **(Digital Service Standard (Ontario))**
-
-  - manage common data you hold and your commitment to publishing it **(Digital Service Standard (UK)) /** explain what data is used and/or collected and when it will be published as part of the Open Data Directive **(Digital Service Standard (Ontario))**
-
-  - use common government platforms, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
-
-  - integrate with any legacy systems **(Digital Service Standard (UK)) /** integrate with any legacy systems **(Digital Service Standard (Ontario))**
-
-  - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
-
-- Live stage:
-
-  - use open standards and common platforms to avoid getting locked into contracts **(Digital Service Standard (UK)) /** use open standards and common platforms **(Digital Service Standard (Ontario))**
-
-  - use common government platforms, such as [GOV.UK Verify](https://govuk-verify.cloudapps.digital/) as an option for identity assurance **(Digital Service Standard (UK)) /** use common government platforms (e.g. Ontario.ca, Ontario Newsroom) **(Digital Service Standard (Ontario))**
-
-  - integrate with any external systems **(Digital Service Standard (UK)) /** integrate with any legacy systems **(Digital Service Standard (Ontario))**
-
-  - manage the common data you hold and meet your open data responsibility **(Digital Service Standard (UK)) /** explain what data is used and/or collected and when it will be published as part of the Open Data Directive **(Digital Service Standard (Ontario))**
-
-  - identify the common user needs your service meets and what you reuse from across government to help meet those user needs **(Digital Service Standard (UK)) /** understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
-
-- favour open tools that are accessible and have a strong developer community supporting them **(Digital Service Standard (Ontario))**
-
-- identify common platforms to use **(Digital Service Standard (Ontario))**
-
-### Laws and rules to follow **(Digital Service Standard (Ontario))**
-
-- [Ontario's Open Data Directive](https://www.ontario.ca/page/ontarios-open-data-directive)
-
-- Standard platforms
-
-  - Web publishing - [Ontario.ca](http://www.ontario.ca/)
-
-  - News - [Ontario Newsroom](https://www.ontario.ca/news)
-
-  - Open data - [Data catalogue](https://www.ontario.ca/search/data-catalogue)
+- understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 - [Working with open standards](https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html) **(Digital Service Standard (UK))**
 
-Find out more about:
-
 - [technology for services](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
 
-- [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
+### Similar resources
+- [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
+
+- [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 
 ## 6.2 Use and reuse common, proven government solutions, approaches, and platforms
 
-**Related (temporary for mapping purposes; remove later):**
-
-- GC Enterprise First, Enterprise Cluster second, Departmental uniqueness last (Current GC EARB Principles)
-
-- Enterprise First, Enterprise Cluster second, Departmental uniqueness last (Build it Digital Principles (initial thoughts))
-
-- Provide a Single Window Access to all GC Content & Services (Build it Digital Principles (initial thoughts))
-
-- Reuse First, Buy Second, Build Last (Current GC EARB Principles)
-
-- Technology Debt Managed (Current GC EARB Principles)
-
-- Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)
-
-- Architecturally Fit for the GC Enterprise (GC EA Principles)
-
-- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
-
-- [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
-
-- [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
-
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
+The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector. **Digital Services Playbook (US))**
 
-**Digital Services Playbook (US):** The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector.
-
-**1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)):** The design and delivery of client-centric services must incorporate the legal and policy requirements of the Government of Canada. The policies, acts, standards and directives support public sector values, including respect for Parliament, people, integrity and stewardship, as well as other management values such as sound governance, transparency and value for money.
-
-While the entire list may not always apply, it is important to be familiar with the following list of common acts, policies, standards and directives as they contain rules for management in the federal public service and include guidance for officials to undertake a specific activity or task that collectively supports the instrument’s objectives and expected results. Being familiar with these policies, acts, standards and directives will help ensure that services you design or redesign meet client needs while also adhering to the rules of the Government of Canada.
-
-**2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)):** In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged, where appropriate. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level.
+In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged, where appropriate. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
 
 ### Checklist
 
@@ -183,37 +86,6 @@ While the entire list may not always apply, it is important to be familiar with 
 - Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
 
 - [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
-
-- Related to Information technology and information management including websites and online Government of Canada services: **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
-  - [Policy on Information Management](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742): Aims to achieve efficient and effective information management to support program and service delivery; foster informed decision making, facilitate accountability transparency and collaboration; and preserve and ensure access to information and records for the benefit of present and future generations.
-  - [Standard on Web Accessibility](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601): Ensures the uniform application of a high level of web accessibility across Government of Canada websites and web applications.
-  - [Standard on Web Interoperability](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875): Improves Canadians’ web experience by using technologies that support mobile devices and by making information technology easier to use in order to find government information.
-  - [Standard on Web Usability](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227): Describes the usability requirements for Government of Canada websites, including requirements for domain names, terms, conditions and archiving online web content, as well as common page layouts and visual design elements.
-  - [Standard on Privacy and Web Analytics](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26761): Aims to facilitate the use of web analytics in accordance with sound privacy practices that safeguard the privacy of visitors to Government of Canada websites.
-  - [Standard on Optimizing Websites and Applications for Mobile Devices](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27088): Sets out requirements for ensuring the optimization of Government of Canada websites and applications with respect to mobile devices, and permits only the justifiable use of device-based mobile applications.
-  - [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp): establishes the rules you must use to develop and edit web content published on the Canada.ca website. It sets out writing rules that are different from practices adapted to print in order to support the writing principles for Canada.ca.
-  - [Canada.ca Content and Information Architecture Specification](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/cia-sca-eng.asp): contains templates and rules that show how content on Canada.ca needs to look and be organized. It ensures that we publish web content consistently. It’s a requirement under the Directive on the Management of Communications.
-
-- Government Communications and Official Languages **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
-  - [Directive on the Implementation of the Official Languages (Communications with and Services to the Public) Regulations](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26163): Enables the Government of Canada to minimize the risks of applications for remedy before the courts because of an institutions’ violation of the public’s rights to communicate with that institutions and receive services from it in the official language of their choice.
-  - [Directive on the Management of Communications](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682): Provides rules for managing and coordinating communications, including procedures for advertising, public opinion research, social media and web communications.
-  - [Directive on Official Languages for Communications and Services](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26164): Gives sound and consistent practices and procedures for deputy heads (or their delegates) in the area of communications with the public and employees, as well as the services provided to them.
-  - [Policy on Communications and Federal Identity](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683): Gives context and rules for how the Government of Canada (GC) enables communication with the public about policies, programs, services and initiatives, including the administration of the GC official symbols.
-  - [Policy on Official Languages](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26160): Facilitates institutions’ compliance with and ensures effective implementation of the Official Languages Act and its regulations.
-
-- Service Delivery **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
-  - [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916): Establishes a strategic and coherent approach to the design and delivery of Government of Canada external and internal enterprise services.
-  - [Guideline on Service Management (October 2016 - Draft)](http://www.gcpedia.gc.ca/gcwiki/images/f/f9/Guideline_on_Service_Management-Final.pdf): Provides guidance to departments on managing their services and implementing the Treasury Board Policy
-
-- Privacy **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
-  - [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/): the federal privacy law for private-sector organizations. It sets out the ground rules for how businesses must handle personal information in the course of commercial activity.
-  - [Privacy Act](http://laws-lois.justice.gc.ca/eng/acts/P-21/index.html): to extend the present laws of Canada that protect the privacy of individuals with respect to personal information about themselves held by a government institution and that provide individuals with a right of access to that information.
-
-- Open Government **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
-  - [Directive on Open Government](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108): Promotes information management practices that enable the proactive and ongoing release of government information.
-
-- Other **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
-  - [Introduction to Gender-Based Analysis Plus (GBA+)](http://swc-cfc.gc.ca/gba-acs/course-cours/eng/mod00/mod00_01_01.html): Provides essential information on GBA+ and its related concepts, the knowledge and tools to use GBA+ to enhance your work.
 
 - Use departmental/GC standards. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Adopt the business number as the client identifier - do not create other unique identifiers. This enables data sharing across service lines, departments and jurisdictions.
@@ -237,102 +109,49 @@ While the entire list may not always apply, it is important to be familiar with 
 
 - Consider open data to the extent possible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
-  - Open data increases transparency.</li.
+  - Open data increases transparency.
   - Open data leverages public sector information to develop consumer and commercial products.
   - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
 
-### Key Questions **(Digital Services Playbook (US))**
-
-- What is your development stack and why did you choose it?
-
-- Which databases are you using and why did you choose them?
-
-- How long does it take for a new team member to start developing?
-
-### Decision Making Questions: **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
-- Have you considered the relevant TB Policies, Standards and or Directives?
-- Have you considered privacy implications?
-- Is the service available in both official languages?
-- Are you adhering to the best practices outlined in the Canada.ca style guide?
-
-### Decision Making Questions: **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-- Does website design adhere to principles and best practices in the Canada.ca Content Style Guide?
-- Is the service accessible and functional on any mobile device (i.e. does it use device-agnostic and modular technology?)
-- Are there opportunities to better integrate technology?
-- Is the code open and shareable?
-- Can other software developers use the code to make improvements or to build apps that work with the service?
-- How have partners, other GC entities and other digital government teams used open data and technology to improve services?
-
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
-- Beyond the tools and selected policies listed above, you may wish to also consult with the [Treasury Board policies, directives, standards and guidelines](https://www.tbs-sct.gc.ca/pol/index-eng.aspx) for a full list. **(1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)))**
+### Similar resources
 
-- [Principles Guiding Information Structure Design Decisions](http://www.gcpedia.gc.ca/wiki/Principles_Guiding_Information_Structure_Design_Decisions) **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 
-- [GCpedia Open Source Community of Practice](http://www.gcpedia.gc.ca/wiki/Open_Source_Community) **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+- [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 
-- [Open Data 101](http://open.canada.ca/en/open-data-principles) **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-
-Inspiration Examples **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-- [GDS, USDS and sharing expertise](https://gds.blog.gov.uk/2015/01/20/gds-usds/)
-- [Open Data App Gallery](http://open.canada.ca/en/apps)
-- [The journey to government's digital transformation](https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/PublicSector/deloitte-uk-government-digital-transformation-journey.pdf)
-- [6 case studies: using research and data to improve a live service](https://userresearch.blog.gov.uk/2014/09/17/6-case-studies-using-research-and-data-to-improve-a-live-service/)
-- [What we mean when we talk about accessibility](https://accessibility.blog.gov.uk/2016/05/16/what-we-mean-when-we-talk-about-accessibility-2/)
-- [Consider the range of people that will use your product or service](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
-- [Building for inclusion](https://gds.blog.gov.uk/2012/10/01/building-for-inclusion/)
+- [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
 
 ## 6.3 Design for interoperability, allowing services to be discovered and leveraged by the community
-
-**Related (temporary for mapping purposes; remove later):**
-
-- API enabled (OneGC product design criteria)
-
-- Create APIs in the developer's space (Build it Digital Principles (initial thoughts))
-
-- Interoperability (Current GC EARB Principles)
-
-- Interoperability (ESB/APIs -- Micro Services) (GC EA Principles)
 
 **[TODO: Add/revise introductory text]**
 
 **Introduction examples:**
 
-**OneGC product design criteria:** Application Program Interfaces (APIs) are a means by which business functionality is exposed digitally. They are building blocks that are critical to the successful delivery of government online digital services and expanding service delivery to third party providers. They can also enable greater interoperability between services, optimized experiences across devices and can even lead to innovative new services by enabling third party products to work seamlessly with Government of Canada systems.
+Application Program Interfaces (APIs) are a means by which business functionality is exposed digitally. They are building blocks that are critical to the successful delivery of government online digital services and expanding service delivery to third party providers. They can also enable greater interoperability between services, optimized experiences across devices and can even lead to innovative new services by enabling third party products to work seamlessly with Government of Canada systems.
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
-- Build services that are API-centric services, which execute most, if not all, functionality through API calls (e.g., connecting frontend to backend through an API) **(OneGC product design criteria)**
+- Build services that are API-centric services, which execute most, if not all, functionality through API calls (e.g., connecting frontend to backend through an API)
 
-- Plan out API access from the beginning, designing services to be able to safely and securely expose functionality to other systems and the public. **(OneGC product design criteria)**
+- Plan out API access from the beginning, designing services to be able to safely and securely expose functionality to other systems and the public.
 
-- Design APIs to be compete but also minimal, ensuring the expected functionality is provided but with as few public members per class and as few classes as possible. This makes it easier to understand, remember, debug and change the API. **(OneGC product design criteria)**
+- Design APIs to be compete but also minimal, ensuring the expected functionality is provided but with as few public members per class and as few classes as possible. This makes it easier to understand, remember, debug and change the API.
 
-- Design APIs to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases. **(OneGC product design criteria)**
+- Design APIs to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
 
-- Design APIs to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily understand code that uses the API. **(OneGC product design criteria)**
+- Design APIs to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily understand code that uses the API.
 
-- Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible. **(OneGC product design criteria)**
+- Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
-
-- API specs (standards)
-
-- A universal information exchange model that addresses both internal and public services
-
-- Guide - how to leverage enterprise tool (e.g., API store)
-
-- International forum to ask for help or exchange ideas
-
-- Code snippets and patterns for reuse
-
-- Leverage existing procurement vehicles
+**[TODO: Add/revise implementation guide items]**
 
 ## 6.4 Open up the data, transactions, and business rules that underpin a service
 
@@ -340,141 +159,41 @@ Inspiration Examples **(2. Reuse, improve and share technological solutions wher
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 ## 6.5 Design, build and test end-to-end digital services
 
-**Related (temporary for mapping purposes; remove later):**
-
-- End-to-end digital (OneGC product design criteria)
-
-- DevOps (automated test and deployment tool) (GC EA Principles)
-
-- [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
-
-- [4. Design the service from start to finish (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-5)
-
-- [6. Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
-
-- [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
-
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
-
-**OneGC product design criteria (End-to-end digital):** There are many potential benefits from the greater use of digital services, including greater convenience for users, quicker and more responsive service delivery, increased security and reliability and reduced costs. To maximize these potential benefits and avoid user reliance on less convenient ways of interacting with government, services should be designed to be digital from end-to-end.
-
-**Digital Service Standard (Ontario) (Design the service from start to finish):** Understand what users are trying to achieve and the steps required to complete that task. Every encounter should move the user closer towards their goal. Where possible, each step of the journey should be completed online.
-
-### Why it matters
-
-It's important to understand what users are trying to do when they access a service and how that service fits within the broader context of their life.
-
-The service experience is much more than what people interact with on screen. It begins when they first hear about the service and it doesn't end until they've received the final product or confirmation.
-
-Understand the complete end-to-end journey that users take to complete their objective, including the actions they take online, on a phone, or in person. Every encounter --- whether it's online or offline --- needs to be carefully considered and should help the user get closer to their end goal.
-
-**Digital Service Standard (UK) (Test the end-to-end service):** Be able to test the end-to-end service in an environment identical to that of the live version, including on all common browsers and devices, and using dummy accounts and a representative sample of users.
-
-Testing the end-to-end service allows you to find problems and check that the service will work for the number of people who want to use it.
-
-This means you're more likely to build something which works for your users.
-
-**Digital Service Standard (Ontario) (Test the end-to-end service):** Continuously test the end-to-end service to ensure that it remains available to users and free of errors.
-
-Be sure to test with the browsers and devices that people will use to access the service, including assistive devices. An assistive device is a piece of equipment a person with a disability uses to help them with daily living (e.g., a screen reader or hearing aid).
-
-### Why it matters
-
-Don't wait until users discover an error in the online service. Monitor the service and avoid any downtime in the service. Users expect modern digital services to be online 24/7.
-
-This means more satisfied users that have trust in government services.
-
-**Digital Services Playbook (US) (Automating testing and deployments):** Today, developers write automated scripts that can verify thousands of scenarios in minutes and then deploy updated code into production environments multiple times a day. They use automated performance tests which simulate surges in traffic to identify performance bottlenecks. While manual tests and quality assurance are still necessary, automated tests provide consistent and reliable protection against unintentional regressions, and make it possible for developers to confidently release frequent updates to the service.
+There are many potential benefits from the greater use of digital services, including greater convenience for users, quicker and more responsive service delivery, increased security and reliability and reduced costs. To maximize these potential benefits and avoid user reliance on less convenient ways of interacting with government, services should be designed to be digital from end-to-end.
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
-- Be sure that you can clearly explain your service, what it does, and how you plan to move users to the digital service **(OneGC product design criteria)**
+- Be sure that you can clearly explain your service, what it does, and how you plan to move users to the digital service
 
-- Design the digital service in a way that gives it clear advantages over other channels **(OneGC product design criteria)**
+- Design the digital service in a way that gives it clear advantages over other channels
 
-  - use data to understand other channels that the service is delivered through **(OneGC product design criteria)** / examine other channels to understand the steps users take to complete their goal and how your service fits **(Digital Service Standard (Ontario))**
+- examine other channels to understand the steps users take to complete their goal and how your service fits **(Digital Service Standard (Ontario))**
 
-  - identify organizations and groups that help users with existing digital or non-digital services **(OneGC product design criteria)**
+- develop a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(Digital Service Standard (Ontario))**
 
-  - show a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(OneGC product design criteria)** / show a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(Digital Service Standard (Ontario))**
-
-- Use familiar language and simple design consistently throughout the service, including online and offline touch points, by ensuring consistent design across related digital services **(OneGC product design criteria)**
-
-- Give users clear information about where they are in each step of the process **(OneGC product design criteria)**
-
-- Provide users with a way to exit and return later to complete the process **(OneGC product design criteria)**
-
-- Take steps to ensure that the majority of users of your service are succeeding the first time they try to use it **(OneGC product design criteria)**
-
-- demonstrate that there is a plan for error recovery at all steps in the service (i.e. if they get stuck during a digital service, what's the plan for a user when they phone for help?) **(Digital Service Standard (Ontario))**
+- Use familiar language and simple design consistently throughout the service, including online and offline touch points, by ensuring consistent design across related digital services
 
 - ensure prototypes incorporate the end-to-end user experience **(Digital Service Standard (Ontario))**
 
-- show the results of research and usability testing and how these will be used to improve the design of the service **(Digital Service Standard (Ontario))**
+- design and test your service to work with the devices and browsers your users use - find out the browsers you must test with **(Digital Service Standard (UK))**
 
-- have a user research plan that spans every stage of service design up to launch of the live service, and includes next stages of service development **(Digital Service Standard (Ontario))**
-
-- explain the frequency of research and testing, and how results will be applied **(Digital Service Standard (Ontario))**
-
-- do user research from the start with people who have accessibility needs **(Digital Service Standard (Ontario))**
-
-- test with users who need help to access digital tools **(Digital Service Standard (Ontario))**
-
-- use analytics data in the user research plan **(Digital Service Standard (Ontario))**
-
-- show any problems found through testing and proposed solutions **(Digital Service Standard (Ontario))**
-
-- Alpha, beta and live stages:
-
-    - have an effective deployment environment **(Digital Service Standard (UK))**
-
-    - have the ability to create new environments quickly and easily **(Digital Service Standard (UK))**
-
-    - know the data that exists in your pre-production environments **(Digital Service Standard (UK))**
-
-    - design and test your service to work with the devices and browsers your users use - find out the browsers you must test with **(Digital Service Standard (UK))**
-
-    - test your service in an environment that's as similar to live as possible **(Digital Service Standard (UK)) /** test the service in an environment that is as similar to the live environment as possible **(Digital Service Standard (Ontario))**
-
-    - make sure that your service can keep working when the number of expected users try to use it, including for users who need assisted digital support **(Digital Service Standard (UK))**
-
-    - understand the systems you need and the testing environments for non-digital parts of the service **(Digital Service Standard (UK))**
-
-    - test your service frequently - you'll have to explain how you've decided how often to test **(Digital Service Standard (UK))**
-
-- design and test the service to work with users' browsers and devices, including assistive devices **(Digital Service Standard (Ontario))**
-
-- focus on business requirements and user goals (e.g. when redesigning a program like OSAP, test the steps students are taking when completing an OSAP application) **(Digital Service Standard (Ontario))**
-
-- provide developers with tools and supports to test the service during the build and after launch **(Digital Service Standard (Ontario))**
-
-- design a service that can accommodate the expected number of users and can support more users if the demand increases **(Digital Service Standard (Ontario))**
-
-- separate content, design and functionality so updates can be made independently of each other **(Digital Service Standard (Ontario))**
+- test the service in an environment that is as similar to the live environment as possible **(Digital Service Standard (Ontario))**
 
 - have a process for testing changes made to the service **(Digital Service Standard (Ontario))**
 
 - have a process for monitoring and testing the service frequently even when changes are not being made **(Digital Service Standard (Ontario))**
-
-- have a plan for handling failures (bugs, outages) and notifying users **(Digital Service Standard (Ontario))**
-
-- follow recommended best practices for coding in your chosen technology and tools **(Digital Service Standard (Ontario))**
-
-- document how the service was built and how to maintain it and keep the documentation up-to-date **(Digital Service Standard (Ontario))**
-
-- have a plan for data storage and recovery **(Digital Service Standard (Ontario))**
 
 - Create automated tests that verify all user-facing functionality **(Digital Services Playbook (US))**
 
@@ -486,31 +205,9 @@ This means more satisfied users that have trust in government services.
 
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
-### Key Questions **(Digital Services Playbook (US))**
-
-- What percentage of the code base is covered by automated tests?
-
-- How long does it take to build, test, and deploy a typical bug fix?
-
-- How long does it take to build, test, and deploy a new feature into production?
-
-- How frequently are builds created?
-
-- What test tools are used?
-
-- Which deployment automation or continuous integration tools are used?
-
-- What is the estimated maximum number of concurrent users who will want to use the system?
-
-- How many simultaneous users could the system handle, according to the most recent capacity test?
-
-- How does the service perform when you exceed the expected target usage volume? Does it degrade gracefully or catastrophically?
-
-- What is your scaling strategy when demand increases suddenly?
-
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 - [Quality assurance: testing your service regularly](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly) **(Digital Service Standard (UK))**
 
@@ -524,31 +221,25 @@ This means more satisfied users that have trust in government services.
 
 - [Vulnerability and penetration testing](https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing) **(Digital Service Standard (UK))**
 
-Find out more about:
+### Similar resources
 
-- [technology for services](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
+- [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
 
-- [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
+- [4. Design the service from start to finish (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-5)
+
+- [6. Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
+
+- [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 
 ## 6.6 Cloud first
-
-**Related (temporary for mapping purposes; remove later):**
-
-- Cloud first (OneGC product design criteria)
-
-- Cloud First (Current GC EARB Principles)
-
-- Cloud First (Build it Digital Principles (initial thoughts))
-
-- (Public) Cloud First: SaaS -- PaaS -- IaaS (GC EA Principles)
-
-- [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
 
 **[TODO: Add/revise introductory text]**
 
 **Introduction examples:**
 
-**OneGC product design criteria:** Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. Public cloud services offer benefits that enable significant advances in the following:
+Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. **(Digital Services Playbook (US))**
+
+Public cloud services offer benefits that enable significant advances in the following:
 
 - Service performance: Self-service provisioning of computing resources can dramatically reduce the time to meet a requirement. Metrics-based service levels that are contractually enforced help ensure consistent performance levels.
 
@@ -560,11 +251,9 @@ Find out more about:
 
 - Elasticity: Commoditized services can grow and shrink with the level of demand; consumers pay only for what is needed for the time it is needed.
 
-**Digital Services Playbook (US):** Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. Our digital services are crippled when we host them in data centers that market themselves as "cloud hosting" but require us to manage and maintain hardware directly. This outdated practice wastes time, weakens our disaster recovery plans, and results in significantly higher costs.
-
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 - Ensure that resources are provisioned on demand **(OneGC product design criteria) /** Resources are provisioned on demand **(Digital Services Playbook (US))**
 
@@ -580,34 +269,10 @@ Find out more about:
 
 - Application is hosted on commodity hardware **(Digital Services Playbook (US))**
 
-### Key Questions **(Digital Services Playbook (US))**
-
-- Where is your service hosted?
-
-- What hardware does your service use to run?
-
-- What is the demand or usage pattern for your service?
-
-- What happens to your service when it experiences a surge in traffic or load?
-
-- How much capacity is available in your hosting environment?
-
-- How long does it take you to provision a new resource, like an application server?
-
-- How have you designed your service to scale based on demand?
-
-- How are you paying for your hosting infrastructure (e.g., by the minute, hourly, daily, monthly, fixed)?
-
-- Is your service hosted in multiple regions, availability zones, or data centers?
-
-- In the event of a catastrophic disaster to a datacenter, how long will it take to have the service operational?
-
-- What would be the impact of a prolonged downtime window?
-
-- What data redundancy do you have built into the system, and what would be the impact of a catastrophic data loss?
-
-- How often do you need to contact a person from your hosting provider to get resources or to fix an issue?
-
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
+
+### Similar ressources
+
+- [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)

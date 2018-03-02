@@ -18,39 +18,23 @@
 
 ## 9.1 Take a balanced approach to managing risk by implementing appropriate privacy and security measures
 
-**Related (temporary for mapping purposes; remove later):**
-
-- Use appropriate level of security (Build it Digital Principles (initial thoughts))
-
 **[TODO: Add/revise introductory text]**
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
-- Allow for secure sharing of information and data **(OneGC product design criteria)**
+- Allow for secure sharing of information and data
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 ## 9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected
 
-**Related (temporary for mapping purposes; remove later):**
-
-- Privacy Aware (Current GC EARB Principles)
-
-- Privacy Aware (GC EA Principles)
-
-- [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
-
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
-
-**Digital Service Standard (Ontario):** Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
-
-### Why it matters
+Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
 
 Users won't use a service unless they have a guarantee:
 
@@ -62,27 +46,21 @@ Users won't use a service unless they have a guarantee:
 
 - that their privacy is protected while they use the service, and afterwards
 
+ **(Digital Service Standard (Ontario))**
+
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
-- Alpha stage
+#### Alpha stage
 
-  - determine what data is being collected (name, address, postal code, etc.) **(Digital Service Standard (Ontario))**
+- determine what data is being collected (name, address, postal code, etc.) **(Digital Service Standard (Ontario))**
 
-  - determine how the data is being transmitted **(Digital Service Standard (Ontario))**
+- determine how the data is being transmitted **(Digital Service Standard (Ontario))**
 
-  - determine where and how the data is being stored **(Digital Service Standard (Ontario))**
+- determine where and how the data is being stored **(Digital Service Standard (Ontario))**
 
-  - determine how the data will be used **(Digital Service Standard (Ontario))**
-
-  - identify security threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
-
-  - plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
-
-  - identify any threats of fraud that exist and the controls being prototyped to address them **(Digital Service Standard (Ontario))**
-
-- document the approach to security and risk management **(Digital Service Standard (Ontario))**
+- determine how the data will be used **(Digital Service Standard (Ontario))**
 
 - identify security and privacy threats **(Digital Service Standard (Ontario))**
 
@@ -94,59 +72,26 @@ Users won't use a service unless they have a guarantee:
 
 - document the privacy policy and rationale **(Digital Service Standard (Ontario))**
 
-- document the process for security updates for servers/software **(Digital Service Standard (Ontario))**
+#### Live stage
 
-- document the plan and process for applying security updates **(Digital Service Standard (Ontario))**
+- make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
 
-- plan for checking suspicious activity **(Digital Service Standard (Ontario))**
+- document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
 
-- Live stage
-
-  - document the approach to security and risk management **(Digital Service Standard (Ontario))**
-
-  - make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
-
-  - document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
-
-  - document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
-
-  - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
-
-### Laws and rules to follow **(Digital Service Standard (Ontario))**
-
-- [Freedom of Information and Protection of Privacy Act](https://www.ontario.ca/laws/statute/90f31)
-
-- [Archives and Recordkeeping Act?](https://www.ontario.ca/laws/statute/06a34)
-
-- [Personal Health Information Protection Act?](https://www.ontario.ca/laws/statute/04p03)
-
-- [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/r_o_p/)
-
-- [Canada's Anti-Spam Legislation](http://fightspam.gc.ca/eic/site/030.nsf/eng/home)
+- make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
+
+### Similar resources
+- [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
 ## 9.3 Make security seamless and frictionless, balancing security and convenience
 
-**Related (temporary for mapping purposes; remove later):**
-
-- Provide common identity & Access management across all systems (Build it Digital Principles (initial thoughts))
-
-- Secure by Design (Current GC EARB Principles)
-
-- Secure by Design (GC EA Principles)
-
-- [11. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
-
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
-
-**Digital Service Standard (Ontario):** Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
-
-### Why it matters
+Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
 
 Users won't use a service unless they have a guarantee:
 
@@ -158,25 +103,23 @@ Users won't use a service unless they have a guarantee:
 
 - that their privacy is protected while they use the service, and afterwards
 
+**(Digital Service Standard (Ontario))**
+
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
-- Alpha stage
+#### Alpha stage
 
-  - determine what data is being collected (name, address, postal code, etc.) **(Digital Service Standard (Ontario))**
+- determine how the data is being transmitted **(Digital Service Standard (Ontario))**
 
-  - determine how the data is being transmitted **(Digital Service Standard (Ontario))**
+- determine where and how the data is being stored **(Digital Service Standard (Ontario))**
 
-  - determine where and how the data is being stored **(Digital Service Standard (Ontario))**
+- identify security threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
 
-  - determine how the data will be used **(Digital Service Standard (Ontario))**
+- plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
 
-  - identify security threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
-
-  - plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
-
-  - identify any threats of fraud that exist and the controls being prototyped to address them **(Digital Service Standard (Ontario))**
+- identify any threats of fraud that exist and the controls being prototyped to address them **(Digital Service Standard (Ontario))**
 
 - document the approach to security and risk management **(Digital Service Standard (Ontario))**
 
@@ -186,51 +129,28 @@ Users won't use a service unless they have a guarantee:
 
 - determine how privacy and security regulations will be met without putting delivery at risk **(Digital Service Standard (Ontario))**
 
-- document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
-
-- document the privacy policy and rationale **(Digital Service Standard (Ontario))**
-
 - document the process for security updates for servers/software **(Digital Service Standard (Ontario))**
 
 - document the plan and process for applying security updates **(Digital Service Standard (Ontario))**
 
 - plan for checking suspicious activity **(Digital Service Standard (Ontario))**
 
-- Live stage
+#### Live stage
 
-  - document the approach to security and risk management **(Digital Service Standard (Ontario))**
+- document the approach to security and risk management **(Digital Service Standard (Ontario))**
 
-  - make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
+- make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
 
-  - document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
-
-  - document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
-
-  - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
-
-### Laws and rules to follow **(Digital Service Standard (Ontario))**
-
-- [Freedom of Information and Protection of Privacy Act](https://www.ontario.ca/laws/statute/90f31)
-
-- [Archives and Recordkeeping Act?](https://www.ontario.ca/laws/statute/06a34)
-
-- [Personal Health Information Protection Act?](https://www.ontario.ca/laws/statute/04p03)
-
-- [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/r_o_p/)
-
-- [Canada's Anti-Spam Legislation](http://fightspam.gc.ca/eic/site/030.nsf/eng/home)
+- document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
+
+### Similar resources
+- [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
 ## 9.4 Ensure services comply with all legislated and regulatory requirements
-
-**Related (temporary for mapping purposes; remove later):**
-
-- [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
-
-- [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 
 **[TODO: Add/revise introductory text]**
 
@@ -250,7 +170,7 @@ The following checklist provides a starting point, but teams should work closely
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 - Implement layered defences to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats **(OneGC product design criteria)**
 
@@ -302,23 +222,9 @@ The following checklist provides a starting point, but teams should work closely
 
 - keep your cookie policy and privacy policy up to date **(Digital Service Standard (UK))**
 
-### Key Questions **(Digital Services Playbook (US))**
-
-- Does the service collect personal information from the user? How is the user notified of this collection?
-
-- Does it collect more information than necessary? Could the data be used in ways an average user wouldn't expect?
-
-- How does a user access, correct, delete, or remove personal information?
-
-- Will any of the personal information stored in the system be shared with other services, people, or partners?
-
-- How and how often is the service tested for security vulnerabilities?
-
-- How can someone from the public report a security issue?
-
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 - [Information security](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
 
@@ -326,8 +232,7 @@ The following checklist provides a starting point, but teams should work closely
 
 - [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
 
-Find out more about:
+### Similar resources
+- [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 
-- [technology for services](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
-
-- [service assessments](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) **(Digital Service Standard (UK))**
+- [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
