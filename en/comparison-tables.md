@@ -252,7 +252,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td rowspan="6">
+			<td rowspan="5">
 				<a href="5-work-in-open-by-default.md">5.&#160;Work in the open by default</a>
 			</td>
 			<td>
@@ -300,17 +300,8 @@
 				<ul>
 					<li>Open by default (OneGC product design criteria)</li>
 					<li>Open By Default, Proprietary by Necessity (Current GC EARB Principles)</li>
-					<li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="5-work-in-open-by-default.md#user-content-56-make-all-new-source-code-open-digital-service-standard-uk">5.6&#160;Make all new source code open (Digital Service Standard (UK))]</a>
-			</td>
-			<td>
-				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">[8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
+					<li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
 				</ul>
 			</td>
 		</tr>
