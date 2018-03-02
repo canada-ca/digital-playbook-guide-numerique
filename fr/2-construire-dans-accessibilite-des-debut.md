@@ -16,18 +16,7 @@
 
 **\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
 
-
 ## 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
-
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
-
-- Accessible by design (OneGC product design criteria)
-
-- Design for accessibility and mobile first from the start (Build it Digital Principles (initial thoughts))
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-**Exemples d'introduction :**
 
 Le gouvernement du Canada est déterminé à faire en sorte qu'un niveau
 élevé d'accessibilité soit uniformément appliqué à tous ses canaux de prestation de services. Les technologies et les normes évoluent constamment et l'accessibilité joue un rôle majeur pour rendre le gouvernement du Canada plus efficace et inclusif. Une plus cohérente, pratique, clair et facile utilisateur expérience lors de l'utilisation des services gouvernementaux en ligne construit la confiance.
@@ -36,7 +25,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 ### Liste de contrôle
 
-- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - S'assurer que les ressources de conception et de développement possèdent les connaissances et l'expertise nécessaires pour créer des services accessibles et résoudre les problèmes d'accessibilité.
 
@@ -54,78 +43,55 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
+**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 2.2 Les services devraient respecter ou dépasser les normes d'accessibilité, et ne devraient pas être pénibles à utiliser
 
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard) :**
-
-- [7. Rendre le service accessible (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-8)
-
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-**Exemples d'introduction :**
+Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment. 
 
-**Norme de service numérique (Ontario) :** L'accessibilité n'est pas seulement requise par la loi, c'est aussi une bonne conception. La création de produits et de services numériques entièrement accessibles améliore l'expérience pour tous. Assurez-vous que le service est accessible à tous les utilisateurs, indépendamment de leurs capacités, de leur périphérique ou de leur environnement.
+All users should be able to complete the service the first time they try, as quickly and easily as possible.
 
-### Pourquoi c'est important
+This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can't use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person.
 
-Tous les utilisateurs devraient être en mesure de terminer le service la première fois qu'ils essaient, aussi rapidement et facilement que possible.
-
-Cela inclut les utilisateurs handicapés ou ceux qui ont besoin d'aide pour accéder aux outils numériques. Le soutien numérique assisté
-consiste à fournir un soutien à ceux qui ne peuvent pas utiliser les services numériques par eux-mêmes et peut inclure des options pour aider les gens à naviguer dans un service en ligne, comme offrir de l'aide par téléphone et en personne.
-
-Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils peuvent éviter d'utiliser le service ou contacter votre organisation pour obtenir de l'aide.
+If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. **(Digital Service Standard (Ontario))**)
 
 ### Liste de contrôle
 
-- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- respecter les [instructions](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/how-make-information-accessible) de la Direction générale de l'accessibilité de l'Ontario sur la [façon de rendre l'information accessible](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/page/how-make-information-accessible) **(Norme de service numérique (Ontario))**   
+- meet the [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
 
-- formaliser une approche pour intégrer les outils de test automatisés dans le processus de développement et de maintien des TIC du gouvernement **(Norme de service numérique (Ontario))**
+- formalize an approach to integrating automated testing tools into the process of developing and maintaining government ICT **(Digital Service Standard (Ontario))**
 
-- former le personnel de développement à l'utilisation de la navigation au clavier seulement et s'assurer que les nouvelles fonctions sont régulièrement testées **(Norme de service numérique (Ontario))**
+- train development staff on use of keyboard only navigation and ensure that new features are regularly tested **(Digital Service Standard (Ontario))**
 
-- faciliter l'accès des personnes handicapées à l'équipe de l'accessibilité pour régler le problème **(Norme de service numérique (Ontario))**
+- make it easy for People with Disabilities to reach out to the accessibility team to address the problem **(Digital Service Standard (Ontario))**
 
-- s'assurer que les plates-formes technologiques sont considérées comme transparentes à propos des problèmes WCAG 2.0 AA connus et des efforts déployés pour mettre en œuvre ATAG 2.0 - Partie A et B **(Norme de service numérique (Ontario))**
+- ensure when technology platforms are considered that there is transparency about known WCAG 2.0 AA issues and efforts to implement ATAG 2.0 - Part A & B **(Digital Service Standard (Ontario))**
 
-- contribuer à l'élaboration de pratiques exemplaires et publier des approches que la province a utilisées pour mettre en œuvre la LAPHO **(norme de service numérique (Ontario))**
+- contribute to the development of best practices and publish approaches the province has used to implement the AODA **(Digital Service Standard (Ontario))**
 
-- concevoir un modèle de soutien numérique assisté pour répondre aux besoins des utilisateurs **(Norme de service numérique (Ontario))**
+- conduct research and testing to ensure the service is accessible to people of all abilities no matter how they access the service **(Digital Service Standard (Ontario))**
 
-- effectuer des recherches et des essais pour s'assurer que le service est accessible aux personnes de toutes capacités, peu importe comment elles accèdent au service **(Norme de service numérique (Ontario))**
+- use research, testing and analytics to improve the service, including the assisted digital support model **(Digital Service Standard (Ontario))**
 
-- utiliser la recherche, les essais et l'analyse pour améliorer le service, y compris le modèle de soutien numérique assisté **(Norme de service numérique (Ontario))**
+- explain all end-to-end user experiences, show they work and how they were tested **(Digital Service Standard (Ontario))**
 
-- expliquer toutes les expériences utilisateur de bout en bout, montrer qu'elles fonctionnent et comment elles ont été testées **(Norme de service numérique (Ontario))**
+- make sure the assisted digital support will be sustainably funded and free to use **(Digital Service Standard (Ontario))**
 
-- S'assurer que le soutien numérique assisté sera financé de façon durable et gratuit **(Norme de service numérique (Ontario))**
+- provide an accessible method for all users to provide feedback on the service or request additional support at any time **(Digital Service Standard (Ontario))**
 
-- fournir une méthode accessible permettant à tous les utilisateurs de donner leur avis sur le service ou de demander de l'aide supplémentaire à tout moment **(Norme de service numérique (Ontario))**
-
-- démontrer comment votre personnel sera doté d'une connaissance des obstacles à l'accessibilité et sera formé pour aider les utilisateurs handicapés à accomplir les tâches et à accéder à l'information **(Norme de service numérique (Ontario))**
-
-### Lois et règles à suivre **(Norme de service numérique (Ontario))**
-
-- [Loi sur l'accessibilité pour les personnes handicapées de l'Ontario](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/05a11)
-
-    - [Règlement sur les normes d'accessibilité
-        intégrées](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/110191)
-
-    - [Normes d'information et de communication](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/110191%2523BK8%23BK8#BK8)
-
-    - [Normes de service client](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/regulation/110191%2523BK148%23BK148#BK148)
-
-- [Code des droits de la personne](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.ontario.ca/laws/statute/90h19)
-
-- [Directives d'accessibilité au contenu Web (WCAG) 2.0](https://translate.google.com/translate?hl=en&prev=_t&sl=en&tl=fr&u=https://translate.google.com/translate%3Fhl%3Den%26prev%3D_t%26sl%3Den%26tl%3Dfr%26u%3Dhttps://www.w3.org/WAI/intro/wcag)
+- make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+### Ressources similaires
+
+- [7. Rendre le service accessible (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-8)
 
 ## 2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début
 
@@ -133,11 +99,11 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 
 ### Liste de contrôle
 
-- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ## 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
 
@@ -145,8 +111,8 @@ Si les utilisateurs ont du mal à terminer la tâche pour la première fois, ils
 
 ### Liste de contrôle
 
-- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 ### Guides d'implémentation
 
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
