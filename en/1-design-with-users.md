@@ -327,13 +327,13 @@ Encouraging people to use digital service will:
 
 - Collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
 
-- Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))
+- Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))**
 
 - Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
 
 #### Live stage
 
-- Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))
+- Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))**
 
 - Measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
 
