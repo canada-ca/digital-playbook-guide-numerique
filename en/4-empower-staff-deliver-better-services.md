@@ -201,9 +201,11 @@ Each service must have one person who has the authority and is responsibile for 
 - Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility
 
 ### Implementation guides
+
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 ## 4.6 Build and maintain an experienced multidisciplinary team

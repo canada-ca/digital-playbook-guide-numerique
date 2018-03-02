@@ -49,7 +49,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment. 
+Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment.
 
 All users should be able to complete the service the first time they try, as quickly and easily as possible.
 

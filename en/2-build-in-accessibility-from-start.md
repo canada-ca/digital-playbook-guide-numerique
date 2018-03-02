@@ -48,7 +48,7 @@ Development of accessible (regardless of ability, device or environment) digital
 
 **[TODO: Add/revise introductory text]**
 
-Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment. 
+Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment.
 
 All users should be able to complete the service the first time they try, as quickly and easily as possible.
 
@@ -89,6 +89,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [7. Make it accessible (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-8)
 
 ## 2.3 Co-create with people who have distinct needs, being inclusive from the very beginning

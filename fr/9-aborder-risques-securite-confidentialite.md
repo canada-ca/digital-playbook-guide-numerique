@@ -80,7 +80,6 @@ Users won't use a service unless they have a guarantee:
 
 - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
 
-
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -146,6 +145,7 @@ Users won't use a service unless they have a guarantee:
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 
 ## 9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires

@@ -61,6 +61,7 @@ At every stage of a project, we should measure how well our service is working f
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
 ## 10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others
@@ -155,6 +156,7 @@ Measuring performance means continuously improving a service by:
 - [Sharing data on the Performance Platform](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Digital Service Standard (UK))**
 
 ### Similar resources
+
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 
 - [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-14)

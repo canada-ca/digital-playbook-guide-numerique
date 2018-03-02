@@ -28,7 +28,7 @@
 
 Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes agiles, itératives et centrées sur l'utilisateur lors de la construction d'un service. Commencez par une recherche et une analyse approfondies pour vous aider à comprendre qui utilise le service, quels sont ses besoins et comment le service affectera sa vie pour mieux comprendre comment le service devrait être conçu. L'absence de la voix de l'utilisateur conduit à des hypothèses qui peuvent être incorrectes et coûteuses.
 
-Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service. 
+Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service.
 
 ### Liste de contrôle
 
@@ -50,13 +50,14 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 - Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer
 
-- Fournir un mécanisme aux utilisateurs permettant de recevoir une rétroaction et de régler en temps opportun les problèmes de services
-(comme l'exige la [Politique sur les services](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27916b#cha7))
+- Fournir un mécanisme aux utilisateurs permettant de recevoir une rétroaction et de régler en temps opportun les problèmes de services (comme l'exige la [Politique sur les services](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27916b#cha7))
 
 ### Guides d'application
+
 **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
 
 ### Ressources similaires
+
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
 
 ## 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
@@ -100,6 +101,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
 ## 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
@@ -197,6 +199,7 @@ We need to understand the different ways people will interact with our services,
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 
 ## 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
@@ -214,6 +217,7 @@ We need to understand the different ways people will interact with our services,
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 ## 1.6 Rendre les services simples, intuitifs et cohérents
@@ -277,6 +281,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 - [Design patterns](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
+
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 
 - [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
@@ -307,7 +312,7 @@ Encouraging people to use digital service will:
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Stage alpha:
+#### Stage alpha
 
 - Plan to increase how many people use the digital service **(Digital Service Standard (Ontario))**
 
@@ -342,6 +347,7 @@ Encouraging people to use digital service will:
 - Measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation **(Digital Service Standard (Ontario))**
 
 ### Guides d'implémentation
+
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [How to measure digital take-up](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Digital Service Standard (UK))**
@@ -349,6 +355,7 @@ Encouraging people to use digital service will:
 - [Encouraging people to use your digital service](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
+
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 
 - [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
@@ -388,11 +395,13 @@ You need to have a plan for what to do if your service goes offline so that you 
 - Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 ### Guides d'implémentation
+
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Keeping your service online](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
+
 - [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
 - [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)

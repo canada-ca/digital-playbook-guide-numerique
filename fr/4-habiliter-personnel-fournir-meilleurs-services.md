@@ -149,6 +149,7 @@ It is essential that business processes be reviewed to identify opportunities to
 - [Understanding the problem is key to fixing it](http://wiki.ic.gc.ca/pages/viewpage.action?pageId=566756956) **(Do - Digital Design Playbook (ISED))**
 
 ### Ressources similaires
+
 - [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
@@ -200,9 +201,11 @@ Each service must have one person who has the authority and is responsibile for 
 - Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility
 
 ### Guides d'implémentation
+
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 ## 4.6 Construire et maintenir une équipe multidisciplinaire expérimentée
@@ -262,6 +265,7 @@ To be successful, build a team with:
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
 
 - [2. Former une équipe adaptée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-3)
