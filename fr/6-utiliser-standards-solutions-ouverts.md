@@ -2,7 +2,7 @@
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-**Des lignes directrices:**
+**Lignes directrices :**
 
 [6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires](#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
 
@@ -16,7 +16,7 @@
 
 [6.6 Nuage d'abord](#user-content-66-nuage-dabord)     
 
-**Directives connexes:**
+**Lignes directrices connexes:**
 
 [5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous licence ouverte (Principe 5: Travailler à l'extérieur par défaut)](5-travailler-air-libre-par-defaut.md#user-content-51-rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
 
