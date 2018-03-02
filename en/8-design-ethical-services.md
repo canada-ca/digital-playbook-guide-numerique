@@ -48,7 +48,7 @@
 
 - **[TODO: Add/revise checklist items]**
 
-- Design and deliver transparent and ethical services - Be open and transparent in the use of automated systems and comply with ethical guidelines. **(OneGC product design criteria)**
+- Design and deliver transparent and ethical services - Be open and transparent in the use of automated systems and comply with ethical guidelines.
 
 ### Implementation guides
 
