@@ -242,7 +242,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
 
-- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))
+- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
 
 - Use analytics and user research to reduce the number of people who didn't complete the task they set out to do online (e.g. renew a driver's licence) **(Digital Service Standard (Ontario))**
 
@@ -260,7 +260,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - Make design and content decisions based on research, testing and analytics **(Digital Service Standard (Ontario))**
 
-- change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))
+- change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
 
 - Make sure the service is responsive and works on mobile devices **(Digital Service Standard (UK))**
 
@@ -329,13 +329,13 @@ Encouraging people to use digital service will:
 
 - Collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
 
-- Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))
+- Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))**
 
 - Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
 
 #### Stage en direct
 
-- Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))
+- Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))**
 
 - Measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
 
