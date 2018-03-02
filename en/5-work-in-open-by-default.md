@@ -147,6 +147,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
 ## 5.5 Open by default

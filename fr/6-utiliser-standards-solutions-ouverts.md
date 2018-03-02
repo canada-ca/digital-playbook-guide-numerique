@@ -14,7 +14,7 @@
 
 [6.5 Concevoir, créer et tester des services numériques de bout en bout](#user-content-65-concevoir-créer-et-tester-des-services-numériques-de-bout-en-bout)
 
-[6.6 Nuage d'abord](#user-content-66-nuage-dabord)     
+[6.6 Nuage d'abord](#user-content-66-nuage-dabord)
 
 **Lignes directrices connexes:**
 
@@ -63,6 +63,7 @@ Using open standards and common government platforms will help the government:
 - [technology for services](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
+
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 
 - [9. Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-10)
@@ -220,6 +221,7 @@ There are many potential benefits from the greater use of digital services, incl
 - [Vulnerability and penetration testing](https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
+
 - [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
 
 - [4. Conception du service du début à la fin (Normes des services numériques (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-5)

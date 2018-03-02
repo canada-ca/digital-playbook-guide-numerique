@@ -54,9 +54,11 @@ Users should be involved throughout the lifecycle of the service, with user rese
 - Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916b#cha7).
 
 ### Implementation guides
+
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
 
 ## 1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements
@@ -100,6 +102,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
 ## 1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs
@@ -165,6 +168,7 @@ A key part of building digital services that work for users is developing a good
 - [Designing government services](https://www.gov.uk/service-manual/design/introduction-designing-government-services)
 
 ### Similar resources
+
 - [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
 
 - [1. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
@@ -195,6 +199,7 @@ We need to understand the different ways people will interact with our services,
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
@@ -212,6 +217,7 @@ We need to understand the different ways people will interact with our services,
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 ## 1.6 Make services simple, intuitive and consistent
@@ -275,6 +281,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 - [Design patterns](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html) **(Digital Service Standard (UK))**
 
 ### Similar resources
+
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 
 - [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
@@ -348,6 +355,7 @@ Encouraging people to use digital service will:
 - [Encouraging people to use your digital service](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Digital Service Standard (UK))**
 
 ### Similar resources
+
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 
 - [11. Encourage people to use digital services (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-12)
@@ -393,6 +401,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 - [Keeping your service online](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Digital Service Standard (UK))**
 
 ### Similar resources
+
 - [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
 - [12. Support those who need it (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)

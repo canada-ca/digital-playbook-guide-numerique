@@ -22,7 +22,7 @@
 
 **Exemples d'introduction :**
 
-**Digital Service Standard (UK): **Construisez votre service en utilisant les méthodes agiles, itératives et centrées sur l'utilisateur définies dans le manuel.
+**Digital Service Standard (UK):** Construisez votre service en utilisant les méthodes agiles, itératives et centrées sur l'utilisateur définies dans le manuel.
 
 L'utilisation de méthodes agiles vous aide à créer des services qui:
 
@@ -36,7 +36,7 @@ L'utilisation de méthodes agiles vous aide à créer des services qui:
 
 - coûte moins cher et sont plus responsables
 
-**Norme de service numérique (Ontario): **Concevoir et élaborer le service en utilisant une approche agile et centrée sur l'utilisateur. Agile est une approche de la construction de services qui divise le travail en plus petits morceaux connus sous le nom d'itérations. Construire une fonctionnalité du service à la fois jusqu'à ce que l'ensemble du service est terminé.
+**Norme de service numérique (Ontario):** Concevoir et élaborer le service en utilisant une approche agile et centrée sur l'utilisateur. Agile est une approche de la construction de services qui divise le travail en plus petits morceaux connus sous le nom d'itérations. Construire une fonctionnalité du service à la fois jusqu'à ce que l'ensemble du service est terminé.
 
 Il s'agit d'une approche beaucoup moins risquée que l'approche traditionnelle «cascade» car les itérations fréquentes exposent les défauts du plan d'origine beaucoup plus rapidement (par exemple, ne pas obtenir les approbations, pas assez de ressources, pas les bonnes personnes). équipe, etc.)
 
@@ -167,12 +167,13 @@ Start with a representation or prototype of the solution that will be tested and
 - [GCpedia Community of Practice Agile Methods](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
 - [CRA Agile Framework](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework)) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
 - Treasury Board Secretariat (TBS) – Management Accountability Framework (MAF): **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp
-  - http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp
+  - <http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp>
+  - <http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp>
 
 - [agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
 Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+
 - [Is your project using "agilefall"?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
 - [Agile Manifesto](http://agilemanifesto.org/principles.html)
 
@@ -211,6 +212,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
 
 ## 7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération
@@ -252,7 +254,7 @@ You need to build a service which you can iterate and keep improving so that you
   - Implement the test.
   - Test often (e.g., six month or yearly intervals), apply the findings and keep on testing.
 
-- Test under realistic conditions **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**  
+- Test under realistic conditions **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
   - Create realistic scenarios that reflect the context and environment in which clients would use the service.
 
 - Use different types of tests to assess the service **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
@@ -308,14 +310,15 @@ You need to build a service which you can iterate and keep improving so that you
 - [26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
 
 - User centric design GC community of practice: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs
-  - http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing
+  - <http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs>
+  - <http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing>
 
 Find out more about:
 
 - [agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
+
 - [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
 
 - [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)

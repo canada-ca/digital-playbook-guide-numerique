@@ -85,6 +85,7 @@ Users won't use a service unless they have a guarantee:
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
 ## 9.3 Make security seamless and frictionless, balancing security and convenience
@@ -148,6 +149,7 @@ Users won't use a service unless they have a guarantee:
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
 ## 9.4 Ensure services comply with all legislated and regulatory requirements
@@ -233,6 +235,7 @@ The following checklist provides a starting point, but teams should work closely
 - [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
 
 ### Similar resources
+
 - [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 
 - [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)

@@ -63,6 +63,7 @@ At every stage of a project, we should measure how well our service is working f
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
 ## 10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
@@ -157,6 +158,7 @@ Measuring performance means continuously improving a service by:
 - [Sharing data on the Performance Platform](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
+
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 
 - [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-14)

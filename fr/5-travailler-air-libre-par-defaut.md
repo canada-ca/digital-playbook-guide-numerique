@@ -147,6 +147,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
 ## 5.5 Ouvrir par défaut
@@ -208,5 +209,6 @@ All solutions must use open standards to ensure interoperability across the OneG
 - [Choosing technology: an introduction](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
+
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
