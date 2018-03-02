@@ -1,15 +1,13 @@
 # Comparison tables
 1. [Government of Canada Digital Playbook comparison table](#government-of-canada-digital-playbook-comparison-table)
-1. Digital Service Standard (UK) comparison table
-1. Digital Service Standard (Ontario) comparison table
-1. Digital Services Playbook (US) comparison table
-1. Digital Government Toolkit (OECD) comparison table
-1. Policy on Service (GC) comparison table
-1. OneGC product design criteria (GC) comparison table
-1. Current GC EARB Principles (GC) comparison table
-1. Build It Digital Principles (GC) comparison table
-1. EA Principles (GC) comparison table
-1. Digital Services Design Playbook (ISED) comparison table
+1. **TODO:** Digital Service Standard (UK) comparison table
+1. **TODO:** Digital Service Standard (Ontario) comparison table
+1. **TODO:** Digital Services Playbook (US) comparison table
+1. **TODO:** OneGC product design criteria (GC) comparison table
+1. **TODO:** Current GC EARB Principles (GC) comparison table
+1. **TODO:** Build It Digital Principles (GC) comparison table
+1. **TODO:** EA Principles (GC) comparison table
+1. **TODO:** Digital Services Design Playbook (ISED) comparison table
 
 ## Government of Canada Digital Playbook comparison table
 <table>
