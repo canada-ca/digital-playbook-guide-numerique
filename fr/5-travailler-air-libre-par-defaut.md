@@ -1,4 +1,4 @@
-# 5. Travailler à l'air libre par défaut
+# 5. Travailler à l'air libre par défaut (ébauche)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
