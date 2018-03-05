@@ -1,4 +1,4 @@
-# 7. Itérer et améliorer fréquemment
+# 7. Itérer et améliorer fréquemment (ébauche)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
