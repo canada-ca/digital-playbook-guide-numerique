@@ -16,7 +16,7 @@
 
 **[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
 
-## 2.1 Build for those with the greatest needs and it will work for everyone else
+## 2.1 Build for those with the greatest needs and it will work for everyone else (draft)
 
 The Government of Canada is committed to ensuring that a high level of accessibility is applied uniformly across its service delivery channels. Technologies and standards are constantly evolving and accessibility plays a major role in making the Government of Canada more effective and inclusive. A more consistent, convenient, clear, and easy user experience when using government services online builds trust.
 

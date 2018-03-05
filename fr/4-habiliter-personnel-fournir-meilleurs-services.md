@@ -1,4 +1,4 @@
-# 4. Habiliter le personnel à fournir de meilleurs services
+# 4. Habiliter le personnel à fournir de meilleurs services (ébauche)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

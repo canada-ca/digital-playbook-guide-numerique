@@ -1,4 +1,4 @@
-# 8. Concevoir des services éthiques
+# 8. Concevoir des services éthiques (ébauche)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

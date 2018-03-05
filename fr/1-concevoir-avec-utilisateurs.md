@@ -1,4 +1,4 @@
-# 1. Concevoir avec les utilisateurs
+# 1. Concevoir avec les utilisateurs (ébauche)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

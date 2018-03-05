@@ -1,4 +1,4 @@
-# 5. Work in the open by default
+# 5. Work in the open by default (draft)
 
 **[TODO: Add/revise introductory text]**
 

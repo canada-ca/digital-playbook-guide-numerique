@@ -1,8 +1,8 @@
 # Government of Canada Digital Playbook (draft)
 
-## Overview
+## Overview (draft)
 
-### Structure of this document
+### Structure of this document (draft)
 
 The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Principles. For each principle the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation.
 
@@ -14,7 +14,7 @@ The Government of Canada Digital Playbook provides practical and measurable guid
 
 - **Implementation guides** provide additional, detailed information on specific sub-topics.
 
-### Government of Canada Digital Principles
+### Government of Canada Digital Principles (draft)
 
 **Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. These principles form the foundation of the Government of Canada's shift to becoming more agile, open, and user-focused. It's a journey.
 

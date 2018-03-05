@@ -1,4 +1,4 @@
-# 6. Use open standards and solutions
+# 6. Use open standards and solutions (draft)
 
 **[TODO: Add/revise introductory text]**
 

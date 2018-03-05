@@ -1,4 +1,4 @@
-# 3. Collaborate widely
+# 3. Collaborate widely (draft)
 
 **[TODO: Add/revise introductory text]**
 

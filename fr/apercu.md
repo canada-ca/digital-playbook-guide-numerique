@@ -1,8 +1,8 @@
-# Guide numérique du gouvernement du Canada
+# Guide numérique du gouvernement du Canada (ébauche)
 
-## Aperçu
+## Aperçu (ébauche)
 
-### Structure de ce document
+### Structure de ce document (ébauche)
 
 Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les principes numériques. Pour chaque principe, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
 
@@ -14,7 +14,7 @@ Le guide numérique du gouvernement du Canada fournit des conseils pratiques et 
 
 - **Les guides de mise en œuvre**   Des informations supplémentaires et détaillées sur les sous-thèmes spécifiques.
 
-### Principes numériques du gouvernement du Canada
+### Principes numériques du gouvernement du Canada (ébauche)
 
 **Améliorer les services gouvernementaux à l'ère numérique.**   Notre objectif est de fournir des services publics facilement accessibles, intégrés et fiables aux Canadiens.   En tant que gouvernement, nous devons nous éloigner des projets monolithiques avec des conceptions rigides qui sont construites dans des silos avec une contribution minimale de la communauté des utilisateurs.   Ces principes constitutifs du gouvernement du Canada pour devenir plus agile, ouvert et axé sur les utilisateurs.   C'est un voyage.
 

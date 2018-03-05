@@ -1,4 +1,4 @@
-# 9. Aborder les risques de sécurité et de confidentialité
+# 9. Aborder les risques de sécurité et de confidentialité (ébauche)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
