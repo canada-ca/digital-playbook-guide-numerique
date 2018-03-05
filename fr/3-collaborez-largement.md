@@ -1,4 +1,4 @@
-# 3. Collaborez largement
+# 3. Collaborez largement (ébauche)
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
