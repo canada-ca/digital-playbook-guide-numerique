@@ -1,4 +1,4 @@
-# 10. Be good data stewards
+# 10. Be good data stewards (draft)
 
 **[TODO: Add/revise introductory text]**
 
