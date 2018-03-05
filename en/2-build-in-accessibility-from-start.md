@@ -1,4 +1,4 @@
-# 2. Build in accessibility from the start
+# 2. Build in accessibility from the start (draft)
 
 **[TODO: Add/revise introductory text]**
 
