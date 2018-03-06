@@ -12,7 +12,7 @@
 
 [5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez](#user-content-54-soyez-transparent-sur-la-façon-dont-vous-travaillez-et-justifiez-les-décisions-que-vous-prenez)
 
-[5.5 Développer à l'air libre et rendre le code source ouvert et réutilisable](#user-content-55-développer-à-lair-libre-et-rendre-le-code-source-ouvert-et-réutilisable)
+[5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable](#user-content-55-travailler-à-lair-libre-et-rendre-le-code-source-ouvert-et-réutilisable)
 
 **Lignes directrices connexes :**
 
@@ -154,7 +154,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
-## 5.5 Développer à l'air libre et rendre le code source ouvert et réutilisable
+## 5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -214,5 +214,6 @@ All solutions must use open standards to ensure interoperability across the OneG
 
 ### Ressources similaires
 - [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
+- [Open Culture - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/6_Open_Culture.md)
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
