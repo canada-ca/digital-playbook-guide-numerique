@@ -128,6 +128,8 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- Procuring goods and services in the open is an important part of an open environment **(Open Markets - Open First Whitepaper (GC))**
+
 - When appropriate, share your development process and progress publicly **(Digital Services Playbook (US))**
 
 - Document and show your work. **(Plan - Digital Design Playbook (ISED))**
@@ -147,6 +149,8 @@ Share your experiences with colleagues across the Government of Canada, other le
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 ### Ressources similaires
+
+- [Open Markets - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/5_Open_Markets.md)
 
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
