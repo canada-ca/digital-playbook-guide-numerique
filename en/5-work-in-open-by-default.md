@@ -12,7 +12,7 @@
 
 [5.4 Be transparent about how you work and justify the decisions you make](#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
 
-[5.5 Develop in the open and make source code open and reusable](#user-content-55-develop-in-the-open-and-make-source-code-open-and-reusable)
+[5.5 Work in the open and make source code open and reusable](#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
 
 **Related guidelines:**
 
@@ -154,7 +154,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
-## 5.5 Develop in the open and make source code open and reusable
+## 5.5 Work in the open and make source code open and reusable
 
 **[TODO: Add/revise introductory text]**
 
@@ -222,6 +222,8 @@ Making your source code open means:
 
 ### Similar resources
 - [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
+
+- [Open Culture - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/6_Open_Culture.md)
 
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 
