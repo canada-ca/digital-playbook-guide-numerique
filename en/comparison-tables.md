@@ -9,6 +9,7 @@
 1. **TODO:** EA Principles (GC) comparison table
 1. **TODO:** Digital Services Design Playbook (ISED) comparison table
 1. **TODO:** Open First Whitepaper (GC) comparison table
+1. **TODO:** Architectural Commandments (GC) comparison table
 
 ## Government of Canada Digital Playbook comparison table
 <table>
@@ -260,6 +261,7 @@
 			<td>
 				<ul>
 					<li>Release data by default (Build it Digital Principles (initial thoughts))</li>
+					<li>2. Demonstrate Info Strategy (Architectural Commandments (initial thoughts))</li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
@@ -300,6 +302,7 @@
 				<ul>
 					<li>Open by default (OneGC product design criteria)</li>
 					<li>Open By Default, Proprietary by Necessity (Current GC EARB Principles)</li>
+					<li>3. Open Source (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md">Open Source Code - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">[8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
 					<li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
@@ -317,6 +320,8 @@
 				<ul>
 					<li>Open Source & Open Standards (Build it Digital Principles (initial thoughts))</li>
 					<li>Open Source Standards (GC EA Principles)</li>
+					<li>3. Open Source First (Architectural Commandments (initial thoughts))</li>
+					<li>9. Exponential Tech (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md">Open Standards - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms">9.&#160;Use open standards and common platforms (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-10">9. Use open standards and common platforms (Digital Service Standard (Ontario)&#160;</a></li>
@@ -336,6 +341,8 @@
 					<li>Technology Debt Managed (Current GC EARB Principles)</li>
 					<li>Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)</li>
 					<li>Architecturally Fit for the GC Enterprise (GC EA Principles)</li>
+					<li>6. Digital Principles (Architectural Commandments (initial thoughts))</li>
+					<li>7. GC Standards (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/3_Open_Source_Software.md">Open Source Software - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://playbook.cio.gov/#play8">8.&#160;Choose a modern technology stack (Digital Services Playbook (US))</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives">1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
@@ -351,6 +358,7 @@
 				<ul>
 					<li>API enabled (OneGC product design criteria)</li>
 					<li>Create APIs in the developer's space (Build it Digital Principles (initial thoughts))</li>
+					<li>4. API Usage (Architectural Commandments (initial thoughts))</li>
 					<li>Interoperability (Current GC EARB Principles)</li>
 					<li>Interoperability (ESB/APIs -- Micro Services) (GC EA Principles)</li>
 				</ul>
@@ -361,6 +369,9 @@
 				<a href="6-use-open-standards-solutions.md#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service">6.4&#160;Open up the data, transactions, and business rules that underpin a service</a>
 			</td>
 			<td>
+				<ul>
+					<li>5. Data Sharing (Architectural Commandments (initial thoughts))</li>
+				</ul>
 			</td>
 		</tr>
 		<tr>
@@ -387,6 +398,7 @@
 					<li>Cloud first (OneGC product design criteria)</li>
 					<li>Cloud First (Current GC EARB Principles)</li>
 					<li>Cloud First (Build it Digital Principles (initial thoughts))</li>
+					<li>1. Cloud First (Architectural Commandments (initial thoughts))</li>
 					<li>(Public) Cloud First: SaaS -- PaaS -- IaaS (GC EA Principles)</li>
 					<li><a href="https://playbook.cio.gov/#play9">9.&#160;Deploy in a flexible hosting environment (Digital Services Playbook (US))</a></li>
 				</ul>
@@ -480,6 +492,7 @@
 			<td>
 				<ul>
 					<li>Use appropriate level of security (Build it Digital Principles (initial thoughts))</li>
+					<li>10. Cyber Signoff (Architectural Commandments (initial thoughts))</li>
 				</ul>
 			</td>
 		</tr>
@@ -504,6 +517,7 @@
 					<li>Provide common identity & Access management across all systems (Build it Digital Principles (initial thoughts))</li>
 					<li>Secure by Design (Current GC EARB Principles)</li>
 					<li>Secure by Design (GC EA Principles)</li>
+					<li>8. Trust Framework (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-11">10.&#160;Embed privacy and security by design (Digital Service Standard (Ontario))</a></li>
 				</ul>
 			</td>
