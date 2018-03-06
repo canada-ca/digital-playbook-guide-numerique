@@ -8,6 +8,7 @@
 1. **TODO:** Build It Digital Principles (GC) comparison table
 1. **TODO:** EA Principles (GC) comparison table
 1. **TODO:** Digital Services Design Playbook (ISED) comparison table
+1. **TODO:** Open First Whitepaper (GC) comparison table
 
 ## Government of Canada Digital Playbook comparison table
 <table>
@@ -292,12 +293,13 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="5-work-in-open-by-default.md#user-content-55-open-by-default">5.5&#160;Open by default</a>
+				<a href="5-work-in-open-by-default.md#user-content-55-develop-in-the-open-and-make-source-code-open-and-reusable">5.5&#160;Develop in the open and make source code open and reusable</a>
 			</td>
 			<td>
 				<ul>
 					<li>Open by default (OneGC product design criteria)</li>
 					<li>Open By Default, Proprietary by Necessity (Current GC EARB Principles)</li>
+					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md">Open Source Code - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">[8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
 					<li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
 				</ul>
