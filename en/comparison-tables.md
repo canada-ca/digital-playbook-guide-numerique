@@ -287,13 +287,14 @@
 			</td>
 			<td>
 				<ul>
+					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/5_Open_Markets.md">Open Markets - Open First Whitepaper (GC)</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices">2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<a href="5-work-in-open-by-default.md#user-content-55-develop-in-the-open-and-make-source-code-open-and-reusable">5.5&#160;Develop in the open and make source code open and reusable</a>
+				<a href="5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable">5.5&#160;Work in the open and make source code open and reusable</a>
 			</td>
 			<td>
 				<ul>
@@ -316,6 +317,7 @@
 				<ul>
 					<li>Open Source & Open Standards (Build it Digital Principles (initial thoughts))</li>
 					<li>Open Source Standards (GC EA Principles)</li>
+					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md">Open Standards - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms">9.&#160;Use open standards and common platforms (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-10">9. Use open standards and common platforms (Digital Service Standard (Ontario)&#160;</a></li>
 				</ul>
@@ -334,6 +336,7 @@
 					<li>Technology Debt Managed (Current GC EARB Principles)</li>
 					<li>Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)</li>
 					<li>Architecturally Fit for the GC Enterprise (GC EA Principles)</li>
+					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/3_Open_Source_Software.md">Open Source Software - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://playbook.cio.gov/#play8">8.&#160;Choose a modern technology stack (Digital Services Playbook (US))</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives">1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate">2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
