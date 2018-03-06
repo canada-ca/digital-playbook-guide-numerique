@@ -217,9 +217,8 @@ Making your source code open means:
 - [Choosing technology: an introduction](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
 
 ### Similar resources
+- [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
 
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
-
-- [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
