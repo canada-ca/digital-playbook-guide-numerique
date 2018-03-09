@@ -246,7 +246,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
 
-- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))
+- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
 
 - Use analytics and user research to reduce the number of people who didn't complete the task they set out to do online (e.g. renew a driver's licence) **(Digital Service Standard (Ontario))**
 
@@ -354,6 +354,8 @@ Encouraging people to use digital service will:
 
 - [Encouraging people to use your digital service](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Digital Service Standard (UK))**
 
+- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Design Standard(AU))**
+
 ### Similar resources
 
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
@@ -399,6 +401,8 @@ You need to have a plan for what to do if your service goes offline so that you 
 **[TODO: Add/revise implementation guide items]**
 
 - [Keeping your service online](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Digital Service Standard (UK))**
+
+- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Design Standard (AU))**
 
 ### Similar resources
 

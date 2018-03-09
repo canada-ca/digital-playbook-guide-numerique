@@ -266,6 +266,8 @@ To be successful, build a team with:
 
 - [setting up the right team](https://www.gov.uk/service-manual/the-team) **(Digital Service Standard (UK))**
 
+- [Have a multi-disciplinary team](https://www.dta.gov.au/standard/2-multidisciplinary-team/) **(Digital Service Standard (AU))**
+
 ### Similar resources
 
 - [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
@@ -273,3 +275,5 @@ To be successful, build a team with:
 - [2. Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-3)
 
 - [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
+
+ -[The Team (Design Standard(AU))](https://www.dta.gov.au/standard/design-guides/the-team/)

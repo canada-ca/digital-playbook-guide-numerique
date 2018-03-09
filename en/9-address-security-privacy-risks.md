@@ -30,6 +30,10 @@
 
 **[TODO: Add/revise implementation guide items]**
 
+- [Privacy (Design Standard(AU))](https://www.dta.gov.au/standard/design-guides/privacy/)
+
+- [Secure Service (Design Standard(AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
+
 ## 9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected
 
 **[TODO: Add/revise introductory text]**
@@ -147,6 +151,8 @@ Users won't use a service unless they have a guarantee:
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+- [Make It Secure](https://www.dta.gov.au/standard/5-make-it-secure/) **(Digital Service Standard(AU))**
 
 ### Similar resources
 

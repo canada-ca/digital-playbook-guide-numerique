@@ -170,6 +170,10 @@ Start with a representation or prototype of the solution that will be tested and
 
 - [agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
+- [agile and user-centred process] (https://www.dta.gov.au/standard/3-agile-and-user-centred/) **(Digital Service Standard (AU))**
+
+- [agile](https://www.dta.gov.au/standard/design-guides/agile/) **(Digital Service Standard)**
+
 Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
 
 - [Is your project using "agilefall"?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
@@ -325,8 +329,12 @@ Find out more about:
 
 - [agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
+- [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Design Standard)**
+
 ### Similar resources
 
 - [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
 
 - [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
+
+- [Measure Performance (Digital Service)](https://www.dta.gov.au/standard/11-measure-performance/)

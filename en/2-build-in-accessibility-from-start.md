@@ -92,6 +92,12 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - [7. Make it accessible (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-8)
 
+- [Consistent and Responsive (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
+
+- [Designing for Inclusion(W3C)](https://www.w3.org/WAI/users/)
+
+- [A checlist for digital inclusion](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
+
 ## 2.3 Co-create with people who have distinct needs, being inclusive from the very beginning
 
 **[TODO: Add/revise introductory text]**
@@ -113,5 +119,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 **[TODO: Add/revise checklist items]**
 
 ### Implementation guides
+
+- [Make it Accessible (Digital Service Standard(AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
 
 **[TODO: Add/revise implementation guide items]**

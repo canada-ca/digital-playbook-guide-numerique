@@ -69,6 +69,8 @@ Using open standards and common government platforms will help the government:
 
 - [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 
+- [Open Standards and Common Platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
+
 ## 6.2 Use and reuse common, proven government solutions, approaches, and platforms
 
 **[TODO: Add/revise introductory text]**
@@ -119,6 +121,8 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 **[TODO: Add/revise implementation guide items]**
 
+ - [Tools and Systems](https://www.dta.gov.au/standard/4-tools-and-systems/) **(Digital Service Standard(AU))**
+
 ### Similar resources
 - [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
 
@@ -154,6 +158,8 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 ### Implementation guides
 
+- [API (Design Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
+
 **[TODO: Add/revise implementation guide items]**
 
 ## 6.4 Open up the data, transactions, and business rules that underpin a service
@@ -167,6 +173,8 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+- [Open Data(Design Standard(AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
 
 ## 6.5 Design, build and test end-to-end digital services
 
@@ -223,6 +231,8 @@ There are many potential benefits from the greater use of digital services, incl
 - [Deployment environments](https://www.gov.uk/service-manual/making-software/deployment.html) **(Digital Service Standard (UK))**
 
 - [Vulnerability and penetration testing](https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing) **(Digital Service Standard (UK))**
+
+- [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Design Standard (AU))**
 
 ### Similar resources
 
