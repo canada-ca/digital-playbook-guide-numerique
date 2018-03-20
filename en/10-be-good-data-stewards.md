@@ -60,6 +60,12 @@ At every stage of a project, we should measure how well our service is working f
 
 **[TODO: Add/revise implementation guide items]**
 
+- [W3C - Machine-Readable Standardized Data Format](https://www.w3.org/TR/dwbp/#MachineReadableStandardizedFormat)
+
+- [W3C - Local Neutral Data Representation](https://www.w3.org/TR/dwbp/#LocaleParametersMetadata)
+
+- [W3C - Real Time Access](https://www.w3.org/TR/dwbp/#AccessRealTime)
+
 ### Similar resources
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
@@ -170,6 +176,14 @@ Measuring performance means continuously improving a service by:
 **[TODO: Add/revise checklist items]**
 
 ### Implementation guides
+
+- [The Nation Archives(UK) - How to get started](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/how-to-get-started/)
+
+- [The National Archives(UK) - Developing a digital preservation strategy and policy](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/developing-a-digital-preservation-strategy-and-policy/)
+
+- [The National Archives(UK) - Digital preservation tools](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/digital-preservation-tools/)
+
+- [Formats, Evluation Factors and Relationships - Library of Congress(US)](https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml)
 
 **[TODO: Add/revise implementation guide items]**
 

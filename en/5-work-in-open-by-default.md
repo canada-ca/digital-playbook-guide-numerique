@@ -44,6 +44,10 @@
 
 **[TODO: Add/revise implementation guide items]**
 
+- [Open Data](https://www.dta.gov.au/standard/design-guides/open-data/) **(Design Standard (AU))**
+
+- [Statistical Data Integration](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/) **(Design Standard (AU))**
+
 ## 5.2 Be transparent with goals and publish real-time performance data
 
 **[TODO: Add/revise introductory text]**
@@ -117,6 +121,8 @@ Setting performance indicators allows you to continuously improve your service b
 ### Similar resources
 
 - [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
+
+- [Performance Testing (Design Standard(AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 
 ## 5.4 Be transparent about how you work and justify the decisions you make
 
@@ -219,6 +225,10 @@ Making your source code open means:
 - [Using open source software](https://www.gov.uk/service-manual/making-software/open-source.html) **(Digital Service Standard (UK))**
 
 - [Choosing technology: an introduction](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
+
+- [Make source code open] (https://www.dta.gov.au/standard/8-make-source-code-open/) **(Digital Service Standard (AU))**
+
+- [Code Sharing](https://www.dta.gov.au/standard/design-guides/code-sharing/) **(Design Standard(AU))**
 
 ### Similar resources
 - [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
