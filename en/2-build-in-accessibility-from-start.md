@@ -98,7 +98,20 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
+- [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
+    - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/) 
+    - [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
+    - [Techniques for WCAG 2.0 ](https://www.w3.org/TR/WCAG20-TECHS/)
+- [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+  - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
+  - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
+  - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
+- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
+- [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
+  - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
 
 ### Similar resources
 
