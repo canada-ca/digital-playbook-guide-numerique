@@ -22,7 +22,7 @@
 
 [1.5 Provide services that can be obtained anytime, anywhere and on any device (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
 
-[1.6 Make services simple, intuitive and consistent (Principle&#160;: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
+[1.6 Make services simple, intuitive and consistent (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
 
 [1.8 Support people who cannot use digital services on their own (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
 
