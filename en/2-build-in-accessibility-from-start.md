@@ -13,6 +13,7 @@
 [2.4 Take into consideration a user's possible constraints when designing services](#user-content-24-take-into-consideration-a-users-possible-constraints-when-designing-services)
 
 **Related guidelines:**
+
 [1.1 Build nothing for the user, without the user being involved (Principle 1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
 
 [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Principle 1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
