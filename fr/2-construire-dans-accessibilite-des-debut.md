@@ -13,6 +13,7 @@
 [2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services](#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
 
 **Lignes directrices connexes :**
+
 [1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu%C3%A9)
 
 [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
