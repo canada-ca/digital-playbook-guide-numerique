@@ -13,8 +13,19 @@
 [2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services](#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
 
 **Lignes directrices connexes :**
+[1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu%C3%A9)
 
-**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
+[1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
+
+[1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-13-comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-con%C3%A7oivent-des-solutions-adapt%C3%A9es-%C3%A0-leurs-besoins)
+
+[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-%C3%AAtre-tout-quand-et-nimporte-quel-appareil)
+
+[1.6 Rendre les services simples, intuitifs et cohérents (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-16-rendre-les-services-simples-intuitifs-et-coh%C3%A9rents)
+
+[1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-18-soutenir-les-personnes-qui-ne-peuvent-pas-utiliser-les-services-num%C3%A9riques-par-leurs-propres-moyens)
+
+[8.4 Équilibrer les compromis entre innovation et inclusivité (Principe&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-%C3%89quilibrer-les-compromis-entre-innovation-et-inclusivit%C3%A9)
 
 ## 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
 
