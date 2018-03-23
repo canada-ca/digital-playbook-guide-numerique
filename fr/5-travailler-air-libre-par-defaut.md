@@ -16,9 +16,15 @@
 
 **Lignes directrices connexes :**
 
-[6.4 Ouvrir les données, les transactions et les règles métier qui sous-tendent un service (Principe 6: Utiliser des normes et des solutions ouvertes))](6-utiliser-standards-solutions-ouverts.md#user-content-64-ouvrez-les-données-les-transactions-et-les-règles-métier-qui-sous-tendent-un-service)
+[3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser (Principe&#160;6&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-34-partager-et-collaborer-%C3%A0-lext%C3%A9rieur-%C3%A9tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-r%C3%A9utiliser)
 
-**\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
+[6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté (Principe&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](6-utiliser-standards-solutions-ouverts.md#user-content-63-conception-pour-linterop%C3%A9rabilit%C3%A9-permettant-aux-services-d%C3%AAtre-d%C3%A9couverts-et-exploit%C3%A9s-par-la-communaut%C3%A9)
+
+[6.4 Ouvrir les données, les transactions et les règles métier qui sous-tendent un service (Principe&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](6-utiliser-standards-solutions-ouverts.md#user-content-64-ouvrez-les-données-les-transactions-et-les-règles-métier-qui-sous-tendent-un-service)
+
+[8.1 Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités (Principe&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-81-soyez-transparent-au-sujet-des-pr%C3%A9jug%C3%A9s-personnels-et-organisationnels-et-indiquez-comment-ils-sont-trait%C3%A9s)
+
+[10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision (Principe&#160;10&#160;: Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-102-rendre-les-informations-et-les-donn%C3%A9es-gouvernementales-pertinentes-facilement-accessibles-pour-aider-%C3%A0-la-prise-de-d%C3%A9cision)
 
 ## 5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte
 
