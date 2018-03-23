@@ -14,7 +14,13 @@
 
 **Related guidelines:**
 
-**[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
+[1.1 Build nothing for the user, without the user being involved (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
+
+[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+
+[2.3 Co-create with people who have distinct needs, being inclusive from the very beginning (Principle&#160;2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
+
+[4.6 Build and maintain an experienced multidisciplinary team (Principle&#160;4: Empower staff to deliver better services)](4-empower-staff-deliver-better-services.md#user-content-46-build-and-maintain-an-experienced-multidisciplinary-team)
 
 ## 3.1 Empower multidisciplinary teams with diverse perspectives and skills
 
