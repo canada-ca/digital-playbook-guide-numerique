@@ -20,8 +20,6 @@
 
 [2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début (Principe&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-23-co-cr%C3%A9er-avec-des-personnes-ayant-des-besoins-distincts-en-%C3%A9tant-inclusif-d%C3%A8s-le-d%C3%A9but)
 
-[4.6 Construire et maintenir une équipe multidisciplinaire expérimentée (Principe&#160;4&#160; Habiliter le personnel à fournir de meilleurs services)](4-habiliter-personnel-fournir-meilleurs-services.md#user-content-46-construire-et-maintenir-une-%C3%A9quipe-multidisciplinaire-exp%C3%A9riment%C3%A9e)
-
 [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Principe&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-%C3%A0-lair-libre-et-rendre-le-code-source-ouvert-et-r%C3%A9utilisable)
 
 ## 3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses
