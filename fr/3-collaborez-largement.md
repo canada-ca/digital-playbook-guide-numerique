@@ -12,6 +12,8 @@
 
 [3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser](#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
 
+[5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Principe&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-%C3%A0-lair-libre-et-rendre-le-code-source-ouvert-et-r%C3%A9utilisable)
+
 **Lignes directrices connexes :**
 
 [1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu%C3%A9)
