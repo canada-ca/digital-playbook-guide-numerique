@@ -14,11 +14,29 @@
 
 [4.5 Make one person accountable for the service](#user-content-45-make-one-person-accountable-for-the-service)
 
-[4.6 Build and maintain an experienced multidisciplinary team](#user-content-46-build-and-maintain-an-experienced-multidisciplinary-team)
-
 **Related guidelines:**
 
-**[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
+[3.1 Empower multidisciplinary teams with diverse perspectives and skills (Principle&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-31-empower-multidisciplinary-teams-with-diverse-perspectives-and-skills)
+
+[3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners (Principle&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-32-recognize-that-an-organization-cant-have-all-the-best-ideas-create-partnerships-and-collaborate-with-a-diverse-range-of-partners)
+
+[3.3 Build the capacity to dynamically pull in new partners for co-innovation (Principle&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
+
+[5.4 Be transparent about how you work and justify the decisions you make (Principle&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
+
+[5.5 Work in the open and make source code open and reusable (Principle&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+
+[6.1 Leverage open standards and embrace leading practices (Principle&#160;6: Use open standards and solutions](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
+
+[6.2 Use and reuse common, proven government solutions, approaches, and platforms (Principle&#160;6: Use open standards and solutions](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
+
+[7.1 Build in an agile manner and continuously improve in response to user needs (Principle&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-71-build-in-an-agile-manner-and-continuously-improve-in-response-to-user-needs)
+
+[7.2 Accept that change is inevitable and use adaptive strategies and tools for new development (Principle&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-72-accept-that-change-is-inevitable-and-use-adaptive-strategies-and-tools-for-new-development)
+
+[7.3 Embrace and react to changes in the environment and design for sustainability (Principle&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-73-embrace-and-react-to-changes-in-the-environment-and-design-for-sustainability)
+
+[7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration (Principle&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
 
 ## 4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network
 
@@ -207,69 +225,3 @@ Each service must have one person who has the authority and is responsibile for 
 ### Similar resources
 
 - [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
-
-## 4.6 Build and maintain an experienced multidisciplinary team
-
-**[TODO: Add/revise introductory text]**
-
-Put in place a sustainable multidisciplinary team that can design, build and continuously improve the digital service, led by a skilled product manager who is empowered to make decisions.
-
-The team's skills and focus need to evolve as the service is designed and developed. The team also needs to adapt its structure based on the needs of the service and the phase of work.
-
-To be successful, build a team with:
-
-- a broad mix of skills and roles from the start
-
-- quick decision-making processes and the ability to change and adapt as the service evolves
-
-- the resources and ability to deliver the product
-
-**(Digital Service Standard (Ontario))**
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Employ people in the following roles on the delivery team: service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, front-end developer **(Digital Service Standard (UK))**
-
-- Have a manager with the ability to make day-to-day decisions to improve the service **(Digital Service Standard (Ontario))**
-
-- Make sure you have at least one user researcher working at least 3 days each week **(Digital Service Standard (UK))**
-
-- Make sure there is separation of key roles in the team, meaning that nobody is performing multiple roles **(Digital Service Standard (UK))**
-
-- Member(s) of the team have experience building popular, high-traffic digital services **(Digital Services Playbook (US)**)
-
-- Member(s) of the team have experience designing mobile and web applications **(Digital Services Playbook (US)**)
-
-- Member(s) of the team have experience using automated testing frameworks **(Digital Services Playbook (US)**)
-
-- Member(s) of the team have experience with modern development and operations (DevOps) techniques like continuous integration and continuous deployment **(Digital Services Playbook (US)**)
-
-- Member(s) of the team have experience securing digital services **(Digital Services Playbook (US)**)
-
-- Understand where gaps may emerge in the team and how to fill them **(Digital Service Standard (UK))
-
-- Plan to transfer knowledge and skills from contractors to permanent staff **(Digital Service Standard (UK))
-
-- Make sure there's a person on your team who's responsible for user research and usability tests **(Digital Service Standard (UK))**
-
-- Make sure you'll have a team that can keep improving the service after it goes live **(Digital Service Standard (UK))
-
-- Make sure the team fully understands the service after it's gone live **(Digital Service Standard (UK))**
-
-- Involve the maintenance team for the service early on in the project **(Digital Service Standard (Ontario))**
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-- [setting up the right team](https://www.gov.uk/service-manual/the-team) **(Digital Service Standard (UK))**
-
-### Similar resources
-
-- [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
-
-- [2. Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-3)
-
-- [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)

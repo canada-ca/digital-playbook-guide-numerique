@@ -14,11 +14,29 @@
 
 [4.5 Rendre une personne responsable du service](#user-content-45-rendre-une-personne-responsable-du-service)
 
-[4.6 Construire et maintenir une équipe multidisciplinaire expérimentée](#user-content-46-construire-et-maintenir-une-équipe-multidisciplinaire-expérimentée)
-
 **Lignes directrices connexes :**
 
-**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
+[3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses (Principe&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-31-habiliter-des-%C3%A9quipes-multidisciplinaires-avec-des-perspectives-et-des-comp%C3%A9tences-diverses)
+
+[3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires (Principe&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-32-reconna%C3%AEtre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-id%C3%A9es-cr%C3%A9er-des-partenariats-et-collaborer-avec-un-large-%C3%A9ventail-de-partenaires)
+
+[3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation (Principe&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-33-renforcer-la-capacit%C3%A9-%C3%A0-attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
+
+[5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez (Principe&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-54-soyez-transparent-sur-la-fa%C3%A7on-dont-vous-travaillez-et-justifiez-les-d%C3%A9cisions-que-vous-prenez)
+
+[5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Principe&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-%C3%A0-lair-libre-et-rendre-le-code-source-ouvert-et-r%C3%A9utilisable)
+
+[6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Principe&#160;6&#160;: Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+
+[6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Principe&#160;6&#160;: Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md#user-content-62-utiliser-et-r%C3%A9utiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-%C3%A9prouv%C3%A9es)
+
+[7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs (Principe&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-71-construire-de-mani%C3%A8re-agile-et-am%C3%A9liorer-continuellement-en-r%C3%A9ponse-aux-besoins-des-utilisateurs)
+
+[7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements (Principe&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-72-accepter-que-le-changement-est-in%C3%A9vitable-et-utiliser-des-strat%C3%A9gies-et-des-outils-adaptatifs-pour-de-nouveaux-d%C3%A9veloppements)
+
+[7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité (Principe&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-73-embrasser-et-r%C3%A9agir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilit%C3%A9)
+
+[7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération (Principe&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypoth%C3%A8ses-en-utilisant-les-preuves-comme-base-de-lit%C3%A9ration)
 
 ## 4.1 Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
 
@@ -207,67 +225,3 @@ Each service must have one person who has the authority and is responsibile for 
 ### Ressources similaires
 
 - [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
-
-## 4.6 Construire et maintenir une équipe multidisciplinaire expérimentée
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-Put in place a sustainable multidisciplinary team that can design, build and continuously improve the digital service, led by a skilled product manager who is empowered to make decisions.
-
-The team's skills and focus need to evolve as the service is designed and developed. The team also needs to adapt its structure based on the needs of the service and the phase of work.
-
-To be successful, build a team with:
-
-- a broad mix of skills and roles from the start
-
-- quick decision-making processes and the ability to change and adapt as the service evolves
-
-- the resources and ability to deliver the product
-
-**(Digital Service Standard (Ontario))**
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Employ people in the following roles on the delivery team: service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, front-end developer **(Digital Service Standard (UK))**
-
-- Have a manager with the ability to make day-to-day decisions to improve the service **(Digital Service Standard (Ontario))**
-
-- Make sure you have at least one user researcher working at least 3 days each week **(Digital Service Standard (UK))**
-
-- Make sure there is separation of key roles in the team, meaning that nobody is performing multiple roles **(Digital Service Standard (UK))**
-
-- Member(s) of the team have experience building popular, high-traffic digital services **(Digital Services Playbook (US)**)
-
-- Member(s) of the team have experience designing mobile and web applications **(Digital Services Playbook (US)**)
-
-- Member(s) of the team have experience using automated testing frameworks **(Digital Services Playbook (US)**)
-
-- Member(s) of the team have experience with modern development and operations (DevOps) techniques like continuous integration and continuous deployment **(Digital Services Playbook (US)**)
-
-- Member(s) of the team have experience securing digital services **(Digital Services Playbook (US)**)
-
-- Understand where gaps may emerge in the team and how to fill them **(Digital Service Standard (UK))
-
-- Plan to transfer knowledge and skills from contractors to permanent staff **(Digital Service Standard (UK))
-
-- Make sure there's a person on your team who's responsible for user research and usability tests **(Digital Service Standard (UK))**
-
-- Make sure you'll have a team that can keep improving the service after it goes live **(Digital Service Standard (UK))
-
-- Make sure the team fully understands the service after it's gone live **(Digital Service Standard (UK))**
-
-- Involve the maintenance team for the service early on in the project **(Digital Service Standard (Ontario))**
-
-### Guides d'implémentation
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-### Ressources similaires
-
-- [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
-
-- [2. Former une équipe adaptée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-3)
-
-- [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
