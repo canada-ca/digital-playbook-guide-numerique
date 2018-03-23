@@ -16,9 +16,27 @@
 
 **Related guidelines:**
 
-**[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
-
 [3.1 Empower multidisciplinary teams with diverse perspectives and skills (Principle&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-31-empower-multidisciplinary-teams-with-diverse-perspectives-and-skills)
+
+[3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners (Principle&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-32-recognize-that-an-organization-cant-have-all-the-best-ideas-create-partnerships-and-collaborate-with-a-diverse-range-of-partners)
+
+[3.3 Build the capacity to dynamically pull in new partners for co-innovation (Principle&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
+
+[5.4 Be transparent about how you work and justify the decisions you make (Principle&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
+
+[5.5 Work in the open and make source code open and reusable (Principle&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+
+[6.1 Leverage open standards and embrace leading practices (Principle&#160;6: Use open standards and solutions](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
+
+[6.2 Use and reuse common, proven government solutions, approaches, and platforms (Principle&#160;6: Use open standards and solutions](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
+
+[7.1 Build in an agile manner and continuously improve in response to user needs (Principle&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-71-build-in-an-agile-manner-and-continuously-improve-in-response-to-user-needs)
+
+[7.2 Accept that change is inevitable and use adaptive strategies and tools for new development (Principle&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-72-accept-that-change-is-inevitable-and-use-adaptive-strategies-and-tools-for-new-development)
+
+[7.3 Embrace and react to changes in the environment and design for sustainability (Principle&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-73-embrace-and-react-to-changes-in-the-environment-and-design-for-sustainability)
+
+[7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration (Principle&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
 
 ## 4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network
 
