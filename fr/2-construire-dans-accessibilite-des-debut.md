@@ -14,7 +14,19 @@
 
 **Lignes directrices connexes :**
 
-**\[TODO: Identifier les directives connexes au format \"\#.\# Nom de la ligne directrice (Principe \# : Nom du principe)\"\]**
+[1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu%C3%A9)
+
+[1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
+
+[1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-13-comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-con%C3%A7oivent-des-solutions-adapt%C3%A9es-%C3%A0-leurs-besoins)
+
+[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-%C3%AAtre-tout-quand-et-nimporte-quel-appareil)
+
+[1.6 Rendre les services simples, intuitifs et cohérents (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-16-rendre-les-services-simples-intuitifs-et-coh%C3%A9rents)
+
+[1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (Principe&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-18-soutenir-les-personnes-qui-ne-peuvent-pas-utiliser-les-services-num%C3%A9riques-par-leurs-propres-moyens)
+
+[8.4 Équilibrer les compromis entre innovation et inclusivité (Principe&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-%C3%89quilibrer-les-compromis-entre-innovation-et-inclusivit%C3%A9)
 
 ## 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
 
@@ -87,7 +99,20 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 ### Guides d'implémentation
 
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+- [Règles pour l'accessibilité des contenus Web (WCAG) 2.0](https://www.w3.org/Translations/WCAG20-fr/)
+    - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/) 
+    - [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
+    - [Techniques for WCAG 2.0 ](https://www.w3.org/TR/WCAG20-TECHS/)
+- [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+   - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
+   - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
+   - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
+- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
+- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
+- [Norme sur l'accessibilité des sites Web](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601)
+  - [Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp)
 
 ### Ressources similaires
 

@@ -14,7 +14,19 @@
 
 **Related guidelines:**
 
-**[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
+[1.1 Build nothing for the user, without the user being involved (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
+
+[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+
+[1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-13-understand-the-context-in-which-people-are-interacting-and-design-appropriate-solutions-that-meet-their-needs)
+
+[1.5 Provide services that can be obtained anytime, anywhere and on any device (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
+
+[1.6 Make services simple, intuitive and consistent (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
+
+[1.8 Support people who cannot use digital services on their own (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
+
+[8.4 Balance trade-offs between innovation and inclusiveness (Principle&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
 ## 2.1 Build for those with the greatest needs and it will work for everyone else (draft)
 
@@ -86,7 +98,20 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
+- [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
+    - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/) 
+    - [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
+    - [Techniques for WCAG 2.0 ](https://www.w3.org/TR/WCAG20-TECHS/)
+- [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+  - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
+  - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
+  - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
+- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
+- [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
+  - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
 
 ### Similar resources
 
