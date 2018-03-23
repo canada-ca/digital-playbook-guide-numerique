@@ -22,6 +22,8 @@
 
 [4.6 Build and maintain an experienced multidisciplinary team (Principle&#160;4: Empower staff to deliver better services)](4-empower-staff-deliver-better-services.md#user-content-46-build-and-maintain-an-experienced-multidisciplinary-team)
 
+[5.5 Work in the open and make source code open and reusable (Principle&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+
 ## 3.1 Empower multidisciplinary teams with diverse perspectives and skills
 
 **[TODO: Add/revise introductory text]**
