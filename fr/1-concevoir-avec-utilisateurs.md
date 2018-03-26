@@ -22,7 +22,27 @@
 
 **Lignes directrices connexes :**
 
-**\[TODO: Identifier les directives liées au format \"\#.\# Nom de la ligne directric (Principe \# : Nom du principe)\"\]**
+[2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde (Principe 2 : Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-21-construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
+
+[2.2 Les services devraient respecter ou dépasser les normes d'accessibilité et ne devraient pas être pénibles à utiliser (Principe 2 : Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-22-les-services-devraient-respecter-ou-dépasser-les-normes-daccessibilité-et-ne-devraient-pas-être-pénibles-à-utiliser)
+
+[2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début (Principe 2 : Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-23-co-créer-avec-des-personnes-ayant-des-besoins-distincts-en-étant-inclusif-dès-le-début)
+
+[2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services (Principe 2 : Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
+
+[3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires (Principe 3 : Collaborez largement)](3-collaborez-largement.md#user-content-32-reconnaître-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-idées-créer-des-partenariats-et-collaborer-avec-un-large-éventail-de-partenaires)
+
+[6.5 Concevoir, créer et tester des services numériques de bout en bout (Principe 6 : Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-65-concevoir-créer-et-tester-des-services-numériques-de-bout-en-bout)
+
+[7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs (Principe 7 : Itérer et améliorer fréquemment)](7-iterer-ameliorer-frequemment.md#user-content-71-construire-de-manière-agile-et-améliorer-continuellement-en-réponse-aux-besoins-des-utilisateurs)
+
+[7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération (Principe 7 : Itérer et améliorer fréquemment)](7-iterer-ameliorer-frequemment.md#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothèses-en-utilisant-les-preuves-comme-base-de-litération)
+
+[8.2 Évaluer l'impact total sur les utilisateurs et les communautés (Principe 8 : Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-82-Évaluer-limpact-total-sur-les-utilisateurs-et-les-communautés)
+
+[8.4 Équilibrer les compromis entre innovation et inclusivité (Principe 8 : Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-Équilibrer-les-compromis-entre-innovation-et-inclusivité)
+
+[10.1 Collecter les données une fois pour éviter la duplication (Principe 10 : Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-101-collecter-les-données-une-fois-pour-éviter-la-duplication)
 
 ## 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
 
