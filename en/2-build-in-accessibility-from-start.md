@@ -4,7 +4,7 @@
 
 **Guidelines:**
 
-[2.1 Build for those with the greatest needs and it will work for everyone else](#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else)
+[2.1 Build for those with the greatest needs and it will work for everyone else](#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else-draft)
 
 [2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use](#user-content-22-services-should-meet-or-exceed-accessibility-standards-and-should-not-feel-burdensome-to-use)
 
@@ -99,7 +99,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 ### Implementation guides
 
 - [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
-    - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/) 
+    - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
     - [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
     - [Techniques for WCAG 2.0 ](https://www.w3.org/TR/WCAG20-TECHS/)
 - [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
