@@ -4,7 +4,7 @@
 
 **Guidelines:**
 
-[2.1 Build for those with the greatest needs and it will work for everyone else](#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else-draft)
+[2.1 Build for those with the greatest needs and it will work for everyone else](#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else)
 
 [2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use](#user-content-22-services-should-meet-or-exceed-accessibility-standards-and-should-not-feel-burdensome-to-use)
 
@@ -28,7 +28,7 @@
 
 [8.4 Balance trade-offs between innovation and inclusiveness (Principle&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
-## 2.1 Build for those with the greatest needs and it will work for everyone else (draft)
+## 2.1 Build for those with the greatest needs and it will work for everyone else
 
 The Government of Canada is committed to ensuring that a high level of accessibility is applied uniformly across its service delivery channels. Technologies and standards are constantly evolving and accessibility plays a major role in making the Government of Canada more effective and inclusive. A more consistent, convenient, clear, and easy user experience when using government services online builds trust.
 

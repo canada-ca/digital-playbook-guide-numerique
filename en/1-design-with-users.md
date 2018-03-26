@@ -23,7 +23,7 @@
 
 **Related guidelines:**
 
-[2.1 Build for those with the greatest needs and it will work for everyone else (Principle 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else-draft)
+[2.1 Build for those with the greatest needs and it will work for everyone else (Principle 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else)
 
 [2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use (Principle 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-22-services-should-meet-or-exceed-accessibility-standards-and-should-not-feel-burdensome-to-use)
 
