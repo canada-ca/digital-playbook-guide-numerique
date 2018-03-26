@@ -18,9 +18,15 @@
 
 **Related guidelines:**
 
+[1.5 Provide services that can be obtained anytime, anywhere and on any device (Principle 1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
+
+[3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Principle 3: Collaborate widely)](3-collaborate-widely.md#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
+
 [5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Principle 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
 
-**[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
+[5.5 Work in the open and make source code open and reusable (Principle 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+
+[10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others (Principle 10: Be good data stewards)](10-be-good-data-stewards.md#user-content-103-ensure-that-data-is-collected-in-a-standard-way-so-that-it-can-easily-be-integrated-and-reused-by-others)
 
 ## 6.1 Leverage open standards and embrace leading practices
 
