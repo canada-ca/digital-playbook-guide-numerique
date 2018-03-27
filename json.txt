@@ -1,0 +1,6 @@
+{
+  "title": "Amazing new feature",
+  "body": "Please pull this in!",
+  "head": "gpatrick2:testing",
+  "base": "master"
+}
