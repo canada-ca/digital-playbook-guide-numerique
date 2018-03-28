@@ -176,6 +176,13 @@ It is essential that business processes be reviewed to identify opportunities to
 
 **[TODO: Add/revise introductory text]**
 
+Have you ever been to a restaurant and had your food come to the table either cold or the wrong meal delivered and then had the waitress or waiter bend over backwards to correct the situation (even if it wasn’t their fault)?  Many companies are spending more time training managers on how to “empower” their employees.  But what does empowerment really mean?
+According to Kinicki & Kreitner, empowerment is about “sharing degrees of power with lower-level employees to better serve the customer” (2008, p. 333).  To me, empowerment is about giving employees the permission to give customers priority and to use their creative talents to find solutions when issues arise, without having to run to management and ask for permission to do something.  Southwest Airlines is a good example of a company that highly empowers their employees and gives them great latitude to keep customers happy.
+
+Empowering employees isn’t easy though, because it requires that a company and their management be committed to continuous employee development.  It means fostering an environment of trust and helping employees learn from successes and analyze failures.
+
+Working to create an environment that empowers employees has been shown to not only increase customer satisfaction levels, but also improve employee morale.  It takes training, practice, and the ability to accept mistakes as a part of the learning process – but it is well worth the effort in the long run! **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
@@ -183,6 +190,18 @@ It is essential that business processes be reviewed to identify opportunities to
 - Ensure a strong governance approach is in place
 
 - Focus on innovation and sustainability
+
+- Share information:  Sharing information with employees is important because it not only helps to build trust; it gives employees important information that will allow them to make the best possible decisions in critical situations. **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
+
+- Create clear goals and objectives:  Be clear with your vision, goals/objectives, and roles.  This will help create the framework necessary to guide employees to make empowered decisions to keep customers happy. **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
+
+- Teach that it’s o.k. to make mistakes:  If you empower employees to make decisions that will help keep customers happy, then you have to be willing to allow them to make mistakes and learn from those mistakes.  Berating an employee who tried something new will only serve to keep others from trying new things. **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
+
+- Create an environment that celebrates both successes and failures:  Don’t just celebrate the successes, celebrate the employees who took a risk but maybe didn’t obtain the results intended but learned valuable lessons themselves and for the company. **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
+
+- Support a learning environment:  This is an ongoing process whereby teams look at various situations and discuss them together to determine how they might handle things differently in the future to achieve a different result.  This is really what our lives are all about...learning new things as we age, by analyzing the things we’ve done in the past. **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
+
+- Let teams become the hierarchy:  This occurs by slowly and carefully transferring responsibilities from managers to teams.  This can be a very scary and difficult process that takes time, training and a lot of persistence (Kinicki & Kreitner, 2008, p. 335).  It’s been my personal experience that this requires a lot of support time to the teams as they move from depending on a manager to make decisions to being autonomous. **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
 
 ### Implementation guides
 
