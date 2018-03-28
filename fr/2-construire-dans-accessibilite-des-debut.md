@@ -70,7 +70,6 @@ Le développement de services numériques accessibles (indépendamment de la cap
 - [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
-- [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
 - [Norme sur l'accessibilité des sites Web](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601)
   - [Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp)
@@ -130,7 +129,6 @@ If users find it difficult to complete the task the first time, they may avoid u
 - [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
-- [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
 - [Norme sur l'accessibilité des sites Web](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601)
   - [Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp)
@@ -143,13 +141,83 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
+Involving users early in projects helps you understand real-world accessibility issues, such as how people with disabilities and older people use the web with adaptive strategies and assistive technologies.
+
+Involving users early helps you implement more effective accessibility solutions. It also broadens your perspective in a way that can lead you to discover new ways of thinking about your product that will make it work better for more people in more situations.
+
+This applies when designing and developing:
+
+- Websites and web applications
+- Browsers, media players, and assistive technologies
+- Authoring tools such as content management systems (CMS), blog software, and WYSIWYG editors
+- Accessibility standards and policies
+- Web technologies and technical specifications, such as HTML
+
+**([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+#### Including Users to Understand the Issues **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+As early as possible in your project:
+- Learn the basics of how people with disabilities use the web by reading online resources and watching videos.
+- Find people with disabilities, with a range of characteristics. See Getting a Range of Users and Working with Users below.
+- Early on, learn about general issues related to what you are developing, e.g., websites, web tools, standards, or other products. Ask people to show you websites or related products that work well for them. Then, ask them to show you problems in products that do not work well. Ask lots of questions to help you understand the accessibility issues.
+
+#### Including Users in Implementation **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+For example, for websites, web applications, and web tools:
+- When you are considering a specific design aspect, such as expanding/collapsing navigation, find other products that are already doing it and have users explore with you what works well and what does not.
+- Throughout your design and development, ask users to review prototypes. Give them specific tasks to complete and see how the different aspects of the design and coding could be improved. Ask lots of questions.
+
+#### Carefully Consider Input **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+**Caution:** Carefully consider all input and **avoid assuming that input from one person with a disability applies to all people with disabilities((. A person with a disability does not necessarily know how other people with the same disability interact with the web, nor know enough about other disabilities to provide valid guidance on other accessibility issues. Getting input from a range of users is best.
+
+#### Getting a Range of Users **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+People with disabilities are as diverse as any people. They have diverse experiences, expectations, and preferences. They use diverse interaction techniques, adaptive strategies, and assistive technology configurations. People have different disabilities: auditory, cognitive, neurological, physical, speech, and visual — and some have multiple disabilities. Even within one category, there is extreme variation; for example, "visual disability" includes people who have been totally blind since birth, people who have distortion in their central vision from age-related degeneration, and people who temporarily have blurry vision from an injury or disease.
+
+Include users with a variety of disabilities and user characteristics. Most projects have limited time and budget and cannot include many different users. Selecting the optimum number of users with the best suited characteristics can be difficult. There are resources on the web that provide guidance on selecting participants with disabilities; for example, determining participant characteristicslinks off WAI website and finding participants with disabilitieslinks off WAI website.
+
+#### Users' Experience Interacting with the Web **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+A primary consideration in selecting users is their experience interacting with the web. For example, some assistive technologies (AT) are complicated and difficult to learn. A user with insufficient experience may not know how to use the AT effectively. On the other hand, a very advanced user might know uncommon work-arounds to overcome problems in a website that the "average" user would not be able to handle.
+
+In the early stages when you are first learning how people with disabilities interact with the web, it is usually best to get people with a fairly high experience level.
+
+#### Working with Users **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+Follow common practices for working with people informally and formally, for example:
+- Develop appropriate relationships with your users. For example, spending time talking informally over lunch may help you work together more comfortably.
+- Ensure informed consent and other research ethics. For example, participants in studies should be told that they are free to stop at any time.
+- Treat people with disabilities and older users with the respect you would any other users. For example, respect their time and provide appropriate compensation.
+
+#### Combine User Involvement with Standards **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+While including users with disabilities and older users with accessibility needs is key to making your accessibility efforts more effective and more efficient, that alone cannot address all issues. Even large projects cannot cover the diversity of disabilities, adaptive strategies, and assistive technologies. That is the role of accessibility standards.
+
+For websites and web applications, using comprehensive standards such as Web Content Accessibility Guidelines (WCAG) 2.0 helps ensure that you address all issues. Combine user involvement with evaluating conformance to WCAG to ensure that accessibility is provided to users with a range of disabilities and situations.
+For authoring tools such as content management systems (CMS), blog software, and WYSIWYG editors, follow Authoring Tool Accessibility Guidelines (ATAG).
+For browsers, media players, and other 'user agents', follow User Agent Accessibility Guidelines (UAAG).
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+- [Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving)
+- [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/Overview.html)
+  - [Initiate - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/initiate.html)
+  - [Plan - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/plan.html)
+  - [Implement - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/implement.html)
+  - [Sustain - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/sustain.html)
+- [Determining participant characteristics](http://www.uiaccess.com/accessucd/ut_plan.html#characteristics)
+- [Finding participants with disabilities](http://www.uiaccess.com/accessucd/ut_plan.html#recruiting)
+- [Involving Users in Evaluating Web Accessibility](https://www.w3.org/WAI/users/involving)
+- [Analyzing Accessibility Issues](http://www.w3.org/WAI/eval/users#analyz)
+- [Drawing Conclusions and Reporting](http://www.w3.org/WAI/eval/users#drawing)
+- [Interacting with People with Disabilities](http://uiaccess.com/accessucd/interact.html)
+- [Assistive Technology and Location](http://www.uiaccess.com/accessucd/involve.html#atloc)
+- [The RESPECT Code of Practice](http://www.respectproject.org/code/charm.php?id=)
+- [Just Ask: Integrating Accessibility Throughout Design](http://www.uiaccess.com/accessucd/overview.html)
+- [Incorporating Accessibility Early and Throughout](http://uiaccess.com/accessucd/early.html)
+- [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 
 ## 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
 
@@ -267,7 +335,6 @@ If users find it difficult to complete the task the first time, they may avoid u
 - [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
-- [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
 - [Norme sur l'accessibilité des sites Web](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601)
   - [Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp)
