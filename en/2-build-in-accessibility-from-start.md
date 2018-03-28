@@ -168,6 +168,7 @@ If users find it difficult to complete the task the first time, they may avoid u
   - write uninformative links and heading - for example, Click here
 
 #### Designing for users with low vision **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+
 - Do:
   - use good contrasts and a readable font size
   - publish all information on web pages (HTML)
@@ -182,6 +183,7 @@ If users find it difficult to complete the task the first time, they may avoid u
   - separate actions from their context
 
 #### Designing for users with physical or motor disabilities **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+
 - Do:
   - make large clickable actions
   - give form fields space
@@ -197,7 +199,8 @@ If users find it difficult to complete the task the first time, they may avoid u
   - View poster for physical or motor disabilities
 
 #### Designing for users who are D/deaf or hard of hearing **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
- - Do:
+
+- Do:
   - write in plain English
   - use subtitles or provide transcripts for video
   - use a linear, logical layout
@@ -211,6 +214,7 @@ If users find it difficult to complete the task the first time, they may avoid u
   - don't make telephone the only means of contact for users
 
 #### Designing for users with dyslexia **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+
 - Do:
   - use images and diagrams to support text
   - align text to the left and keep a consistent layout
