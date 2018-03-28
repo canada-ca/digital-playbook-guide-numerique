@@ -137,6 +137,106 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 **[TODO: Add/revise checklist items]**
 
+#### Designing for users on the autistic spectrum **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+
+- Do:
+  - use simple colours
+  - write in plain English
+  - use simple sentences and bullets
+  - make buttons descriptive - for example, Attach files
+  - build simple and consistent layouts
+- Don't:
+  - use bright contrasting colours
+  - use figures of speech and idioms
+  - create a wall of text
+  - make buttons vague and unpredictable - for example, Click here
+  - build complex and cluttered layouts
+  
+#### Designing for users of screen readers **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+
+- Do:
+  - describe images and provide transcripts for video
+  - follow a linear, logical layout
+  - structure content using HTML5
+  - build for keyboard use only
+  - write descriptive links and heading - for example, Contact us
+- Don't:
+  - only show information in an image or video
+  - spread content all over a page
+  - rely on text size and placement for structure
+  - force mouse or screen use
+  - write uninformative links and heading - for example, Click here
+
+#### Designing for users with low vision **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+- Do:
+  - use good contrasts and a readable font size
+  - publish all information on web pages (HTML)
+  - use a combination of colour, shapes and text
+  - follow a linear, logical layout -and ensure text flows and is visible when text is magnified to 200%
+  - put buttons and notifications in context
+- Don't:
+  - use low colour contrasts and small font size
+  - bury information in downloads
+  - only use colour to convey meaning
+  - spread content all over a page -and force user to scroll horizontally when text is magnified to 200%
+  - separate actions from their context
+
+#### Designing for users with physical or motor disabilities **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+- Do:
+  - make large clickable actions
+  - give form fields space
+  - design for keyboard or speech only use
+  - design with mobile and touch screen in mind
+  - provide shortcuts
+- Don't:
+  - demand precision
+  - bunch interactions together
+  - make dynamic content that requires a lot of mouse movement
+  - have short time out windows
+  - tire users with lots of typing and scrolling
+  - View poster for physical or motor disabilities
+
+#### Designing for users who are D/deaf or hard of hearing **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+ - Do:
+  - write in plain English
+  - use subtitles or provide transcripts for video
+  - use a linear, logical layout
+  - break up content with sub-headings, images and videos
+  - let users ask for their preferred communication support when booking appointments
+- Don't:
+  - use complicated words or figures of speech
+  - put content in audio or video only
+  - make complex layouts and menus
+  - make users read long blocks of content
+  - don't make telephone the only means of contact for users
+
+#### Designing for users with dyslexia **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+- Do:
+  - use images and diagrams to support text
+  - align text to the left and keep a consistent layout
+  - consider producing materials in other formats (for example, audio and video)
+  - keep content short, clear and simple
+  - let users change the contrast between background and text
+- Don't:
+  - use large blocks of heavy text
+  - underline words, use italics or write capitals
+  - force users to remember things from previous pages - give reminders and prompts
+  - rely on accurate spelling - use autocorrect or provide suggestions
+  - put too much information in one place
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+- [Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
+- [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
+    - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
+    - [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
+    - [Techniques for WCAG 2.0 ](https://www.w3.org/TR/WCAG20-TECHS/)
+- [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
+- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
+- [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
+  - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
+  
