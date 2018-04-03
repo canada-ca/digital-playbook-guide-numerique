@@ -196,8 +196,8 @@
 			</td>
 		</tr>
 		<tr>
-			<td rowspan="6">
-				<a href="4-empower-staff-deliver-better-services.md">Empower staff to deliver better services</a>
+			<td rowspan="5">
+				<a href="4-empower-staff-deliver-better-services.md">4.&#160;Empower staff to deliver better services</a>
 			</td>
 			<td>
 				<a href="4-empower-staff-deliver-better-services.md#user-content-41-provide-ongoing-training-and-learning-opportunities-to-continually-improve-the-skills-of-the-team-and-the-broader-network">4.1&#160;Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network</a>
