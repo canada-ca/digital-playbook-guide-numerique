@@ -14,7 +14,11 @@
 
 **Lignes directrices connexesv:**
 
-**\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
+[1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
+
+[3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation](3-collaborez-largement.md#user-content-33-renforcer-la-capacit%C3%A9-%C3%A0-attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
+
+[9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données](9-aborder-risques-securite-confidentialite.md#user-content-92-innover-et-sam%C3%A9liorer-tout-en-r%C3%A9pondant-aux-attentes-du-public-quant-%C3%A0-la-protection-de-la-confidentialit%C3%A9-des-donn%C3%A9es)
 
 ## 7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs
 
