@@ -162,6 +162,8 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 **[TODO: Add/revise implementation guide items]**
 
+- [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
+
 ## 6.4 Open up the data, transactions, and business rules that underpin a service
 
 **[TODO: Add/revise introductory text]**
@@ -173,6 +175,10 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+- [Open data](https://www.dta.gov.au/standard/design-guides/open-data/) **Digital Service Standard (AU)**
+
+- [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
 
 ## 6.5 Design, build and test end-to-end digital services
 
@@ -229,6 +235,8 @@ There are many potential benefits from the greater use of digital services, incl
 - [Deployment environments](https://www.gov.uk/service-manual/making-software/deployment.html) **(Digital Service Standard (UK))**
 
 - [Vulnerability and penetration testing](https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing) **(Digital Service Standard (UK))**
+
+- [Performance testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU))**
 
 ### Similar resources
 
