@@ -184,6 +184,20 @@ Making your source code open means:
 
 **(Digital Service Standard (UK))**
 
+Make all new source code open by default.
+
+It’s important to share your source code so others with a similar need can reuse it.
+
+Open source helps to:
+
+- reduce costs for your project and others’
+- avoid lock-in
+- stop duplication
+- increase transparency
+- add benefits, from improvements by other developers.
+
+**(Digital Service Standard (AU))**
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
@@ -208,6 +222,14 @@ Making your source code open means:
 
 - Determine how you're using code from other teams or services **(Digital Service Standard (UK))**
 
+- show that you have considered a plan to release it under a licence that is suitable for your service **(Digital Service Standard (AU))**
+
+- consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. **(Digital Service Standard (AU))**
+
+#### Beta stage
+
+- share your code in a repository **(Digital Service Standard (AU))**
+
 #### Live stage
 
 - Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
@@ -222,6 +244,12 @@ Making your source code open means:
 
 - Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
 
+- show how you are making new source code open and reusable, for example, storing in repositories, releasing code under licence, using APIs **(Digital Service Standard (AU))**
+
+- show how you have provided a plan or guidance for contributors **(Digital Service Standard (AU))**
+
+- show how you’re handling updates and bug fixes to the code. **(Digital Service Standard (AU))**
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -234,7 +262,14 @@ Making your source code open means:
 
 - [Code sharing](https://www.dta.gov.au/standard/design-guides/code-sharing/) **(Digital Service Standard (AU))**
 
+- [Choose an open source licence](https://choosealicense.com/) **(choosealicense.com)**
+
+- [Comparison of free and open-source software licences](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) **(Wikipedia)**
+
+- [Making source code open](https://www.dta.gov.au/blog/making-source-code-open/) **(DTA Blog (AU))**
+
 ### Similar resources
+
 - [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
 
 - [Open Culture - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/6_Open_Culture.md)
@@ -242,3 +277,6 @@ Making your source code open means:
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
+
+- [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
+
