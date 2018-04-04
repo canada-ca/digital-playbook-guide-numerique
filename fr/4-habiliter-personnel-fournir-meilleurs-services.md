@@ -66,6 +66,19 @@ Evaluating the tools and systems you use to build your service helps you to:
 
 **(Digital Service Standard (UK))**
 
+The technology you choose to build your service must help you respond quickly and regularly to the needs and expectations of users. This criterion ensures you:
+
+- consider all the risks and constraints associated with the technology you choose
+- avoid contracts that lock you into particular solutions and limit your ability to make decisions to improve the service
+- build a sustainable system that can be easily managed once live
+- identify the required infrastructure to successfully and continuously deliver the digital service
+- have a procurement approach that will not restrict, inhibit or limit ongoing and future service delivery
+- consider existing tools and systems and avoid unnecessary fragmentation and/or costs
+- consider appropriate tools and systems already in use in government
+- embed measurement tools at the start of development.
+
+**(Digital Service Standard (AU))**
+
 ### Liste de contrôle
 
 - **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -82,6 +95,24 @@ Evaluating the tools and systems you use to build your service helps you to:
 
 - Determine how you'll monitor the status of your service **(Digital Service Standard (UK))**
 
+- review the types of tools and systems already available **(Digital Service Standard (AU))**
+
+- identify potential development tools and software to build the product **(Digital Service Standard (AU))**
+
+- identify the appropriate languages, frameworks, and other technical choices that are required to build the product **(Digital Service Standard (AU))**
+
+- understand who will own the intellectual property **(Digital Service Standard (AU))**
+
+- understand any data requirements of the service **(Digital Service Standard (AU))**
+
+- understand the development tool chain required for Beta **(Digital Service Standard (AU))**
+
+- understand the existing IT systems, data stores and in-flight processes for the service **(Digital Service Standard (AU))**
+
+- understand any potential external dependencies or integrations that would be required to build the product **(Digital Service Standard (AU))**
+
+- know the initial and ongoing costs for proposed tools and systems. **(Digital Service Standard (AU))**
+
 #### Stage bêta
 
 - Determine how you're managing the limits placed on your service by the technology stack and development toolchain you've chosen **(Digital Service Standard (UK))**
@@ -93,6 +124,18 @@ Evaluating the tools and systems you use to build your service helps you to:
 - Document the support arrangements you have in place, in normal hours and out of hours **(Digital Service Standard (UK))**
 
 - Document any decisions you've outsourced to third parties and why you chose to do this **(Digital Service Standard (UK))**
+
+- manage any constraints that the chosen development tools and software have placed on the service **(Digital Service Standard (AU))**
+
+- have a strong rationale for the technology choices you’ve made, including the languages, frameworks and development tools **(Digital Service Standard (AU))**
+
+- procure the appropriate tools, systems and contractual arrangements and ensure you are getting value for money **(Digital Service Standard (AU))**
+
+- have the ability to conduct technical health checks of the service **(Digital Service Standard (AU))**
+
+- arrange for appropriate ongoing technical support and service level agreements for underlying or dependent services **(Digital Service Standard (AU))**
+
+- outsource decision-making about technology only where appropriate. **(Digital Service Standard (AU))**
 
 #### Stage en direct
 
@@ -108,13 +151,23 @@ Evaluating the tools and systems you use to build your service helps you to:
 
 - Document any decisions you've outsourced and why you chose to do this **(Digital Service Standard (UK))**
 
+- procedures for ongoing operations, including iterations, maintenance, monitoring, patching and upgrading system components **(Digital Service Standard (AU))**
+
+- funding to cover the long-term life of the product, including activities such as security accreditation **(Digital Service Standard (AU))**
+
+- evidence or artefacts that demonstrate you achieved the objective of the criteria for the Live stage. **(Digital Service Standard (AU))**
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+- [Australian Government ICT Policies, guide and procurement](http://www.finance.gov.au/policy-guides-procurement/whole-of-government-ict-policies/)
+
 ### Ressources similaires
 
 - [6. Evaluate tools and systems (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
+
+- [4. Understand tools and systems (Digital Service Standard (AU))](https://www.dta.gov.au/standard/4-tools-and-systems/)
 
 ## 4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
 
