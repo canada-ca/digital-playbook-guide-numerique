@@ -174,7 +174,9 @@ Start with a representation or prototype of the solution that will be tested and
   - <http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp>
   - <http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp>
 
-- [agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
+- [Agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
+
+- [Agile](https://www.dta.gov.au/standard/design-guides/agile/) **(Digital Service Standard (AU))**
 
 Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
 
@@ -316,6 +318,8 @@ You need to build a service which you can iterate and keep improving so that you
 - User centric design GC community of practice: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
   - <http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs>
   - <http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing>
+
+- [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU)**
 
 Find out more about:
 
