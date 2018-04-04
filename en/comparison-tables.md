@@ -412,9 +412,10 @@
 					<li>Agile -- Small chunks -- Iterate (GC EA Principles)</li>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/use-agile-methods">4.&#160;Use agile methods (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-9">8.&#160;Be agile and user-centred (Digital Service Standard (Ontario))</a></li>
-					<li><a href="https://playbook.cio.gov/#play4">4. Build the service using agile and iterative practices (Digital Services Playbook (US))</a></li>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually">3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.">3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="https://playbook.cio.gov/#play4">4.&#160;Build the service using agile and iterative practices (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/3-agile-and-user-centred/">3.&#160;Agile and user-centred process (Digital Service Standard (AU))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually">3.&#160;Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.">3.&#160;Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
