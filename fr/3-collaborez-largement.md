@@ -78,6 +78,10 @@ To be successful, build a team with:
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+- [Setting up the right team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team)
+
+- [The digital delivery team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/the-team/)
+
 ### Ressources similaires
 
 - [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)

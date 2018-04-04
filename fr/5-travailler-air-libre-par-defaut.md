@@ -54,6 +54,10 @@
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
+- [Open Data](https://www.dta.gov.au/standard/design-guides/open-data/) **Digital Service Standard (AU)**
+
+- [Statistical Data Integration](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/) **Digital Service Standard (AU)**
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -118,7 +122,9 @@ Setting performance indicators allows you to continuously improve your service b
 
 - [Sharing data on the Performance Platform](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Digital Service Standard (UK))**
 
-- [measuring success](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) **(Digital Service Standard (UK))**
+- [Measuring success](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) **(Digital Service Standard (UK))**
+
+- [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU))**
 
 ### Ressources similaires
 
@@ -217,6 +223,8 @@ All solutions must use open standards to ensure interoperability across the OneG
 - [Using open source software](https://www.gov.uk/service-manual/making-software/open-source.html) **(Digital Service Standard (UK))**
 
 - [Choosing technology: an introduction](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
+
+- [Code sharing](https://www.dta.gov.au/standard/design-guides/code-sharing/) **(Digital Service Standard (AU))**
 
 ### Ressources similaires
 - [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)

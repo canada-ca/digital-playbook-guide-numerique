@@ -42,6 +42,10 @@
 
 **[TODO: Add/revise implementation guide items]**
 
+- [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
+
+- [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
+
 ## 9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected
 
 **[TODO: Add/revise introductory text]**

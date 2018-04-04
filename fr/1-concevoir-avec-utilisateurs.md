@@ -380,6 +380,8 @@ Encouraging people to use digital service will:
 
 - [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 
+- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
+
 ## 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
@@ -419,6 +421,8 @@ You need to have a plan for what to do if your service goes offline so that you 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Keeping your service online](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Digital Service Standard (UK))**
+
+- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
 
 ### Ressources similaires
 
