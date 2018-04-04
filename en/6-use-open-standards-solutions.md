@@ -72,23 +72,23 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 - understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 
-- Alpha stage:
+#### Alpha stage
 
-  - build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
+- build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
   
-  - follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
+- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
   
-  - identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
+- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
   
-  - search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
+- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
 
-- Beta and live stages:
+#### Beta and live stages
 
-  - building using the Open Web Platform standards **(Digital Service Standard (AU))**
+- building using the Open Web Platform standards **(Digital Service Standard (AU))**
 
-  - avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
+- avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
 
-  - addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
+- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
 
 ### Implementation guides
 
