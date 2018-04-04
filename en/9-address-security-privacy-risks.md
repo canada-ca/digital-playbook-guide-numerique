@@ -14,7 +14,19 @@
 
 **Related guidelines:**
 
-**[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
+[1.5 Provide services that can be obtained anytime, anywhere and on any device](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
+
+[1.6 Make services simple, intuitive and consistent](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
+
+[1.7 Make it more convenient and practical to use digital services](1-design-with-users.md#user-content-17-make-it-more-convenient-and-practical-to-use-digital-services)
+
+[6.1 Leverage open standards and embrace leading practices](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
+
+[6.2 Use and reuse common, proven government solutions, approaches, and platforms](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
+
+[8.3 Comply with ethical guidelines in the design of automated systems](8-design-ethical-services.md#user-content-83-comply-with-ethical-guidelines-in-the-design-of-automated-systems)
+
+[8.4 Balance trade-offs between innovation and inclusiveness](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
 ## 9.1 Take a balanced approach to managing risk by implementing appropriate privacy and security measures
 
