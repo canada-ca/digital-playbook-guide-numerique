@@ -186,6 +186,19 @@ Users won't use your service unless you can guarantee:
 
 The following checklist provides a starting point, but teams should work closely with their privacy specialist and security engineer to meet the needs of the specific service.
 
+**Digital Service Standard (AU) (Make it secure):**
+
+Identify the data and information the service will use or create. Put appropriate legal, privacy and security measures in place.
+
+People who use government services must have confidence that:
+
+- any information they provide is confidential and stored appropriately
+- the system they’re using is safe and secure
+- they know how their information will be used by government
+- they can easily retrieve information they provide.
+
+If a service cannot guarantee confidentiality, integrity and availability of the system, people will not use it.
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
@@ -214,6 +227,37 @@ The following checklist provides a starting point, but teams should work closely
 
   - identify threats of fraud (fraud vectors) which exist and the controls to prototype to address them **(Digital Service Standard (UK))**
 
+  - identify secure and private methods of generating or processing data within or between datastores, the solution and users **(Digital Service Standard (AU))**
+
+  - identify appropriate authentication methods that are as seamless as possible to the user **(Digital Service Standard (AU))**
+
+  - understand to what degree the solution has to comply with the Information Security Manual and Protective Security Policy Framework, and internal agency security policies, and create a plan on how to achieve this **(Digital Service Standard (AU))**
+
+  - conduct a privacy impact assessment **(Digital Service Standard (AU))**
+
+  - conduct a threat and risk assessment, and an Information Security Registered Assessors Program Assessment (IRAP) if appropriate **(Digital Service Standard (AU))**
+
+  - identify potential threats to your service, including potential pathways for insider threats and hackers, and demonstrate an understanding of how to mitigate the identified threats. **(Digital Service Standard (AU))**
+
+  - map the systems, data and responsible agencies **(Digital Service Standard (AU))**
+
+  - understand what user data might be needed or collected by the service **(Digital Service Standard (AU))**
+
+  - understand what existing statistical datasets may be relevant to your service and the Australian Government principles on data integration **(Digital Service Standard (AU))**
+
+  - understand which data you collect is (and isn’t) personal information and how it might be stored, accessed and disseminated **(Digital Service Standard (AU))**
+
+  - involve relevant security professionals throughout the Alpha stage **(Digital Service Standard (AU))**
+
+  - understand the service requirements relating to **(Digital Service Standard (AU))**
+    - legal constraints
+    - records management
+    - privacy, including the Privacy Act and Australian Privacy Principles
+    - copyright and open licensing, including the principles on open public sector information, Australian Government intellectual property rules and Australia’s commitment to the Open Government Partnership
+    - the Freedom of Information Act
+    - the Spam Act
+    - state and territory government policies, if relevant.
+
 - Beta stage
 
   - determine your team's approach to security and risk management **(Digital Service Standard (UK))**
@@ -228,17 +272,56 @@ The following checklist provides a starting point, but teams should work closely
 
   - document your cookie and privacy policy and how you arrived at it **(Digital Service Standard (UK))**
 
+  - involve all relevant stakeholders within the project, including **(Digital Service Standard (AU))**
+    - business owners
+    - information risk and compliance teams
+    - SIRO (Senior Information Risk Owner)
+    - IAO (Information Asset Owner)
+    - IT security teams
+    - internal fraud teams, if appropriate
+
+  - address all legal and privacy issues associated with protecting and sharing user data **(Digital Service Standard (AU))**
+
+  - develop an appropriate cookie and privacy policy, and keep it up to date **(Digital Service Standard (AU))**
+
+  - create a solution to test and implement security patches quickly and efficiently **(Digital Service Standard (AU))**
+
+  - demonstrate that effective security controls are in place to protect data used or accessed by the solution **(Digital Service Standard (AU))**
+
+  - integrate into or create relevant security documentation **(Digital Service Standard (AU))**
+
+  - create a risk treatment plan to track risks and mitigations **(Digital Service Standard (AU))**
+
+  - test the security of the solution and address all vulnerabilities discovered **(Digital Service Standard (AU))**
+
+  - build detection and prevention mechanisms into the solution, including **(Digital Service Standard (AU))**
+    - incident response plan
+    - logging solution that can fully trace a user as they traverse each part of the system
+    - appropriate business rules that check the validity of interactions with the solution.
+
 - Live stage
 
   - determine your team's approach to security and risk management **(Digital Service Standard (UK))**
 
   - make sure there are ongoing interactions with the business and information risk teams, eg SIRO, IAO and data guardians **(Digital Service Standard (UK))**
 
-- identify any outstanding legal concerns, eg data protection or data sharing **(Digital Service Standard (UK))**
+  - identify any outstanding legal concerns, eg data protection or data sharing **(Digital Service Standard (UK))**
 
-- keep your understanding of the threats to your service up to date, and explain how the threats have changed during beta **(Digital Service Standard (UK))**
+  - keep your understanding of the threats to your service up to date, and explain how the threats have changed during beta **(Digital Service Standard (UK))**
 
-- keep your cookie policy and privacy policy up to date **(Digital Service Standard (UK))**
+  - keep your cookie policy and privacy policy up to date **(Digital Service Standard (UK))**
+
+  - manage frequent security updates **(Digital Service Standard (AU))**
+
+  - identify malicious or fraudulent activity **(Digital Service Standard (AU))**
+
+  - have appropriate policies in place to respond quickly to security events **(Digital Service Standard (AU))** 
+
+  - have the ability to integrate into existing security monitoring solutions **(Digital Service Standard (AU))**
+
+  - allow users to interact securely with the solution with minimal impact on user experience **(Digital Service Standard (AU))**
+
+  - have mitigated all known vulnerabilities in the solution. **(Digital Service Standard (AU))**
 
 ### Implementation guides
 
@@ -250,8 +333,15 @@ The following checklist provides a starting point, but teams should work closely
 
 - [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
 
+- [Identity assurance](https://www.dta.gov.au/standard/design-guides/identity-assurance/) **(Digital Service Standard (AU))**
+
+- [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
+
 ### Similar resources
 
 - [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 
 - [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
+
+- [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
+
