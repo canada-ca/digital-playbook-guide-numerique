@@ -3,6 +3,7 @@
 1. **TODO:** Digital Service Standard (UK) comparison table
 1. **TODO:** Digital Service Standard (Ontario) comparison table
 1. **TODO:** Digital Services Playbook (US) comparison table
+1. **TODO:** Digital Service Standard (AU) comparison table
 1. **TODO:** OneGC product design criteria (GC) comparison table
 1. **TODO:** Current GC EARB Principles (GC) comparison table
 1. **TODO:** Build It Digital Principles (GC) comparison table
@@ -57,6 +58,7 @@
 					<li><a href="https://www.gov.uk/service-manual/service-standard/understand-user-needs">1.&#160;Understand user needs (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-2">1.&#160;Understand users and their needs (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play1">1.&#160;Understand what people need (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/1-user-needs/">1.&#160;Understand user needs (Digital Service Standard (AU))</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs">1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
