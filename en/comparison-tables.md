@@ -145,6 +145,7 @@
 			<td>
 				<ul>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-8">7.&#160;Make it accessible (Digital Service Standard (Ontario))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/9-make-it-accessible/">9.&#160;Make it accessible (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
