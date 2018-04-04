@@ -52,6 +52,18 @@ Using open standards and common government platforms will help the government:
 
 **(Digital Service Standard (Ontario))**
 
+Build using open standards and common government platforms where appropriate.
+
+Using open standards and common government platforms helps you to:
+
+meet the needs of your users by building with proven solutions
+make users’ experience of government more consistent, which generates trust
+save time and money by reusing things that are already available
+be more efficient by sharing data appropriately
+move between different technologies when you need to, avoiding vendor lock-in.
+
+**(Digital Service Standard (AU))**
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -60,13 +72,39 @@ Using open standards and common government platforms will help the government:
 
 - understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 
+- Alpha stage:
+
+  - build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
+  
+  - follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
+  
+  - identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
+  
+  - search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
+
+- Beta and live stages:
+
+  - building using the Open Web Platform standards **(Digital Service Standard (AU))**
+
+  - avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
+
+  - addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Working with open standards](https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html) **(Digital Service Standard (UK))**
 
-- [technology for services](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
+- [Technology for services](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
+
+- [Australian Government ICT Policy Guides and Procurement](http://finance.gov.au/policy-guides-procurement/)
+
+- [W3C Standards](https://www.w3.org/standards/)
+  - [Web Design and ApplicationsW3C Web design standards](https://www.w3.org/standards/webdesign/) **(W3C)**
+  - [Web of Devices](https://www.w3.org/standards/webofdevices/) **(W3C)**
+
+- [OASIS Standards](https://www.oasis-open.org/standards)
 
 ### Ressources similaires
 - [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
@@ -74,6 +112,8 @@ Using open standards and common government platforms will help the government:
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 
 - [9. Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-10)
+
+- [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 
 ## 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
 
