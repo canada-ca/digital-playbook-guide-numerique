@@ -14,8 +14,6 @@
 
 **Related guidelines:**
 
-**[TODO: Identify related guidelines in format "\#.\# Guideline name (Principle #: Principle name)"]**
-
 [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
 
 [1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs](1-design-with-users.md#user-content-13-understand-the-context-in-which-people-are-interacting-and-design-appropriate-solutions-that-meet-their-needs)
