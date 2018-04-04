@@ -14,7 +14,19 @@
 
 **Lignes directrives connexes :**
 
-**\[TODO: Identifier les directives connexes au format \"\# . \# Nom de la ligne directrice (Principe \#: Nom du principe)\"\]**
+[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-%C3%AAtre-tout-quand-et-nimporte-quel-appareil)
+
+[1.6 Rendre les services simples, intuitifs et cohérents](1-concevoir-avec-utilisateurs.md#user-content-16-rendre-les-services-simples-intuitifs-et-coh%C3%A9rents)
+
+[1.7 Rendre plus pratique et pratique l'utilisation des services numériques](1-concevoir-avec-utilisateurs.md#user-content-17-rendre-plus-pratique-et-pratique-lutilisation-des-services-num%C3%A9riques)
+
+[6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires](6-utiliser-standards-solutions-ouverts.md#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+
+[6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées](6-utiliser-standards-solutions-ouverts.md#user-content-62-utiliser-et-r%C3%A9utiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-%C3%A9prouv%C3%A9es)
+
+[8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés](8-concevoir-services-ethiques.md#user-content-83-se-conformer-aux-directives-%C3%A9thiques-dans-la-conception-de-syst%C3%A8mes-automatis%C3%A9s)
+
+[8.4 Équilibrer les compromis entre innovation et inclusivité](8-concevoir-services-ethiques.md#user-content-84-%C3%89quilibrer-les-compromis-entre-innovation-et-inclusivit%C3%A9)
 
 ## 9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées
 
