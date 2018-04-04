@@ -260,6 +260,30 @@ There are many potential benefits from the greater use of digital services, incl
 
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
+#### Alpha stage
+
+- test your prototypes with users. **(Digital Service Standard (AU))**
+
+#### Beta and live stages
+
+- show the steps required to achieve an end-to-end service delivery outcome for the user **(Digital Service Standard (AU))**
+
+- show the testing environment; using test plans, real world scenarios and user stories **(Digital Service Standard (AU))**
+
+- show the deployment environment **(Digital Service Standard (AU))**
+
+- show ability to create new environments quickly and easily **(Digital Service Standard (AU))**
+
+- show that your service can perform under expected loads with suitable scale contingencies **(Digital Service Standard (AU))**
+
+- show you understand the systems you need and the testing environments for non-digital parts of the service **(Digital Service Standard (AU))**
+
+- show that users can seamlessly move between channels as required **(Digital Service Standard (AU))**
+
+- show how you explored integrating automated testing into the deployment process **(Digital Service Standard (AU))**
+
+-show you have a business continuity plan and a roll-back option. **(Digital Service Standard (AU))**
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -268,7 +292,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 - [Designing for different browsers and devices](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices) **(Digital Service Standard (UK))**
 
-- [Performance testing](https://www.gov.uk/service-manual/technology/test-your-services-performance) **(Digital Service Standard (UK))**
+- [Test your service's performance](https://www.gov.uk/service-manual/technology/test-your-services-performance) **(Digital Service Standard (UK))**
 
 - [Exploratory testing](https://www.gov.uk/service-manual/technology/exploratory-testing) **(Digital Service Standard (UK))**
 
@@ -291,6 +315,8 @@ There are many potential benefits from the greater use of digital services, incl
 - [6. Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
 
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
+
+- [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
 
 ## 6.6 Cloud first
 
