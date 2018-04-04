@@ -26,7 +26,7 @@
 
 [2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use](2-build-in-accessibility-from-start.md#user-content-22-services-should-meet-or-exceed-accessibility-standards-and-should-not-feel-burdensome-to-use)
 
-[2.4 Take into consideration a user's possible constraints when designing services]2-build-in-accessibility-from-start.md#user-content-24-take-into-consideration-a-users-possible-constraints-when-designing-services)
+[2.4 Take into consideration a user's possible constraints when designing services](2-build-in-accessibility-from-start.md#user-content-24-take-into-consideration-a-users-possible-constraints-when-designing-services)
 
 [5.2 Be transparent with goals and publish real-time performance data](5-work-in-open-by-default.md#user-content-52-be-transparent-with-goals-and-publish-real-time-performance-data)
 
