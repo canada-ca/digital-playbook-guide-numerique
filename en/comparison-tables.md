@@ -215,6 +215,7 @@
 			<td>
 				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems">6.&#160;Evaluate tools and systems (Digital Service Standard (UK))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/4-tools-and-systems/">4.&#160;Understand tools and systems (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
