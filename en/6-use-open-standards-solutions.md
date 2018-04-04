@@ -278,6 +278,10 @@ There are many potential benefits from the greater use of digital services, incl
 
 - [Performance testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU))**
 
+- [Testing your service](https://www.gov.uk/service-manual/technology#testing-your-service) **(Service Manual (UK)**
+
+- [Testing Cookbook](https://testing-cookbook.18f.gov/) **(18F (US))**
+
 ### Similar resources
 
 - [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
