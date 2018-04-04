@@ -78,7 +78,9 @@ To be successful, build a team with:
 
 **[TODO: Add/revise implementation guide items]**
 
-- [setting up the right team](https://www.gov.uk/service-manual/the-team) **(Digital Service Standard (UK))**
+- [Setting up the right team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team)
+
+- [The digital delivery team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/the-team/)
 
 ### Similar resources
 
