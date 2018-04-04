@@ -86,7 +86,14 @@ All users should be able to complete the service the first time they try, as qui
 
 This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can't use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person.
 
-If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. **(Digital Service Standard (Ontario))**)
+If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. **(Digital Service Standard (Ontario))**
+
+Ensure the service is accessible to all users regardless of their ability and environment.
+
+You need to make sure everyone who needs your service can use it. This includes people with disabilities and older people, and people who can’t use, or struggle with, digital services.
+
+Your service must be accessible to users regardless of their digital confidence and access to a digital environment. This includes users in remote areas and users’ different devices. **(Digital Service Standard (AU))**
+
 
 ### Liste de contrôle
 
@@ -116,6 +123,69 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
+#### Stade alpha
+
+- show the type of environments users may access the service in, including with different browsers and desktop and mobile devices, and when connections are slower and there may be limited data; for example, through user stories **(Digital Service Standard (AU))**
+
+- show diversity in research recruitment and targeted users, including people from different cultural backgrounds and people with disability **(Digital Service Standard (AU))**
+
+- show consideration of situational and environmental limitations that affect a user’s ability to access the product **(Digital Service Standard (AU))**
+
+- show the plan to meet accessibility requirements in the design of the product, for example how it will meet WCAG 2.0 AA **(Digital Service Standard (AU))**
+
+- show what digital assistance might be needed to support users; for example web chat, telephone assistance, face-to-face, clear instructions, checklists, and so on. **(Digital Service Standard (AU))**
+
+- show your prototypes can accommodate users from different backgrounds and users with disability **(Digital Service Standard (AU))**
+
+- show any accessibility issues and barriers that might need addressing in the Beta stage **(Digital Service Standard (AU))**
+
+- show you have access to facilities to perform testing on various devices or platforms, for example a plan for testing. **(Digital Service Standard (AU))**
+
+#### Stade bêta
+
+- show iteration in the design and content of your service to meet accessibility requirements and improve usability for people with disability **(Digital Service Standard (AU))**
+
+- show non-digital access and support for people unable to use, or struggling with, the digital service
+
+- show end-to-end user journeys, including assisted digital journeys, and demonstrate that they work and how you tested them **(Digital Service Standard (AU))**
+
+- show how you’ve included cultural and linguistically diverse communities in your design **(Digital Service Standard (AU))**
+
+- show a plan to include translation for non-English speaking audiences, as appropriate **(Digital Service Standard (AU))**
+
+- show you have testing environments, systems and approaches for non-digital parts of the service (including assisted digital routes); for example, a testing plan **(Digital Service Standard (AU))**
+
+- show how the service will perform under expected loads (including assisted digital routes) **(Digital Service Standard (AU))**
+
+- show strong understanding of the environments your users may access the service in, for example which browsers, desktop and mobile devices they will use, and which remote locations; you might use user stories and a journey map to show this **(Digital Service Standard (AU))**
+
+- show definition of supported browsers and devices, and how they are accommodated **(Digital Service Standard (AU))**
+
+- show any barriers to the digital service and its content on mobile devices, and plans to address them **(Digital Service Standard (AU))**
+
+- show the design requirements for users using a mobile device and other identified environments, for example design specifications **(Digital Service Standard (AU))**
+
+- show how you have tested for the users’ ability to complete all digital transactions on supported devices and platforms **(Digital Service Standard (AU))**
+
+- show detail of users’ interactions with the product during testing **(Digital Service Standard (AU))**
+
+- show a demonstration your service in a live-like environment **(Digital Service Standard (AU))**
+
+- show the majority of users can access the service in their environment. **(Digital Service Standard (AU))**
+
+#### Stade en-direct
+
+- show your service is accessible **(Digital Service Standard (AU))**
+
+- show evidence of usability testing, including **(Digital Service Standard (AU))**
+  - users with low level digital skills
+  - people with disability
+  - people from different cultural and linguistic backgrounds
+
+- a run through of how you’ve designed and tested for users of assistive technologies based on user research, usability testing and analytics **(Digital Service Standard (AU))**
+
+- show ongoing testing plans for accessibility so that your users can continue to access the service. **(Digital Service Standard (AU))**
+
 ### Guides d'implémentation
 
 - [Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
@@ -136,10 +206,16 @@ If users find it difficult to complete the task the first time, they may avoid u
 - [Norme sur l'accessibilité des sites Web](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601)
   - [Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp)
 - [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
+- [Inclusive services](https://www.dta.gov.au/standard/design-guides/inclusive-services/) **(Digital Service Standard (AU))**
+- [18F Accessibility Guide](https://accessibility.18f.gov/index.html) **(US)**
+- [The A11y Project](https://a11yproject.com/)
+- [Making your service accessible](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction) **(Service Manual (UK))**
 
 ### Ressources similaires
 
 - [7. Rendre le service accessible (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-8)
+
+- [9. Make it accessible (Digital Service Standard (AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
 
 ## 2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début
 
