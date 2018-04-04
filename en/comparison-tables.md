@@ -3,6 +3,7 @@
 1. **TODO:** Digital Service Standard (UK) comparison table
 1. **TODO:** Digital Service Standard (Ontario) comparison table
 1. **TODO:** Digital Services Playbook (US) comparison table
+1. **TODO:** Digital Service Standard (AU) comparison table
 1. **TODO:** OneGC product design criteria (GC) comparison table
 1. **TODO:** Current GC EARB Principles (GC) comparison table
 1. **TODO:** Build It Digital Principles (GC) comparison table
@@ -57,6 +58,7 @@
 					<li><a href="https://www.gov.uk/service-manual/service-standard/understand-user-needs">1.&#160;Understand user needs (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-2">1.&#160;Understand users and their needs (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play1">1.&#160;Understand what people need (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/1-user-needs/">1.&#160;Understand user needs (Digital Service Standard (AU))</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs">1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
@@ -93,7 +95,8 @@
 					<li><a href="https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk">13.&#160;Make the user experience consistent with GOV.UK (Digital Service Standard (UK))</a>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-4">3.&#160;Be consistent (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-6">5.&#160;Ensure users succeed the first time (Digital Service Standard (Ontario))</a></li>
-					<li><a href="https://playbook.cio.gov/#play3">3.&#160;Make it simple and intuitive  (Digital Services Playbook (US))</a></li>
+					<li><a href="https://playbook.cio.gov/#play3">3.&#160;Make it simple and intuitive (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/6-consistent-and-responsive/">6.&#160;Consistent and responsive design (Digital Service Standard (AU))</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
@@ -107,6 +110,8 @@
 				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service">14.&#160;Encourage everyone to use the digital service (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-12">11.&#160;Encourage everyone to use the digital service (Digital Service Standard (Ontario))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/12-non-digital-experience/">12.&#160;Don’t forget the non-digital experience (Digital Service Standard (AU))</a><li>
+					<li><a href="https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/">13.&#160;Encourage everyone to use the digital service (Digital Service Standard (AU))</a><li>
 				</ul>
 			</td>
 		</tr>
@@ -142,6 +147,7 @@
 			<td>
 				<ul>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-8">7.&#160;Make it accessible (Digital Service Standard (Ontario))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/9-make-it-accessible/">9.&#160;Make it accessible (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -171,6 +177,7 @@
 					<li><a href="https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team">Have a multidisciplinary team (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-3">2.&#160;Establish the right team (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play7">7.&#160;Bring in experienced teams (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/2-multidisciplinary-team/">2.&#160;Have a multidisciplinary team (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -212,6 +219,7 @@
 			<td>
 				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems">6.&#160;Evaluate tools and systems (Digital Service Standard (UK))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/4-tools-and-systems/">4.&#160;Understand tools and systems (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -297,8 +305,9 @@
 					<li>Open By Default, Proprietary by Necessity (Current GC EARB Principles)</li>
 					<li>3. Open Source (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md">Open Source Code - Open First Whitepaper (GC)</a></li>
-					<li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">[8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
+					<li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
 					<li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/8-make-source-code-open/">8.&#160;Make source code open (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -317,7 +326,8 @@
 					<li>9. Exponential Tech (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md">Open Standards - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms">9.&#160;Use open standards and common platforms (Digital Service Standard (UK))</a></li>
-					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-10">9. Use open standards and common platforms (Digital Service Standard (Ontario)&#160;</a></li>
+					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-10">9.&#160;Use open standards and common platforms (Digital Service Standard (Ontario)</a></li>
+					<li><a href="https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/">7.&#160;Use open standards and common platforms (Digital Service Standard (AU)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -334,8 +344,8 @@
 					<li>Technology Debt Managed (Current GC EARB Principles)</li>
 					<li>Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)</li>
 					<li>Architecturally Fit for the GC Enterprise (GC EA Principles)</li>
-					<li>6. Digital Principles (Architectural Commandments (initial thoughts))</li>
-					<li>7. GC Standards (Architectural Commandments (initial thoughts))</li>
+					<li>6.&#160;Digital Principles (Architectural Commandments (initial thoughts))</li>
+					<li>7.&#160;GC Standards (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/3_Open_Source_Software.md">Open Source Software - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://playbook.cio.gov/#play8">8.&#160;Choose a modern technology stack (Digital Services Playbook (US))</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives">1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
@@ -379,6 +389,7 @@
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-5">4.&#160;Design the service from start to finish (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-7">6.&#160;Test the end-to-end service (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play10">10.&#160;Automate testing and deployments (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/10-test-the-service/">10.&#160;Test the service (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -409,9 +420,10 @@
 					<li>Agile -- Small chunks -- Iterate (GC EA Principles)</li>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/use-agile-methods">4.&#160;Use agile methods (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-9">8.&#160;Be agile and user-centred (Digital Service Standard (Ontario))</a></li>
-					<li><a href="https://playbook.cio.gov/#play4">4. Build the service using agile and iterative practices (Digital Services Playbook (US))</a></li>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually">3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
-					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.">3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="https://playbook.cio.gov/#play4">4.&#160;Build the service using agile and iterative practices (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/3-agile-and-user-centred/">3.&#160;Agile and user-centred process (Digital Service Standard (AU))</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually">3.&#160;Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.">3.&#160;Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -485,7 +497,7 @@
 			<td>
 				<ul>
 					<li>Use appropriate level of security (Build it Digital Principles (initial thoughts))</li>
-					<li>10. Cyber Signoff (Architectural Commandments (initial thoughts))</li>
+					<li>10.&#160;Cyber Signoff (Architectural Commandments (initial thoughts))</li>
 				</ul>
 			</td>
 		</tr>
@@ -510,7 +522,7 @@
 					<li>Provide common identity & Access management across all systems (Build it Digital Principles (initial thoughts))</li>
 					<li>Secure by Design (Current GC EARB Principles)</li>
 					<li>Secure by Design (GC EA Principles)</li>
-					<li>8. Trust Framework (Architectural Commandments (initial thoughts))</li>
+					<li>8.&#160;Trust Framework (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-11">10.&#160;Embed privacy and security by design (Digital Service Standard (Ontario))</a></li>
 				</ul>
 			</td>
@@ -523,6 +535,7 @@
 				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues">7.&#160;Understand security and privacy issues (Digital Service Standard (UK))</a></li>
 					<li><a href="https://playbook.cio.gov/#play11">11.&#160;Manage security and privacy through reusable processes (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/5-make-it-secure/">5.&#160;Make it secure (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -558,6 +571,7 @@
 				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/collect-performance-data">15.&#160;Collect performance data (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-14">13.&#160;Measure performance (Digital Service Standard (Ontario))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/11-measure-performance/">11.&#160;Measure performance (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>

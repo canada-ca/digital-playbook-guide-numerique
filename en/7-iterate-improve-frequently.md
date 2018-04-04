@@ -62,6 +62,12 @@ Agile methods build services that:
 
 **Digital Service Playbook (US):** We should use an incremental, fast-paced style of software development to reduce the risk of failure. We want to get working software into users' hands as early as possible to give the design and development team opportunities to adjust based on user feedback about the service. A critical capability is being able to automatically test and deploy the service so that new features can be added often and be put into production easily.
 
+**Digital Service Standard (AU):** Design and build the service using the service design and delivery process, taking an agile and user-centred approach.
+
+Designing services in a user-centred way means that the services you deliver will be easy to use and convenient for the people who need to use them, helping them to stay in the digital channel.
+
+Designing using agile methods allows you to be more proactive and respond easily to change, both in technology and government policy. Services should be improved frequently; they will be cheaper and more accountable to users.
+
 **3. Review and improve services continually (Think - Digital Design Playbook (ISED)):** The [TBS Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916) and the [TBS Management Accountability Framework (MAF)](http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp) require regular reviews of priority services in order to identify opportunities for service redesign." By reviewing services regularly, service providers can ensure that services continue to be relevant, effective and efficient, and deliver best value to clients.
 
 Use quantitative and qualitative data to help with regular reviews of your service. User needs and technology evolve. There will always be room for improvement.
@@ -73,6 +79,24 @@ Start with a representation or prototype of the solution that will be tested and
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+- Alpha stage:
+
+  - test hypotheses and underlying assumptions with several prototypes **(Digital Service Standard (AU))
+
+  - follow a user-centred approach; include the user in all areas of the prototyping (design, iterations and so on) **(Digital Service Standard (AU))
+
+  - work out incrementally what is the “right thing to build” **(Digital Service Standard (AU))
+
+  - determine the minimum viable product (MVP). **(Digital Service Standard (AU))
+
+- Beta and live stages:
+
+  - show how the service has responded to user research and usability testing **(Digital Service Standard (AU))
+
+  - clearly describe the lifecycle of a user story, from user research to production **(Digital Service Standard (AU))
+
+  - explain the deployment process and how you are able to support frequent deployments with minimal impact to users. **(Digital Service Standard (AU))
 
 - Alpha, beta and live stages:
 
@@ -147,6 +171,14 @@ Start with a representation or prototype of the solution that will be tested and
 
 - Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
+  
+- work in an agile way, based on agile values and principles, and using agile tools and techniques **(Digital Service Standard (AU))**
+
+- review and iterate your processes to be able to respond to feedback, continue to improve and adapt to change **(Digital Service Standard (AU))**
+
+- be able to demonstrate how your team uses agile tools and techniques to communicate with each other to increase collaboration and transparency **(Digital Service Standard (AU))**
+
+- be able to show that your governance is appropriate to the size and scale of your service, and that it is human-centred, based on clear and measurable goals, with a clear focus on managing change and risk in real time. **(Digital Service Standard (AU))**
 
 ### Implementation guides
 
@@ -176,10 +208,21 @@ Start with a representation or prototype of the solution that will be tested and
 
 - [Agile](https://www.dta.gov.au/standard/design-guides/agile/) **(Digital Service Standard (AU))**
 
-Inspiration Examples: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+- [Service design and delivery process](https://www.dta.gov.au/standard/service-design-and-delivery-process/) **(Digital Service Standard (AU))**
 
-- [Is your project using "agilefall"?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
-- [Agile Manifesto](http://agilemanifesto.org/principles.html)
+- [Manifesto for Agile Software Development](http://agilemanifesto.org/) **(agilemanifesto.org)**
+
+- [Method Cards](https://methods.18f.gov/) **(18F (US))**
+
+- [Is your project using ‘agilefall’?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)  **(18F (US))**
+
+- [Agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques) **(Service Manual (UK))**
+
+- [Agile methods: an introduction](https://www.gov.uk/service-manual/agile-delivery/agile-methodologies) **(Service Manual (UK))**
+
+- [How to be agile in an non-agile environment](https://gds.blog.gov.uk/2015/10/09/how-to-be-agile-in-a-non-agile-environment/) **(Government Digital Service Blog (UK))**
+
+- [You can’t be half agile](https://gds.blog.gov.uk/2015/07/10/you-cant-be-half-agile/) **(Government Digital Service Blog (UK))**
 
 ### Similar ressources
 
@@ -313,21 +356,23 @@ You need to build a service which you can iterate and keep improving so that you
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Gov.UK Test your service’s performance]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [Test your service's performance](https://www.gov.uk/service-manual/technology/test-your-services-performance) **(Service Manual (UK))**
 
-- [Gov.UK Testing your service regularly]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [Quality assurance: testing your service regularly](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly) **(Service Manual (UK))**
 
-- [Gov.UK Exploratory Testing]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [Exploratory Testing](https://www.gov.uk/service-manual/technology/exploratory-testing) **(Service Manual (UK))**
 
-- [18F Testing Cookbook]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [Testing Cookbook](https://pages.18f.gov/testing-cookbook/go/) **(18F (US))**
 
-- [26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [TBITS 26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=17283)
 
 - User centric design GC community of practice: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
   - <http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs>
   - <http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing>
 
 - [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU)**
+
+- [Testing your service](https://www.gov.uk/service-manual/technology#testing-your-service) **(Service Manual (UK)**
 
 Find out more about:
 

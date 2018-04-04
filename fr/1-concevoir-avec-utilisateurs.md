@@ -146,6 +146,16 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 - Identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
 
+- **Who are the users?** What about their motivations, triggers, contexts are significant for your service? How can you find them to invite them to participate in user research? You must include users with varying needs (such as needs arising from disability, cultural diversity, literacy and remoteness). Consider all the users in the service including end users, users in government who are delivering the service, and key intermediaries (professional and personal network) **(Digital Service Standard (AU))**
+
+- **What is the real task(s) that people are trying to achieve** when they encounter your service. What is the ‘job’ people are trying to get done that your service is a part of? (You need to describe this in words that real end users would use, not using government terminology) **(Digital Service Standard (AU))**
+
+- **How are users currently doing the task** your service aims to help them do and key touch points, for example through journey maps. What other relevant government and non-government services are also in use at this time? Where are the pain points in the current experience? **(Digital Service Standard (AU))**
+
+- **What are the user needs?** What are the opportunities to remove or reduce the pain points? How might we better meet the user needs? (Demonstrate this through research, testing and validating possible solutions with prototypes) **(Digital Service Standard (AU))**
+
+- **Are you designing the right thing?** How have your insights from user research helped you to define your minimum viable product (MVP)? How does the MVP create value for users and government by better meeting user needs? **(Digital Service Standard (AU))**
+
 #### Stage bêta
 
 - Research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
@@ -164,11 +174,29 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 - Document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
 
+- Greater depth and diversity of knowledge on all of the points above from Alpha **(Digital Service Standard (AU))**
+
+- **How has your service been shaped by user needs?** Show how you have made changes in the service and interaction design in response to user research and usability testing. You can evidence this by showing how the design has changed over time and the appropriate research findings that have driven this change **(Digital Service Standard (AU))**
+
+- **How you tested the system in the users’ context with a full range of users** (including users with varying needs). You can evidence this with artefacts of research, for example, video clips and outcomes from research analysis **(Digital Service Standard (AU))**
+
+- **Are you prepared for ongoing user research?** Show how you plan to continue to test the system with users and the resources for this, for example through an ongoing research plan and budget **(Digital Service Standard (AU))**
+
+- **What have you not solved yet?** What the significant design challenges are, for example through key insights, how have you approached them? How do you plan to continue to tackle them? **(Digital Service Standard (AU))**
+
+- **How will you know if your design is working?** Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs **(Digital Service Standard (AU))**
+
 #### Stage en direct
 
 - Use research and testing results to continuously improve the service **(Digital Service Standard (Ontario))**
 
 - Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))
+
+- Be able to show greater depth of knowledge for all the points above (from Alpha/Beta) **(Digital Service Standard (AU))**
+
+- **Show how you are using data from real use** to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users **(Digital Service Standard (AU))**
+
+- Know how you will measure and monitor your service to ensure it is serving its users well **(Digital Service Standard (AU))**
 
 ### Guides d'application
 
@@ -180,11 +208,35 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 - [Introduction to User-centred Design](http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/)
 
-- [User Research Skills](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team)
+- [User Research Skills](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team) **(Digital Service Standard (UK))**
 
-- [How Users Read](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read)
+- [How Users Read](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read) **(Writing for GOV.UK)**
 
-- [Designing government services](https://www.gov.uk/service-manual/design/introduction-designing-government-services)
+- [Designing government services](https://www.gov.uk/service-manual/design/introduction-designing-government-services) **(Digital Service Standard (UK))**
+
+- [DTA Guide to Discovery](https://ausdto.github.io/service-handbook/discovery/) **(Service Handbook (AU))**
+
+- [DTA Guide to Alpha](http://ausdto.github.io/service-handbook/alpha/) **(Service Handbook (AU))**
+
+- [Doing user research in the discovery phase](https://userresearch.blog.gov.uk/2015/05/27/doing-user-research-in-the-discovery-phase/) **(Government Digital Service Blog (UK))**
+
+- [Understanding the problem is key to fixing it](https://userresearch.blog.gov.uk/2016/01/12/understanding-the-problem-is-key-to-fixing-it/) **(Government Digital Service Blog (UK))**
+
+- [Users research not just usability](https://userresearch.blog.gov.uk/2014/06/25/user-research-not-just-usability/) **(Government Digital Service Blog (UK))**
+
+- [User research for government services 8 strategies that worked for us](https://userresearch.blog.gov.uk/2015/01/21/user-research-for-government-services-8-strategies-that-worked-for-us/) **(Government Digital Service Blog (UK))**
+
+- [How we do user research in agile teams](https://gds.blog.gov.uk/2013/08/30/how-we-do-user-research-in-agile-teams/) **(Government Digital Service Blog (UK))**
+
+- [Including users with low digital skills in user research](https://userresearch.blog.gov.uk/2014/08/20/including-users-with-low-digital-skills-in-user-research/) **(Government Digital Service Blog (UK))**
+
+- [Using prototypes in user research](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/) **(Government Digital Service Blog (UK))**
+
+- [How designers prototype at GDS](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/) **(Government Digital Service Blog (UK))**
+
+- [Method Cards](https://methods.18f.gov/index.html) **(18F (US))**
+
+- [Evangelising user research](https://medium.com/@userfocus/evangelising-user-research-849430701b6e) **(David Travis (Medium.com))**
 
 ### Ressources similaires
 
@@ -193,6 +245,8 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - [1. Comprendre les utilisateurs et leurs besoins (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-2)
 
 - [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
+
+- [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 
@@ -252,6 +306,14 @@ This includes user with disabilities or those who need assisted digital support.
 
 If users find it difficult to complete the task the first time, they may avoid using your service or contact your organisation to get help. **(Digital Service Standard (UK))**
 
+Using responsive design, following common design patterns and style guidance for digital content, and making sure the service is accessible means it will be simpler, clearer and faster for all users. It will also be available on the platforms and devices that users choose.
+
+Consistent design that is responsive to different devices helps you to save time and money by re-using something that already exists that follows better practice, and is based on data and user research. This means you can concentrate on the unique things your service needs to do.
+
+Responsive design ensures that users can interact with your service regardless of their device size or type, and browser or device processing power. The service should follow mobile-first design principles, consider users on slow internet connections or with limited download data, work well for both mouse and touch devices, and use front-end technology that works well regardless of device processing power.
+
+Writing and designing content so it is consistent, plain and in the language of your users helps people gain trust and confidence in using different services. By providing information they can easily understand they may be less likely to use alternative websites that could be misleading. **(Digital Service Standard (AU))**
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -288,6 +350,16 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - Make sure the service is responsive and works on mobile devices **(Digital Service Standard (UK))**
 
+- understand how you will use responsive design for platform independence **(Digital Service Standard (AU))**
+
+- understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
+
+- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
+
+- follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA **(Digital Service Standard (AU))**
+
+- ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
+
 ### Guides d'application
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -300,6 +372,14 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - [Design patterns](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html) **(Digital Service Standard (UK))**
 
+- [Australian Government Style manual](http://www.australia.gov.au/about-government/publications/style-manual)
+
+- [18F Content Guide](https://content-guide.18f.gov/) **(18F (US))**
+
+- [Looking at the different ways to test content](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/) **(18F (US))**
+
+- [Government Digital Service (GDS) style guide](https://www.gov.uk/guidance/style-guide)  **(Government Digital Service (UK))**
+
 ### Ressources similaires
 
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
@@ -311,6 +391,8 @@ If users find it difficult to complete the task the first time, they may avoid u
 - [5. Réussite assurée dès le premier essai des utilisateurs (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-6)
 
 - [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
+
+- [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
 
 ## 1.7 Rendre plus pratique et pratique l'utilisation des services numériques
 
@@ -327,6 +409,22 @@ Encouraging people to use digital service will:
 - give better support to those who can't use digital services on their own
 
 **(Digital Service Standard (Ontario))**
+
+Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion.
+
+People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible.
+
+**(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+Encourage users to choose the digital service and consolidate or phase out existing alternative channels where appropriate.
+
+As we build simpler, clearer and faster government services the digital channel will become more convenient for users than non-digital channels like post, phone and shopfronts. Increased digital take-up will mean users can spend less time interacting with government. This will result in greater cost efficiencies for government.
+
+Measuring digital take-up helps you to understand how well your service is being used. It’s one of the 4 mandatory KPIs services must report on the Performance Dashboard.
+
+We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can.
+
+**(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 ### Liste de contrôle
 
@@ -348,6 +446,22 @@ Encouraging people to use digital service will:
 
 - Design the digital service in a way that gives it clear advantages over other channels **(Digital Service Standard (Ontario))**
 
+- show you understand existing channels and how they interact with the service and with each other **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- show you understand the channels required to support all groups of users of the service, and where a user may need to change channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- show you understand if there are any repeat transactions by users over different channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- show you understand the interactions occurring between the channels that deliver and capture user transactions. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- show you understand the users’ journeys and how they interact with your service, digitally or otherwise **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show you understand existing alternative channels and how users currently interact with them **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show you understand what percentage of users access digital and non-digital channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show you understand how you will increase digital take-up and what targets you will set. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
 #### Stage bêta
 
 - Plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (Ontario))**
@@ -358,6 +472,14 @@ Encouraging people to use digital service will:
 
 - Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
 
+- be increasing digital take-up; revising your targets and considering relevant performance metrics **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- have a plan of how to move users to the digital channel where possible, including a communications plan to promote the service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- have agreed analytics/metrics for the volume of usage across channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- understand the full impact of retiring any potentially redundant services and channels. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
 #### Stage en direct
 
 - Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))**
@@ -365,6 +487,24 @@ Encouraging people to use digital service will:
 - Measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
 
 - Measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation **(Digital Service Standard (Ontario))**
+
+- show how you’ve revised the targets you made in the Beta stage to increase the number of users (including users we need to assist) of your digital service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show what you’ve learned from testing different approaches to encourage users (including users we need to assist) to choose the digital service over non-digital alternatives, and which ones you’ll use in the Live stage **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show your retirement strategy for any redundant services and channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show that your service load capacity is scalable to meet increased digital take-up **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+#### Stages bêta et en direct
+
+- detail the channels required to support all groups of users of the service **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- understand the non-digital service channels and have a plan to move users to the digital channel where appropriate **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- have developed and tested the service so that a user can change channels without repeating themselves. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
 ### Guides d'implémentation
 
@@ -374,13 +514,17 @@ Encouraging people to use digital service will:
 
 - [Encouraging people to use your digital service](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Digital Service Standard (UK))**
 
+- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
+
 ### Ressources similaires
 
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 
 - [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 
-- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
+- [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
+
+- [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
 
 ## 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
 
