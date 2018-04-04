@@ -123,7 +123,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 - make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
-#### Stade alpha
+#### Stage alpha
 
 - show the type of environments users may access the service in, including with different browsers and desktop and mobile devices, and when connections are slower and there may be limited data; for example, through user stories **(Digital Service Standard (AU))**
 
@@ -141,7 +141,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 - show you have access to facilities to perform testing on various devices or platforms, for example a plan for testing. **(Digital Service Standard (AU))**
 
-#### Stade bêta
+#### Stage bêta
 
 - show iteration in the design and content of your service to meet accessibility requirements and improve usability for people with disability **(Digital Service Standard (AU))**
 
@@ -173,7 +173,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 - show the majority of users can access the service in their environment. **(Digital Service Standard (AU))**
 
-#### Stade en-direct
+#### Stage en direct
 
 - show your service is accessible **(Digital Service Standard (AU))**
 
