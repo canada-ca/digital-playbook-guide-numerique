@@ -387,6 +387,7 @@
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-5">4.&#160;Design the service from start to finish (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-7">6.&#160;Test the end-to-end service (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play10">10.&#160;Automate testing and deployments (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/10-test-the-service/">10.&#160;Test the service (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
