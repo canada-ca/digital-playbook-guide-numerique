@@ -306,6 +306,14 @@ This includes user with disabilities or those who need assisted digital support.
 
 If users find it difficult to complete the task the first time, they may avoid using your service or contact your organisation to get help. **(Digital Service Standard (UK))**
 
+Using responsive design, following common design patterns and style guidance for digital content, and making sure the service is accessible means it will be simpler, clearer and faster for all users. It will also be available on the platforms and devices that users choose.
+
+Consistent design that is responsive to different devices helps you to save time and money by re-using something that already exists that follows better practice, and is based on data and user research. This means you can concentrate on the unique things your service needs to do.
+
+Responsive design ensures that users can interact with your service regardless of their device size or type, and browser or device processing power. The service should follow mobile-first design principles, consider users on slow internet connections or with limited download data, work well for both mouse and touch devices, and use front-end technology that works well regardless of device processing power.
+
+Writing and designing content so it is consistent, plain and in the language of your users helps people gain trust and confidence in using different services. By providing information they can easily understand they may be less likely to use alternative websites that could be misleading. **(Digital Service Standard (AU))**
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
@@ -342,6 +350,16 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - Make sure the service is responsive and works on mobile devices **(Digital Service Standard (UK))**
 
+- understand how you will use responsive design for platform independence **(Digital Service Standard (AU))**
+
+- understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
+
+- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
+
+- follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA **(Digital Service Standard (AU))**
+
+- ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -354,6 +372,14 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - [Design patterns](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html) **(Digital Service Standard (UK))**
 
+- [Australian Government Style manual](http://www.australia.gov.au/about-government/publications/style-manual)
+
+- [18F Content Guide](https://content-guide.18f.gov/) **(18F (US))**
+
+- [Looking at the different ways to test content](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/) **(18F (US))**
+
+- [Government Digital Service (GDS) style guide](https://www.gov.uk/guidance/style-guide)  **(Government Digital Service (UK))**
+
 ### Similar resources
 
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
@@ -365,6 +391,8 @@ If users find it difficult to complete the task the first time, they may avoid u
 - [5. Ensure users succeed the first time (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
 
 - [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
+
+- [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
 
 ## 1.7 Make it more convenient and practical to use digital services
 
