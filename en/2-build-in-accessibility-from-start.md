@@ -222,6 +222,14 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 **[TODO: Add/revise introductory text]**
 
+People have different sensory, cognitive and physical abilities. All too often things are built for the fictional average person. Someone who has perfect vision and hearing, who uses a mouse or touch screen and has good basic literacy.
+
+Very few people are like this, especially when you take into account that a person’s ability changes in different situations. For example, when using a mobile phone in bright daylight, the screen can become harder to see because of the reduced level of contrast. In a busy room, it can be difficult to hear because of the increased background noise. When some people are tired or stressed, information can be harder to understand.
+
+Until you consider the needs of the range of people that will be using your service you can’t confirm that you are not excluding people. You also won’t be making the cost savings that digital services can provide as you will be forcing some people to use more expensive alternate channels.
+
+[Consider the range of people that will use your product or service, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
@@ -321,6 +329,7 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 **[TODO: Add/revise implementation guide items]**
 
+- [Consider the range of people that will use your product or service, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
 - [Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
 - [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
   - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
