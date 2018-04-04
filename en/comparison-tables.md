@@ -302,7 +302,7 @@
 					<li>Open By Default, Proprietary by Necessity (Current GC EARB Principles)</li>
 					<li>3. Open Source (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md">Open Source Code - Open First Whitepaper (GC)</a></li>
-					<li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">[8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
+					<li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
 					<li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
 				</ul>
 			</td>
@@ -322,7 +322,8 @@
 					<li>9. Exponential Tech (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md">Open Standards - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms">9.&#160;Use open standards and common platforms (Digital Service Standard (UK))</a></li>
-					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-10">9. Use open standards and common platforms (Digital Service Standard (Ontario)&#160;</a></li>
+					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-10">9.&#160;Use open standards and common platforms (Digital Service Standard (Ontario)</a></li>
+					<li><a href="https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/">7.&#160;Use open standards and common platforms (Digital Service Standard (AU)</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -339,8 +340,8 @@
 					<li>Technology Debt Managed (Current GC EARB Principles)</li>
 					<li>Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)</li>
 					<li>Architecturally Fit for the GC Enterprise (GC EA Principles)</li>
-					<li>6. Digital Principles (Architectural Commandments (initial thoughts))</li>
-					<li>7. GC Standards (Architectural Commandments (initial thoughts))</li>
+					<li>6.&#160;Digital Principles (Architectural Commandments (initial thoughts))</li>
+					<li>7.&#160;GC Standards (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/3_Open_Source_Software.md">Open Source Software - Open First Whitepaper (GC)</a></li>
 					<li><a href="https://playbook.cio.gov/#play8">8.&#160;Choose a modern technology stack (Digital Services Playbook (US))</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives">1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
