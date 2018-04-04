@@ -223,6 +223,14 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
+People have different sensory, cognitive and physical abilities. All too often things are built for the fictional average person. Someone who has perfect vision and hearing, who uses a mouse or touch screen and has good basic literacy.
+
+Very few people are like this, especially when you take into account that a person’s ability changes in different situations. For example, when using a mobile phone in bright daylight, the screen can become harder to see because of the reduced level of contrast. In a busy room, it can be difficult to hear because of the increased background noise. When some people are tired or stressed, information can be harder to understand.
+
+Until you consider the needs of the range of people that will be using your service you can’t confirm that you are not excluding people. You also won’t be making the cost savings that digital services can provide as you will be forcing some people to use more expensive alternate channels.
+
+[Consider the range of people that will use your product or service, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
