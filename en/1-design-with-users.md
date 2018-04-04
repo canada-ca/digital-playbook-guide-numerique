@@ -266,7 +266,7 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
 
-- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))
+- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
 
 - Use analytics and user research to reduce the number of people who didn't complete the task they set out to do online (e.g. renew a driver's licence) **(Digital Service Standard (Ontario))**
 
