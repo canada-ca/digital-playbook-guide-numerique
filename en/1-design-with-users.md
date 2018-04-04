@@ -374,6 +374,8 @@ Encouraging people to use digital service will:
 
 - [Encouraging people to use your digital service](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Digital Service Standard (UK))**
 
+- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
+
 ### Similar resources
 
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
@@ -419,6 +421,8 @@ You need to have a plan for what to do if your service goes offline so that you 
 **[TODO: Add/revise implementation guide items]**
 
 - [Keeping your service online](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Digital Service Standard (UK))**
+
+- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
 
 ### Similar resources
 
