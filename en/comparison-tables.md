@@ -173,6 +173,7 @@
 					<li><a href="https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team">Have a multidisciplinary team (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-3">2.&#160;Establish the right team (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://playbook.cio.gov/#play7">7.&#160;Bring in experienced teams (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/2-multidisciplinary-team/">2.&#160;Have a multidisciplinary team (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
