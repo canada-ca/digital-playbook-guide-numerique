@@ -67,11 +67,13 @@ Development of accessible (regardless of ability, device or environment) digital
   - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
   - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 - [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
   - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
+- [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 
 ## 2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use
 
@@ -126,11 +128,13 @@ If users find it difficult to complete the task the first time, they may avoid u
   - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
   - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 - [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
   - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
+- [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 
 ### Similar resources
 
@@ -201,6 +205,7 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 - [Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving)
 - [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)
 - [Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/Overview.html)
   - [Initiate - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/initiate.html)
   - [Plan - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/plan.html)
@@ -217,6 +222,7 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 - [Just Ask: Integrating Accessibility Throughout Design](http://www.uiaccess.com/accessucd/overview.html)
 - [Incorporating Accessibility Early and Throughout](http://uiaccess.com/accessucd/early.html)
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 
 ## 2.4 Take into consideration a user's possible constraints when designing services
 
@@ -341,9 +347,10 @@ Until you consider the needs of the range of people that will be using your serv
   - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
   - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 - [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
   - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
-  
+- [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
