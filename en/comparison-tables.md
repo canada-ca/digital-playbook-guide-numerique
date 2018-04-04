@@ -490,7 +490,7 @@
 			<td>
 				<ul>
 					<li>Use appropriate level of security (Build it Digital Principles (initial thoughts))</li>
-					<li>10. Cyber Signoff (Architectural Commandments (initial thoughts))</li>
+					<li>10.&#160;Cyber Signoff (Architectural Commandments (initial thoughts))</li>
 				</ul>
 			</td>
 		</tr>
@@ -515,7 +515,7 @@
 					<li>Provide common identity & Access management across all systems (Build it Digital Principles (initial thoughts))</li>
 					<li>Secure by Design (Current GC EARB Principles)</li>
 					<li>Secure by Design (GC EA Principles)</li>
-					<li>8. Trust Framework (Architectural Commandments (initial thoughts))</li>
+					<li>8.&#160;Trust Framework (Architectural Commandments (initial thoughts))</li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-11">10.&#160;Embed privacy and security by design (Digital Service Standard (Ontario))</a></li>
 				</ul>
 			</td>
@@ -528,6 +528,7 @@
 				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues">7.&#160;Understand security and privacy issues (Digital Service Standard (UK))</a></li>
 					<li><a href="https://playbook.cio.gov/#play11">11.&#160;Manage security and privacy through reusable processes (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/5-make-it-secure/">5.&#160;Make it secure (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
