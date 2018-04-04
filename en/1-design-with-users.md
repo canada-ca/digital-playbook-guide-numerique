@@ -410,6 +410,22 @@ Encouraging people to use digital service will:
 
 **(Digital Service Standard (Ontario))**
 
+Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion.
+
+People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible.
+
+**(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+Encourage users to choose the digital service and consolidate or phase out existing alternative channels where appropriate.
+
+As we build simpler, clearer and faster government services the digital channel will become more convenient for users than non-digital channels like post, phone and shopfronts. Increased digital take-up will mean users can spend less time interacting with government. This will result in greater cost efficiencies for government.
+
+Measuring digital take-up helps you to understand how well your service is being used. It’s one of the 4 mandatory KPIs services must report on the Performance Dashboard.
+
+We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can.
+
+**(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
@@ -430,6 +446,24 @@ Encouraging people to use digital service will:
 
 - Design the digital service in a way that gives it clear advantages over other channels **(Digital Service Standard (Ontario))**
 
+- show you understand all the touchpoints in users’ journeys, their contexts of use, and the digital limitations affecting different groups of users **(Digital Service Standard (Ontario))**
+
+- show you understand existing channels and how they interact with the service and with each other **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- show you understand the channels required to support all groups of users of the service, and where a user may need to change channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- show you understand if there are any repeat transactions by users over different channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- show you understand the interactions occurring between the channels that deliver and capture user transactions. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- show you understand the users’ journeys and how they interact with your service, digitally or otherwise **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show you understand existing alternative channels and how users currently interact with them **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show you understand what percentage of users access digital and non-digital channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show you understand how you will increase digital take-up and what targets you will set. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
 #### Beta stage
 
 - Plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (Ontario))**
@@ -440,6 +474,14 @@ Encouraging people to use digital service will:
 
 - Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
 
+- be increasing digital take-up; revising your targets and considering relevant performance metrics **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- have a plan of how to move users to the digital channel where possible, including a communications plan to promote the service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- have agreed analytics/metrics for the volume of usage across channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- understand the full impact of retiring any potentially redundant services and channels. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
 #### Live stage
 
 - Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))**
@@ -447,6 +489,24 @@ Encouraging people to use digital service will:
 - Measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
 
 - Measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation **(Digital Service Standard (Ontario))**
+
+- show how you’ve revised the targets you made in the Beta stage to increase the number of users (including users we need to assist) of your digital service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show what you’ve learned from testing different approaches to encourage users (including users we need to assist) to choose the digital service over non-digital alternatives, and which ones you’ll use in the Live stage **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show your retirement strategy for any redundant services and channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show that your service load capacity is scalable to meet increased digital take-up **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+- show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+#### Beta and live stages
+
+- detail the channels required to support all groups of users of the service **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- understand the non-digital service channels and have a plan to move users to the digital channel where appropriate **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+- have developed and tested the service so that a user can change channels without repeating themselves. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
 ### Implementation guides
 
@@ -463,6 +523,10 @@ Encouraging people to use digital service will:
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 
 - [11. Encourage people to use digital services (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-12)
+
+- [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
+
+- [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
 
 ### 1.8 Support people who cannot use digital services on their own
 
