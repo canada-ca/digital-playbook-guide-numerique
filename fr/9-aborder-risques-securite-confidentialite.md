@@ -42,9 +42,9 @@
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **Digital Service Standards (AU)**
+- [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
 
-- [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **Digital Service Standards (AU)**
+- [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
 
 ## 9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données
 
