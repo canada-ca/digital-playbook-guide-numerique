@@ -122,7 +122,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-#### Stade alpha, bêta et en-direct
+#### Stages alpha, bêta et en direct
 
 - determine the data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service **(Digital Service Standard (UK))** / determine data needs, sources and collection **(Digital Service Standard (Ontario))**
 
@@ -152,7 +152,7 @@ Every service must aim for continuous improvement. Metrics are an important star
   - costs, benefits and return on investment
   - content metrics (readability, length).
 
-#### Stade alpha
+#### Stage alpha
 
 - explored the data that is already available for an existing service, where it is kept and how you might access and use it, and also shared your own insights **(Digital Service Standard (AU))**
 
@@ -164,7 +164,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 - considered the metrics you will need to measure the 4 KPIs and where the data will come from. **(Digital Service Standard (AU))**
 
-#### Stade bêta
+#### Stage bêta
 
 - discuss a start page and feedback page with GOV.UK **(Digital Service Standard (UK))**
 
@@ -178,7 +178,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 - what you have learned from qualitative and quantitative data; for example key evidence. **(Digital Service Standard (AU))**
 
-#### Stade en-direct
+#### Stage en direct
 
 - collect feedback from users, during and after their user journey **(Digital Service Standard (UK))**
 
