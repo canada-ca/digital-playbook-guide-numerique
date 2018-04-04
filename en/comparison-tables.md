@@ -95,7 +95,8 @@
 					<li><a href="https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk">13.&#160;Make the user experience consistent with GOV.UK (Digital Service Standard (UK))</a>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-4">3.&#160;Be consistent (Digital Service Standard (Ontario))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-6">5.&#160;Ensure users succeed the first time (Digital Service Standard (Ontario))</a></li>
-					<li><a href="https://playbook.cio.gov/#play3">3.&#160;Make it simple and intuitive  (Digital Services Playbook (US))</a></li>
+					<li><a href="https://playbook.cio.gov/#play3">3.&#160;Make it simple and intuitive (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/6-consistent-and-responsive/">6.&#160;Consistent and responsive design (Digital Service Standard (AU))</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 					<li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
 				</ul>
