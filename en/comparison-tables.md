@@ -569,6 +569,7 @@
 				<ul>
 					<li><a href="https://www.gov.uk/service-manual/service-standard/collect-performance-data">15.&#160;Collect performance data (Digital Service Standard (UK))</a></li>
 					<li><a href="https://www.ontario.ca/page/digital-service-standard#section-14">13.&#160;Measure performance (Digital Service Standard (Ontario))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/11-measure-performance/">11.&#160;Measure performance (Digital Service Standard (AU))</a></li>
 				</ul>
 			</td>
 		</tr>
