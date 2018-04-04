@@ -147,6 +147,16 @@ A key part of building digital services that work for users is developing a good
 
 - Identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
 
+- **Who are the users?** What about their motivations, triggers, contexts are significant for your service? How can you find them to invite them to participate in user research? You must include users with varying needs (such as needs arising from disability, cultural diversity, literacy and remoteness). Consider all the users in the service including end users, users in government who are delivering the service, and key intermediaries (professional and personal network) **(Digital Service Standard (AU))**
+
+- **What is the real task(s) that people are trying to achieve** when they encounter your service. What is the ‘job’ people are trying to get done that your service is a part of? (You need to describe this in words that real end users would use, not using government terminology) **(Digital Service Standard (AU))**
+
+- **How are users currently doing the task** your service aims to help them do and key touch points, for example through journey maps. What other relevant government and non-government services are also in use at this time? Where are the pain points in the current experience? **(Digital Service Standard (AU))**
+
+- **What are the user needs?** What are the opportunities to remove or reduce the pain points? How might we better meet the user needs? (Demonstrate this through research, testing and validating possible solutions with prototypes) **(Digital Service Standard (AU))**
+
+- **Are you designing the right thing?** How have your insights from user research helped you to define your minimum viable product (MVP)? How does the MVP create value for users and government by better meeting user needs? **(Digital Service Standard (AU))**
+
 #### Beta stage
 
 - Research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
@@ -165,11 +175,29 @@ A key part of building digital services that work for users is developing a good
 
 - Document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
 
+- Greater depth and diversity of knowledge on all of the points above from Alpha **(Digital Service Standard (AU))**
+
+- **How has your service been shaped by user needs?** Show how you have made changes in the service and interaction design in response to user research and usability testing. You can evidence this by showing how the design has changed over time and the appropriate research findings that have driven this change **(Digital Service Standard (AU))**
+
+- **How you tested the system in the users’ context with a full range of users** (including users with varying needs). You can evidence this with artefacts of research, for example, video clips and outcomes from research analysis **(Digital Service Standard (AU))**
+
+- **Are you prepared for ongoing user research?** Show how you plan to continue to test the system with users and the resources for this, for example through an ongoing research plan and budget **(Digital Service Standard (AU))**
+
+- **What have you not solved yet?** What the significant design challenges are, for example through key insights, how have you approached them? How do you plan to continue to tackle them? **(Digital Service Standard (AU))**
+
+- **How will you know if your design is working?** Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs **(Digital Service Standard (AU))**
+
 #### Live stage
 
 - Use research and testing results to continuously improve the service **(Digital Service Standard (Ontario))**
 
 - Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
+
+- Be able to show greater depth of knowledge for all the points above (from Alpha/Beta) **(Digital Service Standard (AU))**
+
+- **Show how you are using data from real use** to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users **(Digital Service Standard (AU))**
+
+- Know how you will measure and monitor your service to ensure it is serving its users well **(Digital Service Standard (AU))**
 
 ### Implementation guides
 
@@ -181,11 +209,35 @@ A key part of building digital services that work for users is developing a good
 
 - [Introduction to User-centred Design](http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/)
 
-- [User Research Skills](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team)
+- [User Research Skills](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team) **(Digital Service Standard (UK))**
 
-- [How Users Read](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read)
+- [How Users Read](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read) **(Writing for GOV.UK)**
 
-- [Designing government services](https://www.gov.uk/service-manual/design/introduction-designing-government-services)
+- [Designing government services](https://www.gov.uk/service-manual/design/introduction-designing-government-services) **(Digital Service Standard (UK))**
+
+- [DTA Guide to Discovery](https://ausdto.github.io/service-handbook/discovery/) **(Service Handbook (AU))**
+
+- [DTA Guide to Alpha](http://ausdto.github.io/service-handbook/alpha/) **(Service Handbook (AU))**
+
+- [Doing user research in the discovery phase](https://userresearch.blog.gov.uk/2015/05/27/doing-user-research-in-the-discovery-phase/) **(Government Digital Service Blog (UK))**
+
+- [Understanding the problem is key to fixing it](https://userresearch.blog.gov.uk/2016/01/12/understanding-the-problem-is-key-to-fixing-it/) **(Government Digital Service Blog (UK))**
+
+- [Users research not just usability](https://userresearch.blog.gov.uk/2014/06/25/user-research-not-just-usability/) **(Government Digital Service Blog (UK))**
+
+- [User research for government services 8 strategies that worked for us](https://userresearch.blog.gov.uk/2015/01/21/user-research-for-government-services-8-strategies-that-worked-for-us/) **(Government Digital Service Blog (UK))**
+
+- [How we do user research in agile teams](https://gds.blog.gov.uk/2013/08/30/how-we-do-user-research-in-agile-teams/) **(Government Digital Service Blog (UK))**
+
+- [Including users with low digital skills in user research](https://userresearch.blog.gov.uk/2014/08/20/including-users-with-low-digital-skills-in-user-research/) **(Government Digital Service Blog (UK))**
+
+- [Using prototypes in user research](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/) **(Government Digital Service Blog (UK))**
+
+- [How designers prototype at GDS](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/) **(Government Digital Service Blog (UK))**
+
+- [Method Cards](https://methods.18f.gov/index.html) **(18F (US))**
+
+- [Evangelising user research](https://medium.com/@userfocus/evangelising-user-research-849430701b6e) **(David Travis (Medium.com))**
 
 ### Similar resources
 
@@ -194,6 +246,8 @@ A key part of building digital services that work for users is developing a good
 - [1. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
 
 - [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
+
+- [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 
