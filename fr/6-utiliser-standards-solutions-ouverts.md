@@ -72,7 +72,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 - understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 
-- Alpha stage:
+#### Stage alpha
 
   - build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
   
@@ -259,11 +259,11 @@ There are many potential benefits from the greater use of digital services, incl
 
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
-#### Stade alpha
+#### Stage alpha
 
 - test your prototypes with users. **(Digital Service Standard (AU))**
 
-#### Stade bêta et en-direct
+#### Stadg bêta et en direct
 
 - show the steps required to achieve an end-to-end service delivery outcome for the user **(Digital Service Standard (AU))**
 
