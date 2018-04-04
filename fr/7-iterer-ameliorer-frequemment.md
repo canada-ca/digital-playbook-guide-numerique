@@ -348,15 +348,15 @@ You need to build a service which you can iterate and keep improving so that you
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Gov.UK Test your service’s performance]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [Test your service's performance](https://www.gov.uk/service-manual/technology/test-your-services-performance) **(Service Manual (UK))**
 
-- [Gov.UK Testing your service regularly]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [Quality assurance: testing your service regularly](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly) **(Service Manual (UK))**
 
-- [Gov.UK Exploratory Testing]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [Exploratory Testing](https://www.gov.uk/service-manual/technology/exploratory-testing) **(Service Manual (UK))**
 
-- [18F Testing Cookbook]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [Testing Cookbook](https://pages.18f.gov/testing-cookbook/go/) **(18F (US))**
 
-- [26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use]() **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+- [TBITS 26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=17283)
 
 - User centric design GC community of practice: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
   - <http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs>
@@ -364,9 +364,11 @@ You need to build a service which you can iterate and keep improving so that you
 
 - [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU)**
 
+- [Testing your service](https://www.gov.uk/service-manual/technology#testing-your-service) **(Service Manual (UK)**
+
 Find out more about:
 
-- [agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
+- [Agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
 ### Ressources similaires
 
