@@ -74,21 +74,21 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 #### Stage alpha
 
-  - build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
+- build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
   
-  - follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
+- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
   
-  - identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
+- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
   
-  - search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
+- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
 
-- Beta and live stages:
+#### Stages bêta et en direct
 
-  - building using the Open Web Platform standards **(Digital Service Standard (AU))**
+- building using the Open Web Platform standards **(Digital Service Standard (AU))**
 
-  - avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
+- avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
 
-  - addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
+- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
 
 ### Guides d'implémentation
 
@@ -263,7 +263,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 - test your prototypes with users. **(Digital Service Standard (AU))**
 
-#### Stadg bêta et en direct
+#### Stage bêta et en direct
 
 - show the steps required to achieve an end-to-end service delivery outcome for the user **(Digital Service Standard (AU))**
 
