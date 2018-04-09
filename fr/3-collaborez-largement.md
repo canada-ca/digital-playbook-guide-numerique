@@ -148,9 +148,35 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - Développer des partenariats ouverts et innovants - Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées. Créer des partenariats et collaborer.
 
+([The Good Collaboration Toolkit: Checklist - The Good Project](http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/)):
+- Do you discuss the purpose of the collaboration? Is there agreement about the vision among collaborators?
+- Is there a clear leadership/rotation of leadership for the collaboration?
+- Is there a documented scope of work, with an associated timeline?
+- Do you discuss goals and accountability to achieve these goals?
+- Are people clear about their roles in the collaboration?
+- Do you discuss the collaborators’ own interests, needs and values?
+- Do you discuss methods of communication and decision-making?
+- Are all of the voices of the collaborators being heard?
+- Are all collaborators invested in the work?
+- Is the work getting done?
+- Are there obstacles that need to be discussed?
+- Are supports communicated and shared?
+- Is there agreement about a “product” or outcome for the collaboration?
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+- [The Good Collaboration Toolkit - The Good Project](http://thegoodproject.org/collaborationtoolkit/)
+  - [Checklist](http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/)
+  - [Excellently Executed](http://thegoodproject.org/collaborationtoolkit/elements-excellently-executed/)
+  - [Leadership Driven](http://thegoodproject.org/collaborationtoolkit/elements-leadership-driven/)
+  - [Engaging for Participants](http://thegoodproject.org/collaborationtoolkit/elements-engaging-for-participants/)
+  - [Misson Focused](http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/)
+  - [Ethically Oriented](http://thegoodproject.org/collaborationtoolkit/elements-ethically-oriented/)
+  - [Nurtured Continuously](http://thegoodproject.org/collaborationtoolkit/elements-nurtured-continuously/)
+  - [Time Well Spent](http://thegoodproject.org/collaborationtoolkit/elements-time-well-spent/)
+  - [Solution Inspired](http://thegoodproject.org/collaborationtoolkit/elements-solution-inspired/)
 
 ## 3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation
 
