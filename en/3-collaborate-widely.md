@@ -192,12 +192,93 @@ Good government services are built quickly and iteratively, based on user needs.
 
 ## 3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse
 
+**[TODO: Determine what is meant by "link to the work of other" and then add related content]**
+
 **[TODO: Add/revise introductory text]**
+
+**Very similar to guideline 5.5 (guideline 5.5 is more specific about open source)**
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
+- Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
+
+- Ensure that we maintain contractual rights to all custom software developed by third parties in a manner that is publishable and reusable at no cost **(Digital Services Playbook (US))**
+
+- When appropriate, create an API for third parties and internal users to interact with the service directly **(Digital Services Playbook (US))**
+
+- Make all new source code open and reusable and explain how it can be reused
+
+- Show your code in an open Internet source code repository and enable contributions and comments on the code
+
+- Link to the work of others
+
+#### Alpha stage
+
+- Determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
+
+- Confirm that you own the intellectual property **(Digital Service Standard (UK))**
+
+- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
+
+- Determine how you're using code from other teams or services **(Digital Service Standard (UK))**
+
+- show that you have considered a plan to release it under a licence that is suitable for your service **(Digital Service Standard (AU))**
+
+- consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. **(Digital Service Standard (AU))**
+
+#### Beta stage
+
+- share your code in a repository **(Digital Service Standard (AU))**
+
+#### Live stage
+
+- Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
+
+- Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
+
+- Determine the licences you're using to release code **(Digital Service Standard (UK))**
+
+- Confirm that you own the intellectual property **(Digital Service Standard (UK))**
+
+- Document the code you've not made open and why **(Digital Service Standard (UK))**
+
+- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
+
+- show how you are making new source code open and reusable, for example, storing in repositories, releasing code under licence, using APIs **(Digital Service Standard (AU))**
+
+- show how you have provided a plan or guidance for contributors **(Digital Service Standard (AU))**
+
+- show how you’re handling updates and bug fixes to the code. **(Digital Service Standard (AU))**
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+- [Making source code open and reusable](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable) **(Digital Service Standard (UK))**
+
+- [Using open source software](https://www.gov.uk/service-manual/making-software/open-source.html) **(Digital Service Standard (UK))**
+
+- [Choosing technology: an introduction](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
+
+- [Code sharing](https://www.dta.gov.au/standard/design-guides/code-sharing/) **(Digital Service Standard (AU))**
+
+- [Choose an open source licence](https://choosealicense.com/) **(choosealicense.com)**
+
+- [Comparison of free and open-source software licences](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) **(Wikipedia)**
+
+- [Making source code open](https://www.dta.gov.au/blog/making-source-code-open/) **(DTA Blog (AU))**
+
+### Similar resources
+
+- [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
+
+- [Open Culture - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/6_Open_Culture.md)
+
+- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+
+- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
+
+- [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
+
