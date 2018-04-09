@@ -200,6 +200,15 @@
 				<a href="3-collaborate-widely.md#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse">3.4&#160;Share and collaborate in the open, link to the work of others, and provide resources that others can reuse</a>
 			</td>
 			<td>
+				<ul>
+					<li>Open by default (OneGC product design criteria)</li>
+					<li>Open By Default, Proprietary by Necessity (Current GC EARB Principles)</li>
+					<li>3. Open Source (Architectural Commandments (initial thoughts))</li>
+					<li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md">Open Source Code - Open First Whitepaper (GC)</a></li>
+					<li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
+					<li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
+					<li><a href="https://www.dta.gov.au/standard/8-make-source-code-open/">8.&#160;Make source code open (Digital Service Standard (AU))</a></li>
+				</ul>
 			</td>
 		</tr>
 		<tr>
