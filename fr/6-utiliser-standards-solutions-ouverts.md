@@ -201,6 +201,10 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+- [API technical and data standards](https://www.gov.uk/guidance/gds-api-technical-and-data-standards) **Government Digital Service (UK)**
+
+- [Developing cross-government API data and technical standards](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/) **Government Digital Service Blog (UK)**
+
 - [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
 
 ## 6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
@@ -216,6 +220,10 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [Open data](https://www.dta.gov.au/standard/design-guides/open-data/) **Digital Service Standard (AU)**
+
+- [API technical and data standards](https://www.gov.uk/guidance/gds-api-technical-and-data-standards) **Government Digital Service (UK)**
+
+- [Developing cross-government API data and technical standards](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/) **Government Digital Service Blog (UK)**
 
 - [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
 
