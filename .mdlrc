@@ -4,7 +4,6 @@ rules "~MD009",
 "~MD013", # TODO: line lengths
 "~MD024", # TODO: Multiple headers with the same content
 "~MD025", # Multiple top level headers in the LICENSE
-"~MD032", # TODO: Lists should be surrounded by blank lines
 "~MD033", # TODO: Inline HTML
 "~MD034", # Bare URLs are used in LICENSE
 "~MD036", # TODO: Emphasis used instead of a header

@@ -240,6 +240,7 @@ This applies when designing and developing:
 #### Including Users to Understand the Issues **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
 
 As early as possible in your project:
+
 - Learn the basics of how people with disabilities use the web by reading online resources and watching videos.
 - Find people with disabilities, with a range of characteristics. See Getting a Range of Users and Working with Users below.
 - Early on, learn about general issues related to what you are developing, e.g., websites, web tools, standards, or other products. Ask people to show you websites or related products that work well for them. Then, ask them to show you problems in products that do not work well. Ask lots of questions to help you understand the accessibility issues.
@@ -247,6 +248,7 @@ As early as possible in your project:
 #### Including Users in Implementation **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
 
 For example, for websites, web applications, and web tools:
+
 - When you are considering a specific design aspect, such as expanding/collapsing navigation, find other products that are already doing it and have users explore with you what works well and what does not.
 - Throughout your design and development, ask users to review prototypes. Give them specific tasks to complete and see how the different aspects of the design and coding could be improved. Ask lots of questions.
 
@@ -269,6 +271,7 @@ In the early stages when you are first learning how people with disabilities int
 #### Working with Users **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
 
 Follow common practices for working with people informally and formally, for example:
+
 - Develop appropriate relationships with your users. For example, spending time talking informally over lunch may help you work together more comfortably.
 - Ensure informed consent and other research ethics. For example, participants in studies should be told that they are free to stop at any time.
 - Treat people with disabilities and older users with the respect you would any other users. For example, respect their time and provide appropriate compensation.
