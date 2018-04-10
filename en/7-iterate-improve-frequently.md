@@ -171,7 +171,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 - Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
-  
+
 - work in an agile way, based on agile values and principles, and using agile tools and techniques **(Digital Service Standard (AU))**
 
 - review and iterate your processes to be able to respond to feedback, continue to improve and adapt to change **(Digital Service Standard (AU))**

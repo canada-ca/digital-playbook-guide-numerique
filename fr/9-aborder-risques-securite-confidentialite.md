@@ -311,7 +311,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 - identify malicious or fraudulent activity **(Digital Service Standard (AU))**
 
-- have appropriate policies in place to respond quickly to security events **(Digital Service Standard (AU))** 
+- have appropriate policies in place to respond quickly to security events **(Digital Service Standard (AU))**
 
 - have the ability to integrate into existing security monitoring solutions **(Digital Service Standard (AU))**
 

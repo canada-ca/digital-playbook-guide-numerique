@@ -340,7 +340,7 @@ Until you consider the needs of the range of people that will be using your serv
   - create a wall of text
   - make buttons vague and unpredictable - for example, Click here
   - build complex and cluttered layouts
-  
+
 #### Designing for users of screen readers **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
 
 - Do:
