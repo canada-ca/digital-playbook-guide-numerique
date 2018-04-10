@@ -21,7 +21,6 @@
 - [10. Be good data stewards](en/10-be-good-data-stewards.md)
 - [Comparison tables](en/comparison-tables.md)
 
-
 # Guide numérique du gouvernement du Canada (ébauche)
 
 **Améliorer les services gouvernementaux dans l’ère numérique.** Notre but est de délivrer des services facilement accessibles, intégrés, et fiables aux canadiennes et aux canadiens. En tant que gouvernement, nous devons éviter les projets monolithiques ayant des designs rigides élaborés en silos et avec un minimum de consultation avec les utilisateurs. Ce guide numérique, ainsi que les principes numériques sur lesquels ce guide est fondé, servira de fondation pour le virement du gouvernement du Canada vers un gouvernement plus agile, ouvert, et qui réponds aux besoins des utilisateurs. Ceci sera un parcours.

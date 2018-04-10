@@ -94,7 +94,6 @@ You need to make sure everyone who needs your service can use it. This includes 
 
 Your service must be accessible to users regardless of their digital confidence and access to a digital environment. This includes users in remote areas and users’ different devices. **(Digital Service Standard (AU))**
 
-
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
