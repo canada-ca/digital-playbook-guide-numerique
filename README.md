@@ -1,4 +1,6 @@
+<!-- markdownlint-disable MD041 -->
 [Français](#user-content-guide-numérique-du-gouvernement-du-canada-ébauche)
+<!-- markdownlint-enable MD041 -->
 
 # Government of Canada Digital Playbook (draft)
 

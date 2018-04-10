@@ -1,4 +1,3 @@
-
 # 1. Design with users (draft)
 
 **[TODO: Add/revise introductory text]**
