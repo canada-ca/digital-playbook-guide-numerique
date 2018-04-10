@@ -1,7 +1,6 @@
 git_recurse true
 
 rules "~MD009",
-"~MD010", # TODO: Hard tabs
 "~MD012", # TODO: Multiple consecutive blank lines
 "~MD013", # TODO: line lengths
 "~MD022", # TODO: Headers should be surrounded by blank lines

@@ -10,7 +10,7 @@
 
 - [Overview](en/overview.md)
 - [1. Design with users](en/1-design-with-users.md)
-- [2. Build in accessibility from the start](en/2-build-in-accessibility-from-start.md	)
+- [2. Build in accessibility from the start](en/2-build-in-accessibility-from-start.md)
 - [3. Collaborate widely](en/3-collaborate-widely.md)
 - [4. Empower staff to deliver better services](en/4-empower-staff-deliver-better-services.md)
 - [5. Work in the open by default](en/5-work-in-open-by-default.md)
