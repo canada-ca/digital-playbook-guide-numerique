@@ -15,6 +15,7 @@
 
 ## Government of Canada Digital Playbook comparison table
 
+<!-- markdownlint-disable MD033 -->
 <table>
   <thead>
     <tr>
@@ -605,3 +606,4 @@
     </tr>
   </tbody>
 </table>
+<!-- markdownlint-enable MD033 -->
