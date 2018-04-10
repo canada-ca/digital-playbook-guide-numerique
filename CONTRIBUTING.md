@@ -6,7 +6,11 @@ Feel free to propose changes by creating Pull Requests. If you don't have write 
 
 If this is your first time contributing on GitHub, don't worry! Let us know if you have any questions.
 
+<!-- markdownlint-disable MD025 -->
+
 # Comment contribuer
+
+<!-- markdownlint-enable MD025 -->
 
 Lorsque vous contribuez, veuillez également publier des commentaires et discuter des modifications que vous souhaitez apporter par l'entremise des enjeux (Issues).
 
