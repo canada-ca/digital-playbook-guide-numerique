@@ -1,4 +1,5 @@
 # Comparison tables (draft)
+
 1. [Government of Canada Digital Playbook comparison table](#government-of-canada-digital-playbook-comparison-table)
 1. **TODO:** Digital Service Standard (UK) comparison table
 1. **TODO:** Digital Service Standard (Ontario) comparison table
@@ -13,6 +14,7 @@
 1. **TODO:** Architectural Commandments (GC) comparison table
 
 ## Government of Canada Digital Playbook comparison table
+
 <table>
   <thead>
     <tr>

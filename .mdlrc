@@ -2,7 +2,6 @@ git_recurse true
 
 rules "~MD009",
 "~MD013", # TODO: line lengths
-"~MD022", # TODO: Headers should be surrounded by blank lines
 "~MD024", # TODO: Multiple headers with the same content
 "~MD025", # Multiple top level headers in the LICENSE
 "~MD032", # TODO: Lists should be surrounded by blank lines

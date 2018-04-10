@@ -107,6 +107,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 - [OASIS Standards](https://www.oasis-open.org/standards)
 
 ### Ressources similaires
+
 - [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
 
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)

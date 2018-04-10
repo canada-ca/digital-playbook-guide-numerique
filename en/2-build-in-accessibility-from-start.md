@@ -238,36 +238,43 @@ This applies when designing and developing:
 **[TODO: Add/revise checklist items]**
 
 #### Including Users to Understand the Issues **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
 As early as possible in your project:
 - Learn the basics of how people with disabilities use the web by reading online resources and watching videos.
 - Find people with disabilities, with a range of characteristics. See Getting a Range of Users and Working with Users below.
 - Early on, learn about general issues related to what you are developing, e.g., websites, web tools, standards, or other products. Ask people to show you websites or related products that work well for them. Then, ask them to show you problems in products that do not work well. Ask lots of questions to help you understand the accessibility issues.
 
 #### Including Users in Implementation **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
 For example, for websites, web applications, and web tools:
 - When you are considering a specific design aspect, such as expanding/collapsing navigation, find other products that are already doing it and have users explore with you what works well and what does not.
 - Throughout your design and development, ask users to review prototypes. Give them specific tasks to complete and see how the different aspects of the design and coding could be improved. Ask lots of questions.
 
 #### Carefully Consider Input **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
 **Caution:** Carefully consider all input and **avoid assuming that input from one person with a disability applies to all people with disabilities((. A person with a disability does not necessarily know how other people with the same disability interact with the web, nor know enough about other disabilities to provide valid guidance on other accessibility issues. Getting input from a range of users is best.
 
 #### Getting a Range of Users **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
 People with disabilities are as diverse as any people. They have diverse experiences, expectations, and preferences. They use diverse interaction techniques, adaptive strategies, and assistive technology configurations. People have different disabilities: auditory, cognitive, neurological, physical, speech, and visual — and some have multiple disabilities. Even within one category, there is extreme variation; for example, "visual disability" includes people who have been totally blind since birth, people who have distortion in their central vision from age-related degeneration, and people who temporarily have blurry vision from an injury or disease.
 
 Include users with a variety of disabilities and user characteristics. Most projects have limited time and budget and cannot include many different users. Selecting the optimum number of users with the best suited characteristics can be difficult. There are resources on the web that provide guidance on selecting participants with disabilities; for example, determining participant characteristicslinks off WAI website and finding participants with disabilitieslinks off WAI website.
 
 #### Users' Experience Interacting with the Web **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
 A primary consideration in selecting users is their experience interacting with the web. For example, some assistive technologies (AT) are complicated and difficult to learn. A user with insufficient experience may not know how to use the AT effectively. On the other hand, a very advanced user might know uncommon work-arounds to overcome problems in a website that the "average" user would not be able to handle.
 
 In the early stages when you are first learning how people with disabilities interact with the web, it is usually best to get people with a fairly high experience level.
 
 #### Working with Users **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
 Follow common practices for working with people informally and formally, for example:
 - Develop appropriate relationships with your users. For example, spending time talking informally over lunch may help you work together more comfortably.
 - Ensure informed consent and other research ethics. For example, participants in studies should be told that they are free to stop at any time.
 - Treat people with disabilities and older users with the respect you would any other users. For example, respect their time and provide appropriate compensation.
 
 #### Combine User Involvement with Standards **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
 While including users with disabilities and older users with accessibility needs is key to making your accessibility efforts more effective and more efficient, that alone cannot address all issues. Even large projects cannot cover the diversity of disabilities, adaptive strategies, and assistive technologies. That is the role of accessibility standards.
 
 For websites and web applications, using comprehensive standards such as Web Content Accessibility Guidelines (WCAG) 2.0 helps ensure that you address all issues. Combine user involvement with evaluating conformance to WCAG to ensure that accessibility is provided to users with a range of disabilities and situations.
