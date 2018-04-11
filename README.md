@@ -1,4 +1,6 @@
+<!-- markdownlint-disable MD041 -->
 [Français](#user-content-guide-numérique-du-gouvernement-du-canada-ébauche)
+<!-- markdownlint-enable MD041 -->
 
 # Government of Canada Digital Playbook (draft)
 
@@ -10,7 +12,7 @@
 
 - [Overview](en/overview.md)
 - [1. Design with users](en/1-design-with-users.md)
-- [2. Build in accessibility from the start](en/2-build-in-accessibility-from-start.md	)
+- [2. Build in accessibility from the start](en/2-build-in-accessibility-from-start.md)
 - [3. Collaborate widely](en/3-collaborate-widely.md)
 - [4. Empower staff to deliver better services](en/4-empower-staff-deliver-better-services.md)
 - [5. Work in the open by default](en/5-work-in-open-by-default.md)
@@ -20,7 +22,6 @@
 - [9. Address security and privacy risks](en/9-address-security-privacy-risks.md)
 - [10. Be good data stewards](en/10-be-good-data-stewards.md)
 - [Comparison tables](en/comparison-tables.md)
-
 
 # Guide numérique du gouvernement du Canada (ébauche)
 

@@ -75,11 +75,11 @@ move between different technologies when you need to, avoiding vendor lock-in.
 #### Alpha stage
 
 - build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
-  
+
 - follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
-  
+
 - identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
-  
+
 - search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
 
 #### Beta and live stages
@@ -107,6 +107,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 - [OASIS Standards](https://www.oasis-open.org/standards)
 
 ### Similar resources
+
 - [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
 
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
@@ -166,6 +167,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 **[TODO: Add/revise implementation guide items]**
 
 ### Similar resources
+
 - [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
 
 - [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)

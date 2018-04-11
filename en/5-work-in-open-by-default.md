@@ -279,4 +279,3 @@ Open source helps to:
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
-

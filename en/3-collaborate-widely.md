@@ -149,6 +149,7 @@ Good government services are built quickly and iteratively, based on user needs.
 - Develop open and innovative partnerships - Recognize that an organization can't have all the best ideas. Create partnerships and collaborate.
 
 ([The Good Collaboration Toolkit: Checklist - The Good Project](http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/)):
+
 - Do you discuss the purpose of the collaboration? Is there agreement about the vision among collaborators?
 - Is there a clear leadership/rotation of leadership for the collaboration?
 - Is there a documented scope of work, with an associated timeline?
@@ -281,4 +282,3 @@ Good government services are built quickly and iteratively, based on user needs.
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
-

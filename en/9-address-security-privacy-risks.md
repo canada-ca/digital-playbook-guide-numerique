@@ -315,7 +315,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 - identify malicious or fraudulent activity **(Digital Service Standard (AU))**
 
-- have appropriate policies in place to respond quickly to security events **(Digital Service Standard (AU))** 
+- have appropriate policies in place to respond quickly to security events **(Digital Service Standard (AU))**
 
 - have the ability to integrate into existing security monitoring solutions **(Digital Service Standard (AU))**
 
@@ -344,4 +344,3 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 
 - [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
-
