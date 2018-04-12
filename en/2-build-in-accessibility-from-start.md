@@ -14,19 +14,19 @@
 
 **Related guidelines:**
 
-[1.1 Build nothing for the user, without the user being involved (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
+[1.1 Build nothing for the user, without the user being involved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
 
-[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
 
-[1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-13-understand-the-context-in-which-people-are-interacting-and-design-appropriate-solutions-that-meet-their-needs)
+[1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-13-understand-the-context-in-which-people-are-interacting-and-design-appropriate-solutions-that-meet-their-needs)
 
-[1.5 Provide services that can be obtained anytime, anywhere and on any device (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
+[1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
 
-[1.6 Make services simple, intuitive and consistent (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
+[1.6 Make services simple, intuitive and consistent (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
 
-[1.8 Support people who cannot use digital services on their own (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
+[1.8 Support people who cannot use digital services on their own (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
 
-[8.4 Balance trade-offs between innovation and inclusiveness (Principle&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
+[8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
 ## 2.1 Build for those with the greatest needs and it will work for everyone else
 
