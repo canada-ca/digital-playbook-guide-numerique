@@ -16,27 +16,27 @@
 
 **Lignes directrices connexes :**
 
-[3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses (Principe&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-31-habiliter-des-%C3%A9quipes-multidisciplinaires-avec-des-perspectives-et-des-comp%C3%A9tences-diverses)
+[3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-31-habiliter-des-%C3%A9quipes-multidisciplinaires-avec-des-perspectives-et-des-comp%C3%A9tences-diverses)
 
-[3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires (Principe&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-32-reconna%C3%AEtre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-id%C3%A9es-cr%C3%A9er-des-partenariats-et-collaborer-avec-un-large-%C3%A9ventail-de-partenaires)
+[3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-32-reconna%C3%AEtre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-id%C3%A9es-cr%C3%A9er-des-partenariats-et-collaborer-avec-un-large-%C3%A9ventail-de-partenaires)
 
-[3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation (Principe&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-33-renforcer-la-capacit%C3%A9-%C3%A0-attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
+[3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-33-renforcer-la-capacit%C3%A9-%C3%A0-attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
 
-[5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez (Principe&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-54-soyez-transparent-sur-la-fa%C3%A7on-dont-vous-travaillez-et-justifiez-les-d%C3%A9cisions-que-vous-prenez)
+[5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-54-soyez-transparent-sur-la-fa%C3%A7on-dont-vous-travaillez-et-justifiez-les-d%C3%A9cisions-que-vous-prenez)
 
-[5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Principe&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-%C3%A0-lair-libre-et-rendre-le-code-source-ouvert-et-r%C3%A9utilisable)
+[5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-%C3%A0-lair-libre-et-rendre-le-code-source-ouvert-et-r%C3%A9utilisable)
 
-[6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Principe&#160;6&#160;: Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+[6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
 
-[6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Principe&#160;6&#160;: Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md#user-content-62-utiliser-et-r%C3%A9utiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-%C3%A9prouv%C3%A9es)
+[6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md#user-content-62-utiliser-et-r%C3%A9utiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-%C3%A9prouv%C3%A9es)
 
-[7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs (Principe&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-71-construire-de-mani%C3%A8re-agile-et-am%C3%A9liorer-continuellement-en-r%C3%A9ponse-aux-besoins-des-utilisateurs)
+[7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs (Norme&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-71-construire-de-mani%C3%A8re-agile-et-am%C3%A9liorer-continuellement-en-r%C3%A9ponse-aux-besoins-des-utilisateurs)
 
-[7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements (Principe&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-72-accepter-que-le-changement-est-in%C3%A9vitable-et-utiliser-des-strat%C3%A9gies-et-des-outils-adaptatifs-pour-de-nouveaux-d%C3%A9veloppements)
+[7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements (Norme&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-72-accepter-que-le-changement-est-in%C3%A9vitable-et-utiliser-des-strat%C3%A9gies-et-des-outils-adaptatifs-pour-de-nouveaux-d%C3%A9veloppements)
 
-[7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité (Principe&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-73-embrasser-et-r%C3%A9agir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilit%C3%A9)
+[7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité (Norme&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-73-embrasser-et-r%C3%A9agir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilit%C3%A9)
 
-[7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération (Principe&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypoth%C3%A8ses-en-utilisant-les-preuves-comme-base-de-lit%C3%A9ration)
+[7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération (Norme&#160;7&#160;: Itérer et améliorer fréquemment](7-iterer-ameliorer-frequemment.md#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypoth%C3%A8ses-en-utilisant-les-preuves-comme-base-de-lit%C3%A9ration)
 
 ## 4.1 Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
 
