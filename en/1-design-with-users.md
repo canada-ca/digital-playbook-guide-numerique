@@ -23,27 +23,27 @@
 
 **Related guidelines:**
 
-[2.1 Build for those with the greatest needs and it will work for everyone else (Principle 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else)
+[2.1 Build for those with the greatest needs and it will work for everyone else (Standard 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else)
 
-[2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use (Principle 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-22-services-should-meet-or-exceed-accessibility-standards-and-should-not-feel-burdensome-to-use)
+[2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use (Standard 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-22-services-should-meet-or-exceed-accessibility-standards-and-should-not-feel-burdensome-to-use)
 
-[2.3 Co-create with people who have distinct needs, being inclusive from the very beginning (Principle 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
+[2.3 Co-create with people who have distinct needs, being inclusive from the very beginning (Standard 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
 
-[2.4 Take into consideration a user's possible constraints when designing services (Principle 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-24-take-into-consideration-a-users-possible-constraints-when-designing-services)
+[2.4 Take into consideration a user's possible constraints when designing services (Standard 2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-24-take-into-consideration-a-users-possible-constraints-when-designing-services)
 
-[3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners (Principle 3: Collaborate widely)](3-collaborate-widely.md#user-content-32-recognize-that-an-organization-cant-have-all-the-best-ideas-create-partnerships-and-collaborate-with-a-diverse-range-of-partners)
+[3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners (Standard 3: Collaborate widely)](3-collaborate-widely.md#user-content-32-recognize-that-an-organization-cant-have-all-the-best-ideas-create-partnerships-and-collaborate-with-a-diverse-range-of-partners)
 
-[6.5 Design, build and test end-to-end digital services (Principle 6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-65-design-build-and-test-end-to-end-digital-services)
+[6.5 Design, build and test end-to-end digital services (Standard 6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-65-design-build-and-test-end-to-end-digital-services)
 
-[7.1 Build in an agile manner and continuously improve in response to user needs (Principle 7: Iterate and improve frequently)](7-iterate-improve-frequently.md#user-content-71-build-in-an-agile-manner-and-continuously-improve-in-response-to-user-needs)
+[7.1 Build in an agile manner and continuously improve in response to user needs (Standard 7: Iterate and improve frequently)](7-iterate-improve-frequently.md#user-content-71-build-in-an-agile-manner-and-continuously-improve-in-response-to-user-needs)
 
-[7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration (Principle 7: Iterate and improve frequently)](7-iterate-improve-frequently.md#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
+[7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration (Standard 7: Iterate and improve frequently)](7-iterate-improve-frequently.md#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
 
-[8.2 Assess the full impact on users and communities (Principle 8: Design ethical services)](8-design-ethical-services.md#user-content-82-assess-the-full-impact-on-users-and-communities)
+[8.2 Assess the full impact on users and communities (Standard 8: Design ethical services)](8-design-ethical-services.md#user-content-82-assess-the-full-impact-on-users-and-communities)
 
-[8.4 Balance trade-offs between innovation and inclusiveness (Principle 8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
+[8.4 Balance trade-offs between innovation and inclusiveness (Standard 8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
-[10.1 Collect data once to avoid duplication (Principle 10: Be good data stewards)](10-be-good-data-stewards.md#user-content-101-collect-data-once-to-avoid-duplication)
+[10.1 Collect data once to avoid duplication (Standard 10: Be good data stewards)](10-be-good-data-stewards.md#user-content-101-collect-data-once-to-avoid-duplication)
 
 ## 1.1 Build nothing for the user, without the user being involved
 
