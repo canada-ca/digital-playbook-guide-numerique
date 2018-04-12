@@ -18,15 +18,15 @@
 
 **Lignes directrices connexes:**
 
-[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Principe 1 : Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
+[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
 
-[3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser (Principe 3 : Collaborez largement)](3-collaborez-largement.md#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
+[3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
 
-[5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous licence ouverte (Principe 5: Travailler à l'extérieur par défaut)](5-travailler-air-libre-par-defaut.md#user-content-51-rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
+[5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous licence ouverte (Norme&#160;5&#160;: Travailler à l'extérieur par défaut)](5-travailler-air-libre-par-defaut.md#user-content-51-rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
 
-[5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Principe 5 : Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-à-lair-libre-et-rendre-le-code-source-ouvert-et-réutilisable)
+[5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-à-lair-libre-et-rendre-le-code-source-ouvert-et-réutilisable)
 
-[10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres (Principe 10 : Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-103-assurez-vous-que-les-données-sont-collectées-de-manière-standard-afin-quelles-puissent-être-facilement-intégrées-et-réutilisées-par-dautres)
+[10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-103-assurez-vous-que-les-données-sont-collectées-de-manière-standard-afin-quelles-puissent-être-facilement-intégrées-et-réutilisées-par-dautres)
 
 ## 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
 
