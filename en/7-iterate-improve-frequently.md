@@ -14,11 +14,11 @@
 
 **Related guidelines:**
 
-[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
 
-[3.3 Build the capacity to dynamically pull in new partners for co-innovation](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
+[3.3 Build the capacity to dynamically pull in new partners for co-innovation (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
 
-[9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
+[9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
 
 ## 7.1 Build in an agile manner and continuously improve in response to user needs
 
