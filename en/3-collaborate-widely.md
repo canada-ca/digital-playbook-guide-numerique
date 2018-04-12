@@ -14,13 +14,13 @@
 
 **Related guidelines:**
 
-[1.1 Build nothing for the user, without the user being involved (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
+[1.1 Build nothing for the user, without the user being involved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
 
-[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Principle&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
 
-[2.3 Co-create with people who have distinct needs, being inclusive from the very beginning (Principle&#160;2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
+[2.3 Co-create with people who have distinct needs, being inclusive from the very beginning (Standard&#160;2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
 
-[5.5 Work in the open and make source code open and reusable (Principle&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+[5.5 Work in the open and make source code open and reusable (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
 
 ## 3.1 Empower multidisciplinary teams with diverse perspectives and skills
 
