@@ -14,6 +14,8 @@
 
 [10.5 Ensure data and information is complete, accurate and up-to-date](#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date)
 
+[10.6 Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others](#user-content-106-ensure-data-is-well-structured-intuitive-and-in-a-format-that-is-easy-to-integrate-and-reuse-by-others)
+
 **Related guidelines:**
 
 [1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-14-clearly-articulate-and-understand-the-end-to-end-problem-and-use-data-to-demonstrate-that-it-is-being-solved)
