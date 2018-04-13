@@ -272,6 +272,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- Data is the new gold **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
+  - Ensure data is able to be shared and can be easily accessed
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
