@@ -16,13 +16,13 @@ The Government of Canada Digital Playbook provides practical and measurable guid
 
 ### Government of Canada Digital Standards (draft)
 
-**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. These standards form the foundation of the Government of Canada's shift to becoming more agile, open, and user-focused. It's a journey.
+**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. These digital standards form the foundation of the Government of Canada's shift to becoming more agile, open, and user-focused. It's a journey.
 
 **It takes a village.** These Digital Standards were co-created with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. It took a community of individuals, with varying backgrounds and perspectives, to come together and help define them. And of course we built our foundation upon the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you.
 
 **Together we'll make them better.** These are living standards and we will continue to update and evolve them over time as we better understand the complexities involved in putting them into practice. We expect the community to provide input to help refine them. These standards reflect how we will design for ourselves as well as how we will design for others. We can't do this alone.
 
-**The bureaucratic stuff.** The intended outcomes of these standards will be baked into our policy instruments and departments will be measured accordingly. We started with our high-level aspirations, and are diving into the details, providing guidance and direction in the form of this playbook. The goal is for this playbook to be as collaborative as possible, allowing our community to share approaches, tools, and stories.
+**The bureaucratic stuff.** The intended outcomes of these digital standards will be baked into our policy instruments and departments will be measured accordingly. We started with our high-level aspirations, and are diving into the details, providing guidance and direction in the form of this playbook. The goal is for this playbook to be as collaborative as possible, allowing our community to share approaches, tools, and stories.
 
 **Digital Standards:**
 
