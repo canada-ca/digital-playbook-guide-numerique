@@ -206,6 +206,10 @@ Open source helps to:
 
 - Show your code in an open Internet source code repository and enable contributions and comments on the code
 
+- Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Actively use and contribute to open source tools and solutions
+  - Develop in the open by sharing and reusing all types of code and platform configuration
+
 #### Stage alpha
 
 - Determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
