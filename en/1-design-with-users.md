@@ -132,6 +132,9 @@ A key part of building digital services that work for users is developing a good
 
 **[TODO: Add/revise checklist items]**
 
+- Clearly defined user needs **(Build It Right - OneGC Architectural Checklist (draft))**
+  - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
+
 #### Alpha stage
 
 - Spend time with current and prospective users of the service **(Digital Services Playbook (US))**
