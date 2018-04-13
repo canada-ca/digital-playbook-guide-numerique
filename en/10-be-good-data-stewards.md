@@ -16,23 +16,23 @@
 
 **Related guidelines:**
 
-[1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved](1-design-with-users.md#user-content-14-clearly-articulate-and-understand-the-end-to-end-problem-and-use-data-to-demonstrate-that-it-is-being-solved)
+[1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-14-clearly-articulate-and-understand-the-end-to-end-problem-and-use-data-to-demonstrate-that-it-is-being-solved)
 
-[5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence](5-work-in-open-by-default.md#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
+[5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
 
-[5.2 Be transparent with goals and publish real-time performance data](5-work-in-open-by-default.md#user-content-52-be-transparent-with-goals-and-publish-real-time-performance-data)
+[5.2 Be transparent with goals and publish real-time performance data (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-52-be-transparent-with-goals-and-publish-real-time-performance-data)
 
-[5.3 Measure and monitor the effectiveness, value, and consequences of your service and report publicly](5-work-in-open-by-default.md#user-content-53-measure-and-monitor-the-effectiveness-value-and-consequences-of-your-service-and-report-publicly)
+[5.3 Measure and monitor the effectiveness, value, and consequences of your service and report publicly (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-53-measure-and-monitor-the-effectiveness-value-and-consequences-of-your-service-and-report-publicly)
 
-[5.4 Be transparent about how you work and justify the decisions you make](5-work-in-open-by-default.md#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
+[5.4 Be transparent about how you work and justify the decisions you make (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
 
-[6.1 Leverage open standards and embrace leading practices](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
+[6.1 Leverage open standards and embrace leading practices (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
 
-[6.2 Use and reuse common, proven government solutions, approaches, and platforms](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
+[6.2 Use and reuse common, proven government solutions, approaches, and platforms (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
 
-[6.4 Open up the data, transactions, and business rules that underpin a service](6-use-open-standards-solutions.md#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
+[6.4 Open up the data, transactions, and business rules that underpin a service (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
 
-[9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
+[9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
 
 ## 10.1 Collect data once to avoid duplication
 
