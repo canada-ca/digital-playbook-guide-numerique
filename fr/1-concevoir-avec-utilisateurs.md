@@ -132,6 +132,9 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- Clearly defined user needs **(Build It Right - OneGC Architectural Checklist (draft))**
+  - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
+
 #### Stage alpha
 
 - Spend time with current and prospective users of the service **(Digital Services Playbook (US))**
@@ -285,6 +288,9 @@ We need to understand the different ways people will interact with our services,
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
+
+- Platform agnostic **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)
 
 ### Guides d'application
 

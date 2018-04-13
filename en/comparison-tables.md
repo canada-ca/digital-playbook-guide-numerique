@@ -5,13 +5,14 @@
 1. **TODO:** Digital Service Standard (Ontario) comparison table
 1. **TODO:** Digital Services Playbook (US) comparison table
 1. **TODO:** Digital Service Standard (AU) comparison table
-1. **TODO:** OneGC product design criteria (GC) comparison table
+1. **TODO:** OneGC product design criteria (draft) (GC) comparison table
 1. **TODO:** Current GC EARB Principles (GC) comparison table
-1. **TODO:** Build It Digital Principles (GC) comparison table
+1. **TODO:** Build It Digital Principles (draft) (GC) comparison table
 1. **TODO:** EA Principles (GC) comparison table
 1. **TODO:** Digital Services Design Playbook (ISED) comparison table
 1. **TODO:** Open First Whitepaper (GC) comparison table
-1. **TODO:** Architectural Commandments (GC) comparison table
+1. **TODO:** Architectural Commandments (draft) (GC) comparison table
+1. **TODO:** Build It Right - OneGC Architectural Checklist (draft) (GC) comparison table
 
 ## Government of Canada Digital Playbook comparison table
 
@@ -64,6 +65,7 @@
           <li><a href="https://www.dta.gov.au/standard/1-user-needs/">1.&#160;Understand user needs (Digital Service Standard (AU))</a></li>
           <li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
           <li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs">1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+          <li>Clearly defined user needs (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -83,8 +85,10 @@
       </td>
       <td>
         <ul>
-          <li>Mobility Preferred (Current GC EARB Principles)</li>                    <li>Any Device - Mobility (GC EA principles)</li>
+          <li>Mobility Preferred (Current GC EARB Principles)</li>
+          <li>Any Device - Mobility (GC EA principles)</li>
           <li><a href="http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook">Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+          <li>Platform agnostic (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -320,6 +324,7 @@
           <li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
           <li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
           <li><a href="https://www.dta.gov.au/standard/8-make-source-code-open/">8.&#160;Make source code open (Digital Service Standard (AU))</a></li>
+          <li>Build and develop open (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -340,6 +345,7 @@
           <li><a href="https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms">9.&#160;Use open standards and common platforms (Digital Service Standard (UK))</a></li>
           <li><a href="https://www.ontario.ca/page/digital-service-standard#section-10">9.&#160;Use open standards and common platforms (Digital Service Standard (Ontario)</a></li>
           <li><a href="https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/">7.&#160;Use open standards and common platforms (Digital Service Standard (AU)</a></li>
+          <li>Use emerging technologies (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -362,6 +368,10 @@
           <li><a href="https://playbook.cio.gov/#play8">8.&#160;Choose a modern technology stack (Digital Services Playbook (US))</a></li>
           <li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives">1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
           <li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate">2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+          <li>Build standards-based solution (Build It Right - OneGC Architectural Checklist (draft))</li>
+          <li>Digital Exchange Platform (DXP) (Build It Right - OneGC Architectural Checklist (draft))</li>
+          <li>Pan-Canadian Trust Framework (Build It Right - OneGC Architectural Checklist (draft))</li>
+          <li>Build toward OneGC (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -376,6 +386,7 @@
           <li>4. API Usage (Architectural Commandments (initial thoughts))</li>
           <li>Interoperability (Current GC EARB Principles)</li>
           <li>Interoperability (ESB/APIs -- Micro Services) (GC EA Principles)</li>
+          <li>API first (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -416,6 +427,7 @@
           <li>Cloud First (Build it Digital Principles (initial thoughts))</li>
           <li>1. Cloud First (Architectural Commandments (initial thoughts))</li>
           <li>(Public) Cloud First: SaaS -- PaaS -- IaaS (GC EA Principles)</li>
+          <li>Cloud first (Build It Right - OneGC Architectural Checklist (draft))</li>
           <li><a href="https://playbook.cio.gov/#play9">9.&#160;Deploy in a flexible hosting environment (Digital Services Playbook (US))</a></li>
         </ul>
       </td>
@@ -436,6 +448,7 @@
           <li><a href="https://www.dta.gov.au/standard/3-agile-and-user-centred/">3.&#160;Agile and user-centred process (Digital Service Standard (AU))</a></li>
           <li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually">3.&#160;Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
           <li><a href="http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.">3.&#160;Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)</a></li>
+          <li>Use agile (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -536,6 +549,7 @@
           <li>Secure by Design (GC EA Principles)</li>
           <li>8.&#160;Trust Framework (Architectural Commandments (initial thoughts))</li>
           <li><a href="https://www.ontario.ca/page/digital-service-standard#section-11">10.&#160;Embed privacy and security by design (Digital Service Standard (Ontario))</a></li>
+          <li>Pan-Canadian Trust Framework (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -548,6 +562,7 @@
           <li><a href="https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues">7.&#160;Understand security and privacy issues (Digital Service Standard (UK))</a></li>
           <li><a href="https://playbook.cio.gov/#play11">11.&#160;Manage security and privacy through reusable processes (Digital Services Playbook (US))</a></li>
           <li><a href="https://www.dta.gov.au/standard/5-make-it-secure/">5.&#160;Make it secure (Digital Service Standard (AU))</a></li>
+          <li>HTTPS only (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>
@@ -596,11 +611,12 @@
     </tr>
     <tr>
       <td>
-        <a href="10-be-good-data-stewards.md#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date">10.5&#160;Information/Data is an asset (Current GC EARB Principles)</a>
+        <a href="10-be-good-data-stewards.md#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date">10.5&#160;Ensure data and information is complete, accurate and up-to-date</a>
       </td>
       <td>
         <ul>
           <li>Information/Data is an asset (Current GC EARB Principles)</li>
+          <li>Data is the new gold (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
     </tr>

@@ -132,6 +132,9 @@ A key part of building digital services that work for users is developing a good
 
 **[TODO: Add/revise checklist items]**
 
+- Clearly defined user needs **(Build It Right - OneGC Architectural Checklist (draft))**
+  - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
+
 #### Alpha stage
 
 - Spend time with current and prospective users of the service **(Digital Services Playbook (US))**
@@ -284,6 +287,9 @@ We need to understand the different ways people will interact with our services,
 **[TODO: Add/revise checklist items]**
 
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
+
+- Platform agnostic **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)
 
 ### Implementation guides
 

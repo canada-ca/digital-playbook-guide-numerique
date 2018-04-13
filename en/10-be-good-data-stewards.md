@@ -12,7 +12,7 @@
 
 [10.4 Give due consideration to digital preservation and retention](#user-content-104-give-due-consideration-to-digital-preservation-and-retention)
 
-[10.5 Information/Data is an asset (Current GC EARB Principles)](#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date)
+[10.5 Ensure data and information is complete, accurate and up-to-date](#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date)
 
 **Related guidelines:**
 
@@ -256,6 +256,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+- Data is the new gold **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
+  - Ensure data is able to be shared and can be easily accessed
 
 ### Implementation guides
 
