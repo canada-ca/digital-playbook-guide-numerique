@@ -72,6 +72,9 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 - understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 
+- Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec
+
 #### Stage alpha
 
 - build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
@@ -136,6 +139,19 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 - [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
 
+- Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Adhere to GC technical standards and guidance, leveraging open standards when possible
+  - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
+
+- Digital Exchange Platform (DXP) **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery
+
+- Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
+
+- Build toward OneGC **Build It Right - OneGC Architectural Checklist (draft))**
+  - OneGC is where Digital business changes are built to support a government as a platform where everyone can maximise shared capability (Platforms) and minimise unique department products
+
 - Use departmental/GC standards. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Adopt the business number as the client identifier - do not create other unique identifiers. This enables data sharing across service lines, departments and jurisdictions.
   - Authenticated services must use only the federated credentials (e.g., SecureKey, GCKey). This enables a single login so clients do not need to re-authenticate their identity for each ISED service. It also ensures a sufficient level of security.
@@ -197,6 +213,10 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 - Design APIs to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily understand code that uses the API.
 
 - Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
+
+- API first **(Build It Right - OneGC Architectural Checklist (draft))**
+  - APIs created for every service, exposing data and functionality, to foster data sharing within GC and externally
+  - Build microservices that work together within an ecosystem allowing for rapid deployment and built-in redundancy
 
 ### Guides d'implémentation
 
@@ -343,6 +363,9 @@ Public cloud services offer benefits that enable significant advances in the fol
 - Agility: Rapid access is available to multi-featured computing resources at the required capacity to carry out projects from planning to full operation.
 
 - Elasticity: Commoditized services can grow and shrink with the level of demand; consumers pay only for what is needed for the time it is needed.
+
+- Cloud first **(Build It Right - OneGC Architectural Checklist (draft))**
+  - SaaS considered first, PaaS, IaaS second to grow more modern infrastructure which includes public, private and hybrid cloud solutions
 
 ### Liste de contrôle
 
