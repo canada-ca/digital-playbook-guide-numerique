@@ -19,9 +19,9 @@
 <table>
   <thead>
     <tr>
-      <th>Digital&#160;Principle</th>
+      <th>Digital&#160;Standard</th>
       <th>Digital Playbook guideline</th>
-      <th>Comparable principles/criteria</th>
+      <th>Comparable standards/criteria</th>
     </tr>
   </thead>
   <tbody>
