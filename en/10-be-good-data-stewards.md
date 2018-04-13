@@ -14,6 +14,8 @@
 
 [10.5 Ensure data and information is complete, accurate and up-to-date](#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date)
 
+[10.6 Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others](#user-content-106-ensure-data-is-well-structured-intuitive-and-in-a-format-that-is-easy-to-integrate-and-reuse-by-others)
+
 **Related guidelines:**
 
 [1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-14-clearly-articulate-and-understand-the-end-to-end-problem-and-use-data-to-demonstrate-that-it-is-being-solved)
@@ -277,3 +279,21 @@ Every service must aim for continuous improvement. Metrics are an important star
   - [Formats, Evluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml)
 
   - [Sustainability Factors (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/sustain/sustain.shtml)
+
+## 10.6 Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others
+
+**[TODO: Add/revise introductory text]**
+
+### Checklist
+
+**[TODO: Add/revise checklist items]**
+
+- Design data to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
+
+- Design data to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily integrate and reuse it.
+
+- Design data with a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
+
+### Implementation guides
+
+**[TODO: Add/revise implementation guide items]**

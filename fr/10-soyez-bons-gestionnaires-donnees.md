@@ -14,6 +14,8 @@
 
 [10.5 Assurer les données et dans la formation est complète, précise et à jour](#user-content-105-assurer-les-données-et-dans-la-formation-est-complète-précise-et-à-jour)
 
+[10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d'autres](#user-content-106-assurez-vous-que-les-données-sont-bien-structurées-intuitives-et-dans-un-format-facile-à-intégrer-et-réutiliser-par-dautres)
+
 **Lignes directrices connexes :**
 
 [1.4 Clairement articuler and understand the problem of about and use the data for evidence (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-14-clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence)
@@ -275,6 +277,24 @@ Every service must aim for continuous improvement. Metrics are an important star
 - Data is the new gold **(Build It Right - OneGC Architectural Checklist (draft))**
   - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
   - Ensure data is able to be shared and can be easily accessed
+
+### Guides d'implémentation
+
+**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+## 10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d'autres
+
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+### Liste de contrôle
+
+**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+- Design data to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
+
+- Design data to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily integrate and reuse it.
+
+- Design data with a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
 
 ### Guides d'implémentation
 

@@ -567,7 +567,7 @@
       </td>
     </tr>
     <tr>
-      <td rowspan="5">
+      <td rowspan="6">
         <a href="10-be-good-data-stewards.md">10.&#160;Be good data stewards</a>
       </td>
       <td>
@@ -618,6 +618,13 @@
           <li>Information/Data is an asset (Current GC EARB Principles)</li>
           <li>Data is the new gold (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="10-be-good-data-stewards.md#user-content-106-ensure-data-is-well-structured-intuitive-and-in-a-format-that-is-easy-to-integrate-and-reuse-by-others">10.6&#160;Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others</a>
+      </td>
+      <td>
       </td>
     </tr>
   </tbody>
