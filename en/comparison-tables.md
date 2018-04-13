@@ -567,7 +567,7 @@
       </td>
     </tr>
     <tr>
-      <td rowspan="5">
+      <td rowspan="6">
         <a href="10-be-good-data-stewards.md">10.&#160;Be good data stewards</a>
       </td>
       <td>
