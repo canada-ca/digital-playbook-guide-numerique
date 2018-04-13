@@ -288,6 +288,9 @@ We need to understand the different ways people will interact with our services,
 
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
 
+- Platform agnostic **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
