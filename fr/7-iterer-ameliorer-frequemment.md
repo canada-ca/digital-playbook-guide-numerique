@@ -80,6 +80,10 @@ Start with a representation or prototype of the solution that will be tested and
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- Use agile **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Be an agile Developer: Develop in an iterative manner, with key stakeholders participation from the beginning, releasing minimum viable product as soon as possible and iteratively building out functionality
+  - Be an agile administrator: Promote DEVOPS and automate, monitor and unify all platform and software construction from testing to release and infrastructure management
+
 #### Stage alpha
 
 - test hypotheses and underlying assumptions with several prototypes **(Digital Service Standard (AU))
