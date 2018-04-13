@@ -122,6 +122,9 @@ Users won't use a service unless they have a guarantee:
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
+
 #### Stage alpha
 
 - determine how the data is being transmitted **(Digital Service Standard (Ontario))**
@@ -214,6 +217,9 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - "Pre-certify" the hosting infrastructure used for the project using FedRAMP **(Digital Services Playbook (US))**
 
 - Use deployment scripts to ensure configuration of production environment remains consistent and controllable **(Digital Services Playbook (US))**
+
+- HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Holistic approach to securing GC services for publicly accessible sites
 
 #### Stage alpha
 
