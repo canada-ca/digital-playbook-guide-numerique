@@ -12,7 +12,7 @@
 
 [10.4 Give due consideration to digital preservation and retention](#user-content-104-give-due-consideration-to-digital-preservation-and-retention)
 
-[10.5 Information/Data is an asset (Current GC EARB Principles)](#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date)
+[10.5 Ensure data and information is complete, accurate and up-to-date](#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date)
 
 **Related guidelines:**
 
