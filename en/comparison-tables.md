@@ -622,7 +622,7 @@
     </tr>
     <tr>
       <td>
-        <a href="10-be-good-data-stewards.md#ser-content-106-ensure-data-is-well-structured-intuitive-and-in-a-format-that-is-easy-to-integrate-and-reuse-by-others">10.6&#160;Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others</a>
+        <a href="10-be-good-data-stewards.md#user-content-106-ensure-data-is-well-structured-intuitive-and-in-a-format-that-is-easy-to-integrate-and-reuse-by-others">10.6&#160;Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others</a>
       </td>
       <td>
       </td>
