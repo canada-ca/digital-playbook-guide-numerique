@@ -533,7 +533,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
 
-### 1.8 Support people who cannot use digital services on their own
+## 1.8 Support people who cannot use digital services on their own
 
 **[TODO: Add/revise introductory text]**
 
