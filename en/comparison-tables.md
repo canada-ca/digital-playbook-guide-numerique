@@ -1,4 +1,11 @@
+---
+layout: default
+title:  "Comparison tables (draft)"
+lang: en
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 # Comparison tables (draft)
+<!-- jekyll-exclude-end -->
 
 1. [Government of Canada Digital Playbook comparison table](#government-of-canada-digital-playbook-comparison-table)
 1. **TODO:** Digital Service Standard (UK) comparison table
