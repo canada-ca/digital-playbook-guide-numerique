@@ -3,7 +3,7 @@ layout: default
 title:  "10. Be good data stewards (draft)"
 lang: en
 altLang: fr
-altLangPage: 10-soyez-bons-gestionnaires-donnees.md
+altLangPage: 10-soyez-bons-gestionnaires-donnees
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 # 10. Be good data stewards (draft)
