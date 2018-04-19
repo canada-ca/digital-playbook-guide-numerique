@@ -6,7 +6,9 @@ altLang: fr
 altLangPage: 6-utiliser-standards-solutions-ouverts
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 6. Use open standards and solutions (draft)
+
 <!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
