@@ -6,7 +6,9 @@ altLang: fr
 altLangPage: 2-construire-dans-accessibilite-des-debut
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 2. Build in accessibility from the start (draft)
+
 <!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
