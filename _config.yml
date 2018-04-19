@@ -15,36 +15,42 @@ wet_cdts_version: "v4_0_27"
 
 # Translations
 title:
-  en: Government of Canada Digital Playbook
-  fr: Guide numérique du gouvernement du Canada
+  en: Government of Canada Digital Playbook (draft)
+  fr: Guide numÃ©rique du gouvernement du Canada (Ã©bauche)
 email: zzOneGC@tbs-sct.gc.ca
 description:
   en: The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards.
-  fr: Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques.
+  fr: Le guide numÃ©rique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels Ã  devenir plus agiles, ouverts et axÃ©s sur l'utilisateur en appliquant les normes numÃ©riques.
+creator:
+  en: Government of Canada, Treasury Board of Canada Secretariat, Chief Information Officer Branch, OneGC Program Office
+  fr: Gouvernement du Canada, SecrÃ©tariat du Conseil du TrÃ©sor du Canada, Direction du dirigeant principal de lâ€™information, Bureau du programme unGC
+subject:
+  en: Digital Playbook, Government of Canada, services
+  fr: Guide numÃ©rique, Gouvernement du Canada, services
 index:
-  en: index.html
-  fr: accueil.html
+  en: overview.html
+  fr: apercu.html
 home:
   en: Home
   fr: Accueil
 AllPosts:
-  en: Government of Canada Digital Playbook
-  fr: Guide numérique du gouvernement du Canada
+  en: Government of Canada Digital Playbook (draft)
+  fr: Guide numÃ©rique du gouvernement du Canada (Ã©bauche)
 feed:
   en: /feed.xml
   fr: /flux.xml
 language:
   en: English
-  fr: Français
+  fr: FranÃ§ais
 SkipToMain:
   en: Skip to main content
   fr: Passer au contenu principal
 SkipToAbout:
   en: Skip to "About this site"
-  fr: Passer à «&#160;Au sujet du gouvernement&#160;»
+  fr: Passer Ã  Â«&#160;Au sujet du gouvernement&#160;Â»
 LanguageSelection:
   en: Language selection
-  fr: Sélection de la langue
+  fr: SÃ©lection de la langue
 GoC:
   en: Government of Canada
   fr: Gouvernement du Canada
@@ -65,10 +71,10 @@ TopicsMenu:
   fr: Menu des sujets
 YouAreHere:
   en: You are here
-  fr: Vous êtes ici
+  fr: Vous Ãªtes ici
 GCActivitiesInitiatives:
   en: Government of Canada activities and initiatives
-  fr: Activités et initiatives du gouvernement du Canada
+  fr: ActivitÃ©s et initiatives du gouvernement du Canada
 TopicMenu1:
   en: Jobs
   fr: Emplois
@@ -101,13 +107,13 @@ TopicMenu5URL:
   fr: https://www.canada.ca/fr/services/prestations.html
 TopicMenu6:
   en: Health
-  fr: Santé
+  fr: SantÃ©
 TopicMenu6URL:
   en: https://www.canada.ca/en/services/health.html
   fr: https://www.canada.ca/fr/services/sante.html
 TopicMenu7:
   en: Taxes
-  fr: Impôts
+  fr: ImpÃ´ts
 TopicMenu7URL:
   en: https://www.canada.ca/en/services/taxes.html
   fr: https://www.canada.ca/fr/services/impots.html
@@ -128,7 +134,7 @@ FooterSection1Item1URL:
   fr: https://www.canada.ca/fr/contact.html
 FooterSection1Item2:
   en: Departments and agencies
-  fr: Ministères et organismes
+  fr: MinistÃ¨res et organismes
 FooterSection1Item2URL:
   en: https://www.canada.ca/en/government/dept.html
   fr: https://www.canada.ca/fr/gouvernement/min.html
@@ -146,13 +152,13 @@ FooterSection1Item4URL:
   fr: https://www.canada.ca/fr/nouvelles.html
 FooterSection1Item5:
   en: Treaties, laws and regulations
-  fr: Traités, lois et règlements
+  fr: TraitÃ©s, lois et rÃ¨glements
 FooterSection1Item5URL:
   en: https://www.canada.ca/en/government/system/laws.html
   fr: https://www.canada.ca/fr/gouvernement/systeme/lois.html
 FooterSection1Item6:
   en: Government-wide reporting
-  fr: Rapports à l&#39;échelle du gouvernement
+  fr: Rapports Ã  l&#39;Ã©chelle du gouvernement
 FooterSection1Item6URL:
   en: https://www.canada.ca/en/transparency/reporting.html
   fr: https://www.canada.ca/fr/transparence/rapports.html
@@ -179,7 +185,7 @@ FooterSection2:
   fr:
 FooterSection2Item1:
   en: Social media
-  fr: Médias sociaux
+  fr: MÃ©dias sociaux
 FooterSection2Item1URL:
   en: https://www.canada.ca/en/social.html
   fr: https://www.canada.ca/fr/sociaux.html
@@ -191,7 +197,7 @@ FooterSection2Item2URL:
   fr: https://www.canada.ca/fr/mobile.html
 FooterSection2Item3:
   en: About Canada.ca
-  fr: À propos de Canada.ca
+  fr: Ã€ propos de Canada.ca
 FooterSection2Item3URL:
   en: https://www1.canada.ca/en/newsite.html
   fr: https://www.canada.ca/fr/gouvernement/a-propos.html
@@ -203,13 +209,16 @@ FooterSection2Item4URL:
   fr: https://www.canada.ca/fr/transparence/avis.html
 FooterSection2Item5:
   en: Privacy
-  fr: Confidentialité
+  fr: ConfidentialitÃ©
 FooterSection2Item5URL:
   en: https://www.canada.ca/en/transparency/privacy.html
   fr: https://www.canada.ca/fr/transparence/confidentialite.html
 TopOfPage:
   en: Top of Page
   fr: Haut de la page
+GCWordmark:
+  en: Symbol of the Government of Canada
+  fr: Symbole du gouvernement du Canada
 
 # Build settings
 markdown: kramdown
