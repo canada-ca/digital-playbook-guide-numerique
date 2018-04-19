@@ -6,7 +6,9 @@ altLang: fr
 altLangPage: apercu
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # Government of Canada Digital Playbook (draft)
+
 <!-- jekyll-exclude-end -->
 
 ## Overview (draft)
