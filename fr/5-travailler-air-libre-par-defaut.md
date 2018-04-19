@@ -1,4 +1,13 @@
+---
+layout: default
+title:  "5. Travailler à l'air libre par défaut (ébauche)"
+lang: fr
+altLang: en
+altLangPage: 5-work-in-open-by-default
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 # 5. Travailler à l'air libre par défaut (ébauche)
+<!-- jekyll-exclude-end -->
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
