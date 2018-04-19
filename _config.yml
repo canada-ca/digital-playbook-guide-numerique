@@ -219,6 +219,3 @@ TopOfPage:
 GCWordmark:
   en: Symbol of the Government of Canada
   fr: Symbole du gouvernement du Canada
-
-# Build settings
-markdown: kramdown
