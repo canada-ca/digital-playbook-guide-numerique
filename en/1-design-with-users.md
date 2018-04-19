@@ -1,5 +1,10 @@
-# 1. Design with users (draft)
-
+---
+layout: default
+title:  "Design with users (draft)"
+lang: en
+altLang: fr
+altLangPage: 1-concevoir-avec-utilisateurs
+---
 **[TODO: Add/revise introductory text]**
 
 **Guidelines:**
