@@ -1,4 +1,13 @@
+---
+layout: default
+title:  "10. Design with users (draft)"
+lang: en
+altLang: fr
+altLangPage: 10-soyez-bons-gestionnaires-donnees.md
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 # 10. Be good data stewards (draft)
+<!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
 
