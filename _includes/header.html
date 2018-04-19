@@ -1,0 +1,93 @@
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">{{ site.SkipToMain[page.lang] }}</a>
+</li>
+<li class="wb-slc visible-sm visible-md visible-lg">
+<a class="wb-sl" href="#wb-info">{{ site.SkipToAbout[page.lang] }}</a>
+</li>
+</ul><header role="banner">
+<div id="wb-bnr" class="container">
+<div class="row">
+<div class="brand col-xs-8 col-sm-9 col-md-6">
+<a href="https://www.canada.ca/{{ page.lang }}.html"><object type="image/svg+xml" tabindex="-1" data="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/sig-blk-{{ page.lang }}.svg"></object><span class="wb-inv"> {{ site.GoC[page.lang] }} / <span lang="{{ page.AltLang }}">{{ site.GoC[page.AltLang] }}</span></span></a>
+</div>
+<section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+<h2>{{ site.SearchAndMenus[page.lang] }}</h2>
+<ul class="list-inline text-right chvrn">
+<li><a href="#mb-pnl" title="{{ site.SearchAndMenus[page.lang] }}" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">{{ site.SearchAndMenus[page.lang] }}</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+<section id="wb-srch" class="col-xs-6 text-right visible-md visible-lg">
+<h2>{{ site.Search[page.lang] }}</h2>
+<form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+<div class="form-group">
+<label for="wb-srch-q" class="wb-inv">{{ site.SearchWebsite[page.lang] }}</label>
+<input name="cdn" value="canada" type="hidden">
+<input name="st" value="s" type="hidden">
+<input name="num" value="10" type="hidden">
+<input name="langs" value="en" type="hidden">
+<input name="st1rt" value="1" type="hidden">
+<input name="s5bm3ts21rch" value="x" type="hidden">
+<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="{{ site.SearchCanadaCa[page.lang] }}">
+<input type="hidden" name="_charset_" value="UTF-8">
+<datalist id="wb-srch-q-ac">
+	<!--[if lte IE 9]><select><![endif]-->
+	<!--[if lte IE 9]></select><![endif]-->
+</datalist>
+</div>
+<div class="form-group submit">
+<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">{{ site.Search[page.lang] }}</span></button>
+</div>
+</form>
+</section>
+</div>
+</div>
+<nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+<div class="container nvbar">
+<h2>{{ site.TopicsMenu[page.lang] }}</h2>
+<div class="row">
+<ul class="list-inline menu">
+<li><a href="{{ site.TopicsMenu1URL[page.lang] }}">{{ site.TopicsMenu1[page.lang] }}</a></li>
+<li><a href="{{ site.TopicsMenu2URL[page.lang] }}">{{ site.TopicsMenu2[page.lang] }}</a></li>
+<li><a href="{{ site.TopicsMenu3URL[page.lang] }}">{{ site.TopicsMenu3[page.lang] }}</a></li>
+<li><a href="{{ site.TopicsMenu4URL[page.lang] }}">{{ site.TopicsMenu4[page.lang] }}</a></li>
+<li><a href="{{ site.TopicsMenu5URL[page.lang] }}">{{ site.TopicsMenu5[page.lang] }}</a></li>
+<li><a href="{{ site.TopicsMenu6URL[page.lang] }}">{{ site.TopicsMenu6[page.lang] }}</a></li>
+<li><a href="{{ site.TopicsMenu7URL[page.lang] }}">{{ site.TopicsMenu7[page.lang] }}</a></li>
+<li><a href="{{ site.TopicsMenu8URL[page.lang] }}">{{ site.TopicsMenu8[page.lang] }}</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+<h2>{{ site.YouAreHere[page.lang] }}:</h2>
+<div class="container">
+<div class="row">
+<ol class="breadcrumb">
+<li><a href="https://www.canada.ca/{{ page.lang }}.html">{{ site.home[page.lang] }}</a></li>
+{% if page.ref != "index" %}
+  {% if page.lang == "en" %}
+    <li><a href="/">{{ site.AllPosts[page.lang] }}</a></li>
+  {% else %}
+    <li><a href="/accueil.html">{{ site.AllPosts[page.lang] }}</a></li>
+  {% endif %}
+{% endif %}
+</ol>
+</div>
+</div>
+</nav>
+</header>
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+	lngLinks: [{
+		lang: "{{ page.AltLang }}",
+		href: "{{ site.baseurl }}/{{ page.AltLang }}/{{ page.AltLangPage }}",
+		text: "{{ site.language[page.AltLang] }}"
+	}]
+});
+</script>
+<main role="main" property="mainContentOfPage" class="container">

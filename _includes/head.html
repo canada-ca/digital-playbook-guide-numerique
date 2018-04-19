@@ -1,0 +1,36 @@
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
+<!-- Meta data-->
+<!-- Load closure template scripts -->
+<script type="text/javascript" src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+	<!-- Write closure fall-back static file -->
+	<!-- /ROOT/etc/designs/canada/cdts/gcweb/{{ site.wet_cdts_version }}/cdts/static/refTop.html -->
+			<!--[if gte IE 9 | !IE ]><!-->
+<link {{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/css/theme.min.css">
+<link rel="stylesheet" href="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/cdts/cdtsfixes.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/css/ie8-theme.min.css" />
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<link rel="stylesheet" href="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/css/noscript.min.css" />
+<link rel="stylesheet" href="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/cdts/cdtsnoscript.css" />
+</noscript>
+<!-- Write closure template -->
+<script type="text/javascript">
+	document.write(wet.builder.refTop({
+				
+	}));
+</script>
+</head>
