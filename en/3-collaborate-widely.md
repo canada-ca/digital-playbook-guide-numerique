@@ -6,7 +6,9 @@ altLang: fr
 altLangPage: 3-collaborez-largement
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 3. Collaborate widely (draft)
+
 <!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
