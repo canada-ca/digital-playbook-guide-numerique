@@ -2,6 +2,8 @@
 layout: default
 title:  "Comparison tables (draft)"
 lang: en
+altLang: fr
+altLangPage: apercu
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 # Comparison tables (draft)
