@@ -80,9 +80,9 @@
 var defTop = document.getElementById("def-top");
 defTop.outerHTML = wet.builder.top({
 	lngLinks: [{
-		lang: "{{ page.AltLang }}",
-		href: "{{ site.baseurl }}/{{ page.AltLang }}/{{ page.AltLangPage }}",
-		text: "{{ site.language[page.AltLang] }}"
+		lang: "{{ page.altLang }}",
+		href: "{{ site.baseurl }}/{{ page.altLang }}/{{ page.altLangPage }}",
+		text: "{{ site.language[page.altLang] }}"
 	}]
 });
 </script>
