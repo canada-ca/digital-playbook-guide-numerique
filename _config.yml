@@ -1,0 +1,215 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+baseurl: "/digital-playbook-guide-numerique" # the subpath of your site, e.g. /blog
+url: "http://canada-ca.github.io" # the base hostname & protocol for your site
+twitter_username: canada-ca
+github_username:  canada-ca
+wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
+wet_cdts_version: "v4_0_27"
+
+# Translations
+title:
+  en: Government of Canada Digital Playbook
+  fr: Guide numérique du gouvernement du Canada
+email: zzOneGC@tbs-sct.gc.ca
+description:
+  en: The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards.
+  fr: Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques.
+index:
+  en: index.html
+  fr: accueil.html
+home:
+  en: Home
+  fr: Accueil
+AllPosts:
+  en: Government of Canada Digital Playbook
+  fr: Guide numérique du gouvernement du Canada
+feed:
+  en: /feed.xml
+  fr: /flux.xml
+language:
+  en: English
+  fr: Français
+SkipToMain:
+  en: Skip to main content
+  fr: Passer au contenu principal
+SkipToAbout:
+  en: Skip to "About this site"
+  fr: Passer à «&#160;Au sujet du gouvernement&#160;»
+LanguageSelection:
+  en: Language selection
+  fr: Sélection de la langue
+GoC:
+  en: Government of Canada
+  fr: Gouvernement du Canada
+SearchAndMenus:
+  en: Search and menus
+  fr: Recherche et menus
+SearchWebsite:
+  en: Search website
+  fr: Recherchez le site Web
+SearchCanadaCa:
+  en: Search Canada.ca
+  fr: Rechercher dans Canada.ca
+Search:
+  en: Search
+  fr: Recherche
+TopicsMenu:
+  en: Topics menu
+  fr: Menu des sujets
+YouAreHere:
+  en: You are here
+  fr: Vous êtes ici
+GCActivitiesInitiatives:
+  en: Government of Canada activities and initiatives
+  fr: Activités et initiatives du gouvernement du Canada
+TopicMenu1:
+  en: Jobs
+  fr: Emplois
+TopicMenu1URL:
+  en: https://www.canada.ca/en/services/jobs.html
+  fr: https://www.canada.ca/fr/services/emplois.html
+TopicMenu2:
+  en: Immigration
+  fr: Immigration
+TopicMenu2URL:
+  en: https://www.canada.ca/en/services/immigration-citizenship.html 
+  fr: https://www.canada.ca/fr/services/immigration-citoyennete.html
+TopicMenu3:
+  en: Travel
+  fr: Voyage
+TopicMenu3URL:
+  en: https://travel.gc.ca
+  fr: http://voyage.gc.ca/
+TopicMenu4:
+  en: Business
+  fr: Entreprises
+TopicMenu4URL:
+  en: https://www.canada.ca/en/services/business.html
+  fr: https://www.canada.ca/fr/services/entreprises.html
+TopicMenu5:
+  en: Benefits
+  fr: Prestations
+TopicMenu5URL:
+  en: https://www.canada.ca/en/services/benefits.html
+  fr: https://www.canada.ca/fr/services/prestations.html
+TopicMenu6:
+  en: Health
+  fr: Santé
+TopicMenu6URL:
+  en: https://www.canada.ca/en/services/health.html
+  fr: https://www.canada.ca/fr/services/sante.html
+TopicMenu7:
+  en: Taxes
+  fr: Impôts
+TopicMenu7URL:
+  en: https://www.canada.ca/en/services/taxes.html
+  fr: https://www.canada.ca/fr/services/impots.html
+TopicMenu8:
+  en: More services
+  fr: Autres services
+TopicMenu8URL:
+  en: https://www.canada.ca/en/services.html
+  fr: https://www.canada.ca/fr/services.html
+FooterSection1:
+  en: About government
+  fr: Au sujet du gouvernement
+FooterSection1Item1:
+  en: Contact us
+  fr: Contactez-nous
+FooterSection1Item1URL:
+  en: https://www.canada.ca/en/contact.html
+  fr: https://www.canada.ca/fr/contact.html
+FooterSection1Item2:
+  en: Departments and agencies
+  fr: Ministères et organismes
+FooterSection1Item2URL:
+  en: https://www.canada.ca/en/government/dept.html
+  fr: https://www.canada.ca/fr/gouvernement/min.html
+FooterSection1Item3:
+  en: Public service and military
+  fr: Fonction publique et force militaire
+FooterSection1Item3URL:
+  en: https://www.canada.ca/en/government/publicservice.html
+  fr: https://www.canada.ca/fr/gouvernement/fonctionpublique.html
+FooterSection1Item4:
+  en: News
+  fr: Nouvelles
+FooterSection1Item4URL:
+  en: https://www.canada.ca/en/news.html
+  fr: https://www.canada.ca/fr/nouvelles.html
+FooterSection1Item5:
+  en: Treaties, laws and regulations
+  fr: Traités, lois et règlements
+FooterSection1Item5URL:
+  en: https://www.canada.ca/en/government/system/laws.html
+  fr: https://www.canada.ca/fr/gouvernement/systeme/lois.html
+FooterSection1Item6:
+  en: Government-wide reporting
+  fr: Rapports à l&#39;échelle du gouvernement
+FooterSection1Item6URL:
+  en: https://www.canada.ca/en/transparency/reporting.html
+  fr: https://www.canada.ca/fr/transparence/rapports.html
+FooterSection1Item7:
+  en: Prime Minister
+  fr: Premier ministre
+FooterSection1Item7URL:
+  en: http://pm.gc.ca/eng
+  fr: http://pm.gc.ca/fra
+FooterSection1Item8:
+  en: How government works
+  fr: Comment le gouvernement fonctionne
+FooterSection1Item8URL:
+  en: https://www.canada.ca/en/government/system.html
+  fr: https://www.canada.ca/fr/gouvernement/systeme.html
+FooterSection1Item9:
+  en: Open government
+  fr: Gouvernement ouvert
+FooterSection1Item9URL:
+  en: http://open.canada.ca/en/
+  fr: http://ouvert.canada.ca/
+FooterSection2:
+  en: About this site
+  fr:
+FooterSection2Item1:
+  en: Social media
+  fr: Médias sociaux
+FooterSection2Item1URL:
+  en: https://www.canada.ca/en/social.html
+  fr: https://www.canada.ca/fr/sociaux.html
+FooterSection2Item2:
+  en: Mobile applications
+  fr: Applications mobiles
+FooterSection2Item2URL:
+  en: https://www.canada.ca/en/mobile.html
+  fr: https://www.canada.ca/fr/mobile.html
+FooterSection2Item3:
+  en: About Canada.ca
+  fr: À propos de Canada.ca
+FooterSection2Item3URL:
+  en: https://www1.canada.ca/en/newsite.html
+  fr: https://www.canada.ca/fr/gouvernement/a-propos.html
+FooterSection2Item4:
+  en: Terms and conditions
+  fr: Avis
+FooterSection2Item4URL:
+  en: https://www.canada.ca/en/transparency/terms.html
+  fr: https://www.canada.ca/fr/transparence/avis.html
+FooterSection2Item5:
+  en: Privacy
+  fr: Confidentialité
+FooterSection2Item5URL:
+  en: https://www.canada.ca/en/transparency/privacy.html
+  fr: https://www.canada.ca/fr/transparence/confidentialite.html
+TopOfPage:
+  en: Top of Page
+  fr: Haut de la page
+
+# Build settings
+markdown: kramdown
