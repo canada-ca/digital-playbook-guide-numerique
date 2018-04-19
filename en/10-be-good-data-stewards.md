@@ -6,7 +6,9 @@ altLang: fr
 altLangPage: 10-soyez-bons-gestionnaires-donnees
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 10. Be good data stewards (draft)
+
 <!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
