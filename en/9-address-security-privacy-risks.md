@@ -1,4 +1,13 @@
+---
+layout: default
+title:  "9. Address security and privacy risks (draft)"
+lang: en
+altLang: fr
+altLangPage: 9-aborder-risques-securite-confidentialite
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 # 9. Address security and privacy risks (draft)
+<!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
 
