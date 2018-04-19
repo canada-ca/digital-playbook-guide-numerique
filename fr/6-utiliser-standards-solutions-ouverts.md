@@ -1,4 +1,13 @@
+---
+layout: default
+title:  "6. Utiliser des standards et solutions ouverts (ébauche)"
+lang: fr
+altLang: en
+altLangPage: 6-use-open-standards-solutions
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 # 6. Utiliser des standards et solutions ouverts (ébauche)
+<!-- jekyll-exclude-end -->
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
