@@ -6,7 +6,9 @@ altLang: en
 altLangPage: 7-iterate-improve-frequently
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 7. Itérer et améliorer fréquemment (ébauche)
+
 <!-- jekyll-exclude-end -->
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
