@@ -6,7 +6,9 @@ altLang: en
 altLangPage: 3-collaborate-widely
 ---
 <!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 3. Collaborez largement (ébauche)
+
 <!-- jekyll-exclude-end -->
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
