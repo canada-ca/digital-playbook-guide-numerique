@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "10. Design with users (draft)"
+title:  "10. Be good data stewards (draft)"
 lang: en
 altLang: fr
 altLangPage: 10-soyez-bons-gestionnaires-donnees.md
