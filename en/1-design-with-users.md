@@ -81,7 +81,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 - Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement
 
-- Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916b#cha7).
+- Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7).
 
 ### Implementation guides
 
