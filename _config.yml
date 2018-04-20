@@ -28,8 +28,8 @@ subject:
   en: Digital Playbook, Government of Canada, services
   fr: Guide numérique, Gouvernement du Canada, services
 index:
-  en: en/overview.html
-  fr: fr/apercu.html
+  en: /en/overview.html
+  fr: /fr/apercu.html
 home:
   en: Home
   fr: Accueil
