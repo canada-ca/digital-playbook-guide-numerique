@@ -4,7 +4,9 @@
   "description": "This Digital Playbook, and the Digital Principles it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused",
   "main": "index.js",
   "scripts": {
-    "test": "markdownlint \"*.md\" \"en/*.md\" \"fr/*.md\""
+    "link-check": "node link-check.js",
+    "lint": "markdownlint \"*.md\" \"en/*.md\" \"fr/*.md\"",
+    "test": "npm run lint && npm run link-check"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/canada-ca/digital-playbook-guide-numerique#readme",
   "devDependencies": {
+    "chalk": "^2.4.0",
+    "glob": "^7.1.2",
+    "markdown-link-check": "^3.3.0",
     "markdownlint-cli": "^0.8.1"
   },
   "dependencies": {}
