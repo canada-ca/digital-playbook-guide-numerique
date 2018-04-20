@@ -10,7 +10,7 @@
 <meta name="dcterms.title" content="{{ page.title }}">
 <meta name="dcterms.issued" title="W3CDTF" content="{{ page.issued }}">
 <meta name="dcterms.modified" title="W3CDTF" content="{{ page.modified }}">
-<meta name="dcterms.subject" title="scheme" content="{% if page.subject %}{{ page.subject }}{% else %}{{ site.subject[page.lang] }}{% endif }">
+<meta name="dcterms.subject" title="scheme" content="{% if page.subject %}{{ page.subject }}{% else %}{{ site.subject[page.lang] }}{% endif %}">
 <meta name="dcterms.language" title="ISO639-2" content="{% if page.lang == "en" %}eng{% else %}fra{% endif %}">
 <!-- Meta data-->
 <!-- Load closure template scripts -->
