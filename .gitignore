@@ -61,3 +61,11 @@ typings/
 
 # next.js build output
 .next
+
+# local bundler files
+.bundle
+Gemfile.lock
+vendor
+
+# local Jekyll files
+_site
