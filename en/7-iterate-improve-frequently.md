@@ -1,4 +1,15 @@
+---
+layout: default
+title:  "7. Iterate and improve frequently (draft)"
+lang: en
+altLang: fr
+altLangPage: 7-iterer-ameliorer-frequemment
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 7. Iterate and improve frequently (draft)
+
+<!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
 

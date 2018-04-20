@@ -1,4 +1,15 @@
+---
+layout: default
+title:  "8. Concevoir des services éthiques (ébauche)"
+lang: fr
+altLang: en
+altLangPage: 8-design-ethical-services
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 8. Concevoir des services éthiques (ébauche)
+
+<!-- jekyll-exclude-end -->
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

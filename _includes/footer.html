@@ -1,0 +1,56 @@
+</main>
+<div id="def-footer">
+<!-- Write closure fall-back static file -->
+<!-- /ROOT/etc/designs/canada/cdts/gcweb/{{ site.wet_cdts_hosturl }}/cdts/static/footer-/{{ page.lang }}.html -->
+<footer role="contentinfo" id="wb-info">
+<nav role="navigation" class="container wb-navcurr">
+<h2 class="wb-inv">{{ site.FooterSection1[page.lang] }}</h2>
+<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+<li><a href="{{ site.FooterSection1Item1URL[page.lang] }}">{{ site.FooterSection1Item1[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection1Item2URL[page.lang] }}">{{ site.FooterSection1Item2[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection1Item3URL[page.lang] }}">{{ site.FooterSection1Item3[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection1Item4URL[page.lang] }}">{{ site.FooterSection1Item4[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection1Item5URL[page.lang] }}">{{ site.FooterSection1Item5[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection1Item6URL[page.lang] }}">{{ site.FooterSection1Item6[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection1Item7URL[page.lang] }}">{{ site.FooterSection1Item7[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection1Item8URL[page.lang] }}">{{ site.FooterSection1Item8[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection1Item9URL[page.lang] }}">{{ site.FooterSection1Item9[page.lang] }}</a></li>
+</ul>
+</nav>
+<div class="brand">
+<div class="container">
+<div class="row">
+<nav class="col-md-10 ftr-urlt-lnk">
+<h2 class="wb-inv">{{ site.FooterSection2[page.lang] }}</h2>
+<ul>
+<li><a href="{{ site.FooterSection2Item1URL[page.lang] }}">{{ site.FooterSection2Item1[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection2Item2URL[page.lang] }}">{{ site.FooterSection2Item2[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection3Item1URL[page.lang] }}">{{ site.FooterSection2Item3[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection2Item4URL[page.lang] }}">{{ site.FooterSection2Item4[page.lang] }}</a></li>
+<li><a href="{{ site.FooterSection2Item5URL[page.lang] }}">{{ site.FooterSection2Item5[page.lang] }}</a></li>
+</ul>
+</nav>
+<div class="col-xs-6 visible-sm visible-xs tofpg">
+<a href="#wb-cont">{{ site.TopOfPage[page.lang] }} <span class="glyphicon glyphicon-chevron-up"></span></a>
+</div>
+<div class="col-xs-6 col-md-2 text-right">
+<object type="image/svg+xml" tabindex="-1" role="img" data="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/wmms-blk.svg" aria-label="{{ site.GCWordmark[page.lang] }}"></object>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({
+				
+});
+</script>
+<!-- Write closure template -->
+<script type="text/javascript">
+document.write(wet.builder.refFooter({
+				
+}));
+</script>

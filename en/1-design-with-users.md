@@ -1,4 +1,15 @@
+---
+layout: default
+title:  "1. Design with users (draft)"
+lang: en
+altLang: fr
+altLangPage: 1-concevoir-avec-utilisateurs
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 1. Design with users (draft)
+
+<!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
 

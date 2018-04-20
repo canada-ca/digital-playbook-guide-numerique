@@ -1,4 +1,15 @@
+---
+layout: default
+title:  "5. Work in the open by default (draft)"
+lang: en
+altLang: fr
+altLangPage: 5-travailler-air-libre-par-defaut
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 5. Work in the open by default (draft)
+
+<!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
 

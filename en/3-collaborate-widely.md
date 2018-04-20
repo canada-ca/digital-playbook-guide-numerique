@@ -1,4 +1,15 @@
+---
+layout: default
+title:  "3. Collaborate widely (draft)"
+lang: en
+altLang: fr
+altLangPage: 3-collaborez-largement
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 3. Collaborate widely (draft)
+
+<!-- jekyll-exclude-end -->
 
 **[TODO: Add/revise introductory text]**
 

@@ -1,4 +1,15 @@
+---
+layout: default
+title:  "Guide numérique du gouvernement du Canada (ébauche)"
+lang: fr
+altLang: en
+altLangPage: overview
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # Guide numérique du gouvernement du Canada (ébauche)
+
+<!-- jekyll-exclude-end -->
 
 ## Aperçu (ébauche)
 

@@ -1,4 +1,15 @@
+---
+layout: default
+title:  "4. Habiliter le personnel à fournir de meilleurs services (ébauche)"
+lang: fr
+altLang: en
+altLangPage: 4-empower-staff-deliver-better-services
+---
+<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
+
 # 4. Habiliter le personnel à fournir de meilleurs services (ébauche)
+
+<!-- jekyll-exclude-end -->
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
