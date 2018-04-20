@@ -69,6 +69,8 @@
 {% if page.url != site.index[page.lang] %}
 <li><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.title[page.lang] }}</a></li>
 {% endif %}
+<li>Page.url: {{ page.url }}</li>
+<li>Index: {{ site.index[page.lang] }}</li>
 </ol>
 </div>
 </div>
