@@ -6,4 +6,10 @@ node_js:
 rvm:
   - 2.2
 
-script: "bundle exec jekyll build"
+before_install: 
+  - bundle init
+  - bundle add github-pages
+
+before_script: 
+  - bundle exec jekyll build
+  
