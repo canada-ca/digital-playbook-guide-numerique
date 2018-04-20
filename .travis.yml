@@ -7,9 +7,7 @@ rvm:
   - 2.2
 
 before_install: 
-  - bundle init
-  - bundle add github-pages
+  - bundle install
 
 before_script: 
   - bundle exec jekyll build
-  
