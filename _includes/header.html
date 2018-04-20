@@ -69,6 +69,9 @@
 {% if page.path != site.baseurl + "/" + page.lang + "/" + site.index[page.lang] %}
 <li><a href="{{ site.baseurl }}/{{ page.lang }}/{{ site.index[page.lang] }}">{{ site.title[page.lang] }}</a></li>
 {% endif %}
+<li>Page.path: {{ page.path }}</li>
+<li>Page.url: {{ page.url }}</li>
+<li>Page compare: {{ site.baseurl + "/" + page.lang + "/" + site.index[page.lang] }}</li>
 </ol>
 </div>
 </div>
