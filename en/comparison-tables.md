@@ -5,11 +5,8 @@ lang: en
 altLang: fr
 altLangPage: apercu
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# Comparison tables (draft)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">Comparison tables (draft)</h1>
 
 1. [Government of Canada Digital Playbook comparison table](#government-of-canada-digital-playbook-comparison-table)
 1. **TODO:** Digital Service Standard (UK) comparison table
