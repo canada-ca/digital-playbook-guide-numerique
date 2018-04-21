@@ -5,9 +5,7 @@ lang: fr
 altLang: en
 altLangPage: overview
 ---
-
-# Guide numérique du gouvernement du Canada (ébauche)
-{: property="name" #wb-cont}
+# Guide numérique du gouvernement du Canada (ébauche){: property="name" #wb-cont}
 
 ## Aperçu (ébauche)
 
