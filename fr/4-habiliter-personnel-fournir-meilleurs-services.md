@@ -6,7 +6,8 @@ altLang: en
 altLangPage: 4-empower-staff-deliver-better-services
 ---
 
-<h1 property="name" id="wb-cont">4. Habiliter le personnel à fournir de meilleurs services (ébauche)</h1>
+# 4. Habiliter le personnel à fournir de meilleurs services (ébauche)
+{: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
