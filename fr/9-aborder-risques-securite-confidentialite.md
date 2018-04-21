@@ -6,7 +6,8 @@ altLang: en
 altLangPage: 9-address-security-privacy-risks
 ---
 
-<h1 property="name" id="wb-cont">9. Aborder les risques de sécurité et de confidentialité (ébauche)</h1>
+# 9. Aborder les risques de sécurité et de confidentialité (ébauche)
+{: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
