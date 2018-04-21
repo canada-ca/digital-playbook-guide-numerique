@@ -5,9 +5,7 @@ lang: fr
 altLang: en
 altLangPage: 10-be-good-data-stewards
 ---
-
-# 10. Soyez de bons gestionnaires de données (ébauche)
-{: property="name" #wb-cont}
+# 10. Soyez de bons gestionnaires de données (ébauche){: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
