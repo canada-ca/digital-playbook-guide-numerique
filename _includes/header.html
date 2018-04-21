@@ -84,7 +84,14 @@ defTop.outerHTML = wet.builder.top({
 		lang: "{{ page.altLang }}",
 		href: "{{ site.baseurl }}/{{ page.altLang }}/{{ page.altLangPage }}",
 		text: "{{ site.language[page.altLang] }}"
-	}]
+	}],
+	breadcrumbs: [{
+		title: "{{ site.home[page.lang] }}",
+		href: "https://www.canada.ca/{{ page.lang }}.html"
+	}{% if page.url != site.index[page.lang] %}, {
+		title: "{{ site.title[page.lang] }}",
+		href: "{{ site.baseurl }}{{ site.index[page.lang] }}"
+	}{% endif %}]
 });
 </script>
 <main role="main" property="mainContentOfPage" class="container">
