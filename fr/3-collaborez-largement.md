@@ -6,7 +6,8 @@ altLang: en
 altLangPage: 3-collaborate-widely
 ---
 
-<h1 property="name" id="wb-cont">3. Collaborez largement (ébauche)</h1>
+# 3. Collaborez largement (ébauche)
+{: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
