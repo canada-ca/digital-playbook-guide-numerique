@@ -228,8 +228,6 @@ It is essential that business processes be reviewed to identify opportunities to
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Understanding the problem is key to fixing it](http://wiki.ic.gc.ca/pages/viewpage.action?pageId=566756956) **(Do - Digital Design Playbook (ISED))**
-
 ### Similar resources
 
 - [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
