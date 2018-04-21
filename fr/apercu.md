@@ -6,7 +6,8 @@ altLang: en
 altLangPage: overview
 ---
 
-<h1 property="name" id="wb-cont">Guide numérique du gouvernement du Canada (ébauche)</h1>
+# Guide numérique du gouvernement du Canada (ébauche)
+{: property="name" #wb-cont}
 
 ## Aperçu (ébauche)
 
