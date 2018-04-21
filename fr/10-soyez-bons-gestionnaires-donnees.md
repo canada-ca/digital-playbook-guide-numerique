@@ -5,11 +5,8 @@ lang: fr
 altLang: en
 altLangPage: 10-be-good-data-stewards
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 10. Soyez de bons gestionnaires de données (ébauche)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">10. Soyez de bons gestionnaires de données (ébauche)</h1>
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
