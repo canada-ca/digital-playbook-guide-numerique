@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: 6-utiliser-standards-solutions-ouverts
 ---
 
-<h1 property="name" id="wb-cont">6. Use open standards and solutions (draft)</h1>
+# 6. Use open standards and solutions (draft)
+{: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
