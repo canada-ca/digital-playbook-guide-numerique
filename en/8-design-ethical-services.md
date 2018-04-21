@@ -5,9 +5,7 @@ lang: en
 altLang: fr
 altLangPage: 8-concevoir-services-ethiques
 ---
-
-# 8. Design ethical services (draft)
-{: property="name" #wb-cont}
+# 8. Design ethical services (draft){: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
