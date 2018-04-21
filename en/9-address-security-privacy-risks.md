@@ -5,11 +5,8 @@ lang: en
 altLang: fr
 altLangPage: 9-aborder-risques-securite-confidentialite
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 9. Address security and privacy risks (draft)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">9. Address security and privacy risks (draft)</h1>
 
 **[TODO: Add/revise introductory text]**
 
