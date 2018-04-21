@@ -5,11 +5,8 @@ lang: en
 altLang: fr
 altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 4. Empower staff to deliver better services (draft)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">4. Empower staff to deliver better services (draft)</h1>
 
 **[TODO: Add/revise introductory text]**
 
