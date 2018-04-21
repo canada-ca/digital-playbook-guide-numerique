@@ -20,6 +20,8 @@ altLangPage: 1-concevoir-avec-utilisateurs
 {::comment}
 [1.1 Build nothing for the user, without the user being involved](#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
 
+This should be hidden in gh-pages
+
 [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements](#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
 
 [1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs](#user-content-13-understand-the-context-in-which-people-are-interacting-and-design-appropriate-solutions-that-meet-their-needs)
