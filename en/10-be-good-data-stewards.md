@@ -5,10 +5,6 @@ lang: en
 altLang: fr
 altLangPage: 10-soyez-bons-gestionnaires-donnees
 ---
-# 10. Be good data stewards (draft)
-
-{: property="name" #wb-cont}
-
 **[TODO: Add/revise introductory text]**
 
 **Guidelines:**
