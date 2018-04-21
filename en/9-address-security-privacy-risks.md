@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: 9-aborder-risques-securite-confidentialite
 ---
 
-<h1 property="name" id="wb-cont">9. Address security and privacy risks (draft)</h1>
+# 9. Address security and privacy risks (draft)
+{: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
