@@ -6,7 +6,7 @@ altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs
 ---
 {::options parse_block_html="true" /}
-<div markdown="1">
+<div>
 {: .dpgn-section-intro-standard}
 
 **[TODO: Add/revise introductory text]**
