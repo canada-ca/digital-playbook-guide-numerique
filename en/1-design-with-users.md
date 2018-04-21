@@ -62,7 +62,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 </div>
 
 <section markdown="1" class="dpgn-section-guideline">
-  
+
 ## 1.1 Build nothing for the user, without the user being involved
 
 <div markdown="1" class="dpgn-section-intro-guideline">
