@@ -6,13 +6,13 @@ altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs
 ---
 <div markdown="1">
-{: .dpgn-section-intro-standard }
+{: .dpgn-section-intro-standard}
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 <div markdown="1">
-{: .dpgn-section-guidelines }
+{: .dpgn-section-guidelines}
 
 **Guidelines:**
 
@@ -34,7 +34,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 
 </div>
 <div markdown="1">
-{: .dpgn-section-guidelines-related }
+{: .dpgn-section-guidelines-related}
 
 **Related guidelines:**
 
@@ -63,12 +63,12 @@ altLangPage: 1-concevoir-avec-utilisateurs
 </div>
 
 <section markdown="1">
-{: .dpgn-section-guideline }
+{: .dpgn-section-guideline}
   
 ## 1.1 Build nothing for the user, without the user being involved
 
 <div markdown="1">
-{: .dpgn-section-intro-guideline }
+{: .dpgn-section-intro-guideline}
 
 Focus on the needs of your users, using agile, iterative and user-centred methods when building a service. Start with extensive research and analysis to help understand who is using the service, what their needs are and how the service will affect their lives to better understand how the service should be designed. The absence of the user voice leads to assumptions that may be incorrect and costly.
 
@@ -76,7 +76,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 </div>
 <section markdown="1">
-{: .dpgn-section-checklist }
+{: .dpgn-section-checklist}
 
 ### Checklist
 
@@ -102,7 +102,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 </section>
 <section markdown="1">
-{: .dpgn-section-guides }
+{: .dpgn-section-guides}
 
 ### Implementation guides
 
@@ -110,7 +110,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 </section>
 <section markdown="1">
-{: .dpgn-section-similar }
+{: .dpgn-section-similar}
 
 ### Similar resources
 
@@ -120,25 +120,25 @@ Users should be involved throughout the lifecycle of the service, with user rese
 </section>
 
 <section markdown="1">
-{: .dpgn-section-guideline }
+{: .dpgn-section-guideline}
 
 ## 1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements
 
 <div markdown="1">
-{: .dpgn-section-intro-guideline }
+{: .dpgn-section-intro-guideline}
 
 User needs are constantly evolving which it is why it is important to plan for ongoing user research and usability testing. Engage users at all stages, continuously seeking feedback to ensure the service helps users to accomplish their tasks and to keep improving the service to better meet user needs.
 
 </div>
 <section markdown="1">
-{: .dpgn-section-checklist }
+{: .dpgn-section-checklist}
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-alpha }
+{: .dpgn-section-stage .dpgn-phase-alpha}
 
 #### Alpha stage
 
@@ -152,7 +152,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 </section>
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-beta .dpgn-phase-live }
+{: .dpgn-section-stage .dpgn-phase-beta .dpgn-phase-live}
 
 #### Beta and live stages
 
@@ -175,7 +175,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 </section>
 </section>
 <section markdown="1">
-{: .dpgn-section-guides }
+{: .dpgn-section-guides}
 
 ### Implementation guides
 
@@ -183,7 +183,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 </section>
 <section markdown="1">
-{: .dpgn-section-similar }
+{: .dpgn-section-similar}
 
 ### Similar resources
 
@@ -193,18 +193,18 @@ User needs are constantly evolving which it is why it is important to plan for o
 </section>
 
 <section markdown="1">
-{: .dpgn-section-guideline }
+{: .dpgn-section-guideline}
 
 ## 1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs
 
 <div markdown="1">
-{: .dpgn-section-intro-guideline }
+{: .dpgn-section-intro-guideline}
 
 A key part of building digital services that work for users is developing a good understanding of who are the users, what are their needs and how the service will affect their lives. It is equally important to develop a good understanding of the different contexts in which users could be interacting, since user needs and expectations can vary depending upon where, when and how they use a digital service.
 
 </div>
 <section markdown="1">
-{: .dpgn-section-checklist }
+{: .dpgn-section-checklist}
 
 ### Checklist
 
@@ -214,7 +214,7 @@ A key part of building digital services that work for users is developing a good
   - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
 
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-alpha }
+{: .dpgn-section-stage .dpgn-phase-alpha}
 
 #### Alpha stage
 
@@ -242,7 +242,7 @@ A key part of building digital services that work for users is developing a good
 
 </section>
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-beta }
+{: .dpgn-section-stage .dpgn-phase-beta}
 
 #### Beta stage
 
@@ -276,7 +276,7 @@ A key part of building digital services that work for users is developing a good
 
 </section>
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-live }
+{: .dpgn-section-stage .dpgn-phase-live}
 
 #### Live stage
 
@@ -293,7 +293,7 @@ A key part of building digital services that work for users is developing a good
 </section>
 </section>
 <section markdown="1">
-{: .dpgn-section-guides }
+{: .dpgn-section-guides}
 
 ### Implementation guides
 
@@ -337,7 +337,7 @@ A key part of building digital services that work for users is developing a good
 
 </section>
 <section markdown="1">
-{: .dpgn-section-similar }
+{: .dpgn-section-similar}
 
 ### Similar resources
 
@@ -355,19 +355,19 @@ A key part of building digital services that work for users is developing a good
 </section>
 
 <section markdown="1">
-{: .dpgn-section-guideline }
+{: .dpgn-section-guideline}
 
 ## 1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved
 
 <div markdown="1">
-{: .dpgn-section-intro-guideline }
+{: .dpgn-section-intro-guideline}
 
 **[TODO: Add/revise introductory text]**
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
 
 </div>
 <section markdown="1">
-{: .dpgn-section-checklist }
+{: .dpgn-section-checklist}
 
 ### Checklist
 
@@ -383,7 +383,7 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 <section markdown="1">
-{: .dpgn-section-guides }
+{: .dpgn-section-guides}
 
 ### Implementation guides
 
@@ -391,7 +391,7 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 <section markdown="1">
-{: .dpgn-section-similar }
+{: .dpgn-section-similar}
 
 ### Similar resources
 
@@ -401,18 +401,18 @@ We need to understand the different ways people will interact with our services,
 </section>
 
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-alpha }
+{: .dpgn-section-stage .dpgn-phase-alpha}
 
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
 
 <div markdown="1">
-{: .dpgn-section-intro-guideline }
+{: .dpgn-section-intro-guideline}
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 <section markdown="1">
-{: .dpgn-section-checklist }
+{: .dpgn-section-checklist}
 
 ### Checklist
 
@@ -425,7 +425,7 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 <section markdown="1">
-{: .dpgn-section-guides }
+{: .dpgn-section-guides}
 
 ### Implementation guides
 
@@ -433,7 +433,7 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 <section markdown="1">
-{: .dpgn-section-similar }
+{: .dpgn-section-similar}
 
 ### Similar resources
 
@@ -443,12 +443,12 @@ We need to understand the different ways people will interact with our services,
 </section>
 
 <section markdown="1">
-{: .dpgn-section-guideline }
+{: .dpgn-section-guideline}
 
 ## 1.6 Make services simple, intuitive and consistent
 
 <div markdown="1">
-{: .dpgn-section-intro-guideline }
+{: .dpgn-section-intro-guideline}
 
 **[TODO: Add/revise introductory text]**
 
@@ -470,7 +470,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 </div>
 <section markdown="1">
-{: .dpgn-section-checklist }
+{: .dpgn-section-checklist}
 
 ### Checklist
 
@@ -520,7 +520,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 </section>
 <section markdown="1">
-{: .dpgn-section-guides }
+{: .dpgn-section-guides}
 
 ### Implementation guides
 
@@ -544,7 +544,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 </section>
 <section markdown="1">
-{: .dpgn-section-similar }
+{: .dpgn-section-similar}
 
 ### Similar resources
 
@@ -564,12 +564,12 @@ Writing and designing content so it is consistent, plain and in the language of 
 </section>
 
 <section markdown="1">
-{: .dpgn-section-guideline }
+{: .dpgn-section-guideline}
 
 ## 1.7 Make it more convenient and practical to use digital services
 
 <div markdown="1">
-{: .dpgn-section-intro-guideline }
+{: .dpgn-section-intro-guideline}
 
 **[TODO: Add/revise introductory text]**
 
@@ -603,14 +603,14 @@ We still need to help users who are unable to use digital channels and provide s
 
 </div>
 <section markdown="1">
-{: .dpgn-section-checklist }
+{: .dpgn-section-checklist}
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-alpha }
+{: .dpgn-section-stage .dpgn-phase-alpha}
 
 #### Alpha stage
 
@@ -648,7 +648,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-beta }
+{: .dpgn-section-stage .dpgn-phase-beta}
 
 #### Beta stage
 
@@ -670,7 +670,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-live }
+{: .dpgn-section-stage .dpgn-phase-live}
 
 #### Live stage
 
@@ -692,7 +692,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 <section markdown="1">
-{: .dpgn-section-stage .dpgn-phase-beta .dpgn-phase-live }
+{: .dpgn-section-stage .dpgn-phase-beta .dpgn-phase-live}
 
 #### Beta and live stages
 
@@ -705,7 +705,7 @@ We still need to help users who are unable to use digital channels and provide s
 </section>
 </section>
 <section markdown="1">
-{: .dpgn-section-guides }
+{: .dpgn-section-guides}
 
 ### Implementation guides
 
@@ -719,7 +719,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 <section markdown="1">
-{: .dpgn-section-similar }
+{: .dpgn-section-similar}
 
 ### Similar resources
 
@@ -733,12 +733,12 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 <section markdown="1">
-{: .dpgn-section-guideline }
+{: .dpgn-section-guideline}
 
 ## 1.8 Support people who cannot use digital services on their own
 
 <div markdown="1">
-{: .dpgn-section-intro-guideline }
+{: .dpgn-section-intro-guideline}
 
 **[TODO: Add/revise introductory text]**
 
@@ -752,7 +752,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 </div>
 <section markdown="1">
-{: .dpgn-section-checklist }
+{: .dpgn-section-checklist}
 
 ### Checklist
 
@@ -778,7 +778,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 </section>
 <section markdown="1">
-{: .dpgn-section-guides }
+{: .dpgn-section-guides}
 
 ### Implementation guides
 
@@ -790,7 +790,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 </section>
 <section markdown="1">
-{: .dpgn-section-similar }
+{: .dpgn-section-similar}
 
 ### Similar resources
 
