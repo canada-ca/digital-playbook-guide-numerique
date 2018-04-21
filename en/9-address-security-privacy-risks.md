@@ -5,7 +5,9 @@ lang: en
 altLang: fr
 altLangPage: 9-aborder-risques-securite-confidentialite
 ---
-# 9. Address security and privacy risks (draft){: property="name" #wb-cont}
+# 9. Address security and privacy risks (draft)
+
+{: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
