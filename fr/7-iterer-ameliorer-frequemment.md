@@ -5,8 +5,6 @@ lang: fr
 altLang: en
 altLangPage: 7-iterate-improve-frequently
 ---
-# 7. Itérer et améliorer fréquemment (ébauche){: property="name" #wb-cont}
-
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Lignes directrices :**

@@ -5,8 +5,6 @@ lang: fr
 altLang: en
 altLangPage: 6-use-open-standards-solutions
 ---
-# 6. Utiliser des standards et solutions ouverts (ébauche){: property="name" #wb-cont}
-
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Lignes directrices :**

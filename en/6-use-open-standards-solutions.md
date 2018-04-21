@@ -1,12 +1,10 @@
 ---
 layout: default
-title:  ". Use open standards and solutions (draft)"
+title:  "6. Use open standards and solutions (draft)"
 lang: en
 altLang: fr
 altLangPage: 6-utiliser-standards-solutions-ouverts
 ---
-# 6. Use open standards and solutions (draft){: property="name" #wb-cont}
-
 **[TODO: Add/revise introductory text]**
 
 **Guidelines:**
