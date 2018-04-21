@@ -5,11 +5,7 @@ lang: en
 altLang: fr
 altLangPage: 10-soyez-bons-gestionnaires-donnees
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
-
-# 10. Be good data stewards (draft)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">10. Be good data stewards (draft)</h1>
 
 **[TODO: Add/revise introductory text]**
 
