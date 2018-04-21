@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 ---
 
-<h1 property="name" id="wb-cont">4. Empower staff to deliver better services (draft)</h1>
+4. Empower staff to deliver better services (draft)
+{: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
