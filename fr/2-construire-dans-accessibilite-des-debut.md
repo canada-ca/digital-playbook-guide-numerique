@@ -6,7 +6,8 @@ altLang: en
 altLangPage: 2-build-in-accessibility-from-start
 ---
 
-<h1 property="name" id="wb-cont">2. Construire dans l'accessibilité dès le début (ébauche)</h1>
+# 2. Construire dans l'accessibilité dès le début (ébauche)
+{: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
