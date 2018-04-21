@@ -5,10 +5,6 @@ lang: en
 altLang: fr
 altLangPage: apercu
 ---
-# Government of Canada Digital Playbook (draft)
-
-{: property="name" #wb-cont}
-
 ## Overview (draft)
 
 ### Structure of this document (draft)
