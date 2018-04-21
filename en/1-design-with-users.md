@@ -5,7 +5,14 @@ lang: en
 altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs
 ---
+<div markdown="1">
+{: .dpgn-section-intro-standard }
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+<div markdown="1">
+{: .dpgn-section-guidelines }
 
 **Guidelines:**
 
@@ -24,6 +31,10 @@ altLangPage: 1-concevoir-avec-utilisateurs
 [1.7 Make it more convenient and practical to use digital services](#user-content-17-make-it-more-convenient-and-practical-to-use-digital-services)
 
 [1.8 Support people who cannot use digital services on their own](#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
+
+</div>
+<div markdown="1">
+{: .dpgn-section-guidelines-related }
 
 **Related guidelines:**
 
@@ -49,11 +60,23 @@ altLangPage: 1-concevoir-avec-utilisateurs
 
 [10.1 Collect data once to avoid duplication (Standard 10: Be good data stewards)](10-be-good-data-stewards.md#user-content-101-collect-data-once-to-avoid-duplication)
 
+</div>
+
+<section markdown="1">
+{: .dpgn-section-guideline }
+  
 ## 1.1 Build nothing for the user, without the user being involved
+
+<div markdown="1">
+{: .dpgn-section-intro-guideline }
 
 Focus on the needs of your users, using agile, iterative and user-centred methods when building a service. Start with extensive research and analysis to help understand who is using the service, what their needs are and how the service will affect their lives to better understand how the service should be designed. The absence of the user voice leads to assumptions that may be incorrect and costly.
 
 Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched.
+
+</div>
+<section markdown="1">
+{: .dpgn-section-checklist }
 
 ### Checklist
 
@@ -77,21 +100,45 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 - Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7).
 
+</section>
+<section markdown="1">
+{: .dpgn-section-guides }
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+<section markdown="1">
+{: .dpgn-section-similar }
 
 ### Similar resources
 
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
 
+</section>
+</section>
+
+<section markdown="1">
+{: .dpgn-section-guideline }
+
 ## 1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements
 
+<div markdown="1">
+{: .dpgn-section-intro-guideline }
+
 User needs are constantly evolving which it is why it is important to plan for ongoing user research and usability testing. Engage users at all stages, continuously seeking feedback to ensure the service helps users to accomplish their tasks and to keep improving the service to better meet user needs.
+
+</div>
+<section markdown="1">
+{: .dpgn-section-checklist }
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-alpha }
 
 #### Alpha stage
 
@@ -102,6 +149,10 @@ User needs are constantly evolving which it is why it is important to plan for o
 - carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 
 - develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
+
+</section>
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-beta .dpgn-phase-live }
 
 #### Beta and live stages
 
@@ -121,17 +172,39 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 - document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
 
+</section>
+</section>
+<section markdown="1">
+{: .dpgn-section-guides }
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+<section markdown="1">
+{: .dpgn-section-similar }
 
 ### Similar resources
 
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
+</section>
+</section>
+
+<section markdown="1">
+{: .dpgn-section-guideline }
+
 ## 1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs
 
+<div markdown="1">
+{: .dpgn-section-intro-guideline }
+
 A key part of building digital services that work for users is developing a good understanding of who are the users, what are their needs and how the service will affect their lives. It is equally important to develop a good understanding of the different contexts in which users could be interacting, since user needs and expectations can vary depending upon where, when and how they use a digital service.
+
+</div>
+<section markdown="1">
+{: .dpgn-section-checklist }
 
 ### Checklist
 
@@ -139,6 +212,9 @@ A key part of building digital services that work for users is developing a good
 
 - Clearly defined user needs **(Build It Right - OneGC Architectural Checklist (draft))**
   - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
+
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-alpha }
 
 #### Alpha stage
 
@@ -163,6 +239,10 @@ A key part of building digital services that work for users is developing a good
 - **What are the user needs?** What are the opportunities to remove or reduce the pain points? How might we better meet the user needs? (Demonstrate this through research, testing and validating possible solutions with prototypes) **(Digital Service Standard (AU))**
 
 - **Are you designing the right thing?** How have your insights from user research helped you to define your minimum viable product (MVP)? How does the MVP create value for users and government by better meeting user needs? **(Digital Service Standard (AU))**
+
+</section>
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-beta }
 
 #### Beta stage
 
@@ -194,6 +274,10 @@ A key part of building digital services that work for users is developing a good
 
 - **How will you know if your design is working?** Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs **(Digital Service Standard (AU))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-live }
+
 #### Live stage
 
 - Use research and testing results to continuously improve the service **(Digital Service Standard (Ontario))**
@@ -205,6 +289,11 @@ A key part of building digital services that work for users is developing a good
 - **Show how you are using data from real use** to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users **(Digital Service Standard (AU))**
 
 - Know how you will measure and monitor your service to ensure it is serving its users well **(Digital Service Standard (AU))**
+
+</section>
+</section>
+<section markdown="1">
+{: .dpgn-section-guides }
 
 ### Implementation guides
 
@@ -246,6 +335,10 @@ A key part of building digital services that work for users is developing a good
 
 - [Evangelising user research](https://medium.com/@userfocus/evangelising-user-research-849430701b6e) **(David Travis (Medium.com))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-similar }
+
 ### Similar resources
 
 - [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
@@ -258,10 +351,23 @@ A key part of building digital services that work for users is developing a good
 
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 
+</section>
+</section>
+
+<section markdown="1">
+{: .dpgn-section-guideline }
+
 ## 1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved
+
+<div markdown="1">
+{: .dpgn-section-intro-guideline }
 
 **[TODO: Add/revise introductory text]**
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
+
+</div>
+<section markdown="1">
+{: .dpgn-section-checklist }
 
 ### Checklist
 
@@ -275,17 +381,38 @@ We need to understand the different ways people will interact with our services,
 
 - Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-guides }
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+<section markdown="1">
+{: .dpgn-section-similar }
 
 ### Similar resources
 
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 
+</section>
+</section>
+
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-alpha }
+
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
 
+<div markdown="1">
+{: .dpgn-section-intro-guideline }
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+<section markdown="1">
+{: .dpgn-section-checklist }
 
 ### Checklist
 
@@ -296,15 +423,32 @@ We need to understand the different ways people will interact with our services,
 - Platform agnostic **(Build It Right - OneGC Architectural Checklist (draft))**
   - Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)
 
+</section>
+<section markdown="1">
+{: .dpgn-section-guides }
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+<section markdown="1">
+{: .dpgn-section-similar }
 
 ### Similar resources
 
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
+</section>
+</section>
+
+<section markdown="1">
+{: .dpgn-section-guideline }
+
 ## 1.6 Make services simple, intuitive and consistent
+
+<div markdown="1">
+{: .dpgn-section-intro-guideline }
 
 **[TODO: Add/revise introductory text]**
 
@@ -323,6 +467,10 @@ Consistent design that is responsive to different devices helps you to save time
 Responsive design ensures that users can interact with your service regardless of their device size or type, and browser or device processing power. The service should follow mobile-first design principles, consider users on slow internet connections or with limited download data, work well for both mouse and touch devices, and use front-end technology that works well regardless of device processing power.
 
 Writing and designing content so it is consistent, plain and in the language of your users helps people gain trust and confidence in using different services. By providing information they can easily understand they may be less likely to use alternative websites that could be misleading. **(Digital Service Standard (AU))**
+
+</div>
+<section markdown="1">
+{: .dpgn-section-checklist }
 
 ### Checklist
 
@@ -370,6 +518,10 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 - ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-guides }
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -390,6 +542,10 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 - [Government Digital Service (GDS) style guide](https://www.gov.uk/guidance/style-guide)  **(Government Digital Service (UK))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-similar }
+
 ### Similar resources
 
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
@@ -404,7 +560,16 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 - [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
 
+</section>
+</section>
+
+<section markdown="1">
+{: .dpgn-section-guideline }
+
 ## 1.7 Make it more convenient and practical to use digital services
+
+<div markdown="1">
+{: .dpgn-section-intro-guideline }
 
 **[TODO: Add/revise introductory text]**
 
@@ -436,9 +601,16 @@ We still need to help users who are unable to use digital channels and provide s
 
 **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
+</div>
+<section markdown="1">
+{: .dpgn-section-checklist }
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-alpha }
 
 #### Alpha stage
 
@@ -474,6 +646,10 @@ We still need to help users who are unable to use digital channels and provide s
 
 - show you understand how you will increase digital take-up and what targets you will set. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-beta }
+
 #### Beta stage
 
 - Plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (Ontario))**
@@ -491,6 +667,10 @@ We still need to help users who are unable to use digital channels and provide s
 - have agreed analytics/metrics for the volume of usage across channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 - understand the full impact of retiring any potentially redundant services and channels. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+
+</section>
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-live }
 
 #### Live stage
 
@@ -510,6 +690,10 @@ We still need to help users who are unable to use digital channels and provide s
 
 - show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-stage .dpgn-phase-beta .dpgn-phase-live }
+
 #### Beta and live stages
 
 - detail the channels required to support all groups of users of the service **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
@@ -517,6 +701,11 @@ We still need to help users who are unable to use digital channels and provide s
 - understand the non-digital service channels and have a plan to move users to the digital channel where appropriate **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
 - have developed and tested the service so that a user can change channels without repeating themselves. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
+</section>
+</section>
+<section markdown="1">
+{: .dpgn-section-guides }
 
 ### Implementation guides
 
@@ -528,6 +717,10 @@ We still need to help users who are unable to use digital channels and provide s
 
 - [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-similar }
+
 ### Similar resources
 
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
@@ -538,7 +731,14 @@ We still need to help users who are unable to use digital channels and provide s
 
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
 
+</section>
+<section markdown="1">
+{: .dpgn-section-guideline }
+
 ## 1.8 Support people who cannot use digital services on their own
+
+<div markdown="1">
+{: .dpgn-section-intro-guideline }
 
 **[TODO: Add/revise introductory text]**
 
@@ -549,6 +749,10 @@ Not everyone will have the same access, comfort and skill level to use digital s
 Users may expect that an online service is available 24 hours a day, 365 days a year.
 
 You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
+
+</div>
+<section markdown="1">
+{: .dpgn-section-checklist }
 
 ### Checklist
 
@@ -572,6 +776,10 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 - Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-guides }
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -580,8 +788,15 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 - [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
 
+</section>
+<section markdown="1">
+{: .dpgn-section-similar }
+
 ### Similar resources
 
 - [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
 - [12. Support those who need it (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
+
+</section>
+</section>
