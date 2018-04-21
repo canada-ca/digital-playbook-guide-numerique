@@ -5,9 +5,7 @@ lang: en
 altLang: fr
 altLangPage: 3-collaborez-largement
 ---
-
-# 3. Collaborate widely (draft)
-{: property="name" #wb-cont}
+# 3. Collaborate widely (draft){: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
