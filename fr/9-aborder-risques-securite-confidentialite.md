@@ -5,9 +5,7 @@ lang: fr
 altLang: en
 altLangPage: 9-address-security-privacy-risks
 ---
-
-# 9. Aborder les risques de sécurité et de confidentialité (ébauche)
-{: property="name" #wb-cont}
+# 9. Aborder les risques de sécurité et de confidentialité (ébauche){: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
