@@ -15,7 +15,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 
 **Guidelines:**
 
-{:toc max_level=2 }
+{:toc}
 
 {::comment}
 [1.1 Build nothing for the user, without the user being involved](#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
