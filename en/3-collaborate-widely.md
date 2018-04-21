@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: 3-collaborez-largement
 ---
 
-<h1 property="name" id="wb-cont">3. Collaborate widely (draft)</h1>
+# 3. Collaborate widely (draft)
+{: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
