@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: 7-iterer-ameliorer-frequemment
 ---
 
-<h1 property="name" id="wb-cont">7. Iterate and improve frequently (draft)</h1>
+# 7. Iterate and improve frequently (draft)
+{: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
