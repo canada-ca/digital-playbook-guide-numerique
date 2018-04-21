@@ -6,7 +6,8 @@ altLang: en
 altLangPage: 1-design-with-users
 ---
 
-<h1 property="name" id="wb-cont">1. Concevoir avec les utilisateurs (ébauche)</h1>
+# 1. Concevoir avec les utilisateurs (ébauche)
+{: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
