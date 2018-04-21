@@ -5,11 +5,8 @@ lang: en
 altLang: fr
 altLangPage: 7-iterer-ameliorer-frequemment
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 7. Iterate and improve frequently (draft)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">7. Iterate and improve frequently (draft)</h1>
 
 **[TODO: Add/revise introductory text]**
 
