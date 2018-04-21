@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: 8-concevoir-services-ethiques
 ---
 
-<h1 property="name" id="wb-cont">8. Design ethical services (draft)</h1>
+# 8. Design ethical services (draft)
+{: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
