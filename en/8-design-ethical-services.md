@@ -5,11 +5,8 @@ lang: en
 altLang: fr
 altLangPage: 8-concevoir-services-ethiques
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 8. Design ethical services (draft)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">8. Design ethical services (draft)</h1>
 
 **[TODO: Add/revise introductory text]**
 
