@@ -5,11 +5,8 @@ lang: en
 altLang: fr
 altLangPage: 5-travailler-air-libre-par-defaut
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 5. Work in the open by default (draft)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">5. Work in the open by default (draft)</h1>
 
 **[TODO: Add/revise introductory text]**
 
