@@ -5,7 +5,9 @@ lang: fr
 altLang: en
 altLangPage: 2-build-in-accessibility-from-start
 ---
-# 2. Construire dans l'accessibilité dès le début (ébauche){: property="name" #wb-cont}
+# 2. Construire dans l'accessibilité dès le début (ébauche)
+
+{: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
