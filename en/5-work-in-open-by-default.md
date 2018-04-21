@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: 5-travailler-air-libre-par-defaut
 ---
 
-<h1 property="name" id="wb-cont">5. Work in the open by default (draft)</h1>
+# 5. Work in the open by default (draft)
+{: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
