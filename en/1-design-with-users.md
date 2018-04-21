@@ -5,11 +5,6 @@ lang: en
 altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs
 ---
-<!-- markdownlint-disable MD022 -->
-# 1. Design with users (draft)
-{: property="name" #wb-cont}
-<!-- markdownlint-enable MD022 -->
-
 **[TODO: Add/revise introductory text]**
 
 **Guidelines:**
