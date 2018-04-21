@@ -5,9 +5,7 @@ lang: fr
 altLang: en
 altLangPage: 5-work-in-open-by-default
 ---
-
-# 5. Travailler à l'air libre par défaut (ébauche)
-{: property="name" #wb-cont}
+# 5. Travailler à l'air libre par défaut (ébauche){: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
