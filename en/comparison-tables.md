@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: apercu
 ---
 
-<h1 property="name" id="wb-cont">Comparison tables (draft)</h1>
+# Comparison tables (draft)
+{: property="name" #wb-cont}
 
 1. [Government of Canada Digital Playbook comparison table](#government-of-canada-digital-playbook-comparison-table)
 1. **TODO:** Digital Service Standard (UK) comparison table
