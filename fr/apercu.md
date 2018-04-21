@@ -5,11 +5,8 @@ lang: fr
 altLang: en
 altLangPage: overview
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# Guide numérique du gouvernement du Canada (ébauche)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">Guide numérique du gouvernement du Canada (ébauche)</h1>
 
 ## Aperçu (ébauche)
 
