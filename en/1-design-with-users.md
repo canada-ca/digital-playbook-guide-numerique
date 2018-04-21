@@ -6,7 +6,7 @@ altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs
 ---
 
-<h1 property="name" id="wb-cont">1. Design with users (draft)</h1>
+# 1. Design with users (draft){: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 
