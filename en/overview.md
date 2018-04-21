@@ -6,7 +6,8 @@ altLang: fr
 altLangPage: apercu
 ---
 
-<h1 property="name" id="wb-cont">Government of Canada Digital Playbook (draft)</h1>
+# Government of Canada Digital Playbook (draft)
+{: property="name" #wb-cont}
 
 ## Overview (draft)
 
