@@ -5,11 +5,7 @@ lang: en
 altLang: fr
 altLangPage: 3-collaborez-largement
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
-
-# 3. Collaborate widely (draft)
-
-<!-- jekyll-exclude-end -->
+# 3. Collaborate widely (draft){: property="name" #wb-cont}
 
 **[TODO: Add/revise introductory text]**
 

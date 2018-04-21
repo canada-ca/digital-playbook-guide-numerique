@@ -5,11 +5,7 @@ lang: fr
 altLang: en
 altLangPage: 1-design-with-users
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
-
-# 1. Concevoir avec les utilisateurs (ébauche)
-
-<!-- jekyll-exclude-end -->
+# 1. Concevoir avec les utilisateurs (ébauche){: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

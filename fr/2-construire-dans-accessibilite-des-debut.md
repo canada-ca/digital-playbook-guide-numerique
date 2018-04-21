@@ -5,11 +5,7 @@ lang: fr
 altLang: en
 altLangPage: 2-build-in-accessibility-from-start
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
-
-# 2. Construire dans l'accessibilité dès le début (ébauche)
-
-<!-- jekyll-exclude-end -->
+# 2. Construire dans l'accessibilité dès le début (ébauche){: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 

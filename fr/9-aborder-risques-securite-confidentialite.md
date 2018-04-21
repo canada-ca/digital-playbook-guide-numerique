@@ -5,11 +5,7 @@ lang: fr
 altLang: en
 altLangPage: 9-address-security-privacy-risks
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
-
-# 9. Aborder les risques de sécurité et de confidentialité (ébauche)
-
-<!-- jekyll-exclude-end -->
+# 9. Aborder les risques de sécurité et de confidentialité (ébauche){: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
