@@ -5,6 +5,7 @@ lang: en
 altLang: fr
 altLangPage: 2-construire-dans-accessibilite-des-debut
 ---
+
 <h1 property="name" id="wb-cont">2. Build in accessibility from the start (draft)</h1>
 
 **[TODO: Add/revise introductory text]**
