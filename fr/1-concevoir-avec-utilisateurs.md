@@ -1,14 +1,10 @@
 ---
 layout: default
-title:  "Concevoir avec les utilisateurs (ébauche)"
+title:  "1. Concevoir avec les utilisateurs (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 1-design-with-users
 ---
-# 1. Concevoir avec les utilisateurs (ébauche)
-
-{: property="name" #wb-cont}
-
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Lignes directrices :**
