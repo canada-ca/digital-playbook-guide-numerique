@@ -5,18 +5,19 @@ lang: en
 altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs
 ---
-{::options parse_block_html="true" /}
-<div>
-{: .dpgn-section-intro-standard}
+<div markdown="1" class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
-<div markdown="1">
-{: .dpgn-section-guidelines}
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Guidelines:**
 
+{:toc max_level=2 }
+
+{::comment}
 [1.1 Build nothing for the user, without the user being involved](#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
 
 [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements](#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
@@ -32,6 +33,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 [1.7 Make it more convenient and practical to use digital services](#user-content-17-make-it-more-convenient-and-practical-to-use-digital-services)
 
 [1.8 Support people who cannot use digital services on their own](#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
+{:/comment}
 
 </div>
 <div markdown="1">
