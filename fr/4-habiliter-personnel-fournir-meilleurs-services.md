@@ -5,11 +5,8 @@ lang: fr
 altLang: en
 altLangPage: 4-empower-staff-deliver-better-services
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 4. Habiliter le personnel à fournir de meilleurs services (ébauche)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">4. Habiliter le personnel à fournir de meilleurs services (ébauche)</h1>
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
