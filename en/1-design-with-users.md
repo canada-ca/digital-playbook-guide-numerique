@@ -10,6 +10,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 **[TODO: Add/revise introductory text]**
 
 </div>
+
 <div markdown="1" class="dpgn-section-guidelines">
 
 **Guidelines:**
@@ -31,6 +32,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 [1.8 Support people who cannot use digital services on their own](#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
 
 </div>
+
 <div markdown="1" class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
@@ -58,6 +60,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 [10.1 Collect data once to avoid duplication (Standard 10: Be good data stewards)](10-be-good-data-stewards.md#user-content-101-collect-data-once-to-avoid-duplication)
 
 </div>
+
 <section markdown="1" class="dpgn-section-guideline">
   
 ## 1.1 Build nothing for the user, without the user being involved
@@ -69,6 +72,7 @@ Focus on the needs of your users, using agile, iterative and user-centred method
 Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched.
 
 </div>
+
 <section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
@@ -94,6 +98,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 - Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7).
 
 </section>
+
 <section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
@@ -101,6 +106,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
 <section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
@@ -119,6 +125,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 User needs are constantly evolving which it is why it is important to plan for ongoing user research and usability testing. Engage users at all stages, continuously seeking feedback to ensure the service helps users to accomplish their tasks and to keep improving the service to better meet user needs.
 
 </div>
+
 <section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
@@ -160,6 +167,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 </section>
 </section>
+
 <section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
@@ -167,6 +175,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
 <section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
@@ -185,6 +194,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 A key part of building digital services that work for users is developing a good understanding of who are the users, what are their needs and how the service will affect their lives. It is equally important to develop a good understanding of the different contexts in which users could be interacting, since user needs and expectations can vary depending upon where, when and how they use a digital service.
 
 </div>
+
 <section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
@@ -221,6 +231,7 @@ A key part of building digital services that work for users is developing a good
 - **Are you designing the right thing?** How have your insights from user research helped you to define your minimum viable product (MVP)? How does the MVP create value for users and government by better meeting user needs? **(Digital Service Standard (AU))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
@@ -254,6 +265,7 @@ A key part of building digital services that work for users is developing a good
 - **How will you know if your design is working?** Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs **(Digital Service Standard (AU))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
@@ -270,6 +282,7 @@ A key part of building digital services that work for users is developing a good
 
 </section>
 </section>
+
 <section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
@@ -313,6 +326,7 @@ A key part of building digital services that work for users is developing a good
 - [Evangelising user research](https://medium.com/@userfocus/evangelising-user-research-849430701b6e) **(David Travis (Medium.com))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
@@ -340,6 +354,7 @@ A key part of building digital services that work for users is developing a good
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
 
 </div>
+
 <section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
@@ -355,6 +370,7 @@ We need to understand the different ways people will interact with our services,
 - Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
@@ -362,6 +378,7 @@ We need to understand the different ways people will interact with our services,
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
 <section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
@@ -380,6 +397,7 @@ We need to understand the different ways people will interact with our services,
 **[TODO: Add/revise introductory text]**
 
 </div>
+
 <section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
@@ -392,6 +410,7 @@ We need to understand the different ways people will interact with our services,
   - Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)
 
 </section>
+
 <section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
@@ -433,6 +452,7 @@ Responsive design ensures that users can interact with your service regardless o
 Writing and designing content so it is consistent, plain and in the language of your users helps people gain trust and confidence in using different services. By providing information they can easily understand they may be less likely to use alternative websites that could be misleading. **(Digital Service Standard (AU))**
 
 </div>
+
 <section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
@@ -482,6 +502,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 - ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
@@ -505,6 +526,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 - [Government Digital Service (GDS) style guide](https://www.gov.uk/guidance/style-guide)  **(Government Digital Service (UK))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
@@ -561,6 +583,7 @@ We still need to help users who are unable to use digital channels and provide s
 **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 </div>
+
 <section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
@@ -604,6 +627,7 @@ We still need to help users who are unable to use digital channels and provide s
 - show you understand how you will increase digital take-up and what targets you will set. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
@@ -625,6 +649,7 @@ We still need to help users who are unable to use digital channels and provide s
 - understand the full impact of retiring any potentially redundant services and channels. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
@@ -646,6 +671,7 @@ We still need to help users who are unable to use digital channels and provide s
 - show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Beta and live stages
@@ -658,6 +684,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 </section>
+
 <section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
@@ -671,6 +698,7 @@ We still need to help users who are unable to use digital channels and provide s
 - [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
@@ -684,6 +712,7 @@ We still need to help users who are unable to use digital channels and provide s
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
 
 </section>
+
 <section markdown="1" class="dpgn-section-guideline">
 
 ## 1.8 Support people who cannot use digital services on their own
@@ -701,6 +730,7 @@ Users may expect that an online service is available 24 hours a day, 365 days a 
 You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
 
 </div>
+
 <section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
@@ -726,6 +756,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 - Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
@@ -737,6 +768,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 - [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
