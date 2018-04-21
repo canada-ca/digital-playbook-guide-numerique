@@ -5,11 +5,7 @@ lang: en
 altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
-
-# 1. Design with users (draft)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">1. Design with users (draft)</h1>
 
 **[TODO: Add/revise introductory text]**
 
