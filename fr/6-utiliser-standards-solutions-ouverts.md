@@ -5,11 +5,8 @@ lang: fr
 altLang: en
 altLangPage: 6-use-open-standards-solutions
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 6. Utiliser des standards et solutions ouverts (ébauche)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">6. Utiliser des standards et solutions ouverts (ébauche)</h1>
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
