@@ -6,7 +6,8 @@ altLang: en
 altLangPage: 6-use-open-standards-solutions
 ---
 
-<h1 property="name" id="wb-cont">6. Utiliser des standards et solutions ouverts (ébauche)</h1>
+# 6. Utiliser des standards et solutions ouverts (ébauche)
+{: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
