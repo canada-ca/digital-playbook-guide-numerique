@@ -6,7 +6,8 @@ altLang: en
 altLangPage: 8-design-ethical-services
 ---
 
-<h1 property="name" id="wb-cont">8. Concevoir des services éthiques (ébauche)</h1>
+# 8. Concevoir des services éthiques (ébauche)
+{: property="name" #wb-cont}
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
