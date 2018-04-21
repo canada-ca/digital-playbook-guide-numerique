@@ -5,11 +5,8 @@ lang: fr
 altLang: en
 altLangPage: 3-collaborate-widely
 ---
-<!-- jekyll-exclude-start (TODO: figure out how to do this) -->
 
-# 3. Collaborez largement (ébauche)
-
-<!-- jekyll-exclude-end -->
+<h1 property="name" id="wb-cont">3. Collaborez largement (ébauche)</h1>
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
