@@ -102,7 +102,7 @@ defTop.outerHTML = wet.builder.top({
   <h1 property="name" id="wb-cont">{{ page.title }}</h1>
 </div>
 <div class="col-md-4 col-sm-6">
-  <ul class="list-inline">
+  <ul class="list-inline text-right">
     <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/new?title={{ page.title | url_encode }}">{{ site.Feedback[page.lang] }}</a></li>
     <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.path }}">{{ site.ViewSourceGitHub[page.lang] }}</a></li>
 {% if page.url != site.index[page.lang] %}
