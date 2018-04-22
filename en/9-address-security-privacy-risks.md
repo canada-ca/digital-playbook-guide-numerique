@@ -5,7 +5,13 @@ lang: en
 altLang: fr
 altLangPage: 9-aborder-risques-securite-confidentialite
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Guidelines:**
 
@@ -16,6 +22,10 @@ altLangPage: 9-aborder-risques-securite-confidentialite
 [9.3 Make security seamless and frictionless, balancing security and convenience](#user-content-93-make-security-seamless-and-frictionless-balancing-security-and-convenience)
 
 [9.4 Ensure services comply with all legislated and regulatory requirements](#user-content-94-ensure-services-comply-with-all-legislated-and-regulatory-requirements)
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
@@ -33,15 +43,29 @@ altLangPage: 9-aborder-risques-securite-confidentialite
 
 [8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 9.1 Take a balanced approach to managing risk by implementing appropriate privacy and security measures
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
 - Allow for secure sharing of information and data
+
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -51,7 +75,14 @@ altLangPage: 9-aborder-risques-securite-confidentialite
 
 - [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -69,9 +100,15 @@ Users won't use a service unless they have a guarantee:
 
  **(Digital Service Standard (Ontario))**
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -93,6 +130,10 @@ Users won't use a service unless they have a guarantee:
 
 - document the privacy policy and rationale **(Digital Service Standard (Ontario))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Live stage
 
 - make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
@@ -101,15 +142,31 @@ Users won't use a service unless they have a guarantee:
 
 - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
 
 - [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 9.3 Make security seamless and frictionless, balancing security and convenience
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -127,12 +184,18 @@ Users won't use a service unless they have a guarantee:
 
 **(Digital Service Standard (Ontario))**
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
 - Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -160,6 +223,10 @@ Users won't use a service unless they have a guarantee:
 
 - plan for checking suspicious activity **(Digital Service Standard (Ontario))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Live stage
 
 - document the approach to security and risk management **(Digital Service Standard (Ontario))**
@@ -168,15 +235,31 @@ Users won't use a service unless they have a guarantee:
 
 - document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
 
 - [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 9.4 Ensure services comply with all legislated and regulatory requirements
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -207,6 +290,10 @@ People who use government services must have confidence that:
 
 If a service cannot guarantee confidentiality, integrity and availability of the system, people will not use it.
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
@@ -229,6 +316,8 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 - HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
   - Holistic approach to securing GC services for publicly accessible sites
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -268,6 +357,10 @@ If a service cannot guarantee confidentiality, integrity and availability of the
   - the Freedom of Information Act
   - the Spam Act
   - state and territory government policies, if relevant.
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -310,6 +403,10 @@ If a service cannot guarantee confidentiality, integrity and availability of the
   - logging solution that can fully trace a user as they traverse each part of the system
   - appropriate business rules that check the validity of interactions with the solution.
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Live stage
 
 - determine your team's approach to security and risk management **(Digital Service Standard (UK))**
@@ -334,6 +431,11 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 - have mitigated all known vulnerabilities in the solution. **(Digital Service Standard (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -348,6 +450,10 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 - [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Similar resources
 
 - [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
@@ -355,3 +461,6 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 
 - [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
+
+</section>
+</section>
