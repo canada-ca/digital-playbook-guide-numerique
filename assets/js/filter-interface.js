@@ -53,7 +53,6 @@ $( document ).on( "click", "#filter-button", function( ) {
 			for ( filterIndex = 0; filterIndex < filtersEnabledLen; filterIndex += 1 ) {
 				groupShowSelector += ", ." + $filtersEnabled[ filterIndex ].id;
 			}
-			groupShowSelector = groupShowSelector.substr( 2 );
 			showSelector += ", " + groupShowSelector.substr( 2 );
 		}
 
