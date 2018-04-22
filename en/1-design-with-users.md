@@ -388,7 +388,7 @@ We need to understand the different ways people will interact with our services,
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section markdown="1" class="dpgn-section-guideline dpgn-phase-alpha">
 
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
 

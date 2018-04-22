@@ -4,6 +4,9 @@
 {% include head.html %}
 <body vocab="http://schema.org/" typeof="WebPage">
 {% include header.html %}
+{% if page.url != site.index[page.lang] %}
+  {% include filter-interface.html %}
+{% endif %}
 {{ content }}
 {% include footer.html %}
 </body>
