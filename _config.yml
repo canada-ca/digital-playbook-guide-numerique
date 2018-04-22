@@ -278,7 +278,10 @@ ApplyFilters:
   fr: Appliquer les filtres
 
 # Feedback and view source translations
-Feedback:
+PageColon:
+  en: Page:
+  fr: Page :
+FeedbackAsk:
   en: Give feedback about this page
   fr: Donnez votre avis sur cette page
 ViewSourceGitHub:
