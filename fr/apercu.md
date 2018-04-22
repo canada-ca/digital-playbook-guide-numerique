@@ -20,8 +20,6 @@ Le guide numérique du gouvernement du Canada fournit des conseils pratiques et 
 
 - **Les guides de mise en œuvre**   Des informations supplémentaires et détaillées sur les sous-thèmes spécifiques.
 
-The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
-
 Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada] (https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
 
 ### Normes numériques du gouvernement du Canada (ébauche)
