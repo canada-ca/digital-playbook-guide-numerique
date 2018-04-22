@@ -6,6 +6,13 @@
 ( function( $ ) {
 "use strict";
 
+$( document ).on( "click", "#dpgn-filter-form input:checkbox", function( event )  {
+  var target = event.target;
+  
+  // If the checkbox has children checkboxes, then check/uncheck them all when the parent checkbox is checked/unchecked
+  $( target ).siblings( "ul" ).find( "input:checkbox" ).prop( "checked", target.checked );
+} );
+
 $( document ).on( "click", "#filter-button", function( ) {
 	var $filterForm = $( "#dpgn-filter-form" ),
 		$groups = $filterForm.find( "fieldset" ),
@@ -66,7 +73,8 @@ $( document ).on( "click", "#filter-button", function( ) {
 	if ( hideSelector.length != 0 ) {
 		hideSelector = hideSelector.substr( 2 );
 	}
-
+console.log( "showSelector: " + showSelector );
+  console.log( "hideSelector: " + hideSelector );
 	// Make visible any content that should be visible but is currently hidden
 	$( showSelector ).filter( "." + hideClass ).not( hideSelector ).removeClass( hideClass );
 
