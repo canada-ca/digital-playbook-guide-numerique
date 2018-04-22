@@ -5,7 +5,13 @@ lang: en
 altLang: fr
 altLangPage: 7-iterer-ameliorer-frequemment
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Guidelines:**
 
@@ -17,6 +23,10 @@ altLangPage: 7-iterer-ameliorer-frequemment
 
 [7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration](#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
 
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
+
 **Related guidelines:**
 
 [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
@@ -25,7 +35,13 @@ altLangPage: 7-iterer-ameliorer-frequemment
 
 [9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 7.1 Build in an agile manner and continuously improve in response to user needs
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -81,6 +97,10 @@ Use quantitative and qualitative data to help with regular reviews of your servi
 
 Start with a representation or prototype of the solution that will be tested and revised based on feedback and insights. Each iteration improves on the previous version. Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Taking an iterative approach also helps you reduce risks. It makes big failures less likely and turns mistakes into learning opportunities.
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
@@ -88,6 +108,8 @@ Start with a representation or prototype of the solution that will be tested and
 - Use agile **(Build It Right - OneGC Architectural Checklist (draft))**
   - Be an agile Developer: Develop in an iterative manner, with key stakeholders participation from the beginning, releasing minimum viable product as soon as possible and iteratively building out functionality
   - Be an agile administrator: Promote DEVOPS and automate, monitor and unify all platform and software construction from testing to release and infrastructure management
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -99,6 +121,10 @@ Start with a representation or prototype of the solution that will be tested and
 
 - determine the minimum viable product (MVP). **(Digital Service Standard (AU))
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+
 #### Beta and live stages
 
 - show how the service has responded to user research and usability testing **(Digital Service Standard (AU))
@@ -106,6 +132,10 @@ Start with a representation or prototype of the solution that will be tested and
 - clearly describe the lifecycle of a user story, from user research to production **(Digital Service Standard (AU))
 
 - explain the deployment process and how you are able to support frequent deployments with minimal impact to users. **(Digital Service Standard (AU))
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Alpha, beta and live stages
 
@@ -189,6 +219,11 @@ Start with a representation or prototype of the solution that will be tested and
 
 - be able to show that your governance is appropriate to the size and scale of your service, and that it is human-centred, based on clear and measurable goals, with a clear focus on managing change and risk in real time. **(Digital Service Standard (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -233,6 +268,10 @@ Start with a representation or prototype of the solution that will be tested and
 
 - [You can’t be half agile](https://gds.blog.gov.uk/2015/07/10/you-cant-be-half-agile/) **(Government Digital Service Blog (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Similar ressources
 
 - [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
@@ -245,23 +284,49 @@ Start with a representation or prototype of the solution that will be tested and
 
 - [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 7.2 Accept that change is inevitable and use adaptive strategies and tools for new development
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 7.3 Embrace and react to changes in the environment and design for sustainability
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology. **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -273,15 +338,30 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 - Identify opportunities to improve the service based on the results of regular test **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
 
 - [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -296,6 +376,10 @@ You need to build a service which you can iterate and keep improving so that you
 - make sure your service keeps meeting user needs
 
 **1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED))**: Services should be simple, inclusive and easy to use. Services should help clients achieve the outcomes that matter most. Assessing prototypes while the service is being designed will help you discover shortcomings that may deter clients from using the service or glitches that may affect the user experience. Assessing the service before it is officially launched will also help you make improvements that can go a long way in ensuring clients are satisfied when using the service. Rigorously and comprehensively testing the service from end-to-end is part of good service design.
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -329,6 +413,8 @@ You need to build a service which you can iterate and keep improving so that you
     - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
     - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
 
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+
 #### Alpha, beta and live stages
 
 - document what you've built in each phase and why you built it **(Digital Service Standard (UK))**
@@ -349,17 +435,30 @@ You need to build a service which you can iterate and keep improving so that you
 
 - solve any technical problems you've found **(Digital Service Standard (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+
 #### Beta stage
 
 - determine how long you expect your service to be in beta and why **(Digital Service Standard (UK))**
 
 - document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users **(Digital Service Standard (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Live stage
 
 - make sure deployments have zero downtime in a way that doesn't stop users using the service **(Digital Service Standard (UK))**
 
 - make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -387,8 +486,15 @@ Find out more about:
 
 - [Agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Similar resources
 
 - [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
 
 - [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
+
+</section>
+</section>
