@@ -20,7 +20,7 @@ The Government of Canada Digital Playbook provides practical and measurable guid
 
 - **Implementation guides** provide additional, detailed information on specific sub-topics.
 
-The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated. 
+The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
 
 ### Government of Canada Digital Standards (draft)
 
