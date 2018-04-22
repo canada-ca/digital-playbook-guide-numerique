@@ -107,7 +107,7 @@ defTop.outerHTML = wet.builder.top({
     <li><p><a href="#filter-panel" aria-controls="filter-panel" class="overlay-lnk btn btn-primary" role="button">{{ site.ShowFilters[page.lang] }}</a></li>
 {% endif %}
     <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/new?title={{ page.title | url_encode }}">{{ site.Feedback[page.lang] }}</a></li>
-    <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master{{ page.path }}">View source on GitHub</a></li>
+    <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master{{ page.path }}">{{ site.ViewSourceGitHub }}</a></li>
 </div>
 </div>
 </div>
