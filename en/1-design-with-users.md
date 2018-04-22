@@ -145,6 +145,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 - develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
 </section>
+
 <section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Beta and live stages
