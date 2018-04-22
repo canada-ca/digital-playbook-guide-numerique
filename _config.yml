@@ -246,6 +246,9 @@ SectionType:
 ForAStandard:
   en: for a standard
   fr: pour une norme
+List:
+  en: list
+  fr: liste
 Introduction:
   en: Introduction
   fr: Introduction
