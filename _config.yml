@@ -32,12 +32,14 @@ subject:
 index:
   en: /en/overview.html
   fr: /fr/apercu.html
-home:
-  en: Home
-  fr: Accueil
 AllPosts:
   en: Government of Canada Digital Playbook (draft)
   fr: Guide numérique du gouvernement du Canada (ébauche)
+
+# Canadda.ca theme translations
+home:
+  en: Home
+  fr: Accueil
 language:
   en: English
   fr: Français
@@ -218,3 +220,56 @@ TopOfPage:
 GCWordmark:
   en: Symbol of the Government of Canada
   fr: Symbole du gouvernement du Canada
+
+# Filter translations
+Filters:
+  en: Filters
+  fr: Filtres
+ShowFilters:
+  en: Show filters
+  fr: Afficher les filtres
+ProjectPhase:
+  en: Project phase
+  fr: Phase de projet
+Alpha:
+  en: Alpha
+  fr: Alpha
+Beta:
+  en: Beta
+  fr: Bêta
+Live:
+  en: Live
+  fr: En direct
+SectionType:
+  en: Section type
+  fr: Type de section
+ForAStandard:
+  en: for a standard
+  fr: pour une norme
+Introduction:
+  en: Introduction
+  fr: Introduction
+Guidelines:
+  en: Guidelines
+  fr: Ligne directrices
+RelatedGuidelines:
+  en: Related guidelines
+  fr: Lignes directrices connexes
+Guideline:
+  en: Guideline
+  fr: Ligne directrice
+ForAGuideline:
+  en: for a guideline
+  fr: pour une ligne directrice
+Checklist:
+  en: Checklist
+  fr: Liste de contrôle
+ImplementationGuides:
+  en: Implementation guides
+  fr: Guides d'application
+SimilarResources:
+  en: Similar resources
+  fr: Ressources similaires
+ApplyFilters:
+  en: Apply filters
+  fr: Appliquer les filtres
