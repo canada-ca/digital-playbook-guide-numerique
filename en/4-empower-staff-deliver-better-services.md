@@ -5,7 +5,13 @@ lang: en
 altLang: fr
 altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Guidelines:**
 
@@ -18,6 +24,10 @@ altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 [4.4 Empower teams to make decisions throughout the design, build, and operation of the service and allow them to learn from their mistakes](#user-content-44-empower-teams-to-make-decisions-throughout-the-design-build-and-operation-of-the-service-and-allow-them-to-learn-from-their-mistakes)
 
 [4.5 Make one person accountable for the service](#user-content-45-make-one-person-accountable-for-the-service)
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
@@ -43,19 +53,40 @@ altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 
 [7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 4.2 Make sure that staff have access to the tools and technologies they need to be innovative
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -84,11 +115,17 @@ The technology you choose to build your service must help you respond quickly an
 
 **(Digital Service Standard (AU))**
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
 - Ensure the project team has a modern workplace, professional development and the IM-IT tools they need to do their jobs
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -118,6 +155,10 @@ The technology you choose to build your service must help you respond quickly an
 
 - know the initial and ongoing costs for proposed tools and systems. **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+
 #### Beta stage
 
 - Determine how you're managing the limits placed on your service by the technology stack and development toolchain you've chosen **(Digital Service Standard (UK))**
@@ -142,6 +183,10 @@ The technology you choose to build your service must help you respond quickly an
 
 - outsource decision-making about technology only where appropriate. **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Live stage
 
 - Document the tech stack changes you made during beta and why **(Digital Service Standard (UK))**
@@ -162,11 +207,20 @@ The technology you choose to build your service must help you respond quickly an
 
 - evidence or artefacts that demonstrate you achieved the objective of the criteria for the Live stage. **(Digital Service Standard (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
 
 - [Australian Government ICT Policies, guide and procurement](http://www.finance.gov.au/policy-guides-procurement/whole-of-government-ict-policies/)
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -174,13 +228,24 @@ The technology you choose to build your service must help you respond quickly an
 
 - [4. Understand tools and systems (Digital Service Standard (AU))](https://www.dta.gov.au/standard/4-tools-and-systems/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 4.3 Ensure that the right systems and processes are in place so the team can create
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 To improve our chances of success when contracting out development work, we need to work with experienced budgeting and contracting officers. In cases where we use third parties to help build a service, a well-defined contract can facilitate good development practices like conducting a research and prototyping phase, refining product requirements as the service is built, evaluating open source alternatives, ensuring frequent delivery milestones, and allowing the flexibility to purchase cloud computing resources. **(Digital Services Playbook (US))**
 
 It is essential that business processes be reviewed to identify opportunities to improve service delivery. A website is not a service; it is just one channel for accessing or delivering a service. Designing new or redesigning existing digital services should also facilitate service delivery best practices (e.g., open data and joined-up services). **(Do - Digital Design Playbook (ISED))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -218,9 +283,17 @@ It is essential that business processes be reviewed to identify opportunities to
 
 - Improve the service first and consider if a policy change or update might be needed. Second, build the digital platform/website. **(Do - Digital Design Playbook (ISED))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -228,7 +301,14 @@ It is essential that business processes be reviewed to identify opportunities to
 
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 4.4 Empower teams to make decisions throughout the design, build, and operation of the service and allow them to learn from their mistakes
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -238,6 +318,10 @@ According to Kinicki & Kreitner, empowerment is about “sharing degrees of powe
 Empowering employees isn’t easy though, because it requires that a company and their management be committed to continuous employee development.  It means fostering an environment of trust and helping employees learn from successes and analyze failures.
 
 Working to create an environment that empowers employees has been shown to not only increase customer satisfaction levels, but also improve employee morale.  It takes training, practice, and the ability to accept mistakes as a part of the learning process – but it is well worth the effort in the long run! **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -259,15 +343,30 @@ Working to create an environment that empowers employees has been shown to not o
 
 - Let teams become the hierarchy:  This occurs by slowly and carefully transferring responsibilities from managers to teams.  This can be a very scary and difficult process that takes time, training and a lot of persistence (Kinicki & Kreitner, 2008, p. 335).  It’s been my personal experience that this requires a lot of support time to the teams as they move from depending on a manager to make decisions to being autonomous. **([6 Ways To Empower Others To Succeed, Lisa Quast, Forbes.com contributor](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 4.5 Make one person accountable for the service
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 Each service must have one person who has the authority and is responsibile for makingt business, product and technical decisions. This person is responsible for communicating the vision, making decisions in a timely fashion, managing stakeholder/vendor relationships, monitoring project health and is accountable for the success or failure of the service. This person also sets the strategy for the service, defines the features of the service, and is responsible for the service on an ongoing basis, until it is decommissioned.
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -293,10 +392,21 @@ Each service must have one person who has the authority and is responsibile for 
 
 - Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Similar resources
 
 - [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
+
+</section>
+</section>
