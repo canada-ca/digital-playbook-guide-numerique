@@ -5,7 +5,13 @@ lang: en
 altLang: fr
 altLangPage: 2-construire-dans-accessibilite-des-debut
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Guidelines:**
 
@@ -16,6 +22,10 @@ altLangPage: 2-construire-dans-accessibilite-des-debut
 [2.3 Co-create with people who have distinct needs, being inclusive from the very beginning](#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
 
 [2.4 Take into consideration a user's possible constraints when designing services](#user-content-24-take-into-consideration-a-users-possible-constraints-when-designing-services)
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
@@ -33,11 +43,21 @@ altLangPage: 2-construire-dans-accessibilite-des-debut
 
 [8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 2.1 Build for those with the greatest needs and it will work for everyone else
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 The Government of Canada is committed to ensuring that a high level of accessibility is applied uniformly across its service delivery channels. Technologies and standards are constantly evolving and accessibility plays a major role in making the Government of Canada more effective and inclusive. A more consistent, convenient, clear, and easy user experience when using government services online builds trust.
 
 Development of accessible (regardless of ability, device or environment) digital services enhances the overall experience for everyone by improving and simplifying the overall design.
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -56,6 +76,10 @@ Development of accessible (regardless of ability, device or environment) digital
 - Make it easy for all users (including persons with disabilities) to provide feedback, address problems, and request support for using the service.
 
 - Use ongoing research, testing and analytics to continually assess and improve the accessibility of the service.
+
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -80,9 +104,16 @@ Development of accessible (regardless of ability, device or environment) digital
   - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
 - [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use
 
 **[TODO: Add/revise introductory text]**
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment.
 
@@ -97,6 +128,10 @@ Ensure the service is accessible to all users regardless of their ability and en
 You need to make sure everyone who needs your service can use it. This includes people with disabilities and older people, and people who can’t use, or struggle with, digital services.
 
 Your service must be accessible to users regardless of their digital confidence and access to a digital environment. This includes users in remote areas and users’ different devices. **(Digital Service Standard (AU))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -126,6 +161,8 @@ Your service must be accessible to users regardless of their digital confidence 
 
 - make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+
 #### Alpha stage
 
 - show the type of environments users may access the service in, including with different browsers and desktop and mobile devices, and when connections are slower and there may be limited data; for example, through user stories **(Digital Service Standard (AU))**
@@ -143,6 +180,10 @@ Your service must be accessible to users regardless of their digital confidence 
 - show any accessibility issues and barriers that might need addressing in the Beta stage **(Digital Service Standard (AU))**
 
 - show you have access to facilities to perform testing on various devices or platforms, for example a plan for testing. **(Digital Service Standard (AU))**
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -176,6 +217,10 @@ Your service must be accessible to users regardless of their digital confidence 
 
 - show the majority of users can access the service in their environment. **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Live stage
 
 - show your service is accessible **(Digital Service Standard (AU))**
@@ -188,6 +233,11 @@ Your service must be accessible to users regardless of their digital confidence 
 - a run through of how you’ve designed and tested for users of assistive technologies based on user research, usability testing and analytics **(Digital Service Standard (AU))**
 
 - show ongoing testing plans for accessibility so that your users can continue to access the service. **(Digital Service Standard (AU))**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -214,13 +264,24 @@ Your service must be accessible to users regardless of their digital confidence 
 - [The A11y Project](https://a11yproject.com/)
 - [Making your service accessible](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction) **(Service Manual (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Similar resources
 
 - [7. Make it accessible (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-8)
 
 - [9. Make it accessible (Digital Service Standard (AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 2.3 Co-create with people who have distinct needs, being inclusive from the very beginning
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -237,6 +298,10 @@ This applies when designing and developing:
 - Web technologies and technical specifications, such as HTML
 
 **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -289,6 +354,10 @@ For websites and web applications, using comprehensive standards such as Web Con
 For authoring tools such as content management systems (CMS), blog software, and WYSIWYG editors, follow Authoring Tool Accessibility Guidelines (ATAG).
 For browsers, media players, and other 'user agents', follow User Agent Accessibility Guidelines (UAAG).
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -314,7 +383,14 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 - [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 2.4 Take into consideration a user's possible constraints when designing services
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -325,6 +401,10 @@ Very few people are like this, especially when you take into account that a pers
 Until you consider the needs of the range of people that will be using your service you can’t confirm that you are not excluding people. You also won’t be making the cost savings that digital services can provide as you will be forcing some people to use more expensive alternate channels.
 
 [Consider the range of people that will use your product or service, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -421,6 +501,10 @@ Until you consider the needs of the range of people that will be using your serv
   - rely on accurate spelling - use autocorrect or provide suggestions
   - put too much information in one place
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -444,3 +528,6 @@ Until you consider the needs of the range of people that will be using your serv
 - [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
   - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
 - [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
+
+</section>
+</section>

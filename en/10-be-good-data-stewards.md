@@ -5,7 +5,13 @@ lang: en
 altLang: fr
 altLangPage: 10-soyez-bons-gestionnaires-donnees
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Guidelines:**
 
@@ -20,6 +26,10 @@ altLangPage: 10-soyez-bons-gestionnaires-donnees
 [10.5 Ensure data and information is complete, accurate and up-to-date](#user-content-105-ensure-data-and-information-is-complete-accurate-and-up-to-date)
 
 [10.6 Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others](#user-content-106-ensure-data-is-well-structured-intuitive-and-in-a-format-that-is-easy-to-integrate-and-reuse-by-others)
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
@@ -41,23 +51,48 @@ altLangPage: 10-soyez-bons-gestionnaires-donnees
 
 [9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.1 Collect data once to avoid duplication
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.2 Make relevant government information and data easily accessible to help support decision making
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 At every stage of a project, we should measure how well our service is working for our users. This includes measuring how well a system performs and how people are interacting with it in real-time. Our teams and agency leadership should carefully watch these metrics to find issues and identify which bug fixes and improvements should be prioritized. Along with monitoring tools, a feedback mechanism should be in place for people to report issues directly. **(Digital Services Playbook (US))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -79,6 +114,10 @@ At every stage of a project, we should measure how well our service is working f
 
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -91,11 +130,22 @@ At every stage of a project, we should measure how well our service is working f
 
   - [Real Time Access (Data on the Web Best Practices (W3C))](https://www.w3.org/TR/dwbp/#AccessRealTime)
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Similar resources
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -123,9 +173,15 @@ Measuring performance means continuously improving a service by:
 
 Every service must aim for continuous improvement. Metrics are an important starting point for discussions about a service’s strengths and weaknesses. By identifying and capturing the right metrics - with the right tools - you can make sure all your decisions to improve the service are supported by data.
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Alpha, beta and live stages
 
@@ -157,6 +213,10 @@ Every service must aim for continuous improvement. Metrics are an important star
   - costs, benefits and return on investment
   - content metrics (readability, length).
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+
 #### Alpha stage
 
 - explored the data that is already available for an existing service, where it is kept and how you might access and use it, and also shared your own insights **(Digital Service Standard (AU))**
@@ -168,6 +228,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 - started creating a performance framework outlining your objectives and what metrics your team will use to demonstrate you meet them **(Digital Service Standard (AU))**
 
 - considered the metrics you will need to measure the 4 KPIs and where the data will come from. **(Digital Service Standard (AU))**
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -182,6 +246,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 - which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) **(Digital Service Standard (AU))**
 
 - what you have learned from qualitative and quantitative data; for example key evidence. **(Digital Service Standard (AU))**
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -212,6 +280,11 @@ Every service must aim for continuous improvement. Metrics are an important star
   - completion rate has been maintained
   - cost per transaction is decreasing in line with service plans.
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
@@ -236,6 +309,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 - [Measuring success](https://www.gov.uk/service-manual/measuring-success) **(Service manual (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Similar resources
 
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
@@ -244,21 +321,47 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.4 Give due consideration to digital preservation and retention
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.5 Ensure data and information is complete, accurate and up-to-date
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -267,6 +370,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 - Data is the new gold **(Build It Right - OneGC Architectural Checklist (draft))**
   - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
   - Ensure data is able to be shared and can be easily accessed
+
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -285,9 +392,20 @@ Every service must aim for continuous improvement. Metrics are an important star
 
   - [Sustainability Factors (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/sustain/sustain.shtml)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.6 Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -299,6 +417,13 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 - Design data with a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+</section>

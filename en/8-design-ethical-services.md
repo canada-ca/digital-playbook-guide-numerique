@@ -5,7 +5,13 @@ lang: en
 altLang: fr
 altLangPage: 8-concevoir-services-ethiques
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Guidelines:**
 
@@ -16,6 +22,10 @@ altLangPage: 8-concevoir-services-ethiques
 [8.3 Comply with ethical guidelines in the design of automated systems](#user-content-83-comply-with-ethical-guidelines-in-the-design-of-automated-systems)
 
 [8.4 Balance trade-offs between innovation and inclusiveness](#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
@@ -49,52 +59,112 @@ altLangPage: 8-concevoir-services-ethiques
 
 [10.2 Make relevant government information and data easily accessible to help support decision making (Standard&#160;10: Be good data stewards)](10-be-good-data-stewards.md#user-content-102-make-relevant-government-information-and-data-easily-accessible-to-help-support-decision-making)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 8.1 Be transparent about personal and organizational biases and indicate how they are being addressed
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
 
 ## 8.2 Assess the full impact on users and communities
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
 
 ## 8.3 Comply with ethical guidelines in the design of automated systems
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
-- Design and deliver transparent and ethical services - Be open and transparent in the use of automated systems and comply with ethical guidelines.
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
 
 ## 8.4 Balance trade-offs between innovation and inclusiveness
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Checklist
 
 - **[TODO: Add/revise checklist items]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Implementation guides
 
 - **[TODO: Add/revise implementation guide items]**
+
+</section>
+</section>
