@@ -53,7 +53,8 @@ $( document ).on( "click", "#filter-button", function( ) {
 			for ( filterIndex = 0; filterIndex < filtersEnabledLen; filterIndex += 1 ) {
 				groupShowSelector += ", ." + $filtersEnabled[ filterIndex ].id;
 			}
-			showSelector += ", " + groupShowSelector.substr( 2 );
+      groupShowSelector = groupShowSelector.substr( 2 );
+			showSelector += ", " + groupShowSelector;
 		}
 
 		// Create a selector for all the disabled filters in the group, excluding the enabled filters, then append to the overall disabled filters selector
