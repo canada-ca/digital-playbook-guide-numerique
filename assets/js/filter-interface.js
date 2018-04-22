@@ -1,6 +1,7 @@
 /*!
- * Government of Canada Digital Playbook / Guide numérique du gouvernment du Canada
- * https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/LICENSE.md
+ * Open Government Licence / Licence du gouvernement ouvert – Canada
+ * Copyright (c) 2018 Government of Canada - Gouvernement du Canada
+ * http://open.canada.ca/en/open-government-licence-canada / http://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada
  *
  */
 ( function( $ ) {
