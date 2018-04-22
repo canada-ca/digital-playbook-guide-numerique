@@ -102,7 +102,7 @@ defTop.outerHTML = wet.builder.top({
 </div>
 <div class="col-lg-3 col-md-4">
   <ul class="list-unstyled text-right">
-    <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/issues/new?title=({{ site.PageColon[page.lang] | url_encode }}{{ page.title | url_encode }})">{{ site.FeedbackAsk[page.lang] }}</a></li>
+    <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/issues/new?title=({{ site.PageColon[page.lang] | url_encode }}+{{ page.title | url_encode }})">{{ site.FeedbackAsk[page.lang] }}</a></li>
     <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.path }}">{{ site.ViewSourceGitHub[page.lang] }}</a></li>
 {% if page.url != site.index[page.lang] %}
     <li><p><a href="#filter-panel" aria-controls="filter-panel" class="overlay-lnk btn btn-primary" role="button">{{ site.ShowFilters[page.lang] }}</a></li>
