@@ -73,8 +73,7 @@ $( document ).on( "click", "#filter-button", function( ) {
 	if ( hideSelector.length != 0 ) {
 		hideSelector = hideSelector.substr( 2 );
 	}
-console.log( "showSelector: " + showSelector );
-  console.log( "hideSelector: " + hideSelector );
+
 	// Make visible any content that should be visible but is currently hidden
 	$( showSelector ).filter( "." + hideClass ).not( hideSelector ).removeClass( hideClass );
 
