@@ -95,4 +95,18 @@ defTop.outerHTML = wet.builder.top({
 });
 </script>
 <main role="main" property="mainContentOfPage" class="container">
-<h1 property="name" id="wb-cont">{{ page.title }}</h1>
+
+<div class="row">
+<div class="col-lg-9 col-md-8">
+  <h1 property="name" id="wb-cont">{{ page.title }}</h1>
+</div>
+<div class="col-lg-3 col-md-4">
+  <ul class="list-unstyled text-right">
+    <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/new?title={{ page.title | url_encode }}">{{ site.Feedback[page.lang] }}</a></li>
+    <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.path }}">{{ site.ViewSourceGitHub[page.lang] }}</a></li>
+{% if page.url != site.index[page.lang] %}
+    <li><p><a href="#filter-panel" aria-controls="filter-panel" class="overlay-lnk btn btn-primary" role="button">{{ site.ShowFilters[page.lang] }}</a></li>
+{% endif %}
+  </ul>
+</div>
+</div>
