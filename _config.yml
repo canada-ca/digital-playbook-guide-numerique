@@ -279,8 +279,8 @@ ApplyFilters:
 
 # Feedback and view source translations
 PageColon:
-  en: Page:
-  fr: Page :
+  en: "Page:"
+  fr: "Page :"
 FeedbackAsk:
   en: Give feedback about this page
   fr: Donnez votre avis sur cette page
