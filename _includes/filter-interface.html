@@ -5,9 +5,7 @@
   <h2 class="modal=title">{{ site.Filters[page.lang] }}</h2>
 </header>
 <form action="#" method="post" id="dpgn-filter-form">
-<div class="container-fluid">
-<div class="row">
-<fieldset class="col-sm-6">
+<fieldset>
   <legend>{{ site.ProjectPhase[page.lang] }}</legend>
   <ul class="list-unstyled">
     <li><input type="checkbox" id="dpgn-phase-alpha" /> <label for="dpgn-phase-alpha">{{ site.Alpha[page.lang] }}</label></li>
@@ -15,7 +13,7 @@
     <li><input type="checkbox" id="dpgn-phase-live" /> <label for="dpgn-phase-live">{{ site.Live[page.lang] }}</label></li>
   </ul>
 </fieldset>
-<fieldset class="col-sm-6">
+<fieldset>
   <legend>{{ site.SectionType[page.lang] }}</legend>
   <ul class="list-unstyled">
     <li><input type="checkbox" id="dpgn-section-intro-standard" /> <label for="dpgn-section-intro-standard">{{ site.Introduction[page.lang] }} ({{ site.ForAStandard[page.lang] }})</label></li>
@@ -31,8 +29,6 @@
     </li>
   </ul>
 </fieldset>
-</div>
-</div>
 <input type="button" value="{{ site.ApplyFilters[page.lang] }}" id="filter-button" />
 </form>
 </section>
