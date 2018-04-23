@@ -5,7 +5,13 @@ lang: fr
 altLang: en
 altLangPage: 9-address-security-privacy-risks
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
@@ -16,6 +22,10 @@ altLangPage: 9-address-security-privacy-risks
 [9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité](#user-content-93-faites-en-sorte-que-la-sécurité-soit-fluide-et-sans-friction-en-équilibrant-sécurité-et-commodité)
 
 [9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires](#user-content-94-sassurer-que-les-services-sont-conformes-à-toutes-les-exigences-législatives-et-réglementaires)
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
 
 **Lignes directrives connexes :**
 
@@ -33,15 +43,29 @@ altLangPage: 9-address-security-privacy-risks
 
 [8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-%C3%89quilibrer-les-compromis-entre-innovation-et-inclusivit%C3%A9)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Permettre un partage sécurisé des informations et des données
+
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -51,7 +75,14 @@ altLangPage: 9-address-security-privacy-risks
 
 - [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -69,9 +100,15 @@ Users won't use a service unless they have a guarantee:
 
  **(Digital Service Standard (Ontario))**
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -93,6 +130,10 @@ Users won't use a service unless they have a guarantee:
 
 - document the privacy policy and rationale **(Digital Service Standard (Ontario))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Stage en direct
 
 - make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
@@ -101,27 +142,50 @@ Users won't use a service unless they have a guarantee:
 
 - make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
+### Ressources similaires
+
+- [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
+Identifiez les données que le service utilisera, stockera ou créera. Adoptez des mesures appropriées en matière juridique, de sécurité et de protection de la vie privée de façon à ce que les utilisateurs soient certains que leurs renseignements personnels seront conservés en toute sécurité et que la protection de leur vie privée sera assurée.
 
-Users won't use a service unless they have a guarantee:
+Pour que les utilisateurs utilisent un service, il est nécessaire de garantir les points suivants :
 
-- it's secure
+- sécurité du service
 
-- it's confidential
+- confidentialité du service
 
-- they can access their information in the service when they need to
+- possibilité d’accéder à ses renseignements au sein du service lorsqu'on en a besoin
+- que leur vie privée sera respectée pendant et après l’usage de ce service
 
-- that their privacy is protected while they use the service, and afterwards
+ **(Normes des services numériques (Ontario))**
 
- **(Digital Service Standard (Ontario))**
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -129,6 +193,8 @@ Users won't use a service unless they have a guarantee:
 
 - Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -156,6 +222,10 @@ Users won't use a service unless they have a guarantee:
 
 - plan for checking suspicious activity **(Digital Service Standard (Ontario))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Stage en direct
 
 - document the approach to security and risk management **(Digital Service Standard (Ontario))**
@@ -164,15 +234,31 @@ Users won't use a service unless they have a guarantee:
 
 - document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Ressources similaires
 
 - [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -203,6 +289,10 @@ People who use government services must have confidence that:
 
 If a service cannot guarantee confidentiality, integrity and availability of the system, people will not use it.
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -225,6 +315,8 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 - HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
   - Holistic approach to securing GC services for publicly accessible sites
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -264,6 +356,10 @@ If a service cannot guarantee confidentiality, integrity and availability of the
   - the Freedom of Information Act
   - the Spam Act
   - state and territory government policies, if relevant.
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
 
 #### Stage bêta
 
@@ -306,6 +402,10 @@ If a service cannot guarantee confidentiality, integrity and availability of the
   - logging solution that can fully trace a user as they traverse each part of the system
   - appropriate business rules that check the validity of interactions with the solution.
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Stage en direct
 
 - determine your team's approach to security and risk management **(Digital Service Standard (UK))**
@@ -330,6 +430,11 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 - have mitigated all known vulnerabilities in the solution. **(Digital Service Standard (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -344,6 +449,10 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 - [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
@@ -351,3 +460,6 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 
 - [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
+
+</section>
+</section>
