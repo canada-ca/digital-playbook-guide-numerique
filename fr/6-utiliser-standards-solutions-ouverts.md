@@ -5,7 +5,13 @@ lang: fr
 altLang: en
 altLangPage: 6-use-open-standards-solutions
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
@@ -21,6 +27,10 @@ altLangPage: 6-use-open-standards-solutions
 
 [6.6 Nuage d'abord](#user-content-66-nuage-dabord)
 
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
+
 **Lignes directrices connexes:**
 
 [1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
@@ -33,7 +43,13 @@ altLangPage: 6-use-open-standards-solutions
 
 [10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-103-assurez-vous-que-les-données-sont-collectées-de-manière-standard-afin-quelles-puissent-être-facilement-intégrées-et-réutilisées-par-dautres)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -69,6 +85,10 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 **(Digital Service Standard (AU))**
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -80,6 +100,8 @@ move between different technologies when you need to, avoiding vendor lock-in.
 - Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec
 
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+
 #### Stage alpha
 
 - build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
@@ -90,6 +112,10 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 - search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+
 #### Stages bêta et en direct
 
 - building using the Open Web Platform standards **(Digital Service Standard (AU))**
@@ -97,6 +123,11 @@ move between different technologies when you need to, avoiding vendor lock-in.
 - avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
 
 - addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -114,6 +145,10 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 - [OASIS Standards](https://www.oasis-open.org/standards)
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
@@ -124,13 +159,24 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector. **Digital Services Playbook (US))**
 
 In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged, where appropriate. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -183,9 +229,17 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
   - Open data leverages public sector information to develop consumer and commercial products.
   - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -197,11 +251,22 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 Les interfaces de programme d'application (API) sont un moyen par lequel les fonctionnalités métier sont exposées numériquement. Ce sont des éléments essentiels à la prestation réussie des services numériques en direct du gouvernement et à l'expansion de la prestation de services à des fournisseurs tiers. Ils peuvent également permettre une plus grande interopérabilité entre les services, optimiser les expériences entre les appareils et même mener à de nouveaux services novateurs en permettant à des produits tiers de fonctionner de façon transparente avec les systèmes du gouvernement du Canada.
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -223,6 +288,10 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
   - APIs created for every service, exposing data and functionality, to foster data sharing within GC and externally
   - Build microservices that work together within an ecosystem allowing for rapid deployment and built-in redundancy
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -233,13 +302,28 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 - [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -253,11 +337,22 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 - [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 6.5 Concevoir, créer et tester des services numériques de bout en bout
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 There are many potential benefits from the greater use of digital services, including greater convenience for users, quicker and more responsive service delivery, increased security and reliability and reduced costs. To maximize these potential benefits and avoid user reliance on less convenient ways of interacting with government, services should be designed to be digital from end-to-end.
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -293,9 +388,15 @@ There are many potential benefits from the greater use of digital services, incl
 
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+
 #### Stage alpha
 
 - test your prototypes with users. **(Digital Service Standard (AU))**
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Stage bêta et en direct
 
@@ -316,6 +417,11 @@ There are many potential benefits from the greater use of digital services, incl
 - show how you explored integrating automated testing into the deployment process **(Digital Service Standard (AU))**
 
 -show you have a business continuity plan and a roll-back option. **(Digital Service Standard (AU))**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -339,6 +445,10 @@ There are many potential benefits from the greater use of digital services, incl
 
 - [Testing Cookbook](https://testing-cookbook.18f.gov/) **(18F (US))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
@@ -350,6 +460,11 @@ There are many potential benefits from the greater use of digital services, incl
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 
 - [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
 
 ## 6.6 Nuage d'abord
 
@@ -372,6 +487,10 @@ Public cloud services offer benefits that enable significant advances in the fol
 - Cloud first **(Build It Right - OneGC Architectural Checklist (draft))**
   - SaaS considered first, PaaS, IaaS second to grow more modern infrastructure which includes public, private and hybrid cloud solutions
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -390,10 +509,21 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 - Application is hosted on commodity hardware **(Digital Services Playbook (US))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
+
+</section>
+</section>
