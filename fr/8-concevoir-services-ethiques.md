@@ -5,7 +5,13 @@ lang: fr
 altLang: en
 altLangPage: 8-design-ethical-services
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
@@ -16,6 +22,10 @@ altLangPage: 8-design-ethical-services
 [8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés](#user-content-83-se-conformer-aux-directives-éthiques-dans-la-conception-de-systèmes-automatisés)
 
 [8.4 Équilibrer les compromis entre innovation et inclusivité](#user-content-84-Équilibrer-les-compromis-entre-innovation-et-inclusivité)
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
 
 **Lignes directrices connexes :**
 
@@ -47,52 +57,112 @@ altLangPage: 8-design-ethical-services
 
 [9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](9-aborder-risques-securite-confidentialite.md#user-content-94-sassurer-que-les-services-sont-conformes-%C3%A0-toutes-les-exigences-l%C3%A9gislatives-et-r%C3%A9glementaires)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 8.1 Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
 
 ## 8.2 Évaluer l'impact total sur les utilisateurs et les communautés
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
 
 ## 8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Concevoir et fournir des services transparents et éthiques - Soyez ouvert et transparent dans l'utilisation des systèmes automatisés et conformez-vous aux directives éthiques.
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
 
 ## 8.4 Équilibrer les compromis entre innovation et inclusivité
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+</section>

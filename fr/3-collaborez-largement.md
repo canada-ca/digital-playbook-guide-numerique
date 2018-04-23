@@ -5,7 +5,13 @@ lang: fr
 altLang: en
 altLangPage: 3-collaborate-widely
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
@@ -17,6 +23,10 @@ altLangPage: 3-collaborate-widely
 
 [3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser](#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
 
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
+
 **Lignes directrices connexes :**
 
 [1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu%C3%A9)
@@ -27,7 +37,13 @@ altLangPage: 3-collaborate-widely
 
 [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-%C3%A0-lair-libre-et-rendre-le-code-source-ouvert-et-r%C3%A9utilisable)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -54,6 +70,10 @@ Good government services are built quickly and iteratively, based on user needs.
 - to be adequately resourced and empowered to deliver the product or service.
 
 **(Digital Service Standard (AU))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -119,6 +139,10 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - explain your plan to transfer knowledge and skills from any external people who work with the team. **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -133,6 +157,10 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - [The teams, they are a changin’](https://18f.gsa.gov/2016/04/18/the-teams-they-are-a-changin/) **(18F (US))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
@@ -143,9 +171,20 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - [2. Have a multidisciplinary team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/2-multidisciplinary-team/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -169,6 +208,10 @@ Good government services are built quickly and iteratively, based on user needs.
 - Are supports communicated and shared?
 - Is there agreement about a “product” or outcome for the collaboration?
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -184,25 +227,53 @@ Good government services are built quickly and iteratively, based on user needs.
   - [Time Well Spent](http://thegoodproject.org/collaborationtoolkit/elements-time-well-spent/)
   - [Solution Inspired](http://thegoodproject.org/collaborationtoolkit/elements-solution-inspired/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **Very similar to guideline 5.5 (guideline 5.5 is more specific about open source)**
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser
+
+<div markdown="1" class="dpgn-section-intro-guideline">
+
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 **[TODO: Determine what is meant by "link to the work of other" and then add related content]**
 
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
+**Very similar to guideline 5.5 (guideline 5.5 is more specific about open source)**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -218,6 +289,8 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - Show your code in an open Internet source code repository and enable contributions and comments on the code
 
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+
 #### Stage alpha
 
 - Determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
@@ -232,9 +305,17 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+
 #### Stage bêta
 
 - share your code in a repository **(Digital Service Standard (AU))**
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -256,6 +337,11 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - show how you’re handling updates and bug fixes to the code. **(Digital Service Standard (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -274,6 +360,10 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - [Making source code open](https://www.dta.gov.au/blog/making-source-code-open/) **(DTA Blog (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
@@ -285,3 +375,6 @@ Good government services are built quickly and iteratively, based on user needs.
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
+
+</section>
+</section>

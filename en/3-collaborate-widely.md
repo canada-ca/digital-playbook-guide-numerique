@@ -43,6 +43,8 @@ altLangPage: 3-collaborez-largement
 
 ## 3.1 Empower multidisciplinary teams with diverse perspectives and skills
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **[TODO: Add/revise introductory text]**
 
 Put in place a sustainable multidisciplinary team that can design, build and continuously improve the digital service, led by a skilled product manager who is empowered to make decisions.

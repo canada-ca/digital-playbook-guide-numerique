@@ -5,7 +5,13 @@ lang: fr
 altLang: en
 altLangPage: 7-iterate-improve-frequently
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
@@ -17,6 +23,10 @@ altLangPage: 7-iterate-improve-frequently
 
 [7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération](#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothèses-en-utilisant-les-preuves-comme-base-de-litération)
 
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
+
 **Lignes directrices connexesv:**
 
 [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
@@ -25,7 +35,13 @@ altLangPage: 7-iterate-improve-frequently
 
 [9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](9-aborder-risques-securite-confidentialite.md#user-content-92-innover-et-sam%C3%A9liorer-tout-en-r%C3%A9pondant-aux-attentes-du-public-quant-%C3%A0-la-protection-de-la-confidentialit%C3%A9-des-donn%C3%A9es)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -81,6 +97,10 @@ Use quantitative and qualitative data to help with regular reviews of your servi
 
 Start with a representation or prototype of the solution that will be tested and revised based on feedback and insights. Each iteration improves on the previous version. Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Taking an iterative approach also helps you reduce risks. It makes big failures less likely and turns mistakes into learning opportunities.
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -88,6 +108,8 @@ Start with a representation or prototype of the solution that will be tested and
 - Use agile **(Build It Right - OneGC Architectural Checklist (draft))**
   - Be an agile Developer: Develop in an iterative manner, with key stakeholders participation from the beginning, releasing minimum viable product as soon as possible and iteratively building out functionality
   - Be an agile administrator: Promote DEVOPS and automate, monitor and unify all platform and software construction from testing to release and infrastructure management
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -99,6 +121,10 @@ Start with a representation or prototype of the solution that will be tested and
 
 - determine the minimum viable product (MVP). **(Digital Service Standard (AU))
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+
 #### Stages bêta et en direct
 
 - show how the service has responded to user research and usability testing **(Digital Service Standard (AU))
@@ -106,6 +132,10 @@ Start with a representation or prototype of the solution that will be tested and
 - clearly describe the lifecycle of a user story, from user research to production **(Digital Service Standard (AU))
 
 - explain the deployment process and how you are able to support frequent deployments with minimal impact to users. **(Digital Service Standard (AU))
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Stages alpha, bêta et en direct
 
@@ -189,6 +219,11 @@ Start with a representation or prototype of the solution that will be tested and
 
 - be able to show that your governance is appropriate to the size and scale of your service, and that it is human-centred, based on clear and measurable goals, with a clear focus on managing change and risk in real time. **(Digital Service Standard (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -235,25 +270,65 @@ Start with a representation or prototype of the solution that will be tested and
 
 - [You can’t be half agile](https://gds.blog.gov.uk/2015/07/10/you-cant-be-half-agile/) **(Government Digital Service Blog (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources connexes
+
+- [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
+
+- [8. Be agile and user-centred (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
+
+- [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
+
+- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
+
+- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
 
 ## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology. **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -265,15 +340,30 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 - Identify opportunities to improve the service based on the results of regular test **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Ressources similaires
 
 - [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -288,6 +378,10 @@ You need to build a service which you can iterate and keep improving so that you
 - make sure your service keeps meeting user needs
 
 **1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED))**: Services should be simple, inclusive and easy to use. Services should help clients achieve the outcomes that matter most. Assessing prototypes while the service is being designed will help you discover shortcomings that may deter clients from using the service or glitches that may affect the user experience. Assessing the service before it is officially launched will also help you make improvements that can go a long way in ensuring clients are satisfied when using the service. Rigorously and comprehensively testing the service from end-to-end is part of good service design.
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -321,6 +415,8 @@ You need to build a service which you can iterate and keep improving so that you
     - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
     - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
 
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+
 #### Stages alpha, bêta et en direct
 
 - document what you've built in each phase and why you built it **(Digital Service Standard (UK))**
@@ -341,17 +437,30 @@ You need to build a service which you can iterate and keep improving so that you
 
 - solve any technical problems you've found **(Digital Service Standard (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+
 #### Stage bêta
 
 - determine how long you expect your service to be in beta and why **(Digital Service Standard (UK))**
 
 - document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users **(Digital Service Standard (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+
 #### Stage en direct
 
 - make sure deployments have zero downtime in a way that doesn't stop users using the service **(Digital Service Standard (UK))**
 
 - make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -379,8 +488,15 @@ Find out more about:
 
 - [Agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
 
 - [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
+
+</section>
+</section>

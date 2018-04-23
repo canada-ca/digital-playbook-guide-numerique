@@ -75,7 +75,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 </section>
 
@@ -83,7 +83,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 </section>
 </section>
@@ -102,7 +102,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 </section>
 
@@ -110,7 +110,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 </section>
 </section>
@@ -129,7 +129,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 </section>
 
@@ -137,7 +137,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 </section>
 </section>
@@ -156,7 +156,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 ### Checklist
 
-- **[TODO: Add/revise checklist items]**
+**[TODO: Add/revise checklist items]**
 
 </section>
 
@@ -164,7 +164,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 ### Implementation guides
 
-- **[TODO: Add/revise implementation guide items]**
+**[TODO: Add/revise implementation guide items]**
 
 </section>
 </section>
