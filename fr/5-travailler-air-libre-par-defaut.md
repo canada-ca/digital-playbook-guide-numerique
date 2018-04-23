@@ -5,7 +5,13 @@ lang: fr
 altLang: en
 altLangPage: 5-work-in-open-by-default
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
@@ -19,6 +25,10 @@ altLangPage: 5-work-in-open-by-default
 
 [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable](#user-content-55-travailler-à-lair-libre-et-rendre-le-code-source-ouvert-et-réutilisable)
 
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
+
 **Lignes directrices connexes :**
 
 [3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-34-partager-et-collaborer-%C3%A0-lext%C3%A9rieur-%C3%A9tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-r%C3%A9utiliser)
@@ -31,9 +41,19 @@ altLangPage: 5-work-in-open-by-default
 
 [10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-102-rendre-les-informations-et-les-donn%C3%A9es-gouvernementales-pertinentes-facilement-accessibles-pour-aider-%C3%A0-la-prise-de-d%C3%A9cision)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -51,27 +71,53 @@ altLangPage: 5-work-in-open-by-default
 
 - Data and code is shared so that clients can extract/create value. **(General design principles - Digital Design Playbook (ISED))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-## 5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 - [Open Data](https://www.dta.gov.au/standard/design-guides/open-data/) **Digital Service Standard (AU)**
 
 - [Statistical Data Integration](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/) **Digital Service Standard (AU)**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
+## 5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel
+
+<div markdown="1" class="dpgn-section-intro-guideline">
+
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -85,9 +131,15 @@ Setting performance indicators allows you to continuously improve your service b
 
 **(Digital Service Standard (UK))**
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Stages alpha, bêta et en direct
 
@@ -111,9 +163,18 @@ Setting performance indicators allows you to continuously improve your service b
 
 - make sure all stakeholders are actively involved in promoting or supporting digital delivery of the new service **(Digital Service Standard (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+
 #### Stage bêta
 
 - track people moving from using the offline service to the online one **(Digital Service Standard (UK))**
+
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -131,15 +192,30 @@ Setting performance indicators allows you to continuously improve your service b
 
 - [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 Share your experiences with colleagues across the Government of Canada, other levels of government, clients and service providers. Sharing experiences and best practices helps to raise the overall service quality. It helps to reduce duplication of effort and save costs. So share ideas, share intentions, share failures and learn together. **(Plan - Digital Design Playbook (ISED))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -161,9 +237,17 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 - Make it easier to share data across ISED by collecting service and client information in a consistent manner and following best practices (e.g., the business number as a common identifier and practices related to Identity Management (IDM)). **(Plan - Digital Design Playbook (ISED))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -171,7 +255,14 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -197,6 +288,10 @@ Open source helps to:
 
 **(Digital Service Standard (AU))**
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
@@ -215,6 +310,8 @@ Open source helps to:
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+
 #### Stage alpha
 
 - Determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
@@ -229,9 +326,17 @@ Open source helps to:
 
 - consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. **(Digital Service Standard (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+
 #### Stage bêta
 
 - share your code in a repository **(Digital Service Standard (AU))**
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -253,6 +358,11 @@ Open source helps to:
 
 - show how you’re handling updates and bug fixes to the code. **(Digital Service Standard (AU))**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -271,6 +381,10 @@ Open source helps to:
 
 - [Making source code open](https://www.dta.gov.au/blog/making-source-code-open/) **(DTA Blog (AU))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
@@ -282,3 +396,6 @@ Open source helps to:
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
+
+</section>
+</section>
