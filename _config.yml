@@ -48,7 +48,7 @@ SkipToMain:
   fr: Passer au contenu principal
 SkipToAbout:
   en: Skip to "About this site"
-  fr: Passer à «&#160;Au sujet du gouvernement&#160;»
+  fr: Passer à «&#160;À propos de ce site&#160;»
 LanguageSelection:
   en: Language selection
   fr: Sélection de la langue
@@ -183,7 +183,7 @@ FooterSection1Item9URL:
   fr: http://ouvert.canada.ca/
 FooterSection2:
   en: About this site
-  fr:
+  fr: À propos de ce site
 FooterSection2Item1:
   en: Social media
   fr: Médias sociaux
