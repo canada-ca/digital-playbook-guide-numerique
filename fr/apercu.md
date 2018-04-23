@@ -37,7 +37,7 @@ ses citoyens.   Il a fallu une communauté de personnes, avec des antécédents 
 
 1. [Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
 1. [Construire dans l'accessibilité dès le début](2-construire-dans-accessibilite-des-debut.md)
-1. [Collaborez](3-collaborez-largement.md)
+1. [Collaborez largement](3-collaborez-largement.md)
 1. [Habiliter le personnel à fournir des meilleurs services](4-habiliter-personnel-fournir-meilleurs-services.md)
 1. [Travailler à l'air libre par défaut](5-travailler-air-libre-par-defaut.md)
 1. [Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md)
