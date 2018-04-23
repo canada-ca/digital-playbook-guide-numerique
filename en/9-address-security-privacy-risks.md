@@ -86,9 +86,9 @@ altLangPage: 9-aborder-risques-securite-confidentialite
 
 **[TODO: Add/revise introductory text]**
 
-Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
+he data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
 
-Users won't use a service unless they have a guarantee:
+Uuse a service unless they have a guarantee:
 
 - it's secure
 
