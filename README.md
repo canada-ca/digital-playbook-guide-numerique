@@ -34,7 +34,7 @@
 - [Aperçu](fr/apercu.md)
 - [1. Concevoir avec les utilisateurs](fr/1-concevoir-avec-utilisateurs.md)
 - [2. Construire dans l'accessibilité dès le début](fr/2-construire-dans-accessibilite-des-debut.md)
-- [3. Collaborez](fr/3-collaborez-largement.md)
+- [3. Collaborez largement](fr/3-collaborez-largement.md)
 - [4. Habiliter le personnel à fournir des meilleurs services](fr/4-habiliter-personnel-fournir-meilleurs-services.md)
 - [5. Travailler à l'air libre par défaut](fr/5-travailler-air-libre-par-defaut.md)
 - [6. Utiliser des standards et solutions ouverts](fr/6-utiliser-standards-solutions-ouverts.md)
