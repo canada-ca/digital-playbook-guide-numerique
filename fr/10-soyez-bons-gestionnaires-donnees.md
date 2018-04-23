@@ -5,7 +5,13 @@ lang: fr
 altLang: en
 altLangPage: 10-be-good-data-stewards
 ---
+<div markdown="1" class="dpgn-section-intro-standard">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
@@ -20,6 +26,10 @@ altLangPage: 10-be-good-data-stewards
 [10.5 Assurer les données et dans la formation est complète, précise et à jour](#user-content-105-assurer-les-données-et-dans-la-formation-est-complète-précise-et-à-jour)
 
 [10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d'autres](#user-content-106-assurez-vous-que-les-données-sont-bien-structurées-intuitives-et-dans-un-format-facile-à-intégrer-et-réutiliser-par-dautres)
+
+</div>
+
+<div markdown="1" class="dpgn-section-guidelines-related">
 
 **Lignes directrices connexes :**
 
@@ -41,25 +51,48 @@ altLangPage: 10-be-good-data-stewards
 
 [9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](9-aborder-risques-securite-confidentialite.md#user-content-92-innover-et-sam%C3%A9liorer-tout-en-r%C3%A9pondant-aux-attentes-du-public-quant-%C3%A0-la-protection-de-la-confidentialit%C3%A9-des-donn%C3%A9es)
 
+</div>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.1 Collecter les données une fois pour éviter la duplication
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision
 
-**Relatif (temporaire à des fins de cartographie, à supprimer plus tard):**
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 At every stage of a project, we should measure how well our service is working for our users. This includes measuring how well a system performs and how people are interacting with it in real-time. Our teams and agency leadership should carefully watch these metrics to find issues and identify which bug fixes and improvements should be prioritized. Along with monitoring tools, a feedback mechanism should be in place for people to report issues directly. **(Digital Services Playbook (US))**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -81,6 +114,10 @@ At every stage of a project, we should measure how well our service is working f
 
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -93,11 +130,22 @@ At every stage of a project, we should measure how well our service is working f
 
   - [Real Time Access (Data on the Web Best Practices (W3C))](https://www.w3.org/TR/dwbp/#AccessRealTime)
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
+
+<div markdown="1" class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -125,9 +173,15 @@ Measuring performance means continuously improving a service by:
 
 Every service must aim for continuous improvement. Metrics are an important starting point for discussions about a service’s strengths and weaknesses. By identifying and capturing the right metrics - with the right tools - you can make sure all your decisions to improve the service are supported by data.
 
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
+
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Stages alpha, bêta et en direct
 
@@ -159,6 +213,10 @@ Every service must aim for continuous improvement. Metrics are an important star
   - costs, benefits and return on investment
   - content metrics (readability, length).
 
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+
 #### Stage alpha
 
 - explored the data that is already available for an existing service, where it is kept and how you might access and use it, and also shared your own insights **(Digital Service Standard (AU))**
@@ -170,6 +228,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 - started creating a performance framework outlining your objectives and what metrics your team will use to demonstrate you meet them **(Digital Service Standard (AU))**
 
 - considered the metrics you will need to measure the 4 KPIs and where the data will come from. **(Digital Service Standard (AU))**
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
 
 #### Stage bêta
 
@@ -184,6 +246,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 - which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) **(Digital Service Standard (AU))**
 
 - what you have learned from qualitative and quantitative data; for example key evidence. **(Digital Service Standard (AU))**
+
+</section>
+
+<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -214,6 +280,11 @@ Every service must aim for continuous improvement. Metrics are an important star
   - completion rate has been maintained
   - cost per transaction is decreasing in line with service plans.
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
@@ -238,6 +309,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 - [Measuring success](https://www.gov.uk/service-manual/measuring-success) **(Service manual (UK))**
 
+</section>
+
+<section markdown="1" class="dpgn-section-similar">
+
 ### Ressources similaires
 
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
@@ -246,13 +321,28 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.4 Tenir dûment compte de la conservation et de la conservation numériques
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -271,9 +361,20 @@ Every service must aim for continuous improvement. Metrics are an important star
 
   - [Sustainability Factors (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/sustain/sustain.shtml)
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.5 Assurer les données et dans la formation est complète, précise et à jour
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -283,13 +384,28 @@ Every service must aim for continuous improvement. Metrics are an important star
   - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
   - Ensure data is able to be shared and can be easily accessed
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+</section>
+</section>
+
+<section markdown="1" class="dpgn-section-guideline">
+
 ## 10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d'autres
 
+<div markdown="1" class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section markdown="1" class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -301,6 +417,13 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 - Design data with a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
 
+</section>
+
+<section markdown="1" class="dpgn-section-guides">
+
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+</section>
