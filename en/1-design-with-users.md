@@ -419,6 +419,7 @@ We need to understand the different ways people will interact with our services,
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
 <section markdown="1" class="dpgn-section-similar">
 
 ### Similar resources
