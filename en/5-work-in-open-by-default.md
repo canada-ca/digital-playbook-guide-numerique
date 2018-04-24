@@ -26,11 +26,11 @@ altLangPage: 5-travailler-air-libre-par-defaut
 
 **Related guidelines:**
 
-- [3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
-- [6.3 Design for interoperability, allowing services to be discovered and leveraged by the community (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-63-design-for-interoperability-allowing-services-to-be-discovered-and-leveraged-by-the-community)
-- [6.4 Open up the data, transactions, and business rules that underpin a service (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
-- [8.1 Be transparent about personal and organizational biases and indicate how they are being addressed (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-81-be-transparent-about-personal-and-organizational-biases-and-indicate-how-they-are-being-addressed)
-- [10.2 Make relevant government information and data easily accessible to help support decision making (Standard&#160;10: Be good data stewards)](10-be-good-data-stewards.md#user-content-102-make-relevant-government-information-and-data-easily-accessible-to-help-support-decision-making)
+- [3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard&#160;3: Collaborate widely)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/3-collaborate-widely.html#share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
+- [6.3 Design for interoperability, allowing services to be discovered and leveraged by the community (Standard&#160;6: Use open standards and solutions)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/6-use-open-standards-solutions.html#design-for-interoperability-allowing-services-to-be-discovered-and-leveraged-by-the-community)
+- [6.4 Open up the data, transactions, and business rules that underpin a service (Standard&#160;6: Use open standards and solutions)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/6-use-open-standards-solutions.html#open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
+- [8.1 Be transparent about personal and organizational biases and indicate how they are being addressed (Standard&#160;8: Design ethical services)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/8-design-ethical-services.html#be-transparent-about-personal-and-organizational-biases-and-indicate-how-they-are-being-addressed)
+- [10.2 Make relevant government information and data easily accessible to help support decision making (Standard&#160;10: Be good data stewards)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/10-be-good-data-stewards.html#make-relevant-government-information-and-data-easily-accessible-to-help-support-decision-making)
 
 </div>
 
