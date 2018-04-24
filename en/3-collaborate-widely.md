@@ -5,45 +5,37 @@ lang: en
 altLang: fr
 altLangPage: 3-collaborez-largement
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Guidelines:**
 
-[3.1 Empower multidisciplinary teams with diverse perspectives and skills](#user-content-31-empower-multidisciplinary-teams-with-diverse-perspectives-and-skills)
-
-[3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners](#user-content-32-recognize-that-an-organization-cant-have-all-the-best-ideas-create-partnerships-and-collaborate-with-a-diverse-range-of-partners)
-
-[3.3 Build the capacity to dynamically pull in new partners for co-innovation](#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
-
-[3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse](#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
+- TOC
+{:toc}
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
-[1.1 Build nothing for the user, without the user being involved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
-
-[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
-
-[2.3 Co-create with people who have distinct needs, being inclusive from the very beginning (Standard&#160;2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
-
-[5.5 Work in the open and make source code open and reusable (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+- [1.1 Build nothing for the user, without the user being involved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
+- [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+- [2.3 Co-create with people who have distinct needs, being inclusive from the very beginning (Standard&#160;2: Build in accessibility from the start)](2-build-in-accessibility-from-start.md#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
+- [5.5 Work in the open and make source code open and reusable (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 3.1 Empower multidisciplinary teams with diverse perspectives and skills
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -73,7 +65,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -141,7 +133,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -159,7 +151,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -174,17 +166,17 @@ Good government services are built quickly and iteratively, based on user needs.
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -210,7 +202,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -230,17 +222,17 @@ Good government services are built quickly and iteratively, based on user needs.
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 3.3 Build the capacity to dynamically pull in new partners for co-innovation
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -248,7 +240,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -257,11 +249,11 @@ Good government services are built quickly and iteratively, based on user needs.
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -271,7 +263,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -289,7 +281,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 - Link to the work of others
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -307,7 +299,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -315,7 +307,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -340,7 +332,7 @@ Good government services are built quickly and iteratively, based on user needs.
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -362,7 +354,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
