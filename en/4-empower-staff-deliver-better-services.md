@@ -15,8 +15,10 @@ altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 
 **Guidelines:**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
