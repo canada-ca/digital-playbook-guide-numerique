@@ -10,6 +10,8 @@
 
 **Together we’ll make them better.** This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone.
 
+**Digital Standards:**
+
 - [Overview](https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html)
 - [1. Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html)
 - [2. Build in accessibility from the start](https://canada-ca.github.io/digital-playbook-guide-numerique/en/2-build-in-accessibility-from-start.html)
@@ -21,7 +23,10 @@
 - [8. Design ethical services](https://canada-ca.github.io/digital-playbook-guide-numerique/en/8-design-ethical-services.html)
 - [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/en/9-address-security-privacy-risks.html)
 - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/en/10-be-good-data-stewards.html)
-- [Comparison tables](https://canada-ca.github.io/digital-playbook-guide-numerique/en/comparison-tables.html)
+
+**Comparison of the Digital Playbook to similar resources:**
+
+- [Comparison tables](https://canada-ca.github.io/digital-playbook-guide-numerique/en/gc-digital-playbook-comparison-table.html)
 
 # Guide numérique du gouvernement du Canada (ébauche)
 
@@ -30,6 +35,8 @@
 **Il faut tout un village.** Le but est de co-créer ce guide numérique avec le public et les groupes d’intervenants clés pour aider le gouvernement à créer et à délivrer d’excellents services à ses citoyennes et ses citoyens. Nous avons la conviction qu’il sera nécessaire que toute une communauté d’individus ayant des profils et des perspectives divers travaille ensemble pour définir et partager des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Il va de soi que ce guide sera fondé sur les normes numériques du gouvernement du Canada, ainsi que le travail innovateur accompli par les Royaumes-Unis, les États-Unis, l’Australie, et la province de l’Ontario. Merci.
 
 **Ensemble nous le ferons mieux.** Ceci sera un guide évolutif que nous mettrons à jour et évoluerons constamment au fur et à mesure que notre compréhension des complexités de son application évoluera. Ce guide reflètera notre façon de concevoir pour nous même et pour les autres en allant dans le détail et en fournissant des conseils et des lignes directrices. Nous ne pouvons le faire seul.
+
+**Normes numériques&#160;:**
 
 - [Aperçu](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/apercu.html)
 - [1. Concevoir avec les utilisateurs](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html)
@@ -42,4 +49,7 @@
 - [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html)
 - [9. Aborder les risques de sécurité et de confidentialité](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html)
 - [10. Soyez de bons gestionnaires de données](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html)
+
+**Comparaison du guide numérique à des ressources similaires&#160;:**
+
 - [Comparison tables (anglais seulement)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/comparison-tables.html)
