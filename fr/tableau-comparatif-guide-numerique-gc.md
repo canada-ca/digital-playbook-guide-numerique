@@ -107,8 +107,8 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
         <ul>
           <li><a href="https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service">14.&#160;Encourage everyone to use the digital service (Digital Service Standard (UK))</a></li>
           <li><a href="https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12">11.&#160;Utilisation des services numériques encouragée (Normes des services numériques (Ontario))</a></li>
-          <li><a href="https://www.dta.gov.au/standard/12-non-digital-experience/">12.&#160;Don’t forget the non-digital experience (Digital Service Standard (AU))</a><li>
-          <li><a href="https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/">13.&#160;Encourage everyone to use the digital service (Digital Service Standard (AU))</a><li>
+          <li><a href="https://www.dta.gov.au/standard/12-non-digital-experience/">12.&#160;Don’t forget the non-digital experience (Digital Service Standard (AU))</a></li>
+          <li><a href="https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/">13.&#160;Encourage everyone to use the digital service (Digital Service Standard (AU))</a></li>
         </ul>
       </td>
     </tr>
