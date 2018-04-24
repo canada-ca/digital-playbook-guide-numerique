@@ -5,51 +5,38 @@ lang: fr
 altLang: en
 altLangPage: 6-use-open-standards-solutions
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
-[6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires](#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
-
-[6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées](#user-content-62-utiliser-et-réutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-éprouvées)
-
-[6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté](#user-content-63-conception-pour-linteropérabilité-permettant-aux-services-dêtre-découverts-et-exploités-par-la-communauté)
-
-[6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service](#user-content-64-ouvrez-les-données-les-transactions-et-les-règles-métier-qui-sous-tendent-un-service)
-
-[6.5 Concevoir, créer et tester des services numériques de bout en bout](#user-content-65-concevoir-créer-et-tester-des-services-numériques-de-bout-en-bout)
-
-[6.6 Nuage d'abord](#user-content-66-nuage-dabord)
+- TOC
+{:toc}
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Lignes directrices connexes:**
 
-[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
-
-[3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
-
-[5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous licence ouverte (Norme&#160;5&#160;: Travailler à l'extérieur par défaut)](5-travailler-air-libre-par-defaut.md#user-content-51-rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
-
-[5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-à-lair-libre-et-rendre-le-code-source-ouvert-et-réutilisable)
-
-[10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-103-assurez-vous-que-les-données-sont-collectées-de-manière-standard-afin-quelles-puissent-être-facilement-intégrées-et-réutilisées-par-dautres)
+- [1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
+- [3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-34-partager-et-collaborer-à-lextérieur-établir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-réutiliser)
+- [5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous licence ouverte (Norme&#160;5&#160;: Travailler à l'extérieur par défaut)](5-travailler-air-libre-par-defaut.md#user-content-51-rendre-toutes-les-données-et-informations-non-sensibles-ouvertes-au-monde-extérieur-pour-les-partager-et-les-réutiliser-sous-une-licence-ouverte)
+- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-à-lair-libre-et-rendre-le-code-source-ouvert-et-réutilisable)
+- [10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-103-assurez-vous-que-les-données-sont-collectées-de-manière-standard-afin-quelles-puissent-être-facilement-intégrées-et-réutilisées-par-dautres)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -87,7 +74,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -100,7 +87,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 - Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -114,7 +101,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Stages bêta et en direct
 
@@ -127,7 +114,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -147,7 +134,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -162,11 +149,11 @@ move between different technologies when you need to, avoiding vendor lock-in.
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -176,7 +163,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -231,7 +218,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -239,7 +226,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -254,11 +241,11 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -266,7 +253,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -290,7 +277,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -305,17 +292,17 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -323,7 +310,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -340,11 +327,11 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.5 Concevoir, créer et tester des services numériques de bout en bout
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -352,7 +339,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -388,7 +375,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -396,7 +383,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Stage bêta et en direct
 
@@ -421,7 +408,7 @@ There are many potential benefits from the greater use of digital services, incl
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -447,7 +434,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -464,7 +451,7 @@ There are many potential benefits from the greater use of digital services, incl
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.6 Nuage d'abord
 
@@ -489,7 +476,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -511,7 +498,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -519,7 +506,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
