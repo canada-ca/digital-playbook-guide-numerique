@@ -5,8 +5,6 @@ lang: fr
 altLang: en
 altLangPage: gc-digital-playbook-comparison-table
 ---
-The following table contains a comparison of the Digital Standards and guidelines in the Digital Playbook to similar resources within the Government of Canada and from other jurisdictions:
-
 Le tableau suivant contient une comparaison des normes et lignes directrices numériques du guide numérique à des ressources similaires au sein du gouvernement du Canada et d'autres administrations&#160;:
 
 <table>
