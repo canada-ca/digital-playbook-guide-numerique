@@ -31,17 +31,17 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 **Digital Standards:**
 
-1. [Design with users](1-design-with-users.md)
-1. [Build in accessibility from the start](2-build-in-accessibility-from-start.md)
-1. [Collaborate widely](3-collaborate-widely.md)
-1. [Empower staff to deliver better services](4-empower-staff-deliver-better-services.md)
-1. [Work in the open by default](5-work-in-open-by-default.md)
-1. [Use open standards and solutions](6-use-open-standards-solutions.md)
-1. [Iterate and improve frequently](7-iterate-improve-frequently.md)
-1. [Design ethical services](8-design-ethical-services.md)
-1. [Address security and privacy risks](9-address-security-privacy-risks.md)
-1. [Be good data stewards](10-be-good-data-stewards.md)
+- [1. Design with users](1-design-with-users.md)
+- [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md)
+- [3. Collaborate widely](3-collaborate-widely.md)
+- [4. Empower staff to deliver better services](4-empower-staff-deliver-better-services.md)
+- [5. Work in the open by default](5-work-in-open-by-default.md)
+- [6. Use open standards and solutions](6-use-open-standards-solutions.md)
+- [7. Iterate and improve frequently](7-iterate-improve-frequently.md)
+- [8. Design ethical services](8-design-ethical-services.md)
+- [9. Address security and privacy risks](9-address-security-privacy-risks.md)
+- [10. Be good data stewards](10-be-good-data-stewards.md)
 
 **Comparison of the Digital Playbook to similar resources:**
 
-1. [Government of Canada Digital Playbook comparison table](gc-digital-playbook-comparison-table.md)
+- [Government of Canada Digital Playbook comparison table](gc-digital-playbook-comparison-table.md)
