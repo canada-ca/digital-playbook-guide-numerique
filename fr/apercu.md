@@ -29,7 +29,7 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 **Les trucs bureaucratiques.** Les résultats de ces normes numériques seront incorporés dans nos instruments de politique et les ministères seront établis en conséquence. Pour l'instant, nous avons commencé avec nos aspirations de haut niveau, mais nous allons bientôt plonger dans les détails fournissant des conseils et des orientations sous la forme d'un livre de jeux. L'objectif est que ce manuel soit aussi collaboratif que possible, permettant à notre communauté de partager des approches, des outils et des histoires.
 
-**Normes numériques**
+**Normes numériques&#160;:**
 
 1. [Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
 1. [Construire dans l'accessibilité dès le début](2-construire-dans-accessibilite-des-debut.md)
