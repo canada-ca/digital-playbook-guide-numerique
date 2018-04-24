@@ -44,4 +44,4 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 **Comparaison du guide numérique à des ressources similaires&#160;:**
 
-- [Government of Canada Digital Playbook comparison table (anglais seulement)](gc-digital-playbook-comparison-table.md)
+- [Tableau comparatif du guide numérique du gouvernement du Canada](tableau-comparatif-guide-numerique-gc.md)
