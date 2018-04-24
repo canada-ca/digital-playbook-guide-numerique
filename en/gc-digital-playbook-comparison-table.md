@@ -246,7 +246,6 @@ The following table contains a comparison of the Digital Standards and guideline
       </td>
       <td>
         <ul>
-          <li>One business owner (OneGC product design criteria)</li>
           <li><a href="https://playbook.cio.gov/#play6">6.&#160;Assign one leader and hold that person accountable (Digital Services Playbook (US))</a></li>
         </ul>
       </td>
