@@ -15,8 +15,10 @@ altLangPage: 3-collaborate-widely
 
 **Lignes directrices :**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
