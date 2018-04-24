@@ -15,8 +15,10 @@ altLangPage: 10-soyez-bons-gestionnaires-donnees
 
 **Guidelines:**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
