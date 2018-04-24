@@ -7,7 +7,7 @@ altLangPage: tableau-comparatif-guide-numerique-gc
 ---
 The following table contains a comparison of the Digital Standards and guidelines in the Digital Playbook to similar resources within the Government of Canada and from other jurisdictions:
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Digital&#160;Standard</th>
