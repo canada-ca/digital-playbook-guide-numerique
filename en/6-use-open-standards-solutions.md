@@ -15,8 +15,10 @@ altLangPage: 6-utiliser-standards-solutions-ouverts
 
 **Guidelines:**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
