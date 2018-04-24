@@ -15,8 +15,10 @@ altLangPage: 2-build-in-accessibility-from-start
 
 **Lignes directrices :**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
