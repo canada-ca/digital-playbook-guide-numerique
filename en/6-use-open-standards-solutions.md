@@ -5,51 +5,38 @@ lang: en
 altLang: fr
 altLangPage: 6-utiliser-standards-solutions-ouverts
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Guidelines:**
 
-[6.1 Leverage open standards and embrace leading practices](#user-content-61-leverage-open-standards-and-embrace-leading-practices)
-
-[6.2 Use and reuse common, proven government solutions, approaches, and platforms](#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
-
-[6.3 Design for interoperability, allowing services to be discovered and leveraged by the community](#user-content-63-design-for-interoperability-allowing-services-to-be-discovered-and-leveraged-by-the-community)
-
-[6.4 Open up the data, transactions, and business rules that underpin a service](#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
-
-[6.5 Design, build and test end-to-end digital services](#user-content-65-design-build-and-test-end-to-end-digital-services)
-
-[6.6 Cloud first](#user-content-66-cloud-first)
+- TOC
+{:toc}
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
-[1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard 1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
-
-[3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard 3: Collaborate widely)](3-collaborate-widely.md#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
-
-[5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Standard 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
-
-[5.5 Work in the open and make source code open and reusable (Standard 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
-
-[10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others (Standard 10: Be good data stewards)](10-be-good-data-stewards.md#user-content-103-ensure-that-data-is-collected-in-a-standard-way-so-that-it-can-easily-be-integrated-and-reused-by-others)
+- [1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard 1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
+- [3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard 3: Collaborate widely)](3-collaborate-widely.md#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
+- [5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Standard 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
+- [5.5 Work in the open and make source code open and reusable (Standard 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+- [10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others (Standard 10: Be good data stewards)](10-be-good-data-stewards.md#user-content-103-ensure-that-data-is-collected-in-a-standard-way-so-that-it-can-easily-be-integrated-and-reused-by-others)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.1 Leverage open standards and embrace leading practices
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -87,7 +74,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -100,7 +87,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 - Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -114,7 +101,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Beta and live stages
 
@@ -127,7 +114,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -147,7 +134,7 @@ move between different technologies when you need to, avoiding vendor lock-in.
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -162,11 +149,11 @@ move between different technologies when you need to, avoiding vendor lock-in.
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.2 Use and reuse common, proven government solutions, approaches, and platforms
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -176,7 +163,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -231,7 +218,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -239,7 +226,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -254,11 +241,11 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.3 Design for interoperability, allowing services to be discovered and leveraged by the community
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -268,7 +255,7 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -292,7 +279,7 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -307,17 +294,17 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.4 Open up the data, transactions, and business rules that underpin a service
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -325,7 +312,7 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -342,11 +329,11 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.5 Design, build and test end-to-end digital services
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -354,7 +341,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -390,7 +377,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -398,7 +385,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Beta and live stages
 
@@ -423,7 +410,7 @@ There are many potential benefits from the greater use of digital services, incl
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -449,7 +436,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -466,11 +453,11 @@ There are many potential benefits from the greater use of digital services, incl
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 6.6 Cloud first
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -495,7 +482,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -517,7 +504,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -525,7 +512,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar ressources
 
