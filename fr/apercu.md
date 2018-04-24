@@ -29,15 +29,19 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 **Les trucs bureaucratiques.** Les résultats de ces normes numériques seront incorporés dans nos instruments de politique et les ministères seront établis en conséquence. Pour l'instant, nous avons commencé avec nos aspirations de haut niveau, mais nous allons bientôt plonger dans les détails fournissant des conseils et des orientations sous la forme d'un livre de jeux. L'objectif est que ce manuel soit aussi collaboratif que possible, permettant à notre communauté de partager des approches, des outils et des histoires.
 
-**Normes numériques**
+**Normes numériques&#160;:**
 
-1. [Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
-1. [Construire dans l'accessibilité dès le début](2-construire-dans-accessibilite-des-debut.md)
-1. [Collaborez largement](3-collaborez-largement.md)
-1. [Habiliter le personnel à fournir des meilleurs services](4-habiliter-personnel-fournir-meilleurs-services.md)
-1. [Travailler à l'air libre par défaut](5-travailler-air-libre-par-defaut.md)
-1. [Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md)
-1. [Itérer et l'autre](7-iterer-ameliorer-frequemment.md)
-1. [Concevoir des services éthiques](8-concevoir-services-ethiques.md)
-1. [Aborder les risques de sécurité et de confidentialité](9-aborder-risques-securite-confidentialite.md)
-1. [Soyez de bons gestionnaires de données](10-soyez-bons-gestionnaires-donnees.md)
+- [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
+- [2. Construire dans l'accessibilité dès le début](2-construire-dans-accessibilite-des-debut.md)
+- [3. Collaborez largement](3-collaborez-largement.md)
+- [4. Habiliter le personnel à fournir des meilleurs services](4-habiliter-personnel-fournir-meilleurs-services.md)
+- [5. Travailler à l'air libre par défaut](5-travailler-air-libre-par-defaut.md)
+- [6. Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md)
+- [7. Itérer et l'autre](7-iterer-ameliorer-frequemment.md)
+- [8. Concevoir des services éthiques](8-concevoir-services-ethiques.md)
+- [9. Aborder les risques de sécurité et de confidentialité](9-aborder-risques-securite-confidentialite.md)
+- [10. Soyez de bons gestionnaires de données](10-soyez-bons-gestionnaires-donnees.md)
+
+**Comparaison du guide numérique à des ressources similaires&#160;:**
+
+- [Tableau comparatif du guide numérique du gouvernement du Canada](tableau-comparatif-guide-numerique-gc.md)
