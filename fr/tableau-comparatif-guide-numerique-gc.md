@@ -350,7 +350,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
           <li>Provide a Single Window Access to all GC Content & Services (Build it Digital Principles (initial thoughts))</li>
           <li>Reuse First, Buy Second, Build Last (Current GC EARB Principles)</li>
           <li>Technology Debt Managed (Current GC EARB Principles)</li>
-          <li>Containerized by default -- Platform Independence Lift & Shift (GC EA Principles)</li>
+          <li>Containerized by default - Platform Independence Lift & Shift (GC EA Principles)</li>
           <li>Architecturally Fit for the GC Enterprise (GC EA Principles)</li>
           <li>6.&#160;Digital Principles (Architectural Commandments (initial thoughts))</li>
           <li>7.&#160;GC Standards (Architectural Commandments (initial thoughts))</li>
@@ -375,7 +375,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
           <li>Create APIs in the developer's space (Build it Digital Principles (initial thoughts))</li>
           <li>4. API Usage (Architectural Commandments (initial thoughts))</li>
           <li>Interoperability (Current GC EARB Principles)</li>
-          <li>Interoperability (ESB/APIs -- Micro Services) (GC EA Principles)</li>
+          <li>Interoperability (ESB/APIs - Micro Services) (GC EA Principles)</li>
           <li>API first (Build It Right - OneGC Architectural Checklist (draft))</li>
         </ul>
       </td>
@@ -416,7 +416,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
           <li>Cloud First (Current GC EARB Principles)</li>
           <li>Cloud First (Build it Digital Principles (initial thoughts))</li>
           <li>1. Cloud First (Architectural Commandments (initial thoughts))</li>
-          <li>(Public) Cloud First: SaaS -- PaaS -- IaaS (GC EA Principles)</li>
+          <li>(Public) Cloud First: SaaS - PaaS - IaaS (GC EA Principles)</li>
           <li>Cloud first (Build It Right - OneGC Architectural Checklist (draft))</li>
           <li><a href="https://playbook.cio.gov/#play9">9.&#160;Deploy in a flexible hosting environment (Digital Services Playbook (US))</a></li>
         </ul>
@@ -431,7 +431,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
       </td>
       <td>
         <ul>
-          <li>Agile -- Small chunks -- Iterate (GC EA Principles)</li>
+          <li>Agile - Small chunks - Iterate (GC EA Principles)</li>
           <li><a href="https://www.gov.uk/service-manual/service-standard/use-agile-methods">4.&#160;Use agile methods (Digital Service Standard (UK))</a></li>
           <li><a href="https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-9">8.&#160;Souplesse et orientation sur l’utilisateur (Normes des services numériques (Ontario))</a></li>
           <li><a href="https://playbook.cio.gov/#play4">4.&#160;Build the service using agile and iterative practices (Digital Services Playbook (US))</a></li>
