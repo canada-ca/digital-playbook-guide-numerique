@@ -26,9 +26,9 @@ altLangPage: 7-iterate-improve-frequently
 
 **Lignes directrices connexesv:**
 
-- [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
-- [3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation (Norme&#160;3&#160;: Collaborez)](3-collaborez-largement.md#user-content-33-renforcer-la-capacit%C3%A9-%C3%A0-attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
-- [9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](9-aborder-risques-securite-confidentialite.md#user-content-92-innover-et-sam%C3%A9liorer-tout-en-r%C3%A9pondant-aux-attentes-du-public-quant-%C3%A0-la-protection-de-la-confidentialit%C3%A9-des-donn%C3%A9es)
+- [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
+- [3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation (Norme&#160;3&#160;: Collaborez)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#renforcer-la-capacit--attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
+- [9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html#innover-et-samliorer-tout-en-rpondant-aux-attentes-du-public-quant--la-protection-de-la-confidentialit-des-donnes)
 
 </div>
 
