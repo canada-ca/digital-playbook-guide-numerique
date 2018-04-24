@@ -15,8 +15,10 @@ altLangPage: 5-travailler-air-libre-par-defaut
 
 **Guidelines:**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
