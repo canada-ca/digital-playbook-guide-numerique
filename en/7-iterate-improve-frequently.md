@@ -15,8 +15,10 @@ altLangPage: 7-iterer-ameliorer-frequemment
 
 **Guidelines:**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
