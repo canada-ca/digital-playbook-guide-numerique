@@ -5,51 +5,40 @@ lang: fr
 altLang: en
 altLangPage: 2-build-in-accessibility-from-start
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
-[2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde](#user-content-21-construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
-
-[2.2 Les services devraient respecter ou dépasser les normes d'accessibilité et ne devraient pas être pénibles à utiliser](#user-content-22-les-services-devraient-respecter-ou-dépasser-les-normes-daccessibilité-et-ne-devraient-pas-être-pénibles-à-utiliser)
-
-[2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début](#user-content-23-co-créer-avec-des-personnes-ayant-des-besoins-distincts-en-étant-inclusif-dès-le-début)
-
-[2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services](#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
+- TOC
+{:toc}
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Lignes directrices connexes :**
 
-[1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu%C3%A9)
-
-[1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
-
-[1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-13-comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-con%C3%A7oivent-des-solutions-adapt%C3%A9es-%C3%A0-leurs-besoins)
-
-[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-%C3%AAtre-tout-quand-et-nimporte-quel-appareil)
-
-[1.6 Rendre les services simples, intuitifs et cohérents (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-16-rendre-les-services-simples-intuitifs-et-coh%C3%A9rents)
-
-[1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-18-soutenir-les-personnes-qui-ne-peuvent-pas-utiliser-les-services-num%C3%A9riques-par-leurs-propres-moyens)
-
-[8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-%C3%89quilibrer-les-compromis-entre-innovation-et-inclusivit%C3%A9)
+- [1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu%C3%A9)
+- [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
+- [1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-13-comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-con%C3%A7oivent-des-solutions-adapt%C3%A9es-%C3%A0-leurs-besoins)
+- [1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-%C3%AAtre-tout-quand-et-nimporte-quel-appareil)
+- [1.6 Rendre les services simples, intuitifs et cohérents (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-16-rendre-les-services-simples-intuitifs-et-coh%C3%A9rents)
+- [1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-18-soutenir-les-personnes-qui-ne-peuvent-pas-utiliser-les-services-num%C3%A9riques-par-leurs-propres-moyens)
+- [8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-%C3%89quilibrer-les-compromis-entre-innovation-et-inclusivit%C3%A9)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 Le gouvernement du Canada est déterminé à faire en sorte qu'un niveau
 élevé d'accessibilité soit uniformément appliqué à tous ses canaux de prestation de services. Les technologies et les normes évoluent constamment et l'accessibilité joue un rôle majeur pour rendre le gouvernement du Canada plus efficace et inclusif. Une plus cohérente, pratique, clair et facile utilisateur expérience lors de l'utilisation des services gouvernementaux en ligne construit la confiance.
@@ -58,7 +47,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -80,7 +69,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -108,11 +97,11 @@ Le développement de services numériques accessibles (indépendamment de la cap
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 2.2 Les services devraient respecter ou dépasser les normes d'accessibilité, et ne devraient pas être pénibles à utiliser
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -132,7 +121,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -162,7 +151,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 - make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -184,7 +173,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Stage bêta
 
@@ -220,7 +209,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -238,7 +227,7 @@ Your service must be accessible to users regardless of their digital confidence 
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -267,7 +256,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -278,7 +267,7 @@ Your service must be accessible to users regardless of their digital confidence 
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début
 
@@ -300,7 +289,7 @@ This applies when designing and developing:
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -355,7 +344,7 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -385,11 +374,11 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -403,7 +392,7 @@ Until you consider the needs of the range of people that will be using your serv
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -502,7 +491,7 @@ Until you consider the needs of the range of people that will be using your serv
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
