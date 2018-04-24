@@ -26,9 +26,9 @@ altLangPage: 7-iterer-ameliorer-frequemment
 
 **Related guidelines:**
 
-- [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
-- [3.3 Build the capacity to dynamically pull in new partners for co-innovation (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
-- [9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
+- [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+- [3.3 Build the capacity to dynamically pull in new partners for co-innovation (Standard&#160;3: Collaborate widely)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/3-collaborate-widely.html#build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
+- [9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/9-address-security-privacy-risks.html#innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
 
 </div>
 
