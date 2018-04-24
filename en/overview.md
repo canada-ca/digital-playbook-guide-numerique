@@ -44,4 +44,4 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 **Comparison of the Digital Playbook to similar resources:**
 
-1. [Comparison tables](comparison-tables.md)
+1. [Government of Canada Digital Playbook comparison table](gc-digital-playbook-comparison-table.md)
