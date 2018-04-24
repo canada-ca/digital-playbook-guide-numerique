@@ -41,3 +41,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 1. [Design ethical services](8-design-ethical-services.md)
 1. [Address security and privacy risks](9-address-security-privacy-risks.md)
 1. [Be good data stewards](10-be-good-data-stewards.md)
+
+**Comparison of the Digital Playbook to similar resources:**
+
+1. [Comparison tables](comparison-tables.md)
