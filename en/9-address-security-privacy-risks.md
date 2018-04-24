@@ -5,57 +5,46 @@ lang: en
 altLang: fr
 altLangPage: 9-aborder-risques-securite-confidentialite
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Guidelines:**
 
-[9.1 Take a balanced approach to managing risk by implementing appropriate privacy and security measures](#user-content-91-take-a-balanced-approach-to-managing-risk-by-implementing-appropriate-privacy-and-security-measures)
-
-[9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected](#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
-
-[9.3 Make security seamless and frictionless, balancing security and convenience](#user-content-93-make-security-seamless-and-frictionless-balancing-security-and-convenience)
-
-[9.4 Ensure services comply with all legislated and regulatory requirements](#user-content-94-ensure-services-comply-with-all-legislated-and-regulatory-requirements)
+- TOC
+{:toc}
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
-[1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
-
-[1.6 Make services simple, intuitive and consistent (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
-
-[1.7 Make it more convenient and practical to use digital services (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-17-make-it-more-convenient-and-practical-to-use-digital-services)
-
-[6.1 Leverage open standards and embrace leading practices (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
-
-[6.2 Use and reuse common, proven government solutions, approaches, and platforms (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
-
-[8.3 Comply with ethical guidelines in the design of automated systems (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-83-comply-with-ethical-guidelines-in-the-design-of-automated-systems)
-
-[8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
+- [1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
+- [1.6 Make services simple, intuitive and consistent (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
+- [1.7 Make it more convenient and practical to use digital services (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-17-make-it-more-convenient-and-practical-to-use-digital-services)
+- [6.1 Leverage open standards and embrace leading practices (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
+- [6.2 Use and reuse common, proven government solutions, approaches, and platforms (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
+- [8.3 Comply with ethical guidelines in the design of automated systems (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-83-comply-with-ethical-guidelines-in-the-design-of-automated-systems)
+- [8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 9.1 Take a balanced approach to managing risk by implementing appropriate privacy and security measures
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -65,7 +54,7 @@ altLangPage: 9-aborder-risques-securite-confidentialite
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -78,11 +67,11 @@ altLangPage: 9-aborder-risques-securite-confidentialite
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -102,13 +91,13 @@ Users won't use a service unless they have a guarantee:
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -132,7 +121,7 @@ Users won't use a service unless they have a guarantee:
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -145,7 +134,7 @@ Users won't use a service unless they have a guarantee:
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -153,7 +142,7 @@ Users won't use a service unless they have a guarantee:
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -162,11 +151,11 @@ Users won't use a service unless they have a guarantee:
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 9.3 Make security seamless and frictionless, balancing security and convenience
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -186,7 +175,7 @@ Users won't use a service unless they have a guarantee:
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -195,7 +184,7 @@ Users won't use a service unless they have a guarantee:
 - Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -225,7 +214,7 @@ Users won't use a service unless they have a guarantee:
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -238,7 +227,7 @@ Users won't use a service unless they have a guarantee:
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -246,7 +235,7 @@ Users won't use a service unless they have a guarantee:
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -255,11 +244,11 @@ Users won't use a service unless they have a guarantee:
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 9.4 Ensure services comply with all legislated and regulatory requirements
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -292,7 +281,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -317,7 +306,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
   - Holistic approach to securing GC services for publicly accessible sites
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -360,7 +349,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -405,7 +394,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -434,7 +423,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -452,7 +441,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
