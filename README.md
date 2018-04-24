@@ -26,7 +26,7 @@
 
 **Comparison of the Digital Playbook to similar resources:**
 
-- [Comparison tables](https://canada-ca.github.io/digital-playbook-guide-numerique/en/gc-digital-playbook-comparison-table.html)
+- [Government of Canada Digital Playbook comparison table](https://canada-ca.github.io/digital-playbook-guide-numerique/en/gc-digital-playbook-comparison-table.html)
 
 # Guide numérique du gouvernement du Canada (ébauche)
 
@@ -52,4 +52,4 @@
 
 **Comparaison du guide numérique à des ressources similaires&#160;:**
 
-- [Comparison tables (anglais seulement)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/comparison-tables.html)
+- [Tableau comparatif du guide numérique du gouvernement du Canada](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/tableau-comparatif-guide-numerique-gc.html)
