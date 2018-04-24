@@ -15,8 +15,10 @@ altLangPage: 2-construire-dans-accessibilite-des-debut
 
 **Guidelines:**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
