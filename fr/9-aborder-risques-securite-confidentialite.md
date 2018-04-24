@@ -15,8 +15,10 @@ altLangPage: 9-address-security-privacy-risks
 
 **Lignes directrices :**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
