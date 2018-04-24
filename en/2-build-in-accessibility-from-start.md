@@ -5,51 +5,42 @@ lang: en
 altLang: fr
 altLangPage: 2-construire-dans-accessibilite-des-debut
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Guidelines:**
 
-[2.1 Build for those with the greatest needs and it will work for everyone else](#user-content-21-build-for-those-with-the-greatest-needs-and-it-will-work-for-everyone-else)
-
-[2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use](#user-content-22-services-should-meet-or-exceed-accessibility-standards-and-should-not-feel-burdensome-to-use)
-
-[2.3 Co-create with people who have distinct needs, being inclusive from the very beginning](#user-content-23-co-create-with-people-who-have-distinct-needs-being-inclusive-from-the-very-beginning)
-
-[2.4 Take into consideration a user's possible constraints when designing services](#user-content-24-take-into-consideration-a-users-possible-constraints-when-designing-services)
+<!-- markdownlint-disable MD032 -->
+- TOC
+{:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
-[1.1 Build nothing for the user, without the user being involved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
-
-[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
-
-[1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-13-understand-the-context-in-which-people-are-interacting-and-design-appropriate-solutions-that-meet-their-needs)
-
-[1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
-
-[1.6 Make services simple, intuitive and consistent (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
-
-[1.8 Support people who cannot use digital services on their own (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
-
-[8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
+- [1.1 Build nothing for the user, without the user being involved (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-11-build-nothing-for-the-user-without-the-user-being-involved)
+- [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+- [1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-13-understand-the-context-in-which-people-are-interacting-and-design-appropriate-solutions-that-meet-their-needs)
+- [1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
+- [1.6 Make services simple, intuitive and consistent (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-16-make-services-simple-intuitive-and-consistent)
+- [1.8 Support people who cannot use digital services on their own (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-18-support-people-who-cannot-use-digital-services-on-their-own)
+- [8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-84-balance-trade-offs-between-innovation-and-inclusiveness)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 2.1 Build for those with the greatest needs and it will work for everyone else
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 The Government of Canada is committed to ensuring that a high level of accessibility is applied uniformly across its service delivery channels. Technologies and standards are constantly evolving and accessibility plays a major role in making the Government of Canada more effective and inclusive. A more consistent, convenient, clear, and easy user experience when using government services online builds trust.
 
@@ -57,7 +48,7 @@ Development of accessible (regardless of ability, device or environment) digital
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -79,7 +70,7 @@ Development of accessible (regardless of ability, device or environment) digital
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -107,13 +98,13 @@ Development of accessible (regardless of ability, device or environment) digital
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 2.2 Services should meet or exceed accessibility standards, and should not feel burdensome to use
 
 **[TODO: Add/revise introductory text]**
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment.
 
@@ -131,7 +122,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -161,7 +152,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 - make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -183,7 +174,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -219,7 +210,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -237,7 +228,7 @@ Your service must be accessible to users regardless of their digital confidence 
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -266,7 +257,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -277,11 +268,11 @@ Your service must be accessible to users regardless of their digital confidence 
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 2.3 Co-create with people who have distinct needs, being inclusive from the very beginning
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -301,7 +292,7 @@ This applies when designing and developing:
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -356,7 +347,7 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -386,11 +377,11 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 2.4 Take into consideration a user's possible constraints when designing services
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -404,7 +395,7 @@ Until you consider the needs of the range of people that will be using your serv
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -503,7 +494,7 @@ Until you consider the needs of the range of people that will be using your serv
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 

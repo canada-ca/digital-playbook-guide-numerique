@@ -5,43 +5,38 @@ lang: en
 altLang: fr
 altLangPage: 7-iterer-ameliorer-frequemment
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Guidelines:**
 
-[7.1 Build in an agile manner and continuously improve in response to user needs](#user-content-71-build-in-an-agile-manner-and-continuously-improve-in-response-to-user-needs)
-
-[7.2 Accept that change is inevitable and use adaptive strategies and tools for new development](#user-content-72-accept-that-change-is-inevitable-and-use-adaptive-strategies-and-tools-for-new-development)
-
-[7.3 Embrace and react to changes in the environment and design for sustainability](#user-content-73-embrace-and-react-to-changes-in-the-environment-and-design-for-sustainability)
-
-[7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration](#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
+<!-- markdownlint-disable MD032 -->
+- TOC
+{:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
-[1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
-
-[3.3 Build the capacity to dynamically pull in new partners for co-innovation (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
-
-[9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
+- [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](1-design-with-users.md#user-content-12-empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
+- [3.3 Build the capacity to dynamically pull in new partners for co-innovation (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
+- [9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](9-address-security-privacy-risks.md#user-content-92-innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 7.1 Build in an agile manner and continuously improve in response to user needs
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -99,7 +94,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -109,7 +104,7 @@ Start with a representation or prototype of the solution that will be tested and
   - Be an agile Developer: Develop in an iterative manner, with key stakeholders participation from the beginning, releasing minimum viable product as soon as possible and iteratively building out functionality
   - Be an agile administrator: Promote DEVOPS and automate, monitor and unify all platform and software construction from testing to release and infrastructure management
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -123,7 +118,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Beta and live stages
 
@@ -135,7 +130,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Alpha, beta and live stages
 
@@ -222,7 +217,7 @@ Start with a representation or prototype of the solution that will be tested and
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -270,7 +265,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar ressources
 
@@ -287,17 +282,17 @@ Start with a representation or prototype of the solution that will be tested and
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 7.2 Accept that change is inevitable and use adaptive strategies and tools for new development
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -305,7 +300,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -314,11 +309,11 @@ Start with a representation or prototype of the solution that will be tested and
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 7.3 Embrace and react to changes in the environment and design for sustainability
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -326,7 +321,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -340,7 +335,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -348,7 +343,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -357,11 +352,11 @@ Once you have designed and launched a service, there is still work to do. Treat 
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -379,7 +374,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -413,7 +408,7 @@ You need to build a service which you can iterate and keep improving so that you
     - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
     - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Alpha, beta and live stages
 
@@ -437,7 +432,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -447,7 +442,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -458,7 +453,7 @@ You need to build a service which you can iterate and keep improving so that you
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -488,7 +483,7 @@ Find out more about:
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 

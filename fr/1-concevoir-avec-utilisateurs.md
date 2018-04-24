@@ -5,67 +5,46 @@ lang: fr
 altLang: en
 altLangPage: 1-design-with-users
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
-[1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué](#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqué)
-
-[1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer](#user-content-12-simpliquer-auprès-des-personnes-qui-ont-le-service-et-le-faire-participer-à-toutes-les-étapes-de-la-planification-à-lamélioration-continuer)
-
-[1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins](#user-content-13-comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-conçoivent-des-solutions-adaptées-à-leurs-besoins)
-
-[1.4 Clairement articuler and understand the problem of about and use the data for evidence](#user-content-14-clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence)
-
-[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil](#user-content-15-fournir-des-services-qui-peuvent-être-tout-quand-et-nimporte-quel-appareil)
-
-[1.6 Rendre les services simples, intuitifs et cohérents](#user-content-16-rendre-les-services-simples-intuitifs-et-cohérents)
-
-[1.7 Rendre plus pratique et pratique l'utilisation des services numériques](#user-content-17-rendre-plus-pratique-et-pratique-lutilisation-des-services-numériques)
-
-[1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens](#user-content-18-soutenir-les-personnes-qui-ne-peuvent-pas-utiliser-les-services-numériques-par-leurs-propres-moyens)
+<!-- markdownlint-disable MD032 -->
+- TOC
+{:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Lignes directrices connexes :**
 
-[2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-21-construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
-
-[2.2 Les services devraient respecter ou dépasser les normes d'accessibilité et ne devraient pas être pénibles à utiliser (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-22-les-services-devraient-respecter-ou-dépasser-les-normes-daccessibilité-et-ne-devraient-pas-être-pénibles-à-utiliser)
-
-[2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-23-co-créer-avec-des-personnes-ayant-des-besoins-distincts-en-étant-inclusif-dès-le-début)
-
-[2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
-
-[3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-32-reconnaître-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-idées-créer-des-partenariats-et-collaborer-avec-un-large-éventail-de-partenaires)
-
-[6.5 Concevoir, créer et tester des services numériques de bout en bout (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-65-concevoir-créer-et-tester-des-services-numériques-de-bout-en-bout)
-
-[7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs (Norme&#160;7&#160;: Itérer et améliorer fréquemment)](7-iterer-ameliorer-frequemment.md#user-content-71-construire-de-manière-agile-et-améliorer-continuellement-en-réponse-aux-besoins-des-utilisateurs)
-
-[7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération (Norme&#160;7&#160;: Itérer et améliorer fréquemment)](7-iterer-ameliorer-frequemment.md#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothèses-en-utilisant-les-preuves-comme-base-de-litération)
-
-[8.2 Évaluer l'impact total sur les utilisateurs et les communautés (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-82-Évaluer-limpact-total-sur-les-utilisateurs-et-les-communautés)
-
-[8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-Équilibrer-les-compromis-entre-innovation-et-inclusivité)
-
-[10.1 Collecter les données une fois pour éviter la duplication (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-101-collecter-les-données-une-fois-pour-éviter-la-duplication)
+- [2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-21-construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
+- [2.2 Les services devraient respecter ou dépasser les normes d'accessibilité et ne devraient pas être pénibles à utiliser (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-22-les-services-devraient-respecter-ou-dépasser-les-normes-daccessibilité-et-ne-devraient-pas-être-pénibles-à-utiliser)
+- [2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-23-co-créer-avec-des-personnes-ayant-des-besoins-distincts-en-étant-inclusif-dès-le-début)
+- [2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-24-prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
+- [3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires (Norme&#160;3&#160;: Collaborez largement)](3-collaborez-largement.md#user-content-32-reconnaître-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-idées-créer-des-partenariats-et-collaborer-avec-un-large-éventail-de-partenaires)
+- [6.5 Concevoir, créer et tester des services numériques de bout en bout (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-65-concevoir-créer-et-tester-des-services-numériques-de-bout-en-bout)
+- [7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs (Norme&#160;7&#160;: Itérer et améliorer fréquemment)](7-iterer-ameliorer-frequemment.md#user-content-71-construire-de-manière-agile-et-améliorer-continuellement-en-réponse-aux-besoins-des-utilisateurs)
+- [7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération (Norme&#160;7&#160;: Itérer et améliorer fréquemment)](7-iterer-ameliorer-frequemment.md#user-content-74-commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothèses-en-utilisant-les-preuves-comme-base-de-litération)
+- [8.2 Évaluer l'impact total sur les utilisateurs et les communautés (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-82-Évaluer-limpact-total-sur-les-utilisateurs-et-les-communautés)
+- [8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-Équilibrer-les-compromis-entre-innovation-et-inclusivité)
+- [10.1 Collecter les données une fois pour éviter la duplication (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](10-soyez-bons-gestionnaires-donnees.md#user-content-101-collecter-les-données-une-fois-pour-éviter-la-duplication)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes agiles, itératives et centrées sur l'utilisateur lors de la construction d'un service. Commencez par une recherche et une analyse approfondies pour vous aider à comprendre qui utilise le service, quels sont ses besoins et comment le service affectera sa vie pour mieux comprendre comment le service devrait être conçu. L'absence de la voix de l'utilisateur conduit à des hypothèses qui peuvent être incorrectes et coûteuses.
 
@@ -73,7 +52,7 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -99,7 +78,7 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'application
 
@@ -107,7 +86,7 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -116,23 +95,23 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est important de planifier la recherche continue des utilisateurs et les tests d'utilisabilité. Impliquer les utilisateurs à toutes les étapes, en recherchant continuellement des commentaires pour s'assurer que le service aide les utilisateurs à accomplir leurs tâches et continuer à améliorer le service pour mieux répondre aux besoins des utilisateurs.
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -146,7 +125,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Stages bêta et en direct
 
@@ -169,7 +148,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'application
 
@@ -177,7 +156,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -186,7 +165,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
 
@@ -194,7 +173,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -203,7 +182,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - Clearly defined user needs **(Build It Right - OneGC Architectural Checklist (draft))**
   - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -231,7 +210,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Stage bêta
 
@@ -265,7 +244,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -282,7 +261,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'application
 
@@ -326,7 +305,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -343,11 +322,11 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 1.4 Clairement articuler and understand the problem of about and use the data for evidence
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -355,7 +334,7 @@ We need to understand the different ways people will interact with our services,
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -371,7 +350,7 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'application
 
@@ -379,7 +358,7 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -388,17 +367,17 @@ We need to understand the different ways people will interact with our services,
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline dpgn-phase-alpha">
+<section class="dpgn-section-guideline dpgn-phase-alpha">
 
 ## 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -411,7 +390,7 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'application
 
@@ -419,7 +398,7 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -428,11 +407,11 @@ We need to understand the different ways people will interact with our services,
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 1.6 Rendre les services simples, intuitifs et cohérents
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -454,7 +433,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -504,7 +483,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'application
 
@@ -528,7 +507,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -547,11 +526,11 @@ Writing and designing content so it is consistent, plain and in the language of 
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 1.7 Rendre plus pratique et pratique l'utilisation des services numériques
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -585,13 +564,13 @@ We still need to help users who are unable to use digital channels and provide s
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -627,7 +606,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Stage bêta
 
@@ -649,7 +628,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -671,7 +650,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
 
 #### Stages bêta et en direct
 
@@ -684,7 +663,7 @@ We still need to help users who are unable to use digital channels and provide s
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -698,7 +677,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -712,11 +691,11 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -730,7 +709,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -756,7 +735,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -768,7 +747,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 

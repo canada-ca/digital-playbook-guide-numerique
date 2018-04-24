@@ -5,67 +5,52 @@ lang: en
 altLang: fr
 altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Guidelines:**
 
-[4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network](#user-content-41-provide-ongoing-training-and-learning-opportunities-to-continually-improve-the-skills-of-the-team-and-the-broader-network)
-
-[4.2 Make sure that staff have access to the tools and technologies they need to be innovative](#user-content-42-make-sure-that-staff-have-access-to-the-tools-and-technologies-they-need-to-be-innovative)
-
-[4.3 Ensure that the right systems and processes are in place so the team can create](#user-content-43-ensure-that-the-right-systems-and-processes-are-in-place-so-the-team-can-create)
-
-[4.4 Empower teams to make decisions throughout the design, build, and operation of the service and allow them to learn from their mistakes](#user-content-44-empower-teams-to-make-decisions-throughout-the-design-build-and-operation-of-the-service-and-allow-them-to-learn-from-their-mistakes)
-
-[4.5 Make one person accountable for the service](#user-content-45-make-one-person-accountable-for-the-service)
+<!-- markdownlint-disable MD032 -->
+- TOC
+{:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
-[3.1 Empower multidisciplinary teams with diverse perspectives and skills (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-31-empower-multidisciplinary-teams-with-diverse-perspectives-and-skills)
-
-[3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-32-recognize-that-an-organization-cant-have-all-the-best-ideas-create-partnerships-and-collaborate-with-a-diverse-range-of-partners)
-
-[3.3 Build the capacity to dynamically pull in new partners for co-innovation (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
-
-[5.4 Be transparent about how you work and justify the decisions you make (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
-
-[5.5 Work in the open and make source code open and reusable (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
-
-[6.1 Leverage open standards and embrace leading practices (Standard&#160;6: Use open standards and solutions](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
-
-[6.2 Use and reuse common, proven government solutions, approaches, and platforms (Standard&#160;6: Use open standards and solutions](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
-
-[7.1 Build in an agile manner and continuously improve in response to user needs (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-71-build-in-an-agile-manner-and-continuously-improve-in-response-to-user-needs)
-
-[7.2 Accept that change is inevitable and use adaptive strategies and tools for new development (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-72-accept-that-change-is-inevitable-and-use-adaptive-strategies-and-tools-for-new-development)
-
-[7.3 Embrace and react to changes in the environment and design for sustainability (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-73-embrace-and-react-to-changes-in-the-environment-and-design-for-sustainability)
-
-[7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
+- [3.1 Empower multidisciplinary teams with diverse perspectives and skills (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-31-empower-multidisciplinary-teams-with-diverse-perspectives-and-skills)
+- [3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-32-recognize-that-an-organization-cant-have-all-the-best-ideas-create-partnerships-and-collaborate-with-a-diverse-range-of-partners)
+- [3.3 Build the capacity to dynamically pull in new partners for co-innovation (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-33-build-the-capacity-to-dynamically-pull-in-new-partners-for-co-innovation)
+- [5.4 Be transparent about how you work and justify the decisions you make (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
+- [5.5 Work in the open and make source code open and reusable (Standard&#160;5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+- [6.1 Leverage open standards and embrace leading practices (Standard&#160;6: Use open standards and solutions](6-use-open-standards-solutions.md#user-content-61-leverage-open-standards-and-embrace-leading-practices)
+- [6.2 Use and reuse common, proven government solutions, approaches, and platforms (Standard&#160;6: Use open standards and solutions](6-use-open-standards-solutions.md#user-content-62-use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
+- [7.1 Build in an agile manner and continuously improve in response to user needs (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-71-build-in-an-agile-manner-and-continuously-improve-in-response-to-user-needs)
+- [7.2 Accept that change is inevitable and use adaptive strategies and tools for new development (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-72-accept-that-change-is-inevitable-and-use-adaptive-strategies-and-tools-for-new-development)
+- [7.3 Embrace and react to changes in the environment and design for sustainability (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-73-embrace-and-react-to-changes-in-the-environment-and-design-for-sustainability)
+- [7.4 Start small and test designs and assumptions continually, using evidence as the basis for iteration (Standard&#160;7: Iterate and improve frequently](7-iterate-improve-frequently.md#user-content-74-start-small-and-test-designs-and-assumptions-continually-using-evidence-as-the-basis-for-iteration)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -73,7 +58,7 @@ altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -82,11 +67,11 @@ altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 4.2 Make sure that staff have access to the tools and technologies they need to be innovative
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -117,7 +102,7 @@ The technology you choose to build your service must help you respond quickly an
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -125,7 +110,7 @@ The technology you choose to build your service must help you respond quickly an
 
 - Ensure the project team has a modern workplace, professional development and the IM-IT tools they need to do their jobs
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -157,7 +142,7 @@ The technology you choose to build your service must help you respond quickly an
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -185,7 +170,7 @@ The technology you choose to build your service must help you respond quickly an
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -210,7 +195,7 @@ The technology you choose to build your service must help you respond quickly an
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -220,7 +205,7 @@ The technology you choose to build your service must help you respond quickly an
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -231,11 +216,11 @@ The technology you choose to build your service must help you respond quickly an
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 4.3 Ensure that the right systems and processes are in place so the team can create
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -245,7 +230,7 @@ It is essential that business processes be reviewed to identify opportunities to
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -285,7 +270,7 @@ It is essential that business processes be reviewed to identify opportunities to
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -293,7 +278,7 @@ It is essential that business processes be reviewed to identify opportunities to
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -304,11 +289,11 @@ It is essential that business processes be reviewed to identify opportunities to
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 4.4 Empower teams to make decisions throughout the design, build, and operation of the service and allow them to learn from their mistakes
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -321,7 +306,7 @@ Working to create an environment that empowers employees has been shown to not o
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -345,7 +330,7 @@ Working to create an environment that empowers employees has been shown to not o
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -354,11 +339,11 @@ Working to create an environment that empowers employees has been shown to not o
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 4.5 Make one person accountable for the service
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -366,7 +351,7 @@ Each service must have one person who has the authority and is responsibile for 
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -394,7 +379,7 @@ Each service must have one person who has the authority and is responsibile for 
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -402,7 +387,7 @@ Each service must have one person who has the authority and is responsibile for 
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 

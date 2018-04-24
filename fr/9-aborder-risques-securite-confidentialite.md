@@ -5,57 +5,48 @@ lang: fr
 altLang: en
 altLangPage: 9-address-security-privacy-risks
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
-[9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées](#user-content-91-adopter-une-approche-équilibrée-de-gestion-des-risques-en-mettant-en-œuvre-des-mesures-de-sécurité-et-de-confidentialité-appropriées)
-
-[9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données](#user-content-92-innover-et-saméliorer-tout-en-répondant-aux-attentes-du-public-quant-à-la-protection-de-la-confidentialité-des-données)
-
-[9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité](#user-content-93-faites-en-sorte-que-la-sécurité-soit-fluide-et-sans-friction-en-équilibrant-sécurité-et-commodité)
-
-[9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires](#user-content-94-sassurer-que-les-services-sont-conformes-à-toutes-les-exigences-législatives-et-réglementaires)
+<!-- markdownlint-disable MD032 -->
+- TOC
+{:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Lignes directrives connexes :**
 
-[1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-%C3%AAtre-tout-quand-et-nimporte-quel-appareil)
-
-[1.6 Rendre les services simples, intuitifs et cohérents (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-16-rendre-les-services-simples-intuitifs-et-coh%C3%A9rents)
-
-[1.7 Rendre plus pratique et pratique l'utilisation des services numériques (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-17-rendre-plus-pratique-et-pratique-lutilisation-des-services-num%C3%A9riques)
-
-[6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
-
-[6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-62-utiliser-et-r%C3%A9utiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-%C3%A9prouv%C3%A9es)
-
-[8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-83-se-conformer-aux-directives-%C3%A9thiques-dans-la-conception-de-syst%C3%A8mes-automatis%C3%A9s)
-
-[8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-%C3%89quilibrer-les-compromis-entre-innovation-et-inclusivit%C3%A9)
+- [1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-15-fournir-des-services-qui-peuvent-%C3%AAtre-tout-quand-et-nimporte-quel-appareil)
+- [1.6 Rendre les services simples, intuitifs et cohérents (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-16-rendre-les-services-simples-intuitifs-et-coh%C3%A9rents)
+- [1.7 Rendre plus pratique et pratique l'utilisation des services numériques (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-17-rendre-plus-pratique-et-pratique-lutilisation-des-services-num%C3%A9riques)
+- [6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+- [6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-62-utiliser-et-r%C3%A9utiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-%C3%A9prouv%C3%A9es)
+- [8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-83-se-conformer-aux-directives-%C3%A9thiques-dans-la-conception-de-syst%C3%A8mes-automatis%C3%A9s)
+- [8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](8-concevoir-services-ethiques.md#user-content-84-%C3%89quilibrer-les-compromis-entre-innovation-et-inclusivit%C3%A9)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -65,7 +56,7 @@ altLangPage: 9-address-security-privacy-risks
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -78,11 +69,11 @@ altLangPage: 9-address-security-privacy-risks
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -102,13 +93,13 @@ Users won't use a service unless they have a guarantee:
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -132,7 +123,7 @@ Users won't use a service unless they have a guarantee:
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -145,7 +136,7 @@ Users won't use a service unless they have a guarantee:
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -153,7 +144,7 @@ Users won't use a service unless they have a guarantee:
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -162,11 +153,11 @@ Users won't use a service unless they have a guarantee:
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -185,7 +176,7 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -194,7 +185,7 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 - Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -224,7 +215,7 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -237,7 +228,7 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -245,7 +236,7 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -254,11 +245,11 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -291,7 +282,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -316,7 +307,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
   - Holistic approach to securing GC services for publicly accessible sites
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -359,7 +350,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Stage bêta
 
@@ -404,7 +395,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -433,7 +424,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -451,7 +442,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
