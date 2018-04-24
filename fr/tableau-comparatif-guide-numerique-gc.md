@@ -7,7 +7,7 @@ altLangPage: gc-digital-playbook-comparison-table
 ---
 Le tableau suivant contient une comparaison des normes et lignes directrices numériques du guide numérique à des ressources similaires au sein du gouvernement du Canada et d'autres administrations&#160;:
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Norme&#160;numérique</th>
