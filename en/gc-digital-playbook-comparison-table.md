@@ -1,27 +1,12 @@
 ---
 layout: default
-title:  "Comparison tables (draft)"
+title:  "Government of Canada Digital Playbook comparison table (draft)"
 lang: en
 altLang: fr
 altLangPage: apercu
 ---
-1. [Government of Canada Digital Playbook comparison table](#government-of-canada-digital-playbook-comparison-table)
-1. **TODO:** Digital Service Standard (UK) comparison table
-1. **TODO:** Digital Service Standard (Ontario) comparison table
-1. **TODO:** Digital Services Playbook (US) comparison table
-1. **TODO:** Digital Service Standard (AU) comparison table
-1. **TODO:** OneGC product design criteria (draft) (GC) comparison table
-1. **TODO:** Current GC EARB Principles (GC) comparison table
-1. **TODO:** Build It Digital Principles (draft) (GC) comparison table
-1. **TODO:** EA Principles (GC) comparison table
-1. **TODO:** Digital Services Design Playbook (ISED) comparison table
-1. **TODO:** Open First Whitepaper (GC) comparison table
-1. **TODO:** Architectural Commandments (draft) (GC) comparison table
-1. **TODO:** Build It Right - OneGC Architectural Checklist (draft) (GC) comparison table
+The following table contains a comparison of the Digital Standards and guidelines in the Digital Playbook to similar resources within the Government of Canada and from other jurisdictions:
 
-## Government of Canada Digital Playbook comparison table
-
-<!-- markdownlint-disable MD033 -->
 <table>
   <thead>
     <tr>
@@ -634,4 +619,3 @@ altLangPage: apercu
     </tr>
   </tbody>
 </table>
-<!-- markdownlint-enable MD033 -->
