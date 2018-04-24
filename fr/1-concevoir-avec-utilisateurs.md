@@ -596,6 +596,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
 - [Keeping your service online](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Digital Service Standard (UK))**
 - [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
 
