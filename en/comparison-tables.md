@@ -104,7 +104,7 @@ altLangPage: apercu
       <td>
         <ul>
           <li><a href="https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple">12.&#160;Make sure users succeed first time (Digital Service Standard (UK))</a></li>
-          <li><a href="https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk">13.&#160;Make the user experience consistent with GOV.UK (Digital Service Standard (UK))</a>
+          <li><a href="https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk">13.&#160;Make the user experience consistent with GOV.UK (Digital Service Standard (UK))</a></li>
           <li><a href="https://www.ontario.ca/page/digital-service-standard#section-4">3.&#160;Be consistent (Digital Service Standard (Ontario))</a></li>
           <li><a href="https://www.ontario.ca/page/digital-service-standard#section-6">5.&#160;Ensure users succeed the first time (Digital Service Standard (Ontario))</a></li>
           <li><a href="https://playbook.cio.gov/#play3">3.&#160;Make it simple and intuitive (Digital Services Playbook (US))</a></li>
