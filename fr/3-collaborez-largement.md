@@ -26,10 +26,10 @@ altLangPage: 3-collaborate-widely
 
 **Lignes directrices connexes :**
 
-- [1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-11-construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu%C3%A9)
-- [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-12-simpliquer-aupr%C3%A8s-des-personnes-qui-ont-le-service-et-le-faire-participer-%C3%A0-toutes-les-%C3%A9tapes-de-la-planification-%C3%A0-lam%C3%A9lioration-continuer)
-- [2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](2-construire-dans-accessibilite-des-debut.md#user-content-23-co-cr%C3%A9er-avec-des-personnes-ayant-des-besoins-distincts-en-%C3%A9tant-inclusif-d%C3%A8s-le-d%C3%A9but)
-- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-55-travailler-%C3%A0-lair-libre-et-rendre-le-code-source-ouvert-et-r%C3%A9utilisable)
+- [1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu)
+- [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
+- [2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#co-crer-avec-des-personnes-ayant-des-besoins-distincts-en-tant-inclusif-ds-le-dbut)
+- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
 
 </div>
 

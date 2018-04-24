@@ -26,11 +26,11 @@ altLangPage: 6-utiliser-standards-solutions-ouverts
 
 **Related guidelines:**
 
-- [1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard 1: Design with users)](1-design-with-users.md#user-content-15-provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
-- [3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard 3: Collaborate widely)](3-collaborate-widely.md#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
-- [5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Standard 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
-- [5.5 Work in the open and make source code open and reusable (Standard 5: Work in the open by default)](5-work-in-open-by-default.md#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
-- [10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others (Standard 10: Be good data stewards)](10-be-good-data-stewards.md#user-content-103-ensure-that-data-is-collected-in-a-standard-way-so-that-it-can-easily-be-integrated-and-reused-by-others)
+- [1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard 1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
+- [3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard 3: Collaborate widely)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/3-collaborate-widely.html#share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
+- [5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Standard 5: Work in the open by default)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html#make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
+- [5.5 Work in the open and make source code open and reusable (Standard 5: Work in the open by default)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html#work-in-the-open-and-make-source-code-open-and-reusable)
+- [10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others (Standard 10: Be good data stewards)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/10-be-good-data-stewards.html#ensure-that-data-is-collected-in-a-standard-way-so-that-it-can-easily-be-integrated-and-reused-by-others)
 
 </div>
 
