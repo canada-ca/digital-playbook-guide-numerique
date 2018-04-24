@@ -5,65 +5,48 @@ lang: fr
 altLang: en
 altLangPage: 10-be-good-data-stewards
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Lignes directrices :**
 
-[10.1 Collecter les données une fois pour éviter la duplication](#user-content-101-collecter-les-données-une-fois-pour-éviter-la-duplication)
-
-[10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision](#user-content-102-rendre-les-informations-et-les-données-gouvernementales-pertinentes-facilement-accessibles-pour-aider-à-la-prise-de-décision)
-
-[10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres](#user-content-103-assurez-vous-que-les-données-sont-collectées-de-manière-standard-afin-quelles-puissent-être-facilement-intégrées-et-réutilisées-par-dautres)
-
-[10.4 Tenir dûment compte de la conservation et de la conservation numériques](#user-content-104-tenir-dûment-compte-de-la-conservation-et-de-la-conservation-numériques)
-
-[10.5 Assurer les données et dans la formation est complète, précise et à jour](#user-content-105-assurer-les-données-et-dans-la-formation-est-complète-précise-et-à-jour)
-
-[10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d'autres](#user-content-106-assurez-vous-que-les-données-sont-bien-structurées-intuitives-et-dans-un-format-facile-à-intégrer-et-réutiliser-par-dautres)
+- TOC
+{:toc}
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Lignes directrices connexes :**
 
-[1.4 Clairement articuler and understand the problem of about and use the data for evidence (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-14-clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence)
-
-[5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-51-rendre-toutes-les-donn%C3%A9es-et-informations-non-sensibles-ouvertes-au-monde-ext%C3%A9rieur-pour-les-partager-et-les-r%C3%A9utiliser-sous-une-licence-ouverte)
-
-[5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-52-soyez-transparent-avec-les-objectifs-et-publiez-les-donn%C3%A9es-de-performance-en-temps-r%C3%A9el)
-
-[5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-53-mesurez-et-surveillez-lefficacit%C3%A9-la-valeur-et-les-cons%C3%A9quences-de-votre-service-et-signalez-publiquement)
-
-[5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-54-soyez-transparent-sur-la-fa%C3%A7on-dont-vous-travaillez-et-justifiez-les-d%C3%A9cisions-que-vous-prenez)
-
-[6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
-
-[6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-62-utiliser-et-r%C3%A9utiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-%C3%A9prouv%C3%A9es)
-
-[6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-64-ouvrez-les-donn%C3%A9es-les-transactions-et-les-r%C3%A8gles-m%C3%A9tier-qui-sous-tendent-un-service)
-
-[9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](9-aborder-risques-securite-confidentialite.md#user-content-92-innover-et-sam%C3%A9liorer-tout-en-r%C3%A9pondant-aux-attentes-du-public-quant-%C3%A0-la-protection-de-la-confidentialit%C3%A9-des-donn%C3%A9es)
+- [1.4 Clairement articuler and understand the problem of about and use the data for evidence (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](1-concevoir-avec-utilisateurs.md#user-content-14-clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence)
+- [5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-51-rendre-toutes-les-donn%C3%A9es-et-informations-non-sensibles-ouvertes-au-monde-ext%C3%A9rieur-pour-les-partager-et-les-r%C3%A9utiliser-sous-une-licence-ouverte)
+- [5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-52-soyez-transparent-avec-les-objectifs-et-publiez-les-donn%C3%A9es-de-performance-en-temps-r%C3%A9el)
+- [5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-53-mesurez-et-surveillez-lefficacit%C3%A9-la-valeur-et-les-cons%C3%A9quences-de-votre-service-et-signalez-publiquement)
+- [5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](5-travailler-air-libre-par-defaut.md#user-content-54-soyez-transparent-sur-la-fa%C3%A7on-dont-vous-travaillez-et-justifiez-les-d%C3%A9cisions-que-vous-prenez)
+- [6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-61-tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+- [6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-62-utiliser-et-r%C3%A9utiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-%C3%A9prouv%C3%A9es)
+- [6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](6-utiliser-standards-solutions-ouverts.md#user-content-64-ouvrez-les-donn%C3%A9es-les-transactions-et-les-r%C3%A8gles-m%C3%A9tier-qui-sous-tendent-un-service)
+- [9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](9-aborder-risques-securite-confidentialite.md#user-content-92-innover-et-sam%C3%A9liorer-tout-en-r%C3%A9pondant-aux-attentes-du-public-quant-%C3%A0-la-protection-de-la-confidentialit%C3%A9-des-donn%C3%A9es)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 10.1 Collecter les données une fois pour éviter la duplication
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -71,7 +54,7 @@ altLangPage: 10-be-good-data-stewards
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -80,11 +63,11 @@ altLangPage: 10-be-good-data-stewards
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -92,7 +75,7 @@ At every stage of a project, we should measure how well our service is working f
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -116,7 +99,7 @@ At every stage of a project, we should measure how well our service is working f
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -132,7 +115,7 @@ At every stage of a project, we should measure how well our service is working f
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -141,11 +124,11 @@ At every stage of a project, we should measure how well our service is working f
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -175,13 +158,13 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Stages alpha, bêta et en direct
 
@@ -215,7 +198,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Stage alpha
 
@@ -231,7 +214,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Stage bêta
 
@@ -249,7 +232,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Stage en direct
 
@@ -283,7 +266,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -311,7 +294,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Ressources similaires
 
@@ -324,17 +307,17 @@ Every service must aim for continuous improvement. Metrics are an important star
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 10.4 Tenir dûment compte de la conservation et de la conservation numériques
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -342,7 +325,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -364,17 +347,17 @@ Every service must aim for continuous improvement. Metrics are an important star
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 10.5 Assurer les données et dans la formation est complète, précise et à jour
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -386,7 +369,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
@@ -395,17 +378,17 @@ Every service must aim for continuous improvement. Metrics are an important star
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d'autres
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Liste de contrôle
 
@@ -419,7 +402,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Guides d'implémentation
 
