@@ -5,55 +5,44 @@ lang: en
 altLang: fr
 altLangPage: 5-travailler-air-libre-par-defaut
 ---
-<div markdown="1" class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines">
 
 **Guidelines:**
 
-[5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence](#user-content-51-make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
-
-[5.2 Be transparent with goals and publish real-time performance data](#user-content-52-be-transparent-with-goals-and-publish-real-time-performance-data)
-
-[5.3 Measure and monitor the effectiveness, value, and consequences of your service and report publicly](#user-content-53-measure-and-monitor-the-effectiveness-value-and-consequences-of-your-service-and-report-publicly)
-
-[5.4 Be transparent about how you work and justify the decisions you make](#user-content-54-be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
-
-[5.5 Work in the open and make source code open and reusable](#user-content-55-work-in-the-open-and-make-source-code-open-and-reusable)
+- TOC
+{:toc}
 
 </div>
 
-<div markdown="1" class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related">
 
 **Related guidelines:**
 
-[3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
-
-[6.3 Design for interoperability, allowing services to be discovered and leveraged by the community (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-63-design-for-interoperability-allowing-services-to-be-discovered-and-leveraged-by-the-community)
-
-[6.4 Open up the data, transactions, and business rules that underpin a service (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
-
-[8.1 Be transparent about personal and organizational biases and indicate how they are being addressed (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-81-be-transparent-about-personal-and-organizational-biases-and-indicate-how-they-are-being-addressed)
-
-[10.2 Make relevant government information and data easily accessible to help support decision making (Standard&#160;10: Be good data stewards)](10-be-good-data-stewards.md#user-content-102-make-relevant-government-information-and-data-easily-accessible-to-help-support-decision-making)
+- [3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard&#160;3: Collaborate widely)](3-collaborate-widely.md#user-content-34-share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
+- [6.3 Design for interoperability, allowing services to be discovered and leveraged by the community (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-63-design-for-interoperability-allowing-services-to-be-discovered-and-leveraged-by-the-community)
+- [6.4 Open up the data, transactions, and business rules that underpin a service (Standard&#160;6: Use open standards and solutions)](6-use-open-standards-solutions.md#user-content-64-open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
+- [8.1 Be transparent about personal and organizational biases and indicate how they are being addressed (Standard&#160;8: Design ethical services)](8-design-ethical-services.md#user-content-81-be-transparent-about-personal-and-organizational-biases-and-indicate-how-they-are-being-addressed)
+- [10.2 Make relevant government information and data easily accessible to help support decision making (Standard&#160;10: Be good data stewards)](10-be-good-data-stewards.md#user-content-102-make-relevant-government-information-and-data-easily-accessible-to-help-support-decision-making)
 
 </div>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -73,7 +62,7 @@ altLangPage: 5-travailler-air-libre-par-defaut
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -86,17 +75,17 @@ altLangPage: 5-travailler-air-libre-par-defaut
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 5.2 Be transparent with goals and publish real-time performance data
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -104,7 +93,7 @@ altLangPage: 5-travailler-air-libre-par-defaut
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -113,11 +102,11 @@ altLangPage: 5-travailler-air-libre-par-defaut
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 5.3 Measure and monitor the effectiveness, value, and consequences of your service and report publicly
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -133,13 +122,13 @@ Setting performance indicators allows you to continuously improve your service b
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
 
 #### Alpha, beta and live stages
 
@@ -165,7 +154,7 @@ Setting performance indicators allows you to continuously improve your service b
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -174,7 +163,7 @@ Setting performance indicators allows you to continuously improve your service b
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -194,7 +183,7 @@ Setting performance indicators allows you to continuously improve your service b
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -203,11 +192,11 @@ Setting performance indicators allows you to continuously improve your service b
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 5.4 Be transparent about how you work and justify the decisions you make
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -215,7 +204,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -239,7 +228,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -247,7 +236,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -258,11 +247,11 @@ Share your experiences with colleagues across the Government of Canada, other le
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guideline">
+<section class="dpgn-section-guideline">
 
 ## 5.5 Work in the open and make source code open and reusable
 
-<div markdown="1" class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline">
 
 **[TODO: Add/revise introductory text]**
 
@@ -296,7 +285,7 @@ Open source helps to:
 
 </div>
 
-<section markdown="1" class="dpgn-section-checklist">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -316,7 +305,7 @@ Open source helps to:
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-phase-alpha">
 
 #### Alpha stage
 
@@ -334,7 +323,7 @@ Open source helps to:
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-phase-beta">
 
 #### Beta stage
 
@@ -342,7 +331,7 @@ Open source helps to:
 
 </section>
 
-<section markdown="1" class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-phase-live">
 
 #### Live stage
 
@@ -367,7 +356,7 @@ Open source helps to:
 </section>
 </section>
 
-<section markdown="1" class="dpgn-section-guides">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -389,7 +378,7 @@ Open source helps to:
 
 </section>
 
-<section markdown="1" class="dpgn-section-similar">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
