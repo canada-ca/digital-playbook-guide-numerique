@@ -15,8 +15,10 @@ altLangPage: 10-be-good-data-stewards
 
 **Lignes directrices :**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
