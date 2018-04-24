@@ -41,3 +41,7 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 1. [Concevoir des services éthiques](8-concevoir-services-ethiques.md)
 1. [Aborder les risques de sécurité et de confidentialité](9-aborder-risques-securite-confidentialite.md)
 1. [Soyez de bons gestionnaires de données](10-soyez-bons-gestionnaires-donnees.md)
+
+**Comparaison du guide numérique à des ressources similaires&#160;:**
+
+1. [Government of Canada Digital Playbook comparison table (anglais seulement)](gc-digital-playbook-comparison-table.md)
