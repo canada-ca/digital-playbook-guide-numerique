@@ -15,8 +15,10 @@ altLangPage: 3-collaborez-largement
 
 **Guidelines:**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
