@@ -15,8 +15,10 @@ altLangPage: 8-design-ethical-services
 
 **Lignes directrices :**
 
+<!-- markdownlint-disable MD032 -->
 - TOC
 {:toc}
+<!-- markdownlint-enable MD032 -->
 
 </div>
 
