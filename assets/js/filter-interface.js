@@ -1,47 +1,84 @@
-/*!
- * Open Government Licence / Licence du gouvernement ouvert – Canada
- * Copyright (c) 2018 Government of Canada - Gouvernement du Canada
- * http://open.canada.ca/en/open-government-licence-canada / http://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada
- *
+/**
+ * @title Content filtering
+ * @overview Persistent content filtering through checkbox groups, query string and function call
+ * @license open.canada.ca/en/open-government-licence-canada / http://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada
+ * @author @pjackson28
  */
-( function( $ ) {
+( function( $, window, document, wb ) {
 "use strict";
 
-var formId = "dpgn-filter-form",
+/*
+ * Variable and function definitions.
+ * These are global to the plugin - meaning that they will be initialized once per page,
+ * not once per instance of plugin on the page. So, this is a good place to define
+ * variables that are common to all instances of the plugin on a page.
+ */
+var componentName = "wb-contentfilter",
+    selector = "." + componentName,
+    initEvent = "wb-init" + selector,
+    $document = wb.doc,
     buttonId = "#filter-button",
-    rememberId = "filters-remember";
+    rememberId = "filters-remember",
 
-$( document ).on( "wb-ready.wb", function( event ) {
+    /**
+     * @method init
+     * @param {jQuery Event} event Event that triggered the function call
+     * @param {string} string Optional selector for the checked filter checkboxes (if triggered manually)
+     */
+    init = function( event, contentfilter ) {
 
-  // Check to see if the filter form exists
-  if ( document.getElementById( formId ) ) {
-    try {
+      // Start initialization
+      // returns DOM object = proceed with init
+      // returns undefined = do not proceed with init (e.g., already initialized)
+      var elm = wb.init( event, componentName, selector ),
+          params = wb.pageUrlParts.params,
+          $filters = $( selector + " input:checkbox:not(" + rememberId + ")" ),
+          rememberCheckbox = document.getElementById( rememberId ),
+          fromStorage = false,
+          eventData = event.data,
+          filtersChecked;
 
-      // Retrieve the selector for the previously applied filters
-      var filtersChecked = localStorage.getItem( formId ),
-          $filters = $( "#" + formId + " fieldset input:checkbox" ),
-          rememberCheckbox = document.getElementById( rememberId );
+      if ( contentfilter ) {
 
-      // If localStorage item doesn't exist, check sessionStorage instead
-      if ( filtersChecked === null ) {
-        filtersChecked = sessionStorage.getItem( formId );
-      } else if ( rememberCheckbox ) {
-        rememberCheckbox.checked = true;
+        // Triggered manually through an event (e.g., $( "#dpgn-contentfilter" ).trigger( "wb-init.dpgn-contentfilter", [ "#dpgn-abc-123, #dpgn-def-456" ] );).
+        filtersChecked = contentfilter;
+      } else if ( elm ) {
+        if ( params && params.contentfilter ) {
+
+          // Supports query strings in the pattern contentfilter=dpgn-abc-123,dpgn-def-456,
+          // where the strings are the ids of the filters without the number sign
+          filtersChecked = "#" + params.contentfilter.replace( /,/g, ", #" );
+        } else {
+          fromStorage = true;
+          try {
+
+            // Retrieve the selector for the previously applied filters          
+            filtersChecked = localStorage.getItem( componentName )
+
+            // If localStorage item doesn't exist, check sessionStorage instead
+            if ( filtersChecked === null ) {
+              filtersChecked = sessionStorage.getItem( componentName );
+            } else if ( rememberCheckbox ) {
+              rememberCheckbox.checked = true;
+            }
+          } catch ( error ) {
+          }
+        }
+        wb.ready( $( elm ), componentName );
       }
-
-      if ( filtersChecked !== null ) {
-
+      if ( filtersChecked && filtersChecked.length != 0 ) {
         // Restore the previously applied filters
         $filters.filter( filtersChecked ).prop( "checked", true );
         $filters.not( filtersChecked ).prop( "checked", false );
-        $( buttonId ).trigger( "click", true );
+        $( buttonId ).trigger( "click", fromStorage );
       }
-    } catch ( error ) {
-    }
-  }    
-});
+    };
 
-$( document ).on( "click", "#" + formId + " input:checkbox", function( event )  {
+$document.on( "click", "#test-button", function( event )  {
+  $( selector ).trigger( "wb-init" + selector, [ "#dpgn-section-guidelines, #dpgn-section-guidelines-related" ] );
+} );
+
+$document.on( "click", selector + " input:checkbox", function( event )  {
   var target = event.target,
       $target = $( target ),
       $parentListItem = $target.parent(),
@@ -63,8 +100,8 @@ $( document ).on( "click", "#" + formId + " input:checkbox", function( event )  
   }
 } );
 
-$( document ).on( "click", buttonId, function( event, isInit ) {
-	var $filterForm = $( "#" + formId ),
+$document.on( "click", buttonId, function( event, fromStorage ) {
+	var $filterForm = $( selector ),
 		$groups = $filterForm.find( "fieldset" ),
 		groupsLen = $groups.length,
 		showSelector = "",
@@ -86,7 +123,7 @@ $( document ).on( "click", buttonId, function( event, isInit ) {
 		$group = $groups.eq( groupIndex )
 		groupShowSelector = "";
 		groupHideSelector = "";
-		$filters = $group.find( "input:checkbox" );
+		$filters = $group.find( "input:checkbox:not(" + rememberId + ")" );
 		$filtersEnabled = $filters.filter( ":checked" );
 		filtersEnabledLen = $filtersEnabled.length;
     allDisabled = filtersEnabledLen == 0;
@@ -134,14 +171,14 @@ $( document ).on( "click", buttonId, function( event, isInit ) {
 		filtersChecked = filtersChecked.substr( 2 );
 	}
 
-  if ( !isInit ) {
+  if ( !fromStorage ) {
     // Store a selector for the applied filters
     try {
       if ( rememberCheckbox && rememberCheckbox.checked ) {
-        localStorage.setItem( formId, filtersChecked );
+        localStorage.setItem( componentName, filtersChecked );
       } else {
-        localStorage.removeItem( formId );
-        sessionStorage.setItem( formId, filtersChecked );
+        localStorage.removeItem( componentName );
+        sessionStorage.setItem( componentName, filtersChecked );
       }
     } catch ( error ) {
     }
@@ -153,4 +190,11 @@ $( document ).on( "click", buttonId, function( event, isInit ) {
 	// Hide any content that should be hidden but is currently visible
 	$( hideSelector ).not( hideClass ).addClass( hideClass );
 } );
-} )( jQuery );
+  
+// Bind the init event of the plugin
+$document.on( "timerpoke.wb " + initEvent, selector, init );
+
+// Add the timer poke to initialize the plugin
+wb.add( selector );
+  
+} )( jQuery, window, document, wb );
