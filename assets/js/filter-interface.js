@@ -74,10 +74,6 @@ var componentName = "wb-contentfilter",
       }
     };
 
-$document.on( "click", "#test-button", function( event )  {
-  $( selector ).trigger( "wb-init" + selector, [ "#dpgn-section-guidelines, #dpgn-section-guidelines-related" ] );
-} );
-
 $document.on( "click", selector + " input:checkbox", function( event )  {
   var target = event.target,
       $target = $( target ),
