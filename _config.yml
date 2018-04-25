@@ -279,6 +279,9 @@ SimilarResources:
 ApplyFilters:
   en: Apply filters
   fr: Appliquer les filtres
+RememberFilters:
+  en: Remember my filters next time
+  fr: Rappeler les filtres la prochaine fois
 
 # Feedback and view source translations
 PageColon:
