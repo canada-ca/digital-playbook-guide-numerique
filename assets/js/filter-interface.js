@@ -7,7 +7,41 @@
 ( function( $ ) {
 "use strict";
 
-$( document ).on( "click", "#dpgn-filter-form input:checkbox", function( event )  {
+var formId = "dpgn-filter-form",
+    buttonId = "#filter-button",
+    rememberId = "filters-remember";
+
+$( document ).on( "wb-ready.wb", function( event ) {
+
+  // Check to see if the filter form exists
+  if ( document.getElementById( formId ) ) {
+    try {
+
+      // Retrieve the selector for the previously applied filters
+      var filtersChecked = localStorage.getItem( formId ),
+          $filters = $( "#" + formId + " fieldset input:checkbox" ),
+          rememberCheckbox = document.getElementById( rememberId );
+
+      // If localStorage item doesn't exist, check sessionStorage instead
+      if ( filtersChecked === null ) {
+        filtersChecked = sessionStorage.getItem( formId );
+      } else if ( rememberCheckbox ) {
+        rememberCheckbox.checked = true;
+      }
+
+      if ( filtersChecked !== null ) {
+
+        // Restore the previously applied filters
+        $filters.filter( filtersChecked ).prop( "checked", true );
+        $filters.not( filtersChecked ).prop( "checked", false );
+        $( buttonId ).trigger( "click", true );
+      }
+    } catch ( error ) {
+    }
+  }    
+});
+
+$( document ).on( "click", "#" + formId + " input:checkbox", function( event )  {
   var target = event.target,
       $target = $( target ),
       $parentListItem = $target.parent(),
@@ -16,7 +50,7 @@ $( document ).on( "click", "#dpgn-filter-form input:checkbox", function( event )
       $siblingCheckboxes, numChecked;
 
   // If the checkbox has children checkboxes, then check/uncheck them all when the parent checkbox is checked/unchecked
-  $target.next( "ul" ).find( "input:checkbox" ).prop( "checked", targetChecked );
+  $target.siblings( "ul" ).find( "input:checkbox" ).prop( "checked", targetChecked );
 
   // If the target checkbox has a parent checkbox
   if ( $parentCheckbox.length != 0 ) {
@@ -29,14 +63,17 @@ $( document ).on( "click", "#dpgn-filter-form input:checkbox", function( event )
   }
 } );
 
-$( document ).on( "click", "#filter-button", function( ) {
-	var $filterForm = $( "#dpgn-filter-form" ),
+$( document ).on( "click", buttonId, function( event, isInit ) {
+	var $filterForm = $( "#" + formId ),
 		$groups = $filterForm.find( "fieldset" ),
 		groupsLen = $groups.length,
 		showSelector = "",
 		hideSelector = "",
+    filtersChecked = "",
 		hideClass = "hidden",
-		groupShowSelector, groupHideSelector, $group, filter, filtersEnabledLen, filtersDisabledLen, groupIndex, filterIndex, $filters, $filtersEnabled, $filtersDisabled;
+    rememberCheckbox = document.getElementById( rememberId ),
+		filterId, allDisabled, groupShowSelector, groupHideSelector, $group, filter, filtersEnabledLen, filtersDisabledLen,
+    groupIndex, filterIndex, $filters, $filtersEnabled, $filtersDisabled;
 
 	// If there are no groups (i.e., fieldsets), then consider the form itself to be the one group
 	if ( groupsLen == 0 ) {
@@ -52,6 +89,7 @@ $( document ).on( "click", "#filter-button", function( ) {
 		$filters = $group.find( "input:checkbox" );
 		$filtersEnabled = $filters.filter( ":checked" );
 		filtersEnabledLen = $filtersEnabled.length;
+    allDisabled = filtersEnabledLen == 0;
 
 		// If no filters are enabled or all filters are enabled, then treat the filters as all being enabled
 		if ( $filters.length == filtersEnabledLen || filtersEnabledLen == 0 ) {
@@ -63,11 +101,14 @@ $( document ).on( "click", "#filter-button", function( ) {
 			filtersDisabledLen = $filtersDisabled.length;
 		}
 
-
 		// Create a selector for all the enabled filters in the group then append to the overall enabled filters selector
 		if ( filtersEnabledLen !== 0 ) {
 			for ( filterIndex = 0; filterIndex < filtersEnabledLen; filterIndex += 1 ) {
-				groupShowSelector += ", ." + $filtersEnabled[ filterIndex ].id;
+				filterId = $filtersEnabled[ filterIndex ].id;
+        groupShowSelector += ", ." + filterId;
+        if ( !allDisabled ) {
+          filtersChecked += ", #"  + filterId;
+        }
 			}
       groupShowSelector = groupShowSelector.substr( 2 );
 			showSelector += ", " + groupShowSelector;
@@ -89,6 +130,22 @@ $( document ).on( "click", "#filter-button", function( ) {
 	if ( hideSelector.length != 0 ) {
 		hideSelector = hideSelector.substr( 2 );
 	}
+  if ( filtersChecked.length != 0 ) {
+		filtersChecked = filtersChecked.substr( 2 );
+	}
+
+  if ( !isInit ) {
+    // Store a selector for the applied filters
+    try {
+      if ( rememberCheckbox && rememberCheckbox.checked ) {
+        localStorage.setItem( formId, filtersChecked );
+      } else {
+        localStorage.removeItem( formId );
+        sessionStorage.setItem( formId, filtersChecked );
+      }
+    } catch ( error ) {
+    }
+  }
 
 	// Make visible any content that should be visible but is currently hidden
 	$( showSelector ).filter( "." + hideClass ).not( hideSelector ).removeClass( hideClass );
