@@ -8,10 +8,25 @@
 "use strict";
 
 $( document ).on( "click", "#dpgn-filter-form input:checkbox", function( event )  {
-  var target = event.target;
-  
+  var target = event.target,
+      $target = $( target ),
+      $parentListItem = $target.parent(),
+      $parentCheckbox = $parentListItem.parent().siblings( "input:checkbox" ),
+      targetChecked = target.checked,
+      $siblingCheckboxes, numChecked;
+
   // If the checkbox has children checkboxes, then check/uncheck them all when the parent checkbox is checked/unchecked
-  $( target ).siblings( "ul" ).find( "input:checkbox" ).prop( "checked", target.checked );
+  $target.next( "ul" ).find( "input:checkbox" ).prop( "checked", targetChecked );
+
+  // If the target checkbox has a parent checkbox
+  if ( $parentCheckbox.length != 0 ) {
+    $siblingCheckboxes = $parentListItem.siblings().find( "input:checkbox" );
+
+    // If none of the sibling checkboxes are checked, then check/uncheck the parent when the target is checked/unchecked
+    if ( $siblingCheckboxes.filter( ":checked" ).length == 0 ) {
+      $parentCheckbox.prop( "checked", targetChecked );
+    }
+  }
 } );
 
 $( document ).on( "click", "#filter-button", function( ) {
