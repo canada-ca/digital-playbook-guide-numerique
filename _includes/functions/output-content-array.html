@@ -1,0 +1,32 @@
+{% assign prevItemType = "" %}{% assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}
+{% for item in include.contentArray %}{% capture rawOutput %}{% 
+
+if item.type == 'section'
+%}
+<section class="{{ item.tags | join: ' ' }}">
+<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>
+{% include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel %}
+</section>
+{%
+
+elsif item.type == 'list' %}{% if item.listtype == 'ordered' %}{% assign listTag = "ol" %}{% else %}{% assign listTag = "ul" %}{% endif 
+%}
+<{{ listTag }} class="{{ item.tags | join: ' ' }}">{% capture listOutput %}{% include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel %}{% endcapture %}{{ listOutput | rstrip }}
+</{{ listTag }}>{% 
+
+elsif item.type == 'listitem'
+%}
+<li class="{{ item.tags | join: ' ' }}"><span markdown="1">{{ item.content }}</span></li>
+{% 
+
+elsif item.type == 'listnested'
+%}
+<li class="{{ item.tags | join: ' ' }}"><span markdown="1">{{ item.content }}</span>{% include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel %}</li>
+{% 
+
+else  
+%}
+<div class="{{ item.tags | join: ' ' }}">
+{{ item.content }}
+</div>
+{% endif %}{% endcapture %}{% if item.type == 'listitem' or 'listnested' %}{{ rawOutput | lstrip }}{% else  %}{{ rawOutput | strip }}{% endif %}{% endfor %}
