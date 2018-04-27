@@ -1,0 +1,2 @@
+{% assign standardId = include.string | downcase %}
+{{ standardId | remove: '0' | remove: '1' | remove: '2' | remove: '3' | remove: '4' | remove: '5' | remove: '6' | remove: '7' | remove: '8' | remove: '9' | remove: '.' | lstrip | replace: ' ', '-' | remove: 'â' | remove: 'à' | remove: 'ä' | remove: 'ç' | remove: 'é' | remove: 'è' | remove: 'ê' | remove: 'ë' | remove: 'î' | remove: 'ï' | remove: 'ô' | remove: 'ù' | remove: 'û' | remove: 'œ' | remove: ',' | remove: "(" | remove: ")" | remove: "'" | remove: "’" }}
