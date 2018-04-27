@@ -1,0 +1,604 @@
+{
+  "title": "Government of Canada Digital Playbook (draft)",
+  "introduction": {
+    "title": "Overview (draft)",
+    "tags": ["dpgn-section-overview"],
+    "content": [
+      {
+        "type": "section",
+        "tags": [],
+        "title": "Structure of this document (draft)",
+        "content": [
+          {
+            "type": "text",
+            "tags": [],
+            "content": "The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation."
+          },
+          {
+            "type": "list",
+            "tags": [],
+            "listtype": "unordered",
+            "content": [
+              {
+                "type": "listitem",
+                "tags": [],
+                "content": "**Standards** are strategic and describe the expected behaviour."
+              },
+              {
+                "type": "listitem",
+                "tags": [],
+                "content": "**Guidelines** are tactical and describe in general terms how to behave according to the standards."
+              },
+              {
+                "type": "listitem",
+                "tags": [],
+                "content": "**Checklist items** are operational and describe in specific terms how to meet the guidelines."
+              },
+              {
+                "type": "listitem",
+                "tags": [],
+                "content": "**Implementation** guides provide additional, detailed information on specific sub-topics."
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "tags": [],
+            "content": "The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "tags": [],
+        "title": "Government of Canada Digital Standards (draft)",
+        "content": [
+          {
+            "type": "text",
+            "tags": [],
+            "content": "**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. These digital standards form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey."
+          },
+          {
+            "type": "text",
+            "tags": [],
+            "content": "**It takes a village.** These Digital Standards were co-created with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. It took a community of individuals, with varying backgrounds and perspectives, to come together and help define them. And of course we built our foundation upon the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you."
+          },
+          {
+            "type": "text",
+            "tags": [],
+            "content": "**Together we’ll make them better.** These are living standards and we will continue to update and evolve them over time as we better understand the complexities involved in putting them into practice. We expect the community to provide input to help refine them. These standards reflect how we will design for ourselves as well as how we will design for others. We can’t do this alone."
+          },
+          {
+            "type": "text",
+            "tags": [],
+            "content": "**The bureaucratic stuff.** The intended outcomes of these digital standards will be baked into our policy instruments and departments will be measured accordingly. We started with our high-level aspirations, and are diving into the details, providing guidance and direction in the form of this playbook. The goal is for this playbook to be as collaborative as possible, allowing our community to share approaches, tools, and stories."
+          }
+        ]
+      }
+    ]
+  },
+  "standards": [
+    {
+      "title": "1. Design with users (draft)",
+      "tags": ["dpgn-section-standard"],
+      "introduction": {
+        "tags": ["dpgn-section-intro-standard"],
+        "content": [
+          {
+            "type": "text",
+            "tags": [],
+            "content": "**[TODO: Add/revise introductory text]**"
+          }
+        ]
+      },
+      "relatedguidelines": [
+        {
+          "standard": "2",
+          "guideline": "1"
+        },
+        {
+          "standard": "2",
+          "guideline": "2"
+        },
+        {
+          "standard": "2",
+          "guideline": "3"
+        },
+        {
+          "standard": "2",
+          "guideline": "4"
+        },
+        {
+          "standard": "3",
+          "guideline": "2"
+        },
+        {
+          "standard": "6",
+          "guideline": "5"
+        },
+        {
+          "standard": "7",
+          "guideline": "1"
+        },
+        {
+          "standard": "7",
+          "guideline": "4"
+        },
+        {
+          "standard": "8",
+          "guideline": "2"
+        },
+        {
+          "standard": "8",
+          "guideline": "4"
+        },
+        {
+          "standard": "10",
+          "guideline": "1"
+        }
+      ],
+      "guidelines": [
+        {
+          "title": "1.1 Build nothing for the user, without the user being involved",
+          "tags": ["dpgn-section-guideline"],
+          "introduction": {
+            "tags": ["dpgn-section-intro-guideline"],
+            "content": [
+              {
+                "type": "text",
+                "tags": [],
+                "content": "Focus on the needs of your users, using agile, iterative and user-centred methods when building a service. Start with extensive research and analysis to help understand who is using the service, what their needs are and how the service will affect their lives to better understand how the service should be designed. The absence of the user voice leads to assumptions that may be incorrect and costly."
+              },
+              {
+                "type": "text",
+                "tags": [],
+                "content": "Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched."
+              }
+            ]
+          },
+          "checklist": [
+            {
+              "type": "list",
+              "tags": [],
+              "listtype": "unordered",
+              "content": [
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Interview potential users to help develop the following for the service: a. User goals (e.g., As a [user type], I want [some goal] so that [some reason]) b. User personas (e.g., based on habits, personality, attitudes and motives) c. User profiles (e.g., based on demographics such as gender, age, location, income and family size)"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Use a range of qualitative and quantitative research methods to determine people’s goals, needs, and behaviors"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Create and maintain a list of priority tasks that users are trying to accomplish (i.e., “user stories”)"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Regularly test with users when building the service and after the service has been launched to ensure it meets the needs of user and to identify any parts of the service that users may find difficult"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Put in place a plan to pay for user research and usability tests throughout the design of the service and after it’s built"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7)."
+                }
+              ]
+            }
+          ],
+          "guides": [
+            {
+              "type": "text",
+              "tags": [],
+              "content": "**[TODO: Add/revise implementation guide items]**"
+            }
+          ],
+          "similar": [
+            {
+              "type": "list",
+              "tags": [],
+              "listtype": "unordered",
+              "content": [
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements",
+          "tags": ["dpgn-section-guideline"],
+          "introduction": {
+            "tags": ["dpgn-section-intro-guideline"],
+            "content": [
+              {
+                "type": "text",
+                "tags": [],
+                "content": "User needs are constantly evolving which it is why it is important to plan for ongoing user research and usability testing. Engage users at all stages, continuously seeking feedback to ensure the service helps users to accomplish their tasks and to keep improving the service to better meet user needs."
+              }
+            ]
+          },
+          "checklist": [
+            {
+              "type": "text",
+              "tags": [],
+              "content": "**[TODO: Add/revise checklist items]**"
+            },
+            {
+              "type": "section",
+              "tags": [],
+              "title": "Alpha stage",
+              "content": [
+                {
+                  "type": "list",
+                  "tags": [],
+                  "listtype": "unordered",
+                  "content": [
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "determine what your private beta will look like and how you’ll use what you find to improve the service **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "pay for user research and usability tests throughout the design of the service and after it’s built **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "tags": [],
+              "title": "Beta and live stages",
+              "content": [
+                {
+                  "type": "list",
+                  "tags": [],
+                  "listtype": "unordered",
+                  "content": [
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "test with users who need assisted digital support **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "use analytics data in your user research plan for the service **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "document any problems you’ve found through testing and how you solved them **(Digital Service Standard (UK))**"
+                    },
+                    {
+                      "type": "listitem",
+                      "tags": [],
+                      "content": "document any problems you haven’t been able to solve in beta and how you’ll handle them in public beta **(Digital Service Standard (UK))**"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "guides": [
+            {
+              "type": "text",
+              "tags": [],
+              "content": "**[TODO: Add/revise implementation guide items]**"
+            }
+          ],
+          "similar": [
+            {
+              "type": "list",
+              "tags": [],
+              "listtype": "unordered",
+              "content": [
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Build in accessibility from the start (draft)",
+      "tags": ["dpgn-section-standard"],
+      "introduction": {
+        "tags": ["dpgn-section-intro-standard"],
+        "content": [
+          {
+            "type": "text",
+            "tags": [],
+            "content": "**[TODO: Add/revise introductory text]**"
+          }
+        ]
+      },
+      "relatedguidelines": [
+        {
+          "standard": "1",
+          "guideline": "1"
+        },
+        {
+          "standard": "1",
+          "guideline": "2"
+        },
+        {
+          "standard": "1",
+          "guideline": "3"
+        },
+        {
+          "standard": "1",
+          "guideline": "5"
+        },
+        {
+          "standard": "1",
+          "guideline": "6"
+        },
+        {
+          "standard": "1",
+          "guideline": "8"
+        },
+        {
+          "standard": "8",
+          "guideline": "4"
+        }
+      ],
+      "guidelines": [
+        {
+          "title": "2.1 Build for those with the greatest needs and it will work for everyone else",
+          "tags": ["dpgn-section-guideline"],
+          "introduction": {
+            "tags": ["dpgn-section-intro-guideline"],
+            "content": [
+              {
+                "type": "text",
+                "tags": [],
+                "content": "The Government of Canada is committed to ensuring that a high level of accessibility is applied uniformly across its service delivery channels. Technologies and standards are constantly evolving and accessibility plays a major role in making the Government of Canada more effective and inclusive. A more consistent, convenient, clear, and easy user experience when using government services online builds trust."
+              },
+              {
+                "type": "text",
+                "tags": [],
+                "content": "Development of accessible (regardless of ability, device or environment) digital services enhances the overall experience for everyone by improving and simplifying the overall design."
+              }
+            ]
+          },
+          "checklist": [
+            {
+              "type": "text",
+              "tags": [],
+              "content": "**[TODO: Add/revise checklist items]**"
+            },
+            {
+              "type": "list",
+              "tags": [],
+              "listtype": "unordered",
+              "content": [
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Ensure design and development resources have the knowledge and expertise to build accessible services and to resolve accessibility issues."
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Ensure testing and quality assurance resources have the knowledge and expertise to identify accessibility issues."
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Ensure support resources are trained to assist persons with disabilities with completing tasks and accessing information."
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Design the service to work with a variety of browsers and devices, including assistive devices."
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Ensure testing processes include testing for conformance to WCAG 2.0 level AA and testing with a variety of browsers, devices and assistive devices."
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Make it easy for all users (including persons with disabilities) to provide feedback, address problems, and request support for using the service."
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "Use ongoing research, testing and analytics to continually assess and improve the accessibility of the service."
+                }
+              ]
+            }
+          ],
+          "guides": [
+            {
+              "type": "text",
+              "tags": [],
+              "content": "**[TODO: Add/revise implementation guide items]**"
+            },
+            {
+              "type": "list",
+              "tags": [],
+              "listtype": "unordered",
+              "content": [
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[Dos and don’ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)"
+                },
+                {
+                  "type": "listnested",
+                  "tags": [],
+                  "content": "[Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)",
+                  "nested": [
+                    {
+                      "type": "list",
+                      "tags": [],
+                      "listtype": "unordered",
+                      "content": [
+                        {
+                          "type": "listitem",
+                          "tags": [],
+                          "content": "[How to meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)"
+                        },
+                        {
+                          "type": "listitem",
+                          "tags": [],
+                          "content": "[Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)"
+                        },
+                        {
+                          "type": "listitem",
+                          "tags": [],
+                          "content": "[Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/)"
+                        }
+                      ]
+                    }  
+                  ]
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)"
+                },
+                {
+                  "type": "listnested",
+                  "tags": [],
+                  "content": "[Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)",
+                  "nested": [
+                    {
+                      "type": "list",
+                      "tags": [],
+                      "listtype": "unordered",
+                      "content": [
+                        {
+                          "type": "listitem",
+                          "tags": [],
+                          "content": "[Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0)"
+                        },
+                        {
+                          "type": "listitem",
+                          "tags": [],
+                          "content": "[Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)"
+                        },
+                        {
+                          "type": "listitem",
+                          "tags": [],
+                          "content": "[WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)"
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)"
+                },
+                {
+                  "type": "listnested",
+                  "tags": [],
+                  "content": "[Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)",
+                  "nested": [
+                    {
+                      "type": "list",
+                      "tags": [],
+                      "listtype": "unordered",
+                      "content": [
+                        {
+                          "type": "listitem",
+                          "tags": [],
+                          "content": "[Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listitem",
+                  "tags": [],
+                  "content": "[A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)"
+                }
+              ]
+            }
+          ],
+          "similar": []
+        }
+      ]
+    }
+  ]
+}
