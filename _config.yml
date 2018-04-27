@@ -18,6 +18,13 @@ kramdown:
   parse_block_html: true
   toc_levels: "2..2"
 
+# Collections settings (for the alternate views)
+collections_dir: views
+collections:
+  single_page:
+    output: true
+    permalink: /:path
+
 # Translations
 title:
   en: Government of Canada Digital Playbook (draft)
@@ -39,7 +46,7 @@ AllPosts:
   en: Government of Canada Digital Playbook (draft)
   fr: Guide numérique du gouvernement du Canada (ébauche)
 
-# Canadda.ca theme translations
+# Canada.ca theme translations
 home:
   en: Home
   fr: Accueil
