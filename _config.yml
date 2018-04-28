@@ -39,6 +39,9 @@ creator:
 subject:
   en: Digital Playbook, Government of Canada, services
   fr: Guide numérique, Gouvernement du Canada, services
+playbookData:
+  en: playbook
+  fr: guide
 index:
   en: /en/overview.html
   fr: /fr/apercu.html
