@@ -82,7 +82,7 @@ var defTop = document.getElementById("def-top");
 defTop.outerHTML = wet.builder.top({
 	lngLinks: [{
 		lang: "{{ page.altLang }}",
-		href: "{{ site.baseurl }}/{% if page.collectionDirectory %}{{ collectionDirectory }}/{% endif %}{{ page.altLang }}/{{ page.altLangPage }}{{ RenderedFileExtension }}",
+		href: "{{ site.baseurl }}/{% if page.collectionDirectory %}{{ collectionDirectory }}/{% endif %}{{ page.altLang }}/{{ page.altLangPage }}{{ site.RenderedFileExtension }}",
 		text: "{{ site.language[page.altLang] }}"
 	}],
 	breadcrumbs: [{
@@ -90,7 +90,7 @@ defTop.outerHTML = wet.builder.top({
 		href: "https://www.canada.ca/{{ page.lang }}.html"
 	}{% if page.url != site.index[page.lang] %}, {
 		title: "{{ site.title[page.lang] }}",
-		href: "{{ site.baseurl }}{{ site.index[page.lang] }}{{ RenderedFileExtension }}"
+		href: "{{ site.baseurl }}{{ site.index[page.lang] }}{{ site.RenderedFileExtension }}"
 	}{% endif %}]
 });
 </script>
