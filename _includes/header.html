@@ -82,7 +82,7 @@ var defTop = document.getElementById("def-top");
 defTop.outerHTML = wet.builder.top({
 	lngLinks: [{
 		lang: "{{ page.altLang }}",
-		href: "{{ site.baseurl }}/{{ page.altLang }}/{{ page.altLangPage }}",
+		href: "{{ site.baseurl }}/{% if page.url contains "views" %}views/{% if page.url contains "single_page" %}single_page/{% endif %}{% endif %}{{ page.altLang }}/{{ page.altLangPage }}",
 		text: "{{ site.language[page.altLang] }}"
 	}],
 	breadcrumbs: [{
