@@ -79,9 +79,27 @@ standardFile:
   -
     en:  10-be-good-data-stewards
     fr:  10-soyez-bons-gestionnaires-donnees
+RenderedFileExtension: ".html"
 AllPosts:
   en: Government of Canada Digital Playbook (draft)
   fr: Guide numérique du gouvernement du Canada (ébauche)
+
+# Playbook section translations
+DigitalStandards:
+  en: Digital Standards
+  fr: Normes numériques
+ComparisonPlaybookIntro:
+  en: Comparison of the Digital Playbook to similar resources
+  fr: Comparaison du guide numérique à des ressources similaires
+ComparisonPlaybookTitle:
+  en: Government of Canada Digital Playbook comparison table
+  fr: Tableau comparatif du guide numérique du gouvernement du Canada
+ComparisonTableFile:
+  en: gc-digital-playbook-comparison-table
+  fr: tableau-comparatif-guide-numerique-gc
+Colon:
+  en: ":"
+  fr: " :"
 
 # Canada.ca theme translations
 home:
@@ -348,4 +366,3 @@ Next:
 GoTo:
   en: Go to
   fr: Aller à la
-  
