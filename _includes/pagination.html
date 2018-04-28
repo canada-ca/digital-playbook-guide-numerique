@@ -8,11 +8,11 @@
 <div class="text-center">
 <ul class="pagination">
 {% if prevIndex == -1 %}
-  <li><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ site.indexTitle[page.lang] }}</span></a></li>
+  <li><a href="{{ site.baseurl }}{{ site.index[page.lang] }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ site.indexTitle[page.lang] }}</span></a></li>
 {% elsif prevIndex > -1 %}
   <li><a href="{{ site.baseurl }}/{{ page.lang }}/{{ site.standardFile[prevIndex][page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ standards[prevIndex].title }}</span></a></li>
 {% endif %}
-  <li{% if activeIndex == -1 %} class="active"{% endif %}><a href="{% if activeIndex == -1 %}#{% else %}{{ site.baseurl }}/{{ site.index[page.lang] }}{% endif %}">{{ site.indexTitle[page.lang] }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ site.indexTitle[page.lang] }}</span></a></li>
+  <li{% if activeIndex == -1 %} class="active"{% endif %}><a href="{% if activeIndex == -1 %}#{% else %}{{ site.baseurl }}{{ site.index[page.lang] }}{% endif %}">{{ site.indexTitle[page.lang] }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ site.indexTitle[page.lang] }}</span></a></li>
 {% for standard in standards %}
   <li{% if standard.title == page.title %} class="active"{% endif %}><a href="{% if standard.title == page.title %}#{% else %}{{ site.baseurl }}/{{ page.lang }}/{{ site.standardFile[standardIndex][page.lang] }}{{ site.RenderedFileExtension }}{% endif %}">{{ standardIndex | plus: 1 }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ standard.title }}</span></a></li>
 {% assign standardIndex = standardIndex | plus: 1 %}
