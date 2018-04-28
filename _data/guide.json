@@ -1,7 +1,7 @@
 {
-  "title": "Government of Canada Digital Playbook (draft)",
+  "title": "Guide numérique du gouvernement du Canada (ébauche)",
   "introduction": {
-    "title": "Overview (draft)",
+    "title": "Aperçu (ébauche)",
     "tags": ["dpgn-section-overview"],
     "content": [
       {
@@ -79,7 +79,7 @@
   },
   "standards": [
     {
-      "title": "1. Design with users (draft)",
+      "title": "1. Concevoir avec les utilisateurs (ébauche)",
       "tags": ["dpgn-section-standard"],
       "introduction": {
         "tags": ["dpgn-section-intro-standard"],
@@ -139,7 +139,7 @@
       ],
       "guidelines": [
         {
-          "title": "1.1 Build nothing for the user, without the user being involved",
+          "title": "1.1 Construire rien pour l’utilisateur, sans que l’utilisateur soit impliqué",
           "tags": ["dpgn-section-guideline"],
           "introduction": {
             "tags": ["dpgn-section-intro-guideline"],
@@ -223,7 +223,7 @@
           ]
         },
         {
-          "title": "1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements",
+          "title": "1.2 S’impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l’amélioration continuer",
           "tags": ["dpgn-section-guideline"],
           "introduction": {
             "tags": ["dpgn-section-intro-guideline"],
@@ -351,11 +351,35 @@
               ]
             }
           ]
+        },
+        {
+          "title": "1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "1.4 Clairement articuler and understand the problem of about and use the data for evidence",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": ".5 Fournir des services qui peuvent être tout, quand et n’importe quel appareil",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "1.6 Rendre les services simples, intuitifs et cohérents",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "1.7 Rendre plus pratique et pratique l’utilisation des services numériques",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens",
+          "tags": ["dpgn-section-guideline"]
         }
       ]
     },
     {
-      "title": "2. Build in accessibility from the start (draft)",
+      "title": "2. Construire dans l'accessibilité dès le début (ébauche)",
       "tags": ["dpgn-section-standard"],
       "introduction": {
         "tags": ["dpgn-section-intro-standard"],
@@ -399,7 +423,7 @@
       ],
       "guidelines": [
         {
-          "title": "2.1 Build for those with the greatest needs and it will work for everyone else",
+          "title": "2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde",
           "tags": ["dpgn-section-guideline"],
           "introduction": {
             "tags": ["dpgn-section-intro-guideline"],
@@ -597,6 +621,218 @@
             }
           ],
           "similar": []
+        },
+        {
+          "title": "2.2 Les services devraient respecter ou dépasser les normes d’accessibilité, et ne devraient pas être pénibles à utiliser",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "2.4 Prendre en compte les contraintes possibles d’un utilisateur lors de la conception de services",
+          "tags": ["dpgn-section-guideline"]
+        }
+      ]
+    },
+    {
+      "title": "3. Collaborez largement (ébauche)",
+      "tags": ["dpgn-section-standard"],
+      "guidelines": [
+        {
+          "title": "3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "3.4 Partager et collaborer à l’extérieur, établir un lien avec le travail des autres et fournir des ressources que d’autres peuvent réutiliser",
+          "tags": ["dpgn-section-guideline"]
+        }
+      ]
+    },
+    {
+      "title": "4. Habiliter le personnel à fournir de meilleurs services (ébauche)",
+      "tags": ["dpgn-section-standard"],
+      "guidelines": [
+        {
+          "title": "4.1 Offrir des possibilités de formation continue et d’apprentissage pour améliorer continuellement les compétences de l’équipe et du réseau élargi",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "4.2 Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l’équipe puisse créer",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d’apprendre de leurs erreurs",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "4.5 Rendre une personne responsable du service",
+          "tags": ["dpgn-section-guideline"]
+        }
+      ]
+    },
+    {
+      "title": "5. Travailler à l'air libre par défaut (ébauche)",
+      "tags": ["dpgn-section-standard"],
+      "guidelines": [
+        {
+          "title": "5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "5.3 Mesurez et surveillez l’efficacité, la valeur et les conséquences de votre service et signalez publiquement",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "5.5 Travailler à l’air libre et rendre le code source ouvert et réutilisable",
+          "tags": ["dpgn-section-guideline"]
+        }
+      ]
+    },
+    {
+      "title": "6. Utiliser des standards et solutions ouverts (ébauche)",
+      "tags": ["dpgn-section-standard"],
+      "guidelines": [
+        {
+          "title": "6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "6.3 Conception pour l’interopérabilité, permettant aux services d’être découverts et exploités par la communauté",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "6.5 Concevoir, créer et tester des services numériques de bout en bout",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "6.6 Nuage d’abord",
+          "tags": ["dpgn-section-guideline"]
+        }
+      ]
+    },
+    {
+      "title": "7. Itérer et améliorer fréquemment (ébauche)",
+      "tags": ["dpgn-section-standard"],
+      "guidelines": [
+        {
+          "title": "7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "7.3 Embrasser et réagir aux changements dans l’environnement et concevoir pour la durabilité",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l’itération",
+          "tags": ["dpgn-section-guideline"]
+        }
+      ]
+    },
+    {
+      "title": "8. Concevoir des services éthiques (ébauche)",
+      "tags": ["dpgn-section-standard"],
+      "guidelines": [
+        {
+          "title": "8.1 Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "8.2 Évaluer l’impact total sur les utilisateurs et les communautés",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "8.4 Équilibrer les compromis entre innovation et inclusivité",
+          "tags": ["dpgn-section-guideline"]
+        }
+      ]
+    },
+    {
+      "title": "9. Aborder les risques de sécurité et de confidentialité (ébauche)",
+      "tags": ["dpgn-section-standard"],
+      "guidelines": [
+        {
+          "title": "9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "9.2 Innover et s’améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "9.4 S’assurer que les services sont conformes à toutes les exigences législatives et réglementaires",
+          "tags": ["dpgn-section-guideline"]
+        }
+      ]
+    },
+    {
+      "title": "10. Soyez de bons gestionnaires de données (ébauche)",
+      "tags": ["dpgn-section-standard"],
+      "guidelines": [
+        {
+          "title": "10.1 Collecter les données une fois pour éviter la duplication",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "10.3 Assurez-vous que les données sont collectées de manière standard afin qu’elles puissent être facilement intégrées et réutilisées par d’autres",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "10.4 Tenir dûment compte de la conservation et de la conservation numériques",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "10.5 Assurer les données et dans la formation est complète, précise et à jour",
+          "tags": ["dpgn-section-guideline"]
+        },
+        {
+          "title": "10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d’autres",
+          "tags": ["dpgn-section-guideline"]
         }
       ]
     }
