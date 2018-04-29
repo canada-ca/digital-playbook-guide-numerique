@@ -135,6 +135,8 @@ Users won't use a service unless they have a guarantee:
 ### Ressources similaires
 
 - [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
+- Privacy Aware (Current GC EARB Principles)
+- Privacy Aware (GC EA Principles)
 
 </section>
 </section>
@@ -212,6 +214,9 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 ### Ressources similaires
 
 - [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
+- Secure by Design (Current GC EARB Principles)
+- Secure by Design (GC EA Principles)
+- Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -369,6 +374,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 - [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 - [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
+- HTTPS only (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
