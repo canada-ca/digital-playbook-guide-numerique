@@ -141,52 +141,52 @@ YouAreHere:
 GCActivitiesInitiatives:
   en: Government of Canada activities and initiatives
   fr: Activités et initiatives du gouvernement du Canada
-TopicMenu1:
+TopicsMenu1:
   en: Jobs
   fr: Emplois
-TopicMenu1URL:
+TopicsMenu1URL:
   en: https://www.canada.ca/en/services/jobs.html
   fr: https://www.canada.ca/fr/services/emplois.html
-TopicMenu2:
+TopicsMenu2:
   en: Immigration
   fr: Immigration
-TopicMenu2URL:
+TopicsMenu2URL:
   en: https://www.canada.ca/en/services/immigration-citizenship.html 
   fr: https://www.canada.ca/fr/services/immigration-citoyennete.html
-TopicMenu3:
+TopicsMenu3:
   en: Travel
   fr: Voyage
-TopicMenu3URL:
+TopicsMenu3URL:
   en: https://travel.gc.ca
   fr: http://voyage.gc.ca/
-TopicMenu4:
+TopicsMenu4:
   en: Business
   fr: Entreprises
-TopicMenu4URL:
+TopicsMenu4URL:
   en: https://www.canada.ca/en/services/business.html
   fr: https://www.canada.ca/fr/services/entreprises.html
-TopicMenu5:
+TopicsMenu5:
   en: Benefits
   fr: Prestations
-TopicMenu5URL:
+TopicsMenu5URL:
   en: https://www.canada.ca/en/services/benefits.html
   fr: https://www.canada.ca/fr/services/prestations.html
-TopicMenu6:
+TopicsMenu6:
   en: Health
   fr: Santé
-TopicMenu6URL:
+TopicsMenu6URL:
   en: https://www.canada.ca/en/services/health.html
   fr: https://www.canada.ca/fr/services/sante.html
-TopicMenu7:
+TopicsMenu7:
   en: Taxes
   fr: Impôts
-TopicMenu7URL:
+TopicsMenu7URL:
   en: https://www.canada.ca/en/services/taxes.html
   fr: https://www.canada.ca/fr/services/impots.html
-TopicMenu8:
+TopicsMenu8:
   en: More services
   fr: Autres services
-TopicMenu8URL:
+TopicsMenu8URL:
   en: https://www.canada.ca/en/services.html
   fr: https://www.canada.ca/fr/services.html
 FooterSection1:
