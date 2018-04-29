@@ -366,3 +366,14 @@ Next:
 GoTo:
   en: Go to
   fr: Aller à la
+
+# Comparison table translations
+DigitalStanardNbsp:
+  en: Digital&#160;standard
+  fr: Norme&#160;numérique
+DigitalPlaybookGuideline:
+  en: Digital Playbook guideline
+  fr: Ligne directrice du guide numérique
+ComparableStandardsCriteria:
+  en: Comparable standards / criteria
+  fr: Normes / critères comparables
