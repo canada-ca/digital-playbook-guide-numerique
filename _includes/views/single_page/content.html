@@ -66,7 +66,7 @@
 
 #### {{ site.Checklist[page.lang] }}
 
-{% include /functions/output-content-array.html contentArray=guideline.checklist currHeadingLevel="4" %}
+{% include /functions/output-content-array.html contentArray=guideline.checklist.content currHeadingLevel="4" %}
 
 </section>
 {% endif %}
@@ -76,7 +76,7 @@
 
 #### {{ site.ImplementationGuides[page.lang] }}
 
-{% include /functions/output-content-array.html contentArray=guideline.guides currHeadingLevel="4" %}
+{% include /functions/output-content-array.html contentArray=guideline.guides.content currHeadingLevel="4" %}
 
 </section>
 {% endif %}
@@ -86,7 +86,7 @@
 
 #### {{ site.SimilarResources[page.lang] }}
 
-{% include /functions/output-content-array.html contentArray=guideline.similar currHeadingLevel="4" %}
+{% include /functions/output-content-array.html contentArray=guideline.similar.content currHeadingLevel="4" %}
 
 </section>
 {% endif %}
