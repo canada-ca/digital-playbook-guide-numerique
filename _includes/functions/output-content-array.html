@@ -1,8 +1,8 @@
-{% assign prevItemType = "" %}{% assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}
+{% assign prevItemType = "" %}
 {% for item in include.contentArray %}{% capture rawOutput %}{% 
 
 if item.type == 'section'
-%}
+%}{% assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}
 <section{% if item.tags.size > 0 %} class="{{ item.tags | join: ' ' }}"{% endif %}>
 <h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>
 {% include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel %}
