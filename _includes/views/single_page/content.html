@@ -28,7 +28,7 @@
 
 </div>
 
-<div class="dpgn-section-guidelines">
+<div{% if standard.guidelines.tags.size > 0 %} class="{{ standard.guidelines.tags | join: ' ' }}"{% endif %}>
 
 **{{ site.Guidelines[page.lang] }}{{ site.Colon[page.lang] }}**
 
@@ -38,15 +38,17 @@
 
 </div>
 
-<div class="dpgn-section-guidelines-related">
+{% if standard.relatedguidelines.content.size > 0 %}
+<div{% if standard.relatedguidelines.tags.size > 0 %} class="{{ standard.relatedguidelines.tags | join: ' ' }}"{% endif %}>
 
 **{{ site.RelatedGuidelines[page.lang] }}{{ site.Colon[page.lang] }}**
 
 <ul>
-{% for guideline in standard.relatedguidelines %}{% assign standardIndex = guideline.standard | minus: 1 %}{% assign guidelineIndex = guideline.guideline | minus: 1 %}{% assign related = site.data.playbook.standards[standardIndex].guidelines[guidelineIndex] %}{% capture relatedId %}{% include /functions/generate-id.html string=related.title %}{% endcapture %}<li{% if related.tags.size > 0 %} class="{{ related.tags | join: ' ' }}"{% endif %}><a href="#{{ relatedId | strip }}">{{ related.title }}</a></li>
+{% for guideline in standard.relatedguidelines.content %}{% assign standardIndex = guideline.standard | minus: 1 %}{% assign guidelineIndex = guideline.guideline | minus: 1 %}{% assign related = site.data.playbook.standards[standardIndex].guidelines[guidelineIndex] %}{% capture relatedId %}{% include /functions/generate-id.html string=related.title %}{% endcapture %}<li{% if related.tags.size > 0 %} class="{{ related.tags | join: ' ' }}"{% endif %}><a href="#{{ relatedId | strip }}">{{ related.title }}</a></li>
 {% endfor %}</ul>
 
 </div>
+{% endif %}
 
 {% for guideline in standard.guidelines %}
 <section{% if guideline.tags.size > 0 %} class="{{ guideline.tags | join: ' ' }}"{% endif %}>
@@ -59,32 +61,32 @@
 
 </div>
 
-{% if guideline.checklist.size > 0 %}
-<section class="dpgn-section-checklist">
+{% if guideline.checklist.content.size > 0 %}
+<section{% if guideline.checklist.tags.size > 0 %} class="{{ guideline.checklist.tags | join: ' ' }}"{% endif %}>
 
 #### {{ site.Checklist[page.lang] }}
 
-{% include /functions/output-content-array.html contentArray=guideline.checklist currHeadingLevel="4" %}
+{% include /functions/output-content-array.html contentArray=guideline.checklist.content currHeadingLevel="4" %}
 
 </section>
 {% endif %}
 
-{% if guideline.guides.size > 0 %}
-<section class="dpgn-section-guides">
+{% if guideline.guides.content.size > 0 %}
+<section{% if guideline.guides.tags.size > 0 %} class="{{ guideline.guides.tags | join: ' ' }}"{% endif %}>
 
 #### {{ site.ImplementationGuides[page.lang] }}
 
-{% include /functions/output-content-array.html contentArray=guideline.guides currHeadingLevel="4" %}
+{% include /functions/output-content-array.html contentArray=guideline.guides.content currHeadingLevel="4" %}
 
 </section>
 {% endif %}
 
-{% if guideline.similar.size > 0 %}
-<section class="dpgn-section-similar">
+{% if guideline.similar.content.size > 0 %}
+<section{% if guideline.similar.tags.size > 0 %} class="{{ guideline.similar.tags | join: ' ' }}"{% endif %}>
 
 #### {{ site.SimilarResources[page.lang] }}
 
-{% include /functions/output-content-array.html contentArray=guideline.similar currHeadingLevel="4" %}
+{% include /functions/output-content-array.html contentArray=guideline.similar.content currHeadingLevel="4" %}
 
 </section>
 {% endif %}

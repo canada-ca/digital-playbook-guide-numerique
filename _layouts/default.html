@@ -4,9 +4,9 @@
 {% include head.html %}
 <body vocab="http://schema.org/" typeof="WebPage">
 {% include header.html %}
-{% if page.url != site.index[page.lang] %}
+{% unless page.url == site.index[page.lang] or page.url contains "compar" %}
   {% include filter-interface.html %}
-{% endif %}
+{% endunless %}
 {% unless page.url contains "/views/" or page.url contains "compar" %}
 {% include pagination.html %}
 {% endunless %}

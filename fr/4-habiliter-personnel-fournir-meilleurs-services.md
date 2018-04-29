@@ -271,8 +271,6 @@ It is essential that business processes be reviewed to identify opportunities to
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-**[TODO: Add/revise implementation guide items]**
-
 </section>
 </section>
 

@@ -63,6 +63,14 @@ altLangPage: 10-be-good-data-stewards
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 </section>
+
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+- Tell me once - Data/Information centricity (GC EA Principles)
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -320,6 +328,15 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+- Information/Data is an asset (Current GC EARB Principles)
+- Data is the new gold (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
