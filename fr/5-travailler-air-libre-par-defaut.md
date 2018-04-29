@@ -69,6 +69,14 @@ altLangPage: 5-work-in-open-by-default
 - [Statistical Data Integration](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/) **Digital Service Standard (AU)**
 
 </section>
+
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+- [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -330,6 +338,8 @@ Open source helps to:
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
+- Open By Default, Proprietary by Necessity (Current GC EARB Principles)
+- Build and develop open (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
