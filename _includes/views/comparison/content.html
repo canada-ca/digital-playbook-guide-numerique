@@ -11,7 +11,7 @@
 {% for standard in dataSource.standards %}{% assign guidelineIndex = 0 %}{% assign standardTags = standard.tags | join: ' ' %}
 {% for guideline in standard.guidelines %}{% capture guidelineId %}{% include /functions/generate-id.html string=guideline.title %}{% endcapture %}
 {% assign tagsArray = guideline.tags | concat: standard.tags %}{% assign standardFile = site.baseurl | append: "/" | append: page.lang | append: "/" | append: site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension %}
-<tr{% if tagsArray.size > 0 %} class="{{ tagsArray.tags | join: ' ' }}"{% endif %}>
+<tr{% if tagsArray.size > 0 %} class="{{ tagsArray | join: ' ' }}"{% endif %}>
 {% if guidelineIndex == 0 %}<td rowspan="{{ standard.guidelines.size }}"><a href="{{ standardFile }}">{{ standard.title }}</a></td>{% endif %}
 <td><a href="{{ standardFile }}#{{ guidelineId | strip }}">{{ guideline.title }}</a></td>
 <td>
