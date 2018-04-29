@@ -128,6 +128,8 @@ Using open standards and common government platforms helps you to:
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 - [9. Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-10)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
+- Open Source Standards (GC EA Principles)
+- Use emerging technologies (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -205,6 +207,15 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 - [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
+- GC Enterprise First, Enterprise Cluster second, Departmental uniqueness last (Current GC EARB Principles)
+- Reuse First, Buy Second, Build Last (Current GC EARB Principles)
+- Technology Debt Managed (Current GC EARB Principles)
+- Containerized by default - Platform Independence Lift & Shift (GC EA Principles)
+- Architecturally Fit for the GC Enterprise (GC EA Principles)
+- Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
+- Digital Exchange Platform (DXP) (OneGC Architectural Checklist - Build It Right (draft))
+- Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
+- Build toward OneGC (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -248,6 +259,16 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 - [API technical and data standards](https://www.gov.uk/guidance/gds-api-technical-and-data-standards) **Government Digital Service (UK)**
 - [Developing cross-government API data and technical standards](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/) **Government Digital Service Blog (UK)**
 - [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
+
+</section>
+
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+- Interoperability (Current GC EARB Principles)
+- Interoperability (ESB/APIs - Micro Services) (GC EA Principles)
+- API first (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -370,6 +391,7 @@ There are many potential benefits from the greater use of digital services, incl
 - [6. Tester le service de bout en bout (Normes des services numériques (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 - [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
+- DevOps (automated test and deployment tool) (GC EA Principles)
 
 </section>
 </section>
@@ -423,6 +445,9 @@ Public cloud services offer benefits that enable significant advances in the fol
 ### Ressources similaires
 
 - [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
+- Cloud First (Current GC EARB Principles)
+- (Public) Cloud First: SaaS - PaaS - IaaS (GC EA Principles)
+- Cloud first (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
