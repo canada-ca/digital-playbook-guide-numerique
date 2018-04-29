@@ -63,6 +63,14 @@ altLangPage: 10-soyez-bons-gestionnaires-donnees
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+- Tell me once - Data/Information centricity (GC EA Principles)
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -328,6 +336,15 @@ Every service must aim for continuous improvement. Metrics are an important star
 - [Sustainability of Digital Formats: Planning for Library of Congress Collections (US)](https://www.loc.gov/preservation/digital/formats/index.html)
   - [Formats, Evluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml)
   - [Sustainability Factors (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/sustain/sustain.shtml)
+
+</section>
+
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+- Information/Data is an asset (Current GC EARB Principles)
+- Data is the new gold (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
