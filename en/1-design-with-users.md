@@ -253,6 +253,11 @@ A key part of building digital services that work for users is developing a good
 - [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
 - [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
+- [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- Stakeholders/Users requirements based solutions (Current GC EARB Principles)
+- Services & client orientation (Current GC EARB Principles)
+- Business User first (GC EA principles)
+- Clearly defined user needs (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -333,6 +338,9 @@ We need to understand the different ways people will interact with our services,
 ### Similar resources
 
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- Mobility Preferred (Current GC EARB Principles)
+- Any Device - Mobility (GC EA principles)
+- Platform agnostic (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -421,6 +429,8 @@ Writing and designing content so it is consistent, plain and in the language of 
 - [5. Ensure users succeed the first time (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
 - [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
 - [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
+- [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 </section>
 </section>
