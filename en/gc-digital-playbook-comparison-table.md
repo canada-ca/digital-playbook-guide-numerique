@@ -166,7 +166,7 @@ The following table contains a comparison of the Digital Standards and guideline
       </td>
       <td>
         <ul>
-          <li><a href="https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team">Have a multidisciplinary team (Digital Service Standard (UK))</a></li>
+          <li><a href="https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team">3.&#160;Have a multidisciplinary team (Digital Service Standard (UK))</a></li>
           <li><a href="https://www.ontario.ca/page/digital-service-standard#section-3">2.&#160;Establish the right team (Digital Service Standard (Ontario))</a></li>
           <li><a href="https://playbook.cio.gov/#play7">7.&#160;Bring in experienced teams (Digital Services Playbook (US))</a></li>
           <li><a href="https://www.dta.gov.au/standard/2-multidisciplinary-team/">2.&#160;Have a multidisciplinary team (Digital Service Standard (AU))</a></li>
@@ -194,6 +194,7 @@ The following table contains a comparison of the Digital Standards and guideline
       <td>
         <ul>
           <li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md">Open Source Code - Open First Whitepaper (GC)</a></li>
+          <li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/6_Open_Culture.md">Open Culture - Open First Whitepaper (GC)</a></li>
           <li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
           <li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
           <li><a href="https://www.dta.gov.au/standard/8-make-source-code-open/">8.&#160;Make source code open (Digital Service Standard (AU))</a></li>
@@ -298,6 +299,7 @@ The following table contains a comparison of the Digital Standards and guideline
       <td>
         <ul>
           <li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md">Open Source Code - Open First Whitepaper (GC)</a></li>
+          <li><a href="https://github.com/canada-ca/Open_First_Whitepaper/blob/master/6_Open_Culture.md">Open Culture - Open First Whitepaper (GC)</a></li>
           <li><a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">8.&#160;Make all new source code open (Digital Service Standard (UK))</a></li>
           <li><a href="https://playbook.cio.gov/#play13">13.&#160;Default to open (Digital Services Playbook (US))</a></li>
           <li><a href="https://www.dta.gov.au/standard/8-make-source-code-open/">8.&#160;Make source code open (Digital Service Standard (AU))</a></li>
