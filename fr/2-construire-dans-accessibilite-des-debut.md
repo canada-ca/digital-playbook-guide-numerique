@@ -231,6 +231,8 @@ Your service must be accessible to users regardless of their digital confidence 
 
 ## 2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début
 
+<div class="dpgn-section-intro-guideline">
+  
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 Involving users early in projects helps you understand real-world accessibility issues, such as how people with disabilities and older people use the web with adaptive strategies and assistive technologies.
