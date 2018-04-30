@@ -1,0 +1,15 @@
+{% capture pageReference %}({{site.PageColon[page.lang] }} {{ page.title | url_encode }}){% endcapture %}
+<section id="feedback-popup" class="mfp-hide modal-dialog modal-content overlay-def">
+  <header class="modal-header">
+    <h2 class="modal-title">{{ site.FeedbackAsk[page.lang] }}</h2>
+  </header>
+<div class="modal-body">
+  <p>{{ site.FeedbackIntro[page.lang] }}</p>
+  <ul>
+    <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/issues/new?title=({{ site.PageColon[page.lang] | url_encode }}+{{ page.title | url_encode }})"><strong>GitHub{{ site.Colon[page.lang] }}</strong> {{ site.SubmitIssueGitHub[page.lang] }}</a> (<a href="https://github.com/canada-ca/digital-playbook-guide-numerique/issues">{{ site.CurrentIssuesGitHub[page.lang] }}</a>)</li>
+    <li><a href="https://gccollab.ca/discussion/view/645986/feedback-on-the-digital-playbook-retroaction-sur-le-guide-numerique"><strong>GCcollab{{ site.Colon[page.lang] }}</strong> {{ site.GCcollabComment[page.lang] }}</a></li>
+  </ul>
+
+  <p>{{ site.FeedbackEmailIntro[page.lang] }} <a href="mailto: {{ site.email }}?subject={{ site.title[page.lang] }}%20({{ site.PageColon[page.lang] | url_encode | replace: "+", "%20" }}%20{{ page.title | url_encode | replace: "+", "%20" }})">{{ site.FeedbackEmailLink[page.lang] }}</a>.</p>
+</div>
+</section>
