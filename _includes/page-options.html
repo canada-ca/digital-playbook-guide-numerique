@@ -1,0 +1,7 @@
+<ul class="list-unstyled{% if include.alignment %} {{ include.alignment }}{% endif %}">
+  <li><a href="#feedback-popup" aria-controls="feedback-popup" class="wb-lbx" role="button">{{ site.FeedbackAsk[page.lang] }}</a></li>
+  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.path }}">{{ site.ViewSourceGitHub[page.lang] }}</a></li>
+{% unless page.url == site.index[page.lang] or page.url contains "compar" %}
+  <li><p><a href="#filter-panel" aria-controls="filter-panel" class="overlay-lnk btn btn-primary" role="button">{{ site.ShowFilters[page.lang] }}</a></li>
+{% endunless %}
+</ul>
