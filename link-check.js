@@ -35,7 +35,7 @@ files.forEach(function(file) {
         {
           deads = true;
           console.log(chalk.red("Dead: " + result.link));
-        } else if (statusCode == 500) {
+        } else if (result.statusCode == 500) {
           console.log(chalk.yellow("Server error on target: " + result.link));
         }
         else {
