@@ -355,6 +355,24 @@ FeedbackAsk:
 ViewSourceGitHub:
   en: View source on GitHub
   fr: Voir la source sur GitHub
+SubmitIssueGitHub:
+  en: Submit an issue on GitHub
+  fr: Soumettre un problème sur GitHub
+CurrentIssuesGitHub:
+  en: view current issues on GitHub
+  fr: voir les problèmes actuels sur GitHub
+GCcollabComment:
+  en: Submit a comment in the OneGC GCcollab group
+  fr: Soumettre un commentaire dans le groupe unGC à GCcollab
+FeedbackIntro:
+  en: "We encourage you to submit feedback using one of the following open feedback options:"
+  fr: "Nous vous encourageons à soumettre vos commentaires en utilisant l'une des options de commentaires ouvertes suivantes&#160;:"
+FeedbackEmailIntro:
+  en: If you encounter issues with the open feedback options then please contact us through the
+  fr: Si vous rencontrez des problèmes avec les options de commentaires ouverte, veuillez nous contacter via le
+FeedbackEmailLink:
+  en: OneGC email account
+  fr: compte de messagerie unGC
 
 # Pagination translations
 Previous:
@@ -377,3 +395,4 @@ DigitalPlaybookGuideline:
 ComparableStandardsCriteria:
   en: Comparable standards / criteria
   fr: Normes / critères comparables
+  
