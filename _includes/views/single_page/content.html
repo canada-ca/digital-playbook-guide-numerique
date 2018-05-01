@@ -1,11 +1,12 @@
 {% assign dataVariable = site.playbookData[page.lang] %}{% assign dataSource = site.data[dataVariable] %}
+{% assign commonStandard = dataSource.common.standards.standard %}{% assign commonGuideline = commonStandard.guidelines.guideline %}
 <section{% if dataSource.introduction.tags.size > 0 %} class="{{ dataSource.introduction.tags | join: ' ' }}"{% endif %}>
 
 ## {{ dataSource.introduction.title }}
 
 {% include /functions/output-content-array.html contentArray=dataSource.introduction.content currHeadingLevel="2" %}
 
-**{{ site.DigitalStandards[page.lang] }}{{ site.Colon[page.lang] }}**
+**{{ dataSource.common.standards.title }}{{ site.Colon[page.lang] }}**
 
 <ul>
 {% for standard in dataSource.standards %}{% capture standardId %}{% include /functions/generate-id.html string=standard.title %}{% endcapture %}<li{% if standard.tags.size > 0 %} class="{{ standard.tags | join: ' ' }}"{% endif %}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>
@@ -18,19 +19,20 @@
 </section>
 
 {% for standard in dataSource.standards %}
-<section{% if standard.tags.size > 0 %} class="{{ standard.tags | join: ' ' }}"{% endif %}>
+{% assign standardTags = commonStandard.tags | concat: standard.tags %}
+<section{% if standardTags.size > 0 %} class="{{ standardTags | join: ' ' }}"{% endif %}>
 
 ## {{ standard.title }}
 
-<div{% if standard.introduction.tags.size > 0 %} class="{{ standard.introduction.tags | join: ' ' }}"{% endif %}>
+<div{% if commonStandard.introduction.tags.size > 0 %} class="{{ commonStandard.introduction.tags | join: ' ' }}"{% endif %}>
 
 {% include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel="2" %}
 
 </div>
 
-<div{% if standard.guidelines.tags.size > 0 %} class="{{ standard.guidelines.tags | join: ' ' }}"{% endif %}>
+<div{% if commonStandard.guidelines.tags.size > 0 %} class="{{ commonStandard.guidelines.tags | join: ' ' }}"{% endif %}>
 
-**{{ site.Guidelines[page.lang] }}{{ site.Colon[page.lang] }}**
+**{{ commonStandard.guidelines.title }}{{ site.Colon[page.lang] }}**
 
 <ul>
 {% for guideline in standard.guidelines %}{% capture guidelineId %}{% include /functions/generate-id.html string=guideline.title %}{% endcapture %}<li{% if guideline.tags.size > 0 %} class="{{ guideline.tags | join: ' ' }}"{% endif %}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
@@ -38,33 +40,33 @@
 
 </div>
 
-{% if standard.relatedguidelines.content.size > 0 %}
-<div{% if standard.relatedguidelines.tags.size > 0 %} class="{{ standard.relatedguidelines.tags | join: ' ' }}"{% endif %}>
+{% if standard.relatedguidelines.size > 0 %}
+<div{% if commonStandard.relatedguidelines.tags.size > 0 %} class="{{ commonStandard.relatedguidelines.tags | join: ' ' }}"{% endif %}>
 
-**{{ site.RelatedGuidelines[page.lang] }}{{ site.Colon[page.lang] }}**
+**{{ commonStandard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
 
 <ul>
-{% for guideline in standard.relatedguidelines.content %}{% assign standardIndex = guideline.standard | minus: 1 %}{% assign guidelineIndex = guideline.guideline | minus: 1 %}{% assign related = site.data.playbook.standards[standardIndex].guidelines[guidelineIndex] %}{% capture relatedId %}{% include /functions/generate-id.html string=related.title %}{% endcapture %}<li{% if related.tags.size > 0 %} class="{{ related.tags | join: ' ' }}"{% endif %}><a href="#{{ relatedId | strip }}">{{ related.title }}</a></li>
+{% for guideline in standard.relatedguidelines %}{% assign standardIndex = guideline.standard | minus: 1 %}{% assign guidelineIndex = guideline.guideline | minus: 1 %}{% assign related = site.data.playbook.standards[standardIndex].guidelines[guidelineIndex] %}{% capture relatedId %}{% include /functions/generate-id.html string=related.title %}{% endcapture %}<li{% if related.tags.size > 0 %} class="{{ related.tags | join: ' ' }}"{% endif %}><a href="#{{ relatedId | strip }}">{{ related.title }}</a></li>
 {% endfor %}</ul>
 
 </div>
 {% endif %}
 
-{% for guideline in standard.guidelines %}
-<section{% if guideline.tags.size > 0 %} class="{{ guideline.tags | join: ' ' }}"{% endif %}>
+{% for guideline in standard.guidelines %}{% assign guidelineTags = commonGuideline.tags | concat: guideline.tags %}
+<section{% if guidelineTags.size > 0 %} class="{{ guideline.tags | join: ' ' }}"{% endif %}>
 
 ### {{ guideline.title }}
 
-<div{% if guideline.introduction.tags.size > 0 %} class="{{ guideline.introduction.tags | join: ' ' }}"{% endif %}>
+<div{% if commonGuideline.introduction.tags.size > 0 %} class="{{ commonGuideline.introduction.tags | join: ' ' }}"{% endif %}>
 
 {% include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel="3" %}
 
 </div>
 
 {% if guideline.checklist.content.size > 0 %}
-<section{% if guideline.checklist.tags.size > 0 %} class="{{ guideline.checklist.tags | join: ' ' }}"{% endif %}>
+<section{% if commonGuideline.checklist.tags.size > 0 %} class="{{ commonGuideline.checklist.tags | join: ' ' }}"{% endif %}>
 
-#### {{ site.Checklist[page.lang] }}
+#### {{ commonGuideline.checklist.title }}
 
 {% include /functions/output-content-array.html contentArray=guideline.checklist.content currHeadingLevel="4" %}
 
@@ -72,9 +74,9 @@
 {% endif %}
 
 {% if guideline.guides.content.size > 0 %}
-<section{% if guideline.guides.tags.size > 0 %} class="{{ guideline.guides.tags | join: ' ' }}"{% endif %}>
+<section{% if commonGuideline.guides.tags.size > 0 %} class="{{ commonGuideline.guides.tags | join: ' ' }}"{% endif %}>
 
-#### {{ site.ImplementationGuides[page.lang] }}
+#### {{ commonGuideline.guides.title }}
 
 {% include /functions/output-content-array.html contentArray=guideline.guides.content currHeadingLevel="4" %}
 
@@ -82,9 +84,9 @@
 {% endif %}
 
 {% if guideline.similar.content.size > 0 %}
-<section{% if guideline.similar.tags.size > 0 %} class="{{ guideline.similar.tags | join: ' ' }}"{% endif %}>
+<section{% if commonGuideline.similar.tags .size > 0 %} class="{{ commonGuideline.similar.tags  | join: ' ' }}"{% endif %}>
 
-#### {{ site.SimilarResources[page.lang] }}
+#### {{ commonGuideline.similar.title }}
 
 {% include /functions/output-content-array.html contentArray=guideline.similar.content currHeadingLevel="4" %}
 
