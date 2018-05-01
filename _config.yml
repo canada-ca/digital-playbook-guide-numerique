@@ -84,10 +84,53 @@ AllPosts:
   en: Government of Canada Digital Playbook (draft)
   fr: Guide numérique du gouvernement du Canada (ébauche)
 
+# Common strings and tags for the datasets
+common:
+  introduction:
+    title:
+      en: "Overview (draft)"
+      fr: "Aperçu (ébauche)"
+    tags: ["dpgn-section-overview"]
+  standards:
+      title:
+        en: "Digital Standards"
+        fr: "Normes numériques"
+      tags: ["dpgn-section-standards"]
+      standard:
+        tags: ["dpgn-section-standard"]
+        introduction:
+          tags: ["dpgn-section-intro-standard"]
+        relatedguidelines:
+          title:
+            en: "Related guidelines"
+            fr: "Lignes directrices connexes"
+          tags: ["dpgn-section-guidelines-related"]
+        guidelines:
+          title:
+            en: "Guidelines"
+            fr: "Lignes directrices"
+          tags: ["dpgn-section-guidelines"]
+          guideline:
+            tags: ["dpgn-section-guideline"]
+            introduction:
+               tags: ["dpgn-section-intro-guideline"]
+            checklist:
+              title:
+                en: "Checklist"
+                fr: "Liste de contrôle"
+              tags: ["dpgn-section-checklist"]
+            guides:
+              title:
+                en: "Implementation guides"
+                fr: "Guides d’application"
+              tags: ["dpgn-section-guides"]
+            similar:
+              title:
+                en: "Similar resources"
+                fr: "Ressources similaires"
+              tags: ["dpgn-section-similar"] 
+
 # Playbook section translations
-DigitalStandards:
-  en: Digital Standards
-  fr: Normes numériques
 ComparisonPlaybookIntro:
   en: Comparison of the Digital Playbook to similar resources
   fr: Comparaison du guide numérique à des ressources similaires
@@ -317,27 +360,12 @@ List:
 Introduction:
   en: Introduction
   fr: Introduction
-Guidelines:
-  en: Guidelines
-  fr: Ligne directrices
-RelatedGuidelines:
-  en: Related guidelines
-  fr: Lignes directrices connexes
 Guideline:
   en: Guideline
   fr: Ligne directrice
 ForAGuideline:
   en: for a guideline
   fr: pour une ligne directrice
-Checklist:
-  en: Checklist
-  fr: Liste de contrôle
-ImplementationGuides:
-  en: Implementation guides
-  fr: Guides d'application
-SimilarResources:
-  en: Similar resources
-  fr: Ressources similaires
 ApplyFilters:
   en: Apply filters
   fr: Appliquer les filtres
@@ -395,4 +423,3 @@ DigitalPlaybookGuideline:
 ComparableStandardsCriteria:
   en: Comparable standards / criteria
   fr: Normes / critères comparables
-  

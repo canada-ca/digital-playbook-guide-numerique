@@ -1,3 +1,5 @@
+{% assign dataVariable = site.playbookData[page.lang] %}{% assign dataSource = site.data[dataVariable] %}
+{% assign commonStandard = dataSource.common.standards.standard %}{% assign commonGuideline = commonStandard.guidelines.guideline %}
 <section id="filter-panel" class="wb-overlay modal-content overlay-def wb-panel-r">
 <header class="modal-header">
   <h2 class="modal-title">{{ site.Filters[page.lang] }}</h2>
@@ -16,14 +18,14 @@
   <legend>{{ site.SectionType[page.lang] }}</legend>
   <ul class="list-unstyled">
     <li><input type="checkbox" id="dpgn-section-intro-standard" /> <label for="dpgn-section-intro-standard">{{ site.Introduction[page.lang] }} ({{ site.ForAStandard[page.lang] }})</label></li>
-    <li><input type="checkbox" id="dpgn-section-guidelines" /> <label for="dpgn-section-guidelines">{{ site.Guidelines[page.lang] }} ({{ site.List[page.lang] }} {{ site.ForAStandard[page.lang] }})</label></li>
-    <li><input type="checkbox" id="dpgn-section-guidelines-related" /> <label for="dpgn-section-guidelines-related">{{ site.RelatedGuidelines[page.lang] }} ({{ site.List[page.lang] }} {{ site.ForAStandard[page.lang] }})</label></li>
+    <li><input type="checkbox" id="dpgn-section-guidelines" /> <label for="dpgn-section-guidelines">{{ commonStandard.guidelines.title }} ({{ site.List[page.lang] }} {{ site.ForAStandard[page.lang] }})</label></li>
+    <li><input type="checkbox" id="dpgn-section-guidelines-related" /> <label for="dpgn-section-guidelines-related">{{ commonStandard.relatedguidelines.title }} ({{ site.List[page.lang] }} {{ site.ForAStandard[page.lang] }})</label></li>
     <li><input type="checkbox" id="dpgn-section-guideline" /> <label for="dpgn-section-guideline">{{ site.Guideline[page.lang] }} ({{ site.ForAStandard[page.lang] }})</label>
       <ul class="lst-none">
         <li><input type="checkbox" id="dpgn-section-intro-guideline" /> <label for="dpgn-section-intro-guideline">{{ site.Introduction[page.lang] }} ({{ site.ForAGuideline[page.lang] }})</label>
-        <li><input type="checkbox" id="dpgn-section-checklist" /> <label for="dpgn-section-checklist">{{ site.Checklist[page.lang] }} ({{ site.ForAGuideline[page.lang] }})</label>
-        <li><input type="checkbox" id="dpgn-section-guides" /> <label for="dpgn-section-guides">{{ site.ImplementationGuides[page.lang] }} ({{ site.ForAGuideline[page.lang] }})</label>
-        <li><input type="checkbox" id="dpgn-section-similar" /> <label for="dpgn-section-similar">{{ site.SimilarResources[page.lang] }} ({{ site.ForAGuideline[page.lang] }})</label>
+        <li><input type="checkbox" id="dpgn-section-checklist" /> <label for="dpgn-section-checklist">{{ commonGuideline.checklist.title }} ({{ site.ForAGuideline[page.lang] }})</label>
+        <li><input type="checkbox" id="dpgn-section-guides" /> <label for="dpgn-section-guides">{{ commonGuideline.guides.title }} ({{ site.ForAGuideline[page.lang] }})</label>
+        <li><input type="checkbox" id="dpgn-section-similar" /> <label for="dpgn-section-similar">{{ commonGuideline.similar.title }} ({{ site.ForAGuideline[page.lang] }})</label>
       </ul>
     </li>
   </ul>
