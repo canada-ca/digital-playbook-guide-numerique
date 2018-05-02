@@ -3,7 +3,7 @@ layout: default
 title:  "6. Use open standards and solutions (draft)"
 lang: en
 altLang: fr
-altLangPage: 6-utiliser-standards-solutions-ouverts
+altLangPage: 6-utiliser-normes-solutions-ouvertes
 ---
 <div class="dpgn-section-intro-standard">
 
