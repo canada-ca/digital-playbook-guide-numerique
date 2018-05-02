@@ -3,7 +3,7 @@ layout: default
 title:  "5. Work in the open by default (draft)"
 lang: en
 altLang: fr
-altLangPage: 5-travailler-ouvertement-par-défaut
+altLangPage: 5-travailler-ouvertement-par-defaut
 ---
 <div class="dpgn-section-intro-standard">
 
