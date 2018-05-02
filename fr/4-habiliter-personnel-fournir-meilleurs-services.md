@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "4. Habiliter le personnel à fournir de meilleurs services (ébauche)"
+title:  "4. Permettre au personnel d’offrir de meilleurs services (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 4-empower-staff-deliver-better-services
@@ -42,7 +42,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 <section class="dpgn-section-guideline">
 
-## 4.1 Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
+## 4.1 Offrir des possibilités continues de formation et d’apprentissage afin d’améliorer sans cesse les compétences de l’équipe et du grand réseau
 
 <div class="dpgn-section-intro-guideline">
 
@@ -69,7 +69,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 <section class="dpgn-section-guideline">
 
-## 4.2 Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover
+## 4.2 Veiller à ce que le personnel ait accès aux outils et aux technologies dont il a besoin pour innover
 
 <div class="dpgn-section-intro-guideline">
 
@@ -185,7 +185,7 @@ The technology you choose to build your service must help you respond quickly an
 
 <section class="dpgn-section-guideline">
 
-## 4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
+## 4.3 Veiller à ce que l’équipe dispose des bons systèmes et processus pour créer
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -240,7 +240,7 @@ It is essential that business processes be reviewed to identify opportunities to
 
 <section class="dpgn-section-guideline">
 
-## 4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs
+## 4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et de l’exploitation du service et leur permettre d’apprendre de leurs erreurs
 
 <div class="dpgn-section-intro-guideline">
 
