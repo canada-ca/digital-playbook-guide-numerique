@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "9. Aborder les risques de sécurité et de confidentialité (ébauche)"
+title:  "9. Gérer les risques en matière de sécurité et de protection des renseignements personnels (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 9-address-security-privacy-risks
@@ -38,7 +38,7 @@ altLangPage: 9-address-security-privacy-risks
 
 <section class="dpgn-section-guideline">
 
-## 9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées
+## 9.1 Adopter une approche équilibrée de la gestion des risques en appliquant les mesures appropriées en matière de protection des renseignements personnels et de sécurité
 
 <div class="dpgn-section-intro-guideline">
 
@@ -70,7 +70,7 @@ altLangPage: 9-address-security-privacy-risks
 
 <section class="dpgn-section-guideline">
 
-## 9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données
+## 9.2 Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels
 
 <div class="dpgn-section-intro-guideline">
 
@@ -143,7 +143,7 @@ Users won't use a service unless they have a guarantee:
 
 <section class="dpgn-section-guideline">
 
-## 9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité
+## 9.3 Rendre la sécurité transparente et sans friction, en équilibrant sécurité et commodité
 
 <div class="dpgn-section-intro-guideline">
 
@@ -223,7 +223,7 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 
 <section class="dpgn-section-guideline">
 
-## 9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires
+## 9.4 Veiller à ce que les services respectent toutes les exigences de la loi et de la réglementation
 
 <div class="dpgn-section-intro-guideline">
 
