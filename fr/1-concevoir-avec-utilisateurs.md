@@ -42,7 +42,7 @@ altLangPage: 1-design-with-users
 
 <section class="dpgn-section-guideline">
 
-## 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
+## 1.1 Ne rien construire pour l’utilisateur sans sa participation
 
 <div class="dpgn-section-intro-guideline">
 
@@ -88,7 +88,7 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 <section class="dpgn-section-guideline">
 
-## 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
+## 1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue
 
 <div class="dpgn-section-intro-guideline">
 
@@ -148,7 +148,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 <section class="dpgn-section-guideline">
 
-## 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
+## 1.3 Comprendre le contexte dans lequel les personnes interagissent et concevoir des solutions propres à répondre à leurs besoins
 
 Un élément clé du développement de services numériques qui fonctionnent pour les utilisateurs consiste à bien comprendre qui sont les utilisateurs, quels sont leurs besoins et comment le service affectera leur vie. Il est également important de développer une bonne compréhension des différents contextes dans lesquels les utilisateurs peuvent interagir, car les besoins et les attentes des utilisateurs peuvent varier en fonction du lieu, du moment et de la manière dont ils utilisent un service numérique.
 
@@ -262,7 +262,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 <section class="dpgn-section-guideline">
 
-## 1.4 Clairement articuler and understand the problem of about and use the data for evidence
+## 1.4 Définir et comprendre clairement le problème de bout en bout et utiliser des données pour démontrer qu’il est résolu
 
 <div class="dpgn-section-intro-guideline">
 
