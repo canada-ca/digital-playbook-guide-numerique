@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "3. Collaborez largement (ébauche)"
+title:  "3. Collaborer largement (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 3-collaborate-widely
@@ -26,16 +26,16 @@ altLangPage: 3-collaborate-widely
 
 **Lignes directrices connexes :**
 
-- [1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu)
-- [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
-- [2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#co-crer-avec-des-personnes-ayant-des-besoins-distincts-en-tant-inclusif-ds-le-dbut)
-- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
+- [1.1 Ne rien construire pour l’utilisateur sans sa participation (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu)
+- [1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
+- [2.3 Co-créer avec les personnes qui ont des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Intégrer l’accessibilité dès le départ)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#co-crer-avec-des-personnes-ayant-des-besoins-distincts-en-tant-inclusif-ds-le-dbut)
+- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses
+## 3.1 Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées
 
 <div class="dpgn-section-intro-guideline">
 
@@ -138,7 +138,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 <section class="dpgn-section-guideline">
 
-## 3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires
+## 3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un éventail diversifié de partenaires
 
 <div class="dpgn-section-intro-guideline">
 
@@ -192,7 +192,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 <section class="dpgn-section-guideline">
 
-## 3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation
+## 3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation
 
 <div class="dpgn-section-intro-guideline">
 
@@ -221,7 +221,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 <section class="dpgn-section-guideline">
 
-## 3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser
+## 3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser
 
 <div class="dpgn-section-intro-guideline">
 

@@ -3,7 +3,7 @@ layout: default
 title:  "2. Build in accessibility from the start (draft)"
 lang: en
 altLang: fr
-altLangPage: 2-construire-dans-accessibilite-des-debut
+altLangPage: 2-integrer-accessibilite-des-depart
 ---
 <div class="dpgn-section-intro-standard">
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "6. Utiliser des standards et solutions ouverts (ébauche)"
+title:  "6. Utiliser des normes et des solutions ouvertes (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 6-use-open-standards-solutions
@@ -27,16 +27,16 @@ altLangPage: 6-use-open-standards-solutions
 **Lignes directrices connexes:**
 
 - [1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#fournir-des-services-qui-peuvent-tre-tout-quand-et-nimporte-quel-appareil)
-- [3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser (Norme&#160;3&#160;: Collaborez largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#partager-et-collaborer--lextrieur-tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-rutiliser)
-- [5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous licence ouverte (Norme&#160;5&#160;: Travailler à l'extérieur par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#rendre-toutes-les-donnes-et-informations-non-sensibles-ouvertes-au-monde-extrieur-pour-les-partager-et-les-rutiliser-sous-une-licence-ouverte)
-- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
-- [10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#assurez-vous-que-les-donnes-sont-collectes-de-manire-standard-afin-quelles-puissent-tre-facilement-intgres-et-rutilises-par-dautres)
+- [3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#partager-et-collaborer--lextrieur-tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-rutiliser)
+- [5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#rendre-toutes-les-donnes-et-informations-non-sensibles-ouvertes-au-monde-extrieur-pour-les-partager-et-les-rutiliser-sous-une-licence-ouverte)
+- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
+- [10.3 Veiller à ce que les données soient recueillies de façon normalisée pour qu’elles soient facilement intégrables et réutilisables par les autres (Norme&#160;10&#160;: Être de bons utilisateurs de données)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#assurez-vous-que-les-donnes-sont-collectes-de-manire-standard-afin-quelles-puissent-tre-facilement-intgres-et-rutilises-par-dautres)
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
+## 6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires
 
 <div class="dpgn-section-intro-guideline">
 
@@ -136,7 +136,7 @@ Using open standards and common government platforms helps you to:
 
 <section class="dpgn-section-guideline">
 
-## 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
+## 6.2 Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes
 
 <div class="dpgn-section-intro-guideline">
 
@@ -222,7 +222,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 <section class="dpgn-section-guideline">
 
-## 6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté
+## 6.3 Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services
 
 <div class="dpgn-section-intro-guideline">
 
@@ -275,7 +275,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 <section class="dpgn-section-guideline">
 
-## 6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
+## 6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service
 
 <div class="dpgn-section-intro-guideline">
 

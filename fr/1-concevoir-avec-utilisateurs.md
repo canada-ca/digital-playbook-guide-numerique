@@ -26,23 +26,23 @@ altLangPage: 1-design-with-users
 
 **Lignes directrices connexes :**
 
-- [2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
-- [2.2 Les services devraient respecter ou dépasser les normes d'accessibilité et ne devraient pas être pénibles à utiliser (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#les-services-devraient-respecter-ou-dpasser-les-normes-daccessibilit-et-ne-devraient-pas-tre-pnibles--utiliser)
-- [2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#co-crer-avec-des-personnes-ayant-des-besoins-distincts-en-tant-inclusif-ds-le-dbut)
-- [2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services (Norme&#160;2&#160;: Construire dans l'accessibilité dès le début)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
-- [3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires (Norme&#160;3&#160;: Collaborez largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#reconnatre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-ides-crer-des-partenariats-et-collaborer-avec-un-large-ventail-de-partenaires)
-- [6.5 Concevoir, créer et tester des services numériques de bout en bout (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#concevoir-crer-et-tester-des-services-numriques-de-bout-en-bout)
-- [7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs (Norme&#160;7&#160;: Itérer et améliorer fréquemment)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#construire-de-manire-agile-et-amliorer-continuellement-en-rponse-aux-besoins-des-utilisateurs)
-- [7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération (Norme&#160;7&#160;: Itérer et améliorer fréquemment)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothses-en-utilisant-les-preuves-comme-base-de-litration)
-- [8.2 Évaluer l'impact total sur les utilisateurs et les communautés (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#valuer-limpact-total-sur-les-utilisateurs-et-les-communauts)
-- [8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#quilibrer-les-compromis-entre-innovation-et-inclusivit)
-- [10.1 Collecter les données une fois pour éviter la duplication (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#collecter-les-donnes-une-fois-pour-viter-la-duplication)
+- [2.1 Construire pour ceux dont le besoin est le plus grand et cela fonctionnera pour tous les autres (Norme&#160;2&#160;: Intégrer l’accessibilité dès le départ)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde)
+- [2.2 Les services devraient respecter ou dépasser les normes d’accessibilité et leur utilisation ne devrait pas être difficile (Norme&#160;2&#160;: Intégrer l’accessibilité dès le départ)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#les-services-devraient-respecter-ou-dpasser-les-normes-daccessibilit-et-ne-devraient-pas-tre-pnibles--utiliser)
+- [2.3 Co-créer avec les personnes qui ont des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Intégrer l’accessibilité dès le départ)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#co-crer-avec-des-personnes-ayant-des-besoins-distincts-en-tant-inclusif-ds-le-dbut)
+- [2.4 Tenir compte des contraintes possibles de l’utilisateur dans la conception des services (Norme&#160;2&#160;: Intégrer l’accessibilité dès le départ)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services)
+- [3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un éventail diversifié de partenaires (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#reconnatre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-ides-crer-des-partenariats-et-collaborer-avec-un-large-ventail-de-partenaires)
+- [6.5 Concevoir, créer et tester des services numériques de bout en bout (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#concevoir-crer-et-tester-des-services-numriques-de-bout-en-bout)
+- [7.1 Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs (Norme&#160;7&#160;: Effectuer des itérations et des améliorations constamment)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#construire-de-manire-agile-et-amliorer-continuellement-en-rponse-aux-besoins-des-utilisateurs)
+- [7.4 Commencer à échelle réduite et tester continuellement les conceptions et les hypothèses, en utilisant des données probantes comme base d’itération (Norme&#160;7&#160;: Effectuer des itérations et des améliorations constamment)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothses-en-utilisant-les-preuves-comme-base-de-litration)
+- [8.2 Évaluer l’impact total sur les utilisateurs et les collectivités (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#valuer-limpact-total-sur-les-utilisateurs-et-les-communauts)
+- [8.4 Équilibrer les arbitrages à faire entre l’innovation et l’inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#quilibrer-les-compromis-entre-innovation-et-inclusivit)
+- [10.1 Recueillir les données une seule fois pour éviter le double emploi (Norme&#160;10&#160;: Être de bons utilisateurs de données)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#collecter-les-donnes-une-fois-pour-viter-la-duplication)
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 1.1 Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué
+## 1.1 Ne rien construire pour l’utilisateur sans sa participation
 
 <div class="dpgn-section-intro-guideline">
 
@@ -88,7 +88,7 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 <section class="dpgn-section-guideline">
 
-## 1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer
+## 1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue
 
 <div class="dpgn-section-intro-guideline">
 
@@ -148,7 +148,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 <section class="dpgn-section-guideline">
 
-## 1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins
+## 1.3 Comprendre le contexte dans lequel les personnes interagissent et concevoir des solutions propres à répondre à leurs besoins
 
 Un élément clé du développement de services numériques qui fonctionnent pour les utilisateurs consiste à bien comprendre qui sont les utilisateurs, quels sont leurs besoins et comment le service affectera leur vie. Il est également important de développer une bonne compréhension des différents contextes dans lesquels les utilisateurs peuvent interagir, car les besoins et les attentes des utilisateurs peuvent varier en fonction du lieu, du moment et de la manière dont ils utilisent un service numérique.
 
@@ -262,7 +262,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 <section class="dpgn-section-guideline">
 
-## 1.4 Clairement articuler and understand the problem of about and use the data for evidence
+## 1.4 Définir et comprendre clairement le problème de bout en bout et utiliser des données pour démontrer qu’il est résolu
 
 <div class="dpgn-section-intro-guideline">
 

@@ -54,31 +54,31 @@ standardFile:
     fr:  1-concevoir-avec-utilisateurs
   -
     en:  2-build-in-accessibility-from-start
-    fr:  2-construire-dans-accessibilite-des-debut
+    fr:  2-integrer-accessibilite-des-depart
   -
     en:  3-collaborate-widely
-    fr:  3-collaborez-largement
+    fr:  3-collaborer-largement
   -
     en:  4-empower-staff-deliver-better-services
-    fr:  4-habiliter-personnel-fournir-meilleurs-services
+    fr:  4-permettre-personnel-offrir-meilleurs-services
   -
     en:  5-work-in-open-by-default
-    fr:  5-travailler-air-libre-par-defaut
+    fr:  5-travailler-ouvertement-par-defaut
   -
     en:  6-use-open-standards-solutions
-    fr:  6-utiliser-standards-solutions-ouverts
+    fr:  6-utiliser-normes-solutions-ouvertes
   -
     en:  7-iterate-improve-frequently
-    fr:  7-iterer-ameliorer-frequemment
+    fr:  7-effectuer-iterations-ameliorations-constamment
   -
     en:  8-design-ethical-services
     fr:  8-concevoir-services-ethiques
   -
     en:  9-address-security-privacy-risks
-    fr:  9-aborder-risques-securite-confidentialite
+    fr:  9-gerer-risques-matiere-securite-protection-renseignements-personnels
   -
     en:  10-be-good-data-stewards
-    fr:  10-soyez-bons-gestionnaires-donnees
+    fr:  10-etre-bons-utilisateurs-donnees
 RenderedFileExtension: ".html"
 AllPosts:
   en: Government of Canada Digital Playbook (draft)

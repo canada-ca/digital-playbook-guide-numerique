@@ -3,7 +3,7 @@ layout: default
 title:  "7. Iterate and improve frequently (draft)"
 lang: en
 altLang: fr
-altLangPage: 7-iterer-ameliorer-frequemment
+altLangPage: 7-effectuer-iterations-ameliorations-constamment
 ---
 <div class="dpgn-section-intro-standard">
 

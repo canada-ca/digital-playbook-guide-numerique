@@ -21,26 +21,26 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 ### Normes numériques du gouvernement du Canada (ébauche)
 
-**Améliorer les services gouvernementaux à l'ère numérique.** Notre objectif est de fournir des services publics facilement accessibles, intégrés et fiables aux Canadiens. En tant que gouvernement, nous devons nous éloigner des projets monolithiques avec des conceptions rigides qui sont construites dans des silos avec une contribution minimale de la communauté des utilisateurs. Ces normes numériques constitutifs du gouvernement du Canada pour devenir plus agile, ouvert et axé sur les utilisateurs. C'est un voyage.
+**Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. En tant que gouvernement, nous devons nous éloigner des projets monolithiques qui sont dotés de conceptions rigides élaborées en vase clos avec une participation minimale des utilisateurs. Ces principes constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
 
-**Ça prend un village.** Ces normes numériques ont été mis en place avec le public et les principaux groupes d'intervenants pour aider le gouvernement à construire et à offrir d'excellents services à ses citoyens. Il a fallu une communauté de personnes, avec des antécédents et des perspectives variées, pour se réunir et aider à définir. Et bien sûr, nous avons bâti notre fondation sur le travail de pionnier du Royaume-Uni, des États-Unis, de l'Australie et de la province de l'Ontario. Je vous remercie.
+**Il faut tout un village.** Ces principes numériques ont été créés conjointement avec le public et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Il a fallu qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour contribuer à les définir. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.
 
-**Ensemble, nous les rendrons meilleurs.** Ce sont des normes vivants et nous continuons à l'actualisateur et à l'évolution vers le fil du temps, nous nous comprenons mieux les complexités inhérentes à leur mise en pratique. Nous nous tenons à ce que la communauté fournisse des commentaires pour aider à la peaufiner. Ces normes s'appliquent à nous comment nous allons concevoir les autres. Nous ne pouvons pas faire cela seul.
+**Ensemble, nous les améliorerons.** Ce sont là des principes vivants, et nous continuerons de les mettre à jour et de les faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à leur amélioration. Ces principes reflètent la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
 
-**Les trucs bureaucratiques.** Les résultats de ces normes numériques seront incorporés dans nos instruments de politique et les ministères seront établis en conséquence. Pour l'instant, nous avons commencé avec nos aspirations de haut niveau, mais nous allons bientôt plonger dans les détails fournissant des conseils et des orientations sous la forme d'un livre de jeux. L'objectif est que ce manuel soit aussi collaboratif que possible, permettant à notre communauté de partager des approches, des outils et des histoires.
+**Les considérations bureaucratiques.** Les résultats escomptés de ces principes seront intégrés dans nos instruments de politique, et les ministères seront évalués en conséquence. Pour l’instant, nous avons commencé par nos aspirations de haut niveau, mais nous allons bientôt entrer dans les détails en fournissant des conseils et une orientation sous la forme d’un plan de match. Nous espérons rendre ce plan de match le plus collaboratif possible pour permettre à notre communauté d’échanger des approches, des outils et des récits. Restez à l’affût!
 
 **Normes numériques&#160;:**
 
 - [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
-- [2. Construire dans l'accessibilité dès le début](2-construire-dans-accessibilite-des-debut.md)
-- [3. Collaborez largement](3-collaborez-largement.md)
-- [4. Habiliter le personnel à fournir des meilleurs services](4-habiliter-personnel-fournir-meilleurs-services.md)
-- [5. Travailler à l'air libre par défaut](5-travailler-air-libre-par-defaut.md)
-- [6. Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md)
-- [7. Itérer et l'autre](7-iterer-ameliorer-frequemment.md)
+- [2. Intégrer l’accessibilité dès le départ](2-integrer-accessibilite-des-depart.md)
+- [3. Collaborer largement](3-collaborer-largement.md)
+- [4. Permettre au personnel d’offrir de meilleurs services](4-permettre-personnel-offrir-meilleurs-services.md)
+- [5. Travailler ouvertement par défaut](5-travailler-ouvertement-par-defaut.md)
+- [6. Utiliser des normes et des solutions ouvertes](6-utiliser-normes-solutions-ouvertes.md)
+- [7. Effectuer des itérations et des améliorations constamment](7-effectuer-iterations-ameliorations-constamment.md)
 - [8. Concevoir des services éthiques](8-concevoir-services-ethiques.md)
-- [9. Aborder les risques de sécurité et de confidentialité](9-aborder-risques-securite-confidentialite.md)
-- [10. Soyez de bons gestionnaires de données](10-soyez-bons-gestionnaires-donnees.md)
+- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](9-gerer-risques-matiere-securite-protection-renseignements-personnels.md)
+- [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md)
 
 **Comparaison du guide numérique à des ressources similaires&#160;:**
 

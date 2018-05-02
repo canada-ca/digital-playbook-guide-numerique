@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "4. Habiliter le personnel à fournir de meilleurs services (ébauche)"
+title:  "4. Permettre au personnel d’offrir de meilleurs services (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 4-empower-staff-deliver-better-services
@@ -26,23 +26,23 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 **Lignes directrices connexes :**
 
-- [3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses (Norme&#160;3&#160;: Collaborez largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#habiliter-des-quipes-multidisciplinaires-avec-des-perspectives-et-des-comptences-diverses)
-- [3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires (Norme&#160;3&#160;: Collaborez largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#reconnatre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-ides-crer-des-partenariats-et-collaborer-avec-un-large-ventail-de-partenaires)
-- [3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation (Norme&#160;3&#160;: Collaborez largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#renforcer-la-capacit--attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
-- [5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#soyez-transparent-sur-la-faon-dont-vous-travaillez-et-justifiez-les-dcisions-que-vous-prenez)
-- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
-- [6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
-- [6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#utiliser-et-rutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-prouves)
-- [7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs (Norme&#160;7&#160;: Itérer et améliorer fréquemment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#construire-de-manire-agile-et-amliorer-continuellement-en-rponse-aux-besoins-des-utilisateurs)
-- [7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements (Norme&#160;7&#160;: Itérer et améliorer fréquemment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#accepter-que-le-changement-est-invitable-et-utiliser-des-stratgies-et-des-outils-adaptatifs-pour-de-nouveaux-dveloppements)
-- [7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité (Norme&#160;7&#160;: Itérer et améliorer fréquemment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#embrasser-et-ragir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilit)
-- [7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération (Norme&#160;7&#160;: Itérer et améliorer fréquemment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothses-en-utilisant-les-preuves-comme-base-de-litration)
+- [3.1 Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#habiliter-des-quipes-multidisciplinaires-avec-des-perspectives-et-des-comptences-diverses)
+- [3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un éventail diversifié de partenaires (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#reconnatre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-ides-crer-des-partenariats-et-collaborer-avec-un-large-ventail-de-partenaires)
+- [3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#renforcer-la-capacit--attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
+- [5.4 Mesurer et surveiller l’efficacité, la valeur et les conséquences du service et en faire rapport au public (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#soyez-transparent-sur-la-faon-dont-vous-travaillez-et-justifiez-les-dcisions-que-vous-prenez)
+- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
+- [6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+- [6.2 Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#utiliser-et-rutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-prouves)
+- [7.1 Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs (Norme&#160;7&#160;: Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#construire-de-manire-agile-et-amliorer-continuellement-en-rponse-aux-besoins-des-utilisateurs)
+- [7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptés pour la poursuite du développement (Norme&#160;7&#160;: Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#accepter-que-le-changement-est-invitable-et-utiliser-des-stratgies-et-des-outils-adaptatifs-pour-de-nouveaux-dveloppements)
+- [7.3 Accepter les changements d’environnement et de conception pour la durabilité et y réagir (Norme&#160;7&#160;: Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#embrasser-et-ragir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilit)
+- [7.4 Commencer à échelle réduite et tester continuellement les conceptions et les hypothèses, en utilisant des données probantes comme base d’itération (Norme&#160;7&#160;: Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothses-en-utilisant-les-preuves-comme-base-de-litration)
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 4.1 Offrir des possibilités de formation continue et d'apprentissage pour améliorer continuellement les compétences de l'équipe et du réseau élargi
+## 4.1 Offrir des possibilités continues de formation et d’apprentissage afin d’améliorer sans cesse les compétences de l’équipe et du grand réseau
 
 <div class="dpgn-section-intro-guideline">
 
@@ -69,7 +69,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 <section class="dpgn-section-guideline">
 
-## 4.2 Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover
+## 4.2 Veiller à ce que le personnel ait accès aux outils et aux technologies dont il a besoin pour innover
 
 <div class="dpgn-section-intro-guideline">
 
@@ -185,7 +185,7 @@ The technology you choose to build your service must help you respond quickly an
 
 <section class="dpgn-section-guideline">
 
-## 4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l'équipe puisse créer
+## 4.3 Veiller à ce que l’équipe dispose des bons systèmes et processus pour créer
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
@@ -240,7 +240,7 @@ It is essential that business processes be reviewed to identify opportunities to
 
 <section class="dpgn-section-guideline">
 
-## 4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d'apprendre de leurs erreurs
+## 4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et de l’exploitation du service et leur permettre d’apprendre de leurs erreurs
 
 <div class="dpgn-section-intro-guideline">
 

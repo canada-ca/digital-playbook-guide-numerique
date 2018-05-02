@@ -3,7 +3,7 @@ layout: default
 title:  "10. Be good data stewards (draft)"
 lang: en
 altLang: fr
-altLangPage: 10-soyez-bons-gestionnaires-donnees
+altLangPage: 10-etre-bons-utilisateurs-donnees
 ---
 <div class="dpgn-section-intro-standard">
 

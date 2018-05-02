@@ -3,7 +3,7 @@ layout: default
 title:  "9. Address security and privacy risks (draft)"
 lang: en
 altLang: fr
-altLangPage: 9-aborder-risques-securite-confidentialite
+altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personnels
 ---
 <div class="dpgn-section-intro-standard">
 

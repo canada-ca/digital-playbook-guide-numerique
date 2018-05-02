@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "9. Aborder les risques de sécurité et de confidentialité (ébauche)"
+title:  "9. Gérer les risques en matière de sécurité et de protection des renseignements personnels (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 9-address-security-privacy-risks
@@ -29,16 +29,16 @@ altLangPage: 9-address-security-privacy-risks
 - [1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#fournir-des-services-qui-peuvent-tre-tout-quand-et-nimporte-quel-appareil)
 - [1.6 Rendre les services simples, intuitifs et cohérents (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#rendre-les-services-simples-intuitifs-et-cohrents)
 - [1.7 Rendre plus pratique et pratique l'utilisation des services numériques (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#rendre-plus-pratique-et-pratique-lutilisation-des-services-numriques)
-- [6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
-- [6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#utiliser-et-rutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-prouves)
-- [8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#se-conformer-aux-directives-thiques-dans-la-conception-de-systmes-automatiss)
-- [8.4 Équilibrer les compromis entre innovation et inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#quilibrer-les-compromis-entre-innovation-et-inclusivit)
+- [6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+- [6.2 Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#utiliser-et-rutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-prouves)
+- [8.3 Respecter les lignes directrices éthiques dans la conception des systèmes automatisés (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#se-conformer-aux-directives-thiques-dans-la-conception-de-systmes-automatiss)
+- [8.4 Équilibrer les arbitrages à faire entre l’innovation et l’inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#quilibrer-les-compromis-entre-innovation-et-inclusivit)
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées
+## 9.1 Adopter une approche équilibrée de la gestion des risques en appliquant les mesures appropriées en matière de protection des renseignements personnels et de sécurité
 
 <div class="dpgn-section-intro-guideline">
 
@@ -70,7 +70,7 @@ altLangPage: 9-address-security-privacy-risks
 
 <section class="dpgn-section-guideline">
 
-## 9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données
+## 9.2 Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels
 
 <div class="dpgn-section-intro-guideline">
 
@@ -143,7 +143,7 @@ Users won't use a service unless they have a guarantee:
 
 <section class="dpgn-section-guideline">
 
-## 9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité
+## 9.3 Rendre la sécurité transparente et sans friction, en équilibrant sécurité et commodité
 
 <div class="dpgn-section-intro-guideline">
 
@@ -223,7 +223,7 @@ Pour que les utilisateurs utilisent un service, il est nécessaire de garantir l
 
 <section class="dpgn-section-guideline">
 
-## 9.4 S'assurer que les services sont conformes à toutes les exigences législatives et réglementaires
+## 9.4 Veiller à ce que les services respectent toutes les exigences de la loi et de la réglementation
 
 <div class="dpgn-section-intro-guideline">
 

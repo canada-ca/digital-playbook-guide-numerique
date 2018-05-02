@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "7. Itérer et améliorer fréquemment (ébauche)"
+title:  "7. Effectuer des itérations et des améliorations constamment (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 7-iterate-improve-frequently
@@ -26,15 +26,15 @@ altLangPage: 7-iterate-improve-frequently
 
 **Lignes directrices connexesv:**
 
-- [1.2 S'impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l'amélioration continuer (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
-- [3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation (Norme&#160;3&#160;: Collaborez)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#renforcer-la-capacit--attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
-- [9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html#innover-et-samliorer-tout-en-rpondant-aux-attentes-du-public-quant--la-protection-de-la-confidentialit-des-donnes)
+- [1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
+- [3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#renforcer-la-capacit--attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
+- [9.2 Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels (Norme&#160;9&#160;: Gérer les risques en matière de sécurité et de protection des renseignements personnels)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html#innover-et-samliorer-tout-en-rpondant-aux-attentes-du-public-quant--la-protection-de-la-confidentialit-des-donnes)
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs
+## 7.1 Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs
 
 <div class="dpgn-section-intro-guideline">
 
@@ -219,7 +219,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 <section class="dpgn-section-guideline">
 
-## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements
+## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptés pour la poursuite du développement
 
 <div class="dpgn-section-intro-guideline">
 
@@ -246,7 +246,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 <section class="dpgn-section-guideline">
 
-## 7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité
+## 7.3 Accepter les changements d’environnement et de conception pour la durabilité et y réagir
 
 <div class="dpgn-section-intro-guideline">
 
@@ -287,7 +287,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 <section class="dpgn-section-guideline">
 
-## 7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération
+## 7.4 Commencer à échelle réduite et tester continuellement les conceptions et les hypothèses, en utilisant des données probantes comme base d’itération
 
 <div class="dpgn-section-intro-guideline">
 

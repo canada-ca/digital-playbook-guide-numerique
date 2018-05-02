@@ -3,7 +3,7 @@ layout: default
 title:  "4. Empower staff to deliver better services (draft)"
 lang: en
 altLang: fr
-altLangPage: 4-habiliter-personnel-fournir-meilleurs-services
+altLangPage: 4-permettre-personnel-offrir-meilleurs-services
 ---
 <div class="dpgn-section-intro-standard">
 

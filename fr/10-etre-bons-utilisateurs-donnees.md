@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "10. Soyez de bons gestionnaires de données (ébauche)"
+title:  "10. Être de bons utilisateurs de données (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 10-be-good-data-stewards
@@ -26,21 +26,21 @@ altLangPage: 10-be-good-data-stewards
 
 **Lignes directrices connexes :**
 
-- [1.4 Clairement articuler and understand the problem of about and use the data for evidence (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence)
-- [5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#rendre-toutes-les-donnes-et-informations-non-sensibles-ouvertes-au-monde-extrieur-pour-les-partager-et-les-rutiliser-sous-une-licence-ouverte)
-- [5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#soyez-transparent-avec-les-objectifs-et-publiez-les-donnes-de-performance-en-temps-rel)
-- [5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#mesurez-et-surveillez-lefficacit-la-valeur-et-les-consquences-de-votre-service-et-signalez-publiquement)
-- [5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez (Norme&#160;5&#160;: Travailler à l'air libre par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#soyez-transparent-sur-la-faon-dont-vous-travaillez-et-justifiez-les-dcisions-que-vous-prenez)
-- [6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
-- [6.2 Utiliser et réutiliser des solutions, des approches et des plateformes gouvernementales communes et éprouvées (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#utiliser-et-rutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-prouves)
-- [6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service (Norme&#160;6&#160;: Utiliser des standards et solutions ouverts)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#ouvrez-les-donnes-les-transactions-et-les-rgles-mtier-qui-sous-tendent-un-service)
-- [9.2 Innover et s'améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données (Norme&#160;9&#160;: Aborder les risques de sécurité et de confidentialité)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html#innover-et-samliorer-tout-en-rpondant-aux-attentes-du-public-quant--la-protection-de-la-confidentialit-des-donnes)
+- [1.4 Définir et comprendre clairement le problème de bout en bout et utiliser des données pour démontrer qu’il est résolu (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence)
+- [5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#rendre-toutes-les-donnes-et-informations-non-sensibles-ouvertes-au-monde-extrieur-pour-les-partager-et-les-rutiliser-sous-une-licence-ouverte)
+- [5.2 Être transparent avec les objectifs et publier des données sur le rendement en temps réel (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#soyez-transparent-avec-les-objectifs-et-publiez-les-donnes-de-performance-en-temps-rel)
+- [5.3 Mesurer et surveiller l’efficacité, la valeur et les conséquences du service et en faire rapport au public (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#mesurez-et-surveillez-lefficacit-la-valeur-et-les-consquences-de-votre-service-et-signalez-publiquement)
+- [5.4 Être transparent sur la façon de travailler et justifier les décisions prises (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#soyez-transparent-sur-la-faon-dont-vous-travaillez-et-justifiez-les-dcisions-que-vous-prenez)
+- [6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires)
+- [6.2 Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#utiliser-et-rutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-prouves)
+- [6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#ouvrez-les-donnes-les-transactions-et-les-rgles-mtier-qui-sous-tendent-un-service)
+- [9.2 Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels (Norme&#160;9&#160;: Gérer les risques en matière de sécurité et de protection des renseignements personnels)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html#innover-et-samliorer-tout-en-rpondant-aux-attentes-du-public-quant--la-protection-de-la-confidentialit-des-donnes)
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 10.1 Collecter les données une fois pour éviter la duplication
+## 10.1 Recueillir les données une seule fois pour éviter le double emploi
 
 <div class="dpgn-section-intro-guideline">
 
@@ -75,7 +75,7 @@ altLangPage: 10-be-good-data-stewards
 
 <section class="dpgn-section-guideline">
 
-## 10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision
+## 10.2 Rendre facilement accessibles l’information et les données gouvernementales pertinentes pour faciliter la prise de décisions
 
 <div class="dpgn-section-intro-guideline">
 
@@ -126,7 +126,7 @@ At every stage of a project, we should measure how well our service is working f
 
 <section class="dpgn-section-guideline">
 
-## 10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
+## 10.3 Veiller à ce que les données soient recueillies de façon normalisée pour qu’elles soient facilement intégrables et réutilisables par les autres
 
 <div class="dpgn-section-intro-guideline">
 
@@ -268,7 +268,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 <section class="dpgn-section-guideline">
 
-## 10.4 Tenir dûment compte de la conservation et de la conservation numériques
+## 10.4 Tenir compte de la préservation et de la conservation numériques
 
 <div class="dpgn-section-intro-guideline">
 

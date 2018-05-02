@@ -3,7 +3,7 @@ layout: default
 title:  "3. Collaborate widely (draft)"
 lang: en
 altLang: fr
-altLangPage: 3-collaborez-largement
+altLangPage: 3-collaborer-largement
 ---
 <div class="dpgn-section-intro-standard">
 
