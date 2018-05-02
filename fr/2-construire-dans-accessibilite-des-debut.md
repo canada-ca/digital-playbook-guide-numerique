@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "2. Construire dans l'accessibilité dès le début (ébauche)"
+title:  "2. Intégrer l’accessibilité dès le départ"
 lang: fr
 altLang: en
 altLangPage: 2-build-in-accessibility-from-start
@@ -38,7 +38,7 @@ altLangPage: 2-build-in-accessibility-from-start
 
 <section class="dpgn-section-guideline">
 
-## 2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde
+## 2.1 Construire pour ceux dont le besoin est le plus grand et cela fonctionnera pour tous les autres
 
 <div class="dpgn-section-intro-guideline">
 
@@ -95,7 +95,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 <section class="dpgn-section-guideline">
 
-## 2.2 Les services devraient respecter ou dépasser les normes d'accessibilité, et ne devraient pas être pénibles à utiliser
+## 2.2 Les services devraient respecter ou dépasser les normes d’accessibilité et leur utilisation ne devrait pas être difficile
 
 <div class="dpgn-section-intro-guideline">
 
@@ -229,7 +229,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 <section class="dpgn-section-guideline">
 
-## 2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début
+## 2.3 Co-créer avec les personnes qui ont des besoins distincts, en étant inclusif dès le début
 
 <div class="dpgn-section-intro-guideline">
 
@@ -338,7 +338,7 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 <section class="dpgn-section-guideline">
 
-## 2.4 Prendre en compte les contraintes possibles d'un utilisateur lors de la conception de services
+## 2.4 Tenir compte des contraintes possibles de l’utilisateur dans la conception des services
 
 <div class="dpgn-section-intro-guideline">
 
