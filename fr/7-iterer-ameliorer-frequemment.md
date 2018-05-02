@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "7. Itérer et améliorer fréquemment (ébauche)"
+title:  "7. Effectuer des itérations et des améliorations constamment (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 7-iterate-improve-frequently
@@ -34,7 +34,7 @@ altLangPage: 7-iterate-improve-frequently
 
 <section class="dpgn-section-guideline">
 
-## 7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs
+## 7.1 Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs
 
 <div class="dpgn-section-intro-guideline">
 
@@ -219,7 +219,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 <section class="dpgn-section-guideline">
 
-## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements
+## 7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptés pour la poursuite du développement
 
 <div class="dpgn-section-intro-guideline">
 
@@ -246,7 +246,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 <section class="dpgn-section-guideline">
 
-## 7.3 Embrasser et réagir aux changements dans l'environnement et concevoir pour la durabilité
+## 7.3 Accepter les changements d’environnement et de conception pour la durabilité et y réagir
 
 <div class="dpgn-section-intro-guideline">
 
@@ -287,7 +287,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 <section class="dpgn-section-guideline">
 
-## 7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l'itération
+## 7.4 Commencer à échelle réduite et tester continuellement les conceptions et les hypothèses, en utilisant des données probantes comme base d’itération
 
 <div class="dpgn-section-intro-guideline">
 
