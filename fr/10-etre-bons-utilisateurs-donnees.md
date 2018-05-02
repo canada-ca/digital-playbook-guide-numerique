@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "10. Soyez de bons gestionnaires de données (ébauche)"
+title:  "10. Être de bons utilisateurs de données (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 10-be-good-data-stewards
@@ -40,7 +40,7 @@ altLangPage: 10-be-good-data-stewards
 
 <section class="dpgn-section-guideline">
 
-## 10.1 Collecter les données une fois pour éviter la duplication
+## 10.1 Recueillir les données une seule fois pour éviter le double emploi
 
 <div class="dpgn-section-intro-guideline">
 
@@ -75,7 +75,7 @@ altLangPage: 10-be-good-data-stewards
 
 <section class="dpgn-section-guideline">
 
-## 10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision
+## 10.2 Rendre facilement accessibles l’information et les données gouvernementales pertinentes pour faciliter la prise de décisions
 
 <div class="dpgn-section-intro-guideline">
 
@@ -126,7 +126,7 @@ At every stage of a project, we should measure how well our service is working f
 
 <section class="dpgn-section-guideline">
 
-## 10.3 Assurez-vous que les données sont collectées de manière standard afin qu'elles puissent être facilement intégrées et réutilisées par d'autres
+## 10.3 Veiller à ce que les données soient recueillies de façon normalisée pour qu’elles soient facilement intégrables et réutilisables par les autres
 
 <div class="dpgn-section-intro-guideline">
 
@@ -268,7 +268,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 <section class="dpgn-section-guideline">
 
-## 10.4 Tenir dûment compte de la conservation et de la conservation numériques
+## 10.4 Tenir compte de la préservation et de la conservation numériques
 
 <div class="dpgn-section-intro-guideline">
 
