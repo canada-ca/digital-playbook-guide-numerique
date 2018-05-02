@@ -18,10 +18,10 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
   <tbody>
     <tr>
       <td rowspan="8">
-        <a href="https://canada.ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html">1.&#160;Concevoir avec les utilisateurs</a>
+        <a href="https://canada.ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html">1.&#160;Concevoir avec les utilisateurs (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada.ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu">1.1&#160;Construire rien pour l'utilisateur, sans que l'utilisateur soit impliqué</a>
+        <a href="https://canada.ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu">1.1&#160;Ne rien construire pour l’utilisateur sans sa participation</a>
       </td>
       <td>
         <ul>
@@ -31,7 +31,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer">1.2&#160;S’impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l’amélioration continuer</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer">1.2&#160;Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue</a>
       </td>
       <td>
         <ul>
@@ -41,7 +41,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-conoivent-des-solutions-adaptes--leurs-besoins">1.3&#160;Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-conoivent-des-solutions-adaptes--leurs-besoins">1.3&#160;Comprendre le contexte dans lequel les personnes interagissent et concevoir des solutions propres à répondre à leurs besoins</a>
       </td>
       <td>
         <ul>
@@ -60,7 +60,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence">1.4&#160;Clairement articuler and understand the problem of about and use the data for evidence</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#clairement-articuler-and-understand-the-problem-of-about-and-use-the-data-for-evidence">1.4&#160;Définir et comprendre clairement le problème de bout en bout et utiliser des données pour démontrer qu’il est résolu</a>
       </td>
       <td>
         <ul>
@@ -124,17 +124,17 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td rowspan="4">
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html">2.&#160;Construire dans l'accessibilité dès le début</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html">2.&#160;Intégrer l’accessibilité dès le départ (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde">2.1&#160;Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#construire-pour-ceux-qui-ont-les-plus-grands-besoins-et-cela-fonctionnera-pour-tout-le-monde">2.1&#160;Construire pour ceux dont le besoin est le plus grand et cela fonctionnera pour tous les autres</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#les-services-devraient-respecter-ou-dpasser-les-normes-daccessibilit-et-ne-devraient-pas-tre-pnibles--utiliser">2.2&#160;Les services devraient respecter ou dépasser les normes d’accessibilité, et ne devraient pas être pénibles à utiliser</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#les-services-devraient-respecter-ou-dpasser-les-normes-daccessibilit-et-ne-devraient-pas-tre-pnibles--utiliser">2.2&#160;Les services devraient respecter ou dépasser les normes d’accessibilité et leur utilisation ne devrait pas être difficile</a>
       </td>
       <td>
         <ul>
@@ -145,24 +145,24 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#co-crer-avec-des-personnes-ayant-des-besoins-distincts-en-tant-inclusif-ds-le-dbut">2.3&#160;Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#co-crer-avec-des-personnes-ayant-des-besoins-distincts-en-tant-inclusif-ds-le-dbut">2.3&#160;Co-créer avec les personnes qui ont des besoins distincts, en étant inclusif dès le début</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html#prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services">2.4&#160;Prendre en compte les contraintes possibles d’un utilisateur lors de la conception de services</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#prendre-en-compte-les-contraintes-possibles-dun-utilisateur-lors-de-la-conception-de-services">2.4&#160;Tenir compte des contraintes possibles de l’utilisateur dans la conception des services</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td rowspan="4">
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html">3.&#160;Collaborez largement</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html">3.&#160;Collaborer largement (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#habiliter-des-quipes-multidisciplinaires-avec-des-perspectives-et-des-comptences-diverses">3.1&#160;Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#habiliter-des-quipes-multidisciplinaires-avec-des-perspectives-et-des-comptences-diverses">3.1&#160;Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées</a>
       </td>
       <td>
         <ul>
@@ -175,21 +175,21 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#reconnatre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-ides-crer-des-partenariats-et-collaborer-avec-un-large-ventail-de-partenaires">3.2&#160;Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#reconnatre-quune-organisation-ne-peut-pas-avoir-toutes-les-meilleures-ides-crer-des-partenariats-et-collaborer-avec-un-large-ventail-de-partenaires">3.2&#160;Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#renforcer-la-capacit--attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation">3.3&#160;Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#renforcer-la-capacit--attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation">3.3&#160;Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#partager-et-collaborer--lextrieur-tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-rutiliser">3.4&#160;Partager et collaborer à l’extérieur, établir un lien avec le travail des autres et fournir des ressources que d’autres peuvent réutiliser</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#partager-et-collaborer--lextrieur-tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-rutiliser">3.4&#160;Partager et collaborer à l’extérieur, établir un lien avec le travail des autres et fournir des ressources que d’autres peuvent réutiliser</a>
       </td>
       <td>
         <ul>
@@ -204,17 +204,17 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td rowspan="5">
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-habiliter-personnel-fournir-meilleurs-services.html">4.&#160;Habiliter le personnel à fournir de meilleurs services</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-permettre-personnel-offrir-meilleurs-services.html">4.&#160;Offrir des possibilités continues de formation et d’apprentissage afin d’améliorer sans cesse les compétences de l’équipe et du grand réseau (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-habiliter-personnel-fournir-meilleurs-services.html#offrir-des-possibilits-de-formation-continue-et-dapprentissage-pour-amliorer-continuellement-les-comptences-de-lquipe-et-du-rseau-largi">4.1&#160;Offrir des possibilités de formation continue et d’apprentissage pour améliorer continuellement les compétences de l’équipe et du réseau élargi</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-permettre-personnel-offrir-meilleurs-services.html#offrir-des-possibilits-de-formation-continue-et-dapprentissage-pour-amliorer-continuellement-les-comptences-de-lquipe-et-du-rseau-largi">4.1&#160;Offrir des possibilités de formation continue et d’apprentissage pour améliorer continuellement les compétences de l’équipe et du réseau élargi</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-habiliter-personnel-fournir-meilleurs-services.html#assurez-vous-que-le-personnel-a-accs-aux-outils-et-aux-technologies-dont-il-a-besoin-pour-innover">4.2&#160;Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-permettre-personnel-offrir-meilleurs-services.html#assurez-vous-que-le-personnel-a-accs-aux-outils-et-aux-technologies-dont-il-a-besoin-pour-innover">4.2&#160;Veiller à ce que le personnel ait accès aux outils et aux technologies dont il a besoin pour innover</a>
       </td>
       <td>
         <ul>
@@ -225,7 +225,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-habiliter-personnel-fournir-meilleurs-services.html#assurez-vous-que-les-bons-systmes-et-processus-sont-en-place-pour-que-lquipe-puisse-crer">4.3&#160;Assurez-vous que les bons systèmes et processus sont en place pour que l’équipe puisse créer</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-permettre-personnel-offrir-meilleurs-services.html#assurez-vous-que-les-bons-systmes-et-processus-sont-en-place-pour-que-lquipe-puisse-crer">4.3&#160;Veiller à ce que l’équipe dispose des bons systèmes et processus pour créer</a>
       </td>
       <td>
         <ul>
@@ -236,14 +236,14 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-habiliter-personnel-fournir-meilleurs-services.html#permettre-aux-quipes-de-prendre-des-dcisions-tout-au-long-de-la-conception-de-la-construction-et-du-fonctionnement-du-service-et-leur-permettre-dapprendre-de-leurs-erreurs">4.4&#160;Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d’apprendre de leurs erreurs</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-permettre-personnel-offrir-meilleurs-services.html#permettre-aux-quipes-de-prendre-des-dcisions-tout-au-long-de-la-conception-de-la-construction-et-du-fonctionnement-du-service-et-leur-permettre-dapprendre-de-leurs-erreurs">4.4&#160;Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et de l’exploitation du service et leur permettre d’apprendre de leurs erreurs</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-habiliter-personnel-fournir-meilleurs-services.html#rendre-une-personne-responsable-du-service">4.5&#160;Rendre une personne responsable du service</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-permettre-personnel-offrir-meilleurs-services.html#rendre-une-personne-responsable-du-service">4.5&#160;Rendre une personne responsable du service</a>
       </td>
       <td>
         <ul>
@@ -253,10 +253,10 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td rowspan="5">
-        <a href="5-work-in-open-by-default.md">5.&#160;Work in the open by default</a>
+        <a href="5-travailler-ouvertement-par-defaut.md">5.&#160;Travailler ouvertement par défaut (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#rendre-toutes-les-donnes-et-informations-non-sensibles-ouvertes-au-monde-extrieur-pour-les-partager-et-les-rutiliser-sous-une-licence-ouverte">5.1&#160;Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#rendre-toutes-les-donnes-et-informations-non-sensibles-ouvertes-au-monde-extrieur-pour-les-partager-et-les-rutiliser-sous-une-licence-ouverte">5.1&#160;Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte</a>
       </td>
       <td>
         <ul>
@@ -266,14 +266,14 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#soyez-transparent-avec-les-objectifs-et-publiez-les-donnes-de-performance-en-temps-rel">5.2&#160;Soyez transparent avec les objectifs et publiez les données de performance en temps réel</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#soyez-transparent-avec-les-objectifs-et-publiez-les-donnes-de-performance-en-temps-rel">5.2&#160;Être transparent avec les objectifs et publier des données sur le rendement en temps réel</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#mesurez-et-surveillez-lefficacit-la-valeur-et-les-consquences-de-votre-service-et-signalez-publiquement">5.3&#160;Mesurez et surveillez l’efficacité, la valeur et les conséquences de votre service et signalez publiquement</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#mesurez-et-surveillez-lefficacit-la-valeur-et-les-consquences-de-votre-service-et-signalez-publiquement">5.3&#160;Mesurer et surveiller l’efficacité, la valeur et les conséquences du service et en faire rapport au public</a>
       </td>
       <td>
         <ul>
@@ -283,7 +283,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#soyez-transparent-sur-la-faon-dont-vous-travaillez-et-justifiez-les-dcisions-que-vous-prenez">5.4&#160;Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#soyez-transparent-sur-la-faon-dont-vous-travaillez-et-justifiez-les-dcisions-que-vous-prenez">5.4&#160;Être transparent sur la façon de travailler et justifier les décisions prises</a>
       </td>
       <td>
         <ul>
@@ -294,7 +294,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable">5.5&#160;Travailler à l’air libre et rendre le code source ouvert et réutilisable</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable">5.5&#160;Travailler à l’air libre et rendre le code source ouvert et réutilisable</a>
       </td>
       <td>
         <ul>
@@ -310,10 +310,10 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td rowspan="6">
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html">6.&#160;Utiliser des standards et solutions ouverts </a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html">6.&#160;Utiliser des normes et des solutions ouvertes (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires">6.1&#160;Tirer parti des normes ouvertes et adopter des pratiques exemplaires</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#tirer-parti-des-normes-ouvertes-et-adopter-des-pratiques-exemplaires">6.1&#160;Tirer parti des normes ouvertes et adopter les pratiques exemplaires</a>
       </td>
       <td>
         <ul>
@@ -328,7 +328,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#utiliser-et-rutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-prouves">6.2&#160;Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#utiliser-et-rutiliser-des-solutions-des-approches-et-des-plates-formes-gouvernementales-courantes-et-prouves">6.2&#160;Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes</a>
       </td>
       <td>
         <ul>
@@ -350,7 +350,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#conception-pour-linteroprabilit-permettant-aux-services-dtre-dcouverts-et-exploits-par-la-communaut">6.3&#160;Conception pour l’interopérabilité, permettant aux services d’être découverts et exploités par la communauté</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#conception-pour-linteroprabilit-permettant-aux-services-dtre-dcouverts-et-exploits-par-la-communaut">6.3&#160;Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services</a>
       </td>
       <td>
         <ul>
@@ -362,14 +362,14 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#ouvrez-les-donnes-les-transactions-et-les-rgles-mtier-qui-sous-tendent-un-service">6.4&#160;Ouvrez les données, les transactions et les règles métier qui sous-tendent un service</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#ouvrez-les-donnes-les-transactions-et-les-rgles-mtier-qui-sous-tendent-un-service">6.4&#160;Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#concevoir-crer-et-tester-des-services-numriques-de-bout-en-bout">6.5&#160;Concevoir, créer et tester des services numériques de bout en bout</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#concevoir-crer-et-tester-des-services-numriques-de-bout-en-bout">6.5&#160;Concevoir, créer et tester des services numériques de bout en bout</a>
       </td>
       <td>
         <ul>
@@ -384,7 +384,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#nuage-dabord">6.6&#160;Nuage d’abord</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#nuage-dabord">6.6&#160;Nuage d’abord</a>
       </td>
       <td>
         <ul>
@@ -397,10 +397,10 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td rowspan="4">
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html">7.&#160;Itérer et améliorer fréquemment</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html">7.&#160;Effectuer des itérations et des améliorations constamment (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#construire-de-manire-agile-et-amliorer-continuellement-en-rponse-aux-besoins-des-utilisateurs">7.1&#160;Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#construire-de-manire-agile-et-amliorer-continuellement-en-rponse-aux-besoins-des-utilisateurs">7.1&#160;Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs</a>
       </td>
       <td>
         <ul>
@@ -417,14 +417,14 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#accepter-que-le-changement-est-invitable-et-utiliser-des-stratgies-et-des-outils-adaptatifs-pour-de-nouveaux-dveloppements">7.2&#160;ccepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#accepter-que-le-changement-est-invitable-et-utiliser-des-stratgies-et-des-outils-adaptatifs-pour-de-nouveaux-dveloppements">7.2&#160;Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptés pour la poursuite du développement</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#embrasser-et-ragir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilit">7.3&#160;Embrasser et réagir aux changements dans l’environnement et concevoir pour la durabilité</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#embrasser-et-ragir-aux-changements-dans-lenvironnement-et-concevoir-pour-la-durabilit">7.3&#160;Accepter les changements d’environnement et de conception pour la durabilité et y réagir</a>
       </td>
       <td>
         <ul>
@@ -434,7 +434,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html#commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothses-en-utilisant-les-preuves-comme-base-de-litration">7.4&#160;Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l’itération</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html#commencer-petit-et-tester-continuellement-les-conceptions-et-les-hypothses-en-utilisant-les-preuves-comme-base-de-litration">7.4&#160;Commencer à échelle réduite et tester continuellement les conceptions et les hypothèses, en utilisant des données probantes comme base d’itération</a>
       </td>
       <td>
         <ul>
@@ -446,48 +446,48 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td rowspan="4">
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html">8.&#160;Concevoir des services éthiques</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html">8.&#160;Concevoir des services éthiques (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#soyez-transparent-au-sujet-des-prjugs-personnels-et-organisationnels-et-indiquez-comment-ils-sont-traits">8.1&#160;Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités</a>
-      </td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#valuer-limpact-total-sur-les-utilisateurs-et-les-communauts">8.2&#160;Évaluer l’impact total sur les utilisateurs et les communautés</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#soyez-transparent-au-sujet-des-prjugs-personnels-et-organisationnels-et-indiquez-comment-ils-sont-traits">8.1&#160;Être transparent au sujet des préjugés personnels et organisationnels et indiquer comment ils sont traités</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#se-conformer-aux-directives-thiques-dans-la-conception-de-systmes-automatiss">8.3&#160;Se conformer aux directives éthiques dans la conception de systèmes automatisés</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#valuer-limpact-total-sur-les-utilisateurs-et-les-communauts">8.2&#160;Évaluer l’impact total sur les utilisateurs et les collectivités</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#quilibrer-les-compromis-entre-innovation-et-inclusivit">8.4&#160;Équilibrer les compromis entre innovation et inclusivité</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#se-conformer-aux-directives-thiques-dans-la-conception-de-systmes-automatiss">8.3&#160;Respecter les lignes directrices éthiques dans la conception des systèmes automatisés</a>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#quilibrer-les-compromis-entre-innovation-et-inclusivit">8.4&#160;Équilibrer les arbitrages à faire entre l’innovation et l’inclusivité</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td rowspan="4">
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html">9.&#160;Aborder les risques de sécurité et de confidentialité</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html">9.&#160;Gérer les risques en matière de sécurité et de protection des renseignements personnels (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html#adopter-une-approche-quilibre-de-gestion-des-risques-en-mettant-en-uvre-des-mesures-de-scurit-et-de-confidentialit-appropries">9.1&#160;Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html#adopter-une-approche-quilibre-de-gestion-des-risques-en-mettant-en-uvre-des-mesures-de-scurit-et-de-confidentialit-appropries">9.1&#160;Adopter une approche équilibrée de la gestion des risques en appliquant les mesures appropriées en matière de protection des renseignements personnels et de sécurité</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html#innover-et-samliorer-tout-en-rpondant-aux-attentes-du-public-quant--la-protection-de-la-confidentialit-des-donnes">9.2&#160;Innover et s’améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html#innover-et-samliorer-tout-en-rpondant-aux-attentes-du-public-quant--la-protection-de-la-confidentialit-des-donnes">9.2&#160;Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels</a>
       </td>
       <td>
         <ul>
@@ -499,7 +499,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html#faites-en-sorte-que-la-scurit-soit-fluide-et-sans-friction-en-quilibrant-scurit-et-commodit">9.3&#160;Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html#faites-en-sorte-que-la-scurit-soit-fluide-et-sans-friction-en-quilibrant-scurit-et-commodit">9.3&#160;Rendre la sécurité transparente et sans friction, en équilibrant sécurité et commodité</a>
       </td>
       <td>
         <ul>
@@ -512,7 +512,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html#sassurer-que-les-services-sont-conformes--toutes-les-exigences-lgislatives-et-rglementaires">9.4&#160;S’assurer que les services sont conformes à toutes les exigences législatives et réglementaires</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html#sassurer-que-les-services-sont-conformes--toutes-les-exigences-lgislatives-et-rglementaires">9.4&#160;Veiller à ce que les services respectent toutes les exigences de la loi et de la réglementation</a>
       </td>
       <td>
         <ul>
@@ -525,10 +525,10 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td rowspan="6">
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html">10.&#160;Soyez de bons gestionnaires de données </a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html">10.&#160;Être de bons utilisateurs de données (ébauche)</a>
       </td>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#collecter-les-donnes-une-fois-pour-viter-la-duplication">10.1&#160;Collecter les données une fois pour éviter la duplication</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#collecter-les-donnes-une-fois-pour-viter-la-duplication">10.1&#160;Recueillir les données une seule fois pour éviter le double emploi</a>
       </td>
       <td>
         <ul>
@@ -538,7 +538,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#rendre-les-informations-et-les-donnes-gouvernementales-pertinentes-facilement-accessibles-pour-aider--la-prise-de-dcision">10.2&#160;Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#rendre-les-informations-et-les-donnes-gouvernementales-pertinentes-facilement-accessibles-pour-aider--la-prise-de-dcision">10.2&#160;Rendre facilement accessibles l’information et les données gouvernementales pertinentes pour faciliter la prise de décisions</a>
       </td>
       <td>
         <ul>
@@ -548,7 +548,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#assurez-vous-que-les-donnes-sont-collectes-de-manire-standard-afin-quelles-puissent-tre-facilement-intgres-et-rutilises-par-dautres">10.3&#160;Assurez-vous que les données sont collectées de manière standard afin qu’elles puissent être facilement intégrées et réutilisées par d’autres</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#assurez-vous-que-les-donnes-sont-collectes-de-manire-standard-afin-quelles-puissent-tre-facilement-intgres-et-rutilises-par-dautres">10.3&#160;Veiller à ce que les données soient recueillies de façon normalisée pour qu’elles soient facilement intégrables et réutilisables par les autres</a>
       </td>
       <td>
         <ul>
@@ -560,14 +560,14 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#tenir-dment-compte-de-la-conservation-et-de-la-conservation-numriques">10.4&#160;Tenir dûment compte de la conservation et de la conservation numériques</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#tenir-dment-compte-de-la-conservation-et-de-la-conservation-numriques">10.4&#160;Tenir compte de la préservation et de la conservation numériques</a>
       </td>
       <td>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#assurer-les-donnes-et-dans-la-formation-est-complte-prcise-et--jour">10.5&#160;Assurer les données et dans la formation est complète, précise et à jour</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#assurer-les-donnes-et-dans-la-formation-est-complte-prcise-et--jour">10.5&#160;Assurer les données et dans la formation est complète, précise et à jour</a>
       </td>
       <td>
         <ul>
@@ -578,7 +578,7 @@ Le tableau suivant contient une comparaison des normes et lignes directrices num
     </tr>
     <tr>
       <td>
-        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#assurez-vous-que-les-donnes-sont-bien-structures-intuitives-et-dans-un-format-facile--intgrer-et-rutiliser-par-dautres">10.6&#160;Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d’autres</a>
+        <a href="https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#assurez-vous-que-les-donnes-sont-bien-structures-intuitives-et-dans-un-format-facile--intgrer-et-rutiliser-par-dautres">10.6&#160;Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d’autres</a>
       </td>
       <td>
       </td>
