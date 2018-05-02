@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "3. Collaborez largement (ébauche)"
+title:  "3. Collaborer largement (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 3-collaborate-widely
@@ -35,7 +35,7 @@ altLangPage: 3-collaborate-widely
 
 <section class="dpgn-section-guideline">
 
-## 3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses
+## 3.1 Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées
 
 <div class="dpgn-section-intro-guideline">
 
@@ -138,7 +138,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 <section class="dpgn-section-guideline">
 
-## 3.2 Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires
+## 3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un éventail diversifié de partenaires
 
 <div class="dpgn-section-intro-guideline">
 
@@ -192,7 +192,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 <section class="dpgn-section-guideline">
 
-## 3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation
+## 3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation
 
 <div class="dpgn-section-intro-guideline">
 
@@ -221,7 +221,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 <section class="dpgn-section-guideline">
 
-## 3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser
+## 3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser
 
 <div class="dpgn-section-intro-guideline">
 
