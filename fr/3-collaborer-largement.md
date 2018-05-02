@@ -29,7 +29,7 @@ altLangPage: 3-collaborate-widely
 - [1.1 Ne rien construire pour l’utilisateur sans sa participation (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu)
 - [1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
 - [2.3 Co-créer avec les personnes qui ont des besoins distincts, en étant inclusif dès le début (Norme&#160;2&#160;: Intégrer l’accessibilité dès le départ)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html#co-crer-avec-des-personnes-ayant-des-besoins-distincts-en-tant-inclusif-ds-le-dbut)
-- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: 5.	Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
+- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
 
 </div>
 
