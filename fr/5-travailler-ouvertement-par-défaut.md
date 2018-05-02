@@ -36,7 +36,7 @@ altLangPage: 5-work-in-open-by-default
 
 <section class="dpgn-section-guideline">
 
-## 5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte
+## 5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte
 
 <div class="dpgn-section-intro-guideline">
 
@@ -81,7 +81,7 @@ altLangPage: 5-work-in-open-by-default
 
 <section class="dpgn-section-guideline">
 
-## 5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel
+## 5.2 Être transparent avec les objectifs et publier des données sur le rendement en temps réel
 
 <div class="dpgn-section-intro-guideline">
 
@@ -108,7 +108,7 @@ altLangPage: 5-work-in-open-by-default
 
 <section class="dpgn-section-guideline">
 
-## 5.3 Mesurez et surveillez l'efficacité, la valeur et les conséquences de votre service et signalez publiquement
+## 5.3 Mesurer et surveiller l’efficacité, la valeur et les conséquences du service et en faire rapport au public
 
 <div class="dpgn-section-intro-guideline">
 
@@ -183,7 +183,7 @@ Setting performance indicators allows you to continuously improve your service b
 
 <section class="dpgn-section-guideline">
 
-## 5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez
+## 5.4 Être transparent sur la façon de travailler et justifier les décisions prises
 
 <div class="dpgn-section-intro-guideline">
 
