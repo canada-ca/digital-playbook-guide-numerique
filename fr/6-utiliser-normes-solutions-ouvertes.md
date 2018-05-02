@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "6. Utiliser des standards et solutions ouverts (ébauche)"
+title:  "6. Utiliser des normes et des solutions ouvertes (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 6-use-open-standards-solutions
@@ -36,7 +36,7 @@ altLangPage: 6-use-open-standards-solutions
 
 <section class="dpgn-section-guideline">
 
-## 6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires
+## 6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires
 
 <div class="dpgn-section-intro-guideline">
 
@@ -136,7 +136,7 @@ Using open standards and common government platforms helps you to:
 
 <section class="dpgn-section-guideline">
 
-## 6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées
+## 6.2 Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes
 
 <div class="dpgn-section-intro-guideline">
 
@@ -222,7 +222,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 <section class="dpgn-section-guideline">
 
-## 6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté
+## 6.3 Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services
 
 <div class="dpgn-section-intro-guideline">
 
@@ -275,7 +275,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 <section class="dpgn-section-guideline">
 
-## 6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service
+## 6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service
 
 <div class="dpgn-section-intro-guideline">
 
