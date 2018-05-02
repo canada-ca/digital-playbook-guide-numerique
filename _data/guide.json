@@ -176,7 +176,7 @@
       ],
       "guidelines": [
         {
-          "title": "1.1 Construire rien pour l’utilisateur, sans que l’utilisateur soit impliqué",
+          "title": "1.1 Ne rien construire pour l’utilisateur sans sa participation",
           "tags": [],
           "introduction": {
             "content": [
@@ -265,7 +265,7 @@
           }
         },
         {
-          "title": "1.2 S’impliquer auprès des personnes qui ont le service et le faire participer à toutes les étapes, de la planification à l’amélioration continuer",
+          "title": "1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue",
           "tags": [],
           "introduction": {
             "content": [
@@ -400,7 +400,7 @@
           }
         },
         {
-          "title": "1.3 Comprendre le contexte dans lequel les gens interagissent et conçoivent des solutions adaptées à leurs besoins",
+          "title": "1.3 Comprendre le contexte dans lequel les personnes interagissent et concevoir des solutions propres à répondre à leurs besoins",
           "tags": [],
           "introduction": {
             "content": [
@@ -420,7 +420,7 @@
           }
         },
         {
-          "title": "1.4 Clairement articuler and understand the problem of about and use the data for evidence",
+          "title": "1.4 Définir et comprendre clairement le problème de bout en bout et utiliser des données pour démontrer qu’il est résolu",
           "tags": [],
           "introduction": {
             "content": [
@@ -522,7 +522,7 @@
       ]
     },
     {
-      "title": "2. Construire dans l'accessibilité dès le début (ébauche)",
+      "title": "2. Intégrer l’accessibilité dès le départ (ébauche)",
       "tags": [],
       "introduction": {
         "content": [
@@ -565,7 +565,7 @@
       ],
       "guidelines": [
         {
-          "title": "2.1 Construire pour ceux qui ont les plus grands besoins et cela fonctionnera pour tout le monde",
+          "title": "2.1 Construire pour ceux dont le besoin est le plus grand et cela fonctionnera pour tous les autres",
           "tags": [],
           "introduction": {
             "content": [
@@ -771,7 +771,7 @@
           }
         },
         {
-          "title": "2.2 Les services devraient respecter ou dépasser les normes d’accessibilité, et ne devraient pas être pénibles à utiliser",
+          "title": "2.2 Les services devraient respecter ou dépasser les normes d’accessibilité et leur utilisation ne devrait pas être difficile",
           "tags": [],
           "introduction": {
             "content": [
@@ -791,7 +791,7 @@
           }
         },
         {
-          "title": "2.3 Co-créer avec des personnes ayant des besoins distincts, en étant inclusif dès le début",
+          "title": "2.3 Co-créer avec les personnes qui ont des besoins distincts, en étant inclusif dès le début",
           "tags": [],
           "introduction": {
             "content": [
@@ -811,7 +811,7 @@
           }
         },
         {
-          "title": "2.4 Prendre en compte les contraintes possibles d’un utilisateur lors de la conception de services",
+          "title": "2.4 Tenir compte des contraintes possibles de l’utilisateur dans la conception des services",
           "tags": [],
           "introduction": {
             "content": [
@@ -833,7 +833,7 @@
       ]
     },
     {
-      "title": "3. Collaborez largement (ébauche)",
+      "title": "3. Collaborer largement (ébauche)",
       "tags": [],
       "introduction": {
         "content": [
@@ -843,7 +843,7 @@
       ],
       "guidelines": [
         {
-          "title": "3.1 Habiliter des équipes multidisciplinaires avec des perspectives et des compétences diverses",
+          "title": "3.1 Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées",
           "tags": [],
           "introduction": {
             "content": [
@@ -863,7 +863,7 @@
           }
         },
         {
-          "title": "3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un large éventail de partenaires",
+          "title": "3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un éventail diversifié de partenaires",
           "tags": [],
           "introduction": {
             "content": [
@@ -883,7 +883,7 @@
           }
         },
         {
-          "title": "3.3 Renforcer la capacité à attirer dynamiquement de nouveaux partenaires pour la co-innovation",
+          "title": "3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation",
           "tags": [],
           "introduction": {
             "content": [
@@ -903,7 +903,7 @@
           }
         },
         {
-          "title": "3.4 Partager et collaborer à l’extérieur, établir un lien avec le travail des autres et fournir des ressources que d’autres peuvent réutiliser",
+          "title": "3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser",
           "tags": [],
           "introduction": {
             "content": [
@@ -925,7 +925,7 @@
       ]
     },
     {
-      "title": "4. Habiliter le personnel à fournir de meilleurs services (ébauche)",
+      "title": "4. Permettre au personnel d’offrir de meilleurs services (ébauche)",
       "tags": [],
       "introduction": {
         "content": [
@@ -935,7 +935,7 @@
       ],
       "guidelines": [
         {
-          "title": "4.1 Offrir des possibilités de formation continue et d’apprentissage pour améliorer continuellement les compétences de l’équipe et du réseau élargi",
+          "title": "4.1 Offrir des possibilités continues de formation et d’apprentissage afin d’améliorer sans cesse les compétences de l’équipe et du grand réseau",
           "tags": [],
           "introduction": {
             "content": [
@@ -955,7 +955,7 @@
           }
         },
         {
-          "title": "4.2 Assurez-vous que le personnel a accès aux outils et aux technologies dont il a besoin pour innover",
+          "title": "4.2 Veiller à ce que le personnel ait accès aux outils et aux technologies dont il a besoin pour innover",
           "tags": [],
           "introduction": {
             "content": [
@@ -975,7 +975,7 @@
           }
         },
         {
-          "title": "4.3 Assurez-vous que les bons systèmes et processus sont en place pour que l’équipe puisse créer",
+          "title": "4.3 Veiller à ce que l’équipe dispose des bons systèmes et processus pour créer",
           "tags": [],
           "introduction": {
             "content": [
@@ -995,7 +995,7 @@
           }
         },
         {
-          "title": "4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et du fonctionnement du service et leur permettre d’apprendre de leurs erreurs",
+          "title": "4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et de l’exploitation du service et leur permettre d’apprendre de leurs erreurs",
           "tags": [],
           "introduction": {
             "content": [
@@ -1037,7 +1037,7 @@
       ]
     },
     {
-      "title": "5. Travailler à l'air libre par défaut (ébauche)",
+      "title": "5. Travailler ouvertement par défaut (ébauche)",
       "tags": [],
       "introduction": {
         "content": [
@@ -1047,7 +1047,7 @@
       ],
       "guidelines": [
         {
-          "title": "5.1 Rendre toutes les données et informations non sensibles ouvertes au monde extérieur pour les partager et les réutiliser sous une licence ouverte",
+          "title": "5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte",
           "tags": [],
           "introduction": {
             "content": [
@@ -1067,7 +1067,7 @@
           }
         },
         {
-          "title": "5.2 Soyez transparent avec les objectifs et publiez les données de performance en temps réel",
+          "title": "5.2 Être transparent avec les objectifs et publier des données sur le rendement en temps réel",
           "tags": [],
           "introduction": {
             "content": [
@@ -1087,7 +1087,7 @@
           }
         },
         {
-          "title": "5.3 Mesurez et surveillez l’efficacité, la valeur et les conséquences de votre service et signalez publiquement",
+          "title": "5.3 Mesurer et surveiller l’efficacité, la valeur et les conséquences du service et en faire rapport au public",
           "tags": [],
           "introduction": {
             "content": [
@@ -1107,7 +1107,7 @@
           }
         },
         {
-          "title": "5.4 Soyez transparent sur la façon dont vous travaillez et justifiez les décisions que vous prenez",
+          "title": "5.4 Être transparent sur la façon de travailler et justifier les décisions prises",
           "tags": [],
           "introduction": {
             "content": [
@@ -1149,7 +1149,7 @@
       ]
     },
     {
-      "title": "6. Utiliser des standards et solutions ouverts (ébauche)",
+      "title": "6. Utiliser des normes et des solutions ouvertes (ébauche)",
       "tags": [],
       "introduction": {
         "content": [
@@ -1159,7 +1159,7 @@
       ],
       "guidelines": [
         {
-          "title": "6.1 Tirer parti des normes ouvertes et adopter des pratiques exemplaires",
+          "title": "6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires",
           "tags": [],
           "introduction": {
             "content": [
@@ -1179,7 +1179,7 @@
           }
         },
         {
-          "title": "6.2 Utiliser et réutiliser des solutions, des approches et des plates-formes gouvernementales courantes et éprouvées",
+          "title": "6.2 Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes",
           "tags": [],
           "introduction": {
             "content": [
@@ -1199,7 +1199,7 @@
           }
         },
         {
-          "title": "6.3 Conception pour l’interopérabilité, permettant aux services d’être découverts et exploités par la communauté",
+          "title": "6.3 Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services",
           "tags": [],
           "introduction": {
             "content": [
@@ -1219,7 +1219,7 @@
           }
         },
         {
-          "title": "6.4 Ouvrez les données, les transactions et les règles métier qui sous-tendent un service",
+          "title": "6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service",
           "tags": [],
           "introduction": {
             "content": [
@@ -1281,7 +1281,7 @@
       ]
     },
     {
-      "title": "7. Itérer et améliorer fréquemment (ébauche)",
+      "title": "7. Effectuer des itérations et des améliorations constamment (ébauche)",
       "tags": [],
       "introduction": {
         "content": [
@@ -1291,7 +1291,7 @@
       ],
       "guidelines": [
         {
-          "title": "7.1 Construire de manière agile et améliorer continuellement en réponse aux besoins des utilisateurs",
+          "title": "7.1 Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs",
           "tags": [],
           "introduction": {
             "content": [
@@ -1311,7 +1311,7 @@
           }
         },
         {
-          "title": "7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptatifs pour de nouveaux développements",
+          "title": "7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptés pour la poursuite du développement",
           "tags": [],
           "introduction": {
             "content": [
@@ -1331,7 +1331,7 @@
           }
         },
         {
-          "title": "7.3 Embrasser et réagir aux changements dans l’environnement et concevoir pour la durabilité",
+          "title": "7.3 Accepter les changements d’environnement et de conception pour la durabilité et y réagir",
           "tags": [],
           "introduction": {
             "content": [
@@ -1351,7 +1351,7 @@
           }
         },
         {
-          "title": "7.4 Commencer petit et tester continuellement les conceptions et les hypothèses, en utilisant les preuves comme base de l’itération",
+          "title": "7.4 Commencer à échelle réduite et tester continuellement les conceptions et les hypothèses, en utilisant des données probantes comme base d’itération",
           "tags": [],
           "introduction": {
             "content": [
@@ -1383,7 +1383,7 @@
       ],
       "guidelines": [
         {
-          "title": "8.1 Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités",
+          "title": "8.1 Être transparent au sujet des préjugés personnels et organisationnels et indiquer comment ils sont traités",
           "tags": [],
           "introduction": {
             "content": [
@@ -1403,7 +1403,7 @@
           }
         },
         {
-          "title": "8.2 Évaluer l’impact total sur les utilisateurs et les communautés",
+          "title": "8.2 Évaluer l’impact total sur les utilisateurs et les collectivités",
           "tags": [],
           "introduction": {
             "content": [
@@ -1423,7 +1423,7 @@
           }
         },
         {
-          "title": "8.3 Se conformer aux directives éthiques dans la conception de systèmes automatisés",
+          "title": "8.3 Respecter les lignes directrices éthiques dans la conception des systèmes automatisés",
           "tags": [],
           "introduction": {
             "content": [
@@ -1443,7 +1443,7 @@
           }
         },
         {
-          "title": "8.4 Équilibrer les compromis entre innovation et inclusivité",
+          "title": "8.4 Équilibrer les arbitrages à faire entre l’innovation et l’inclusivité",
           "tags": [],
           "introduction": {
             "content": [
@@ -1465,7 +1465,7 @@
       ]
     },
     {
-      "title": "9. Aborder les risques de sécurité et de confidentialité (ébauche)",
+      "title": "9. Gérer les risques en matière de sécurité et de protection des renseignements personnels (ébauche)",
       "tags": [],
       "introduction": {
         "content": [
@@ -1475,7 +1475,7 @@
       ],
       "guidelines": [
         {
-          "title": "9.1 Adopter une approche équilibrée de gestion des risques en mettant en œuvre des mesures de sécurité et de confidentialité appropriées",
+          "title": "9.1 Adopter une approche équilibrée de la gestion des risques en appliquant les mesures appropriées en matière de protection des renseignements personnels et de sécurité",
           "tags": [],
           "introduction": {
             "content": [
@@ -1495,7 +1495,7 @@
           }
         },
         {
-          "title": "9.2 Innover et s’améliorer tout en répondant aux attentes du public quant à la protection de la confidentialité des données",
+          "title": "9.2 Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels",
           "tags": [],
           "introduction": {
             "content": [
@@ -1515,7 +1515,7 @@
           }
         },
         {
-          "title": "9.3 Faites en sorte que la sécurité soit fluide et sans friction, en équilibrant sécurité et commodité",
+          "title": "9.3 Rendre la sécurité transparente et sans friction, en équilibrant sécurité et commodité",
           "tags": [],
           "introduction": {
             "content": [
@@ -1535,7 +1535,7 @@
           }
         },
         {
-          "title": "9.4 S’assurer que les services sont conformes à toutes les exigences législatives et réglementaires",
+          "title": "9.4 Veiller à ce que les services respectent toutes les exigences de la loi et de la réglementation",
           "tags": [],
           "introduction": {
             "content": [
@@ -1557,7 +1557,7 @@
       ]
     },
     {
-      "title": "10. Soyez de bons gestionnaires de données (ébauche)",
+      "title": "10. Être de bons utilisateurs de données (ébauche)",
       "tags": [],
       "introduction": {
         "content": [
@@ -1567,7 +1567,7 @@
       ],
       "guidelines": [
         {
-          "title": "10.1 Collecter les données une fois pour éviter la duplication",
+          "title": "10.1 Recueillir les données une seule fois pour éviter le double emploi",
           "tags": [],
           "introduction": {
             "content": [
@@ -1587,7 +1587,7 @@
           }
         },
         {
-          "title": "10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision",
+          "title": "10.2 Rendre facilement accessibles l’information et les données gouvernementales pertinentes pour faciliter la prise de décisions",
           "tags": [],
           "introduction": {
             "content": [
@@ -1607,7 +1607,7 @@
           }
         },
         {
-          "title": "10.3 Assurez-vous que les données sont collectées de manière standard afin qu’elles puissent être facilement intégrées et réutilisées par d’autres",
+          "title": "10.3 Veiller à ce que les données soient recueillies de façon normalisée pour qu’elles soient facilement intégrables et réutilisables par les autres",
           "tags": [],
           "introduction": {
             "content": [
@@ -1627,7 +1627,7 @@
           }
         },
         {
-          "title": "10.4 Tenir dûment compte de la conservation et de la conservation numériques",
+          "title": "10.4 Tenir compte de la préservation et de la conservation numériques",
           "tags": [],
           "introduction": {
             "content": [
