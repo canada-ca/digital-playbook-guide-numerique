@@ -30,25 +30,25 @@
 
 # Guide numérique du gouvernement du Canada (ébauche)
 
-**Améliorer les services gouvernementaux dans l’ère numérique.** Notre but est de délivrer des services facilement accessibles, intégrés, et fiables aux canadiennes et aux canadiens. En tant que gouvernement, nous devons éviter les projets monolithiques ayant des designs rigides élaborés en silos et avec un minimum de consultation avec les utilisateurs. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, servira de fondation pour le virement du gouvernement du Canada vers un gouvernement plus agile, ouvert, et qui réponds aux besoins des utilisateurs. Ceci sera un parcours.
+**Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
 
-**Il faut tout un village.** Le but est de co-créer ce guide numérique avec le public et les groupes d’intervenants clés pour aider le gouvernement à créer et à délivrer d’excellents services à ses citoyennes et ses citoyens. Nous avons la conviction qu’il sera nécessaire que toute une communauté d’individus ayant des profils et des perspectives divers travaille ensemble pour définir et partager des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Il va de soi que ce guide sera fondé sur les normes numériques du gouvernement du Canada, ainsi que le travail innovateur accompli par les Royaumes-Unis, les États-Unis, l’Australie, et la province de l’Ontario. Merci.
+**Il faut tout un village.** Le but est de créer ce guide numérique conjointement avec le public et et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Nous avons la conviction qu’il sera nécessaire qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour définir et contribuer à des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.
 
-**Ensemble nous le ferons mieux.** Ceci sera un guide évolutif que nous mettrons à jour et évoluerons constamment au fur et à mesure que notre compréhension des complexités de son application évoluera. Ce guide reflètera notre façon de concevoir pour nous même et pour les autres en allant dans le détail et en fournissant des conseils et des lignes directrices. Nous ne pouvons le faire seul.
+**Ensemble nous le ferons mieux.** Ceci est un guide vivant, et nous continuerons de le mettre à jour et de le faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à l'amélioration du guide. Ce guide reflètera la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
 
 **Normes numériques&#160;:**
 
 - [Aperçu](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/apercu.html)
 - [1. Concevoir avec les utilisateurs](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html)
-- [2. Construire dans l'accessibilité dès le début](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-construire-dans-accessibilite-des-debut.html)
-- [3. Collaborez largement](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html)
-- [4. Habiliter le personnel à fournir des meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-habiliter-personnel-fournir-meilleurs-services.html)
-- [5. Travailler à l'air libre par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-air-libre-par-defaut.html)
-- [6. Utiliser des standards et solutions ouverts](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html)
-- [7. Itérer et l'autre](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-iterer-ameliorer-frequemment.html)
+- [2. Intégrer l’accessibilité dès le départ](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html)
+- [3. Collaborer largement](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html)
+- [4. Permettre au personnel d’offrir de meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-permettre-personnel-offrir-meilleurs-services.html)
+- [5. Travailler ouvertement par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html)
+- [6. Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html)
+- [7. Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html)
 - [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html)
-- [9. Aborder les risques de sécurité et de confidentialité](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-aborder-risques-securite-confidentialite.html)
-- [10. Soyez de bons gestionnaires de données](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html)
+- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
+- [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html)
 
 **Comparaison du guide numérique à des ressources similaires&#160;:**
 
