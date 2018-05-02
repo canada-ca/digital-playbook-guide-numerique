@@ -32,15 +32,15 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 **Normes numériques&#160;:**
 
 - [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
-- [2. Construire dans l'accessibilité dès le début](2-construire-dans-accessibilite-des-debut.md)
-- [3. Collaborez largement](3-collaborez-largement.md)
-- [4. Habiliter le personnel à fournir des meilleurs services](4-habiliter-personnel-fournir-meilleurs-services.md)
-- [5. Travailler à l'air libre par défaut](5-travailler-air-libre-par-defaut.md)
-- [6. Utiliser des standards et solutions ouverts](6-utiliser-standards-solutions-ouverts.md)
-- [7. Itérer et l'autre](7-iterer-ameliorer-frequemment.md)
+- [2. Intégrer l’accessibilité dès le départ](2-integrer-accessibilite-des-depart.md)
+- [3. Collaborer largement](3-collaborer-largement.md)
+- [4. Permettre au personnel d’offrir de meilleurs services](4-permettre-personnel-offrir-meilleurs-services.md)
+- [5. Travailler ouvertement par défaut](5-travailler-ouvertement-par-defaut.md)
+- [6. Utiliser des normes et des solutions ouvertes](6-utiliser-normes-solutions-ouvertes.md)
+- [7. Effectuer des itérations et des améliorations constamment](7-effectuer-iterations-ameliorations-constamment.md)
 - [8. Concevoir des services éthiques](8-concevoir-services-ethiques.md)
-- [9. Aborder les risques de sécurité et de confidentialité](9-aborder-risques-securite-confidentialite.md)
-- [10. Soyez de bons gestionnaires de données](10-soyez-bons-gestionnaires-donnees.md)
+- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](9-gerer-risques-matiere-securite-protection-renseignements-personnels.md)
+- [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md)
 
 **Comparaison du guide numérique à des ressources similaires&#160;:**
 
