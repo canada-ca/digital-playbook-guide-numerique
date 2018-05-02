@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "5. Travailler à l'air libre par défaut (ébauche)"
+title:  "5. Travailler ouvertement par défaut (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 5-work-in-open-by-default
@@ -26,11 +26,11 @@ altLangPage: 5-work-in-open-by-default
 
 **Lignes directrices connexes :**
 
-- [3.4 Partager et collaborer à l'extérieur, établir un lien avec le travail des autres et fournir des ressources que d'autres peuvent réutiliser (Norme&#160;3&#160;: Collaborez largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborez-largement.html#partager-et-collaborer--lextrieur-tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-rutiliser)
-- [6.3 Conception pour l'interopérabilité, permettant aux services d'être découverts et exploités par la communauté (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#conception-pour-linteroprabilit-permettant-aux-services-dtre-dcouverts-et-exploits-par-la-communaut)
-- [6.4 Ouvrir les données, les transactions et les règles métier qui sous-tendent un service (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-standards-solutions-ouverts.html#ouvrez-les-donnes-les-transactions-et-les-rgles-mtier-qui-sous-tendent-un-service)
-- [8.1 Soyez transparent au sujet des préjugés personnels et organisationnels et indiquez comment ils sont traités (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#soyez-transparent-au-sujet-des-prjugs-personnels-et-organisationnels-et-indiquez-comment-ils-sont-traits)
-- [10.2 Rendre les informations et les données gouvernementales pertinentes facilement accessibles pour aider à la prise de décision (Norme&#160;10&#160;: Soyez de bons gestionnaires de données)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-soyez-bons-gestionnaires-donnees.html#rendre-les-informations-et-les-donnes-gouvernementales-pertinentes-facilement-accessibles-pour-aider--la-prise-de-dcision)
+- [3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#partager-et-collaborer--lextrieur-tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-rutiliser)
+- [6.3 Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#conception-pour-linteroprabilit-permettant-aux-services-dtre-dcouverts-et-exploits-par-la-communaut)
+- [6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#ouvrez-les-donnes-les-transactions-et-les-rgles-mtier-qui-sous-tendent-un-service)
+- [8.1 Être transparent au sujet des préjugés personnels et organisationnels et indiquer comment ils sont traités (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#soyez-transparent-au-sujet-des-prjugs-personnels-et-organisationnels-et-indiquez-comment-ils-sont-traits)
+- [10.2 Rendre facilement accessibles l’information et les données gouvernementales pertinentes pour faciliter la prise de décisions (Norme&#160;10&#160;: Être de bons utilisateurs de données)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#rendre-les-informations-et-les-donnes-gouvernementales-pertinentes-facilement-accessibles-pour-aider--la-prise-de-dcision)
 
 </div>
 
