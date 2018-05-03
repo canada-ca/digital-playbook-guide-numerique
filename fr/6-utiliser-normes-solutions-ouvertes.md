@@ -26,11 +26,7 @@ altLangPage: 6-use-open-standards-solutions
 
 **Lignes directrices connexes:**
 
-- [1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#fournir-des-services-qui-peuvent-tre-tout-quand-et-nimporte-quel-appareil)
-- [3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#partager-et-collaborer--lextrieur-tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-rutiliser)
-- [5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#rendre-toutes-les-donnes-et-informations-non-sensibles-ouvertes-au-monde-extrieur-pour-les-partager-et-les-rutiliser-sous-une-licence-ouverte)
-- [5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable (Norme&#160;5&#160;: Travailler ouvertement par défaut)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html#travailler--lair-libre-et-rendre-le-code-source-ouvert-et-rutilisable)
-- [10.3 Veiller à ce que les données soient recueillies de façon normalisée pour qu’elles soient facilement intégrables et réutilisables par les autres (Norme&#160;10&#160;: Être de bons utilisateurs de données)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#assurez-vous-que-les-donnes-sont-collectes-de-manire-standard-afin-quelles-puissent-tre-facilement-intgres-et-rutilises-par-dautres)
+{% include functions/guideline-links.html guidelines="1.5, 3.4, 5.1, 5.5, 10.3" samePage=false standardTitle=page.title %}
 
 </div>
 
