@@ -3,7 +3,7 @@
 {% assign dataSource = site.data[dataVariable] %}
 {% if include.guidelines.first %}
   {% assign guidelinesArray = include.guidelines %}
-  {% if guidelinesArray.first.title %}
+  {% if guidelinesArray[0].title %}
   {% else %}
     {% assign guidelinesString = guidelinesArray | join: "," %}
   {% endif %}
