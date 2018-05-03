@@ -72,15 +72,15 @@ Good government services are built quickly and iteratively, based on user needs.
 - Have a manager with the ability to make day-to-day decisions to improve the service **(Digital Service Standard (Ontario))**
 - Make sure you have at least one user researcher working at least 3 days each week **(Digital Service Standard (UK))**
 - Make sure there is separation of key roles in the team, meaning that nobody is performing multiple roles **(Digital Service Standard (UK))**
-- Member(s) of the team have experience building popular, high-traffic digital services **(Digital Services Playbook (US)**)
-- Member(s) of the team have experience designing mobile and web applications **(Digital Services Playbook (US)**)
-- Member(s) of the team have experience using automated testing frameworks **(Digital Services Playbook (US)**)
-- Member(s) of the team have experience with modern development and operations (DevOps) techniques like continuous integration and continuous deployment **(Digital Services Playbook (US)**)
-- Member(s) of the team have experience securing digital services **(Digital Services Playbook (US)**)
-- Understand where gaps may emerge in the team and how to fill them **(Digital Service Standard (UK))
-- Plan to transfer knowledge and skills from contractors to permanent staff **(Digital Service Standard (UK))
+- Member(s) of the team have experience building popular, high-traffic digital services **(Digital Services Playbook (US))**
+- Member(s) of the team have experience designing mobile and web applications **(Digital Services Playbook (US))**
+- Member(s) of the team have experience using automated testing frameworks **(Digital Services Playbook (US))**
+- Member(s) of the team have experience with modern development and operations (DevOps) techniques like continuous integration and continuous deployment **(Digital Services Playbook (US))**
+- Member(s) of the team have experience securing digital services **(Digital Services Playbook (US))**
+- Understand where gaps may emerge in the team and how to fill them **(Digital Service Standard (UK))**
+- Plan to transfer knowledge and skills from contractors to permanent staff **(Digital Service Standard (UK))**
 - Make sure there's a person on your team who's responsible for user research and usability tests **(Digital Service Standard (UK))**
-- Make sure you'll have a team that can keep improving the service after it goes live **(Digital Service Standard (UK))
+- Make sure you'll have a team that can keep improving the service after it goes live **(Digital Service Standard (UK))**
 - Make sure the team fully understands the service after it's gone live **(Digital Service Standard (UK))**
 - Involve the maintenance team for the service early on in the project **(Digital Service Standard (Ontario))**
 - Your digital delivery team should have, or easily get, the following roles, as relevant to your service: **(Digital Service Standard (AU))**
