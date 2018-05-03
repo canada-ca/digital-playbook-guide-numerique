@@ -34,9 +34,7 @@
 
 **{{ commonStandard.guidelines.title }}{{ site.Colon[page.lang] }}**
 
-<ul>
-{% for guideline in standard.guidelines %}{% capture guidelineId %}{% include /functions/generate-id.html string=guideline.title %}{% endcapture %}<li{% if guideline.tags.size > 0 %} class="{{ guideline.tags | join: ' ' }}"{% endif %}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
-{% endfor %}</ul>
+{% include functions/guideline-links.html guidelines=standard.guidelines samePage=true %}
 
 </div>
 
@@ -45,9 +43,7 @@
 
 **{{ commonStandard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
 
-<ul>
-{% for guideline in standard.relatedguidelines %}{% assign standardIndex = guideline.standard | minus: 1 %}{% assign guidelineIndex = guideline.guideline | minus: 1 %}{% assign related = site.data.playbook.standards[standardIndex].guidelines[guidelineIndex] %}{% capture relatedId %}{% include /functions/generate-id.html string=related.title %}{% endcapture %}<li{% if related.tags.size > 0 %} class="{{ related.tags | join: ' ' }}"{% endif %}><a href="#{{ relatedId | strip }}">{{ related.title }}</a></li>
-{% endfor %}</ul>
+{% include functions/guideline-links.html guidelines=standard.relatedguidelines samePage=true standardTitle=standard.title %}
 
 </div>
 {% endif %}
