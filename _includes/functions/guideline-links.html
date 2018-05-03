@@ -3,22 +3,26 @@
 {% assign dataSource = site.data[dataVariable] %}
 {% if include.guidelines.first %}
   {% assign guidelinesArray = include.guidelines %}
-  {% if guidelinesArray.first.first %}
+  {% if guidelinesArray.first.title %}
   {% else %}
-    {% assign guidelines = guidelinesArray | join: "," %}
+    {% assign guidelinesString = guidelinesArray | join: "," %}
   {% endif %}
 {% else %}
-  {% assign guidelines = include.guidelines | replace: " ", "" %}
+  {% assign guidelinesString = include.guidelines | replace: " ", "" %}
   {% guidelinesArray = guidelines | split: ',' %}
 {% endif %}
 
-{% if guidelinesArray.first.first %}
+{% if guidelinesString %}
+
+<ul data-guidelines="{{ guidelinesString }}">
+{% for guideline in guidelinesArray %}{% assign indexArray = guideline | split: '.' %}{% assign standardIndex = indexArray[0] | minus: 1 %}{% assign guidelineIndex = indexArray[1] | minus: 1 %}{% assign guidelineData = dataSource.standards[standardIndex].guidelines[guidelineIndex] %}{% capture guidelineId %}{% include /functions/generate-id.html string=guidelineData.title %}{% endcapture %}<li{% if guidelineData.tags.size > 0 %} class="{{ guidelineData.tags | join: ' ' }}"{% endif %}><a href="{% if include.samePage != true %}{{ site.standardFile[standardIndex][page.lang] }}{% endif %}#{{ guidelineId | strip }}">{{ guidelineData.title }}{% if standardTitle.size > 0 %}({{ include.standardTitle }}){% endif %}</a></li>
+{% endfor %}</ul>
+
+{% else %}
+
 <ul>
 {% for guideline in guidelinesArray %}{% capture guidelineId %}{% include /functions/generate-id.html string=guideline.title %}{% endcapture %}<li{% if guideline.tags.size > 0 %} class="{{ guideline.tags | join: ' ' }}"{% endif %}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
 {% endfor %}</ul>
-{% else %}
-<ul data-guidelines="{{ guidelines }}">
-{% for guideline in guidelinesArray %}{% assign indexArray = guideline | split: '.' %}{% assign standardIndex = indexArray[0] | minus: 1 %}{% assign guidelineIndex = indexArray[1] | minus: 1 %}{% assign guidelineData = dataSource.standards[standardIndex].guidelines[guidelineIndex] %}{% capture guidelineId %}{% include /functions/generate-id.html string=guidelineData.title %}{% endcapture %}<li{% if guidelineData.tags.size > 0 %} class="{{ guidelineData.tags | join: ' ' }}"{% endif %}><a href="{% if include.samePage != true %}{{ site.standardFile[standardIndex][page.lang] }}{% endif %}#{{ guidelineId | strip }}">{{ guidelineData.title }}{% if standardTitle.size > 0 %}({{ include.standardTitle }}){% endif %}</a></li>
-{% endfor %}</ul>
 {% endif %}
+
 {% endcapture %}{{ output | strip }}
