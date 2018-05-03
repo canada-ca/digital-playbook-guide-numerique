@@ -1,98 +1,12 @@
-{% assign dataVariable = site.playbookData[page.lang] %}{% assign dataSource = site.data[dataVariable] %}
-{% assign commonStandard = dataSource.common.standards.standard %}{% assign commonGuideline = commonStandard.guidelines.guideline %}
-<section{% if dataSource.introduction.tags.size > 0 %} class="{{ dataSource.introduction.tags | join: ' ' }}"{% endif %}>
+{% 
+assign dataVariable = site.playbookData[page.lang] %}{% 
+assign dataSource = site.data[dataVariable] 
+%}
 
-## {{ dataSource.introduction.title }}
+{% include functions/output-overview.html %}
 
-{% include /functions/output-content-array.html contentArray=dataSource.introduction.content currHeadingLevel="2" %}
-
-**{{ dataSource.common.standards.title }}{{ site.Colon[page.lang] }}**
-
-<ul>
-{% for standard in dataSource.standards %}{% capture standardId %}{% include /functions/generate-id.html string=standard.title %}{% endcapture %}<li{% if standard.tags.size > 0 %} class="{{ standard.tags | join: ' ' }}"{% endif %}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>
-{% endfor %}</ul>
-
-**{{ site.ComparisonPlaybookIntro[page.lang] }}{{ site.Colon[page.lang] }}**
-
-- [{{ site.ComparisonPlaybookTitle[page.lang] }}](https://canada-ca.github.io/digital-playbook-guide-numerique/{{ page.lang }}/{{ site.ComparisonPlaybookFile[page.lang] }}{{ site.RenderedFileExtension }})
-
-</section>
-
-{% for standard in dataSource.standards %}
-{% assign standardTags = commonStandard.tags | concat: standard.tags %}
-<section{% if standardTags.size > 0 %} class="{{ standardTags | join: ' ' }}"{% endif %}>
-
-## {{ standard.title }}
-
-<div{% if commonStandard.introduction.tags.size > 0 %} class="{{ commonStandard.introduction.tags | join: ' ' }}"{% endif %}>
-
-{% include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel="2" %}
-
-</div>
-
-<div{% if commonStandard.guidelines.tags.size > 0 %} class="{{ commonStandard.guidelines.tags | join: ' ' }}"{% endif %}>
-
-**{{ commonStandard.guidelines.title }}{{ site.Colon[page.lang] }}**
-
-{% include functions/guideline-links.html guidelines=standard.guidelines samePage=true %}
-
-</div>
-
-{% if standard.relatedguidelines.size > 0 %}
-<div{% if commonStandard.relatedguidelines.tags.size > 0 %} class="{{ commonStandard.relatedguidelines.tags | join: ' ' }}"{% endif %}>
-
-**{{ commonStandard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
-
-{% include functions/guideline-links.html guidelines=standard.relatedguidelines samePage=true standardTitle=standard.title %}
-
-</div>
-{% endif %}
-
-{% for guideline in standard.guidelines %}{% assign guidelineTags = commonGuideline.tags | concat: guideline.tags %}
-<section{% if guidelineTags.size > 0 %} class="{{ guideline.tags | join: ' ' }}"{% endif %}>
-
-### {{ guideline.title }}
-
-<div{% if commonGuideline.introduction.tags.size > 0 %} class="{{ commonGuideline.introduction.tags | join: ' ' }}"{% endif %}>
-
-{% include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel="3" %}
-
-</div>
-
-{% if guideline.checklist.content.size > 0 %}
-<section{% if commonGuideline.checklist.tags.size > 0 %} class="{{ commonGuideline.checklist.tags | join: ' ' }}"{% endif %}>
-
-#### {{ commonGuideline.checklist.title }}
-
-{% include /functions/output-content-array.html contentArray=guideline.checklist.content currHeadingLevel="4" %}
-
-</section>
-{% endif %}
-
-{% if guideline.guides.content.size > 0 %}
-<section{% if commonGuideline.guides.tags.size > 0 %} class="{{ commonGuideline.guides.tags | join: ' ' }}"{% endif %}>
-
-#### {{ commonGuideline.guides.title }}
-
-{% include /functions/output-content-array.html contentArray=guideline.guides.content currHeadingLevel="4" %}
-
-</section>
-{% endif %}
-
-{% if guideline.similar.content.size > 0 %}
-<section{% if commonGuideline.similar.tags .size > 0 %} class="{{ commonGuideline.similar.tags  | join: ' ' }}"{% endif %}>
-
-#### {{ commonGuideline.similar.title }}
-
-{% include /functions/output-content-array.html contentArray=guideline.similar.content currHeadingLevel="4" %}
-
-</section>
-{% endif %}
-
-</section>
-
-{% endfor %}
-
-</section>
-
-{% endfor %}
+{% 
+for currentStandard in dataSource.standards %}{% 
+  include functions/output-standard.html standard=currentStandard includeStandardTitle=true currentHeadingLevel=1 %}{% 
+endfor 
+%}
