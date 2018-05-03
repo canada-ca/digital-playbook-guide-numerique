@@ -26,11 +26,7 @@ altLangPage: 5-work-in-open-by-default
 
 **Lignes directrices connexes :**
 
-- [3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#partager-et-collaborer--lextrieur-tablir-un-lien-avec-le-travail-des-autres-et-fournir-des-ressources-que-dautres-peuvent-rutiliser)
-- [6.3 Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#conception-pour-linteroprabilit-permettant-aux-services-dtre-dcouverts-et-exploits-par-la-communaut)
-- [6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service (Norme&#160;6&#160;: Utiliser des normes et des solutions ouvertes)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html#ouvrez-les-donnes-les-transactions-et-les-rgles-mtier-qui-sous-tendent-un-service)
-- [8.1 Être transparent au sujet des préjugés personnels et organisationnels et indiquer comment ils sont traités (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#soyez-transparent-au-sujet-des-prjugs-personnels-et-organisationnels-et-indiquez-comment-ils-sont-traits)
-- [10.2 Rendre facilement accessibles l’information et les données gouvernementales pertinentes pour faciliter la prise de décisions (Norme&#160;10&#160;: Être de bons utilisateurs de données)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html#rendre-les-informations-et-les-donnes-gouvernementales-pertinentes-facilement-accessibles-pour-aider--la-prise-de-dcision)
+{% include functions/guideline-links.html guidelines="3.4, 6.3, 6.4, 8.1, 10.2" samePage=false standardTitle=page.title %}
 
 </div>
 
