@@ -1,5 +1,6 @@
 {% assign dataVariable = site.playbookData[page.lang] %}{% assign dataSource = site.data[dataVariable] %}
-{% assign guidelines = include.guidelines | replace: " ", "" %}{% guidelinesArray = guidelines | split: ',' %}
+{% if include.guidelines.first %}{% assign guidelinesArray = include.guidelines %}{% assign guidelines = guidelinesArray | join: "," %}
+{% else %}{% assign guidelines = include.guidelines | replace: " ", "" %}{% guidelinesArray = guidelines | split: ',' %}{% endif %}
 <ul data-guidelines="{{ guidelines }}">
 {% for guideline in guidelinesArray %}{% assign indexArray = guideline | split: '.' %}{% assign standardIndex = indexArray[0] | minus: 1 %}{% assign guidelineIndex = indexArray[1] | minus: 1 %}{% assign guidelineData = dataSource.standards[standardIndex].guidelines[guidelineIndex] %}{% capture guidelineId %}{% include /functions/generate-id.html string=guidelineData.title %}{% endcapture %}<li{% if guidelineData.tags.size > 0 %} class="{{ guidelineData.tags | join: ' ' }}"{% endif %}><a href="{% if include.samePage != true %}{{ site.standardFile[standardIndex][page.lang] }}{% endif %}#{{ guidelineId | strip }}">{{ guidelineData.title }}{% if standardTitle.size > 0 %}({{ include.standardTitle }}){% endif %}</a></li>
 {% endfor %}</ul>
