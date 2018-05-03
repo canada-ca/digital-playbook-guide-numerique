@@ -4,18 +4,23 @@
 {% include head.html %}
 <body vocab="http://schema.org/" typeof="WebPage">
 {% include header.html %}
-{% unless page.url == site.index[page.lang] or page.url contains "compar" %}
-  {% include filter-interface.html %}
-{% endunless %}
-{% unless page.url contains "/views/" or page.url contains "compar" %}
-{% include pagination.html %}
-{% endunless %}
+{% unless page.url contains site.index[page.lang] or page.url contains "compar" 
+  %}{% include filter-interface.html %}{% 
+endunless %}{% 
+if page.url contains "/views/standards" %}{% 
+  assign isStandardsView = true %}{%
+else %}{% 
+  assign isStandardsView = false %}{% 
+endif %}{% 
+unless page.url contains "/views/" and isStandardsView == false or page.url contains "compar" 
+  %}{% include pagination.html %}{% 
+endunless %}
 {{ content }}
 <hr />
 {% include page-options.html %}
-{% unless page.url contains "/views/" or page.url contains "compar" %}
-{% include pagination.html %}
-{% endunless %}
+{% unless page.url contains "/views/" and isStandardsView == false or page.url contains "compar" 
+  %}{% include pagination.html %}{% 
+endunless %}
 {% include footer.html %}
 </body>
 </html>

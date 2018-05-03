@@ -2,12 +2,12 @@
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-<title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title[page.lang] | escape }}</title>
+<title>{% include functions/page-title.html includeSiteTitle=true %}</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <!-- Meta data -->
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
 <meta name="dcterms.creator" content="{{ site.creator[page.lang] }}">
-<meta name="dcterms.title" content="{{ page.title }}">
+<meta name="dcterms.title" content="{% include functions/page-title.html includeSiteTitle=true %}">
 <meta name="dcterms.issued" title="W3CDTF" content="{{ page.issued }}">
 <meta name="dcterms.modified" title="W3CDTF" content="{{ page.modified }}">
 <meta name="dcterms.subject" title="scheme" content="{% if page.subject %}{{ page.subject }}{% else %}{{ site.subject[page.lang] }}{% endif %}">
