@@ -291,7 +291,7 @@ Working to create an environment that empowers employees has been shown to not o
 
 **[TODO: Add/revise introductory text]**
 
-Each service must have one person who has the authority and is responsibile for makingt business, product and technical decisions. This person is responsible for communicating the vision, making decisions in a timely fashion, managing stakeholder/vendor relationships, monitoring project health and is accountable for the success or failure of the service. This person also sets the strategy for the service, defines the features of the service, and is responsible for the service on an ongoing basis, until it is decommissioned.
+Each service must have one person who has the authority and is responsibile for making business, product and technical decisions. This person is responsible for communicating the vision, making decisions in a timely fashion, managing stakeholder/vendor relationships, monitoring project health and is accountable for the success or failure of the service. This person also sets the strategy for the service, defines the features of the service, and is responsible for the service on an ongoing basis, until it is decommissioned.
 
 </div>
 
