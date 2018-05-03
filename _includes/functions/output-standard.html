@@ -1,0 +1,114 @@
+{% assign dataVariable = site.playbookData[page.lang] %}{% 
+assign dataSource = site.data[dataVariable] %}{% 
+assign commonStandard = dataSource.common.standards.standard %}{% 
+assign commonGuideline = commonStandard.guidelines.guideline %}{% 
+if include.standard.title %}{% 
+  assign standard = include.standard %}{% 
+else %}{% 
+  assign standardIndex = include.standard | minus: 1 %}{% 
+  assign standard = dataSource.standards[standardIndex] %}{% 
+endif %}{% 
+assign standardHeadingLevel = include.currentHeadingLevel | default: 1 %}{% 
+assign standardTags = commonStandard.tags | concat: standard.tags %}{% 
+if include.includeStandardTitle %}{% 
+  assign standardHeadingLevel = standardHeadingLevel | plus: 1 %}
+<section{% if standardTags.size > 0 
+    %} class="{{ standardTags | join: ' ' }}"{% 
+  endif 
+%}>{% capture headerId %}{% 
+    include /functions/generate-id.html string=standard.title %}{% 
+  endcapture %}
+<h{{ standardHeadingLevel }} id="{{ headerId | strip }}">{{ standard.title }}</h{{ standardHeadingLevel }}>
+{% endif %}{% 
+assign guidelineHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
+assign subsectionHeadingLevel = guidelineHeadingLevel | plus: 1 %}
+
+<div{% if commonStandard.introduction.tags.size > 0 
+  %} class="{{ commonStandard.introduction.tags | join: ' ' }}"{% 
+endif %}>
+
+{% include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel %}
+
+</div>
+
+<div{% if commonStandard.guidelines.tags.size > 0 
+  %} class="{{ commonStandard.guidelines.tags | join: ' ' }}"{% 
+endif %}>
+
+**{{ commonStandard.guidelines.title }}{{ site.Colon[page.lang] }}**
+
+{% include functions/guideline-links.html guidelines=standard.guidelines samePage=true %}
+
+</div>
+
+{% if standard.relatedguidelines.size > 0 %}
+<div{% if commonStandard.relatedguidelines.tags.size > 0 
+    %} class="{{ commonStandard.relatedguidelines.tags | join: ' ' }}"{% 
+  endif %}>
+
+**{{ commonStandard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
+
+{% include functions/guideline-links.html guidelines=standard.relatedguidelines samePage=true standardTitle=standard.title %}
+
+</div>
+{% endif %}
+
+{% for guideline in standard.guidelines %}{%
+  assign guidelineTags = commonGuideline.tags | concat: guideline.tags %}
+<section{% if guidelineTags.size > 0 
+  %} class="{{ guideline.tags | join: ' ' }}"{% 
+  endif %}>{% 
+  capture headerId %}{% 
+    include /functions/generate-id.html string=guideline.title %}{% 
+  endcapture %}
+<h{{ guidelineHeadingLevel }} id="{{ headerId | strip }}">{{ guideline.title }}</h{{ guidelineHeadingLevel }}>
+
+<div{% if commonGuideline.introduction.tags.size > 0 
+  %} class="{{ commonGuideline.introduction.tags | join: ' ' }}"{% 
+endif %}>
+
+{% include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=guidelineHeadingLevel %}
+
+</div>
+
+{% if guideline.checklist.content.size > 0 %}
+<section{% if commonGuideline.checklist.tags.size > 0 %} class="{{ commonGuideline.checklist.tags | join: ' ' }}"{% 
+endif %}>
+
+<h{{ subsectionHeadingLevel }}>{{ commonGuideline.checklist.title }}</h{{ subsectionHeadingLevel }}>
+
+{% include /functions/output-content-array.html contentArray=guideline.checklist.content currHeadingLevel=subsectionHeadingLevel %}
+
+</section>
+{% endif %}
+
+{% if guideline.guides.content.size > 0 %}
+<section{% if commonGuideline.guides.tags.size > 0 %} class="{{ commonGuideline.guides.tags | join: ' ' }}"{% 
+endif %}>
+
+<h{{ subsectionHeadingLevel }}>{{ commonGuideline.guides.title }}</h{{ subsectionHeadingLevel }}>
+
+{% include /functions/output-content-array.html contentArray=guideline.guides.content currHeadingLevel="4" %}
+
+</section>
+{% endif %}
+
+{% if guideline.similar.content.size > 0 %}
+<section{% 
+  if commonGuideline.similar.tags .size > 0 
+    %} class="{{ commonGuideline.similar.tags  | join: ' ' }}"{%
+  endif %}>
+
+<h{{ subsectionHeadingLevel }}>{{ commonGuideline.similar.title }}</h{{ subsectionHeadingLevel }}>
+
+{% include /functions/output-content-array.html contentArray=guideline.similar.content currHeadingLevel="4" %}
+
+</section>
+{% endif %}
+
+</section>
+
+{% endfor %}
+{% if include.includeStandardTitle %}
+</section>
+{% endif %}
