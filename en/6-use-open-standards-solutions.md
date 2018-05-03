@@ -26,11 +26,7 @@ altLangPage: 6-utiliser-normes-solutions-ouvertes
 
 **Related guidelines:**
 
-- [1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard 1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
-- [3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse (Standard 3: Collaborate widely)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/3-collaborate-widely.html#share-and-collaborate-in-the-open-link-to-the-work-of-others-and-provide-resources-that-others-can-reuse)
-- [5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Standard 5: Work in the open by default)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html#make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
-- [5.5 Work in the open and make source code open and reusable (Standard 5: Work in the open by default)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html#work-in-the-open-and-make-source-code-open-and-reusable)
-- [10.3 Ensure that data is collected in a standard way so that it can easily be integrated and reused by others (Standard 10: Be good data stewards)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/10-be-good-data-stewards.html#ensure-that-data-is-collected-in-a-standard-way-so-that-it-can-easily-be-integrated-and-reused-by-others)
+{% include functions/guideline-links.html guidelines="1.5, 3.4, 5.1, 5.5, 10.3" samePage=false standardTitle=page.title %}
 
 </div>
 
