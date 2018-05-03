@@ -26,15 +26,7 @@ altLangPage: 10-etre-bons-utilisateurs-donnees
 
 **Related guidelines:**
 
-- [1.4 Clearly articulate and understand the end-to-end problem and use data to demonstrate that it is being solved (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#clearly-articulate-and-understand-the-end-to-end-problem-and-use-data-to-demonstrate-that-it-is-being-solved)
-- [5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence (Standard&#160;5: Work in the open by default)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html#make-all-non-sensitive-data-and-information-open-to-the-outside-world-for-sharing-and-reuse-under-an-open-licence)
-- [5.2 Be transparent with goals and publish real-time performance data (Standard&#160;5: Work in the open by default)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html#be-transparent-with-goals-and-publish-real-time-performance-data)
-- [5.3 Measure and monitor the effectiveness, value, and consequences of your service and report publicly (Standard&#160;5: Work in the open by default)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html#measure-and-monitor-the-effectiveness-value-and-consequences-of-your-service-and-report-publicly)
-- [5.4 Be transparent about how you work and justify the decisions you make (Standard&#160;5: Work in the open by default)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html#be-transparent-about-how-you-work-and-justify-the-decisions-you-make)
-- [6.1 Leverage open standards and embrace leading practices (Standard&#160;6: Use open standards and solutions)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/6-use-open-standards-solutions.html#leverage-open-standards-and-embrace-leading-practices)
-- [6.2 Use and reuse common, proven government solutions, approaches, and platforms (Standard&#160;6: Use open standards and solutions)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/6-use-open-standards-solutions.html#use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
-- [6.4 Open up the data, transactions, and business rules that underpin a service (Standard&#160;6: Use open standards and solutions)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/6-use-open-standards-solutions.html#open-up-the-data-transactions-and-business-rules-that-underpin-a-service)
-- [9.2 Innovate and improve while meeting the public's expectation that their data privacy will be protected (Standard&#160;9: Address security and privacy risks)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/9-address-security-privacy-risks.html#innovate-and-improve-while-meeting-the-publics-expectation-that-their-data-privacy-will-be-protected)
+{% include functions/guideline-links.html guidelines="1.4, 5.1, 5.2, 5.3, 5.4, 6.1, 6.2, 6.4, 9.2" samePage=false standardTitle=page.title %}
 
 </div>
 
