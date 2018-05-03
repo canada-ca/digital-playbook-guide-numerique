@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "2. Intégrer l’accessibilité dès le départ"
+title:  "2. Intégrer l’accessibilité dès le départ (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 2-build-in-accessibility-from-start
