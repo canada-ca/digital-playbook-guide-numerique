@@ -98,7 +98,7 @@ defTop.outerHTML = wet.builder.top({
 
 <div class="row">
 <div class="col-lg-9 col-md-8">
-  <h1 property="name" id="wb-cont">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</h1>
+  <h1 property="name" id="wb-cont">{% include functions/page-title.html includeSiteTitle=false %}</h1>
 </div>
 <div class="col-lg-3 col-md-4">
 {% include page-options.html alignment="text-right" %}
