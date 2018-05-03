@@ -9,7 +9,7 @@
   {% endif %}
 {% else %}
   {% assign guidelinesString = include.guidelines | replace: " ", "" %}
-  {% guidelinesArray = guidelines | split: ',' %}
+  {% assign guidelinesArray = guidelines | split: ',' %}
 {% endif %}
 
 {% if guidelinesString %}
