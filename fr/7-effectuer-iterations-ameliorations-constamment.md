@@ -26,9 +26,7 @@ altLangPage: 7-iterate-improve-frequently
 
 **Lignes directrices connexesv:**
 
-- [1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
-- [3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation (Norme&#160;3&#160;: Collaborer largement)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html#renforcer-la-capacit--attirer-dynamiquement-de-nouveaux-partenaires-pour-la-co-innovation)
-- [9.2 Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels (Norme&#160;9&#160;: Gérer les risques en matière de sécurité et de protection des renseignements personnels)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html#innover-et-samliorer-tout-en-rpondant-aux-attentes-du-public-quant--la-protection-de-la-confidentialit-des-donnes)
+{% include functions/guideline-links.html guidelines="1.2, 3.3, 9.2" samePage=false standardTitle=page.title %}
 
 </div>
 

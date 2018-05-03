@@ -1,0 +1,28 @@
+{% capture output %}
+{% assign dataVariable = site.playbookData[page.lang] %}
+{% assign dataSource = site.data[dataVariable] %}
+{% if include.guidelines.first %}
+  {% assign guidelinesArray = include.guidelines %}
+  {% if guidelinesArray[0].title %}
+  {% else %}
+    {% assign guidelinesString = guidelinesArray | join: "," %}
+  {% endif %}
+{% else %}
+  {% assign guidelinesString = include.guidelines | replace: " ", "" %}
+  {% assign guidelinesArray = guidelinesString | split: ',' %}
+{% endif %}
+
+{% if guidelinesString %}
+
+<ul data-guidelines="{{ guidelinesString }}">
+{% for guideline in guidelinesArray %}{% assign indexArray = guideline | split: '.' %}{% assign standardIndex = indexArray[0] | minus: 1 %}{% assign guidelineIndex = indexArray[1] | minus: 1 %}{% assign guidelineData = dataSource.standards[standardIndex].guidelines[guidelineIndex] %}{% capture guidelineId %}{% include /functions/generate-id.html string=guidelineData.title %}{% endcapture %}<li{% if guidelineData.tags.size > 0 %} class="{{ guidelineData.tags | join: ' ' }}"{% endif %}><a href="{% if include.samePage != true %}{{ site.standardFile[standardIndex][page.lang] }}{% endif %}#{{ guidelineId | strip }}">{{ guidelineData.title }}{% if standardTitle.size > 0 %}({{ include.standardTitle }}){% endif %}</a></li>
+{% endfor %}</ul>
+
+{% else %}
+
+<ul>
+{% for guideline in guidelinesArray %}{% capture guidelineId %}{% include /functions/generate-id.html string=guideline.title %}{% endcapture %}<li{% if guideline.tags.size > 0 %} class="{{ guideline.tags | join: ' ' }}"{% endif %}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
+{% endfor %}</ul>
+{% endif %}
+
+{% endcapture %}{{ output | strip }}

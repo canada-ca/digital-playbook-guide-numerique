@@ -128,52 +128,7 @@
           }
         ]
       },
-      "relatedguidelines": [
-          {
-            "standard": "2",
-            "guideline": "1"
-          },
-          {
-            "standard": "2",
-            "guideline": "2"
-          },
-          {
-            "standard": "2",
-            "guideline": "3"
-          },
-          {
-            "standard": "2",
-            "guideline": "4"
-          },
-          {
-            "standard": "3",
-            "guideline": "2"
-          },
-          {
-            "standard": "6",
-            "guideline": "5"
-          },
-          {
-            "standard": "7",
-            "guideline": "1"
-          },
-          {
-            "standard": "7",
-            "guideline": "4"
-          },
-          {
-            "standard": "8",
-            "guideline": "2"
-          },
-          {
-            "standard": "8",
-            "guideline": "4"
-          },
-          {
-            "standard": "10",
-            "guideline": "1"
-          }
-      ],
+      "relatedguidelines": ["2.1", "2.2", "2.3", "2.4", "3.2", "6.5", "7.1", "7.4", "8.2", "8.4", "10.1"],
       "guidelines": [
         {
           "title": "1.1 Ne rien construire pour l’utilisateur sans sa participation",
@@ -533,36 +488,7 @@
           }
         ]
       },
-      "relatedguidelines": [
-        {
-          "standard": "1",
-          "guideline": "1"
-        },
-        {
-          "standard": "1",
-          "guideline": "2"
-        },
-        {
-          "standard": "1",
-          "guideline": "3"
-        },
-        {
-          "standard": "1",
-          "guideline": "5"
-        },
-        {
-          "standard": "1",
-          "guideline": "6"
-        },
-        {
-          "standard": "1",
-          "guideline": "8"
-        },
-        {
-          "standard": "8",
-          "guideline": "4"
-        }
-      ],
+      "relatedguidelines": ["1.1", "1.2", "1.3", "1.5", "1.6", "1.8", "8.4"],
       "guidelines": [
         {
           "title": "2.1 Construire pour ceux dont le besoin est le plus grand et cela fonctionnera pour tous les autres",
@@ -839,8 +765,7 @@
         "content": [
         ]
       },
-      "relatedguidelines": [
-      ],
+      "relatedguidelines": ["1.1", "1.2", "2.3", "5.5"],
       "guidelines": [
         {
           "title": "3.1 Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées",
@@ -931,8 +856,7 @@
         "content": [
         ]
       },
-      "relatedguidelines": [
-      ],
+      "relatedguidelines": ["3.1", "3.2", "3.3", "5.4", "5.5", "6.1", "6.2", "7.1", "7.2", "7.3", "7.4"],
       "guidelines": [
         {
           "title": "4.1 Offrir des possibilités continues de formation et d’apprentissage afin d’améliorer sans cesse les compétences de l’équipe et du grand réseau",
@@ -1043,8 +967,7 @@
         "content": [
         ]
       },
-      "relatedguidelines": [
-      ],
+      "relatedguidelines": ["3.4", "6.3", "6.4", "8.1", "10.2"],
       "guidelines": [
         {
           "title": "5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte",
@@ -1155,8 +1078,7 @@
         "content": [
         ]
       },
-      "relatedguidelines": [
-      ],
+      "relatedguidelines": ["1.5", "3.4", "5.1", "5.5", "10.3"],
       "guidelines": [
         {
           "title": "6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires",
@@ -1287,8 +1209,7 @@
         "content": [
         ]
       },
-      "relatedguidelines": [
-      ],
+      "relatedguidelines": ["1.2", "3.3", "9.2"],
       "guidelines": [
         {
           "title": "7.1 Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs",
@@ -1379,8 +1300,7 @@
         "content": [
         ]
       },
-      "relatedguidelines": [
-      ],
+      "relatedguidelines": ["1.2", "1.3", "1.4", "1.8", "2.1", "2.2", "2.4", "5.2", "5.3", "5.4", "9.1", "9.2", "9.3", "9.4", "10.2"],
       "guidelines": [
         {
           "title": "8.1 Être transparent au sujet des préjugés personnels et organisationnels et indiquer comment ils sont traités",
@@ -1471,8 +1391,7 @@
         "content": [
         ]
       },
-      "relatedguidelines": [
-      ],
+      "relatedguidelines": ["1.5", "1.6", "1.7", "6.1", "6.2", "8.3", "8.4"],
       "guidelines": [
         {
           "title": "9.1 Adopter une approche équilibrée de la gestion des risques en appliquant les mesures appropriées en matière de protection des renseignements personnels et de sécurité",
@@ -1563,8 +1482,7 @@
         "content": [
         ]
       },
-      "relatedguidelines": [
-      ],
+      "relatedguidelines": ["1.4", "5.1", "5.2", "5.3", "5.4", "6.1", "6.2", "6.4", "9.2"],
       "guidelines": [
         {
           "title": "10.1 Recueillir les données une seule fois pour éviter le double emploi",

@@ -26,13 +26,7 @@ altLangPage: 2-build-in-accessibility-from-start
 
 **Lignes directrices connexes :**
 
-- [1.1 Concevoir avec les utilisateurs (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#construire-rien-pour-lutilisateur-sans-que-lutilisateur-soit-impliqu)
-- [1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#simpliquer-auprs-des-personnes-qui-ont-le-service-et-le-faire-participer--toutes-les-tapes-de-la-planification--lamlioration-continuer)
-- [1.3 Comprendre le contexte dans lequel les personnes interagissent et concevoir des solutions propres à répondre à leurs besoins (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#comprendre-le-contexte-dans-lequel-les-gens-interagissent-et-conoivent-des-solutions-adaptes--leurs-besoins)
-- [1.5 Fournir des services qui peuvent être convertis n'importe où, n'importe où et n'importe quel appareil (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#fournir-des-services-qui-peuvent-tre-tout-quand-et-nimporte-quel-appareil)
-- [1.6 Rendre les services simples, intuitifs et cohérents (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#rendre-les-services-simples-intuitifs-et-cohrents)
-- [1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (Norme&#160;1&#160;: Concevoir avec les utilisateurs)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html#soutenir-les-personnes-qui-ne-peuvent-pas-utiliser-les-services-numriques-par-leurs-propres-moyens)
-- [8.4 Équilibrer les arbitrages à faire entre l’innovation et l’inclusivité (Norme&#160;8&#160;: Concevoir des services éthiques)](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html#quilibrer-les-compromis-entre-innovation-et-inclusivit)
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 1.3, 1.5, 1.6, 1.8, 8.4" samePage=false standardTitle=page.title %}
 
 </div>
 

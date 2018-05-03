@@ -26,13 +26,7 @@ altLangPage: 2-integrer-accessibilite-des-depart
 
 **Related guidelines:**
 
-- [1.1 Build nothing for the user, without the user being involved (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#build-nothing-for-the-user-without-the-user-being-involved)
-- [1.2 Empathize with the people using the service and have them engaged at all stages, from planning to ongoing improvements (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#empathize-with-the-people-using-the-service-and-have-them-engaged-at-all-stages-from-planning-to-ongoing-improvements)
-- [1.3 Understand the context in which people are interacting and design appropriate solutions that meet their needs (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#understand-the-context-in-which-people-are-interacting-and-design-appropriate-solutions-that-meet-their-needs)
-- [1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
-- [1.6 Make services simple, intuitive and consistent (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#make-services-simple-intuitive-and-consistent)
-- [1.8 Support people who cannot use digital services on their own (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#support-people-who-cannot-use-digital-services-on-their-own)
-- [8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/8-design-ethical-services.html#balance-trade-offs-between-innovation-and-inclusiveness)
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 1.3, 1.5, 1.6, 1.8, 8.4" samePage=false standardTitle=page.title %}
 
 </div>
 

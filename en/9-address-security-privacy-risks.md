@@ -26,13 +26,7 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 
 **Related guidelines:**
 
-- [1.5 Provide services that can be obtained anytime, anywhere and on any device (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#provide-services-that-can-be-obtained-anytime-anywhere-and-on-any-device)
-- [1.6 Make services simple, intuitive and consistent (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#make-services-simple-intuitive-and-consistent)
-- [1.7 Make it more convenient and practical to use digital services (Standard&#160;1: Design with users)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html#make-it-more-convenient-and-practical-to-use-digital-services)
-- [6.1 Leverage open standards and embrace leading practices (Standard&#160;6: Use open standards and solutions)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/6-use-open-standards-solutions.html#leverage-open-standards-and-embrace-leading-practices)
-- [6.2 Use and reuse common, proven government solutions, approaches, and platforms (Standard&#160;6: Use open standards and solutions)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/6-use-open-standards-solutions.html#use-and-reuse-common-proven-government-solutions-approaches-and-platforms)
-- [8.3 Comply with ethical guidelines in the design of automated systems (Standard&#160;8: Design ethical services)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/8-design-ethical-services.html#comply-with-ethical-guidelines-in-the-design-of-automated-systems)
-- [8.4 Balance trade-offs between innovation and inclusiveness (Standard&#160;8: Design ethical services)](https://canada-ca.github.io/digital-playbook-guide-numerique/en/8-design-ethical-services.html#balance-trade-offs-between-innovation-and-inclusiveness)
+{% include functions/guideline-links.html guidelines="1.5, 1.6, 1.7, 6.1, 6.2, 8.3, 8.4" samePage=false standardTitle=page.title %}
 
 </div>
 
