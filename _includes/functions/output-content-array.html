@@ -2,10 +2,11 @@
 for item in include.contentArray %}{% 
   capture rawOutput %}{% 
     if item.type == 'section' %}{% 
-      assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}
-<section{% if item.tags.size > 0 
-        %} class="{{ item.tags | join: ' ' }}"{% 
-      endif %}>
+      assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}{% 
+      capture classOutput %}{% 
+        include /functions/class-from-tags.html excludeSectionTags=false %}{% 
+      endcapture %}
+<section{{ classOutput | rstrip }}>
 <h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>
 {% include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel %}
 </section>
@@ -14,29 +15,30 @@ for item in include.contentArray %}{%
         assign listTag = "ol" %}{% 
       else %}{% 
         assign listTag = "ul" %}{% 
-      endif %}
-<{{ listTag }}{% if item.tags.size > 0 
-        %} class="{{ item.tags | join: ' ' }}"{% 
-      endif %}>{% 
+      endif %}{% 
+      capture classOutput %}{% 
+        include /functions/class-from-tags.html %}{% 
+      endcapture %}
+<{{ listTag }}{{ classOutput | rstrip }}>{% 
       capture listOutput %}{% 
         include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel %}{% 
       endcapture %}{{ listOutput | rstrip }}
-</{{ listTag }}>{% elsif item.type == 'listitem' %}
-<li{% 
-      if item.tags.size > 0 
-        %} class="{{ item.tags | join: ' ' }}"{% 
-      endif %}><span markdown="1">{{ item.content }}</span></li>
-{%  elsif item.type == 'listnested'%}
-<li{% if item.tags.size > 0 
-        %} class="{{ item.tags | join: ' ' }}"{% 
-      endif %}><span markdown="1">{{ item.content }}</span>{% 
+</{{ listTag }}>{% elsif item.type == 'listitem' %}{% 
+      capture classOutput %}{% 
+        include /functions/class-from-tags.html %}{% 
+      endcapture %}
+<li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span></li>
+{%  elsif item.type == 'listnested'%}{% 
+      capture classOutput %}{% 
+        include /functions/class-from-tags.html %}{% 
+      endcapture %}
+<li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span>{% 
       include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel %}</li>
-{%  else %}
-<div{% 
-      if item.tags.size > 0 
-        %} class="{{ item.tags | join: ' ' }}"{% 
-      endif %}>
-{{ item.content }}
+{%  else %}{% 
+      capture classOutput %}{% 
+        include /functions/class-from-tags.html excludeSectionTags=false %}{% 
+      endcapture %}
+<div{{ classOutput | rstrip }}>
 </div>
 {%  endif %}{% 
   endcapture %}{% 
