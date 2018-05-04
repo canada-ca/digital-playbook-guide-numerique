@@ -19,7 +19,7 @@ if stringArray %}
     assign indexArray = guideline | split: '.' %}{% 
     assign standardIndex = indexArray[0] | minus: 1 %}{% 
     assign guidelineIndex = indexArray[1] | minus: 1 %}{% 
-    assign guidelineData = dataSource.standards[standardIndex].guidelines[guidelineIndex] %}{% 
+    assign guidelineData = dataSource.standards.content[standardIndex].guidelines.content[guidelineIndex] %}{% 
     capture guidelineId %}{% 
       include /functions/generate-id.html string=guidelineData.title %}{% 
     endcapture 
