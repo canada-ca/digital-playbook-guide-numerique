@@ -15,7 +15,7 @@ endcapture %}
 {% for standard in dataSource.standards.content %}{% 
   capture standardId %}{% 
     include /functions/generate-id.html string=standard.title %}{% 
-  endcapture{% 
+  endcapture %}{% 
   capture classOutput %}{% 
     include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=true %}{% 
   endcapture 
