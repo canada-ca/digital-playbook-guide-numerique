@@ -24,7 +24,7 @@ assign standardIndex = 0 %}
     endcapture %}
 <tr{{ classOutput | rstrip }}>
 {% if guidelineIndex == 0 
-  %}<td rowspan="{{ standard.guidelines.size }}"><a href="{{ standardFile }}">{{ standard.title }}</a></td>{% 
+  %}<td rowspan="{{ standard.guidelines.content.size }}"><a href="{{ standardFile }}">{{ standard.title }}</a></td>{% 
     endif %}
 <td><a href="{{ standardFile }}#{{ guidelineId | strip }}">{{ guideline.title }}</a></td>
 <td>
