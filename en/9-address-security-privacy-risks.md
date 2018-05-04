@@ -9,7 +9,7 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 
 The digital revolution has fundamentally changed Canada’s social, economic, and cultural fabric. Canada’s participation in digital life has generated immense prosperity and benefits, and has opened a new gateway to the world. At the same time, it has continued to bring the world to us in new and challenging ways, and introduced threats that could undercut the many benefits of the digital age. Canada’s approach to cyber security must respond to this set of complex, integrated issues. 
 
-“Cyber security is the protection of digital information and the infrastructure on which it resides. Cyber security addresses the challenges and threats of cyberspace in order to secure the benefits and opportunities of digital life.” Public Safety Canada, Cyber Security Strategy (2010-15)
+> “Cyber security is the protection of digital information and the infrastructure on which it resides. Cyber security addresses the challenges and threats of cyberspace in order to secure the benefits and opportunities of digital life.” Public Safety Canada, Cyber Security Strategy (2010-15)
 
 Canada’s National Cyber Security Strategy, first penned in 2010, has been developed with consideration to the evolving environment in which the GC functions, and formed around three pillars: 
 
@@ -52,7 +52,7 @@ Finally, “shifting security left” in your service design addresses security 
 
   <div class="dpgn-section-intro-guideline">
 
-  ### Increasing investment in digital services requires corresponding security improvements; new security concerns require new security solutions.
+  ### Increasing investment in digital services requires corresponding security improvements; new security concerns require new security solutions. ###
 
   We are moving further into the digital economy, where the bad actors are already there, waiting for us, and new security concerns require new security solutions.  As we take services to the cloud, implement and adopt IoT technologies, embrace a more mobile workforce, and interact with data and services that live outside your managed network (and often out of the sight or control of the IT organization), the potential attack surface grows.
 
@@ -101,11 +101,11 @@ Finally, “shifting security left” in your service design addresses security 
 
 <div class="dpgn-section-intro-guideline">
 
-###Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data.
+### Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data.###
 
-“… platforms have a responsibility to protect the privacy and personal data of citizens, and to protect the integrity of … system(s) where they operate." **Scott Brison, MP, Treasury Board of Canada President, 2018**
+> “… platforms have a responsibility to protect the privacy and personal data of citizens, and to protect the integrity of … system(s) where they operate." **Scott Brison, MP, Treasury Board of Canada President, 2018**
 
- “Privacy and digital and service... are not easy things to juggle... and as the #gcdigital agenda evolves, we cannot lose sight of the fact this is an area we cannot fail in” **Alex Benay, GC CIO, 2018**
+ > “Privacy and digital and service... are not easy things to juggle... and as the #gcdigital agenda evolves, we cannot lose sight of the fact this is an area we cannot fail in” **Alex Benay, GC CIO, 2018**
 
 Both the value and the volume of data have never been higher, and end points (which are increasing in number faster than we can count) are more vulnerable than ever. If organizations and users can’t trust their data, and trust that it is safe, they will not engage or take the risks that drive growth. 
 
