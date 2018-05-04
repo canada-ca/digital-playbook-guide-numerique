@@ -1,7 +1,7 @@
 {% assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
 capture classOutput %}{% 
-  include /functions/class-from-tags.html tags=dataSource.introduction.tags excludeSectionTags=false %}{% 
+  include /functions/class-from-tags.html tags=dataSource.introduction.tags %}{% 
 endcapture %}
 <section{{ classOutput | rstrip }}>
 
@@ -17,7 +17,7 @@ endcapture %}
     include /functions/generate-id.html string=standard.title %}{% 
   endcapture{% 
   capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=false %}{% 
+    include /functions/class-from-tags.html tags=standard.tags %}{% 
   endcapture 
   %}<li{{ classOutput | rstrip }}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>{% 
 endfor %}</ul>
