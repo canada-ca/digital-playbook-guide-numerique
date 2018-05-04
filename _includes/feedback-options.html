@@ -1,4 +1,9 @@
-{% capture pageReference %}({{site.PageColon[page.lang] }} {{ page.title | url_encode }}){% endcapture %}
+{% capture pageTitle %}{% 
+  include functions/page-title.html includeSiteTitle=false %}{% 
+endcapture %}{% 
+capture pageReference 
+  %}({{site.PageColon[page.lang] }} {{ pageTitle | url_encode }}){% 
+endcapture %}
 <section id="feedback-popup" class="mfp-hide modal-dialog modal-content overlay-def">
   <header class="modal-header">
     <h2 class="modal-title">{{ site.FeedbackAsk[page.lang] }}</h2>
