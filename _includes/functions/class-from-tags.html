@@ -1,6 +1,6 @@
 {% capture classOutput %}{%
   for tag in include.tags %}{%
-    unless excludeSectionTags and tag contains "dogn-section"
+    unless include.excludeSectionTags and tag contains "dpgn-section"
       %}{{ tag }} {%
     endunless %}{% 
   endfor %}{% 
