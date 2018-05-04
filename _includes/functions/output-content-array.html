@@ -27,6 +27,7 @@ for item in include.contentArray %}{%
       include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel %}</li>
 {%  else %}
 <div{{ classOutput | rstrip }}>
+{{ item.content }}
 </div>
 {%  endif %}{% 
   endcapture %}{% 
