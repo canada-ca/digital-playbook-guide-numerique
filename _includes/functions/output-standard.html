@@ -1,7 +1,5 @@
 {% assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
-assign commonStandard = dataSource.common.standards.standard %}{% 
-assign commonGuideline = commonStandard.guidelines.guideline %}{% 
 if include.standard.title %}{% 
   assign standard = include.standard %}{% 
 else %}{% 
@@ -9,11 +7,10 @@ else %}{%
   assign standard = dataSource.standards[standardIndex] %}{% 
 endif %}{% 
 assign standardHeadingLevel = include.currentHeadingLevel | default: 1 %}{% 
-assign standardTags = commonStandard.tags | concat: standard.tags %}{% 
 if include.includeStandardTitle %}{% 
   assign standardHeadingLevel = standardHeadingLevel | plus: 1 %}
-<section{% if standardTags.size > 0 
-    %} class="{{ standardTags | join: ' ' }}"{% 
+<section{% if standard.tags.size > 0 
+    %} class="{{ standard.tags | join: ' ' }}"{% 
   endif 
 %}>{% capture headerId %}{% 
     include /functions/generate-id.html string=standard.title %}{% 
@@ -23,39 +20,38 @@ if include.includeStandardTitle %}{%
 assign guidelineHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
 assign subsectionHeadingLevel = guidelineHeadingLevel | plus: 1 %}
 
-<div{% if commonStandard.introduction.tags.size > 0 
-  %} class="{{ commonStandard.introduction.tags | join: ' ' }}"{% 
+<div{% if standard.introduction.tags.size > 0 
+  %} class="{{ standard.introduction.tags | join: ' ' }}"{% 
 endif %}>
 
 {% include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel %}
 
 </div>
 
-<div{% if commonStandard.guidelines.tags.size > 0 
-  %} class="{{ commonStandard.guidelines.tags | join: ' ' }}"{% 
+<div{% if standard.guidelines.tags.size > 0 
+  %} class="{{ standard.guidelines.tags | join: ' ' }}"{% 
 endif %}>
 
-**{{ commonStandard.guidelines.title }}{{ site.Colon[page.lang] }}**
+**{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}**
 
-{% include functions/guideline-links.html guidelines=standard.guidelines samePage=true %}
+{% include functions/guideline-links.html guidelines=standard.guidelines.content samePage=true %}
 
 </div>
 
 {% if standard.relatedguidelines.size > 0 %}
-<div{% if commonStandard.relatedguidelines.tags.size > 0 
-    %} class="{{ commonStandard.relatedguidelines.tags | join: ' ' }}"{% 
+<div{% if standard.relatedguidelines.tags.size > 0 
+    %} class="{{ standard.relatedguidelines.tags | join: ' ' }}"{% 
   endif %}>
 
-**{{ commonStandard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
+**{{ standard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
 
-{% include functions/guideline-links.html guidelines=standard.relatedguidelines samePage=true standardTitle=standard.title %}
+{% include functions/guideline-links.html guidelines=standard.relatedguidelines.content samePage=true standardTitle=standard.title %}
 
 </div>
 {% endif %}
 
-{% for guideline in standard.guidelines %}{%
-  assign guidelineTags = commonGuideline.tags | concat: guideline.tags %}
-<section{% if guidelineTags.size > 0 
+{% for guideline in standard.guidelines.content %}
+<section{% if guideline.tags.size > 0 
   %} class="{{ guideline.tags | join: ' ' }}"{% 
   endif %}>{% 
   capture headerId %}{% 
@@ -63,8 +59,8 @@ endif %}>
   endcapture %}
 <h{{ guidelineHeadingLevel }} id="{{ headerId | strip }}">{{ guideline.title }}</h{{ guidelineHeadingLevel }}>
 
-<div{% if commonGuideline.introduction.tags.size > 0 
-  %} class="{{ commonGuideline.introduction.tags | join: ' ' }}"{% 
+<div{% if guideline.introduction.tags.size > 0 
+  %} class="{{ guideline.introduction.tags | join: ' ' }}"{% 
 endif %}>
 
 {% include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=guidelineHeadingLevel %}
@@ -72,10 +68,10 @@ endif %}>
 </div>
 
 {% if guideline.checklist.content.size > 0 %}
-<section{% if commonGuideline.checklist.tags.size > 0 %} class="{{ commonGuideline.checklist.tags | join: ' ' }}"{% 
+<section{% if guideline.checklist.tags.size > 0 %} class="{{ guideline.checklist.tags | join: ' ' }}"{% 
 endif %}>
 
-<h{{ subsectionHeadingLevel }}>{{ commonGuideline.checklist.title }}</h{{ subsectionHeadingLevel }}>
+<h{{ subsectionHeadingLevel }}>{{ guideline.checklist.title }}</h{{ subsectionHeadingLevel }}>
 
 {% include /functions/output-content-array.html contentArray=guideline.checklist.content currHeadingLevel=subsectionHeadingLevel %}
 
@@ -83,10 +79,10 @@ endif %}>
 {% endif %}
 
 {% if guideline.guides.content.size > 0 %}
-<section{% if commonGuideline.guides.tags.size > 0 %} class="{{ commonGuideline.guides.tags | join: ' ' }}"{% 
+<section{% if guideline.guides.tags.size > 0 %} class="{{ guideline.guides.tags | join: ' ' }}"{% 
 endif %}>
 
-<h{{ subsectionHeadingLevel }}>{{ commonGuideline.guides.title }}</h{{ subsectionHeadingLevel }}>
+<h{{ subsectionHeadingLevel }}>{{ guideline.guides.title }}</h{{ subsectionHeadingLevel }}>
 
 {% include /functions/output-content-array.html contentArray=guideline.guides.content currHeadingLevel="4" %}
 
@@ -95,11 +91,11 @@ endif %}>
 
 {% if guideline.similar.content.size > 0 %}
 <section{% 
-  if commonGuideline.similar.tags .size > 0 
-    %} class="{{ commonGuideline.similar.tags  | join: ' ' }}"{%
+  if guideline.similar.tags .size > 0 
+    %} class="{{ guideline.similar.tags  | join: ' ' }}"{%
   endif %}>
 
-<h{{ subsectionHeadingLevel }}>{{ commonGuideline.similar.title }}</h{{ subsectionHeadingLevel }}>
+<h{{ subsectionHeadingLevel }}>{{ guideline.similar.title }}</h{{ subsectionHeadingLevel }}>
 
 {% include /functions/output-content-array.html contentArray=guideline.similar.content currHeadingLevel="4" %}
 
