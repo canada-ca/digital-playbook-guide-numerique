@@ -1,43 +1,5 @@
 {
   "title": "Guide numérique du gouvernement du Canada (ébauche)",
-  "common": {
-    "standards": {
-      "title": "Normes numériques",
-      "tags": ["dpgn-section-standards"],
-      "standard": {
-        "tags": ["dpgn-section-standard"],
-        "introduction": {
-          "tags": ["dpgn-section-intro-standard"]
-        },
-        "relatedguidelines": {
-          "title": "Lignes directrices connexes",
-          "tags": ["dpgn-section-guidelines-related"]
-        },
-        "guidelines": {
-          "title": "Lignes directrices",
-          "tags": ["dpgn-section-guidelines"],
-          "guideline": {
-            "tags": ["dpgn-section-guideline"],
-            "introduction": {
-               "tags": ["dpgn-section-intro-guideline"]
-            },
-            "checklist": {
-              "title": "Liste de contrôle",
-              "tags": ["dpgn-section-checklist"]
-            },
-            "guides": {
-              "title": "Guides d’application",
-              "tags": ["dpgn-section-guides"]
-            },
-            "similar": {
-              "title": "Ressources similaires",
-              "tags": ["dpgn-section-similar"]
-            }
-          }
-        }
-      }
-    }
-  },
   "introduction": {
     "title": "Aperçu (ébauche)",
     "tags": ["dpgn-section-overview"],
@@ -115,133 +77,53 @@
       }
     ]
   },
-  "standards": [
-    {
-      "title": "1. Concevoir avec les utilisateurs (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-          {
-            "type": "text",
-            "tags": [],
-            "content": "**[TODO: Add/revise introductory text]**"
-          }
-        ]
-      },
-      "relatedguidelines": ["2.1", "2.2", "2.3", "2.4", "3.2", "6.5", "7.1", "7.4", "8.2", "8.4", "10.1"],
-      "guidelines": [
-        {
-          "title": "1.1 Ne rien construire pour l’utilisateur sans sa participation",
-          "tags": [],
-          "introduction": {
-            "content": [
-              {
-                "type": "text",
-                "tags": [],
-                "content": "Focus on the needs of your users, using agile, iterative and user-centred methods when building a service. Start with extensive research and analysis to help understand who is using the service, what their needs are and how the service will affect their lives to better understand how the service should be designed. The absence of the user voice leads to assumptions that may be incorrect and costly."
-              },
-              {
-                "type": "text",
-                "tags": [],
-                "content": "Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched."
-              }
-            ]
-          },
-          "checklist": {
-            "content": [
-              {
-                "type": "list",
-                "tags": [],
-                "listtype": "unordered",
-                "content": [
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Interview potential users to help develop the following for the service: a. User goals (e.g., As a [user type], I want [some goal] so that [some reason]) b. User personas (e.g., based on habits, personality, attitudes and motives) c. User profiles (e.g., based on demographics such as gender, age, location, income and family size)"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Use a range of qualitative and quantitative research methods to determine people’s goals, needs, and behaviors"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Create and maintain a list of priority tasks that users are trying to accomplish (i.e., “user stories”)"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Regularly test with users when building the service and after the service has been launched to ensure it meets the needs of user and to identify any parts of the service that users may find difficult"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Put in place a plan to pay for user research and usability tests throughout the design of the service and after it’s built"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7)."
-                  }
-                ]
-              }
-            ]
-          },
-          "guides": {
-            "content": [
-              {
-                "type": "text",
-                "tags": [],
-                "content": "**[TODO: Add/revise implementation guide items]**"
-              }
-            ]
-          },
-          "similar": {
-            "content": [
-              {
-                "type": "list",
-                "tags": [],
-                "listtype": "unordered",
-                "content": [
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "[2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)"
-                  }
-                ]
-              }
-            ]
-          }
+  "standards": {
+    "title": "Normes numériques",
+    "tags": ["dpgn-section-standards"],
+    "content": [
+      {
+        "title": "1. Concevoir avec les utilisateurs (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+            {
+              "type": "text",
+              "tags": [],
+              "content": "**[TODO: Add/revise introductory text]**"
+            }
+          ]
         },
-        {
-          "title": "1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue",
-          "tags": [],
-          "introduction": {
-            "content": [
-              {
-                "type": "text",
-                "tags": [],
-                "content": "User needs are constantly evolving which it is why it is important to plan for ongoing user research and usability testing. Engage users at all stages, continuously seeking feedback to ensure the service helps users to accomplish their tasks and to keep improving the service to better meet user needs."
-              }
-            ]
-          },
-          "checklist": {
-            "content": [
-              {
-                "type": "text",
-                "tags": [],
-                "content": "**[TODO: Add/revise checklist items]**"
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["2.1", "2.2", "2.3", "2.4", "3.2", "6.5", "7.1", "7.4", "8.2", "8.4", "10.1"]
+        },
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "1.1 Ne rien construire pour l’utilisateur sans sa participation",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                  {
+                    "type": "text",
+                    "tags": [],
+                    "content": "Focus on the needs of your users, using agile, iterative and user-centred methods when building a service. Start with extensive research and analysis to help understand who is using the service, what their needs are and how the service will affect their lives to better understand how the service should be designed. The absence of the user voice leads to assumptions that may be incorrect and costly."
+                  },
+                  {
+                    "type": "text",
+                    "tags": [],
+                    "content": "Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched."
+                  }
+                ]
               },
-              {
-                "type": "section",
-                "tags": ["dpgn-section-stage", "dpgn-phase-alpha"],
-                "title": "Alpha stage",
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
                 "content": [
                   {
                     "type": "list",
@@ -251,31 +133,56 @@
                       {
                         "type": "listitem",
                         "tags": [],
-                        "content": "determine what your private beta will look like and how you’ll use what you find to improve the service **(Digital Service Standard (UK))**"
+                        "content": "Interview potential users to help develop the following for the service: a. User goals (e.g., As a [user type], I want [some goal] so that [some reason]) b. User personas (e.g., based on habits, personality, attitudes and motives) c. User profiles (e.g., based on demographics such as gender, age, location, income and family size)"
                       },
                       {
                         "type": "listitem",
                         "tags": [],
-                        "content": "pay for user research and usability tests throughout the design of the service and after it’s built **(Digital Service Standard (UK))**"
+                        "content": "Use a range of qualitative and quantitative research methods to determine people’s goals, needs, and behaviors"
                       },
                       {
                         "type": "listitem",
                         "tags": [],
-                        "content": "carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**"
+                        "content": "Create and maintain a list of priority tasks that users are trying to accomplish (i.e., “user stories”)"
                       },
                       {
                         "type": "listitem",
                         "tags": [],
-                        "content": "develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**"
+                        "content": "Regularly test with users when building the service and after the service has been launched to ensure it meets the needs of user and to identify any parts of the service that users may find difficult"
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Put in place a plan to pay for user research and usability tests throughout the design of the service and after it’s built"
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement"
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7)."
                       }
                     ]
-                  }  
+                  }
                 ]
               },
-              {
-                "type": "section",
-                "tags": ["dpgn-section-stage", "dpgn-phase-beta", "dpgn-phase-live"],
-                "title": "Beta and live stages",
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                  {
+                    "type": "text",
+                    "tags": [],
+                    "content": "**[TODO: Add/revise implementation guide items]**"
+                  }
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
                 "content": [
                   {
                     "type": "list",
@@ -285,301 +192,40 @@
                       {
                         "type": "listitem",
                         "tags": [],
-                        "content": "pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**"
-                      },
-                      {
-                        "type": "listitem",
-                        "tags": [],
-                        "content": "carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**"
-                      },
-                      {
-                        "type": "listitem",
-                        "tags": [],
-                        "content": "develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**"
-                      },
-                      {
-                        "type": "listitem",
-                        "tags": [],
-                        "content": "do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**"
-                      },
-                      {
-                        "type": "listitem",
-                        "tags": [],
-                        "content": "test with users who need assisted digital support **(Digital Service Standard (UK))**"
-                      },
-                      {
-                        "type": "listitem",
-                        "tags": [],
-                        "content": "use analytics data in your user research plan for the service **(Digital Service Standard (UK))**"
-                      },
-                      {
-                        "type": "listitem",
-                        "tags": [],
-                        "content": "document any problems you’ve found through testing and how you solved them **(Digital Service Standard (UK))**"
-                      },
-                      {
-                        "type": "listitem",
-                        "tags": [],
-                        "content": "document any problems you haven’t been able to solve in beta and how you’ll handle them in public beta **(Digital Service Standard (UK))**"
+                        "content": "[2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)"
                       }
                     ]
                   }
                 ]
               }
-            ]
-          },
-          "guides": {
-            "content": [
-              {
-                "type": "text",
-                "tags": [],
-                "content": "**[TODO: Add/revise implementation guide items]**"
-              }
-            ]
-          },
-          "similar": {
-            "content": [
-              {
-                "type": "list",
-                "tags": [],
-                "listtype": "unordered",
+            },
+            {
+              "title": "1.2 Avoir de l’empathie pour les utilisateurs du service et les faire participer à toutes les étapes, de la planification ou l’amélioration continue",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
                 "content": [
                   {
-                    "type": "listitem",
+                    "type": "text",
                     "tags": [],
-                    "content": "[2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)"
+                    "content": "User needs are constantly evolving which it is why it is important to plan for ongoing user research and usability testing. Engage users at all stages, continuously seeking feedback to ensure the service helps users to accomplish their tasks and to keep improving the service to better meet user needs."
                   }
                 ]
-              }
-            ]
-          }
-        },
-        {
-          "title": "1.3 Comprendre le contexte dans lequel les personnes interagissent et concevoir des solutions propres à répondre à leurs besoins",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "1.4 Définir et comprendre clairement le problème de bout en bout et utiliser des données pour démontrer qu’il est résolu",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "1.5 Fournir des services qui peuvent être tout, quand et n’importe quel appareil",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "1.6 Rendre les services simples, intuitifs et cohérents",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "1.7 Rendre plus pratique et pratique l’utilisation des services numériques",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "title": "2. Intégrer l’accessibilité dès le départ (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-          {
-            "type": "text",
-            "tags": [],
-            "content": "**[TODO: Add/revise introductory text]**"
-          }
-        ]
-      },
-      "relatedguidelines": ["1.1", "1.2", "1.3", "1.5", "1.6", "1.8", "8.4"],
-      "guidelines": [
-        {
-          "title": "2.1 Construire pour ceux dont le besoin est le plus grand et cela fonctionnera pour tous les autres",
-          "tags": [],
-          "introduction": {
-            "content": [
-              {
-                "type": "text",
-                "tags": [],
-                "content": "The Government of Canada is committed to ensuring that a high level of accessibility is applied uniformly across its service delivery channels. Technologies and standards are constantly evolving and accessibility plays a major role in making the Government of Canada more effective and inclusive. A more consistent, convenient, clear, and easy user experience when using government services online builds trust."
               },
-              {
-                "type": "text",
-                "tags": [],
-                "content": "Development of accessible (regardless of ability, device or environment) digital services enhances the overall experience for everyone by improving and simplifying the overall design."
-              }
-            ]
-          },
-          "checklist": {
-            "content": [
-              {
-                "type": "text",
-                "tags": [],
-                "content": "**[TODO: Add/revise checklist items]**"
-              },
-              {
-                "type": "list",
-                "tags": [],
-                "listtype": "unordered",
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
                 "content": [
                   {
-                    "type": "listitem",
+                    "type": "text",
                     "tags": [],
-                    "content": "Ensure design and development resources have the knowledge and expertise to build accessible services and to resolve accessibility issues."
+                    "content": "**[TODO: Add/revise checklist items]**"
                   },
                   {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Ensure testing and quality assurance resources have the knowledge and expertise to identify accessibility issues."
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Ensure support resources are trained to assist persons with disabilities with completing tasks and accessing information."
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Design the service to work with a variety of browsers and devices, including assistive devices."
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Ensure testing processes include testing for conformance to WCAG 2.0 level AA and testing with a variety of browsers, devices and assistive devices."
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Make it easy for all users (including persons with disabilities) to provide feedback, address problems, and request support for using the service."
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "Use ongoing research, testing and analytics to continually assess and improve the accessibility of the service."
-                  }
-                ]
-              }
-            ]
-          },
-          "guides": {
-            "content": [
-              {
-                "type": "text",
-                "tags": [],
-                "content": "**[TODO: Add/revise implementation guide items]**"
-              },
-              {
-                "type": "list",
-                "tags": [],
-                "listtype": "unordered",
-                "content": [
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "[Dos and don’ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)"
-                  },
-                  {
-                    "type": "listnested",
-                    "tags": [],
-                    "content": "[Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)",
-                    "nested": [
+                    "type": "section",
+                    "tags": ["dpgn-section-stage", "dpgn-phase-alpha"],
+                    "title": "Alpha stage",
+                    "content": [
                       {
                         "type": "list",
                         "tags": [],
@@ -588,32 +234,32 @@
                           {
                             "type": "listitem",
                             "tags": [],
-                            "content": "[How to meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)"
+                            "content": "determine what your private beta will look like and how you’ll use what you find to improve the service **(Digital Service Standard (UK))**"
                           },
                           {
                             "type": "listitem",
                             "tags": [],
-                            "content": "[Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)"
+                            "content": "pay for user research and usability tests throughout the design of the service and after it’s built **(Digital Service Standard (UK))**"
                           },
                           {
                             "type": "listitem",
                             "tags": [],
-                            "content": "[Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/)"
+                            "content": "carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**"
+                          },
+                          {
+                            "type": "listitem",
+                            "tags": [],
+                            "content": "develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**"
                           }
                         ]
                       }  
                     ]
                   },
                   {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "[Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)"
-                  },
-                  {
-                    "type": "listnested",
-                    "tags": [],
-                    "content": "[Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)",
-                    "nested": [
+                    "type": "section",
+                    "tags": ["dpgn-section-stage", "dpgn-phase-beta", "dpgn-phase-live"],
+                    "title": "Beta and live stages",
+                    "content": [
                       {
                         "type": "list",
                         "tags": [],
@@ -622,989 +268,1747 @@
                           {
                             "type": "listitem",
                             "tags": [],
-                            "content": "[Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0)"
+                            "content": "pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**"
                           },
                           {
                             "type": "listitem",
                             "tags": [],
-                            "content": "[Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)"
+                            "content": "carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**"
                           },
                           {
                             "type": "listitem",
                             "tags": [],
-                            "content": "[WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)"
+                            "content": "develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**"
+                          },
+                          {
+                            "type": "listitem",
+                            "tags": [],
+                            "content": "do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**"
+                          },
+                          {
+                            "type": "listitem",
+                            "tags": [],
+                            "content": "test with users who need assisted digital support **(Digital Service Standard (UK))**"
+                          },
+                          {
+                            "type": "listitem",
+                            "tags": [],
+                            "content": "use analytics data in your user research plan for the service **(Digital Service Standard (UK))**"
+                          },
+                          {
+                            "type": "listitem",
+                            "tags": [],
+                            "content": "document any problems you’ve found through testing and how you solved them **(Digital Service Standard (UK))**"
+                          },
+                          {
+                            "type": "listitem",
+                            "tags": [],
+                            "content": "document any problems you haven’t been able to solve in beta and how you’ll handle them in public beta **(Digital Service Standard (UK))**"
                           }
                         ]
                       }
                     ]
-                  },
+                  }
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
                   {
-                    "type": "listitem",
+                    "type": "text",
                     "tags": [],
-                    "content": "[Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)"
-                  },
+                    "content": "**[TODO: Add/revise implementation guide items]**"
+                  }
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
                   {
-                    "type": "listitem",
+                    "type": "list",
                     "tags": [],
-                    "content": "[Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "[Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "[Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)"
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "[Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)"
-                  },
-                  {
-                    "type": "listnested",
-                    "tags": [],
-                    "content": "[Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)",
-                    "nested": [
+                    "listtype": "unordered",
+                    "content": [
                       {
-                        "type": "list",
+                        "type": "listitem",
                         "tags": [],
-                        "listtype": "unordered",
-                        "content": [
-                          {
-                            "type": "listitem",
-                            "tags": [],
-                            "content": "[Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)"
-                          }
-                        ]
+                        "content": "[2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)"
                       }
                     ]
-                  },
-                  {
-                    "type": "listitem",
-                    "tags": [],
-                    "content": "[A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)"
                   }
                 ]
               }
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "2.2 Les services devraient respecter ou dépasser les normes d’accessibilité et leur utilisation ne devrait pas être difficile",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "2.3 Co-créer avec les personnes qui ont des besoins distincts, en étant inclusif dès le début",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "2.4 Tenir compte des contraintes possibles de l’utilisateur dans la conception des services",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+            },
+            {
+              "title": "1.3 Comprendre le contexte dans lequel les personnes interagissent et concevoir des solutions propres à répondre à leurs besoins",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "1.4 Définir et comprendre clairement le problème de bout en bout et utiliser des données pour démontrer qu’il est résolu",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "1.5 Fournir des services qui peuvent être tout, quand et n’importe quel appareil",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "1.6 Rendre les services simples, intuitifs et cohérents",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "1.7 Rendre plus pratique et pratique l’utilisation des services numériques",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    },
-    {
-      "title": "3. Collaborer largement (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-        ]
       },
-      "relatedguidelines": ["1.1", "1.2", "2.3", "5.5"],
-      "guidelines": [
-        {
-          "title": "3.1 Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+      {
+        "title": "2. Intégrer l’accessibilité dès le départ (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+            {
+              "type": "text",
+              "tags": [],
+              "content": "**[TODO: Add/revise introductory text]**"
+            }
+          ]
         },
-        {
-          "title": "3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un éventail diversifié de partenaires",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["1.1", "1.2", "1.3", "1.5", "1.6", "1.8", "8.4"]
         },
-        {
-          "title": "3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "2.1 Construire pour ceux dont le besoin est le plus grand et cela fonctionnera pour tous les autres",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                  {
+                    "type": "text",
+                    "tags": [],
+                    "content": "The Government of Canada is committed to ensuring that a high level of accessibility is applied uniformly across its service delivery channels. Technologies and standards are constantly evolving and accessibility plays a major role in making the Government of Canada more effective and inclusive. A more consistent, convenient, clear, and easy user experience when using government services online builds trust."
+                  },
+                  {
+                    "type": "text",
+                    "tags": [],
+                    "content": "Development of accessible (regardless of ability, device or environment) digital services enhances the overall experience for everyone by improving and simplifying the overall design."
+                  }
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                  {
+                    "type": "text",
+                    "tags": [],
+                    "content": "**[TODO: Add/revise checklist items]**"
+                  },
+                  {
+                    "type": "list",
+                    "tags": [],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Ensure design and development resources have the knowledge and expertise to build accessible services and to resolve accessibility issues."
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Ensure testing and quality assurance resources have the knowledge and expertise to identify accessibility issues."
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Ensure support resources are trained to assist persons with disabilities with completing tasks and accessing information."
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Design the service to work with a variety of browsers and devices, including assistive devices."
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Ensure testing processes include testing for conformance to WCAG 2.0 level AA and testing with a variety of browsers, devices and assistive devices."
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Make it easy for all users (including persons with disabilities) to provide feedback, address problems, and request support for using the service."
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "Use ongoing research, testing and analytics to continually assess and improve the accessibility of the service."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                  {
+                    "type": "text",
+                    "tags": [],
+                    "content": "**[TODO: Add/revise implementation guide items]**"
+                  },
+                  {
+                    "type": "list",
+                    "tags": [],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "[Dos and don’ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)"
+                      },
+                      {
+                        "type": "listnested",
+                        "tags": [],
+                        "content": "[Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)",
+                        "nested": [
+                          {
+                            "type": "list",
+                            "tags": [],
+                            "listtype": "unordered",
+                            "content": [
+                              {
+                                "type": "listitem",
+                                "tags": [],
+                                "content": "[How to meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)"
+                              },
+                              {
+                                "type": "listitem",
+                                "tags": [],
+                                "content": "[Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)"
+                              },
+                              {
+                                "type": "listitem",
+                                "tags": [],
+                                "content": "[Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/)"
+                              }
+                            ]
+                          }  
+                        ]
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "[Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)"
+                      },
+                      {
+                        "type": "listnested",
+                        "tags": [],
+                        "content": "[Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)",
+                        "nested": [
+                          {
+                            "type": "list",
+                            "tags": [],
+                            "listtype": "unordered",
+                            "content": [
+                              {
+                                "type": "listitem",
+                                "tags": [],
+                                "content": "[Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0)"
+                              },
+                              {
+                                "type": "listitem",
+                                "tags": [],
+                                "content": "[Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)"
+                              },
+                              {
+                                "type": "listitem",
+                                "tags": [],
+                                "content": "[WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "[Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)"
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "[Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)"
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "[Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)"
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "[Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)"
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "[Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)"
+                      },
+                      {
+                        "type": "listnested",
+                        "tags": [],
+                        "content": "[Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)",
+                        "nested": [
+                          {
+                            "type": "list",
+                            "tags": [],
+                            "listtype": "unordered",
+                            "content": [
+                              {
+                                "type": "listitem",
+                                "tags": [],
+                                "content": "[Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listitem",
+                        "tags": [],
+                        "content": "[A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "similar": {
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "2.2 Les services devraient respecter ou dépasser les normes d’accessibilité et leur utilisation ne devrait pas être difficile",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "2.3 Co-créer avec les personnes qui ont des besoins distincts, en étant inclusif dès le début",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "2.4 Tenir compte des contraintes possibles de l’utilisateur dans la conception des services",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    },
-    {
-      "title": "4. Permettre au personnel d’offrir de meilleurs services (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-        ]
       },
-      "relatedguidelines": ["3.1", "3.2", "3.3", "5.4", "5.5", "6.1", "6.2", "7.1", "7.2", "7.3", "7.4"],
-      "guidelines": [
-        {
-          "title": "4.1 Offrir des possibilités continues de formation et d’apprentissage afin d’améliorer sans cesse les compétences de l’équipe et du grand réseau",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+      {
+        "title": "3. Collaborer largement (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+          ]
         },
-        {
-          "title": "4.2 Veiller à ce que le personnel ait accès aux outils et aux technologies dont il a besoin pour innover",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["1.1", "1.2", "2.3", "5.5"]
         },
-        {
-          "title": "4.3 Veiller à ce que l’équipe dispose des bons systèmes et processus pour créer",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et de l’exploitation du service et leur permettre d’apprendre de leurs erreurs",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "4.5 Rendre une personne responsable du service",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "3.1 Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un éventail diversifié de partenaires",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    },
-    {
-      "title": "5. Travailler ouvertement par défaut (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-        ]
       },
-      "relatedguidelines": ["3.4", "6.3", "6.4", "8.1", "10.2"],
-      "guidelines": [
-        {
-          "title": "5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+      {
+        "title": "4. Permettre au personnel d’offrir de meilleurs services (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+          ]
         },
-        {
-          "title": "5.2 Être transparent avec les objectifs et publier des données sur le rendement en temps réel",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["3.1", "3.2", "3.3", "5.4", "5.5", "6.1", "6.2", "7.1", "7.2", "7.3", "7.4"]
         },
-        {
-          "title": "5.3 Mesurer et surveiller l’efficacité, la valeur et les conséquences du service et en faire rapport au public",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "5.4 Être transparent sur la façon de travailler et justifier les décisions prises",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "5.5 Travailler à l’air libre et rendre le code source ouvert et réutilisable",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "4.1 Offrir des possibilités continues de formation et d’apprentissage afin d’améliorer sans cesse les compétences de l’équipe et du grand réseau",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "4.2 Veiller à ce que le personnel ait accès aux outils et aux technologies dont il a besoin pour innover",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "4.3 Veiller à ce que l’équipe dispose des bons systèmes et processus pour créer",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "4.4 Permettre aux équipes de prendre des décisions tout au long de la conception, de la construction et de l’exploitation du service et leur permettre d’apprendre de leurs erreurs",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "4.5 Rendre une personne responsable du service",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    },
-    {
-      "title": "6. Utiliser des normes et des solutions ouvertes (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-        ]
       },
-      "relatedguidelines": ["1.5", "3.4", "5.1", "5.5", "10.3"],
-      "guidelines": [
-        {
-          "title": "6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+      {
+        "title": "5. Travailler ouvertement par défaut (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+          ]
         },
-        {
-          "title": "6.2 Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["3.4", "6.3", "6.4", "8.1", "10.2"]
         },
-        {
-          "title": "6.3 Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "6.5 Concevoir, créer et tester des services numériques de bout en bout",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "6.6 Nuage d’abord",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "5.2 Être transparent avec les objectifs et publier des données sur le rendement en temps réel",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "5.3 Mesurer et surveiller l’efficacité, la valeur et les conséquences du service et en faire rapport au public",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "5.4 Être transparent sur la façon de travailler et justifier les décisions prises",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "5.5 Travailler à l’air libre et rendre le code source ouvert et réutilisable",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    },
-    {
-      "title": "7. Effectuer des itérations et des améliorations constamment (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-        ]
       },
-      "relatedguidelines": ["1.2", "3.3", "9.2"],
-      "guidelines": [
-        {
-          "title": "7.1 Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+      {
+        "title": "6. Utiliser des normes et des solutions ouvertes (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+          ]
         },
-        {
-          "title": "7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptés pour la poursuite du développement",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["1.5", "3.4", "5.1", "5.5", "10.3"]
         },
-        {
-          "title": "7.3 Accepter les changements d’environnement et de conception pour la durabilité et y réagir",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "7.4 Commencer à échelle réduite et tester continuellement les conceptions et les hypothèses, en utilisant des données probantes comme base d’itération",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "6.2 Utiliser et réutiliser les solutions, les approches et les plateformes gouvernementales éprouvées et communes",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "6.3 Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "6.5 Concevoir, créer et tester des services numériques de bout en bout",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "6.6 Nuage d’abord",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    },
-    {
-      "title": "8. Concevoir des services éthiques (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-        ]
       },
-      "relatedguidelines": ["1.2", "1.3", "1.4", "1.8", "2.1", "2.2", "2.4", "5.2", "5.3", "5.4", "9.1", "9.2", "9.3", "9.4", "10.2"],
-      "guidelines": [
-        {
-          "title": "8.1 Être transparent au sujet des préjugés personnels et organisationnels et indiquer comment ils sont traités",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+      {
+        "title": "7. Effectuer des itérations et des améliorations constamment (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+          ]
         },
-        {
-          "title": "8.2 Évaluer l’impact total sur les utilisateurs et les collectivités",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["1.2", "3.3", "9.2"]
         },
-        {
-          "title": "8.3 Respecter les lignes directrices éthiques dans la conception des systèmes automatisés",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "8.4 Équilibrer les arbitrages à faire entre l’innovation et l’inclusivité",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "7.1 Construire avec agilité et améliorer constamment en réponse aux besoins des utilisateurs",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "7.2 Accepter que le changement est inévitable et utiliser des stratégies et des outils adaptés pour la poursuite du développement",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "7.3 Accepter les changements d’environnement et de conception pour la durabilité et y réagir",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "7.4 Commencer à échelle réduite et tester continuellement les conceptions et les hypothèses, en utilisant des données probantes comme base d’itération",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    },
-    {
-      "title": "9. Gérer les risques en matière de sécurité et de protection des renseignements personnels (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-        ]
       },
-      "relatedguidelines": ["1.5", "1.6", "1.7", "6.1", "6.2", "8.3", "8.4"],
-      "guidelines": [
-        {
-          "title": "9.1 Adopter une approche équilibrée de la gestion des risques en appliquant les mesures appropriées en matière de protection des renseignements personnels et de sécurité",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+      {
+        "title": "8. Concevoir des services éthiques (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+          ]
         },
-        {
-          "title": "9.2 Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["1.2", "1.3", "1.4", "1.8", "2.1", "2.2", "2.4", "5.2", "5.3", "5.4", "9.1", "9.2", "9.3", "9.4", "10.2"]
         },
-        {
-          "title": "9.3 Rendre la sécurité transparente et sans friction, en équilibrant sécurité et commodité",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "9.4 Veiller à ce que les services respectent toutes les exigences de la loi et de la réglementation",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "8.1 Être transparent au sujet des préjugés personnels et organisationnels et indiquer comment ils sont traités",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "8.2 Évaluer l’impact total sur les utilisateurs et les collectivités",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "8.3 Respecter les lignes directrices éthiques dans la conception des systèmes automatisés",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "8.4 Équilibrer les arbitrages à faire entre l’innovation et l’inclusivité",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    },
-    {
-      "title": "10. Être de bons utilisateurs de données (ébauche)",
-      "tags": [],
-      "introduction": {
-        "content": [
-        ]
       },
-      "relatedguidelines": ["1.4", "5.1", "5.2", "5.3", "5.4", "6.1", "6.2", "6.4", "9.2"],
-      "guidelines": [
-        {
-          "title": "10.1 Recueillir les données une seule fois pour éviter le double emploi",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+      {
+        "title": "9. Gérer les risques en matière de sécurité et de protection des renseignements personnels (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+          ]
         },
-        {
-          "title": "10.2 Rendre facilement accessibles l’information et les données gouvernementales pertinentes pour faciliter la prise de décisions",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["1.5", "1.6", "1.7", "6.1", "6.2", "8.3", "8.4"]
         },
-        {
-          "title": "10.3 Veiller à ce que les données soient recueillies de façon normalisée pour qu’elles soient facilement intégrables et réutilisables par les autres",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "10.4 Tenir compte de la préservation et de la conservation numériques",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "10.5 Assurer les données et dans la formation est complète, précise et à jour",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
-        },
-        {
-          "title": "10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d’autres",
-          "tags": [],
-          "introduction": {
-            "content": [
-            ]
-          },
-          "checklist": {
-            "content": [
-            ]
-          },
-          "guides": {
-            "content": [
-            ]
-          },
-          "similar": {
-            "content": [
-            ]
-          }
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "9.1 Adopter une approche équilibrée de la gestion des risques en appliquant les mesures appropriées en matière de protection des renseignements personnels et de sécurité",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "9.2 Innover et améliorer tout en répondant aux attentes du public en matière de protection de ses renseignements personnels",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "9.3 Rendre la sécurité transparente et sans friction, en équilibrant sécurité et commodité",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "9.4 Veiller à ce que les services respectent toutes les exigences de la loi et de la réglementation",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
         }
-      ]
-    }
-  ]
+      },
+      {
+        "title": "10. Être de bons utilisateurs de données (ébauche)",
+        "tags": ["dpgn-section-standard"],
+        "introduction": {
+          "tags": ["dpgn-section-intro-standard"],
+          "content": [
+          ]
+        },
+        "relatedguidelines": {
+          "title": "Lignes directrices connexes",
+          "tags": ["dpgn-section-guidelines-related"],
+          "content": ["1.4", "5.1", "5.2", "5.3", "5.4", "6.1", "6.2", "6.4", "9.2"]
+        },
+        "guidelines": {
+          "title": "Lignes directrices",
+          "tags": ["dpgn-section-guidelines"],
+          "content": [
+            {
+              "title": "10.1 Recueillir les données une seule fois pour éviter le double emploi",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "10.2 Rendre facilement accessibles l’information et les données gouvernementales pertinentes pour faciliter la prise de décisions",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "10.3 Veiller à ce que les données soient recueillies de façon normalisée pour qu’elles soient facilement intégrables et réutilisables par les autres",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "10.4 Tenir compte de la préservation et de la conservation numériques",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "10.5 Assurer les données et dans la formation est complète, précise et à jour",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            },
+            {
+              "title": "10.6 Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d’autres",
+              "tags": ["dpgn-section-guideline"],
+              "introduction": {
+                "tags": ["dpgn-section-intro-guideline"],
+                "content": [
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": ["dpgn-section-checklist"],
+                "content": [
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": ["dpgn-section-guides"],
+                "content": [
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": ["dpgn-section-similar"],
+                "content": [
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
