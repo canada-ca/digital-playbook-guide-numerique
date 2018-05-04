@@ -11,7 +11,7 @@ endif %}>
 **{{ dataSource.common.standards.title }}{{ site.Colon[page.lang] }}**
 
 <ul>
-{% for standard in dataSource.standards %}{% 
+{% for standard in dataSource.standards.content %}{% 
   capture standardId %}{% 
     include /functions/generate-id.html string=standard.title %}{% 
   endcapture 
