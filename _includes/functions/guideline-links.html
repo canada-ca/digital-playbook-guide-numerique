@@ -22,12 +22,11 @@ if stringArray %}
     assign guidelineData = dataSource.standards.content[standardIndex].guidelines.content[guidelineIndex] %}{% 
     capture guidelineId %}{% 
       include /functions/generate-id.html string=guidelineData.title %}{% 
-    endcapture 
-    %}<li{% 
-    if guidelineData.tags.size > 0 
-      %} class="{{ guidelineData.tags | join: ' ' }}"{% 
-    endif 
-    %}><a href="{% 
+    endcapture %}{% 
+    capture classOutput %}{% 
+      include /functions/class-from-tags.html excludeSectionTags=true %}{% 
+    endcapture
+    %}<li{{ classOutput | rstrip }}><a href="{% 
     if include.samePage != true 
       %}{{ site.standardFile[standardIndex][page.lang] }}{% 
     endif 
@@ -42,11 +41,10 @@ if stringArray %}
 {% for guideline in guidelinesArray %}{% 
     capture guidelineId %}{% 
       include /functions/generate-id.html string=guideline.title %}{% 
-    endcapture 
-    %}<li{% 
-    if guideline.tags.size > 0 
-      %} class="{{ guideline.tags | join: ' ' }}"{% 
-    endif 
-    %}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
+    endcapture %}{% 
+    capture classOutput %}{% 
+      include /functions/class-from-tags.html excludeSectionTags=true %}{% 
+    endcapture
+    %}<li{{ classOutput | rstrip }}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
 {% endfor %}</ul>
 {% endif %}
