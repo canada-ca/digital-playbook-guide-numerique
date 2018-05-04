@@ -1,11 +1,11 @@
 {% assign prevItemType = "" %}{% 
 for item in include.contentArray %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=item.tags %}{% 
+  endcapture %}{% 
   capture rawOutput %}{% 
     if item.type == 'section' %}{% 
-      assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}{% 
-      capture classOutput %}{% 
-        include /functions/class-from-tags.html excludeSectionTags=false %}{% 
-      endcapture %}
+      assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}
 <section{{ classOutput | rstrip }}>
 <h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>
 {% include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel %}
@@ -15,29 +15,17 @@ for item in include.contentArray %}{%
         assign listTag = "ol" %}{% 
       else %}{% 
         assign listTag = "ul" %}{% 
-      endif %}{% 
-      capture classOutput %}{% 
-        include /functions/class-from-tags.html %}{% 
-      endcapture %}
+      endif %}
 <{{ listTag }}{{ classOutput | rstrip }}>{% 
       capture listOutput %}{% 
         include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel %}{% 
       endcapture %}{{ listOutput | rstrip }}
-</{{ listTag }}>{% elsif item.type == 'listitem' %}{% 
-      capture classOutput %}{% 
-        include /functions/class-from-tags.html %}{% 
-      endcapture %}
+</{{ listTag }}>{% elsif item.type == 'listitem' %}
 <li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span></li>
-{%  elsif item.type == 'listnested'%}{% 
-      capture classOutput %}{% 
-        include /functions/class-from-tags.html %}{% 
-      endcapture %}
+{%  elsif item.type == 'listnested'%}
 <li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span>{% 
       include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel %}</li>
-{%  else %}{% 
-      capture classOutput %}{% 
-        include /functions/class-from-tags.html excludeSectionTags=false %}{% 
-      endcapture %}
+{%  else %}
 <div{{ classOutput | rstrip }}>
 </div>
 {%  endif %}{% 
