@@ -4,33 +4,34 @@ if include.standard.title %}{%
   assign standard = include.standard %}{% 
 else %}{% 
   assign standardIndex = include.standard | minus: 1 %}{% 
-  assign standard = dataSource.standards[standardIndex] %}{% 
+  assign standard = dataSource.standards.content[standardIndex] %}{% 
 endif %}{% 
 assign standardHeadingLevel = include.currentHeadingLevel | default: 1 %}{% 
 if include.includeStandardTitle %}{% 
-  assign standardHeadingLevel = standardHeadingLevel | plus: 1 %}
-<section{% if standard.tags.size > 0 
-    %} class="{{ standard.tags | join: ' ' }}"{% 
-  endif 
-%}>{% capture headerId %}{% 
+  assign standardHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=standard.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>
+{% capture headerId %}{% 
     include /functions/generate-id.html string=standard.title %}{% 
   endcapture %}
 <h{{ standardHeadingLevel }} id="{{ headerId | strip }}">{{ standard.title }}</h{{ standardHeadingLevel }}>
 {% endif %}{% 
 assign guidelineHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
-assign subsectionHeadingLevel = guidelineHeadingLevel | plus: 1 %}
-
-<div{% if standard.introduction.tags.size > 0 
-  %} class="{{ standard.introduction.tags | join: ' ' }}"{% 
-endif %}>
+assign subsectionHeadingLevel = guidelineHeadingLevel | plus: 1 %}{% 
+capture classOutput %}{% 
+  include /functions/class-from-tags.html tags=standard.introduction.tags %}{% 
+endcapture %}
+<div{{ classOutput | rstrip }}>
 
 {% include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel %}
 
 </div>
-
-<div{% if standard.guidelines.tags.size > 0 
-  %} class="{{ standard.guidelines.tags | join: ' ' }}"{% 
-endif %}>
+{% capture classOutput %}{% 
+  include /functions/class-from-tags.html tags=standard.guidelines.tags %}{% 
+endcapture %}
+<div{{ classOutput | rstrip }}>
 
 **{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}**
 
@@ -38,10 +39,11 @@ endif %}>
 
 </div>
 
-{% if standard.relatedguidelines.size > 0 %}
-<div{% if standard.relatedguidelines.tags.size > 0 
-    %} class="{{ standard.relatedguidelines.tags | join: ' ' }}"{% 
-  endif %}>
+{% if standard.relatedguidelines.size > 0 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=standard.relatedguidelines.tags %}{% 
+  endcapture %}
+<div{{ classOutput | rstrip }}>
 
 **{{ standard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
 
@@ -50,26 +52,29 @@ endif %}>
 </div>
 {% endif %}
 
-{% for guideline in standard.guidelines.content %}
-<section{% if guideline.tags.size > 0 
-  %} class="{{ guideline.tags | join: ' ' }}"{% 
-  endif %}>{% 
+{% for guideline in standard.guidelines.content %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>{% 
   capture headerId %}{% 
     include /functions/generate-id.html string=guideline.title %}{% 
   endcapture %}
 <h{{ guidelineHeadingLevel }} id="{{ headerId | strip }}">{{ guideline.title }}</h{{ guidelineHeadingLevel }}>
-
-<div{% if guideline.introduction.tags.size > 0 
-  %} class="{{ guideline.introduction.tags | join: ' ' }}"{% 
-endif %}>
+{% capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.introduction.tags %}{% 
+  endcapture %}
+<div{{ classOutput | rstrip }}>
 
 {% include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=guidelineHeadingLevel %}
 
 </div>
 
-{% if guideline.checklist.content.size > 0 %}
-<section{% if guideline.checklist.tags.size > 0 %} class="{{ guideline.checklist.tags | join: ' ' }}"{% 
-endif %}>
+{% if guideline.checklist.content.size > 0 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.checklist.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>
 
 <h{{ subsectionHeadingLevel }}>{{ guideline.checklist.title }}</h{{ subsectionHeadingLevel }}>
 
@@ -78,9 +83,11 @@ endif %}>
 </section>
 {% endif %}
 
-{% if guideline.guides.content.size > 0 %}
-<section{% if guideline.guides.tags.size > 0 %} class="{{ guideline.guides.tags | join: ' ' }}"{% 
-endif %}>
+{% if guideline.guides.content.size > 0 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.guides.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>
 
 <h{{ subsectionHeadingLevel }}>{{ guideline.guides.title }}</h{{ subsectionHeadingLevel }}>
 
@@ -89,11 +96,11 @@ endif %}>
 </section>
 {% endif %}
 
-{% if guideline.similar.content.size > 0 %}
-<section{% 
-  if guideline.similar.tags .size > 0 
-    %} class="{{ guideline.similar.tags  | join: ' ' }}"{%
-  endif %}>
+{% if guideline.similar.content.size > 0 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.similar.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>
 
 <h{{ subsectionHeadingLevel }}>{{ guideline.similar.title }}</h{{ subsectionHeadingLevel }}>
 
