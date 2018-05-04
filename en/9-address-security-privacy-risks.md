@@ -23,8 +23,7 @@ Interconnected networks span a variety of ecosystems, from cloud and IoT to virt
 
 Undertaking a defense-in-depth approach provides layered security measures to help prevent against evolving and existing threats. Since the service boundary no longer exists at the perimeter, neither should the security boundary, as platforms create tighter and more complex interconnections. Developing trusted solutions and services, and keeping aware of changes to your operating environment will likewise provide positive results.  
 
-Finally, “shifting security left,” ensuring your service design addresses security and privacy risks earlier in the design process, will go a long way to ensuring a long and successful life. 
-
+Finally, “shifting security left” in your service design addresses security and privacy risks earlier in the process, and will go a long way to ensuring a long and successful life. 
 
 </div>
 
@@ -32,18 +31,18 @@ Finally, “shifting security left,” ensuring your service design addresses se
 
 **Guidelines:**
 
-<!-- markdownlint-disable MD032 -->
-- TOC
-{:toc}
-<!-- markdownlint-enable MD032 -->
+  <!-- markdownlint-disable MD032 -->
+  - TOC
+  {:toc}
+  <!-- markdownlint-enable MD032 -->
 
 </div>
 
 <div class="dpgn-section-guidelines-related">
 
-**Related guidelines:**
+  **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.5, 1.6, 1.7, 6.1, 6.2, 8.3, 8.4" samePage=false standardTitle=page.title %}
+  {% include functions/guideline-links.html guidelines="1.5, 1.6, 1.7, 6.1, 6.2, 8.3, 8.4" samePage=false standardTitle=page.title %}
 
 </div>
 
@@ -53,7 +52,7 @@ Finally, “shifting security left,” ensuring your service design addresses se
 
   <div class="dpgn-section-intro-guideline">
 
-  ###Increasing investment in digital services requires corresponding security improvements; new security concerns require new security solutions.
+  ### Increasing investment in digital services requires corresponding security improvements; new security concerns require new security solutions.
 
   We are moving further into the digital economy, where the bad actors are already there, waiting for us, and new security concerns require new security solutions.  As we take services to the cloud, implement and adopt IoT technologies, embrace a more mobile workforce, and interact with data and services that live outside your managed network (and often out of the sight or control of the IT organization), the potential attack surface grows.
 
@@ -69,19 +68,19 @@ Finally, “shifting security left,” ensuring your service design addresses se
 
   ### Checklist
 
-  •	Determine what you absolutely need to protect – can you clearly identify what components are essential to the success of your service?  Not all assets need the same level of protection.
-  •	Determine what you’re willing to pay to protect it – can you protect your assets with the desired level of investment? Is the cost of protection 
-  •	Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption. <b>(Ransomware protection)</b>
-  •	Determine how long you need to protect your assets during and after their life / intended use.
-  •	Document the approach to security and risk management (Digital Service Standard (Ontario))
-  •	Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect.
-  •	plan to keep up-to-date about threats and how to deal with them (Digital Service Standard (Ontario))
-  •	Identify security and privacy threats, including potential pathways for hackers, and tested ways of reducing them (Digital Service Standard (Ontario))
-  •	Document interactions with business and information risk teams (for example Corporate Security and Information, Privacy and Archives) (Digital Service Standard (Ontario))
-  •	Document the process for security updates for servers/software (Digital Service Standard (Ontario))
-  •	Document the plan and process for applying security updates (Digital Service Standard (Ontario))
-  •	Make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) (Digital Service Standard (Ontario))
-  •	Document the process for understanding new or ongoing threats and how those changed during beta (Digital Service Standard (Ontario))
+  - Determine what you absolutely need to protect – can you clearly identify what components are essential to the success of your service?  Not all assets need the same level of protection.
+  - Determine what you’re willing to pay to protect it – can you protect your assets with the desired level of investment? Is the cost of protection 
+  - Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption. **(Ransomware protection)**
+  - Determine how long you need to protect your assets during and after their life / intended use.
+  - Document the approach to security and risk management **(Digital Service Standard (Ontario))**
+  - Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect.
+  - Plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
+  - Identify security and privacy threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
+  - Document interactions with business and information risk teams (for example Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
+  - Document the process for security updates for servers/software **(Digital Service Standard (Ontario))**
+  - Document the plan and process for applying security updates **(Digital Service Standard (Ontario))**
+  - Make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
+  - Document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
 
   </section>
 
@@ -124,18 +123,18 @@ It is easy to assume that the primary threat exists from outside the organizatio
 
 <section class="dpgn-section-stage dpgn-phase-live"></section>
 
-•	Identify and categorize the data the service will use, store or create. 
-•	Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
-•	Ensure every stakeholder of your digital system is prepared to commit to doing their part to secure mutually valuable assets
-•	Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Agreements Involving PII , to ensure they will treat your data with appropriate care.
-•	Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
-•	Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
-•	Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
-•	Develop your system with the 7 principles of Privacy by Design in mind: 1) Proactive not reactive – preventative not remedial; 2) Privacy as the default setting; 3) Privacy embedded into design; 4) Full functionality – positive-sum, not zero-sum; 5) End-to-end security – full lifecycle protection; 6) Visibility and transparency – keep it open; and 7) Respect for user privacy – keep it user-centric. 
-•	Determine if bound by requirements imposed by the GDPR, and whether the user should be able to access, delete, or remove their information from the service
-•	Make sure the privacy policy stays up-to-date (Digital Service Standard (Ontario)) 
-•	Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept (Digital Services Playbook (US)) establish information management retention periods for your system
-•	Determine, in consultation with a privacy specialist, whether and how users are notified about how personal information is collected and used, including whether a privacy policy is needed and where it should appear, and how users will be notified in the event of a security breach (Digital Services Playbook (US))
+- Identify and categorize the data the service will use, store or create. 
+- Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
+- Ensure every stakeholder of your digital system is prepared to commit to doing their part to secure mutually valuable assets
+- Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Agreements Involving PII , to ensure they will treat your data with appropriate care.
+- Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only. **(Build It Right - OneGC Architectural Checklist (draft))**
+- Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
+- Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
+- Develop your system with the 7 principles of Privacy by Design in mind: 1) Proactive not reactive – preventative not remedial; 2) Privacy as the default setting; 3) Privacy embedded into design; 4) Full functionality – positive-sum, not zero-sum; 5) End-to-end security – full lifecycle protection; 6) Visibility and transparency – keep it open; and 7) Respect for user privacy – keep it user-centric. 
+- Determine if bound by requirements imposed by the GDPR, and whether the user should be able to access, delete, or remove their information from the service
+- Make sure the privacy policy stays up-to-date (Digital Service Standard (Ontario)) 
+- Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept (Digital Services Playbook (US)) establish information management retention periods for your system
+- Determine, in consultation with a privacy specialist, whether and how users are notified about how personal information is collected and used, including whether a privacy policy is needed and where it should appear, and how users will be notified in the event of a security breach (Digital Services Playbook (US))
 
 </section>
 
@@ -186,15 +185,15 @@ Advanced technologies including biometrics promise help to establish efficient a
 
 ### Checklist
 
-•	Implement identity and authorization mechanisms for all employees, partners and customer profiles, leveraging strategies that are proportional to the sensitivity of your service.
-•	“Shift security left,” ensuring that security is a consideration in requirements from the very beginning of service design through technical development, and is equally elegantly designed.
-•	Implement or onboard to an Identity and Access Management (IAM) solution that ensures users’ credentials are trusted and portable across devices of the user’s choice.
-•	Ensure your IAM solution is able to confirm users’ identities as early in (or prior to) establishing a trusted connection as possible.
-•	Where possible, provide users simple means of authentication (e.g.: biometrics) to your service.
-•	Provide users adequate information to ensure they fully understand the authority they are providing to 3rd party services.
-•	Maintain logs of user access to provide both users and business owners assurance that credentials are persistently secure.
-•	Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats (OneGC product design criteria)
-•	Implement protective measures to enable the secure processing and sharing of data and information across government (OneGC product design criteria)
+- Implement identity and authorization mechanisms for all employees, partners and customer profiles, leveraging strategies that are proportional to the sensitivity of your service.
+- "Shift security left,” ensuring that security is a consideration in requirements from the very beginning of service design through technical development, and is equally elegantly designed.
+- Implement or onboard to an Identity and Access Management (IAM) solution that ensures users’ credentials are trusted and portable across devices of the user’s choice.
+- Ensure your IAM solution is able to confirm users’ identities as early in (or prior to) establishing a trusted connection as possible.
+- Where possible, provide users simple means of authentication (e.g.: biometrics) to your service.
+- Provide users adequate information to ensure they fully understand the authority they are providing to 3rd party services.
+- Maintain logs of user access to provide both users and business owners assurance that credentials are persistently secure.
+- Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats (OneGC product design criteria)
+- Implement protective measures to enable the secure processing and sharing of data and information across government (OneGC product design criteria)
 
 <section class="dpgn-section-stage dpgn-phase-alpha"></section>
 <section class="dpgn-section-stage dpgn-phase-live"></section>
@@ -245,16 +244,16 @@ Canada has two significant privacy protections in place.  First, and most releva
 
   ### Checklist
 
-  •	Engage the appropriate privacy, security, and legal officer(s) to discuss the legal aspects of managing cyber risks
-  •	document any outstanding legal concerns, such as data protection or data sharing (Digital Service Standard (Ontario))
-  •	Begin to identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
-  •	Identify the cybersecurity tools and services in use; learn how they work and handle data; and then analyze them against current law in each jurisdiction where your digital service uses them
-  •	Conduct a cyber law assessment to determine vulnerabilities, risks, and resources required to manage them
-  •	Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
-  •	Develop and maintain cybersecurity training programs to develop appropriate behaviours and culture for employees and contractors
-  •	Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
-  •	Ensure your terms and conditions explicitly prohibit the conduct of offenses outlined in the criminal code, including hate speech, cybercrime, identity theft, etc.
-  •	Ensure your service is in alignment with Canadian data residency requirements per ITPIN 2017-02 Direction for Electronic Data Residency. 
+  - Engage the appropriate privacy, security, and legal officer(s) to discuss the legal aspects of managing cyber risks
+  - Document any outstanding legal concerns, such as data protection or data sharing (Digital Service Standard (Ontario))
+  - Begin to identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
+  - Identify the cybersecurity tools and services in use; learn how they work and handle data; and then analyze them against current law in each jurisdiction where your digital service uses them
+  - Conduct a cyber law assessment to determine vulnerabilities, risks, and resources required to manage them
+  - Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
+  - Develop and maintain cybersecurity training programs to develop appropriate behaviours and culture for employees and contractors
+  - Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
+  - Ensure your terms and conditions explicitly prohibit the conduct of offenses outlined in the criminal code, including hate speech, cybercrime, identity theft, etc.
+  - Ensure your service is in alignment with Canadian data residency requirements per ITPIN 2017-02 Direction for Electronic Data Residency. 
 
   <section class="dpgn-section-stage dpgn-phase-alpha"></section>
   <section class="dpgn-section-stage dpgn-phase-beta"></section>
