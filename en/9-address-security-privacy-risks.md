@@ -9,7 +9,7 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 
 The digital revolution has fundamentally changed Canada’s social, economic, and cultural fabric. Canada’s participation in digital life has generated immense prosperity and benefits, and has opened a new gateway to the world. At the same time, it has continued to bring the world to us in new and challenging ways, and introduced threats that could undercut the many benefits of the digital age. Canada’s approach to cyber security must respond to this set of complex, integrated issues. 
 
-> “Cyber security is the protection of digital information and the infrastructure on which it resides. Cyber security addresses the challenges and threats of cyberspace in order to secure the benefits and opportunities of digital life.” Public Safety Canada, Cyber Security Strategy (2010-15)
+> “Cyber security is the protection of digital information and the infrastructure on which it resides. Cyber security addresses the challenges and threats of cyberspace in order to secure the benefits and opportunities of digital life.” **Public Safety Canada, Cyber Security Strategy (2010-15)**
 
 Canada’s National Cyber Security Strategy, first penned in 2010, has been developed with consideration to the evolving environment in which the GC functions, and formed around three pillars: 
 
