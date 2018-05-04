@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/canada-ca/digital-playbook-guide-numerique/master/_data/playbook_schema.json",
   "title": "Government of Canada Digital Playbook (draft)",
   "introduction": {
     "title": "Overview (draft)",
