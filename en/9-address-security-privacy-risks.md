@@ -13,9 +13,9 @@ The digital revolution has fundamentally changed Canada’s social, economic, an
 
 Canada’s National Cyber Security Strategy, first penned in 2010, has been developed with consideration to the evolving environment in which the GC functions, and formed around three pillars: 
 
-**1. Security and Resilience:** prevention, mitigation, and response to advanced cyber-attacks targeting Canadian public and private systems and institutions, and increasing engagement on cyber security issues across all sectors.
-**2. Cyber Innovation and Adaptability:** supporting initiatives that will allow the Canadian government to anticipate trends, adapt to a changing environment, and remain on the leading edge of innovation in cyber security.  Ensuring that Canada can build on the benefits that digital technology brings to both government, and society.
-**3. Leadership and Collaboration:** working together to ensure the GC develops the skills, resources, and tools needed for effective cyber security leadership in Canada.
+1. **Security and Resilience:** prevention, mitigation, and response to advanced cyber-attacks targeting Canadian public and private systems and institutions, and increasing engagement on cyber security issues across all sectors.
+2. **Cyber Innovation and Adaptability:** supporting initiatives that will allow the Canadian government to anticipate trends, adapt to a changing environment, and remain on the leading edge of innovation in cyber security.  Ensuring that Canada can build on the benefits that digital technology brings to both government, and society.
+3. **Leadership and Collaboration:** working together to ensure the GC develops the skills, resources, and tools needed for effective cyber security leadership in Canada.
 
 Effective cybersecurity is more than just defense: it is an essential enabler of digital transformation. Cyber and IT Security is on the front line with two critical imperatives:  Enable Business Growth; and Protect the Business.
 
