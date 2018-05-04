@@ -24,7 +24,7 @@ if stringArray %}
       include /functions/generate-id.html string=guidelineData.title %}{% 
     endcapture %}{% 
     capture classOutput %}{% 
-      include /functions/class-from-tags.html excludeSectionTags=true %}{% 
+      include /functions/class-from-tags.html tags=guidelineData.tags excludeSectionTags=true %}{% 
     endcapture
     %}<li{{ classOutput | rstrip }}><a href="{% 
     if include.samePage != true 
@@ -43,7 +43,7 @@ if stringArray %}
       include /functions/generate-id.html string=guideline.title %}{% 
     endcapture %}{% 
     capture classOutput %}{% 
-      include /functions/class-from-tags.html excludeSectionTags=true %}{% 
+      include /functions/class-from-tags.html tags=guideline.tags excludeSectionTags=true %}{% 
     endcapture
     %}<li{{ classOutput | rstrip }}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
 {% endfor %}</ul>
