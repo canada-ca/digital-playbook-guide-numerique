@@ -101,7 +101,7 @@ Finally, “shifting security left” in your service design addresses security 
 
 <div class="dpgn-section-intro-guideline">
 
-### Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data.###
+### Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data. ###
 
 > “… platforms have a responsibility to protect the privacy and personal data of citizens, and to protect the integrity of … system(s) where they operate." **Scott Brison, MP, Treasury Board of Canada President, 2018**
 
@@ -169,7 +169,7 @@ It is easy to assume that the primary threat exists from outside the organizatio
 
 <div class="dpgn-section-intro-guideline">
 
-###Seamless and frictionless security relies heavily on complex and advanced systems monitoring and securing user interactions and data interconnections.
+### Seamless and frictionless security relies heavily on complex and advanced systems monitoring and securing user interactions and data interconnections. ###
 
 In the digital economy, organizations must move to higher order technologies such as machine learning, AI, analytics, and the Internet of Things to retain their advantage. Each of these elements brings with them new threats and opportunities for compromise that erode users’ digital trust (based on the expectation of data privacy and effective data stewardship) developed with services.  
 
@@ -228,7 +228,7 @@ Advanced technologies including biometrics promise help to establish efficient a
 
 <div class="dpgn-section-intro-guideline">
 
-###The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate.
+### The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate. ###
 
 The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group. While local regulations have a direct impact on business operations, the community of peers joined in digital cyberspace are not bound by the same legal and regulatory requirements. Questions relating to who has the authority to make law, what are the applicable laws, and who has the power to enforce laws must at least be considered, if not answered.  
 
