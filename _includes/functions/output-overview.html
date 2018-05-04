@@ -1,8 +1,9 @@
 {% assign dataVariable = site.playbookData[page.lang] %}{% 
-assign dataSource = site.data[dataVariable] %}
-<section{% if dataSource.introduction.tags.size > 0 
-  %} class="{{ dataSource.introduction.tags | join: ' ' }}"{% 
-endif %}>
+assign dataSource = site.data[dataVariable] %}{% 
+capture classOutput %}{% 
+  include /functions/class-from-tags.html tags=dataSource.introduction.tags excludeSectionTags=false %}{% 
+endcapture %}
+<section{{ classOutput | rstrip }}>
 
 ## {{ dataSource.introduction.title }}
 
@@ -14,12 +15,11 @@ endif %}>
 {% for standard in dataSource.standards.content %}{% 
   capture standardId %}{% 
     include /functions/generate-id.html string=standard.title %}{% 
+  endcapture{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=false %}{% 
   endcapture 
-  %}<li{% 
-  if standard.tags.size > 0 
-    %} class="{{ standard.tags | join: ' ' }}"{% 
-  endif 
-  %}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>{% 
+  %}<li{{ classOutput | rstrip }}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>{% 
 endfor %}</ul>
 
 **{{ site.ComparisonPlaybookIntro[page.lang] }}{{ site.Colon[page.lang] }}**
