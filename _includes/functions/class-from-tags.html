@@ -1,0 +1,10 @@
+{% capture classOutput %}{%
+  for tag in include.tags %}{%
+    unless include.excludeSectionTags and tag contains "dpgn-section"
+      %}{{ tag }} {%
+    endunless %}{% 
+  endfor %}{% 
+endcapture %}{%
+if classOutput.size > 0 
+  %} class="{{ classOutput | rstrip }}"{%
+endif %}

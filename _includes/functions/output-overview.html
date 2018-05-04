@@ -1,32 +1,26 @@
-{% 
-assign dataVariable = site.playbookData[page.lang] %}{% 
-assign dataSource = site.data[dataVariable] 
-%}
-<section{% 
-if dataSource.introduction.tags.size > 0 
-  %} class="{{ dataSource.introduction.tags | join: ' ' }}"{% 
-endif 
-%}>
+{% assign dataVariable = site.playbookData[page.lang] %}{% 
+assign dataSource = site.data[dataVariable] %}{% 
+capture classOutput %}{% 
+  include /functions/class-from-tags.html tags=dataSource.introduction.tags %}{% 
+endcapture %}
+<section{{ classOutput | rstrip }}>
 
 ## {{ dataSource.introduction.title }}
 
 {% include /functions/output-content-array.html contentArray=dataSource.introduction.content currHeadingLevel="2" %}
 
-**{{ dataSource.common.standards.title }}{{ site.Colon[page.lang] }}**
+**{{ dataSource.standards.title }}{{ site.Colon[page.lang] }}**
 
 <ul>
-{% 
-for standard in dataSource.standards %}{% 
+{% for standard in dataSource.standards.content %}{% 
   capture standardId %}{% 
     include /functions/generate-id.html string=standard.title %}{% 
+  endcapture %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=true %}{% 
   endcapture 
-  %}<li{% 
-  if standard.tags.size > 0 
-    %} class="{{ standard.tags | join: ' ' }}"{% 
-  endif 
-  %}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>{% 
-endfor 
-%}</ul>
+  %}<li{{ classOutput | rstrip }}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>{% 
+endfor %}</ul>
 
 **{{ site.ComparisonPlaybookIntro[page.lang] }}{{ site.Colon[page.lang] }}**
 

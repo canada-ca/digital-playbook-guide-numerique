@@ -1,105 +1,108 @@
 {% assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
-assign commonStandard = dataSource.common.standards.standard %}{% 
-assign commonGuideline = commonStandard.guidelines.guideline %}{% 
 if include.standard.title %}{% 
   assign standard = include.standard %}{% 
 else %}{% 
   assign standardIndex = include.standard | minus: 1 %}{% 
-  assign standard = dataSource.standards[standardIndex] %}{% 
+  assign standard = dataSource.standards.content[standardIndex] %}{% 
 endif %}{% 
 assign standardHeadingLevel = include.currentHeadingLevel | default: 1 %}{% 
-assign standardTags = commonStandard.tags | concat: standard.tags %}{% 
 if include.includeStandardTitle %}{% 
-  assign standardHeadingLevel = standardHeadingLevel | plus: 1 %}
-<section{% if standardTags.size > 0 
-    %} class="{{ standardTags | join: ' ' }}"{% 
-  endif 
-%}>{% capture headerId %}{% 
+  assign standardHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=standard.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>
+{% capture headerId %}{% 
     include /functions/generate-id.html string=standard.title %}{% 
   endcapture %}
 <h{{ standardHeadingLevel }} id="{{ headerId | strip }}">{{ standard.title }}</h{{ standardHeadingLevel }}>
 {% endif %}{% 
 assign guidelineHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
-assign subsectionHeadingLevel = guidelineHeadingLevel | plus: 1 %}
-
-<div{% if commonStandard.introduction.tags.size > 0 
-  %} class="{{ commonStandard.introduction.tags | join: ' ' }}"{% 
-endif %}>
+assign subsectionHeadingLevel = guidelineHeadingLevel | plus: 1 %}{% 
+capture classOutput %}{% 
+  include /functions/class-from-tags.html tags=standard.introduction.tags %}{% 
+endcapture %}
+<div{{ classOutput | rstrip }}>
 
 {% include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel %}
 
 </div>
+{% capture classOutput %}{% 
+  include /functions/class-from-tags.html tags=standard.guidelines.tags %}{% 
+endcapture %}
+<div{{ classOutput | rstrip }}>
 
-<div{% if commonStandard.guidelines.tags.size > 0 
-  %} class="{{ commonStandard.guidelines.tags | join: ' ' }}"{% 
-endif %}>
+**{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}**
 
-**{{ commonStandard.guidelines.title }}{{ site.Colon[page.lang] }}**
-
-{% include functions/guideline-links.html guidelines=standard.guidelines samePage=true %}
+{% include functions/guideline-links.html guidelines=standard.guidelines.content samePage=true %}
 
 </div>
 
-{% if standard.relatedguidelines.size > 0 %}
-<div{% if commonStandard.relatedguidelines.tags.size > 0 
-    %} class="{{ commonStandard.relatedguidelines.tags | join: ' ' }}"{% 
-  endif %}>
+{% if standard.relatedguidelines.size > 0 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=standard.relatedguidelines.tags %}{% 
+  endcapture %}
+<div{{ classOutput | rstrip }}>
 
-**{{ commonStandard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
+**{{ standard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
 
-{% include functions/guideline-links.html guidelines=standard.relatedguidelines samePage=true standardTitle=standard.title %}
+{% include functions/guideline-links.html guidelines=standard.relatedguidelines.content samePage=true standardTitle=standard.title %}
 
 </div>
 {% endif %}
 
-{% for guideline in standard.guidelines %}{%
-  assign guidelineTags = commonGuideline.tags | concat: guideline.tags %}
-<section{% if guidelineTags.size > 0 
-  %} class="{{ guideline.tags | join: ' ' }}"{% 
-  endif %}>{% 
+{% for guideline in standard.guidelines.content %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>{% 
   capture headerId %}{% 
     include /functions/generate-id.html string=guideline.title %}{% 
   endcapture %}
 <h{{ guidelineHeadingLevel }} id="{{ headerId | strip }}">{{ guideline.title }}</h{{ guidelineHeadingLevel }}>
-
-<div{% if commonGuideline.introduction.tags.size > 0 
-  %} class="{{ commonGuideline.introduction.tags | join: ' ' }}"{% 
-endif %}>
+{% capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.introduction.tags %}{% 
+  endcapture %}
+<div{{ classOutput | rstrip }}>
 
 {% include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=guidelineHeadingLevel %}
 
 </div>
 
-{% if guideline.checklist.content.size > 0 %}
-<section{% if commonGuideline.checklist.tags.size > 0 %} class="{{ commonGuideline.checklist.tags | join: ' ' }}"{% 
-endif %}>
+{% if guideline.checklist.content.size > 0 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.checklist.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>
 
-<h{{ subsectionHeadingLevel }}>{{ commonGuideline.checklist.title }}</h{{ subsectionHeadingLevel }}>
+<h{{ subsectionHeadingLevel }}>{{ guideline.checklist.title }}</h{{ subsectionHeadingLevel }}>
 
 {% include /functions/output-content-array.html contentArray=guideline.checklist.content currHeadingLevel=subsectionHeadingLevel %}
 
 </section>
 {% endif %}
 
-{% if guideline.guides.content.size > 0 %}
-<section{% if commonGuideline.guides.tags.size > 0 %} class="{{ commonGuideline.guides.tags | join: ' ' }}"{% 
-endif %}>
+{% if guideline.guides.content.size > 0 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.guides.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>
 
-<h{{ subsectionHeadingLevel }}>{{ commonGuideline.guides.title }}</h{{ subsectionHeadingLevel }}>
+<h{{ subsectionHeadingLevel }}>{{ guideline.guides.title }}</h{{ subsectionHeadingLevel }}>
 
 {% include /functions/output-content-array.html contentArray=guideline.guides.content currHeadingLevel="4" %}
 
 </section>
 {% endif %}
 
-{% if guideline.similar.content.size > 0 %}
-<section{% 
-  if commonGuideline.similar.tags .size > 0 
-    %} class="{{ commonGuideline.similar.tags  | join: ' ' }}"{%
-  endif %}>
+{% if guideline.similar.content.size > 0 %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=guideline.similar.tags %}{% 
+  endcapture %}
+<section{{ classOutput | rstrip }}>
 
-<h{{ subsectionHeadingLevel }}>{{ commonGuideline.similar.title }}</h{{ subsectionHeadingLevel }}>
+<h{{ subsectionHeadingLevel }}>{{ guideline.similar.title }}</h{{ subsectionHeadingLevel }}>
 
 {% include /functions/output-content-array.html contentArray=guideline.similar.content currHeadingLevel="4" %}
 
