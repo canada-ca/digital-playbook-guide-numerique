@@ -17,7 +17,7 @@ endcapture %}
     include /functions/generate-id.html string=standard.title %}{% 
   endcapture{% 
   capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=standard.tags %}{% 
+    include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=true %}{% 
   endcapture 
   %}<li{{ classOutput | rstrip }}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>{% 
 endfor %}</ul>
