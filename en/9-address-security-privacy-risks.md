@@ -13,9 +13,9 @@ The digital revolution has fundamentally changed Canada’s social, economic, an
 
 Canada’s National Cyber Security Strategy, first penned in 2010, has been developed with consideration to the evolving environment in which the GC functions, and formed around three pillars: 
 
-1.	Security and Resilience: prevention, mitigation, and response to advanced cyber-attacks targeting Canadian public and private systems and institutions, and increasing engagement on cyber security issues across all sectors.
-2.	Cyber Innovation and Adaptability: supporting initiatives that will allow the Canadian government to anticipate trends, adapt to a changing environment, and remain on the leading edge of innovation in cyber security.  Ensuring that Canada can build on the benefits that digital technology brings to both government, and society.
-3.	Leadership and Collaboration: working together to ensure the GC develops the skills, resources, and tools needed for effective cyber security leadership in Canada.
+**1. Security and Resilience:** prevention, mitigation, and response to advanced cyber-attacks targeting Canadian public and private systems and institutions, and increasing engagement on cyber security issues across all sectors.
+**2. Cyber Innovation and Adaptability:** supporting initiatives that will allow the Canadian government to anticipate trends, adapt to a changing environment, and remain on the leading edge of innovation in cyber security.  Ensuring that Canada can build on the benefits that digital technology brings to both government, and society.
+**3. Leadership and Collaboration:** working together to ensure the GC develops the skills, resources, and tools needed for effective cyber security leadership in Canada.
 
 Effective cybersecurity is more than just defense: it is an essential enabler of digital transformation. Cyber and IT Security is on the front line with two critical imperatives:  Enable Business Growth; and Protect the Business.
 
@@ -89,6 +89,9 @@ Finally, “shifting security left” in your service design addresses security 
   ### Implementation guides
 
   - https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html
+  - [Information Technology Policy Implementation Notices (ITPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
+  - [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
+  - [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html\)
   - [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
   - [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
 
@@ -109,7 +112,7 @@ Finally, “shifting security left” in your service design addresses security 
 
 Both the value and the volume of data have never been higher, and end points (which are increasing in number faster than we can count) are more vulnerable than ever. If organizations and users can’t trust their data, and trust that it is safe, they will not engage or take the risks that drive growth. 
 
-The problem with our increasing reliance on data is that anything that can be generated, transmitted, stored, or analyzed can also be stolen. This has never been clearer than it is now, as evidenced by the increasing number of major events across public and private organizations since 2013 (breaches at Yahoo, eBay, Target, and Equifax; responses to attacks against the GC, and Heartbleed, Java Struts, Spectre/Meltdown), whose cost has now reached billions of dollars. Fifty-five percent of Canadian small businesses polled by Ipsos Reid  in 2017 stated they either were hacked or suspect they may have been.
+The problem with our increasing reliance on data is that anything that can be generated, transmitted, stored, or analyzed can also be stolen. This has never been clearer than it is now, as evidenced by the increasing number of major events across public and private organizations since 2013 (breaches at Yahoo, eBay, Target, and Equifax; responses to attacks against the GC, and Heartbleed, Java Struts, Spectre/Meltdown), whose cost has now reached billions of dollars. Fifty-five percent of Canadian small businesses [polled by Ipsos Reid in 2017](https://www.itbusiness.ca/news/half-of-canadian-executives-say-their-businesses-were-hacked-last-year-ipsos/87497) stated they either were hacked or suspect they may have been.
 
 It is easy to assume that the primary threat exists from outside the organization, whereas the reality is that fraud, malicious and accidental insider threats, and ill-conceived data sharing mechanisms can be of equal threat to the integrity and security of user data. Organizations have a responsibility to ensure that the data under their care remains protected at all times, including in the process of sharing with external partners and within their own network.
 
@@ -126,11 +129,11 @@ It is easy to assume that the primary threat exists from outside the organizatio
 - Identify and categorize the data the service will use, store or create. 
 - Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
 - Ensure every stakeholder of your digital system is prepared to commit to doing their part to secure mutually valuable assets
-- Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Agreements Involving PII , to ensure they will treat your data with appropriate care.
+- Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the [TBS Guidance on Agreements Involving PII](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html), to ensure they will treat your data with appropriate care.
 - Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only. **(Build It Right - OneGC Architectural Checklist (draft))**
 - Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
 - Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
-- Develop your system with the 7 principles of Privacy by Design in mind: 1) Proactive not reactive – preventative not remedial; 2) Privacy as the default setting; 3) Privacy embedded into design; 4) Full functionality – positive-sum, not zero-sum; 5) End-to-end security – full lifecycle protection; 6) Visibility and transparency – keep it open; and 7) Respect for user privacy – keep it user-centric. 
+- Develop your system with the 7 principles of [Privacy by Design](https://en.wikipedia.org/wiki/Privacy_by_design) in mind: 1) Proactive not reactive – preventative not remedial; 2) Privacy as the default setting; 3) Privacy embedded into design; 4) Full functionality – positive-sum, not zero-sum; 5) End-to-end security – full lifecycle protection; 6) Visibility and transparency – keep it open; and 7) Respect for user privacy – keep it user-centric. 
 - Determine if bound by requirements imposed by the GDPR, and whether the user should be able to access, delete, or remove their information from the service
 - Make sure the privacy policy stays up-to-date (Digital Service Standard (Ontario)) 
 - Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept (Digital Services Playbook (US)) establish information management retention periods for your system
@@ -236,7 +239,7 @@ Efforts to develop international cybersecurity frameworks have been undertaken i
 
 In Canada, businesses and governments are both protected, and bound by laws and regulations stipulated in multiple acts protecting the confidentiality, integrity and accessibility of systems and information.  Canada’s Criminal Code outlines laws covering the unauthorized use of computers (Sect 342.1 and 342.2), protecting services from both malicious misuse and data interception, but provides exceptions for consent (“express or implied”) or to protect the network. 
 
-Canada has two significant privacy protections in place.  First, and most relevant to public digital services is the Privacy Act, which governs the personal information handling practices of the federal institutions. It limits the collection, use, sharing and disclosure of individuals’ personal information. Similar to the GDPR, the Privacy Act gives individuals the right to access and request correction of personal information about themselves held by the federal government.  Federal privacy law for private-sector organizations is covered by the Personal Information Protection & Electronic Documents Act (PIPEDA). PIPEDA sets out the ground rules for how businesses must handle personal information in the course of commercial activity.
+Canada has two significant privacy protections in place.  First, and most relevant to public digital services is the Privacy Act, which governs the personal information handling practices of the federal institutions. It limits the collection, use, sharing and disclosure of individuals’ personal information. Similar to the GDPR, the [Privacy Act](https://www.priv.gc.ca/en/for-federal-institutions/) gives individuals the right to access and request correction of personal information about themselves held by the federal government.  Federal privacy law for private-sector organizations is covered by the [Personal Information Protection & Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/). PIPEDA sets out the ground rules for how businesses must handle personal information in the course of commercial activity.
 
 </div>
 
@@ -253,7 +256,7 @@ Canada has two significant privacy protections in place.  First, and most releva
   - Develop and maintain cybersecurity training programs to develop appropriate behaviours and culture for employees and contractors
   - Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
   - Ensure your terms and conditions explicitly prohibit the conduct of offenses outlined in the criminal code, including hate speech, cybercrime, identity theft, etc.
-  - Ensure your service is in alignment with Canadian data residency requirements per ITPIN 2017-02 Direction for Electronic Data Residency. 
+  - Ensure your service is in alignment with Canadian data residency requirements per [ITPIN 2017-02 Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html). 
 
   <section class="dpgn-section-stage dpgn-phase-alpha"></section>
   <section class="dpgn-section-stage dpgn-phase-beta"></section>
