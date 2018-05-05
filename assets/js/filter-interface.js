@@ -19,6 +19,7 @@ var componentName = "wb-contentfilter",
     $document = wb.doc,
     buttonId = "#filter-button",
     rememberId = "filters-remember",
+    exclusiveFiltersClass = "dpgn-exclusive-filters",
 
     /**
      * @method init
@@ -33,10 +34,20 @@ var componentName = "wb-contentfilter",
       var elm = wb.init( event, componentName, selector ),
           params = wb.pageUrlParts.params,
           $filters = $( selector + " input:checkbox:not(" + rememberId + ")" ),
+          $exclusiveFilters = $( selector + " ." + exclusiveFiltersClass + " input:checkbox" ),
+          exclusiveFiltersLen = $exclusiveFilters.length,
           rememberCheckbox = document.getElementById( rememberId ),
           fromStorage = false,
           eventData = event.data,
-          filtersChecked;
+          filtersChecked, filterIndex, filterId, $filterTargets;
+
+      // Replicate exclusive filter tag to all ancestors and descendents of the tagged element
+      for ( filterIndex = 0; filterIndex < exclusiveFiltersLen; filterIndex += 1 ) {
+        filterId = $exclusiveFilters[ filterIndex ].id;
+        $filterTargets = $( "." + filterId );
+        $filterTargets.find( "*" ).addClass( filterId + "-descendent" );
+        $filterTargets.parentsUntil( "main" ).addClass( filterId + "-ancestor" );
+      }
 
       if ( contentfilter ) {
 
@@ -52,7 +63,7 @@ var componentName = "wb-contentfilter",
           fromStorage = true;
           try {
 
-            // Retrieve the selector for the previously applied filters          
+            // Retrieve the selector for the previously applied filters
             filtersChecked = localStorage.getItem( componentName )
 
             // If localStorage item doesn't exist, check sessionStorage instead
@@ -67,6 +78,7 @@ var componentName = "wb-contentfilter",
         wb.ready( $( elm ), componentName );
       }
       if ( filtersChecked && filtersChecked.length != 0 ) {
+
         // Restore the previously applied filters
         $filters.filter( filtersChecked ).prop( "checked", true );
         $filters.not( filtersChecked ).prop( "checked", false );
@@ -106,7 +118,7 @@ $document.on( "click", buttonId, function( event, fromStorage ) {
 		hideClass = "hidden",
     rememberCheckbox = document.getElementById( rememberId ),
 		filterId, allDisabled, groupShowSelector, groupHideSelector, $group, filter, filtersEnabledLen, filtersDisabledLen,
-    groupIndex, filterIndex, $filters, $filtersEnabled, $filtersDisabled;
+    groupIndex, filterIndex, $filters, $filtersEnabled, $filtersDisabled, isExclusiveFiltersGroup, exclusiveNot;
 
 	// If there are no groups (i.e., fieldsets), then consider the form itself to be the one group
 	if ( groupsLen == 0 ) {
@@ -117,22 +129,24 @@ $document.on( "click", buttonId, function( event, fromStorage ) {
 	// Iterate through each of the filter groups
 	for ( groupIndex = 0; groupIndex < groupsLen; groupIndex += 1 ) {
 		$group = $groups.eq( groupIndex )
+    isExclusiveFiltersGroup = $group.hasClass( exclusiveFiltersClass );
 		groupShowSelector = "";
 		groupHideSelector = "";
 		$filters = $group.find( "input:checkbox:not(" + rememberId + ")" );
 		$filtersEnabled = $filters.filter( ":checked" );
 		filtersEnabledLen = $filtersEnabled.length;
     allDisabled = filtersEnabledLen == 0;
+    exclusiveNot = "";
 
-		// If no filters are enabled or all filters are enabled, then treat the filters as all being enabled
-		if ( $filters.length == filtersEnabledLen || filtersEnabledLen == 0 ) {
-			$filtersEnabled = $filters;
-			filtersEnabledLen = $filters.length;
-			filtersDisabledLen = 0;
-		} else {
-			$filtersDisabled = $filters.not( ":checked" );
-			filtersDisabledLen = $filtersDisabled.length;
-		}
+		// If no filters are enabled or all filters are enabled, then treat the filters as all being enabled (excluding exclusive filters)
+    if ( !isExclusiveFiltersGroup && ( $filters.length == filtersEnabledLen || filtersEnabledLen == 0 ) ) {
+      $filtersEnabled = $filters;
+      filtersEnabledLen = $filters.length;
+      filtersDisabledLen = 0;
+    } else {
+      $filtersDisabled = $filters.not( ":checked" );
+      filtersDisabledLen = $filtersDisabled.length;
+    }
 
 		// Create a selector for all the enabled filters in the group then append to the overall enabled filters selector
 		if ( filtersEnabledLen !== 0 ) {
@@ -141,19 +155,28 @@ $document.on( "click", buttonId, function( event, fromStorage ) {
         groupShowSelector += ", ." + filterId;
         if ( !allDisabled ) {
           filtersChecked += ", #"  + filterId;
+          if ( isExclusiveFiltersGroup ) {
+            exclusiveNot += ":not(." + filterId + "):not(." + filterId + "-descendent):not(." + filterId + "-ancestor)";
+          }
         }
-			}
+			} 
       groupShowSelector = groupShowSelector.substr( 2 );
 			showSelector += ", " + groupShowSelector;
-		}
+		} else if ( isExclusiveFiltersGroup ) {
+      showSelector += ", [class*='dpgn-section'], [class*='dpgn-section'] *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)";
+    }
 
 		// Create a selector for all the disabled filters in the group, excluding the enabled filters, then append to the overall disabled filters selector
-		if ( filtersDisabledLen !== 0 ) {
-			for ( filterIndex = 0; filterIndex < filtersDisabledLen; filterIndex += 1 ) {
-				groupHideSelector += ", ." + $filtersDisabled[ filterIndex ].id + ":not(" + groupShowSelector + ")";
-			}
-			hideSelector += ", " + groupHideSelector.substr( 2 );
-		}
+    if ( !isExclusiveFiltersGroup && filtersDisabledLen !== 0 ) {
+      for ( filterIndex = 0; filterIndex < filtersDisabledLen; filterIndex += 1 ) {
+        groupHideSelector += ", ." + $filtersDisabled[ filterIndex ].id + ":not(" + groupShowSelector + ")";
+      }
+      hideSelector += ", " + groupHideSelector.substr( 2 );
+    } else if ( isExclusiveFiltersGroup && filtersEnabledLen !== 0 ) {
+
+      // Hide all dpgn-section elements and their contents (excluding headings and tarets of the exclusive filter)
+      hideSelector += ", [class*='dpgn-section']" + exclusiveNot + ", [class*='dpgn-section'] *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)" + exclusiveNot;
+    }
 	}
 
 	// Remove leading comma + space
