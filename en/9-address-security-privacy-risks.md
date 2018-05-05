@@ -23,7 +23,7 @@ Interconnected networks span a variety of ecosystems, from cloud and IoT to virt
 
 Undertaking a defense-in-depth approach provides layered security measures to help prevent against evolving and existing threats. Since the service boundary no longer exists at the perimeter, neither should the security boundary, as platforms create tighter and more complex interconnections. Developing trusted solutions and services, and keeping aware of changes to your operating environment will likewise provide positive results.  
 
-Finally, “shifting security left” in your service design addresses security and privacy risks earlier in the process, and will go a long way to ensuring a long and successful life. 
+Finally, “shifting security left” in your service design addresses security and privacy risks earlier in the development process, allowing teams to identify security needs as components are developed, reducing the cost and burden of changes later, and will go a long way to ensuring a long and successful life. 
 
 </div>
 
@@ -54,11 +54,11 @@ Finally, “shifting security left” in your service design addresses security 
 
   ### Increasing investment in digital services requires corresponding security improvements; new security concerns require new security solutions. ###
 
-  We are moving further into the digital economy, where the bad actors are already there, waiting for us, and new security concerns require new security solutions.  As we take services to the cloud, implement and adopt IoT technologies, embrace a more mobile workforce, and interact with data and services that live outside your managed network (and often out of the sight or control of the IT organization), the potential attack surface grows.
+  We are moving further into the digital economy, where malicious actors are already established, and waiting for us. This will inevitably introduce new security concerns, which will require new security solutions.  As we move services to the cloud, implement and adopt IoT technologies, embrace a more mobile workforce, and interact with data and services that live outside your managed network (and often out of the sight or control of the IT organization), the potential attack surface grows.
 
   In order to be effective in risk management, business (risk) owners need to focus more on the consequence of inaction, and not on the cost of action. To do that, organizations need to understand what data is worth protecting, manage who and what can access it, and build effective defenses that both support innovation and protect the investment made in services and associated assets.
 
-  Your level of investment in privacy and security is based on the perceived or actual value placed on the assets or information you are protecting. This valuation is often made taking into account the total cost of a breach, or the (more difficult) cost of a hit to one’s reputation.  When considering the balance of controls, include the cost of trust being reconsidered should your service be compromised. 
+  Your level of investment in privacy and security is based on the perceived or actual value placed on the assets or information you are protecting. This valuation is often made taking into account the total cost of a breach, or the (often difficult to quantify) cost of a hit to one’s reputation.  When considering the balance of controls, account for the cost of lost trust - the effort to rebuild trust, should your service be compromised. 
 
   Remember that security is not one-size fits all, and that your defenses are best developed to address the “soft spots” in your systems.  A defense-in-depth approach allows you to address security at multiple layers, hardening your systems as required, while providing unimpeded operations in others.
 
@@ -69,8 +69,8 @@ Finally, “shifting security left” in your service design addresses security 
   ### Checklist
 
   - Determine what you absolutely need to protect – can you clearly identify what components are essential to the success of your service?  Not all assets need the same level of protection.
-  - Determine what you’re willing to pay to protect it – can you protect your assets with the desired level of investment? Is the cost of protection 
-  - Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption. **(Ransomware protection)**
+  - Determine what you’re willing to pay to protect it – can you protect your assets with the desired level of investment? Is the cost of full protection in excess of the value of your assets?
+  - Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption. **(e.g. Ransomware protection)**
   - Determine how long you need to protect your assets during and after their life / intended use.
   - Document the approach to security and risk management **(Digital Service Standard (Ontario))**
   - Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect.
@@ -106,7 +106,7 @@ Finally, “shifting security left” in your service design addresses security 
 
 ### Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data. ###
 
-> “… platforms have a responsibility to protect the privacy and personal data of citizens, and to protect the integrity of … system(s) where they operate." **Scott Brison, MP, Treasury Board of Canada President, 2018**
+> “… platforms have a responsibility to protect the privacy and personal data of citizens, and to protect the integrity of … system(s) where they operate." **Scott Brison, MP, President of the Treasury Board, 2018**
 
  > “Privacy and digital and service... are not easy things to juggle... and as the #gcdigital agenda evolves, we cannot lose sight of the fact this is an area we cannot fail in” **Alex Benay, GC CIO, 2018**
 
