@@ -162,7 +162,7 @@ Users won't use a service unless they have a guarantee:
 
 **[TODO: Add/revise checklist items]**
 
-- Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
 
 <section class="dpgn-section-stage dpgn-phase-alpha">
@@ -210,7 +210,7 @@ Users won't use a service unless they have a guarantee:
 - [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 - Secure by Design (Current GC EARB Principles)
 - Secure by Design (GC EA Principles)
-- Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -265,7 +265,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - Consider whether the user should be able to access, delete, or remove their information from the service **(Digital Services Playbook (US))**
 - "Pre-certify" the hosting infrastructure used for the project using FedRAMP **(Digital Services Playbook (US))**
 - Use deployment scripts to ensure configuration of production environment remains consistent and controllable **(Digital Services Playbook (US))**
-- HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
   - Holistic approach to securing GC services for publicly accessible sites
 
 <section class="dpgn-section-stage dpgn-phase-alpha">
@@ -368,7 +368,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 - [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 - [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
-- HTTPS only (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } HTTPS only (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
