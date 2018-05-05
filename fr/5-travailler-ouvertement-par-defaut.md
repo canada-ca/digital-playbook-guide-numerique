@@ -218,7 +218,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 ### Ressources similaires
 
-- [Open Markets - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/5_Open_Markets.md)
+- [Marchés ouverts - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/5_March%C3%A9s_ouverts.md)
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
 </section>
@@ -267,7 +267,7 @@ Open source helps to:
 - When appropriate, create an API for third parties and internal users to interact with the service directly **(Digital Services Playbook (US))**
 - Make all new source code open and reusable and explain how it can be reused
 - Show your code in an open Internet source code repository and enable contributions and comments on the code
-- Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
@@ -329,13 +329,13 @@ Open source helps to:
 
 ### Ressources similaires
 
-- [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
-- [Open Culture - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/6_Open_Culture.md)
+- [Code source ouvert - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Code_source_libre.md)
+- [Culture ouverte - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/6_Culture_ouverte.md)
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 - Open By Default, Proprietary by Necessity (Current GC EARB Principles)
-- Build and develop open (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Build and develop open (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>

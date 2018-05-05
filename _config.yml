@@ -329,7 +329,8 @@ GCWordmark:
   en: Symbol of the Government of Canada
   fr: Symbole du gouvernement du Canada
 
-# Filter translations
+# Filter strings
+DefaultTag: "dpgn-tags" # Output as a class for any element that has a tag array (empty or not)
 Filters:
   en: Filters
   fr: Filtres
@@ -372,6 +373,12 @@ ApplyFilters:
 RememberFilters:
   en: Remember my filters next time
   fr: Rappeler les filtres la prochaine fois
+ExclusiveFilters:
+  en: Exclusive filters
+  fr: Filtres exclusifs
+OneGCArchitectural:
+  en: OneGC Architectural Checklist
+  fr: Liste de contrôle architecturale unGC
 
 # Feedback and view source translations
 PageColon:

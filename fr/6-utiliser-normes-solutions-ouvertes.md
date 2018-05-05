@@ -75,7 +75,7 @@ Using open standards and common government platforms helps you to:
 
 - use open standards and common platforms **(Digital Service Standard (Ontario))**
 - understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
-- Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec
 
 <section class="dpgn-section-stage dpgn-phase-alpha">
@@ -120,12 +120,12 @@ Using open standards and common government platforms helps you to:
 
 ### Ressources similaires
 
-- [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
+- [Normes ouvertes - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/2_Normes_ouvertes.md)
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 - [9. Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-10)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 - Open Source Standards (GC EA Principles)
-- Use emerging technologies (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Use emerging technologies (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -154,14 +154,14 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 - Whenever possible, ensure that software can be deployed on a variety of commodity hardware types **(Digital Services Playbook (US))**
 - Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
 - [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
-- Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
   - Adhere to GC technical standards and guidance, leveraging open standards when possible
   - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
-- Digital Exchange Platform (DXP) **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) **(Build It Right - OneGC Architectural Checklist (draft))**
   - Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery
-- Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
-- Build toward OneGC **Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } Build toward OneGC **Build It Right - OneGC Architectural Checklist (draft))**
   - OneGC is where Digital business changes are built to support a government as a platform where everyone can maximise shared capability (Platforms) and minimise unique department products
 - Use departmental/GC standards. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Adopt the business number as the client identifier - do not create other unique identifiers. This enables data sharing across service lines, departments and jurisdictions.
@@ -199,7 +199,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 ### Ressources similaires
 
-- [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
+- [Code source ouvert - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Code_source_libre.md)
 - [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
@@ -208,10 +208,10 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 - Technology Debt Managed (Current GC EARB Principles)
 - Containerized by default - Platform Independence Lift & Shift (GC EA Principles)
 - Architecturally Fit for the GC Enterprise (GC EA Principles)
-- Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
-- Digital Exchange Platform (DXP) (OneGC Architectural Checklist - Build It Right (draft))
-- Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
-- Build toward OneGC (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Build toward OneGC (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -240,7 +240,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 - Design APIs to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
 - Design APIs to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily understand code that uses the API.
 - Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
-- API first **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } API first **(Build It Right - OneGC Architectural Checklist (draft))**
   - APIs created for every service, exposing data and functionality, to foster data sharing within GC and externally
   - Build microservices that work together within an ecosystem allowing for rapid deployment and built-in redundancy
 
@@ -264,7 +264,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 - Interoperability (Current GC EARB Principles)
 - Interoperability (ESB/APIs - Micro Services) (GC EA Principles)
-- API first (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } API first (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -407,8 +407,6 @@ Public cloud services offer benefits that enable significant advances in the fol
 - Innovation: New features are being continuously deployed, and the costs are amortized across a global service customer base. New technologies such as social media, mobile platforms and analytic tools are all available through subscriptions without large capital investments.
 - Agility: Rapid access is available to multi-featured computing resources at the required capacity to carry out projects from planning to full operation.
 - Elasticity: Commoditized services can grow and shrink with the level of demand; consumers pay only for what is needed for the time it is needed.
-- Cloud first **(Build It Right - OneGC Architectural Checklist (draft))**
-  - SaaS considered first, PaaS, IaaS second to grow more modern infrastructure which includes public, private and hybrid cloud solutions
 
 </div>
 
@@ -425,6 +423,8 @@ Public cloud services offer benefits that enable significant advances in the fol
 - Design so static assets are served through a content delivery network **(OneGC product design criteria) /** Static assets are served through a content delivery network **(Digital Services Playbook (US))**
 - Resources are provisioned through an API **(Digital Services Playbook (US))**
 - Application is hosted on commodity hardware **(Digital Services Playbook (US))**
+- {: .dpgn-onegc-architectural } Cloud first **(Build It Right - OneGC Architectural Checklist (draft))**
+  - SaaS considered first, PaaS, IaaS second to grow more modern infrastructure which includes public, private and hybrid cloud solutions
 
 </section>
 
@@ -443,7 +443,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
 - Cloud First (Current GC EARB Principles)
 - (Public) Cloud First: SaaS - PaaS - IaaS (GC EA Principles)
-- Cloud first (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Cloud first (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
