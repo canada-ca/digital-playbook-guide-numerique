@@ -218,7 +218,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 ### Similar resources
 
-- [Open Markets - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/5_Open_Markets.md)
+- [Open Markets - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/5_Open_Markets.md)
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
 </section>
@@ -333,8 +333,8 @@ Open source helps to:
 
 ### Similar resources
 
-- [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/4_Open_Source_Code.md)
-- [Open Culture - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/6_Open_Culture.md)
+- [Open Source Code - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/4_Open_Source_Code.md)
+- [Open Culture - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/6_Open_Culture.md)
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
