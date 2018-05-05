@@ -176,11 +176,11 @@ It is easy to assume that the primary threat exists from outside the organizatio
 
 In the digital economy, organizations must move to higher order technologies such as machine learning, AI, analytics, and the Internet of Things to retain their advantage. Each of these elements brings with them new threats and opportunities for compromise that erode users’ digital trust (based on the expectation of data privacy and effective data stewardship) developed with services.  
 
-As digital services begin to rely on increasingly complex technologies for competitive advantage, so too must security teams. Advanced AI, analytics and machine learning are essential in effectively analyzing complex systems’ operations to provide security assurance to business owners. Seamless and frictionless security leverages advanced technology to provide the user the convenience they expect, while ensuring that systems’ processes and authorities are not compromised. 
+As digital services begin to rely on increasingly complex technologies for competitive advantage, so too must security teams. Advanced AI, analytics and machine learning are essential in effectively analyzing complex systems’ operations to provide security assurance to business owners. Seamless and frictionless security leverages advanced technology to provide the user the convenience they expect, through streamlined user-interface and features with which they interact, while ensuring that systems’ processes and authorities are not compromised. 
 
-More critically, digital security (and interoperability) is enabled by digital identity and the ability to effectively authenticate and authorize the user and their preferred devices. By leveraging combined information provided by the user to multiple sources, digital services are able to provide a rich and streamlined user experience. Bringing to bear emerging technologies to assist, organizations are turning to risk-based authentication and authorization mechanisms, using analytics to assess user behaviour and adapt security accordingly.
+More critically, digital security (and interoperability) is enabled by digital identity and the ability to effectively identify and provide access to the user on their preferred devices. By leveraging combined information provided by the user to multiple sources, digital services are able to provide a rich and streamlined user experience. Bringing to bear emerging technologies to assist, organizations are turning to risk-based authentication and authorization mechanisms, using analytics to assess user behaviour and adapt security accordingly.
 
-Advanced technologies including biometrics promise help to establish efficient and effective digital identification and access management systems. However service owners must be mindful that users will often find a way to circumvent burdensome security measures for convenience. It is important to design security measures that consider the user experience and help improve the overall posture to prevent workarounds.
+Advanced technologies including biometrics promise help to establish efficient and effective digital identification and access management systems. However service owners must be mindful that users will often find a way to circumvent burdensome security measures for convenience. It is important to design security measures that enable the user experience, with a consideration to good UI and process design, and help improve the overall posture to prevent workarounds.
 
 </div>
 
@@ -189,12 +189,12 @@ Advanced technologies including biometrics promise help to establish efficient a
 ### Checklist
 
 - Implement identity and authorization mechanisms for all employees, partners and customer profiles, leveraging strategies that are proportional to the sensitivity of your service.
-- "Shift security left,” ensuring that security is a consideration in requirements from the very beginning of service design through technical development, and is equally elegantly designed.
+- "Shift security left,” ensuring that security is a consideration in requirements from the very beginning of service design through technical development, and is equally elegantly designed aligned with UI and process flows.
 - Implement or onboard to an Identity and Access Management (IAM) solution that ensures users’ credentials are trusted and portable across devices of the user’s choice.
-- Ensure your IAM solution is able to confirm users’ identities as early in (or prior to) establishing a trusted connection as possible.
-- Where possible, provide users simple means of authentication (e.g.: biometrics) to your service.
-- Provide users adequate information to ensure they fully understand the authority they are providing to 3rd party services.
-- Maintain logs of user access to provide both users and business owners assurance that credentials are persistently secure.
+- Ensure your IAM solution is able to confirm users’ identities as early in (or prior to) establishing a trusted connection as possible - use device tokens, and previously negotiated shared secrets. **(HTTPS Only - OneGC Architectural Checklist)**
+- Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies.
+- Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
+- Maintain logs of user access to provide both users and business owners assurance that credentials are continually secure, and the system trustworthy.
 - Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats (OneGC product design criteria)
 - Implement protective measures to enable the secure processing and sharing of data and information across government (OneGC product design criteria)
 
@@ -237,7 +237,7 @@ The law and governance in cyberspace is not the sole responsibility nor under th
 
 Efforts to develop international cybersecurity frameworks have been undertaken in the past, resulting in limited agreement to adopt domestic legislation, cooperate through mutual legal assistance in the event of a breach, and prosecute cybercrimes committed on its territory.  From the EU, both the directive on the security of Network and Infrastructure Systems (NIS directive), and the General Data Protection Regulation will have international impact, forcing nations who interact with the EU to make changes to data handling and protection mechanisms.  
 
-In Canada, businesses and governments are both protected, and bound by laws and regulations stipulated in multiple acts protecting the confidentiality, integrity and accessibility of systems and information.  Canada’s Criminal Code outlines laws covering the unauthorized use of computers (Sect 342.1 and 342.2), protecting services from both malicious misuse and data interception, but provides exceptions for consent (“express or implied”) or to protect the network. 
+In Canada, businesses and governments are both protected, and bound by laws and regulations stipulated in multiple acts protecting the confidentiality, integrity and accessibility of systems and information.  Canada’s Criminal Code outlines laws covering the unauthorized use of computers ([Sect 342.1 and 342.2](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97)), protecting services from both malicious misuse and data interception, but provides exceptions for consent (“express or implied”) or to protect the network. 
 
 Canada has two significant privacy protections in place.  First, and most relevant to public digital services is the Privacy Act, which governs the personal information handling practices of the federal institutions. It limits the collection, use, sharing and disclosure of individuals’ personal information. Similar to the GDPR, the [Privacy Act](https://www.priv.gc.ca/en/for-federal-institutions/) gives individuals the right to access and request correction of personal information about themselves held by the federal government.  Federal privacy law for private-sector organizations is covered by the [Personal Information Protection & Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/). PIPEDA sets out the ground rules for how businesses must handle personal information in the course of commercial activity.
 
@@ -249,7 +249,7 @@ Canada has two significant privacy protections in place.  First, and most releva
 
   - Engage the appropriate privacy, security, and legal officer(s) to discuss the legal aspects of managing cyber risks
   - Document any outstanding legal concerns, such as data protection or data sharing (Digital Service Standard (Ontario))
-  - Begin to identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
+  - Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
   - Identify the cybersecurity tools and services in use; learn how they work and handle data; and then analyze them against current law in each jurisdiction where your digital service uses them
   - Conduct a cyber law assessment to determine vulnerabilities, risks, and resources required to manage them
   - Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
