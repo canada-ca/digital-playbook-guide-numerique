@@ -271,7 +271,7 @@ Open source helps to:
 - When appropriate, create an API for third parties and internal users to interact with the service directly **(Digital Services Playbook (US))**
 - Make all new source code open and reusable and explain how it can be reused
 - Show your code in an open Internet source code repository and enable contributions and comments on the code
-- Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-onegc-architectural } Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
@@ -339,7 +339,7 @@ Open source helps to:
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 - Open By Default, Proprietary by Necessity (Current GC EARB Principles)
-- Build and develop open (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Build and develop open (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
