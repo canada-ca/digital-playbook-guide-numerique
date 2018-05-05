@@ -106,9 +106,11 @@ Remember that security is not one-size fits all, and that your defenses are best
 
 ### Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data
 
+<!-- markdownlint-disable MD028 -->
 > “… platforms have a responsibility to protect the privacy and personal data of citizens, and to protect the integrity of … system(s) where they operate." **Scott Brison, MP, President of the Treasury Board, 2018**
 
 > “Privacy and digital and service... are not easy things to juggle... and as the #gcdigital agenda evolves, we cannot lose sight of the fact this is an area we cannot fail in” **Alex Benay, GC CIO, 2018**
+<!-- markdownlint-enable MD028 -->
 
 Both the value and the volume of data have never been higher, and end points (which are increasing in number faster than we can count) are more vulnerable than ever. If organizations and users can’t trust their data, and trust that it is safe, they will not engage or take the risks that drive growth.
 
@@ -129,7 +131,7 @@ It is easy to assume that the primary threat exists from outside the organizatio
 - Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
 - Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
 - Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
-- Develop your system with the 7 principles of [Privacy by Design](https://en.wikipedia.org/wiki/Privacy_by_design) in mind: 
+- Develop your system with the 7 principles of [Privacy by Design](https://en.wikipedia.org/wiki/Privacy_by_design) in mind:
   1. Proactive not reactive – preventative not remedial;
   2. Privacy as the default setting;
   3. Privacy embedded into design;
