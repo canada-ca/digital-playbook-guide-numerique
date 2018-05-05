@@ -32,6 +32,12 @@ assign guideline = standard.guidelines.content.first %}
     </li>
   </ul>
 </fieldset>
+<fieldset class="dpgn-exclusive-filters">
+  <legend>{{ site.ExclusiveFilters[page.lang] }}</legend>
+  <ul class="list-unstyled">
+    <li><input type="checkbox" id="dpgn-onegc-architectural" /> <label for="dpgn-onegc-architectural">{{ site.OneGCArchitectural[page.lang] }}</label></li>
+  </ul>
+</fieldset>
 <hr />
 <div><input type="checkbox" id="filters-remember" /> <label for="filters-remember">{{ site.RememberFilters:[page.lang] }}</label></div>
 <input type="button" value="{{ site.ApplyFilters[page.lang] }}" id="filter-button" class="btn btn-primary" />
