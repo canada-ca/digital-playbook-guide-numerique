@@ -120,7 +120,7 @@ Using open standards and common government platforms helps you to:
 
 ### Similar resources
 
-- [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
+- [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/2_Open_Standards.md)
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 - [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
@@ -199,7 +199,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 ### Similar resources
 
-- [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/2_Open_Standards.md)
+- [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/3_Open_Source_Software.md)
 - [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
