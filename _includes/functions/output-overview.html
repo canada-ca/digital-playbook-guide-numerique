@@ -1,4 +1,7 @@
-{% assign dataVariable = site.playbookData[page.lang] %}{% 
+{% comment %}@overview Outputs the Overview section of the Digital Playbook{% endcomment %}{% 
+comment %}@param samePage {Boolean} Whether or not the Overview section is on the same page as the Standards{% endcomment %}{% 
+comment %}@return {String} Overview section of the Digital Playbook{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
 capture classOutput %}{% 
   include /functions/class-from-tags.html tags=dataSource.introduction.tags %}{% 
@@ -10,17 +13,8 @@ endcapture %}
 {% include /functions/output-content-array.html contentArray=dataSource.introduction.content currHeadingLevel="2" %}
 
 **{{ dataSource.standards.title }}{{ site.Colon[page.lang] }}**
-
-<ul>
-{% for standard in dataSource.standards.content %}{% 
-  capture standardId %}{% 
-    include /functions/generate-id.html string=standard.title %}{% 
-  endcapture %}{% 
-  capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=true %}{% 
-  endcapture 
-  %}<li{{ classOutput | rstrip }}><a href="#{{ standardId | strip }}">{{ standard.title }}</a></li>{% 
-endfor %}</ul>
+  
+{% include /functions/standard-links.html samePage=include.samePage %}
 
 **{{ site.ComparisonPlaybookIntro[page.lang] }}{{ site.Colon[page.lang] }}**
 
