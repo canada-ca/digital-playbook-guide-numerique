@@ -1,12 +1,29 @@
-{% assign dataVariable = site.playbookData[page.lang] %}{% 
+{% comment %}@overview Outputs Iterates through all the standards and guidelines, identifying which ones include content with certain tags{% endcomment %}{% 
+comment %}@param standard {Object/Number} Standard object or the standard number (which is used to retrieve the Standard object){% endcomment %}{% 
+comment %}@param includeStandardTitle {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such when there are multiple standards on the same page{% endcomment %}{% 
+comment %}@param relevantGuidelines {String/Array} Optional (defaults to all). Guidelines for the current standard that should be displayed{% endcomment %}{% 
+comment %}@param relevantRelatedGuidelines {String/Array} Optional (defaults to all). Guidelines that should be displayed if they are related to this standard{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@return {String} Outputs the content for the standard and the included guidelines{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
-if include.standard.title %}{% 
+if include.relevantSections.size > 0 %}{% 
+  if include.relevantSections.first %}{% 
+    assign relevantSectionsArray = include.relevantSections %}{% 
+  else %}{% 
+    assign relevantSectionsArray = include.relevantSections | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+endif %}{% 
+comment %}If standard is not an object, then turn the number into an index (minus 1) and retrieve the standard object from the dataset{% endcomment %}{% 
+if include.standard.title.size > 0 %}{% 
   assign standard = include.standard %}{% 
 else %}{% 
   assign standardIndex = include.standard | minus: 1 %}{% 
   assign standard = dataSource.standards.content[standardIndex] %}{% 
 endif %}{% 
 assign standardHeadingLevel = include.currentHeadingLevel | default: 1 %}{% 
+comment %}If the Standard heading will be included, then create a section, output the Standard heading and then increment the heading level by 1{% endcomment %}{% 
 if include.includeStandardTitle %}{% 
   assign standardHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
   capture classOutput %}{% 
@@ -19,99 +36,198 @@ if include.includeStandardTitle %}{%
 <h{{ standardHeadingLevel }} id="{{ headerId | strip }}">{{ standard.title }}</h{{ standardHeadingLevel }}>
 {% endif %}{% 
 assign guidelineHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
-assign subsectionHeadingLevel = guidelineHeadingLevel | plus: 1 %}{% 
-capture classOutput %}{% 
-  include /functions/class-from-tags.html tags=standard.introduction.tags %}{% 
-endcapture %}
-<div{{ classOutput | rstrip }}>
+assign subsectionHeadingLevel = guidelineHeadingLevel | plus: 1 %}
 
-{% include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel %}
-
-</div>
-{% capture classOutput %}{% 
-  include /functions/class-from-tags.html tags=standard.guidelines.tags %}{% 
-endcapture %}
-<div{{ classOutput | rstrip }}>
-
-**{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}**
-
-{% include functions/guideline-links.html guidelines=standard.guidelines.content samePage=true %}
-
-</div>
-
-{% if standard.relatedguidelines.size > 0 %}{% 
+{% comment %}Output the introduction for the Standard{% endcomment %}{% 
+if relevantSectionsArray.size > 0 %}{% 
+  capture tagsCompareResult %}{% 
+    include /functions/find-array-match.html array1=standard.introduction.tags array2=relevantSectionsArray %}{% 
+  endcapture %}{% 
+else %}{% 
+  assign tagsCompareResult="true" %}{% 
+endif %}{% 
+if tagsCompareResult contains "true" %}{% 
   capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=standard.relatedguidelines.tags %}{% 
+    include /functions/class-from-tags.html tags=standard.introduction.tags %}{% 
   endcapture %}
 <div{{ classOutput | rstrip }}>
 
-**{{ standard.relatedguidelines.title }}{{ site.Colon[page.lang] }}**
-
-{% include functions/guideline-links.html guidelines=standard.relatedguidelines.content samePage=true standardTitle=standard.title %}
+{%  include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel relevantTags=include.relevantTags %}
 
 </div>
 {% endif %}
 
-{% for guideline in standard.guidelines.content %}{% 
+{% comment %}Output the same-page links to each of the guidelines{% endcomment %}{% 
+if relevantSectionsArray.size > 0 %}{% 
+  capture tagsCompareResult %}{% 
+    include /functions/find-array-match.html array1=standard.guidelines.tags array2=relevantSectionsArray %}{% 
+  endcapture %}{% 
+else %}{% 
+  assign tagsCompareResult="true" %}{% 
+endif %}{% 
+if tagsCompareResult contains "true" %}{% 
   capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=guideline.tags %}{% 
+    include /functions/class-from-tags.html tags=standard.guidelines.tags %}{% 
   endcapture %}
+<div{{ classOutput | rstrip }}>
+
+<p><strong>{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}</strong></p>
+
+{% if include.relevantGuidelines.size > 0 %}{% 
+    if include.relevantGuidelines.first %}{% 
+      assign outputGuidelinesArray = include.relevantGuidelines %}{% 
+    else %}{% 
+      assign outputGuidelinesArray = include.relevantGuidelines | replace: " ", "" | split: "," %}{% 
+    endif %}{% 
+  else %}{% 
+    assign outputGuidelinesArray = standard.guidelines.content %}{% 
+  endif %}{% 
+  include functions/guideline-links.html guidelineIndexes=outputGuidelinesArray standard=standard samePage=true %}
+
+</div>
+{% endif %}
+
+{% comment %}Output the related guidelines links{% endcomment %}{% 
+if relevantSectionsArray.size > 0 %}{% 
+  capture tagsCompareResult %}{% 
+    include /functions/find-array-match.html array1=standard.relatedguidelines.tags array2=relevantSectionsArray %}{% 
+  endcapture %}{% 
+else %}{% 
+  assign tagsCompareResult="true" %}{% 
+endif %}{% 
+if tagsCompareResult contains "true" %}{% 
+  if standard.relatedguidelines.content.size > 0 and include.relevantRelatedGuidelines %}{% 
+    if include.relevantRelatedGuidelines %}{% 
+      comment %}relevantRelatedGuidelines is an array{% endcomment %}{% 
+      assign relevantRelatedGuidelinesArray = include.relevantRelatedGuidelines %}{% 
+    else %}{% 
+      comment %}relevantRelatedGuidelines is a string so convert it to an array{% endcomment %}{% 
+      assign relevantRelatedGuidelinesArray = include.relevantRelatedGuidelines | replace: " ", "" | split: "," %}{% 
+    endif %}{% 
+    comment %}Build a new array with only the relevant guidelines that related to the current standard{% endcomment %}{% 
+    assign remainingRelatedGuidelines = "" %}{% 
+    for item in standard.relatedguidelines.content %}{% 
+      assign matchFound = false %}{% 
+      for comparator in relevantRelatedGuidelinesArray %}{% 
+        if item == comparator %}{% 
+          assign matchFound = true %}{% 
+          break %}{% 
+        endif %}{% 
+      endfor %}{% 
+      if matchFound %}{% 
+        if remainingRelatedGuidelines.size > 0 %}{% 
+          assign remainingRelatedGuidelines = remainingRelatedGuidelines | append: "," %}{% 
+        endif %}{% 
+        assign remainingRelatedGuidelines = remainingRelatedGuidelines | append: item %}{% 
+      endif %}{% 
+    endfor %}{% 
+  else %}{% 
+    assign remainingRelatedGuidelines = standard.relatedguidelines.content %}{% 
+  endif %}{% 
+  if remainingRelatedGuidelines.size > 0 %}{% 
+    capture classOutput %}{% 
+      include /functions/class-from-tags.html tags=standard.relatedguidelines.tags %}{% 
+    endcapture %}
+<div{{ classOutput | rstrip }}>
+
+<p><strong>{{ standard.relatedguidelines.title }}{{ site.Colon[page.lang] }}</strong></p>
+
+{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true %}
+
+</div>
+{% endif %}{% 
+endif %}
+
+{% comment %}Output each guideline as a new section and output the included content{% endcomment %}{% 
+for item in outputGuidelinesArray %}{% 
+  if item.first %}{% 
+    comment %}item is a guideline object{% endcomment %}{% 
+    assign guideline = item %}{% 
+  else %}{% 
+    comment %}item is a guideline index so use it to get the guideline object{% endcomment %}{% 
+    assign guidelineIndex = item | plus: 0 %}{% 
+    assign guideline = standard.guidelines.content[guidelineIndex] %}{% 
+  endif %}{% 
+  if relevantSectionsArray.size > 0 %}{% 
+    capture tagsCompareResult %}{% 
+      include /functions/find-array-match.html array1=guideline.tags array2=relevantSectionsArray %}{% 
+    endcapture %}{% 
+  else %}{% 
+    assign tagsCompareResult="true" %}{% 
+  endif %}{% 
+  if tagsCompareResult contains "true" %}{% 
+    capture classOutput %}{% 
+      include /functions/class-from-tags.html tags=guideline.tags %}{% 
+    endcapture %}
 <section{{ classOutput | rstrip }}>{% 
-  capture headerId %}{% 
-    include /functions/generate-id.html string=guideline.title %}{% 
-  endcapture %}
+    capture headerId %}{% 
+      include /functions/generate-id.html string=guideline.title %}{% 
+    endcapture %}
 <h{{ guidelineHeadingLevel }} id="{{ headerId | strip }}">{{ guideline.title }}</h{{ guidelineHeadingLevel }}>
-{% capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=guideline.introduction.tags %}{% 
-  endcapture %}
+
+{%  for property in guideline %}{% 
+      assign propertyKey = property[0] %}{% 
+      assign propertyContent = property[1].content %}{% 
+      if propertyKey == "introduction" %}{% 
+        comment %}Output the guideline introduction{% endcomment %}{% 
+        if relevantSectionsArray.size > 0 %}{% 
+          capture tagsCompareResult %}{% 
+            include /functions/find-array-match.html array1=guideline.introduction.tags array2=relevantSectionsArray %}{% 
+          endcapture %}{% 
+        else %}{% 
+          assign tagsCompareResult="true" %}{% 
+        endif %}{% 
+        if tagsCompareResult contains "true" %}{% 
+          capture sectionContent %}{% 
+            include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=guidelineHeadingLevel relevantTags=include.relevantTags %}{%  
+          endcapture %}{% 
+          assign sectionContentStrip = sectionContent | strip %}{% 
+          if sectionContentStrip.size > 0 %}{% 
+            capture classOutput %}{% 
+              include /functions/class-from-tags.html tags=guideline.introduction.tags %}{% 
+            endcapture %}
 <div{{ classOutput | rstrip }}>
 
-{% include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=guidelineHeadingLevel %}
+{{ sectionContentStrip }}
 
 </div>
-
-{% if guideline.checklist.content.size > 0 %}{% 
-  capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=guideline.checklist.tags %}{% 
-  endcapture %}
+{%        endif %}{% 
+        endif %}{% 
+      elsif propertyContent.first %}{% 
+        comment %}Output the other guideline sections{% endcomment %}{% 
+        assign propertyTags = property[1].tags %}{% 
+        if relevantSectionsArray.size > 0 %}{% 
+          capture tagsCompareResult %}{% 
+            include /functions/find-array-match.html array1=propertyTags array2=relevantSectionsArray %}{% 
+          endcapture %}{% 
+        else %}{% 
+          assign tagsCompareResult="true" %}{% 
+        endif %}{% 
+        if tagsCompareResult contains "true" %}{% 
+          capture sectionContent %}{% 
+            include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subsectionHeadingLevel relevantTags=include.relevantTags %}{%  
+          endcapture %}{% 
+          assign sectionContentStrip = sectionContent | strip %}{% 
+          if sectionContentStrip.size > 0 %}{% 
+            capture classOutput %}{% 
+              include /functions/class-from-tags.html tags=propertyTags %}{% 
+            endcapture %}
 <section{{ classOutput | rstrip }}>
 
-<h{{ subsectionHeadingLevel }}>{{ guideline.checklist.title }}</h{{ subsectionHeadingLevel }}>
+<h{{ subsectionHeadingLevel }}>{{ property[1].title }}</h{{ subsectionHeadingLevel }}>
 
-{% include /functions/output-content-array.html contentArray=guideline.checklist.content currHeadingLevel=subsectionHeadingLevel %}
-
-</section>
-{% endif %}
-
-{% if guideline.guides.content.size > 0 %}{% 
-  capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=guideline.guides.tags %}{% 
-  endcapture %}
-<section{{ classOutput | rstrip }}>
-
-<h{{ subsectionHeadingLevel }}>{{ guideline.guides.title }}</h{{ subsectionHeadingLevel }}>
-
-{% include /functions/output-content-array.html contentArray=guideline.guides.content currHeadingLevel="4" %}
+{{ sectionContentStrip }}
 
 </section>
-{% endif %}
-
-{% if guideline.similar.content.size > 0 %}{% 
-  capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=guideline.similar.tags %}{% 
-  endcapture %}
-<section{{ classOutput | rstrip }}>
-
-<h{{ subsectionHeadingLevel }}>{{ guideline.similar.title }}</h{{ subsectionHeadingLevel }}>
-
-{% include /functions/output-content-array.html contentArray=guideline.similar.content currHeadingLevel="4" %}
-
-</section>
-{% endif %}
-
+{%        endif %}{% 
+        endif %}{% 
+      endif %}{% 
+    endfor %}
 </section>
 
-{% endfor %}
-{% if include.includeStandardTitle %}
+{% endif %}{% 
+endfor %}{% 
+comment %}Output a closing section tag if the Standard heading was included{% endcomment %}{% 
+if include.includeStandardTitle %}
 </section>
 {% endif %}
