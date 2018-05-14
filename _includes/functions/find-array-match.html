@@ -1,0 +1,12 @@
+{% comment %}@overview Compares two arrays, looking for matches between them{% endcomment %}{% 
+comment %}@param array1 {Array} Array to compare{% endcomment %}{% 
+comment %}@param array2 {Array} Array to compare{% endcomment %}{% 
+comment %}@return {String} "true" is returned if a match is found{% endcomment %}{% 
+comment %}Determine the total size of the arrays combined{% endcomment %}{% 
+assign maximumSize = include.array1.size | plus: include.array2.size %}{% 
+comment %}Determines the total size of the array combined if duplicate entries are removed{% endcomment %}{% 
+assign combinedUniqueArray = include.array1 | concat: include.array2 | uniq %}{% 
+comment %}If the total size is different when the duplicate entries are removed then a match was found so output "true"{% endcomment %}{% 
+if maximumSize != combinedUniqueArray.size 
+  %}{{ "true" }}{% 
+endif %}
