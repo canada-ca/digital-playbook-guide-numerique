@@ -1,0 +1,47 @@
+{% comment %}@overview Outputs a list of links to the Standards{% endcomment %}{% 
+comment %}@param samePage {Boolean} Whether or not the links should be same-page links{% endcomment %}{% 
+comment %}@param relevantStandards {String/Array} Optional. Comma-separated indexes or array of indexes of the relvant standards{% endcomment %}{% 
+comment %}@return {String} List of links to the Standards{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{% 
+assign dataSource = site.data[dataVariable] %}{% 
+if include.relevantStandards %}{% 
+  comment %}Ensure the indexes of the relevant standards are in an array{% endcomment %}{% 
+  if include.relevantStandards.first %}{% 
+    assign relevantStandardsArray = include.relevantStandards %}{% 
+  else %}{% 
+    assign relevantStandardsArray = include.relevantStandards | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+  comment %}All standards are relevant so build an array with the indexes of all of the standards{% endcomment %}{% 
+  assign standardIndex = 0 %}{% 
+  assign relevantStandards = "" %}{% 
+  assign lastIndex = dataSource.standards.content.size | minus: 1 %}{% 
+  for standardIndex in (0..lastIndex) %}{% 
+    if relevantStandards.size > 0 %}{% 
+      assign relevantStandards = relevantStandards | append: "," %}{% 
+    endif %}{% 
+    assign relevantStandards = relevantStandards | append: standardIndex %}{% 
+  endfor %}{% 
+  assign relevantStandardsArray = relevantStandards | split: "," %}{% 
+endif %}
+
+<ul>
+{% comment %}Only output links for the standards with indexes in relevantStandardsArray{% endcomment %}{% 
+for standardIndexString in relevantStandardsArray %}{% 
+  assign standardIndex = standardIndexString | plus: 0 %}{% 
+  assign standard = dataSource.standards.content[standardIndex] %}{% 
+  comment %}If same page, target the section in the current page, otherwise target the destination page{% endcomment %}{% 
+  if include.samePage %}{% 
+    capture standardId %}{% 
+      include /functions/generate-id.html string=standard.title %}{% 
+    endcapture %}{% 
+    assign urlOutput = standardId | strip | prepend: "#" %}{% 
+  else %}{% 
+    assign urlOutput = site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
+  endif %}{% 
+  comment %}Convert the tags into classes{% endcomment %}{% 
+  capture classOutput %}{% 
+    include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=true %}{% 
+  endcapture 
+  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}">{{ standard.title }}</a></li>{% 
+endfor %}</ul>

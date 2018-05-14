@@ -1,38 +1,90 @@
-{% assign prevItemType = "" %}{% 
+{% comment %}@overview Iterates over an array of content blocks, including nested content arrays, outputting the relevant content{% endcomment %}{% 
+comment %}@param contentArray {Array} Array of content blocks to process{% endcomment %}{% 
+comment %}@param currHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within){% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@return {String} Returns the processed output from the content array{% endcomment %}{%  
 for item in include.contentArray %}{% 
+  comment %}Have to restart with include.relevantTags on each loop to avoid recursion affecting the value{% endcomment %}{% 
+  if include.relevantTags.size > 0 %}{% 
+    if include.relevantTags.first %}{% 
+      assign relevantTagsArray = include.relevantTags %}{% 
+    else %}{% 
+      assign relevantTagsArray = include.relevantTags | replace: " ", "" | split: "," %}{% 
+    endif %}{% 
+  endif %}{% 
+  if relevantTagsArray.size > 0 %}{% 
+    capture tagsCompareResult %}{% 
+      include /functions/find-array-match.html array1=item.tags array2=relevantTagsArray %}{% 
+    endcapture %}{% 
+    if tagsCompareResult contains "true" %}{% 
+      assign relevantItem = true %}{% 
+      assign relevantTagsArray = "" %}{% 
+    else %}{% 
+      assign relevantItem = false %}{% 
+    endif %}{% 
+  else %}{% 
+    assign relevantItem = true %}{% 
+  endif %}{% 
   capture classOutput %}{% 
     include /functions/class-from-tags.html tags=item.tags %}{% 
   endcapture %}{% 
   capture rawOutput %}{% 
-    if item.type == 'section' %}{% 
-      assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}
+    comment %}{% endcomment %}{% 
+    if item.type == 'section' %}{%
+      comment %}Content block is a section, so output the section elements, the heading and then call this function to process the nested content array{% endcomment %}{% 
+      assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}{% 
+      capture nestedOutputSection %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=relevantTagsArray %}{% 
+      endcapture %}{% 
+      assign nestedOutputStrip = nestedOutputSection | strip %}{% 
+      if nestedOutputStrip.size > 0 %}
 <section{{ classOutput | rstrip }}>
 <h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>
-{% include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel %}
+{{ nestedOutputStrip }}
 </section>
-{%  elsif item.type == 'list' %}{% 
+{%    endif %}{% 
+    elsif item.type == 'list' %}{% 
+      comment %}Content block is a list, so output the list elements and then call this function to process the nested content array (list items){% endcomment %}{%  
       if item.listtype == 'ordered' %}{% 
         assign listTag = "ol" %}{% 
       else %}{% 
         assign listTag = "ul" %}{% 
-      endif %}
-<{{ listTag }}{{ classOutput | rstrip }}>{% 
-      capture listOutput %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel %}{% 
-      endcapture %}{{ listOutput | rstrip }}
-</{{ listTag }}>{% elsif item.type == 'listitem' %}
+      endif %}{% 
+      capture nestedOutputList %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=relevantTagsArray %}{% 
+      endcapture %}{% 
+      assign nestedOutputStrip = nestedOutputList | rstrip %}{% 
+      if nestedOutputStrip.size > 0 %}
+<{{ listTag }}{{ classOutput | rstrip }}>
+{{ nestedOutputStrip }}
+</{{ listTag }}>{% 
+      endif %}{% 
+    elsif item.type == 'listitem' %}{% 
+      comment %}Content block is a list item, so output the list item{% endcomment %}{% 
+      if relevantItem %}
 <li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span></li>
-{%  elsif item.type == 'listnested'%}
-<li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span>{% 
-      include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel %}</li>
-{%  else %}
+{%    endif %}{% 
+    elsif item.type == 'listnested'%}{% 
+      comment %}Content block is a nested list, so output the list item and then call this function to process the nested content array (list){% endcomment %}{% 
+      capture nestedOutputNestedList %}{% 
+        include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel relevantTags=relevantTagsArray %}{% 
+      endcapture %}{% 
+      assign nestedOutputStrip = nestedOutputNestedList | rstrip %}{% 
+      if nestedOutputStrip.size > 0 %}
+<li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span>{{ nestedOutputStrip }}</li>
+{%    endif %}{% 
+    else %}{% 
+      comment %}Content block is a text block or other generic content block, so out the conent block within a div{% endcomment %}{% 
+      if relevantItem %}
 <div{{ classOutput | rstrip }}>
 {{ item.content }}
 </div>
-{%  endif %}{% 
+{%    endif %}{% 
+    endif %}{% 
   endcapture %}{% 
+  comment %}Special handling to ensure output is properly spaced (e.g., list items are on separate lines with no blank lines in between){% endcomment %}{%  
   if item.type == 'listitem' or 'listnested' 
-    %}{{ rawOutput | lstrip }}{% 
+   %}{{ rawOutput | lstrip }}{% 
   else %}{{ rawOutput | strip }}{% 
   endif %}{% 
 endfor %}

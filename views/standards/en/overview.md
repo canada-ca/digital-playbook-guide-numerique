@@ -5,4 +5,4 @@ altLang: fr
 altLangPage: apercu
 collectionDirectory: views/standards
 ---
-{% include functions/output-overview.html %}
+{% include functions/output-overview.html samePage=false %}

@@ -430,3 +430,8 @@ DigitalPlaybookGuideline:
 ComparableStandardsCriteria:
   en: Comparable standards / criteria
   fr: Normes / critères comparables
+
+# View template strings
+RelatedTo:
+  en: related to
+  fr: relié à
