@@ -224,7 +224,7 @@
                   },
                   {
                     "type": "section",
-                    "tags": ["dpgn-section-stage", "dpgn-phase-alpha"],
+                    "tags": ["dpgn-section-stage", "dpgn-stage-alpha"],
                     "title": "Alpha stage",
                     "content": [
                       {
@@ -258,7 +258,7 @@
                   },
                   {
                     "type": "section",
-                    "tags": ["dpgn-section-stage", "dpgn-phase-beta", "dpgn-phase-live"],
+                    "tags": ["dpgn-section-stage", "dpgn-stage-beta", "dpgn-stage-live"],
                     "title": "Beta and live stages",
                     "content": [
                       {
