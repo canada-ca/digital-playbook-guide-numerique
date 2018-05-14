@@ -9,6 +9,40 @@ altLangPage: 2-integrer-accessibilite-des-depart
 
 **[TODO: Add/revise introductory text]**
 
+Building in accessibility from the start is key to ensure that your programs, service, tools or application can be used by everyone, including those living with a permanent disability, but also by those who may have a temporary limitation or disability due to illness, accident, environmental changes or technological difficulties.  
+
+Worldwide, Over a billion people, about 15% of the world's population, have some form of disability. Between 110 million and 190 million adults have significant difficulties in functioning. (WHO - http://www.who.int/news-room/fact-sheets/detail/disability-and-health)
+
+In Canada:
+- 14% of the population (4.9 million Canadians) identify as a person with a disability
+- 30% of the population have a disability if you include “invisible” disabilities (colour blindness, cognitive, mental health or chronic pain related)
+- 50% of the population have a disability if you take into account age-related impairments (low vision, low hearing, cognitive impairments), 
+- At least once in a person’s lifetime, they also may have a temporary disability brought on through accident, illness, repetitive strain, lifecycle changes (pregnancy). 
+
+**Curb Cut Effect**
+
+Curb cuts are intended to help wheelchair get on sidewalks, but they also help bicyclists, parents with strollers, delivery people, and many other nondisabled groups. This benefit to others became known as the “Curb-Cut Effect”.
+
+When inclusive and accessible design is in place, it is a benefit for all and seamlessly meets the needs of individuals across the board, including people without disabilities.
+
+**Situational Limitations**
+
+Sometimes people are in situations that limit their ability to hear, see, use their hands, concentrate, understand instructions, etc., and sometimes they are using devices that have limitations in size, input interface, etc. — for example:
+- Watching TV in a noisy environment (limits one's ability to hear, but closed captionning helps convey audio messages in text)
+- Driving (limits one's ability to concentrate on multiple things and use their hands, requiring the driver to use her/his smart phone to ask for directions using voice recognition and directions are read out loud to avoid (a ticket for distracted driving) taking her/his eyes off the road and hands off the wheel.)
+- Walking around with small children (curb cuts for stollers, hands full, concentrate, understand instructions)
+- Having his/her hands full (while cooking, fixing things around the home, etc.) may require relying on smart speakers for instructions.
+- Using the Web on a small mobile phone in bright sunlight with one hand on a slow connection
+- Having to interact in another language 
+
+These limitations are sometimes mentioned as an example of how accessible design helps everyone, including people without disabilities.
+
+**Added Benefits**
+- findability; when content is accessible it increases its findability 
+- understandable content for all users that is also machine-readable 
+
+
+
 </div>
 
 <div class="dpgn-section-guidelines">
