@@ -26,7 +26,7 @@ altLangPage: 7-iterate-improve-frequently
 
 **Lignes directrices connexesv:**
 
-{% include functions/guideline-links.html guidelines="1.2, 3.3, 9.2" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="1.2, 3.3, 9.2" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -94,7 +94,7 @@ Start with a representation or prototype of the solution that will be tested and
   - Be an agile Developer: Develop in an iterative manner, with key stakeholders participation from the beginning, releasing minimum viable product as soon as possible and iteratively building out functionality
   - Be an agile administrator: Promote DEVOPS and automate, monitor and unify all platform and software construction from testing to release and infrastructure management
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -105,7 +105,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
 
 #### Stages bêta et en direct
 
@@ -115,7 +115,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
 
 #### Stages alpha, bêta et en direct
 
@@ -332,7 +332,7 @@ You need to build a service which you can iterate and keep improving so that you
     - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
     - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
 
-<section class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
 
 #### Stages alpha, bêta et en direct
 
@@ -348,7 +348,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Stage bêta
 
@@ -357,7 +357,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Stage en direct
 
