@@ -26,7 +26,7 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.5, 1.6, 1.7, 6.1, 6.2, 8.3, 8.4" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="1.5, 1.6, 1.7, 6.1, 6.2, 8.3, 8.4" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -89,7 +89,7 @@ Users won't use a service unless they have a guarantee:
 
 **[TODO: Add/revise checklist items]**
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -105,7 +105,7 @@ Users won't use a service unless they have a guarantee:
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Live stage
 
@@ -165,7 +165,7 @@ Users won't use a service unless they have a guarantee:
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -184,7 +184,7 @@ Users won't use a service unless they have a guarantee:
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Live stage
 
@@ -268,7 +268,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 - {: .dpgn-onegc-architectural } HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
   - Holistic approach to securing GC services for publicly accessible sites
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -297,7 +297,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Beta stage
 
@@ -328,7 +328,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Live stage
 
