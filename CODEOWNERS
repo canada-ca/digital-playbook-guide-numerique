@@ -1,0 +1,80 @@
+# Defines the owners for the files in the repository branch.
+# Used when "Settings" / "Branches" / "Protect this branch" / "Require pull request reviews before merging" / "Require review from Code Owners" is enabled
+# When enabled, once a file matching the latest pattern below is changed, it triggers an automatic mandatory code review by the code owner(s)
+# Code owners must have write access to the repository. So for this to work, the "digital-playbook-reviewers" teams would need to be granted write access (currently read only).
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @canada-ca/digital-playbook-admins will be requested for
+# review when someone opens a pull request.
+*       @canada-ca/digital-playbook-admins
+
+# Asset owners
+/assets/  @canada-ca/digital-playbook-reviewers @canada-ca/digital-playbook-admins
+
+# JavaScript file owners
+*.js    @canada-ca/digital-playbook-admins
+
+# HTML file owners
+*.html  @canada-ca/digital-playbook-admins
+
+# JSON file owners
+*.json  @canada-ca/digital-playbook-admins
+
+# YAML file owners
+*.yml  @canada-ca/digital-playbook-admins
+
+# Data owners
+/_data/  @canada-ca/digital-playbook-admins
+
+# Layouts owners
+/_layouts/  @canada-ca/digital-playbook-admins
+
+# Includes owners
+/_includes/  @canada-ca/digital-playbook-admins
+
+# Function owners
+/_includes/functions/  @canada-ca/digital-playbook-admins
+
+# Views owners (covers /views/ and /_includes/views/)
+views/ @canada-ca/digital-playbook-admins
+
+# Standard 1 owners
+/en/1-*.md  @canada-ca/digital-playbook-reviewers-standard-1
+/fr/1-*.md  @canada-ca/digital-playbook-reviewers-standard-1
+
+# Standard 2 owners
+/en/2-*.md  @canada-ca/digital-playbook-reviewers-standard-2
+/fr/2-*.md  @canada-ca/digital-playbook-reviewers-standard-2
+
+# Standard 3 owners
+/en/3-*.md  @canada-ca/digital-playbook-reviewers-standard-3
+/fr/3-*.md  @canada-ca/digital-playbook-reviewers-standard-3
+
+# Standard 4 owners
+/en/4-*.md  @canada-ca/digital-playbook-reviewers-standard-4
+/fr/4-*.md  @canada-ca/digital-playbook-reviewers-standard-4
+
+# Standard 5 owners
+/en/5-*.md  @canada-ca/digital-playbook-reviewers-standard-5
+/fr/5-*.md  @canada-ca/digital-playbook-reviewers-standard-5
+
+# Standard 6 owners
+/en/6-*.md  @canada-ca/digital-playbook-reviewers-standard-6
+/fr/6-*.md  @canada-ca/digital-playbook-reviewers-standard-6
+
+# Standard 7 owners
+/en/7-*.md  @canada-ca/digital-playbook-reviewers-standard-7
+/fr/7-*.md  @canada-ca/digital-playbook-reviewers-standard-7
+
+# Standard 8 owners
+/en/8-*.md  @canada-ca/digital-playbook-reviewers-standard-8
+/fr/8-*.md  @canada-ca/digital-playbook-reviewers-standard-8
+
+# Standard 9 owners
+/en/9-*.md  @canada-ca/digital-playbook-reviewers-standard-9
+/fr/9-*.md  @canada-ca/digital-playbook-reviewers-standard-9
+
+# Standard 10 owners
+/en/10-*.md  @canada-ca/digital-playbook-reviewers-standard-10
+/fr/10-*.md  @canada-ca/digital-playbook-reviewers-standard-10
