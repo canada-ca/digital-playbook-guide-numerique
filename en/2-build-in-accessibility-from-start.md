@@ -26,7 +26,7 @@ altLangPage: 2-integrer-accessibilite-des-depart
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 1.3, 1.5, 1.6, 1.8, 8.4" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 1.3, 1.5, 1.6, 1.8, 8.4" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -129,7 +129,7 @@ Your service must be accessible to users regardless of their digital confidence 
 - provide an accessible method for all users to provide feedback on the service or request additional support at any time **(Digital Service Standard (Ontario))**
 - make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -144,7 +144,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Beta stage
 
@@ -166,7 +166,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Live stage
 

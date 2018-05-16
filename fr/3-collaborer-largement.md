@@ -26,7 +26,7 @@ altLangPage: 3-collaborate-widely
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.3, 5.5" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.3, 5.5" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -242,7 +242,7 @@ Good government services are built quickly and iteratively, based on user needs.
 - Make all new source code open and reusable and explain how it can be reused
 - Show your code in an open Internet source code repository and enable contributions and comments on the code
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -255,7 +255,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Stage bêta
 
@@ -263,7 +263,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Stage en direct
 

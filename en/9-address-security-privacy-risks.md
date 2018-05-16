@@ -42,7 +42,7 @@ Finally, “shifting security left” in your service design addresses security 
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.5, 1.6, 1.7, 6.1, 6.2, 8.3, 8.4" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="1.5, 1.6, 1.7, 6.1, 6.2, 8.3, 8.4" samePage=false includeStandardTitle=true %}
 
 </div>
 

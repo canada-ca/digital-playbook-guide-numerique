@@ -1,0 +1,49 @@
+{% comment %}@overview Outputs filtered and ordered content from the dataset according to the specified tags{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Comma-separated tags or array of tags that content must have at least one of to be displayed{% endcomment %}{% 
+comment %}@param relevantSections {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed{% endcomment %}{% 
+comment %}@return {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{% 
+assign dataSource = site.data[dataVariable] %}{% 
+comment %}Determine which standards and guidelines have content with a tag that matches include.relevantTags{% endcomment %}{% 
+capture relevantStandardsGuidelines %}{% 
+  include /functions/descendant-tags.html findTags=include.relevantTags %}{% 
+endcapture %}{% 
+assign relevantStandardsGuidelinesArray = relevantStandardsGuidelines | strip | split: ";" %}
+
+<p><strong>{{ dataSource.standards.title }} {{ site.RelatedTo[page.lang] }} {{ page.title }}{{ site.Colon[page.lang] }}</strong></p>
+
+{% comment %}Output links for only the relevant standards{% endcomment %}{% 
+assign standardIndex = 0 %}{% 
+assign relevantStandards = "" %}{% 
+assign relevantRelatedGuidelines = "" %}{% 
+comment %}Create an array of indexes for the relevant standards and a separate array for filtering out related guidelines links{% endcomment %}{% 
+for currentStandard in relevantStandardsGuidelinesArray %}{% 
+  if currentStandard.size > 0 %}{% 
+    if relevantStandards.size > 0 %}{% 
+      assign relevantStandards = relevantStandards | append: "," %}{% 
+    endif %}{% 
+    assign relevantStandards = relevantStandards | append: standardIndex %}{% 
+    assign relevantGuidelines = currentStandard | split: "," %}{% 
+    comment %}Cover the guideline indexes to the "#.#" guideline number format{% endcomment %}{% 
+    for relevantGuidelineIndex in relevantGuidelines %}{% 
+      if relevantRelatedGuidelines.size > 0 %}{% 
+        assign relevantRelatedGuidelines = relevantRelatedGuidelines | append: "," %}{% 
+      endif %}{% 
+      assign standardNumber = standardIndex | plus: 1 %}{% 
+      assign guidelineNumber = relevantGuidelineIndex | plus: 1 %}{% 
+      assign relevantRelatedGuidelines = relevantRelatedGuidelines | append: standardNumber | append: "." | append: guidelineNumber %}{% 
+    endfor %}{% 
+  endif %}{% 
+  assign standardIndex = standardIndex | plus: 1 %}{% 
+endfor %}{% 
+include functions/standard-links.html samePage=true relevantStandards=relevantStandards %}{% 
+comment %}Iterate through each of the standard, only processing the standards and guidelines that have content with a tag that matches at least one of include.relevantTags{% endcomment %}{% 
+assign standardIndex = 0 %}{% 
+for relevantGuidelines in relevantStandardsGuidelinesArray %}{% 
+  if relevantGuidelines.size > 0 %}{% 
+    assign currentRelevantStandard = dataSource.standards.content[standardIndex] %}{% 
+    assign relevantGuidelinesArray = relevantGuidelines | split: "," %}{% 
+    include functions/output-standard.html standard=currentRelevantStandard relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags relevantSections=include.relevantSections includeStandardTitle=true currentHeadingLevel=1 %}{% 
+  endif %}{% 
+  assign standardIndex = standardIndex | plus: 1 %}{% 
+endfor %}

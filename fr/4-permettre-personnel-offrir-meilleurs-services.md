@@ -26,7 +26,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="3.1, 3.2, 3.3, 5.4, 5.5, 6.1, 6.2, 7.1, 7.2, 7.3, 7.4" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="3.1, 3.2, 3.3, 5.4, 5.5, 6.1, 6.2, 7.1, 7.2, 7.3, 7.4" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -98,7 +98,7 @@ The technology you choose to build your service must help you respond quickly an
 
 - Ensure the project team has a modern workplace, professional development and the IM-IT tools they need to do their jobs
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -118,7 +118,7 @@ The technology you choose to build your service must help you respond quickly an
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Stage bêta
 
@@ -136,7 +136,7 @@ The technology you choose to build your service must help you respond quickly an
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Stage en direct
 

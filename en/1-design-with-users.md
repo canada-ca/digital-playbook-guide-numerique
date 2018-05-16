@@ -26,7 +26,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="2.1, 2.2, 2.3, 2.4, 3.2, 6.5, 7.1, 7.4, 8.2, 8.4, 10.1" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="2.1, 2.2, 2.3, 2.4, 3.2, 6.5, 7.1, 7.4, 8.2, 8.4, 10.1" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -92,7 +92,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 **[TODO: Add/revise checklist items]**
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -103,7 +103,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
 
 #### Beta and live stages
 
@@ -155,7 +155,7 @@ A key part of building digital services that work for users is developing a good
 - {: .dpgn-onegc-architectural } Clearly defined user needs **(Build It Right - OneGC Architectural Checklist (draft))**
   - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -173,7 +173,7 @@ A key part of building digital services that work for users is developing a good
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Beta stage
 
@@ -194,7 +194,7 @@ A key part of building digital services that work for users is developing a good
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Live stage
 
@@ -293,7 +293,7 @@ We need to understand the different ways people will interact with our services,
 </section>
 </section>
 
-<section class="dpgn-section-guideline dpgn-phase-alpha">
+<section class="dpgn-section-guideline dpgn-stage-alpha">
 
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
 
@@ -467,7 +467,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 **[TODO: Add/revise checklist items]**
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -490,7 +490,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Beta stage
 
@@ -505,7 +505,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Live stage
 
@@ -520,7 +520,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
 
 #### Beta and live stages
 

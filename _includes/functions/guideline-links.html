@@ -1,50 +1,85 @@
-{% assign dataVariable = site.playbookData[page.lang] %}{% 
+{% comment %}@overview Outputs a list of links to the Standards{% endcomment %}{% 
+comment %}@param guidelines {String/Array of Strings} Only used for related guidelines and cannot be used with the guidelineIndex or standardIndex params. Comma-separated strings or array of guideline numbers (e.g., 1.4) to output as links.{% endcomment %}{% 
+comment %}@param guidelines {Array of Objects} Cannot be used for related guidelines and cannot be used with the guidelineIndex or standardIndex params. Array of guideline objects (e.g., standards.content.guidelines.content).{% endcomment %}{% 
+comment %}@param guidelineIndexes {String/Array} Cannot be used for related guidelines or in combination with the guidelines param. Comma-separated guideline indexes or an array of guideline indexes. Must be used with standardIndex.{% endcomment %}{% 
+comment %}@param standard {Number/Object} Required when guidelineIndexes is used. Provides either the index or the object for the current standard.{% endcomment %}{% 
+comment %}@param samePage {Boolean} Whether or not the links should be same-page links{% endcomment %}{% 
+comment %}@param includeStandardTitle {Boolean} Optional. Defaults to true. For related guidelines only. Whether or not to include the standard title in brackets at the end of the guideline link text.{% endcomment %}{% 
+comment %}@return {String} List of links to the Standards{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
-assign stringArray = true %}{% 
-if include.guidelines.first %}{% 
-  assign guidelinesArray = include.guidelines %}{% 
-  assign arrayTest = include.guidelines.first %}{% 
-  if arrayTest.first %}{% 
-    assign stringArray = false %}{%
+if include.guidelines %}{% 
+  comment %}include.guidelines was provided so use it{% endcomment %}{% 
+  if include.guidelines.first.first %}{% 
+    comment %}include.guidelines is an array of guideline objects (e.g., standards.content.guidelines.content){% endcomment %}{% 
+    assign guidelinesArray = include.guidelines %}{% 
+  elsif include.guidelines.first %}{% 
+    comment %}include.guideslines is a string array so output as related guidelines{% endcomment %}{% 
+    assign guidelinesArray = include.guidelines %}{% 
+    assign isRelatedGuidelines = true %}{% 
   else %}{% 
-    assign guidelinesString = guidelinesArray | join: "," %}{% 
+    comment %}include.guidelines is a string so convert to an array and output as related guidelines{% endcomment %}{% 
+    assign guidelinesArray = include.guidelines | replace: " ", "" | split: "," %}{% 
+    assign isRelatedGuidelines = true %}{% 
+  endif %}{%
+elsif include.guidelineIndexes %}{% 
+  comment %}include.guidelines not provided so use guidelineIndexes instead{% endcomment %}{% 
+  if include.guidelineIndexes %}{% 
+    comment %}include.guideslines is a string array so output as related guidelines{% endcomment %}{% 
+    assign guidelinesArray = include.guidelineIndexes %}{% 
+  else %}{% 
+    comment %}include.guideslines is a string so convert to an array{% endcomment %}{% 
+    assign guidelinesArray = include.guidelineIndexes | replace: " ", "" | split: "," %}{% 
   endif %}{% 
-else %}{% 
-  assign guidelinesString = include.guidelines | replace: " ", "" %}{% 
-  assign guidelinesArray = guidelinesString | split: ',' %}{% 
 endif %}{% 
-if stringArray %}
-<ul data-guidelines="{{ guidelinesString }}">
-{% for guideline in guidelinesArray %}{% 
-    assign indexArray = guideline | split: '.' %}{% 
-    assign standardIndex = indexArray[0] | minus: 1 %}{% 
-    assign guidelineIndex = indexArray[1] | minus: 1 %}{% 
-    assign guidelineData = dataSource.standards.content[standardIndex].guidelines.content[guidelineIndex] %}{% 
-    capture guidelineId %}{% 
-      include /functions/generate-id.html string=guidelineData.title %}{% 
-    endcapture %}{% 
-    capture classOutput %}{% 
-      include /functions/class-from-tags.html tags=guidelineData.tags excludeSectionTags=true %}{% 
-    endcapture
-    %}<li{{ classOutput | rstrip }}><a href="{% 
-    if include.samePage != true 
-      %}{{ site.standardFile[standardIndex][page.lang] }}{% 
-    endif 
-    %}#{{ guidelineId | strip }}">{{ guidelineData.title }}{% 
-    if standardTitle.size > 0 
-      %}({{ include.standardTitle }}){% 
-    endif 
-    %}</a></li>
-{% endfor %}</ul>
-{% else %}
+if guidelinesArray %}
 <ul>
-{% for guideline in guidelinesArray %}{% 
-    capture guidelineId %}{% 
-      include /functions/generate-id.html string=guideline.title %}{% 
-    endcapture %}{% 
-    capture classOutput %}{% 
-      include /functions/class-from-tags.html tags=guideline.tags excludeSectionTags=true %}{% 
-    endcapture
-    %}<li{{ classOutput | rstrip }}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
-{% endfor %}</ul>
+{% if isRelatedGuidelines %}{% 
+    for guideline in guidelinesArray %}{% 
+      assign indexArray = guideline | split: '.' %}{% 
+      assign standardIndex = indexArray[0] | minus: 1 %}{% 
+      assign guidelineIndex = indexArray[1] | minus: 1 %}{% 
+      assign guidelineData = dataSource.standards.content[standardIndex].guidelines.content[guidelineIndex] %}{% 
+      capture guidelineId %}{% 
+        include /functions/generate-id.html string=guidelineData.title %}{% 
+      endcapture %}{% 
+      capture classOutput %}{% 
+        include /functions/class-from-tags.html tags=guidelineData.tags excludeSectionTags=true %}{% 
+      endcapture
+      %}<li{{ classOutput | rstrip }}><a href="{% 
+      if include.samePage != true 
+        %}{{ site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension }}{% 
+      endif 
+      %}#{{ guidelineId | strip }}">{{ guidelineData.title }}{% 
+      unless include.includeStandardTitle == false
+        %} ({{ dataSource.standards.content[standardIndex].title }}){% 
+      endunless 
+      %}</a></li>
+{%  endfor %}{% 
+  else %}{% 
+    for item in guidelinesArray %}{% 
+      if item.first %}{% 
+        comment %}item is a guideline object{% endcomment %}{% 
+        assign guideline = item %}{% 
+      else %}{% 
+        comment %}item is a guideline index so use it to get the guideline object{% endcomment %}{% 
+        assign guidelineIndex = item | plus: 0 %}{% 
+        if include.standard.first %}{% 
+          comment %}include.standard is a standard object{% endcomment %}{% 
+          assign guideline = include.standard.guidelines.content[guidelineIndex] %}{% 
+        else %}{% 
+          comment %}include.standard is a standard index so use it retrieve the standard object and then the guideline object{% endcomment %}{% 
+          assign standardIndex = include.standard | plus: 0 %}{% 
+          assign guideline = dataSource.standards.content[standardIndex].guidelines.content[guidelineIndex] %}{% 
+        endif %}{% 
+      endif %}{% 
+      capture guidelineId %}{% 
+        include /functions/generate-id.html string=guideline.title %}{% 
+      endcapture %}{% 
+      capture classOutput %}{% 
+        include /functions/class-from-tags.html tags=guideline.tags excludeSectionTags=true %}{% 
+      endcapture
+      %}<li{{ classOutput | rstrip }}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
+{%  endfor %}{% 
+  endif %}</ul>
 {% endif %}
