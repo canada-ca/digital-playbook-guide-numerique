@@ -26,7 +26,7 @@ altLangPage: 5-work-in-open-by-default
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="3.4, 6.3, 6.4, 8.1, 10.2" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="3.4, 6.3, 6.4, 8.1, 10.2" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -127,7 +127,7 @@ Setting performance indicators allows you to continuously improve your service b
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
 
 #### Stages alpha, bêta et en direct
 
@@ -144,7 +144,7 @@ Setting performance indicators allows you to continuously improve your service b
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Stage bêta
 
@@ -271,7 +271,7 @@ Open source helps to:
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -284,7 +284,7 @@ Open source helps to:
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Stage bêta
 
@@ -292,7 +292,7 @@ Open source helps to:
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Stage en direct
 
