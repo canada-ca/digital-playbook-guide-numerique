@@ -26,7 +26,7 @@ altLangPage: 6-use-open-standards-solutions
 
 **Lignes directrices connexes:**
 
-{% include functions/guideline-links.html guidelines="1.5, 3.4, 5.1, 5.5, 10.3" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="1.5, 3.4, 5.1, 5.5, 10.3" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -78,7 +78,7 @@ Using open standards and common government platforms helps you to:
 - {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -89,7 +89,7 @@ Using open standards and common government platforms helps you to:
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
 
 #### Stages bêta et en direct
 
@@ -335,7 +335,7 @@ There are many potential benefits from the greater use of digital services, incl
 - Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques **(Digital Services Playbook (US))**
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -343,7 +343,7 @@ There are many potential benefits from the greater use of digital services, incl
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
 
 #### Stage bêta et en direct
 
