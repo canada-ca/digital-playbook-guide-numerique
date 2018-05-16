@@ -4,5 +4,5 @@ assign dataSource = site.data[dataVariable] %}
 {% include functions/output-overview.html samePage=true %}
 
 {% for currentStandard in dataSource.standards.content %}{% 
-  include functions/output-standard.html standard=currentStandard includeStandardTitle=true currentHeadingLevel=1 %}{% 
+  include functions/output-standard.html standard=currentStandard includeStandardTitle=true currentHeadingLevel=1 collapseContentSubsections=true %}{% 
 endfor %}
