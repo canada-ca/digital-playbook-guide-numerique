@@ -33,7 +33,7 @@ for item in include.contentArray %}{%
     comment %}{% endcomment %}{% 
     if item.type == 'section' %}{%
       comment %}Content block is a section, so output the section elements, the heading and then call this function to process the nested content array{% endcomment %}{% 
-      if include.collapseSubsections %}{% 
+      if include.collapseSubsections == true %}{% 
         assign nextHeadingLevel = include.currHeadingLevel %}{% 
         assign sectionTag = "div" %}{% 
       else %}{% 
@@ -46,7 +46,7 @@ for item in include.contentArray %}{%
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if nestedOutputStrip.size > 0 %}
 <{{ sectionTag }}{{ classOutput | rstrip }}>
-{% unless include.collapseSubsections %}<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>{% endunless %}
+{% unless include.collapseSubsections == true %}<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>{% endunless %}
 {{ nestedOutputStrip }}
 </{{ sectionTag }}>
 {%    endif %}{% 
