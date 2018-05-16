@@ -5,6 +5,7 @@ lang: en
 altLang: fr
 altLangPage: apercu
 ---
+<section class="dpgn-section-overview">
 
 ## Overview (draft)
 
@@ -45,3 +46,5 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 **Comparison of the Digital Playbook to similar resources:**
 
 - [Government of Canada Digital Playbook comparison table](gc-digital-playbook-comparison-table.md)
+
+</section>
