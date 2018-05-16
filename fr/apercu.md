@@ -6,7 +6,7 @@ altLang: en
 altLangPage: overview
 ---
 <section class="dpgn-section-overview">
-  
+
 ## Aperçu (ébauche)
 
 ### Structure de ce document (ébauche)
