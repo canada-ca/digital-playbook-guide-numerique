@@ -26,7 +26,7 @@ altLangPage: 1-design-with-users
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="2.1, 2.2, 2.3, 2.4, 3.2, 6.5, 7.1, 7.4, 8.2, 8.4, 10.1" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="2.1, 2.2, 2.3, 2.4, 3.2, 6.5, 7.1, 7.4, 8.2, 8.4, 10.1" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -92,7 +92,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -103,7 +103,7 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
 
 #### Stages bêta et en direct
 
@@ -153,7 +153,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - {: .dpgn-onegc-architectural } Clearly defined user needs **(Build It Right - OneGC Architectural Checklist (draft))**
   - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -171,7 +171,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Stage bêta
 
@@ -192,7 +192,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Stage en direct
 
@@ -292,7 +292,7 @@ We need to understand the different ways people will interact with our services,
 </section>
 </section>
 
-<section class="dpgn-section-guideline dpgn-phase-alpha">
+<section class="dpgn-section-guideline dpgn-stage-alpha">
 
 ## 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
 
@@ -466,7 +466,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Stage alpha
 
@@ -488,7 +488,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Stage bêta
 
@@ -503,7 +503,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Stage en direct
 
@@ -518,7 +518,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
 
 #### Stages bêta et en direct
 
