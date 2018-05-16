@@ -26,7 +26,7 @@ altLangPage: 10-etre-bons-utilisateurs-donnees
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.4, 5.1, 5.2, 5.3, 5.4, 6.1, 6.2, 6.4, 9.2" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="1.4, 5.1, 5.2, 5.3, 5.4, 6.1, 6.2, 6.4, 9.2" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -154,7 +154,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **[TODO: Add/revise checklist items]**
 
-<section class="dpgn-section-stage dpgn-phase-alpha dpgn-phase-beta dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
 
 #### Alpha, beta and live stages
 
@@ -179,7 +179,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -191,7 +191,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Beta stage
 
@@ -204,7 +204,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Live stage
 
