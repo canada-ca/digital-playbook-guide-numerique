@@ -26,7 +26,7 @@ altLangPage: 3-collaborer-largement
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.3, 5.5" samePage=false standardTitle=page.title %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.3, 5.5" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -240,7 +240,7 @@ Good government services are built quickly and iteratively, based on user needs.
 - Show your code in an open Internet source code repository and enable contributions and comments on the code
 - Link to the work of others
 
-<section class="dpgn-section-stage dpgn-phase-alpha">
+<section class="dpgn-section-stage dpgn-stage-alpha">
 
 #### Alpha stage
 
@@ -253,7 +253,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-beta">
+<section class="dpgn-section-stage dpgn-stage-beta">
 
 #### Beta stage
 
@@ -261,7 +261,7 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
-<section class="dpgn-section-stage dpgn-phase-live">
+<section class="dpgn-section-stage dpgn-stage-live">
 
 #### Live stage
 
