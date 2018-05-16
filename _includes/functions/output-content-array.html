@@ -2,6 +2,7 @@
 comment %}@param contentArray {Array} Array of content blocks to process{% endcomment %}{% 
 comment %}@param currHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within){% endcomment %}{% 
 comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@param collapseSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array{% endcomment %}{%  
 for item in include.contentArray %}{% 
   comment %}Have to restart with include.relevantTags on each loop to avoid recursion affecting the value{% endcomment %}{% 
@@ -32,16 +33,22 @@ for item in include.contentArray %}{%
     comment %}{% endcomment %}{% 
     if item.type == 'section' %}{%
       comment %}Content block is a section, so output the section elements, the heading and then call this function to process the nested content array{% endcomment %}{% 
-      assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}{% 
+      if include.collapseSubsections %}{% 
+        assign nextHeadingLevel = include.currHeadingLevel %}{% 
+        assign sectionTag = "div" %}{% 
+      else %}{% 
+        assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}{% 
+        assign sectionTag = "section" %}{% 
+      endif %}{% 
       capture nestedOutputSection %}{% 
         include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=relevantTagsArray %}{% 
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if nestedOutputStrip.size > 0 %}
-<section{{ classOutput | rstrip }}>
-<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>
+<{{ sectionTag }}{{ classOutput | rstrip }}>
+{% unless include.collapseSubsections %}<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>{% endunless %}
 {{ nestedOutputStrip }}
-</section>
+</{{ sectionTag }}>
 {%    endif %}{% 
     elsif item.type == 'list' %}{% 
       comment %}Content block is a list, so output the list elements and then call this function to process the nested content array (list items){% endcomment %}{%  
