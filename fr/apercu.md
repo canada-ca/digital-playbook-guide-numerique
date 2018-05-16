@@ -5,7 +5,8 @@ lang: fr
 altLang: en
 altLangPage: overview
 ---
-
+<section class="dpgn-section-overview">
+  
 ## Aperçu (ébauche)
 
 ### Structure de ce document (ébauche)
@@ -45,3 +46,5 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 **Comparaison du guide numérique à des ressources similaires&#160;:**
 
 - [Tableau comparatif du guide numérique du gouvernement du Canada](tableau-comparatif-guide-numerique-gc.md)
+
+</section>
