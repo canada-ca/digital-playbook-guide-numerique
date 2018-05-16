@@ -5,6 +5,8 @@ comment %}@param relevantGuidelines {String/Array} Optional (defaults to all). G
 comment %}@param relevantRelatedGuidelines {String/Array} Optional (defaults to all). Guidelines that should be displayed if they are related to this standard{% endcomment %}{% 
 comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
+comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@return {String} Outputs the content for the standard and the included guidelines{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
@@ -52,7 +54,7 @@ if tagsCompareResult contains "true" %}{%
   endcapture %}
 <div{{ classOutput | rstrip }}>
 
-{%  include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel relevantTags=include.relevantTags %}
+{%  include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseIntroSubsections %}
 
 </div>
 {% endif %}
@@ -179,7 +181,7 @@ for item in outputGuidelinesArray %}{%
         endif %}{% 
         if tagsCompareResult contains "true" %}{% 
           capture sectionContent %}{% 
-            include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=guidelineHeadingLevel relevantTags=include.relevantTags %}{%  
+            include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=guidelineHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseIntroSubsections %}{%  
           endcapture %}{% 
           assign sectionContentStrip = sectionContent | strip %}{% 
           if sectionContentStrip.size > 0 %}{% 
@@ -205,7 +207,7 @@ for item in outputGuidelinesArray %}{%
         endif %}{% 
         if tagsCompareResult contains "true" %}{% 
           capture sectionContent %}{% 
-            include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subsectionHeadingLevel relevantTags=include.relevantTags %}{%  
+            include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subsectionHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseContentSubsections %}{%  
           endcapture %}{% 
           assign sectionContentStrip = sectionContent | strip %}{% 
           if sectionContentStrip.size > 0 %}{% 
