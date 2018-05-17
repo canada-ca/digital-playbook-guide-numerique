@@ -34,7 +34,7 @@ elsif include.guidelineIndexes %}{%
 endif %}{% 
 if guidelinesArray %}
 {% if isRelatedGuidelines %}
-<ul data-guidelines="{{ guidelinesArray.join(',') }}">
+<ul data-guidelines="{{ guidelinesArray | join: ',' }}">
 {%  for guideline in guidelinesArray %}{% 
       assign indexArray = guideline | split: '.' %}{% 
       assign standardIndex = indexArray[0] | minus: 1 %}{% 
