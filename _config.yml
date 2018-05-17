@@ -48,6 +48,9 @@ index:
 indexTitle:
   en: Overview
   fr: Aperçu
+overviewFile:
+  en: overview
+  fr: apercu
 standardFile:
   -
     en:  1-design-with-users
