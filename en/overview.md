@@ -58,6 +58,19 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
   - [Live stage - Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/live.html)
   - [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/development-stages-checklists-only.html)
 - [Government of Canada Digital Playbook comparison table](https://canada-ca.github.io/digital-playbook-guide-numerique/views/comparison/en/gc-digital-playbook-comparison-table.html)
+- [Government of Canada Digital Playbook (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views/single-page/en/digital-playbook.html)
+- Government of Canada Digital Playbook (draft) - Multi-page view
+  - [Overview](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/overview.html)
+  - [1. Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/1-design-with-users.html)
+  - [2. Build in accessibility from the start](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/2-build-in-accessibility-from-start.html)
+  - [3. Collaborate widely](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/3-collaborate-widely.html)
+  - [4. Empower staff to deliver better services](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/4-empower-staff-deliver-better-services.html)
+  - [5. Work in the open by default](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/5-work-in-open-by-default.html)
+  - [6. Use open standards and solutions](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/6-use-open-standards-solutions.html)
+  - [7. Iterate and improve frequently](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/7-iterate-improve-frequently.html)
+  - [8. Design ethical services](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/8-design-ethical-services.html)
+  - [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/9-address-security-privacy-risks.html)
+  - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/10-be-good-data-stewards.html)
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD032 -->
 
