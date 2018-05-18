@@ -26,9 +26,6 @@ for item in include.contentArray %}{%
   else %}{% 
     assign relevantItem = true %}{% 
   endif %}{% 
-  capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=item.tags %}{% 
-  endcapture %}{% 
   capture rawOutput %}{% 
     comment %}{% endcomment %}{% 
     if item.type == 'section' %}{%
@@ -44,7 +41,10 @@ for item in include.contentArray %}{%
         include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=relevantTagsArray %}{% 
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
-      if nestedOutputStrip.size > 0 %}
+      if nestedOutputStrip.size > 0 %}{% 
+        capture classOutput %}{% 
+          include /functions/class-from-tags.html tags=item.tags %}{% 
+        endcapture %}
 <{{ sectionTag }}{{ classOutput | rstrip }}>
 {% unless include.collapseSubsections == true %}<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>{% endunless %}
 {{ nestedOutputStrip }}
@@ -61,14 +61,20 @@ for item in include.contentArray %}{%
         include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=relevantTagsArray %}{% 
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputList | rstrip %}{% 
-      if nestedOutputStrip.size > 0 %}
+      if nestedOutputStrip.size > 0 %}{% 
+        capture classOutput %}{% 
+          include /functions/class-from-tags.html tags=item.tags %}{% 
+        endcapture %}
 <{{ listTag }}{{ classOutput | rstrip }}>
 {{ nestedOutputStrip }}
 </{{ listTag }}>{% 
       endif %}{% 
     elsif item.type == 'listitem' %}{% 
       comment %}Content block is a list item, so output the list item{% endcomment %}{% 
-      if relevantItem %}
+      if relevantItem %}{% 
+        capture classOutput %}{% 
+          include /functions/class-from-tags.html tags=item.tags %}{% 
+        endcapture %}
 <li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span></li>
 {%    endif %}{% 
     elsif item.type == 'listnested'%}{% 
@@ -77,12 +83,18 @@ for item in include.contentArray %}{%
         include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel relevantTags=relevantTagsArray %}{% 
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputNestedList | rstrip %}{% 
-      if nestedOutputStrip.size > 0 %}
+      if nestedOutputStrip.size > 0 %}{% 
+        capture classOutput %}{% 
+          include /functions/class-from-tags.html tags=item.tags %}{% 
+        endcapture %}
 <li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span>{{ nestedOutputStrip }}</li>
 {%    endif %}{% 
     else %}{% 
       comment %}Content block is a text block or other generic content block, so out the conent block within a div{% endcomment %}{% 
-      if relevantItem %}
+      if relevantItem %}{% 
+        capture classOutput %}{% 
+          include /functions/class-from-tags.html tags=item.tags %}{% 
+        endcapture %}
 <div{{ classOutput | rstrip }}>
 {{ item.content }}
 </div>
