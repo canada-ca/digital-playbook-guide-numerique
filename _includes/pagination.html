@@ -9,8 +9,9 @@ if page.standard %}{%
 endif %}{%
 if page.collectionDirectory 
     %}{% assign baseurl = baseurl | append: "/" | append: page.collectionDirectory %}{% 
-endif %}{%
-unless page.url contains "{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}" %}{% 
+endif %}{% 
+assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
+unless page.url contains overviewPath %}{% 
   for standard in standards %}{% 
     assign activeIndex = activeIndex | plus: 1 %}{% 
     if standard.title == page.title or activeIndex == pageStandardIndex %}{% 

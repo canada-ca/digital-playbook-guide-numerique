@@ -69,9 +69,10 @@
 <li><a href="https://www.canada.ca/{{ page.lang }}.html">{{ site.home[page.lang] }}</a></li>
 {% assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
-if page.url != "{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}" %}
+assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
+unless page.url contains overviewPath %}
 <li><a href="{{ site.baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}">{{ dataSource.title }}</a></li>
-{% endif %}
+{% endunless %}
 </ol>
 </div>
 </div>
@@ -90,10 +91,10 @@ defTop.outerHTML = wet.builder.top({
 	breadcrumbs: [{
 		title: "{{ site.home[page.lang] }}",
 		href: "https://www.canada.ca/{{ page.lang }}.html"
-	}{% if page.url != "{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}" %}, {
+	}{% unless page.url contains overviewPath %}, {
 		title: "{{ dataSource.introduction.title }}",
 		href: "{{ site.baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}"
-	}{% endif %}]
+	}{% endunless %}]
 });
 </script>
 <main role="main" property="mainContentOfPage" class="container">
