@@ -47,11 +47,17 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD032 -->
 
-**Comparison of the Digital Playbook to similar resources:**
+**Alternate views dynamically generated from the Digital Playbook dataset:**
 {: .dpgn-data-ignore }
 
 <!-- markdownlint-disable MD032 -->
-- [Government of Canada Digital Playbook comparison table](gc-digital-playbook-comparison-table.md)
+- [Government of Canada Digital Playbook (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views/single-page/en/digital-playbook.html)
+- [Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/development-stages.html)
+  - [Alpha stage - Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/alpha.html)
+  - [Beta stage - Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/beta.html)
+  - [Live stage - Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/live.html)
+  - [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/development-stages-checklists-only.html)
+- [Government of Canada Digital Playbook comparison table](https://canada-ca.github.io/digital-playbook-guide-numerique/views/comparison/en/gc-digital-playbook-comparison-table.html)
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD032 -->
 
