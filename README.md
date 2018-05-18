@@ -24,7 +24,7 @@
 - [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/en/9-address-security-privacy-risks.html)
 - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/en/10-be-good-data-stewards.html)
 
-**Alternate views dynamically generated from the Digital Playbook dataset:**
+**Alternate views generated from the Digital Playbook dataset:**
 
 - [Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/development-stages.html)
   - [Alpha stage - Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/alpha.html)
@@ -68,7 +68,7 @@
 - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
 - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html)
 
-**Autres vues générées dynamiquement à partir du jeu de données du guide numérique&#160;:**
+**Autres vues générées à partir du jeu de données du guide numérique&#160;:**
 
 - [Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement.html)
   - [Stage alpha - Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/alpha.html)
@@ -78,14 +78,14 @@
 - [Tableau comparatif du guide numérique du gouvernement du Canada](https://canada-ca.github.io/digital-playbook-guide-numerique/views/comparison/fr/tableau-comparatif-guide-numerique-gc.html)
 - [Guide numérique du gouvernement du Canada (ébauche) - Affichage d'une seule page](https://canada-ca.github.io/digital-playbook-guide-numerique/views/single-page/fr/guide-numerique.html)
 - Guide numérique du gouvernement du Canada (ébauche) - Affichage de plusieurs pages
-  - [Aperçu](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/apercu.html)
-  - [1. Concevoir avec les utilisateurs](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/1-concevoir-avec-utilisateurs.html)
-  - [2. Intégrer l’accessibilité dès le départ](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/2-integrer-accessibilite-des-depart.html)
-  - [3. Collaborer largement](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/3-collaborer-largement.html)
-  - [4. Permettre au personnel d’offrir de meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/4-permettre-personnel-offrir-meilleurs-services.html)
-  - [5. Travailler ouvertement par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/5-travailler-ouvertement-par-defaut.html)
-  - [6. Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/6-utiliser-normes-solutions-ouvertes.html)
-  - [7. Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/7-effectuer-iterations-ameliorations-constamment.html)
-  - [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/8-concevoir-services-ethiques.html)
-  - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
-  - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/10-etre-bons-utilisateurs-donnees.html)
+  - [Aperçu](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/apercu.html)
+  - [1. Concevoir avec les utilisateurs](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/1-concevoir-avec-utilisateurs.html)
+  - [2. Intégrer l’accessibilité dès le départ](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/2-integrer-accessibilite-des-depart.html)
+  - [3. Collaborer largement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/3-collaborer-largement.html)
+  - [4. Permettre au personnel d’offrir de meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/4-permettre-personnel-offrir-meilleurs-services.html)
+  - [5. Travailler ouvertement par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/5-travailler-ouvertement-par-defaut.html)
+  - [6. Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/6-utiliser-normes-solutions-ouvertes.html)
+  - [7. Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/7-effectuer-iterations-ameliorations-constamment.html)
+  - [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/8-concevoir-services-ethiques.html)
+  - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
+  - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/10-etre-bons-utilisateurs-donnees.html)
