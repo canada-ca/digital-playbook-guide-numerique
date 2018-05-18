@@ -523,7 +523,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Clearly defined user needs <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project</li>\n        </ul>\n      </li>",
+                        "content": "Clearly defined user needs <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -1173,8 +1173,7 @@
             {
               "title": "1.5 Fournir des services qui peuvent être tout, quand et n’importe quel appareil",
               "tags": [
-                "dpgn-section-guideline",
-                "dpgn-stage-alpha"
+                "dpgn-section-guideline"
               ],
               "introduction": {
                 "tags": [
@@ -1222,7 +1221,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Platform agnostic <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)</li>\n        </ul>\n      </li>",
+                        "content": "Platform agnostic <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -1484,7 +1483,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Do usability testing:\n        <ul>\n          <li>including with users with the lowest level of digital skills <strong>(Digital Service Standard (UK))</strong>\n</li>\n          <li>at least once before and after the service goes live and make improvements accordingly <strong>(Digital Service Standard (Ontario))</strong>\n</li>\n        </ul>\n      </li>",
+                        "content": "Do usability testing:",
                         "nested": [
                           {
                             "type": "list",
@@ -2351,7 +2350,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Do user research as early as possible to: <strong>(Digital Service Standard (Ontario))</strong>\n          <ul>\n            <li>understand users’ digital skill, confidence and access</li>\n            <li>find out why some users can’t use the digital service independently, for example language or internet barriers</li>\n            <li>find out user needs for support</li>\n          </ul>\n        </li>",
+                        "content": "Do user research as early as possible to: <strong>(Digital Service Standard (Ontario))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -2390,7 +2389,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Conduct research with users who: <strong>(Digital Service Standard (Ontario))</strong>\n          <ul>\n            <li>already use the service or would use it</li>\n            <li>have the lowest level of digital skills, confidence and access</li>\n            <li>currently seek assisted digital support from others (like friends and family, colleagues, companies or charities)</li>\n          </ul>\n        </li>",
+                        "content": "Conduct research with users who: <strong>(Digital Service Standard (Ontario))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -2693,7 +2692,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/Translations/WCAG20-fr/\">Règles pour l’accessibilité des contenus Web (WCAG) 2.0</a>\n        <ul>\n          <li><a href=\"https://www.w3.org/WAI/WCAG20/quickref/\">How to Meet WCAG 2.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/UNDERSTANDING-WCAG20/\">Understanding WCAG 2.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/WCAG20-TECHS/\">Techniques for WCAG 2.0</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/Translations/WCAG20-fr/\">Règles pour l’accessibilité des contenus Web (WCAG) 2.0</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -2739,7 +2738,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/TR/wai-aria-1.1/\">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>\n        <ul>\n          <li><a href=\"https://www.w3.org/TR/dpub-aria-1.0/\">Digital Publishing WAI-ARIA Module 1.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/graphics-aria-1.0/\">Graphics WAI-ARIA Module 1.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/wai-aria-practices-1.1/\">WAI-ARIA Authoring Practices 1.1</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/TR/wai-aria-1.1/\">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -2813,7 +2812,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601\">Norme sur l’accessibilité des sites Web</a>\n        <ul>\n          <li><a href=\"http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp\">Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601\">Norme sur l’accessibilité des sites Web</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -3254,7 +3253,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>show evidence of usability testing, including <strong>(Digital Service Standard (AU))</strong>\n          <ul>\n            <li>users with low level digital skills</li>\n            <li>people with disability</li>\n            <li>people from different cultural and linguistic backgrounds</li>\n          </ul>\n        </li>",
+                            "content": "show evidence of usability testing, including <strong>(Digital Service Standard (AU))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -3333,7 +3332,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/Translations/WCAG20-fr/\">Règles pour l’accessibilité des contenus Web (WCAG) 2.0</a>\n        <ul>\n          <li><a href=\"https://www.w3.org/WAI/WCAG20/quickref/\">How to Meet WCAG 2.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/UNDERSTANDING-WCAG20/\">Understanding WCAG 2.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/WCAG20-TECHS/\">Techniques for WCAG 2.0</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/Translations/WCAG20-fr/\">Règles pour l’accessibilité des contenus Web (WCAG) 2.0</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -3379,7 +3378,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/TR/wai-aria-1.1/\">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>\n        <ul>\n          <li><a href=\"https://www.w3.org/TR/dpub-aria-1.0/\">Digital Publishing WAI-ARIA Module 1.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/graphics-aria-1.0/\">Graphics WAI-ARIA Module 1.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/wai-aria-practices-1.1/\">WAI-ARIA Authoring Practices 1.1</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/TR/wai-aria-1.1/\">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -3453,7 +3452,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601\">Norme sur l’accessibilité des sites Web</a>\n        <ul>\n          <li><a href=\"http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp\">Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601\">Norme sur l’accessibilité des sites Web</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -3912,7 +3911,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/WAI/impl/Overview.html\">Planning and Managing Web Accessibility</a>\n        <ul>\n          <li><a href=\"https://www.w3.org/WAI/impl/initiate.html\">Initiate - Planning and Managing Web Accessibility</a></li>\n          <li><a href=\"https://www.w3.org/WAI/impl/plan.html\">Plan - Planning and Managing Web Accessibility</a></li>\n          <li><a href=\"https://www.w3.org/WAI/impl/implement.html\">Implement - Planning and Managing Web Accessibility</a></li>\n          <li><a href=\"https://www.w3.org/WAI/impl/sustain.html\">Sustain - Planning and Managing Web Accessibility</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/WAI/impl/Overview.html\">Planning and Managing Web Accessibility</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -4130,7 +4129,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Do:\n        <ul>\n          <li>use simple colours</li>\n          <li>write in plain English</li>\n          <li>use simple sentences and bullets</li>\n          <li>make buttons descriptive - for example, Attach files</li>\n          <li>build simple and consistent layouts</li>\n        </ul>\n      </li>",
+                            "content": "Do:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4183,7 +4182,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Don’t:\n        <ul>\n          <li>use bright contrasting colours</li>\n          <li>use figures of speech and idioms</li>\n          <li>create a wall of text</li>\n          <li>make buttons vague and unpredictable - for example, Click here</li>\n          <li>build complex and cluttered layouts</li>\n        </ul>\n      </li>",
+                            "content": "Don’t:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4254,7 +4253,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Do:\n        <ul>\n          <li>describe images and provide transcripts for video</li>\n          <li>follow a linear, logical layout</li>\n          <li>structure content using HTML5</li>\n          <li>build for keyboard use only</li>\n          <li>write descriptive links and heading - for example, Contact us</li>\n        </ul>\n      </li>",
+                            "content": "Do:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4307,7 +4306,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Don’t:\n        <ul>\n          <li>only show information in an image or video</li>\n          <li>spread content all over a page</li>\n          <li>rely on text size and placement for structure</li>\n          <li>force mouse or screen use</li>\n          <li>write uninformative links and heading - for example, Click here</li>\n        </ul>\n      </li>",
+                            "content": "Don’t:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4378,7 +4377,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Do:\n        <ul>\n          <li>use good contrasts and a readable font size</li>\n          <li>publish all information on web pages (HTML)</li>\n          <li>use a combination of colour, shapes and text</li>\n          <li>follow a linear, logical layout -and ensure text flows and is visible when text is magnified to 200%</li>\n          <li>put buttons and notifications in context</li>\n        </ul>\n      </li>",
+                            "content": "Do:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4431,7 +4430,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Don’t:\n        <ul>\n          <li>use low colour contrasts and small font size</li>\n          <li>bury information in downloads</li>\n          <li>only use colour to convey meaning</li>\n          <li>spread content all over a page -and force user to scroll horizontally when text is magnified to 200%</li>\n          <li>separate actions from their context</li>\n        </ul>\n      </li>",
+                            "content": "Don’t:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4502,7 +4501,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Do:\n        <ul>\n          <li>make large clickable actions</li>\n          <li>give form fields space</li>\n          <li>design for keyboard or speech only use</li>\n          <li>design with mobile and touch screen in mind</li>\n          <li>provide shortcuts</li>\n        </ul>\n      </li>",
+                            "content": "Do:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4555,7 +4554,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Don’t:\n        <ul>\n          <li>demand precision</li>\n          <li>bunch interactions together</li>\n          <li>make dynamic content that requires a lot of mouse movement</li>\n          <li>have short time out windows</li>\n          <li>tire users with lots of typing and scrolling</li>\n          <li>View poster for physical or motor disabilities</li>\n        </ul>\n      </li>",
+                            "content": "Don’t:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4633,7 +4632,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Do:\n        <ul>\n          <li>write in plain English</li>\n          <li>use subtitles or provide transcripts for video</li>\n          <li>use a linear, logical layout</li>\n          <li>break up content with sub-headings, images and videos</li>\n          <li>let users ask for their preferred communication support when booking appointments</li>\n        </ul>\n      </li>",
+                            "content": "Do:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4686,7 +4685,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Don’t:\n        <ul>\n          <li>use complicated words or figures of speech</li>\n          <li>put content in audio or video only</li>\n          <li>make complex layouts and menus</li>\n          <li>make users read long blocks of content</li>\n          <li>don’t make telephone the only means of contact for users</li>\n        </ul>\n      </li>",
+                            "content": "Don’t:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4757,7 +4756,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Do:\n        <ul>\n          <li>use images and diagrams to support text</li>\n          <li>align text to the left and keep a consistent layout</li>\n          <li>consider producing materials in other formats (for example, audio and video)</li>\n          <li>keep content short, clear and simple</li>\n          <li>let users change the contrast between background and text</li>\n        </ul>\n      </li>",
+                            "content": "Do:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4810,7 +4809,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Don’t:\n        <ul>\n          <li>use large blocks of heavy text</li>\n          <li>underline words, use italics or write capitals</li>\n          <li>force users to remember things from previous pages - give reminders and prompts</li>\n          <li>rely on accurate spelling - use autocorrect or provide suggestions</li>\n          <li>put too much information in one place</li>\n        </ul>\n      </li>",
+                            "content": "Don’t:",
                             "nested": [
                               {
                                 "type": "list",
@@ -4896,7 +4895,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/Translations/WCAG20-fr/\">Règles pour l’accessibilité des contenus Web (WCAG) 2.0</a>\n        <ul>\n          <li><a href=\"https://www.w3.org/WAI/WCAG20/quickref/\">How to Meet WCAG 2.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/UNDERSTANDING-WCAG20/\">Understanding WCAG 2.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/WCAG20-TECHS/\">Techniques for WCAG 2.0</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/Translations/WCAG20-fr/\">Règles pour l’accessibilité des contenus Web (WCAG) 2.0</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -4942,7 +4941,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/TR/wai-aria-1.1/\">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>\n        <ul>\n          <li><a href=\"https://www.w3.org/TR/dpub-aria-1.0/\">Digital Publishing WAI-ARIA Module 1.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/graphics-aria-1.0/\">Graphics WAI-ARIA Module 1.0</a></li>\n          <li><a href=\"https://www.w3.org/TR/wai-aria-practices-1.1/\">WAI-ARIA Authoring Practices 1.1</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/TR/wai-aria-1.1/\">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -5016,7 +5015,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601\">Norme sur l’accessibilité des sites Web</a>\n        <ul>\n          <li><a href=\"http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp\">Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601\">Norme sur l’accessibilité des sites Web</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -5355,7 +5354,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Your digital delivery team should have, or easily get, the following roles, as relevant to your service: <strong>(Digital Service Standard (AU))</strong>\n        <ul>\n          <li>service manager</li>\n          <li>product manager</li>\n          <li>delivery manager</li>\n          <li>technical architect</li>\n          <li>service and/or interaction designer(s)</li>\n          <li>content designer</li>\n          <li>user researcher(s)</li>\n          <li>developer</li>\n          <li>web operations engineer</li>\n          <li>performance analyst</li>\n        </ul>\n      </li>",
+                        "content": "Your digital delivery team should have, or easily get, the following roles, as relevant to your service: <strong>(Digital Service Standard (AU))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -5661,7 +5660,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>(<a href=\"http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/\">The Good Collaboration Toolkit: Checklist - The Good Project</a>):\n        <ul>\n          <li>Do you discuss the purpose of the collaboration? Is there agreement about the vision among collaborators?</li>\n          <li>Is there a clear leadership/rotation of leadership for the collaboration?</li>\n          <li>Is there a documented scope of work, with an associated timeline?</li>\n          <li>Do you discuss goals and accountability to achieve these goals?</li>\n          <li>Are people clear about their roles in the collaboration?</li>\n          <li>Do you discuss the collaborators’ own interests, needs and values?</li>\n          <li>Do you discuss methods of communication and decision-making?</li>\n          <li>Are all of the voices of the collaborators being heard?</li>\n          <li>Are all collaborators invested in the work?</li>\n          <li>Is the work getting done?</li>\n          <li>Are there obstacles that need to be discussed?</li>\n          <li>Are supports communicated and shared?</li>\n          <li>Is there agreement about a “product” or outcome for the collaboration?</li>\n        </ul>\n      </li>",
+                        "content": "(<a href=\"http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/\">The Good Collaboration Toolkit: Checklist - The Good Project</a>):",
                         "nested": [
                           {
                             "type": "list",
@@ -5794,7 +5793,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"http://thegoodproject.org/collaborationtoolkit/\">The Good Collaboration Toolkit - The Good Project</a>\n        <ul>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/\">Checklist</a></li>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/elements-excellently-executed/\">Excellently Executed</a></li>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/elements-leadership-driven/\">Leadership Driven</a></li>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/elements-engaging-for-participants/\">Engaging for Participants</a></li>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/\">Misson Focused</a></li>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/elements-ethically-oriented/\">Ethically Oriented</a></li>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/elements-nurtured-continuously/\">Nurtured Continuously</a></li>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/elements-time-well-spent/\">Time Well Spent</a></li>\n          <li><a href=\"http://thegoodproject.org/collaborationtoolkit/elements-solution-inspired/\">Solution Inspired</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"http://thegoodproject.org/collaborationtoolkit/\">The Good Collaboration Toolkit - The Good Project</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -8338,7 +8337,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Build and develop open <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Actively use and contribute to open source tools and solutions</li>\n          <li>Develop in the open by sharing and reusing all types of code and platform configuration</li>\n        </ul>\n      </li>",
+                        "content": "Build and develop open <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -8921,7 +8920,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Use emerging technologies <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec</li>\n        </ul>\n      </li>",
+                        "content": "Use emerging technologies <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9079,7 +9078,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/standards/\">W3C Standards</a>\n        <ul>\n          <li>\n<a href=\"https://www.w3.org/standards/webdesign/\">Web Design and ApplicationsW3C Web design standards</a> <strong>(W3C)</strong>\n</li>\n          <li>\n<a href=\"https://www.w3.org/standards/webofdevices/\">Web of Devices</a> <strong>(W3C)</strong>\n</li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/standards/\">W3C Standards</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -9093,7 +9092,7 @@
                                 "tags": [
 
                                 ],
-                                "content": "<a href=\"https://www.w3.org/standards/webdesign/\">Web Design and ApplicationsW3C Web design standards</a> <strong>(W3C)</strong>"
+                                "content": "<a href=\"https://www.w3.org/standards/webdesign/\">Web Design and Applications - W3C Web design standards</a> <strong>(W3C)</strong>"
                               },
                               {
                                 "type": "listitem",
@@ -9263,7 +9262,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Build standards-based solution <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Adhere to GC technical standards and guidance, leveraging open standards when possible</li>\n          <li>Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise</li>\n        </ul>\n      </li>",
+                        "content": "Build standards-based solution <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9295,7 +9294,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Digital Exchange Platform (DXP) <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery</li>\n        </ul>\n      </li>",
+                        "content": "Digital Exchange Platform (DXP) <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9320,7 +9319,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Pan-Canadian Trust Framework <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery</li>\n        </ul>\n      </li>",
+                        "content": "Pan-Canadian Trust Framework <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9345,7 +9344,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Build toward OneGC <strong>Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>OneGC is where Digital business changes are built to support a government as a platform where everyone can maximise shared capability (Platforms) and minimise unique department products</li>\n        </ul>\n      </li>",
+                        "content": "Build toward OneGC <strong>Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9370,7 +9369,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Use departmental/GC standards. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Adopt the business number as the client identifier - do not create other unique identifiers. This enables data sharing across service lines, departments and jurisdictions.</li>\n          <li>Authenticated services must use only the federated credentials (e.g., SecureKey, GCKey). This enables a single login so clients do not need to re-authenticate their identity for each ISED service. It also ensures a sufficient level of security.</li>\n          <li>Build in client relationship management (e.g., MS Dynamics). This enables many capabilities such as the “Tell-me-once” feature, real-time status updates and omni-channel service delivery.</li>\n          <li>Utilize resources offered by the Chief Information Office (e.g., Master Data Management) to retrieve information that can help you have a holistic view of clients across the department.</li>\n          <li>Follow the <a href=\"https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp\">Canada.ca Content Style Guide</a>\n</li>\n          <li>For services that receive payments, adopt the departmental standard e-payment system. This provides a consistent client experience across ISED services.</li>\n          <li>Build in real-time status updates to your services, where appropriate.</li>\n        </ul>\n      </li>",
+                        "content": "Use departmental/GC standards. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9437,7 +9436,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Use device-agnostic and modular technology. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Use technology that allows your service to function regardless of the device or operating system. Make sure mobile apps can function on all devices.</li>\n          <li>Modular technology can be reused, in part or in whole to innovate new solutions and uses for it. It also allows you to add new capabilities and capacities to your technology in response to changing operational environments.</li>\n        </ul>\n      </li>",
+                        "content": "Use device-agnostic and modular technology. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9469,7 +9468,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Choose solutions or parts thereof that are re-usable in another service context. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Use technology solutions that other business lines can reuse or adapt to their needs. This is both economical and practical as it permits future interoperability, and reduces the overall cost of follow-on digital transformation initiatives.</li>\n        </ul>\n      </li>",
+                        "content": "Choose solutions or parts thereof that are re-usable in another service context. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9494,7 +9493,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Consider open source where feasible. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).</li>\n          <li>Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.</li>\n        </ul>\n      </li>",
+                        "content": "Consider open source where feasible. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9526,7 +9525,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Consider open data to the extent possible. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.</li>\n          <li>Open data increases transparency.</li>\n          <li>Open data leverages public sector information to develop consumer and commercial products.</li>\n          <li>Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.</li>\n        </ul>\n      </li>",
+                        "content": "Consider open data to the extent possible. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -9788,7 +9787,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>API first <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>APIs created for every service, exposing data and functionality, to foster data sharing within GC and externally</li>\n          <li>Build microservices that work together within an ecosystem allowing for rapid deployment and built-in redundancy</li>\n        </ul>\n      </li>",
+                        "content": "API first <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -10497,7 +10496,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Cloud first <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>SaaS considered first, PaaS, IaaS second to grow more modern infrastructure which includes public, private and hybrid cloud solutions</li>\n        </ul>\n      </li>",
+                        "content": "Cloud first <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -10867,7 +10866,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Use agile <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Be an agile Developer: Develop in an iterative manner, with key stakeholders participation from the beginning, releasing minimum viable product as soon as possible and iteratively building out functionality</li>\n          <li>Be an agile administrator: Promote DEVOPS and automate, monitor and unify all platform and software construction from testing to release and infrastructure management</li>\n        </ul>\n      </li>",
+                        "content": "Use agile <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -11202,7 +11201,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Websites and web applications are optimized for mobile devices by: <strong>(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))</strong>\n          <ul>\n            <li>Using the Web Experience Toolkit (WET) for adapting the layout and design of websites and web applications for small, medium and large screen sizes, and for different input methods, such as touch input, and keyboard and mouse input.</li>\n            <li>Designing the content and interface of websites and web applications for small, medium and large screen sizes and for different input methods, such as touch input and keyboard and mouse input.</li>\n          </ul>\n        </li>",
+                            "content": "Websites and web applications are optimized for mobile devices by: <strong>(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -11234,7 +11233,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Start with a prototype <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>\n          <ul>\n            <li>Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs.</li>\n          </ul>\n        </li>",
+                            "content": "Start with a prototype <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -11259,7 +11258,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>When iterating, focus on workable solutions over comprehensive documentation. <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>\n          <ul>\n            <li>Having a workable solution that can be tested and validated will give you useful information for improving your service. Whenever possible, focus on results rather than unnecessary documentation and reporting (while staying within policy and regulatory limits).</li>\n          </ul>\n        </li>",
+                            "content": "When iterating, focus on workable solutions over comprehensive documentation. <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -11284,7 +11283,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>When you can, use <a href=\"https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques\">agile tools and techniques</a>. <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>\n          <ul>\n            <li>Techniques can include: daily stand ups, issue trackers, code reviews, rapid prototyping, design sprints, usability testing, user stories, retrospective meetings.</li>\n          </ul>\n        </li>",
+                            "content": "When you can, use <a href=\"https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques\">agile tools and techniques</a>. <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -11309,7 +11308,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Build and release a core-function oriented product that meets user needs. <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>\n          <ul>\n            <li>Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.</li>\n          </ul>\n        </li>",
+                            "content": "Build and release a core-function oriented product that meets user needs. <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -11430,7 +11429,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Example of Agile Methods: <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li><a href=\"https://www.scrumalliance.org/\">Scrum</a></li>\n          <li><a href=\"http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community\">Lean</a></li>\n          <li><a href=\"http://www.djaa.com/principles-kanban-method-0\">Kanban</a></li>\n        </ul>\n      </li>",
+                        "content": "Example of Agile Methods: <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -11483,7 +11482,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Treasury Board Secretariat (TBS) – Management Accountability Framework (MAF): <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li><a href=\"http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp\">http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp</a></li>\n          <li><a href=\"http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp\">http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp</a></li>\n        </ul>\n      </li>",
+                        "content": "Treasury Board Secretariat (TBS) – Management Accountability Framework (MAF): <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -11923,7 +11922,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Don’t wait for a fully developed service to start testing. <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.</li>\n        </ul>\n      </li>",
+                        "content": "Don’t wait for a fully developed service to start testing. <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -11948,7 +11947,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Define your testing objective <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Define the purpose of the test and what you want to learn? The purpose of the test is often determined by your business goals and user needs identified through feedback, analytics and other sources.</li>\n          <li>Identify top or critical tasks to test. Main outcomes and features your clients want to achieve should be prioritized.</li>\n        </ul>\n      </li>",
+                        "content": "Define your testing objective <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -11980,7 +11979,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Test with clients and others <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>You need to ensure that the service works from technical perspective and from the perspective of the user and the service provider (including the help desk agent who assists clients when they face challenges using the service). By testing with a diverse group and different type of users, you can capture a more comprehensive understanding of how your service is working.</li>\n          <li>Make sure the participants are representative of your clients.</li>\n          <li>Utilize user experience testing services offered by the Chief Information Office and the Communications team</li>\n        </ul>\n      </li>",
+                        "content": "Test with clients and others <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -12019,7 +12018,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Plan and deliver client testing cycles <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Pilot your test: Make sure it all works</li>\n          <li>Implement the test.</li>\n          <li>Test often (e.g., six month or yearly intervals), apply the findings and keep on testing.</li>\n        </ul>\n      </li>",
+                        "content": "Plan and deliver client testing cycles <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -12058,7 +12057,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Test under realistic conditions <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Create realistic scenarios that reflect the context and environment in which clients would use the service.</li>\n        </ul>\n      </li>",
+                        "content": "Test under realistic conditions <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -12083,7 +12082,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>Use different types of tests to assess the service <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li>Identify the best testing method based on your needs. Examples of tests include:\n            <ul>\n              <li>Tree Testing - A test in which participants are asked to find a resource based on a series of menus.</li>\n              <li>Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.</li>\n              <li>First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.</li>\n            </ul>\n          </li>\n        </ul>\n      </li>",
+                        "content": "Use different types of tests to assess the service <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -12097,7 +12096,7 @@
                                 "tags": [
 
                                 ],
-                                "content": "<li>Identify the best testing method based on your needs. Examples of tests include:\n            <ul>\n              <li>Tree Testing - A test in which participants are asked to find a resource based on a series of menus.</li>\n              <li>Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.</li>\n              <li>First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.</li>\n            </ul>\n          </li>",
+                                "content": "Identify the best testing method based on your needs. Examples of tests include:",
                                 "nested": [
                                   {
                                     "type": "list",
@@ -12379,7 +12378,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>User centric design GC community of practice: <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>\n        <ul>\n          <li><a href=\"http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs\">http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs</a></li>\n          <li><a href=\"http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing\">http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing</a></li>\n        </ul>\n      </li>",
+                        "content": "User centric design GC community of practice: <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -13277,7 +13276,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Pan-Canadian Trust Framework <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery</li>\n        </ul>\n      </li>",
+                        "content": "Pan-Canadian Trust Framework <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -13728,7 +13727,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>HTTPS only <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Holistic approach to securing GC services for publicly accessible sites</li>\n        </ul>\n      </li>",
+                        "content": "HTTPS only <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
@@ -13868,7 +13867,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>understand the service requirements relating to <strong>(Digital Service Standard (AU))</strong>\n          <ul>\n            <li>legal constraints</li>\n            <li>records management</li>\n            <li>privacy, including the Privacy Act and Australian Privacy Principles</li>\n            <li>copyright and open licensing, including the principles on open public sector information, Australian Government intellectual property rules and Australia’s commitment to the Open Government Partnership</li>\n            <li>the Freedom of Information Act</li>\n            <li>the Spam Act</li>\n            <li>state and territory government policies, if relevant.</li>\n          </ul>\n        </li>",
+                            "content": "understand the service requirements relating to <strong>(Digital Service Standard (AU))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -13996,7 +13995,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>involve all relevant stakeholders within the project, including <strong>(Digital Service Standard (AU))</strong>\n          <ul>\n            <li>business owners</li>\n            <li>information risk and compliance teams</li>\n            <li>SIRO (Senior Information Risk Owner)</li>\n            <li>IAO (Information Asset Owner)</li>\n            <li>IT security teams</li>\n            <li>internal fraud teams, if appropriate</li>\n          </ul>\n        </li>",
+                            "content": "involve all relevant stakeholders within the project, including <strong>(Digital Service Standard (AU))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -14105,7 +14104,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>build detection and prevention mechanisms into the solution, including <strong>(Digital Service Standard (AU))</strong>\n          <ul>\n            <li>incident response plan</li>\n            <li>logging solution that can fully trace a user as they traverse each part of the system</li>\n            <li>appropriate business rules that check the validity of interactions with the solution.</li>\n          </ul>\n        </li>",
+                            "content": "build detection and prevention mechanisms into the solution, including <strong>(Digital Service Standard (AU))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -14596,7 +14595,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.w3.org/TR/dwbp/\">Data on the Web Best Practices (W3C)</a>\n        <ul>\n          <li><a href=\"https://www.w3.org/TR/dwbp/#MachineReadableStandardizedFormat\">Machine-Readable Standardized Data Format (Data on the Web Best Practices (W3C))</a></li>\n          <li><a href=\"https://www.w3.org/TR/dwbp/#LocaleParametersMetadata\">Local Neutral Data Representation (Data on the Web Best Practices (W3C))</a></li>\n          <li><a href=\"https://www.w3.org/TR/dwbp/#AccessRealTime\">Real Time Access (Data on the Web Best Practices (W3C))</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.w3.org/TR/dwbp/\">Data on the Web Best Practices (W3C)</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -14873,7 +14872,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>All services must, at a minimum, measure 4 KPIs. <strong>(Digital Service Standard (AU))</strong>\n          <ul>\n            <li>User satisfaction - to help continually improve the user experience of your service</li>\n            <li>Digital take-up - to show how many people are using the service and to help encourage users to choose the digital service</li>\n            <li>Completion rate - to show which parts of the service you need to fix</li>\n            <li>Cost per transaction - to make your service more cost efficient</li>\n          </ul>\n        </li>",
+                            "content": "All services must, at a minimum, measure 4 KPIs. <strong>(Digital Service Standard (AU))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -14919,7 +14918,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>There will be other metrics your service needs to measure and monitor to understand how it is performing, such as: <strong>(Digital Service Standard (AU))</strong>\n          <ul>\n            <li>error rates</li>\n            <li>time to completion</li>\n            <li>costs, benefits and return on investment</li>\n            <li>content metrics (readability, length).</li>\n          </ul>\n        </li>",
+                            "content": "There will be other metrics your service needs to measure and monitor to understand how it is performing, such as: <strong>(Digital Service Standard (AU))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -15169,7 +15168,7 @@
                             "tags": [
 
                             ],
-                            "content": "<li>Your data should show: <strong>(Digital Service Standard (AU))</strong>\n          <ul>\n            <li>user satisfaction has increased</li>\n            <li>digital take-up is increasing in line with service plans</li>\n            <li>completion rate has been maintained</li>\n            <li>cost per transaction is decreasing in line with service plans.</li>\n          </ul>\n        </li>",
+                            "content": "Your data should show: <strong>(Digital Service Standard (AU))</strong>",
                             "nested": [
                               {
                                 "type": "list",
@@ -15408,7 +15407,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/\">Preserving digital collections (The National Archives (UK))</a>\n        <ul>\n          <li><a href=\"https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/how-to-get-started/\">How to get started (Preserving digital collections (The National Archives (UK)))</a></li>\n          <li><a href=\"https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/developing-a-digital-preservation-strategy-and-policy/\">Developing a digital preservation strategy and policy (Preserving digital collections (The National Archives (UK)))</a></li>\n          <li><a href=\"https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/digital-preservation-tools/\">Digital preservation tools (Preserving digital collections (The National Archives (UK)))</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/\">Preserving digital collections (The National Archives (UK))</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -15447,7 +15446,7 @@
                         "tags": [
 
                         ],
-                        "content": "<li>\n<a href=\"https://www.loc.gov/preservation/digital/formats/index.html\">Sustainability of Digital Formats: Planning for Library of Congress Collections (US)</a>\n        <ul>\n          <li><a href=\"https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml\">Formats, Evluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))</a></li>\n          <li><a href=\"https://www.loc.gov/preservation/digital/formats/sustain/sustain.shtml\">Sustainability Factors (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))</a></li>\n        </ul>\n      </li>",
+                        "content": "<a href=\"https://www.loc.gov/preservation/digital/formats/index.html\">Sustainability of Digital Formats: Planning for Library of Congress Collections (US)</a>",
                         "nested": [
                           {
                             "type": "list",
@@ -15532,7 +15531,7 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "<li>Data is the new gold <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>\n        <ul>\n          <li>Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality</li>\n          <li>Ensure data is able to be shared and can be easily accessed</li>\n        </ul>\n      </li>",
+                        "content": "Data is the new gold <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "type": "list",
