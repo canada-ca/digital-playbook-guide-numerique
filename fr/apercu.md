@@ -33,6 +33,7 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 **Normes numériques&#160;:**
 {: .dpgn-data-ignore }
 
+<!-- markdownlint-disable MD032 -->
 - [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
 - [2. Intégrer l’accessibilité dès le départ](2-integrer-accessibilite-des-depart.md)
 - [3. Collaborer largement](3-collaborer-largement.md)
@@ -44,11 +45,14 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](9-gerer-risques-matiere-securite-protection-renseignements-personnels.md)
 - [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md)
 {: .dpgn-data-ignore }
+<!-- markdownlint-enable MD032 -->
 
 **Comparaison du guide numérique à des ressources similaires&#160;:**
 {: .dpgn-data-ignore }
 
+<!-- markdownlint-disable MD032 -->
 - [Tableau comparatif du guide numérique du gouvernement du Canada](tableau-comparatif-guide-numerique-gc.md)
 {: .dpgn-data-ignore }
+<!-- markdownlint-enable MD032 -->
 
 </section>
