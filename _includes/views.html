@@ -1,4 +1,7 @@
-{% if page.lang == "en" %}
+{% comment %}@overview Outputs the view links in the specified language{% endcomment %}{% 
+comment %}@param lang {String} Which language to return (defaults to page.lang){% endcomment %}{% 
+comment %}@return {String} View links in the specified language{% endcomment %}{% 
+{% if include.lang == "en" or include.lang.size < 2 and page.lang == "en" %}
 <p><strong>Alternate views dynamically generated from the Digital Playbook dataset:</strong></p>
 <ul>
   <li><a href="Development stages">https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/development-stages.html</a>
@@ -27,7 +30,7 @@
     </ul>
   </li>
 </ul>
-{% elsif page.lang == "fr" %}
+{% elsif include.lang == "fr" or include.lang.size < 2 and page.lang == "fr" %}
 <p><strong>Autres vues générées dynamiquement à partir du jeu de données du guide numérique&#160;:</strong></p>
 <ul>
   <li><a href=Stages de développement">https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement.html</a>
