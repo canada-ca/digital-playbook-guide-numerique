@@ -51,13 +51,25 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 {: .dpgn-data-ignore }
 
 <!-- markdownlint-disable MD032 -->
-- [Guide numérique du gouvernement du Canada (ébauche) - Affichage d'une seule page](https://pjackson28.github.io/digital-playbook-guide-numerique/views/single-page/fr/guide-numerique.html)
 - [Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement.html)
   - [Stage alpha - Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/alpha.html)
   - [Stage bêta - Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/beta.html)
   - [Stage en direct - Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/en-direct.html)
   - [Stages de développement - Listes de contrôle seulement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement-listes-controle-seulement.html)
 - [Tableau comparatif du guide numérique du gouvernement du Canada](https://canada-ca.github.io/digital-playbook-guide-numerique/views/comparison/fr/tableau-comparatif-guide-numerique-gc.html)
+- [Guide numérique du gouvernement du Canada (ébauche) - Affichage d'une seule page](https://pjackson28.github.io/digital-playbook-guide-numerique/views/single-page/fr/guide-numerique.html)
+- Guide numérique du gouvernement du Canada (ébauche) - Affichage de plusieurs pages
+  - [Aperçu](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/apercu.html)
+  - [1. Concevoir avec les utilisateurs](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/1-concevoir-avec-utilisateurs.html)
+  - [2. Intégrer l’accessibilité dès le départ](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/2-integrer-accessibilite-des-depart.html)
+  - [3. Collaborer largement](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/3-collaborer-largement.html)
+  - [4. Permettre au personnel d’offrir de meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/4-permettre-personnel-offrir-meilleurs-services.html)
+  - [5. Travailler ouvertement par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/5-travailler-ouvertement-par-defaut.html)
+  - [6. Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/6-utiliser-normes-solutions-ouvertes.html)
+  - [7. Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/7-effectuer-iterations-ameliorations-constamment.html)
+  - [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/8-concevoir-services-ethiques.html)
+  - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
+  - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/view/standards/fr/10-etre-bons-utilisateurs-donnees.html)
 <!-- markdownlint-enable MD032 -->
 
 </section>
