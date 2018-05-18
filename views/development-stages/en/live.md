@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Live stage
+title: Live stage - Development stages
 lang: en
 altLang: fr
 altLangPage: en-direct
