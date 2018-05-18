@@ -81,7 +81,17 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 				if nested_lists.count >= 1
 					item["type"] = "listnested"
 					item["tags"] = tags
-					item["content"] = elem
+					html_fragment = elem.inner_html
+					nested_ul_index = html_fragment.index("<ul")
+					nested_ol_index = html_fragment.index("<ol")
+					if nested_ul_index.nil?
+						nested_index = nested_ol_index
+					elsif nested_ol_index.nil? || (nested_ul_index < nested_ol_index)
+						nested_index = nested_ul_index
+					else
+						nested_index = nested_ol_index
+					end
+					item["content"] = html_fragment = html_fragment[0, nested_index - 1].strip
 					item["nested"] = build_content_array(nested_lists, false, parent_heading_level)
 				else
 					item["type"] = "listitem"

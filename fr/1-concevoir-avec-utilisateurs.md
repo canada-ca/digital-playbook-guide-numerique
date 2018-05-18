@@ -292,7 +292,7 @@ We need to understand the different ways people will interact with our services,
 </section>
 </section>
 
-<section class="dpgn-section-guideline dpgn-stage-alpha">
+<section class="dpgn-section-guideline">
 
 ## 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
 

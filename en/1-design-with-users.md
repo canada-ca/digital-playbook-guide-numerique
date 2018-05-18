@@ -293,7 +293,7 @@ We need to understand the different ways people will interact with our services,
 </section>
 </section>
 
-<section class="dpgn-section-guideline dpgn-stage-alpha">
+<section class="dpgn-section-guideline">
 
 ## 1.5 Provide services that can be obtained anytime, anywhere and on any device
 

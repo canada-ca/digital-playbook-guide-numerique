@@ -110,7 +110,7 @@ Using open standards and common government platforms helps you to:
 - [Technology for services](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
 - [Australian Government ICT Policy Guides and Procurement](http://finance.gov.au/policy-guides-procurement/)
 - [W3C Standards](https://www.w3.org/standards/)
-  - [Web Design and ApplicationsW3C Web design standards](https://www.w3.org/standards/webdesign/) **(W3C)**
+  - [Web Design and Applications - W3C Web design standards](https://www.w3.org/standards/webdesign/) **(W3C)**
   - [Web of Devices](https://www.w3.org/standards/webofdevices/) **(W3C)**
 - [OASIS Standards](https://www.oasis-open.org/standards)
 
