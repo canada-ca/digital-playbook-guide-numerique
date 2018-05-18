@@ -52,6 +52,8 @@ assign dataSourceFr = site.data[dataVariable] %}
 <li><a href="{{ site.baseurl }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceEn.introduction.title }}</a></li>
 {% for standard in dataSourceEn.standards %}<li><a href="{{ site.baseurl }}/en/{{ site.standardFile[standardIndex]['en'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>
 {% assign standardIndex = standardIndex | plus: 1 %}{% endfor %}</ul>
+
+{% include views.html lang="en" %}
 </section>
 <section class="col-md-6" lang="fr">
 <h2><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> Nous ne pouvons trouver cette page Web (Erreur 404)</h2>
@@ -64,6 +66,8 @@ assign dataSourceFr = site.data[dataVariable] %}
   %}<li><a href="{{ site.baseurl }}/fr/{{ site.standardFile[standardIndex]['fr'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>{% 
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}</ul>
+
+{% include views.html lang="fr" %}
 </section>
 </div>
 </main>
