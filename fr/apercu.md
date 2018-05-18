@@ -47,12 +47,17 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD032 -->
 
-**Comparaison du guide numérique à des ressources similaires&#160;:**
+**Autres vues générées dynamiquement à partir du jeu de données du guide numérique&#160;:**
 {: .dpgn-data-ignore }
 
 <!-- markdownlint-disable MD032 -->
-- [Tableau comparatif du guide numérique du gouvernement du Canada](tableau-comparatif-guide-numerique-gc.md)
-{: .dpgn-data-ignore }
+- [Guide numérique du gouvernement du Canada (ébauche) - Affichage d'une seule page](https://pjackson28.github.io/digital-playbook-guide-numerique/views/single-page/fr/guide-numerique.html)
+- [Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement.html)
+  - [Stage alpha - Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/alpha.html)
+  - [Stage bêta - Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/beta.html)
+  - [Stage en direct - Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/en-direct.html)
+  - [Stages de développement - Listes de contrôle seulement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement-listes-controle-seulement.html)
+- [Tableau comparatif du guide numérique du gouvernement du Canada](https://canada-ca.github.io/digital-playbook-guide-numerique/views/comparison/fr/tableau-comparatif-guide-numerique-gc.html)
 <!-- markdownlint-enable MD032 -->
 
 </section>
