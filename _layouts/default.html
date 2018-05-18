@@ -3,8 +3,9 @@
 <!--<![endif]-->
 {% include head.html %}
 <body vocab="http://schema.org/" typeof="WebPage">
-{% include header.html %}
-{% unless page.url contains site.index[page.lang] or page.url contains "compar" 
+{% include header.html %}{% 
+assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
+unless page.url contains overviewPath or page.url contains "compar" 
   %}{% include filter-interface.html %}{% 
 endunless %}{% 
 if page.url contains "/views/standards" %}{% 

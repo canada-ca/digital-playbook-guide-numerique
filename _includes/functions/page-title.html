@@ -6,7 +6,7 @@ elsif page.titleSource == "standard" %}{%
   assign standardIndex = page.standard | minus: 1
   %}{{ dataSource.standards.content[standardIndex].title }}{%
 else 
-  %}{{ site.title[page.lang] | escape }}{% 
+  %}{{ dataSource.title }}{% 
 endif %}{%
 if include.includeSiteTitle 
   %} - {{ dataSource.title }}{%

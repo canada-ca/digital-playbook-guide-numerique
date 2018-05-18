@@ -31,7 +31,9 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 **Les considérations bureaucratiques.** Les résultats escomptés de ces principes seront intégrés dans nos instruments de politique, et les ministères seront évalués en conséquence. Pour l’instant, nous avons commencé par nos aspirations de haut niveau, mais nous allons bientôt entrer dans les détails en fournissant des conseils et une orientation sous la forme d’un plan de match. Nous espérons rendre ce plan de match le plus collaboratif possible pour permettre à notre communauté d’échanger des approches, des outils et des récits. Restez à l’affût!
 
 **Normes numériques&#160;:**
+{: .dpgn-data-ignore }
 
+<!-- markdownlint-disable MD032 -->
 - [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md)
 - [2. Intégrer l’accessibilité dès le départ](2-integrer-accessibilite-des-depart.md)
 - [3. Collaborer largement](3-collaborer-largement.md)
@@ -42,9 +44,15 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 - [8. Concevoir des services éthiques](8-concevoir-services-ethiques.md)
 - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](9-gerer-risques-matiere-securite-protection-renseignements-personnels.md)
 - [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md)
+{: .dpgn-data-ignore }
+<!-- markdownlint-enable MD032 -->
 
 **Comparaison du guide numérique à des ressources similaires&#160;:**
+{: .dpgn-data-ignore }
 
+<!-- markdownlint-disable MD032 -->
 - [Tableau comparatif du guide numérique du gouvernement du Canada](tableau-comparatif-guide-numerique-gc.md)
+{: .dpgn-data-ignore }
+<!-- markdownlint-enable MD032 -->
 
 </section>

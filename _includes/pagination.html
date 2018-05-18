@@ -1,5 +1,6 @@
 {% assign dataVariable = site.playbookData[page.lang] %}{% 
-assign standards = site.data[dataVariable].standards.content %}{% 
+assign dataSource = site.data[dataVariable] %}{% 
+assign standards = dataSource.standards.content %}{% 
 assign standardIndex = 0 %}{% 
 assign activeIndex = -1 %}{% 
 assign baseurl = site.baseurl %}{% 
@@ -8,8 +9,9 @@ if page.standard %}{%
 endif %}{%
 if page.collectionDirectory 
     %}{% assign baseurl = baseurl | append: "/" | append: page.collectionDirectory %}{% 
-endif %}{%
-unless page.url contains site.index[page.lang] %}{% 
+endif %}{% 
+assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
+unless page.url contains overviewPath %}{% 
   for standard in standards %}{% 
     assign activeIndex = activeIndex | plus: 1 %}{% 
     if standard.title == page.title or activeIndex == pageStandardIndex %}{% 
@@ -22,7 +24,7 @@ assign nextIndex = activeIndex | plus: 1 %}
 <div class="text-center">
 <ul class="pagination">
 {% if prevIndex == -1 
-  %}  <li><a href="{{ baseurl }}{{ site.index[page.lang] }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ site.indexTitle[page.lang] }}</span></a></li>{% 
+  %}  <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ dataSource.introduction.title }}</span></a></li>{% 
 elsif prevIndex > -1 
   %}  <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.standardFile[prevIndex][page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ standards[prevIndex].title }}</span></a></li>{% 
 endif %}
@@ -34,9 +36,9 @@ endif
 if activeIndex == -1 
   %}#{% 
 else 
-  %}{{ baseurl }}{{ site.index[page.lang] }}{% 
+  %}{{ baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}{% 
 endif 
-%}">{{ site.indexTitle[page.lang] }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ site.indexTitle[page.lang] }}</span></a></li>
+%}">{{ dataSource.introduction.title | replace: " (draft)", "" | replace: " (ébauche)", "" }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ dataSource.introduction.title }}</span></a></li>
 {% 
 for standard in standards 
   %}<li{% 
