@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stage en direct
+title: Stage en direct - Stages de développement
 lang: fr
 altLang: en
 altLangPage: live

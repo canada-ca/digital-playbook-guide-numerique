@@ -47,12 +47,6 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD032 -->
 
-**Comparison of the Digital Playbook to similar resources:**
-{: .dpgn-data-ignore }
-
-<!-- markdownlint-disable MD032 -->
-- [Government of Canada Digital Playbook comparison table](gc-digital-playbook-comparison-table.md)
-{: .dpgn-data-ignore }
-<!-- markdownlint-enable MD032 -->
+{% include views.html lang=page.lang %}
 
 </section>

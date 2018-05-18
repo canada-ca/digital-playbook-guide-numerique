@@ -47,12 +47,6 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD032 -->
 
-**Comparaison du guide numérique à des ressources similaires&#160;:**
-{: .dpgn-data-ignore }
-
-<!-- markdownlint-disable MD032 -->
-- [Tableau comparatif du guide numérique du gouvernement du Canada](tableau-comparatif-guide-numerique-gc.md)
-{: .dpgn-data-ignore }
-<!-- markdownlint-enable MD032 -->
+{% include views.html lang=page.lang %}
 
 </section>

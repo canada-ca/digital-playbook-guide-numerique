@@ -1,9 +1,9 @@
 ---
 layout: default
-title: All stages - Checklists only
+title: Development stages - Checklists only
 lang: en
 altLang: fr
-altLangPage: toutes-stages-listes-controle-seulement
+altLangPage: stages-developpement-listes-controle-seulement
 collectionDirectory: views/development-stages
 ---
 
