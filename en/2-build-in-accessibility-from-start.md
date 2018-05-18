@@ -9,15 +9,16 @@ altLangPage: 2-integrer-accessibilite-des-depart
 
 **[TODO: Add/revise introductory text]**
 
-Building in accessibility from the start is key to ensure that your programs, service, tools or application can be used by everyone, including those living with a permanent disability, but also by those who may have a temporary limitation or disability due to illness, accident, environmental changes or technological difficulties.  
+Building in accessibility from the start is key to ensure that your programs, service, tools or application can be used by everyone, including those living with a permanent disability, but also by those who may have a temporary limitation or disability due to illness, accident, environmental changes or technological difficulties.
 
 Worldwide, Over a billion people, about 15% of the world's population, have some form of disability. Between 110 million and 190 million adults have significant difficulties in functioning. (<a href="http://www.who.int/news-room/fact-sheets/detail/disability-and-health">World Health Organization</a>)
 
 In Canada:
+
 - 14% of the population (4.9 million Canadians) identify as a person with a disability
 - 30% of the population have a disability if you include “invisible” disabilities (colour blindness, cognitive, mental health or chronic pain related)
-- 50% of the population have a disability if you take into account age-related impairments (low vision, low hearing, cognitive impairments), 
-- At least once in a person’s lifetime, they also may have a temporary disability brought on through accident, illness, repetitive strain, lifecycle changes (pregnancy). 
+- 50% of the population have a disability if you take into account age-related impairments (low vision, low hearing, cognitive impairments),
+- At least once in a person’s lifetime, they also may have a temporary disability brought on through accident, illness, repetitive strain, lifecycle changes (pregnancy).
 
 **Curb Cut Effect**
 
@@ -28,20 +29,20 @@ When inclusive and accessible design is in place, it is a benefit for all and se
 **Situational Limitations**
 
 Sometimes people are in situations that limit their ability to hear, see, use their hands, concentrate, understand instructions, etc., and sometimes they are using devices that have limitations in size, input interface, etc. — for example:
+
 - Watching TV in a noisy environment (limits one's ability to hear, but closed captionning helps convey audio messages in text)
 - Driving (limits one's ability to concentrate on multiple things and use their hands, requiring the driver to use her/his smart phone to ask for directions using voice recognition and directions are read out loud to avoid (a ticket for distracted driving) taking her/his eyes off the road and hands off the wheel.)
 - Walking around with small children (curb cuts for stollers, hands full, concentrate, understand instructions)
 - Having his/her hands full (while cooking, fixing things around the home, etc.) may require relying on smart speakers for instructions.
 - Using the Web on a small mobile phone in bright sunlight with one hand on a slow connection
-- Having to interact in another language 
+- Having to interact in another language
 
 These limitations are sometimes mentioned as an example of how accessible design helps everyone, including people without disabilities.
 
 **Added Benefits**
-- findability; when content is accessible it increases its findability 
-- understandable content for all users that is also machine-readable 
 
-
+- findability; when content is accessible it increases its findability
+- understandable content for all users that is also machine-readable
 
 </div>
 
@@ -83,7 +84,7 @@ Development of accessible (regardless of ability, device or environment) digital
 **[TODO: Add/revise checklist items]**
 
 - Familiarize yourself with the standards
-- Design the service to be as easy to use as possible. Usability is a critical to making a service accessible to people with disabilities and limitations. 
+- Design the service to be as easy to use as possible. Usability is a critical to making a service accessible to people with disabilities and limitations.
 - Ensure design and development resources have the knowledge and expertise to build accessible services and to resolve accessibility issues.
 - Ensure testing and quality assurance resources have the knowledge and expertise to identify accessibility issues.
 - Ensure support resources are trained to assist persons with disabilities with completing tasks and accessing information.
@@ -132,11 +133,11 @@ Development of accessible (regardless of ability, device or environment) digital
 
 Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment.
 
-Ensure the service is accessible to all users regardless of their ability and environment. This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can't use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person. 
+Ensure the service is accessible to all users regardless of their ability and environment. This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can't use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person.
 
 All users should be able to complete the service the first time they try, as quickly and easily as possible.
 
-You need to make sure everyone who needs your service can use it. This includes people with disabilities and older people, and people who can’t use, or struggle with, digital services.If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. **(Digital Service Standard (Ontario))** 
+You need to make sure everyone who needs your service can use it. This includes people with disabilities and older people, and people who can’t use, or struggle with, digital services.If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. **(Digital Service Standard (Ontario))**
 
 Your service must be accessible to users regardless of their digital confidence and access to a digital environment. This includes users in remote areas and users’ different devices. **(Digital Service Standard (AU))**
 
@@ -204,7 +205,7 @@ Your service must be accessible to users regardless of their digital confidence 
 #### Live stage
 
 - show your service is accessible **(Digital Service Standard (AU))**
-{: .dpgn-accessibility-usability }- show evidence of usability testing, including **(Digital Service Standard (AU))** 
+- {: .dpgn-accessibility-usability } show evidence of usability testing, including **(Digital Service Standard (AU))**
   - users with low level digital skills
   - people with disability
   - people from different cultural and linguistic backgrounds
