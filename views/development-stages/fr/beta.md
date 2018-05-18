@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stage bêta
+title: Stage bêta - Stages de développement
 lang: fr
 altLang: en
 altLangPage: beta
