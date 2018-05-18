@@ -2,8 +2,8 @@
 comment %}@param lang {String} Which language to return (defaults to page.lang){% endcomment %}{% 
 comment %}@return {String} View links in the specified language{% endcomment %}{% 
 {% if include.lang == "en" or include.lang.size < 2 and page.lang == "en" %}
-<p><strong>Alternate views dynamically generated from the Digital Playbook dataset:</strong></p>
-<ul>
+<p class="dpgn-data-ignore"><strong>Alternate views dynamically generated from the Digital Playbook dataset:</strong></p>
+<ul class="dpgn-data-ignore">
   <li><a href="Development stages">https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/development-stages.html</a>
     <ul>
       <li><a href="https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/alpha.html">Alpha stage - Development stages</a></li>
@@ -31,8 +31,8 @@ comment %}@return {String} View links in the specified language{% endcomment %}{
   </li>
 </ul>
 {% elsif include.lang == "fr" or include.lang.size < 2 and page.lang == "fr" %}
-<p><strong>Autres vues générées dynamiquement à partir du jeu de données du guide numérique&#160;:</strong></p>
-<ul>
+<p class="dpgn-data-ignore"><strong>Autres vues générées dynamiquement à partir du jeu de données du guide numérique&#160;:</strong></p>
+<ul class="dpgn-data-ignore">
   <li><a href=Stages de développement">https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement.html</a>
     <ul>
       <li><a href="https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/alpha.html">Stage alpha - Stages de développement</a></li>
