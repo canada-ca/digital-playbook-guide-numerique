@@ -149,8 +149,8 @@ Your service must be accessible to users regardless of their digital confidence 
 
 **[TODO: Add/revise checklist items]**
 
-- meet the [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601) {: .dpgn-accessibility }
-- [Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html) {: .dpgn-accessibility-usability }
+- {: .dpgn-accessibility } meet the [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
+- {: .dpgn-accessibility-usability } [Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html)
 - formalize an approach to integrating automated testing tools into the process of developing and maintaining government ICT **(Digital Service Standard (Ontario))**
 - train development staff on use of keyboard only navigation and ensure that new features are regularly tested **(Digital Service Standard (Ontario))**
 - make it easy for People with Disabilities to reach out to the accessibility team to address the problem **(Digital Service Standard (Ontario))**
