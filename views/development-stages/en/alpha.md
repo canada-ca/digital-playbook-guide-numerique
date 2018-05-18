@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Alpha stage
+title: Alpha stage - Development stages
 lang: en
 altLang: fr
 altLangPage: alpha
