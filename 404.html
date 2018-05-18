@@ -1,6 +1,10 @@
 ---
 permalink: /404.html
 ---
+{% assign dataVariable = site.playbookData["en"] %}{% 
+assign dataSourceEn = site.data[dataVariable] %}{% 
+assign dataVariable = site.playbookData["fr"] %}{% 
+assign dataSourceFr = site.data[dataVariable] %}
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
@@ -8,7 +12,7 @@ permalink: /404.html
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-<title>We couldn&#x27;t find that Web page (Error 404) - Government of Canada Digital Playbook / Nous ne pouvons trouver cette page Web (Erreur 404) - Guide numérique du gouvernement du Canada</title>
+<title>We couldn&#x27;t find that Web page (Error 404) - {{ dataSourceEn.title }} / Nous ne pouvons trouver cette page Web (Erreur 404) - {{ dataSourceFr.title }}</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <!-- Meta data -->
 <meta name="robots" content="noindex, nofollow, noarchive">
@@ -42,22 +46,24 @@ permalink: /404.html
 <section class="col-md-6">
 <h2><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> We couldn't find that Web page (Error 404)</h2>
 <p>We're sorry you ended up here. Sometimes a page gets moved or deleted, but hopefully we can help you find what you're looking for.</p>
-{% assign dataVariable = site.playbookData["en"] %}{% assign dataSource = site.data[dataVariable] %}{% assign standardIndex = 0 %}
+{% assign standardIndex = 0 %}
 <p>Return to:</p>
 <ul>
-<li><a href="{{ site.baseurl }}{{ site.index["en"] }}">{{ site.indexTitle["en"] }}</a></li>
-{% for standard in dataSource.standards %}<li><a href="{{ site.baseurl }}/en/{{ site.standardFile[standardIndex]["en"] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>
+<li><a href="{{ site.baseurl }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceEn.introduction.title }}</a></li>
+{% for standard in dataSourceEn.standards %}<li><a href="{{ site.baseurl }}/en/{{ site.standardFile[standardIndex]['en'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>
 {% assign standardIndex = standardIndex | plus: 1 %}{% endfor %}</ul>
 </section>
 <section class="col-md-6" lang="fr">
 <h2><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> Nous ne pouvons trouver cette page Web (Erreur 404)</h2>
 <p>Nous sommes désolés que vous ayez abouti ici. Il arrive parfois qu'une page ait été déplacée ou supprimée. Heureusement, nous pouvons vous aider à trouver ce que vous cherchez.</p>
-{% assign dataVariable = site.playbookData["en"] %}{% assign dataSource = site.data[dataVariable] %}{% assign standardIndex = 0 %}
+{% assign standardIndex = 0 %}
 <p>Retournez à :</p>
 <ul>
-<li><a href="{{ site.baseurl }}{{ site.index["fr"] }}">{{ site.indexTitle["fr"] }}</a></li>
-{% for standard in dataSource.standards %}<li><a href="{{ site.baseurl }}/fr/{{ site.standardFile[standardIndex]["fr"] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>
-{% assign standardIndex = standardIndex | plus: 1 %}{% endfor %}</ul>
+<li><a href="{{ site.baseurl }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceFr.introduction.title }}</a></li>
+{% for standard in dataSourceFr.standards 
+  %}<li><a href="{{ site.baseurl }}/fr/{{ site.standardFile[standardIndex]['fr'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>{% 
+  assign standardIndex = standardIndex | plus: 1 %}{% 
+endfor %}</ul>
 </section>
 </div>
 </main>

@@ -26,9 +26,6 @@ collections:
     permalink: /:path
 
 # Translations
-title:
-  en: Government of Canada Digital Playbook (draft)
-  fr: Guide numérique du gouvernement du Canada (ébauche)
 email: zzOneGC@tbs-sct.gc.ca
 description:
   en: The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards.
@@ -42,12 +39,6 @@ subject:
 playbookData:
   en: playbook
   fr: guide
-index:
-  en: /en/overview.html
-  fr: /fr/apercu.html
-indexTitle:
-  en: Overview
-  fr: Aperçu
 overviewFile:
   en: overview
   fr: apercu
@@ -83,16 +74,10 @@ standardFile:
     en:  10-be-good-data-stewards
     fr:  10-etre-bons-utilisateurs-donnees
 RenderedFileExtension: ".html"
-AllPosts:
-  en: Government of Canada Digital Playbook (draft)
-  fr: Guide numérique du gouvernement du Canada (ébauche)
 
 # Common strings and tags for the datasets
 common:
   introduction:
-    title:
-      en: "Overview (draft)"
-      fr: "Aperçu (ébauche)"
     tags: ["dpgn-section-overview"]
   standards:
       title:
@@ -340,9 +325,9 @@ Filters:
 ShowFilters:
   en: Show filters
   fr: Afficher les filtres
-ProjectPhase:
-  en: Project phase
-  fr: Phase de projet
+DevelopmentStage:
+  en: Development stage
+  fr: Stage de développement
 Alpha:
   en: Alpha
   fr: Alpha

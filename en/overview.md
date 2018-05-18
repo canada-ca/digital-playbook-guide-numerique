@@ -31,6 +31,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 **The bureaucratic stuff.** The intended outcomes of these digital standards will be baked into our policy instruments and departments will be measured accordingly. We started with our high-level aspirations, and are diving into the details, providing guidance and direction in the form of this playbook. The goal is for this playbook to be as collaborative as possible, allowing our community to share approaches, tools, and stories.
 
 **Digital Standards:**
+{: .dpgn-data-ignore }
 
 - [1. Design with users](1-design-with-users.md)
 - [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md)
@@ -42,9 +43,12 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 - [8. Design ethical services](8-design-ethical-services.md)
 - [9. Address security and privacy risks](9-address-security-privacy-risks.md)
 - [10. Be good data stewards](10-be-good-data-stewards.md)
+{: .dpgn-data-ignore }
 
 **Comparison of the Digital Playbook to similar resources:**
+{: .dpgn-data-ignore }
 
 - [Government of Canada Digital Playbook comparison table](gc-digital-playbook-comparison-table.md)
+{: .dpgn-data-ignore }
 
 </section>

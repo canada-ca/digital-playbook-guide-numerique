@@ -4,7 +4,7 @@
 {% include head.html %}
 <body vocab="http://schema.org/" typeof="WebPage">
 {% include header.html %}
-{% unless page.url contains site.index[page.lang] or page.url contains "compar" 
+{% unless page.url contains "{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}" or page.url contains "compar" 
   %}{% include filter-interface.html %}{% 
 endunless %}{% 
 if page.url contains "/views/standards" %}{% 
