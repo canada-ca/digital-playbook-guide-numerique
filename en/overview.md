@@ -33,6 +33,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 **Digital Standards:**
 {: .dpgn-data-ignore }
 
+<!-- markdownlint-disable MD032 -->
 - [1. Design with users](1-design-with-users.md)
 - [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md)
 - [3. Collaborate widely](3-collaborate-widely.md)
@@ -44,11 +45,14 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 - [9. Address security and privacy risks](9-address-security-privacy-risks.md)
 - [10. Be good data stewards](10-be-good-data-stewards.md)
 {: .dpgn-data-ignore }
+<!-- markdownlint-enable MD032 -->
 
 **Comparison of the Digital Playbook to similar resources:**
 {: .dpgn-data-ignore }
 
+<!-- markdownlint-disable MD032 -->
 - [Government of Canada Digital Playbook comparison table](gc-digital-playbook-comparison-table.md)
 {: .dpgn-data-ignore } 
+<!-- markdownlint-enable MD032 -->
 
 </section>
