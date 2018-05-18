@@ -59,6 +59,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 				item["title"] = elem.inner_html
 				node_array = Array.new
 				next_elem = elem.next_element
+				ignore_loop += 1
 				while !next_elem.nil? && next_elem.name != "h#{parent_heading_level + 1}"
 					node_array.push(next_elem)
 					next_elem = next_elem.next_element
@@ -75,11 +76,12 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 				end
 				item["content"] = build_content_array(elem, true, parent_heading_level)
 			elsif elem.name === "li"
-				if !elem.next_element.nil? && (elem.next_element.name === "ul" || elem.next_element.name === "ol")
+				nested_lists = elem.css( "ul, ol" )
+				if nested_lists.count >= 1
 					item["type"] = "listnested"
 					item["tags"] = tags
 					item["content"] = elem
-					item["nested"] = build_content_array(elem.next_element, false, parent_heading_level)
+					item["nested"] = build_content_array(nested_lists, false, parent_heading_level)
 				else
 					item["type"] = "listitem"
 					item["tags"] = tags

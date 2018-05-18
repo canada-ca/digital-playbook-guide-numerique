@@ -38,7 +38,7 @@ if activeIndex == -1
 else 
   %}{{ baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}{% 
 endif 
-%}">{{ dataSource.introduction.title }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ dataSource.introduction.title }}</span></a></li>
+%}">{{ dataSource.introduction.title | replace: " (draft)", "" | replace: " (ébauche)", "" }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ dataSource.introduction.title }}</span></a></li>
 {% 
 for standard in standards 
   %}<li{% 
