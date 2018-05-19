@@ -81,10 +81,11 @@ if tagsCompareResult contains "true" %}{%
     else %}{% 
       assign outputGuidelinesArray = include.relevantGuidelines | replace: " ", "" | split: "," %}{% 
     endif %}{% 
+    include functions/guideline-links.html guidelineIndexes=outputGuidelinesArray standard=standard samePage=true %}{% 
   else %}{% 
     assign outputGuidelinesArray = standard.guidelines.content %}{% 
-  endif %}{% 
-  include functions/guideline-links.html guidelineIndexes=outputGuidelinesArray standard=standard samePage=true %}
+    include functions/guideline-links.html guidelines=outputGuidelinesArray standard=standard samePage=true %}{% 
+  endif %}
 
 </div>
 {% endif %}

@@ -46,6 +46,11 @@
   - [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/9-address-security-privacy-risks.html)
   - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/10-be-good-data-stewards.html)
 
+**Digital Playbook dataset:**
+
+- [Dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json)
+- [Dataset schema](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook_schema.json)
+
 # Guide numérique du gouvernement du Canada (ébauche)
 
 **Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
@@ -89,3 +94,8 @@
   - [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/8-concevoir-services-ethiques.html)
   - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
   - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/10-etre-bons-utilisateurs-donnees.html)
+
+**Jeu de données du guide numérique&#160;:**
+
+- [Jeu de données](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json)
+- [Schéma du jeu de données](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide_schema.json)
