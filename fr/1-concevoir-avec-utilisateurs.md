@@ -176,9 +176,9 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 #### Stage bêta
 
 - Research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
-- Document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK))
+- Document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK))**
 - Document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
-- Document the design challenges your users' needs pose for your service **(Digital Service Standard (UK))
+- Document the design challenges your users' needs pose for your service **(Digital Service Standard (UK))**
 - Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
 - Document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
 - Document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
@@ -197,7 +197,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 #### Stage en direct
 
 - Use research and testing results to continuously improve the service **(Digital Service Standard (Ontario))**
-- Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))
+- Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
 - Be able to show greater depth of knowledge for all the points above (from Alpha/Beta) **(Digital Service Standard (AU))**
 - **Show how you are using data from real use** to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users **(Digital Service Standard (AU))**
 - Know how you will measure and monitor your service to ensure it is serving its users well **(Digital Service Standard (AU))**

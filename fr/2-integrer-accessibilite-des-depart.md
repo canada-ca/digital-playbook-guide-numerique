@@ -268,7 +268,7 @@ For example, for websites, web applications, and web tools:
 
 #### Carefully Consider Input **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
 
-**Caution:** Carefully consider all input and **avoid assuming that input from one person with a disability applies to all people with disabilities((. A person with a disability does not necessarily know how other people with the same disability interact with the web, nor know enough about other disabilities to provide valid guidance on other accessibility issues. Getting input from a range of users is best.
+**Caution:** Carefully consider all input and **avoid assuming that input from one person with a disability applies to all people with disabilities**. A person with a disability does not necessarily know how other people with the same disability interact with the web, nor know enough about other disabilities to provide valid guidance on other accessibility issues. Getting input from a range of users is best.
 
 #### Getting a Range of Users **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
 

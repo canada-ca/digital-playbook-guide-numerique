@@ -44,7 +44,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 			end
 
 			if elem.name === "section"
-				item["type"] = "section"
+				item["contenttype"] = "section"
 				item["tags"] = tags
 				heading = elem.css("h#{parent_heading_level + 1}")
 				if heading.count >= 1
@@ -56,7 +56,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 				end
 				item["content"] = build_content_array(elem, true, parent_heading_level + 1)
 			elsif elem.name === ("h#{parent_heading_level + 1}")
-				item["type"] = "section"
+				item["contenttype"] = "section"
 				item["tags"] = tags
 				item["title"] = elem.inner_html
 				node_array = Array.new
@@ -68,7 +68,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 				ignore_loop += node_array.count
 				item["content"] = build_content_array(node_array, false, parent_heading_level + 1)
 			elsif elem.name === "ul" || elem.name === "ol"
-				item["type"] = "list"
+				item["contenttype"] = "list"
 				item["tags"] = tags
 				if elem.name === "ul"
 					item["listtype"] = "unordered"
@@ -79,7 +79,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 			elsif elem.name === "li"
 				nested_lists = elem.css( "ul, ol" )
 				if nested_lists.count >= 1
-					item["type"] = "listnested"
+					item["contenttype"] = "listnested"
 					item["tags"] = tags
 					html_fragment = elem.inner_html
 					nested_ul_index = html_fragment.index("<ul")
@@ -94,12 +94,12 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 					item["content"] = html_fragment = html_fragment[0, nested_index - 1].strip
 					item["nested"] = build_content_array(nested_lists, false, parent_heading_level)
 				else
-					item["type"] = "listitem"
+					item["contenttype"] = "listitem"
 					item["tags"] = tags
 					item["content"] = elem.inner_html
 				end
 			else
-				item["type"] = "text"
+				item["contenttype"] = "text"
 				item["tags"] = tags
 				item["content"] = elem
 			end
