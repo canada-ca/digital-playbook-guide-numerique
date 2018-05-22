@@ -98,10 +98,10 @@ Start with a representation or prototype of the solution that will be tested and
 
 #### Alpha stage
 
-- test hypotheses and underlying assumptions with several prototypes **(Digital Service Standard (AU))
-- follow a user-centred approach; include the user in all areas of the prototyping (design, iterations and so on) **(Digital Service Standard (AU))
-- work out incrementally what is the “right thing to build” **(Digital Service Standard (AU))
-- determine the minimum viable product (MVP). **(Digital Service Standard (AU))
+- test hypotheses and underlying assumptions with several prototypes **(Digital Service Standard (AU))**
+- follow a user-centred approach; include the user in all areas of the prototyping (design, iterations and so on) **(Digital Service Standard (AU))**
+- work out incrementally what is the “right thing to build” **(Digital Service Standard (AU))**
+- determine the minimum viable product (MVP). **(Digital Service Standard (AU))**
 
 </section>
 
@@ -109,9 +109,9 @@ Start with a representation or prototype of the solution that will be tested and
 
 #### Beta and live stages
 
-- show how the service has responded to user research and usability testing **(Digital Service Standard (AU))
-- clearly describe the lifecycle of a user story, from user research to production **(Digital Service Standard (AU))
-- explain the deployment process and how you are able to support frequent deployments with minimal impact to users. **(Digital Service Standard (AU))
+- show how the service has responded to user research and usability testing **(Digital Service Standard (AU))**
+- clearly describe the lifecycle of a user story, from user research to production **(Digital Service Standard (AU))**
+- explain the deployment process and how you are able to support frequent deployments with minimal impact to users. **(Digital Service Standard (AU))**
 
 </section>
 
