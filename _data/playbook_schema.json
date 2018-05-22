@@ -6,39 +6,32 @@
     "title": {"$ref": "#/definitions/title"},
     "introduction": {"$ref": "#/definitions/introduction"},
     "standards": {
-      "description": "",
       "type": "object",
       "properties": {
         "title": {"$ref": "#/definitions/title"},
         "tags": {"$ref": "#/definitions/tags"},
         "content": {
-          "description": "",
           "type": "array",
           "items": {
-            "description": "",
             "type": "object",
             "properties": {
               "title": {"$ref": "#/definitions/title"},
               "tags": {"$ref": "#/definitions/tags"},
               "introduction": {"$ref": "#/definitions/introduction"},
               "relatedguidelines": {
-                "description": "",
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
               "guidelines": {
-                "description": "",
                 "type": "object",
                 "properties": {
                   "title": {"$ref": "#/definitions/title"},
                   "tags": {"$ref": "#/definitions/tags"},
                   "content": {
-                    "description": "",
                     "type": "array",
                     "items": {
-                      "description": "",
                       "type": "object",
                       "properties": {
                         "title": {"$ref": "#/definitions/title"},
@@ -84,7 +77,6 @@
       "type": "string"
     },
     "introduction": {
-      "description": "",
       "type": "object",
       "properties": {
         "title": {"$ref": "#/definitions/title"},
@@ -93,38 +85,107 @@
       }
     },
     "content": {
-      "description": "",
       "type": "array",
       "items": {
-        "description": "",
         "type": "object",
         "oneOf": [
           { "$ref": "#/definitions/section" },
           { "$ref": "#/definitions/list" },
-          { "$ref": "#/definitions/listitem" },
-          { "$ref": "#/definitions/nestedlist" },
           { "$ref": "#/definitions/text" }
         ]
       }
     },
     "tags": {
-      "description": "",
       "type": "array",
       "items": {
-        "description": "",
         "type": "string"
       },
       "uniqueItems": true
     },
     "section": {
+      "type": "object",
+      "contenttype": {
+        "type": "string",
+        "enum": ["section"]
+      },
+      "tags": {"$ref": "#/definitions/tags"},
+      "title": {
+        "type": "string"
+      },
+      "content": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "oneOf": [
+            { "$ref": "#/definitions/section" },
+            { "$ref": "#/definitions/list" },
+            { "$ref": "#/definitions/text" }
+          ]
+        }
+      }
     },
     "list": {
+      "type": "object",
+      "contenttype": {
+        "type": "string",
+        "enum": ["list"]
+      },
+      "tags": {"$ref": "#/definitions/tags"},
+      "listtype": {
+        "type": "string"
+      },
+      "content": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "oneOf": [
+            { "$ref": "#/definitions/listitem" },
+            { "$ref": "#/definitions/nestedlist" }
+          ]
+        }
+      }
     },
     "listitem": {
+      "type": "object",
+      "contenttype": {
+        "type": "string",
+        "enum": ["listitem"]
+      },
+      "tags": {"$ref": "#/definitions/tags"},
+      "content": {
+        "type": "string"
+      }
     },
     "nestedlist": {
+      "type": "object",
+      "contenttype": {
+        "type": "string",
+        "enum": ["nestedlist"]
+      },
+      "tags": {"$ref": "#/definitions/tags"},
+      "content": {
+        "type": "string"
+      },
+      "nested": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "oneOf": [
+            { "$ref": "#/definitions/list" }
+          ]
+        }
+      }
     },
     "text": {
+      "type": "object",
+      "contenttype": {
+        "type": "string",
+        "enum": ["text"]
+      },
+      "tags": {"$ref": "#/definitions/tags"},
+      "content": {
+        "type": "string"
+      }
     }
   }
 }
