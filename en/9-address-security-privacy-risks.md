@@ -138,7 +138,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 * Privacy Aware **(Current GC EARB Principles)**
 * Privacy Aware **(GC EA Principles)**
 * [Privacy Act (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-privacy-act/)
-* [Personal Information Protection & Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
+* [Personal Information Protection & Electronic Documents Act (PIPEDA) (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
 * [Privacy by Design (Wikipedia)](https://en.wikipedia.org/wiki/Privacy_by_design)
 
 </section>
