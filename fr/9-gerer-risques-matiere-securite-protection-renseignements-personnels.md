@@ -82,8 +82,8 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 ### Ressources similaires
 
 * [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
-* [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
-* [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
+* [Privacy (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/privacy/)
+* [Secure services (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 
 </section>
 </section>
@@ -197,11 +197,11 @@ Integrating security from the outset and “shifting security left” in the ser
 * [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 * Privacy Aware **(Current GC EARB Principles)**
 * Privacy Aware **(GC EA Principles)**
-* [Information security](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
-* [Cloud security](https://www.gov.uk/service-manual/operations/cloud-security.html) **(Digital Service Standard (UK))**
-* [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
-* [Identity assurance](https://www.dta.gov.au/standard/design-guides/identity-assurance/) **(Digital Service Standard (AU))**
-* [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
+* [Information security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/information-security.html)
+* [Cloud security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/operations/cloud-security.html)
+* [User accounts and logins (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/user-accounts)
+* [Identity assurance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/identity-assurance/)
+* [Secure services (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 
 </section>
 </section>
@@ -243,8 +243,8 @@ Canadians want to have confidence that government digital services are designed 
 * [Avis de mise en œuvre de la Politique sur la technologie de l’information (AMPTI)](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique.html)
 * [Avis de mise en oeuvres de la politique sur la sécurité (interne au gouvernement du Canada)](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-fra.asp)
 * [Orientation relative à la résidence des données électroniques](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html)
-* [Code criminel du Canada, Utilisation non autorisée d’ordinateur](http://laws-lois.justice.gc.ca/fra/lois/C-46/TexteComplet.html#h-97) **(Sect 342.1/342.2)**
-* [Code criminel du Canada, Méfait à l’égard de données informatiques](http://laws-lois.justice.gc.ca/fra/lois/C-46/TexteComplet.html#h-117) **(Sect 430(1.1))**
+* [Code criminel du Canada, Utilisation non autorisée d’ordinateur (Sect 342.1/342.2)](http://laws-lois.justice.gc.ca/fra/lois/C-46/TexteComplet.html#h-97)
+* [Code criminel du Canada, Méfait à l’égard de données informatiques (Sect 430(1.1))](http://laws-lois.justice.gc.ca/fra/lois/C-46/TexteComplet.html#h-117)
 
 </section>
 
@@ -252,9 +252,9 @@ Canadians want to have confidence that government digital services are designed 
 
 ### Ressources similaires
 
-* [7. Understand security and privacy issues](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues) **(Digital Service Standard (UK))**
-* [11. Manage security and privacy through reusable processes](https://playbook.cio.gov/#play11) **(Digital Services Playbook (US))**
-* [5. Make it secure](https://www.dta.gov.au/standard/5-make-it-secure/) **(Digital Service Standard (AU))**
+* [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
+* [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
+* [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
 
 </section>
 </section>
