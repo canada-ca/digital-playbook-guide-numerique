@@ -1,6 +1,6 @@
 ---
 layout: default
-title:"9. Address security and privacy risks (draft)"
+title: "9. Address security and privacy risks (draft)"
 lang: en
 altLang: fr
 altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personnels
@@ -97,7 +97,7 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 
 Canadians’ support for open data and digital services is enhanced when their privacy rights are protected: transparency and respect for privacy are complementary goals. The shift to digital government offers opportunities to strengthen privacy rights and safely share more data that can benefit society. Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data.
 
-Embedding privacy protection in the design of digital applications or open data increases political legitimacy and public confidence, and privacy safeguards are a necessary condition for a successful shift to a digital Government of Canada. Digital services also have the potential to enhance privacy rights, for example, by facilitating access to and correction of personal information. 
+Embedding privacy protection in the design of digital applications or open data increases political legitimacy and public confidence, and privacy safeguards are a necessary condition for a successful shift to a digital Government of Canada. Digital services also have the potential to enhance privacy rights, for example, by facilitating access to and correction of personal information.
 
 Organizations have a responsibility to ensure that the data under their care remains protected at all times, including in the process of sharing with external partners and within their own network. This requires an understanding what data is worth protecting, manage who and what can access it, and build effective defenses that both support innovation and protect the investment made in services and associated assets.
 
@@ -111,7 +111,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 * Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept.
 * Ensure that digital solutions and open data initiatives comply with requirements regarding the collection and protection of personal information.
 * Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information.
-* Use appropriate de-identification strategies to minimize the risk of disclosing personal information. 
+* Use appropriate de-identification strategies to minimize the risk of disclosing personal information.
 * Incorporate privacy safeguards into partnership and data sharing agreements.
 * Develop your system with the 7 principles of Privacy by Design in mind.
 * Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual.
@@ -120,7 +120,6 @@ Organizations have a responsibility to ensure that the data under their care rem
 * Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
 * Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
 * Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default.
-
 
 </section>
 
@@ -155,7 +154,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 <div class="dpgn-section-intro-guideline">
 
-Digital services need to be designed to provide a rich and streamlined user experience, while also ensuring that sensitive information is protected within a processing environment that remains secure throughout its lifecycle. Service owners must be mindful that users will often find a way to circumvent burdensome security measures for convenience. It is important to make security seamless and frictionless by designing security measures that enable the user experience, through streamlined user-interface and features with which they interact and, to help improve the overall posture to prevent workarounds. Leveraging enabling services such as digital identity will help to provide users with access to digital services from their preferred device. 
+Digital services need to be designed to provide a rich and streamlined user experience, while also ensuring that sensitive information is protected within a processing environment that remains secure throughout its lifecycle. Service owners must be mindful that users will often find a way to circumvent burdensome security measures for convenience. It is important to make security seamless and frictionless by designing security measures that enable the user experience, through streamlined user-interface and features with which they interact and, to help improve the overall posture to prevent workarounds. Leveraging enabling services such as digital identity will help to provide users with access to digital services from their preferred device.
 
 Services must be designed to resist attacks. However, security is not one-size fits all, and appropriate defenses are best developed to address the “soft spots” in your systems. By thinking about situations in which you could be compromised, it will help to identify and eliminate design issues. Undertaking a defense-in-depth approach provides layered security measures to help prevent against evolving and existing threats. It allows security to be addressed at multiple layers, hardening your systems as required, while providing unimpeded operations in others.
 
@@ -169,7 +168,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 * Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
 * Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies. 
-* Use deployment scripts to ensure configuration of production environment remains consistent and controllable
+* Use deployment scripts to ensure configuration of production environment remains consistent and controllable.
 * Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
 * Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
 * Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
@@ -180,7 +179,7 @@ Integrating security from the outset and “shifting security left” in the ser
 * Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
 * Determine how long you need to protect your assets during and after their life / intended use.
 * Document the plan and process for maintaining up-to-date and supported software for services/system
-* Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
+* Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
 
 </section>
 
@@ -188,8 +187,8 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Implementation guides
 
-- [Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
-- [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* [Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
+* [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 
@@ -219,7 +218,6 @@ Integrating security from the outset and “shifting security left” in the ser
 The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate.
 
 Canadians want to have confidence that government digital services are designed to meet the laws and regulations stipulated in multiple acts protecting the confidentiality, integrity and accessibility of systems and information. Develop a legal and regulatory view of the department for the purposes of designing secure information systems through identifying the *business needs for security*. A business need for security is any protection or compliance requirement that ensures the confidentiality, integrity or availability of a business activity or information assets supporting a business activity. Business needs for security can also be derived from departmental missions, objectives, priorities, the need to preserve the organization's image and reputation, and various obligations that may have been contracted.
-
 
 </div>
 
