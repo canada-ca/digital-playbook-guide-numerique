@@ -23,7 +23,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 **Guidelines:**
 
 <!-- markdownlint-disable MD032 -->
-* TOC
+- TOC
 {:toc}
 <!-- markdownlint-enable MD032 -->
 
