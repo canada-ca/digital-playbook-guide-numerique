@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "link-check": "node link-check.js",
-    "lint": "markdownlint \"*.md\" \"en/*.md\" \"fr/*.md\"",
+    "lint": "markdownlint -i node_modules \"**/*.md\"",
     "test": "npm run lint && npm run link-check"
   },
   "repository": {
@@ -21,8 +21,8 @@
   "devDependencies": {
     "chalk": "^2.4.0",
     "glob": "^7.1.2",
-    "markdown-link-check": "^3.3.0",
-    "markdownlint-cli": "^0.8.1"
+    "markdown-link-check": "^3.5.0",
+    "markdownlint-cli": "^0.9.0"
   },
   "dependencies": {}
 }
