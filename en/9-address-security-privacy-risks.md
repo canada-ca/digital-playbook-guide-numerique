@@ -1,6 +1,6 @@
 ---
 layout: default
-title:"9. Address security and privacy risks (draft)"
+title:  "9. Address security and privacy risks (draft)"
 lang: en
 altLang: fr
 altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personnels
@@ -41,7 +41,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 ## 9.1 Take a balanced approach to managing risk by implementing appropriate privacy and security measures
 
-<div class="dpgn-section-intro-guideline">
+  <div class="dpgn-section-intro-guideline">
 
 Managing risk is critical for government. All organizations face risks, no matter the size; one size does not fit all when it comes to cyber risk management. Each organisation has to make difficult decisions around how much time and money to spend protecting their technology and services. An understanding of the users, data and threats that affect the service will help to inform this risk-based approach to support the delivery of a usable and secure system. Appropriate steps must be taken to identify, assess and understand security and privacy risks to GC sensitive and protected data and the systems that process this data. 
 
@@ -71,20 +71,20 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 
 ### Implementation guides
 
-* [Information Technology Policy Implementation Notices (ITPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
-* [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
-* [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
+  * [Information Technology Policy Implementation Notices (ITPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
+  * [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
+  * [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
 
-</section>
+  </section>
 
-<section class="dpgn-section-similar">
+  <section class="dpgn-section-similar">
 
-### Additional References
-* [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
-* [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
-* [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
+  ### Additional References
+  * [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
+  * [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
+  * [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
 
-</section>
+  </section>
 
 </section>
 
@@ -102,50 +102,50 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 </div>
 
-<section class="dpgn-section-checklist">
+  <section class="dpgn-section-checklist">
 
-### Checklist
+  ### Checklist
 
-* Ensure that a preliminary privacy impact assessment (PPIA) or privacy impact assessment (PIA) has been completed if personal information is involved in the service.
-* Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept.
-* Ensure that digital solutions and open data initiatives comply with requirements regarding the collection and protection of personal information.
-* Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information.
-* Use appropriate de-identification strategies to minimize the risk of disclosing personal information. 
-* Incorporate privacy safeguards into partnership and data sharing agreements.
-* Develop your system with the 7 principles of Privacy by Design in mind.
-* Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual.
-* Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
-* Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
-* Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
-* Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
-* Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default.
+  * Ensure that a preliminary privacy impact assessment (PPIA) or privacy impact assessment (PIA) has been completed if personal information is involved in the service.
+  * Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept.
+  * Ensure that digital solutions and open data initiatives comply with requirements regarding the collection and protection of personal information.
+  * Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information.
+  * Use appropriate de-identification strategies to minimize the risk of disclosing personal information. 
+  * Incorporate privacy safeguards into partnership and data sharing agreements.
+  * Develop your system with the 7 principles of Privacy by Design in mind.
+  * Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual.
+  * Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
+  * Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
+  * Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
+  * Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
+  * Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default.
 
 
-</section>
+  </section>
 
-<section class="dpgn-section-guides">
+  <section class="dpgn-section-guides">
 
-### Implementation guides
+  ### Implementation guides
 
-* [Office of the Privacy Commissioner of Canada](https://www.priv.gc.ca/en/for-federal-institutions/)
-* [Guidance on Preparing Information Sharing Agreements Involving Personal Information](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html) 
-* [Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
+  * [Office of the Privacy Commissioner of Canada](https://www.priv.gc.ca/en/for-federal-institutions/)
+  * [Guidance on Preparing Information Sharing Agreements Involving Personal Information](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html) 
+  * [Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
 
-</section>
+  </section>
 
-<section class="dpgn-section-similar">
+  <section class="dpgn-section-similar">
 
-### Additional References
+  ### Additional References
 
-* [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
-* Privacy Aware **(Current GC EARB Principles)**
-* Privacy Aware **(GC EA Principles)**
-* [Privacy Act](https://www.priv.gc.ca/en/for-federal-institutions/)
-* [Personal Information Protection & Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
-* [Privacy by Design](https://en.wikipedia.org/wiki/Privacy_by_design)
+  * [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
+  * Privacy Aware **(Current GC EARB Principles)**
+  * Privacy Aware **(GC EA Principles)**
+  * [Privacy Act](https://www.priv.gc.ca/en/for-federal-institutions/)
+  * [Personal Information Protection & Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
+  * [Privacy by Design](https://en.wikipedia.org/wiki/Privacy_by_design)
 
-</section>
-
+  </section>
+  
 </section>
 
 <section class="dpgn-section-guideline">
@@ -162,51 +162,51 @@ Integrating security from the outset and “shifting security left” in the ser
 
 </div>
 
-<section class="dpgn-section-checklist">
+  <section class="dpgn-section-checklist">
 
-### Checklist
+  ### Checklist
 
-* Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
-* Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies. 
-* Use deployment scripts to ensure configuration of production environment remains consistent and controllable
-* Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
-* Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
-* Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
-* Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
-* Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access.
-* Maintain logs of user access and system interactions to fully trace a user as they traverse each part of the system
-* Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats
-* Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
-* Determine how long you need to protect your assets during and after their life / intended use.
-* Document the plan and process for maintaining up-to-date and supported software for services/system
-* Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
+  * Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
+  * Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies. 
+  * Use deployment scripts to ensure configuration of production environment remains consistent and controllable
+  * Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
+  * Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
+  * Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
+  * Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
+  * Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access.
+  * Maintain logs of user access and system interactions to fully trace a user as they traverse each part of the system
+  * Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats
+  * Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
+  * Determine how long you need to protect your assets during and after their life / intended use.
+  * Document the plan and process for maintaining up-to-date and supported software for services/system
+  * Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
 
-</section>
+  </section>
 
-<section class="dpgn-section-guides">
+  <section class="dpgn-section-guides">
 
-### Implementation guides
+  ### Implementation guides
 
-- [Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
-- [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+  - [Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
+  - [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
-</section>
+  </section>
 
-<section class="dpgn-section-similar">
+  <section class="dpgn-section-similar">
 
-### Similar resources
+  ### Similar resources
 
-* [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
-* Privacy Aware **(Current GC EARB Principles)**
-* Privacy Aware **(GC EA Principles)**
-* [Information security](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
-* [Cloud security](https://www.gov.uk/service-manual/operations/cloud-security.html) **(Digital Service Standard (UK))**
-* [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
-* [Identity assurance](https://www.dta.gov.au/standard/design-guides/identity-assurance/) **(Digital Service Standard (AU))**
-* [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
+  * [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
+  * Privacy Aware **(Current GC EARB Principles)**
+  * Privacy Aware **(GC EA Principles)**
+  * [Information security](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
+  * [Cloud security](https://www.gov.uk/service-manual/operations/cloud-security.html) **(Digital Service Standard (UK))**
+  * [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
+  * [Identity assurance](https://www.dta.gov.au/standard/design-guides/identity-assurance/) **(Digital Service Standard (AU))**
+  * [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
 
-</section>
-
+  </section>
+  
 </section>
 
 <section class="dpgn-section-guideline">
@@ -219,45 +219,46 @@ The law and governance in cyberspace is not the sole responsibility nor under th
 
 Canadians want to have confidence that government digital services are designed to meet the laws and regulations stipulated in multiple acts protecting the confidentiality, integrity and accessibility of systems and information. Develop a legal and regulatory view of the department for the purposes of designing secure information systems through identifying the *business needs for security*. A business need for security is any protection or compliance requirement that ensures the confidentiality, integrity or availability of a business activity or information assets supporting a business activity. Business needs for security can also be derived from departmental missions, objectives, priorities, the need to preserve the organization's image and reputation, and various obligations that may have been contracted.
 
+
 </div>
 
-<section class="dpgn-section-checklist">
+  <section class="dpgn-section-checklist">
 
-### Checklist
+  ### Checklist
 
-* Make sure to address all legal and privacy issues associated with protecting and sharing user data
-* Understand to what degree the solution has to comply with the Canadian legislation, TBS policy instruments, and departmental security policies, and create a plan on how to achieve this
-* Engage the appropriate privacy, security, and legal officer(s) to discuss the legal aspects of managing cyber risks
-* Consider the collection, security, and access obligations contained in the Privacy Act when designing digital applications; the need to de-identify personal data before release; and the need to address privacy when establishing partnerships.
-* Document the protective measures implemented to enable the secure processing and sharing of data and information across government
-* Document how the service manages information and records (data) in order to protect their confidentiality and integrity, and ensure their availability.
-* Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
-* Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
-* Develop and maintain cybersecurity training programs to develop appropriate behaviours and culture for employees and contractors
-* Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
-* Establish terms of services to ensure users understand how their data will be used and how it will be accessed
+  * Make sure to address all legal and privacy issues associated with protecting and sharing user data
+  * Understand to what degree the solution has to comply with the Canadian legislation, TBS policy instruments, and departmental security policies, and create a plan on how to achieve this
+  * Engage the appropriate privacy, security, and legal officer(s) to discuss the legal aspects of managing cyber risks
+  * Consider the collection, security, and access obligations contained in the Privacy Act when designing digital applications; the need to de-identify personal data before release; and the need to address privacy when establishing partnerships.
+  * Document the protective measures implemented to enable the secure processing and sharing of data and information across government
+  * Document how the service manages information and records (data) in order to protect their confidentiality and integrity, and ensure their availability.
+  * Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
+  * Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
+  * Develop and maintain cybersecurity training programs to develop appropriate behaviours and culture for employees and contractors
+  * Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
+  * Establish terms of services to ensure users understand how their data will be used and how it will be accessed
 
-</section>
+  </section>
 
-<section class="dpgn-section-guides">
+  <section class="dpgn-section-guides">
 
-### Implementation guides
+  ### Implementation guides
+  
+  * [GC Information Technology Policy Implementation Notices](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
+  * [GC Security Policy Implementation Notices](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
+  * [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
+  * [Canadian Criminal Code, Unauthorized use of computer](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97) **(Sect 342.1/342.2)**
+  * [Canadian Criminal Code, Mischief in relation to computer data](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117) **(Sect 430(1.1))**
+  </section>
 
-* [GC Information Technology Policy Implementation Notices](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
-* [GC Security Policy Implementation Notices](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
-* [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
-* [Canadian Criminal Code, Unauthorized use of computer](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97) **(Sect 342.1/342.2)**
-* [Canadian Criminal Code, Mischief in relation to computer data](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117) **(Sect 430(1.1))**
-</section>
+  <section class="dpgn-section-similar">
 
-<section class="dpgn-section-similar">
+  ### Similar resources
+  
+  * [7. Understand security and privacy issues](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues) **(Digital Service Standard (UK))**
+  * [11. Manage security and privacy through reusable processes](https://playbook.cio.gov/#play11) **(Digital Services Playbook (US))**
+  * [5. Make it secure](https://www.dta.gov.au/standard/5-make-it-secure/) **(Digital Service Standard (AU))**
 
-### Similar resources
-
-* [7. Understand security and privacy issues](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues) **(Digital Service Standard (UK))**
-* [11. Manage security and privacy through reusable processes](https://playbook.cio.gov/#play11) **(Digital Services Playbook (US))**
-* [5. Make it secure](https://www.dta.gov.au/standard/5-make-it-secure/) **(Digital Service Standard (AU))**
-
-</section>
-
+  </section>
+  
 </section>
