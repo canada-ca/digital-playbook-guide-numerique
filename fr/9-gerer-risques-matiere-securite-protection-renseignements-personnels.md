@@ -8,7 +8,7 @@ altLangPage: 9-address-security-privacy-risks
 <div class="dpgn-section-intro-standard">
 
 Canadians who use government services must have confidence that:
- 
+
 * any information they provide is confidential and stored appropriately
 * the system they’re using is safe and secure
 * they know how their information will be used by government
@@ -24,7 +24,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 **Lignes directrices :**
 
 <!-- markdownlint-disable MD032 -->
-- TOC
+* TOC
 {:toc}
 <!-- markdownlint-enable MD032 -->
 
@@ -194,7 +194,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Ressources similaires
 
-- [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
+* [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 * Privacy Aware **(Current GC EARB Principles)**
 * Privacy Aware **(GC EA Principles)**
 * [Information security](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
