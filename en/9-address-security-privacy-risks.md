@@ -133,9 +133,9 @@ Organizations have a responsibility to ensure that the data under their care rem
 
   ### Additional References
 
-  * [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
-  * Privacy Aware (Current GC EARB Principles)
-  * Privacy Aware (GC EA Principles)
+  * [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
+  * Privacy Aware **(Current GC EARB Principles)**
+  * Privacy Aware **(GC EA Principles)**
   *	[Privacy Act](https://www.priv.gc.ca/en/for-federal-institutions/)
   *	[Personal Information Protection & Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
 
@@ -193,9 +193,9 @@ Integrating security from the outset and “shifting security left” in the ser
 
   ### Similar resources
 
-  * [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
-  * Privacy Aware (Current GC EARB Principles)
-  * Privacy Aware (GC EA Principles)
+  * [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
+  * Privacy Aware **(Current GC EARB Principles)**
+  * Privacy Aware **(GC EA Principles)**
   * [Information security](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
   * [Cloud security](https://www.gov.uk/service-manual/operations/cloud-security.html) **(Digital Service Standard (UK))**
   * [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
@@ -244,8 +244,8 @@ Canadians want to have confidence that government digital services are designed 
   * [GC Information Technology Policy Implementation Notices](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
   * [GC Security Policy Implementation Notices](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
   * [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
-  * [Canadian Criminal Code, Unauthorized use of computer (Sect 342.1/342.2)](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97)
-  * [Canadian Criminal Code, Mischief in relation to computer data (Sect 430(1.1))](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117)
+  * [Canadian Criminal Code, Unauthorized use of computer](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97) **(Sect 342.1/342.2)**
+  * [Canadian Criminal Code, Mischief in relation to computer data](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117) **(Sect 430(1.1))**
   </section>
 
   <section class="dpgn-section-similar">
