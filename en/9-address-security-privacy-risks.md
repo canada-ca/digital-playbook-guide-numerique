@@ -137,7 +137,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 * [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
 * Privacy Aware **(Current GC EARB Principles)**
 * Privacy Aware **(GC EA Principles)**
-* [Privacy Act](https://www.priv.gc.ca/en/for-federal-institutions/)
+* [Privacy Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-privacy-act/)
 * [Personal Information Protection & Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
 * [Privacy by Design](https://en.wikipedia.org/wiki/Privacy_by_design)
 
