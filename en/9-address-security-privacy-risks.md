@@ -167,7 +167,7 @@ Integrating security from the outset and “shifting security left” in the ser
 ### Checklist
 
 * Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
-* Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies. 
+* Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies.
 * Use deployment scripts to ensure configuration of production environment remains consistent and controllable.
 * Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
 * Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
@@ -248,6 +248,7 @@ Canadians want to have confidence that government digital services are designed 
 * [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
 * [Canadian Criminal Code, Unauthorized use of computer](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97) **(Sect 342.1/342.2)**
 * [Canadian Criminal Code, Mischief in relation to computer data](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117) **(Sect 430(1.1))**
+
 </section>
 
 <section class="dpgn-section-similar">
