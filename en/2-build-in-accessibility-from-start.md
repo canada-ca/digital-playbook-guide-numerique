@@ -7,7 +7,50 @@ altLangPage: 2-integrer-accessibilite-des-depart
 ---
 <div class="dpgn-section-intro-standard">
 
-**[TODO: Add/revise introductory text]**
+Building in accessibility from the start is key to ensuring that your programs, service, tools and applications can be used by everyone, including those living with a permanent disability, but also by those who may have a temporary limitation or disability due to illness, accident, environmental changes or technological difficulties.
+
+Worldwide, over a billion people, about 15% of the world's population, have some form of disability. Between 110 million and 190 million adults have significant difficulties in functioning (<a href="http://www.who.int/news-room/fact-sheets/detail/disability-and-health">World Health Organization</a>).
+
+In Canada:
+
+- 14% of the population (4.9 million Canadians) identify as a person with a disability
+- 30% of the population have a disability if you include “invisible” disabilities (e.g., colour blindness, cognitive, mental health or chronic pain-related)
+- 50% of the population have a disability if you take into account age-related impairments (e.g., low vision, low hearing or cognitive impairments)
+- At least once in a person’s lifetime, they may also have a temporary disability brought on through accident, illness, repetitive strain or lifecycle changes (pregnancy).
+
+<section>
+
+## Curb Cut Effect
+
+Curb cuts are intended to help wheelchairs get up on sidewalks, but they also help bicyclists, parents with strollers, delivery people, and many other non-disabled groups. This benefit to others became known as the “Curb-Cut Effect”.
+
+When inclusive and accessible design is in place, it is a benefit for all and seamlessly meets the needs of individuals across the board, including people without disabilities.
+
+</section>
+<section>
+
+## Situational Limitations
+
+Sometimes people are in situations that limit their ability to hear, see, use their hands, concentrate, understand instructions, etc. Sometimes they are using devices that have limitations in size, input interface, etc. For example:
+
+- Watching TV in a noisy environment (limits one's ability to hear, but closed captionning helps by conveying audio messages through text)
+- Driving limits one's ability to concentrate on multiple things and limits the use of their hands. When drivers are lost, they often rely upon their smartphone for directions. To avoid getting tickets for distracting driving, taking one's eyes off the road or taking one's hands off the wheel, drivers can use voice recognition to ask the smartphone directions and have the directions read aloud.
+- Walking around with small children (e.g., curb cuts for stollers, hands full, concentrate, understand instructions)
+- Having one's hands full may require relying on smart speakers for instructions (e.g., getting recipe details while cooking, getting step-by-step instructions while fixing things around the home)
+- Using a small mobile phone in bright sunlight, where the glare reduces visibility, while browsing the Web with only one hand (e.g., carrying a bag in the other hand) on a slow Internet connection
+- Having to interact in another language
+
+These limitations are sometimes mentioned as an example of how accessible design helps everyone, including people without disabilities.
+
+</section>
+<section>
+
+## Added Benefits
+
+- findability; when content is accessible it increases its findability
+- understandable content for all users that is also machine-readable
+
+</section>
 
 </div>
 
@@ -48,6 +91,8 @@ Development of accessible (regardless of ability, device or environment) digital
 
 **[TODO: Add/revise checklist items]**
 
+- Familiarize yourself with the standards
+- Design the service to be as easy to use as possible. Usability is critical to making a service accessible for people with disabilities and limitations.
 - Ensure design and development resources have the knowledge and expertise to build accessible services and to resolve accessibility issues.
 - Ensure testing and quality assurance resources have the knowledge and expertise to identify accessibility issues.
 - Ensure support resources are trained to assist persons with disabilities with completing tasks and accessing information.
@@ -96,15 +141,11 @@ Development of accessible (regardless of ability, device or environment) digital
 
 Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment.
 
+Ensure the service is accessible to all users regardless of their ability and environment. This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can't use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person.
+
 All users should be able to complete the service the first time they try, as quickly and easily as possible.
 
-This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can't use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person.
-
-If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. **(Digital Service Standard (Ontario))**
-
-Ensure the service is accessible to all users regardless of their ability and environment.
-
-You need to make sure everyone who needs your service can use it. This includes people with disabilities and older people, and people who can’t use, or struggle with, digital services.
+You need to make sure everyone who needs your service can use it. This includes people with disabilities and older people, and people who can’t use, or struggle with, digital services. If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. **(Digital Service Standard (Ontario))**
 
 Your service must be accessible to users regardless of their digital confidence and access to a digital environment. This includes users in remote areas and users’ different devices. **(Digital Service Standard (AU))**
 
@@ -116,14 +157,15 @@ Your service must be accessible to users regardless of their digital confidence 
 
 **[TODO: Add/revise checklist items]**
 
-- meet the [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
+- {: .dpgn-accessibility } meet the [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
+- {: .dpgn-accessibility-usability } [Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html)
 - formalize an approach to integrating automated testing tools into the process of developing and maintaining government ICT **(Digital Service Standard (Ontario))**
 - train development staff on use of keyboard only navigation and ensure that new features are regularly tested **(Digital Service Standard (Ontario))**
 - make it easy for People with Disabilities to reach out to the accessibility team to address the problem **(Digital Service Standard (Ontario))**
 - ensure when technology platforms are considered that there is transparency about known WCAG 2.0 AA issues and efforts to implement ATAG 2.0 - Part A & B **(Digital Service Standard (Ontario))**
 - contribute to the development of best practices and publish approaches the province has used to implement the AODA **(Digital Service Standard (Ontario))**
-- conduct research and testing to ensure the service is accessible to people of all abilities no matter how they access the service **(Digital Service Standard (Ontario))**
-- use research, testing and analytics to improve the service, including the assisted digital support model **(Digital Service Standard (Ontario))**
+- {: .dpgn-accessibility-usability } conduct research and testing to ensure the service is accessible to people of all abilities no matter how they access the service **(Digital Service Standard (Ontario))**
+- {: .dpgn-accessibility-usability } use research, testing and analytics to improve the service, including the assisted digital support model **(Digital Service Standard (Ontario))**
 - explain all end-to-end user experiences, show they work and how they were tested **(Digital Service Standard (Ontario))**
 - make sure the assisted digital support will be sustainably funded and free to use **(Digital Service Standard (Ontario))**
 - provide an accessible method for all users to provide feedback on the service or request additional support at any time **(Digital Service Standard (Ontario))**
@@ -133,14 +175,14 @@ Your service must be accessible to users regardless of their digital confidence 
 
 #### Alpha stage
 
-- show the type of environments users may access the service in, including with different browsers and desktop and mobile devices, and when connections are slower and there may be limited data; for example, through user stories **(Digital Service Standard (AU))**
-- show diversity in research recruitment and targeted users, including people from different cultural backgrounds and people with disability **(Digital Service Standard (AU))**
+- {: .dpgn-accessibility-usability } show the type of environments users may access the service in, including with different browsers and desktop and mobile devices, and when connections are slower and there may be limited data; for example, through user stories **(Digital Service Standard (AU))**
+- {: .dpgn-accessibility-usability } show diversity in research recruitment and targeted users, including people from different cultural backgrounds and people with disability **(Digital Service Standard (AU))**
 - show consideration of situational and environmental limitations that affect a user’s ability to access the product **(Digital Service Standard (AU))**
 - show the plan to meet accessibility requirements in the design of the product, for example how it will meet WCAG 2.0 AA **(Digital Service Standard (AU))**
 - show what digital assistance might be needed to support users; for example web chat, telephone assistance, face-to-face, clear instructions, checklists, and so on. **(Digital Service Standard (AU))**
 - show your prototypes can accommodate users from different backgrounds and users with disability **(Digital Service Standard (AU))**
 - show any accessibility issues and barriers that might need addressing in the Beta stage **(Digital Service Standard (AU))**
-- show you have access to facilities to perform testing on various devices or platforms, for example a plan for testing. **(Digital Service Standard (AU))**
+- {: .dpgn-accessibility-usability } show you have access to facilities to perform testing on various devices or platforms, for example a plan for testing. **(Digital Service Standard (AU))**
 
 </section>
 
@@ -148,10 +190,10 @@ Your service must be accessible to users regardless of their digital confidence 
 
 #### Beta stage
 
-- show iteration in the design and content of your service to meet accessibility requirements and improve usability for people with disability **(Digital Service Standard (AU))**
+- {: .dpgn-accessibility-usability } show iteration in the design and content of your service to meet accessibility requirements and improve usability for people with disability **(Digital Service Standard (AU))**
 - show non-digital access and support for people unable to use, or struggling with, the digital service
 - show end-to-end user journeys, including assisted digital journeys, and demonstrate that they work and how you tested them **(Digital Service Standard (AU))**
-- show how you’ve included cultural and linguistically diverse communities in your design **(Digital Service Standard (AU))**
+- {: .dpgn-accessibility-usability } show how you’ve included cultural and linguistically diverse communities in your design **(Digital Service Standard (AU))**
 - show a plan to include translation for non-English speaking audiences, as appropriate **(Digital Service Standard (AU))**
 - show you have testing environments, systems and approaches for non-digital parts of the service (including assisted digital routes); for example, a testing plan **(Digital Service Standard (AU))**
 - show how the service will perform under expected loads (including assisted digital routes) **(Digital Service Standard (AU))**
@@ -171,7 +213,7 @@ Your service must be accessible to users regardless of their digital confidence 
 #### Live stage
 
 - show your service is accessible **(Digital Service Standard (AU))**
-- show evidence of usability testing, including **(Digital Service Standard (AU))**
+- {: .dpgn-accessibility-usability } show evidence of usability testing, including **(Digital Service Standard (AU))**
   - users with low level digital skills
   - people with disability
   - people from different cultural and linguistic backgrounds
