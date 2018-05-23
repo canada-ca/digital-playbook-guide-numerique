@@ -244,7 +244,7 @@ Canadians want to have confidence that government digital services are designed 
 ### Implementation guides
 
 * [GC Information Technology Policy Implementation Notices](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
-* [GC Security Policy Implementation Notices](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
+* [GC Security Policy Implementation Notices (internal to Government of Canada)](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
 * [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
 * [Canadian Criminal Code, Unauthorized use of computer](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97) **(Sect 342.1/342.2)**
 * [Canadian Criminal Code, Mischief in relation to computer data](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117) **(Sect 430(1.1))**
