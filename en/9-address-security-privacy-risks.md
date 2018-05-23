@@ -251,10 +251,10 @@ Canadians want to have confidence that government digital services are designed 
   <section class="dpgn-section-similar">
 
   ### Similar resources
-
-  - [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
-  - [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
-  - [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
+  
+  * [7. Understand security and privacy issues](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues) **(Digital Service Standard (UK))**
+  * [11. Manage security and privacy through reusable processes](https://playbook.cio.gov/#play11) **(Digital Services Playbook (US))**
+  * [5. Make it secure](https://www.dta.gov.au/standard/5-make-it-secure/) **(Digital Service Standard (AU))**
 
   </section>
   
