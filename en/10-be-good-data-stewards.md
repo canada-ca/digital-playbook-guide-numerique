@@ -234,16 +234,16 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Using data to improve your service: an introduction](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction) **(Digital Service Standard (UK))**
-- [Choosing digital analytics tools](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools) **(Digital Service Standard (UK))**
-- [Measuring digital take-up](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Digital Service Standard (UK))**
-- [Measuring user satisfaction](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction) **(Digital Service Standard (UK))**
-- [Measuring cost per transaction](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) **(Digital Service Standard (UK))**
-- [Measuring completion rate](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) **(Digital Service Standard (UK))**
-- [Sharing data on the Performance Platform](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Digital Service Standard (UK))**
-- [Measuring service performance](https://www.dta.gov.au/standard/measuring-performance/) **(Digital Service Standard (AU))**
-- [Benefits of User-centered Design](https://www.usability.gov/what-and-why/benefits-of-ucd.html) **(Usability.gov (US))**
-- [Measuring success](https://www.gov.uk/service-manual/measuring-success) **(Service manual (UK))**
+- [Using data to improve your service: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)
+- [Choosing digital analytics tools (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)
+- [Measuring digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
+- [Measuring user satisfaction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction)
+- [Measuring cost per transaction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction)
+- [Measuring completion rate (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)
+- [Sharing data on the Performance Platform (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform)
+- [Measuring service performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/measuring-performance/)
+- [Benefits of User-centered Design (Usability.gov (US))](https://www.usability.gov/what-and-why/benefits-of-ucd.html)
+- [Measuring success (Service manual (UK))](https://www.gov.uk/service-manual/measuring-success)
 
 </section>
 
