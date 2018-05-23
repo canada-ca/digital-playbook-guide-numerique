@@ -7,8 +7,6 @@ altLangPage: 2-integrer-accessibilite-des-depart
 ---
 <div class="dpgn-section-intro-standard">
 
-**[TODO: Add/revise introductory text]**
-
 Building in accessibility from the start is key to ensure that your programs, service, tools or application can be used by everyone, including those living with a permanent disability, but also by those who may have a temporary limitation or disability due to illness, accident, environmental changes or technological difficulties.
 
 Worldwide, Over a billion people, about 15% of the world's population, have some form of disability. Between 110 million and 190 million adults have significant difficulties in functioning. (<a href="http://www.who.int/news-room/fact-sheets/detail/disability-and-health">World Health Organization</a>)
