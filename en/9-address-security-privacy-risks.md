@@ -134,7 +134,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 ### Similar resources
 
-* [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
+* [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 * Privacy Aware **(Current GC EARB Principles)**
 * Privacy Aware **(GC EA Principles)**
 * [Privacy Act (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-privacy-act/)
@@ -191,14 +191,14 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Similar resources
 
-* [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
+* [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
 * Privacy Aware **(Current GC EARB Principles)**
 * Privacy Aware **(GC EA Principles)**
-* [Information security](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
-* [Cloud security](https://www.gov.uk/service-manual/operations/cloud-security.html) **(Digital Service Standard (UK))**
-* [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
-* [Identity assurance](https://www.dta.gov.au/standard/design-guides/identity-assurance/) **(Digital Service Standard (AU))**
-* [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
+* [Information security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/information-security.html)
+* [Cloud security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/operations/cloud-security.html)
+* [User accounts and logins (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/user-accounts)
+* [Identity assurance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/identity-assurance/)
+* [Secure services (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 
 </section>
 </section>
@@ -248,9 +248,9 @@ Canadians want to have confidence that government digital services are designed 
 
 ### Similar resources
 
-* [7. Understand security and privacy issues](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues) **(Digital Service Standard (UK))**
-* [11. Manage security and privacy through reusable processes](https://playbook.cio.gov/#play11) **(Digital Services Playbook (US))**
-* [5. Make it secure](https://www.dta.gov.au/standard/5-make-it-secure/) **(Digital Service Standard (AU))**
+* [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
+* [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
+* [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
 
 </section>
 </section>
