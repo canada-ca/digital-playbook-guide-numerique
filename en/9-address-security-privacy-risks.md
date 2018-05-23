@@ -76,17 +76,15 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
 
 </section>
-
 <section class="dpgn-section-similar">
 
-### Additional References
+### Similar resources
 
 * [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
 * [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
 * [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
 
 </section>
-
 </section>
 
 <section class="dpgn-section-guideline">
@@ -132,10 +130,9 @@ Organizations have a responsibility to ensure that the data under their care rem
 * [Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
 
 </section>
-
 <section class="dpgn-section-similar">
 
-### Additional References
+### Similar resources
 
 * [10. Embed privacy and security by design](https://www.ontario.ca/page/digital-service-standard#section-11) **(Digital Service Standard (Ontario))**
 * Privacy Aware **(Current GC EARB Principles)**
@@ -145,7 +142,6 @@ Organizations have a responsibility to ensure that the data under their care rem
 * [Privacy by Design](https://en.wikipedia.org/wiki/Privacy_by_design)
 
 </section>
-
 </section>
 
 <section class="dpgn-section-guideline">
@@ -191,7 +187,6 @@ Integrating security from the outset and “shifting security left” in the ser
 * [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
-
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -206,7 +201,6 @@ Integrating security from the outset and “shifting security left” in the ser
 * [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
 
 </section>
-
 </section>
 
 <section class="dpgn-section-guideline">
@@ -250,7 +244,6 @@ Canadians want to have confidence that government digital services are designed 
 * [Canadian Criminal Code, Mischief in relation to computer data](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117) **(Sect 430(1.1))**
 
 </section>
-
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -260,5 +253,4 @@ Canadians want to have confidence that government digital services are designed 
 * [5. Make it secure](https://www.dta.gov.au/standard/5-make-it-secure/) **(Digital Service Standard (AU))**
 
 </section>
-
 </section>
