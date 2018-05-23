@@ -92,7 +92,7 @@ Development of accessible (regardless of ability, device or environment) digital
 **[TODO: Add/revise checklist items]**
 
 - Familiarize yourself with the standards
-- Design the service to be as easy to use as possible. Usability is a critical to making a service accessible to people with disabilities and limitations.
+- Design the service to be as easy to use as possible. Usability is critical to making a service accessible for people with disabilities and limitations.
 - Ensure design and development resources have the knowledge and expertise to build accessible services and to resolve accessibility issues.
 - Ensure testing and quality assurance resources have the knowledge and expertise to identify accessibility issues.
 - Ensure support resources are trained to assist persons with disabilities with completing tasks and accessing information.
