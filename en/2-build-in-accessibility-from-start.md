@@ -20,13 +20,18 @@ In Canada:
 - 50% of the population have a disability if you take into account age-related impairments (low vision, low hearing, cognitive impairments),
 - At least once in a person’s lifetime, they also may have a temporary disability brought on through accident, illness, repetitive strain, lifecycle changes (pregnancy).
 
-**Curb Cut Effect**
+<section>
+
+## Curb Cut Effect
 
 Curb cuts are intended to help wheelchair get on sidewalks, but they also help bicyclists, parents with strollers, delivery people, and many other nondisabled groups. This benefit to others became known as the “Curb-Cut Effect”.
 
 When inclusive and accessible design is in place, it is a benefit for all and seamlessly meets the needs of individuals across the board, including people without disabilities.
 
-**Situational Limitations**
+</section>
+<section>
+
+## Situational Limitations
 
 Sometimes people are in situations that limit their ability to hear, see, use their hands, concentrate, understand instructions, etc., and sometimes they are using devices that have limitations in size, input interface, etc. — for example:
 
@@ -39,10 +44,15 @@ Sometimes people are in situations that limit their ability to hear, see, use th
 
 These limitations are sometimes mentioned as an example of how accessible design helps everyone, including people without disabilities.
 
-**Added Benefits**
+</section>
+<section>
+
+## Added Benefits
 
 - findability; when content is accessible it increases its findability
 - understandable content for all users that is also machine-readable
+
+</section>
 
 </div>
 
