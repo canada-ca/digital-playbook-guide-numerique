@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "link-check": "node link-check.js",
-    "lint": "markdownlint \"*.md\" \"en/*.md\" \"fr/*.md\"",
+    "lint": "markdownlint -i node_modules \"**/*.md\"",
     "test": "npm run lint && npm run link-check"
   },
   "repository": {
