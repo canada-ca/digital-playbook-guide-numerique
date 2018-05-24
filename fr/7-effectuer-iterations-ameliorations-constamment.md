@@ -172,31 +172,29 @@ Start with a representation or prototype of the solution that will be tested and
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [247 different checklists for usability testing](http://www.userfocus.co.uk/resources/guidelines.html) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- [Technical Specifications for Web and Mobile Presence (optimization)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-eng.asp) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- [TBS Standard on Web Usability](http://tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp) **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- [Agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- [Agile Principles & Practices](https://pages.18f.gov/agile/index.html) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- Example of Agile Methods: **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - [Scrum](https://www.scrumalliance.org/)
-  - [Lean](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
-  - [Kanban](http://www.djaa.com/principles-kanban-method-0)
-- [GCpedia Community of Practice Agile Methods](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- [CRA Agile Framework](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework)) **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-- Treasury Board Secretariat (TBS) – Management Accountability Framework (MAF): **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - <http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp>
-  - <http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp>
-- [Agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
-- [Agile](https://www.dta.gov.au/standard/design-guides/agile/) **(Digital Service Standard (AU))**
-- [Service design and delivery process](https://www.dta.gov.au/standard/service-design-and-delivery-process/) **(Digital Service Standard (AU))**
-- [Manifesto for Agile Software Development](http://agilemanifesto.org/) **(agilemanifesto.org)**
-- [Method Cards](https://methods.18f.gov/) **(18F (US))**
-- [Is your project using ‘agilefall’?](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)  **(18F (US))**
-- [Agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques) **(Service Manual (UK))**
-- [Agile methods: an introduction](https://www.gov.uk/service-manual/agile-delivery/agile-methodologies) **(Service Manual (UK))**
-- [How to be agile in an non-agile environment](https://gds.blog.gov.uk/2015/10/09/how-to-be-agile-in-a-non-agile-environment/) **(Government Digital Service Blog (UK))**
-- [You can’t be half agile](https://gds.blog.gov.uk/2015/07/10/you-cant-be-half-agile/) **(Government Digital Service Blog (UK))**
+- [247 different checklists for usability testing (userfocus.co.uk)](http://www.userfocus.co.uk/resources/guidelines.html)
+- [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
+- [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
+- [Spécifications techniques relatives à la présence Web et mobile (GC)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-fra.asp)
+- [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
+- [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
+- [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
+- [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
+- [Kanban (David J Anderson & Associates)](http://www.djaa.com/principles-kanban-method-0)
+- [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
+- [CRA Agile Framework (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework))
+- [Cadre de responsabilisation de gestion (CRG) (GC)](https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion.html)
+  - [Processus d'évaluation du CRG](https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion/processus-evaluation.html)
+- [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)
+- [Agile (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/agile/)
+- [Service design and delivery process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/service-design-and-delivery-process/)
+- [Manifesto for Agile Software Development (agilemanifesto.org)](http://agilemanifesto.org/)
+- [Method Cards (18F (US))](https://methods.18f.gov/)
+- [Is your project using ‘agilefall’? (18F (US))](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
+- [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
+- [Agile methods: an introduction (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-methodologies)
+- [How to be agile in an non-agile environment (Government Digital Service blog (UK))](https://gds.blog.gov.uk/2015/10/09/how-to-be-agile-in-a-non-agile-environment/)
+- [You can’t be half agile (Government Digital Service blog (UK))](https://gds.blog.gov.uk/2015/07/10/you-cant-be-half-agile/)
 
 </section>
 
@@ -207,8 +205,8 @@ Start with a representation or prototype of the solution that will be tested and
 - [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
 - [8. Souplesse et orientation sur l’utilisateur](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-9)
 - [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
-- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
-- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
+- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
+- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 - Agile - Small chunks - Iterate (GC EA Principles)
 - {: .dpgn-onegc-architectural } Use agile (OneGC Architectural Checklist - Build It Right (draft))
 
@@ -278,7 +276,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 ### Ressources similaires
 
-- [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
+- [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
 
 </section>
 </section>
@@ -373,16 +371,15 @@ You need to build a service which you can iterate and keep improving so that you
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Test your service's performance](https://www.gov.uk/service-manual/technology/test-your-services-performance) **(Service Manual (UK))**
-- [Quality assurance: testing your service regularly](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly) **(Service Manual (UK))**
-- [Exploratory Testing](https://www.gov.uk/service-manual/technology/exploratory-testing) **(Service Manual (UK))**
-- [Testing Cookbook](https://pages.18f.gov/testing-cookbook/go/) **(18F (US))**
-- [TBITS 26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=17283)
-- User centric design GC community of practice: **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - <http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs>
-  - <http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing>
-- [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU)**
-- [Testing your service](https://www.gov.uk/service-manual/technology#testing-your-service) **(Service Manual (UK)**
+- [Test your service's performance (Service Manual (UK))](https://www.gov.uk/service-manual/technology/test-your-services-performance)
+- [Quality assurance: testing your service regularly (Service Manual (UK))](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)
+- [Exploratory Testing (Service Manual (UK))](https://www.gov.uk/service-manual/technology/exploratory-testing)
+- [Testing Cookbook (18F (US))](https://pages.18f.gov/testing-cookbook/go/)
+- [TBITS 26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use (GC)](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=17283)
+- [Comment définir les essais par les utilisateurs (interne au Gouvernment du Canada)](http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs)
+- [UXWG guide to Usability Testing (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing)
+- [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
+- [Testing your service (Service Manual (UK))](https://www.gov.uk/service-manual/technology#testing-your-service)
 
 Find out more about:
 
@@ -395,7 +392,7 @@ Find out more about:
 ### Ressources similaires
 
 - [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
-- [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
+- [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
 
 </section>
 </section>

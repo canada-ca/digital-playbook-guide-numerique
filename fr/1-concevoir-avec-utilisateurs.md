@@ -71,7 +71,7 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 ### Ressources similaires
 
-- [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
+- [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
 
 </section>
 </section>
@@ -211,24 +211,24 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Start by learning user needs](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Digital Service Standard (UK))**
-- [Improve service design with user research](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Digital Service Standard (UK))**
-- [Introduction to User-centred Design](http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/)
-- [User Research Skills](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team) **(Digital Service Standard (UK))**
-- [How Users Read](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read) **(Writing for GOV.UK)**
-- [Designing government services](https://www.gov.uk/service-manual/design/introduction-designing-government-services) **(Digital Service Standard (UK))**
-- [DTA Guide to Discovery](https://ausdto.github.io/service-handbook/discovery/) **(Service Handbook (AU))**
-- [DTA Guide to Alpha](http://ausdto.github.io/service-handbook/alpha/) **(Service Handbook (AU))**
-- [Doing user research in the discovery phase](https://userresearch.blog.gov.uk/2015/05/27/doing-user-research-in-the-discovery-phase/) **(Government Digital Service Blog (UK))**
-- [Understanding the problem is key to fixing it](https://userresearch.blog.gov.uk/2016/01/12/understanding-the-problem-is-key-to-fixing-it/) **(Government Digital Service Blog (UK))**
-- [Users research not just usability](https://userresearch.blog.gov.uk/2014/06/25/user-research-not-just-usability/) **(Government Digital Service Blog (UK))**
-- [User research for government services 8 strategies that worked for us](https://userresearch.blog.gov.uk/2015/01/21/user-research-for-government-services-8-strategies-that-worked-for-us/) **(Government Digital Service Blog (UK))**
-- [How we do user research in agile teams](https://gds.blog.gov.uk/2013/08/30/how-we-do-user-research-in-agile-teams/) **(Government Digital Service Blog (UK))**
-- [Including users with low digital skills in user research](https://userresearch.blog.gov.uk/2014/08/20/including-users-with-low-digital-skills-in-user-research/) **(Government Digital Service Blog (UK))**
-- [Using prototypes in user research](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/) **(Government Digital Service Blog (UK))**
-- [How designers prototype at GDS](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/) **(Government Digital Service Blog (UK))**
-- [Method Cards](https://methods.18f.gov/index.html) **(18F (US))**
-- [Evangelising user research](https://medium.com/@userfocus/evangelising-user-research-849430701b6e) **(David Travis (Medium.com))**
+- [Start by learning user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
+- [Improve service design with user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
+- [Introduction to User-centred Design (usabilityfirst.com)](http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/)
+- [User Research Skills (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team)
+- [How Users Read (Writing for GOV.UK)](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read)
+- [Designing government services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/introduction-designing-government-services)
+- [DTA Guide to Discovery (Service Handbook (AU))](https://ausdto.github.io/service-handbook/discovery/)
+- [DTA Guide to Alpha (Service Handbook (AU))](http://ausdto.github.io/service-handbook/alpha/)
+- [Doing user research in the discovery phase (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2015/05/27/doing-user-research-in-the-discovery-phase/)
+- [Understanding the problem is key to fixing it (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2016/01/12/understanding-the-problem-is-key-to-fixing-it/)
+- [Users research not just usability (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/06/25/user-research-not-just-usability/)
+- [User research for government services 8 strategies that worked for us (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2015/01/21/user-research-for-government-services-8-strategies-that-worked-for-us/)
+- [How we do user research in agile teams (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2013/08/30/how-we-do-user-research-in-agile-teams/)
+- [Including users with low digital skills in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/20/including-users-with-low-digital-skills-in-user-research/)
+- [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
+- [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
+- [Method Cards (18F (US))](https://methods.18f.gov/index.html)
+- [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
 
 </section>
 
@@ -240,8 +240,8 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - [1. Comprendre les utilisateurs et leurs besoins (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-2)
 - [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
 - [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
-- [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
-- [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
+- [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 - Stakeholders/Users requirements based solutions (Current GC EARB Principles)
 - Services & client orientation (Current GC EARB Principles)
 - Business User first (GC EA principles)
@@ -326,7 +326,7 @@ We need to understand the different ways people will interact with our services,
 
 ### Ressources similaires
 
-- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 - Mobility Preferred (Current GC EARB Principles)
 - Any Device - Mobility (GC EA principles)
 - {: .dpgn-onegc-architectural } Platform agnostic (OneGC Architectural Checklist - Build It Right (draft))
@@ -397,14 +397,14 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [How user research improves service design](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design) **(Digital Service Standard (UK))**
-- [Start by learning user needs](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) **(Digital Service Standard (UK))**
-- [Understanding users who don't use digital services](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services) **(Digital Service Standard (UK))**
-- [Design patterns](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html) **(Digital Service Standard (UK))**
-- [Australian Government Style manual](http://www.australia.gov.au/about-government/publications/style-manual)
-- [18F Content Guide](https://content-guide.18f.gov/) **(18F (US))**
-- [Looking at the different ways to test content](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/) **(18F (US))**
-- [Government Digital Service (GDS) style guide](https://www.gov.uk/guidance/style-guide)  **(Government Digital Service (UK))**
+- [How user research improves service design (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
+- [Start by learning user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
+- [Understanding users who don't use digital services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
+- [Design patterns (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
+- [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
+- [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
+- [Looking at the different ways to test content (18F (US))](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/)
+- [Government Digital Service (GDS) style guide (Government Digital Service (UK))](https://www.gov.uk/guidance/style-guide)
 
 </section>
 
@@ -418,8 +418,8 @@ Writing and designing content so it is consistent, plain and in the language of 
 - [5. Réussite assurée dès le premier essai des utilisateurs (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-6)
 - [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
 - [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
-- [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-- [A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 </section>
 </section>
@@ -535,9 +535,9 @@ We still need to help users who are unable to use digital channels and provide s
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [How to measure digital take-up](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Digital Service Standard (UK))**
-- [Encouraging people to use your digital service](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) **(Digital Service Standard (UK))**
-- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
+- [How to measure digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
+- [Encouraging people to use your digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service)
+- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
 </section>
 
@@ -597,8 +597,8 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Keeping your service online](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online) **(Digital Service Standard (UK))**
-- [Assisted Digital](https://www.dta.gov.au/standard/design-guides/assisted-digital/) **(Digital Service Standard (AU))**
+- [Keeping your service online (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
+- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
 </section>
 

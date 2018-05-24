@@ -61,8 +61,8 @@ altLangPage: 5-work-in-open-by-default
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Open Data](https://www.dta.gov.au/standard/design-guides/open-data/) **Digital Service Standard (AU)**
-- [Statistical Data Integration](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/) **Digital Service Standard (AU)**
+- [Open Data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
+- [Statistical Data Integration (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/)
 
 </section>
 
@@ -70,7 +70,7 @@ altLangPage: 5-work-in-open-by-default
 
 ### Similar resources
 
-- [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 </section>
 </section>
@@ -159,12 +159,12 @@ Setting performance indicators allows you to continuously improve your service b
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Using data to improve your service: an introduction](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction) **(Digital Service Standard (UK))**
-- [Choosing digital analytics tools](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools) **(Digital Service Standard (UK))**
-- [Measuring digital take-up](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up) **(Digital Service Standard (UK))**
-- [Sharing data on the Performance Platform](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform) **(Digital Service Standard (UK))**
-- [Measuring success](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) **(Digital Service Standard (UK))**
-- [Performance Testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU))**
+- [Using data to improve your service: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)
+- [Choosing digital analytics tools (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)
+- [Measuring digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
+- [Sharing data on the Performance Platform (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform)
+- [Measuring success (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)
+- [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 
 </section>
 
@@ -219,7 +219,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 ### Ressources similaires
 
 - [Marchés ouverts - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/5_March%C3%A9s_ouverts.md)
-- [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
+- [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
 </section>
 </section>
@@ -315,13 +315,13 @@ Open source helps to:
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Making source code open and reusable](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable) **(Digital Service Standard (UK))**
-- [Using open source software](https://www.gov.uk/service-manual/making-software/open-source.html) **(Digital Service Standard (UK))**
-- [Choosing technology: an introduction](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
-- [Code sharing](https://www.dta.gov.au/standard/design-guides/code-sharing/) **(Digital Service Standard (AU))**
-- [Choose an open source licence](https://choosealicense.com/) **(choosealicense.com)**
-- [Liste de licences libres](https://fr.wikipedia.org/wiki/Liste_de_licences_libres) **(Wikipedia)**
-- [Making source code open](https://www.dta.gov.au/blog/making-source-code-open/) **(DTA Blog (AU))**
+- [Making source code open and reusable (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
+- [Using open source software (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/open-source.html)
+- [Choosing technology: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
+- [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
+- [Choose an open source licence(choosealicense.com)](https://choosealicense.com/)
+- [Liste de licences libres (Wikipédia)](https://fr.wikipedia.org/wiki/Liste_de_licences_libres)
+- [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
 
 </section>
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "6. Utiliser des normes et des solutions ouvertes (ébauche)"
+title: "6. Utiliser des normes et des solutions ouvertes (ébauche)"
 lang: fr
 altLang: en
 altLangPage: 6-use-open-standards-solutions
@@ -106,13 +106,13 @@ Using open standards and common government platforms helps you to:
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Working with open standards](https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html) **(Digital Service Standard (UK))**
-- [Technology for services](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
-- [Australian Government ICT Policy Guides and Procurement](http://finance.gov.au/policy-guides-procurement/)
-- [W3C Standards](https://www.w3.org/standards/)
-  - [Web Design and Applications - W3C Web design standards](https://www.w3.org/standards/webdesign/) **(W3C)**
-  - [Web of Devices](https://www.w3.org/standards/webofdevices/) **(W3C)**
-- [OASIS Standards](https://www.oasis-open.org/standards)
+- [Working with open standards (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html)
+- [Technology for services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
+- [Australian Government ICT Policy Guides and Procurement (AU)](http://finance.gov.au/policy-guides-procurement/)
+- [W3C Standards (W3C)](https://www.w3.org/standards/)
+  - [Web Design and Applications - W3C Web design standards (W3C)](https://www.w3.org/standards/webdesign/)
+  - [Web of Devices (W3C)](https://www.w3.org/standards/webofdevices/)
+- [OASIS Standards (oasis-open.org)](https://www.oasis-open.org/standards)
 
 </section>
 
@@ -254,9 +254,9 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [API technical and data standards](https://www.gov.uk/guidance/gds-api-technical-and-data-standards) **Government Digital Service (UK)**
-- [Developing cross-government API data and technical standards](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/) **Government Digital Service Blog (UK)**
-- [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
+- [API technical and data standards (Government Digital Service (UK))](https://www.gov.uk/guidance/gds-api-technical-and-data-standards)
+- [Developing cross-government API data and technical standards (Government Digital Service Blog (UK))](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/)
+- [Application Programming Interfaces (APIs) (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
 
 </section>
 
@@ -295,10 +295,10 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Open data](https://www.dta.gov.au/standard/design-guides/open-data/) **Digital Service Standard (AU)**
-- [API technical and data standards](https://www.gov.uk/guidance/gds-api-technical-and-data-standards) **Government Digital Service (UK)**
-- [Developing cross-government API data and technical standards](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/) **Government Digital Service Blog (UK)**
-- [Application Programming Interfaces (APIs)](https://www.dta.gov.au/standard/design-guides/api/) **Digital Service Standard (AU)**
+- [Open data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
+- [API technical and data standards (Government Digital Service (UK))](https://www.gov.uk/guidance/gds-api-technical-and-data-standards)
+- [Developing cross-government API data and technical standards (Government Digital Service blog (UK))](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/)
+- [Application Programming Interfaces (APIs) (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
 
 </section>
 </section>
@@ -368,15 +368,15 @@ There are many potential benefits from the greater use of digital services, incl
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Quality assurance: testing your service regularly](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly) **(Digital Service Standard (UK))**
-- [Designing for different browsers and devices](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices) **(Digital Service Standard (UK))**
-- [Test your service's performance](https://www.gov.uk/service-manual/technology/test-your-services-performance) **(Digital Service Standard (UK))**
-- [Exploratory testing](https://www.gov.uk/service-manual/technology/exploratory-testing) **(Digital Service Standard (UK))**
-- [Deployment environments](https://www.gov.uk/service-manual/making-software/deployment.html) **(Digital Service Standard (UK))**
-- [Vulnerability and penetration testing](https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing) **(Digital Service Standard (UK))**
-- [Performance testing](https://www.dta.gov.au/standard/design-guides/performance-testing/) **(Digital Service Standard (AU))**
-- [Testing your service](https://www.gov.uk/service-manual/technology#testing-your-service) **(Service Manual (UK)**
-- [Testing Cookbook](https://testing-cookbook.18f.gov/) **(18F (US))**
+- [Quality assurance: testing your service regularly (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)
+- [Designing for different browsers and devices (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices)
+- [Test your service's performance (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/test-your-services-performance)
+- [Exploratory testing (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/exploratory-testing)
+- [Deployment environments (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/deployment.html)
+- [Vulnerability and penetration testing (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing)
+- [Performance testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
+- [Testing your service (Service Manual (UK))](https://www.gov.uk/service-manual/technology#testing-your-service)
+- [Testing Cookbook (18F (US))](https://testing-cookbook.18f.gov/)
 
 </section>
 

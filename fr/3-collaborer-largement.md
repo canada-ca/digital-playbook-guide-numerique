@@ -113,11 +113,11 @@ Good government services are built quickly and iteratively, based on user needs.
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Setting up the right team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team) **(Digital Service Standard (UK))**
-- [The digital delivery team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/the-team/) **(Digital Service Standard (AU))**
-- [DTA Guide to Discovery](https://ausdto.github.io/service-handbook/discovery/) **(Service Handbook (AU))**
-- [DTA Guide to Alpha](http://ausdto.github.io/service-handbook/alpha/) **(Service Handbook (AU))**
-- [The teams, they are a changin’](https://18f.gsa.gov/2016/04/18/the-teams-they-are-a-changin/) **(18F (US))**
+- [Setting up the right team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team)
+- [The digital delivery team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/the-team/)
+- [DTA Guide to Discovery (Service Handbook (AU))](https://ausdto.github.io/service-handbook/discovery/)
+- [DTA Guide to Alpha (Service Handbook (AU))](http://ausdto.github.io/service-handbook/alpha/)
+- [The teams, they are a changin’ (18F (US))](https://18f.gsa.gov/2016/04/18/the-teams-they-are-a-changin/)
 
 </section>
 
@@ -150,7 +150,7 @@ Good government services are built quickly and iteratively, based on user needs.
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Développer des partenariats ouverts et innovants - Reconnaître qu'une organisation ne peut pas avoir toutes les meilleures idées. Créer des partenariats et collaborer.
-- ([The Good Collaboration Toolkit: Checklist - The Good Project](http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/)):
+- ([The Good Collaboration Toolkit: Checklist (The Good Project)](http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/)):
   - Do you discuss the purpose of the collaboration? Is there agreement about the vision among collaborators?
   - Is there a clear leadership/rotation of leadership for the collaboration?
   - Is there a documented scope of work, with an associated timeline?
@@ -173,16 +173,16 @@ Good government services are built quickly and iteratively, based on user needs.
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [The Good Collaboration Toolkit - The Good Project](http://thegoodproject.org/collaborationtoolkit/)
-  - [Checklist](http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/)
-  - [Excellently Executed](http://thegoodproject.org/collaborationtoolkit/elements-excellently-executed/)
-  - [Leadership Driven](http://thegoodproject.org/collaborationtoolkit/elements-leadership-driven/)
-  - [Engaging for Participants](http://thegoodproject.org/collaborationtoolkit/elements-engaging-for-participants/)
-  - [Misson Focused](http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/)
-  - [Ethically Oriented](http://thegoodproject.org/collaborationtoolkit/elements-ethically-oriented/)
-  - [Nurtured Continuously](http://thegoodproject.org/collaborationtoolkit/elements-nurtured-continuously/)
-  - [Time Well Spent](http://thegoodproject.org/collaborationtoolkit/elements-time-well-spent/)
-  - [Solution Inspired](http://thegoodproject.org/collaborationtoolkit/elements-solution-inspired/)
+- [The Good Collaboration Toolkit (The Good Project)](http://thegoodproject.org/collaborationtoolkit/)
+  - [Checklist (The Good Project)](http://thegoodproject.org/collaborationtoolkit/the-good-collaboration-toolkit-checklist/)
+  - [Excellently Executed (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-excellently-executed/)
+  - [Leadership Driven (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-leadership-driven/)
+  - [Engaging for Participants (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-engaging-for-participants/)
+  - [Misson Focused (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/)
+  - [Ethically Oriented (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-ethically-oriented/)
+  - [Nurtured Continuously (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-nurtured-continuously/)
+  - [Time Well Spent (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-time-well-spent/)
+  - [Solution Inspired (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-solution-inspired/)
 
 </section>
 </section>
@@ -286,13 +286,13 @@ Good government services are built quickly and iteratively, based on user needs.
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Making source code open and reusable](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable) **(Digital Service Standard (UK))**
-- [Using open source software](https://www.gov.uk/service-manual/making-software/open-source.html) **(Digital Service Standard (UK))**
-- [Choosing technology: an introduction](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction) **(Digital Service Standard (UK))**
-- [Code sharing](https://www.dta.gov.au/standard/design-guides/code-sharing/) **(Digital Service Standard (AU))**
-- [Choose an open source licence](https://choosealicense.com/) **(choosealicense.com)**
-- [Comparison of free and open-source software licences](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) **(Wikipedia)**
-- [Making source code open](https://www.dta.gov.au/blog/making-source-code-open/) **(DTA Blog (AU))**
+- [Making source code open and reusable (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
+- [Using open source software (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/open-source.html)
+- [Choosing technology: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
+- [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
+- [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
+- [Liste de licences libres (Wikipédia)](https://fr.wikipedia.org/wiki/Liste_de_licences_libres)
+- [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
 
 </section>
 

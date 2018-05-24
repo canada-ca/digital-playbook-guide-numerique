@@ -109,20 +109,20 @@ Development of accessible (regardless of ability, device or environment) digital
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
-- [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
-  - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
-  - [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
-  - [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/)
-- [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
-  - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
-  - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
-  - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
-- [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
-- [Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)
-- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
-- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
+- [Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
+- [Web Content Accessibility Guidelines (WCAG) 2.0 (W3C)](https://www.w3.org/TR/WCAG20/)
+  - [How to Meet WCAG 2.0 (W3C)](https://www.w3.org/WAI/WCAG20/quickref/)
+  - [Understanding WCAG 2.0 (W3C)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
+  - [Techniques for WCAG 2.0 (W3C)](https://www.w3.org/TR/WCAG20-TECHS/)
+- [Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)](https://www.w3.org/TR/WCAG21/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1 (W3C)](https://www.w3.org/TR/wai-aria-1.1/)
+  - [Digital Publishing WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/dpub-aria-1.0/)
+  - [Graphics WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/graphics-aria-1.0/)
+  - [WAI-ARIA Authoring Practices 1.1 (W3C)](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [Diversity of Web Users (W3C)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Designing for Inclusion (W3C)](https://www.w3.org/WAI/users/)
+- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile (W3C)](https://www.w3.org/TR/mobile-accessibility-mapping/)
+- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)](https://www.w3.org/TR/wcag2ict/)
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 - [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
   - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
@@ -227,28 +227,28 @@ Your service must be accessible to users regardless of their digital confidence 
 
 ### Implementation guides
 
-- [Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
-- [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
-  - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
-  - [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
-  - [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/)
-- [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
-  - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
-  - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
-  - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
-- [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
-- [Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)
-- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
-- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
+- [Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
+- [Web Content Accessibility Guidelines (WCAG) 2.0 (W3C)](https://www.w3.org/TR/WCAG20/)
+  - [How to Meet WCAG 2.0 (W3C)](https://www.w3.org/WAI/WCAG20/quickref/)
+  - [Understanding WCAG 2.0 (W3C)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
+  - [Techniques for WCAG 2.0 (W3C)](https://www.w3.org/TR/WCAG20-TECHS/)
+- [Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)](https://www.w3.org/TR/WCAG21/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1 (W3C)](https://www.w3.org/TR/wai-aria-1.1/)
+  - [Digital Publishing WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/dpub-aria-1.0/)
+  - [Graphics WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/graphics-aria-1.0/)
+  - [WAI-ARIA Authoring Practices 1.1 (W3C)](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [Diversity of Web Users (W3C)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Designing for Inclusion (W3C)](https://www.w3.org/WAI/users/)
+- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile (W3C)](https://www.w3.org/TR/mobile-accessibility-mapping/)
+- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)](https://www.w3.org/TR/wcag2ict/)
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 - [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
   - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
 - [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
-- [Inclusive services](https://www.dta.gov.au/standard/design-guides/inclusive-services/) **(Digital Service Standard (AU))**
-- [18F Accessibility Guide](https://accessibility.18f.gov/index.html) **(US)**
-- [The A11y Project](https://a11yproject.com/)
-- [Making your service accessible](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction) **(Service Manual (UK))**
+- [Inclusive services (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/inclusive-services/)
+- [18F Accessibility Guide (18F (US))](https://accessibility.18f.gov/index.html)
+- [The A11y Project (a11yproject.com)](https://a11yproject.com/)
+- [Making your service accessible (Service Manual (UK))](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction)
 
 </section>
 
@@ -282,7 +282,7 @@ This applies when designing and developing:
 - Accessibility standards and policies
 - Web technologies and technical specifications, such as HTML
 
-**([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+**([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))**
 
 </div>
 
@@ -292,7 +292,7 @@ This applies when designing and developing:
 
 **[TODO: Add/revise checklist items]**
 
-#### Including Users to Understand the Issues **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+#### Including Users to Understand the Issues ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
 
 As early as possible in your project:
 
@@ -300,30 +300,30 @@ As early as possible in your project:
 - Find people with disabilities, with a range of characteristics. See Getting a Range of Users and Working with Users below.
 - Early on, learn about general issues related to what you are developing, e.g., websites, web tools, standards, or other products. Ask people to show you websites or related products that work well for them. Then, ask them to show you problems in products that do not work well. Ask lots of questions to help you understand the accessibility issues.
 
-#### Including Users in Implementation **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+#### Including Users in Implementation ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
 
 For example, for websites, web applications, and web tools:
 
 - When you are considering a specific design aspect, such as expanding/collapsing navigation, find other products that are already doing it and have users explore with you what works well and what does not.
 - Throughout your design and development, ask users to review prototypes. Give them specific tasks to complete and see how the different aspects of the design and coding could be improved. Ask lots of questions.
 
-#### Carefully Consider Input **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+#### Carefully Consider Input ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
 
 **Caution:** Carefully consider all input and **avoid assuming that input from one person with a disability applies to all people with disabilities**. A person with a disability does not necessarily know how other people with the same disability interact with the web, nor know enough about other disabilities to provide valid guidance on other accessibility issues. Getting input from a range of users is best.
 
-#### Getting a Range of Users **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+#### Getting a Range of Users ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
 
 People with disabilities are as diverse as any people. They have diverse experiences, expectations, and preferences. They use diverse interaction techniques, adaptive strategies, and assistive technology configurations. People have different disabilities: auditory, cognitive, neurological, physical, speech, and visual — and some have multiple disabilities. Even within one category, there is extreme variation; for example, "visual disability" includes people who have been totally blind since birth, people who have distortion in their central vision from age-related degeneration, and people who temporarily have blurry vision from an injury or disease.
 
 Include users with a variety of disabilities and user characteristics. Most projects have limited time and budget and cannot include many different users. Selecting the optimum number of users with the best suited characteristics can be difficult. There are resources on the web that provide guidance on selecting participants with disabilities; for example, determining participant characteristicslinks off WAI website and finding participants with disabilitieslinks off WAI website.
 
-#### Users' Experience Interacting with the Web **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+#### Users' Experience Interacting with the Web ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
 
 A primary consideration in selecting users is their experience interacting with the web. For example, some assistive technologies (AT) are complicated and difficult to learn. A user with insufficient experience may not know how to use the AT effectively. On the other hand, a very advanced user might know uncommon work-arounds to overcome problems in a website that the "average" user would not be able to handle.
 
 In the early stages when you are first learning how people with disabilities interact with the web, it is usually best to get people with a fairly high experience level.
 
-#### Working with Users **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+#### Working with Users ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
 
 Follow common practices for working with people informally and formally, for example:
 
@@ -331,7 +331,7 @@ Follow common practices for working with people informally and formally, for exa
 - Ensure informed consent and other research ethics. For example, participants in studies should be told that they are free to stop at any time.
 - Treat people with disabilities and older users with the respect you would any other users. For example, respect their time and provide appropriate compensation.
 
-#### Combine User Involvement with Standards **([Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving))**
+#### Combine User Involvement with Standards ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
 
 While including users with disabilities and older users with accessibility needs is key to making your accessibility efforts more effective and more efficient, that alone cannot address all issues. Even large projects cannot cover the diversity of disabilities, adaptive strategies, and assistive technologies. That is the role of accessibility standards.
 
@@ -347,24 +347,24 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Involving Users in Web Projects for Better, Easier Accessibility](https://www.w3.org/WAI/users/involving)
-- [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
-- [Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)
-- [Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/Overview.html)
-  - [Initiate - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/initiate.html)
-  - [Plan - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/plan.html)
-  - [Implement - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/implement.html)
-  - [Sustain - Planning and Managing Web Accessibility](https://www.w3.org/WAI/impl/sustain.html)
-- [Determining participant characteristics](http://www.uiaccess.com/accessucd/ut_plan.html#characteristics)
-- [Finding participants with disabilities](http://www.uiaccess.com/accessucd/ut_plan.html#recruiting)
-- [Involving Users in Evaluating Web Accessibility](https://www.w3.org/WAI/users/involving)
-- [Analyzing Accessibility Issues](http://www.w3.org/WAI/eval/users#analyz)
-- [Drawing Conclusions and Reporting](http://www.w3.org/WAI/eval/users#drawing)
-- [Interacting with People with Disabilities](http://uiaccess.com/accessucd/interact.html)
-- [Assistive Technology and Location](http://www.uiaccess.com/accessucd/involve.html#atloc)
-- [The RESPECT Code of Practice](http://www.respectproject.org/code/charm.php?id=)
-- [Just Ask: Integrating Accessibility Throughout Design](http://www.uiaccess.com/accessucd/overview.html)
-- [Incorporating Accessibility Early and Throughout](http://uiaccess.com/accessucd/early.html)
+- [Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving)
+- [Diversity of Web Users (W3C)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Designing for Inclusion (W3C)](https://www.w3.org/WAI/users/)
+- [Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/Overview.html)
+  - [Initiate - Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/initiate.html)
+  - [Plan - Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/plan.html)
+  - [Implement - Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/implement.html)
+  - [Sustain - Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/sustain.html)
+- [Determining participant characteristics (uiaccess.com)](http://www.uiaccess.com/accessucd/ut_plan.html#characteristics)
+- [Finding participants with disabilities (uiaccess.com)](http://www.uiaccess.com/accessucd/ut_plan.html#recruiting)
+- [Involving Users in Evaluating Web Accessibility (W3C)](https://www.w3.org/WAI/users/involving)
+- [Analyzing Accessibility Issues (W3C)](http://www.w3.org/WAI/eval/users#analyz)
+- [Drawing Conclusions and Reporting (W3C)](http://www.w3.org/WAI/eval/users#drawing)
+- [Interacting with People with Disabilities (uiaccess.com)](http://uiaccess.com/accessucd/interact.html)
+- [Assistive Technology and Location (uiaccess.com)](http://www.uiaccess.com/accessucd/involve.html#atloc)
+- [The RESPECT Code of Practice (respectproject.org)](http://www.respectproject.org/code/charm.php?id=)
+- [Just Ask: Integrating Accessibility Throughout Design (uiaccess.com)](http://www.uiaccess.com/accessucd/overview.html)
+- [Incorporating Accessibility Early and Throughout (uiaccess.com)](http://uiaccess.com/accessucd/early.html)
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 - [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 
@@ -385,7 +385,7 @@ Very few people are like this, especially when you take into account that a pers
 
 Until you consider the needs of the range of people that will be using your service you can’t confirm that you are not excluding people. You also won’t be making the cost savings that digital services can provide as you will be forcing some people to use more expensive alternate channels.
 
-[Consider the range of people that will use your product or service, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
+**[Consider the range of people that will use your product or service (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)**
 
 </div>
 
@@ -395,7 +395,7 @@ Until you consider the needs of the range of people that will be using your serv
 
 **[TODO: Add/revise checklist items]**
 
-#### Designing for users on the autistic spectrum **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+#### Designing for users on the autistic spectrum ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
 
 - Do:
   - use simple colours
@@ -410,7 +410,7 @@ Until you consider the needs of the range of people that will be using your serv
   - make buttons vague and unpredictable - for example, Click here
   - build complex and cluttered layouts
 
-#### Designing for users of screen readers **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+#### Designing for users of screen readers ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
 
 - Do:
   - describe images and provide transcripts for video
@@ -425,7 +425,7 @@ Until you consider the needs of the range of people that will be using your serv
   - force mouse or screen use
   - write uninformative links and heading - for example, Click here
 
-#### Designing for users with low vision **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+#### Designing for users with low vision ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
 
 - Do:
   - use good contrasts and a readable font size
@@ -440,7 +440,7 @@ Until you consider the needs of the range of people that will be using your serv
   - spread content all over a page -and force user to scroll horizontally when text is magnified to 200%
   - separate actions from their context
 
-#### Designing for users with physical or motor disabilities **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+#### Designing for users with physical or motor disabilities ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
 
 - Do:
   - make large clickable actions
@@ -456,7 +456,7 @@ Until you consider the needs of the range of people that will be using your serv
   - tire users with lots of typing and scrolling
   - View poster for physical or motor disabilities
 
-#### Designing for users who are D/deaf or hard of hearing **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+#### Designing for users who are D/deaf or hard of hearing ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
 
 - Do:
   - write in plain English
@@ -471,7 +471,7 @@ Until you consider the needs of the range of people that will be using your serv
   - make users read long blocks of content
   - don't make telephone the only means of contact for users
 
-#### Designing for users with dyslexia **([Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))**
+#### Designing for users with dyslexia ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
 
 - Do:
   - use images and diagrams to support text
@@ -494,21 +494,21 @@ Until you consider the needs of the range of people that will be using your serv
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Consider the range of people that will use your product or service, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
-- [Dos and don'ts on designing for accessibility, Accessibility: the GDS blog](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
-- [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
-  - [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
-  - [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
-  - [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/)
-- [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
-  - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
-  - [Graphics WAI-ARIA Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
-  - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
-- [Diversity of Web Users (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/intro/people-use-web/diversity)
-- [Designing for Inclusion (W3C Web Accessibility Initiative)](https://www.w3.org/WAI/users/)
-- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile](https://www.w3.org/TR/mobile-accessibility-mapping/)
-- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
+- [Consider the range of people that will use your product or service (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/)
+- [Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
+- [Web Content Accessibility Guidelines (WCAG) 2.0 (W3C)](https://www.w3.org/TR/WCAG20/)
+  - [How to Meet WCAG 2.0 (W3C)](https://www.w3.org/WAI/WCAG20/quickref/)
+  - [Understanding WCAG 2.0 (W3C)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
+  - [Techniques for WCAG 2.0 (W3C)](https://www.w3.org/TR/WCAG20-TECHS/)
+- [Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)](https://www.w3.org/TR/WCAG21/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1 (W3C)](https://www.w3.org/TR/wai-aria-1.1/)
+  - [Digital Publishing WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/dpub-aria-1.0/)
+  - [Graphics WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/graphics-aria-1.0/)
+  - [WAI-ARIA Authoring Practices 1.1 (W3C)](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [Diversity of Web Users (W3C)](https://www.w3.org/WAI/intro/people-use-web/diversity)
+- [Designing for Inclusion (W3C)](https://www.w3.org/WAI/users/)
+- [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile (W3C)](https://www.w3.org/TR/mobile-accessibility-mapping/)
+- [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)](https://www.w3.org/TR/wcag2ict/)
 - [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
 - [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
   - [Guidance on Implementing the Standard on Web Accessibility](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-eng.asp)
