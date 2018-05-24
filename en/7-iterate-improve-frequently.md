@@ -206,8 +206,8 @@ Start with a representation or prototype of the solution that will be tested and
 - [8. Be agile and user-centred (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
 - [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
 - [3. Agile and user-centred process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/3-agile-and-user-centred/)
-- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
-- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
+- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
+- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 - Agile - Small chunks - Iterate (GC EA Principles)
 - {: .dpgn-onegc-architectural } Use agile (OneGC Architectural Checklist - Build It Right (draft))
 
@@ -390,7 +390,7 @@ You need to build a service which you can iterate and keep improving so that you
 ### Similar resources
 
 - [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
-- [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
+- [1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#1._Test_the_service_before_launching_the_service.)
 
 </section>
 </section>
