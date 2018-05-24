@@ -377,7 +377,7 @@ You need to build a service which you can iterate and keep improving so that you
 - [Testing Cookbook (18F (US))](https://pages.18f.gov/testing-cookbook/go/)
 - [TBITS 26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use (GC)](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=17283)
 - [Comment définir les essais par les utilisateurs (interne au Gouvernment du Canada)](http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs)
-- [UXWG guide to Usability Testing (internal to Government of Canada)(http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing)
+- [UXWG guide to Usability Testing (internal to Government of Canada](http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing)
 - [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 - [Testing your service (Service Manual (UK))](https://www.gov.uk/service-manual/technology#testing-your-service)
 
