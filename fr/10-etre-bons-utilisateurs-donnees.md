@@ -158,9 +158,9 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 #### Stages alpha, bêta et en direct
 
-- determine the data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service **(Digital Service Standard (UK))** / determine data needs, sources and collection **(Digital Service Standard (Ontario))**
+- définissez les besoins, les sources et la collecte en matière de données **(Normes des services numériques (Ontario / UK))**
 - have an ongoing roadmap for performance analysis and someone in the team responsible for identifying actionable data insights during alpha, including assisted digital support **(Digital Service Standard (UK))**
-- use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement **(Digital Service Standard (UK)) /** use qualitative and quantitative data to understand user needs and identify areas for change **(Digital Service Standard (Ontario))**
+- utilisez des données qualitatives et quantitatives en vue de comprendre les besoins des utilisateurs et de repérer des domaines où des modifications pourraient être apportées **(Normes des services numériques (Ontario / UK))**
 - choose suitable data analysis tools **(Digital Service Standard (UK))**
 - address information security and privacy issues appropriately **(Digital Service Standard (UK))**
 - map user journeys through the service and track them to identify completions and areas of poor performance **(Digital Service Standard (UK))**

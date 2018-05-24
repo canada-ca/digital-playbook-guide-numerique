@@ -119,15 +119,15 @@ Start with a representation or prototype of the solution that will be tested and
 
 #### Alpha, beta and live stages
 
-- work in an agile way, using agile tools and techniques, continuing to do so when the service is live **(Digital Service Standard (UK)) /** work in an agile way, using agile tools and techniques, and continue to do so when the service is live **(Digital Service Standard (Ontario))**
-- review and iterate the ways the team works to fix problems **(Digital Service Standard (UK)) /** ensure the team reviews and iterates the ways problems are fixed **(Digital Service Standard (Ontario))**
-- use agile tools and techniques to communicate with each other **(Digital Service Standard (UK))**
+- work in an agile way, using agile tools and techniques, and continue to do so when the service is live **(Digital Service Standard (Ontario / UK / AU))**
+- ensure the team reviews and iterates the ways problems are fixed **(Digital Service Standard (Ontario / UK / AU))**
+- use agile tools and techniques to communicate with each other **(Digital Service Standard (UK / AU))**
 - make sure the team responds to user research and usability testing **(Digital Service Standard (UK)) /** give an example of how the team has responded to user research and usability testing **(Digital Service Standard (Ontario))**
-- make sure the governance is agile, based on clear and measurable goals, and has a clear focus on managing change and risk in real time **(Digital Service Standard (UK)) /** show that your service governance is agile, based on clear and measurable goals **(Digital Service Standard (Ontario))**
-- document the design options you explored for your prototype and the reasons you discarded some **(Digital Service Standard (UK)) /** explore design options for your prototype and explain why some are discarded **(Digital Service Standard (Ontario))**
-- document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK)) /** show how the design of the service has changed over time because of user research findings **(Digital Service Standard (Ontario))**
+- show that your service governance is agile, based on clear and measurable goals **(Digital Service Standard (Ontario / UK / AU))**
+- explore design options for your prototype and explain why some are discarded **(Digital Service Standard (Ontario / UK))**
+- show how the design of the service has changed over time because of user research findings **(Digital Service Standard (Ontario / UK))**
 - document the design options you're considering for your assisted digital support **(Digital Service Standard (UK))**
-- document any problems that you found in research which you'll have to solve to design the service, and how you plan to solve them **(Digital Service Standard (UK)) /** identify any problems found in research and solutions to improve the service **(Digital Service Standard (Ontario))**
+- identify any problems found in research and solutions to improve the service **(Digital Service Standard (Ontario / UK))**
 - have a quality assurance testing and rollback plan that supports frequent iterations to the service **(Digital Service Standard (Ontario))**
 - use a phased approach to test changes to part of service, when feature-based changes are not feasible **(Digital Service Standard (Ontario))**
 - Ship a functioning "minimum viable product" (MVP) that solves a core user need as soon as possible, no longer than three months from the beginning of the project, using a "beta" or "test" period if needed **(Digital Service Playbook (US))**
@@ -158,10 +158,6 @@ Start with a representation or prototype of the solution that will be tested and
   - Techniques can include: daily stand ups, issue trackers, code reviews, rapid prototyping, design sprints, usability testing, user stories, retrospective meetings.
 - Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
-- work in an agile way, based on agile values and principles, and using agile tools and techniques **(Digital Service Standard (AU))**
-- review and iterate your processes to be able to respond to feedback, continue to improve and adapt to change **(Digital Service Standard (AU))**
-- be able to demonstrate how your team uses agile tools and techniques to communicate with each other to increase collaboration and transparency **(Digital Service Standard (AU))**
-- be able to show that your governance is appropriate to the size and scale of your service, and that it is human-centred, based on clear and measurable goals, with a clear focus on managing change and risk in real time. **(Digital Service Standard (AU))**
 
 </section>
 </section>
@@ -377,8 +373,8 @@ You need to build a service which you can iterate and keep improving so that you
 - [Exploratory Testing (Service Manual (UK))](https://www.gov.uk/service-manual/technology/exploratory-testing)
 - [Testing Cookbook (18F (US))](https://pages.18f.gov/testing-cookbook/go/)
 - [TBITS 26: Software Product Evaluation, Quality Characteristics and Guidelines for their Use (GC)](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=17283)
-- [How to Set Up User Testing (internal to Government of Canada](http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs)
-- [UXWG guide to Usability Testing (internal to Government of Canada](http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing)
+- [How to Set Up User Testing (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/How_to_Set_Up_User_Testing/Comment_d%C3%A9finir_les_essais_par_les_utilisateurs)
+- [UXWG guide to Usability Testing (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/The_UXWG_guide_to_Usability_Testing)
 - [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 - [Testing your service (Service Manual (UK))](https://www.gov.uk/service-manual/technology#testing-your-service)
 - [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)

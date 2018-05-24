@@ -119,17 +119,17 @@ Start with a representation or prototype of the solution that will be tested and
 
 #### Stages alpha, bêta et en direct
 
-- work in an agile way, using agile tools and techniques, continuing to do so when the service is live **(Digital Service Standard (UK)) /** work in an agile way, using agile tools and techniques, and continue to do so when the service is live **(Digital Service Standard (Ontario))**
-- review and iterate the ways the team works to fix problems **(Digital Service Standard (UK)) /** ensure the team reviews and iterates the ways problems are fixed **(Digital Service Standard (Ontario))**
-- use agile tools and techniques to communicate with each other **(Digital Service Standard (UK))**
+- travaillez de façon agile, à l’aide d’outils et de techniques agiles, et continuez de la sorte une fois que le service est opérationnele **(Normes des services numériques (Ontario / UK / AU))**
+- assurez-vous que l’équipe examine et met à jour de façon incrémentielle les façons de résoudre les problèmes **(Normes des services numériques (Ontario / UK / AU))**
+- use agile tools and techniques to communicate with each other **(Digital Service Standard (UK / AU))**
 - make sure the team responds to user research and usability testing **(Digital Service Standard (UK)) /** give an example of how the team has responded to user research and usability testing **(Digital Service Standard (Ontario))**
-- make sure the governance is agile, based on clear and measurable goals, and has a clear focus on managing change and risk in real time **(Digital Service Standard (UK)) /** show that your service governance is agile, based on clear and measurable goals **(Digital Service Standard (Ontario))**
-- document the design options you explored for your prototype and the reasons you discarded some **(Digital Service Standard (UK)) /** explore design options for your prototype and explain why some are discarded **(Digital Service Standard (Ontario))**
-- document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK)) /** show how the design of the service has changed over time because of user research findings **(Digital Service Standard (Ontario))**
+- montrez que votre service est géré de façon agile, en s’appuyant sur des objectifs clairs et mesurables  **(Normes des services numériques (Ontario / UK / AU))**
+- examinez les options de conception pour votre prototype et expliquez pourquoi certaines sont écartées **(Normes des services numériques (Ontario / UK))**
+- expliquez comment la conception du service a évolué au fil du temps à la lumière des résultats obtenus par l’étude des utilisateurs **(Normes des services numériques (Ontario / UK))**
 - document the design options you're considering for your assisted digital support **(Digital Service Standard (UK))**
-- document any problems that you found in research which you'll have to solve to design the service, and how you plan to solve them **(Digital Service Standard (UK)) /** identify any problems found in research and solutions to improve the service **(Digital Service Standard (Ontario))**
-- have a quality assurance testing and rollback plan that supports frequent iterations to the service **(Digital Service Standard (Ontario))**
-- use a phased approach to test changes to part of service, when feature-based changes are not feasible **(Digital Service Standard (Ontario))**
+- identifiez tous les problèmes rencontrés au cours des recherches et les solutions pour améliorer le service **(Normes des services numériques (Ontario / UK))**
+- dotez-vous d’un plan de vérification de la qualité et de correction qui soutient des modifications fréquentes du service **(Normes des services numériques (Ontario))**
+- utilisez une approche par étapes pour tester les modifications apportées à une partie du service, lorsque des modifications basées sur les caractéristiques ne sont pas réalisables **(Normes des services numériques (Ontario))**
 - Ship a functioning "minimum viable product" (MVP) that solves a core user need as soon as possible, no longer than three months from the beginning of the project, using a "beta" or "test" period if needed **(Digital Service Playbook (US))**
 - Run usability tests frequently to see how well the service works and identify improvements that should be made **(Digital Service Playbook (US))**
 - Ensure the individuals building the service communicate closely using techniques such as launch meetings, war rooms, daily standups, and team chat tools **(Digital Service Playbook (US))**
@@ -158,10 +158,6 @@ Start with a representation or prototype of the solution that will be tested and
   - Techniques can include: daily stand ups, issue trackers, code reviews, rapid prototyping, design sprints, usability testing, user stories, retrospective meetings.
 - Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
-- work in an agile way, based on agile values and principles, and using agile tools and techniques **(Digital Service Standard (AU))**
-- review and iterate your processes to be able to respond to feedback, continue to improve and adapt to change **(Digital Service Standard (AU))**
-- be able to demonstrate how your team uses agile tools and techniques to communicate with each other to increase collaboration and transparency **(Digital Service Standard (AU))**
-- be able to show that your governance is appropriate to the size and scale of your service, and that it is human-centred, based on clear and measurable goals, with a clear focus on managing change and risk in real time. **(Digital Service Standard (AU))**
 
 </section>
 </section>
@@ -205,6 +201,7 @@ Start with a representation or prototype of the solution that will be tested and
 - [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
 - [8. Souplesse et orientation sur l’utilisateur](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-9)
 - [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
+- [3. Agile and user-centred process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/3-agile-and-user-centred/)
 - [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
 - [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 - Agile - Small chunks - Iterate (GC EA Principles)
