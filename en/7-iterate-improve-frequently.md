@@ -173,8 +173,9 @@ Start with a representation or prototype of the solution that will be tested and
 **[TODO: Add/revise implementation guide items]**
 
 - [247 different checklists for usability testing (userfocus.co.uk)](http://www.userfocus.co.uk/resources/guidelines.html)
-- [Technical Specifications for Web and Mobile Presence (optimization)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-eng.asp)
-- [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp)
+- [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
+- [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
+- [Technical Specifications for Web and Mobile Presence (GC)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-eng.asp)
 - [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
 - [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
@@ -182,8 +183,8 @@ Start with a representation or prototype of the solution that will be tested and
 - [Kanba (David J Anderson & Associates)](http://www.djaa.com/principles-kanban-method-0)
 - [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
 - [CRA Agile Framework (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework))
-- [Management Accountability Framework (MAF) (GC)](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp)
-  - [MAF Assessment Process (GC)](http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/ap-pe-eng.asp)
+- [Management Accountability Framework (MAF) (GC)](https://www.canada.ca/en/treasury-board-secretariat/services/management-accountability-framework.html)
+  - [MAF Assessment Process (GC)](https://www.canada.ca/en/treasury-board-secretariat/services/management-accountability-framework/assessment-process.html)
 - [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)
 - [Agile (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/agile/)
 - [Service design and delivery process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/service-design-and-delivery-process/)
