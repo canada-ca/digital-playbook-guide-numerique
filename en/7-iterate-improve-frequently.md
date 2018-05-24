@@ -177,10 +177,9 @@ Start with a representation or prototype of the solution that will be tested and
 - [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp)
 - [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
-- Example of Agile Methods:
-  - [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
-  - [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
-  - [Kanba (David J Anderson & Associates)](http://www.djaa.com/principles-kanban-method-0)
+- [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
+- [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
+- [Kanba (David J Anderson & Associates)](http://www.djaa.com/principles-kanban-method-0)
 - [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
 - [CRA Agile Framework (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework))
 - [Management Accountability Framework (MAF) (GC)](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp)
