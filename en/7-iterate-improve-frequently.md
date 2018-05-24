@@ -122,7 +122,7 @@ Start with a representation or prototype of the solution that will be tested and
 - work in an agile way, using agile tools and techniques, and continue to do so when the service is live **(Digital Service Standard (Ontario / UK / AU))**
 - ensure the team reviews and iterates the ways problems are fixed **(Digital Service Standard (Ontario / UK / AU))**
 - use agile tools and techniques to communicate with each other **(Digital Service Standard (UK / AU))**
-- make sure the team responds to user research and usability testing **(Digital Service Standard (UK)) /** give an example of how the team has responded to user research and usability testing **(Digital Service Standard (Ontario))**
+- ensure the team responds to user research and usability testing **(Digital Service Standard (Ontario / UK))**
 - show that your service governance is agile, based on clear and measurable goals **(Digital Service Standard (Ontario / UK / AU))**
 - explore design options for your prototype and explain why some are discarded **(Digital Service Standard (Ontario / UK))**
 - show how the design of the service has changed over time because of user research findings **(Digital Service Standard (Ontario / UK))**

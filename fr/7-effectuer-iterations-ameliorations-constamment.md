@@ -122,7 +122,7 @@ Start with a representation or prototype of the solution that will be tested and
 - travaillez de façon agile, à l’aide d’outils et de techniques agiles, et continuez de la sorte une fois que le service est opérationnele **(Normes des services numériques (Ontario / UK / AU))**
 - assurez-vous que l’équipe examine et met à jour de façon incrémentielle les façons de résoudre les problèmes **(Normes des services numériques (Ontario / UK / AU))**
 - use agile tools and techniques to communicate with each other **(Digital Service Standard (UK / AU))**
-- make sure the team responds to user research and usability testing **(Digital Service Standard (UK)) /** give an example of how the team has responded to user research and usability testing **(Digital Service Standard (Ontario))**
+- assurez-vous que l’équipe réagit en fonction d’un essai d’ergonomie et de l’étude des utilisateurs **(Normes des services numériques (Ontario / UK))**
 - montrez que votre service est géré de façon agile, en s’appuyant sur des objectifs clairs et mesurables  **(Normes des services numériques (Ontario / UK / AU))**
 - examinez les options de conception pour votre prototype et expliquez pourquoi certaines sont écartées **(Normes des services numériques (Ontario / UK))**
 - expliquez comment la conception du service a évolué au fil du temps à la lumière des résultats obtenus par l’étude des utilisateurs **(Normes des services numériques (Ontario / UK))**
