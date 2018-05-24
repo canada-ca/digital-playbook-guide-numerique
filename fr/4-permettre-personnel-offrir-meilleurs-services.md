@@ -177,6 +177,8 @@ The technology you choose to build your service must help you respond quickly an
 
 ## 4.3 Veiller à ce que l’équipe dispose des bons systèmes et processus pour créer
 
+<div class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 To improve our chances of success when contracting out development work, we need to work with experienced budgeting and contracting officers. In cases where we use third parties to help build a service, a well-defined contract can facilitate good development practices like conducting a research and prototyping phase, refining product requirements as the service is built, evaluating open source alternatives, ensuring frequent delivery milestones, and allowing the flexibility to purchase cloud computing resources. **(Digital Services Playbook (US))**

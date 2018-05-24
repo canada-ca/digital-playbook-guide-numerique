@@ -140,6 +140,8 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 ## 1.3 Comprendre le contexte dans lequel les personnes interagissent et concevoir des solutions propres à répondre à leurs besoins
 
+<div class="dpgn-section-intro-guideline">
+
 Un élément clé du développement de services numériques qui fonctionnent pour les utilisateurs consiste à bien comprendre qui sont les utilisateurs, quels sont leurs besoins et comment le service affectera leur vie. Il est également important de développer une bonne compréhension des différents contextes dans lesquels les utilisateurs peuvent interagir, car les besoins et les attentes des utilisateurs peuvent varier en fonction du lieu, du moment et de la manière dont ils utilisent un service numérique.
 
 </div>

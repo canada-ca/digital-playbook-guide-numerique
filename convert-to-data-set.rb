@@ -20,7 +20,7 @@ end
 common_data = site_data["common"]
 jekyll_output_dir = "rendered_site/"
 
-def build_content_array(html_block, is_parent, parent_heading_level)
+def build_content_array(html_block, is_parent, parent_heading_level, logger)
 	content_array = Array.new
 	ignore_loop = 0
 	if is_parent
@@ -54,7 +54,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 					logger.error("Heading could not be found when processing a section (build_content_array)")
 					logger.debug(elem)
 				end
-				item["content"] = build_content_array(elem, true, parent_heading_level + 1)
+				item["content"] = build_content_array(elem, true, parent_heading_level + 1, logger)
 			elsif elem.name === ("h#{parent_heading_level + 1}")
 				item["contenttype"] = "section"
 				item["tags"] = tags
@@ -66,7 +66,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 					next_elem = next_elem.next_element
 				end
 				ignore_loop += node_array.count
-				item["content"] = build_content_array(node_array, false, parent_heading_level + 1)
+				item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger)
 			elsif elem.name === "ul" || elem.name === "ol"
 				item["contenttype"] = "list"
 				item["tags"] = tags
@@ -75,7 +75,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 				else
 					item["listtype"] = "ordered"
 				end
-				item["content"] = build_content_array(elem, true, parent_heading_level)
+				item["content"] = build_content_array(elem, true, parent_heading_level, logger)
 			elsif elem.name === "li"
 				nested_lists = elem.css( "ul, ol" )
 				if nested_lists.count >= 1
@@ -92,7 +92,7 @@ def build_content_array(html_block, is_parent, parent_heading_level)
 						nested_index = nested_ol_index
 					end
 					item["content"] = html_fragment = html_fragment[0, nested_index - 1].strip
-					item["nested"] = build_content_array(nested_lists, false, parent_heading_level)
+					item["nested"] = build_content_array(nested_lists, false, parent_heading_level, logger)
 				else
 					item["contenttype"] = "listitem"
 					item["tags"] = tags
@@ -160,7 +160,7 @@ lang.each do |lang|
 		else
 			introduction["tags"] = elem_intro["class"].split(" ")
 		end
-		introduction["content"] = build_content_array(elem_intro, true, 2)
+		introduction["content"] = build_content_array(elem_intro, true, 2, logger)
 		data["introduction"] = introduction
 	else
 		# Handling for Playbook intro not being found
@@ -219,7 +219,7 @@ lang.each do |lang|
 			else
 				standard_intro["tags"] = elem_standard_intro["class"].split(" ")
 			end
-			standard_intro["content"] = build_content_array(elem_standard_intro, true, 2)
+			standard_intro["content"] = build_content_array(elem_standard_intro, true, 1, logger)
 		else
 			# Handling for standard intro not being found
 			logger.error("Introduction for '#{standard["title"]}' could not be found using '#{elems_standard_intro_selector}'")
@@ -279,7 +279,7 @@ lang.each do |lang|
 					else
 						guideline_section["tags"] = elem_guideline_section["class"].split(" ")
 					end		
-					guideline_section["content"] = build_content_array(elem_guideline_section, true, guideline_section_name == "introduction" ? 2 : 3)
+					guideline_section["content"] = build_content_array(elem_guideline_section, true, guideline_section_name == "introduction" ? 2 : 3, logger)
 				else
 					# Handling for guideline section not being found
 					logger.warn("'#{guideline_section_name}' section could not be found in '#{guideline["title"]}' using '#{elems_guideline_section_selector}'")
