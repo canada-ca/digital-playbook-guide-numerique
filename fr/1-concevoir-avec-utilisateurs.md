@@ -373,17 +373,14 @@ Writing and designing content so it is consistent, plain and in the language of 
 - Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
 - Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
 - Use analytics and user research to reduce the number of people who didn't complete the task they set out to do online (e.g. renew a driver's licence) **(Digital Service Standard (Ontario))**
-- Use research, testing and analytics to make substantial iterations to your service, including the assisted digital support model **(Digital Service Standard (UK))**
 - Document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK))**
 - Make the service accessible, including for users with lower levels of digital skills **(Digital Service Standard (Ontario))**
-- Make sure the service is responsive, with the same content and functionality on all devices, and works on mobile devices **(Digital Service Standard (Ontario))**
+- démontrez que le service est adaptatif et qu'il fournit le même contenu et les mêmes fonctionnalités sur tous les appareils, y compris sur les appareils mobiles **(Normes des services numériques (Ontario / UK / AU))**
 - Do usability testing:
   - including with users with the lowest level of digital skills **(Digital Service Standard (UK))**
   - at least once before and after the service goes live and make improvements accordingly **(Digital Service Standard (Ontario))**
-- Make design and content decisions based on research, testing and analytics **(Digital Service Standard (Ontario))**
+- basez vos décisions en matière de conception et de contenu sur vos recherches, tests et données analytiques **(Normes des services numériques (Ontario / UK)**
 - change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
-- Make sure the service is responsive and works on mobile devices **(Digital Service Standard (UK))**
-- understand how you will use responsive design for platform independence **(Digital Service Standard (AU))**
 - understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
 - create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
 - follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA **(Digital Service Standard (AU))**
