@@ -46,6 +46,9 @@
   - [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/9-address-security-privacy-risks.html)
   - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/10-be-good-data-stewards.html)
 
+**Documentation:**
+- [Views documentation](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/views.html)
+
 **Digital Playbook dataset:**
 
 - [Dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json)
