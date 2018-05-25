@@ -186,6 +186,7 @@ The following are three of the more commonly used helper functions. For the rest
 ## Testing the view
 
 <!-- markdownlint-disable MD034 -->
+
 1. If not already done, set up GitHub pages for your repository:
     1. Go to the repository settings
     1. In the GitHub pages section, set "Source" to "gh-pages branch"
@@ -200,4 +201,5 @@ The following are three of the more commonly used helper functions. For the rest
     1. Enable integration for the &lt;username&gt;/digital-playbook-guide-numerique repository
     1. Do a new push to the branch used to create the view (e.g., make a change and commit it).
     1. Go to the branches page and wait for the Travis-CI build to complete. If the build fails then review the Travis-CI log (can either be reached through the Travis-CI website or or by clicking the red "x" and then clicking Travis-CI).
+
 <!-- markdownlint-enable MD034 -->
