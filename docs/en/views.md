@@ -16,32 +16,41 @@ collectionDirectory: docs
 
 The Digital Playbook contains a lot of information but not all of it will be relevant to each task. Playbook views can make the Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
 
-There are three steps to creating a Playbook view:
+There are four steps to creating a Playbook view:
 
 1. [Defining the view structure](#defining-the-view-structure)
 1. [Tagging content that is relevant to the view](#tagging-content-that-is-relevant-to-the-view)
 1. [Creating a page that retrieves and displays tagged content](#creating-a-page-that-retrieves-and-displays-tagged-content)
+1. [Testing the view](#testing-the-view)
 
 ## Defining the view structure
 
-The view structure consists of two levels of content groupings, view-level groupings and page-level groupings. Each view-level content grouping will its own view page while page-level content groupings will have its own section of a view page.
+The view structure consists of two levels of content groupings, view pages and view page sections. View pages can be used to divide up content according the logical steps for a task or scenario, helping users to focus on what is relevant for a given step. View page sections can be used to group and order content on a page to make it easier to consume for users.
 
-### View-level content groupings
+### View pages
 
-1. The first steDetermine how many view pages are needed. For instance, a task with four discrete phases could have a view page for each phase, allowing users to focus on just what is relevant for each individual phase.</li>
+To determine which view pages are needed, consider the logical steps for the task or scenario for which the view is addressing. For instance, a task with four discrete phases could have a view page for each phase, allowing users to proceed from phase to phase, only being presented with the content that is relevant to the current phase.
 
-### Page-level content groupings
+For each view page, determine which content should be included. Varying sizes of blocks of content can be included, from large content sections to much smaller blocks of content such as individual list items and paragraphs. The content that will be included on a view page can be controlled by applying one or more tags to that content.
 
+### View page sections
 
+The Digital Playbook has the following page sections and ordering of content by default, which aligns with the structure of the [Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json): 
 
-View-level groupings determine how many v
+- Playbook overview
+- Standard (one section per standard)
+  - Introduction
+  - Guidelines (links)
+  - Related guidelines (links)
+  - Guideline (one section per guideline)
+    - Introduction
+    - Checklist
+    - Implementation guides
+    - Similar resources
 
+For more details about the dataset structure, see the [Playbook dataset schema](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook_schema.json).
 
-
-The first step is to 
-Before you can build the view
-  <li>
-
+The default page sections and ordering of content can be used in the view or could be changed as needed. For instance, specific sections could be excluded, or in the case of more advanced views, the content could be reordered or combined in different ways to produce different page structures and designs. Tags can be used to create these new content groupings, which don't exist in the Playbook by default, which can then be retrieved from the dataset and output to sections in the view page.
 
 ## Tagging content that is relevant to the view
 
@@ -158,5 +167,8 @@ collectionDirectory: views/&lt;view-directory&gt;
   </li>
 </ol>
 
+## Testing the view
 
+- gh-pages
+- Travis-CI
 
