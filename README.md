@@ -47,7 +47,7 @@
   - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/10-be-good-data-stewards.html)
 
 **Documentation:**
-- [Views documentation](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/views.html)
+- [Views documentation](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/views.html)
 
 **Digital Playbook dataset:**
 
@@ -97,6 +97,9 @@
   - [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/8-concevoir-services-ethiques.html)
   - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
   - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/10-etre-bons-utilisateurs-donnees.html)
+
+**Documentation :**
+- [Documentation de vues](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/vues.html)
 
 **Jeu de données du guide numérique&#160;:**
 
