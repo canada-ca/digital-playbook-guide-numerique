@@ -142,6 +142,8 @@ The Digital Playbook provides several helper functions to make it easier to to p
 
 ### Helper functions
 
+The following are three of the more commonly used helper functions. For the rest of the functions, see [&#95;includes/functions](https://github.com/canada-ca/digital-playbook-guide-numerique/tree/master/_includes/functions) (each function has usage instructions in the comments at the beginning of the file).
+
 #### filtered-standard-guideline-content.html
 
 - **Overview:** Outputs filtered and ordered content from the dataset according to the specified tags
@@ -153,6 +155,30 @@ The Digital Playbook provides several helper functions to make it easier to to p
     - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
 - **Returns:** {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags
 
+#### output-standard.html
+
+- **Overview:** Outputs the content for a standard 
+- **Example usage:** <code>&#123;% include /functions/output-standard.html standard="1" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
+- **Parameter:**
+    - <code>standard</code>: {Object/Number} Standard object or the standard number (which is used to retrieve the Standard object)
+    - <code>includeStandardTitle</code>: {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such as when there are multiple standards on the same page)
+    - <code>relevantGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed
+    - <code>relevantRelatedGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard
+    - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
+    - <code>relevantSections</code>: {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
+    - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
+    - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
+ - **Returns:** {String} Outputs the content for the standard and the included guidelines
+
+#### output-content-array.html
+
+- **Overview:** Iterates over an array of content blocks, including nested content arrays, outputting the relevant content
+- **Parameters:**
+    - <code>contentArray</code>: {Array} Array of content blocks to process
+    - <code>currHeadingLevel</code>: (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within)
+    - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
+    - <code>collapseSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).
+- **Returns:** {String} Returns the processed output from the content array
 
 ## Testing the view
 
