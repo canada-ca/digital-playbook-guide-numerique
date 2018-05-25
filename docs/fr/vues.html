@@ -35,7 +35,7 @@ For each view page, determine which content should be included. Varying sizes of
 
 ### View page sections
 
-The Digital Playbook has the following page sections and ordering of content by default, which aligns with the structure of the [Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json): 
+The Digital Playbook has the following page sections and ordering of content by default, which aligns with the structure of the [Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json):
 
 - Playbook overview
 - Standard (one section per standard)
@@ -60,6 +60,7 @@ Each piece of content can be tagged through the use of CSS classes, where each p
 
 Tags can be applied directly to content in the source .md files, using either the HTML class attribute (for blocks of HTML content) or through the Kramdown approach for applying CSS classes (for blocks of Markdown content).
 
+<!-- markdownlint-disable MD032 -->
 <table>
   <thead>
     <tr>
@@ -95,6 +96,7 @@ Tags can be applied directly to content in the source .md files, using either th
     </tr>
   </tbody>
 </table>
+<!-- markdownlint-enable MD032 -->
 
 ### Supported tags
 
@@ -149,40 +151,41 @@ The following are three of the more commonly used helper functions. For the rest
 - **Overview:** Outputs filtered and ordered content from the dataset according to the specified tags
 - **Example usage:** <code>&#123;% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
 - **Parameters:**
-    - <code>relevantTags</code>: {String/Array} Comma-separated tags or array of tags that content must have at least one of to be displayed 
-    - <code>relevantSections</code>: {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed
-    - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
-    - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
+  - <code>relevantTags</code>: {String/Array} Comma-separated tags or array of tags that content must have at least one of to be displayed
+  - <code>relevantSections</code>: {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed
+  - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
+  - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
 - **Returns:** {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags
 
 #### output-standard.html
 
-- **Overview:** Outputs the content for a standard 
+- **Overview:** Outputs the content for a standard
 - **Example usage:** <code>&#123;% include /functions/output-standard.html standard="1" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
 - **Parameter:**
-    - <code>standard</code>: {Object/Number} Standard object or the standard number (which is used to retrieve the Standard object)
-    - <code>includeStandardTitle</code>: {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such as when there are multiple standards on the same page)
-    - <code>relevantGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed
-    - <code>relevantRelatedGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard
-    - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
-    - <code>relevantSections</code>: {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
-    - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
-    - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
- - **Returns:** {String} Outputs the content for the standard and the included guidelines
+  - <code>standard</code>: {Object/Number} Standard object or the standard number (which is used to retrieve the Standard object)
+  - <code>includeStandardTitle</code>: {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such as when there are multiple standards on the same page)
+  - <code>relevantGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed
+  - <code>relevantRelatedGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard
+  - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
+  - <code>relevantSections</code>: {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
+  - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
+  - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
+- **Returns:** {String} Outputs the content for the standard and the included guidelines
 
 #### output-content-array.html
 
 - **Overview:** Iterates over an array of content blocks, including nested content arrays, outputting the relevant content
 - **Example usage:** <code>&#123;% include /functions/output-content-array.html contentArray=site.data.playbook.standards.content[0].guidelines.content[2].checklist.content relevantTags="dpgn-group-group1,dpgn-group-group2" collapseSubsections=true %&#125;</code>
 - **Parameters:**
-    - <code>contentArray</code>: {Array} Array of content blocks to process
-    - <code>currHeadingLevel</code>: (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within)
-    - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
-    - <code>collapseSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).
+  - <code>contentArray</code>: {Array} Array of content blocks to process
+  - <code>currHeadingLevel</code>: (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within)
+  - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
+  - <code>collapseSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).
 - **Returns:** {String} Returns the processed output from the content array
 
 ## Testing the view
 
+<!-- markdownlint-disable MD034 -->
 1. If not already done, set up GitHub pages for your repository:
     1. Go to the repository settings
     1. In the GitHub pages section, set "Source" to "gh-pages branch"
@@ -193,7 +196,8 @@ The following are three of the more commonly used helper functions. For the rest
     1. Going to the [Travis-CI website](https://travis-ci.org/)
     1. Sign in using your GitHub account
     1. Go to your profile (upper-right corner)
-    1. Click the "Sync account" 
+    1. Click the "Sync account"
     1. Enable integration for the &lt;username&gt;/digital-playbook-guide-numerique repository
     1. Do a new push to the branch used to create the view (e.g., make a change and commit it).
     1. Go to the branches page and wait for the Travis-CI build to complete. If the build fails then review the Travis-CI log (can either be reached through the Travis-CI website or or by clicking the red "x" and then clicking Travis-CI).
+<!-- markdownlint-enable MD034 -->
