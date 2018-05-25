@@ -47,6 +47,7 @@
   - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/10-be-good-data-stewards.html)
 
 **Documentation:**
+
 - [Views documentation](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/views.html)
 
 **Digital Playbook dataset:**
@@ -99,6 +100,7 @@
   - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/10-etre-bons-utilisateurs-donnees.html)
 
 **Documentation :**
+
 - [Documentation de vues](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/vues.html)
 
 **Jeu de données du guide numérique&#160;:**
