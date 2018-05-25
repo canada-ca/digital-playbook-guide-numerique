@@ -173,6 +173,7 @@ The following are three of the more commonly used helper functions. For the rest
 #### output-content-array.html
 
 - **Overview:** Iterates over an array of content blocks, including nested content arrays, outputting the relevant content
+- **Example usage:** <code>&#123;% include /functions/output-content-array.html contentArray=site.data.playbook.standards.content[0].guidelines.content[2].checklist.content relevantTags="dpgn-group-group1,dpgn-group-group2" collapseSubsections=true %&#125;</code>
 - **Parameters:**
     - <code>contentArray</code>: {Array} Array of content blocks to process
     - <code>currHeadingLevel</code>: (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within)
@@ -182,6 +183,17 @@ The following are three of the more commonly used helper functions. For the rest
 
 ## Testing the view
 
-- gh-pages
-- Travis-CI
-
+1. If not already done, set up GitHub pages for your repository:
+    1. Go to the repository settings
+    1. In the GitHub pages section, set "Source" to "gh-pages branch"
+1. Create a new "gh-pages" branch from the branch used to create the view
+1. Go to your branches page. Refresh the page periodically until the gh-pages build for the gh-pages branch either passes (green checkmark) or fails (red x).
+1. If the build passes, the view can be found at https:&#47;&#47;&lt;github-handle&gt;.github.io/digital-playbook-guide-numerique/views/&lt;view-directory&gt;/en/&lt;filename&gt;.html
+1. If the build fails, review your code and correct the error. To get the build error messages, you can use Travis-CI by:
+    1. Going to the [Travis-CI website](https://travis-ci.org/)
+    1. Sign in using your GitHub account
+    1. Go to your profile (upper-right corner)
+    1. Click the "Sync account" 
+    1. Enable integration for the &lt;username&gt;/digital-playbook-guide-numerique repository
+    1. Do a new push to the branch used to create the view (e.g., make a change and commit it).
+    1. Go to the branches page and wait for the Travis-CI build to complete. If the build fails then review the Travis-CI log (can either be reached through the Travis-CI website or or by clicking the red "x" and then clicking Travis-CI).
