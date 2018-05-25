@@ -50,7 +50,9 @@ The Digital Playbook has the following page sections and ordering of content by 
 
 For more details about the dataset structure, see the [Playbook dataset schema](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook_schema.json).
 
-The default page sections and ordering of content can be used in the view or could be changed as needed. For instance, specific sections could be excluded, or in the case of more advanced views, the content could be reordered or combined in different ways to produce different page structures and designs. Tags can be used to create these new content groupings, which don't exist in the Playbook by default, which can then be retrieved from the dataset and output to sections in the view page.
+For simple views, the default page sections and ordering of content can be used to present the content that is included in the page. For more advanced views, the content could be reordered or combined in different ways to produce different page structures and designs.
+
+It is recommended that any custom page sections and ordering of content be designed and tested with users to ensure that the resulting view page is easy for them to use and meets their needs. Custom page sections can be produced by using tags to create new content groupings, which don't exist in the Playbook by default, which can then be retrieved from the dataset and output to sections in the view page.
 
 ## Tagging content that is relevant to the view
 
@@ -129,43 +131,16 @@ The Digital Playbook provides several helper functions to make it easier to to p
 
 ### Building a view page
 
-<ol>
-
-  <li>Create English and French view pages using the template files in views/view-template/. There needs to be a .md file for each page in the view (e.g., four step task -&gt; four .md files).
-    
-    
-    page in the view (e.g., development-stages view has  that will be part The new files should be created using have the same directory structure exce^t reside in <code>views/&lt;new views directory&gt;</code>.</li>
-  <li>
-
-views/view-template/
-
-It is recommended that y
-
+1. Create English and French .md files for each view page using the template files in [views/view-template/](https://github.com/canada-ca/digital-playbook-guide-numerique/tree/master/views/view-template). These new .md files should placed in "en" and "fr" folders in the directory for the new view (<code>views/&lt;view-name&gt;</code>).</li>
+1. For each .md file, update the following properties in the data at the start of the file delimited by "---":
+  1. <code>title</code>: Title of the view page
+  1. <code>altLangPage</code>: Filename (without extension) for the .md file in the other language
+  1. <code>collectionDirectory</code>: Folder for the view (in the form <code>views/&lt;view-name&gt;</code>)
+1. Build the content for each .md file:
+  - **Simple views:** Update the <code>relevantTags</code> parameter in the include statement with the tags for the view page. Multiple tags should be separated with commas (e.g., <code>"dpgn-stage-alpha,dpgn-stage-live"</code>).</li>
+  - **Advanced views:** use the [Playbook helper functions](#helper-functions) and/or build custom output using [Jekyll](https://jekyllrb.com/) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) on the Playbook data from <code>site.data.playbook</code> (English) or <code>site.data.guide</code> (French).
 
 ### Helper functions
-
-<ol>
-  <li>Create a view page for each language:
-    <ol>
-      <li>Go the the <code>views</code> directory</li>
-      <li>Click the "Create new file" button</li>
-      <li>Add "<view-directory>/<lang-code>/<filename>" to "Name your file..." (<code>lang-code</code> is "en" for English and "fr" for French)</li>
-      <li>Add the following front-matter, replacing "&lt;...&gt;" with the required content
-<pre>
----
-layout: default
-title: &lt;Page title&gt;
-lang: &lt;lang-code&gt;
-altLang: &lt;other-lang-code&gt;
-altLangPage: &lt;filename without extension&gt;
-collectionDirectory: views/&lt;view-directory&gt;
----
-</pre>
-      </li>
-      <li></li>
-    </ol>
-  </li>
-</ol>
 
 ## Testing the view
 
