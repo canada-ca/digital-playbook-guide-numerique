@@ -133,14 +133,26 @@ The Digital Playbook provides several helper functions to make it easier to to p
 
 1. Create English and French .md files for each view page using the template files in [views/view-template/](https://github.com/canada-ca/digital-playbook-guide-numerique/tree/master/views/view-template). These new .md files should placed in "en" and "fr" folders in the directory for the new view (<code>views/&lt;view-name&gt;</code>).</li>
 1. For each .md file, update the following properties in the data at the start of the file delimited by "---":
-  1. <code>title</code>: Title of the view page
-  1. <code>altLangPage</code>: Filename (without extension) for the .md file in the other language
-  1. <code>collectionDirectory</code>: Folder for the view (in the form <code>views/&lt;view-name&gt;</code>)
+    1. <code>title</code>: Title of the view page
+    2. <code>altLangPage</code>: Filename (without extension) for the .md file in the other language
+    3. <code>collectionDirectory</code>: Folder for the view (in the form <code>views/&lt;view-name&gt;</code>)
 1. Build the content for each .md file:
-  - **Simple views:** Update the <code>relevantTags</code> parameter in the include statement with the tags for the view page. Multiple tags should be separated with commas (e.g., <code>"dpgn-stage-alpha,dpgn-stage-live"</code>).</li>
-  - **Advanced views:** use the [Playbook helper functions](#helper-functions) and/or build custom output using [Jekyll](https://jekyllrb.com/) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) on the Playbook data from <code>site.data.playbook</code> (English) or <code>site.data.guide</code> (French).
+    - **Simple views:** Update the <code>relevantTags</code> parameter in the include statement with the tags for the view page. Multiple tags should be separated with commas (e.g., <code>"dpgn-stage-alpha,dpgn-stage-live"</code>).</li>
+    - **Advanced views:** Use the [Playbook helper functions](#helper-functions) and/or build custom output using [Jekyll](https://jekyllrb.com/) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) on the Playbook data from <code>site.data.playbook</code> (English) or <code>site.data.guide</code> (French).
 
 ### Helper functions
+
+#### filtered-standard-guideline-content.html
+
+- **Overview:** Outputs filtered and ordered content from the dataset according to the specified tags
+- **Example usage:** <code>&#123;% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
+- **Parameters:**
+    - <code>relevantTags</code>: {String/Array} Comma-separated tags or array of tags that content must have at least one of to be displayed 
+    - <code>relevantSections</code>: {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed
+    - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
+    - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
+- **Returns:** {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags
+
 
 ## Testing the view
 
