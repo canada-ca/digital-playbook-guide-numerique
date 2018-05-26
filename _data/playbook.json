@@ -8,9 +8,16 @@
     ],
     "content": [
       {
+        "contenttype": "text",
+        "tags": [
+          "dpgn-overview-start"
+        ],
+        "content": "<p>Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused.</p>"
+      },
+      {
         "contenttype": "section",
         "tags": [
-
+          "dpgn-overview-end"
         ],
         "title": "Structure of this document (draft)",
         "content": [
@@ -70,7 +77,7 @@
       {
         "contenttype": "section",
         "tags": [
-
+          "dpgn-overview-end"
         ],
         "title": "Government of Canada Digital Standards (draft)",
         "content": [

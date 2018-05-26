@@ -13,13 +13,13 @@ if page.url contains "/views/standards" %}{%
 else %}{% 
   assign isStandardsView = false %}{% 
 endif %}{% 
-unless page.url contains "/views/" and isStandardsView == false or page.url contains "compar" 
+unless page.url contains overviewPath or page.url contains "/views/" and isStandardsView == false 
   %}{% include pagination.html %}{% 
 endunless %}
 {{ content }}
 <hr />
-{% include page-options.html %}
-{% unless page.url contains "/views/" and isStandardsView == false or page.url contains "compar" 
+{% include page-options.html %}{% 
+unless page.url contains overviewPath or page.url contains "/views/" and isStandardsView == false 
   %}{% include pagination.html %}{% 
 endunless %}
 {% include footer.html %}

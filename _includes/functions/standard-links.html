@@ -1,6 +1,9 @@
 {% comment %}@overview Outputs a list of links to the Standards{% endcomment %}{% 
 comment %}@param samePage {Boolean} Whether or not the links should be same-page links{% endcomment %}{% 
 comment %}@param relevantStandards {String/Array} Optional. Comma-separated indexes or array of indexes of the relvant standards{% endcomment %}{% 
+comment %}@param listClasses {String} Optional. Classes (separated by a space) to add to the list.{% endcomment %}{% 
+comment %}@param listItemClasses {String} Optional. Classes (separated by a space)vto add to the list items.{% endcomment %}{% 
+comment %}@param linkClasses {String} Optional. Classes (separated by a space) to add to the links.{% endcomment %}{% 
 comment %}@return {String} List of links to the Standards{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
@@ -25,7 +28,7 @@ else %}{%
   assign relevantStandardsArray = relevantStandards | split: "," %}{% 
 endif %}
 
-<ul>
+<ul{% if include.listClasses.size > 0 %} class="{{ include.listClasses }}"{% endif %}>
 {% comment %}Only output links for the standards with indexes in relevantStandardsArray{% endcomment %}{% 
 for standardIndexString in relevantStandardsArray %}{% 
   assign standardIndex = standardIndexString | plus: 0 %}{% 
@@ -40,8 +43,19 @@ for standardIndexString in relevantStandardsArray %}{%
     assign urlOutput = site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
   endif %}{% 
   comment %}Convert the tags into classes{% endcomment %}{% 
+  if include.listItemClasses.size > 0 %}{% 
+    assign tagsArray = include.listItemClasses | split: " " %}{% 
+    if standard.tags.size > 0 %}{% 
+      assign tagsArray = tagsArray | concat: standard.tags %}{% 
+    endif %}{% 
+  else %}{% 
+    assign tagsArray = standard.tags %}{% 
+  endif %}{%  
   capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=true %}{% 
+    include /functions/class-from-tags.html tags=tagsArray excludeSectionTags=true %}{% 
+    if include.listItemClasses.size > 0
+      %}{{ include.listItemClasses }}{% 
+    endif %}{% 
   endcapture 
-  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}">{{ standard.title }}</a></li>{% 
+  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if include.linkClasses.size > 0 %} class="{{ include.linkClasses }}"{% endif %}>{{ standard.title }}</a></li>{% 
 endfor %}</ul>
