@@ -8,6 +8,12 @@
     ],
     "content": [
       {
+        "contenttype": "text",
+        "tags": [
+        ],
+        "content": "<p>Fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur.</p>"
+      },
+      {
         "contenttype": "section",
         "tags": [
 
