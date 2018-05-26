@@ -25,7 +25,7 @@ else %}{%
   assign relevantStandardsArray = relevantStandards | split: "," %}{% 
 endif %}
 
-<ul>
+<ul class="colcount-sm-2 list-unstyled">
 {% comment %}Only output links for the standards with indexes in relevantStandardsArray{% endcomment %}{% 
 for standardIndexString in relevantStandardsArray %}{% 
   assign standardIndex = standardIndexString | plus: 0 %}{% 
@@ -43,5 +43,5 @@ for standardIndexString in relevantStandardsArray %}{%
   capture classOutput %}{% 
     include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=true %}{% 
   endcapture 
-  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}">{{ standard.title }}</a></li>{% 
+  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}" class="well btn-block">{{ standard.title }}</a></li>{% 
 endfor %}</ul>
