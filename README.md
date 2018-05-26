@@ -4,11 +4,7 @@
 
 # Government of Canada Digital Playbook (draft)
 
-**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. This Digital Playbook, and the Digital Standards it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey.
-
-**It takes a village.** The goal is to co-create this Digital Playbook with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. We believe it will take a community of individuals, with varying backgrounds and perspectives, to come together and help define and share guidance, direction, approaches, tools and stories. We hope to make the playbook as collaborative as possible. And of course the foundation will be built upon the Government Canada Digital Standards and the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you.
-
-**Together we’ll make them better.** This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone.
+Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused.
 
 **Digital Standards:**
 
@@ -55,13 +51,15 @@
 - [Dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json)
 - [Dataset schema](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook_schema.json)
 
+**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. This Digital Playbook, and the Digital Standards it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey.
+
+**It takes a village.** The goal is to co-create this Digital Playbook with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. We believe it will take a community of individuals, with varying backgrounds and perspectives, to come together and help define and share guidance, direction, approaches, tools and stories. We hope to make the playbook as collaborative as possible. And of course the foundation will be built upon the Government Canada Digital Standards and the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you.
+
+**Together we’ll make them better.** This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone.
+
 # Guide numérique du gouvernement du Canada (ébauche)
 
-**Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
-
-**Il faut tout un village.** Le but est de créer ce guide numérique conjointement avec le public et et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Nous avons la conviction qu’il sera nécessaire qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour définir et contribuer à des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.
-
-**Ensemble nous le ferons mieux.** Ceci est un guide vivant, et nous continuerons de le mettre à jour et de le faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à l'amélioration du guide. Ce guide reflètera la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
+Fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur.
 
 **Normes numériques&#160;:**
 
@@ -107,3 +105,9 @@
 
 - [Jeu de données](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json)
 - [Schéma du jeu de données](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide_schema.json)
+
+**Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
+
+**Il faut tout un village.** Le but est de créer ce guide numérique conjointement avec le public et et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Nous avons la conviction qu’il sera nécessaire qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour définir et contribuer à des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.
+
+**Ensemble nous le ferons mieux.** Ceci est un guide vivant, et nous continuerons de le mettre à jour et de le faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à l'amélioration du guide. Ce guide reflètera la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
