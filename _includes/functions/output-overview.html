@@ -10,7 +10,7 @@ endcapture %}
 
 ## {{ dataSource.introduction.title }}
 
-{% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags=="dpgn-overview-start" currHeadingLevel="2" %}
+{% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags="dpgn-overview-start" currHeadingLevel="2" %}
 
 **{{ dataSource.standards.title }}{{ site.Colon[page.lang] }}**
   
@@ -18,6 +18,6 @@ endcapture %}
 
 {% include views.html lang=page.lang %}
 
-{% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags=="dpgn-overview-end" currHeadingLevel="2" %}
+{% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags="dpgn-overview-end" currHeadingLevel="2" %}
 
 </section>
