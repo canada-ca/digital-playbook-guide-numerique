@@ -10,13 +10,14 @@
       {
         "contenttype": "text",
         "tags": [
+          "dpgn-overview-start"
         ],
         "content": "<p>Fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur.</p>"
       },
       {
         "contenttype": "section",
         "tags": [
-
+          "dpgn-overview-end"
         ],
         "title": "Structure de ce document (ébauche)",
         "content": [
@@ -67,7 +68,7 @@
           {
             "contenttype": "text",
             "tags": [
-
+              "dpgn-overview-end"
             ],
             "content": "<p>Le Guide numérique du gouvernement du Canada est disponible sous la <a href=\"https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada\">licence du gouvernement ouvert du Canada</a>, sauf indication contraire.</p>"
           }
