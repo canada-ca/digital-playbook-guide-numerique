@@ -18,8 +18,8 @@ unless page.url contains "/views/" and isStandardsView == false or page.url cont
 endunless %}
 {{ content }}
 <hr />
-{% include page-options.html %}
-{% unless page.url contains "/views/" and isStandardsView == false or page.url contains "compar" 
+{% include page-options.html %}{% 
+unless page.url contains "/views/" and isStandardsView == false or page.url contains overviewPath or page.url contains "compar" 
   %}{% include pagination.html %}{% 
 endunless %}
 {% include footer.html %}
