@@ -8,6 +8,12 @@
     ],
     "content": [
       {
+        "contenttype": "text",
+        "tags": [
+        ],
+        "content": "<p>Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused.</p>"
+      },
+      {
         "contenttype": "section",
         "tags": [
 
