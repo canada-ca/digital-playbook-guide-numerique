@@ -15,17 +15,17 @@ Provides practical and measurable guidance to assist individual projects with be
 {: .dpgn-data-ignore }
 
 <!-- markdownlint-disable MD032 -->
-- [1. Design with users](1-design-with-users.md)
-- [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md)
-- [3. Collaborate widely](3-collaborate-widely.md)
-- [4. Empower staff to deliver better services](4-empower-staff-deliver-better-services.md)
-- [5. Work in the open by default](5-work-in-open-by-default.md)
-- [6. Use open standards and solutions](6-use-open-standards-solutions.md)
-- [7. Iterate and improve frequently](7-iterate-improve-frequently.md)
-- [8. Design ethical services](8-design-ethical-services.md)
-- [9. Address security and privacy risks](9-address-security-privacy-risks.md)
-- [10. Be good data stewards](10-be-good-data-stewards.md)
-{: .dpgn-data-ignore }
+- [1. Design with users](1-design-with-users.md){: .well .btn-block }
+- [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md){: .well .btn-block }
+- [3. Collaborate widely](3-collaborate-widely.md){: .well .btn-block }
+- [4. Empower staff to deliver better services](4-empower-staff-deliver-better-services.md){: .well .btn-block }
+- [5. Work in the open by default](5-work-in-open-by-default.md){: .well .btn-block }
+- [6. Use open standards and solutions](6-use-open-standards-solutions.md){: .well .btn-block }
+- [7. Iterate and improve frequently](7-iterate-improve-frequently.md){: .well .btn-block }
+- [8. Design ethical services](8-design-ethical-services.md){: .well .btn-block }
+- [9. Address security and privacy risks](9-address-security-privacy-risks.md){: .well .btn-block }
+- [10. Be good data stewards](10-be-good-data-stewards.md){: .well .btn-block }
+{: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
 <!-- markdownlint-enable MD032 -->
 
 {% include views.html lang=page.lang %}
