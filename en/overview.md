@@ -9,6 +9,27 @@ altLangPage: apercu
 
 ## Overview (draft)
 
+Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused.
+
+**Digital Standards:**
+{: .dpgn-data-ignore }
+
+<!-- markdownlint-disable MD032 -->
+- [1. Design with users](1-design-with-users.md)
+- [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md)
+- [3. Collaborate widely](3-collaborate-widely.md)
+- [4. Empower staff to deliver better services](4-empower-staff-deliver-better-services.md)
+- [5. Work in the open by default](5-work-in-open-by-default.md)
+- [6. Use open standards and solutions](6-use-open-standards-solutions.md)
+- [7. Iterate and improve frequently](7-iterate-improve-frequently.md)
+- [8. Design ethical services](8-design-ethical-services.md)
+- [9. Address security and privacy risks](9-address-security-privacy-risks.md)
+- [10. Be good data stewards](10-be-good-data-stewards.md)
+{: .dpgn-data-ignore }
+<!-- markdownlint-enable MD032 -->
+
+{% include views.html lang=page.lang %}
+
 ### Structure of this document (draft)
 
 The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation.
@@ -29,24 +50,5 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 **Together we'll make them better.** These are living standards and we will continue to update and evolve them over time as we better understand the complexities involved in putting them into practice. We expect the community to provide input to help refine them. These standards reflect how we will design for ourselves as well as how we will design for others. We can't do this alone.
 
 **The bureaucratic stuff.** The intended outcomes of these digital standards will be baked into our policy instruments and departments will be measured accordingly. We started with our high-level aspirations, and are diving into the details, providing guidance and direction in the form of this playbook. The goal is for this playbook to be as collaborative as possible, allowing our community to share approaches, tools, and stories.
-
-**Digital Standards:**
-{: .dpgn-data-ignore }
-
-<!-- markdownlint-disable MD032 -->
-- [1. Design with users](1-design-with-users.md)
-- [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md)
-- [3. Collaborate widely](3-collaborate-widely.md)
-- [4. Empower staff to deliver better services](4-empower-staff-deliver-better-services.md)
-- [5. Work in the open by default](5-work-in-open-by-default.md)
-- [6. Use open standards and solutions](6-use-open-standards-solutions.md)
-- [7. Iterate and improve frequently](7-iterate-improve-frequently.md)
-- [8. Design ethical services](8-design-ethical-services.md)
-- [9. Address security and privacy risks](9-address-security-privacy-risks.md)
-- [10. Be good data stewards](10-be-good-data-stewards.md)
-{: .dpgn-data-ignore }
-<!-- markdownlint-enable MD032 -->
-
-{% include views.html lang=page.lang %}
 
 </section>
