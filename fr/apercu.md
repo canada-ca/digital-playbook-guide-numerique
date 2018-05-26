@@ -10,6 +10,7 @@ altLangPage: overview
 ## Aperçu (ébauche)
 
 Fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur.
+{: .dpgn-overview-start }
 
 **Normes numériques&#160;:**
 {: .dpgn-data-ignore }
@@ -30,6 +31,8 @@ Fournit des conseils pratiques et des projets pour aider les projets individuels
 
 {% include views.html lang=page.lang %}
 
+<section class="dpgn-overview-end">
+
 ### Structure de ce document (ébauche)
 
 Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
@@ -41,6 +44,9 @@ Le guide numérique du gouvernement du Canada fournit des conseils pratiques et 
 
 Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
 
+</section>
+<section class="dpgn-overview-end">
+
 ### Normes numériques du gouvernement du Canada (ébauche)
 
 **Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. En tant que gouvernement, nous devons nous éloigner des projets monolithiques qui sont dotés de conceptions rigides élaborées en vase clos avec une participation minimale des utilisateurs. Ces principes constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
@@ -51,4 +57,5 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 **Les considérations bureaucratiques.** Les résultats escomptés de ces principes seront intégrés dans nos instruments de politique, et les ministères seront évalués en conséquence. Pour l’instant, nous avons commencé par nos aspirations de haut niveau, mais nous allons bientôt entrer dans les détails en fournissant des conseils et une orientation sous la forme d’un plan de match. Nous espérons rendre ce plan de match le plus collaboratif possible pour permettre à notre communauté d’échanger des approches, des outils et des récits. Restez à l’affût!
 
+</section>
 </section>
