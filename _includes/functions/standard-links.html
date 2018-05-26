@@ -44,7 +44,7 @@ for standardIndexString in relevantStandardsArray %}{%
   endif %}{% 
   comment %}Convert the tags into classes{% endcomment %}{% 
   if include.listItemClasses.size > 0 %}{% 
-    assign tagsArray = include.listItemClasses | split: " "
+    assign tagsArray = include.listItemClasses | split: " " %}{% 
     if standard.tags.size > 0 %}{% 
       assign tagsArray = tagsArray | concat: standard.tags %}{% 
     endif %}{% 
