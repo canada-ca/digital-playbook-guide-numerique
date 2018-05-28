@@ -187,6 +187,7 @@ Integrating security from the outset and “shifting security left” in the ser
 * {: .dpgn-onegc-architectural } [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
