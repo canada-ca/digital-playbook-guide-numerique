@@ -398,6 +398,8 @@ There are many potential benefits from the greater use of digital services, incl
 
 ## 6.6 Nuage d'abord
 
+<div class="dpgn-section-intro-guideline">
+
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. **(Digital Services Playbook (US))**

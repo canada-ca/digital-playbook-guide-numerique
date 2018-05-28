@@ -179,7 +179,6 @@ Integrating security from the outset and “shifting security left” in the ser
 * {: .dpgn-onegc-architectural } Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
 
 </section>
-</section>
 
 <section class="dpgn-section-guides">
 
