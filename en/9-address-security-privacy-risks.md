@@ -1,14 +1,21 @@
 ---
 layout: default
-title:  "9. Address security and privacy risks (draft)"
+title: "9. Address security and privacy risks (draft)"
 lang: en
 altLang: fr
 altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personnels
 ---
 <div class="dpgn-section-intro-standard">
 
-**[TODO: Add/revise introductory text]**
+Canadians who use government services must have confidence that:
 
+* any information they provide is confidential and stored appropriately
+* they know how their information will be used by government
+* they can easily retrieve information they provide
+* that their privacy is protected while they use the service, and afterwards
+* the system they’re using is safe and secure
+
+If a service cannot guarantee confidentiality, integrity and availability of the system, people will not use it. Effective cyber and IT security is an essential enabler of digital transformation. Securing #GCDigital requires the delivery of government services that are safe, secure and trusted by Canadians.
 </div>
 
 <div class="dpgn-section-guidelines">
@@ -16,7 +23,7 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 **Guidelines:**
 
 <!-- markdownlint-disable MD032 -->
-- TOC
+* TOC
 {:toc}
 <!-- markdownlint-enable MD032 -->
 
@@ -36,7 +43,11 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 
 <div class="dpgn-section-intro-guideline">
 
-**[TODO: Add/revise introductory text]**
+Managing risk is critical for government. All organizations face risks, no matter the size; one size does not fit all when it comes to cyber risk management. Each organisation has to make difficult decisions around how much time and money to spend protecting their technology and services. An understanding of the users, data and threats that affect the service will help to inform this risk-based approach to support the delivery of a usable and secure system. Appropriate steps must be taken to identify, assess and understand security and privacy risks to GC sensitive and protected data and the systems that process this data.
+
+A key goal of risk management is to inform and improve these decisions. Making it easy for those responsible for risk management decisions to have access to (and understand) the information they require is important for the effective communication of risks. The effective communication of risk management information helps organizations to direct and control risk management activities. Accepting that technology and security risks will be realised and understanding what the organisation will do to minimise damage, continue to operate, and make improvements based on lessons learned.
+
+Assessing cyber risks cannot be done in isolation. It must be assessed while considering potential impacts on other parts of an organization, and interactions with other elements such as financial risk and safety. Understanding what an organization cares about, and why it's important, will help to prioritize where to invest when implementing appropriate privacy and security measures into your design with minimal user impact. The level of investment in privacy and security should be based on the perceived or actual value placed on the assets or information you are protecting. When considering the balance of controls, account for the cost of lost trust - the effort to rebuild trust, should your service be compromised.
 
 </div>
 
@@ -44,9 +55,15 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 
 ### Checklist
 
-**[TODO: Add/revise checklist items]**
-
-- Allow for secure sharing of information and data
+* Document the approach to security and risk management including the information and minimal documentation necessary to enable timely and effective decision making.
+* Ensure that you identify and categorize information based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability.
+* At the start of designing a new service or feature, the team lead should engage the appropriate privacy, security, and legal officer(s) to discuss the type of information collected, how it should be secured, how long it is kept, and how it may be used and shared.
+* Make sure there are ongoing interactions with the business and information risk teams.
+* Make sure to include an external security advisor as part of the delivery team to support IT security risk management throughout the delivery of the service to achieve the team’s common goal of delivering a usable and secure system.
+* Determine what you absolutely need to protect – can you clearly identify what components are essential to the success of your service? Not all assets need the same level of protection.
+* Determine what you’re willing to pay to protect it – can you protect your assets with the desired level of investment? Is the cost of full protection in excess of the value of your assets?
+* Document the process for identifying, understanding new or ongoing security and privacy threats and the process for managing them
+* Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned.
 
 </section>
 
@@ -54,10 +71,18 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
+* [Information Technology Policy Implementation Notices (ITPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
+* [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
+* [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
 
-- [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
-- [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
+</section>
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+* [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
+* [Privacy](https://www.dta.gov.au/standard/design-guides/privacy/) **(Digital Service Standards (AU))**
+* [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standards (AU))**
 
 </section>
 </section>
@@ -68,18 +93,11 @@ altLangPage: 9-gerer-risques-matiere-securite-protection-renseignements-personne
 
 <div class="dpgn-section-intro-guideline">
 
-**[TODO: Add/revise introductory text]**
+Canadians’ support for open data and digital services is enhanced when their privacy rights are protected: transparency and respect for privacy are complementary goals. The shift to digital government offers opportunities to strengthen privacy rights and safely share more data that can benefit society. Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data.
 
-Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
+Embedding privacy protection in the design of digital applications or open data increases political legitimacy and public confidence, and privacy safeguards are a necessary condition for a successful shift to a digital Government of Canada. Digital services also have the potential to enhance privacy rights, for example, by facilitating access to and correction of personal information.
 
-Users won't use a service unless they have a guarantee:
-
-- it's secure
-- it's confidential
-- they can access their information in the service when they need to
-- that their privacy is protected while they use the service, and afterwards
-
- **(Digital Service Standard (Ontario))**
+Organizations have a responsibility to ensure that the data under their care remains protected at all times, including in the process of sharing with external partners and within their own network. This requires an understanding what data is worth protecting, manage who and what can access it, and build effective defenses that both support innovation and protect the investment made in services and associated assets.
 
 </div>
 
@@ -87,50 +105,41 @@ Users won't use a service unless they have a guarantee:
 
 ### Checklist
 
-**[TODO: Add/revise checklist items]**
+* Ensure that a preliminary privacy impact assessment (PPIA) or privacy impact assessment (PIA) has been completed if personal information is involved in the service.
+* Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept.
+* Ensure that digital solutions and open data initiatives comply with requirements regarding the collection and protection of personal information.
+* Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information.
+* Use appropriate de-identification strategies to minimize the risk of disclosing personal information.
+* Incorporate privacy safeguards into partnership and data sharing agreements.
+* Develop your system with the [7 principles of Privacy by Design (Information and Privacy Commissioner of Ontario)](https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf) in mind.
+* Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual.
+* Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
+* Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
+* Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
+* {: .dpgn-onegc-architectural } Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
+* Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default.
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Alpha stage
-
-- determine what data is being collected (name, address, postal code, etc.) **(Digital Service Standard (Ontario))**
-- determine how the data is being transmitted **(Digital Service Standard (Ontario))**
-- determine where and how the data is being stored **(Digital Service Standard (Ontario))**
-- determine how the data will be used **(Digital Service Standard (Ontario))**
-- identify security and privacy threats **(Digital Service Standard (Ontario))**
-- document interactions with business and information risk teams (for example Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
-- determine how privacy and security regulations will be met without putting delivery at risk **(Digital Service Standard (Ontario))**
-- document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
-- document the privacy policy and rationale **(Digital Service Standard (Ontario))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Live stage
-
-- make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
-- document any outstanding legal concerns, such as data protection or data sharing **(Digital Service Standard (Ontario))**
-- make sure the privacy policy stays up-to-date **(Digital Service Standard (Ontario))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
+* [For federal institutions (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/for-federal-institutions/)
+* [Guidance on Preparing Information Sharing Agreements Involving Personal Information](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html)
+* [Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
 
 </section>
-
 <section class="dpgn-section-similar">
 
 ### Similar resources
 
-- [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
-- Privacy Aware (Current GC EARB Principles)
-- Privacy Aware (GC EA Principles)
+* [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
+* Privacy Aware **(Current GC EARB Principles)**
+* Privacy Aware **(GC EA Principles)**
+* [Privacy Act (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-privacy-act/)
+* [Personal Information Protection & Electronic Documents Act (PIPEDA) (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
+* [Privacy by Design (Wikipedia)](https://en.wikipedia.org/wiki/Privacy_by_design)
 
 </section>
 </section>
@@ -141,18 +150,11 @@ Users won't use a service unless they have a guarantee:
 
 <div class="dpgn-section-intro-guideline">
 
-**[TODO: Add/revise introductory text]**
+Digital services need to be designed to provide a rich and streamlined user experience, while also ensuring that sensitive information is protected within a processing environment that remains secure throughout its lifecycle. Service owners must be mindful that users will often find a way to circumvent burdensome security measures for convenience. It is important to make security seamless and frictionless by designing security measures that enable the user experience, through streamlined user-interface and features with which they interact and, to help improve the overall posture to prevent workarounds. Leveraging enabling services such as digital identity will help to provide users with access to digital services from their preferred device.
 
-Identify the data the service will use, store or create. Put appropriate legal, privacy and security measures in place so that users feel confident that their personal information will be kept secure and their privacy will be respected.
+Services must be designed to resist attacks. However, security is not one-size fits all, and appropriate defenses are best developed to address the “soft spots” in your systems. By thinking about situations in which you could be compromised, it will help to identify and eliminate design issues. Undertaking a defense-in-depth approach provides layered security measures to help prevent against evolving and existing threats. It allows security to be addressed at multiple layers, hardening your systems as required, while providing unimpeded operations in others.
 
-Users won't use a service unless they have a guarantee:
-
-- it's secure
-- it's confidential
-- they can access their information in the service when they need to
-- that their privacy is protected while they use the service, and afterwards
-
-**(Digital Service Standard (Ontario))**
+Integrating security from the outset and “shifting security left” in the service design will help to address security and privacy risks earlier in the development process, allowing teams to identify security needs as components are developed, reducing the cost and burden of changes later. A process of continuous review and improvement should be built into the development and maintenance of the service to support the selection of proportionate security measures that will protect against cyber attacks.
 
 </div>
 
@@ -160,57 +162,43 @@ Users won't use a service unless they have a guarantee:
 
 ### Checklist
 
-**[TODO: Add/revise checklist items]**
+* {: .dpgn-onegc-architectural } Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
+* Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies.
+* Use deployment scripts to ensure configuration of production environment remains consistent and controllable.
+* Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
+* {: .dpgn-onegc-architectural } Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
+* Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
+* Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
+* Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access.
+* Maintain logs of user access and system interactions to fully trace a user as they traverse each part of the system
+* Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats
+* Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
+* Determine how long you need to protect your assets during and after their life / intended use.
+* Document the plan and process for maintaining up-to-date and supported software for services/system
+* {: .dpgn-onegc-architectural } Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
 
-- {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
-
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Alpha stage
-
-- determine how the data is being transmitted **(Digital Service Standard (Ontario))**
-- determine where and how the data is being stored **(Digital Service Standard (Ontario))**
-- identify security threats, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (Ontario))**
-- plan to keep up-to-date about threats and how to deal with them **(Digital Service Standard (Ontario))**
-- identify any threats of fraud that exist and the controls being prototyped to address them **(Digital Service Standard (Ontario))**
-- document the approach to security and risk management **(Digital Service Standard (Ontario))**
-- identify security and privacy threats **(Digital Service Standard (Ontario))**
-- document interactions with business and information risk teams (for example Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
-- determine how privacy and security regulations will be met without putting delivery at risk **(Digital Service Standard (Ontario))**
-- document the process for security updates for servers/software **(Digital Service Standard (Ontario))**
-- document the plan and process for applying security updates **(Digital Service Standard (Ontario))**
-- plan for checking suspicious activity **(Digital Service Standard (Ontario))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Live stage
-
-- document the approach to security and risk management **(Digital Service Standard (Ontario))**
-- make sure there are ongoing interactions with the business and information risk teams (for example, Corporate Security and Information, Privacy and Archives) **(Digital Service Standard (Ontario))**
-- document the process for understanding new or ongoing threats and how those changed during beta **(Digital Service Standard (Ontario))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
+* [Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
+* {: .dpgn-onegc-architectural } [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
-
 <section class="dpgn-section-similar">
 
 ### Similar resources
 
-- [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
-- Secure by Design (Current GC EARB Principles)
-- Secure by Design (GC EA Principles)
-- {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
+* [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
+* Privacy Aware **(Current GC EARB Principles)**
+* Privacy Aware **(GC EA Principles)**
+* [Information security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/information-security.html)
+* [Cloud security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/operations/cloud-security.html)
+* [User accounts and logins (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/user-accounts)
+* [Identity assurance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/identity-assurance/)
+* [Secure services (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 
 </section>
 </section>
@@ -221,33 +209,9 @@ Users won't use a service unless they have a guarantee:
 
 <div class="dpgn-section-intro-guideline">
 
-**[TODO: Add/revise introductory text]**
+The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate.
 
-**Introduction examples:**
-
-**Digital Service Standard (UK) (Understand security and privacy issues):** Evaluate what user data and information the digital service will be providing or storing and address the security level, legal responsibilities, privacy issues and risks associated with the service (consulting with experts where appropriate).
-
-Users won't use your service unless you can guarantee:
-
-- it's confidential
-- they can access their information in the service when they need to
-
-**Digital Services Playbook (US) (Manage security and privacy through reusable processes):** Our digital services have to protect sensitive information and keep systems secure. This is typically a process of continuous review and improvement which should be built into the development and maintenance of the service. At the start of designing a new service or feature, the team lead should engage the appropriate privacy, security, and legal officer(s) to discuss the type of information collected, how it should be secured, how long it is kept, and how it may be used and shared. The sustained engagement of a privacy specialist helps ensure that personal data is properly managed. In addition, a key process to building a secure service is comprehensively testing and certifying the components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
-
-The following checklist provides a starting point, but teams should work closely with their privacy specialist and security engineer to meet the needs of the specific service.
-
-**Digital Service Standard (AU) (Make it secure):**
-
-Identify the data and information the service will use or create. Put appropriate legal, privacy and security measures in place.
-
-People who use government services must have confidence that:
-
-- any information they provide is confidential and stored appropriately
-- the system they’re using is safe and secure
-- they know how their information will be used by government
-- they can easily retrieve information they provide.
-
-If a service cannot guarantee confidentiality, integrity and availability of the system, people will not use it.
+Canadians want to have confidence that government digital services are designed to meet the laws and regulations stipulated in multiple acts protecting the confidentiality, integrity and accessibility of systems and information. Develop a legal and regulatory view of the department for the purposes of designing secure information systems through identifying the *business needs for security*. A business need for security is any protection or compliance requirement that ensures the confidentiality, integrity or availability of a business activity or information assets supporting a business activity. Business needs for security can also be derived from departmental missions, objectives, priorities, the need to preserve the organization's image and reputation, and various obligations that may have been contracted.
 
 </div>
 
@@ -255,120 +219,38 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 ### Checklist
 
-**[TODO: Add/revise checklist items]**
+* Make sure to address all legal and privacy issues associated with protecting and sharing user data
+* Understand to what degree the solution has to comply with the Canadian legislation, TBS policy instruments, and departmental security policies, and create a plan on how to achieve this
+* Engage the appropriate privacy, security, and legal officer(s) to discuss the legal aspects of managing cyber risks
+* Consider the collection, security, and access obligations contained in the Privacy Act when designing digital applications; the need to de-identify personal data before release; and the need to address privacy when establishing partnerships.
+* Document the protective measures implemented to enable the secure processing and sharing of data and information across government
+* Document how the service manages information and records (data) in order to protect their confidentiality and integrity, and ensure their availability.
+* Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
+* Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
+* Develop and maintain cybersecurity training programs to develop appropriate behaviours and culture for employees and contractors
+* Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
+* Establish terms of services to ensure users understand how their data will be used and how it will be accessed
 
-- Implement layered defences to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats **(OneGC product design criteria)**
-- Implement protective measures to enable the secure processing and sharing of data and information across government **(OneGC product design criteria)**
-- Contact the appropriate privacy or legal officer of the department or agency to determine whether a System of Records Notice (SORN), Privacy Impact Assessment, or other review should be conducted **(Digital Services Playbook (US))**
-- Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept **(Digital Services Playbook (US))**
-- Determine, in consultation with a privacy specialist, whether and how users are notified about how personal information is collected and used, including whether a privacy policy is needed and where it should appear, and how users will be notified in the event of a security breach **(Digital Services Playbook (US))**
-- Consider whether the user should be able to access, delete, or remove their information from the service **(Digital Services Playbook (US))**
-- "Pre-certify" the hosting infrastructure used for the project using FedRAMP **(Digital Services Playbook (US))**
-- Use deployment scripts to ensure configuration of production environment remains consistent and controllable **(Digital Services Playbook (US))**
-- {: .dpgn-onegc-architectural } HTTPS only **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Holistic approach to securing GC services for publicly accessible sites
-
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Alpha stage
-
-- identify threats to your service, including potential pathways for hackers, and tested ways of reducing them **(Digital Service Standard (UK))**
-- keep up to date about threats to your service and how to deal with them **(Digital Service Standard (UK))**
-- identify threats of fraud (fraud vectors) which exist and the controls to prototype to address them **(Digital Service Standard (UK))**
-- identify secure and private methods of generating or processing data within or between datastores, the solution and users **(Digital Service Standard (AU))**
-- identify appropriate authentication methods that are as seamless as possible to the user **(Digital Service Standard (AU))**
-- understand to what degree the solution has to comply with the Information Security Manual and Protective Security Policy Framework, and internal agency security policies, and create a plan on how to achieve this **(Digital Service Standard (AU))**
-- conduct a privacy impact assessment **(Digital Service Standard (AU))**
-- conduct a threat and risk assessment, and an Information Security Registered Assessors Program Assessment (IRAP) if appropriate **(Digital Service Standard (AU))**
-- identify potential threats to your service, including potential pathways for insider threats and hackers, and demonstrate an understanding of how to mitigate the identified threats. **(Digital Service Standard (AU))**
-- map the systems, data and responsible agencies **(Digital Service Standard (AU))**
-- understand what user data might be needed or collected by the service **(Digital Service Standard (AU))**
-- understand what existing statistical datasets may be relevant to your service and the Australian Government principles on data integration **(Digital Service Standard (AU))**
-- understand which data you collect is (and isn’t) personal information and how it might be stored, accessed and disseminated **(Digital Service Standard (AU))**
-- involve relevant security professionals throughout the Alpha stage **(Digital Service Standard (AU))**
-- understand the service requirements relating to **(Digital Service Standard (AU))**
-  - legal constraints
-  - records management
-  - privacy, including the Privacy Act and Australian Privacy Principles
-  - copyright and open licensing, including the principles on open public sector information, Australian Government intellectual property rules and Australia’s commitment to the Open Government Partnership
-  - the Freedom of Information Act
-  - the Spam Act
-  - state and territory government policies, if relevant.
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Beta stage
-
-- determine your team's approach to security and risk management **(Digital Service Standard (UK))**
-- identify security and privacy threats to your service **(Digital Service Standard (UK))**
-- identify the fraud vectors that exist and the controls you're putting in place to address them **(Digital Service Standard (UK))**
-- work with the business and information risk teams eg senior information risk owner (SIRO), information asset owner (IAO) and data guardians, and work to meet any security regulations without putting delivery at risk **(Digital Service Standard (UK))**
-- identify any outstanding legal concerns, eg how you'll protect data or your policy on sharing it **(Digital Service Standard (UK))**
-- document your cookie and privacy policy and how you arrived at it **(Digital Service Standard (UK))**
-- involve all relevant stakeholders within the project, including **(Digital Service Standard (AU))**
-  - business owners
-  - information risk and compliance teams
-  - SIRO (Senior Information Risk Owner)
-  - IAO (Information Asset Owner)
-  - IT security teams
-  - internal fraud teams, if appropriate
-- address all legal and privacy issues associated with protecting and sharing user data **(Digital Service Standard (AU))**
-- develop an appropriate cookie and privacy policy, and keep it up to date **(Digital Service Standard (AU))**
-- create a solution to test and implement security patches quickly and efficiently **(Digital Service Standard (AU))**
-- demonstrate that effective security controls are in place to protect data used or accessed by the solution **(Digital Service Standard (AU))**
-- integrate into or create relevant security documentation **(Digital Service Standard (AU))**
-- create a risk treatment plan to track risks and mitigations **(Digital Service Standard (AU))**
-- test the security of the solution and address all vulnerabilities discovered **(Digital Service Standard (AU))**
-- build detection and prevention mechanisms into the solution, including **(Digital Service Standard (AU))**
-  - incident response plan
-  - logging solution that can fully trace a user as they traverse each part of the system
-  - appropriate business rules that check the validity of interactions with the solution.
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Live stage
-
-- determine your team's approach to security and risk management **(Digital Service Standard (UK))**
-- make sure there are ongoing interactions with the business and information risk teams, eg SIRO, IAO and data guardians **(Digital Service Standard (UK))**
-- identify any outstanding legal concerns, eg data protection or data sharing **(Digital Service Standard (UK))**
-- keep your understanding of the threats to your service up to date, and explain how the threats have changed during beta **(Digital Service Standard (UK))**
-- keep your cookie policy and privacy policy up to date **(Digital Service Standard (UK))**
-- manage frequent security updates **(Digital Service Standard (AU))**
-- identify malicious or fraudulent activity **(Digital Service Standard (AU))**
-- have appropriate policies in place to respond quickly to security events **(Digital Service Standard (AU))**
-- have the ability to integrate into existing security monitoring solutions **(Digital Service Standard (AU))**
-- allow users to interact securely with the solution with minimal impact on user experience **(Digital Service Standard (AU))**
-- have mitigated all known vulnerabilities in the solution. **(Digital Service Standard (AU))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
-
-- [Information security](https://www.gov.uk/service-manual/making-software/information-security.html) **(Digital Service Standard (UK))**
-- [Cloud security](https://www.gov.uk/service-manual/operations/cloud-security.html) **(Digital Service Standard (UK))**
-- [User accounts and logins](https://www.gov.uk/service-manual/design/user-accounts) **(Digital Service Standard (UK))**
-- [Identity assurance](https://www.dta.gov.au/standard/design-guides/identity-assurance/) **(Digital Service Standard (AU))**
-- [Secure services](https://www.dta.gov.au/standard/design-guides/secure-services/) **(Digital Service Standard (AU))**
+* [GC Information Technology Policy Implementation Notices](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
+* [GC Security Policy Implementation Notices (internal to Government of Canada)](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
+* [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
+* [Canadian Criminal Code, Unauthorized use of computer (Sect 342.1/342.2)](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97)
+* [Canadian Criminal Code, Mischief in relation to computer data (Sect 430(1.1))](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117)
 
 </section>
-
 <section class="dpgn-section-similar">
 
 ### Similar resources
 
-- [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
-- [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
-- [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
-- {: .dpgn-onegc-architectural } HTTPS only (OneGC Architectural Checklist - Build It Right (draft))
+* [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
+* [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
+* [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
 
 </section>
 </section>

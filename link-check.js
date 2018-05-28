@@ -9,7 +9,7 @@ var path = require("path");
 var url = require("url");
 var chalk = require("chalk");
 
-var internalGCHosts = ["www.gcpedia.gc.ca"]
+var internalGCHosts = ["www.gcpedia.gc.ca", "intranet.canada.ca"]
 var files = glob.sync("**/*.md", {ignore: ["node_modules/**/*.md", "**/digital-playbook.md", "**/guide-numerique.md"]})
 
 var deads = false;
