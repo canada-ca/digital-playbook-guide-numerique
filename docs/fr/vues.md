@@ -129,7 +129,7 @@ Section tags are mainly used for dataset generation and filtering. Each of these
 
 ## Creating a page that retrieves and displays tagged content
 
-The Digital Playbook provides several helper functions to make it easier to to produce the desired output. This section will cover the basics of [building a view page](#building-a-view-page) and the available [helper functions](#helper-functions).
+The Digital Playbook provides several helper functions to make it easier to produce the desired output. This section will cover the basics of [building a view page](#building-a-view-page) and the available [helper functions](#helper-functions).
 
 ### Building a view page
 
@@ -200,6 +200,6 @@ The following are three of the more commonly used helper functions. For the rest
     1. Click the "Sync account"
     1. Enable integration for the &lt;username&gt;/digital-playbook-guide-numerique repository
     1. Do a new push to the branch used to create the view (e.g., make a change and commit it).
-    1. Go to the branches page and wait for the Travis-CI build to complete. If the build fails then review the Travis-CI log (can either be reached through the Travis-CI website or or by clicking the red "x" and then clicking Travis-CI).
+    1. Go to the branches page and wait for the Travis-CI build to complete. If the build fails then review the Travis-CI log (can either be reached through the Travis-CI website or by clicking the red "x" and then clicking Travis-CI).
 
 <!-- markdownlint-enable MD034 -->
