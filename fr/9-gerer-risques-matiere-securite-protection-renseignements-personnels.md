@@ -10,10 +10,10 @@ altLangPage: 9-address-security-privacy-risks
 Canadians who use government services must have confidence that:
 
 * any information they provide is confidential and stored appropriately
-* the system they’re using is safe and secure
 * they know how their information will be used by government
 * they can easily retrieve information they provide
 * that their privacy is protected while they use the service, and afterwards
+* the system they’re using is safe and secure
 
 If a service cannot guarantee confidentiality, integrity and availability of the system, people will not use it. Effective cyber and IT security is an essential enabler of digital transformation. Securing #GCDigital requires the delivery of government services that are safe, secure and trusted by Canadians.
 
@@ -112,7 +112,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 * Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information.
 * Use appropriate de-identification strategies to minimize the risk of disclosing personal information.
 * Incorporate privacy safeguards into partnership and data sharing agreements.
-* Develop your system with the 7 principles of Privacy by Design in mind.
+* Develop your system with the [7 principles of Privacy by Design (Information and Privacy Commissioner of Ontario)](https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf) in mind.
 * Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual.
 * Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
 * Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
