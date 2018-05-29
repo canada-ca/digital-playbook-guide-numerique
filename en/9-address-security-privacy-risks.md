@@ -125,9 +125,12 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 ### Implementation guides
 
-* [For federal institutions (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/for-federal-institutions/)
+* [For federal institutions (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/for-federal-institutions/)
 * [Guidance on Preparing Information Sharing Agreements Involving Personal Information](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html)
 * [Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
+* [Guidelines for obtaining meaningful consent (OPC)](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gl_omc_201805/)
+* [Guidance on inappropriate data practices: Interpretation and application of subsection 5(3) (OPC)](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gd_53_201805/)
+
 
 </section>
 <section class="dpgn-section-similar">
