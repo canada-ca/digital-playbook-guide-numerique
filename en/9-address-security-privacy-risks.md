@@ -131,7 +131,6 @@ Organizations have a responsibility to ensure that the data under their care rem
 * [Guidelines for obtaining meaningful consent (OPC)](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gl_omc_201805/)
 * [Guidance on inappropriate data practices: Interpretation and application of subsection 5(3) (OPC)](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gd_53_201805/)
 
-
 </section>
 <section class="dpgn-section-similar">
 
