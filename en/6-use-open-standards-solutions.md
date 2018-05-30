@@ -57,7 +57,7 @@ Using open standards means you:
 - save time and money by reusing things that are already available
 - increase compatibility with all stakeholders
 - potentially open up the range of companies you can purchase from as more of them are likely to use the same standard as you
-- can move between different technologies when you need to and don’t get locked into contracts
+- can move between different technologies when you need to and don't get locked into contracts
 
 **(Technology Code of Practice - Make use of open standards (UK))**
 
@@ -100,7 +100,7 @@ Build using open standards and common government platforms where appropriate.
 Using open standards and common government platforms helps you to:
 
 - meet the needs of your users by building with proven solutions
-- make users’ experience of government more consistent, which generates trust
+- make users' experience of government more consistent, which generates trust
 - save time and money by reusing things that are already available
 - be more efficient by sharing data appropriately
 - move between different technologies when you need to, avoiding vendor lock-in.
@@ -115,11 +115,16 @@ Using open standards and common government platforms helps you to:
 
 **[TODO: Add/revise checklist items]**
 
+- For all software acquisition, open source software must be actively and fairly considered alongside proprietary ones **(SSC Draft Position on OSS (GC))**
+- Where there is no significant overall (full-lifecycle) cost difference between open source and closed-source products, open source will be selected on the basis of its additional inherent flexibility **(SSC Draft Position on OSS (GC))**
+- OSS support models and options must be evaluated and selected **(SSC Draft Position on OSS (GC))**
+- All software, including OSS, must have a defined and managed lifecycle that is supported by a robust toolset (software acquisition and distribution guidelines) **(SSC Draft Position on OSS (GC))**
+
 - Consider open source software solutions at every layer of the stack **(Digital Services Playbook (US))**
 - use open standards and common platforms **(Digital Service Standard (Ontario))**
 - understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 - Consider open source where feasible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
+  - Open source refers to practices that allow other software developers to have access via a free license to another product's programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
   - Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.
 - {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tech
@@ -166,6 +171,7 @@ Using open standards and common government platforms helps you to:
 
 ### Similar resources
 
+- [(SSC Draft Position on OSS (GC)](http://www.ssc-spc.gc.ca/pages/itir-triti/itir-triti-afac-271115-pres1-eng.html)
 - [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/2_Open_Standards.md)
 - [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/3_Open_Source_Software.md)
 - [Politique du libre (ville de Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
@@ -207,7 +213,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
   - Adhere to GC technical standards and guidance, leveraging open standards when possible
   - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
 - {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery
+  - Mandatory use of DXP (Canada's XRoad) to foster seamless service delivery
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
 - {: .dpgn-onegc-architectural } Build toward OneGC **Build It Right - OneGC Architectural Checklist (draft))**
@@ -331,7 +337,7 @@ Application Program Interfaces (APIs) are a means by which business functionalit
   - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
   - Open data increases transparency.
   - Open data leverages public sector information to develop consumer and commercial products.
-  - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
+  - Utilize the Government of Canada's and ISED's Application Programming Interface (API) Store.
 
 </section>
 

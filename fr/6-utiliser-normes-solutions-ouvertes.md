@@ -57,7 +57,7 @@ Using open standards means you:
 - save time and money by reusing things that are already available
 - increase compatibility with all stakeholders
 - potentially open up the range of companies you can purchase from as more of them are likely to use the same standard as you
-- can move between different technologies when you need to and don’t get locked into contracts
+- can move between different technologies when you need to and don't get locked into contracts
 
 **(Technology Code of Practice - Make use of open standards (UK))**
 
@@ -100,7 +100,7 @@ Build using open standards and common government platforms where appropriate.
 Using open standards and common government platforms helps you to:
 
 - meet the needs of your users by building with proven solutions
-- make users’ experience of government more consistent, which generates trust
+- make users' experience of government more consistent, which generates trust
 - save time and money by reusing things that are already available
 - be more efficient by sharing data appropriately
 - move between different technologies when you need to, avoiding vendor lock-in.
@@ -115,11 +115,16 @@ Using open standards and common government platforms helps you to:
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- S'agissant de toutes les acquisitions de logiciels, les solutions libres doivent être envisagées de manière active et juste, parallèlement à des solutions propriétaires. **Ébauche de la position de SPC sur les logiciels libres (GC)**
+- En l'absence de différence de coût notable (sur la totalité du cycle de vie) entre les produits propriétaires et les produits libres, on choisira ces derniers en fonction de la souplesse supplémentaire qu'ils présentent. **Ébauche de la position de SPC sur les logiciels libres (GC)**
+- Les modèles et options de soutien technique des logiciels libres doivent être évalués et sélectionnés. **Ébauche de la position de SPC sur les logiciels libres (GC)**
+- Tous les logiciels, y compris ceux qui sont libres, doivent avoir un cycle de vie défini et géré qui est accompagné d'un ensemble d'outils solides (directives sur l'acquisition et la distribution de logiciels). **Ébauche de la position de SPC sur les logiciels libres (GC)**
+
 - Consider open source software solutions at every layer of the stack **(Digital Services Playbook (US))**
 - use open standards and common platforms **(Digital Service Standard (Ontario))**
 - understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
 - Consider open source where feasible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
+  - Open source refers to practices that allow other software developers to have access via a free license to another product's programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
   - Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.
 - {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tech
@@ -166,6 +171,7 @@ Using open standards and common government platforms helps you to:
 
 ### Ressources similaires
 
+- [Ébauche de la position de SPC sur les logiciels libres (GC)](http://www.ssc-spc.gc.ca/pages/itir-triti/itir-triti-afac-271115-pres1-fra.html)
 - [Normes ouvertes - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/2_Normes_ouvertes.md)
 - [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/3_Open_Source_Software.md)
 - [Politique du libre (ville de Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
@@ -207,7 +213,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
   - Adhere to GC technical standards and guidance, leveraging open standards when possible
   - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
 - {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery
+  - Mandatory use of DXP (Canada's XRoad) to foster seamless service delivery
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
   - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
 - {: .dpgn-onegc-architectural } Build toward OneGC **Build It Right - OneGC Architectural Checklist (draft))**
@@ -259,7 +265,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 <section class="dpgn-section-guideline">
 
-## 6.3 Faire la conception en fonction de l’interopérabilité, en permettant à la collectivité de découvrir et d’exploiter les services
+## 6.3 Faire la conception en fonction de l'interopérabilité, en permettant à la collectivité de découvrir et d'exploiter les services
 
 <div class="dpgn-section-intro-guideline">
 
@@ -312,7 +318,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 <section class="dpgn-section-guideline">
 
-## 6.4 Ouvrir l’accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service
+## 6.4 Ouvrir l'accès aux donnés, aux transactions et aux règles commerciales qui sous-tendent un service
 
 <div class="dpgn-section-intro-guideline">
 
@@ -330,7 +336,7 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
   - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
   - Open data increases transparency.
   - Open data leverages public sector information to develop consumer and commercial products.
-  - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
+  - Utilize the Government of Canada's and ISED's Application Programming Interface (API) Store.
 
 </section>
 
