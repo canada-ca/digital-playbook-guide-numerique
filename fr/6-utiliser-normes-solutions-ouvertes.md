@@ -38,6 +38,48 @@ altLangPage: 6-use-open-standards-solutions
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
+Give equal consideration to open source software when you choose technology.
+
+Your technology project or programme could benefit from:
+
+- solving common problems with readily available open source technology
+- more time and resource for customised solutions to solve the rare or unique problems
+- lower implementation and running costs
+
+Be aware that open source software is not completely free, so take into account the total cost of migrating, including exit and transition costs.
+
+**Technology Code of Practice - Be open and use open source (UK))**
+
+Open standards can be used when designing individual elements of the solution.
+
+Using open standards means you:
+
+- save time and money by reusing things that are already available
+- increase compatibility with all stakeholders
+- potentially open up the range of companies you can purchase from as more of them are likely to use the same standard as you
+- can move between different technologies when you need to and don’t get locked into contracts
+
+**(Technology Code of Practice - Make use of open standards (UK))**
+
+The city acknowledges that open source software and hardware:
+
+- entail proven benefits, namely with respect to quality, safety of information, variety of functionalities and the pooling of solutions;
+- contribute to the interoperability, reusability and interchangeability of solutions;
+- contribute to data resilience;
+- contribute to eliminating vendor lock-in;
+- constitute an industry of their own and must be assessed on merit, like every other industry.
+
+The city acknowledges that, as a public administration body, it must promote free competition in terms of software and hardware purchases.
+
+- Principle 1
+  - The city commits to systematically considering the solutions put forth by the open source industry for all replacement and development of software and hardware in an effort to remain transparent and to contribute to the common good and to the mutualization of solutions.
+- Principle 2
+  - The city commits to basing its decision to use an open source software or hardware on its ability to meet the business needs, and the technological and safety criteria, as well as on requirements specific to the open source industry.
+- Principle 3
+  - The city commits to favoring cooperation with other public administrations by using open sources licenses for the development of software and hardware solutions. It further commits to promoting the reuse of these solutions in the public sector.
+
+**(Policy concerning the use and development of open source software and hardware (City of Montréal))**
+
 Use open standards, open source software and common government platforms where available.
 
 Open standards and open source software are published publicly, freely available for use by anyone, and are developed and maintained using a collaborative approach.
