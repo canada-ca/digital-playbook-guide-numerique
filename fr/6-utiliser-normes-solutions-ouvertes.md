@@ -32,7 +32,7 @@ altLangPage: 6-use-open-standards-solutions
 
 <section class="dpgn-section-guideline">
 
-## 6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires
+## 6.1 Tirer parti des normes ouvertes, utiliser des logiciels libres et adopter les pratiques exemplaires
 
 <div class="dpgn-section-intro-guideline">
 
@@ -115,10 +115,14 @@ Using open standards and common government platforms helps you to:
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- Consider open source software solutions at every layer of the stack **(Digital Services Playbook (US))**
 - use open standards and common platforms **(Digital Service Standard (Ontario))**
 - understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
+- Consider open source where feasible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+  - Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
+  - Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.
 - {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec
+  - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tech
 
 <section class="dpgn-section-stage dpgn-stage-alpha">
 
@@ -163,6 +167,7 @@ Using open standards and common government platforms helps you to:
 ### Ressources similaires
 
 - [Normes ouvertes - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/2_Normes_ouvertes.md)
+- [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/3_Open_Source_Software.md)
 - [Politique du libre (ville de Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
 - [3. Be open and use open source (Technology Code of Practice (UK))](https://www.gov.uk/guidance/be-open-and-use-open-source)
 - [4. Make use of open standards (Technology Code of Practice (UK))](https://www.gov.uk/guidance/make-use-of-open-standards)
@@ -198,7 +203,6 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 - Choose software frameworks that are commonly used by private-sector companies creating similar services **(Digital Services Playbook (US))**
 - Whenever possible, ensure that software can be deployed on a variety of commodity hardware types **(Digital Services Playbook (US))**
 - Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
-- [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
 - {: .dpgn-onegc-architectural } Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
   - Adhere to GC technical standards and guidance, leveraging open standards when possible
   - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
@@ -221,14 +225,6 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
   - Modular technology can be reused, in part or in whole to innovate new solutions and uses for it. It also allows you to add new capabilities and capacities to your technology in response to changing operational environments.
 - Choose solutions or parts thereof that are re-usable in another service context. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Use technology solutions that other business lines can reuse or adapt to their needs. This is both economical and practical as it permits future interoperability, and reduces the overall cost of follow-on digital transformation initiatives.
-- Consider open source where feasible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
-  - Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.
-- Consider open data to the extent possible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
-  - Open data increases transparency.
-  - Open data leverages public sector information to develop consumer and commercial products.
-  - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
 
 </section>
 
@@ -329,6 +325,12 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+- Consider open data to the extent possible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+  - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
+  - Open data increases transparency.
+  - Open data leverages public sector information to develop consumer and commercial products.
+  - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
 
 </section>
 
