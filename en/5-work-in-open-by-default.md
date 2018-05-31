@@ -232,31 +232,20 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 **[TODO: Add/revise introductory text]**
 
-All solutions should be developed in the open, unless doing so would violate legislation or policy. This includes working in the open, sharing any and all data and information produced in developing the solution, and making the final solution available as open source.
+Make all source code open and reusable under an appropriate open source software licence, so that other developers can:
 
-Make all new source code open and reusable, and publish it under appropriate licences (or provide a convincing explanation as to why this can't be done for specific subsets of the source code).
+- benefit from your work and build on it
+- learn from your experiences
+- identify parts of your code for reuse which you might not have recognised yourself
 
-Making your source code open means:
+This includes working in the open, sharing any and all data and information produced in developing the solution, and making the final solution available as open source software. Publishing your code and data from the beginning of your technology project or programme will encourage:
 
-- other services can reuse the software you've created
-- other services don't end up doing work you've already done and you reduce costs in government as a whole
-- you avoid starting technology contracts that you can't end easily
-
-**(Digital Service Standard (UK))**
-
-Make all new source code open by default.
-
-It’s important to share your source code so others with a similar need can reuse it.
-
-Open source helps to:
-
-- reduce costs for your project and others’
-- avoid lock-in
-- stop duplication
-- increase transparency
-- add benefits, from improvements by other developers.
-
-**(Digital Service Standard (AU))**
+- clearer documentation, making it easier for your team to maintain the code, track changes to it and for other people to use it
+- cleaner and well-structured code that is easier to maintain
+- processes that will allow you to continuously publish code as it is written
+- clarity around data that needs to remain protected and how that's achieved
+- suggestions about how the code can be improved or where security can be improved
+- others to contribute ideas as the project is in progress
 
 </div>
 
@@ -266,51 +255,14 @@ Open source helps to:
 
 **[TODO: Add/revise checklist items]**
 
-- Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
-- Ensure that we maintain contractual rights to all custom software developed by third parties in a manner that is publishable and reusable at no cost **(Digital Services Playbook (US))**
-- When appropriate, create an API for third parties and internal users to interact with the service directly **(Digital Services Playbook (US))**
-- Make all new source code open and reusable and explain how it can be reused
-- Show your code in an open Internet source code repository and enable contributions and comments on the code
+- Host source code publicly available in an open internet source code repository
+- Use an Open Source Initiative approved licence
+- Offer users a mechanism to report bugs and issues, and be responsive to these reports
+- Keep track of changes to it using version control
 - {: .dpgn-onegc-architectural } Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Alpha stage
-
-- Determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
-- Confirm that you own the intellectual property **(Digital Service Standard (UK))**
-- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
-- Determine how you're using code from other teams or services **(Digital Service Standard (UK))**
-- show that you have considered a plan to release it under a licence that is suitable for your service **(Digital Service Standard (AU))**
-- consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Beta stage
-
-- share your code in a repository **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Live stage
-
-- Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
-- Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
-- Determine the licences you're using to release code **(Digital Service Standard (UK))**
-- Confirm that you own the intellectual property **(Digital Service Standard (UK))**
-- Document the code you've not made open and why **(Digital Service Standard (UK))**
-- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
-- show how you are making new source code open and reusable, for example, storing in repositories, releasing code under licence, using APIs **(Digital Service Standard (AU))**
-- show how you have provided a plan or guidance for contributors **(Digital Service Standard (AU))**
-- show how you’re handling updates and bug fixes to the code. **(Digital Service Standard (AU))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
