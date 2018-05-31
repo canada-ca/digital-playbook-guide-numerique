@@ -54,7 +54,7 @@ Open source software (OSS) tends to use and help define open standards and publi
 
 Give equal consideration to open source software when you choose technology.
 
-Evaluating and uing open source software, your technology project could benefit from:
+Evaluating and using open source software means you can benefit from:
 
 - solving common problems with readily available open source technology
 - more time and resource for customised solutions to solve the rare or unique problems
