@@ -38,32 +38,17 @@ altLangPage: 6-utiliser-normes-solutions-ouvertes
 
 **[TODO: Add/revise introductory text]**
 
-Use open standards, open source software and common government platforms where available.
+Build technology that uses open standards to ensure your system works and communicates with other products or systems, and can easily be upgraded and expanded.
 
-Open standards and open source software are published publicly, freely available for use by anyone, and are developed and maintained using a collaborative approach.
+Using open standards means you can:
 
-Using open standards and common government platforms will help the government:
-
-- save time and money by reusing things that are already available
-- move between different technologies when needed
-- quickly and easily change a service when needed
-- give people a more consistent experience of using government services online
+- move between different technologies when you need to, avoiding vendor lock-in
+- quickly and easily change your service when you need to
+- increase compatibility with all stakeholders
+- open up the range of companies you can purchase from as more of them are likely to use the same standard as you
 - access a wider range of both open source and proprietary software vendors
-- eliminate potentially restrictive long-term contracts
 
-**(Digital Service Standard (Ontario))**
-
-Build using open standards and common government platforms where appropriate.
-
-Using open standards and common government platforms helps you to:
-
-- meet the needs of your users by building with proven solutions
-- make users’ experience of government more consistent, which generates trust
-- save time and money by reusing things that are already available
-- be more efficient by sharing data appropriately
-- move between different technologies when you need to, avoiding vendor lock-in.
-
-**(Digital Service Standard (AU))**
+Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source software, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector.
 
 </div>
 
@@ -140,9 +125,13 @@ Using open standards and common government platforms helps you to:
 
 **[TODO: Add/revise introductory text]**
 
-The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector. **Digital Services Playbook (US))**
+In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level.
 
-In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged, where appropriate. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+Using common, proven government solutions, approaches, and platforms will help the government:
+
+- meet the needs of your users by building with proven solutions
+- make users' experience of government more consistent, which generates trust
+- save time and money by reusing things that are already available
 
 </div>
 
@@ -226,7 +215,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
+Interoperability is a characteristic of a product or system, whose interfaces are completely understood, to work with other products or systems, present or future, in either implementation or access, without any restrictions. Interoperability should be ensured, via the use of open standards.
 
 Application Program Interfaces (APIs) are a means by which business functionality is exposed digitally. They are building blocks that are critical to the successful delivery of government online digital services and expanding service delivery to third party providers. They can also enable greater interoperability between services, optimized experiences across devices and can even lead to innovative new services by enabling third party products to work seamlessly with Government of Canada systems.
 
