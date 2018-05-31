@@ -52,9 +52,7 @@ Our choices for hosting infrastructure, databases, software frameworks, programm
 
 Open source software (OSS) tends to use and help define open standards and publicly available specifications. OSS products are, by their nature, publicly available specifications, and the availability of their source code promotes open, democratic debate around their specifications, making them both more robust and interoperable.
 
-Give equal consideration to open source software when you choose technology.
-
-Evaluating and using open source software means you can benefit from:
+Using open source software means you can benefit from:
 
 - solving common problems with readily available open source technology
 - more time and resource for customised solutions to solve the rare or unique problems
