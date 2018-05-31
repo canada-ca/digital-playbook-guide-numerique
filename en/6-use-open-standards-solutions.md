@@ -58,31 +58,12 @@ Our choices for hosting infrastructure, databases, software frameworks, programm
 
 **[TODO: Add/revise checklist items]**
 
-- use open standards and common platforms **(Digital Service Standard (Ontario))**
-- understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
+- Use open standards and open source software
+- Factor in the use of open Standards and open source software when calculating total cost of ownership of a solutions including exit or transition costs
+- Avoiding lock-in to any proprietary solutions where open source software and/or open standards are available
 - {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tech
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Alpha stage
-
-- build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
-- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
-- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
-- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
-
-#### Beta and live stages
-
-- building using the Open Web Platform standards **(Digital Service Standard (AU))**
-- avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
-- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -141,6 +122,10 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 **[TODO: Add/revise checklist items]**
 
+- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
+- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
+- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
+- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
 - Choose software frameworks that are commonly used by private-sector companies creating similar services **(Digital Services Playbook (US))**
 - Whenever possible, ensure that software can be deployed on a variety of commodity hardware types **(Digital Services Playbook (US))**
 - Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
