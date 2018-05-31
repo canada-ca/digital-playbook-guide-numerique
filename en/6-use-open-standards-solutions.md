@@ -68,11 +68,15 @@ Evaluating and uing open source software, your technology project could benefit 
 
 **[TODO: Add/revise checklist items]**
 
-- Use open standards and open source software
+- Use open standards and open source software at every layer of the stack
 - Factor in the use of open Standards and open source software when calculating total cost of ownership of a solutions including exit or transition costs
 - Avoiding lock-in to any proprietary solutions where open source software and/or open standards are available
+- Ensure that software can be deployed on a variety of commodity hardware types
 - {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tech
+- {: .dpgn-onegc-architectural } Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Adhere to GC technical standards and guidance, leveraging open standards when possible
+  - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
 
 </section>
 
@@ -137,12 +141,7 @@ Using common, proven government solutions, approaches, and platforms will help t
 - search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
 - addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
 - Choose software frameworks that are commonly used by private-sector companies creating similar services **(Digital Services Playbook (US))**
-- Whenever possible, ensure that software can be deployed on a variety of commodity hardware types **(Digital Services Playbook (US))**
 - Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
-- [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
-- {: .dpgn-onegc-architectural } Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Adhere to GC technical standards and guidance, leveraging open standards when possible
-  - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
 - {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) **(Build It Right - OneGC Architectural Checklist (draft))**
   - Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
@@ -162,9 +161,6 @@ Using common, proven government solutions, approaches, and platforms will help t
   - Modular technology can be reused, in part or in whole to innovate new solutions and uses for it. It also allows you to add new capabilities and capacities to your technology in response to changing operational environments.
 - Choose solutions or parts thereof that are re-usable in another service context. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Use technology solutions that other business lines can reuse or adapt to their needs. This is both economical and practical as it permits future interoperability, and reduces the overall cost of follow-on digital transformation initiatives.
-- Consider open source where feasible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
-  - Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.
 - Consider open data to the extent possible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
   - Open data increases transparency.
