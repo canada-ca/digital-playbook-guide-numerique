@@ -40,7 +40,7 @@ altLangPage: 6-utiliser-normes-solutions-ouvertes
 
 Build technology that uses open standards to ensure your system works and communicates with other products or systems, and can easily be upgraded and expanded.
 
-Using open standards means you can:
+Adopting and using open standards means you can:
 
 - move between different technologies when you need to, avoiding vendor lock-in
 - quickly and easily change your service when you need to
@@ -49,6 +49,16 @@ Using open standards means you can:
 - access a wider range of both open source and proprietary software vendors
 
 Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source software, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector.
+
+Open source software (OSS) tends to use and help define open standards and publicly available specifications. OSS products are, by their nature, publicly available specifications, and the availability of their source code promotes open, democratic debate around their specifications, making them both more robust and interoperable.
+
+Give equal consideration to open source software when you choose technology.
+
+Evaluating and uing open source software, your technology project could benefit from:
+
+- solving common problems with readily available open source technology
+- more time and resource for customised solutions to solve the rare or unique problems
+- lower implementation and running costs
 
 </div>
 
