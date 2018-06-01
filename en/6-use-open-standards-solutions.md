@@ -66,7 +66,7 @@ Using open source software means you can benefit from:
 
 **[TODO: Add/revise checklist items]**
 
-- Use open standards and open source software at every layer of the stack
+- Use open standards and open source software at every layer of the technology stack
 - Factor in the use of open Standards and open source software when calculating total cost of ownership of a solutions including exit or transition costs
 - Avoiding lock-in to any proprietary solutions where open source software and/or open standards are available
 - Ensure that software can be deployed on a variety of commodity hardware types
