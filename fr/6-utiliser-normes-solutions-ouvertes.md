@@ -66,7 +66,7 @@ Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Utiliser des normes ouvertes et des logiciels libres à chaque couche de la pile technologique 
+- Utiliser des normes ouvertes et des logiciels libres à chaque couche de la pile technologique
 - Tenir compte de l'utilisation de normes ouvertes et de logiciels libres lors du calcul du coût total de possession d'une solution, y compris les coûts de sortie ou de transition
 - Éviter le verrouillage à toutes les solutions propriétaires où des logiciels libres et / ou des normes ouvertes sont disponibles
 - Assurez-vous que le logiciel peut être déployé sur une variété de types de matériel de base
