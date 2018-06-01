@@ -107,6 +107,7 @@ Using open source software means you can benefit from:
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 - Open Source Standards (GC EA Principles)
 - {: .dpgn-onegc-architectural } Use emerging technologies (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -188,7 +189,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - Technology Debt Managed (Current GC EARB Principles)
 - Containerized by default - Platform Independence Lift & Shift (GC EA Principles)
 - Architecturally Fit for the GC Enterprise (GC EA Principles)
-- {: .dpgn-onegc-architectural } Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Build toward OneGC (OneGC Architectural Checklist - Build It Right (draft))
