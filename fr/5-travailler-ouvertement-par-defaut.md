@@ -232,27 +232,20 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-All solutions should be developed in the open, unless doing so would violate legislation or policy. This includes working in the open, sharing any and all data and information produced in developing the solution, and making the final solution available as open source.
+Rendre tout le code source ouvert et réutilisable sous une licence logicielle libre appropriée, afin que les autres développeurs puissent:
 
-Solutions should be designed with open source technologies over proprietary ones. Proprietary technologies should only be used when open sources technologies cannot meet the requirements of the solution being developed or proprietary technologies are significantly better than available open source technologies.
+- profitez de votre travail et en tirer parti
+- apprendre de vos expériences
+- identifier des parties de votre code pour réutilisation que vous pourriez ne pas avoir reconnu vous-même
 
-All solutions must use open standards to ensure interoperability across the OneGC ecosystem and continued access to data and information. Solutions should use the open standards preferred by the interoperability platform. Where no preferred open standard meets the requirements of the solution, the addition of a new open standard must be agreed upon by the business owner of the interoperability platform.
+Cela implique de travailler ouvertement, de partager toutes les données et informations produites lors du développement de la solution et de rendre la solution finale disponible en tant que logiciel libre. La publication de votre code et de vos données dès le début de votre projet ou programme technologique encouragera:
 
-**(Digital Service Standard (UK))**
-
-Make all new source code open by default.
-
-It’s important to share your source code so others with a similar need can reuse it.
-
-Open source helps to:
-
-- reduce costs for your project and others’
-- avoid lock-in
-- stop duplication
-- increase transparency
-- add benefits, from improvements by other developers.
-
-**(Digital Service Standard (AU))**
+- une documentation plus claire, facilitant le maintien du code par votre équipe, le suivi des modifications et l'utilisation par d'autres personnes
+- code plus propre et bien structuré, plus facile à maintenir
+- des processus qui vous permettront de publier en continu du code lorsqu'il est écrit
+- clarté sur les données qui doivent rester protégées et comment cela est réalisé
+- des suggestions sur la façon d'améliorer le code ou d'améliorer la sécurité
+- d'autres à apporter des idées au fur et à mesure que le projet progresse
 
 </div>
 
@@ -262,51 +255,14 @@ Open source helps to:
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
-- Ensure that we maintain contractual rights to all custom software developed by third parties in a manner that is publishable and reusable at no cost **(Digital Services Playbook (US))**
-- When appropriate, create an API for third parties and internal users to interact with the service directly **(Digital Services Playbook (US))**
-- Make all new source code open and reusable and explain how it can be reused
-- Show your code in an open Internet source code repository and enable contributions and comments on the code
+- Héberger le code source dans un référentiel de code source internet ouvert
+- Utiliser une licence approuvée par l'Open Source Initiative
+- Proposer aux utilisateurs un mécanisme de signalement des bogues et des problèmes, et être réactif à ces rapports
+- Gardez une trace des modifications à l'aide du contrôle de version
 - {: .dpgn-onegc-architectural } Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Stage alpha
-
-- Determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
-- Confirm that you own the intellectual property **(Digital Service Standard (UK))**
-- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
-- Determine how you're using code from other teams or services **(Digital Service Standard (UK))**
-- show that you have considered a plan to release it under a licence that is suitable for your service **(Digital Service Standard (AU))**
-- consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Stage bêta
-
-- share your code in a repository **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Stage en direct
-
-- Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
-- Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
-- Determine the licences you're using to release code **(Digital Service Standard (UK))**
-- Confirm that you own the intellectual property **(Digital Service Standard (UK))**
-- Document the code you've not made open and why **(Digital Service Standard (UK))**
-- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
-- show how you are making new source code open and reusable, for example, storing in repositories, releasing code under licence, using APIs **(Digital Service Standard (AU))**
-- show how you have provided a plan or guidance for contributors **(Digital Service Standard (AU))**
-- show how you’re handling updates and bug fixes to the code. **(Digital Service Standard (AU))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
