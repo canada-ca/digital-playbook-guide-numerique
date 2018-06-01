@@ -255,7 +255,7 @@ This includes working in the open, sharing any and all data and information prod
 
 **[TODO: Add/revise checklist items]**
 
-- Host source code publicly available in an open internet source code repository
+- Host source code publicly in an open internet source code repository
 - Use an Open Source Initiative approved licence
 - Offer users a mechanism to report bugs and issues, and be responsive to these reports
 - Keep track of changes to it using version control

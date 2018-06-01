@@ -232,20 +232,20 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-Make all source code open and reusable under an appropriate open source software licence, so that other developers can:
+Rendre tout le code source ouvert et réutilisable sous une licence logicielle libre appropriée, afin que les autres développeurs puissent:
 
-- benefit from your work and build on it
-- learn from your experiences
-- identify parts of your code for reuse which you might not have recognised yourself
+- profitez de votre travail et en tirer parti
+- apprendre de vos expériences
+- identifier des parties de votre code pour réutilisation que vous pourriez ne pas avoir reconnu vous-même
 
-This includes working in the open, sharing any and all data and information produced in developing the solution, and making the final solution available as open source software. Publishing your code and data from the beginning of your technology project or programme will encourage:
+Cela implique de travailler ouvertement, de partager toutes les données et informations produites lors du développement de la solution et de rendre la solution finale disponible en tant que logiciel libre. La publication de votre code et de vos données dès le début de votre projet ou programme technologique encouragera:
 
-- clearer documentation, making it easier for your team to maintain the code, track changes to it and for other people to use it
-- cleaner and well-structured code that is easier to maintain
-- processes that will allow you to continuously publish code as it is written
-- clarity around data that needs to remain protected and how that's achieved
-- suggestions about how the code can be improved or where security can be improved
-- others to contribute ideas as the project is in progress
+- une documentation plus claire, facilitant le maintien du code par votre équipe, le suivi des modifications et l'utilisation par d'autres personnes
+- code plus propre et bien structuré, plus facile à maintenir
+- des processus qui vous permettront de publier en continu du code lorsqu'il est écrit
+- clarté sur les données qui doivent rester protégées et comment cela est réalisé
+- des suggestions sur la façon d'améliorer le code ou d'améliorer la sécurité
+- d'autres à apporter des idées au fur et à mesure que le projet progresse
 
 </div>
 
@@ -255,10 +255,10 @@ This includes working in the open, sharing any and all data and information prod
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Host source code publicly available in an open internet source code repository
-- Use an Open Source Initiative approved licence
-- Offer users a mechanism to report bugs and issues, and be responsive to these reports
-- Keep track of changes to it using version control
+- Héberger le code source dans un référentiel de code source internet ouvert
+- Utiliser une licence approuvée par l'Open Source Initiative
+- Proposer aux utilisateurs un mécanisme de signalement des bogues et des problèmes, et être réactif à ces rapports
+- Gardez une trace des modifications à l'aide du contrôle de version
 - {: .dpgn-onegc-architectural } Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
