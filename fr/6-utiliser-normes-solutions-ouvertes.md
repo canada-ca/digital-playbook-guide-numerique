@@ -38,32 +38,25 @@ altLangPage: 6-use-open-standards-solutions
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-Use open standards, open source software and common government platforms where available.
+Créez une technologie qui utilise des normes ouvertes pour garantir que votre système fonctionne et communique avec d'autres produits ou systèmes, et peut facilement être mis à niveau et étendu.
 
-Open standards and open source software are published publicly, freely available for use by anyone, and are developed and maintained using a collaborative approach.
+Adopter et utiliser des normes ouvertes signifie que vous pouvez:
 
-Using open standards and common government platforms will help the government:
+- passer d'une technologie à l'autre lorsque vous en avez besoin, en évitant le verrouillage des fournisseurs
+- changer rapidement et facilement votre service quand vous en avez besoin
+- augmenter la compatibilité avec toutes les parties prenantes
+- ouvrir la gamme des entreprises de qui vous pouvez acheter, car plus d'entre eux sont susceptibles d'utiliser la même norme que vous
+- accéder à un plus large éventail de fournisseurs de logiciels libres et propriétaires
 
-- save time and money by reusing things that are already available
-- move between different technologies when needed
-- quickly and easily change a service when needed
-- give people a more consistent experience of using government services online
-- access a wider range of both open source and proprietary software vendors
-- eliminate potentially restrictive long-term contracts
+Nos choix pour l'infrastructure d'hébergement, les bases de données, les plateformes logiciels, les langages de programmation et le reste de la pile technologique devraient éviter le verrouillage des fournisseurs et correspondre à ce que les entreprises modernes de logiciels grand public choisissent aujourd'hui. En particulier, les équipes de services numériques devraient envisager d'utiliser des logiciels libres, des solutions infonuagiques et des produits de base à travers la pile technologique, en raison de leur adoption généralisée et de leur soutien par les entreprises technologiques du secteur privé.
 
-**(Digital Service Standard (Ontario))**
+Les logiciels libres ont tendance à utiliser et à aider à définir des normes ouvertes et des spécifications accessibles au public. Les logiciels libres sont, par nature, des spécifications accessibles au public, et la disponibilité de leur code source favorise un débat ouvert et démocratique autour de leurs spécifications, les rendant à la fois plus robustes et interopérables.
 
-Build using open standards and common government platforms where appropriate.
+Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
 
-Using open standards and common government platforms helps you to:
-
-- meet the needs of your users by building with proven solutions
-- make users’ experience of government more consistent, which generates trust
-- save time and money by reusing things that are already available
-- be more efficient by sharing data appropriately
-- move between different technologies when you need to, avoiding vendor lock-in.
-
-**(Digital Service Standard (AU))**
+- résoudre les problèmes courants avec la technologie libre facilement disponible
+- plus de temps et de ressources pour des solutions personnalisées pour résoudre les problèmes rares ou uniques
+- réduction des coûts de mise enieuvre et de fonctionnement
 
 </div>
 
@@ -73,31 +66,16 @@ Using open standards and common government platforms helps you to:
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- use open standards and common platforms **(Digital Service Standard (Ontario))**
-- understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
+- Utiliser des normes ouvertes et des logiciels libres à chaque couche de la pile technologique
+- Tenir compte de l'utilisation de normes ouvertes et de logiciels libres lors du calcul du coût total de possession d'une solution, y compris les coûts de sortie ou de transition
+- Éviter le verrouillage à toutes les solutions propriétaires où des logiciels libres et / ou des normes ouvertes sont disponibles
+- Assurez-vous que le logiciel peut être déployé sur une variété de types de matériel de base
 - {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tec
+  - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tech
+- {: .dpgn-onegc-architectural } Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Adhere to GC technical standards and guidance, leveraging open standards when possible
+  - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Stage alpha
-
-- build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
-- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
-- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
-- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
-
-#### Stages bêta et en direct
-
-- building using the Open Web Platform standards **(Digital Service Standard (AU))**
-- avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
-- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -121,6 +99,7 @@ Using open standards and common government platforms helps you to:
 ### Ressources similaires
 
 - [Normes ouvertes - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/2_Normes_ouvertes.md)
+- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 - [3. Be open and use open source (Technology Code of Practice (UK))](https://www.gov.uk/guidance/be-open-and-use-open-source)
 - [4. Make use of open standards (Technology Code of Practice (UK))](https://www.gov.uk/guidance/make-use-of-open-standards)
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
@@ -128,6 +107,7 @@ Using open standards and common government platforms helps you to:
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 - Open Source Standards (GC EA Principles)
 - {: .dpgn-onegc-architectural } Use emerging technologies (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -140,9 +120,13 @@ Using open standards and common government platforms helps you to:
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector. **Digital Services Playbook (US))**
+In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level.
 
-In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged, where appropriate. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+Using common, proven government solutions, approaches, and platforms will help the government:
+
+- meet the needs of your users by building with proven solutions
+- make users' experience of government more consistent, which generates trust
+- save time and money by reusing things that are already available
 
 </div>
 
@@ -152,13 +136,12 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
+- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
+- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
+- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
 - Choose software frameworks that are commonly used by private-sector companies creating similar services **(Digital Services Playbook (US))**
-- Whenever possible, ensure that software can be deployed on a variety of commodity hardware types **(Digital Services Playbook (US))**
 - Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
-- [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
-- {: .dpgn-onegc-architectural } Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Adhere to GC technical standards and guidance, leveraging open standards when possible
-  - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
 - {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) **(Build It Right - OneGC Architectural Checklist (draft))**
   - Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
@@ -178,9 +161,6 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
   - Modular technology can be reused, in part or in whole to innovate new solutions and uses for it. It also allows you to add new capabilities and capacities to your technology in response to changing operational environments.
 - Choose solutions or parts thereof that are re-usable in another service context. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Use technology solutions that other business lines can reuse or adapt to their needs. This is both economical and practical as it permits future interoperability, and reduces the overall cost of follow-on digital transformation initiatives.
-- Consider open source where feasible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
-  - Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.
 - Consider open data to the extent possible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
   - Open data increases transparency.
@@ -202,7 +182,6 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 ### Ressources similaires
 
 - [Code source ouvert - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Code_source_libre.md)
-- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
 - GC Enterprise First, Enterprise Cluster second, Departmental uniqueness last (Current GC EARB Principles)
@@ -210,7 +189,6 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 - Technology Debt Managed (Current GC EARB Principles)
 - Containerized by default - Platform Independence Lift & Shift (GC EA Principles)
 - Architecturally Fit for the GC Enterprise (GC EA Principles)
-- {: .dpgn-onegc-architectural } Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Build toward OneGC (OneGC Architectural Checklist - Build It Right (draft))
@@ -225,6 +203,8 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 <div class="dpgn-section-intro-guideline">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+L’interopérabilité est la capacité que possède un produit ou un système, dont les interfaces sont intégralement connues, à fonctionner avec d'autres produits ou systèmes existants ou futurs et ce sans restriction d'accès ou de mise en oeuvre. L'interopérabilité technique devrait être assurée par l'utilisation de normes ouvertes.
 
 Les interfaces de programme d'application (API) sont un moyen par lequel les fonctionnalités métier sont exposées numériquement. Ce sont des éléments essentiels à la prestation réussie des services numériques en direct du gouvernement et à l'expansion de la prestation de services à des fournisseurs tiers. Ils peuvent également permettre une plus grande interopérabilité entre les services, optimiser les expériences entre les appareils et même mener à de nouveaux services novateurs en permettant à des produits tiers de fonctionner de façon transparente avec les systèmes du gouvernement du Canada.
 

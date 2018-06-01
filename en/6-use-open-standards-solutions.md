@@ -38,32 +38,25 @@ altLangPage: 6-utiliser-normes-solutions-ouvertes
 
 **[TODO: Add/revise introductory text]**
 
-Use open standards, open source software and common government platforms where available.
+Build technology that uses open standards to ensure your system works and communicates with other products or systems, and can easily be upgraded and expanded.
 
-Open standards and open source software are published publicly, freely available for use by anyone, and are developed and maintained using a collaborative approach.
+Adopting and using open standards means you can:
 
-Using open standards and common government platforms will help the government:
-
-- save time and money by reusing things that are already available
-- move between different technologies when needed
-- quickly and easily change a service when needed
-- give people a more consistent experience of using government services online
+- move between different technologies when you need to, avoiding vendor lock-in
+- quickly and easily change your service when you need to
+- increase compatibility with all stakeholders
+- open up the range of companies you can purchase from as more of them are likely to use the same standard as you
 - access a wider range of both open source and proprietary software vendors
-- eliminate potentially restrictive long-term contracts
 
-**(Digital Service Standard (Ontario))**
+Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source software, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector.
 
-Build using open standards and common government platforms where appropriate.
+Open source software (OSS) tends to use and help define open standards and publicly available specifications. OSS products are, by their nature, publicly available specifications, and the availability of their source code promotes open, democratic debate around their specifications, making them both more robust and interoperable.
 
-Using open standards and common government platforms helps you to:
+Using open source software means you can benefit from:
 
-- meet the needs of your users by building with proven solutions
-- make users’ experience of government more consistent, which generates trust
-- save time and money by reusing things that are already available
-- be more efficient by sharing data appropriately
-- move between different technologies when you need to, avoiding vendor lock-in.
-
-**(Digital Service Standard (AU))**
+- solving common problems with readily available open source technology
+- more time and resource for customised solutions to solve the rare or unique problems
+- lower implementation and running costs
 
 </div>
 
@@ -73,31 +66,16 @@ Using open standards and common government platforms helps you to:
 
 **[TODO: Add/revise checklist items]**
 
-- use open standards and common platforms **(Digital Service Standard (Ontario))**
-- understand common user needs with other services and meet those needs consistently with the rest of government **(Digital Service Standard (Ontario))**
+- Use open standards and open source software at every layer of the technology stack
+- Factor in the use of open Standards and open source software when calculating total cost of ownership of a solutions including exit or transition costs
+- Avoiding lock-in to any proprietary solutions where open source software and/or open standards are available
+- Ensure that software can be deployed on a variety of commodity hardware types
 - {: .dpgn-onegc-architectural } Use emerging technologies **(Build It Right - OneGC Architectural Checklist (draft))**
   - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tech
+- {: .dpgn-onegc-architectural } Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
+  - Adhere to GC technical standards and guidance, leveraging open standards when possible
+  - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Alpha stage
-
-- build using the open standards of HTML, CSS and JavaScript to develop prototypes **(Digital Service Standard (AU))**
-- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
-- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
-- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
-
-#### Beta and live stages
-
-- building using the Open Web Platform standards **(Digital Service Standard (AU))**
-- avoiding lock-in to any proprietary solutions where an open standard is available **(Digital Service Standard (AU))**
-- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -121,6 +99,7 @@ Using open standards and common government platforms helps you to:
 ### Similar resources
 
 - [Open Standards - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/2_Open_Standards.md)
+- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 - [3. Be open and use open source (Technology Code of Practice (UK))](https://www.gov.uk/guidance/be-open-and-use-open-source)
 - [4. Make use of open standards (Technology Code of Practice (UK))](https://www.gov.uk/guidance/make-use-of-open-standards)
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
@@ -128,6 +107,7 @@ Using open standards and common government platforms helps you to:
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 - Open Source Standards (GC EA Principles)
 - {: .dpgn-onegc-architectural } Use emerging technologies (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-onegc-architectural } Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
 
 </section>
 </section>
@@ -140,9 +120,13 @@ Using open standards and common government platforms helps you to:
 
 **[TODO: Add/revise introductory text]**
 
-The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector. **Digital Services Playbook (US))**
+In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level.
 
-In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged, where appropriate. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
+Using common, proven government solutions, approaches, and platforms will help the government:
+
+- meet the needs of your users by building with proven solutions
+- make users' experience of government more consistent, which generates trust
+- save time and money by reusing things that are already available
 
 </div>
 
@@ -152,13 +136,12 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 **[TODO: Add/revise checklist items]**
 
+- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
+- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
+- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
+- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
 - Choose software frameworks that are commonly used by private-sector companies creating similar services **(Digital Services Playbook (US))**
-- Whenever possible, ensure that software can be deployed on a variety of commodity hardware types **(Digital Services Playbook (US))**
 - Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
-- [Consider open source software solutions](https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf) at every layer of the stack **(Digital Services Playbook (US))**
-- {: .dpgn-onegc-architectural } Build standards-based solution **(Build It Right - OneGC Architectural Checklist (draft))**
-  - Adhere to GC technical standards and guidance, leveraging open standards when possible
-  - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
 - {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) **(Build It Right - OneGC Architectural Checklist (draft))**
   - Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework **(Build It Right - OneGC Architectural Checklist (draft))**
@@ -178,9 +161,6 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
   - Modular technology can be reused, in part or in whole to innovate new solutions and uses for it. It also allows you to add new capabilities and capacities to your technology in response to changing operational environments.
 - Choose solutions or parts thereof that are re-usable in another service context. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Use technology solutions that other business lines can reuse or adapt to their needs. This is both economical and practical as it permits future interoperability, and reduces the overall cost of follow-on digital transformation initiatives.
-- Consider open source where feasible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product).
-  - Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further.
 - Consider open data to the extent possible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
   - Open data increases transparency.
@@ -202,7 +182,6 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 ### Similar resources
 
 - [Open Source Software - Open First Whitepaper (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/3_Open_Source_Software.md)
-- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
 - GC Enterprise First, Enterprise Cluster second, Departmental uniqueness last (Current GC EARB Principles)
@@ -210,7 +189,6 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 - Technology Debt Managed (Current GC EARB Principles)
 - Containerized by default - Platform Independence Lift & Shift (GC EA Principles)
 - Architecturally Fit for the GC Enterprise (GC EA Principles)
-- {: .dpgn-onegc-architectural } Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Digital Exchange Platform (DXP) (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))
 - {: .dpgn-onegc-architectural } Build toward OneGC (OneGC Architectural Checklist - Build It Right (draft))
@@ -226,7 +204,7 @@ In order to limit costs, avoid duplication of effort and provide a consistent cl
 
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
+Interoperability is a characteristic of a product or system, whose interfaces are completely understood, to work with other products or systems, present or future, in either implementation or access, without any restrictions. Interoperability should be ensured, via the use of open standards.
 
 Application Program Interfaces (APIs) are a means by which business functionality is exposed digitally. They are building blocks that are critical to the successful delivery of government online digital services and expanding service delivery to third party providers. They can also enable greater interoperability between services, optimized experiences across devices and can even lead to innovative new services by enabling third party products to work seamlessly with Government of Canada systems.
 
