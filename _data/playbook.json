@@ -8382,21 +8382,7 @@
                     "tags": [
 
                     ],
-                    "content": "<p>All solutions should be developed in the open, unless doing so would violate legislation or policy. This includes working in the open, sharing any and all data and information produced in developing the solution, and making the final solution available as open source.</p>"
-                  },
-                  {
-                    "contenttype": "text",
-                    "tags": [
-
-                    ],
-                    "content": "<p>Make all new source code open and reusable, and publish it under appropriate licences (or provide a convincing explanation as to why this can’t be done for specific subsets of the source code).</p>"
-                  },
-                  {
-                    "contenttype": "text",
-                    "tags": [
-
-                    ],
-                    "content": "<p>Making your source code open means:</p>"
+                    "content": "<p>Make all source code open and reusable under an appropriate open source software licence, so that other developers can:</p>"
                   },
                   {
                     "contenttype": "list",
@@ -8410,21 +8396,21 @@
                         "tags": [
 
                         ],
-                        "content": "other services can reuse the software you’ve created"
+                        "content": "benefit from your work and build on it"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "other services don’t end up doing work you’ve already done and you reduce costs in government as a whole"
+                        "content": "learn from your experiences"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "you avoid starting technology contracts that you can’t end easily"
+                        "content": "identify parts of your code for reuse which you might not have recognised yourself"
                       }
                     ]
                   },
@@ -8433,28 +8419,7 @@
                     "tags": [
 
                     ],
-                    "content": "<p><strong>(Digital Service Standard (UK))</strong></p>"
-                  },
-                  {
-                    "contenttype": "text",
-                    "tags": [
-
-                    ],
-                    "content": "<p>Make all new source code open by default.</p>"
-                  },
-                  {
-                    "contenttype": "text",
-                    "tags": [
-
-                    ],
-                    "content": "<p>It’s important to share your source code so others with a similar need can reuse it.</p>"
-                  },
-                  {
-                    "contenttype": "text",
-                    "tags": [
-
-                    ],
-                    "content": "<p>Open source helps to:</p>"
+                    "content": "<p>This includes working in the open, sharing any and all data and information produced in developing the solution, and making the final solution available as open source software. Publishing your code and data from the beginning of your technology project or programme will encourage:</p>"
                   },
                   {
                     "contenttype": "list",
@@ -8468,44 +8433,44 @@
                         "tags": [
 
                         ],
-                        "content": "reduce costs for your project and others’"
+                        "content": "clearer documentation, making it easier for your team to maintain the code, track changes to it and for other people to use it"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "avoid lock-in"
+                        "content": "cleaner and well-structured code that is easier to maintain"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "stop duplication"
+                        "content": "processes that will allow you to continuously publish code as it is written"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "increase transparency"
+                        "content": "clarity around data that needs to remain protected and how that’s achieved"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "add benefits, from improvements by other developers."
+                        "content": "suggestions about how the code can be improved or where security can be improved"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "others to contribute ideas as the project is in progress"
                       }
                     ]
-                  },
-                  {
-                    "contenttype": "text",
-                    "tags": [
-
-                    ],
-                    "content": "<p><strong>(Digital Service Standard (AU))</strong></p>"
                   }
                 ]
               },
@@ -8534,35 +8499,28 @@
                         "tags": [
 
                         ],
-                        "content": "Offer users a mechanism to report bugs and issues, and be responsive to these reports <strong>(Digital Services Playbook (US))</strong>"
+                        "content": "Host source code publicly in an open internet source code repository"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "Ensure that we maintain contractual rights to all custom software developed by third parties in a manner that is publishable and reusable at no cost <strong>(Digital Services Playbook (US))</strong>"
+                        "content": "Use an Open Source Initiative approved licence"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "When appropriate, create an API for third parties and internal users to interact with the service directly <strong>(Digital Services Playbook (US))</strong>"
+                        "content": "Offer users a mechanism to report bugs and issues, and be responsive to these reports"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "Make all new source code open and reusable and explain how it can be reused"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "Show your code in an open Internet source code repository and enable contributions and comments on the code"
+                        "content": "Keep track of changes to it using version control"
                       },
                       {
                         "contenttype": "listnested",
@@ -8593,175 +8551,6 @@
                                 "content": "Develop in the open by sharing and reusing all types of code and platform configuration"
                               }
                             ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "contenttype": "section",
-                    "tags": [
-                      "dpgn-section-stage",
-                      "dpgn-stage-alpha"
-                    ],
-                    "title": "Alpha stage",
-                    "content": [
-                      {
-                        "contenttype": "list",
-                        "tags": [
-
-                        ],
-                        "listtype": "unordered",
-                        "content": [
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Determine the licences you’re using to release code during beta <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Confirm that you own the intellectual property <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Determine how a team in another department can reuse your code <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Determine how you’re using code from other teams or services <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "show that you have considered a plan to release it under a licence that is suitable for your service <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "contenttype": "section",
-                    "tags": [
-                      "dpgn-section-stage",
-                      "dpgn-stage-beta"
-                    ],
-                    "title": "Beta stage",
-                    "content": [
-                      {
-                        "contenttype": "list",
-                        "tags": [
-
-                        ],
-                        "listtype": "unordered",
-                        "content": [
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "share your code in a repository <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "contenttype": "section",
-                    "tags": [
-                      "dpgn-section-stage",
-                      "dpgn-stage-live"
-                    ],
-                    "title": "Live stage",
-                    "content": [
-                      {
-                        "contenttype": "list",
-                        "tags": [
-
-                        ],
-                        "listtype": "unordered",
-                        "content": [
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Document how you accept contributions and comments on the code <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Document how you’re handling updates and bug fixes to the code <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Determine the licences you’re using to release code <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Confirm that you own the intellectual property <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Document the code you’ve not made open and why <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "Determine how a team in another department can reuse your code <strong>(Digital Service Standard (UK))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "show how you are making new source code open and reusable, for example, storing in repositories, releasing code under licence, using APIs <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "show how you have provided a plan or guidance for contributors <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "show how you’re handling updates and bug fixes to the code. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       }
@@ -8972,21 +8761,14 @@
                     "tags": [
 
                     ],
-                    "content": "<p>Use open standards, open source software and common government platforms where available.</p>"
+                    "content": "<p>Build technology that uses open standards to ensure your system works and communicates with other products or systems, and can easily be upgraded and expanded.</p>"
                   },
                   {
                     "contenttype": "text",
                     "tags": [
 
                     ],
-                    "content": "<p>Open standards and open source software are published publicly, freely available for use by anyone, and are developed and maintained using a collaborative approach.</p>"
-                  },
-                  {
-                    "contenttype": "text",
-                    "tags": [
-
-                    ],
-                    "content": "<p>Using open standards and common government platforms will help the government:</p>"
+                    "content": "<p>Adopting and using open standards means you can:</p>"
                   },
                   {
                     "contenttype": "list",
@@ -9000,28 +8782,28 @@
                         "tags": [
 
                         ],
-                        "content": "save time and money by reusing things that are already available"
+                        "content": "move between different technologies when you need to, avoiding vendor lock-in"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "move between different technologies when needed"
+                        "content": "quickly and easily change your service when you need to"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "quickly and easily change a service when needed"
+                        "content": "increase compatibility with all stakeholders"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "give people a more consistent experience of using government services online"
+                        "content": "open up the range of companies you can purchase from as more of them are likely to use the same standard as you"
                       },
                       {
                         "contenttype": "listitem",
@@ -9029,13 +8811,6 @@
 
                         ],
                         "content": "access a wider range of both open source and proprietary software vendors"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "eliminate potentially restrictive long-term contracts"
                       }
                     ]
                   },
@@ -9044,21 +8819,21 @@
                     "tags": [
 
                     ],
-                    "content": "<p><strong>(Digital Service Standard (Ontario))</strong></p>"
+                    "content": "<p>Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source software, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector.</p>"
                   },
                   {
                     "contenttype": "text",
                     "tags": [
 
                     ],
-                    "content": "<p>Build using open standards and common government platforms where appropriate.</p>"
+                    "content": "<p>Open source software (OSS) tends to use and help define open standards and publicly available specifications. OSS products are, by their nature, publicly available specifications, and the availability of their source code promotes open, democratic debate around their specifications, making them both more robust and interoperable.</p>"
                   },
                   {
                     "contenttype": "text",
                     "tags": [
 
                     ],
-                    "content": "<p>Using open standards and common government platforms helps you to:</p>"
+                    "content": "<p>Using open source software means you can benefit from:</p>"
                   },
                   {
                     "contenttype": "list",
@@ -9072,44 +8847,23 @@
                         "tags": [
 
                         ],
-                        "content": "meet the needs of your users by building with proven solutions"
+                        "content": "solving common problems with readily available open source technology"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "make users’ experience of government more consistent, which generates trust"
+                        "content": "more time and resource for customised solutions to solve the rare or unique problems"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "save time and money by reusing things that are already available"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "be more efficient by sharing data appropriately"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "move between different technologies when you need to, avoiding vendor lock-in."
+                        "content": "lower implementation and running costs"
                       }
                     ]
-                  },
-                  {
-                    "contenttype": "text",
-                    "tags": [
-
-                    ],
-                    "content": "<p><strong>(Digital Service Standard (AU))</strong></p>"
                   }
                 ]
               },
@@ -9138,14 +8892,28 @@
                         "tags": [
 
                         ],
-                        "content": "use open standards and common platforms <strong>(Digital Service Standard (Ontario))</strong>"
+                        "content": "Use open standards and open source software at every layer of the technology stack"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "understand common user needs with other services and meet those needs consistently with the rest of government <strong>(Digital Service Standard (Ontario))</strong>"
+                        "content": "Factor in the use of open Standards and open source software when calculating total cost of ownership of a solutions including exit or transition costs"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "Avoiding lock-in to any proprietary solutions where open source software and/or open standards are available"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "Ensure that software can be deployed on a variety of commodity hardware types"
                       },
                       {
                         "contenttype": "listnested",
@@ -9171,92 +8939,36 @@
                             ]
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "contenttype": "section",
-                    "tags": [
-                      "dpgn-section-stage",
-                      "dpgn-stage-alpha"
-                    ],
-                    "title": "Alpha stage",
-                    "content": [
+                      },
                       {
-                        "contenttype": "list",
+                        "contenttype": "listnested",
                         "tags": [
-
+                          "dpgn-onegc-architectural"
                         ],
-                        "listtype": "unordered",
-                        "content": [
+                        "content": "Build standards-based solution <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
+                        "nested": [
                           {
-                            "contenttype": "listitem",
+                            "contenttype": "list",
                             "tags": [
 
                             ],
-                            "content": "build using the open standards of HTML, CSS and JavaScript to develop prototypes <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
+                            "listtype": "unordered",
+                            "content": [
+                              {
+                                "contenttype": "listitem",
+                                "tags": [
 
-                            ],
-                            "content": "follow government better practice and standards in the design of the service <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
+                                ],
+                                "content": "Adhere to GC technical standards and guidance, leveraging open standards when possible"
+                              },
+                              {
+                                "contenttype": "listitem",
+                                "tags": [
 
-                            ],
-                            "content": "identify tools, systems, processes that can be adopted or reused from other services <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "search for similar solutions in other jurisdictions. <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "contenttype": "section",
-                    "tags": [
-                      "dpgn-section-stage",
-                      "dpgn-stage-beta",
-                      "dpgn-stage-live"
-                    ],
-                    "title": "Beta and live stages",
-                    "content": [
-                      {
-                        "contenttype": "list",
-                        "tags": [
-
-                        ],
-                        "listtype": "unordered",
-                        "content": [
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "building using the Open Web Platform standards <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "avoiding lock-in to any proprietary solutions where an open standard is available <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "contenttype": "listitem",
-                            "tags": [
-
-                            ],
-                            "content": "addressing any common user needs in a way that is consistent with the rest of government. <strong>(Digital Service Standard (AU))</strong>"
+                                ],
+                                "content": "Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -9373,6 +9085,13 @@
                         "tags": [
 
                         ],
+                        "content": "<a href=\"https://playbook.cio.gov/#play8\">8. Choose a modern technology stack (Digital Services Playbook (US))</a>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
                         "content": "<a href=\"https://www.gov.uk/guidance/be-open-and-use-open-source\">3. Be open and use open source (Technology Code of Practice (UK))</a>"
                       },
                       {
@@ -9416,6 +9135,13 @@
                           "dpgn-onegc-architectural"
                         ],
                         "content": "Use emerging technologies (OneGC Architectural Checklist - Build It Right (draft))"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+                          "dpgn-onegc-architectural"
+                        ],
+                        "content": "Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))"
                       }
                     ]
                   }
@@ -9444,14 +9170,44 @@
                     "tags": [
 
                     ],
-                    "content": "<p>The technology decisions we make need to enable development teams to work efficiently and enable services to scale easily and cost-effectively. Our choices for hosting infrastructure, databases, software frameworks, programming languages and the rest of the technology stack should seek to avoid vendor lock-in and match what successful modern consumer and enterprise software companies would choose today. In particular, digital services teams should consider using open source, cloud-based, and commodity solutions across the technology stack, because of their widespread adoption and support by successful consumer and enterprise technology companies in the private sector. <strong>Digital Services Playbook (US))</strong></p>"
+                    "content": "<p>In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level.</p>"
                   },
                   {
                     "contenttype": "text",
                     "tags": [
 
                     ],
-                    "content": "<p>In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged, where appropriate. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong></p>"
+                    "content": "<p>Using common, proven government solutions, approaches, and platforms will help the government:</p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "meet the needs of your users by building with proven solutions"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "make users’ experience of government more consistent, which generates trust"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "save time and money by reusing things that are already available"
+                      }
+                    ]
                   }
                 ]
               },
@@ -9480,6 +9236,34 @@
                         "tags": [
 
                         ],
+                        "content": "follow government better practice and standards in the design of the service <strong>(Digital Service Standard (AU))</strong>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "identify tools, systems, processes that can be adopted or reused from other services <strong>(Digital Service Standard (AU))</strong>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "search for similar solutions in other jurisdictions. <strong>(Digital Service Standard (AU))</strong>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "addressing any common user needs in a way that is consistent with the rest of government. <strong>(Digital Service Standard (AU))</strong>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
                         "content": "Choose software frameworks that are commonly used by private-sector companies creating similar services <strong>(Digital Services Playbook (US))</strong>"
                       },
                       {
@@ -9487,53 +9271,7 @@
                         "tags": [
 
                         ],
-                        "content": "Whenever possible, ensure that software can be deployed on a variety of commodity hardware types <strong>(Digital Services Playbook (US))</strong>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
                         "content": "Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects <strong>(Digital Services Playbook (US))</strong>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://www.obamawhitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf\">Consider open source software solutions</a> at every layer of the stack <strong>(Digital Services Playbook (US))</strong>"
-                      },
-                      {
-                        "contenttype": "listnested",
-                        "tags": [
-                          "dpgn-onegc-architectural"
-                        ],
-                        "content": "Build standards-based solution <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
-                        "nested": [
-                          {
-                            "contenttype": "list",
-                            "tags": [
-
-                            ],
-                            "listtype": "unordered",
-                            "content": [
-                              {
-                                "contenttype": "listitem",
-                                "tags": [
-
-                                ],
-                                "content": "Adhere to GC technical standards and guidance, leveraging open standards when possible"
-                              },
-                              {
-                                "contenttype": "listitem",
-                                "tags": [
-
-                                ],
-                                "content": "Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise"
-                              }
-                            ]
-                          }
-                        ]
                       },
                       {
                         "contenttype": "listnested",
@@ -9739,38 +9477,6 @@
                         "tags": [
 
                         ],
-                        "content": "Consider open source where feasible. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>",
-                        "nested": [
-                          {
-                            "contenttype": "list",
-                            "tags": [
-
-                            ],
-                            "listtype": "unordered",
-                            "content": [
-                              {
-                                "contenttype": "listitem",
-                                "tags": [
-
-                                ],
-                                "content": "Open source refers to practices that allow other software developers to have access via a free license to another product’s programming code, thereby allowing others to make subsequent improvements or develop new products that work with the product (e.g., being able to incorporate Twitter into another service or product)."
-                              },
-                              {
-                                "contenttype": "listitem",
-                                "tags": [
-
-                                ],
-                                "content": "Open-source code is typically a collaborative effort where programmers improve upon the source code and share the changes within the community so that other members can help improve it further."
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "contenttype": "listnested",
-                        "tags": [
-
-                        ],
                         "content": "Consider open data to the extent possible. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>",
                         "nested": [
                           {
@@ -9856,13 +9562,6 @@
                         "tags": [
 
                         ],
-                        "content": "<a href=\"https://playbook.cio.gov/#play8\">8. Choose a modern technology stack (Digital Services Playbook (US))</a>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
                         "content": "<a href=\"http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives\">1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)</a>"
                       },
                       {
@@ -9912,13 +9611,6 @@
                         "tags": [
                           "dpgn-onegc-architectural"
                         ],
-                        "content": "Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-                          "dpgn-onegc-architectural"
-                        ],
                         "content": "Digital Exchange Platform (DXP) (OneGC Architectural Checklist - Build It Right (draft))"
                       },
                       {
@@ -9962,7 +9654,7 @@
                     "tags": [
 
                     ],
-                    "content": "<p><strong>Introduction examples:</strong></p>"
+                    "content": "<p>Interoperability is a characteristic of a product or system, whose interfaces are completely understood, to work with other products or systems, present or future, in either implementation or access, without any restrictions. Interoperability should be ensured, via the use of open standards.</p>"
                   },
                   {
                     "contenttype": "text",
