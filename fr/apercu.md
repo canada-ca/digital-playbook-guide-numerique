@@ -12,6 +12,22 @@ altLangPage: overview
 Fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur.
 {: .dpgn-overview-start }
 
+<section class="dpgn-overview-start">
+
+### Structure de ce document (ébauche)
+
+Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
+
+- **Normes** sont stratégiques et décrivent le comportement attendu.
+- **Lignes directrices** sont tactiques et décrivent en termes généraux comment se passant selon les normes.
+- **Listes de contrôle** comprennent des éléments qui sont opérationnels et décrivent en termes spécifiques comment satisfaire la ligne directrice.
+- **Guides de mise en œuvre** donnent des informations supplémentaires et détaillées sur les sous-thèmes spécifiques pour la ligne directrice.
+- **Ressources similaires** sont des sources d'informations (par exemple, d'autres juridictions) similaires à la ligne directrice.
+
+Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
+
+</section>
+
 **Normes numériques&#160;:**
 {: .dpgn-data-ignore }
 
@@ -31,20 +47,6 @@ Fournit des conseils pratiques et des projets pour aider les projets individuels
 
 {% include views.html lang=page.lang %}
 
-<section class="dpgn-overview-end">
-
-### Structure de ce document (ébauche)
-
-Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
-
-- **Les normes** sont stratégiques et décrivent le comportement attendu.
-- **Les lignes directrices** sont tactiques et décrivent en termes généraux comment se passant selon les normes.
-- **Les éléments de la liste de contrôle** sont opérationnels et décrivent en termes spécifiques comment satisfaire aux directives.
-- **Les guides de mise en œuvre** Des informations supplémentaires et détaillées sur les sous-thèmes spécifiques.
-
-Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
-
-</section>
 <section class="dpgn-overview-end">
 
 ### Normes numériques du gouvernement du Canada (ébauche)
