@@ -6,7 +6,7 @@
 
 Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused.
 
-## Structure of this document (draft)
+## Structure of the Digital Playbook (draft)
 
 The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation.
 
@@ -32,9 +32,9 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 - [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/en/9-address-security-privacy-risks.html)
 - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/en/10-be-good-data-stewards.html)
 
-## Playbook views
+## Digital Playbook views
 
-[Playbook views](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/views.html) are generated from the [Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json) and can make the Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
+[Digital Playbook views](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/views.html) are generated from the [Digital Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json) and can make the Digital Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
 
 ### Development stages
 
@@ -62,7 +62,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 Fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur.
 
-## Structure de ce document (ébauche)
+## Structure du guide numérique (ébauche)
 
 Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
 
@@ -88,9 +88,9 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
 - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html)
 
-## Vues du guide
+## Vues du guide numérique
 
-Les [vues du guide](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/vues.html) sont générés à partir du [jeu de données du guide](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json) et peuvent rendre le guide plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.
+Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/vues.html) sont générés à partir du [jeu de données du guide numérique](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json) et peuvent rendre le guide numérique plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.
 
 ### Stages de développement
 
