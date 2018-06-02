@@ -14,7 +14,7 @@ collectionDirectory: docs
 
 ## Overview
 
-The Digital Playbook contains a lot of information but not all of it will be relevant to each task. Playbook views can make the Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
+The Digital Playbook contains a lot of information but not all of it will be relevant to each task. Playbook views are generated from the [Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json) and can make the Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
 
 There are four steps to creating a Playbook view:
 
