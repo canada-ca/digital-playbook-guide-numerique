@@ -12,9 +12,9 @@ collectionDirectory: docs
 {:toc}
 <!-- markdownlint-enable MD032 -->
 
-## Overview
+## Aperçu
 
-The Digital Playbook contains a lot of information but not all of it will be relevant to each task. Playbook views can make the Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
+Le guide numérique contient beaucoup d'informations mais elles ne seront pas toutes pertinentes pour chaque tâche. Les vues du guide sont générés à partir du [jeu de données du guide](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json) et peuvent rendre le guide plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.
 
 There are four steps to creating a Playbook view:
 
