@@ -12,7 +12,8 @@ capture relevantStandardsGuidelines %}{%
 endcapture %}{% 
 assign relevantStandardsGuidelinesArray = relevantStandardsGuidelines | strip | split: ";" %}
 
-<p><strong>{{ dataSource.standards.title }} {{ site.RelatedTo[page.lang] }} {{ page.title }}{{ site.Colon[page.lang] }}</strong></p>
+<section>
+<h2>{{ dataSource.standards.title }} {{ site.RelatedTo[page.lang] }} {{ page.title }}</h2>
 
 {% comment %}Output links for only the relevant standards{% endcomment %}{% 
 assign standardIndex = 0 %}{% 
@@ -26,7 +27,7 @@ for currentStandard in relevantStandardsGuidelinesArray %}{%
     endif %}{% 
     assign relevantStandards = relevantStandards | append: standardIndex %}{% 
     assign relevantGuidelines = currentStandard | split: "," %}{% 
-    comment %}Cover the guideline indexes to the "#.#" guideline number format{% endcomment %}{% 
+    comment %}Convert the guideline indexes to the "#.#" guideline number format{% endcomment %}{% 
     for relevantGuidelineIndex in relevantGuidelines %}{% 
       if relevantRelatedGuidelines.size > 0 %}{% 
         assign relevantRelatedGuidelines = relevantRelatedGuidelines | append: "," %}{% 
@@ -38,8 +39,11 @@ for currentStandard in relevantStandardsGuidelinesArray %}{%
   endif %}{% 
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}{% 
-include functions/standard-links.html samePage=true relevantStandards=relevantStandards %}{% 
-comment %}Iterate through each of the standard, only processing the standards and guidelines that have content with a tag that matches at least one of include.relevantTags{% endcomment %}{% 
+include functions/standard-links.html samePage=true relevantStandards=relevantStandards %}
+
+</section>
+
+{% comment %}Iterate through each of the standards, only processing the standards and guidelines that have content with a tag that matches at least one of include.relevantTags{% endcomment %}{% 
 assign standardIndex = 0 %}{% 
 for relevantGuidelines in relevantStandardsGuidelinesArray %}{% 
   if relevantGuidelines.size > 0 %}{% 
