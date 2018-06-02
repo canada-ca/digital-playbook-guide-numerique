@@ -28,7 +28,9 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 </section>
 
-**Normes numériques&#160;:**
+<section class="dpgn-data-ignore">
+
+### Normes numériques
 {: .dpgn-data-ignore }
 
 <!-- markdownlint-disable MD032 -->
@@ -44,6 +46,8 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 - [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md){: .well .btn-block }
 {: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
 <!-- markdownlint-enable MD032 -->
+
+</section>
 
 {% include views.html lang=page.lang %}
 
