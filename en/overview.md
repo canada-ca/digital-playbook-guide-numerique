@@ -28,7 +28,9 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 </section>
 
-**Digital Standards:**
+<section class="dpgn-data-ignore"> 
+
+### Digital Standards
 {: .dpgn-data-ignore }
 
 <!-- markdownlint-disable MD032 -->
@@ -44,6 +46,8 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 - [10. Be good data stewards](10-be-good-data-stewards.md){: .well .btn-block }
 {: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
 <!-- markdownlint-enable MD032 -->
+
+</section>
 
 {% include views.html lang=page.lang %}
 
