@@ -28,10 +28,12 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 </section>
 
-<section class="dpgn-data-ignore"> 
+<section class="dpgn-data-ignore">
 
+<!-- markdownlint-disable MD022 -->
 ### Digital Standards
 {: .dpgn-data-ignore }
+<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - [1. Design with users](1-design-with-users.md){: .well .btn-block }
