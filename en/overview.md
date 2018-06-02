@@ -12,6 +12,22 @@ altLangPage: apercu
 Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused.
 {: .dpgn-overview-start }
 
+<section class="dpgn-overview-start">
+
+### Structure of this document (draft)
+
+The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation.
+
+- **Standards** are strategic and describe the expected behaviour.
+- **Guidelines** are tactical and describe in general terms how to behave according to the standards.
+- **Checklists** include items that are operational and describe in specific terms how to meet the guideline.
+- **Implementation guides** provide additional, detailed information on specific sub-topics for the guideline.
+- **Similar resources** are sources of information (e.g., other jurisdictions) that are similar to the guideline.
+
+The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
+
+</section>
+
 **Digital Standards:**
 {: .dpgn-data-ignore }
 
@@ -31,20 +47,6 @@ Provides practical and measurable guidance to assist individual projects with be
 
 {% include views.html lang=page.lang %}
 
-<section class="dpgn-overview-end">
-
-### Structure of this document (draft)
-
-The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation.
-
-- **Standards** are strategic and describe the expected behaviour.
-- **Guidelines** are tactical and describe in general terms how to behave according to the standards.
-- **Checklist items** are operational and describe in specific terms how to meet the guidelines.
-- **Implementation guides** provide additional, detailed information on specific sub-topics.
-
-The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
-
-</section>
 <section class="dpgn-overview-end">
 
 ### Government of Canada Digital Standards (draft)
