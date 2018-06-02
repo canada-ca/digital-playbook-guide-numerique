@@ -12,8 +12,28 @@ altLangPage: apercu
 Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused.
 {: .dpgn-overview-start }
 
-**Digital Standards:**
+<section class="dpgn-overview-start">
+
+### Structure of the Digital Playbook (draft)
+
+The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation.
+
+- **Standards** are strategic and describe the expected behaviour.
+- **Guidelines** are tactical and describe in general terms how to behave according to the standards.
+- **Checklists** include items that are operational and describe in specific terms how to meet the guideline.
+- **Implementation guides** provide additional, detailed information on specific sub-topics for the guideline.
+- **Similar resources** are sources of information (e.g., other jurisdictions) that are similar to the guideline.
+
+The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
+
+</section>
+
+<section class="dpgn-data-ignore">
+
+<!-- markdownlint-disable MD022 -->
+### Digital Standards
 {: .dpgn-data-ignore }
+<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - [1. Design with users](1-design-with-users.md){: .well .btn-block }
@@ -29,33 +49,19 @@ Provides practical and measurable guidance to assist individual projects with be
 {: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include views.html lang=page.lang %}
 
 <section class="dpgn-overview-end">
 
-### Structure of this document (draft)
+### About the Digital Playbook
 
-The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation.
+**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. This Digital Playbook, and the Digital Standards it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey.
 
-- **Standards** are strategic and describe the expected behaviour.
-- **Guidelines** are tactical and describe in general terms how to behave according to the standards.
-- **Checklist items** are operational and describe in specific terms how to meet the guidelines.
-- **Implementation guides** provide additional, detailed information on specific sub-topics.
+**It takes a village.** The goal is to co-create this Digital Playbook with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. We believe it will take a community of individuals, with varying backgrounds and perspectives, to come together and help define and share guidance, direction, approaches, tools and stories. We hope to make the playbook as collaborative as possible. And of course the foundation will be built upon the Government Canada Digital Standards and the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you.
 
-The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
-
-</section>
-<section class="dpgn-overview-end">
-
-### Government of Canada Digital Standards (draft)
-
-**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. These digital standards form the foundation of the Government of Canada's shift to becoming more agile, open, and user-focused. It's a journey.
-
-**It takes a village.** These Digital Standards were co-created with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. It took a community of individuals, with varying backgrounds and perspectives, to come together and help define them. And of course we built our foundation upon the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you.
-
-**Together we'll make them better.** These are living standards and we will continue to update and evolve them over time as we better understand the complexities involved in putting them into practice. We expect the community to provide input to help refine them. These standards reflect how we will design for ourselves as well as how we will design for others. We can't do this alone.
-
-**The bureaucratic stuff.** The intended outcomes of these digital standards will be baked into our policy instruments and departments will be measured accordingly. We started with our high-level aspirations, and are diving into the details, providing guidance and direction in the form of this playbook. The goal is for this playbook to be as collaborative as possible, allowing our community to share approaches, tools, and stories.
+**Together we’ll make them better.** This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone.
 
 </section>
 </section>

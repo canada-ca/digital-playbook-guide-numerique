@@ -12,9 +12,13 @@ endcapture %}
 
 {% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags="dpgn-overview-start" currHeadingLevel="2" %}
 
-**{{ dataSource.standards.title }}{{ site.Colon[page.lang] }}**
+<section>
+
+### {{ dataSource.standards.title }}
   
 {% include /functions/standard-links.html samePage=include.samePage listClasses="colcount-sm-2 list-unstyled" linkClasses="well btn-block" %}
+
+</section>
 
 {% include views.html lang=page.lang %}
 

@@ -12,8 +12,28 @@ altLangPage: overview
 Fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur.
 {: .dpgn-overview-start }
 
-**Normes numériques&#160;:**
+<section class="dpgn-overview-start">
+
+### Structure du guide numérique (ébauche)
+
+Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
+
+- **Normes** sont stratégiques et décrivent le comportement attendu.
+- **Lignes directrices** sont tactiques et décrivent en termes généraux comment se passant selon les normes.
+- **Listes de contrôle** comprennent des éléments qui sont opérationnels et décrivent en termes spécifiques comment satisfaire la ligne directrice.
+- **Guides de mise en œuvre** donnent des informations supplémentaires et détaillées sur les sous-thèmes spécifiques pour la ligne directrice.
+- **Ressources similaires** sont des sources d'informations (par exemple, d'autres juridictions) similaires à la ligne directrice.
+
+Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
+
+</section>
+
+<section class="dpgn-data-ignore">
+
+<!-- markdownlint-disable MD022 -->
+### Normes numériques
 {: .dpgn-data-ignore }
+<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md){: .well .btn-block }
@@ -29,33 +49,19 @@ Fournit des conseils pratiques et des projets pour aider les projets individuels
 {: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include views.html lang=page.lang %}
 
 <section class="dpgn-overview-end">
 
-### Structure de ce document (ébauche)
+### À propos du guide numérique
 
-Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
+**Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
 
-- **Les normes** sont stratégiques et décrivent le comportement attendu.
-- **Les lignes directrices** sont tactiques et décrivent en termes généraux comment se passant selon les normes.
-- **Les éléments de la liste de contrôle** sont opérationnels et décrivent en termes spécifiques comment satisfaire aux directives.
-- **Les guides de mise en œuvre** Des informations supplémentaires et détaillées sur les sous-thèmes spécifiques.
+**Il faut tout un village.** Le but est de créer ce guide numérique conjointement avec le public et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Nous avons la conviction qu’il sera nécessaire qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour définir et contribuer à des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.
 
-Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
-
-</section>
-<section class="dpgn-overview-end">
-
-### Normes numériques du gouvernement du Canada (ébauche)
-
-**Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. En tant que gouvernement, nous devons nous éloigner des projets monolithiques qui sont dotés de conceptions rigides élaborées en vase clos avec une participation minimale des utilisateurs. Ces principes constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
-
-**Il faut tout un village.** Ces principes numériques ont été créés conjointement avec le public et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Il a fallu qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour contribuer à les définir. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.
-
-**Ensemble, nous les améliorerons.** Ce sont là des principes vivants, et nous continuerons de les mettre à jour et de les faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à leur amélioration. Ces principes reflètent la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
-
-**Les considérations bureaucratiques.** Les résultats escomptés de ces principes seront intégrés dans nos instruments de politique, et les ministères seront évalués en conséquence. Pour l’instant, nous avons commencé par nos aspirations de haut niveau, mais nous allons bientôt entrer dans les détails en fournissant des conseils et une orientation sous la forme d’un plan de match. Nous espérons rendre ce plan de match le plus collaboratif possible pour permettre à notre communauté d’échanger des approches, des outils et des récits. Restez à l’affût!
+**Ensemble nous le ferons mieux.** Ceci est un guide vivant, et nous continuerons de le mettre à jour et de le faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à l'amélioration du guide. Ce guide reflètera la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
 
 </section>
 </section>
