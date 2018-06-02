@@ -40,7 +40,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 - [Alpha stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/alpha.html)
 - [Beta stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/beta.html)
-- [Live stage - Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/live.html)
+- [Live stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/live.html)
 
 ### Other views
 
