@@ -30,8 +30,10 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 <section class="dpgn-data-ignore">
 
+<!-- markdownlint-disable MD022 -->
 ### Normes numériques
 {: .dpgn-data-ignore }
+<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md){: .well .btn-block }
