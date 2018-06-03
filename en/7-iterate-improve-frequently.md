@@ -169,28 +169,31 @@ Start with a representation or prototype of the solution that will be tested and
 **[TODO: Add/revise implementation guide items]**
 
 - [247 different checklists for usability testing (userfocus.co.uk)](http://www.userfocus.co.uk/resources/guidelines.html)
-- [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
-- [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
-- [Technical Specifications for Web and Mobile Presence (GC)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-eng.asp)
-- [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
 - [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
 - [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
 - [Kanba (David J Anderson & Associates)](http://www.djaa.com/principles-kanban-method-0)
 - [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
 - [CRA Agile Framework (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework))
-- [Management Accountability Framework (MAF) (GC)](https://www.canada.ca/en/treasury-board-secretariat/services/management-accountability-framework.html)
-  - [MAF Assessment Process (GC)](https://www.canada.ca/en/treasury-board-secretariat/services/management-accountability-framework/assessment-process.html)
 - [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)
 - [Agile (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/agile/)
 - [Service design and delivery process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/service-design-and-delivery-process/)
 - [Manifesto for Agile Software Development (agilemanifesto.org)](http://agilemanifesto.org/)
-- [Method Cards (18F (US))](https://methods.18f.gov/)
 - [Is your project using ‘agilefall’? (18F (US))](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
-- [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 - [Agile methods: an introduction](https://www.gov.uk/service-manual/agile-delivery/agile-methodologies) **(Service Manual (UK))**
 - [How to be agile in an non-agile environment (Government Digital Service blog (UK))](https://gds.blog.gov.uk/2015/10/09/how-to-be-agile-in-a-non-agile-environment/)
 - [You can’t be half agile (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2015/07/10/you-cant-be-half-agile/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+- [Method Cards (18F (US))](https://methods.18f.gov/)
+- [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 
 </section>
 
@@ -235,6 +238,14 @@ Start with a representation or prototype of the solution that will be tested and
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -266,6 +277,14 @@ Once you have designed and launched a service, there is still work to do. Treat 
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 
@@ -378,6 +397,14 @@ You need to build a service which you can iterate and keep improving so that you
 - [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 - [Testing your service (Service Manual (UK))](https://www.gov.uk/service-manual/technology#testing-your-service)
 - [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 

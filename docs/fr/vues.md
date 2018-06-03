@@ -46,6 +46,7 @@ The Digital Playbook has the following page sections and ordering of content by 
     - Introduction
     - Checklist
     - Implementation guides
+    - Reusable solutions
     - Similar resources
 
 For more details about the dataset structure, see the [Playbook dataset schema](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook_schema.json).
@@ -121,6 +122,7 @@ Section tags are mainly used for dataset generation and filtering. Each of these
 - <code>dpgn-section-intro-guideline</code>: Contains the introduction for the current guideline
 - <code>dpgn-section-checklist</code>: Contains the checklist(s) for the current guideline
 - <code>dpgn-section-guides</code>: Contains links to the implementation guides for the current guideline
+- <code>dpgn-section-solutions</code>: Contains links to the reusable solutions for the current guideline
 - <code>dpgn-section-similar</code>: Contains links to similar ressources for the current guideline
 
 **Special tags:**

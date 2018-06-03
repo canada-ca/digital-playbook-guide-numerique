@@ -120,6 +120,14 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -184,6 +192,14 @@ Good government services are built quickly and iteratively, based on user needs.
   - [Solution Inspired (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-solution-inspired/)
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -209,6 +225,14 @@ Good government services are built quickly and iteratively, based on user needs.
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 </section>
@@ -291,6 +315,14 @@ Good government services are built quickly and iteratively, based on user needs.
 - [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
 - [Comparison of free and open-source software licences (Wikipedia)](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
 - [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 

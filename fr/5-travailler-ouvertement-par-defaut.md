@@ -66,6 +66,14 @@ altLangPage: 5-work-in-open-by-default
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -98,6 +106,14 @@ altLangPage: 5-work-in-open-by-default
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 </section>
@@ -168,6 +184,14 @@ Setting performance indicators allows you to continuously improve your service b
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -211,6 +235,14 @@ Share your experiences with colleagues across the Government of Canada, other le
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
@@ -278,6 +310,14 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - [Choose an open source licence(choosealicense.com)](https://choosealicense.com/)
 - [Liste de licences libres (Wikipédia)](https://fr.wikipedia.org/wiki/Liste_de_licences_libres)
 - [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 

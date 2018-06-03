@@ -55,6 +55,14 @@ altLangPage: 4-permettre-personnel-offrir-meilleurs-services
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -163,6 +171,14 @@ The technology you choose to build your service must help you respond quickly an
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -220,6 +236,14 @@ It is essential that business processes be reviewed to identify opportunities to
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -271,6 +295,14 @@ Working to create an environment that empowers employees has been shown to not o
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -309,6 +341,14 @@ Each service must have one person who has the authority and is responsibile for 
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 

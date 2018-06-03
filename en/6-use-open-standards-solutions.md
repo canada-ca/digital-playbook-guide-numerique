@@ -94,6 +94,14 @@ Using open source software means you can benefit from:
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -175,6 +183,19 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 **[TODO: Add/revise implementation guide items]**
 
+- [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
+- [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
+
 </section>
 
 <section class="dpgn-section-similar">
@@ -240,6 +261,14 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -281,6 +310,15 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 - [Application Programming Interfaces (APIs) (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 </section>
 
 <section class="dpgn-section-guideline">
@@ -360,6 +398,14 @@ There are many potential benefits from the greater use of digital services, incl
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -420,6 +466,14 @@ Public cloud services offer benefits that enable significant advances in the fol
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 

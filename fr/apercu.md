@@ -20,8 +20,9 @@ Le guide numérique du gouvernement du Canada fournit des conseils pratiques et 
 
 - **Normes** sont stratégiques et décrivent le comportement attendu.
 - **Lignes directrices** sont tactiques et décrivent en termes généraux comment se passant selon les normes.
-- **Listes de contrôle** comprennent des éléments qui sont opérationnels et décrivent en termes spécifiques comment satisfaire la ligne directrice.
-- **Guides de mise en œuvre** donnent des informations supplémentaires et détaillées sur les sous-thèmes spécifiques pour la ligne directrice.
+- **Listes de contrôle** comprennent des éléments qui sont opérationnels et décrivent en termes spécifiques pour faciliter la mise en œuvre de la ligne directrice.
+- **Guides de mise en œuvre** fournissent des informations supplémentaires et détaillées sur des sous-thèmes spécifiques pour faciliter la mise en œuvre de la ligne directrice.
+- **Solutions réutilisables** comprennent des modèles, des outils et d'autres solutions pour faciliter la mise en œuvre de la ligne directrice.
 - **Ressources similaires** sont des sources d'informations (par exemple, d'autres juridictions) similaires à la ligne directrice.
 
 Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.

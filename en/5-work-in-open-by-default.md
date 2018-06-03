@@ -66,6 +66,14 @@ altLangPage: 5-travailler-ouvertement-par-defaut
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -100,6 +108,15 @@ altLangPage: 5-travailler-ouvertement-par-defaut
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 </section>
 
 <section class="dpgn-section-guideline">
@@ -168,6 +185,14 @@ Setting performance indicators allows you to continuously improve your service b
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -211,6 +236,14 @@ Share your experiences with colleagues across the Government of Canada, other le
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 
@@ -278,6 +311,14 @@ This includes working in the open, sharing any and all data and information prod
 - [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
 - [Comparison of free and open-source software licences (Wikipedia)](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
 - [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 

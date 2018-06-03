@@ -67,6 +67,14 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -124,6 +132,14 @@ User needs are constantly evolving which it is why it is important to plan for o
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 
@@ -229,8 +245,17 @@ A key part of building digital services that work for users is developing a good
 - [Including users with low digital skills in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/20/including-users-with-low-digital-skills-in-user-research/)
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
-- [Method Cards (18F (US))](https://methods.18f.gov/index.html)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+- [Method Cards (18F (US))](https://methods.18f.gov/index.html)
 
 </section>
 
@@ -284,6 +309,14 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -320,6 +353,14 @@ We need to understand the different ways people will interact with our services,
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 
@@ -398,11 +439,23 @@ Writing and designing content so it is consistent, plain and in the language of 
 - [How user research improves service design (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
 - [Start by learning user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
 - [Understanding users who don't use digital services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
+- [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
+- [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
 - [Design patterns (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
 - [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
 - [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
 - [Looking at the different ways to test content (18F (US))](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/)
 - [Government Digital Service (GDS) style guide (Government Digital Service (UK))](https://www.gov.uk/guidance/style-guide)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
 
@@ -540,6 +593,14 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -598,6 +659,14 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 - [Keeping your service online (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
 - [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 

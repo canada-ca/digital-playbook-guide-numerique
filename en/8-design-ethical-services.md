@@ -55,6 +55,14 @@ altLangPage: 8-concevoir-services-ethiques
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -80,6 +88,14 @@ altLangPage: 8-concevoir-services-ethiques
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 </section>
@@ -109,6 +125,14 @@ altLangPage: 8-concevoir-services-ethiques
 **[TODO: Add/revise implementation guide items]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -134,6 +158,14 @@ altLangPage: 8-concevoir-services-ethiques
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 </section>
