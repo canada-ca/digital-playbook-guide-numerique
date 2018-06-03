@@ -112,6 +112,10 @@ common:
                 en: "Implementation guides"
                 fr: "Guides d’application"
               tags: ["dpgn-section-guides"]
+            solutions:
+              title:
+                en: "Reusable solutions"
+                fr: "Solutions réutilisables"
             similar:
               title:
                 en: "Similar resources"
