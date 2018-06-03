@@ -6,7 +6,7 @@ altLang: en
 altLangPage: how-add-new-common-section-guidelines
 collectionDirectory: docs
 ---
-The following are the steps for adding a new common section (e.g., checklist, implemenrtation guides) to guidelines:
+The following are the steps for adding a new common section (e.g., checklist, implementation guides) to guidelines:
 -	**_data/playbook_schema.json and _data/guide_schema.json:** Add a property for the new section following the pattyern of "checklist" and "guides"
 -	**_config.yml:** Add an entry for the nee section in the common strings section (following the pattern for "checklist" and "guides")
 -	**_includes/filter-interface.html:** Add a filter to the section filters for the new new section (following the pattern for "checklist" and "guides"
