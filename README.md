@@ -15,7 +15,7 @@ The Government of Canada Digital Playbook provides practical and measurable guid
 - **Checklists** include items that are operational and describe in specific terms how to meet the guideline.
 - **Implementation guides** provide additional, detailed information on specific sub-topics to assist with implementing the guideline.
 - **Reusable solutions** include templates, tools and other solutions to assist with implementing the guideline.
-- **Similar resources** are sources of information (e.g., other jurisdictions) that are similar to the guideline.
+- **Similar resources** are sources of information (e.g., standards from other jurisdictions) that are similar to the guideline.
 
 The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
 
@@ -72,7 +72,7 @@ Le guide numérique du gouvernement du Canada fournit des conseils pratiques et 
 - **Listes de contrôle** comprennent des éléments qui sont opérationnels et décrivent en termes spécifiques comment satisfaire la ligne directrice.
 - **Guides de mise en œuvre** fournissent des informations supplémentaires et détaillées sur des sous-thèmes spécifiques pour faciliter la mise en œuvre de la ligne directrice.
 - **Solutions réutilisables** comprennent des modèles, des outils et d'autres solutions pour faciliter la mise en œuvre de la ligne directrice.
-- **Ressources similaires** sont des sources d'informations (par exemple, d'autres juridictions) similaires à la ligne directrice.
+- **Ressources similaires** sont des sources d'informations (par exemple, des normes d'autres juridictions) qui sont similaires à la ligne directrice.
 
 Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
 

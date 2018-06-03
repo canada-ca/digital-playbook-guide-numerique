@@ -23,7 +23,7 @@ The Government of Canada Digital Playbook provides practical and measurable guid
 - **Checklists** include items that are operational and describe in specific terms how to meet the guideline.
 - **Implementation guides** provide additional, detailed information on specific sub-topics to assist with implementing the guideline.
 - **Reusable solutions** include templates, tools and other solutions to assist with implementing the guideline.
-- **Similar resources** are sources of information (e.g., other jurisdictions) that are similar to the guideline.
+- **Similar resources** are sources of information (e.g., standards from other jurisdictions) that are similar to the guideline.
 
 The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
 
