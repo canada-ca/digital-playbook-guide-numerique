@@ -172,7 +172,6 @@ Start with a representation or prototype of the solution that will be tested and
 - [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
 - [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
 - [Spécifications techniques relatives à la présence Web et mobile (GC)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-fra.asp)
-- [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
 - [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
 - [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
@@ -185,12 +184,21 @@ Start with a representation or prototype of the solution that will be tested and
 - [Agile (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/agile/)
 - [Service design and delivery process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/service-design-and-delivery-process/)
 - [Manifesto for Agile Software Development (agilemanifesto.org)](http://agilemanifesto.org/)
-- [Method Cards (18F (US))](https://methods.18f.gov/)
 - [Is your project using ‘agilefall’? (18F (US))](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
-- [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 - [Agile methods: an introduction (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-methodologies)
 - [How to be agile in an non-agile environment (Government Digital Service blog (UK))](https://gds.blog.gov.uk/2015/10/09/how-to-be-agile-in-a-non-agile-environment/)
 - [You can’t be half agile (Government Digital Service blog (UK))](https://gds.blog.gov.uk/2015/07/10/you-cant-be-half-agile/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+- [Method Cards (18F (US))](https://methods.18f.gov/)
+- [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 
 </section>
 
@@ -235,6 +243,14 @@ Start with a representation or prototype of the solution that will be tested and
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -266,6 +282,14 @@ Once you have designed and launched a service, there is still work to do. Treat 
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
@@ -381,6 +405,14 @@ You need to build a service which you can iterate and keep improving so that you
 Find out more about:
 
 - [Agile delivery](https://www.gov.uk/service-manual/agile-delivery) **(Digital Service Standard (UK))**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
