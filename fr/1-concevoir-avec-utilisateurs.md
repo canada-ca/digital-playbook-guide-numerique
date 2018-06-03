@@ -67,6 +67,14 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -124,6 +132,14 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 ### Guides d'application
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
@@ -229,8 +245,17 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - [Including users with low digital skills in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/20/including-users-with-low-digital-skills-in-user-research/)
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
-- [Method Cards (18F (US))](https://methods.18f.gov/index.html)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+- [Method Cards (18F (US))](https://methods.18f.gov/index.html)
 
 </section>
 
@@ -285,6 +310,14 @@ We need to understand the different ways people will interact with our services,
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -321,6 +354,14 @@ We need to understand the different ways people will interact with our services,
 ### Guides d'application
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
@@ -404,6 +445,14 @@ Writing and designing content so it is consistent, plain and in the language of 
 - [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
 - [Looking at the different ways to test content (18F (US))](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/)
 - [Government Digital Service (GDS) style guide (Government Digital Service (UK))](https://www.gov.uk/guidance/style-guide)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
@@ -540,6 +589,14 @@ We still need to help users who are unable to use digital channels and provide s
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -598,6 +655,14 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 - [Keeping your service online (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
 - [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
