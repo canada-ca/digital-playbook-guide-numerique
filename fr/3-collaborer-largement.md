@@ -121,6 +121,14 @@ Good government services are built quickly and iteratively, based on user needs.
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -185,6 +193,16 @@ Good government services are built quickly and iteratively, based on user needs.
   - [Solution Inspired (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-solution-inspired/)
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -212,6 +230,14 @@ Good government services are built quickly and iteratively, based on user needs.
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 </section>
@@ -293,6 +319,16 @@ Good government services are built quickly and iteratively, based on user needs.
 - [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
 - [Liste de licences libres (Wikipédia)](https://fr.wikipedia.org/wiki/Liste_de_licences_libres)
 - [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
 
 </section>
 
