@@ -94,6 +94,14 @@ Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -177,6 +185,14 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -240,6 +256,14 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -279,6 +303,14 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 - [API technical and data standards (Government Digital Service (UK))](https://www.gov.uk/guidance/gds-api-technical-and-data-standards)
 - [Developing cross-government API data and technical standards (Government Digital Service blog (UK))](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/)
 - [Application Programming Interfaces (APIs) (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 </section>
@@ -360,6 +392,14 @@ There are many potential benefits from the greater use of digital services, incl
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -417,6 +457,14 @@ Public cloud services offer benefits that enable significant advances in the fol
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
