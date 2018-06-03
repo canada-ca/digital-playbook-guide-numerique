@@ -264,7 +264,7 @@ lang.each do |lang|
 			end
 
 			# Guideline sections
-			guideline_sections = ["introduction", "checklist", "guides", "similar"]
+			guideline_sections = ["introduction", "checklist", "guides", "solutions", "similar"]
 			guideline_sections.each do |guideline_section_name|
 				guideline_section = Hash.new
 				elems_guideline_section_selector = ".#{common_data_guideline[guideline_section_name]["tags"][0]}"
