@@ -135,7 +135,7 @@ Development of accessible (regardless of ability, device or environment) digital
 
 **[TODO: Add/revise reusable solutions]**
 
-- [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
 </section>
@@ -266,7 +266,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 **[TODO: Add/revise reusable solutions]**
 
-- [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
 
@@ -393,7 +393,7 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 **[TODO: Add/revise reusable solutions]**
 
-- [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
 </section>
@@ -548,7 +548,7 @@ Until you consider the needs of the range of people that will be using your serv
 
 **[TODO: Add/revise reusable solutions]**
 
-- [Web Experience Toolkit (WET)](https://wet-boew.github.io/v4.0-ci/index-en.html)
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
 </section>
