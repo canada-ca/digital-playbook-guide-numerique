@@ -183,6 +183,9 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+- [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](Spécifications du contenu et de l’architecture de l'information pour Canada.ca)
+- [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
+
 </section>
 
 <section class="dpgn-section-solutions">
@@ -190,6 +193,8 @@ Using common, proven government solutions, approaches, and platforms will help t
 ### Solutions réutilisables
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
+
+- [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
 </section>
 
