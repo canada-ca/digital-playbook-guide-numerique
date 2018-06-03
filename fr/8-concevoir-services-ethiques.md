@@ -55,6 +55,14 @@ altLangPage: 8-design-ethical-services
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -80,6 +88,14 @@ altLangPage: 8-design-ethical-services
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 </section>
@@ -109,6 +125,14 @@ altLangPage: 8-design-ethical-services
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -134,6 +158,14 @@ altLangPage: 8-design-ethical-services
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 </section>
