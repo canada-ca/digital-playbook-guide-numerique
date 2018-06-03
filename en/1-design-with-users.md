@@ -245,7 +245,6 @@ A key part of building digital services that work for users is developing a good
 - [Including users with low digital skills in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/20/including-users-with-low-digital-skills-in-user-research/)
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
-- [Method Cards (18F (US))](https://methods.18f.gov/index.html)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
 
 </section>
@@ -255,6 +254,8 @@ A key part of building digital services that work for users is developing a good
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
+
+- [Method Cards (18F (US))](https://methods.18f.gov/index.html)
 
 </section>
 
