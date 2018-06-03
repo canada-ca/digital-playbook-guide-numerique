@@ -76,6 +76,15 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -132,6 +141,15 @@ Organizations have a responsibility to ensure that the data under their care rem
 * [Guidance on inappropriate data practices: Interpretation and application of subsection 5(3) (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gd_53_201805/)
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -186,6 +204,15 @@ Integrating security from the outset and “shifting security left” in the ser
 ### Implementation guides
 
 * [Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
 * {: .dpgn-onegc-architectural } [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
