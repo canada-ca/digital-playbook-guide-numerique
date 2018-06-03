@@ -439,6 +439,8 @@ Writing and designing content so it is consistent, plain and in the language of 
 - [How user research improves service design (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
 - [Start by learning user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
 - [Understanding users who don't use digital services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
+- [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
+- [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
 - [Design patterns (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
 - [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
 - [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
@@ -452,6 +454,8 @@ Writing and designing content so it is consistent, plain and in the language of 
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
+
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
 
