@@ -440,6 +440,8 @@ Writing and designing content so it is consistent, plain and in the language of 
 - [How user research improves service design (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
 - [Start by learning user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
 - [Understanding users who don't use digital services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
+- [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
+- [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
 - [Design patterns (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
 - [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
 - [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
@@ -453,6 +455,8 @@ Writing and designing content so it is consistent, plain and in the language of 
 ### Solutions réutilisables
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
+
+- [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
 </section>
 
