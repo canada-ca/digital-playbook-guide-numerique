@@ -136,7 +136,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
-- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
+- [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
 </section>
 </section>
@@ -267,7 +267,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
-- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
+- [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
 </section>
 
@@ -394,7 +394,7 @@ For browsers, media players, and other 'user agents', follow User Agent Accessib
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
-- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
+- [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
 </section>
 </section>
@@ -548,7 +548,7 @@ Until you consider the needs of the range of people that will be using your serv
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
-- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
+- [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
 </section>
 </section>
