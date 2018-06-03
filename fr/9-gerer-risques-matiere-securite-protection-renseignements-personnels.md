@@ -77,6 +77,15 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * [Centre de ressources en matière de sécurité](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ressources.html)
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -133,6 +142,15 @@ Organizations have a responsibility to ensure that the data under their care rem
 * [Document d’orientation sur les pratiques inacceptables du traitement des données : Interprétation et application du paragraphe 5(3) (Commissariat à la protection de la vie privée du Canada)](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gd_53_201805/)
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -187,6 +205,15 @@ Integrating security from the outset and “shifting security left” in the ser
 ### Guides d'implémentation
 
 * [Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
 * {: .dpgn-onegc-architectural } [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
@@ -246,6 +273,14 @@ Canadians want to have confidence that government digital services are designed 
 * [Orientation relative à la résidence des données électroniques](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html)
 * [Code criminel du Canada, Utilisation non autorisée d’ordinateur (Sect 342.1/342.2)](http://laws-lois.justice.gc.ca/fra/lois/C-46/TexteComplet.html#h-97)
 * [Code criminel du Canada, Méfait à l’égard de données informatiques (Sect 430(1.1))](http://laws-lois.justice.gc.ca/fra/lois/C-46/TexteComplet.html#h-117)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
