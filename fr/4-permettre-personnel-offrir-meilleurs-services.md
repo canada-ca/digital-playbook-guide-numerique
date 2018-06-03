@@ -55,6 +55,14 @@ altLangPage: 4-empower-staff-deliver-better-services
 - **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -163,6 +171,14 @@ The technology you choose to build your service must help you respond quickly an
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -220,6 +236,14 @@ It is essential that business processes be reviewed to identify opportunities to
 
 </section>
 
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -264,6 +288,14 @@ It is essential that business processes be reviewed to identify opportunities to
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 </section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -302,6 +334,14 @@ Each service must have one person who has the authority and is responsibile for 
 ### Guides d'implémentation
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
