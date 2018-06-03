@@ -169,17 +169,12 @@ Start with a representation or prototype of the solution that will be tested and
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 - [247 different checklists for usability testing (userfocus.co.uk)](http://www.userfocus.co.uk/resources/guidelines.html)
-- [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
-- [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
-- [Spécifications techniques relatives à la présence Web et mobile (GC)](https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-fra.asp)
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
 - [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
 - [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
 - [Kanban (David J Anderson & Associates)](http://www.djaa.com/principles-kanban-method-0)
 - [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
 - [CRA Agile Framework (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework))
-- [Cadre de responsabilisation de gestion (CRG) (GC)](https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion.html)
-  - [Processus d'évaluation du CRG](https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion/processus-evaluation.html)
 - [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)
 - [Agile (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/agile/)
 - [Service design and delivery process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/service-design-and-delivery-process/)
