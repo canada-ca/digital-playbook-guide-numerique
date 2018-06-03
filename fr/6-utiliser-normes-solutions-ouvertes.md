@@ -183,7 +183,7 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](Spécifications du contenu et de l’architecture de l'information pour Canada.ca)
+- [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
 - [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
 
 </section>
