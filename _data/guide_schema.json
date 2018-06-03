@@ -46,7 +46,7 @@
                           }
                         },
                         "guides": {
-                        "type": "object",
+                          "type": "object",
                           "properties": {
                             "title": {"$ref": "#/definitions/title"},
                             "tags": {"$ref": "#/definitions/tags"},
@@ -54,7 +54,7 @@
                           }
                         },
                         "similar": {
-                        "type": "object",
+                          "type": "object",
                           "properties": {
                             "title": {"$ref": "#/definitions/title"},
                             "tags": {"$ref": "#/definitions/tags"},
