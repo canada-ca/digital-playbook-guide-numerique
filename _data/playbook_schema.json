@@ -53,6 +53,14 @@
                             "content": {"$ref": "#/definitions/content"}
                           }
                         },
+                        "guides": {
+                          "type": "object",
+                          "properties": {
+                            "title": {"$ref": "#/definitions/title"},
+                            "tags": {"$ref": "#/definitions/tags"},
+                            "content": {"$ref": "#/definitions/content"}
+                          }
+                        },
                         "similar": {
                           "type": "object",
                           "properties": {
