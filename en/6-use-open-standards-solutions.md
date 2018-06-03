@@ -183,6 +183,9 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 **[TODO: Add/revise implementation guide items]**
 
+- [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
+- [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
+
 </section>
 
 <section class="dpgn-section-solutions">
@@ -190,6 +193,8 @@ Using common, proven government solutions, approaches, and platforms will help t
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
+
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
 
