@@ -8,7 +8,7 @@ Provides practical and measurable guidance to assist individual projects with be
 
 ## Structure of the Digital Playbook (draft)
 
-The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline and a list of guides to assist with implementation.
+The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline, a list of guides and other content to assist with implementation.
 
 - **Standards** are strategic and describe the expected behaviour.
 - **Guidelines** are tactical and describe in general terms how to behave according to the standards.
@@ -65,7 +65,7 @@ Fournit des conseils pratiques et des projets pour aider les projets individuels
 
 ## Structure du guide numérique (ébauche)
 
-Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
+Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices, une liste de guides et d'autre contenu pour faciliter la mise en œuvre.
 
 - **Normes** sont stratégiques et décrivent le comportement attendu.
 - **Lignes directrices** sont tactiques et décrivent en termes généraux comment se passant selon les normes.

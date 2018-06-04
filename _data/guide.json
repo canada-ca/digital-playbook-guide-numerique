@@ -17,16 +17,16 @@
       {
         "contenttype": "section",
         "tags": [
-          "dpgn-overview-end"
+          "dpgn-overview-start"
         ],
-        "title": "Structure de ce document (ébauche)",
+        "title": "Structure du guide numérique (ébauche)",
         "content": [
           {
             "contenttype": "text",
             "tags": [
 
             ],
-            "content": "<p>Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l’utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.</p>"
+            "content": "<p>Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l’utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices, une liste de guides et d’autre contenu pour faciliter la mise en œuvre.</p>"
           },
           {
             "contenttype": "list",
@@ -40,28 +40,42 @@
                 "tags": [
 
                 ],
-                "content": "<strong>Les normes</strong> sont stratégiques et décrivent le comportement attendu."
+                "content": "<strong>Normes</strong> sont stratégiques et décrivent le comportement attendu."
               },
               {
                 "contenttype": "listitem",
                 "tags": [
 
                 ],
-                "content": "<strong>Les lignes directrices</strong> sont tactiques et décrivent en termes généraux comment se passant selon les normes."
+                "content": "<strong>Lignes directrices</strong> sont tactiques et décrivent en termes généraux comment se passant selon les normes."
               },
               {
                 "contenttype": "listitem",
                 "tags": [
 
                 ],
-                "content": "<strong>Les éléments de la liste de contrôle</strong> sont opérationnels et décrivent en termes spécifiques comment satisfaire aux directives."
+                "content": "<strong>Listes de contrôle</strong> comprennent des éléments qui sont opérationnels et décrivent en termes spécifiques pour faciliter la mise en œuvre de la ligne directrice."
               },
               {
                 "contenttype": "listitem",
                 "tags": [
 
                 ],
-                "content": "<strong>Les guides de mise en œuvre</strong> Des informations supplémentaires et détaillées sur les sous-thèmes spécifiques."
+                "content": "<strong>Guides de mise en œuvre</strong> fournissent des informations supplémentaires et détaillées sur des sous-thèmes spécifiques pour faciliter la mise en œuvre de la ligne directrice."
+              },
+              {
+                "contenttype": "listitem",
+                "tags": [
+
+                ],
+                "content": "<strong>Solutions réutilisables</strong> comprennent des modèles, des outils et d’autres solutions pour faciliter la mise en œuvre de la ligne directrice."
+              },
+              {
+                "contenttype": "listitem",
+                "tags": [
+
+                ],
+                "content": "<strong>Ressources similaires</strong> sont des sources d’informations (par exemple, des normes d’autres juridictions) qui sont similaires à la ligne directrice."
               }
             ]
           },
@@ -79,35 +93,28 @@
         "tags": [
           "dpgn-overview-end"
         ],
-        "title": "Normes numériques du gouvernement du Canada (ébauche)",
+        "title": "À propos du guide numérique",
         "content": [
           {
             "contenttype": "text",
             "tags": [
 
             ],
-            "content": "<p><strong>Améliorer les services gouvernementaux à l’ère numérique.</strong> Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. En tant que gouvernement, nous devons nous éloigner des projets monolithiques qui sont dotés de conceptions rigides élaborées en vase clos avec une participation minimale des utilisateurs. Ces principes constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.</p>"
+            "content": "<p><strong>Améliorer les services gouvernementaux à l’ère numérique.</strong> Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.</p>"
           },
           {
             "contenttype": "text",
             "tags": [
 
             ],
-            "content": "<p><strong>Il faut tout un village.</strong> Ces principes numériques ont été créés conjointement avec le public et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Il a fallu qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour contribuer à les définir. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.</p>"
+            "content": "<p><strong>Il faut tout un village.</strong> Le but est de créer ce guide numérique conjointement avec le public et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Nous avons la conviction qu’il sera nécessaire qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour définir et contribuer à des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.</p>"
           },
           {
             "contenttype": "text",
             "tags": [
 
             ],
-            "content": "<p><strong>Ensemble, nous les améliorerons.</strong> Ce sont là des principes vivants, et nous continuerons de les mettre à jour et de les faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à leur amélioration. Ces principes reflètent la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.</p>"
-          },
-          {
-            "contenttype": "text",
-            "tags": [
-
-            ],
-            "content": "<p><strong>Les considérations bureaucratiques.</strong> Les résultats escomptés de ces principes seront intégrés dans nos instruments de politique, et les ministères seront évalués en conséquence. Pour l’instant, nous avons commencé par nos aspirations de haut niveau, mais nous allons bientôt entrer dans les détails en fournissant des conseils et une orientation sous la forme d’un plan de match. Nous espérons rendre ce plan de match le plus collaboratif possible pour permettre à notre communauté d’échanger des approches, des outils et des récits. Restez à l’affût!</p>"
+            "content": "<p><strong>Ensemble nous le ferons mieux.</strong> Ceci est un guide vivant, et nous continuerons de le mettre à jour et de le faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à l’amélioration du guide. Ce guide reflètera la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.</p>"
           }
         ]
       }
@@ -267,6 +274,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -464,6 +486,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -964,14 +1001,38 @@
                         "tags": [
 
                         ],
-                        "content": "<a href=\"https://methods.18f.gov/index.html\">Method Cards (18F (US))</a>"
-                      },
+                        "content": "<a href=\"https://medium.com/@userfocus/evangelising-user-research-849430701b6e\">Evangelising user research (David Travis (Medium.com))</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "<a href=\"https://medium.com/@userfocus/evangelising-user-research-849430701b6e\">Evangelising user research (David Travis (Medium.com))</a>"
+                        "content": "<a href=\"https://methods.18f.gov/index.html\">Method Cards (18F (US))</a>"
                       }
                     ]
                   }
@@ -1158,6 +1219,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -1270,6 +1346,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -1608,6 +1699,20 @@
                         "tags": [
 
                         ],
+                        "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html\">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html\">Guide de rédaction du contenu du site Canada.ca</a>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
                         "content": "<a href=\"https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html\">Design patterns (Digital Service Standard (UK))</a>"
                       },
                       {
@@ -1637,6 +1742,37 @@
 
                         ],
                         "content": "<a href=\"https://www.gov.uk/guidance/style-guide\">Government Digital Service (GDS) style guide (Government Digital Service (UK))</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"http://wet-boew.github.io/wet-boew/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
                       }
                     ]
                   }
@@ -2217,6 +2353,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -2475,6 +2626,21 @@
                         "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/assisted-digital/\">Assisted Digital (Digital Service Standard (AU))</a>"
                       }
                     ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -2987,13 +3153,6 @@
                         "content": "<a href=\"https://www.w3.org/TR/wcag2ict/\">Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)</a>"
                       },
                       {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://wet-boew.github.io/v4.0-ci/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
-                      },
-                      {
                         "contenttype": "listnested",
                         "tags": [
 
@@ -3024,6 +3183,37 @@
 
                         ],
                         "content": "<a href=\"https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/\">A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"http://wet-boew.github.io/wet-boew/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
                       }
                     ]
                   }
@@ -3620,13 +3810,6 @@
                         "content": "<a href=\"https://www.w3.org/TR/wcag2ict/\">Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)</a>"
                       },
                       {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://wet-boew.github.io/v4.0-ci/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
-                      },
-                      {
                         "contenttype": "listnested",
                         "tags": [
 
@@ -3685,6 +3868,37 @@
 
                         ],
                         "content": "<a href=\"https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction\">Making your service accessible (Service Manual (UK))</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"http://wet-boew.github.io/wet-boew/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
                       }
                     ]
                   }
@@ -4206,14 +4420,38 @@
                         "tags": [
 
                         ],
-                        "content": "<a href=\"https://wet-boew.github.io/v4.0-ci/index-en.html\">Web Experience Toolkit (WET)</a>"
-                      },
+                        "content": "<a href=\"https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/\">A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
                       {
                         "contenttype": "listitem",
                         "tags": [
 
                         ],
-                        "content": "<a href=\"https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/\">A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))</a>"
+                        "content": "<a href=\"http://wet-boew.github.io/wet-boew/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
                       }
                     ]
                   }
@@ -5183,13 +5421,6 @@
                         "content": "<a href=\"https://www.w3.org/TR/wcag2ict/\">Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)</a>"
                       },
                       {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://wet-boew.github.io/v4.0-ci/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
-                      },
-                      {
                         "contenttype": "listnested",
                         "tags": [
 
@@ -5220,6 +5451,37 @@
 
                         ],
                         "content": "<a href=\"https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/\">A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"http://wet-boew.github.io/wet-boew/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
                       }
                     ]
                   }
@@ -5742,6 +6004,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -6052,6 +6329,37 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://wet-boew.github.io/v4.0-ci/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -6115,6 +6423,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -6462,6 +6785,37 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://wet-boew.github.io/v4.0-ci/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -6626,6 +6980,21 @@
                         "content": "<strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong>"
                       }
                     ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -7138,6 +7507,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -7354,6 +7738,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -7500,6 +7899,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -7642,6 +8056,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -7834,6 +8263,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -7905,6 +8349,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -8179,6 +8638,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -8322,6 +8796,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -8625,6 +9114,21 @@
                         "content": "<a href=\"https://www.dta.gov.au/blog/making-source-code-open/\">Making source code open (DTA Blog (AU))</a>"
                       }
                     ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -9054,6 +9558,21 @@
                         "content": "<a href=\"https://www.oasis-open.org/standards\">OASIS Standards (oasis-open.org)</a>"
                       }
                     ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -9531,6 +10050,60 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html\">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html\">Guide de rédaction du contenu du site Canada.ca</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"http://wet-boew.github.io/wet-boew/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
+                      }
+                    ]
                   }
                 ]
               },
@@ -9805,6 +10378,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -9927,6 +10515,21 @@
                         "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/api/\">Application Programming Interfaces (APIs) (Digital Service Standard (AU))</a>"
                       }
                     ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -10291,6 +10894,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -10538,6 +11156,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -11372,34 +12005,6 @@
                         "tags": [
 
                         ],
-                        "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html\">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html\">Guide de rédaction du contenu du site Canada.ca</a>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://www.tbs-sct.gc.ca/ws-nw/mo-om/ts-st/index-fra.asp\">Spécifications techniques relatives à la présence Web et mobile (GC)</a>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques\">Agile tools and techniques (Service Manual (UK))</a>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
                         "content": "<a href=\"https://pages.18f.gov/agile/index.html\">Agile Principles &amp; Practices (18F (US))</a>"
                       },
                       {
@@ -11438,31 +12043,6 @@
                         "content": "<a href=\"http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework)\">CRA Agile Framework (internal to Government of Canada)</a>"
                       },
                       {
-                        "contenttype": "listnested",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion.html\">Cadre de responsabilisation de gestion (CRG) (GC)</a>",
-                        "nested": [
-                          {
-                            "contenttype": "list",
-                            "tags": [
-
-                            ],
-                            "listtype": "unordered",
-                            "content": [
-                              {
-                                "contenttype": "listitem",
-                                "tags": [
-
-                                ],
-                                "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion/processus-evaluation.html\">Processus d’évaluation du CRG</a>"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
                         "contenttype": "listitem",
                         "tags": [
 
@@ -11495,21 +12075,7 @@
                         "tags": [
 
                         ],
-                        "content": "<a href=\"https://methods.18f.gov/\">Method Cards (18F (US))</a>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
                         "content": "<a href=\"https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/\">Is your project using ‘agilefall’? (18F (US))</a>"
-                      },
-                      {
-                        "contenttype": "listitem",
-                        "tags": [
-
-                        ],
-                        "content": "<a href=\"https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques\">Agile tools and techniques (Service Manual (UK))</a>"
                       },
                       {
                         "contenttype": "listitem",
@@ -11531,6 +12097,44 @@
 
                         ],
                         "content": "<a href=\"https://gds.blog.gov.uk/2015/07/10/you-cant-be-half-agile/\">You can’t be half agile (Government Digital Service blog (UK))</a>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://methods.18f.gov/\">Method Cards (18F (US))</a>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques\">Agile tools and techniques (Service Manual (UK))</a>"
                       }
                     ]
                   }
@@ -11659,6 +12263,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -11752,6 +12371,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -12388,6 +13022,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -12520,6 +13169,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -12576,6 +13240,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -12638,6 +13317,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -12694,6 +13388,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -12952,6 +13661,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -13165,8 +13889,37 @@
 
                         ],
                         "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/protection-renseignement-personnels/document-orientation-pris-compte-protection-renseignements-personnels-avant-conclure-marche.html\">Document d’orientation : Prise en compte de la protection des renseignements personnels avant de conclure un marché</a>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gl_omc_201805/\">Lignes directrices pour l’obtention d’un consentement valable (Commissariat à la protection de la vie privée du Canada)</a>"
+                      },
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gd_53_201805/\">Document d’orientation sur les pratiques inacceptables du traitement des données : Interprétation et application du paragraphe 5(3) (Commissariat à la protection de la vie privée du Canada)</a>"
                       }
                     ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -13245,7 +13998,7 @@
                     "tags": [
 
                     ],
-                    "content": "<p>Digital services need to be designed to provide a rich and streamlined user experience, while also ensuring that sensitive information is protected within a processing environment that remains secure throughout its lifecycle. Service owners must be mindful that users will often find a way to circumvent burdensome security measures for convenience. It is important to make security seamless and frictionless by designing security measures that enable the user experience, through streamlined user-interface and features with which they interact and, to help improve the overall posture to prevent workarounds. Leveraging enabling services such as digital identity will help to provide users with access to digital services from their preferred device.</p>"
+                    "content": "<p>Digital services need to be designed to provide a rich and streamlined user experience, while also ensuring that sensitive information is protected within a processing environment that remains secure throughout its lifecycle. Service owners must be mindful that users will often find a way to circumvent burdensome security measures for convenience. It is important to make security seamless and frictionless by designing security measures that enable the user experience, through streamlined user-interface and features with which they interact, and to help improve the overall posture to prevent workarounds. Leveraging enabling services such as digital identity will help to provide users with access to digital services from their preferred device.</p>"
                   },
                   {
                     "contenttype": "text",
@@ -13397,7 +14150,31 @@
 
                         ],
                         "content": "<a href=\"https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/\">Password Guidance</a>"
-                      },
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
                       {
                         "contenttype": "listitem",
                         "tags": [
@@ -13655,6 +14432,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -13785,6 +14577,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -13979,6 +14786,21 @@
                         ]
                       }
                     ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -14658,6 +15480,21 @@
                   }
                 ]
               },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  }
+                ]
+              },
               "similar": {
                 "title": "Ressources similaires",
                 "tags": [
@@ -14778,13 +15615,6 @@
 
                                 ],
                                 "content": "<a href=\"https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/developing-a-digital-preservation-strategy-and-policy/\">Developing a digital preservation strategy and policy (Preserving digital collections (The National Archives (UK)))</a>"
-                              },
-                              {
-                                "contenttype": "listitem",
-                                "tags": [
-
-                                ],
-                                "content": "<a href=\"https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/digital-preservation-tools/\">Digital preservation tools (Preserving digital collections (The National Archives (UK)))</a>"
                               }
                             ]
                           }
@@ -14821,6 +15651,37 @@
                             ]
                           }
                         ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
+                  },
+                  {
+                    "contenttype": "list",
+                    "tags": [
+
+                    ],
+                    "listtype": "unordered",
+                    "content": [
+                      {
+                        "contenttype": "listitem",
+                        "tags": [
+
+                        ],
+                        "content": "<a href=\"https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/digital-preservation-tools/\">Digital preservation tools (Preserving digital collections (The National Archives (UK)))</a>"
                       }
                     ]
                   }
@@ -14923,6 +15784,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
@@ -15034,6 +15910,21 @@
 
                     ],
                     "content": "<p><strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong></p>"
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "contenttype": "text",
+                    "tags": [
+
+                    ],
+                    "content": "<p><strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong></p>"
                   }
                 ]
               },
