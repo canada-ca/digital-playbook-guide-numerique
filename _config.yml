@@ -116,6 +116,7 @@ common:
               title:
                 en: "Reusable solutions"
                 fr: "Solutions réutilisables"
+              tags: ["dpgn-section-solutions"]
             similar:
               title:
                 en: "Similar resources"

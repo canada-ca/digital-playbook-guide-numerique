@@ -16,7 +16,7 @@ Fournit des conseils pratiques et des projets pour aider les projets individuels
 
 ### Structure du guide numérique (ébauche)
 
-Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices et une liste de guides pour faciliter la mise en œuvre.
+Le guide numérique du gouvernement du Canada fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur en appliquant les normes numériques. Pour chaque norme, le guide propose un ensemble de directives. Pour chaque ligne directrice, le guide fournit une liste de contrôle pour respecter les lignes directrices, une liste de guides et d'autre contenu pour faciliter la mise en œuvre.
 
 - **Normes** sont stratégiques et décrivent le comportement attendu.
 - **Lignes directrices** sont tactiques et décrivent en termes généraux comment se passant selon les normes.
