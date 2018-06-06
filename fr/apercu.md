@@ -37,16 +37,16 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 <!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
-- [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md){: .well .btn-block }
-- [2. Intégrer l’accessibilité dès le départ](2-integrer-accessibilite-des-depart.md){: .well .btn-block }
-- [3. Collaborer largement](3-collaborer-largement.md){: .well .btn-block }
-- [4. Permettre au personnel d’offrir de meilleurs services](4-permettre-personnel-offrir-meilleurs-services.md){: .well .btn-block }
-- [5. Travailler ouvertement par défaut](5-travailler-ouvertement-par-defaut.md){: .well .btn-block }
-- [6. Utiliser des normes et des solutions ouvertes](6-utiliser-normes-solutions-ouvertes.md){: .well .btn-block }
-- [7. Effectuer des itérations et des améliorations constamment](7-effectuer-iterations-ameliorations-constamment.md){: .well .btn-block }
-- [8. Concevoir des services éthiques](8-concevoir-services-ethiques.md){: .well .btn-block }
-- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](9-gerer-risques-matiere-securite-protection-renseignements-personnels.md){: .well .btn-block }
-- [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md){: .well .btn-block }
+- [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md){: .btn .btn-block .btn-default }
+- [2. Intégrer l’accessibilité dès le départ](2-integrer-accessibilite-des-depart.md){: .btn .btn-block .btn-default }
+- [3. Collaborer largement](3-collaborer-largement.md){: .btn .btn-block .btn-default }
+- [4. Permettre au personnel d’offrir de meilleurs services](4-permettre-personnel-offrir-meilleurs-services.md){: .btn .btn-block .btn-default }
+- [5. Travailler ouvertement par défaut](5-travailler-ouvertement-par-defaut.md){: .btn .btn-block .btn-default }
+- [6. Utiliser des normes et des solutions ouvertes](6-utiliser-normes-solutions-ouvertes.md){: .btn .btn-block .btn-default }
+- [7. Effectuer des itérations et des améliorations constamment](7-effectuer-iterations-ameliorations-constamment.md){: .btn .btn-block .btn-default }
+- [8. Concevoir des services éthiques](8-concevoir-services-ethiques.md){: .btn .btn-block .btn-default }
+- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](9-gerer-risques-matiere-securite-protection-renseignements-personnels.md){: .btn .btn-block .btn-default }
+- [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md){: .btn .btn-block .btn-default }
 {: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
 <!-- markdownlint-enable MD032 -->
 
