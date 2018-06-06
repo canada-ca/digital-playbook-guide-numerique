@@ -9,4 +9,4 @@ collectionDirectory: views/gc-earb-ceai
 
 Cette page fournit des conseils personnalisés sur la façon dont les projets peuvent répondre aux exigences du Comité d’examen de l’architecture intégrée du gouvernement du Canada (CEAI GC).
 
-{% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-onegc-architectural" %}
+{% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-digital-architectural" %}
