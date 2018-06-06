@@ -168,7 +168,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- {: .dpgn-onegc-architectural } Clearly defined user needs **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-digital-architectural } Clearly defined user needs **({{ site.DigitalArchitectural.en }})**
   - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
 
 <section class="dpgn-section-stage dpgn-stage-alpha">
@@ -272,7 +272,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - Stakeholders/Users requirements based solutions (Current GC EARB Principles)
 - Services & client orientation (Current GC EARB Principles)
 - Business User first (GC EA principles)
-- {: .dpgn-onegc-architectural } Clearly defined user needs (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-digital-architectural } Clearly defined user needs ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
@@ -344,7 +344,7 @@ We need to understand the different ways people will interact with our services,
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
-- {: .dpgn-onegc-architectural } Platform agnostic **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-digital-architectural } Platform agnostic **({{ site.DigitalArchitectural.en }})**
   - Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)
 
 </section>
@@ -372,7 +372,7 @@ We need to understand the different ways people will interact with our services,
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 - Mobility Preferred (Current GC EARB Principles)
 - Any Device - Mobility (GC EA principles)
-- {: .dpgn-onegc-architectural } Platform agnostic (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-digital-architectural } Platform agnostic ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>

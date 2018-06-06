@@ -342,7 +342,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **[TODO: Add/revise checklist items]**
 
-- {: .dpgn-onegc-architectural } Data is the new gold **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-digital-architectural } Data is the new gold **({{ site.DigitalArchitectural.en }})**
   - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
   - Ensure data is able to be shared and can be easily accessed
 
@@ -378,7 +378,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Similar resources
 
 - Information/Data is an asset (Current GC EARB Principles)
-- {: .dpgn-onegc-architectural } Data is the new gold (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-digital-architectural } Data is the new gold ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>

@@ -90,7 +90,7 @@ Start with a representation or prototype of the solution that will be tested and
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- {: .dpgn-onegc-architectural } Use agile **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-digital-architectural } Use agile **({{ site.DigitalArchitectural.en }})**
   - Be an agile Developer: Develop in an iterative manner, with key stakeholders participation from the beginning, releasing minimum viable product as soon as possible and iteratively building out functionality
   - Be an agile administrator: Promote DEVOPS and automate, monitor and unify all platform and software construction from testing to release and infrastructure management
 
@@ -208,7 +208,7 @@ Start with a representation or prototype of the solution that will be tested and
 - [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
 - [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 - Agile - Small chunks - Iterate (GC EA Principles)
-- {: .dpgn-onegc-architectural } Use agile (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-digital-architectural } Use agile ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>

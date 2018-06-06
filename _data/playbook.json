@@ -571,7 +571,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Clearly defined user needs <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -1117,9 +1117,9 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Clearly defined user needs (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Clearly defined user needs (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
@@ -1301,7 +1301,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Platform agnostic <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -1394,9 +1394,9 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Platform agnostic (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Platform agnostic (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
@@ -8982,7 +8982,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Build and develop open <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -9161,9 +9161,9 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Build and develop open (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Build and develop open (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
@@ -9390,7 +9390,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Use emerging technologies <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -9415,7 +9415,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Build standards-based solution <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -9619,16 +9619,16 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Use emerging technologies (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Use emerging technologies (Build It Right - OneGC Architectural Checklist (draft))"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Build standards-based solution (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Build standards-based solution (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
@@ -9763,7 +9763,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Digital Exchange Platform (DXP) <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -9788,7 +9788,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Pan-Canadian Trust Framework <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -9813,9 +9813,9 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Build toward OneGC <strong>Build It Right - OneGC Architectural Checklist (draft))</strong>",
+                        "content": "Build toward OneGC <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
                           {
                             "contenttype": "list",
@@ -10150,23 +10150,23 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Digital Exchange Platform (DXP) (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Digital Exchange Platform (DXP) (Build It Right - OneGC Architectural Checklist (draft))"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Pan-Canadian Trust Framework (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Pan-Canadian Trust Framework (Build It Right - OneGC Architectural Checklist (draft))"
                       },
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Build toward OneGC (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Build toward OneGC (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
@@ -10271,7 +10271,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "API first <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -10394,9 +10394,9 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "API first (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "API first (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
@@ -11096,7 +11096,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Cloud first <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -11189,9 +11189,9 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Cloud first (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Cloud first (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
@@ -11481,7 +11481,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Use agile <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -12183,9 +12183,9 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Use agile (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Use agile (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
@@ -13803,7 +13803,7 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS."
                       },
@@ -13994,7 +13994,7 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility."
                       },
@@ -14022,7 +14022,7 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only."
                       },
@@ -14085,7 +14085,7 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery."
                       }
@@ -14140,7 +14140,7 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "<a href=\"https://github.com/canada-ca/PCTF\">Pan-Canadian Trust Framework</a>"
                       }
@@ -14417,7 +14417,7 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "<a href=\"https://github.com/canada-ca/PCTF\">Pan-Canadian Trust Framework</a>"
                       }
@@ -15717,7 +15717,7 @@
                       {
                         "contenttype": "listnested",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
                         "content": "Data is the new gold <strong>(Build It Right - OneGC Architectural Checklist (draft))</strong>",
                         "nested": [
@@ -15892,9 +15892,9 @@
                       {
                         "contenttype": "listitem",
                         "tags": [
-                          "dpgn-onegc-architectural"
+                          "dpgn-digital-architectural"
                         ],
-                        "content": "Data is the new gold (OneGC Architectural Checklist - Build It Right (draft))"
+                        "content": "Data is the new gold (Build It Right - OneGC Architectural Checklist (draft))"
                       }
                     ]
                   }
