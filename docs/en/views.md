@@ -135,7 +135,7 @@ The Digital Playbook provides several helper functions to make it easier to prod
 
 ### Building a view page
 
-1. Create English and French .md files for each view page using the template files in [views/view-template/](https://github.com/canada-ca/digital-playbook-guide-numerique/tree/master/views/view-template). These new .md files should placed in "en" and "fr" folders in the directory for the new view (<code>views/&lt;view-name&gt;</code>).</li>
+1. Create English and French .md files for each view page using the template files in [views-vues/view-template-modele-vue/](https://github.com/canada-ca/digital-playbook-guide-numerique/tree/master/views-vues/view-template-modele-vue). These new .md files should placed in "en" and "fr" folders in the directory for the new view (<code>views/&lt;view-name&gt;</code>).</li>
 1. For each .md file, update the following properties in the data at the start of the file delimited by "---":
     1. <code>title</code>: Title of the view page
     2. <code>altLangPage</code>: Filename (without extension) for the .md file in the other language

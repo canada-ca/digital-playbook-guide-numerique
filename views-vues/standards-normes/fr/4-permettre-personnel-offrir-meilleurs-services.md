@@ -1,0 +1,10 @@
+---
+layout: default
+titleSource: standard
+standard: 4
+lang: fr
+altLang: en
+altLangPage: 4-empower-staff-deliver-better-services
+collectionDirectory: views-vues/standards-normes
+---
+{% include functions/output-standard.html standard=page.standard includeStandardTitle=false currentHeadingLevel=1 %}
