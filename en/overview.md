@@ -37,16 +37,16 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 <!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
-- [1. Design with users](1-design-with-users.md){: .well .btn-block }
-- [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md){: .well .btn-block }
+- [1. Design with users](1-design-with-users.md){: .btn .btn-block .btn-default }
+- [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md){: .btn .btn-block .btn-default }
 - [3. Collaborate widely](3-collaborate-widely.md){: .well .btn-block }
-- [4. Empower staff to deliver better services](4-empower-staff-deliver-better-services.md){: .well .btn-block }
+- [4. Empower staff to deliver better services](4-empower-staff-deliver-better-services.md){: .btn .btn-block .btn-default }
 - [5. Work in the open by default](5-work-in-open-by-default.md){: .well .btn-block }
-- [6. Use open standards and solutions](6-use-open-standards-solutions.md){: .well .btn-block }
-- [7. Iterate and improve frequently](7-iterate-improve-frequently.md){: .well .btn-block }
-- [8. Design ethical services](8-design-ethical-services.md){: .well .btn-block }
-- [9. Address security and privacy risks](9-address-security-privacy-risks.md){: .well .btn-block }
-- [10. Be good data stewards](10-be-good-data-stewards.md){: .well .btn-block }
+- [6. Use open standards and solutions](6-use-open-standards-solutions.md){: .btn .btn-block .btn-default }
+- [7. Iterate and improve frequently](7-iterate-improve-frequently.md){: .btn .btn-block .btn-default }
+- [8. Design ethical services](8-design-ethical-services.md){: .btn .btn-block .btn-default }
+- [9. Address security and privacy risks](9-address-security-privacy-risks.md){: .btn .btn-block .btn-default }
+- [10. Be good data stewards](10-be-good-data-stewards.md){: .btn .btn-block .btn-default }
 {: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
 <!-- markdownlint-enable MD032 -->
 
