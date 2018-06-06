@@ -291,7 +291,7 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - Utiliser une licence approuvée par l'Open Source Initiative
 - Proposer aux utilisateurs un mécanisme de signalement des bogues et des problèmes, et être réactif à ces rapports
 - Gardez une trace des modifications à l'aide du contrôle de version
-- {: .dpgn-onegc-architectural } Build and develop open **(Build It Right - OneGC Architectural Checklist (draft))**
+- {: .dpgn-digital-architectural } Build and develop open **({{ site.DigitalArchitectural.en }})**
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
@@ -331,7 +331,7 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 - Open By Default, Proprietary by Necessity (Current GC EARB Principles)
-- {: .dpgn-onegc-architectural } Build and develop open (OneGC Architectural Checklist - Build It Right (draft))
+- {: .dpgn-digital-architectural } Build and develop open ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
