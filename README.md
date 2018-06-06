@@ -37,6 +37,10 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 [Digital Playbook views](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/views.html) are generated from the [Digital Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json) and can make the Digital Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
 
+### Scenario/task-based views
+
+- [How should I ensure my project meets GC EARB requirements?](https://canada-ca.github.io/digital-playbook-guide-numerique/views/gc-earb-ceai/en/gc-earb.html)
+
 ### Development stages
 
 - [Alpha stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/alpha.html)
@@ -93,6 +97,10 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 ## Vues du guide numérique
 
 Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/vues.html) sont générés à partir du [jeu de données du guide numérique](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json) et peuvent rendre le guide numérique plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.
+
+### Vues basées sur un scénario / une tâche
+
+- [Comment dois-je m'assurer que mon projet respecte les exigences du CAEI GC?](https://canada-ca.github.io/digital-playbook-guide-numerique/views/gc-earb-ceai/fr/ceai-gc.html)
 
 ### Stages de développement
 
