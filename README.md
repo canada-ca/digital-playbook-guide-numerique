@@ -39,7 +39,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 ### Scenario/task-based views
 
-- [How should I ensure my project meets GC EARB requirements?](https://canada-ca.github.io/digital-playbook-guide-numerique/views/gc-earb-ceai/en/gc-earb.html)
+- [How should I ensure my project meets GC EARB requirements? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views/gc-earb-ceai/en/gc-earb.html)
 
 ### Development stages
 
@@ -100,7 +100,7 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 
 ### Vues basées sur un scénario / une tâche
 
-- [Comment dois-je m'assurer que mon projet respecte les exigences du CAEI GC?](https://canada-ca.github.io/digital-playbook-guide-numerique/views/gc-earb-ceai/fr/ceai-gc.html)
+- [Comment dois-je m'assurer que mon projet respecte les exigences du CAEI GC? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views/gc-earb-ceai/fr/ceai-gc.html)
 
 ### Stages de développement
 
