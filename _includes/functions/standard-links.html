@@ -4,6 +4,7 @@ comment %}@param relevantStandards {String/Array} Optional. Comma-separated inde
 comment %}@param listClasses {String} Optional. Classes (separated by a space) to add to the list.{% endcomment %}{% 
 comment %}@param listItemClasses {String} Optional. Classes (separated by a space)vto add to the list items.{% endcomment %}{% 
 comment %}@param linkClasses {String} Optional. Classes (separated by a space) to add to the links.{% endcomment %}{% 
+comment %}@param subLinkClasses {String} Optional. Classes (separated by a space) to add to the link content.{% endcomment %}{% 
 comment %}@return {String} List of links to the Standards{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
@@ -57,5 +58,5 @@ for standardIndexString in relevantStandardsArray %}{%
       %}{{ include.listItemClasses }}{% 
     endif %}{% 
   endcapture 
-  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if include.linkClasses.size > 0 %} class="{{ include.linkClasses }}"{% endif %}>{{ standard.title }}</a></li>{% 
+  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if include.linkClasses.size > 0 %} class="{{ include.linkClasses }}"{% endif %}>{% if include.subLinkClasses.size > 0 %}<span class="{{ include.subLinkClasses }}">{% endif %}{{ standard.title }}{% if include.subLinkClasses.size > 0 %}</span>{% endif %}</a></li>{% 
 endfor %}</ul>
