@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Comment dois-je m'assurer que mon projet respecte les exigences di CAEI GC?
+title: Comment dois-je m'assurer que mon projet respecte les exigences du CAEI GC?
 lang: fr
 altLang: en
 altLangPage: gc-earb
