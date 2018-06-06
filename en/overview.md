@@ -5,6 +5,8 @@ lang: en
 altLang: fr
 altLangPage: apercu
 ---
+{% assign dataVariable = site.playbookData[page.lang] %}
+{% assign dataSource = site.data[dataVariable] %}
 <section class="dpgn-section-overview">
 
 ## Overview (draft)
@@ -32,23 +34,11 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 <section class="dpgn-data-ignore">
 
 <!-- markdownlint-disable MD022 -->
-### Digital Standards
+### {{ dataSource.standards.title }}
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD022 -->
-
-<!-- markdownlint-disable MD032 -->
-- [1. Design with users](1-design-with-users.md){: .well .btn-block }
-- [2. Build in accessibility from the start](2-build-in-accessibility-from-start.md){: .well .btn-block }
-- [3. Collaborate widely](3-collaborate-widely.md){: .well .btn-block }
-- [4. Empower staff to deliver better services](4-empower-staff-deliver-better-services.md){: .well .btn-block }
-- [5. Work in the open by default](5-work-in-open-by-default.md){: .well .btn-block }
-- [6. Use open standards and solutions](6-use-open-standards-solutions.md){: .well .btn-block }
-- [7. Iterate and improve frequently](7-iterate-improve-frequently.md){: .well .btn-block }
-- [8. Design ethical services](8-design-ethical-services.md){: .well .btn-block }
-- [9. Address security and privacy risks](9-address-security-privacy-risks.md){: .well .btn-block }
-- [10. Be good data stewards](10-be-good-data-stewards.md){: .well .btn-block }
-{: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
-<!-- markdownlint-enable MD032 -->
+  
+{% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" %}
 
 </section>
 

@@ -5,6 +5,8 @@ lang: fr
 altLang: en
 altLangPage: overview
 ---
+{% assign dataVariable = site.playbookData[page.lang] %}
+{% assign dataSource = site.data[dataVariable] %}
 <section class="dpgn-section-overview">
 
 ## Aperçu (ébauche)
@@ -31,24 +33,16 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 <section class="dpgn-data-ignore">
 
+<section class="dpgn-data-ignore">
+
 <!-- markdownlint-disable MD022 -->
-### Normes numériques
+### {{ dataSource.standards.title }}
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD022 -->
+  
+{% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" %}
 
-<!-- markdownlint-disable MD032 -->
-- [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md){: .well .btn-block }
-- [2. Intégrer l’accessibilité dès le départ](2-integrer-accessibilite-des-depart.md){: .well .btn-block }
-- [3. Collaborer largement](3-collaborer-largement.md){: .well .btn-block }
-- [4. Permettre au personnel d’offrir de meilleurs services](4-permettre-personnel-offrir-meilleurs-services.md){: .well .btn-block }
-- [5. Travailler ouvertement par défaut](5-travailler-ouvertement-par-defaut.md){: .well .btn-block }
-- [6. Utiliser des normes et des solutions ouvertes](6-utiliser-normes-solutions-ouvertes.md){: .well .btn-block }
-- [7. Effectuer des itérations et des améliorations constamment](7-effectuer-iterations-ameliorations-constamment.md){: .well .btn-block }
-- [8. Concevoir des services éthiques](8-concevoir-services-ethiques.md){: .well .btn-block }
-- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](9-gerer-risques-matiere-securite-protection-renseignements-personnels.md){: .well .btn-block }
-- [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md){: .well .btn-block }
-{: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
-<!-- markdownlint-enable MD032 -->
+</section>
 
 </section>
 
