@@ -35,9 +35,12 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 <section class="dpgn-data-ignore">
 
+<!-- markdownlint-disable MD022 -->
 ### {{ dataSource.standards.title }}
+{: .dpgn-data-ignore }
+<!-- markdownlint-enable MD022 -->
   
-{% include /functions/standard-links.html samePage=false listClasses="colcount-sm-2 list-unstyled" linkClasses="btn btn-block btn-default btn-lg mrgn-bttm-md" %}
+{% include /functions/standard-links.html samePage=false listClasses="colcount-sm-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-block btn-default btn-lg mrgn-bttm-md" %}
 
 </section>
 
