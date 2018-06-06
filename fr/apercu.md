@@ -5,6 +5,8 @@ lang: fr
 altLang: en
 altLangPage: overview
 ---
+{% assign dataVariable = site.playbookData[page.lang] %}{% 
+assign dataSource = site.data[dataVariable] %}
 <section class="dpgn-section-overview">
 
 ## Aperçu (ébauche)
@@ -31,24 +33,13 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 <section class="dpgn-data-ignore">
 
-<!-- markdownlint-disable MD022 -->
-### Normes numériques
-{: .dpgn-data-ignore }
-<!-- markdownlint-enable MD022 -->
+<section class="dpgn-data-ignore">
 
-<!-- markdownlint-disable MD032 -->
-- [1. Concevoir avec les utilisateurs](1-concevoir-avec-utilisateurs.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [2. Intégrer l’accessibilité dès le départ](2-integrer-accessibilite-des-depart.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [3. Collaborer largement](3-collaborer-largement.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [4. Permettre au personnel d’offrir de meilleurs services](4-permettre-personnel-offrir-meilleurs-services.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [5. Travailler ouvertement par défaut](5-travailler-ouvertement-par-defaut.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [6. Utiliser des normes et des solutions ouvertes](6-utiliser-normes-solutions-ouvertes.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [7. Effectuer des itérations et des améliorations constamment](7-effectuer-iterations-ameliorations-constamment.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [8. Concevoir des services éthiques](8-concevoir-services-ethiques.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](9-gerer-risques-matiere-securite-protection-renseignements-personnels.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-- [10. Être de bons utilisateurs de données](10-etre-bons-utilisateurs-donnees.md){: .btn .btn-block .btn-default .btn-lg .mrgn-bttm-md }
-{: .dpgn-data-ignore .colcount-sm-2 .list-unstyled }
-<!-- markdownlint-enable MD032 -->
+### {{ dataSource.standards.title }}
+  
+{% include /functions/standard-links.html samePage=false listClasses="colcount-sm-2 list-unstyled" linkClasses="btn btn-block btn-default btn-lg mrgn-bttm-md" %}
+
+</section>
 
 </section>
 
