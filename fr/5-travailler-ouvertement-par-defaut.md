@@ -258,7 +258,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 <section class="dpgn-section-guideline">
 
-## 5.5 Travailler à l'air libre et rendre le code source ouvert et réutilisable
+## 5.5 Travailler ouvertement et rendre le code source ouvert et réutilisable
 
 <div class="dpgn-section-intro-guideline">
 
