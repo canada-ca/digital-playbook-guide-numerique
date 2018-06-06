@@ -5,8 +5,8 @@ lang: en
 altLang: fr
 altLangPage: apercu
 ---
-{% assign dataVariable = site.playbookData[page.lang] %}{% 
-assign dataSource = site.data[dataVariable] %}
+{% assign dataVariable = site.playbookData[page.lang] %}
+{% assign dataSource = site.data[dataVariable] %}
 <section class="dpgn-section-overview">
 
 ## Overview (draft)
