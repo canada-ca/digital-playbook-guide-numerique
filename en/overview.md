@@ -38,7 +38,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 {: .dpgn-data-ignore }
 <!-- markdownlint-enable MD022 -->
   
-{% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" %}
+{% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" %}
 
 </section>
 
