@@ -369,9 +369,9 @@ RememberFilters:
 ExclusiveFilters:
   en: Exclusive filters
   fr: Filtres exclusifs
-OneGCArchitectural:
-  en: OneGC Architectural Checklist
-  fr: Liste de contrôle architecturale unGC
+DigitalArchitectural:
+  en: Digital Architectural Principles – Build It Right
+  fr: Principes architecturaux numériques - Construisez-le bien
 
 # Feedback and view source translations
 PageColon:
