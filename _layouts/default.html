@@ -1,12 +1,12 @@
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="{{ page.lang }}" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="{{ page.lang }}" dir="ltr">
 <!--<![endif]-->
-{% include head.html %}
+{% include head-tete.html %}
 <body vocab="http://schema.org/" typeof="WebPage">
-{% include header.html %}{% 
+{% include header-entete.html %}{% 
 assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
 unless page.url contains overviewPath or page.url contains "compar" 
-  %}{% include filter-interface.html %}{% 
+  %}{% include filter-interface-retroaction.html %}{% 
 endunless %}{% 
 if page.url contains "/views-vues/standards-normes" %}{% 
   assign isStandardsView = true %}{%
@@ -22,6 +22,6 @@ endunless %}
 unless page.url contains overviewPath or page.url contains "/views-vues/" and isStandardsView == false 
   %}{% include pagination.html %}{% 
 endunless %}
-{% include footer.html %}
+{% include footer-pied-page.html %}
 </body>
 </html>
