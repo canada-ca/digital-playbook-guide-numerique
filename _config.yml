@@ -12,7 +12,7 @@ twitter_username: canada-ca
 github_username:  canada-ca
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
 wet_cdts_version: "v4_0_27"
-exclude: ['CONTRIBUTING.md', 'LICENSE.md', 'README.md', 'node_modules/**/*.md' ]
+exclude: ['CONTRIBUTING.md', 'LICENSE.md', 'README.md', 'node_modules/', '\.*', "Gemfile", "*.rb", "link-check.js", "package*.json"]
 markdown: kramdown
 kramdown:
   parse_block_html: true
@@ -121,7 +121,7 @@ common:
               title:
                 en: "Similar resources"
                 fr: "Ressources similaires"
-              tags: ["dpgn-section-similar"] 
+              tags: ["dpgn-section-similar"]
 
 # Playbook section translations
 ComparisonPlaybookIntro:
@@ -187,7 +187,7 @@ TopicsMenu2:
   en: Immigration
   fr: Immigration
 TopicsMenu2URL:
-  en: https://www.canada.ca/en/services/immigration-citizenship.html 
+  en: https://www.canada.ca/en/services/immigration-citizenship.html
   fr: https://www.canada.ca/fr/services/immigration-citoyennete.html
 TopicsMenu3:
   en: Travel
