@@ -25,11 +25,6 @@ collections:
   single-page-seule:
     output: true
     permalink: /:path
-  standards-normes:
-    en:
-      permalink: /en/:name
-    fr:
-      permalink: /fr/:name
 
 # Translations
 email: zzOneGC@tbs-sct.gc.ca
@@ -81,7 +76,7 @@ standardFile:
     fr:  10-etre-bons-utilisateurs-donnees
 RenderedFileExtension: ".html"
 
-# Default output classes (used by output-content-array.html)
+# Default output classes (used by output-content-array.html and other generated content)
 defaultOutputClasses:
   section: []
   list: ["lst-spcd"]
