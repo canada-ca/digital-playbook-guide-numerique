@@ -8,18 +8,18 @@ assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.l
 unless page.url contains overviewPath or page.url contains "compar" 
   %}{% include filter-interface.html %}{% 
 endunless %}{% 
-if page.url contains "/views/standards" %}{% 
+if page.url contains "/views-vues/standards-normes" %}{% 
   assign isStandardsView = true %}{%
 else %}{% 
   assign isStandardsView = false %}{% 
 endif %}{% 
-unless page.url contains overviewPath or page.url contains "/views/" and isStandardsView == false 
+unless page.url contains overviewPath or page.url contains "/views-vues/" and isStandardsView == false 
   %}{% include pagination.html %}{% 
 endunless %}
 {{ content }}
 <hr />
 {% include page-options.html %}{% 
-unless page.url contains overviewPath or page.url contains "/views/" and isStandardsView == false 
+unless page.url contains overviewPath or page.url contains "/views-vues/" and isStandardsView == false 
   %}{% include pagination.html %}{% 
 endunless %}
 {% include footer.html %}
