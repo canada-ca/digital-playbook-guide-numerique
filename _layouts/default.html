@@ -8,7 +8,7 @@ assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.l
 unless page.url contains overviewPath or page.url contains "compar" 
   %}{% include filter-interface.html %}{% 
 endunless %}{% 
-if page.url contains "/views/standards" %}{% 
+if page.url contains "/views-vues/standards-normes" %}{% 
   assign isStandardsView = true %}{%
 else %}{% 
   assign isStandardsView = false %}{% 
