@@ -39,21 +39,21 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 ### Scenario/task-based views
 
-- [How should I ensure my project meets GC EARB requirements?](https://canada-ca.github.io/digital-playbook-guide-numerique/views/gc-earb-ceai/en/gc-earb.html)
+- [How should I ensure my project meets GC EARB requirements? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html)
 
 ### Development stages
 
-- [Alpha stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/alpha.html)
-- [Beta stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/beta.html)
-- [Live stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/live.html)
+- [Alpha stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/alpha.html)
+- [Beta stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/beta.html)
+- [Live stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/live.html)
 
 ### Other views
 
-- [Government of Canada Digital Playbook comparison table](https://canada-ca.github.io/digital-playbook-guide-numerique/views/comparison/en/gc-digital-playbook-comparison-table.html)
-- [Government of Canada Digital Playbook (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views/single-page/en/digital-playbook.html)
-- [Government of Canada Digital Playbook (draft) - Multi-page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/en/overview.html)
-- [Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/development-stages.html)
-- [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/en/development-stages-checklists-only.html)
+- [Government of Canada Digital Playbook comparison table](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/comparison-comparatif/en/gc-digital-playbook-comparison-table.html)
+- [Government of Canada Digital Playbook (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/en/digital-playbook.html)
+- [Government of Canada Digital Playbook (draft) - Multi-page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/overview.html)
+- [Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages.html)
+- [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/development-stages/en/dev-stages-checklists-only.html)
 
 ## About the Digital Playbook
 
@@ -100,21 +100,21 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 
 ### Vues basées sur un scénario / une tâche
 
-- [Comment dois-je m'assurer que mon projet respecte les exigences du CAEI GC?](https://canada-ca.github.io/digital-playbook-guide-numerique/views/gc-earb-ceai/fr/ceai-gc.html)
+- [Comment dois-je m'assurer que mon projet respecte les exigences du CAEI GC? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html)
 
 ### Stages de développement
 
-- [Stage alpha](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/alpha.html)
-- [Stage bêta](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/beta.html)
-- [Stage en direct](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/en-direct.html)
+- [Stage alpha](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/alpha.html)
+- [Stage bêta](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/beta.html)
+- [Stage en direct](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/en-direct.html)
 
 ### Autres vues
 
-- [Tableau comparatif du guide numérique du gouvernement du Canada](https://canada-ca.github.io/digital-playbook-guide-numerique/views/comparison/fr/tableau-comparatif-guide-numerique-gc.html)
-- [Guide numérique du gouvernement du Canada (ébauche) - Affichage d'une seule page](https://canada-ca.github.io/digital-playbook-guide-numerique/views/single-page/fr/guide-numerique.html)
-- [Guide numérique du gouvernement du Canada (ébauche) - Affichage de plusieurs pages](https://canada-ca.github.io/digital-playbook-guide-numerique/views/standards/fr/apercu.html)
-- [Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement.html)
-- [Stages de développement - Listes de contrôle seulement](https://canada-ca.github.io/digital-playbook-guide-numerique/views/development-stages/fr/stages-developpement-listes-controle-seulement.html)
+- [Tableau comparatif du guide numérique du gouvernement du Canada](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/comparison-comparatif/fr/tableau-comparatif-guide-numerique-gc.html)
+- [Guide numérique du gouvernement du Canada (ébauche) - Affichage d'une seule page](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/fr/guide-numerique.html)
+- [Guide numérique du gouvernement du Canada (ébauche) - Affichage de plusieurs pages](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/apercu.html)
+- [Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/stages-developpement.html)
+- [Stages de développement - Listes de contrôle seulement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/stages-developpement-listes-controle-seulement.html)
 
 ## À propos du guide numérique
 
