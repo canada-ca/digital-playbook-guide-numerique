@@ -194,7 +194,7 @@ The following are three of the more commonly used helper functions. For the rest
     1. In the GitHub pages section, set "Source" to "gh-pages branch"
 1. Create a new "gh-pages" branch from the branch used to create the view
 1. Go to your branches page. Refresh the page periodically until the gh-pages build for the gh-pages branch either passes (green checkmark) or fails (red x).
-1. If the build passes, the view can be found at https:&#47;&#47;&lt;github-handle&gt;.github.io/digital-playbook-guide-numerique/views/&lt;view-directory&gt;/en/&lt;filename&gt;.html
+1. If the build passes, the view can be found at https:&#47;&#47;&lt;github-handle&gt;.github.io/digital-playbook-guide-numerique/views-vues/&lt;view-directory&gt;/en/&lt;filename&gt;.html
 1. If the build fails, review your code and correct the error. To get the build error messages, you can use Travis-CI by:
     1. Going to the [Travis-CI website](https://travis-ci.org/)
     1. Sign in using your GitHub account
