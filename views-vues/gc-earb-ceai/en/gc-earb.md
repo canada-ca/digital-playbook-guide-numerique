@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How should I ensure my project meets GC EARB requirements?
+title: How should I ensure my project meets GC EARB requirements? (draft)
 lang: en
 altLang: fr
 altLangPage: ceai-gc
