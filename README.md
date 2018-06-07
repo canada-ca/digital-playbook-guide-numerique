@@ -53,7 +53,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 - [Government of Canada Digital Playbook (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/en/digital-playbook.html)
 - [Government of Canada Digital Playbook (draft) - Multi-page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/overview.html)
 - [Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages.html)
-- [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/development-stages/en/dev-stages-checklists-only.html)
+- [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages-checklists-only.html)
 
 ## About the Digital Playbook
 
