@@ -7,6 +7,7 @@
 
 # Site settings
 baseurl: "/digital-playbook-guide-numerique" # the subpath of your site, e.g. /blog
+defaultView: "/views-vues/standards-normes" # View where site should default
 url: "http://canada-ca.github.io" # the base hostname & protocol for your site
 twitter_username: canada-ca
 github_username:  canada-ca
