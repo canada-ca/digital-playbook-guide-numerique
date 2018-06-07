@@ -46,7 +46,7 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 </section>
 
-{% include views.html lang=page.lang %}
+{% include views-vues.html lang=page.lang %}
 
 <section class="dpgn-overview-end">
 
