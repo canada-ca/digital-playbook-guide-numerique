@@ -3,7 +3,7 @@ assign dataSource = site.data[dataVariable] %}{%
 assign standards = dataSource.standards.content %}{% 
 assign standardIndex = 0 %}{% 
 assign activeIndex = -1 %}{% 
-assign baseurl = site.baseurl | append: site.defaultView %}{% 
+assign baseurl = site.baseurl %}{% 
 if page.standard %}{%
   assign pageStandardIndex = page.standard | minus: 1 %}{% 
 endif %}{%
