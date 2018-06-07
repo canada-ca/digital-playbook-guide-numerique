@@ -19,11 +19,16 @@ kramdown:
   toc_levels: "2..2"
 
 # Collections settings (for the alternate views)
-collections_dir: views
+collections_dir: views-vues
 collections:
-  single_page:
+  single-page-seule:
     output: true
     permalink: /:path
+  standards-normes:
+    en:
+      permalink: /en/:name
+    fr:
+      permalink: /fr/:name
 
 # Translations
 email: zzOneGC@tbs-sct.gc.ca
