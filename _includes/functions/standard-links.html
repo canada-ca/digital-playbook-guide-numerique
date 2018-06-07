@@ -27,9 +27,15 @@ else %}{%
     assign relevantStandards = relevantStandards | append: standardIndex %}{% 
   endfor %}{% 
   assign relevantStandardsArray = relevantStandards | split: "," %}{% 
-endif %}
+endif %}{% 
+assign listClasses = include.listClasses %}{% 
+unless listClasses.size > 0 %}{% 
+  if site.defaultOutputClasses.list.size > 0 %}{% 
+    assign listClasses = site.defaultOutputClasses.list | join: " " %}{% 
+  endif %}{% 
+endunless %}
 
-<ul{% if include.listClasses.size > 0 %} class="{{ include.listClasses }}"{% endif %}>
+<ul{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>
 {% comment %}Only output links for the standards with indexes in relevantStandardsArray{% endcomment %}{% 
 for standardIndexString in relevantStandardsArray %}{% 
   assign standardIndex = standardIndexString | plus: 0 %}{% 
