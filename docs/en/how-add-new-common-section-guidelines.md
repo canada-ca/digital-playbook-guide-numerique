@@ -8,6 +8,7 @@ collectionDirectory: docs
 ---
 The following are the steps for adding a new common section (e.g., checklist, implementation guides) to guidelines:
 
+<!-- markdownlint-disable MD032 -->
 - **_data/playbook_schema.json and _data/guide_schema.json:** Add a property for the new section following the pattern of "checklist" and "guides"
 - **_config.yml:** Add an entry for the nee section in the common strings section (following the pattern for "checklist" and "guides")
 - **_includes/filter-interface-retroaction.html:** Add a filter to the section filters for the new new section (following the pattern for "checklist" and "guides"
@@ -16,3 +17,4 @@ The following are the steps for adding a new common section (e.g., checklist, im
 - **Author .md files:** Add sections (as needed) with the dpgn-section-[name] class
 - **convert-to-data-set.rb:** Add string to guideline_sections array then regenerate the dataset
 {: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
