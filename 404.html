@@ -49,9 +49,9 @@ assign dataSourceFr = site.data[dataVariable] %}
 {% assign standardIndex = 0 %}
 <p>Return to:</p>
 <ul>
-<li><a href="{{ site.baseurl }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceEn.introduction.title }}</a></li>
+<li><a href="{{ site.baseurl }}{{ site.defaultView }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceEn.introduction.title }}</a></li>
 {% for standard in dataSourceEn.standards.content 
-  %}<li><a href="{{ site.baseurl }}/en/{{ site.standardFile[standardIndex]['en'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>{% 
+  %}<li><a href="{{ site.baseurl }}{{ site.defaultView }}/en/{{ site.standardFile[standardIndex]['en'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>{% 
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}</ul>
 
@@ -63,9 +63,9 @@ endfor %}</ul>
 {% assign standardIndex = 0 %}
 <p>Retournez à :</p>
 <ul>
-<li><a href="{{ site.baseurl }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceFr.introduction.title }}</a></li>
+<li><a href="{{ site.baseurl }}{{ site.defaultView }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceFr.introduction.title }}</a></li>
 {% for standard in dataSourceFr.standards.content 
-  %}<li><a href="{{ site.baseurl }}/fr/{{ site.standardFile[standardIndex]['fr'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>{% 
+  %}<li><a href="{{ site.baseurl }}{{ site.defaultView }}/fr/{{ site.standardFile[standardIndex]['fr'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>{% 
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}</ul>
 
