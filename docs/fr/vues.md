@@ -9,7 +9,7 @@ collectionDirectory: docs
 
 <!-- markdownlint-disable MD032 -->
 - TOC
-{:toc}
+{:toc .lst-spcd }
 <!-- markdownlint-enable MD032 -->
 
 ## Aperçu
@@ -18,10 +18,13 @@ Le guide numérique contient beaucoup d'informations mais elles ne seront pas to
 
 There are four steps to creating a Playbook view:
 
+<!-- markdownlint-disable MD032 -->
 1. [Defining the view structure](#defining-the-view-structure)
 1. [Tagging content that is relevant to the view](#tagging-content-that-is-relevant-to-the-view)
 1. [Creating a page that retrieves and displays tagged content](#creating-a-page-that-retrieves-and-displays-tagged-content)
 1. [Testing the view](#testing-the-view)
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 ## Defining the view structure
 
@@ -37,6 +40,7 @@ For each view page, determine which content should be included. Varying sizes of
 
 The Digital Playbook has the following page sections and ordering of content by default, which aligns with the structure of the [Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json):
 
+<!-- markdownlint-disable MD032 -->
 - Playbook overview
 - Standard (one section per standard)
   - Introduction
@@ -48,6 +52,8 @@ The Digital Playbook has the following page sections and ordering of content by 
     - Implementation guides
     - Reusable solutions
     - Similar resources
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 For more details about the dataset structure, see the [Playbook dataset schema](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook_schema.json).
 
@@ -105,14 +111,18 @@ The following tags are supported by default by the Digital Playbook:
 
 **View tags:**
 
+<!-- markdownlint-disable MD032 -->
 - <code>dpgn-stage-alpha</code>: Content is related to the alpha development stage
 - <code>dpgn-stage-beta</code>: Content is related to the beta development stage
 - <code>dpgn-stage-live</code>: Content is related to the live development stage
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 **Section tags:**
 
 Section tags are mainly used for dataset generation and filtering. Each of these tags should only be used to identify sections or containers of the specified type.
 
+<!-- markdownlint-disable MD032 -->
 - <code>dpgn-section-overview</code>: Contains the Playbook overview
 - <code>dpgn-section-standard</code>: Contains a standard
 - <code>dpgn-section-intro-standard</code>: Contains the introduction for the current standard
@@ -124,10 +134,15 @@ Section tags are mainly used for dataset generation and filtering. Each of these
 - <code>dpgn-section-guides</code>: Contains links to the implementation guides for the current guideline
 - <code>dpgn-section-solutions</code>: Contains links to the reusable solutions for the current guideline
 - <code>dpgn-section-similar</code>: Contains links to similar ressources for the current guideline
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 **Special tags:**
 
+<!-- markdownlint-disable MD032 -->
 - <code>dpgn-data-ignore</code>: Content should be ignored when generating the dataset
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 ## Creating a page that retrieves and displays tagged content
 
@@ -135,6 +150,7 @@ The Digital Playbook provides several helper functions to make it easier to prod
 
 ### Building a view page
 
+<!-- markdownlint-disable MD032 -->
 1. Create English and French .md files for each view page using the template files in [views-vues/view-template-modele-vue/](https://github.com/canada-ca/digital-playbook-guide-numerique/tree/master/views-vues/view-template-modele-vue). These new .md files should placed in "en" and "fr" folders in the directory for the new view (<code>views/&lt;view-name&gt;</code>).</li>
 1. For each .md file, update the following properties in the data at the start of the file delimited by "---":
     1. <code>title</code>: Title of the view page
@@ -143,6 +159,8 @@ The Digital Playbook provides several helper functions to make it easier to prod
 1. Build the content for each .md file:
     - **Simple views:** Update the <code>relevantTags</code> parameter in the include statement with the tags for the view page. Multiple tags should be separated with commas (e.g., <code>"dpgn-stage-alpha,dpgn-stage-live"</code>).</li>
     - **Advanced views:** Use the [Playbook helper functions](#helper-functions) and/or build custom output using [Jekyll](https://jekyllrb.com/) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) on the Playbook data from <code>site.data.playbook</code> (English) or <code>site.data.guide</code> (French).
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 ### Helper functions
 
@@ -150,6 +168,7 @@ The following are three of the more commonly used helper functions. For the rest
 
 #### filtered-standard-guideline-content.html
 
+<!-- markdownlint-disable MD032 -->
 - **Overview:** Outputs filtered and ordered content from the dataset according to the specified tags
 - **Example usage:** <code>&#123;% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
 - **Parameters:**
@@ -158,9 +177,12 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
   - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
 - **Returns:** {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 #### output-standard.html
 
+<!-- markdownlint-disable MD032 -->
 - **Overview:** Outputs the content for a standard
 - **Example usage:** <code>&#123;% include /functions/output-standard.html standard="1" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
 - **Parameter:**
@@ -173,9 +195,12 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
   - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
 - **Returns:** {String} Outputs the content for the standard and the included guidelines
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 #### output-content-array.html
 
+<!-- markdownlint-disable MD032 -->
 - **Overview:** Iterates over an array of content blocks, including nested content arrays, outputting the relevant content
 - **Example usage:** <code>&#123;% include /functions/output-content-array.html contentArray=site.data.playbook.standards.content[0].guidelines.content[2].checklist.content relevantTags="dpgn-group-group1,dpgn-group-group2" collapseSubsections=true %&#125;</code>
 - **Parameters:**
@@ -184,11 +209,13 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
   - <code>collapseSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).
 - **Returns:** {String} Returns the processed output from the content array
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 
 ## Testing the view
 
 <!-- markdownlint-disable MD034 -->
-
+<!-- markdownlint-disable MD032 -->
 1. If not already done, set up GitHub pages for your repository:
     1. Go to the repository settings
     1. In the GitHub pages section, set "Source" to "gh-pages branch"
@@ -203,5 +230,6 @@ The following are three of the more commonly used helper functions. For the rest
     1. Enable integration for the &lt;username&gt;/digital-playbook-guide-numerique repository
     1. Do a new push to the branch used to create the view (e.g., make a change and commit it).
     1. Go to the branches page and wait for the Travis-CI build to complete. If the build fails then review the Travis-CI log (can either be reached through the Travis-CI website or by clicking the red "x" and then clicking Travis-CI).
-
+{: .lst-spcd }
+<!-- markdownlint-enable MD032 -->
 <!-- markdownlint-enable MD034 -->
