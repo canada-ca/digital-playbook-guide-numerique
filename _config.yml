@@ -80,6 +80,12 @@ standardFile:
     fr:  10-etre-bons-utilisateurs-donnees
 RenderedFileExtension: ".html"
 
+# Default output classes (used by output-content-array.html)
+defaultOutputClasses:
+  section: []
+  list: ["lst-spcd"]
+  listitem: []
+
 # Common strings and tags for the datasets
 common:
   introduction:
