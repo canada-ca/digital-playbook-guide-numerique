@@ -1,0 +1,16 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "http://intranet.canada.ca/"
+    },
+    {
+      "pattern": "http://www.gcpedia.gc.ca/"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "https://canada-ca.github.io/digital-playbook-guide-numerique/",
+      "replacement": ""
+    }
+  ]
+}
