@@ -6,7 +6,7 @@
 {% include header-entete.html %}{% 
 assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
 unless page.url contains overviewPath or page.url contains "compar" 
-  %}{% include filter-interface-retroaction.html %}{% 
+  %}{% include filter-interface-filtre.html %}{% 
 endunless %}{% 
 if page.url contains "/views-vues/standards-normes" %}{% 
   assign isStandardsView = true %}{%
