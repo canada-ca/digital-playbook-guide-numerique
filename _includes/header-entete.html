@@ -93,7 +93,7 @@ defTop.outerHTML = wet.builder.top({
 		href: "https://www.canada.ca/{{ page.lang }}.html"
 	}{% unless page.url contains overviewPath %}, {
 		title: "{{ dataSource.title }}",
-		href: "{{ site.baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}"
+		href: "{{ site.baseurl }}/views-vues/standards-normes/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}"
 	}{% endunless %}]
 });
 </script>
