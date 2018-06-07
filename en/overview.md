@@ -42,7 +42,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 </section>
 
-{% include views.html lang=page.lang %}
+{% include views-vues.html lang=page.lang %}
 
 <section class="dpgn-overview-end">
 
