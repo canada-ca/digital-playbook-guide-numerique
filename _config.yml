@@ -7,6 +7,7 @@
 
 # Site settings
 baseurl: "/digital-playbook-guide-numerique" # the subpath of your site, e.g. /blog
+defaultView: "/views-vues/standards-normes" # View where site should default
 url: "http://canada-ca.github.io" # the base hostname & protocol for your site
 twitter_username: canada-ca
 github_username:  canada-ca
@@ -19,9 +20,9 @@ kramdown:
   toc_levels: "2..2"
 
 # Collections settings (for the alternate views)
-collections_dir: views
+collections_dir: views-vues
 collections:
-  single_page:
+  single-page-seule:
     output: true
     permalink: /:path
 
@@ -74,6 +75,12 @@ standardFile:
     en:  10-be-good-data-stewards
     fr:  10-etre-bons-utilisateurs-donnees
 RenderedFileExtension: ".html"
+
+# Default output classes (used by output-content-array.html and other generated content)
+defaultOutputClasses:
+  section: []
+  list: ["lst-spcd"]
+  listitem: []
 
 # Common strings and tags for the datasets
 common:

@@ -21,17 +21,17 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 ## Digital Standards
 
-- [Overview](https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html)
-- [1. Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html)
-- [2. Build in accessibility from the start](https://canada-ca.github.io/digital-playbook-guide-numerique/en/2-build-in-accessibility-from-start.html)
-- [3. Collaborate widely](https://canada-ca.github.io/digital-playbook-guide-numerique/en/3-collaborate-widely.html)
-- [4. Empower staff to deliver better services](https://canada-ca.github.io/digital-playbook-guide-numerique/en/4-empower-staff-deliver-better-services.html)
-- [5. Work in the open by default](https://canada-ca.github.io/digital-playbook-guide-numerique/en/5-work-in-open-by-default.html)
-- [6. Use open standards and solutions](https://canada-ca.github.io/digital-playbook-guide-numerique/en/6-use-open-standards-solutions.html)
-- [7. Iterate and improve frequently](https://canada-ca.github.io/digital-playbook-guide-numerique/en/7-iterate-improve-frequently.html)
-- [8. Design ethical services](https://canada-ca.github.io/digital-playbook-guide-numerique/en/8-design-ethical-services.html)
-- [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/en/9-address-security-privacy-risks.html)
-- [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/en/10-be-good-data-stewards.html)
+- [Overview](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/overview.html)
+- [1. Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/1-design-with-users.html)
+- [2. Build in accessibility from the start](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/2-build-in-accessibility-from-start.html)
+- [3. Collaborate widely](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/3-collaborate-widely.html)
+- [4. Empower staff to deliver better services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/4-empower-staff-deliver-better-services.html)
+- [5. Work in the open by default](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/5-work-in-open-by-default.html)
+- [6. Use open standards and solutions](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/6-use-open-standards-solutions.html)
+- [7. Iterate and improve frequently](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/7-iterate-improve-frequently.html)
+- [8. Design ethical services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/8-design-ethical-services.html)
+- [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/9-address-security-privacy-risks.html)
+- [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/10-be-good-data-stewards.html)
 
 ## Digital Playbook views
 
@@ -51,7 +51,6 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 - [Government of Canada Digital Playbook comparison table](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/comparison-comparatif/en/gc-digital-playbook-comparison-table.html)
 - [Government of Canada Digital Playbook (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/en/digital-playbook.html)
-- [Government of Canada Digital Playbook (draft) - Multi-page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/overview.html)
 - [Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages.html)
 - [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages-checklists-only.html)
 
@@ -82,17 +81,17 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 ## Normes numériques
 
-- [Aperçu](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/apercu.html)
-- [1. Concevoir avec les utilisateurs](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/1-concevoir-avec-utilisateurs.html)
-- [2. Intégrer l’accessibilité dès le départ](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/2-integrer-accessibilite-des-depart.html)
-- [3. Collaborer largement](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/3-collaborer-largement.html)
-- [4. Permettre au personnel d’offrir de meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/4-permettre-personnel-offrir-meilleurs-services.html)
-- [5. Travailler ouvertement par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/5-travailler-ouvertement-par-defaut.html)
-- [6. Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/6-utiliser-normes-solutions-ouvertes.html)
-- [7. Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/7-effectuer-iterations-ameliorations-constamment.html)
-- [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/8-concevoir-services-ethiques.html)
-- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
-- [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/fr/10-etre-bons-utilisateurs-donnees.html)
+- [Aperçu](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/apercu.html)
+- [1. Concevoir avec les utilisateurs](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/1-concevoir-avec-utilisateurs.html)
+- [2. Intégrer l’accessibilité dès le départ](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/2-integrer-accessibilite-des-depart.html)
+- [3. Collaborer largement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/3-collaborer-largement.html)
+- [4. Permettre au personnel d’offrir de meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/4-permettre-personnel-offrir-meilleurs-services.html)
+- [5. Travailler ouvertement par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/5-travailler-ouvertement-par-defaut.html)
+- [6. Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/6-utiliser-normes-solutions-ouvertes.html)
+- [7. Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/7-effectuer-iterations-ameliorations-constamment.html)
+- [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/8-concevoir-services-ethiques.html)
+- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
+- [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/10-etre-bons-utilisateurs-donnees.html)
 
 ## Vues du guide numérique
 
@@ -112,7 +111,6 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 
 - [Tableau comparatif du guide numérique du gouvernement du Canada](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/comparison-comparatif/fr/tableau-comparatif-guide-numerique-gc.html)
 - [Guide numérique du gouvernement du Canada (ébauche) - Affichage d'une seule page](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/fr/guide-numerique.html)
-- [Guide numérique du gouvernement du Canada (ébauche) - Affichage de plusieurs pages](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/apercu.html)
 - [Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/stages-developpement.html)
 - [Stages de développement - Listes de contrôle seulement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/stages-developpement-listes-controle-seulement.html)
 

@@ -18,7 +18,7 @@ assign standardIndex = 0 %}
       include /functions/generate-id.html string=guideline.title %}{% 
     endcapture %}{% 
     assign tagsArray = guideline.tags | concat: standard.tags %}{% 
-    assign standardFile = site.baseurl | append: "/" | append: page.lang | append: "/" | append: site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
+    assign standardFile = site.baseurl | append: site.defaultView | append: "/" | append: page.lang | append: "/" | append: site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
     capture classOutput %}{% 
       include /functions/class-from-tags.html tags=standard.tags excludeSectionTags=true %}{% 
     endcapture %}

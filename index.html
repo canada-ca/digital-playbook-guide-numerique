@@ -58,11 +58,11 @@ assign dataSourceFr = site.data[dataVariable] %}
 <div class="row wb-eqht">
 <section class="col-xs-6 text-right">
 <h2 class="h4 mrgn-bttm-0 eqht-trgt">{{ dataSourceEn.title }}</h2>
-<p><a href="{{ site.baseurl }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}" class="btn btn-primary">{{ site.language["en"] }}</a></p>
+<p><a href="{{ site.baseurl }}{{ site.defaultView }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}" class="btn btn-primary">{{ site.language["en"] }}</a></p>
 </section>
 <section class="col-xs-6" lang="fr">
 <h2 class="h4 mrgn-bttm-0 eqht-trgt">{{ dataSourceFr.title }}</h2>
-<p><a href="{{ site.baseurl }}/fr/{{ site.overviewFile['fr'] }}{{ site.RenderedFileExtension }}" class="btn btn-primary">{{ site.language["fr"] }}</a></p>
+<p><a href="{{ site.baseurl }}{{ site.defaultView }}/fr/{{ site.overviewFile['fr'] }}{{ site.RenderedFileExtension }}" class="btn btn-primary">{{ site.language["fr"] }}</a></p>
 </section>
 </div>
 </div>

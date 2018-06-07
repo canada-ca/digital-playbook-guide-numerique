@@ -33,9 +33,12 @@ elsif include.guidelineIndexes %}{%
     assign guidelinesArray = include.guidelineIndexes | replace: " ", "" | split: "," %}{% 
   endif %}{% 
 endif %}{% 
-if guidelinesArray %}
-{% if isRelatedGuidelines %}
-<ul data-guidelines="{{ guidelinesArray | join: ',' }}">
+if guidelinesArray %}{% 
+  capture listClassOutput %}{% 
+    include /functions/class-from-tags.html tags=site.defaultOutputClasses.list %}{% 
+  endcapture %}{% 
+  if isRelatedGuidelines %}
+<ul data-guidelines="{{ guidelinesArray | join: ',' }}"{{ listClassOutput | rstrip }}>
 {%  for guideline in guidelinesArray %}{% 
       assign indexArray = guideline | split: '.' %}{% 
       assign standardIndex = indexArray[0] | minus: 1 %}{% 
@@ -44,8 +47,9 @@ if guidelinesArray %}
       capture guidelineId %}{% 
         include /functions/generate-id.html string=guidelineData.title %}{% 
       endcapture %}{% 
+      assign allClasses = site.defaultOutputClasses.listitem | concat: guidelineData.tags %}{% 
       capture classOutput %}{% 
-        include /functions/class-from-tags.html tags=guidelineData.tags excludeSectionTags=true %}{% 
+        include /functions/class-from-tags.html tags=allClasses excludeSectionTags=true %}{% 
       endcapture
       %}<li{{ classOutput | rstrip }}><a href="{% 
       if include.samePage != true 
@@ -58,7 +62,7 @@ if guidelinesArray %}
       %}</a></li>
 {%  endfor %}{% 
   else %}
-<ul>
+<ul{{ listClassOutput | rstrip }}>
 {%  for item in guidelinesArray %}{% 
       if item.first %}{% 
         comment %}item is a guideline object{% endcomment %}{% 
@@ -78,8 +82,9 @@ if guidelinesArray %}
       capture guidelineId %}{% 
         include /functions/generate-id.html string=guideline.title %}{% 
       endcapture %}{% 
+      assign allClasses = site.defaultOutputClasses.listitem | concat: guideline.tags %}{% 
       capture classOutput %}{% 
-        include /functions/class-from-tags.html tags=guideline.tags excludeSectionTags=true %}{% 
+        include /functions/class-from-tags.html tags=allClasses excludeSectionTags=true %}{% 
       endcapture
       %}<li{{ classOutput | rstrip }}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
 {%  endfor %}{% 

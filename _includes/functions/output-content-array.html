@@ -43,7 +43,8 @@ for item in include.contentArray %}{%
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
         capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=item.tags %}{% 
+          assign allClasses = site.defaultOutputClasses.section | concat: item.tags %}{% 
+          include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
 <{{ sectionTag }}{{ classOutput | rstrip }}>
 {% unless include.collapseSubsections == true %}<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>{% endunless %}
@@ -62,8 +63,9 @@ for item in include.contentArray %}{%
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
+        assign allClasses = site.defaultOutputClasses.list | concat: item.tags %}{% 
         capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=item.tags %}{% 
+          include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
 <{{ listTag }}{{ classOutput | rstrip }}>
 {{ nestedOutputStrip }}
@@ -72,8 +74,9 @@ for item in include.contentArray %}{%
     elsif item.contenttype == 'listitem' %}{% 
       comment %}Content block is a list item, so output the list item{% endcomment %}{% 
       if relevantItem %}{% 
+        assign allClasses = site.defaultOutputClasses.listitem | concat: item.tags %}{% 
         capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=item.tags %}{% 
+          include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
 <li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span></li>
 {%    endif %}{% 
@@ -84,6 +87,7 @@ for item in include.contentArray %}{%
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputNestedList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
+        assign allClasses = site.defaultOutputClasses.listitem | concat: item.tags %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=item.tags %}{% 
         endcapture %}
