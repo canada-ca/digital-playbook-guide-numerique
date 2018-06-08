@@ -8,6 +8,36 @@ comment %}@param subLinkClasses {String} Optional. Classes (separated by a space
 comment %}@return {String} List of links to the Standards{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
+comment %}Set the default list classes{% endcomment %}{% 
+assign listClasses = include.listClasses %}{% 
+unless listClasses.size > 0 %}{% 
+  if site.defaultClasses.standardsListClasses.size > 0 %}{% 
+    assign listClasses = site.defaultClasses.standardsListClasses %}{% 
+  elsif site.defaultClasses.list.size > 0 %}{% 
+    assign listClasses = site.defaultClasses.list %}{% 
+  endif %}{% 
+endunless %}{% 
+comment %}Set the default list item classes{% endcomment %}{% 
+if include.listItemClasses.size > 0 %}{% 
+  assign listItemClasses = include.listItemClasses %}{% 
+elsif site.defaultClasses.standardsListItem.size > 0 %}{% 
+  assign listItemClasses = site.defaultClasses.standardsListItem %}{% 
+elsif site.defaultClasses.listitem.size > 0 %}{% 
+  assign listItemClasses = site.defaultClasses.listitem %}{% 
+endif %}{% 
+comment %}Set the default link classes{% endcomment %}{% 
+if include.linkClasses.size > 0 %}{% 
+  assign linkClasses = include.linkClasses %}{% 
+elsif site.defaultClasses.standardsLinkClasses.size > 0 %}{% 
+  assign linkClasses = site.defaultClasses.standardsLinkClasses %}{% 
+endif %}{% 
+comment %}Set the default sub-link classes{% endcomment %}{% 
+if include.subLinkClasses.size > 0 %}{% 
+  assign subLinkClasses = include.subLinkClasses %}{% 
+elsif site.defaultClasses.standardsSubLinkClasses.size > 0 %}{% 
+  assign subLinkClasses = site.defaultClasses.standardsSubLinkClasses %}{% 
+endif %}{% 
+comment %}Check if only some standards are relevant{% endcomment %}{% 
 if include.relevantStandards %}{% 
   comment %}Ensure the indexes of the relevant standards are in an array{% endcomment %}{% 
   if include.relevantStandards.first %}{% 
@@ -27,13 +57,7 @@ else %}{%
     assign relevantStandards = relevantStandards | append: standardIndex %}{% 
   endfor %}{% 
   assign relevantStandardsArray = relevantStandards | split: "," %}{% 
-endif %}{% 
-assign listClasses = include.listClasses %}{% 
-unless listClasses.size > 0 %}{% 
-  if site.defaultOutputClasses.list.size > 0 %}{% 
-    assign listClasses = site.defaultOutputClasses.list | join: " " %}{% 
-  endif %}{% 
-endunless %}
+endif %}
 
 <ul{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>
 {% comment %}Only output links for the standards with indexes in relevantStandardsArray{% endcomment %}{% 
@@ -50,8 +74,8 @@ for standardIndexString in relevantStandardsArray %}{%
     assign urlOutput = site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
   endif %}{% 
   comment %}Convert the tags into classes{% endcomment %}{% 
-  if include.listItemClasses.size > 0 %}{% 
-    assign tagsArray = include.listItemClasses | split: " " %}{% 
+  if listItemClasses.size > 0 %}{% 
+    assign tagsArray = listItemClasses | split: " " %}{% 
     if standard.tags.size > 0 %}{% 
       assign tagsArray = tagsArray | concat: standard.tags %}{% 
     endif %}{% 
@@ -64,5 +88,5 @@ for standardIndexString in relevantStandardsArray %}{%
       %}{{ include.listItemClasses }}{% 
     endif %}{% 
   endcapture 
-  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if include.linkClasses.size > 0 %} class="{{ include.linkClasses }}"{% endif %}>{% if include.subLinkClasses.size > 0 %}<span class="{{ include.subLinkClasses }}">{% endif %}{{ standard.title }}{% if include.subLinkClasses.size > 0 %}</span>{% endif %}</a></li>{% 
+  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ standard.title }}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a></li>{% 
 endfor %}</ul>
