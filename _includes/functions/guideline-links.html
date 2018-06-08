@@ -13,7 +13,7 @@ comment %}@return {String} List of links to the Standards{% endcomment %}{%
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
 comment %}Set the default list classes{% endcomment %}{% 
-if listClasses.size > 0 %}{% 
+if include.listClasses.size > 0 %}{% 
   assign listClasses = include.listClasses %}{% 
 elsif site.defaultClasses.guidelinesListClasses.size > 0 %}{% 
   assign listClasses = site.defaultClasses.guidelinesListClasses %}{% 
