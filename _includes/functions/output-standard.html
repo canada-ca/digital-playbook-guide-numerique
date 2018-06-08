@@ -231,10 +231,21 @@ for item in outputGuidelinesArray %}{%
           if sectionContentStrip.size > 0 %}{% 
             capture classOutput %}{% 
               include /functions/class-from-tags.html tags=propertyTags %}{% 
-            endcapture %}
+            endcapture %}{% 
+            if propertyKey == "checklist" %}{% 
+              assign glyphicon = "check text-success" %}{% 
+            elsif propertyKey == "guides" %}{% 
+              assign glyphicon = "book text-info" %}{% 
+            elsif propertyKey == "solutions text-success" %}{% 
+              assign glyphicon = "refresh" %}{% 
+            elsif propertyKey == "similar" %}{% 
+              assign glyphicon = "bookmark text-muted" %}{% 
+            else %}{% 
+              assign glyphicon = "" %}{% 
+            endif %}
 <section{{ classOutput | rstrip }}>
 
-<h{{ subsectionHeadingLevel }}>{{ property[1].title }}</h{{ subsectionHeadingLevel }}>
+<h{{ subsectionHeadingLevel }}>{% if glyphicon.size > 0 %}<span class="glyphicon glyphicon-{{ glyphicon }}" aria-hidden="true"></span> {% endif %}{{ property[1].title }}</h{{ subsectionHeadingLevel }}>
 
 {{ sectionContentStrip }}
 
