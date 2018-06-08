@@ -43,7 +43,7 @@ for item in include.contentArray %}{%
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
         capture classOutput %}{% 
-          assign allClasses = site.defaultOutputClasses.section | concat: item.tags %}{% 
+          assign allClasses = site.defaultClasses.section | concat: item.tags %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
 <{{ sectionTag }}{{ classOutput | rstrip }}>
@@ -63,7 +63,7 @@ for item in include.contentArray %}{%
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
-        assign allClasses = site.defaultOutputClasses.list | concat: item.tags %}{% 
+        assign allClasses = site.defaultClasses.list | concat: item.tags %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
@@ -74,7 +74,7 @@ for item in include.contentArray %}{%
     elsif item.contenttype == 'listitem' %}{% 
       comment %}Content block is a list item, so output the list item{% endcomment %}{% 
       if relevantItem %}{% 
-        assign allClasses = site.defaultOutputClasses.listitem | concat: item.tags %}{% 
+        assign allClasses = site.defaultClasses.listitem | concat: item.tags %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
@@ -87,7 +87,7 @@ for item in include.contentArray %}{%
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputNestedList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
-        assign allClasses = site.defaultOutputClasses.listitem | concat: item.tags %}{% 
+        assign allClasses = site.defaultClasses.listitem | concat: item.tags %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=item.tags %}{% 
         endcapture %}
