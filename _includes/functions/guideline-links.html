@@ -35,7 +35,7 @@ elsif include.guidelineIndexes %}{%
 endif %}{% 
 if guidelinesArray %}{% 
   capture listClassOutput %}{% 
-    include /functions/class-from-tags.html tags=site.defaultOutputClasses.list %}{% 
+    include /functions/class-from-tags.html tags=site.defaultClasses.list %}{% 
   endcapture %}{% 
   if isRelatedGuidelines %}
 <ul data-guidelines="{{ guidelinesArray | join: ',' }}"{{ listClassOutput | rstrip }}>
@@ -47,7 +47,7 @@ if guidelinesArray %}{%
       capture guidelineId %}{% 
         include /functions/generate-id.html string=guidelineData.title %}{% 
       endcapture %}{% 
-      assign allClasses = site.defaultOutputClasses.listitem | concat: guidelineData.tags %}{% 
+      assign allClasses = site.defaultClasses.listitem | concat: guidelineData.tags %}{% 
       capture classOutput %}{% 
         include /functions/class-from-tags.html tags=allClasses excludeSectionTags=true %}{% 
       endcapture
@@ -82,7 +82,7 @@ if guidelinesArray %}{%
       capture guidelineId %}{% 
         include /functions/generate-id.html string=guideline.title %}{% 
       endcapture %}{% 
-      assign allClasses = site.defaultOutputClasses.listitem | concat: guideline.tags %}{% 
+      assign allClasses = site.defaultClasses.listitem | concat: guideline.tags %}{% 
       capture classOutput %}{% 
         include /functions/class-from-tags.html tags=allClasses excludeSectionTags=true %}{% 
       endcapture
