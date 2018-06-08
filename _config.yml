@@ -85,7 +85,7 @@ defaultClasses:
   standardsListItemClasses: ""
   standardsLinkClasses: "btn btn-default btn-lg mrgn-bttm-md"
   standardsSubLinkClasses: "btn-block text-left"
-  guidelinesListClasses: "list-unstyled"
+  guidelinesListClasses: "list-unstyled mrgn-bttm-0"
   guidelinesListItemClasses: ""
   guidelinesLinkClasses: "btn btn-md btn-link"
   guidelinesSubLinkClasses: "btn-block text-left"
