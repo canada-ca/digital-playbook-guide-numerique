@@ -97,7 +97,7 @@ if guidelinesArray %}{%
       if include.samePage != true 
         %}{{ site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension }}{% 
       endif 
-      %}#{{ guidelineId | strip }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}>{{ guidelineData.title }}{% 
+      %}#{{ guidelineId | strip }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ guidelineData.title }}{% 
       unless include.includeStandardTitle == false
         %} ({{ dataSource.standards.content[standardIndex].title }}){% 
       endunless 
