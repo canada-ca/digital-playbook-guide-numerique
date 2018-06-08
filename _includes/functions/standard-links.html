@@ -9,14 +9,15 @@ comment %}@return {String} List of links to the Standards{% endcomment %}{%
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
 comment %}Set the default list classes{% endcomment %}{% 
-assign listClasses = include.listClasses %}{% 
-unless listClasses.size > 0 %}{% 
-  if site.defaultClasses.standardsListClasses.size > 0 %}{% 
-    assign listClasses = site.defaultClasses.standardsListClasses %}{% 
-  elsif site.defaultClasses.list.size > 0 %}{% 
-    assign listClasses = site.defaultClasses.list %}{% 
-  endif %}{% 
-endunless %}{% 
+if include.listClasses.size > 0 %}{% 
+  assign listClasses = include.listClasses %}{% 
+elsif site.defaultClasses.standardsListClasses.size > 0 %}{% 
+  assign listClasses = site.defaultClasses.standardsListClasses %}{% 
+elsif site.defaultClasses.list.size > 0 %}{% 
+  assign listClasses = site.defaultClasses.list %}{% 
+else %}{% 
+  assign listClasses = "" %}{% 
+endif %}{% 
 comment %}Set the default list item classes{% endcomment %}{% 
 if include.listItemClasses.size > 0 %}{% 
   assign listItemClasses = include.listItemClasses %}{% 
@@ -24,18 +25,24 @@ elsif site.defaultClasses.standardsListItem.size > 0 %}{%
   assign listItemClasses = site.defaultClasses.standardsListItem %}{% 
 elsif site.defaultClasses.listitem.size > 0 %}{% 
   assign listItemClasses = site.defaultClasses.listitem %}{% 
+else %}{% 
+  assign listItemClasses = "" %}{% 
 endif %}{% 
 comment %}Set the default link classes{% endcomment %}{% 
 if include.linkClasses.size > 0 %}{% 
   assign linkClasses = include.linkClasses %}{% 
 elsif site.defaultClasses.standardsLinkClasses.size > 0 %}{% 
   assign linkClasses = site.defaultClasses.standardsLinkClasses %}{% 
+else %}{% 
+  assign linkClasses = "" %}{% 
 endif %}{% 
 comment %}Set the default sub-link classes{% endcomment %}{% 
 if include.subLinkClasses.size > 0 %}{% 
   assign subLinkClasses = include.subLinkClasses %}{% 
 elsif site.defaultClasses.standardsSubLinkClasses.size > 0 %}{% 
   assign subLinkClasses = site.defaultClasses.standardsSubLinkClasses %}{% 
+else %}{% 
+  assign subLinkClasses = "" %}{% 
 endif %}{% 
 comment %}Check if only some standards are relevant{% endcomment %}{% 
 if include.relevantStandards %}{% 
