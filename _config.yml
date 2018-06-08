@@ -88,7 +88,7 @@ defaultClasses:
   guidelinesListClasses: "list-unstyled"
   guidelinesListItemClasses: ""
   guidelinesLinkClasses: "btn btn-md btn-link"
-  guidelinesSubLinkClasses: ""
+  guidelinesSubLinkClasses: "btn-block text-left"
 
 # Common strings and tags for the datasets
 common:
