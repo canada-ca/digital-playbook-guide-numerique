@@ -136,11 +136,12 @@ if tagsCompareResult contains "true" %}{%
       include /functions/class-from-tags.html tags=standard.relatedguidelines.tags %}{% 
     endcapture %}
 <div{{ classOutput | rstrip }}>
+<details>
+<summary markdown="0">{{ standard.relatedguidelines.title }}</summary>
 
-<p><strong>{{ standard.relatedguidelines.title }}{{ site.Colon[page.lang] }}</strong></p>
+{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections %}
 
-{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}
-
+</details>
 </div>
 {% endif %}{% 
 endif %}
