@@ -5,9 +5,43 @@ comment %}@param guidelineIndexes {String/Array} Cannot be used for related guid
 comment %}@param standard {Number/Object} Required when guidelineIndexes is used. Provides either the index or the object for the current standard.{% endcomment %}{% 
 comment %}@param samePage {Boolean} Whether or not the links should be same-page links{% endcomment %}{% 
 comment %}@param includeStandardTitle {Boolean} Optional. Defaults to true. For related guidelines only. Whether or not to include the standard title in brackets at the end of the guideline link text.{% endcomment %}{% 
+comment %}@param listClasses {String} Optional. Classes (separated by a space) to add to the list.{% endcomment %}{% 
+comment %}@param listItemClasses {String} Optional. Classes (separated by a space)vto add to the list items.{% endcomment %}{% 
+comment %}@param linkClasses {String} Optional. Classes (separated by a space) to add to the links.{% endcomment %}{% 
+comment %}@param subLinkClasses {String} Optional. Classes (separated by a space) to add to the link content.{% endcomment %}{% 
 comment %}@return {String} List of links to the Standards{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
+comment %}Set the default list classes{% endcomment %}{% 
+assign listClasses = include.listClasses %}{% 
+unless listClasses.size > 0 %}{% 
+  if site.defaultClasses.guidelinesListClasses.size > 0 %}{% 
+    assign listClasses = site.defaultClasses.guidelinesListClasses %}{% 
+  elsif site.defaultClasses.list.size > 0 %}{% 
+    assign listClasses = site.defaultClasses.list %}{% 
+  endif %}{% 
+endunless %}{% 
+comment %}Set the default list item classes{% endcomment %}{% 
+if include.listItemClasses.size > 0 %}{% 
+  assign listItemClasses = include.listItemClasses %}{% 
+elsif site.defaultClasses.guidelinesListItem.size > 0 %}{% 
+  assign listItemClasses = site.defaultClasses.guidelinesListItem %}{% 
+elsif site.defaultClasses.listitem.size > 0 %}{% 
+  assign listItemClasses = site.defaultClasses.listitem %}{% 
+endif %}{% 
+comment %}Set the default link classes{% endcomment %}{% 
+if include.linkClasses.size > 0 %}{% 
+  assign linkClasses = include.linkClasses %}{% 
+elsif site.defaultClasses.guidelinesLinkClasses.size > 0 %}{% 
+  assign linkClasses = site.defaultClasses.guidelinesLinkClasses %}{% 
+endif %}{% 
+comment %}Set the default sub-link classes{% endcomment %}{% 
+if include.subLinkClasses.size > 0 %}{% 
+  assign subLinkClasses = include.subLinkClasses %}{% 
+elsif site.defaultClasses.guidelinesSubLinkClasses.size > 0 %}{% 
+  assign subLinkClasses = site.defaultClasses.guidelinesSubLinkClasses %}{% 
+endif %}{% 
+comment %}Determine whether guidelines or related guidelines should be output{% endcomment %}{% 
 assign isRelatedGuidelines = false %}{% 
 if include.guidelines %}{% 
   comment %}include.guidelines was provided so use it{% endcomment %}{% 
@@ -34,11 +68,8 @@ elsif include.guidelineIndexes %}{%
   endif %}{% 
 endif %}{% 
 if guidelinesArray %}{% 
-  capture listClassOutput %}{% 
-    include /functions/class-from-tags.html tags=site.defaultClasses.list %}{% 
-  endcapture %}{% 
   if isRelatedGuidelines %}
-<ul data-guidelines="{{ guidelinesArray | join: ',' }}"{{ listClassOutput | rstrip }}>
+<ul data-guidelines="{{ guidelinesArray | join: ',' }}"{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>
 {%  for guideline in guidelinesArray %}{% 
       assign indexArray = guideline | split: '.' %}{% 
       assign standardIndex = indexArray[0] | minus: 1 %}{% 
@@ -47,7 +78,11 @@ if guidelinesArray %}{%
       capture guidelineId %}{% 
         include /functions/generate-id.html string=guidelineData.title %}{% 
       endcapture %}{% 
-      assign allClasses = site.defaultClasses.listitem | concat: guidelineData.tags %}{% 
+      if listItemClasses.size > 0 %}{% 
+        assign allClasses = listItemClasses | split: " " | concat: guidelineData.tags %}{% 
+      else %}{% 
+        assign allClasses = guidelineData.tags %}{% 
+      endif %}{% 
       capture classOutput %}{% 
         include /functions/class-from-tags.html tags=allClasses excludeSectionTags=true %}{% 
       endcapture
@@ -55,14 +90,14 @@ if guidelinesArray %}{%
       if include.samePage != true 
         %}{{ site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension }}{% 
       endif 
-      %}#{{ guidelineId | strip }}">{{ guidelineData.title }}{% 
+      %}#{{ guidelineId | strip }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ guidelineData.title }}{% 
       unless include.includeStandardTitle == false
         %} ({{ dataSource.standards.content[standardIndex].title }}){% 
       endunless 
-      %}</a></li>
+      %}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a></li>
 {%  endfor %}{% 
   else %}
-<ul{{ listClassOutput | rstrip }}>
+<ul{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>
 {%  for item in guidelinesArray %}{% 
       if item.first %}{% 
         comment %}item is a guideline object{% endcomment %}{% 
@@ -82,11 +117,15 @@ if guidelinesArray %}{%
       capture guidelineId %}{% 
         include /functions/generate-id.html string=guideline.title %}{% 
       endcapture %}{% 
-      assign allClasses = site.defaultClasses.listitem | concat: guideline.tags %}{% 
+      if listItemClasses.size > 0 %}{% 
+        assign allClasses = listItemClasses | split: " " | concat: guideline.tags %}{% 
+      else %}{% 
+        assign allClasses = guideline.tags %}{% 
+      endif %}{% 
       capture classOutput %}{% 
         include /functions/class-from-tags.html tags=allClasses excludeSectionTags=true %}{% 
       endcapture
-      %}<li{{ classOutput | rstrip }}><a href="#{{ guidelineId | strip }}">{{ guideline.title }}</a></li>
+      %}<li{{ classOutput | rstrip }}><a href="#{{ guidelineId | strip }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ guideline.title }}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a></li>
 {%  endfor %}{% 
   endif %}</ul>
 {% endif %}
