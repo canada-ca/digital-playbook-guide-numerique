@@ -7,6 +7,7 @@ comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-s
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
+comment %}@param guidelinesDetailsSummary {Boolean} Optional (defaults to true). Whether guidelines list should be in details/summary.{% endcomment %}{% 
 comment %}@param guidelinesListClasses {String} Optional. Classes (separated by a space) to add to the guidelines list.{% endcomment %}{% 
 comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space)vto add to the guidelines list items.{% endcomment %}{% 
 comment %}@param guidelinesLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item links.{% endcomment %}{% 
@@ -76,10 +77,13 @@ if tagsCompareResult contains "true" %}{%
     include /functions/class-from-tags.html tags=standard.guidelines.tags %}{% 
   endcapture %}
 <div{{ classOutput | rstrip }}>
-
-<p><strong>{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}</strong></p>
-
-{% if include.relevantGuidelines.size > 0 %}{% 
+{% if include.guidelinesDetailsSummary == false 
+    %}<p><strong>{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}</strong></p>{% 
+  else 
+    %}<details open="open">
+<summary markdown="0"><strong>{{ standard.guidelines.title }}</strong></summary>{% 
+  endif %}{% 
+  if include.relevantGuidelines.size > 0 %}{% 
     if include.relevantGuidelines.first %}{% 
       assign outputGuidelinesArray = include.relevantGuidelines %}{% 
     else %}{% 
@@ -89,8 +93,10 @@ if tagsCompareResult contains "true" %}{%
   else %}{% 
     assign outputGuidelinesArray = standard.guidelines.content %}{% 
     include functions/guideline-links.html guidelines=outputGuidelinesArray standard=standard samePage=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
-  endif %}
-
+  endif %}{% 
+  unless include.guidelinesDetailsSummary == false 
+  %}</details>{% 
+  endunless %}
 </div>
 {% endif %}
 
@@ -136,12 +142,18 @@ if tagsCompareResult contains "true" %}{%
       include /functions/class-from-tags.html tags=standard.relatedguidelines.tags %}{% 
     endcapture %}
 <div{{ classOutput | rstrip }}>
-<details>
-<summary markdown="0">{{ standard.relatedguidelines.title }}</summary>
+{% if include.guidelinesDetailsSummary == false 
+    %}<p><strong>{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}</strong></p>{% 
+  else 
+    %}<details>
+<summary markdown="0">{{ standard.relatedguidelines.title }}</summary>{% 
+  endif %}
 
-{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections %}
+{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}
 
-</details>
+{%  unless include.guidelinesDetailsSummary == false 
+  %}</details>{% 
+    endunless %}
 </div>
 {% endif %}{% 
 endif %}

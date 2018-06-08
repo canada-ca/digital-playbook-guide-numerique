@@ -202,6 +202,7 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>relevantSections</code>: {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
   - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
   - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
+  - <code>guidelinesDetailsSummary</code> {Boolean} Optional (defaults to true). Whether guidelines list should be in details/summary.
   - <code>guidelinesListClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list.
   - <code>guidelinesListItemClasses</code> {String} Optional. Classes (separated by a space)vto add to the guidelines list items.
   - <code>guidelinesLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list item links.

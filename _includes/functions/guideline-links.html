@@ -76,7 +76,7 @@ elsif include.guidelineIndexes %}{%
 endif %}{% 
 if guidelinesArray %}{% 
   if isRelatedGuidelines %}
-<ul data-guidelines="{{ guidelinesArray | join: ',' }}"{% if site.defaultClasses.list.size > 0 %} class="{{ site.defaultClasses.list }} list-unstyled"{% endif %}>
+<ul data-guidelines="{{ guidelinesArray | join: ',' }}"{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>
 {%  for guideline in guidelinesArray %}{% 
       assign indexArray = guideline | split: '.' %}{% 
       assign standardIndex = indexArray[0] | minus: 1 %}{% 
@@ -85,8 +85,8 @@ if guidelinesArray %}{%
       capture guidelineId %}{% 
         include /functions/generate-id.html string=guidelineData.title %}{% 
       endcapture %}{% 
-      if site.defaultClasses.listitem.size > 0 %}{% 
-        assign allClasses = site.defaultClasses.listitem | split: " " | concat: guidelineData.tags %}{% 
+      if listItemClasses.size > 0 %}{% 
+        assign allClasses = listItemClasses | split: " " | concat: guidelineData.tags %}{% 
       else %}{% 
         assign allClasses = guidelineData.tags %}{% 
       endif %}{% 
@@ -97,11 +97,11 @@ if guidelinesArray %}{%
       if include.samePage != true 
         %}{{ site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension }}{% 
       endif 
-      %}#{{ guidelineId | strip }}">{{ guidelineData.title }}{% 
+      %}#{{ guidelineId | strip }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ guidelineData.title }}{% 
       unless include.includeStandardTitle == false
         %} ({{ dataSource.standards.content[standardIndex].title }}){% 
       endunless 
-      %}</a></li>
+      %}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a></li>
 {%  endfor %}{% 
   else %}
 <ul{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>
