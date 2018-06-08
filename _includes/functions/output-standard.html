@@ -81,7 +81,7 @@ if tagsCompareResult contains "true" %}{%
     %}<p><strong>{{ standard.guidelines.title }}{{ site.Colon[page.lang] }}</strong></p>{% 
   else 
     %}<details open="open">
-<summary markdown="0">{{ standard.guidelines.title }}</summary>{% 
+<summary markdown="0"><strong>{{ standard.guidelines.title }}</strong></summary>{% 
   endif %}{% 
   if include.relevantGuidelines.size > 0 %}{% 
     if include.relevantGuidelines.first %}{% 
