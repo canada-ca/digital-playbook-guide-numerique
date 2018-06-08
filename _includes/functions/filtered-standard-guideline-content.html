@@ -3,10 +3,14 @@ comment %}@param relevantTags {String/Array} Comma-separated tags or array of ta
 comment %}@param relevantSections {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed{% endcomment %}{% 
 comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
-comment %}@param standardsListClasses {String} Optional. Classes (separated by a space) to add to the list.{% endcomment %}{% 
-comment %}@param standardsListItemClasses {String} Optional. Classes (separated by a space)vto add to the list items.{% endcomment %}{% 
-comment %}@param standardsLinkClasses {String} Optional. Classes (separated by a space) to add to the links.{% endcomment %}{% 
-comment %}@param standardsSubLinkClasses {String} Optional. Classes (separated by a space) to add to the link content.{% endcomment %}{% 
+comment %}@param standardsListClasses {String} Optional. Classes (separated by a space) to add to the standards list.{% endcomment %}{% 
+comment %}@param standardsListItemClasses {String} Optional. Classes (separated by a space)vto add to the standards list items.{% endcomment %}{% 
+comment %}@param standardsLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item links.{% endcomment %}{% 
+comment %}@param standardsSubLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item link content.{% endcomment %}{% 
+comment %}@param guidelinesListClasses {String} Optional. Classes (separated by a space) to add to the guidelines list.{% endcomment %}{% 
+comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space)vto add to the guidelines list items.{% endcomment %}{% 
+comment %}@param guidelinesLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item links.{% endcomment %}{% 
+comment %}@param guidelinesSubLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.{% endcomment %}{% 
 comment %}@return {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
