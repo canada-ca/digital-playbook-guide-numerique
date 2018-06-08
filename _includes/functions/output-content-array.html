@@ -42,8 +42,15 @@ for item in include.contentArray %}{%
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
+        if site.defaultClasses.section.size > 0 %}{% 
+          assign allClasses = site.defaultClasses.section | split: " " %}{% 
+          if item.tags.size > 0 %}{% 
+            assign allClasses = allClasses | concat: item.tags %}{% 
+          endif %}{% 
+        else %}{% 
+          assign allClasses = item.tags %}{% 
+        endif %}{% 
         capture classOutput %}{% 
-          assign allClasses = site.defaultOutputClasses.section | concat: item.tags %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
 <{{ sectionTag }}{{ classOutput | rstrip }}>
@@ -63,7 +70,14 @@ for item in include.contentArray %}{%
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
-        assign allClasses = site.defaultOutputClasses.list | concat: item.tags %}{% 
+        if site.defaultClasses.list.size > 0 %}{% 
+          assign allClasses = site.defaultClasses.list | split: " " %}{% 
+          if item.tags.size > 0 %}{% 
+            assign allClasses = allClasses | concat: item.tags %}{% 
+          endif %}{% 
+        else %}{% 
+          assign allClasses = item.tags %}{% 
+        endif %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
@@ -74,7 +88,14 @@ for item in include.contentArray %}{%
     elsif item.contenttype == 'listitem' %}{% 
       comment %}Content block is a list item, so output the list item{% endcomment %}{% 
       if relevantItem %}{% 
-        assign allClasses = site.defaultOutputClasses.listitem | concat: item.tags %}{% 
+        if site.defaultClasses.listitem.size > 0 %}{% 
+          assign allClasses = site.defaultClasses.listitem | split: " " %}{% 
+          if item.tags.size > 0 %}{% 
+            assign allClasses = allClasses | concat: item.tags %}{% 
+          endif %}{% 
+        else %}{% 
+          assign allClasses = item.tags %}{% 
+        endif %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
@@ -87,7 +108,14 @@ for item in include.contentArray %}{%
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputNestedList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
-        assign allClasses = site.defaultOutputClasses.listitem | concat: item.tags %}{% 
+        if site.defaultClasses.listitem.size > 0 %}{% 
+          assign allClasses = site.defaultClasses.listitem | split: " " %}{% 
+          if item.tags.size > 0 %}{% 
+            assign allClasses = allClasses | concat: item.tags %}{% 
+          endif %}{% 
+        else %}{% 
+          assign allClasses = item.tags %}{% 
+        endif %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=item.tags %}{% 
         endcapture %}

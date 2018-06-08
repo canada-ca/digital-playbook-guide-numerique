@@ -1,6 +1,9 @@
 {% comment %}@overview Outputs the Overview section of the Digital Playbook{% endcomment %}{% 
 comment %}@param samePage {Boolean} Whether or not the Overview section is on the same page as the Standards{% endcomment %}{% 
-comment %}@return {String} Overview section of the Digital Playbook{% endcomment %}{% 
+comment %}@param standardsListClasses {String} Optional. Classes (separated by a space) to add to the standards list.{% endcomment %}{% 
+comment %}@param standardsListItemClasses {String} Optional. Classes (separated by a space)vto add to the standards list items.{% endcomment %}{% 
+comment %}@param standardsLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item links.{% endcomment %}{% 
+comment %}@param standardsSubLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item link content.{% endcomment %}{% comment %}@return {String} Overview section of the Digital Playbook{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
 capture classOutput %}{% 
@@ -16,7 +19,7 @@ endcapture %}
 
 ### {{ dataSource.standards.title }}
   
-{% include /functions/standard-links.html samePage=include.samePage listClasses="colcount-md-2 list-unstyled" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" %}
+{% include /functions/standard-links.html samePage=include.samePage listClasses=include.standardsListClasses listItemClasses=include.standardsListItemClasses linkClasses=include.standardsLinkClasses subLinkClasses=include.standardsSubLinkClasses %}
 
 </section>
 

@@ -3,6 +3,14 @@ comment %}@param relevantTags {String/Array} Comma-separated tags or array of ta
 comment %}@param relevantSections {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed{% endcomment %}{% 
 comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
+comment %}@param standardsListClasses {String} Optional. Classes (separated by a space) to add to the standards list.{% endcomment %}{% 
+comment %}@param standardsListItemClasses {String} Optional. Classes (separated by a space)vto add to the standards list items.{% endcomment %}{% 
+comment %}@param standardsLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item links.{% endcomment %}{% 
+comment %}@param standardsSubLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item link content.{% endcomment %}{% 
+comment %}@param guidelinesListClasses {String} Optional. Classes (separated by a space) to add to the guidelines list.{% endcomment %}{% 
+comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space)vto add to the guidelines list items.{% endcomment %}{% 
+comment %}@param guidelinesLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item links.{% endcomment %}{% 
+comment %}@param guidelinesSubLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.{% endcomment %}{% 
 comment %}@return {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
@@ -39,7 +47,7 @@ for currentStandard in relevantStandardsGuidelinesArray %}{%
   endif %}{% 
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}{% 
-include functions/standard-links.html samePage=true relevantStandards=relevantStandards %}
+include functions/standard-links.html samePage=true relevantStandards=relevantStandards listClasses=include.standardsListClasses listItemClasses=include.standardsListItemClasses linkClasses=include.standardsLinkClasses subLinkClasses=include.standardsSubLinkClasses %}
 
 </section>
 
@@ -49,7 +57,7 @@ for relevantGuidelines in relevantStandardsGuidelinesArray %}{%
   if relevantGuidelines.size > 0 %}{% 
     assign currentRelevantStandard = dataSource.standards.content[standardIndex] %}{% 
     assign relevantGuidelinesArray = relevantGuidelines | split: "," %}{% 
-    include functions/output-standard.html standard=currentRelevantStandard relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags relevantSections=include.relevantSections includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections %}{% 
+    include functions/output-standard.html standard=currentRelevantStandard relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags relevantSections=include.relevantSections includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
   endif %}{% 
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}

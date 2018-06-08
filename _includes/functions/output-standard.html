@@ -7,6 +7,10 @@ comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-s
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
+comment %}@param guidelinesListClasses {String} Optional. Classes (separated by a space) to add to the guidelines list.{% endcomment %}{% 
+comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space)vto add to the guidelines list items.{% endcomment %}{% 
+comment %}@param guidelinesLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item links.{% endcomment %}{% 
+comment %}@param guidelinesSubLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.{% endcomment %}{% 
 comment %}@return {String} Outputs the content for the standard and the included guidelines{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
@@ -81,10 +85,10 @@ if tagsCompareResult contains "true" %}{%
     else %}{% 
       assign outputGuidelinesArray = include.relevantGuidelines | replace: " ", "" | split: "," %}{% 
     endif %}{% 
-    include functions/guideline-links.html guidelineIndexes=outputGuidelinesArray standard=standard samePage=true %}{% 
+    include functions/guideline-links.html guidelineIndexes=outputGuidelinesArray standard=standard samePage=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
   else %}{% 
     assign outputGuidelinesArray = standard.guidelines.content %}{% 
-    include functions/guideline-links.html guidelines=outputGuidelinesArray standard=standard samePage=true %}{% 
+    include functions/guideline-links.html guidelines=outputGuidelinesArray standard=standard samePage=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
   endif %}
 
 </div>
@@ -135,7 +139,7 @@ if tagsCompareResult contains "true" %}{%
 
 <p><strong>{{ standard.relatedguidelines.title }}{{ site.Colon[page.lang] }}</strong></p>
 
-{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true %}
+{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}
 
 </div>
 {% endif %}{% 
