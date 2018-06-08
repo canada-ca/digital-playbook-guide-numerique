@@ -137,7 +137,7 @@ if tagsCompareResult contains "true" %}{%
     endcapture %}
 <div{{ classOutput | rstrip }}>
 <details>
-<summary>{{ standard.relatedguidelines.title }} </summary>
+<summary markdown="0">{{ standard.relatedguidelines.title }}</summary>
 
 {%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections %}
 
