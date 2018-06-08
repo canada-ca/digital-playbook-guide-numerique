@@ -43,7 +43,7 @@ for item in include.contentArray %}{%
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
         if site.defaultClasses.section.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.section | split: "" %}{% 
+          assign allClasses = site.defaultClasses.section | split: " " %}{% 
           if item.tags.size > 0 %}{% 
             assign allClasses = allClasses | concat: item.tags %}{% 
           endif %}{% 
@@ -71,7 +71,7 @@ for item in include.contentArray %}{%
       assign nestedOutputStrip = nestedOutputList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
         if site.defaultClasses.list.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.list | split: "" %}{% 
+          assign allClasses = site.defaultClasses.list | split: " " %}{% 
           if item.tags.size > 0 %}{% 
             assign allClasses = allClasses | concat: item.tags %}{% 
           endif %}{% 
@@ -89,7 +89,7 @@ for item in include.contentArray %}{%
       comment %}Content block is a list item, so output the list item{% endcomment %}{% 
       if relevantItem %}{% 
         if site.defaultClasses.listitem.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.listitem | split: "" %}{% 
+          assign allClasses = site.defaultClasses.listitem | split: " " %}{% 
           if item.tags.size > 0 %}{% 
             assign allClasses = allClasses | concat: item.tags %}{% 
           endif %}{% 
@@ -109,7 +109,7 @@ for item in include.contentArray %}{%
       assign nestedOutputStrip = nestedOutputNestedList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
         if site.defaultClasses.listitem.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.listitem | split: "" %}{% 
+          assign allClasses = site.defaultClasses.listitem | split: " " %}{% 
           if item.tags.size > 0 %}{% 
             assign allClasses = allClasses | concat: item.tags %}{% 
           endif %}{% 
