@@ -57,7 +57,7 @@ for relevantGuidelines in relevantStandardsGuidelinesArray %}{%
   if relevantGuidelines.size > 0 %}{% 
     assign currentRelevantStandard = dataSource.standards.content[standardIndex] %}{% 
     assign relevantGuidelinesArray = relevantGuidelines | split: "," %}{% 
-    include functions/output-standard.html standard=currentRelevantStandard relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags relevantSections=include.relevantSections includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections %}{% 
+    include functions/output-standard.html standard=currentRelevantStandard relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags relevantSections=include.relevantSections includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
   endif %}{% 
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}
