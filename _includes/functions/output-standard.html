@@ -233,13 +233,13 @@ for item in outputGuidelinesArray %}{%
               include /functions/class-from-tags.html tags=propertyTags %}{% 
             endcapture %}{% 
             if propertyKey == "checklist" %}{% 
-              assign glyphicon = "check" %}{% 
+              assign glyphicon = "check text-success" %}{% 
             elsif propertyKey == "guides" %}{% 
-              assign glyphicon = "book" %}{% 
-            elsif propertyKey == "solutions" %}{% 
+              assign glyphicon = "book text-info" %}{% 
+            elsif propertyKey == "solutions text-success" %}{% 
               assign glyphicon = "refresh" %}{% 
             elsif propertyKey == "similar" %}{% 
-              assign glyphicon = "bookmark" %}{% 
+              assign glyphicon = "bookmark text-muted" %}{% 
             else %}{% 
               assign glyphicon = "" %}{% 
             endif %}
