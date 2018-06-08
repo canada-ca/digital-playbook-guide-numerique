@@ -176,6 +176,10 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>relevantSections</code>: {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed
   - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
   - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
+  - <code>standardsListClasses</code> {String} Optional. Classes (separated by a space) to add to the list.
+  - <code>standardsListItemClasses</code> {String} Optional. Classes (separated by a space)vto add to the list items.
+  - <code>standardsLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the links.
+  - <code>standardsSubLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the link content.
 - **Returns:** {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags
 {: .lst-spcd }
 <!-- markdownlint-enable MD032 -->
