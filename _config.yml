@@ -86,9 +86,9 @@ defaultClasses:
   standardsLinkClasses: "btn btn-default btn-lg mrgn-bttm-md"
   standardsSubLinkClasses: "btn-block text-left"
   guidelinesListClasses: "list-unstyled"
-  guidelinesListItemClasses: "btn-block"
-  guidelinesLinkClasses: "btn btn-default btn-md mrgn-bttm-sm btn-block"
-  guidelinesSubLinkClasses: "btn-block text-left"
+  guidelinesListItemClasses: ""
+  guidelinesLinkClasses: "btn btn-md btn-link"
+  guidelinesSubLinkClasses: ""
 
 # Common strings and tags for the datasets
 common:
