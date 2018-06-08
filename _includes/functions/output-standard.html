@@ -147,7 +147,7 @@ if tagsCompareResult contains "true" %}{%
   else 
     %}<details open="open">
 <summary markdown="0"><strong>{{ standard.relatedguidelines.title }}</strong></summary>{% 
-  endif %}{% 
+  endif %}
 {%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}
 {%  unless include.guidelinesDetailsSummary == false 
   %}</details>{% 
