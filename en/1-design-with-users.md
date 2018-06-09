@@ -501,7 +501,7 @@ We still need to help users who are unable to use digital channels and provide s
 - {: .dpgn-stage-alpha} show you understand existing alternative channels and how users currently interact with them **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 - {: .dpgn-stage-alpha} show you understand what percentage of users access digital and non-digital channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 - {: .dpgn-stage-alpha} show you understand how you will increase digital take-up and what targets you will set. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- {: .dpgn-stage-beta} Plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-beta} Plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (UK))**
 - {: .dpgn-stage-beta} Collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
 - {: .dpgn-stage-beta} Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))**
 - {: .dpgn-stage-beta} Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
