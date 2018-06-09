@@ -110,6 +110,10 @@
       },
       "uniqueItems": true
     },
+    "source": {
+      "type": "string",
+      "format": "uri"
+    },
     "section": {
       "type": "object",
       "contenttype": {
@@ -117,6 +121,7 @@
         "enum": ["section"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "title": {
         "type": "string"
       },
@@ -139,6 +144,7 @@
         "enum": ["list"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "listtype": {
         "type": "string"
       },
@@ -160,6 +166,7 @@
         "enum": ["listitem"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "content": {
         "type": "string"
       }
@@ -171,6 +178,7 @@
         "enum": ["nestedlist"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "content": {
         "type": "string"
       },
@@ -191,6 +199,7 @@
         "enum": ["text"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "content": {
         "type": "string"
       }
