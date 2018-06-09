@@ -486,8 +486,8 @@ We still need to help users who are unable to use digital channels and provide s
 **[TODO: Add/revise checklist items]**
 
 - {: .dpgn-stage-alpha} Plan to increase how many people use the digital service **(Digital Service Standard (Ontario))**
-- {: .dpgn-stage-alpha} Uùnderstand other channels that the service is delivered through **(Digital Service Standard (Ontario))**
-- {: .dpgn-stage-alpha} Collect data on service usage for each channel **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha} Understand other channels that the service is delivered through **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} Describe the data collected on other channels and how usage data is collected for each **(Digital Service Standard (Ontario))**
 - {: .dpgn-stage-alpha} Identify organizations and groups that help users with existing digital or non-digital services **(Digital Service Standard (Ontario))**
 - {: .dpgn-stage-alpha} Gather insights from research with users, including demographics, attitudes, behaviours and channel preferences, and user journey maps **(Digital Service Standard (Ontario))**
 - {: .dpgn-stage-alpha} Understand how each channel meets different users' needs **(Digital Service Standard (Ontario))**
