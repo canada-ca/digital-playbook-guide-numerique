@@ -47,7 +47,6 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 			if elem.name === "section"
 				item["contenttype"] = "section"
 				item["tags"] = tags
-        item["source"] = elem_source
 				heading = elem.css("h#{parent_heading_level + 1}")
 				if heading.count >= 1
 					item["title"] = heading[0].inner_html
@@ -60,7 +59,6 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 			elsif elem.name === ("h#{parent_heading_level + 1}")
 				item["contenttype"] = "section"
 				item["tags"] = tags
-        item["source"] = elem_source
 				item["title"] = elem.inner_html
 				node_array = Array.new
 				next_elem = elem.next_element
@@ -73,7 +71,6 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 			elsif elem.name === "ul" || elem.name === "ol"
 				item["contenttype"] = "list"
 				item["tags"] = tags
-        item["source"] = elem_source
 				if elem.name === "ul"
 					item["listtype"] = "unordered"
 				else
