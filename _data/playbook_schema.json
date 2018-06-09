@@ -121,7 +121,6 @@
         "enum": ["section"]
       },
       "tags": {"$ref": "#/definitions/tags"},
-      "source": {"$ref": "#/definitions/source"},
       "title": {
         "type": "string"
       },
@@ -144,7 +143,6 @@
         "enum": ["list"]
       },
       "tags": {"$ref": "#/definitions/tags"},
-      "source": {"$ref": "#/definitions/source"},
       "listtype": {
         "type": "string"
       },
@@ -171,7 +169,7 @@
         "type": "string"
       }
     },
-    "nestedlist": {
+    "listnested": {
       "type": "object",
       "contenttype": {
         "type": "string",
