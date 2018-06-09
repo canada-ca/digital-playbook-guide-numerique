@@ -34,6 +34,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 		elsif elem.name != "h#{parent_heading_level}"
 			item = Hash.new
 			elem_class = elem["class"]
+      elem_source = elem["data-source"]
 			if elem_class.nil? || elem_class.length == 0
 				tags = Array.new
 			elsif elem_class.include? "dpgn-data-ignore"
@@ -46,6 +47,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 			if elem.name === "section"
 				item["contenttype"] = "section"
 				item["tags"] = tags
+        item["source"] = elem_source
 				heading = elem.css("h#{parent_heading_level + 1}")
 				if heading.count >= 1
 					item["title"] = heading[0].inner_html
@@ -58,6 +60,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 			elsif elem.name === ("h#{parent_heading_level + 1}")
 				item["contenttype"] = "section"
 				item["tags"] = tags
+        item["source"] = elem_source
 				item["title"] = elem.inner_html
 				node_array = Array.new
 				next_elem = elem.next_element
@@ -70,6 +73,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 			elsif elem.name === "ul" || elem.name === "ol"
 				item["contenttype"] = "list"
 				item["tags"] = tags
+        item["source"] = elem_source
 				if elem.name === "ul"
 					item["listtype"] = "unordered"
 				else
@@ -81,6 +85,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 				if nested_lists.count >= 1
 					item["contenttype"] = "listnested"
 					item["tags"] = tags
+          item["source"] = elem_source
 					html_fragment = elem.inner_html
 					nested_ul_index = html_fragment.index("<ul")
 					nested_ol_index = html_fragment.index("<ol")
@@ -96,11 +101,13 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 				else
 					item["contenttype"] = "listitem"
 					item["tags"] = tags
+          item["source"] = elem_source
 					item["content"] = elem.inner_html
 				end
 			else
 				item["contenttype"] = "text"
 				item["tags"] = tags
+        item["source"] = elem_source
 				item["content"] = elem
 			end
 			content_array.push(item)
