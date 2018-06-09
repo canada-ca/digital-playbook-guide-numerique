@@ -183,7 +183,7 @@ A key part of building digital services that work for users is developing a good
 - {: .dpgn-stage-beta} **Are you prepared for ongoing user research?** Show how you plan to continue to test the system with users and the resources for this, for example through an ongoing research plan and budget **(Digital Service Standard (AU))**
 - {: .dpgn-stage-beta} **What have you not solved yet?** What the significant design challenges are, for example through key insights, how have you approached them? How do you plan to continue to tackle them? **(Digital Service Standard (AU))**
 - {: .dpgn-stage-beta} **How will you know if your design is working?** Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs **(Digital Service Standard (AU))**
-- {: .dpgn-stage-live} Use research and testing results to continuously improve the service **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} Use research and testing results to continuously improve the service **(Digital Service Standard (UK))**
 - {: .dpgn-stage-live} Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
 - {: .dpgn-stage-live} Be able to show greater depth of knowledge for all the points above (from Alpha/Beta) **(Digital Service Standard (AU))**
 - {: .dpgn-stage-live} **Show how you are using data from real use** to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users **(Digital Service Standard (AU))**
