@@ -20,7 +20,7 @@ end
 common_data = site_data["common"]
 jekyll_output_dir = "rendered_site/"
 
-def build_content_array(html_block, is_parent, parent_heading_level, logger)
+def build_content_array(html_block, is_parent, parent_heading_level, logger, tags_all)
 	content_array = Array.new
 	ignore_loop = 0
 	if is_parent
@@ -33,6 +33,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 			ignore_loop -= 1 
 		elsif elem.name != "h#{parent_heading_level}"
 			item = Hash.new
+      cancel_content_push = false
 			elem_class = elem["class"]
       elem_source = elem["data-source"]
 			if elem_class.nil? || elem_class.length == 0
@@ -43,6 +44,11 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 				tags = elem_class.split(" ")
 				elem.remove_attribute("class")
 			end
+
+      # If tags_all exists, then append it to the current tags
+      if !tags_all.nil?
+        tags.push(*tags_all)
+      end
 
 			if elem.name === "section"
 				item["contenttype"] = "section"
@@ -69,14 +75,24 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 				ignore_loop += node_array.count
 				item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger)
 			elsif elem.name === "ul" || elem.name === "ol"
-				item["contenttype"] = "list"
-				item["tags"] = tags
-				if elem.name === "ul"
-					item["listtype"] = "unordered"
+        if elem.name === "ul"
+					listtype = "unordered"
 				else
-					item["listtype"] = "ordered"
+					listtype = "ordered"
 				end
-				item["content"] = build_content_array(elem, true, parent_heading_level, logger)
+
+        # Check if previous item (that was not ignored) was a list of the same type, and if it was, combine it with this list       
+        last_item_index = content_array.length - 1
+        if content_array[last_item_index]["contenttype"] === "list" && content_array[last_item_index]["listtype"] === listtype
+          new_listitems = build_content_array(elem, true, parent_heading_level, logger, tags)
+          content_array[last_item_index]["content"].push(*new_listitems)
+          cancel_content_push = true
+        else
+  				item["contenttype"] = "list"
+	  			item["tags"] = tags
+		  		item["listtype"] = listtype
+			  	item["content"] = build_content_array(elem, true, parent_heading_level, logger)
+        end
 			elsif elem.name === "li"
 				nested_lists = elem.css( "ul, ol" )
 				if nested_lists.count >= 1
@@ -107,7 +123,9 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
         item["source"] = elem_source
 				item["content"] = elem
 			end
-			content_array.push(item)
+      if !cancel_content_push
+			  content_array.push(item)
+      end
 		end
 	end
 	return content_array
