@@ -110,6 +110,10 @@
       },
       "uniqueItems": true
     },
+    "source": {
+      "type": "string",
+      "format": "uri"
+    },
     "section": {
       "type": "object",
       "contenttype": {
@@ -160,17 +164,19 @@
         "enum": ["listitem"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "content": {
         "type": "string"
       }
     },
-    "nestedlist": {
+    "listnested": {
       "type": "object",
       "contenttype": {
         "type": "string",
         "enum": ["nestedlist"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "content": {
         "type": "string"
       },
@@ -191,6 +197,7 @@
         "enum": ["text"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "content": {
         "type": "string"
       }

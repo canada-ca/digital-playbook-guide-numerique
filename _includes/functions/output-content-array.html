@@ -99,7 +99,7 @@ for item in include.contentArray %}{%
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
-<li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span></li>
+<li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}><span markdown="1">{{ item.content }}</span></li>
 {%    endif %}{% 
     elsif item.contenttype == 'listnested'%}{% 
       comment %}Content block is a nested list, so output the list item and then call this function to process the nested content array (list){% endcomment %}{% 
@@ -119,7 +119,7 @@ for item in include.contentArray %}{%
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=item.tags %}{% 
         endcapture %}
-<li{{ classOutput | rstrip }}><span markdown="1">{{ item.content }}</span>{{ nestedOutputStrip }}</li>
+<li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}><span markdown="1">{{ item.content }}</span>{{ nestedOutputStrip }}</li>
 {%    endif %}{% 
     else %}{% 
       comment %}Content block is a text block or other generic content block, so out the conent block within a div{% endcomment %}{% 

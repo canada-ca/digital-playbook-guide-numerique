@@ -55,7 +55,7 @@ Users should be involved throughout the lifecycle of the service, with user rese
 - Regularly test with users when building the service and after the service has been launched to ensure it meets the needs of user and to identify any parts of the service that users may find difficult
 - Put in place a plan to pay for user research and usability tests throughout the design of the service and after it's built
 - Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement
-- Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7).
+- Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7)).
 
 </section>
 
@@ -100,31 +100,19 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 **[TODO: Add/revise checklist items]**
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
+- {: .dpgn-stage-alpha} determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha} pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha} carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha} develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta .dpgn-stage-live} pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta .dpgn-stage-live} carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta .dpgn-stage-live} develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta .dpgn-stage-live} do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta .dpgn-stage-live} test with users who need assisted digital support **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta .dpgn-stage-live} use analytics data in your user research plan for the service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta .dpgn-stage-live} document any problems you've found through testing and how you solved them **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta .dpgn-stage-live} document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
 
-#### Alpha stage
-
-- determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
-- pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
-- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
-- develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
-
-#### Beta and live stages
-
-- pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
-- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
-- develop a user research plan for the service at the next phase and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
-- do user research with people who have accessibility needs from the time you started designing the service **(Digital Service Standard (UK))**
-- test with users who need assisted digital support **(Digital Service Standard (UK))**
-- use analytics data in your user research plan for the service **(Digital Service Standard (UK))**
-- document any problems you've found through testing and how you solved them **(Digital Service Standard (UK))**
-- document any problems you haven't been able to solve in beta and how you'll handle them in public beta **(Digital Service Standard (UK))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -168,59 +156,39 @@ A key part of building digital services that work for users is developing a good
 
 **[TODO: Add/revise checklist items]**
 
-- {: .dpgn-digital-architectural } Clearly defined user needs **({{ site.DigitalArchitectural.en }})**
+- {: .dpgn-digital-architectural} Clearly defined user needs **({{ site.DigitalArchitectural.en }})**
   - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
+- {: .dpgn-stage-alpha} Spend time with current and prospective users of the service **(Digital Services Playbook (US))**
+- {: .dpgn-stage-alpha} Test prototypes of solutions with real people, in the field if possible **(Digital Services Playbook (US))**
+- {: .dpgn-stage-alpha} As the digital service is being built, regularly test it with potential users to ensure it meets people's needs **(Digital Services Playbook (US))**
+- {: .dpgn-stage-alpha} Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors; be thoughtful about the time spent **(Digital Services Playbook (US))**
+- {: .dpgn-stage-alpha} Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
+- {: .dpgn-stage-alpha} Identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} **Who are the users?** What about their motivations, triggers, contexts are significant for your service? How can you find them to invite them to participate in user research? You must include users with varying needs (such as needs arising from disability, cultural diversity, literacy and remoteness). Consider all the users in the service including end users, users in government who are delivering the service, and key intermediaries (professional and personal network) **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} **What is the real task(s) that people are trying to achieve** when they encounter your service. What is the ‘job’ people are trying to get done that your service is a part of? (You need to describe this in words that real end users would use, not using government terminology) **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} **How are users currently doing the task** your service aims to help them do and key touch points, for example through journey maps. What other relevant government and non-government services are also in use at this time? Where are the pain points in the current experience? **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} **What are the user needs?** What are the opportunities to remove or reduce the pain points? How might we better meet the user needs? (Demonstrate this through research, testing and validating possible solutions with prototypes) **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} **Are you designing the right thing?** How have your insights from user research helped you to define your minimum viable product (MVP)? How does the MVP create value for users and government by better meeting user needs? **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} Research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Document the design challenges your users' needs pose for your service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Greater depth and diversity of knowledge on all of the points above from Alpha **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} **How has your service been shaped by user needs?** Show how you have made changes in the service and interaction design in response to user research and usability testing. You can evidence this by showing how the design has changed over time and the appropriate research findings that have driven this change **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} **How you tested the system in the users’ context with a full range of users** (including users with varying needs). You can evidence this with artefacts of research, for example, video clips and outcomes from research analysis **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} **Are you prepared for ongoing user research?** Show how you plan to continue to test the system with users and the resources for this, for example through an ongoing research plan and budget **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} **What have you not solved yet?** What the significant design challenges are, for example through key insights, how have you approached them? How do you plan to continue to tackle them? **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} **How will you know if your design is working?** Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs **(Digital Service Standard (AU))**
+- {: .dpgn-stage-live} Use research and testing results to continuously improve the service **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
+- {: .dpgn-stage-live} Be able to show greater depth of knowledge for all the points above (from Alpha/Beta) **(Digital Service Standard (AU))**
+- {: .dpgn-stage-live} **Show how you are using data from real use** to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users **(Digital Service Standard (AU))**
+- {: .dpgn-stage-live} Know how you will measure and monitor your service to ensure it is serving its users well **(Digital Service Standard (AU))**
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Alpha stage
-
-- Spend time with current and prospective users of the service **(Digital Services Playbook (US))**
-- Test prototypes of solutions with real people, in the field if possible **(Digital Services Playbook (US))**
-- As the digital service is being built, regularly test it with potential users to ensure it meets people's needs **(Digital Services Playbook (US))**
-- Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors; be thoughtful about the time spent **(Digital Services Playbook (US))**
-- Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
-- Identify parts of the service that users find difficult and any problems that need to be overcome to design the service **(Digital Service Standard (Ontario))**
-- **Who are the users?** What about their motivations, triggers, contexts are significant for your service? How can you find them to invite them to participate in user research? You must include users with varying needs (such as needs arising from disability, cultural diversity, literacy and remoteness). Consider all the users in the service including end users, users in government who are delivering the service, and key intermediaries (professional and personal network) **(Digital Service Standard (AU))**
-- **What is the real task(s) that people are trying to achieve** when they encounter your service. What is the ‘job’ people are trying to get done that your service is a part of? (You need to describe this in words that real end users would use, not using government terminology) **(Digital Service Standard (AU))**
-- **How are users currently doing the task** your service aims to help them do and key touch points, for example through journey maps. What other relevant government and non-government services are also in use at this time? Where are the pain points in the current experience? **(Digital Service Standard (AU))**
-- **What are the user needs?** What are the opportunities to remove or reduce the pain points? How might we better meet the user needs? (Demonstrate this through research, testing and validating possible solutions with prototypes) **(Digital Service Standard (AU))**
-- **Are you designing the right thing?** How have your insights from user research helped you to define your minimum viable product (MVP)? How does the MVP create value for users and government by better meeting user needs? **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Beta stage
-
-- Research with users during the private beta, including users who need assisted digital support **(Digital Service Standard (UK))**
-- Document the process used for the private beta, including how many users you tested with, how you recruited them, how you used analytics in your research, and what you learned that you didn't find in alpha **(Digital Service Standard (UK))**
-- Document who your users are and what you've done to understand their needs, including users who need assisted digital support **(Digital Service Standard (UK))**
-- Document the design challenges your users' needs pose for your service **(Digital Service Standard (UK))**
-- Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
-- Document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
-- Document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
-- Document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
-- Greater depth and diversity of knowledge on all of the points above from Alpha **(Digital Service Standard (AU))**
-- **How has your service been shaped by user needs?** Show how you have made changes in the service and interaction design in response to user research and usability testing. You can evidence this by showing how the design has changed over time and the appropriate research findings that have driven this change **(Digital Service Standard (AU))**
-- **How you tested the system in the users’ context with a full range of users** (including users with varying needs). You can evidence this with artefacts of research, for example, video clips and outcomes from research analysis **(Digital Service Standard (AU))**
-- **Are you prepared for ongoing user research?** Show how you plan to continue to test the system with users and the resources for this, for example through an ongoing research plan and budget **(Digital Service Standard (AU))**
-- **What have you not solved yet?** What the significant design challenges are, for example through key insights, how have you approached them? How do you plan to continue to tackle them? **(Digital Service Standard (AU))**
-- **How will you know if your design is working?** Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Live stage
-
-- Use research and testing results to continuously improve the service **(Digital Service Standard (Ontario))**
-- Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
-- Be able to show greater depth of knowledge for all the points above (from Alpha/Beta) **(Digital Service Standard (AU))**
-- **Show how you are using data from real use** to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users **(Digital Service Standard (AU))**
-- Know how you will measure and monitor your service to ensure it is serving its users well **(Digital Service Standard (AU))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -229,12 +197,12 @@ A key part of building digital services that work for users is developing a good
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Start by learning user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
-- [Improve service design with user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
+- [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
+- [Improve service design with user research (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
 - [Introduction to User-centred Design (usabilityfirst.com)](http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/)
-- [User Research Skills (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team)
+- [User Research Skills (Service Manual (UK))](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team)
 - [How Users Read (Writing for GOV.UK)](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read)
-- [Designing government services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/introduction-designing-government-services)
+- [Designing government services (Service Manual (UK))](https://www.gov.uk/service-manual/design/introduction-designing-government-services)
 - [DTA Guide to Discovery (Service Handbook (AU))](https://ausdto.github.io/service-handbook/discovery/)
 - [DTA Guide to Alpha (Service Handbook (AU))](http://ausdto.github.io/service-handbook/alpha/)
 - [Doing user research in the discovery phase (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2015/05/27/doing-user-research-in-the-discovery-phase/)
@@ -272,7 +240,7 @@ A key part of building digital services that work for users is developing a good
 - Stakeholders/Users requirements based solutions (Current GC EARB Principles)
 - Services & client orientation (Current GC EARB Principles)
 - Business User first (GC EA principles)
-- {: .dpgn-digital-architectural } Clearly defined user needs ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural} Clearly defined user needs ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
@@ -343,7 +311,7 @@ We need to understand the different ways people will interact with our services,
 **[TODO: Add/revise checklist items]**
 
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
-- {: .dpgn-digital-architectural } Platform agnostic **({{ site.DigitalArchitectural.en }})**
+- {: .dpgn-digital-architectural} Platform agnostic **({{ site.DigitalArchitectural.en }})**
   - Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)
 
 </section>
@@ -371,7 +339,7 @@ We need to understand the different ways people will interact with our services,
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 - Mobility Preferred (Current GC EARB Principles)
 - Any Device - Mobility (GC EA principles)
-- {: .dpgn-digital-architectural } Platform agnostic ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural} Platform agnostic ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
@@ -436,12 +404,12 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 **[TODO: Add/revise implementation guide items]**
 
-- [How user research improves service design (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
-- [Start by learning user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
-- [Understanding users who don't use digital services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
+- [How user research improves service design (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
+- [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
+- [Understanding users who don't use digital services (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
 - [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
 - [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
-- [Design patterns (Digital Service Standard (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
+- [Design patterns (Service Manual (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
 - [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
 - [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
 - [Looking at the different ways to test content (18F (US))](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/)
@@ -517,68 +485,42 @@ We still need to help users who are unable to use digital channels and provide s
 
 **[TODO: Add/revise checklist items]**
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
+- {: .dpgn-stage-alpha} Plan to increase how many people use the digital service **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} Understand other channels that the service is delivered through **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} Describe the data collected on other channels and how usage data is collected for each **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} Identify organizations and groups that help users with existing digital or non-digital services **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} Gather insights from research with users, including demographics, attitudes, behaviours and channel preferences, and user journey maps **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} Understand how each channel meets different users' needs **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} Design the digital service in a way that gives it clear advantages over other channels **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} show you understand all the touchpoints in users’ journeys, their contexts of use, and the digital limitations affecting different groups of users **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-alpha} show you understand existing channels and how they interact with the service and with each other **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} show you understand the channels required to support all groups of users of the service, and where a user may need to change channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} show you understand if there are any repeat transactions by users over different channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} show you understand the interactions occurring between the channels that deliver and capture user transactions. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} show you understand the users’ journeys and how they interact with your service, digitally or otherwise **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} show you understand existing alternative channels and how users currently interact with them **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} show you understand what percentage of users access digital and non-digital channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} show you understand how you will increase digital take-up and what targets you will set. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} Plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} be increasing digital take-up; revising your targets and considering relevant performance metrics **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} have a plan of how to move users to the digital channel where possible, including a communications plan to promote the service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} have agreed analytics/metrics for the volume of usage across channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} understand the full impact of retiring any potentially redundant services and channels. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-live} Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))**
+- {: .dpgn-stage-live} Measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
+- {: .dpgn-stage-live} Measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} show how you’ve revised the targets you made in the Beta stage to increase the number of users (including users we need to assist) of your digital service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-live} show what you’ve learned from testing different approaches to encourage users (including users we need to assist) to choose the digital service over non-digital alternatives, and which ones you’ll use in the Live stage **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-live} show your retirement strategy for any redundant services and channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-live} show that your service load capacity is scalable to meet increased digital take-up **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-live} show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+- {: .dpgn-stage-beta .dpgn-stage-live} detail the channels required to support all groups of users of the service **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+- {: .dpgn-stage-beta .dpgn-stage-live} understand the non-digital service channels and have a plan to move users to the digital channel where appropriate **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+- {: .dpgn-stage-beta .dpgn-stage-live} have developed and tested the service so that a user can change channels without repeating themselves. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
-#### Alpha stage
-
-- Plan to increase how many people use the digital service **(Digital Service Standard (Ontario))**
-- Understand other channels that the service is delivered through **(Digital Service Standard (Ontario))**
-- Collect data on service usage for each channel **(Digital Service Standard (UK))**
-- Identify organizations and groups that help users with existing digital or non-digital services **(Digital Service Standard (Ontario))**
-- Gather insights from research with users, including demographics, attitudes, behaviours and channel preferences, and user journey maps **(Digital Service Standard (Ontario))**
-- Understand how each channel meets different users' needs **(Digital Service Standard (Ontario))**
-- Design the digital service in a way that gives it clear advantages over other channels **(Digital Service Standard (Ontario))**
-- show you understand all the touchpoints in users’ journeys, their contexts of use, and the digital limitations affecting different groups of users **(Digital Service Standard (Ontario))**
-- show you understand existing channels and how they interact with the service and with each other **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- show you understand the channels required to support all groups of users of the service, and where a user may need to change channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- show you understand if there are any repeat transactions by users over different channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- show you understand the interactions occurring between the channels that deliver and capture user transactions. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- show you understand the users’ journeys and how they interact with your service, digitally or otherwise **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show you understand existing alternative channels and how users currently interact with them **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show you understand what percentage of users access digital and non-digital channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show you understand how you will increase digital take-up and what targets you will set. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Beta stage
-
-- Plan to increase how many people use the digital service and show the evidence **(Digital Service Standard (Ontario))**
-- Collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
-- Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))**
-- Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
-- be increasing digital take-up; revising your targets and considering relevant performance metrics **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- have a plan of how to move users to the digital channel where possible, including a communications plan to promote the service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- have agreed analytics/metrics for the volume of usage across channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- understand the full impact of retiring any potentially redundant services and channels. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Live stage
-
-- Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))**
-- Measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
-- Measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation **(Digital Service Standard (Ontario))**
-- show how you’ve revised the targets you made in the Beta stage to increase the number of users (including users we need to assist) of your digital service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show what you’ve learned from testing different approaches to encourage users (including users we need to assist) to choose the digital service over non-digital alternatives, and which ones you’ll use in the Live stage **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show your retirement strategy for any redundant services and channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show that your service load capacity is scalable to meet increased digital take-up **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
-
-#### Beta and live stages
-
-- detail the channels required to support all groups of users of the service **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- understand the non-digital service channels and have a plan to move users to the digital channel where appropriate **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- have developed and tested the service so that a user can change channels without repeating themselves. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -587,8 +529,8 @@ We still need to help users who are unable to use digital channels and provide s
 
 **[TODO: Add/revise implementation guide items]**
 
-- [How to measure digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
-- [Encouraging people to use your digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service)
+- [How to measure digital take-up (Service Manual (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
+- [Encouraging people to use your digital service (Service Manual (UK))](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service)
 - [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
 </section>
@@ -657,7 +599,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Keeping your service online (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
+- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
 - [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
 </section>
