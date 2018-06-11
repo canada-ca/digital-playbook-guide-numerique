@@ -38,7 +38,7 @@ if include.relevantTagsSubsections.size > 0 %}{%
   if include.relevantTagsSubsections.first %}{% 
     assign relevantTagsSubsectionsArray = include.relevantTagsSubsections %}{% 
   else %}{% 
-    assign relevantTagsSubsectionsArray = include.relevantTagsSubsections | replace: " ", "" | split: "," %}{% 
+    assign relevantTagsSubsectionsArray = include.relevantTagsSubsections | replace: " ", "" | split: ";" %}{% 
   endif %}{% 
 else %}{% 
     assign relevantTagsSubsectionsArray = "" %}{% 
