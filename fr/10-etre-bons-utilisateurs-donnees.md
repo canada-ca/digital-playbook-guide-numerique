@@ -232,7 +232,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 - regularly review the technology used to provide the service and the processes that support the service **(Digital Service Standard (Ontario))**
 - base your service review frequency on the volume of users ( e.g. 10,000 or less unique users per year = 2 year review cycle; 10,000-100,000 = annual; 100,000-1 million = every 6 months) **(Digital Service Standard (Ontario))**
 - use data to determine the cost per use for each channel, accounting for the cost to build and ongoing maintenance as well **(Digital Service Standard (Ontario))**
--  demonstrate how service performance compares to other similar government and private sector services **(Digital Service Standard (Ontario))**
+- demonstrate how service performance compares to other similar government and private sector services **(Digital Service Standard (Ontario))**
 - share your review findings with leadership **(Digital Service Standard (Ontario))**
 - Your data should show: **(Digital Service Standard (AU))**
   - user satisfaction has increased
