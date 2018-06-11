@@ -33,10 +33,10 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 			ignore_loop -= 1 
 		elsif elem.name != "h#{parent_heading_level}"
 			item = Hash.new
-      cancel_content_push = false
+			cancel_content_push = false
 
 			elem_class = elem["class"]
-      if elem_class.nil? || elem_class.length == 0
+			if elem_class.nil? || elem_class.length == 0
 				tags = Array.new
 			elsif elem_class.include? "dpgn-data-ignore"
 				next
@@ -45,29 +45,29 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 				elem.remove_attribute("class")
 			end
 
-      # If parent_tags exists, then append it to the current tags, eliminating duplicates
-      if !parent_tags.nil?
-        tags.push(*parent_tags)
-        tags = tags.uniq
-      end
+			# If parent_tags exists, then append it to the current tags, eliminating duplicates
+			if !parent_tags.nil?
+ 				tags.push(*parent_tags.reject { |tag| tag.include? "dpgn-section" })
+				tags = tags.uniq
+ 			end
 
-      elem_source = elem["data-source"]
-      if elem_source.nil? || elem_source.length == 0
+			elem_source = elem["data-source"]
+			if elem_source.nil? || elem_source.length == 0
 				content_source = Array.new
 			else
 				content_source = elem_source.gsub(" ", "").split(",")
 				elem.remove_attribute("data-source")
 			end
 
-      # If content_source is nil then use parent_content_source instead
-      if !parent_content_source.nil? && (content_source.nil? || content_source.length == 0)      
-        content_source = parent_content_source
-      end
+ 			# If content_source is nil then use parent_content_source instead
+ 			if !parent_content_source.nil? && (content_source.nil? || content_source.length == 0)      
+				content_source = parent_content_source
+			end
 
 			if elem.name === "section"
 				item["contenttype"] = "section"
 				item["tags"] = tags
-        item["source"] = content_source
+				item["source"] = content_source
 				heading = elem.css("h#{parent_heading_level + 1}")
 				if heading.count >= 1
 					item["title"] = heading[0].inner_html
@@ -80,7 +80,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 			elsif elem.name === ("h#{parent_heading_level + 1}")
 				item["contenttype"] = "section"
 				item["tags"] = tags
-        item["source"] = content_source
+				item["source"] = content_source
 				item["title"] = elem.inner_html
 				node_array = Array.new
 				next_elem = elem.next_element
@@ -91,53 +91,50 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 				ignore_loop += node_array.count
 				item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger, tags, content_source)
 			elsif elem.name === "ul" || elem.name === "ol"
-        if elem.name === "ul"
+				if elem.name === "ul"
 					listtype = "unordered"
 				else
 					listtype = "ordered"
 				end
 
-        # Check if previous item (that was not ignored) was a list of the same type, and if it was, combine it with this list       
-        last_item_index = content_array.length - 1
-        if last_item_index >= 0 && content_array[last_item_index]["contenttype"] === "list" && content_array[last_item_index]["listtype"] === listtype
-          # Combine the tags
-          if !tags.nil? && tags.length > 0
-            last_list_tags = content_array[last_item_index]["tags"]
-            last_list_tags.push(*tags)
-            content_array[last_item_index]["tags"] = last_list_tags.uniq
-          end
+				# Check if previous item (that was not ignored) was a list of the same type, and if it was, combine it with this list       
+				last_item_index = content_array.length - 1
+				if last_item_index >= 0 && content_array[last_item_index]["contenttype"] === "list" && content_array[last_item_index]["listtype"] === listtype
+					# Combine the tags
+					if !tags.nil? && tags.length > 0
+						last_list_tags = content_array[last_item_index]["tags"]
+						last_list_tags.push(*tags)
+						content_array[last_item_index]["tags"] = last_list_tags.uniq
+					end
 
-          # Combine the content sources
-          if !content_source.nil? && content_source.length > 0
-            content_array[last_item_index]["source"] = content_array[last_item_index]["source"] + "," + content_source
-          end
-          if !content_source.nil? && content_source.length > 0
-            last_list_source = content_array[last_item_index]["source"]
-            last_list_source.push(*content_source)
-            content_array[last_item_index]["source"] = last_list_source.uniq
-          end
+					# Combine the content sources
+					if !content_source.nil? && content_source.length > 0
+						last_list_source = content_array[last_item_index]["source"]
+						last_list_source.push(*content_source)
+						content_array[last_item_index]["source"] = last_list_source.uniq
+					end
           
-          # Combine the list items
-          last_list_items = content_array[last_item_index]["content"]
-          new_list_items = build_content_array(elem, true, parent_heading_level, logger, tags, content_source)
-          last_list_items.push(*new_listitems)
-          content_array[last_item_index]["content"] = last_list_items.uniq
+					# Combine the list items
+					last_list_items = content_array[last_item_index]["content"]
+					new_list_items = build_content_array(elem, true, parent_heading_level, logger, tags, content_source)
+					last_list_items.push(*new_list_items)
+					content_array[last_item_index]["content"] = last_list_items.uniq
 
-          # Don't push a new item into the content array since updated the last item
-          cancel_content_push = true
-        else
-  				item["contenttype"] = "list"
-	  			item["tags"] = tags
-          item["source"] = content_source
-		  		item["listtype"] = listtype
-			  	item["content"] = build_content_array(elem, true, parent_heading_level, logger, tags, content_source)
-        end
+					# Don't push a new item into the content array since updated the last item
+					cancel_content_push = true
+				else
+					item["contenttype"] = "list"
+					item["tags"] = tags
+					item["source"] = content_source
+					item["listtype"] = listtype
+					item["content"] = build_content_array(elem, true, parent_heading_level, logger, tags, content_source)
+				end
 			elsif elem.name === "li"
 				nested_lists = elem.css( "ul, ol" )
 				if nested_lists.count >= 1
 					item["contenttype"] = "listnested"
 					item["tags"] = tags
-          item["source"] = content_source
+					item["source"] = content_source
 					html_fragment = elem.inner_html
 					nested_ul_index = html_fragment.index("<ul")
 					nested_ol_index = html_fragment.index("<ol")
@@ -153,18 +150,18 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 				else
 					item["contenttype"] = "listitem"
 					item["tags"] = tags
-          item["source"] = content_source
+					item["source"] = content_source
 					item["content"] = elem.inner_html
 				end
 			else
 				item["contenttype"] = "text"
 				item["tags"] = tags
-        item["source"] = content_source
+				item["source"] = content_source
 				item["content"] = elem
 			end
-      if !cancel_content_push
-			  content_array.push(item)
-      end
+			if !cancel_content_push
+				content_array.push(item)
+			end
 		end
 	end
 	return content_array
@@ -217,11 +214,18 @@ lang.each do |lang|
 			logger.debug(elem_intro)
 		end
 		if elem_intro["class"].nil? || elem_intro["class"].length == 0
-			introduction["tags"] = Array.new
+			tags = Array.new
 		else
-			introduction["tags"] = elem_intro["class"].split(" ")
+			tags = elem_intro["class"].split(" ")
 		end
-		introduction["content"] = build_content_array(elem_intro, true, 2, logger)
+		if elem_intro["data-source"].nil? || elem_intro["data-source"].length == 0
+			source = Array.new
+		else
+			source = elem_intro["class"].gsub(" ","").split(",")
+		end
+		introduction["tags"] = tags
+		introduction["source"] = source
+		introduction["content"] = build_content_array(elem_intro, true, 2, logger, tags, source)
 		data["introduction"] = introduction
 	else
 		# Handling for Playbook intro not being found
@@ -276,11 +280,18 @@ lang.each do |lang|
 		if elems_standard_intro.count >= 1
 			elem_standard_intro = elems_standard_intro[0]
 			if elem_standard_intro["class"].nil? || elem_standard_intro["class"].length == 0
-				standard_intro["tags"] = Array.new
+				tags = Array.new
 			else
-				standard_intro["tags"] = elem_standard_intro["class"].split(" ")
+				tags = elem_standard_intro["class"].split(" ")
 			end
-			standard_intro["content"] = build_content_array(elem_standard_intro, true, 1, logger)
+			if elem_standard_intro["data-source"].nil? || elem_standard_intro["data-source"].length == 0
+				source = Array.new
+			else
+				source = elem_standard_intro["class"].gsub(" ","").split(",")
+			end
+			standard_intro["tags"] = tags
+			standard_intro["source"] = source
+			standard_intro["content"] = build_content_array(elem_standard_intro, true, 1, logger, tags, source)
 		else
 			# Handling for standard intro not being found
 			logger.error("Introduction for '#{standard["title"]}' could not be found using '#{elems_standard_intro_selector}'")
@@ -336,11 +347,18 @@ lang.each do |lang|
 				if elems_guideline_section.count >= 1
 					elem_guideline_section = elems_guideline_section[0]
 					if elem_guideline_section["class"].nil? || elem_guideline_section["class"].length == 0
-						guideline_section["tags"] = Array.new
+						tags = Array.new
 					else
-						guideline_section["tags"] = elem_guideline_section["class"].split(" ")
-					end		
-					guideline_section["content"] = build_content_array(elem_guideline_section, true, guideline_section_name == "introduction" ? 2 : 3, logger)
+						tags = elem_guideline_section["class"].split(" ")
+					end
+					if elem_guideline_section["data-source"].nil? || elem_guideline_section["data-source"].length == 0
+						source = Array.new
+					else
+						source = elem_guideline_section["class"].gsub(" ","").split(",")
+					end
+					guideline_section["tags"] = tags
+					guideline_section["source"] = source
+					guideline_section["content"] = build_content_array(elem_guideline_section, true, guideline_section_name == "introduction" ? 2 : 3, logger, tags, source)
 				else
 					# Handling for guideline section not being found
 					logger.warn("'#{guideline_section_name}' section could not be found in '#{guideline["title"]}' using '#{elems_guideline_section_selector}'")
