@@ -170,78 +170,66 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **[TODO: Add/revise checklist items]**
 
-<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
+**Alpha, beta and live stages:**
+{: .dpgn-data-ignore}
 
-#### Alpha, beta and live stages
-
-- determine data needs, sources and collection **(Digital Service Standard (Ontario / UK))**
-- have an ongoing roadmap for performance analysis and someone in the team responsible for identifying actionable data insights during alpha, including assisted digital support **(Digital Service Standard (UK))**
-- use qualitative and quantitative data to understand user needs and identify areas for change **(Digital Service Standard (Ontario / UK))**
-- choose suitable data analysis tools **(Digital Service Standard (UK))**
-- address information security and privacy issues appropriately **(Digital Service Standard (UK))**
-- map user journeys through the service and track them to identify completions and areas of poor performance **(Digital Service Standard (UK))**
-- measure assisted digital support **(Digital Service Standard (UK))**
-- document the next user story related to performance analysis **(Digital Service Standard (UK))**
-- All services must, at a minimum, measure 4 KPIs. **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} determine data needs, sources and collection **(Digital Service Standard (Ontario / UK))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} have an ongoing roadmap for performance analysis and someone in the team responsible for identifying actionable data insights during alpha, including assisted digital support **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} use qualitative and quantitative data to understand user needs and identify areas for change **(Digital Service Standard (Ontario / UK))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} choose suitable data analysis tools **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} address information security and privacy issues appropriately **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} map user journeys through the service and track them to identify completions and areas of poor performance **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} measure assisted digital support **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} document the next user story related to performance analysis **(Digital Service Standard (UK))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} All services must, at a minimum, measure 4 KPIs. **(Digital Service Standard (AU))**
   - User satisfaction - to help continually improve the user experience of your service
   - Digital take-up - to show how many people are using the service and to help encourage users to choose the digital service
   - Completion rate - to show which parts of the service you need to fix
   - Cost per transaction - to make your service more cost efficient
-- There will be other metrics your service needs to measure and monitor to understand how it is performing, such as: **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} There will be other metrics your service needs to measure and monitor to understand how it is performing, such as: **(Digital Service Standard (AU))**
   - error rates
   - time to completion
   - costs, benefits and return on investment
   - content metrics (readability, length).
 
-</section>
+**Alpha stage:**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
+- {: .dpgn-stage-alpha} explored the data that is already available for an existing service, where it is kept and how you might access and use it, and also shared your own insights **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} collected baseline data for the service operation in all of its channels **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} estimated the number of people you expect to use the service **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} started creating a performance framework outlining your objectives and what metrics your team will use to demonstrate you meet them **(Digital Service Standard (AU))**
+- {: .dpgn-stage-alpha} considered the metrics you will need to measure the 4 KPIs and where the data will come from. **(Digital Service Standard (AU))**
 
-#### Alpha stage
+**Beta stage:**
+{: .dpgn-data-ignore}
 
-- explored the data that is already available for an existing service, where it is kept and how you might access and use it, and also shared your own insights **(Digital Service Standard (AU))**
-- collected baseline data for the service operation in all of its channels **(Digital Service Standard (AU))**
-- estimated the number of people you expect to use the service **(Digital Service Standard (AU))**
-- started creating a performance framework outlining your objectives and what metrics your team will use to demonstrate you meet them **(Digital Service Standard (AU))**
-- considered the metrics you will need to measure the 4 KPIs and where the data will come from. **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} discuss a start page and feedback page with GOV.UK **(Digital Service Standard (UK))**
+- {: .dpgn-stage-beta} which metrics and measurements you will use to monitor your KPIs **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} the baseline measures and the benchmarks for success **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} that the team is ready to report their performance on the Performance Dashboard **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) **(Digital Service Standard (AU))**
+- {: .dpgn-stage-beta} what you have learned from qualitative and quantitative data; for example key evidence. **(Digital Service Standard (AU))**
 
-</section>
+**Live stage:**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Beta stage
-
-- discuss a start page and feedback page with GOV.UK **(Digital Service Standard (UK))**
-- which metrics and measurements you will use to monitor your KPIs **(Digital Service Standard (AU))**
-- the baseline measures and the benchmarks for success **(Digital Service Standard (AU))**
-- that the team is ready to report their performance on the Performance Dashboard **(Digital Service Standard (AU))**
-- which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) **(Digital Service Standard (AU))**
-- what you have learned from qualitative and quantitative data; for example key evidence. **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Live stage
-
-- collect feedback from users, during and after their user journey **(Digital Service Standard (UK))**
-- use web analytics to capture information about user behaviour online **(Digital Service Standard (Ontario))**
-- monitor and evaluate user feedback and complaints from the digital service and other service touch-points such as phone and in person **(Digital Service Standard (Ontario))**
-- analyze performance and identify actionable data insights as early as possible **(Digital Service Standard (Ontario))**
-- define performance metrics for the service up-front, early on in the design process **(Digital Service Standard (Ontario))**
-- regularly review the technology used to provide the service and the processes that support the service **(Digital Service Standard (Ontario))**
-- base your service review frequency on the volume of users ( e.g. 10,000 or less unique users per year = 2 year review cycle;
-    10,000-100,000 = annual; 100,000-1 million = every 6 months) **(Digital Service Standard (Ontario))**
-- use data to determine the cost per use for each channel, accounting for the cost to build and ongoing maintenance as well **(Digital Service Standard (Ontario))**
-- demonstrate how service performance compares to other similar government and private sector services **(Digital Service Standard (Ontario))**
-- share your review findings with leadership **(Digital Service Standard (Ontario))**
-- Your data should show: **(Digital Service Standard (AU))**
+- {: .dpgn-stage-live} collect feedback from users, during and after their user journey **(Digital Service Standard (UK))**
+- {: .dpgn-stage-live} use web analytics to capture information about user behaviour online **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} monitor and evaluate user feedback and complaints from the digital service and other service touch-points such as phone and in person **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} analyze performance and identify actionable data insights as early as possible **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} define performance metrics for the service up-front, early on in the design process **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} regularly review the technology used to provide the service and the processes that support the service **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} base your service review frequency on the volume of users ( e.g. 10,000 or less unique users per year = 2 year review cycle; 10,000-100,000 = annual; 100,000-1 million = every 6 months) **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} use data to determine the cost per use for each channel, accounting for the cost to build and ongoing maintenance as well **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} demonstrate how service performance compares to other similar government and private sector services **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} share your review findings with leadership **(Digital Service Standard (Ontario))**
+- {: .dpgn-stage-live} Your data should show: **(Digital Service Standard (AU))**
   - user satisfaction has increased
   - digital take-up is increasing in line with service plans
   - completion rate has been maintained
   - cost per transaction is decreasing in line with service plans.
 
-</section>
 </section>
 
 <section class="dpgn-section-guides">
