@@ -9,7 +9,7 @@ collectionDirectory: docs
 
 <!-- markdownlint-disable MD032 -->
 - TOC
-{:toc .lst-spcd }
+{:toc .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 ## Overview
@@ -23,7 +23,7 @@ There are four steps to creating a Playbook view:
 1. [Tagging content that is relevant to the view](#tagging-content-that-is-relevant-to-the-view)
 1. [Creating a page that retrieves and displays tagged content](#creating-a-page-that-retrieves-and-displays-tagged-content)
 1. [Testing the view](#testing-the-view)
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 ## Defining the view structure
@@ -52,7 +52,7 @@ The Digital Playbook has the following page sections and ordering of content by 
     - Implementation guides
     - Reusable solutions
     - Similar resources
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 For more details about the dataset structure, see the [Playbook dataset schema](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook_schema.json).
@@ -65,7 +65,7 @@ It is recommended that any custom page sections and ordering of content be desig
 
 Each piece of content can be tagged through the use of CSS classes, where each piece of content can have multiple tags. There is no specific naming convention for tags, but they do need to be unique. There should be a unique tags for view-level content grouping and each page-level content grouping. The tag can be either an [existing supported tag](#supported-tags) or a new tag. The suggested format for new tags is: <code>dpgn-&lt;group&gt;-&lt;item&gt;</code> (e.g., <code>dpgn-stage-alpha</code>).
 
-Tags can be applied directly to content in the source .md files, using either the HTML class attribute (for blocks of HTML content) or through the Kramdown approach for applying CSS classes (for blocks of Markdown content).
+Tags can be applied directly to content in the source .md files, using either the HTML class attribute (for blocks of HTML content) or through the Kramdown approach for applying CSS classes (for blocks of Markdown content). Tags applied to a parent container (e.g., list) will also apply to the child items.
 
 <!-- markdownlint-disable MD032 -->
 <table>
@@ -88,18 +88,18 @@ Tags can be applied directly to content in the source .md files, using either th
       <td><pre>- List item 1
 - List item 2
 - List item 3
-{: .dpgn-stage-alpha .dpgn-stage-live }</pre></td>
+{: .dpgn-stage-alpha .dpgn-stage-live}</pre></td>
     </tr>
     <tr>
       <td>List item</td>
       <td><code>&lt;li class="dpgn-stage-alpha dpgn-stage-live"&gt;List item&lt;/li&gt;</code></td>
-      <td><pre>- {: .dpgn-stage-alpha .dpgn-stage-live } List item</pre></td>
+      <td><pre>- {: .dpgn-stage-alpha .dpgn-stage-live} List item</pre></td>
     </tr>
     <tr>
       <td>Paragraph</td>
       <td><code>&lt;p class="dpgn-stage-alpha dpgn-stage-live"&gt;Paragraph content&lt;/p&gt;</code></td>
       <td><pre>Paragraph content
-{: .dpgn-stage-alpha .dpgn-stage-live }</pre></td>
+{: .dpgn-stage-alpha .dpgn-stage-live}</pre></td>
     </tr>
   </tbody>
 </table>
@@ -115,7 +115,7 @@ The following tags are supported by default by the Digital Playbook:
 - <code>dpgn-stage-alpha</code>: Content is related to the alpha development stage
 - <code>dpgn-stage-beta</code>: Content is related to the beta development stage
 - <code>dpgn-stage-live</code>: Content is related to the live development stage
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 **Section tags:**
@@ -134,14 +134,14 @@ Section tags are mainly used for dataset generation and filtering. Each of these
 - <code>dpgn-section-guides</code>: Contains links to the implementation guides for the current guideline
 - <code>dpgn-section-solutions</code>: Contains links to the reusable solutions for the current guideline
 - <code>dpgn-section-similar</code>: Contains links to similar ressources for the current guideline
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 **Special tags:**
 
 <!-- markdownlint-disable MD032 -->
 - <code>dpgn-data-ignore</code>: Content should be ignored when generating the dataset
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 ## Creating a page that retrieves and displays tagged content
@@ -159,7 +159,7 @@ The Digital Playbook provides several helper functions to make it easier to prod
 1. Build the content for each .md file:
     - **Simple views:** Update the <code>relevantTags</code> parameter in the include statement with the tags for the view page. Multiple tags should be separated with commas (e.g., <code>"dpgn-stage-alpha,dpgn-stage-live"</code>).</li>
     - **Advanced views:** Use the [Playbook helper functions](#helper-functions) and/or build custom output using [Jekyll](https://jekyllrb.com/) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) on the Playbook data from <code>site.data.playbook</code> (English) or <code>site.data.guide</code> (French).
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 ### Helper functions
@@ -185,7 +185,7 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>guidelinesLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list item links.
   - <code>guidelinesSubLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.
 - **Returns:** {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 #### output-standard.html
@@ -208,7 +208,7 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>guidelinesLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list item links.
   - <code>guidelinesSubLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.
 - **Returns:** {String} Outputs the content for the standard and the included guidelines
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 #### output-content-array.html
@@ -222,7 +222,7 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
   - <code>collapseSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).
 - **Returns:** {String} Returns the processed output from the content array
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
 ## Testing the view
@@ -243,6 +243,6 @@ The following are three of the more commonly used helper functions. For the rest
     1. Enable integration for the &lt;username&gt;/digital-playbook-guide-numerique repository
     1. Do a new push to the branch used to create the view (e.g., make a change and commit it).
     1. Go to the branches page and wait for the Travis-CI build to complete. If the build fails then review the Travis-CI log (can either be reached through the Travis-CI website or by clicking the red "x" and then clicking Travis-CI).
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 <!-- markdownlint-enable MD034 -->
