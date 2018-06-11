@@ -9,13 +9,6 @@ comment %}@param collapseContentSubsections {Boolean} Optional (defaults to fals
 comment %}@return {String} Outputs the content for the guideline{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
-if include.relevantSections.size > 0 %}{% 
-  if include.relevantSections.first %}{% 
-    assign relevantSectionsArray = include.relevantSections %}{% 
-  else %}{% 
-    assign relevantSectionsArray = include.relevantSections | replace: " ", "" | split: "," %}{% 
-  endif %}{% 
-endif %}{% 
 assign subsectionHeadingLevel = include.guidelineHeadingLevel | plus: 1 %}{% 
 if include.guideline.first %}{% 
   comment %}include.guideline is a guideline object{% endcomment %}{% 
@@ -30,6 +23,13 @@ else %}{%
     assign standard = dataSource.standards.content[standardIndex] %}{% 
   endif %}{% 
   assign guideline = standard.guidelines.content[guidelineIndex] %}{% 
+endif %}{% 
+if include.relevantSections.size > 0 %}{% 
+  if include.relevantSections.first %}{% 
+    assign relevantSectionsArray = include.relevantSections %}{% 
+  else %}{% 
+    assign relevantSectionsArray = include.relevantSections | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
 endif %}{% 
 if relevantSectionsArray.size > 0 %}{% 
   capture tagsCompareResult %}{% 
