@@ -108,7 +108,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 - {: .dpgn-stage-alpha} carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
 - {: .dpgn-stage-alpha} develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 
-**Beta/live stage:**
+**Beta and live stages:**
 {: .dpgn-data-ignore}
 
 - {: .dpgn-stage-beta .dpgn-stage-live} pay for user research and usability tests throughout the design of the service and after the service is built **(Digital Service Standard (UK))**
@@ -548,7 +548,7 @@ We still need to help users who are unable to use digital channels and provide s
 - {: .dpgn-stage-live} show that your service load capacity is scalable to meet increased digital take-up **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 - {: .dpgn-stage-live} show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
-**Beta/live stage:**
+**Beta and live stages:**
 {: .dpgn-data-ignore}
 
 - {: .dpgn-stage-beta .dpgn-stage-live} detail the channels required to support all groups of users of the service **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
