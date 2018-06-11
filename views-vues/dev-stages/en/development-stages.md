@@ -7,4 +7,4 @@ altLangPage: stages-developpement
 collectionDirectory: views-vues/dev-stages
 ---
 
-{% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-stage-alpha,dpgn-stage-beta,dpgn-stage-live" %}
+{% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-stage-alpha,dpgn-stage-beta,dpgn-stage-live" relevantTagsSubsection="Alpha stage;Beta stage;Live stage" %}
