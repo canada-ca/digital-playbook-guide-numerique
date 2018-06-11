@@ -3,6 +3,7 @@ comment %}@param guideline {Object/Number} Guideline object or the guideline ind
 comment %}@param guidelineHeadingLevel {Number} Heading level of the guideline section header.{% endcomment %}{% 
 comment %}@param standard {Object/Number} Optional (required if guideline is a number). Standard object or the number (not index) of the standard (which is used to retrieve the Standard object){% endcomment %}{% 
 comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@param relevantTagsSubsections {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Use of this parameter triggers the generation of sub-sections within each guideline section for each entry in relevantTags. Must have the same number of entries in the same order as relevantTags.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
@@ -23,6 +24,24 @@ else %}{%
     assign standard = dataSource.standards.content[standardIndex] %}{% 
   endif %}{% 
   assign guideline = standard.guidelines.content[guidelineIndex] %}{% 
+endif %}{% 
+if include.relevantTags.size > 0 %}{% 
+  if include.relevantTags.first %}{% 
+    assign relevantTagsArrayGuideline = include.relevantTags %}{% 
+  else %}{% 
+    assign relevantTagsArrayGuideline = include.relevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+    assign relevantTagsArrayGuideline = "" %}{% 
+endif %}{% 
+if include.relevantTagsSubsections.size > 0 %}{% 
+  if include.relevantTagsSubsections.first %}{% 
+    assign relevantTagsSubsectionsArray = include.relevantTagsSubsections %}{% 
+  else %}{% 
+    assign relevantTagsSubsectionsArray = include.relevantTagsSubsections | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+    assign relevantTagsSubsectionsArray = "" %}{% 
 endif %}{% 
 if include.relevantSections.size > 0 %}{% 
   if include.relevantSections.first %}{% 
@@ -62,7 +81,7 @@ if tagsCompareResult contains "true" %}{%
       endif %}{% 
       if tagsCompareResult contains "true" %}{% 
         capture sectionContent %}{% 
-          include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=include.guidelineHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseIntroSubsections %}{%  
+          include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=include.guidelineHeadingLevel relevantTags=relevantTagsArrayGuideline collapseSubsections=include.collapseIntroSubsections %}{%  
         endcapture %}{% 
         assign sectionContentStrip = sectionContent | strip %}{% 
         if sectionContentStrip.size > 0 %}{% 
@@ -87,10 +106,37 @@ if tagsCompareResult contains "true" %}{%
         assign tagsCompareResult="true" %}{% 
       endif %}{% 
       if tagsCompareResult contains "true" %}{% 
-        capture sectionContent %}{% 
-          include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subsectionHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseContentSubsections %}{%  
-        endcapture %}{% 
-        assign sectionContentStrip = sectionContent | strip %}{% 
+        if relevantTagsSubsectionsArray.size > 0 %}{% 
+          comment %}Output a sub-section for each relevant tag (if there is any relevant content){% endcomment %}{% 
+          assign subsectionIndex = 0 %}{% 
+          assign sectionContentStrip = "" %}{% 
+          assign subSubsectionHeadingLevel = subsectionHeadingLevel | plus: 1 %}{% 
+          for currentTag in relevantTagsArrayGuideline %}{% 
+            capture subSectionContent %}{% 
+              include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subSubsectionHeadingLevel relevantTags=currentTag collapseSubsections=include.collapseContentSubsections %}{%  
+            endcapture %}{% 
+            assign sectionContentSubStrip = subSectionContent | strip %}{% 
+            if sectionContentSubStrip.size > 0 %}{% 
+              capture subSectionSection %}
+<section class="{{ currentTag }}">
+  
+<h{{ subSubsectionHeadingLevel }}>{{ relevantTagsSubsectionsArray[subsectionIndex] }}</h{{ subSubsectionHeadingLevel }}>
+
+{{ sectionContentSubStrip }} 
+
+</section>
+              endcapture %}{% 
+              assign sectionContentStrip = sectionContentStrip | append: subSectionSection %}{% 
+            endif %}{% 
+            assign subsectionIndex = subsectionIndex | plus: 1 %}{% 
+          endfor %}{% 
+        else %}{% 
+          comment %}Don't output any sub-sections for the relevant tags (group them all together){% endcomment %}{% 
+          capture sectionContent %}{% 
+            include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subsectionHeadingLevel relevantTags=relevantTagsArrayGuideline collapseSubsections=include.collapseContentSubsections %}{%  
+          endcapture %}{% 
+          assign sectionContentStrip = sectionContent | strip %}{% 
+        endif %}{% 
         if sectionContentStrip.size > 0 %}{% 
           capture classOutput %}{% 
             include /functions/class-from-tags.html tags=propertyTags %}{% 
