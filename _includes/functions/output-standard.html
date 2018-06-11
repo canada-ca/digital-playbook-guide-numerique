@@ -135,7 +135,9 @@ if tagsCompareResult contains "true" %}{%
     endfor %}{% 
   else %}{% 
     assign remainingRelatedGuidelines = standard.relatedguidelines.content %}{% 
-  endif %}{% 
+  endif %}
+  <p>Remaining related guidelines: {{ remainingRelatedGuidelines }}</p>
+  {% 
   if remainingRelatedGuidelines.size > 0 %}{% 
     capture classOutput %}{% 
       include /functions/class-from-tags.html tags=standard.relatedguidelines.tags %}{% 
