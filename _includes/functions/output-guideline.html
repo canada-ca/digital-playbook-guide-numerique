@@ -9,6 +9,13 @@ comment %}@param collapseContentSubsections {Boolean} Optional (defaults to fals
 comment %}@return {String} Outputs the content for the guideline{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
+if include.relevantSections.size > 0 %}{% 
+  if include.relevantSections.first %}{% 
+    assign relevantSectionsArray = include.relevantSections %}{% 
+  else %}{% 
+    assign relevantSectionsArray = include.relevantSections | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+endif %}{% 
 assign subsectionHeadingLevel = include.guidelineHeadingLevel | plus: 1 %}{% 
 if include.guideline.first %}{% 
   comment %}include.guideline is a guideline object{% endcomment %}{% 
@@ -24,9 +31,9 @@ else %}{%
   endif %}{% 
   assign guideline = include.standard.guidelines.content[guidelineIndex] %}{% 
 endif %}{% 
-  if include.relevantSectionsArray.size > 0 %}{% 
+  if relevantSectionsArray.size > 0 %}{% 
     capture tagsCompareResult %}{% 
-      include /functions/find-array-match.html array1=guideline.tags array2=include.relevantSectionsArray %}{% 
+      include /functions/find-array-match.html array1=guideline.tags array2=relevantSectionsArray %}{% 
     endcapture %}{% 
   else %}{% 
     assign tagsCompareResult="true" %}{% 
@@ -46,9 +53,9 @@ endif %}{%
       assign propertyContent = property[1].content %}{% 
       if propertyKey == "introduction" %}{% 
         comment %}Output the guideline introduction{% endcomment %}{% 
-        if include.relevantSectionsArray.size > 0 %}{% 
+        if relevantSectionsArray.size > 0 %}{% 
           capture tagsCompareResult %}{% 
-            include /functions/find-array-match.html array1=guideline.introduction.tags array2=include.relevantSectionsArray %}{% 
+            include /functions/find-array-match.html array1=guideline.introduction.tags array2=relevantSectionsArray %}{% 
           endcapture %}{% 
         else %}{% 
           assign tagsCompareResult="true" %}{% 
@@ -72,9 +79,9 @@ endif %}{%
       elsif propertyContent.first %}{% 
         comment %}Output the other guideline sections{% endcomment %}{% 
         assign propertyTags = property[1].tags %}{% 
-        if include.relevantSectionsArray.size > 0 %}{% 
+        if relevantSectionsArray.size > 0 %}{% 
           capture tagsCompareResult %}{% 
-            include /functions/find-array-match.html array1=propertyTags array2=include.relevantSectionsArray %}{% 
+            include /functions/find-array-match.html array1=propertyTags array2=relevantSectionsArray %}{% 
           endcapture %}{% 
         else %}{% 
           assign tagsCompareResult="true" %}{% 
