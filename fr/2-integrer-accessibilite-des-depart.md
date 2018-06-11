@@ -186,7 +186,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-accessibility-usability} show the type of environments users may access the service in, including with different browsers and desktop and mobile devices, and when connections are slower and there may be limited data; for example, through user stories **(Digital Service Standard (AU))**
-- {: .dpgn-accessibility-usability } show diversity in research recruitment and targeted users, including people from different cultural backgrounds and people with disability **(Digital Service Standard (AU))**
+- {: .dpgn-accessibility-usability} show diversity in research recruitment and targeted users, including people from different cultural backgrounds and people with disability **(Digital Service Standard (AU))**
 - show consideration of situational and environmental limitations that affect a user’s ability to access the product **(Digital Service Standard (AU))**
 - show the plan to meet accessibility requirements in the design of the product, for example how it will meet WCAG 2.0 AA **(Digital Service Standard (AU))**
 - show what digital assistance might be needed to support users; for example web chat, telephone assistance, face-to-face, clear instructions, checklists, and so on. **(Digital Service Standard (AU))**
@@ -223,7 +223,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 <!-- markdownlint-disable MD032 -->
 - show your service is accessible **(Digital Service Standard (AU))**
-- {: .dpgn-accessibility-usability } show evidence of usability testing, including **(Digital Service Standard (AU))**
+- {: .dpgn-accessibility-usability} show evidence of usability testing, including **(Digital Service Standard (AU))**
   - users with low level digital skills
   - people with disability
   - people from different cultural and linguistic backgrounds
