@@ -333,7 +333,7 @@ This includes working in the open, sharing any and all data and information prod
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 - Open By Default, Proprietary by Necessity (Current GC EARB Principles)
-- {: .dpgn-digital-architectural } Build and develop open ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural} Build and develop open ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
