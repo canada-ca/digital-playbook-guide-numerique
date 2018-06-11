@@ -125,7 +125,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 * Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
 * Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
 * Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
-* {: .dpgn-digital-architectural } Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
+* {: .dpgn-digital-architectural} Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
 * Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default.
 
 </section>
@@ -182,11 +182,11 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Checklist
 
-* {: .dpgn-digital-architectural } Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
+* {: .dpgn-digital-architectural} Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
 * Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies.
 * Use deployment scripts to ensure configuration of production environment remains consistent and controllable.
 * Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
-* {: .dpgn-digital-architectural } Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
+* {: .dpgn-digital-architectural} Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
 * Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
 * Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
 * Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access.
@@ -195,7 +195,7 @@ Integrating security from the outset and “shifting security left” in the ser
 * Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
 * Determine how long you need to protect your assets during and after their life / intended use.
 * Document the plan and process for maintaining up-to-date and supported software for services/system
-* {: .dpgn-digital-architectural } Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
+* {: .dpgn-digital-architectural} Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
 
 </section>
 
@@ -213,7 +213,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 **[TODO: Add/revise reusable solutions]**
 
-* {: .dpgn-digital-architectural } [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-digital-architectural} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 
@@ -281,7 +281,7 @@ Canadians want to have confidence that government digital services are designed 
 
 **[TODO: Add/revise reusable solutions]**
 
-* {: .dpgn-digital-architectural } [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-digital-architectural} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 
