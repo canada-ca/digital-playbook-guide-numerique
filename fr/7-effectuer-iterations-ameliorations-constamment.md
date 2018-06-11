@@ -90,35 +90,35 @@ Start with a representation or prototype of the solution that will be tested and
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- {: .dpgn-digital-architectural } Use agile **({{ site.DigitalArchitectural.en }})**
+- {: .dpgn-digital-architectural} Use agile **({{ site.DigitalArchitectural.en }})**
   - Be an agile Developer: Develop in an iterative manner, with key stakeholders participation from the beginning, releasing minimum viable product as soon as possible and iteratively building out functionality
   - Be an agile administrator: Promote DEVOPS and automate, monitor and unify all platform and software construction from testing to release and infrastructure management
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
+**Stage alpha :**
+{: .dpgn-data-ignore}
 
-#### Stage alpha
-
+<!-- markdownlint-disable MD032 -->
 - test hypotheses and underlying assumptions with several prototypes **(Digital Service Standard (AU))**
 - follow a user-centred approach; include the user in all areas of the prototyping (design, iterations and so on) **(Digital Service Standard (AU))**
 - work out incrementally what is the “right thing to build” **(Digital Service Standard (AU))**
 - determine the minimum viable product (MVP). **(Digital Service Standard (AU))**
+{: .dpgn-stage-alpha}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stages bêta et en direct :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-beta dpgn-stage-live">
-
-#### Stages bêta et en direct
-
+<!-- markdownlint-disable MD032 -->
 - show how the service has responded to user research and usability testing **(Digital Service Standard (AU))**
 - clearly describe the lifecycle of a user story, from user research to production **(Digital Service Standard (AU))**
 - explain the deployment process and how you are able to support frequent deployments with minimal impact to users. **(Digital Service Standard (AU))**
+{: .dpgn-stage-beta .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stages alpha, bêta et en direct :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
-
-#### Stages alpha, bêta et en direct
-
+<!-- markdownlint-disable MD032 -->
 - travaillez de façon agile, à l’aide d’outils et de techniques agiles, et continuez de la sorte une fois que le service est opérationnele **(Normes des services numériques (Ontario / UK / AU))**
 - assurez-vous que l’équipe examine et met à jour de façon incrémentielle les façons de résoudre les problèmes **(Normes des services numériques (Ontario / UK / AU))**
 - use agile tools and techniques to communicate with each other **(Digital Service Standard (UK / AU))**
@@ -158,8 +158,9 @@ Start with a representation or prototype of the solution that will be tested and
   - Techniques can include: daily stand ups, issue trackers, code reviews, rapid prototyping, design sprints, usability testing, user stories, retrospective meetings.
 - Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
+{: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -208,7 +209,7 @@ Start with a representation or prototype of the solution that will be tested and
 - [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
 - [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 - Agile - Small chunks - Iterate (GC EA Principles)
-- {: .dpgn-digital-architectural } Use agile ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural} Use agile ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
@@ -346,10 +347,10 @@ You need to build a service which you can iterate and keep improving so that you
     - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
     - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
 
-<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
+**Stages alpha, bêta et en direct :**
+{: .dpgn-data-ignore}
 
-#### Stages alpha, bêta et en direct
-
+<!-- markdownlint-disable MD032 -->
 - document what you've built in each phase and why you built it **(Digital Service Standard (UK))**
 - document the lifecycle of a user story from user research to production **(Digital Service Standard (UK))**
 - make sure your service is built to meet user needs **(Digital Service Standard (UK))**
@@ -359,26 +360,27 @@ You need to build a service which you can iterate and keep improving so that you
 - make sure you have the ability to deploy software frequently with minimal disruption to users **(Digital Service Standard (UK))**
 - analyze user research and use it to improve your service **(Digital Service Standard (UK))**
 - solve any technical problems you've found **(Digital Service Standard (UK))**
+{: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stage bêta :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Stage bêta
-
+<!-- markdownlint-disable MD032 -->
 - determine how long you expect your service to be in beta and why **(Digital Service Standard (UK))**
 - document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users **(Digital Service Standard (UK))**
+{: .dpgn-stage-beta}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stage en direct :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Stage en direct
-
+<!-- markdownlint-disable MD032 -->
 - make sure deployments have zero downtime in a way that doesn't stop users using the service **(Digital Service Standard (UK))**
 - make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
+{: .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
 </section>
 
 <section class="dpgn-section-guides">
