@@ -169,7 +169,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- {: .dpgn-digital-architectural  Clearly defined user needs **({{ site.DigitalArchitectural.en }})**
+- {: .dpgn-digital-architectural} Clearly defined user needs **({{ site.DigitalArchitectural.en }})**
   - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
 
 **Stage alpha :**
