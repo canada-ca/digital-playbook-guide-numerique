@@ -193,8 +193,8 @@ The following are three of the more commonly used helper functions. For the rest
 <!-- markdownlint-disable MD032 -->
 - **Overview:** Outputs the content for a standard
 - **Example usage:** <code>&#123;% include /functions/output-standard.html standard="1" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
-- **Parameter:**
-  - <code>standard</code>: {Object/Number} Standard object or the standard number (which is used to retrieve the Standard object)
+- **Parameters:**
+  - <code>standard</code>: {Object/Number} Standard object or the standard number (not index), which is used to retrieve the Standard object
   - <code>includeStandardTitle</code>: {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such as when there are multiple standards on the same page)
   - <code>relevantGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed
   - <code>relevantRelatedGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard
@@ -208,6 +208,23 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>guidelinesLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list item links.
   - <code>guidelinesSubLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.
 - **Returns:** {String} Outputs the content for the standard and the included guidelines
+{: .lst-spcd}
+<!-- markdownlint-enable MD032 -->
+
+#### output-guideline.html
+
+<!-- markdownlint-disable MD032 -->
+- **Overview:** Outputs the content for a guideline
+- **Example usage:** <code>&#123;% include /functions/output-standard.html standard="1" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
+- **Parameters:**
+  - <code>guideline</code>: {Object/Number} Guideline object or the guideline index (which is used to retrieve the Guideline object).
+  - <code>guidelineHeadingLevel</code>: {Number} Heading level of the guideline section header.
+  - <code>standard</code>: {Object/Number} Optional (required if guideline is a number). Standard object or the number (not index) of the standard (which is used to retrieve the Standard object).
+  - <code>relevantTags</code>: {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.
+  - <code>relevantSections</code>: {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
+  - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
+  - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
+- **Returns:** {String} Outputs the content for the guideline
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
