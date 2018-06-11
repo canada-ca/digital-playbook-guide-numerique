@@ -34,6 +34,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 		elsif elem.name != "h#{parent_heading_level}"
 			item = Hash.new
       cancel_content_push = false
+
 			elem_class = elem["class"]
       if elem_class.nil? || elem_class.length == 0
 				tags = Array.new
@@ -44,16 +45,23 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 				elem.remove_attribute("class")
 			end
 
-      # If content_source is nil then use parent_content_source instead
-      content_source = elem["data-source"]
-      if !parent_content_source.nil? && (content_source.nil? || content_source.length == 0)      
-        content_source = parent_content_source
-      end
-
       # If parent_tags exists, then append it to the current tags, eliminating duplicates
       if !parent_tags.nil?
         tags.push(*parent_tags)
         tags = tags.uniq
+      end
+
+      elem_source = elem["data-source"]
+      if elem_source.nil? || elem_source.length == 0
+				content_source = Array.new
+			else
+				content_source = elem_source.gsub(" ", "").split(",")
+				elem.remove_attribute("data-source")
+			end
+
+      # If content_source is nil then use parent_content_source instead
+      if !parent_content_source.nil? && (content_source.nil? || content_source.length == 0)      
+        content_source = parent_content_source
       end
 
 			if elem.name === "section"
@@ -102,6 +110,11 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
           # Combine the content sources
           if !content_source.nil? && content_source.length > 0
             content_array[last_item_index]["source"] = content_array[last_item_index]["source"] + "," + content_source
+          end
+          if !content_source.nil? && content_source.length > 0
+            last_list_source = content_array[last_item_index]["source"]
+            last_list_source.push(*content_source)
+            content_array[last_item_index]["source"] = last_list_source.uniq
           end
           
           # Combine the list items
