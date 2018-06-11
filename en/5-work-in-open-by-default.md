@@ -144,10 +144,10 @@ Setting performance indicators allows you to continuously improve your service b
 
 **[TODO: Add/revise checklist items]**
 
-<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
+**Alpha, beta and live stages:**
+{: .dpgn-data-ignore}
 
-#### Alpha, beta and live stages
-
+<!-- markdownlint-disable MD032 -->
 - set a performance baseline for the old service, if there was one **(Digital Service Standard (UK))**
 - plan to lower [cost per transaction](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) or equivalent, for non-transactional user journeys **(Digital Service Standard (UK))**
 - plan to [improve user satisfaction](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction) **(Digital Service Standard (UK))**
@@ -158,16 +158,17 @@ Setting performance indicators allows you to continuously improve your service b
 - document where you're getting the data for your metrics **(Digital Service Standard (UK))**
 - set up your analytics package to collect user journey data **(Digital Service Standard (UK))**
 - make sure all stakeholders are actively involved in promoting or supporting digital delivery of the new service **(Digital Service Standard (UK))**
+{: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Beta stage:**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Beta stage
-
+<!-- markdownlint-disable MD032 -->
 - track people moving from using the offline service to the online one **(Digital Service Standard (UK))**
+{: .dpgn-stage-beta}
+<!-- markdownlint-enable MD032 -->
 
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -292,7 +293,7 @@ This includes working in the open, sharing any and all data and information prod
 - Use an Open Source Initiative approved licence
 - Offer users a mechanism to report bugs and issues, and be responsive to these reports
 - Keep track of changes to it using version control
-- {: .dpgn-digital-architectural } Build and develop open **({{ site.DigitalArchitectural.en }})**
+- {: .dpgn-digital-architectural} Build and develop open **({{ site.DigitalArchitectural.en }})**
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
