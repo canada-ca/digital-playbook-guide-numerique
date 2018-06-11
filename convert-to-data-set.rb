@@ -20,7 +20,7 @@ end
 common_data = site_data["common"]
 jekyll_output_dir = "rendered_site/"
 
-def build_content_array(html_block, is_parent, parent_heading_level, logger)
+def build_content_array(html_block, is_parent, parent_heading_level, logger, parent_tags, parent_content_source)
 	content_array = Array.new
 	ignore_loop = 0
 	if is_parent
@@ -33,9 +33,10 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 			ignore_loop -= 1 
 		elsif elem.name != "h#{parent_heading_level}"
 			item = Hash.new
+      cancel_content_push = false
+
 			elem_class = elem["class"]
-      elem_source = elem["data-source"]
-			if elem_class.nil? || elem_class.length == 0
+      if elem_class.nil? || elem_class.length == 0
 				tags = Array.new
 			elsif elem_class.include? "dpgn-data-ignore"
 				next
@@ -44,9 +45,29 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 				elem.remove_attribute("class")
 			end
 
+      # If parent_tags exists, then append it to the current tags, eliminating duplicates
+      if !parent_tags.nil?
+        tags.push(*parent_tags)
+        tags = tags.uniq
+      end
+
+      elem_source = elem["data-source"]
+      if elem_source.nil? || elem_source.length == 0
+				content_source = Array.new
+			else
+				content_source = elem_source.gsub(" ", "").split(",")
+				elem.remove_attribute("data-source")
+			end
+
+      # If content_source is nil then use parent_content_source instead
+      if !parent_content_source.nil? && (content_source.nil? || content_source.length == 0)      
+        content_source = parent_content_source
+      end
+
 			if elem.name === "section"
 				item["contenttype"] = "section"
 				item["tags"] = tags
+        item["source"] = content_source
 				heading = elem.css("h#{parent_heading_level + 1}")
 				if heading.count >= 1
 					item["title"] = heading[0].inner_html
@@ -55,10 +76,11 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 					logger.error("Heading could not be found when processing a section (build_content_array)")
 					logger.debug(elem)
 				end
-				item["content"] = build_content_array(elem, true, parent_heading_level + 1, logger)
+				item["content"] = build_content_array(elem, true, parent_heading_level + 1, logger, tags, content_source)
 			elsif elem.name === ("h#{parent_heading_level + 1}")
 				item["contenttype"] = "section"
 				item["tags"] = tags
+        item["source"] = content_source
 				item["title"] = elem.inner_html
 				node_array = Array.new
 				next_elem = elem.next_element
@@ -67,22 +89,55 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 					next_elem = next_elem.next_element
 				end
 				ignore_loop += node_array.count
-				item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger)
+				item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger, tags, content_source)
 			elsif elem.name === "ul" || elem.name === "ol"
-				item["contenttype"] = "list"
-				item["tags"] = tags
-				if elem.name === "ul"
-					item["listtype"] = "unordered"
+        if elem.name === "ul"
+					listtype = "unordered"
 				else
-					item["listtype"] = "ordered"
+					listtype = "ordered"
 				end
-				item["content"] = build_content_array(elem, true, parent_heading_level, logger)
+
+        # Check if previous item (that was not ignored) was a list of the same type, and if it was, combine it with this list       
+        last_item_index = content_array.length - 1
+        if last_item_index >= 0 && content_array[last_item_index]["contenttype"] === "list" && content_array[last_item_index]["listtype"] === listtype
+          # Combine the tags
+          if !tags.nil? && tags.length > 0
+            last_list_tags = content_array[last_item_index]["tags"]
+            last_list_tags.push(*tags)
+            content_array[last_item_index]["tags"] = last_list_tags.uniq
+          end
+
+          # Combine the content sources
+          if !content_source.nil? && content_source.length > 0
+            content_array[last_item_index]["source"] = content_array[last_item_index]["source"] + "," + content_source
+          end
+          if !content_source.nil? && content_source.length > 0
+            last_list_source = content_array[last_item_index]["source"]
+            last_list_source.push(*content_source)
+            content_array[last_item_index]["source"] = last_list_source.uniq
+          end
+          
+          # Combine the list items
+          last_list_items = content_array[last_item_index]["content"]
+          new_list_items = build_content_array(elem, true, parent_heading_level, logger, tags, content_source)
+          last_list_items.push(*new_listitems)
+          content_array[last_item_index]["content"] = last_list_items.uniq
+
+          # Don't push a new item into the content array since updated the last item
+          cancel_content_push = true
+        else
+  				item["contenttype"] = "list"
+	  			item["tags"] = tags
+          item["source"] = content_source
+		  		item["listtype"] = listtype
+			  	item["content"] = build_content_array(elem, true, parent_heading_level, logger, tags, content_source)
+        end
 			elsif elem.name === "li"
 				nested_lists = elem.css( "ul, ol" )
 				if nested_lists.count >= 1
 					item["contenttype"] = "listnested"
 					item["tags"] = tags
-          item["source"] = elem_source
+          item["source"] = content_source
 					html_fragment = elem.inner_html
 					nested_ul_index = html_fragment.index("<ul")
 					nested_ol_index = html_fragment.index("<ol")
@@ -94,20 +149,22 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger)
 						nested_index = nested_ol_index
 					end
 					item["content"] = html_fragment = html_fragment[0, nested_index - 1].strip
-					item["nested"] = build_content_array(nested_lists, false, parent_heading_level, logger)
+					item["nested"] = build_content_array(nested_lists, false, parent_heading_level, logger, tags, content_source)
 				else
 					item["contenttype"] = "listitem"
 					item["tags"] = tags
-          item["source"] = elem_source
+          item["source"] = content_source
 					item["content"] = elem.inner_html
 				end
 			else
 				item["contenttype"] = "text"
 				item["tags"] = tags
-        item["source"] = elem_source
+        item["source"] = content_source
 				item["content"] = elem
 			end
-			content_array.push(item)
+      if !cancel_content_push
+			  content_array.push(item)
+      end
 		end
 	end
 	return content_array

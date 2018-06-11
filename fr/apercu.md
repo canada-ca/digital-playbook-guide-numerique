@@ -12,7 +12,7 @@ altLangPage: overview
 ## Aperçu (ébauche)
 
 Fournit des conseils pratiques et des projets pour aider les projets individuels à devenir plus agiles, ouverts et axés sur l'utilisateur.
-{: .dpgn-overview-start }
+{: .dpgn-overview-start}
 
 <section class="dpgn-overview-start">
 
@@ -33,11 +33,9 @@ Le Guide numérique du gouvernement du Canada est disponible sous la [licence du
 
 <section class="dpgn-data-ignore">
 
-<section class="dpgn-data-ignore">
-
 <!-- markdownlint-disable MD022 -->
 ### {{ dataSource.standards.title }}
-{: .dpgn-data-ignore }
+{: .dpgn-data-ignore}
 <!-- markdownlint-enable MD022 -->
   
 {% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" %}

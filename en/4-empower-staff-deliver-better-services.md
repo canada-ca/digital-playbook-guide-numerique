@@ -106,10 +106,10 @@ The technology you choose to build your service must help you respond quickly an
 
 - Ensure the project team has a modern workplace, professional development and the IM-IT tools they need to do their jobs
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
+**Alpha stage:**
+{: .dpgn-data-ignore}
 
-#### Alpha stage
-
+<!-- markdownlint-disable MD032 -->
 - Determine the languages, frameworks and other technical choices you've made in alpha, and how this will affect the decisions you make in beta **(Digital Service Standard (UK))**
 - Determine the set of programming tools you'd like to choose for beta and why **(Digital Service Standard (UK))**
 - Determine how you'll get value for money when buying any tools **(Digital Service Standard (UK))**
@@ -123,13 +123,13 @@ The technology you choose to build your service must help you respond quickly an
 - understand the existing IT systems, data stores and in-flight processes for the service **(Digital Service Standard (AU))**
 - understand any potential external dependencies or integrations that would be required to build the product **(Digital Service Standard (AU))**
 - know the initial and ongoing costs for proposed tools and systems. **(Digital Service Standard (AU))**
+{: .dpgn-stage-alpha}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Beta stage:**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Beta stage
-
+<!-- markdownlint-disable MD032 -->
 - Determine how you're managing the limits placed on your service by the technology stack and development toolchain you've chosen **(Digital Service Standard (UK))**
 - Document what you've bought and how you're getting value for money **(Digital Service Standard (UK))**
 - Document how you'll monitor the status of your service **(Digital Service Standard (UK))**
@@ -141,13 +141,13 @@ The technology you choose to build your service must help you respond quickly an
 - have the ability to conduct technical health checks of the service **(Digital Service Standard (AU))**
 - arrange for appropriate ongoing technical support and service level agreements for underlying or dependent services **(Digital Service Standard (AU))**
 - outsource decision-making about technology only where appropriate. **(Digital Service Standard (AU))**
+{: .dpgn-stage-beta}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Live stage:**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Live stage
-
+<!-- markdownlint-disable MD032 -->
 - Document the tech stack changes you made during beta and why **(Digital Service Standard (UK))**
 - Document the development toolchain changes you've made during beta and why **(Digital Service Standard (UK))**
 - Document how you're continuing to get value for money from the systems you chose and bought at beta **(Digital Service Standard (UK))**
@@ -157,8 +157,9 @@ The technology you choose to build your service must help you respond quickly an
 - procedures for ongoing operations, including iterations, maintenance, monitoring, patching and upgrading system components **(Digital Service Standard (AU))**
 - funding to cover the long-term life of the product, including activities such as security accreditation **(Digital Service Standard (AU))**
 - evidence or artefacts that demonstrate you achieved the objective of the criteria for the Live stage. **(Digital Service Standard (AU))**
+{: .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
 </section>
 
 <section class="dpgn-section-guides">

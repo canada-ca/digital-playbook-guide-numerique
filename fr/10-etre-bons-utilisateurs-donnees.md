@@ -170,10 +170,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
+**Stages alpha, bêta et en direct :**
+{: .dpgn-data-ignore}
 
-#### Stages alpha, bêta et en direct
-
+<!-- markdownlint-disable MD032 -->
 - définissez les besoins, les sources et la collecte en matière de données **(Normes des services numériques (Ontario / UK))**
 - have an ongoing roadmap for performance analysis and someone in the team responsible for identifying actionable data insights during alpha, including assisted digital support **(Digital Service Standard (UK))**
 - utilisez des données qualitatives et quantitatives en vue de comprendre les besoins des utilisateurs et de repérer des domaines où des modifications pourraient être apportées **(Normes des services numériques (Ontario / UK))**
@@ -192,46 +192,45 @@ Every service must aim for continuous improvement. Metrics are an important star
   - time to completion
   - costs, benefits and return on investment
   - content metrics (readability, length).
+{: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stage alpha :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
-
-#### Stage alpha
-
+<!-- markdownlint-disable MD032 -->
 - explored the data that is already available for an existing service, where it is kept and how you might access and use it, and also shared your own insights **(Digital Service Standard (AU))**
 - collected baseline data for the service operation in all of its channels **(Digital Service Standard (AU))**
 - estimated the number of people you expect to use the service **(Digital Service Standard (AU))**
 - started creating a performance framework outlining your objectives and what metrics your team will use to demonstrate you meet them **(Digital Service Standard (AU))**
 - considered the metrics you will need to measure the 4 KPIs and where the data will come from. **(Digital Service Standard (AU))**
+{: .dpgn-stage-alpha}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stage bêta :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Stage bêta
-
+<!-- markdownlint-disable MD032 -->
 - discuss a start page and feedback page with GOV.UK **(Digital Service Standard (UK))**
 - which metrics and measurements you will use to monitor your KPIs **(Digital Service Standard (AU))**
 - the baseline measures and the benchmarks for success **(Digital Service Standard (AU))**
 - that the team is ready to report their performance on the Performance Dashboard **(Digital Service Standard (AU))**
 - which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) **(Digital Service Standard (AU))**
 - what you have learned from qualitative and quantitative data; for example key evidence. **(Digital Service Standard (AU))**
+{: .dpgn-stage-beta}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stage en direct :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Stage en direct
-
+<!-- markdownlint-disable MD032 -->
 - collect feedback from users, during and after their user journey **(Digital Service Standard (UK))**
 - use web analytics to capture information about user behaviour online **(Digital Service Standard (Ontario))**
 - monitor and evaluate user feedback and complaints from the digital service and other service touch-points such as phone and in person **(Digital Service Standard (Ontario))**
 - analyze performance and identify actionable data insights as early as possible **(Digital Service Standard (Ontario))**
 - define performance metrics for the service up-front, early on in the design process **(Digital Service Standard (Ontario))**
 - regularly review the technology used to provide the service and the processes that support the service **(Digital Service Standard (Ontario))**
-- base your service review frequency on the volume of users ( e.g. 10,000 or less unique users per year = 2 year review cycle;
-    10,000-100,000 = annual; 100,000-1 million = every 6 months) **(Digital Service Standard (Ontario))**
+- base your service review frequency on the volume of users ( e.g. 10,000 or less unique users per year = 2 year review cycle; 10,000-100,000 = annual; 100,000-1 million = every 6 months) **(Digital Service Standard (Ontario))**
 - use data to determine the cost per use for each channel, accounting for the cost to build and ongoing maintenance as well **(Digital Service Standard (Ontario))**
 - demonstrate how service performance compares to other similar government and private sector services **(Digital Service Standard (Ontario))**
 - share your review findings with leadership **(Digital Service Standard (Ontario))**
@@ -240,8 +239,9 @@ Every service must aim for continuous improvement. Metrics are an important star
   - digital take-up is increasing in line with service plans
   - completion rate has been maintained
   - cost per transaction is decreasing in line with service plans.
+{: .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -342,7 +342,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- {: .dpgn-digital-architectural } Data is the new gold **({{ site.DigitalArchitectural.en }})**
+- {: .dpgn-digital-architectural} Data is the new gold **({{ site.DigitalArchitectural.en }})**
   - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
   - Ensure data is able to be shared and can be easily accessed
 
@@ -369,7 +369,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Similar resources
 
 - Information/Data is an asset (Current GC EARB Principles)
-- {: .dpgn-digital-architectural } Data is the new gold ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural} Data is the new gold ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>

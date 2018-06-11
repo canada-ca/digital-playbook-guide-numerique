@@ -16,5 +16,5 @@ The following are the steps for adding a new common section (e.g., checklist, im
 - **README.md, /en/overview.md, /fr/apercu.md:** Add an entry to the Structure of the playbook section
 - **Author .md files:** Add sections (as needed) with the dpgn-section-[name] class
 - **convert-to-data-set.rb:** Add string to guideline_sections array then regenerate the dataset
-{: .lst-spcd }
+{: .lst-spcd}
 <!-- markdownlint-enable MD032 -->

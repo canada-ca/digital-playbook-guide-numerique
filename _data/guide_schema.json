@@ -111,8 +111,12 @@
       "uniqueItems": true
     },
     "source": {
-      "type": "string",
-      "format": "uri"
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
     },
     "section": {
       "type": "object",
@@ -121,6 +125,7 @@
         "enum": ["section"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "title": {
         "type": "string"
       },
@@ -143,6 +148,7 @@
         "enum": ["list"]
       },
       "tags": {"$ref": "#/definitions/tags"},
+      "source": {"$ref": "#/definitions/source"},
       "listtype": {
         "type": "string"
       },

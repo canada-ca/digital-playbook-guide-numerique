@@ -12,7 +12,7 @@ altLangPage: apercu
 ## Overview (draft)
 
 Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused.
-{: .dpgn-overview-start }
+{: .dpgn-overview-start}
 
 <section class="dpgn-overview-start">
 
@@ -35,7 +35,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 <!-- markdownlint-disable MD022 -->
 ### {{ dataSource.standards.title }}
-{: .dpgn-data-ignore }
+{: .dpgn-data-ignore}
 <!-- markdownlint-enable MD022 -->
   
 {% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" %}

@@ -143,10 +143,10 @@ Setting performance indicators allows you to continuously improve your service b
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-<section class="dpgn-section-stage dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live">
+**Stages alpha, bêta et en direct :**
+{: .dpgn-data-ignore}
 
-#### Stages alpha, bêta et en direct
-
+<!-- markdownlint-disable MD032 -->
 - set a performance baseline for the old service, if there was one **(Digital Service Standard (UK))**
 - plan to lower [cost per transaction](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) or equivalent, for non-transactional user journeys **(Digital Service Standard (UK))**
 - plan to [improve user satisfaction](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction) **(Digital Service Standard (UK))**
@@ -157,16 +157,17 @@ Setting performance indicators allows you to continuously improve your service b
 - document where you're getting the data for your metrics **(Digital Service Standard (UK))**
 - set up your analytics package to collect user journey data **(Digital Service Standard (UK))**
 - make sure all stakeholders are actively involved in promoting or supporting digital delivery of the new service **(Digital Service Standard (UK))**
+{: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stage bêta :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Stage bêta
-
+<!-- markdownlint-disable MD032 -->
 - track people moving from using the offline service to the online one **(Digital Service Standard (UK))**
+{: .dpgn-stage-beta}
+<!-- markdownlint-enable MD032 -->
 
-</section>
 </section>
 
 <section class="dpgn-section-guides">
@@ -250,7 +251,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 ### Ressources similaires
 
-- [Marchés ouverts - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/5_March%C3%A9s_ouverts.md)
+- [Marchés ouverts (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/5_March%C3%A9s_ouverts.md)
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
 </section>
@@ -291,7 +292,7 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - Utiliser une licence approuvée par l'Open Source Initiative
 - Proposer aux utilisateurs un mécanisme de signalement des bogues et des problèmes, et être réactif à ces rapports
 - Gardez une trace des modifications à l'aide du contrôle de version
-- {: .dpgn-digital-architectural } Build and develop open **({{ site.DigitalArchitectural.en }})**
+- {: .dpgn-digital-architectural} Build and develop open **({{ site.DigitalArchitectural.en }})**
   - Actively use and contribute to open source tools and solutions
   - Develop in the open by sharing and reusing all types of code and platform configuration
 
@@ -325,13 +326,13 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 ### Ressources similaires
 
-- [Code source ouvert - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Code_source_libre.md)
-- [Culture ouverte - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/6_Culture_ouverte.md)
+- [Logiciel libre - Contribution (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Logiciel_libre_Contribution.md)
+- [Culture ouverte (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/6_Culture_ouverte.md)
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 - Open By Default, Proprietary by Necessity (Current GC EARB Principles)
-- {: .dpgn-digital-architectural } Build and develop open ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural} Build and develop open ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
