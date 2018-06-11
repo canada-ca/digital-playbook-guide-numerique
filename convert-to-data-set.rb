@@ -83,9 +83,11 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, tag
 
         # Check if previous item (that was not ignored) was a list of the same type, and if it was, combine it with this list       
         last_item_index = content_array.length - 1
-        if content_array[last_item_index]["contenttype"] === "list" && content_array[last_item_index]["listtype"] === listtype
+        if last_item_index >= 0 && content_array[last_item_index]["contenttype"] === "list" && content_array[last_item_index]["listtype"] === listtype
+          listitems = content_array[last_item_index]["content"]
           new_listitems = build_content_array(elem, true, parent_heading_level, logger, tags)
-          content_array[last_item_index]["content"].push(*new_listitems)
+          listitems.push(*new_listitems)
+          content_array[last_item_index]["content"] = listitems.uniq
           cancel_content_push = true
         else
   				item["contenttype"] = "list"
