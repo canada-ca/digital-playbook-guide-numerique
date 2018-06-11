@@ -39,7 +39,7 @@ for item in include.contentArray %}{%
         assign sectionTag = "section" %}{% 
       endif %}{% 
       capture nestedOutputSection %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=relevantTagsArray %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags %}{% 
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
@@ -67,7 +67,7 @@ for item in include.contentArray %}{%
         assign listTag = "ul" %}{% 
       endif %}{% 
       capture nestedOutputList %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=relevantTagsArray %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
@@ -105,7 +105,7 @@ for item in include.contentArray %}{%
     elsif item.contenttype == 'listnested'%}{% 
       comment %}Content block is a nested list, so output the list item and then call this function to process the nested content array (list){% endcomment %}{% 
       capture nestedOutputNestedList %}{% 
-        include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel relevantTags=relevantTagsArray %}{% 
+        include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputNestedList | rstrip %}{% 
       if nestedOutputStrip.size > 0 %}{% 
