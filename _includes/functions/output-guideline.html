@@ -104,7 +104,7 @@ if tagsCompareResult contains "true" %}{%
 {{ sectionContentSubStrip }} 
 
 </section>
-              endcapture %}{% 
+{%            endcapture %}{% 
               assign sectionContentStrip = sectionContentStrip | append: subSectionSection %}{% 
             endif %}{% 
             assign subsectionIndex = subsectionIndex | plus: 1 %}{% 
@@ -131,13 +131,13 @@ if tagsCompareResult contains "true" %}{%
           else %}{% 
             assign glyphicon = "" %}{% 
           endif %}{% 
-          if propertyKey == "introduction" %}{% 
+          if propertyKey == "introduction" %}
 <div{{ classOutput | rstrip }}>
 
 {{ sectionContentStrip }}
 
 </div>
-          else %}{% 
+{%        else %}{% 
 <section{{ classOutput | rstrip }}>
 
 <h{{ subsectionHeadingLevel }}>{% if glyphicon.size > 0 %}<span class="glyphicon glyphicon-{{ glyphicon }}" aria-hidden="true"></span> {% endif %}{{ property[1].title }}</h{{ subsectionHeadingLevel }}>
@@ -145,8 +145,8 @@ if tagsCompareResult contains "true" %}{%
 {{ sectionContentStrip }}
 
 </section>
-          endif %}{% 
-{%      endif %}{% 
+{%        endif %}{% 
+        endif %}{% 
       endif %}{% 
     endif %}{% 
   endfor %}
