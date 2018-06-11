@@ -136,6 +136,9 @@ if tagsCompareResult contains "true" %}{%
   else %}{% 
     assign remainingRelatedGuidelines = standard.relatedguidelines.content %}{% 
   endif %}
+  <p>Related guidelines: {{ standard.relatedguidelines.content }}</p>
+  <p>include.relevantRelatedGuidelines: {{ include.relevantRelatedGuidelines }}
+  <p>relevantRelatedGuidelinesArray: {{ relevantRelatedGuidelinesArray }}</p>
   <p>Remaining related guidelines: {{ remainingRelatedGuidelines }}</p>
   {% 
   if remainingRelatedGuidelines.size > 0 %}{% 
