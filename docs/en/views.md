@@ -85,10 +85,12 @@ Tags can be applied directly to content in the source .md files, using either th
     <tr>
       <td>List</td>
       <td><code>&lt;ul class="dpgn-stage-alpha dpgn-stage-live"&gt;...&lt;/ul&gt;</code></td>
-      <td><pre>- List item 1
+      <td><pre>&lt;!-- markdownlint-disable MD032 --&gt;
+- List item 1
 - List item 2
 - List item 3
-{: .dpgn-stage-alpha .dpgn-stage-live}</pre></td>
+{: .dpgn-stage-alpha .dpgn-stage-live}
+&lt;!-- markdownlint-enable MD032 --&gt;</pre></td>
     </tr>
     <tr>
       <td>List item</td>
