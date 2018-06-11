@@ -311,52 +311,33 @@ This applies when designing and developing:
 
 **[TODO: Add/revise checklist items]**
 
-#### Including Users to Understand the Issues ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
-
-As early as possible in your project:
-
-- Learn the basics of how people with disabilities use the web by reading online resources and watching videos.
-- Find people with disabilities, with a range of characteristics. See Getting a Range of Users and Working with Users below.
-- Early on, learn about general issues related to what you are developing, e.g., websites, web tools, standards, or other products. Ask people to show you websites or related products that work well for them. Then, ask them to show you problems in products that do not work well. Ask lots of questions to help you understand the accessibility issues.
-
-#### Including Users in Implementation ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
-
-For example, for websites, web applications, and web tools:
-
-- When you are considering a specific design aspect, such as expanding/collapsing navigation, find other products that are already doing it and have users explore with you what works well and what does not.
-- Throughout your design and development, ask users to review prototypes. Give them specific tasks to complete and see how the different aspects of the design and coding could be improved. Ask lots of questions.
-
-#### Carefully Consider Input ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
-
-**Caution:** Carefully consider all input and **avoid assuming that input from one person with a disability applies to all people with disabilities**. A person with a disability does not necessarily know how other people with the same disability interact with the web, nor know enough about other disabilities to provide valid guidance on other accessibility issues. Getting input from a range of users is best.
-
-#### Getting a Range of Users ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
-
-People with disabilities are as diverse as any people. They have diverse experiences, expectations, and preferences. They use diverse interaction techniques, adaptive strategies, and assistive technology configurations. People have different disabilities: auditory, cognitive, neurological, physical, speech, and visual — and some have multiple disabilities. Even within one category, there is extreme variation; for example, "visual disability" includes people who have been totally blind since birth, people who have distortion in their central vision from age-related degeneration, and people who temporarily have blurry vision from an injury or disease.
-
-Include users with a variety of disabilities and user characteristics. Most projects have limited time and budget and cannot include many different users. Selecting the optimum number of users with the best suited characteristics can be difficult. There are resources on the web that provide guidance on selecting participants with disabilities; for example, determining participant characteristicslinks off WAI website and finding participants with disabilitieslinks off WAI website.
-
-#### Users' Experience Interacting with the Web ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
-
-A primary consideration in selecting users is their experience interacting with the web. For example, some assistive technologies (AT) are complicated and difficult to learn. A user with insufficient experience may not know how to use the AT effectively. On the other hand, a very advanced user might know uncommon work-arounds to overcome problems in a website that the "average" user would not be able to handle.
-
-In the early stages when you are first learning how people with disabilities interact with the web, it is usually best to get people with a fairly high experience level.
-
-#### Working with Users ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
-
-Follow common practices for working with people informally and formally, for example:
-
-- Develop appropriate relationships with your users. For example, spending time talking informally over lunch may help you work together more comfortably.
-- Ensure informed consent and other research ethics. For example, participants in studies should be told that they are free to stop at any time.
-- Treat people with disabilities and older users with the respect you would any other users. For example, respect their time and provide appropriate compensation.
-
-#### Combine User Involvement with Standards ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
-
-While including users with disabilities and older users with accessibility needs is key to making your accessibility efforts more effective and more efficient, that alone cannot address all issues. Even large projects cannot cover the diversity of disabilities, adaptive strategies, and assistive technologies. That is the role of accessibility standards.
-
-For websites and web applications, using comprehensive standards such as Web Content Accessibility Guidelines (WCAG) 2.0 helps ensure that you address all issues. Combine user involvement with evaluating conformance to WCAG to ensure that accessibility is provided to users with a range of disabilities and situations.
-For authoring tools such as content management systems (CMS), blog software, and WYSIWYG editors, follow Authoring Tool Accessibility Guidelines (ATAG).
-For browsers, media players, and other 'user agents', follow User Agent Accessibility Guidelines (UAAG).
+- Including Users to Understand the Issues ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
+  - As early as possible in your project:
+    - Learn the basics of how people with disabilities use the web by reading online resources and watching videos.
+    - Find people with disabilities, with a range of characteristics. See Getting a Range of Users and Working with Users below.
+    - Early on, learn about general issues related to what you are developing, e.g., websites, web tools, standards, or other products. Ask people to show you websites or related products that work well for them. Then, ask them to show you problems in products that do not work well. Ask lots of questions to help you understand the accessibility issues.
+- Including Users in Implementation ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
+  - For example, for websites, web applications, and web tools:
+    - When you are considering a specific design aspect, such as expanding/collapsing navigation, find other products that are already doing it and have users explore with you what works well and what does not.
+    - Throughout your design and development, ask users to review prototypes. Give them specific tasks to complete and see how the different aspects of the design and coding could be improved. Ask lots of questions.
+- Carefully Consider Input ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
+  - **Caution:** Carefully consider all input and **avoid assuming that input from one person with a disability applies to all people with disabilities**. A person with a disability does not necessarily know how other people with the same disability interact with the web, nor know enough about other disabilities to provide valid guidance on other accessibility issues. Getting input from a range of users is best.
+- Getting a Range of Users ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
+  - People with disabilities are as diverse as any people. They have diverse experiences, expectations, and preferences. They use diverse interaction techniques, adaptive strategies, and assistive technology configurations. People have different disabilities: auditory, cognitive, neurological, physical, speech, and visual — and some have multiple disabilities. Even within one category, there is extreme variation; for example, "visual disability" includes people who have been totally blind since birth, people who have distortion in their central vision from age-related degeneration, and people who temporarily have blurry vision from an injury or disease.
+  - Include users with a variety of disabilities and user characteristics. Most projects have limited time and budget and cannot include many different users. Selecting the optimum number of users with the best suited characteristics can be difficult. There are resources on the web that provide guidance on selecting participants with disabilities; for example, determining participant characteristicslinks off WAI website and finding participants with disabilitieslinks off WAI website.
+- Users' Experience Interacting with the Web ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
+  - A primary consideration in selecting users is their experience interacting with the web. For example, some assistive technologies (AT) are complicated and difficult to learn. A user with insufficient experience may not know how to use the AT effectively. On the other hand, a very advanced user might know uncommon work-arounds to overcome problems in a website that the "average" user would not be able to handle.
+  - In the early stages when you are first learning how people with disabilities interact with the web, it is usually best to get people with a fairly high experience level.
+- Working with Users ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
+  - Follow common practices for working with people informally and formally, for example:
+  - Develop appropriate relationships with your users. For example, spending time talking informally over lunch may help you work together more comfortably.
+  - Ensure informed consent and other research ethics. For example, participants in studies should be told that they are free to stop at any time.
+  - Treat people with disabilities and older users with the respect you would any other users. For example, respect their time and provide appropriate compensation.
+- Combine User Involvement with Standards ([Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving))
+  - While including users with disabilities and older users with accessibility needs is key to making your accessibility efforts more effective and more efficient, that alone cannot address all issues. Even large projects cannot cover the diversity of disabilities, adaptive strategies, and assistive technologies. That is the role of accessibility standards.
+  - For websites and web applications, using comprehensive standards such as Web Content Accessibility Guidelines (WCAG) 2.0 helps ensure that you address all issues. Combine user involvement with evaluating conformance to WCAG to ensure that accessibility is provided to users with a range of disabilities and situations.
+  - For authoring tools such as content management systems (CMS), blog software, and WYSIWYG editors, follow Authoring Tool Accessibility Guidelines (ATAG).
+  - For browsers, media players, and other 'user agents', follow User Agent Accessibility Guidelines (UAAG).
 
 </section>
 
@@ -423,96 +404,85 @@ Until you consider the needs of the range of people that will be using your serv
 
 **[TODO: Add/revise checklist items]**
 
-#### Designing for users on the autistic spectrum ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
-
-- Do:
-  - use simple colours
-  - write in plain English
-  - use simple sentences and bullets
-  - make buttons descriptive - for example, Attach files
-  - build simple and consistent layouts
-- Don't:
-  - use bright contrasting colours
-  - use figures of speech and idioms
-  - create a wall of text
-  - make buttons vague and unpredictable - for example, Click here
-  - build complex and cluttered layouts
-
-#### Designing for users of screen readers ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
-
-- Do:
-  - describe images and provide transcripts for video
-  - follow a linear, logical layout
-  - structure content using HTML5
-  - build for keyboard use only
-  - write descriptive links and heading - for example, Contact us
-- Don't:
-  - only show information in an image or video
-  - spread content all over a page
-  - rely on text size and placement for structure
-  - force mouse or screen use
-  - write uninformative links and heading - for example, Click here
-
-#### Designing for users with low vision ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
-
-- Do:
-  - use good contrasts and a readable font size
-  - publish all information on web pages (HTML)
-  - use a combination of colour, shapes and text
-  - follow a linear, logical layout -and ensure text flows and is visible when text is magnified to 200%
-  - put buttons and notifications in context
-- Don't:
-  - use low colour contrasts and small font size
-  - bury information in downloads
-  - only use colour to convey meaning
-  - spread content all over a page -and force user to scroll horizontally when text is magnified to 200%
-  - separate actions from their context
-
-#### Designing for users with physical or motor disabilities ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
-
-- Do:
-  - make large clickable actions
-  - give form fields space
-  - design for keyboard or speech only use
-  - design with mobile and touch screen in mind
-  - provide shortcuts
-- Don't:
-  - demand precision
-  - bunch interactions together
-  - make dynamic content that requires a lot of mouse movement
-  - have short time out windows
-  - tire users with lots of typing and scrolling
-  - View poster for physical or motor disabilities
-
-#### Designing for users who are D/deaf or hard of hearing ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
-
-- Do:
-  - write in plain English
-  - use subtitles or provide transcripts for video
-  - use a linear, logical layout
-  - break up content with sub-headings, images and videos
-  - let users ask for their preferred communication support when booking appointments
-- Don't:
-  - use complicated words or figures of speech
-  - put content in audio or video only
-  - make complex layouts and menus
-  - make users read long blocks of content
-  - don't make telephone the only means of contact for users
-
-#### Designing for users with dyslexia ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
-
-- Do:
-  - use images and diagrams to support text
-  - align text to the left and keep a consistent layout
-  - consider producing materials in other formats (for example, audio and video)
-  - keep content short, clear and simple
-  - let users change the contrast between background and text
-- Don't:
-  - use large blocks of heavy text
-  - underline words, use italics or write capitals
-  - force users to remember things from previous pages - give reminders and prompts
-  - rely on accurate spelling - use autocorrect or provide suggestions
-  - put too much information in one place
+- Designing for users on the autistic spectrum ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
+  - Do:
+    - use simple colours
+    - write in plain English
+    - use simple sentences and bullets
+    - make buttons descriptive - for example, Attach files
+    - build simple and consistent layouts
+  - Don't:
+    - use bright contrasting colours
+    - use figures of speech and idioms
+    - create a wall of text
+    - make buttons vague and unpredictable - for example, Click here
+    - build complex and cluttered layouts
+- Designing for users of screen readers ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
+  - Do:
+    - describe images and provide transcripts for video
+    - follow a linear, logical layout
+    - structure content using HTML5
+    - build for keyboard use only
+    - write descriptive links and heading - for example, Contact us
+  - Don't:
+    - only show information in an image or video
+    - spread content all over a page
+    - rely on text size and placement for structure
+    - force mouse or screen use
+    - write uninformative links and heading - for example, Click here
+- Designing for users with low vision ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
+  - Do:
+    - use good contrasts and a readable font size
+    - publish all information on web pages (HTML)
+    - use a combination of colour, shapes and text
+    - follow a linear, logical layout -and ensure text flows and is visible when text is magnified to 200%
+    - put buttons and notifications in context
+  - Don't:
+    - use low colour contrasts and small font size
+    - bury information in downloads
+    - only use colour to convey meaning
+    - spread content all over a page -and force user to scroll horizontally when text is magnified to 200%
+    - separate actions from their context
+- Designing for users with physical or motor disabilities ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
+  - Do:
+    - make large clickable actions
+    - give form fields space
+    - design for keyboard or speech only use
+    - design with mobile and touch screen in mind
+    - provide shortcuts
+  - Don't:
+    - demand precision
+    - bunch interactions together
+    - make dynamic content that requires a lot of mouse movement
+    - have short time out windows
+    - tire users with lots of typing and scrolling
+    - View poster for physical or motor disabilities
+- Designing for users who are D/deaf or hard of hearing ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
+  - Do:
+    - write in plain English
+    - use subtitles or provide transcripts for video
+    - use a linear, logical layout
+    - break up content with sub-headings, images and videos
+    - let users ask for their preferred communication support when booking appointments
+  - Don't:
+    - use complicated words or figures of speech
+    - put content in audio or video only
+    - make complex layouts and menus
+    - make users read long blocks of content
+    - don't make telephone the only means of contact for users
+- Designing for users with dyslexia ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
+  - Do:
+    - use images and diagrams to support text
+    - align text to the left and keep a consistent layout
+    - consider producing materials in other formats (for example, audio and video)
+    - keep content short, clear and simple
+    - let users change the contrast between background and text
+  - Don't:
+    - use large blocks of heavy text
+    - underline words, use italics or write capitals
+    - force users to remember things from previous pages - give reminders and prompts
+    - rely on accurate spelling - use autocorrect or provide suggestions
+    - put too much information in one place
 
 </section>
 
