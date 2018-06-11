@@ -336,8 +336,8 @@ Good government services are built quickly and iteratively, based on user needs.
 
 ### Ressources similaires
 
-- [Code source ouvert - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Logiciel_libre_Contribution.md)
-- [Culture ouverte - Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/6_Culture_ouverte.md)
+- [Logiciel libre - Contribution (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Logiciel_libre_Contribution.md)
+- [Culture ouverte (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/6_Culture_ouverte.md)
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
