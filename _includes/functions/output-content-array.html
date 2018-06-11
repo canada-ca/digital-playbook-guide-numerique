@@ -12,6 +12,8 @@ for item in include.contentArray %}{%
     else %}{% 
       assign relevantTagsArray = include.relevantTags | replace: " ", "" | split: "," %}{% 
     endif %}{% 
+  else %}{% 
+      assign relevantTagsArray = "" %}{% 
   endif %}{% 
   if relevantTagsArray.size > 0 %}{% 
     capture tagsCompareResult %}{% 
