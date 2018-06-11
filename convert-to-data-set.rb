@@ -93,7 +93,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, tag
   				item["contenttype"] = "list"
 	  			item["tags"] = tags
 		  		item["listtype"] = listtype
-			  	item["content"] = build_content_array(elem, true, parent_heading_level, logger)
+			  	item["content"] = build_content_array(elem, true, parent_heading_level, logger, tags)
         end
 			elsif elem.name === "li"
 				nested_lists = elem.css( "ul, ol" )
@@ -112,7 +112,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, tag
 						nested_index = nested_ol_index
 					end
 					item["content"] = html_fragment = html_fragment[0, nested_index - 1].strip
-					item["nested"] = build_content_array(nested_lists, false, parent_heading_level, logger)
+					item["nested"] = build_content_array(nested_lists, false, parent_heading_level, logger, tags)
 				else
 					item["contenttype"] = "listitem"
 					item["tags"] = tags
