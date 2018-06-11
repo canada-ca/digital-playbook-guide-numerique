@@ -183,7 +183,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Liste de contrôle
 
-* {: .dpgn-digital-architectural } Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
+* {: .dpgn-digital-architectural} Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
 * Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies.
 * Use deployment scripts to ensure configuration of production environment remains consistent and controllable.
 * Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
@@ -196,7 +196,7 @@ Integrating security from the outset and “shifting security left” in the ser
 * Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
 * Determine how long you need to protect your assets during and after their life / intended use.
 * Document the plan and process for maintaining up-to-date and supported software for services/system
-* {: .dpgn-digital-architectural } Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
+* {: .dpgn-digital-architectural} Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
 
 </section>
 
@@ -214,7 +214,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
-* {: .dpgn-digital-architectural } [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-digital-architectural} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 
