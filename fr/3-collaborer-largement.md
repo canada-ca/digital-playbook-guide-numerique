@@ -69,7 +69,6 @@ Good government services are built quickly and iteratively, based on user needs.
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - Employ people in the following roles on the delivery team: service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, front-end developer **(Digital Service Standard (UK))**
-
 - Have a manager with the ability to make day-to-day decisions to improve the service **(Digital Service Standard (Ontario))**
 - Make sure you have at least one user researcher working at least 3 days each week **(Digital Service Standard (UK))**
 - Make sure there is separation of key roles in the team, meaning that nobody is performing multiple roles **(Digital Service Standard (UK))**
@@ -268,31 +267,31 @@ Good government services are built quickly and iteratively, based on user needs.
 - Make all new source code open and reusable and explain how it can be reused
 - Show your code in an open Internet source code repository and enable contributions and comments on the code
 
-<section class="dpgn-section-stage dpgn-stage-alpha">
+**Stage alpha :**
+{: .dpgn-data-ignore}
 
-#### Stage alpha
-
+<!-- markdownlint-disable MD032 -->
 - Determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
 - Confirm that you own the intellectual property **(Digital Service Standard (UK))**
 - Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
 - Determine how you're using code from other teams or services **(Digital Service Standard (UK))**
 - show that you have considered a plan to release it under a licence that is suitable for your service **(Digital Service Standard (AU))**
 - consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. **(Digital Service Standard (AU))**
+{: .dpgn-stage-alpha}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stage bêta :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-beta">
-
-#### Stage bêta
-
+<!-- markdownlint-disable MD032 -->
 - share your code in a repository **(Digital Service Standard (AU))**
+{: .dpgn-stage-alpha}
+<!-- markdownlint-enable MD032 -->
 
-</section>
+**Stage en direct :**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-stage dpgn-stage-live">
-
-#### Stage en direct
-
+<!-- markdownlint-disable MD032 -->
 - Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
 - Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
 - Determine the licences you're using to release code **(Digital Service Standard (UK))**
@@ -302,8 +301,9 @@ Good government services are built quickly and iteratively, based on user needs.
 - show how you are making new source code open and reusable, for example, storing in repositories, releasing code under licence, using APIs **(Digital Service Standard (AU))**
 - show how you have provided a plan or guidance for contributors **(Digital Service Standard (AU))**
 - show how you’re handling updates and bug fixes to the code. **(Digital Service Standard (AU))**
+{: .dpgn-stage-live}
+<!-- markdownlint-enable MD032 -->
 
-</section>
 </section>
 
 <section class="dpgn-section-guides">
