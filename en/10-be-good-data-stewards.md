@@ -377,7 +377,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Similar resources
 
 - Information/Data is an asset (Current GC EARB Principles)
-- {: .dpgn-digital-architectural } Data is the new gold ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural} Data is the new gold ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
