@@ -117,7 +117,7 @@
         "format": "uri"
       },
       "uniqueItems": true
-    },)
+    },
     "section": {
       "type": "object",
       "contenttype": {
@@ -131,7 +131,6 @@
       },
       "content": {
         "type": "array",
-      "source": {"$ref": "#/definitions/source"},
         "items": {
           "type": "object",
           "oneOf": [
