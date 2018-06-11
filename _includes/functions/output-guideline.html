@@ -11,6 +11,7 @@ comment %}@return {String} Outputs the content for the guideline{% endcomment %}
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
 assign subsectionHeadingLevel = include.guidelineHeadingLevel | plus: 1 %}{% 
+comment %}Ensure guideline is a guideline object{% endcomment %}{% 
 if include.guideline.first %}{% 
   comment %}include.guideline is a guideline object{% endcomment %}{% 
   assign guideline = include.guideline %}{% 
@@ -25,6 +26,7 @@ else %}{%
   endif %}{% 
   assign guideline = standard.guidelines.content[guidelineIndex] %}{% 
 endif %}{% 
+comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
 if include.relevantTags.size > 0 %}{% 
   if include.relevantTags.first %}{% 
     assign relevantTagsArrayGuideline = include.relevantTags %}{% 
@@ -34,6 +36,7 @@ if include.relevantTags.size > 0 %}{%
 else %}{% 
     assign relevantTagsArrayGuideline = "" %}{% 
 endif %}{% 
+comment %}Ensure the relevant tags subsections are in an array{% endcomment %}{% 
 if include.relevantTagsSubsections.size > 0 %}{% 
   if include.relevantTagsSubsections.first %}{% 
     assign relevantTagsSubsectionsArray = include.relevantTagsSubsections %}{% 
@@ -43,6 +46,7 @@ if include.relevantTagsSubsections.size > 0 %}{%
 else %}{% 
     assign relevantTagsSubsectionsArray = "" %}{% 
 endif %}{% 
+comment %}Ensure the relevant sections are in an array{% endcomment %}{% 
 if include.relevantSections.size > 0 %}{% 
   if include.relevantSections.first %}{% 
     assign relevantSectionsArray = include.relevantSections %}{% 
