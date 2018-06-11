@@ -45,9 +45,10 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, tag
 				elem.remove_attribute("class")
 			end
 
-      # If tags_all exists, then append it to the current tags
+      # If tags_all exists, then append it to the current tags, eliminating duplicates
       if !tags_all.nil?
         tags.push(*tags_all)
+        tags = tags.uniq
       end
 
 			if elem.name === "section"
