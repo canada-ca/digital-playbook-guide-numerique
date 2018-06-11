@@ -48,7 +48,7 @@ for currentStandard in relevantStandardsGuidelinesArray %}{%
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}{% 
 include functions/standard-links.html samePage=true relevantStandards=relevantStandards listClasses=include.standardsListClasses listItemClasses=include.standardsListItemClasses linkClasses=include.standardsLinkClasses subLinkClasses=include.standardsSubLinkClasses %}
-
+<p>Relevant related guidelines: {{ relevantRelatedGuidelines }}</p>
 </section>
 
 {% comment %}Iterate through each of the standards, only processing the standards and guidelines that have content with a tag that matches at least one of include.relevantTags{% endcomment %}{% 
