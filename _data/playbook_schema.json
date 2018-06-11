@@ -113,7 +113,7 @@
     "source": {
       "type": "array",
       "items": {
-        ")type": "string",
+        "type": "string",
         "format": "uri"
       },
       "uniqueItems": true
