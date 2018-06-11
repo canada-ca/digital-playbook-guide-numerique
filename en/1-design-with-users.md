@@ -105,9 +105,9 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 <!-- markdownlint-disable MD032 -->
 - determine what your private beta will look like and how you'll use what you find to improve the service **(Digital Service Standard (UK))**
-- {: .dpgn-stage-alpha} pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
-- {: .dpgn-stage-alpha} carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
-- {: .dpgn-stage-alpha} develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
+- pay for user research and usability tests throughout the design of the service and after it's built **(Digital Service Standard (UK))**
+- carry out research and usability tests regularly and use the results to improve the design of your service **(Digital Service Standard (UK))**
+- develop a user research plan for private beta and a plan for carrying out user research on the live service **(Digital Service Standard (UK))**
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
