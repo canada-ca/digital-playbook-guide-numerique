@@ -159,7 +159,7 @@ endif %}
 
 {% comment %}Output each guideline as a new section and output the included content{% endcomment %}{% 
 for item in outputGuidelinesArray %}{% 
-  include functions/output-guideline.html guideline=item guidelineHeadingLevel=guidelineHeadingLevel relevantTags=include.relevantTags collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseContentSubsections %}{% 
+  include functions/output-guideline.html guideline=item guidelineHeadingLevel=guidelineHeadingLevel relevantTags=include.relevantTags relevantSections=relevantSectionsArray collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseContentSubsections %}{% 
 endfor %}{% 
 comment %}Output a closing section tag if the Standard heading was included{% endcomment %}{% 
 if include.includeStandardTitle %}
