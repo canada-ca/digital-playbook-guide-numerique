@@ -108,9 +108,9 @@ else %}{%
   assign tagsCompareResult="true" %}{% 
 endif %}{% 
 if tagsCompareResult contains "true" %}{% 
-  if standard.relatedguidelines.content.size > 0 and include.relevantRelatedGuidelines %}{% 
+  if standard.relatedguidelines.content.size > 0 and include.relevantRelatedGuidelines.size > 0 %}{% 
     if include.relevantRelatedGuidelines %}{% 
-      comment %}relevantRelatedGuidelines is an array{% endcomment %}{% 
+      comment %}include.relevantRelatedGuidelines is an array{% endcomment %}{% 
       assign relevantRelatedGuidelinesArray = include.relevantRelatedGuidelines %}{% 
     else %}{% 
       comment %}relevantRelatedGuidelines is a string so convert it to an array{% endcomment %}{% 
