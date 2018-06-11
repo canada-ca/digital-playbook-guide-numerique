@@ -109,7 +109,7 @@ else %}{%
 endif %}{% 
 if tagsCompareResult contains "true" %}{% 
   if standard.relatedguidelines.content.size > 0 and include.relevantRelatedGuidelines.size > 0 %}{% 
-    if include.relevantRelatedGuidelines %}{% 
+    if include.relevantRelatedGuidelines.first %}{% 
       comment %}include.relevantRelatedGuidelines is an array{% endcomment %}{% 
       assign relevantRelatedGuidelinesArray = include.relevantRelatedGuidelines %}{% 
     else %}{% 
@@ -137,7 +137,7 @@ if tagsCompareResult contains "true" %}{%
     assign remainingRelatedGuidelines = standard.relatedguidelines.content %}{% 
   endif %}
   <p>Related guidelines: {{ standard.relatedguidelines.content }}</p>
-  <p>include.relevantRelatedGuidelines: {{ include.relevantRelatedGuidelines }}
+  <p>include.relevantRelatedGuidelines: {{ include.relevantRelatedGuidelines }}</p>
   <p>relevantRelatedGuidelinesArray: {{ relevantRelatedGuidelinesArray }}</p>
   <p>Remaining related guidelines: {{ remainingRelatedGuidelines }}</p>
   {% 
