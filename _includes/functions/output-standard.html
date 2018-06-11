@@ -26,8 +26,8 @@ comment %}If standard is not an object, then turn the number into an index (minu
 if include.standard.title.size > 0 %}{% 
   assign standard = include.standard %}{% 
 else %}{% 
-  assign standardIndex = include.standard | minus: 1 %}{% 
-  assign standard = dataSource.standards.content[standardIndex] %}{% 
+  assign currentStandardIndex = include.standard | minus: 1 %}{% 
+  assign standard = dataSource.standards.content[currentStandardIndex] %}{% 
 endif %}{% 
 assign standardHeadingLevel = include.currentHeadingLevel | default: 1 %}{% 
 comment %}If the Standard heading will be included, then create a section, output the Standard heading and then increment the heading level by 1{% endcomment %}{% 
