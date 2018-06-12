@@ -59,7 +59,7 @@ for item in include.contentArray %}{%
 {{ nestedOutputStrip }}
 </{{ sectionTag }}>
 {%    endif %}{% 
-    elsif item.content_type == 'ordered_list' || item.content_type == 'unordered_list' %}{% 
+    elsif item.content_type == 'ordered_list' or item.content_type == 'unordered_list' %}{% 
       comment %}Content block is a list, so output the list elements and then call this function to process the nested content array (list items){% endcomment %}{%  
       if item.content_type == 'ordered_list' %}{% 
         assign listTag = "ol" %}{% 
@@ -69,8 +69,8 @@ for item in include.contentArray %}{%
       capture nestedOutputList %}{% 
         include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
       endcapture %}{% 
-      assign nestedOutputStrip = nestedOutputList | rstrip %}{% 
-      if nestedOutputStrip.size > 0 %}{% 
+      assign nestedOutputListStrip = nestedOutputList | rstrip %}{% 
+      if nestedOutputListStrip.size > 0 %}{% 
         if site.defaultClasses.list.size > 0 %}{% 
           assign allClasses = site.defaultClasses.list | split: " " %}{% 
           if item.tags.size > 0 %}{% 
@@ -83,7 +83,7 @@ for item in include.contentArray %}{%
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
 <{{ listTag }}{{ classOutput | rstrip }}>
-{{ nestedOutputStrip }}
+{{ nestedOutputListStrip }}
 </{{ listTag }}>{% 
       endif %}{% 
     elsif item.content_type == 'list_item' %}{% 
