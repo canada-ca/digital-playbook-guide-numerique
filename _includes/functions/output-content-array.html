@@ -105,7 +105,7 @@ for item in include.contentArray %}{%
       	endcapture %}
 <li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}><span markdown="1">{{ nestedOutputContent }}</span></li>
 {%    endif %}{% 
-    elsif item.content_type == 'inlinet'%}{% 
+    elsif item.content_type == 'inline' %}{% 
       if relevantItem %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=item.tags %}{% 
