@@ -1,85 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "",
-  "type": "object",
-  "properties": {
-    "title": {"$ref": "#/definitions/title"},
-    "introduction": {"$ref": "#/definitions/introduction"},
-    "standards": {
-      "type": "object",
-      "properties": {
-        "title": {"$ref": "#/definitions/title"},
-        "tags": {"$ref": "#/definitions/tags"},
-        "content": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "title": {"$ref": "#/definitions/title"},
-              "tags": {"$ref": "#/definitions/tags"},
-              "introduction": {"$ref": "#/definitions/introduction"},
-              "relatedguidelines": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "guidelines": {
-                "type": "object",
-                "properties": {
-                  "title": {"$ref": "#/definitions/title"},
-                  "tags": {"$ref": "#/definitions/tags"},
-                  "content": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "title": {"$ref": "#/definitions/title"},
-                        "tags": {"$ref": "#/definitions/tags"},
-                        "introduction": {"$ref": "#/definitions/introduction"},
-                        "checklist": {
-                          "type": "object",
-                          "properties": {
-                            "title": {"$ref": "#/definitions/title"},
-                            "tags": {"$ref": "#/definitions/tags"},
-                            "content": {"$ref": "#/definitions/content"}
-                          }
-                        },
-                        "guides": {
-                          "type": "object",
-                          "properties": {
-                            "title": {"$ref": "#/definitions/title"},
-                            "tags": {"$ref": "#/definitions/tags"},
-                            "content": {"$ref": "#/definitions/content"}
-                          }
-                        },
-                        "guides": {
-                          "type": "object",
-                          "properties": {
-                            "title": {"$ref": "#/definitions/title"},
-                            "tags": {"$ref": "#/definitions/tags"},
-                            "content": {"$ref": "#/definitions/content"}
-                          }
-                        },
-                        "similar": {
-                          "type": "object",
-                          "properties": {
-                            "title": {"$ref": "#/definitions/title"},
-                            "tags": {"$ref": "#/definitions/tags"},
-                            "content": {"$ref": "#/definitions/content"}
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
   "definitions": {
     "title": {
       "type": "string"
@@ -90,15 +10,18 @@
         "title": {"$ref": "#/definitions/title"},
         "tags": {"$ref": "#/definitions/tags"},
         "content": {"$ref": "#/definitions/content"}
-      }
+      },
+      "required": ["title", "content"]
     },
     "content": {
       "type": "array",
       "items": {
         "type": "object",
+        "minItems": 1,
         "oneOf": [
           { "$ref": "#/definitions/section" },
           { "$ref": "#/definitions/list" },
+          { "$ref": "#/definitions/table" },
           { "$ref": "#/definitions/text" }
         ]
       }
@@ -120,93 +43,337 @@
     },
     "section": {
       "type": "object",
-      "contenttype": {
-        "type": "string",
-        "enum": ["section"]
-      },
-      "tags": {"$ref": "#/definitions/tags"},
-      "source": {"$ref": "#/definitions/source"},
-      "title": {
-        "type": "string"
-      },
-      "content": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "oneOf": [
-            { "$ref": "#/definitions/section" },
-            { "$ref": "#/definitions/list" },
-            { "$ref": "#/definitions/text" }
-          ]
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["section"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "title": {
+          "type": "string"
+        },
+        "content": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "minItems": 1,
+            "oneOf": [
+              { "$ref": "#/definitions/section" },
+              { "$ref": "#/definitions/list" },
+              { "$ref": "#/definitions/table" },
+              { "$ref": "#/definitions/text" }
+            ]
+          }
         }
-      }
+      },
+      "required": ["contenttype", "title", "content"]
     },
     "list": {
       "type": "object",
-      "contenttype": {
-        "type": "string",
-        "enum": ["list"]
-      },
-      "tags": {"$ref": "#/definitions/tags"},
-      "source": {"$ref": "#/definitions/source"},
-      "listtype": {
-        "type": "string"
-      },
-      "content": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "oneOf": [
-            { "$ref": "#/definitions/listitem" },
-            { "$ref": "#/definitions/nestedlist" }
-          ]
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["list"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "listtype": {
+          "type": "string"
+        },
+        "content": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "minItems": 1,
+            "oneOf": [
+              { "$ref": "#/definitions/listitem" },
+              { "$ref": "#/definitions/nestedlist" }
+            ]
+          }
         }
-      }
+      },
+      "required": ["listtype", "content"]
     },
     "listitem": {
       "type": "object",
-      "contenttype": {
-        "type": "string",
-        "enum": ["listitem"]
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["listitem"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "content": {
+          "type": "string"
+        }
       },
-      "tags": {"$ref": "#/definitions/tags"},
-      "source": {"$ref": "#/definitions/source"},
-      "content": {
-        "type": "string"
-      }
+      "required": ["contenttype", "content"]
     },
     "listnested": {
       "type": "object",
-      "contenttype": {
-        "type": "string",
-        "enum": ["nestedlist"]
-      },
-      "tags": {"$ref": "#/definitions/tags"},
-      "source": {"$ref": "#/definitions/source"},
-      "content": {
-        "type": "string"
-      },
-      "nested": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "oneOf": [
-            { "$ref": "#/definitions/list" }
-          ]
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["nestedlist"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "content": {
+          "type": "string"
+        },
+        "nested": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "minItems": 1,
+            "maxItems": 1,
+            "oneOf": [
+              { "$ref": "#/definitions/list" }
+            ]
+          }
         }
-      }
+      },
+      "required": ["contenttype", "content", "nested"]
+    },
+    "table": {
+      "type": "object",
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["table"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "caption": {
+          "type": "object",
+          "properties": {
+            "contenttype": {
+              "type": "string",
+              "enum": ["caption"]
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "oneOf": [
+                  { "$ref": "#/definitions/section" },
+                  { "$ref": "#/definitions/list" },
+                  { "$ref": "#/definitions/text" }
+                ]
+              }
+            }
+          },
+          "required": ["contenttype", "content"]
+        },
+        "head": {"$ref": "#/definitions/tableblock"},
+        "content": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "minItems": 1,
+            "oneOf": [
+              { "$ref": "#/definitions/tableblock" },
+              { "$ref": "#/definitions/tablerow" }
+            ]
+          }
+        },
+        "foot": {"$ref": "#/definitions/tableblock"}
+      },
+      "required": ["contenttype", "content"]
+    },
+    "tableblock": {
+      "type": "object",
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["tableblock"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "content": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "minItems": 1,
+            "oneOf": [
+              { "$ref": "#/definitions/tablerow" }
+            ]
+          }
+        }
+      },
+      "required": ["contenttype", "content"]
+    },
+    "tablerow": {
+      "type": "object",
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["tablerow"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "content": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "minItems": 1,
+            "oneOf": [
+              { "$ref": "#/definitions/tableheadercell" },
+              { "$ref": "#/definitions/tabledatacell" }
+            ]
+          }
+        }
+      },
+      "required": ["contenttype", "content"]
+    },
+    "tableheadercell": {
+      "type": "object",
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["tableheader"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "colspan": {"$ref": "#/definitions/tablecellspan"},
+        "rowspan": {"$ref": "#/definitions/tablecellspan"},
+        "content": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "minItems": 1,
+            "oneOf": [
+              { "$ref": "#/definitions/list" },
+              { "$ref": "#/definitions/text" }
+            ]
+          }
+        }
+      },
+      "required": ["contenttype", "content"]
+    },
+    "tabledatacell": {
+      "type": "object",
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["tabledatacell"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "colspan": {"$ref": "#/definitions/tablecellspan"},
+        "rowspan": {"$ref": "#/definitions/tablecellspan"},
+        "content": {"$ref": "#/definitions/tags"}
+      },
+      "required": ["contenttype", "content"]
+    },
+    "tablecellspan": {
+      "type": "number",
+      "exclusiveMinimum": 1
     },
     "text": {
       "type": "object",
-      "contenttype": {
-        "type": "string",
-        "enum": ["text"]
+      "properties": {
+        "contenttype": {
+          "type": "string",
+          "enum": ["text"]
+        },
+        "tags": {"$ref": "#/definitions/tags"},
+        "source": {"$ref": "#/definitions/source"},
+        "content": {
+          "type": "string"
+        }
       },
-      "tags": {"$ref": "#/definitions/tags"},
-      "source": {"$ref": "#/definitions/source"},
-      "content": {
-        "type": "string"
-      }
+      "required": ["contenttype", "content"]
     }
-  }
+  },
+  "type": "object",
+  "properties": {
+    "title": {"$ref": "#/definitions/title"},
+    "introduction": {"$ref": "#/definitions/introduction"},
+    "standards": {
+      "type": "object",
+      "properties": {
+        "title": {"$ref": "#/definitions/title"},
+        "tags": {"$ref": "#/definitions/tags"},
+        "content": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {"$ref": "#/definitions/title"},
+              "tags": {"$ref": "#/definitions/tags"},
+              "introduction": {"$ref": "#/definitions/introduction"},
+              "relatedguidelines": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "guidelines": {
+                "type": "object",
+                "properties": {
+                  "title": {"$ref": "#/definitions/title"},
+                  "tags": {"$ref": "#/definitions/tags"},
+                  "content": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "minItems": 1,
+                      "properties": {
+                        "title": {"$ref": "#/definitions/title"},
+                        "tags": {"$ref": "#/definitions/tags"},
+                        "introduction": {"$ref": "#/definitions/introduction"},
+                        "checklist": {
+                          "type": "object",
+                          "properties": {
+                            "title": {"$ref": "#/definitions/title"},
+                            "tags": {"$ref": "#/definitions/tags"},
+                            "content": {"$ref": "#/definitions/content"}
+                          },
+                          "required": ["title", "content"]
+                        },
+                        "guides": {
+                          "type": "object",
+                          "properties": {
+                            "title": {"$ref": "#/definitions/title"},
+                            "tags": {"$ref": "#/definitions/tags"},
+                            "content": {"$ref": "#/definitions/content"}
+                          },
+                          "required": ["title", "content"]
+                        },
+                        "solutions": {
+                          "type": "object",
+                          "properties": {
+                            "title": {"$ref": "#/definitions/title"},
+                            "tags": {"$ref": "#/definitions/tags"},
+                            "content": {"$ref": "#/definitions/content"}
+                          },
+                          "required": ["title", "content"]
+                        },
+                        "similar": {
+                          "type": "object",
+                          "properties": {
+                            "title": {"$ref": "#/definitions/title"},
+                            "tags": {"$ref": "#/definitions/tags"},
+                            "content": {"$ref": "#/definitions/content"}
+                          },
+                          "required": ["title", "content"]
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": ["title", "content"]
+              }
+            },
+            "required": ["title", "introduction", "guidelines"]
+          }
+        }
+      },
+      "required": ["title", "content"]
+    }
+  },
+  "required": ["title", "introduction", "standards"]
 }
