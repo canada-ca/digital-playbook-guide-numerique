@@ -29,7 +29,7 @@ for item in include.contentArray %}{%
   endif %}{% 
   capture rawOutput %}{% 
     comment %}{% endcomment %}{% 
-    if item.contenttype == 'section' %}{%
+    if item.content_type == 'section' %}{%
       comment %}Content block is a section, so output the section elements, the heading and then call this function to process the nested content array{% endcomment %}{% 
       if include.collapseSubsections == true %}{% 
         assign nextHeadingLevel = include.currHeadingLevel %}{% 
@@ -59,9 +59,9 @@ for item in include.contentArray %}{%
 {{ nestedOutputStrip }}
 </{{ sectionTag }}>
 {%    endif %}{% 
-    elsif item.contenttype == 'list' %}{% 
+    elsif item.content_type == 'ordered_list' || item.content_type == 'unordered_list' %}{% 
       comment %}Content block is a list, so output the list elements and then call this function to process the nested content array (list items){% endcomment %}{%  
-      if item.listtype == 'ordered' %}{% 
+      if item.content_type == 'ordered_list' %}{% 
         assign listTag = "ol" %}{% 
       else %}{% 
         assign listTag = "ul" %}{% 
@@ -86,11 +86,11 @@ for item in include.contentArray %}{%
 {{ nestedOutputStrip }}
 </{{ listTag }}>{% 
       endif %}{% 
-    elsif item.contenttype == 'listitem' %}{% 
-      comment %}Content block is a list item, so output the list item{% endcomment %}{% 
+    elsif item.content_type == 'list_item' %}{% 
+      comment %}Content block is a list item, so output the list item and any nested content{% endcomment %}{% 
       if relevantItem %}{% 
-        if site.defaultClasses.listitem.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.listitem | split: " " %}{% 
+        if site.defaultClasses.list_item.size > 0 %}{% 
+          assign allClasses = site.defaultClasses.list_item | split: " " %}{% 
           if item.tags.size > 0 %}{% 
             assign allClasses = allClasses | concat: item.tags %}{% 
           endif %}{% 
@@ -99,31 +99,21 @@ for item in include.contentArray %}{%
         endif %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture %}
-<li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}><span markdown="1">{{ item.content }}</span></li>
+        endcapture %}{% 
+     	capture nestedOutputContent %}{% 
+        	include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
+      	endcapture %}
+<li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}><span markdown="1">{{ nestedOutputContent }}</span></li>
 {%    endif %}{% 
-    elsif item.contenttype == 'listnested'%}{% 
-      comment %}Content block is a nested list, so output the list item and then call this function to process the nested content array (list){% endcomment %}{% 
-      capture nestedOutputNestedList %}{% 
-        include /functions/output-content-array.html contentArray=item.nested currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-      endcapture %}{% 
-      assign nestedOutputStrip = nestedOutputNestedList | rstrip %}{% 
-      if nestedOutputStrip.size > 0 %}{% 
-        if site.defaultClasses.listitem.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.listitem | split: " " %}{% 
-          if item.tags.size > 0 %}{% 
-            assign allClasses = allClasses | concat: item.tags %}{% 
-          endif %}{% 
-        else %}{% 
-          assign allClasses = item.tags %}{% 
-        endif %}{% 
+    elsif item.content_type == 'inlinet'%}{% 
+      if relevantItem %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=item.tags %}{% 
-        endcapture %}
-<li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}><span markdown="1">{{ item.content }}</span>{{ nestedOutputStrip }}</li>
-{%    endif %}{% 
+        endcapture 
+%}<span markdown="1"{{ classOutput | rstrip }}>{{ item.content }}</span>{%
+      endif %}{% 
     else %}{% 
-      comment %}Content block is a text block or other generic content block, so out the conent block within a div{% endcomment %}{% 
+      comment %}Content block is a generic content block, so ouput the content block within a div{% endcomment %}{% 
       if relevantItem %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=item.tags %}{% 
@@ -135,7 +125,7 @@ for item in include.contentArray %}{%
     endif %}{% 
   endcapture %}{% 
   comment %}Special handling to ensure output is properly spaced (e.g., list items are on separate lines with no blank lines in between){% endcomment %}{%  
-  if item.contenttype == 'listitem' or 'listnested' 
+  if item.content_type == 'list_item' 
    %}{{ rawOutput | lstrip }}{% 
   else %}{{ rawOutput | strip }}{% 
   endif %}{% 
