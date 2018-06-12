@@ -3,6 +3,7 @@ comment %}@param guideline {Object/Number} Guideline object or the guideline ind
 comment %}@param guidelineHeadingLevel {Number} Heading level of the guideline section header.{% endcomment %}{% 
 comment %}@param standard {Object/Number} Optional (required if guideline is a number). Standard object or the number (not index) of the standard (which is used to retrieve the Standard object){% endcomment %}{% 
 comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@param relevantTagsSubsections {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Use of this parameter triggers the generation of sub-sections within each guideline section for each entry in relevantTags. Must have the same number of entries in the same order as relevantTags.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
@@ -10,6 +11,7 @@ comment %}@return {String} Outputs the content for the guideline{% endcomment %}
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
 assign subsectionHeadingLevel = include.guidelineHeadingLevel | plus: 1 %}{% 
+comment %}Ensure guideline is a guideline object{% endcomment %}{% 
 if include.guideline.first %}{% 
   comment %}include.guideline is a guideline object{% endcomment %}{% 
   assign guideline = include.guideline %}{% 
@@ -24,6 +26,27 @@ else %}{%
   endif %}{% 
   assign guideline = standard.guidelines.content[guidelineIndex] %}{% 
 endif %}{% 
+comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
+if include.relevantTags.size > 0 %}{% 
+  if include.relevantTags.first %}{% 
+    assign relevantTagsArrayGuideline = include.relevantTags %}{% 
+  else %}{% 
+    assign relevantTagsArrayGuideline = include.relevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+    assign relevantTagsArrayGuideline = "" %}{% 
+endif %}{% 
+comment %}Ensure the relevant tags subsections are in an array{% endcomment %}{% 
+if include.relevantTagsSubsections.size > 0 %}{% 
+  if include.relevantTagsSubsections.first %}{% 
+    assign relevantTagsSubsectionsArray = include.relevantTagsSubsections %}{% 
+  else %}{% 
+    assign relevantTagsSubsectionsArray = include.relevantTagsSubsections | split: ";" %}{% 
+  endif %}{% 
+else %}{% 
+    assign relevantTagsSubsectionsArray = "" %}{% 
+endif %}{% 
+comment %}Ensure the relevant sections are in an array{% endcomment %}{% 
 if include.relevantSections.size > 0 %}{% 
   if include.relevantSections.first %}{% 
     assign relevantSectionsArray = include.relevantSections %}{% 
@@ -51,33 +74,8 @@ if tagsCompareResult contains "true" %}{%
 {% for property in guideline %}{% 
     assign propertyKey = property[0] %}{% 
     assign propertyContent = property[1].content %}{% 
-    if propertyKey == "introduction" %}{% 
-      comment %}Output the guideline introduction{% endcomment %}{% 
-      if relevantSectionsArray.size > 0 %}{% 
-        capture tagsCompareResult %}{% 
-          include /functions/find-array-match.html array1=guideline.introduction.tags array2=relevantSectionsArray %}{% 
-        endcapture %}{% 
-      else %}{% 
-        assign tagsCompareResult="true" %}{% 
-      endif %}{% 
-      if tagsCompareResult contains "true" %}{% 
-        capture sectionContent %}{% 
-          include /functions/output-content-array.html contentArray=guideline.introduction.content currHeadingLevel=include.guidelineHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseIntroSubsections %}{%  
-        endcapture %}{% 
-        assign sectionContentStrip = sectionContent | strip %}{% 
-        if sectionContentStrip.size > 0 %}{% 
-          capture classOutput %}{% 
-            include /functions/class-from-tags.html tags=guideline.introduction.tags %}{% 
-          endcapture %}
-<div{{ classOutput | rstrip }}>
-
-{{ sectionContentStrip }}
-
-</div>
-{%      endif %}{% 
-      endif %}{% 
-    elsif propertyContent.first %}{% 
-      comment %}Output the other guideline sections{% endcomment %}{% 
+    if propertyContent.first %}{% 
+      comment %}Output the guideline section{% endcomment %}{% 
       assign propertyTags = property[1].tags %}{% 
       if relevantSectionsArray.size > 0 %}{% 
         capture tagsCompareResult %}{% 
@@ -87,10 +85,37 @@ if tagsCompareResult contains "true" %}{%
         assign tagsCompareResult="true" %}{% 
       endif %}{% 
       if tagsCompareResult contains "true" %}{% 
-        capture sectionContent %}{% 
-          include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subsectionHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseContentSubsections %}{%  
-        endcapture %}{% 
-        assign sectionContentStrip = sectionContent | strip %}{% 
+        if relevantTagsSubsectionsArray.size > 0 %}{% 
+          comment %}Output a sub-section for each relevant tag (if there is any relevant content){% endcomment %}{% 
+          assign subsectionIndex = 0 %}{% 
+          assign sectionContentStrip = "" %}{% 
+          assign subSubsectionHeadingLevel = subsectionHeadingLevel | plus: 1 %}{% 
+          for currentTag in relevantTagsArrayGuideline %}{% 
+            capture subSectionContent %}{% 
+              include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subSubsectionHeadingLevel relevantTags=currentTag collapseSubsections=include.collapseContentSubsections %}{%  
+            endcapture %}{% 
+            assign sectionContentSubStrip = subSectionContent | strip %}{% 
+            if sectionContentSubStrip.size > 0 %}{% 
+              capture subSectionSection %}
+<section class="{{ currentTag }}">
+  
+<h{{ subSubsectionHeadingLevel }}>{{ relevantTagsSubsectionsArray[subsectionIndex] }}</h{{ subSubsectionHeadingLevel }}>
+
+{{ sectionContentSubStrip }} 
+
+</section>
+{%            endcapture %}{% 
+              assign sectionContentStrip = sectionContentStrip | append: subSectionSection %}{% 
+            endif %}{% 
+            assign subsectionIndex = subsectionIndex | plus: 1 %}{% 
+          endfor %}{% 
+        else %}{% 
+          comment %}Don't output any sub-sections for the relevant tags (group them all together){% endcomment %}{% 
+          capture sectionContent %}{% 
+            include /functions/output-content-array.html contentArray=propertyContent currHeadingLevel=subsectionHeadingLevel relevantTags=relevantTagsArrayGuideline collapseSubsections=include.collapseContentSubsections %}{%  
+          endcapture %}{% 
+          assign sectionContentStrip = sectionContent | strip %}{% 
+        endif %}{% 
         if sectionContentStrip.size > 0 %}{% 
           capture classOutput %}{% 
             include /functions/class-from-tags.html tags=propertyTags %}{% 
@@ -105,7 +130,14 @@ if tagsCompareResult contains "true" %}{%
             assign glyphicon = "bookmark text-muted" %}{% 
           else %}{% 
             assign glyphicon = "" %}{% 
-          endif %}
+          endif %}{% 
+          if propertyKey == "introduction" %}
+<div{{ classOutput | rstrip }}>
+
+{{ sectionContentStrip }}
+
+</div>
+{%        else %}
 <section{{ classOutput | rstrip }}>
 
 <h{{ subsectionHeadingLevel }}>{% if glyphicon.size > 0 %}<span class="glyphicon glyphicon-{{ glyphicon }}" aria-hidden="true"></span> {% endif %}{{ property[1].title }}</h{{ subsectionHeadingLevel }}>
@@ -113,7 +145,8 @@ if tagsCompareResult contains "true" %}{%
 {{ sectionContentStrip }}
 
 </section>
-{%      endif %}{% 
+{%        endif %}{% 
+        endif %}{% 
       endif %}{% 
     endif %}{% 
   endfor %}

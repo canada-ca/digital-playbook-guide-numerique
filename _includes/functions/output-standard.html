@@ -4,6 +4,7 @@ comment %}@param includeStandardTitle {Boolean} Optional (defaults to false). Wh
 comment %}@param relevantGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed{% endcomment %}{% 
 comment %}@param relevantRelatedGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard{% endcomment %}{% 
 comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@param relevantTagsSubsections {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Use of this parameter triggers the generation of sub-sections within each guideline section for each entry in relevantTags. Must have the same number of entries in the same order as relevantTags.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
@@ -159,7 +160,7 @@ endif %}
 
 {% comment %}Output each guideline as a new section and output the included content{% endcomment %}{% 
 for item in outputGuidelinesArray %}{% 
-  include functions/output-guideline.html guideline=item guidelineHeadingLevel=guidelineHeadingLevel standard=standard relevantTags=include.relevantTags relevantSections=relevantSectionsArray collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseContentSubsections %}{% 
+  include functions/output-guideline.html guideline=item guidelineHeadingLevel=guidelineHeadingLevel standard=standard relevantTags=include.relevantTags relevantTagsSubsections=include.relevantTagsSubsections relevantSections=relevantSectionsArray collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseContentSubsections %}{% 
 endfor %}{% 
 comment %}Output a closing section tag if the Standard heading was included{% endcomment %}{% 
 if include.includeStandardTitle %}

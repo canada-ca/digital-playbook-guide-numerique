@@ -7,4 +7,4 @@ altLangPage: stages-developpement-listes-controle-seulement
 collectionDirectory: views-vues/dev-stages
 ---
 
-{% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-stage-alpha,dpgn-stage-beta,dpgn-stage-live" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" %}
+{% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-stage-alpha,dpgn-stage-beta,dpgn-stage-live" relevantTagsSubsections="Alpha stage;Beta stage;Live stage" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" %}
