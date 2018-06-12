@@ -103,7 +103,7 @@ for item in include.contentArray %}{%
      	capture nestedOutputContent %}{% 
         	include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
       	endcapture %}
-<li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}><span markdown="1">{{ nestedOutputContent }}</span></li>
+<li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}>{{ nestedOutputContent }}</li>
 {%    endif %}{% 
     elsif item.content_type == 'inline' %}{% 
       if relevantItem %}{% 
