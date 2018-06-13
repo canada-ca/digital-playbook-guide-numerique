@@ -36,15 +36,16 @@ for item in include.contentArray %}{%
         assign sectionTag = "div" %}{% 
       else %}{% 
         assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}{% 
-        assign sectionTag = "section" %}{% 
+        assign sectionTag = item.source_element %}{% 
       endif %}{% 
       capture nestedOutputSection %}{% 
         include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags %}{% 
       endcapture %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if relevantItem or nestedOutputStrip.size > 0 %}{% 
-        if site.defaultClasses.section.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.section | split: " " %}{% 
+	assign source_element = item.source_element %}{% 
+        if site.defaultClasses[source_element].size > 0 %}{% 
+          assign allClasses = site.defaultClasses[source_element] | split: " " %}{% 
           if item.tags.size > 0 %}{% 
             assign allClasses = allClasses | concat: item.tags %}{% 
           endif %}{% 
@@ -59,224 +60,42 @@ for item in include.contentArray %}{%
 {{ nestedOutputStrip }}
 </{{ sectionTag }}>
 {%    endif %}{% 
-    elsif item.content_type == 'ordered_list' or item.content_type == 'unordered_list' %}{% 
-      comment %}Content block is a list, so output the list elements and then call this function to process the nested content array (list items){% endcomment %}{%  
-      if item.content_type == 'ordered_list' %}{% 
-        assign listTag = "ol" %}{% 
-      else %}{% 
-        assign listTag = "ul" %}{% 
-      endif %}{% 
-      capture nestedOutputList %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-      endcapture %}{% 
-      assign nestedOutputListStrip = nestedOutputList | rstrip %}{% 
-      if relevantItem or nestedOutputListStrip.size > 0 %}{% 
-        if site.defaultClasses.list.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.list | split: " " %}{% 
-          if item.tags.size > 0 %}{% 
-            assign allClasses = allClasses | concat: item.tags %}{% 
-          endif %}{% 
-        else %}{% 
-          assign allClasses = item.tags %}{% 
-        endif %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture %}
-<{{ listTag }}{{ classOutput | rstrip }}>
-{{ nestedOutputListStrip }}
-</{{ listTag }}>{% 
-      endif %}{% 
-    elsif item.content_type == 'list_item' %}{% 
-      comment %}Content block is a list item, so output the list item and any nested content{% endcomment %}{% 
-      capture nestedOutputContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-      endcapture %}{% 
-      assign nestedOutputContentStrip = nestedOutputContent | rstrip %}{% 
-      if relevantItem or nestedOutputListStrip.size > 0 %}{% 
-        if site.defaultClasses.list_item.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.list_item | split: " " %}{% 
-          if item.tags.size > 0 %}{% 
-            assign allClasses = allClasses | concat: item.tags %}{% 
-          endif %}{% 
-        else %}{% 
-          assign allClasses = item.tags %}{% 
-        endif %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture %}
-<li{{ classOutput | rstrip }}{% if item.source.size > 0 %} data-source="{{ item.source }}"{% endif %}>{{ nestedOutputContent }}</li>
-{%    endif %}{% 
-    elsif item.content_type == 'table' %}{% 
-      comment %}Content block is a table, so output the table element and then call this function to process the nested content{% endcomment %}{% 
-      capture nestedTableContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-      endcapture %}{% 
-      assign nestedTableContentStrip = nestedTableContent | rstrip %}{% 
-      if relevantItem or nestedTableContentStrip.size > 0 %}{% 
-        if site.defaultClasses.table.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.table | split: " " %}{% 
-          if item.tags.size > 0 %}{% 
-            assign allClasses = allClasses | concat: item.tags %}{% 
-          endif %}{% 
-        else %}{% 
-          assign allClasses = item.tags %}{% 
-        endif %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture %}
-<table{{ classOutput | rstrip }}>{% 
-        if item.caption.content.size > 0 %}{% 
-          comment %}Output the table caption{% endcomment %}{% 
-          capture nestedCaptionContent %}{% 
-            include /functions/output-content-array.html contentArray=item.caption.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-          endcapture %}{% 
-          if site.defaultClasses.table.size > 0 %}{% 
-            assign allClasses = site.defaultClasses.table | split: " " %}{% 
-            if item.caption.tags.size > 0 %}{% 
-              assign allClasses = allClasses | concat: item.caption.tags %}{% 
-            endif %}{% 
-          else %}{% 
-            assign allClasses = item.caption.tags %}{% 
-          endif %}{% 
-          capture classOutput %}{% 
-            include /functions/class-from-tags.html tags=allClasses %}{% 
-          endcapture %}
-<caption{{ classOutput | rstrip }}>
-{{ nestedCaptionContent | rstrip }}
-</caption>{% 
-        endif %}{% 
-        if item.head.content.size > 0 %}{% 
-          comment %}Output the table head{% endcomment %}{% 
-          capture nestedHeadContent %}{% 
-            include /functions/output-content-array.html contentArray=item.head.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-          endcapture %}{% 
-          if site.defaultClasses.thead.size > 0 %}{% 
-            assign allClasses = site.defaultClasses.thead | split: " " %}{% 
-            if item.head.tags.size > 0 %}{% 
-              assign allClasses = allClasses | concat: item.head.tags %}{% 
-            endif %}{% 
-          else %}{% 
-            assign allClasses = item.head.tags %}{% 
-          endif %}{% 
-          capture classOutput %}{% 
-            include /functions/class-from-tags.html tags=allClasses %}{% 
-          endcapture %}
-<thead{{ classOutput | rstrip }}>
-{{ nestedHeadContent | rstrip }}
-</thead>{% 
-      endif %}{% 
-        comment %}Output the table content{% endcomment %}
-{{ nestedTableContentStrip | rstrip }}
-{%      if item.foot.content.size > 0 %}{% 
-          comment %}Output the table foot{% endcomment %}{% 
-          capture nestedFootContent %}{% 
-            include /functions/output-content-array.html contentArray=item.foot.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-          endcapture %}{% 
-          if site.defaultClasses.tfoot.size > 0 %}{% 
-            assign allClasses = site.defaultClasses.tfoot | split: " " %}{% 
-            if item.foot.tags.size > 0 %}{% 
-              assign allClasses = allClasses | concat: item.foot.tags %}{% 
-            endif %}{% 
-          else %}{% 
-            assign allClasses = item.foot.tags %}{% 
-          endif %}{% 
-          capture classOutput %}{% 
-            include /functions/class-from-tags.html tags=allClasses %}{% 
-          endcapture 
-%}<tfoot{{ classOutput | rstrip }}>
-{{ nestedFootContent | rstrip }}
-</tfoot>{% 
-        endif %}{% 
-      endif %}
-</table>
-{%  elsif item.content_type == 'table_block' %}{% 
-      capture nestedBodyContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-      endcapture %}{% 
-      assign nestedBodyContentStrip = nestedBodyContent | rstrip %}{% 
-      if relevantItem or nestedBodyContentStrip.size > 0 %}{% 
-        if site.defaultClasses.tfoot.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.tbody | split: " " %}{% 
-          if item.tags.size > 0 %}{% 
-            assign allClasses = allClasses | concat: item.tags %}{% 
-          endif %}{% 
-        else %}{% 
-          assign allClasses = item.tags %}{% 
-        endif %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture 
-%}<tbody{{ classOutput | rstrip }}>
-{{ nestedBodyContentStrip }}
-</tbody>{% 
-      endif %}{%
-    elsif item.content_type == 'table_row' %}{% 
-      capture nestedRowContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-      endcapture %}{% 
-      assign nestedRowContentStrip = nestedRowContent | rstrip %}{% 
-      if relevantItem or nestedRowContentStrip.size > 0 %}{% 
-        if site.defaultClasses.tr.size > 0 %}{% 
-          assign allClasses = site.defaultClasses.tr | split: " " %}{% 
-          if item.tags.size > 0 %}{% 
-            assign allClasses = allClasses | concat: item.tags %}{% 
-          endif %}{% 
-        else %}{% 
-          assign allClasses = item.tags %}{% 
-        endif %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture %}
-<tr{{ classOutput | rstrip }}>
-{{ nestedRowContentStrip }}
-</tr>
-{%    endif %}{% 
-    elsif item.content_type == 'table_header_cell' or item.content_type == 'table_data_cell' %}{% 
-      if item.content_type == 'table_header_cell' %}{% 
-        assign cellTag = "th" %}{% 
-      else %}{% 
-        assign cellTag = "td" %}{% 
-      endif %}{% 
-      capture nestedCellContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
-      endcapture %}{% 
-      assign nestedCellContentStrip = nestedCellContent | rstrip %}{% 
-      if relevantItem or nestedCellContentStrip.size > 0 %}{% 
-        if site.defaultClasses[cellTag].size > 0 %}{% 
-          assign allClasses = site.defaultClasses[cellTag] | split: " " %}{% 
-          if item.tags.size > 0 %}{% 
-            assign allClasses = allClasses | concat: item.tags %}{% 
-          endif %}{% 
-        else %}{% 
-          assign allClasses = item.tags %}{% 
-        endif %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture %}
-<{{ cellTag }}{{ classOutput | rstrip }}{% if item.colspan.size > 0 %} colspan="{{ item.colspan }}"{% endif %}{% if item.rowspan.size > 0 %} rowspan="{{ item.rowspan }}"{% endif %}>
-{{ nestedCellContentStrip }}
-</{{ cellTag }}>
-{%    endif %}{% 
-    elsif item.content_type == 'inline' %}{% 
-      if relevantItem %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=item.tags %}{% 
-        endcapture 
-%}<span markdown="1"{{ classOutput }}>{{ item.content }}</span>{%
-      endif %}{% 
+    elsif item.content_type == 'inline' %}{%  
+      comment %}Is inline content, so output the content as is{% endcomment 
+%}{{ item.content }}{% 
     else %}{% 
-      comment %}Content block is a generic content block, so ouput the content block within a div{% endcomment %}{% 
-      if relevantItem %}{% 
+      comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
+      capture nestedBlockContent %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
+      endcapture %}{% 
+      assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 
+      if relevantItem or nestedBlockContentStrip.size > 0 %}{% 
+	assign source_element = item.source_element %}{% 
+        if site.defaultClasses[source_element].size > 0 %}{% 
+          assign allClasses = site.defaultClasses[source_element] | split: " " %}{% 
+          if item.tags.size > 0 %}{% 
+            assign allClasses = allClasses | concat: item.tags %}{% 
+          endif %}{% 
+        else %}{% 
+          assign allClasses = item.tags %}{% 
+        endif %}{% 
+        comment %}Output all of the source attributes except for class{% endcomment %}{% 
+        assign attributesOutput = "" %}{% 
+        for attribute in item.source_attributes %}{% 
+          assign attributeName = attribute[0] %}{% 
+          assign attributeValue = attribute[1] %}{% 
+          unless attributeName == "class" %}{% 
+            assign attributesOutput = attributesOutput | append: ' ' | append: attributeName | append: '="' | append: attributeValue | append: '"' %}{%  
+          endunless %}{% 
+        endfor %}{% 
         capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=item.tags %}{% 
+          include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
-{{ item.content }}
+<{{ source_element }}{{ classOutput | rstrip }}{{ attributesOutput }}>
+{{ nestedBlockContentStrip }}
+</{{ source_element }}>
 {%    endif %}{% 
     endif %}{% 
   endcapture %}{% 
-  comment %}Special handling to ensure output is properly spaced (e.g., list items are on separate lines with no blank lines in between){% endcomment %}{%  
-  if item.content_type == 'list_item' 
-   %}{{ rawOutput | lstrip }}{% 
-  else %}{{ rawOutput | strip }}{% 
-  endif %}{% 
+  comment %}Special handling to ensure output is properly spaced (e.g., list items are on separate lines with no blank lines in between){% endcomment %}{{ rawOutput | lstrip }}{% 
 endfor %}

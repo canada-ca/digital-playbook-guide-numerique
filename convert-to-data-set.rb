@@ -20,7 +20,7 @@ end
 common_data = site_data["common"]
 jekyll_output_dir = "rendered_site/"
 
-def build_content_array(html_block, is_parent, parent_heading_level, logger, parent_tags, parent_content_source)
+def build_content_array(html_block, is_parent, parent_heading_level, logger, parent_tags)
 	content_array = Array.new
 	ignore_nodes_number = 0
 	if is_parent
@@ -43,7 +43,6 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					next
 				else
 					tags = node_class.split(" ")
-					node.remove_attribute("class")
 				end
 
 				# If parent_tags exists, then append it to the current tags, eliminating duplicates
@@ -52,36 +51,25 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					tags = tags.uniq
 	 			end
 
-				node_source = node.get_attribute("data-source")
-				if node_source.nil? || node_source.length === 0
-					content_source = Array.new
-				else
-					content_source = node_source.gsub(" ", "").split(",")
-					node.remove_attribute("data-source")
-				end
-
-	 			# If content_source is nil then use parent_content_source instead
-	 			if !parent_content_source.nil? && parent_content_source.length > 0 && (content_source.nil? || content_source.length == 0)      
-					content_source = parent_content_source
-				end
-
-				if node.name === "section"
+				if node.name === "section" || node.name === "article" || node.name === "aside" || node.name === "nav"
 					item["content_type"] = "section"
+					item["source_element"] = node.name
+					item["source_attributes"] = node.attributes
 					item["tags"] = tags
-					item["source"] = content_source
 					heading = node.css("h#{parent_heading_level + 1}")
 					if heading.count >= 1
 						item["title"] = heading[0].inner_html
 					else
 						# Handle missing heading
-						logger.error("Heading could not be found when processing a section (build_content_array)")
+						logger.error("h#{parent_heading_level + 1} could not be found when processing #{node.name} (build_content_array)")
 						logger.debug(node)
 					end
-					item["content"] = build_content_array(node, true, parent_heading_level + 1, logger, tags, content_source)
+					item["content"] = build_content_array(node, true, parent_heading_level + 1, logger, tags)
 				elsif node.name === ("h#{parent_heading_level + 1}")
 					item["content_type"] = "section"
+					item["source_element"] = "section"
+					item["source_attributes"] = Hash.new
 					item["tags"] = tags
-					item["source"] = content_source
 					item["title"] = node.inner_html
 					node_array = Array.new
 					next_node = node.next
@@ -92,129 +80,9 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 						next_node = next_node.next
 					end
 					ignore_nodes_number += node_array.count
-					item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger, tags, content_source)
-				elsif node.name === "ul" || node.name === "ol"
-					if node.name === "ul"
-						content_type = "unordered_list"
-					else
-						content_type = "ordered_list"
-					end
-
-					# Check if previous item (that was not ignored) was a list of the same type, and if it was, combine it with this list       
-					last_item_index = content_array.length - 1
-					if last_item_index >= 0 && content_array[last_item_index]["content_type"] === content_type
-						# Combine the tags
-						if !tags.nil? && tags.length > 0
-							last_list_tags = content_array[last_item_index]["tags"]
-							last_list_tags.push(*tags)
-							content_array[last_item_index]["tags"] = last_list_tags.uniq
-						end
-
-						# Combine the content sources
-						if !content_source.nil? && content_source.length > 0
-							last_list_source = content_array[last_item_index]["source"]
-							last_list_source.push(*content_source)
-							content_array[last_item_index]["source"] = last_list_source.uniq
-						end
-
-						# Combine the list items
-						last_list_items = content_array[last_item_index]["content"]
-						new_list_items = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
-						last_list_items.push(*new_list_items)
-						content_array[last_item_index]["content"] = last_list_items.uniq
-
-						# Don't push a new item into the content array since updated the last item
-						cancel_content_push = true
-					else
-						item["content_type"] = content_type
-						item["tags"] = tags
-						item["source"] = content_source
-						item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
-					end
-				elsif node.name === "li"
-					item["content_type"] = "list_item"
-					item["tags"] = tags
-					item["source"] = content_source
-					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
-				elsif node.name === "table"
-					item["content_type"] = "table"
-					item["tags"] = tags
-					item["source"] = content_source
-
-					# Add the caption if it exists
-					caption = node.css("caption")
-					if !caption.nil? && caption.length > 0
-						item["caption"] = build_content_array(caption, false, parent_heading_level, logger, tags, content_source)[0]
-		 			end
-
-					# Add the thead if it exists
-					thead = node.css("thead")
-					if !thead.nil? && thead.length > 0
-						item["head"] = build_content_array(thead, false, parent_heading_level, logger, tags, content_source)[0]
- 					end
-
-					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
-
-					# Add the tfoot if it exists
-					tfoot = node.css("tfoot")
-					if !tfoot.nil? && tfoot.length > 0
-						item["foot"] = build_content_array(tfoot, false, parent_heading_level, logger, tags, content_source)[0]
- 					end
-				elsif node.name === "caption"
-					# Ignore if iterating through the table children (should only process tbody and tr)					
-					if !is_parent
-						item["content_type"] = "caption"
-						item["tags"] = tags
-						item["source"] = content_source
-						item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
-					else
-						cancel_content_push = true
-					end
-				elsif node.name === "thead" || node.name === "tfoot"
-					# Ignore if iterating through the table children (should only process tbody and tr)
-					if !is_parent
-						item["content_type"] = "table_block"
-						item["tags"] = tags
-						item["source"] = content_source
-						item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
-					else
-						cancel_content_push = true
-					end
-				elsif node.name === "tbody"
-					item["content_type"] = "table_block"
-					item["tags"] = tags
-					item["source"] = content_source
-					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
-				elsif node.name === "tr"
-					item["content_type"] = "table_row"
-					item["tags"] = tags
-					item["source"] = content_source
-					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
-				elsif node.name === "th" || node.name === "td"
-					if node.name === "th"
-						item["content_type"] = "table_header_cell"
-					else
-						item["content_type"] = "table_data_cell"
-					end
-					item["tags"] = tags
-					item["source"] = content_source
-					if !node["colspan"].nil?
-						item["colspan"] = node["colspan"]
-					end					
-					if !node["rowspan"].nil?
-						item["rowspan"] = node["rowspan"]
-					end
-					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
+					item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger, tags)
 				elsif node.text? || (!node.description.nil? && node.description.inline?)
-					# Ensure the tags and source are on any non-text nodes (to avoid using an extra span)					
-					if !node.text?
-						if tags.length > 0
-							node["class"] = tags.join(" ")
-						end
-						if content_source.length > 0
-							node["data-source"] = content_source.join(",")
-						end
-					end
+					# Processing inline content
 
 					# If the previous node was inline, then combine the inline nodes
 					if content_array.length > 0 && content_array[content_array.length - 1]["content_type"] === "inline"
@@ -227,13 +95,6 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 							content_array[last_item_index]["tags"] = last_list_tags.uniq
 						end
 
-						# Combine the content sources
-						if !content_source.nil? && content_source.length > 0
-							last_list_source = content_array[last_item_index]["source"]
-							last_list_source.push(*content_source)
-							content_array[last_item_index]["source"] = last_list_source.uniq
-						end
-
 						# Combine the inline items
 						content_array[last_item_index]["content"] += node.to_s
 
@@ -243,25 +104,51 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 						# Add a new inline item because it is the first in a series
 						item["content_type"] = "inline"
 						item["tags"] = tags
-						item["source"] = content_source
 						item["content"] = node.to_s
 					end
 				elsif node.name != "h#{parent_heading_level}"
-					# Ensure the tags and source are on the node (to avoid using an extra div)					
+					# Processing a block-level content block
 
-					if tags.length > 0
-						node["class"] = tags.join(" ")
-					end
-					if content_source.length > 0
-						node["data-source"] = content_source.join(",")
-					end
+					# Check if previous item (that was not ignored) was a list of the same type, and if it was, combine it with this list
+					last_item_index = content_array.length - 1
+					if last_item_index >= 0 && (node.name === "ol" || node.name == "ul") && content_array[last_item_index]["source_element"] === node.name
+						# Combine the tags
+						if !tags.nil? && tags.length > 0
+							last_list_tags = content_array[last_item_index]["tags"]
+							last_list_tags.push(*tags)
+							content_array[last_item_index]["tags"] = last_list_tags.uniq
+						end
 
-					item["content_type"] = "block"
-					item["tags"] = tags
-					item["source"] = content_source
-					node["data-source"] = content_source
-					item["content"] = node
+						# Combine the source attributes
+						content_array[last_item_index]["source_attributes"].each do |name, value|
+							if name != "id"
+								if name === "class"
+									separator = " "
+								else
+									separator = ","
+								end
+								new_value = value.to_s + separator + node[name].to_s
+								content_array[last_item_index]["source_attributes"][name] = new_value.split(separator).uniq.join(separator)
+							end
+						end
+
+						# Combine the list items
+						last_list_items = content_array[last_item_index]["content"]
+						new_list_items = build_content_array(node, true, parent_heading_level, logger, tags)
+						last_list_items.push(*new_list_items)
+						content_array[last_item_index]["content"] = last_list_items
+
+						# Don't push a new item into the content array since updated the last item
+						cancel_content_push = true
+					else
+						item["content_type"] = "block"
+						item["source_element"] = node.name
+						item["source_attributes"] = node.attributes
+						item["tags"] = tags
+						item["content"] = build_content_array(node, true, parent_heading_level, logger, tags)
+					end
 				end
+
 				if !cancel_content_push && !item["content_type"].nil?
 					content_array.push(item)
 				end
@@ -322,14 +209,8 @@ lang.each do |lang|
 		else
 			tags = elem_intro["class"].split(" ")
 		end
-		if elem_intro["data-source"].nil? || elem_intro["data-source"].length == 0
-			source = Array.new
-		else
-			source = elem_intro["class"].gsub(" ","").split(",")
-		end
 		introduction["tags"] = tags
-		introduction["source"] = source
-		introduction["content"] = build_content_array(elem_intro, true, 2, logger, tags, source)
+		introduction["content"] = build_content_array(elem_intro, true, 2, logger, tags)
 		data["introduction"] = introduction
 	else
 		# Handling for Playbook intro not being found
@@ -365,7 +246,6 @@ lang.each do |lang|
 			abort
 		end
 
-
 		standard["title"] = front_matter["title"]
 		standard["tags"] = common_data_standard["tags"]
 		if front_matter["tags"] != nil
@@ -388,14 +268,8 @@ lang.each do |lang|
 			else
 				tags = elem_standard_intro["class"].split(" ")
 			end
-			if elem_standard_intro["data-source"].nil? || elem_standard_intro["data-source"].length == 0
-				source = Array.new
-			else
-				source = elem_standard_intro["class"].gsub(" ","").split(",")
-			end
 			standard_intro["tags"] = tags
-			standard_intro["source"] = source
-			standard_intro["content"] = build_content_array(elem_standard_intro, true, 1, logger, tags, source)
+			standard_intro["content"] = build_content_array(elem_standard_intro, true, 1, logger, tags)
 		else
 			# Handling for standard intro not being found
 			logger.error("Introduction for '#{standard["title"]}' could not be found using '#{elems_standard_intro_selector}'")
@@ -455,14 +329,8 @@ lang.each do |lang|
 					else
 						tags = elem_guideline_section["class"].split(" ")
 					end
-					if elem_guideline_section["data-source"].nil? || elem_guideline_section["data-source"].length == 0
-						source = Array.new
-					else
-						source = elem_guideline_section["class"].gsub(" ","").split(",")
-					end
 					guideline_section["tags"] = tags
-					guideline_section["source"] = source
-					guideline_section["content"] = build_content_array(elem_guideline_section, true, guideline_section_name == "introduction" ? 2 : 3, logger, tags, source)
+					guideline_section["content"] = build_content_array(elem_guideline_section, true, guideline_section_name == "introduction" ? 2 : 3, logger, tags)
 				else
 					# Handling for guideline section not being found
 					logger.warn("'#{guideline_section_name}' section could not be found in '#{guideline["title"]}' using '#{elems_guideline_section_selector}'")
@@ -481,7 +349,7 @@ lang.each do |lang|
 	standards["content"] = standards_content
 	data["standards"] = standards
 
-	output_dataset = "_data/#{site_data["playbookData"]["#{lang}"]}-generated.json"
+	output_dataset = "_data/#{site_data["playbookData"]["#{lang}"]}.json"
 	logger.info("Generating '#{output_dataset}'")
 	File.write(output_dataset, JSON.pretty_generate(data) << "\n")
 end

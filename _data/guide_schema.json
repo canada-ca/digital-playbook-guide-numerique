@@ -11,14 +11,6 @@
       },
       "uniqueItems": true
     },
-    "source": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uri"
-      },
-      "uniqueItems": true
-    },
     "introduction": {
       "type": "object",
       "properties": {
@@ -35,8 +27,6 @@
         "minItems": 1,
         "oneOf": [
           { "$ref": "#/definitions/section" },
-          { "$ref": "#/definitions/list" },
-          { "$ref": "#/definitions/table" },
           { "$ref": "#/definitions/block" },
           { "$ref": "#/definitions/inline" }
         ]
@@ -49,183 +39,17 @@
           "type": "string",
           "enum": ["section"]
         },
+        "source_element": {
+          "type": "string"
+	},
+        "source_attributes": {
+          "type": "object"
+	},
         "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
         "title": {"$ref": "#/definitions/title"},
         "content": {"$ref": "#/definitions/content"}
       },
       "required": ["content_type", "title", "content"]
-    },
-    "list": {
-      "type": "object",
-      "properties": {
-        "content_type": {
-          "type": "string",
-          "enum": ["unordered_list", "ordered_list"]
-        },
-        "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
-        "content": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "minItems": 1,
-            "oneOf": [
-              { "$ref": "#/definitions/list_item" }
-            ]
-          }
-        }
-      },
-      "required": ["content_type", "content"]
-    },
-    "list_item": {
-      "type": "object",
-      "properties": {
-        "content_type": {
-          "type": "string",
-          "enum": ["list_item"]
-        },
-        "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
-        "content": {"$ref": "#/definitions/content"}
-      },
-      "required": ["content_type", "content"]
-    },
-    "table": {
-      "type": "object",
-      "properties": {
-        "content_type": {
-          "type": "string",
-          "enum": ["table"]
-        },
-        "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
-        "caption": {
-          "type": "object",
-          "properties": {
-            "content_type": {
-              "type": "string",
-              "enum": ["caption"]
-            },
-            "content": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "oneOf": [
-                  { "$ref": "#/definitions/section" },
-                  { "$ref": "#/definitions/list" },
-                  { "$ref": "#/definitions/inline" }
-                ]
-              }
-            }
-          },
-          "required": ["content_type", "content"]
-        },
-        "head": {"$ref": "#/definitions/table_block"},
-        "content": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "minItems": 1,
-            "oneOf": [
-              { "$ref": "#/definitions/table_block" },
-              { "$ref": "#/definitions/table_row" }
-            ]
-          }
-        },
-        "foot": {"$ref": "#/definitions/table_block"}
-      },
-      "required": ["content_type", "content"]
-    },
-    "table_block": {
-      "type": "object",
-      "properties": {
-        "content_type": {
-          "type": "string",
-          "enum": ["table_block"]
-        },
-        "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
-        "content": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "minItems": 1,
-            "oneOf": [
-              { "$ref": "#/definitions/table_row" }
-            ]
-          }
-        }
-      },
-      "required": ["content_type", "content"]
-    },
-    "table_row": {
-      "type": "object",
-      "properties": {
-        "content_type": {
-          "type": "string",
-          "enum": ["table_row"]
-        },
-        "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
-        "content": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "minItems": 1,
-            "oneOf": [
-              { "$ref": "#/definitions/table_header_cell" },
-              { "$ref": "#/definitions/table_data_cell" }
-            ]
-          }
-        }
-      },
-      "required": ["content_type", "content"]
-    },
-    "table_header_cell": {
-      "type": "object",
-      "properties": {
-        "content_type": {
-          "type": "string",
-          "enum": ["table_header_cell"]
-        },
-        "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
-        "colspan": {"$ref": "#/definitions/table_span"},
-        "rowspan": {"$ref": "#/definitions/table_span"},
-        "content": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "minItems": 1,
-            "oneOf": [
-              { "$ref": "#/definitions/list" },
-              { "$ref": "#/definitions/block" },
-              { "$ref": "#/definitions/inline" }
-            ]
-          }
-        }
-      },
-      "required": ["content_type", "content"]
-    },
-    "table_data_cell": {
-      "type": "object",
-      "properties": {
-        "content_type": {
-          "type": "string",
-          "enum": ["table_data_cell"]
-        },
-        "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
-        "colspan": {"$ref": "#/definitions/table_span"},
-        "rowspan": {"$ref": "#/definitions/table_span"},
-        "content": {"$ref": "#/definitions/content"}
-      },
-      "required": ["content_type", "content"]
-    },
-    "table_span": {
-      "type": "number",
-      "exclusiveMinimum": 1
     },
     "block": {
       "type": "object",
@@ -234,13 +58,16 @@
           "type": "string",
           "enum": ["block"]
         },
-        "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
-        "content": {
+        "source_element": {
           "type": "string"
-        }
+	},
+        "source_attributes": {
+          "type": "object"
+	},
+        "tags": {"$ref": "#/definitions/tags"},
+        "content": {"$ref": "#/definitions/content"}
       },
-      "required": ["content_type", "content"]
+      "required": ["content_type", "source_element", "content"]
     },
     "inline": {
       "type": "object",
@@ -250,7 +77,6 @@
           "enum": ["inline"]
         },
         "tags": {"$ref": "#/definitions/tags"},
-        "source": {"$ref": "#/definitions/source"},
         "content": {
           "type": "string"
         }

@@ -13,8 +13,8 @@ if include.listClasses.size > 0 %}{%
   assign listClasses = include.listClasses %}{% 
 elsif site.defaultClasses.standardsListClasses.size > 0 %}{% 
   assign listClasses = site.defaultClasses.standardsListClasses %}{% 
-elsif site.defaultClasses.list.size > 0 %}{% 
-  assign listClasses = site.defaultClasses.list %}{% 
+elsif site.defaultClasses.ul.size > 0 %}{% 
+  assign listClasses = site.defaultClasses.ul %}{% 
 else %}{% 
   assign listClasses = "" %}{% 
 endif %}{% 
@@ -23,8 +23,8 @@ if include.listItemClasses.size > 0 %}{%
   assign listItemClasses = include.listItemClasses %}{% 
 elsif site.defaultClasses.standardsListItem.size > 0 %}{% 
   assign listItemClasses = site.defaultClasses.standardsListItem %}{% 
-elsif site.defaultClasses.listitem.size > 0 %}{% 
-  assign listItemClasses = site.defaultClasses.listitem %}{% 
+elsif site.defaultClasses.li.size > 0 %}{% 
+  assign listItemClasses = site.defaultClasses.li %}{% 
 else %}{% 
   assign listItemClasses = "" %}{% 
 endif %}{% 
