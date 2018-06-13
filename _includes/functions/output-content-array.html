@@ -3,7 +3,8 @@ comment %}@param contentArray {Array} Array of content blocks to process{% endco
 comment %}@param currHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within){% endcomment %}{% 
 comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param collapseSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
-comment %}@return {String} Returns the processed output from the content array{% endcomment %}{%  
+comment %}@return {String} Returns the processed output from the content array{% endcomment %}{% 
+assign currentHeadingLevel = include.currHeadingLevel %}{% 
 for item in include.contentArray %}{% 
   comment %}Have to restart with include.relevantTags on each loop to avoid recursion affecting the value{% endcomment %}{% 
   if include.relevantTags.size > 0 %}{% 
@@ -32,15 +33,15 @@ for item in include.contentArray %}{%
     if item.content_type == 'section' %}{%
       comment %}Content block is a section, so output the section elements, the heading and then call this function to process the nested content array{% endcomment %}{% 
       if include.collapseSubsections == true %}{% 
-        assign nextHeadingLevel = include.currHeadingLevel %}{% 
-        assign sectionTag = "div" %}{% 
+        assign nextHeadingLevel = currentHeadingLevel %}{% 
       else %}{% 
-        assign nextHeadingLevel = include.currHeadingLevel | plus: 1 %}{% 
-        assign sectionTag = item.source_element %}{% 
+        assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
       endif %}{% 
+      include /functions/store-data.html name="item-heading" %}{% 
       capture nestedOutputSection %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseSubsections %}{% 
       endcapture %}{% 
+      include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if relevantItem or nestedOutputStrip.size > 0 %}{% 
 	assign source_element = item.source_element %}{% 
@@ -51,6 +52,13 @@ for item in include.contentArray %}{%
           endif %}{% 
         else %}{% 
           assign allClasses = item.tags %}{% 
+        endif %}{% 
+        if include.collapseSubsections == true %}{% 
+          assign sectionTag = "div" %}{% 
+          assign nextHeadingLevel = currentHeadingLevel %}{% 
+        else %}{% 
+          assign sectionTag = item.source_element %}{% 
+          assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
         endif %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
@@ -65,9 +73,11 @@ for item in include.contentArray %}{%
 %}{{ item.content }}{% 
     else %}{% 
       comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
+      include /functions/store-data.html name="item-heading" %}{% 
       capture nestedBlockContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=include.currHeadingLevel relevantTags=include.relevantTags %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseSubsections %}{% 
       endcapture %}{% 
+      include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 
       if relevantItem or nestedBlockContentStrip.size > 0 %}{% 
         if site.defaultClasses[item.source_element].size > 0 %}{% 
@@ -84,7 +94,7 @@ for item in include.contentArray %}{%
           assign attributeName = attribute[0] %}{% 
           assign attributeValue = attribute[1] %}{% 
           unless attributeName == "class" %}{% 
-            assign attributesOutput = attributesOutput | append: ' ' | append: attributeName | append: '="' | append: attributeValue | append: '"' %}{%  
+            assign attributesOutput = attributesOutput | append: ' ' | append: attributeName | append: '="' | append: attributeValue | append: '"' %}{% 
           endunless %}{% 
         endfor %}{% 
         capture classOutput %}{% 
