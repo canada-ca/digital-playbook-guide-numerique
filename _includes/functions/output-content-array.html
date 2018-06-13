@@ -5,17 +5,19 @@ comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-s
 comment %}@param collapseSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array{% endcomment %}{% 
 assign currentHeadingLevel = include.currHeadingLevel %}{% 
-for item in include.contentArray %}{% 
-  comment %}Have to restart with include.relevantTags on each loop to avoid recursion affecting the value{% endcomment %}{% 
-  if include.relevantTags.size > 0 %}{% 
-    if include.relevantTags.first %}{% 
-      assign relevantTagsArray = include.relevantTags %}{% 
-    else %}{% 
-      assign relevantTagsArray = include.relevantTags | replace: " ", "" | split: "," %}{% 
-    endif %}{% 
+unless itemRecursionLevel > 0 %}{% 
+  assign itemRecursionLevel = 0 %}{% 
+endunless %}{% 
+if include.relevantTags.size > 0 %}{% 
+  if include.relevantTags.first %}{% 
+    assign relevantTagsArray = include.relevantTags %}{% 
   else %}{% 
-      assign relevantTagsArray = "" %}{% 
+    assign relevantTagsArray = include.relevantTags | replace: " ", "" | split: "," %}{% 
   endif %}{% 
+else %}{% 
+  assign relevantTagsArray = "" %}{% 
+endif %}{% 
+for item in include.contentArray %}{% 
   if relevantTagsArray.size > 0 %}{% 
     capture tagsCompareResult %}{% 
       include /functions/find-array-match.html array1=item.tags array2=relevantTagsArray %}{% 
