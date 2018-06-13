@@ -70,9 +70,8 @@ for item in include.contentArray %}{%
       endcapture %}{% 
       assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 
       if relevantItem or nestedBlockContentStrip.size > 0 %}{% 
-	assign source_element = item.source_element %}{% 
-        if site.defaultClasses[source_element].size > 0 %}{% 
-          assign allClasses = site.defaultClasses[source_element] | split: " " %}{% 
+        if site.defaultClasses[item.source_element].size > 0 %}{% 
+          assign allClasses = site.defaultClasses[item.source_element] | split: " " %}{% 
           if item.tags.size > 0 %}{% 
             assign allClasses = allClasses | concat: item.tags %}{% 
           endif %}{% 
@@ -91,9 +90,9 @@ for item in include.contentArray %}{%
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
-<{{ source_element }}{{ classOutput | rstrip }}{{ attributesOutput }}>
+<{{ item.source_element }}{{ classOutput | rstrip }}{{ attributesOutput }}>
 {{ nestedBlockContentStrip }}
-</{{ source_element }}>
+</{{ item.source_element }}>
 {%    endif %}{% 
     endif %}{% 
   endcapture %}{% 
