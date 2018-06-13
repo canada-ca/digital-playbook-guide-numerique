@@ -47,9 +47,9 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 ### Liste de contrôle
 
 - Interviewer les utilisateurs potentiels pour aider à développer les éléments suivants pour le service :
-  a. Les objectifs de l'utilisateur (par exemple, en tant que \[type d'utilisateur\], je veux \[un certain mais\] de sorte que \[une raison quelconque\])
-  b. Caractères de l'utilisateur (par exemple, en fonction des habitudes, de la personnalité, des attitudes et des motifs)
-  c. Profils d'utilisateurs (Ex., En fonction de données démographiques telles que le sexe, l'âge, l'emplacement, le revenu et la taille de la famille)
+  1. Les objectifs de l'utilisateur (par exemple, en tant que \[type d'utilisateur\], je veux \[un certain mais\] de sorte que \[une raison quelconque\])
+  1. Caractères de l'utilisateur (par exemple, en fonction des habitudes, de la personnalité, des attitudes et des motifs)
+  1. Profils d'utilisateurs (Ex., En fonction de données démographiques telles que le sexe, l'âge, l'emplacement, le revenu et la taille de la famille)
 - Utiliser une gamme de méthodes de recherche qualitative et quantitative pour déterminer les objectifs, les besoins et les comportements des personnes
 - Créer et maintenir une liste des tâches prioritaires que les utilisateurs tentent de faire (c.-à-d., « User stories »)
 - Tester régulièrement avec les utilisateurs lors de la construction du service et après le lancement du service pour vérifier qu'il répond aux besoins de l'utilisateur et pour identifier les parties du service que les utilisateurs peuvent trouver difficiles

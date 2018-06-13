@@ -47,9 +47,9 @@ Users should be involved throughout the lifecycle of the service, with user rese
 ### Checklist
 
 - Interview potential users to help develop the following for the service:
-    a.  User goals (e.g., As a \[user type\], I want \[some goal\] so that \[some reason\])
-    b.  User personas (e.g., based on habits, personality, attitudes and motives)
-    c.  User profiles (e.g., based on demographics such as gender, age, location, income and family size)
+  1.  User goals (e.g., As a \[user type\], I want \[some goal\] so that \[some reason\])
+  1.  User personas (e.g., based on habits, personality, attitudes and motives)
+  1.  User profiles (e.g., based on demographics such as gender, age, location, income and family size)
 - Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors
 - Create and maintain a list of priority tasks that users are trying to accomplish (i.e., "user stories")
 - Regularly test with users when building the service and after the service has been launched to ensure it meets the needs of user and to identify any parts of the service that users may find difficult

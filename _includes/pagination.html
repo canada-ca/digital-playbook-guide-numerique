@@ -22,11 +22,11 @@ endunless %}{%
 assign prevIndex = activeIndex | minus: 1 %}{% 
 assign nextIndex = activeIndex | plus: 1 %}
 <div class="text-center">
-<ul class="pagination">
-{% if prevIndex == -1 
-  %}  <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ dataSource.introduction.title }}</span></a></li>{% 
-elsif prevIndex > -1 
-  %}  <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.standardFile[prevIndex][page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ standards[prevIndex].title }}</span></a></li>{% 
+<ul class="pagination">{% 
+if prevIndex == -1 %}
+  <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ dataSource.introduction.title }}</span></a></li>{% 
+elsif prevIndex > -1 %}  
+  <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.standardFile[prevIndex][page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ standards[prevIndex].title }}</span></a></li>{% 
 endif %}
   <li{% 
 if activeIndex == -1 
@@ -38,10 +38,9 @@ if activeIndex == -1
 else 
   %}{{ baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}{% 
 endif 
-%}">{{ dataSource.introduction.title | replace: " (draft)", "" | replace: " (ébauche)", "" }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ dataSource.introduction.title }}</span></a></li>
-{% 
-for standard in standards 
-  %}<li{% 
+%}">{{ dataSource.introduction.title | replace: " (draft)", "" | replace: " (ébauche)", "" }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ dataSource.introduction.title }}</span></a></li>{% 
+for standard in standards %}
+  <li{% 
   if standard.title == page.title or activeIndex == standardIndex
     %} class="active"{% 
   endif 
@@ -54,8 +53,8 @@ for standard in standards
   %}">{{ standardIndex | plus: 1 }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ standard.title }}</span></a></li>{% 
   assign standardIndex = standardIndex | plus: 1 %}{% 
 endfor %}{% 
-if nextIndex < 10 
-  %}<li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.standardFile[nextIndex][page.lang] }}{{ site.RenderedFileExtension }}" rel="next">{{ site.Next[page.lang] }}<span class="wb-inv"> - {{ standards[nextIndex].title }}</span></a></li>{% 
+if nextIndex < 10 %}
+  <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.standardFile[nextIndex][page.lang] }}{{ site.RenderedFileExtension }}" rel="next">{{ site.Next[page.lang] }}<span class="wb-inv"> - {{ standards[nextIndex].title }}</span></a></li>{% 
 endif %}
 </ul>
 </div>

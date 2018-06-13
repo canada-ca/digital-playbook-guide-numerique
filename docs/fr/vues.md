@@ -98,6 +98,25 @@ Tags can be applied directly to content in the source .md files, using either th
       <td><pre>- {: .dpgn-stage-alpha .dpgn-stage-live} List item</pre></td>
     </tr>
     <tr>
+      <td>Table</td>
+      <td><code>&lt;table class="dpgn-stage-alpha dpgn-stage-live"&gt;</code></td>
+      <td><pre>
+| Header 1 | Header 2 |
+|----------|----------|
+| Data 1   | Data 2   |
+{: .dpgn-stage-alpha .dpgn-stage-live}</pre></td>
+    </tr>
+    <tr>
+      <td>Table row</td>
+      <td><code>&lt;tr class="dpgn-stage-alpha dpgn-stage-live"&gt;</code></td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Table cell</td>
+      <td><code>&lt;td class="dpgn-stage-alpha dpgn-stage-live"&gt;Table cell&lt;/td&gt;</code></td>
+      <td>n/a</td>
+    </tr>
+    <tr>
       <td>Paragraph</td>
       <td><code>&lt;p class="dpgn-stage-alpha dpgn-stage-live"&gt;Paragraph content&lt;/p&gt;</code></td>
       <td><pre>Paragraph content
