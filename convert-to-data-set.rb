@@ -36,8 +36,8 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 				item = Hash.new
 				cancel_content_push = false
 
-				node_class = node["class"]
-				if node_class.nil? || node_class.length == 0
+				node_class = node.get_attribute("class")
+				if node_class.nil? || node_class.length === 0
 					tags = Array.new
 				elsif node_class.include? "dpgn-data-ignore"
 					next
@@ -47,13 +47,13 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 				end
 
 				# If parent_tags exists, then append it to the current tags, eliminating duplicates
-				if !parent_tags.nil?
+				if !parent_tags.nil? && parent_tags.length > 0
 	 				tags.push(*parent_tags.reject { |tag| tag.include? "dpgn-section" })
 					tags = tags.uniq
 	 			end
 
-				node_source = node["data-source"]
-				if node_source.nil? || node_source.length == 0
+				node_source = node.get_attribute("data-source")
+				if node_source.nil? || node_source.length === 0
 					content_source = Array.new
 				else
 					content_source = node_source.gsub(" ", "").split(",")
@@ -61,7 +61,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 				end
 
 	 			# If content_source is nil then use parent_content_source instead
-	 			if !parent_content_source.nil? && (content_source.nil? || content_source.length == 0)      
+	 			if !parent_content_source.nil? && parent_content_source.length > 0 && (content_source.nil? || content_source.length == 0)      
 					content_source = parent_content_source
 				end
 
@@ -136,7 +136,87 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					item["tags"] = tags
 					item["source"] = content_source
 					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
+				elsif node.name === "table"
+					item["content_type"] = "table"
+					item["tags"] = tags
+					item["source"] = content_source
+
+					# Add the caption if it exists
+					caption = node.css("caption")
+					if !caption.nil? && caption.length > 0
+						item["caption"] = build_content_array(caption, false, parent_heading_level, logger, tags, content_source)[0]
+		 			end
+
+					# Add the thead if it exists
+					thead = node.css("thead")
+					if !thead.nil? && thead.length > 0
+						item["head"] = build_content_array(thead, false, parent_heading_level, logger, tags, content_source)[0]
+ 					end
+
+					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
+
+					# Add the tfoot if it exists
+					tfoot = node.css("tfoot")
+					if !tfoot.nil? && tfoot.length > 0
+						item["foot"] = build_content_array(tfoot, false, parent_heading_level, logger, tags, content_source)[0]
+ 					end
+				elsif node.name === "caption"
+					# Ignore if iterating through the table children (should only process tbody and tr)					
+					if !is_parent
+						item["content_type"] = "caption"
+						item["tags"] = tags
+						item["source"] = content_source
+						item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
+					else
+						cancel_content_push = true
+					end
+				elsif node.name === "thead" || node.name === "tfoot"
+					# Ignore if iterating through the table children (should only process tbody and tr)
+					if !is_parent
+						item["content_type"] = "table_block"
+						item["tags"] = tags
+						item["source"] = content_source
+						item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
+					else
+						cancel_content_push = true
+					end
+				elsif node.name === "tbody"
+					item["content_type"] = "table_block"
+					item["tags"] = tags
+					item["source"] = content_source
+					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
+				elsif node.name === "tr"
+					item["content_type"] = "table_row"
+					item["tags"] = tags
+					item["source"] = content_source
+					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
+				elsif node.name === "th" || node.name === "td"
+					if node.name === "th"
+						item["content_type"] = "table_header_cell"
+					else
+						item["content_type"] = "table_data_cell"
+					end
+					item["tags"] = tags
+					item["source"] = content_source
+					if !node["colspan"].nil?
+						item["colspan"] = node["colspan"]
+					end					
+					if !node["rowspan"].nil?
+						item["rowspan"] = node["rowspan"]
+					end
+					item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
 				elsif node.text? || (!node.description.nil? && node.description.inline?)
+					# Ensure the tags and source are on any non-text nodes (to avoid using an extra span)					
+					if !node.text?
+						if tags.length > 0
+							node["class"] = tags.join(" ")
+						end
+						if content_source.length > 0
+							node["data-source"] = content_source.join(",")
+						end
+					end
+
+					# If the previous node was inline, then combine the inline nodes
 					if content_array.length > 0 && content_array[content_array.length - 1]["content_type"] === "inline"
 						last_item_index = content_array.length - 1
 
@@ -167,9 +247,19 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 						item["content"] = node.to_s
 					end
 				elsif node.name != "h#{parent_heading_level}"
+					# Ensure the tags and source are on the node (to avoid using an extra div)					
+
+					if tags.length > 0
+						node["class"] = tags.join(" ")
+					end
+					if content_source.length > 0
+						node["data-source"] = content_source.join(",")
+					end
+
 					item["content_type"] = "block"
 					item["tags"] = tags
 					item["source"] = content_source
+					node["data-source"] = content_source
 					item["content"] = node
 				end
 				if !cancel_content_push && !item["content_type"].nil?
