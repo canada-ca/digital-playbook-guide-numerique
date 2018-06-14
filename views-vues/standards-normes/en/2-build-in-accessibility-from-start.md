@@ -7,4 +7,4 @@ altLang: fr
 altLangPage: 2-integrer-accessibilite-des-depart
 collectionDirectory: views-vues/standards-normes
 ---
-{% include views/standard-normes/content-contenu.html %}
+{% include views-vues/standard-normes/content-contenu.html %}
