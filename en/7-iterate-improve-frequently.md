@@ -5,7 +5,7 @@ lang: en
 altLang: fr
 altLangPage: 7-effectuer-iterations-ameliorations-constamment
 ---
-<div class="dpgn-section-intro-standard">
+<div class="dpgn-section-intro-standard dpgn-stage-live">
 
 Design and build services using an agile and user-centred approach. Agile is an approach to building services that breaks the work into smaller chunks known as iterations. Build one feature of the service at a time until the entire service is complete.  It is a much lower risk approach than traditional build-it-all-at-once approach known as waterfall because frequent iterations expose any flaws in the original plan much faster (e.g. not getting approvals, not enough resources, not the right people on the team, etc.)
 
@@ -23,7 +23,7 @@ Applying agile involves continuous improvement by analyzing data, making adjustm
 
 Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Being agile in how a problem is solved provides infinite ways to reach a solution vs a dictated path in waterfall.  While being agile means that you will still encounter obstacles and failures the flexibility to modify the way to the solution reduces the overall risk of project failure.
 
-<section class="dpgn-section-checklist">
+<section class="dpgn-section-checklist dpgn-stage-live"">
 
 ### Checklist
 
@@ -50,7 +50,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 </section>
 
-<section class="dpgn-section-similar">
+<section class="dpgn-section-similar dpgn-stage-live"">
 
 ### Similar ressources
 
@@ -65,7 +65,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 </section>
 
-<section class="dpgn-section-guides">
+<section class="dpgn-section-guides dpgn-stage-live"">
 
 ### Implementation guides
 
@@ -89,7 +89,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 </section>
 
-<section class="dpgn-section-solutions">
+<section class="dpgn-section-solutions dpgn-stage-live"">
 
 ### Reusable solutions
 
@@ -99,7 +99,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 </section>
 </div>
 
-<div class="dpgn-section-guidelines">
+<div class="dpgn-section-guidelines dpgn-stage-live"">
 
 **Guidelines:**
 
@@ -110,7 +110,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 </div>
 
-<div class="dpgn-section-guidelines-related">
+<div class="dpgn-section-guidelines-related dpgn-stage-live"">
 
 **Related guidelines:**
 
@@ -118,11 +118,11 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 </div>
 
-<section class="dpgn-section-guideline">
+<section class="dpgn-section-guideline dpgn-stage-live"">
 
 ## 7.1 Accept that change is inevitable and use adaptive strategies and tools for new development
 
-<div class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline dpgn-stage-live"">
 
 Build a service that can be iterated and improved on a frequent basis and make sure that you have the capacity, resources and technical flexibility to do so.
 
@@ -133,7 +133,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </div>
 
-<section class="dpgn-section-checklist">
+<section class="dpgn-section-checklist dpgn-stage-live"">
 
 ### Checklist
 
@@ -143,7 +143,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-guides">
+<section class="dpgn-section-guides dpgn-stage-live"">
 
 ### Implementation guides
 
@@ -151,7 +151,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-solutions">
+<section class="dpgn-section-solutions dpgn-stage-live"">
 
 ### Reusable solutions
 
@@ -159,7 +159,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-similar">
+<section class="dpgn-section-similar dpgn-stage-live"">
 
 ### Similar resources
 
@@ -168,21 +168,19 @@ You need to build a service which you can iterate and keep improving so that you
 </section>
 </section>
 
-<section class="dpgn-section-guideline">
+<section class="dpgn-section-guideline dpgn-stage-live"">
 
 ## 7.2 Start small and test designs and assumptions continually, using evidence as the basis for iteration
 
-<div class="dpgn-section-intro-guideline">
+<div class="dpgn-section-intro-guideline dpgn-stage-live"">
 
  Services should be simple, inclusive and easy to use. Services should help clients achieve the outcomes that matter most. Assessing prototypes while the service is being designed will help you discover shortcomings that may deter clients from using the service or glitches that may affect the user experience. Assessing the service before it is officially launched will also help you make improvements that can go a long way in ensuring clients are satisfied when using the service. Rigorously and comprehensively testing the service from end-to-end is part of good service design.
 
 </div>
 
-<section class="dpgn-section-checklist">
+<section class="dpgn-section-checklist dpgn-stage-live"">
 
 ### Checklist
-
-**Alpha, beta and live stages:**{: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
 - Testing
@@ -209,11 +207,11 @@ You need to build a service which you can iterate and keep improving so that you
   - make sure you have the ability to deploy software frequently with minimal disruption to users
   - determine how long you expect your service to be in beta and why
   - document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users
-{: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
+
 <!-- markdownlint-enable MD032 -->
 </section>
 
-<section class="dpgn-section-guides">
+<section class="dpgn-section-guides dpgn-stage-live"">
 
 ### Implementation guides
 
@@ -230,7 +228,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-solutions">
+<section class="dpgn-section-solutions dpgn-stage-live"">
 
 ### Reusable solutions
 
@@ -238,7 +236,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-similar">
+<section class="dpgn-section-similar dpgn-stage-live"">
 
 ### Similar resources
 
