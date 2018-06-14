@@ -95,5 +95,5 @@ for standardIndexString in relevantStandardsArray %}{%
       %}{{ include.listItemClasses }}{% 
     endif %}{% 
   endcapture 
-  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ standard.title }}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a></li>{% 
-endfor %}</ul>
+  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ standard.title }}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a></li>
+{% endfor %}</ul>

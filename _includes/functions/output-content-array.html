@@ -71,8 +71,10 @@ for item in include.contentArray %}{%
 </{{ sectionTag }}>
 {%    endif %}{% 
     elsif item.content_type == 'inline' %}{%  
-      comment %}Is inline content, so output the content as is{% endcomment 
+      comment %}Is inline content, so output the content as is if it is relevant{% endcomment %}{% 
+      if relevantItem 
 %}{{ item.content }}{% 
+      endif %}{% 
     else %}{% 
       comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
