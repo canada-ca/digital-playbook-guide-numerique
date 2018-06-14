@@ -189,7 +189,6 @@ You need to build a service which you can iterate and keep improving so that you
 **Alpha, beta and live stages:**{: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- Start small and build upon successes.
 - Testing
   - Don’t wait for a fully developed service to start testing.  Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.
   - Testing objective
