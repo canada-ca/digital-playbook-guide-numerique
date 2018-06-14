@@ -23,15 +23,11 @@ Applying agile involves continuous improvement by analyzing data, making adjustm
 
 Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Being agile in how a problem is solved provides infinite ways to reach a solution vs a dictated path in waterfall.  While being agile means that you will still encounter obstacles and failures the flexibility to modify the way to the solution reduces the overall risk of project failure.
 
-</div>
 <section class="dpgn-section-checklist">
 
 ### Checklist
 
 - {: .dpgn-digital-architectural} Use agile **({{ site.DigitalArchitectural.en }})**
-
-**Alpha, beta and live stages:**
-{: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
 - follow a user-centred approach; include the user in all areas of the prototyping (design, iterations and so on)
@@ -97,12 +93,12 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 ### Reusable solutions
 
-**[TODO: Add/revise reusable solutions]**
-
 - [Method Cards (18F (US))](https://methods.18f.gov/)
 - [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 
 </section>
+</div>
+
 <div class="dpgn-section-guidelines">
 
 **Guidelines:**
