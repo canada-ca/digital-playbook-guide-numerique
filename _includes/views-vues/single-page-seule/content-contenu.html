@@ -7,4 +7,3 @@ assign defaultSubsectionTitles = site.defaultSubsectionTitles[page.lang] %}
 {% for currentStandard in dataSource.standards.content %}{% 
   include functions/output-standard.html standard=currentStandard includeStandardTitle=true currentHeadingLevel=1 groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}{% 
 endfor %}
-
