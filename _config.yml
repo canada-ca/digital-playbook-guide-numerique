@@ -76,11 +76,18 @@ standardFile:
     fr:  10-etre-bons-utilisateurs-donnees
 RenderedFileExtension: ".html"
 
+# Default order of the guideline sections
+guidelineSectionsOrder: ["introduction", "checklist", "guides", "solutions", "similar"]
+
 # Default classes (used by output-content-array.html and other generated content)
 defaultClasses:
   section: ""
-  list: "lst-spcd"
-  listitem: ""
+  article: ""
+  aside: ""
+  nav: ""
+  ol: "lst-spcd"
+  ul: "lst-spcd"
+  li: ""
   table: ""
   caption: ""
   thead: ""

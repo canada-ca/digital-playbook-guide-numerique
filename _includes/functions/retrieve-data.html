@@ -1,0 +1,54 @@
+{% comment %}@overview Used to retrieve data safely for the purposes of recursion{% endcomment %}{% 
+comment %}@param name {String} Name of the variable to retrieve (has to be a supported name){% endcomment %}{% 
+comment %}@param recursion_level {Number} Current recursion level depth{% endcomment %}{% 
+comment %}@param return {Object/Array/String/Number} Sets the named variable to the specified stored value{% endcomment %}{% 
+if name == "item-heading" %}{% 
+  if recursion_level == 0 %}{% 
+    assign item = item_0 %}{% 
+    assign relevantItem = relevantItem_0 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_0 %}{% 
+  elsif recursion_level == 1 %}{% 
+    assign item = item_1 %}{% 
+    assign relevantItem = relevantItem_1 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_1 %}{% 
+  elsif recursion_level == 2 %}{% 
+    assign item = item_2 %}{% 
+    assign relevantItem = relevantItem_2 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_2 %}{% 
+  elsif recursion_level == 3 %}{% 
+    assign item = item_3 %}{% 
+    assign relevantItem = relevantItem_3 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_3 %}{% 
+  elsif recursion_level == 4 %}{% 
+    assign item = item_4 %}{% 
+    assign relevantItem = relevantItem_4 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_4 %}{% 
+  elsif recursion_level == 5 %}{% 
+    assign item = item_5 %}{% 
+    assign relevantItem = relevantItem_5 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_5 %}{% 
+  elsif recursion_level == 6 %}{% 
+    assign item = item_6 %}{% 
+    assign relevantItem = relevantItem_6 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_6 %}{% 
+  elsif recursion_level == 7 %}{% 
+    assign item = item_7 %}{% 
+    assign relevantItem = relevantItem_7 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_7 %}{% 
+  elsif recursion_level == 8 %}{% 
+    assign item = item_8 %}{% 
+    assign relevantItem = relevantItem_8 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_8 %}{% 
+  elsif recursion_level == 9 %}{% 
+    assign item = item_9 %}{% 
+    assign relevantItem = relevantItem_9 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_9 %}{% 
+  else
+    assign item = item_10 %}{% 
+    assign relevantItem = relevantItem_10 %}{% 
+    assign currentHeadingLevel = currentHeadingLevel_10 %}{% 
+  endif %}{% 
+  if itemRecursionLevel > 0 %}{% 
+      assign itemRecursionLevel = itemRecursionLevel | minus: 1 %}{% 
+  endif %}{% 
+endif %}
