@@ -7,4 +7,4 @@ altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs
 collectionDirectory: views-vues/standards-normes
 ---
-{% include views/standard-normes/content-contenu.html %}
+{% include views-vues/standard-normes/content-contenu.html %}
