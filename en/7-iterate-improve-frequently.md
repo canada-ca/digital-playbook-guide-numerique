@@ -128,7 +128,12 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 <div class="dpgn-section-intro-guideline">
 
-Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology.
+Build a service that can be iterated and improved on a frequent basis and make sure that you have the capacity, resources and technical flexibility to do so.
+
+You need to build a service which you can iterate and keep improving so that you can:
+
+- easily respond to changes in policy which affect the service
+- make sure your service keeps meeting user needs
 
 </div>
 
@@ -173,18 +178,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 <div class="dpgn-section-intro-guideline">
 
-**[TODO: Add/revise introductory text]**
-
-**Introduction examples:**
-
-**Digital Service Standard (UK):** Build a service that can be iterated and improved on a frequent basis and make sure that you have the capacity, resources and technical flexibility to do so.
-
-You need to build a service which you can iterate and keep improving so that you can:
-
-- easily respond to changes in policy which affect the service
-- make sure your service keeps meeting user needs
-
-**1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED))**: Services should be simple, inclusive and easy to use. Services should help clients achieve the outcomes that matter most. Assessing prototypes while the service is being designed will help you discover shortcomings that may deter clients from using the service or glitches that may affect the user experience. Assessing the service before it is officially launched will also help you make improvements that can go a long way in ensuring clients are satisfied when using the service. Rigorously and comprehensively testing the service from end-to-end is part of good service design.
+ Services should be simple, inclusive and easy to use. Services should help clients achieve the outcomes that matter most. Assessing prototypes while the service is being designed will help you discover shortcomings that may deter clients from using the service or glitches that may affect the user experience. Assessing the service before it is officially launched will also help you make improvements that can go a long way in ensuring clients are satisfied when using the service. Rigorously and comprehensively testing the service from end-to-end is part of good service design.
 
 </div>
 
@@ -192,71 +186,41 @@ You need to build a service which you can iterate and keep improving so that you
 
 ### Checklist
 
-**[TODO: Add/revise checklist items]**
-
-- Start small and build upon successes. **(General design principles - Digital Design Playbook (ISED))**
-- Don’t wait for a fully developed service to start testing. **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.
-- Define your testing objective **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Define the purpose of the test and what you want to learn? The purpose of the test is often determined by your business goals and user needs identified through feedback, analytics and other sources.
-  - Identify top or critical tasks to test. Main outcomes and features your clients want to achieve should be prioritized.
-- Test with clients and others **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - You need to ensure that the service works from technical perspective and from the perspective of the user and the service provider (including the help desk agent who assists clients when they face challenges using the service). By testing with a diverse group and different type of users, you can capture a more comprehensive understanding of how your service is working.
-  - Make sure the participants are representative of your clients.
-  - Utilize user experience testing services offered by the Chief Information Office and the Communications team
-- Plan and deliver client testing cycles **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Pilot your test: Make sure it all works
-  - Implement the test.
-  - Test often (e.g., six month or yearly intervals), apply the findings and keep on testing.
-- Test under realistic conditions **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Create realistic scenarios that reflect the context and environment in which clients would use the service.
-- Use different types of tests to assess the service **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Identify the best testing method based on your needs. Examples of tests include:
-    - Tree Testing - A test in which participants are asked to find a resource based on a series of menus.
-    - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
-    - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
-
-**Alpha, beta and live stages:**
-{: .dpgn-data-ignore}
+**Alpha, beta and live stages:**{: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- document what you've built in each phase and why you built it **(Digital Service Standard (UK))**
-- document the lifecycle of a user story from user research to production **(Digital Service Standard (UK))**
-- make sure your service is built to meet user needs **(Digital Service Standard (UK))**
-- identify and prioritize insights from user research **(Digital Service Standard (UK))**
-- move user stories quickly and smoothly between user research and production **(Digital Service Standard (UK))**
-- make sure there is minimal risk associated with the technology you chose **(Digital Service Standard (UK))**
-- make sure you have the ability to deploy software frequently with minimal disruption to users **(Digital Service Standard (UK))**
-- analyze user research and use it to improve your service **(Digital Service Standard (UK))**
-- solve any technical problems you've found **(Digital Service Standard (UK))**
+- Start small and build upon successes.
+- Testing
+  - Don’t wait for a fully developed service to start testing.  Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.
+  - Testing objective
+    - Define the purpose of the test and what you want to learn? The purpose of the test is often determined by your business goals and user needs identified through feedback, analytics and other sources.
+  - Testing audience
+    - You need to ensure that the service works from technical perspective and from the perspective of the user and the service provider (including the help desk agent who assists clients when they face challenges using the service). By testing with a diverse group and different type of users, you can capture a more comprehensive understanding of how your service is working.
+    - Make sure the participants are representative of your clients.
+    - Utilize user experience testing services offered by the Chief Information Office and the Communications team
+    - Create realistic scenarios that reflect the context and environment in which clients would use the service.
+  - Testing Methodology
+    - Identify the best testing method based on your needs. Examples of tests include:
+      - Tree Testing - A test in which participants are asked to find a resource based on a series of menus.
+      - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
+      - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
+  - Analyse the Results
+    - identify and prioritize insights from user research
+    - analyze user research and use it to improve your service
+- Documentation is important
+  - document what you've built in each phase and why you built it (can be implemented in the style of a Change Log)
+  - document the lifecycle of a user story from user research to production
+- Service Deployment
+  - make sure you have the ability to deploy software frequently with minimal disruption to users
+  - determine how long you expect your service to be in beta and why
+  - document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users
 {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
-
-**Beta stage:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- determine how long you expect your service to be in beta and why **(Digital Service Standard (UK))**
-- document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users **(Digital Service Standard (UK))**
-{: .dpgn-stage-beta}
-<!-- markdownlint-enable MD032 -->
-
-**Live stage:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- make sure deployments have zero downtime in a way that doesn't stop users using the service **(Digital Service Standard (UK))**
-- make sure you have enough staff to keep improving the service **(Digital Service Standard (UK))**
-{: .dpgn-stage-live}
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
 
 ### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
 
 - [Test your service's performance (Service Manual (UK))](https://www.gov.uk/service-manual/technology/test-your-services-performance)
 - [Quality assurance: testing your service regularly (Service Manual (UK))](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)
