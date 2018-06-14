@@ -128,9 +128,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 <div class="dpgn-section-intro-guideline">
 
-**[TODO: Add/revise introductory text]**
-
-Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology. **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
+Once you have designed and launched a service, there is still work to do. Treat the service as a product; it requires regular reviews, usability tests and improvements. Unlike a project that has pre-determined start and end date, a product has a life cycle that goes far beyond the launching of the service. Regularly assessing the service and welcoming opportunities for improvement will help to ensure that the service keeps pace with evolving client needs and benefits from new or improved technology.
 
 </div>
 
@@ -138,11 +136,9 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 ### Checklist
 
-**[TODO: Add/revise checklist items]**
-
-- Continuously measure client experience and create a customer-prioritized improvement plan. **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
-- Commit to regular service reviews **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
-- Identify opportunities to improve the service based on the results of regular test **(2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)))**
+- Continuously measure client experience and create a customer-prioritized improvement plan.
+- Commit to regular service reviews
+- Identify opportunities to improve the service based on the results of regular usability testing
 
 </section>
 
@@ -166,7 +162,7 @@ Once you have designed and launched a service, there is still work to do. Treat 
 
 ### Similar resources
 
-- [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
+- [Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
 
 </section>
 </section>
