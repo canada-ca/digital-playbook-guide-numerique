@@ -7,9 +7,7 @@ altLangPage: 7-effectuer-iterations-ameliorations-constamment
 ---
 <div class="dpgn-section-intro-standard">
 
-Design and build the service using an agile and user-centred approach. Agile is an approach to building services that breaks the work into smaller chunks known as iterations. Build one feature of the service at a time until the entire service is complete.
-
-It is a much lower risk approach than traditional build-it-all-at-once approach known as waterfall because frequent iterations expose any flaws in the original plan much faster (e.g. not getting approvals, not enough resources, not the right people on the team, etc.)
+Design and build services using an agile and user-centred approach. Agile is an approach to building services that breaks the work into smaller chunks known as iterations. Build one feature of the service at a time until the entire service is complete.  It is a much lower risk approach than traditional build-it-all-at-once approach known as waterfall because frequent iterations expose any flaws in the original plan much faster (e.g. not getting approvals, not enough resources, not the right people on the team, etc.)
 
 User-centred methods such as user research and usability testing put the focus on making services that are easy-to-use. Traditional government services focus on meeting business needs and aligning with policy goals. A user-centred approach ensures business needs are also balanced against user needs. This helps to increase digital service uptake.
 
@@ -17,15 +15,13 @@ User-centred methods such as user research and usability testing put the focus o
 
 Agile methods build services that:
 
-- can be prototyped quickly (and shown to users for regular feedback)
-- meet the needs of users
-- can change easily if, for example, government policy or technology changes
-- can keep improving based on user feedback
-- can be built quickly with a minimum set of features, and enhanced with more features after the service goes live
+- are prototyped quickly, and enhanced with more features after the service goes live
+- can be changed quickly if, for example, government policy or technology changes
+- keep improving based on continual user feedback
 
 Applying agile involves continuous improvement by analyzing data, making adjustments and iterating to identify and test improvements. Core principles of agile include defining a measurable goal; sharing ownership of the problem; taking small steps with visible impact; validating ideas/solutions with the target audience (e.g., the client); measuring success; reflecting, adjusting and iterating.
 
-Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Taking an iterative approach also helps you reduce risks. It makes big failures less likely and turns mistakes into learning opportunities. (*blurb of what agile vs waterfall when it comes to getting to failures early*)
+Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Being agile in how a problem is solved provides infinite ways to reach a solution vs a dictated path in waterfall.  While being agile means that you will still encounter obstacles and failures the flexibility to modify the way to the solution reduces the overall risk of project failure.
 
 </div>
 <section class="dpgn-section-checklist">
@@ -41,18 +37,18 @@ Your understanding of a problem and how to address it evolves each time you refi
 - follow a user-centred approach; include the user in all areas of the prototyping (design, iterations and so on)
 - determine the minimum viable product.
 - clearly describe the lifecycle of a user story, from user research to production
-- work in an agile way, using agile tools and techniques, and continue to do so when the service is live **(Digital Service Standard (Ontario / UK / AU))**
-- ensure the team responds to user research and usability testing **(Digital Service Standard (Ontario / UK))**
-- have a quality assurance testing and rollback plan that supports frequent iterations to the service **(Digital Service Standard (Ontario))**
-- Ship a functioning "minimum viable product" (MVP) that solves a core user need as soon as possible, no longer than three months from the beginning of the project, using a "beta" or "test" period if needed **(Digital Service Playbook (US))**
-- Keep delivery teams small and focused; limit organizational layers that separate these teams from the business owners **(Digital Service Playbook (US))**
-- Release features and improvements as soon as possible **(Digital Service Playbook (US))**
-- Create a prioritized list of features and bugs, also known as the "feature backlog" and "bug backlog" **(Digital Service Playbook (US))**
-- Use a source code version control system **(Digital Service Playbook (US))**
-- Give the entire project team access to the issue tracker and version control system **(Digital Service Playbook (US))**
-- Review how other organizations approach service delivery and adapt/incorporate best practices where appropriate. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Explore interdepartmental and/or interjurisdictional partnership arrangements to identify opportunities for joined-up services. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Explore opportunities for mobile optimization. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
+- work in an agile way, using agile tools and techniques, and continue to do so even after the service has been released
+- ensure the team responds to user research and usability testing
+- have a quality assurance testing and rollback plan that supports frequent iterations to the service
+- Ship a functioning "minimum viable product" (MVP) that solves a core user need as soon as possible using a "beta" or "test" period if needed
+- Keep delivery teams small and focused; limit organizational layers that separate these teams from the business owners
+- Release features and improvements as soon as possible
+- Create a prioritized list of features and bugs, also known as the "feature backlog" and "bug backlog"
+- Use a source code version control system
+- Give the entire project team access to the issue tracker and version control system
+- Review how other organizations approach service delivery and adapt/incorporate best practices where appropriate.
+- Explore interdepartmental and/or interjurisdictional partnership arrangements to identify opportunities for joined-up services.
+- Explore opportunities for mobile optimization.
 {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
@@ -62,12 +58,12 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 ### Similar ressources
 
-- [4. Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
-- [8. Be agile and user-centred (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
-- [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
-- [3. Agile and user-centred process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/3-agile-and-user-centred/)
-- [3. Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
-- [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
+- [Use agile methods (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-agile-methods)
+- [Be agile and user-centred (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
+- [Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
+- [Agile and user-centred process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/3-agile-and-user-centred/)
+- [Review and improve services continually (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#3._Review_and_improve_services_continually)
+- [pply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 - Agile - Small chunks - Iterate (GC EA Principles)
 - {: .dpgn-digital-architectural} Use agile ({{ site.DigitalArchitectural.en }})
 
