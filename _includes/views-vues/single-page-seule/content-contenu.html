@@ -1,8 +1,9 @@
 {% assign dataVariable = site.playbookData[page.lang] %}{% 
-assign dataSource = site.data[dataVariable] %}
+assign dataSource = site.data[dataVariable] %}{% 
+assign defaultSubsectionTitles = site.defaultSubsectionTitles[page.lang] %}
 
 {% include functions/output-overview.html samePage=true %}
 
 {% for currentStandard in dataSource.standards.content %}{% 
-  include functions/output-standard.html standard=currentStandard includeStandardTitle=true currentHeadingLevel=1 %}{% 
+  include functions/output-standard.html standard=currentStandard includeStandardTitle=true currentHeadingLevel=1 groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}{% 
 endfor %}

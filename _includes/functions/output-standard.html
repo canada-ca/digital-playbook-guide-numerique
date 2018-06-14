@@ -1,10 +1,13 @@
 {% comment %}@overview Outputs the content for a standard{% endcomment %}{% 
-comment %}@param standard {Object/Number} Standard object or the standard number (not index), which is used to retrieve the Standard object{% endcomment %}{% 
-comment %}@param includeStandardTitle {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such when there are multiple standards on the same page{% endcomment %}{% 
-comment %}@param relevantGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed{% endcomment %}{% 
-comment %}@param relevantRelatedGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard{% endcomment %}{% 
-comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
-comment %}@param relevantTagsSubsections {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Use of this parameter triggers the generation of sub-sections within each guideline section for each entry in relevantTags. Must have the same number of entries in the same order as relevantTags.{% endcomment %}{% 
+comment %}@param standard {Object/Number} Standard object or the standard number (not index), which is used to retrieve the Standard object.{% endcomment %}{% 
+comment %}@param includeStandardTitle {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such when there are multiple standards on the same page).{% endcomment %}{% 
+comment %}@param currentHeadingLevel {Number} Optional (defaults to 1). Heading level of the current section.{% endcomment %}{% 
+comment %}@param relevantGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed.{% endcomment %}{% 
+comment %}@param relevantRelatedGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard.{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed (unless overridden by irrelevantTags).{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags to filter out (overrides the display of any content that has a match in relevantTags).{% endcomment %}{% 
+comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.{% endcomment %}{% 
+comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in groupByTagsTags. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param guidelineSectionsOrder {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).{% endcomment %}{% 
 comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
@@ -14,7 +17,7 @@ comment %}@param guidelinesListClasses {String} Optional. Classes (separated by 
 comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space)vto add to the guidelines list items.{% endcomment %}{% 
 comment %}@param guidelinesLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item links.{% endcomment %}{% 
 comment %}@param guidelinesSubLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.{% endcomment %}{% 
-comment %}@return {String} Outputs the content for the standard and the included guidelines{% endcomment %}{% 
+comment %}@return {String} Outputs the content for the standard and the included guidelines.{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
 if include.relevantSections.size > 0 %}{% 
@@ -161,7 +164,7 @@ endif %}
 
 {% comment %}Output each guideline as a new section and output the included content{% endcomment %}{% 
 for item in outputGuidelinesArray %}{% 
-  include functions/output-guideline.html guideline=item guidelineHeadingLevel=guidelineHeadingLevel standard=standard relevantTags=include.relevantTags relevantTagsSubsections=include.relevantTagsSubsections relevantSections=relevantSectionsArray guidelineSectionsOrder=include.guidelineSectionsOrder collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseContentSubsections %}{% 
+  include functions/output-guideline.html guideline=item guidelineHeadingLevel=guidelineHeadingLevel standard=standard relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=relevantSectionsArray guidelineSectionsOrder=include.guidelineSectionsOrder collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseContentSubsections %}{% 
 endfor %}{% 
 comment %}Output a closing section tag if the Standard heading was included{% endcomment %}{% 
 if include.includeStandardTitle %}
