@@ -79,6 +79,21 @@ RenderedFileExtension: ".html"
 # Default order of the guideline sections
 guidelineSectionsOrder: ["introduction", "checklist", "guides", "solutions", "similar"]
 
+# Default sub-section tags and titles
+defaultSubsectionTags: []
+defaultSubsectionTitles:
+  en: []
+  fr: []
+#defaultSubsectionTags: ["dpgn-stage-alpha", "dpgn-stage-beta", "dpgn-stage-live"]
+#defaultSubsectionTitles:
+#  en: ["Alpha stage", "Beta stage", "Live stage"]
+#  fr: ["Stage alpha", "Stage beta", "Stage en direct"]
+
+# Default title for the final guideline sub-section for anything that doesn't match any of the tags in groupByTagsTags
+groupByTagsMissingTitle:
+  en: "Error: Title for this section was not specificed in 'groupByTagsTitles'"
+  fr: "Erreur : Le titre de cette section n'a pas été spécifié dans 'groupByTagsTitles'"
+
 # Default classes (used by output-content-array.html and other generated content)
 defaultClasses:
   section: ""

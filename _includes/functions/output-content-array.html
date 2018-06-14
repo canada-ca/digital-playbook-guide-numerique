@@ -1,9 +1,10 @@
 {% comment %}@overview Iterates over an array of content blocks, including nested content arrays, outputting the relevant content{% endcomment %}{% 
-comment %}@param contentArray {Array} Array of content blocks to process{% endcomment %}{% 
-comment %}@param currHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within){% endcomment %}{% 
-comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@param contentArray {Array} Array of content blocks to process.{% endcomment %}{% 
+comment %}@param currHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within).{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed (unless overridden by irrelevantTags).{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags to filter out (overrides the display of any content that has a match in relevantTags).{% endcomment %}{% 
 comment %}@param collapseSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
-comment %}@return {String} Returns the processed output from the content array{% endcomment %}{% 
+comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
 assign currentHeadingLevel = include.currHeadingLevel %}{% 
 unless itemRecursionLevel > 0 %}{% 
   assign itemRecursionLevel = 0 %}{% 
@@ -17,12 +18,29 @@ if include.relevantTags.size > 0 %}{%
 else %}{% 
   assign relevantTagsArray = "" %}{% 
 endif %}{% 
+if include.irrelevantTags.size > 0 %}{% 
+  if include.irrelevantTags.first %}{% 
+    assign irrelevantTagsArray = include.irrelevantTags %}{% 
+  else %}{% 
+    assign irrelevantTagsArray = include.irrelevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+  assign irrelevantTagsArray = "" %}{% 
+endif %}{% 
 for item in include.contentArray %}{% 
+  if irrelevantTagsArray.size > 0 %}{% 
+    capture tagsCompareIrrelevantResult %}{% 
+      include /functions/find-array-match.html array1=item.tags array2=irrelevantTagsArray %}{% 
+    endcapture %}{% 
+    if tagsCompareIrrelevantResult contains "true" %}{% 
+      continue %}{% 
+    endif %}{% 
+  endif %}{% 
   if relevantTagsArray.size > 0 %}{% 
-    capture tagsCompareResult %}{% 
+    capture tagsCompareRelevantResult %}{% 
       include /functions/find-array-match.html array1=item.tags array2=relevantTagsArray %}{% 
     endcapture %}{% 
-    if tagsCompareResult contains "true" %}{% 
+    if tagsCompareRelevantResult contains "true" %}{% 
       assign relevantItem = true %}{% 
     else %}{% 
       assign relevantItem = false %}{% 
@@ -41,7 +59,7 @@ for item in include.contentArray %}{%
       endif %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedOutputSection %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseSubsections %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags collapseSubsections=include.collapseSubsections %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
@@ -79,7 +97,7 @@ for item in include.contentArray %}{%
       comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedBlockContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseSubsections %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags collapseSubsections=include.collapseSubsections %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 

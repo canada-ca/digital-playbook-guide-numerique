@@ -6,5 +6,5 @@ altLang: fr
 altLangPage: stages-developpement
 collectionDirectory: views-vues/dev-stages
 ---
+{% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-stage-alpha,dpgn-stage-beta,dpgn-stage-live"  groupByTagsTags="dpgn-stage-alpha,dpgn-stage-beta,dpgn-stage-live" groupByTagsTitles="Stage alpha;Stage beta;Stage en direct" %}
 
-{% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-stage-alpha,dpgn-stage-beta,dpgn-stage-live" relevantTagsSubsections="Alpha stage;Beta stage;Live stage" %}
