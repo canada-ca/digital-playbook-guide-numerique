@@ -173,7 +173,7 @@ Start with a representation or prototype of the solution that will be tested and
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
 - [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
 - [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
-- [Kanba (David J Anderson & Associates)](http://www.djaa.com/principles-kanban-method-0)
+- [Kanban (développement) (Wikipédia)](https://fr.wikipedia.org/wiki/Kanban_(d%C3%A9veloppement))
 - [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
 - [CRA Agile Framework (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework))
 - [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)
