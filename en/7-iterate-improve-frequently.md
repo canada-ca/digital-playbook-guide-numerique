@@ -5,7 +5,34 @@ lang: en
 altLang: fr
 altLangPage: 7-effectuer-iterations-ameliorations-constamment
 ---
-<div class="dpgn-section-intro-standard dpgn-stage-live">
+<div class="dpgn-section-intro-standard">
+**To Do / Add Intro**
+</div>
+
+<div class="dpgn-section-guidelines">
+
+**Guidelines:**
+
+<!-- markdownlint-disable MD032 -->
+- TOC
+{:toc}
+<!-- markdownlint-enable MD032 -->
+
+</div>
+
+<div class="dpgn-section-guidelines-related">
+
+**Related guidelines:**
+
+{% include functions/guideline-links.html guidelines="1.2, 3.3, 9.2" samePage=false includeStandardTitle=true %}
+
+</div>
+
+<section class="dpgn-section-guideline">
+
+## 7.1  Build in an agile manner and continuously improve in response to user needsnt
+
+<div class="dpgn-section-intro-guideline">
 
 Design and build services using an agile and user-centred approach. Agile is an approach to building services that breaks the work into smaller chunks known as iterations. Build one feature of the service at a time until the entire service is complete.  It is a much lower risk approach than traditional build-it-all-at-once approach known as waterfall because frequent iterations expose any flaws in the original plan much faster (e.g. not getting approvals, not enough resources, not the right people on the team, etc.)
 
@@ -23,7 +50,9 @@ Applying agile involves continuous improvement by analyzing data, making adjustm
 
 Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Being agile in how a problem is solved provides infinite ways to reach a solution vs a dictated path in waterfall.  While being agile means that you will still encounter obstacles and failures the flexibility to modify the way to the solution reduces the overall risk of project failure.
 
-<section class="dpgn-section-checklist dpgn-stage-live">
+</div>
+
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -50,7 +79,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 </section>
 
-<section class="dpgn-section-similar dpgn-stage-live">
+<section class="dpgn-section-similar">
 
 ### Similar ressources
 
@@ -65,7 +94,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 </section>
 
-<section class="dpgn-section-guides dpgn-stage-live">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -89,7 +118,7 @@ Your understanding of a problem and how to address it evolves each time you refi
 
 </section>
 
-<section class="dpgn-section-solutions dpgn-stage-live">
+<section class="dpgn-section-solutions">
 
 ### Reusable solutions
 
@@ -97,32 +126,13 @@ Your understanding of a problem and how to address it evolves each time you refi
 - [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
 
 </section>
-</div>
+</section>
 
-<div class="dpgn-section-guidelines dpgn-stage-live">
+<section class="dpgn-section-guideline">
 
-**Guidelines:**
+## 7.2 Accept that change is inevitable and use adaptive strategies and tools for new development
 
-<!-- markdownlint-disable MD032 -->
-- TOC
-{:toc}
-<!-- markdownlint-enable MD032 -->
-
-</div>
-
-<div class="dpgn-section-guidelines-related dpgn-stage-live">
-
-**Related guidelines:**
-
-{% include functions/guideline-links.html guidelines="1.2, 3.3, 9.2" samePage=false includeStandardTitle=true %}
-
-</div>
-
-<section class="dpgn-section-guideline dpgn-stage-live">
-
-## 7.1 Accept that change is inevitable and use adaptive strategies and tools for new development
-
-<div class="dpgn-section-intro-guideline dpgn-stage-live">
+<div class="dpgn-section-intro-guideline">
 
 Build a service that can be iterated and improved on a frequent basis and make sure that you have the capacity, resources and technical flexibility to do so.
 
@@ -133,7 +143,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </div>
 
-<section class="dpgn-section-checklist dpgn-stage-live">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -143,7 +153,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-guides dpgn-stage-live">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -151,7 +161,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-solutions dpgn-stage-live">
+<section class="dpgn-section-solutions">
 
 ### Reusable solutions
 
@@ -159,7 +169,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-similar dpgn-stage-live">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
@@ -168,17 +178,17 @@ You need to build a service which you can iterate and keep improving so that you
 </section>
 </section>
 
-<section class="dpgn-section-guideline dpgn-stage-live">
+<section class="dpgn-section-guideline">
 
-## 7.2 Start small and test designs and assumptions continually, using evidence as the basis for iteration
+## 7.3 Start small and test designs and assumptions continually, using evidence as the basis for iteration
 
-<div class="dpgn-section-intro-guideline dpgn-stage-live">
+<div class="dpgn-section-intro-guideline">
 
  Services should be simple, inclusive and easy to use. Services should help clients achieve the outcomes that matter most. Assessing prototypes while the service is being designed will help you discover shortcomings that may deter clients from using the service or glitches that may affect the user experience. Assessing the service before it is officially launched will also help you make improvements that can go a long way in ensuring clients are satisfied when using the service. Rigorously and comprehensively testing the service from end-to-end is part of good service design.
 
 </div>
 
-<section class="dpgn-section-checklist dpgn-stage-live">
+<section class="dpgn-section-checklist">
 
 ### Checklist
 
@@ -211,7 +221,7 @@ You need to build a service which you can iterate and keep improving so that you
 <!-- markdownlint-enable MD032 -->
 </section>
 
-<section class="dpgn-section-guides dpgn-stage-live">
+<section class="dpgn-section-guides">
 
 ### Implementation guides
 
@@ -228,7 +238,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-solutions dpgn-stage-live">
+<section class="dpgn-section-solutions">
 
 ### Reusable solutions
 
@@ -236,7 +246,7 @@ You need to build a service which you can iterate and keep improving so that you
 
 </section>
 
-<section class="dpgn-section-similar dpgn-stage-live">
+<section class="dpgn-section-similar">
 
 ### Similar resources
 
