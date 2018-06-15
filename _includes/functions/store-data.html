@@ -1,6 +1,9 @@
 {% comment %}@overview Used to store the named data safely for the purposes of recursion{% endcomment %}{% 
 comment %}@param name {String} Name of the variable group to store (has to be a supported name){% endcomment %}{% 
 if name == "item-heading" %}{% 
+  unless itemRecursionLevel > 0 %}{% 
+    assign itemRecursionLevel = 0 %}{% 
+  endunless %}{% 
   if itemRecursionLevel == 0 %}{% 
     assign item_0 = item %}{% 
     assign relevantItem_0 = relevantItem %}{% 
