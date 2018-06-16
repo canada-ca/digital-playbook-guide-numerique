@@ -1,12 +1,34 @@
-{% comment %}@overview Compares two arrays, looking for matches between them{% endcomment %}{% 
-comment %}@param array1 {Array} Array to compare{% endcomment %}{% 
-comment %}@param array2 {Array} Array to compare{% endcomment %}{% 
-comment %}@return {String} "true" is returned if a match is found{% endcomment %}{% 
-comment %}Determine the total size of the arrays combined{% endcomment %}{% 
-assign maximumSize = include.array1.size | plus: include.array2.size %}{% 
-comment %}Determines the total size of the array combined if duplicate entries are removed{% endcomment %}{% 
-assign combinedUniqueArray = include.array1 | concat: include.array2 | uniq %}{% 
-comment %}If the total size is different when the duplicate entries are removed then a match was found so output "true"{% endcomment %}{% 
-if maximumSize != combinedUniqueArray.size 
-  %}{{ "true" }}{% 
-endif %}
+{% comment %}@overview Assesses a target array against matching requirements in the second array.{% endcomment %}{% 
+comment %}@param array1 {Array} Target array{% endcomment %}{% 
+comment %}@param array2 {Array} Array with comparison requirements with each entry being a requirement for a string match. Each requirement can include multiple criteria, separated by "+" (e.g., string1+string2). This means that the target array must have entries that match string1 and string2. Partial match criteria (contains) start with "~" (e.g., string1+~string2).{% endcomment %}{% 
+comment %}@return {String} "true" is returned if a matching requirement was met.{% endcomment %}{% 
+for fullMatch in include.array2 %}{% 
+  assign numMatches = 0 %}{% 
+  assign fullMatchArray = fullMatch | replace: " ", "" | split: "+" %}{% 
+  for comparator in fullMatchArray %}{% 
+    assign first_char = comparator | slice: 0 %}{% 
+    if first_char == "~" %}{% 
+      comment %}Only looking for a partial match{% endcomment %}{% 
+      assign comparator = comparator | replace: "~", "" %}{% 
+      for target in include.array1 %}{% 
+        if target contains comparator %}{% 
+          assign numMatches = numMatches | plus: 1 %}{% 
+          break %}{% 
+        endif %}{% 
+      endfor %}{% 
+    else %}{% 
+      comment %}Looking for a full match{% endcomment %}{% 
+      for target in include.array1 %}{% 
+        if target == comparator %}{% 
+          assign numMatches = numMatches | plus: 1 %}{% 
+          break %}{% 
+        endif %}{% 
+      endfor %}{% 
+    endif %}{% 
+  endfor %}{% 
+  comment %}All the criteria for the requirement were met so return "true"{% endcomment %}{% 
+  if numMatches == fullMatchArray.size 
+    %}{{ "true" }}{% 
+    break %}{% 
+  endif %}{% 
+endfor %}

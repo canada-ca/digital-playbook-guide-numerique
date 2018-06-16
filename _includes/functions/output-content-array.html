@@ -1,14 +1,15 @@
 {% comment %}@overview Iterates over an array of content blocks, including nested content arrays, outputting the relevant content{% endcomment %}{% 
 comment %}@param contentArray {Array} Array of content blocks to process.{% endcomment %}{% 
 comment %}@param currHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within).{% endcomment %}{% 
-comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed (unless overridden by irrelevantTags).{% endcomment %}{% 
-comment %}@param irrelevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags to filter out (overrides the display of any content that has a match in relevantTags).{% endcomment %}{% 
+comment %}@param relevantTags {String} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
 comment %}@param collapseSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
 assign currentHeadingLevel = include.currHeadingLevel %}{% 
 unless itemRecursionLevel > 0 %}{% 
   assign itemRecursionLevel = 0 %}{% 
 endunless %}{% 
+comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
 if include.relevantTags.size > 0 %}{% 
   if include.relevantTags.first %}{% 
     assign relevantTagsArray = include.relevantTags %}{% 
@@ -18,6 +19,7 @@ if include.relevantTags.size > 0 %}{%
 else %}{% 
   assign relevantTagsArray = "" %}{% 
 endif %}{% 
+comment %}Ensure the irrelevant tags are in an array{% endcomment %}{% 
 if include.irrelevantTags.size > 0 %}{% 
   if include.irrelevantTags.first %}{% 
     assign irrelevantTagsArray = include.irrelevantTags %}{% 
@@ -28,6 +30,7 @@ else %}{%
   assign irrelevantTagsArray = "" %}{% 
 endif %}{% 
 for item in include.contentArray %}{% 
+  comment %}Go to the next item in the content array if there is an irrelevant requirement match.{% endcomment %}{% 
   if irrelevantTagsArray.size > 0 %}{% 
     capture tagsCompareIrrelevantResult %}{% 
       include /functions/find-array-match.html array1=item.tags array2=irrelevantTagsArray %}{% 
@@ -36,6 +39,7 @@ for item in include.contentArray %}{%
       continue %}{% 
     endif %}{% 
   endif %}{% 
+  comment %}Item is relevant if there is a relevant requirement match.{% endcomment %}{% 
   if relevantTagsArray.size > 0 %}{% 
     capture tagsCompareRelevantResult %}{% 
       include /functions/find-array-match.html array1=item.tags array2=relevantTagsArray %}{% 
