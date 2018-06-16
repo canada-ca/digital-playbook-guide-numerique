@@ -4,7 +4,7 @@ comment %}@param findTags {Array of strings} Tags to look for{% endcomment %}{%
 comment %}@return {String} "true" is returned if a match is found{% endcomment %}{% 
 assign tagFound = false %}{% 
 comment %}If the object has a tags property, check it for one of the tags to look for{% endcomment %}{% 
-if include.object.tags %}{% 
+if include.object.tags and include.object.source_element != "ul" and include.object.source_element != "ol" %}{% 
   capture matchFound %}{% 
     include /functions/find-array-match.html array1=include.object.tags array2=include.findTags %}{% 
   endcapture %}{% 
