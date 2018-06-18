@@ -1,9 +1,8 @@
 {% comment %}@overview Iterates over an array of content blocks, including nested content arrays, outputting the relevant content{% endcomment %}{% 
 comment %}@param contentArray {Array} Array of content blocks to process.{% endcomment %}{% 
 comment %}@param currHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within).{% endcomment %}{% 
-comment %}@param relevantTags {String} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
-comment %}@param irrelevantTags {String} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
-comment %}@param collapseSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
 assign currentHeadingLevel = include.currHeadingLevel %}{% 
 unless itemRecursionLevel > 0 %}{% 
@@ -53,17 +52,13 @@ for item in include.contentArray %}{%
     assign relevantItem = true %}{% 
   endif %}{% 
   capture rawOutput %}{% 
-    comment %}{% endcomment %}{% 
+
     if item.content_type == 'section' %}{%
       comment %}Content block is a section, so output the section elements, the heading and then call this function to process the nested content array{% endcomment %}{% 
-      if include.collapseSubsections == true %}{% 
-        assign nextHeadingLevel = currentHeadingLevel %}{% 
-      else %}{% 
-        assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
-      endif %}{% 
+      assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedOutputSection %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags collapseSubsections=include.collapseSubsections %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
@@ -77,21 +72,20 @@ for item in include.contentArray %}{%
         else %}{% 
           assign allClasses = item.tags %}{% 
         endif %}{% 
-        if include.collapseSubsections == true %}{% 
-          assign sectionTag = "div" %}{% 
-          assign nextHeadingLevel = currentHeadingLevel %}{% 
-        else %}{% 
-          assign sectionTag = item.source_element %}{% 
-          assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
-        endif %}{% 
+        assign sectionTag = item.source_element %}{% 
+        assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
 <{{ sectionTag }}{{ classOutput | rstrip }}>
-{% unless include.collapseSubsections == true %}<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>{% endunless %}
+
+<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>
+
 {{ nestedOutputStrip }}
+
 </{{ sectionTag }}>
 {%    endif %}{% 
+
     elsif item.content_type == 'inline' %}{%  
       comment %}Is inline content, so output the content as is if it is relevant{% endcomment %}{% 
       if relevantItem 
@@ -101,7 +95,7 @@ for item in include.contentArray %}{%
       comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedBlockContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags collapseSubsections=include.collapseSubsections %}{% 
+        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 

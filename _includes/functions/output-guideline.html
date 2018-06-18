@@ -1,74 +1,22 @@
 {% comment %}@overview Outputs the content for a guideline{% endcomment %}{% 
-comment %}@param guideline {Object/Number} Guideline object or the guideline index (which is used to retrieve the Guideline object).{% endcomment %}{% 
 comment %}@param guidelineHeadingLevel {Number} Heading level of the guideline section header.{% endcomment %}{% 
-comment %}@param standard {Object/Number} Optional (required if guideline is a number). Standard object or the number (not index) of the standard (which is used to retrieve the Standard object).{% endcomment %}{% 
-comment %}@param relevantTags {String} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
-comment %}@param irrelevantTags {String} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param standardIndex {Number} Index of the standard that is the parent of the guideline to process{% endcomment %}{% 
+comment %}@param guidelineIndex {Number} Index of the guideline to process.{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
 comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.{% endcomment %}{% 
 comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in groupByTagsTags. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param guidelineSectionsOrder {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).{% endcomment %}{% 
-comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
-comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@return {String} Outputs the content for the guideline.{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
 assign subsectionHeadingLevel = include.guidelineHeadingLevel | plus: 1 %}{% 
-comment %}Ensure guideline is a guideline object{% endcomment %}{% 
-if include.guideline.first %}{% 
-  comment %}include.guideline is a guideline object{% endcomment %}{% 
-  assign guideline = include.guideline %}{% 
-else %}{% 
-  comment %}include.guideline is a guideline index so use it to get the guideline object{% endcomment %}{% 
-  assign guidelineIndex = include.guideline | plus: 0 %}{% 
-  if include.standard.first %}{% 
-    assign standard = include.standard %}{% 
-  else %}{% 
-    assign standardIndex = include.standard | minus: 1 %}{% 
-    assign standard = dataSource.standards.content[standardIndex] %}{% 
-  endif %}{% 
-  assign guideline = standard.guidelines.content[guidelineIndex] %}{% 
-endif %}{% 
-comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
-if include.relevantTags.size > 0 %}{% 
-  if include.relevantTags.first %}{% 
-    assign relevantTagsArrayGuideline = include.relevantTags %}{% 
-  else %}{% 
-    assign relevantTagsArrayGuideline = include.relevantTags | replace: " ", "" | split: "," %}{% 
-  endif %}{% 
-else %}{% 
-    assign relevantTagsArrayGuideline = "" %}{% 
-endif %}{% 
-comment %}Ensure the irrelevant tags are in an array{% endcomment %}{% 
-if include.irrelevantTags.size > 0 %}{% 
-  if include.irrelevantTags.first %}{% 
-    assign irrelevantTagsArrayGuideline = include.irrelevantTags %}{% 
-  else %}{% 
-    assign irrelevantTagsArrayGuideline = include.irrelevantTags | replace: " ", "" | split: "," %}{% 
-  endif %}{% 
-else %}{% 
-    assign irrelevantTagsArrayGuideline = "" %}{% 
-endif %}{% 
-comment %}Ensure the group by tags tags are in an array{% endcomment %}{% 
-if include.groupByTagsTags.size > 0 %}{% 
-  if include.groupByTagsTags.first %}{% 
-    assign groupByTagsTagsArray = include.groupByTagsTags %}{% 
-  else %}{% 
-    assign groupByTagsTagsArray = include.groupByTagsTags | split: "," %}{% 
-  endif %}{% 
-else %}{% 
-    assign groupByTagsTagsArray = "" %}{% 
-endif %}{% 
-comment %}Ensure the group by tags titles are in an array{% endcomment %}{% 
-if include.groupByTagsTitles.size > 0 %}{% 
-  if include.groupByTagsTitles.first %}{% 
-    assign groupByTagsTitlesArray = include.groupByTagsTitles %}{% 
-  else %}{% 
-    assign groupByTagsTitlesArray = include.groupByTagsTitles | split: ";" %}{% 
-  endif %}{% 
-else %}{% 
-    assign groupByTagsTitlesArray = "" %}{% 
-endif %}{% 
+comment %}Get the guideline object{% endcomment %}{% 
+assign currentStandardIndex = include.standardIndex | plus: 0 %}{% 
+assign currentGuidelineIndex = include.guidelineIndex | minus: 0 %}{% 
+assign standard = dataSource.standards.content[currentStandardIndex] %}{% 
+assign guideline = standard.guidelines.content[currentGuidelineIndex] %}{% 
 comment %}Ensure the relevant sections are in an array{% endcomment %}{% 
 if include.relevantSections.size > 0 %}{% 
   if include.relevantSections.first %}{% 
@@ -76,16 +24,6 @@ if include.relevantSections.size > 0 %}{%
   else %}{% 
     assign relevantSectionsArray = include.relevantSections | replace: " ", "" | split: "," %}{% 
   endif %}{% 
-endif %}{% 
-comment %}Ensure the guideline sections are in an array{% endcomment %}{% 
-if include.guidelineSectionsOrder.size > 0 %}{% 
-  if include.guidelineSectionsOrder.first %}{% 
-    assign guidelineSectionsOrderArray = include.guidelineSectionsOrder %}{% 
-  else %}{% 
-    assign guidelineSectionsOrderArray = include.guidelineSectionsOrder | replace: " ", "" | split: "," %}{% 
-  endif %}{% 
-else %}{% 
-  assign guidelineSectionsOrderArray = site.guidelineSectionsOrder %}{% 
 endif %}{% 
 comment %}Check to see if guidelines should be displayed{% endcomment %}{% 
 if relevantSectionsArray.size > 0 %}{% 
@@ -105,129 +43,8 @@ if tagsCompareResult contains "true" %}{%
   endcapture %}
 <h{{ include.guidelineHeadingLevel }} id="{{ headerId | strip }}">{{ guideline.title }}</h{{ include.guidelineHeadingLevel }}>
 
-{% for sectionKey in guidelineSectionsOrderArray %}{% 
-    assign sectionContent = guideline[sectionKey].content %}{% 
-    comment %}Output the guideline section{% endcomment %}{% 
-    assign sectionTags = guideline[sectionKey].tags %}{% 
-    if relevantSectionsArray.size > 0 %}{% 
-      capture tagsCompareResult %}{% 
-        include /functions/find-array-match.html array1=sectionTags array2=relevantSectionsArray %}{% 
-      endcapture %}{% 
-    else %}{% 
-      assign tagsCompareResult="true" %}{% 
-    endif %}{% 
-    if tagsCompareResult contains "true" %}{% 
-      if groupByTagsTagsArray.size > 0 %}{% 
-        comment %}Output a sub-section for each tag in groupByTagsTagsArray (if there is any relevant content){% endcomment %}{% 
-        assign subsectionIndex = 0 %}{% 
-        assign sectionContentStrip = "" %}{% 
-        assign subSubsectionHeadingLevel = subsectionHeadingLevel | plus: 1 %}{% 
-        for currentTag in groupByTagsTagsArray %}{% 
-          comment %}If there are relevant tags, ignore currentTag if it does not match one of the relevant tags{% endcomment %}{% 
-          if relevantTagsArrayGuideline.size > 0 %}{% 
-            assign currentTagArray = currentTag | split: "," %}{%  
-            capture tagsCompareResult %}{% 
-              include /functions/find-array-match.html array1=currentTagArray array2=relevantTagsArrayGuideline %}{% 
-            endcapture %}{%
-            unless tagsCompareResult contains "true" %}{% 
-              continue %}{% 
-            endunless %}{% 
-          endif %}{% 
-          capture subSectionContent %}{% 
-            include /functions/output-content-array.html contentArray=sectionContent currHeadingLevel=subSubsectionHeadingLevel relevantTags=currentTag irrelevantTags=include.irrelevantTags collapseSubsections=include.collapseContentSubsections %}{%  
-          endcapture %}{% 
-          assign sectionContentSubStrip = subSectionContent | strip %}{% 
-          if sectionContentSubStrip.size > 0 %}{% 
-            capture subSectionSection %}
-<section class="{{ currentTag }}">
+{% include /functions/output-sections.html guidelineHeadingLevel=guidelineHeadingLevel standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=relevantSectionsArray guidelineSectionsOrder=include.guidelineSectionsOrder %}
 
-<h{{ subSubsectionHeadingLevel }}>{% 
-            if groupByTagsTitlesArray.size > subsectionIndex
-%}{{ groupByTagsTitlesArray[subsectionIndex] }}{% 
-            else 
-%}{{ site.groupByTagsMissingTitle[page.lang] }}{% 
-            endif 
-%}</h{{ subSubsectionHeadingLevel }}>
-
-{{ sectionContentSubStrip }} 
-
-</section>
-{%          endcapture %}{% 
-            assign sectionContentStrip = sectionContentStrip | append: subSectionSection %}{% 
-          endif %}{% 
-          assign subsectionIndex = subsectionIndex | plus: 1 %}{% 
-        endfor %}{% 
-        comment %}Create final subsection for content that doesn't {% endcomment %}{% 
-        if irrelevantTagsArrayGuideline.size > 0 %}{% 
-          assign tagsToFilterOutArray = groupByTagsTagsArray | concat: irrelevantTagsArrayGuideline %}{% 
-        else %}{% 
-          assign tagsToFilterOutArray = groupByTagsTagsArray %}{% 
-        endif %}{% 
-        capture subSectionContent %}{% 
-          include /functions/output-content-array.html contentArray=sectionContent currHeadingLevel=subSubsectionHeadingLevel relevantTags=include.relevantTags irrelevantTags=tagsToFilterOutArray collapseSubsections=include.collapseContentSubsections %}{%  
-        endcapture %}{% 
-        assign sectionContentSubStrip = subSectionContent | strip %}{% 
-        if sectionContentSubStrip.size > 0 %}{% 
-          capture subSectionSection %}{% 
-            comment %}Only output the section and heading tags if there was content in the previous sections{% endcomment %}{% 
-            if sectionContentStrip.size > 0 and groupByTagsTitlesArray[subsectionIndex].size > 0 
-%}<section class="{{ currentTag }}">
-
-<h{{ subSubsectionHeadingLevel }}>{{ groupByTagsTitlesArray[subsectionIndex] }}</h{{ subSubsectionHeadingLevel }}>{% 
-            endif %}
-
-{{ sectionContentSubStrip }} 
-
-{%          if sectionContentStrip.size > 0 and groupByTagsTitlesArray[subsectionIndex].size > 0
-%}</section>
-{% endif %}{% 
-          endcapture %}{% 
-          if groupByTagsTitlesArray[subsectionIndex].size > 0
-            assign sectionContentStrip = sectionContentStrip | append: subSectionSection %}{% 
-          else %}{% 
-            assign sectionContentStrip = sectionContentStrip | prepend: subSectionSection %}{% 
-          endif %}{% 
-        endif %}{% 
-      else %}{% 
-        comment %}Don't output any sub-sections (group them all together){% endcomment %}{% 
-        capture sectionContent %}{% 
-          include /functions/output-content-array.html contentArray=sectionContent currHeadingLevel=subsectionHeadingLevel relevantTags=relevantTagsArrayGuideline irrelevantTags=include.irrelevantTagsArrayGuideline collapseSubsections=include.collapseContentSubsections %}{%  
-        endcapture %}{% 
-        assign sectionContentStrip = sectionContent | strip %}{% 
-      endif %}{% 
-      if sectionContentStrip.size > 0 %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=sectionTags %}{% 
-        endcapture %}{% 
-        if sectionKey == "checklist" %}{% 
-          assign glyphicon = "check text-success" %}{% 
-        elsif sectionKey == "guides" %}{% 
-          assign glyphicon = "book text-info" %}{% 
-        elsif sectionKey == "solutions" %}{% 
-          assign glyphicon = "refresh text-success" %}{% 
-        elsif sectionKey == "similar" %}{% 
-          assign glyphicon = "bookmark text-muted" %}{% 
-        else %}{% 
-          assign glyphicon = "" %}{% 
-        endif %}{% 
-        if sectionKey == "introduction" %}
-<div{{ classOutput | rstrip }}>
-
-{{ sectionContentStrip }}
-
-</div>
-{%      else %}
-<section{{ classOutput | rstrip }}>
-
-<h{{ subsectionHeadingLevel }}>{% if glyphicon.size > 0 %}<span class="glyphicon glyphicon-{{ glyphicon }}" aria-hidden="true"></span> {% endif %}{{ guideline[sectionKey].title }}</h{{ subsectionHeadingLevel }}>
-
-{{ sectionContentStrip }}
-
-</section>
-{%      endif %}{% 
-      endif %}{% 
-    endif %}{% 
-  endfor %}
 </section>
 
 {% endif %}

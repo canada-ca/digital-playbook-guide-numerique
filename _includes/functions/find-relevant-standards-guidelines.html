@@ -1,0 +1,53 @@
+{% comment %}@overview Iterates through all the standards and guidelines, identifying which ones include content with certain tags{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@return {String} Indexes of the guidelines that have content with matching tags, in the format "2,3;;2;0,1;;;1;;2;1", 
+with guideline indexes separated by commas and standards separated by semi-colons{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{% 
+assign dataSource = site.data[dataVariable] %}{% 
+assign affectedAncestors = "" %}{% 
+assign standardSeparator = ";" %}{% 
+assign guidelineSeparator = "," %}{% 
+comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
+if include.relevantTags.size > 0 %}{% 
+  if include.relevantTags.first %}{% 
+    assign relevantTagsArray = include.relevantTags %}{% 
+  else %}{% 
+    assign relevantTagsArray = include.relevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+  assign relevantTagsArray = "" %}{% 
+endif %}{% 
+comment %}Ensure the irrelevant tags are in an array{% endcomment %}{% 
+if include.irrelevantTags.size > 0 %}{% 
+  if include.irrelevantTags.first %}{% 
+    assign irrelevantTagsArray = include.irrelevantTags %}{% 
+  else %}{% 
+    assign irrelevantTagsArray = include.irrelevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+    assign irrelevantTagsArray = "" %}{% 
+endif %}{% 
+comment %}Loop through each of the standards in the dataset{% endcomment %}{% 
+for standard in dataSource.standards.content %}{% 
+  assign guidelineIndex = 0 %}{% 
+  assign affectedGuidelines = "" %}{% 
+  comment %}Loop through each of the guidelines in the standard{% endcomment %}{% 
+  for guideline in standard.guidelines.content %}{% 
+    comment %}Check the tags on the guideline and any descendant{% endcomment %}{% 
+    capture matchFound %}{% 
+      include /functions/find-relevant-content.html object=guideline relevantTags=relevantTagsArray irrelevantTags=irrelevantTagsArray %}{% 
+    endcapture %}{% 
+    if matchFound contains "true" %}{% 
+      if affectedGuidelines.size > 0 %}{% 
+        assign affectedGuidelines = affectedGuidelines | append: guidelineSeparator %}{% 
+      endif %}{% 
+      assign affectedGuidelines = affectedGuidelines | append: guidelineIndex %}{% 
+    endif %}{% 
+    assign guidelineIndex = guidelineIndex | plus: 1 %}{% 
+  endfor %}{% 
+  assign affectedAncestors = affectedAncestors | append: affectedGuidelines %}{% 
+  unless forloop.last %}{% 
+    assign affectedAncestors = affectedAncestors | append: standardSeparator %}{% 
+  endunless %}{%
+endfor %}{{ affectedAncestors }}

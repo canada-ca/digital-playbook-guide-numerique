@@ -1,0 +1,59 @@
+{% comment %}@overview Outputs the content for the guideline section.{% endcomment %}{% 
+comment %}@param currHeadingLevel {Number} Heading level for the current section.{% endcomment %}{% 
+comment %}@param sectionKey {String} Dataset property name of the guideline section to process.{% endcomment %}{% 
+comment %}@param standardIndex {Number} Optional (required if guideline is provided, defaults to all standards). Index of the standard that is the parent of the guideline to process{% endcomment %}{% 
+comment %}@param standardIndex {Number} Optional (required if guideline is provided, defaults to all standards). Index of the standard that is the parent of the guideline to process{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@return {String} Outputs the content for the guideline sections.{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}{% 
+comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
+if include.relevantTags.size > 0 %}{% 
+  if include.relevantTags.first %}{% 
+    assign relevantTagsArraySectionContent = include.relevantTags %}{% 
+  else %}{% 
+    assign relevantTagsArraySectionContent = include.relevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+  assign relevantTagsArraySectionContent = "" %}{% 
+endif %}{% 
+comment %}Ensure the irrelevant tags are in an array{% endcomment %}{% 
+if include.irrelevantTags.size > 0 %}{% 
+  if include.irrelevantTags.first %}{% 
+    assign irrelevantTagsArraySectionContent = include.irrelevantTags %}{% 
+  else %}{% 
+    assign irrelevantTagsArraySectionContent = include.irrelevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+    assign irrelevantTagsArraySectionContent = "" %}{% 
+endif %}{% 
+comment %}Set the start and end standard indexes{% endcomment %}{% 
+if include.standardIndex %}{% 
+  assign startStandardIndex = include.standardIndex %}{% 
+  assign endStandardIndex = include.standardIndex %}{% 
+else %}{% 
+  assign startStandardIndex = 0 %}{% 
+  assign endStandardIndex = dataSource.standards.content.size | minus: 1 %}{% 
+endif %}{% 
+assign sectionContentSubStripAll = "" %}{% 
+for currentStandardIndex in (startStandardIndex..endStandardIndex) %}{% 
+  assign standard = dataSource.standards.content[currentStandardIndex] %}{% 
+  comment %}Assign the start and end guideline indexes{% endcomment %}{% 
+  if include.guidelineIndex %}{% 
+    assign startGuidelineIndex = include.guidelineIndex %}{% 
+    assign endGuidelineIndex = include.guidelineIndex %}{% 
+  else %}{% 
+    assign startGuidelineIndex = 0 %}{% 
+    assign endGuidelineIndex = standard.guidelines.content.size | minus: 1 %}{% 
+  endif %}{% 
+  for currentGuidelineIndex in (startGuidelineIndex..endGuidelineIndex) %}{% 
+    assign guideline = standard.guidelines.content[currentGuidelineIndex] %}{% 
+    assign sectionContent = guideline[include.sectionKey].content %}{% 
+    comment %}Output the guideline section{% endcomment %}{% 
+    capture subSectionContent %}{% 
+      include /functions/output-content-array.html contentArray=sectionContent currHeadingLevel=include.currHeadingLevel relevantTags=relevantTagsArraySectionContent irrelevantTags=irrelevantTagsArraySectionContent %}{%  
+    endcapture 
+%}{{ subSectionContent | strip }}{% 
+  endfor %}{% 
+endfor %}

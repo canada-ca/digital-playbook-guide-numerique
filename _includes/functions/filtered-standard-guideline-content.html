@@ -1,13 +1,11 @@
 {% comment %}@overview Outputs filtered and ordered content from the dataset according to the specified tags.{% endcomment %}{% 
 comment %}@param standardIndexes {Number} Optional (default to all) Comma-separated indexes or array of indexes of standards to display.{% endcomment %}{% 
-comment %}@param relevantTags {String} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
-comment %}@param irrelevantTags {String} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
 comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.{% endcomment %}{% 
 comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in groupByTagsTags. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param guidelineSectionsOrder {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).{% endcomment %}{% 
-comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
-comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param standardsListClasses {String} Optional. Classes (separated by a space) to add to the standards list.{% endcomment %}{% 
 comment %}@param standardsListItemClasses {String} Optional. Classes (separated by a space)vto add to the standards list items.{% endcomment %}{% 
 comment %}@param standardsLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item links.{% endcomment %}{% 
@@ -19,7 +17,7 @@ comment %}@param guidelinesSubLinkClasses {String} Optional. Classes (separated 
 comment %}@return {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags.{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
-comment %}Ensure the standard numbers are in an array{% endcomment %}{% 
+comment %}Ensure the standard indexes are in an array{% endcomment %}{% 
 if include.standardIndexes.size > 0 %}{% 
   if include.standardIndexes.first %}{% 
     assign standardIndexesArray = include.standardIndexes %}{% 
@@ -31,7 +29,7 @@ else %}{%
 endif %}{% 
 comment %}Determine which standards and guidelines have content with a tag that matches include.relevantTags{% endcomment %}{% 
 capture relevantStandardsGuidelines %}{% 
-  include /functions/descendant-tags.html findTags=include.relevantTags %}{% 
+  include /functions/find-relevant-standards-guidelines.html relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
 endcapture %}{% 
 assign relevantStandardsGuidelinesArray = relevantStandardsGuidelines | strip | split: ";" %}{% 
 unless standardIndexesArray.size == 1 %}
@@ -89,7 +87,7 @@ for relevantGuidelines in relevantStandardsGuidelinesArray %}{%
     if displayStandard == true %}{% 
       assign currentRelevantStandard = dataSource.standards.content[relevantStandardIndex] %}{% 
       assign relevantGuidelinesArray = relevantGuidelines | split: "," %}{% 
-      include functions/output-standard.html standard=currentRelevantStandard relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=include.relevantSections guidelineSectionsOrder=include.guidelineSectionsOrder includeStandardTitle=true currentHeadingLevel=headingLevel collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
+      include functions/output-standard.html standardIndex=relevantStandardIndex relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=include.relevantSections guidelineSectionsOrder=include.guidelineSectionsOrder includeStandardTitle=true currentHeadingLevel=headingLevel guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
     endif %}{% 
   endif %}{% 
   assign relevantStandardIndex = relevantStandardIndex | plus: 1 %}{% 

@@ -191,7 +191,7 @@ The following are three of the more commonly used helper functions. For the rest
 
 <!-- markdownlint-disable MD032 -->
 - **Overview:** Outputs filtered and ordered content from the dataset according to the specified tags.
-- **Example usage:** <code>&#123;% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
+- **Example usage:** <code>&#123;% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" %&#125;</code>
 - **Parameters:**
   -  <code>standards</code>: {Number} Optional (default to all) Comma-separated indexes or array of indexes of standards to display.
   - <code>relevantTags</code>: {String} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.
@@ -199,8 +199,6 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>groupByTagsTitles</code>: {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in groupByTagsTags. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags.
   - <code>relevantSections</code>: {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed.
   - <code>guidelineSectionsOrder</code>: {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).
-  - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
-  - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
   - <code>standardsListClasses</code> {String} Optional. Classes (separated by a space) to add to the standards list.
   - <code>standardsListItemClasses</code> {String} Optional. Classes (separated by a space)vto add to the standards list items.
   - <code>standardsLinkClasses</code> {String} Optional. Classes (separated by a space) to add to the standards list item links.
@@ -217,9 +215,9 @@ The following are three of the more commonly used helper functions. For the rest
 
 <!-- markdownlint-disable MD032 -->
 - **Overview:** Outputs the content for a standard.
-- **Example usage:** <code>&#123;% include /functions/output-standard.html standard="1" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
+- **Example usage:** <code>&#123;% include /functions/output-standard.html standard="1" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" %&#125;</code>
 - **Parameters:**
-  - <code>standard</code>: {Object/Number} Standard object or the standard number (not index), which is used to retrieve the Standard object.
+  - <code>standardIndex</code>: {Number} Standard number (not index), which is used to retrieve the Standard object.
   - <code>includeStandardTitle</code>: {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such as when there are multiple standards on the same page).
   - <code>currentHeadingLevel</code> {Number} Optional (defaults to 1). Heading level of the current section.
   - <code>relevantGuidelines</code>: {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed.
@@ -231,8 +229,6 @@ The following are three of the more commonly used helper functions. For the rest
   - <code>groupByTagsTitles</code>: {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in groupByTagsTags. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags.
   - <code>relevantSections</code>: {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
   - <code>guidelineSectionsOrder</code>: {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).
-  - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
-  - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
   - <code>guidelinesDetailsSummary</code> {Boolean} Optional (defaults to true). Whether guidelines list should be in details/summary.
   - <code>guidelinesListClasses</code> {String} Optional. Classes (separated by a space) to add to the guidelines list.
   - <code>guidelinesListItemClasses</code> {String} Optional. Classes (separated by a space)vto add to the guidelines list items.
@@ -246,19 +242,17 @@ The following are three of the more commonly used helper functions. For the rest
 
 <!-- markdownlint-disable MD032 -->
 - **Overview:** Outputs the content for a guideline.
-- **Example usage:** <code>&#123;% include /functions/output-standard.html standard="1" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" collapseContentSubsections=true %&#125;</code>
+- **Example usage:** <code>&#123;% include /functions/output-standard.html guidelineHeadingLevel="2" standardIndex="1" guidelineIndex="4" relevantGuidelines="1.2,1.4,1.6" relevantRelatedGuidelines="3.4,5.2,6.2" relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" %&#125;</code>
 - **Parameters:**
-  - <code>guideline</code>: {Object/Number} Guideline object or the guideline index (which is used to retrieve the Guideline object).
   - <code>guidelineHeadingLevel</code>: {Number} Heading level of the guideline section header.
-  - <code>standard</code>: {Object/Number} Optional (required if guideline is a number). Standard object or the number (not index) of the standard (which is used to retrieve the Standard object).
+  - <code>standard</code>: {Number} Index of the standard that is the parent of the guideline to process.
+  - <code>guideline</code>: {Number} Index of the guideline to process.
   - <code>relevantTags</code>: {String} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.
   - <code>irrelevantTags</code>: {String} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.  - <code>groupByTagsTags</code>: {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.
   - <code>groupByTagsTags</code>: {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.
   - <code>groupByTagsTitles</code>: {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in groupByTagsTags. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags.
   - <code>relevantSections</code>: {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
   - <code>guidelineSectionsOrder</code>: {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).
-  - <code>collapseIntroSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).
-  - <code>collapseContentSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).
 - **Returns:** {String} Outputs the content for the guideline.
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
@@ -267,12 +261,12 @@ The following are three of the more commonly used helper functions. For the rest
 
 <!-- markdownlint-disable MD032 -->
 - **Overview:** Iterates over an array of content blocks, including nested content arrays, outputting the relevant content.
-- **Example usage:** <code>&#123;% include /functions/output-content-array.html contentArray=site.data.playbook.standards.content[0].guidelines.content[2].checklist.content relevantTags="dpgn-group-group1,dpgn-group-group2" collapseSubsections=true %&#125;</code>
+- **Example usage:** <code>&#123;% include /functions/output-content-array.html contentArray=site.data.playbook.standards.content[0].guidelines.content[2].checklist.content relevantTags="dpgn-group-group1,dpgn-group-group2" %&#125;</code>
 - **Parameters:**
   - <code>contentArray</code>: {Array} Array of content blocks to process.
   - <code>currHeadingLevel</code>: (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within).
   - <code>relevantTags</code>: {String} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.
-  - <code>irrelevantTags</code>: {String} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.  - <code>collapseSubsections</code>: {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a sub-section (i.e., section found in a content array) should be output (does not affect content within the sub-section and replaces section with a div).
+  - <code>irrelevantTags</code>: {String} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.
 - **Returns:** {String} Returns the processed output from the content array.
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->

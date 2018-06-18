@@ -1,9 +1,10 @@
-{% assign dataVariable = site.playbookData[page.lang] %}{% 
-assign dataSource = site.data[dataVariable] %}{% 
-assign defaultSubsectionTitles = site.defaultSubsectionTitles[page.lang] %}
+{% assign defaultSubsectionTitles = site.defaultSubsectionTitles[page.lang] %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}
 
 {% include functions/output-overview.html samePage=true %}
 
-{% for currentStandard in dataSource.standards.content %}{% 
-  include functions/output-standard.html standard=currentStandard includeStandardTitle=true currentHeadingLevel=1 groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}{% 
+{% assign maxIndex = dataSource.standards.content.size | minus: 1 %}{%  
+for currentIndex in (0..maxIndex) %}{% 
+  include functions/output-standard.html standardIndex=currentIndex includeStandardTitle=true currentHeadingLevel=1 groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}{% 
 endfor %}
