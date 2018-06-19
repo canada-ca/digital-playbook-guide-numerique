@@ -84,8 +84,8 @@ Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Working with open standards (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html)
-- [Technology for services (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
+- [Working with open standards (Service Manual (UK))](https://www.gov.uk/service-manual/technology/working-with-open-standards)
+- [Choosing technology: an introduction (Service Manual (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
 - [Australian Government ICT Policy Guides and Procurement (AU)](http://finance.gov.au/policy-guides-procurement/)
 - [W3C Standards (W3C)](https://www.w3.org/standards/)
   - [Web Design and Applications - W3C Web design standards (W3C)](https://www.w3.org/standards/webdesign/)
