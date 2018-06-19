@@ -306,7 +306,6 @@ This includes working in the open, sharing any and all data and information prod
 **[TODO: Add/revise implementation guide items]**
 
 - [Making source code open and reusable (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
-- [Using open source software (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/open-source.html)
 - [Choosing technology: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
 - [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
 - [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
