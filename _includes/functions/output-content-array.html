@@ -1,13 +1,13 @@
-{% comment %}@overview Iterates over an array of content blocks, including nested content arrays, outputting the relevant content{% endcomment %}{% 
+{% comment %}@overview Iterates over an array of content blocks, including nested content arrays, outputting the relevant content.{% endcomment %}{% 
 comment %}@param contentArray {Array} Array of content blocks to process.{% endcomment %}{% 
-comment %}@param currHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within).{% endcomment %}{% 
-comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
-comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param parentHeadingLevel (Integer} Preceding heading level (i.e., heading level for the section that contentArray is contained within).{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3"). This means that the target array must have an entry that either matches string1 or entries that match string2 and string3. Partial match criteria (contains) start with "~" (e.g., "string1+~string2"). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3"). This means that the target array must have an entry that either matches string1 or entries that match string2 and string3. Partial match criteria (contains) start with "~" (e.g., "string1+~string2"). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param relevantSourceElements {String/Array} Optional (defaults to all). Comma-separated source elements or an array of source elements for which content to display (e.g., "ul,ol"). Can be overridden by irrelevantSourceElements. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).{% endcomment %}{% 
+comment %}@param irrelevantSourceElements {String/Array} Optional (defaults to none). Comma-separated source elements or an array of source elements for which content not to display (e.g., "ul,ol"). Overrides by relevantSourceElements. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).{% endcomment %}{% 
+comment %}@param suppressParentListElement {Boolean} Optional (defaults to false). Prevents the output of the parent list element (useful when used with relevantSourceElements to merge lists together). Only affects lists at the current level (i.e., doesn't affect descendant lists).{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
-assign currentHeadingLevel = include.currHeadingLevel %}{% 
-unless itemRecursionLevel > 0 %}{% 
-  assign itemRecursionLevel = 0 %}{% 
-endunless %}{% 
+assign currentHeadingLevel = include.parentHeadingLevel %}{% 
 comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
 if include.relevantTags.size > 0 %}{% 
   if include.relevantTags.first %}{% 
@@ -29,7 +29,27 @@ else %}{%
   assign irrelevantTagsArray = "" %}{% 
 endif %}{% 
 for item in include.contentArray %}{% 
-  comment %}Go to the next item in the content array if there is an irrelevant requirement match.{% endcomment %}{% 
+  comment %}Ensure the relevant source elements are in an array (done in loop since not passed down through recursions){% endcomment %}{% 
+  if include.relevantSourceElements.size > 0 %}{% 
+    if include.relevantSourceElements.first %}{% 
+      assign relevantSourceElementsArray = include.relevantSourceElements %}{% 
+    else %}{% 
+      assign relevantSourceElementsArray = include.relevantSourceElements | replace: " ", "" | split: "," %}{% 
+    endif %}{% 
+  else %}{% 
+    assign relevantSourceElementsArray = "" %}{% 
+  endif %}{% 
+  comment %}Ensure the irrelevant source elements are in an array (done in loop since not passed down through recursions){% endcomment %}{% 
+  if include.irrelevantSourceElements.size > 0 %}{% 
+    if include.irrelevantSourceElements.first %}{% 
+      assign irrelevantSourceElementsArray = include.irrelevantSourceElements %}{% 
+    else %}{% 
+      assign irrelevantSourceElementsArray = include.irrelevantSourceElements | replace: " ", "" | split: "," %}{% 
+    endif %}{% 
+  else %}{% 
+    assign irrelevantSourceElementsArray = "" %}{% 
+  endif %}{% 
+  comment %}Go to the next item in the content array if there is an irrelevant requirement match (i.e., irrelevant tag match, irrelevant source element match or no relevant source element match).{% endcomment %}{% 
   if irrelevantTagsArray.size > 0 %}{% 
     capture tagsCompareIrrelevantResult %}{% 
       include /functions/find-array-match.html array1=item.tags array2=irrelevantTagsArray %}{% 
@@ -37,6 +57,24 @@ for item in include.contentArray %}{%
     if tagsCompareIrrelevantResult contains "true" %}{% 
       continue %}{% 
     endif %}{% 
+  endif %}{% 
+  if irrelevantSourceElementsArray.size > 0 %}{% 
+    assign sourceElementArray = item.source_element | split: "," %}{% 
+    capture tagsCompareIrrelevantResult %}{% 
+      include /functions/find-array-match.html array1=sourceElementArray array2=irrelevantSourceElementsArray %}{% 
+    endcapture %}{% 
+    if tagsCompareIrrelevantResult contains "true" %}{% 
+      continue %}{% 
+    endif %}{% 
+  endif %}{% 
+  if relevantSourceElementsArray.size > 0 %}{% 
+    assign sourceElementArray = item.source_element | split: "," %}{% 
+    capture tagsCompareRelevantResult %}{% 
+      include /functions/find-array-match.html array1=sourceElementArray array2=relevantSourceElementsArray %}{% 
+    endcapture %}{% 
+    unless tagsCompareRelevantResult contains "true" %}{% 
+      continue %}{% 
+    endunless %}{% 
   endif %}{% 
   comment %}Item is relevant if there is a relevant requirement match.{% endcomment %}{% 
   if relevantTagsArray.size > 0 %}{% 
@@ -52,13 +90,12 @@ for item in include.contentArray %}{%
     assign relevantItem = true %}{% 
   endif %}{% 
   capture rawOutput %}{% 
-
     if item.content_type == 'section' %}{%
       comment %}Content block is a section, so output the section elements, the heading and then call this function to process the nested content array{% endcomment %}{% 
       assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedOutputSection %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
+        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
@@ -85,7 +122,6 @@ for item in include.contentArray %}{%
 
 </{{ sectionTag }}>
 {%    endif %}{% 
-
     elsif item.content_type == 'inline' %}{%  
       comment %}Is inline content, so output the content as is if it is relevant{% endcomment %}{% 
       if relevantItem 
@@ -95,7 +131,7 @@ for item in include.contentArray %}{%
       comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedBlockContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content currHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
+        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 
@@ -119,11 +155,15 @@ for item in include.contentArray %}{%
         endfor %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture %}
-<{{ item.source_element }}{{ classOutput | rstrip }}{{ attributesOutput }}>
+        endcapture %}{% 
+        unless include.suppressParentListElement == true and (item.source_element == "ul" or item.source_element == "ol") %}
+<{{ item.source_element }}{{ classOutput | rstrip }}{{ attributesOutput }}>{% 
+        endunless %}
 {{ nestedBlockContentStrip }}
-</{{ item.source_element }}>
-{%    endif %}{% 
+{%      unless include.suppressParentListElement == true and (item.source_element == "ul" or item.source_element == "ol") 
+%}</{{ item.source_element }}>
+{%      endunless %}{% 
+      endif %}{% 
     endif %}{% 
   endcapture %}{% 
   comment %}Special handling to ensure output is properly spaced (e.g., list items are on separate lines with no blank lines in between){% endcomment %}{{ rawOutput | lstrip }}{% 

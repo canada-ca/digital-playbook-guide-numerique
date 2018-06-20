@@ -2,19 +2,13 @@
 comment %}@param standardIndex {Number} Index used to retrieve the Standard object.{% endcomment %}{% 
 comment %}@param includeStandardTitle {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such when there are multiple standards on the same page).{% endcomment %}{% 
 comment %}@param currentHeadingLevel {Number} Optional (defaults to 1). Heading level of the current section.{% endcomment %}{% 
-comment %}**** Following four parameters should not be used directly. Only through filtered-standard-guideline-contento.html include. ****{% endcomment %}{% 
-comment %}@param relevantGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed.{% endcomment %}{% 
-comment %}@param relevantRelatedGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard.{% endcomment %}{% 
-comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
-comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3). This means that the target array must have an entry that either matches string1 or entries that match string2 and string 3. Partial match criteria (contains) start with "~" (e.g., string1+~string2). Can be overridden by irrelevantTags.{% endcomment %}{% 
-comment %}*********{% endcomment %}{% 
-comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.{% endcomment %}{% 
-comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in groupByTagsTags. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags.{% endcomment %}{% 
+comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to group the content according to the specified tags (in the specified order). Content that matches multiple tags will be duplicated in each of the related groupings. Content that is not associated to any of the specified tags will be included in a separate grouping (to filter out content completely, use relevantTags and irrelevantTags). If groupByTagsTitles is used, then the groupings will be put in sections with the specified titles for the headings. Groupings not in sections will be put at the beginning while groupings in sections will put in the end.{% endcomment %}{% 
+comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Puts the groupByTagsTags groupings in sections with headings using the subsection titles. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags. Empty entries can be used to selectively not apply sections.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param guidelineSectionsOrder {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).{% endcomment %}{% 
 comment %}@param guidelinesDetailsSummary {Boolean} Optional (defaults to true). Whether guidelines list should be in details/summary.{% endcomment %}{% 
 comment %}@param guidelinesListClasses {String} Optional. Classes (separated by a space) to add to the guidelines list.{% endcomment %}{% 
-comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space)vto add to the guidelines list items.{% endcomment %}{% 
+comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space) to add to the guidelines list items.{% endcomment %}{% 
 comment %}@param guidelinesLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item links.{% endcomment %}{% 
 comment %}@param guidelinesSubLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.{% endcomment %}{% 
 comment %}@return {String} Outputs the content for the standard and the included guidelines.{% endcomment %}{% 
@@ -152,18 +146,15 @@ if tagsCompareResult contains "true" %}{%
   else 
     %}<details>
 <summary markdown="0">{{ standard.relatedguidelines.title }}</summary>{% 
-  endif %}
-
-{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}
-
-{%  unless include.guidelinesDetailsSummary == false 
+  endif %}{% 
+  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
+  unless include.guidelinesDetailsSummary == false 
   %}</details>{% 
-    endunless %}
+  endunless %}
 </div>
 {% endif %}{% 
-endif %}
-
-{% comment %}Output each guideline as a new section and output the included content{% endcomment %}{% 
+endif %}{% 
+comment %}Output each guideline as a new section and output the included content{% endcomment %}{% 
 for guidelineIndex in outputGuidelinesArray %}{% 
   include functions/output-guideline.html guidelineHeadingLevel=guidelineHeadingLevel standardIndex=currentStandardIndex guidelineIndex=guidelineIndex relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=relevantSectionsArray guidelineSectionsOrder=include.guidelineSectionsOrder %}{% 
 endfor %}{% 

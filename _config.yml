@@ -103,7 +103,7 @@ defaultClasses:
   ol: "lst-spcd"
   ul: "lst-spcd"
   li: ""
-  table: ""
+  table: "table table-striped table-bordered"
   caption: ""
   thead: ""
   tbody: ""
