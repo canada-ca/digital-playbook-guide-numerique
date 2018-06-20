@@ -18995,6 +18995,24 @@
                             "tags": [
 
                             ],
+                            "content": "<a href=\"https://sourcecode.cio.gov/OSS/\">Open Source Software (Federal Source Code Policy (US))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
                             "content": "<a href=\"https://playbook.cio.gov/#play13\">13. Default to open (Digital Services Playbook (US))</a>"
                           }
                         ]
@@ -19850,6 +19868,24 @@
 
                             ],
                             "content": "<a href=\"https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/2_Normes_ouvertes.md\">Normes ouvertes (Livre blanc ouvert en premier (GC)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/3_Logiciel_libre_Utilisation.md\">Logiciels libres - Utilisation (Livre blanc ouvert en premier (GC))</a>"
                           }
                         ]
                       },
@@ -20967,7 +21003,7 @@
                             "tags": [
 
                             ],
-                            "content": "<a href=\"https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/3_Logiciel_libre_Utilisation.md\">Logiciels libres - Utilisation (Livre blanc ouvert en premier (GC))</a>"
+                            "content": "<a href=\"https://sourcecode.cio.gov/Three-Step-Software-Solutions-Analysis/\">Three-Step Software Solutions Analysis (Federal Source Code Policy (US))</a>"
                           }
                         ]
                       },

@@ -13,13 +13,13 @@ if page.url contains "/views-vues/standards-normes" %}{%
 else %}{% 
   assign isStandardsView = false %}{% 
 endif %}{% 
-unless page.url contains overviewPath or page.url contains "/docs" or (page.url contains "/views-vues/" and isStandardsView == false) 
+unless page.url contains overviewPath or page.url contains "/docs" or page.url contains "/views-vues/" and isStandardsView == false 
   %}{% include pagination.html %}{% 
 endunless %}
 {{ content }}
 <hr />
 {% include page-options.html %}{% 
-unless page.url contains overviewPath or page.url contains "/docs" or (page.url contains "/views-vues/" and isStandardsView == false) 
+unless page.url contains overviewPath or page.url contains "/docs" or page.url contains "/views-vues/" and isStandardsView == false 
   %}{% include pagination.html %}{% 
 endunless %}
 {% include footer-pied-page.html %}

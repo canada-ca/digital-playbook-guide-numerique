@@ -19025,6 +19025,24 @@
                             "tags": [
 
                             ],
+                            "content": "<a href=\"https://sourcecode.cio.gov/OSS/\">Open Source Software (Federal Source Code Policy (US))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
                             "content": "<a href=\"https://playbook.cio.gov/#play13\">13. Default to open (Digital Services Playbook (US))</a>"
                           }
                         ]
@@ -19880,6 +19898,24 @@
 
                             ],
                             "content": "<a href=\"https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/2_Open_Standards.md\">Open Standards (Open First Whitepaper (GC))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/3_Open_Source_Software_Use.md\">Open Source Software Use (Open First Whitepaper (GC))</a>"
                           }
                         ]
                       },
@@ -20997,7 +21033,7 @@
                             "tags": [
 
                             ],
-                            "content": "<a href=\"https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/3_Open_Source_Software_Use.md\">Open Source Software Use (Open First Whitepaper (GC))</a>"
+                            "content": "<a href=\"https://sourcecode.cio.gov/Three-Step-Software-Solutions-Analysis/\">Three-Step Software Solutions Analysis (Federal Source Code Policy (US))</a>"
                           }
                         ]
                       },
