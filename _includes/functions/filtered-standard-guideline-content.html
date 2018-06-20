@@ -1,67 +1,94 @@
 {% comment %}@overview Outputs filtered and ordered content from the dataset according to the specified tags.{% endcomment %}{% 
-comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed (unless overridden by irrelevantTags).{% endcomment %}{% 
-comment %}@param irrelevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags to filter out (overrides the display of any content that has a match in relevantTags).{% endcomment %}{% 
-comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.{% endcomment %}{% 
-comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in groupByTagsTags. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags.{% endcomment %}{% 
+comment %}@param standardIndexes {Number} Optional (default to all) Comma-separated indexes or array of indexes of standards to display.{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3"). This means that the target array must have an entry that either matches string1 or entries that match string2 and string3. Partial match criteria (contains) start with "~" (e.g., "string1+~string2"). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3"). This means that the target array must have an entry that either matches string1 or entries that match string2 and string3. Partial match criteria (contains) start with "~" (e.g., "string1+~string2"). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to group the content according to the specified tags (in the specified order). Content that matches multiple tags will be duplicated in each of the related groupings. Content that is not associated to any of the specified tags will be included in a separate grouping (to filter out content completely, use relevantTags and irrelevantTags). If groupByTagsTitles is used, then the groupings will be put in sections with the specified titles for the headings. Groupings not in sections will be put at the beginning while groupings in sections will put in the end.{% endcomment %}{% 
+comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Puts the groupByTagsTags groupings in sections with headings using the subsection titles. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags. Empty entries can be used to selectively not apply sections.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all sections). Comma-separated section tags or array of section tags that sections must have at least one of to be displayed.{% endcomment %}{% 
 comment %}@param guidelineSectionsOrder {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).{% endcomment %}{% 
-comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
-comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a standard/guideline content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
 comment %}@param standardsListClasses {String} Optional. Classes (separated by a space) to add to the standards list.{% endcomment %}{% 
-comment %}@param standardsListItemClasses {String} Optional. Classes (separated by a space)vto add to the standards list items.{% endcomment %}{% 
+comment %}@param standardsListItemClasses {String} Optional. Classes (separated by a space) to add to the standards list items.{% endcomment %}{% 
 comment %}@param standardsLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item links.{% endcomment %}{% 
 comment %}@param standardsSubLinkClasses {String} Optional. Classes (separated by a space) to add to the standards list item link content.{% endcomment %}{% 
 comment %}@param guidelinesListClasses {String} Optional. Classes (separated by a space) to add to the guidelines list.{% endcomment %}{% 
-comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space)vto add to the guidelines list items.{% endcomment %}{% 
+comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space) to add to the guidelines list items.{% endcomment %}{% 
 comment %}@param guidelinesLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item links.{% endcomment %}{% 
 comment %}@param guidelinesSubLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.{% endcomment %}{% 
-comment %}@return {String} Outputs standard and guideline content with a tag that matches at least one of relevantTags.{% endcomment %}{% 
+comment %}@return {String} Outputs filtered and ordered content from the dataset according to the specified tags.{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
+comment %}Ensure the standard indexes are in an array{% endcomment %}{% 
+if include.standardIndexes.size > 0 %}{% 
+  if include.standardIndexes.first %}{% 
+    assign standardIndexesArray = include.standardIndexes %}{% 
+  else %}{% 
+    assign standardIndexesArray = include.standardIndexes | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+    assign standardIndexesArray = "" %}{% 
+endif %}{% 
 comment %}Determine which standards and guidelines have content with a tag that matches include.relevantTags{% endcomment %}{% 
 capture relevantStandardsGuidelines %}{% 
-  include /functions/descendant-tags.html findTags=include.relevantTags %}{% 
+  include /functions/find-relevant-standards-guidelines.html relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
 endcapture %}{% 
-assign relevantStandardsGuidelinesArray = relevantStandardsGuidelines | strip | split: ";" %}
+assign relevantStandardsGuidelinesArray = relevantStandardsGuidelines | strip | split: ";" %}{% 
+unless standardIndexesArray.size == 1 %}
 
 <section>
 <h2>{{ dataSource.standards.title }}</h2>
 
 {% comment %}Output links for only the relevant standards{% endcomment %}{% 
-assign standardIndex = 0 %}{% 
-assign relevantStandards = "" %}{% 
-assign relevantRelatedGuidelines = "" %}{% 
-comment %}Create an array of indexes for the relevant standards and a separate array for filtering out related guidelines links{% endcomment %}{% 
-for currentStandard in relevantStandardsGuidelinesArray %}{% 
-  if currentStandard.size > 0 %}{% 
-    if relevantStandards.size > 0 %}{% 
-      assign relevantStandards = relevantStandards | append: "," %}{% 
-    endif %}{% 
-    assign relevantStandards = relevantStandards | append: standardIndex %}{% 
-    assign relevantGuidelines = currentStandard | split: "," %}{% 
-    comment %}Convert the guideline indexes to the "#.#" guideline number format{% endcomment %}{% 
-    for relevantGuidelineIndex in relevantGuidelines %}{% 
-      if relevantRelatedGuidelines.size > 0 %}{% 
-        assign relevantRelatedGuidelines = relevantRelatedGuidelines | append: "," %}{% 
+  assign standardIndex = 0 %}{% 
+  assign relevantStandards = "" %}{% 
+  assign relevantRelatedGuidelines = "" %}{% 
+  comment %}Create an array of indexes for the relevant standards and a separate array for filtering out related guidelines links{% endcomment %}{% 
+  for currentStandard in relevantStandardsGuidelinesArray %}{% 
+    if currentStandard.size > 0 %}{% 
+      if relevantStandards.size > 0 %}{% 
+        assign relevantStandards = relevantStandards | append: "," %}{% 
       endif %}{% 
-      assign standardNumber = standardIndex | plus: 1 %}{% 
-      assign guidelineNumber = relevantGuidelineIndex | plus: 1 %}{% 
-      assign relevantRelatedGuidelines = relevantRelatedGuidelines | append: standardNumber | append: "." | append: guidelineNumber %}{% 
-    endfor %}{% 
-  endif %}{% 
-  assign standardIndex = standardIndex | plus: 1 %}{% 
-endfor %}{% 
-include functions/standard-links.html samePage=true relevantStandards=relevantStandards listClasses=include.standardsListClasses listItemClasses=include.standardsListItemClasses linkClasses=include.standardsLinkClasses subLinkClasses=include.standardsSubLinkClasses %}
+      assign relevantStandards = relevantStandards | append: standardIndex %}{% 
+      assign relevantGuidelines = currentStandard | split: "," %}{% 
+      comment %}Convert the guideline indexes to the "#.#" guideline number format{% endcomment %}{% 
+      for relevantGuidelineIndex in relevantGuidelines %}{% 
+        if relevantRelatedGuidelines.size > 0 %}{% 
+          assign relevantRelatedGuidelines = relevantRelatedGuidelines | append: "," %}{% 
+        endif %}{% 
+        assign standardNumber = standardIndex | plus: 1 %}{% 
+        assign guidelineNumber = relevantGuidelineIndex | plus: 1 %}{% 
+        assign relevantRelatedGuidelines = relevantRelatedGuidelines | append: standardNumber | append: "." | append: guidelineNumber %}{% 
+      endfor %}{% 
+    endif %}{% 
+    assign standardIndex = standardIndex | plus: 1 %}{% 
+  endfor %}{% 
+  include functions/standard-links.html samePage=true relevantStandards=relevantStandards listClasses=include.standardsListClasses listItemClasses=include.standardsListItemClasses linkClasses=include.standardsLinkClasses subLinkClasses=include.standardsSubLinkClasses %}
 
 </section>
 
-{% comment %}Iterate through each of the standards, only processing the standards and guidelines that have content with a tag that matches at least one of include.relevantTags{% endcomment %}{% 
+{% endunless %}{% 
+comment %}Iterate through each of the standards, only processing the standards and guidelines that have content with a tag that matches at least one of include.relevantTags{% endcomment %}{% 
 assign relevantStandardIndex = 0 %}{% 
+if standardIndex.size == 1 %}{% 
+  assign headingLevel = 2 %}{% 
+else %}{% 
+  assign headingLevel = 1 %}{% 
+endif %}{% 
 for relevantGuidelines in relevantStandardsGuidelinesArray %}{% 
   if relevantGuidelines.size > 0 %}{% 
-    assign currentRelevantStandard = dataSource.standards.content[relevantStandardIndex] %}{% 
-    assign relevantGuidelinesArray = relevantGuidelines | split: "," %}{% 
-    include functions/output-standard.html standard=currentRelevantStandard relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=include.relevantSections guidelineSectionsOrder=include.guidelineSectionsOrder includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
+    assign displayStandard = false %}{% 
+    for displayStandardIndex in standardIndexes %}{% 
+      if displayStandardIndex == relevantStandardIndex %}{% 
+        assign displayStandard = true %}{% 
+        break %}{% 
+      endif %}{% 
+    else %}{% 
+      assign displayStandard = true %}{% 
+    endfor %}{% 
+    if displayStandard == true %}{% 
+      assign currentRelevantStandard = dataSource.standards.content[relevantStandardIndex] %}{% 
+      assign relevantGuidelinesArray = relevantGuidelines | split: "," %}{% 
+      include functions/output-standard.html standardIndex=relevantStandardIndex relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=include.relevantSections guidelineSectionsOrder=include.guidelineSectionsOrder includeStandardTitle=true currentHeadingLevel=headingLevel guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
+    endif %}{% 
   endif %}{% 
   assign relevantStandardIndex = relevantStandardIndex | plus: 1 %}{% 
 endfor %}

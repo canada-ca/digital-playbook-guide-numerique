@@ -1,0 +1,260 @@
+{% comment %}@overview Outputs the guideline sections.{% endcomment %}{% 
+comment %}@param parentHeadingLevel {Number} Heading level for the current section.{% endcomment %}{% 
+comment %}@param standardIndex {Number} Optional (required if guideline is provided, defaults to all standards). Index of the standard that is the parent of the guideline to process.{% endcomment %}{% 
+comment %}@param guidelineIndex {Number} Optional (defaults to all guidelines) Index of the guideline to process.{% endcomment %}{% 
+comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3"). This means that the target array must have an entry that either matches string1 or entries that match string2 and string3. Partial match criteria (contains) start with "~" (e.g., "string1+~string2"). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3"). This means that the target array must have an entry that either matches string1 or entries that match string2 and string3. Partial match criteria (contains) start with "~" (e.g., "string1+~string2"). Can be overridden by irrelevantTags.{% endcomment %}{% 
+comment %}@param groupListsSeparately {Boolean} Optional (defaults to false). When enabled, top-level lists will be grouped and merged together, followed by the rest of the content.{% endcomment %}{% 
+comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to group the content according to the specified tags (in the specified order). Content that matches multiple tags will be duplicated in each of the related groupings. Content that is not associated to any of the specified tags will be included in a separate grouping (to filter out content completely, use relevantTags and irrelevantTags). If groupByTagsTitles is used, then the groupings will be put in sections with the specified titles for the headings. Groupings not in sections will be put at the beginning while groupings in sections will put in the end.{% endcomment %}{% 
+comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Puts the groupByTagsTags groupings in sections with headings using the subsection titles. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags. Empty entries can be used to selectively not apply sections.{% endcomment %}{% 
+comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
+comment %}@param guidelineSectionsOrder {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).{% endcomment %}{% 
+comment %}@return {String} Outputs the guideline sections.{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}{% 
+assign subsectionHeadingLevel = include.parentHeadingLevel | plus: 1 %}{% 
+comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
+if include.relevantTags.size > 0 %}{% 
+  if include.relevantTags.first %}{% 
+    assign relevantTagsArrayGuideline = include.relevantTags %}{% 
+  else %}{% 
+    assign relevantTagsArrayGuideline = include.relevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+  assign relevantTagsArrayGuideline = "" %}{% 
+endif %}{% 
+comment %}Ensure the irrelevant tags are in an array{% endcomment %}{% 
+if include.irrelevantTags.size > 0 %}{% 
+  if include.irrelevantTags.first %}{% 
+    assign irrelevantTagsArrayGuideline = include.irrelevantTags %}{% 
+  else %}{% 
+    assign irrelevantTagsArrayGuideline = include.irrelevantTags | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+    assign irrelevantTagsArrayGuideline = "" %}{% 
+endif %}{% 
+comment %}Ensure the group by tags tags are in an array{% endcomment %}{% 
+if include.groupByTagsTags.size > 0 %}{% 
+  if include.groupByTagsTags.first %}{% 
+    assign groupByTagsTagsArray = include.groupByTagsTags %}{% 
+  else %}{% 
+    assign groupByTagsTagsArray = include.groupByTagsTags | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+    assign groupByTagsTagsArray = "" %}{% 
+endif %}{% 
+comment %}Ensure the group by tags titles are in an array{% endcomment %}{% 
+if include.groupByTagsTitles.size > 0 %}{% 
+  if include.groupByTagsTitles.first %}{% 
+    assign groupByTagsTitlesArray = include.groupByTagsTitles %}{% 
+  else %}{% 
+    assign groupByTagsTitlesArray = include.groupByTagsTitles | split: ";" %}{% 
+  endif %}{% 
+else %}{% 
+    assign groupByTagsTitlesArray = "" %}{% 
+endif %}{% 
+comment %}Ensure the relevant sections are in an array{% endcomment %}{% 
+if include.relevantSections.size > 0 %}{% 
+  if include.relevantSections.first %}{% 
+    assign relevantSectionsArray = include.relevantSections %}{% 
+  else %}{% 
+    assign relevantSectionsArray = include.relevantSections | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+endif %}{% 
+if include.guidelineSectionsOrder.size > 0 %}{% 
+  if include.guidelineSectionsOrder.first %}{% 
+    assign guidelineSectionsOrderArray = include.guidelineSectionsOrder %}{% 
+  else %}{% 
+    assign guidelineSectionsOrderArray = include.guidelineSectionsOrder | replace: " ", "" | split: "," %}{% 
+  endif %}{% 
+else %}{% 
+  assign guidelineSectionsOrderArray = site.guidelineSectionsOrder %}{% 
+endif %}{% 
+comment %}Output one section at a time{% endcomment %}{% 
+for sectionKey in guidelineSectionsOrderArray %}{% 
+  assign sectionTags = dataSource.standards.content[0].guidelines.content[0][sectionKey].tags %}{% 
+  if relevantSectionsArray.size > 0 %}{% 
+    capture tagsCompareResult %}{% 
+      include /functions/find-array-match.html array1=sectionTags array2=relevantSectionsArray %}{% 
+    endcapture %}{% 
+  else %}{% 
+    assign tagsCompareResult="true" %}{% 
+  endif %}{% 
+  if tagsCompareResult contains "true" %}{% 
+    if groupByTagsTagsArray.size > 0 %}{% 
+      comment %}Output a sub-section for each tag in groupByTagsTagsArray (if there is any relevant content){% endcomment %}{% 
+      assign subsectionIndex = 0 %}{% 
+      assign sectionAllGroupedContentStrip = "" %}{% 
+      assign subSubsectionHeadingLevel = subsectionHeadingLevel | plus: 1 %}{% 
+      for currentTag in groupByTagsTagsArray %}{% 
+        comment %}If there are relevant tags, ignore currentTag if it does not match one of the relevant tags{% endcomment %}{% 
+        if relevantTagsArrayGuideline.size > 0 %}{% 
+          assign currentTagArray = currentTag | split: "," %}{%  
+          capture tagsCompareResult %}{% 
+            include /functions/find-array-match.html array1=currentTagArray array2=relevantTagsArrayGuideline %}{% 
+          endcapture %}{%
+          unless tagsCompareResult contains "true" %}{% 
+            continue %}{% 
+          endunless %}{% 
+        endif %}{% 
+        if include.groupListsSeparately == true %}{% 
+          capture sectionGroupedContent %}{% 
+            include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline relevantSourceElements="ul,ol" suppressParentListElement=true %}{% 
+          endcapture %}{% 
+          assign sectionGroupedContentStrip = sectionGroupedContent | strip %}{%  
+          if sectionGroupedContentStrip.size > 0 %}{% 
+            capture sectionGroupedContentStrip %}
+<ul>
+{{ sectionGroupedContentStrip }}
+</ul>
+{%          endcapture %}{% 
+          endif %}{% 
+          capture sectionGroupedContent %}{% 
+            include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline irrelevantSourceElements="ul,ol" %}{% 
+          endcapture %}{% 
+          assign sectionGroupedContentStrip2 = sectionGroupedContent | strip %}{% 
+          if sectionGroupedContentStrip2.size > 0 %}{% 
+            assign sectionGroupedContentStrip = sectionGroupedContentStrip | append: sectionGroupedContentStrip2 %}{% 
+          endif %}{% 
+        else %}{% 
+          capture sectionGroupedContent %}{% 
+            include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline %}{% 
+          endcapture %}{% 
+          assign sectionGroupedContentStrip = sectionGroupedContent | strip %}{%  
+        endif %}{% 
+        if sectionGroupedContentStrip.size > 0 %}{% 
+          capture sectionGroupedSection %}
+<section class="{{ currentTag }}">
+
+<h{{ subSubsectionHeadingLevel }}>{% 
+            if groupByTagsTitlesArray.size > subsectionIndex
+%}{{ groupByTagsTitlesArray[subsectionIndex] }}{% 
+            else 
+%}{{ site.groupByTagsMissingTitle[page.lang] }}{% 
+            endif 
+%}</h{{ subSubsectionHeadingLevel }}>
+
+{{ sectionGroupedContentStrip }} 
+
+</section>
+{%        endcapture %}{% 
+          assign sectionAllGroupedContentStrip = sectionAllGroupedContentStrip | append: sectionGroupedSection %}{% 
+        endif %}{% 
+        assign subsectionIndex = subsectionIndex | plus: 1 %}{% 
+      endfor %}{% 
+      comment %}Create final subsection for content that doesn't match any of the grouping tags{% endcomment %}{% 
+      if irrelevantTagsArrayGuideline.size > 0 %}{% 
+        assign tagsToFilterOutArray = groupByTagsTagsArray | concat: irrelevantTagsArrayGuideline %}{% 
+      else %}{% 
+        assign tagsToFilterOutArray = groupByTagsTagsArray %}{% 
+      endif %}{% 
+      if include.groupListsSeparately == true %}{% 
+        capture sectionUngroupedContent %}{% 
+          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray relevantSourceElements="ul,ol" suppressParentListElement=true %}{% 
+        endcapture %}{% 
+        assign sectionUngroupedContentStrip = sectionUngroupedContent | strip %}{% 
+        if sectionUngroupedContentStrip.size > 0 %}{% 
+          capture sectionUngroupedContentStrip %}
+<ul>
+{{ sectionUngroupedContentStrip }}
+</ul>
+{%        endcapture %}{% 
+        endif %}{% 
+        capture sectionUngroupedContent %}{% 
+          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray irrelevantSourceElements="ul,ol" %}{% 
+        endcapture %}{% 
+        assign sectionUngroupedContentStrip2 = sectionUngroupedContent | strip %}{% 
+        if sectionUngroupedContentStrip2.size > 0 %}{% 
+          assign sectionUngroupedContentStrip = sectionUngroupedContentStrip | append: sectionUngroupedContentStrip2 %}{% 
+        endif %}{% 
+      else %}{% 
+        capture sectionUngroupedContent %}{% 
+          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray %}{% 
+        endcapture %}{% 
+        assign sectionUngroupedContentStrip = sectionUngroupedContent | strip %}{% 
+      endif %}{% 
+      if sectionUngroupedContentStrip.size > 0 %}{% 
+        capture sectionUngroupedSection %}{% 
+          comment %}Only output the section and heading tags if there was content in the previous sections{% endcomment %}{% 
+          if sectionAllGroupedContentStrip.size > 0 and groupByTagsTitlesArray[subsectionIndex].size > 0 
+%}<section>
+
+<h{{ subSubsectionHeadingLevel }}>{{ groupByTagsTitlesArray[subsectionIndex] }}</h{{ subSubsectionHeadingLevel }}>{% 
+          endif %}
+
+{{ sectionUngroupedContentStrip }} 
+
+{%        if sectionAllGroupedContentStrip.size > 0 and groupByTagsTitlesArray[subsectionIndex].size > 0
+%}</section>
+{%        endif %}{% 
+        endcapture %}{% 
+        if groupByTagsTitlesArray[subsectionIndex].size > 0
+          assign sectionContentStrip = sectionAllGroupedContentStrip | append: sectionUngroupedSection %}{% 
+        else %}{% 
+          assign sectionContentStrip = sectionAllGroupedContentStrip | prepend: sectionUngroupedSection %}{% 
+        endif %}{% 
+      else %}{% 
+        assign sectionContentStrip = sectionAllGroupedContentStrip %}{% 
+      endif %}{% 
+    else %}{% 
+      comment %}Don't output any sub-sections (group them all together){% endcomment %}{% 
+      if include.groupListsSeparately == true and sectionKey %}{% 
+        capture sectionGroupedContent %}{% 
+          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline relevantSourceElements="ul,ol" suppressParentListElement=true %}{% 
+        endcapture %}{% 
+        assign sectionContentStrip = sectionGroupedContent | strip %}{% 
+        if sectionContentStrip.size > 0 %}{% 
+          capture sectionContentStrip %}
+<ul>
+{{ sectionContentStrip }}
+</ul>
+{%        endcapture %}{% 
+        endif %}{% 
+        capture sectionGroupedContent %}{% 
+          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline irrelevantSourceElements="ul,ol" %}{% 
+        endcapture %}{% 
+        assign sectionContentStrip2 = sectionGroupedContent | strip %}{% 
+        if sectionContentStrip2.size > 0 %}{% 
+          assign sectionContentStrip = sectionContentStrip | append: sectionContentStrip2 %}{% 
+        endif %}{% 
+      else %}{% 
+        capture sectionGroupedContent %}{% 
+          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline %}{% 
+        endcapture %}{% 
+        assign sectionContentStrip = sectionGroupedContent | strip %}{% 
+      endif %}{% 
+    endif %}{% 
+    if sectionContentStrip.size > 0 %}{% 
+      capture classOutput %}{% 
+        include /functions/class-from-tags.html tags=sectionTags %}{% 
+      endcapture %}{% 
+      if sectionKey == "checklist" %}{% 
+        assign glyphicon = "check text-success" %}{% 
+      elsif sectionKey == "guides" %}{% 
+        assign glyphicon = "book text-info" %}{% 
+      elsif sectionKey == "solutions" %}{% 
+        assign glyphicon = "refresh text-success" %}{% 
+      elsif sectionKey == "similar" %}{% 
+        assign glyphicon = "bookmark text-muted" %}{% 
+      else %}{% 
+        assign glyphicon = "" %}{% 
+      endif %}{% 
+      if sectionKey == "introduction" %}
+<div{{ classOutput | rstrip }}>
+
+{{ sectionContentStrip }}
+
+</div>
+{%    else %}
+<section{{ classOutput | rstrip }}>
+
+<h{{ subsectionHeadingLevel }}>{% if glyphicon.size > 0 %}<span class="glyphicon glyphicon-{{ glyphicon }}" aria-hidden="true"></span>
+{% endif %}{{ guideline[sectionKey].title }}</h{{ subsectionHeadingLevel }}>
+
+{{ sectionContentStrip }}
+
+</section>
+{%    endif %}{% 
+    endif %}{% 
+  endif %}{% 
+endfor %}

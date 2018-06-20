@@ -112,14 +112,10 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					# Check if previous item (that was not ignored) was a list of the same type, and if it was, combine it with this list
 					last_item_index = content_array.length - 1
 					if last_item_index >= 0 && (node.name === "ol" || node.name == "ul") && content_array[last_item_index]["source_element"] === node.name
-						# Combine the tags
-						if !tags.nil? && tags.length > 0
-							last_list_tags = content_array[last_item_index]["tags"]
-							last_list_tags.push(*tags)
-							content_array[last_item_index]["tags"] = last_list_tags.uniq
-						end
+						# Clear the tags on the ol/ul since they may not be representative (will be on the individual items anyway)
+						content_array[last_item_index]["tags"] = Array.new
 
-						# Combine the source attributes
+						# Combine the class and source attributes
 						content_array[last_item_index]["source_attributes"].each do |name, value|
 							if name != "id"
 								if name === "class"

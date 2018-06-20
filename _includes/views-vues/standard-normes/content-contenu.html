@@ -1,2 +1,3 @@
-{% assign defaultSubsectionTitles = site.defaultSubsectionTitles[page.lang] %}{% 
-include functions/output-standard.html standard=page.standard includeStandardTitle=false currentHeadingLevel=1 groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}
+{% assign standardIndex = page.standard | minus: 1 %}{% 
+assign defaultSubsectionTitles = site.defaultSubsectionTitles[page.lang] %}{% 
+include functions/output-standard.html standardIndex=standardIndex includeStandardTitle=false currentHeadingLevel=1 groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}
