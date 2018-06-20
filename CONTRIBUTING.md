@@ -1,6 +1,6 @@
-+<!-- markdownlint-disable MD041 -->
-+[Français](#comment-contribuer)
-+<!-- markdownlint-enable MD041 -->
+<!-- markdownlint-disable MD041 -->
+[Français](#comment-contribuer)
+<!-- markdownlint-enable MD041 -->
 
 # How to Contribute
 
