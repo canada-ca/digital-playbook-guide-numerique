@@ -99,7 +99,7 @@ comportements qu'ils jugent inappropriés, menaçants, injurieux, ou nuisibles.
 
 Ce Code de Conduite s'applique à la fois au sein des espaces du projet
 ainsi que dans les espaces publics lorsqu'un individu représente le projet
-ou sa communauté. Font parties des exemples de représentation d'un projet ou 
+ou sa communauté. Font parties des exemples de représentation d'un projet ou
 d'une communauté le fait d'utiliser une adresse email propre au projet, de
 poster sur les réseaux sociaux avec un compte officiel, ou d'intervenir comme
 représentant programmé à un événement en-ligne ou hors-ligne. La représentation
