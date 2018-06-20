@@ -65,7 +65,6 @@ Les demandes de tirage ne seront fusionnées qu'après avoir passé les deux niv
 
 ## Changements de contenu
 
-All of the authoring content can be found in the .md files found in the /en and /fr directories off of the repository root. These files are coded using [Kramdown](https://kramdown.gettalong.org/syntax.html), an extended version of Markdown.
 Tout le contenu de création peut être trouvé dans les fichiers .md trouvés dans les répertoires /en et /fr hors de la racine du dépôt. Ces fichiers sont codés en utilisant [Kramdown](https://kramdown.gettalong.org/syntax.html), une version étendue de Markdown.
 
 Veuillez respecter les points suivants lorsque vous modifiez le contenu&#160;:
