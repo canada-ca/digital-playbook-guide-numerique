@@ -18806,43 +18806,7 @@
                             "tags": [
 
                             ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable\">Making source code open and reusable (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/making-software/open-source.html\">Using open source software (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction\">Choosing technology: an introduction (Digital Service Standard (UK))</a>"
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable\">Making source code open and reusable (Service Manual (UK))</a>"
                           }
                         ]
                       },
@@ -19703,7 +19667,7 @@
                             "tags": [
 
                             ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html\">Working with open standards (Digital Service Standard (UK))</a>"
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/working-with-open-standards\">Working with open standards (Service Manual (UK))</a>"
                           }
                         ]
                       },
@@ -19721,7 +19685,7 @@
                             "tags": [
 
                             ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction\">Technology for services (Digital Service Standard (UK))</a>"
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction\">Choosing technology: an introduction (Service Manual (UK))</a>"
                           }
                         ]
                       },
