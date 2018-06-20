@@ -2,7 +2,7 @@
   <li><a href="#feedback-popup" aria-controls="feedback-popup" class="wb-lbx" role="button">{{ site.FeedbackAsk[page.lang] }}</a></li>
 {% if page.path contains "standards-normes" %}{% 
   assign pageIndex = page.standard | minus: 1 %}
-  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.lang }}/{{ site.standardFile[pageIndex] }}.md">{{ site.ViewSourceGitHub[page.lang] }}</a></li>
+  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.lang }}/{{ site.standardFile[pageIndex][page.lang] }}.md">{{ site.ViewContentSourceGitHub[page.lang] }}</a></li>
 {% else %}
   <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.lang }}">{{ site.ViewContentSourceGitHub[page.lang] }}</a></li>
 {% endif %}
