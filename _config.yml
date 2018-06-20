@@ -76,12 +76,34 @@ standardFile:
     fr:  10-etre-bons-utilisateurs-donnees
 RenderedFileExtension: ".html"
 
+# Default order of the guideline sections
+guidelineSectionsOrder: ["introduction", "checklist", "guides", "solutions", "similar"]
+
+# Default sub-section tags and titles
+defaultSubsectionTags: []
+defaultSubsectionTitles:
+  en: []
+  fr: []
+#defaultSubsectionTags: ["dpgn-stage-alpha", "dpgn-stage-beta", "dpgn-stage-live"]
+#defaultSubsectionTitles:
+#  en: ["Alpha stage", "Beta stage", "Live stage"]
+#  fr: ["Stage alpha", "Stage bêta", "Stage en direct"]
+
+# Default title for the final guideline sub-section for anything that doesn't match any of the tags in groupByTagsTags
+groupByTagsMissingTitle:
+  en: "Error: Title for this section was not specificed in 'groupByTagsTitles'"
+  fr: "Erreur : Le titre de cette section n'a pas été spécifié dans 'groupByTagsTitles'"
+
 # Default classes (used by output-content-array.html and other generated content)
 defaultClasses:
   section: ""
-  list: "lst-spcd"
-  listitem: ""
-  table: ""
+  article: ""
+  aside: ""
+  nav: ""
+  ol: "lst-spcd"
+  ul: "lst-spcd"
+  li: ""
+  table: "table table-striped table-bordered"
   caption: ""
   thead: ""
   tbody: ""
@@ -403,9 +425,12 @@ PageColon:
 FeedbackAsk:
   en: Give feedback about this page
   fr: Donnez votre avis sur cette page
-ViewSourceGitHub:
-  en: View source on GitHub
-  fr: Voir la source sur GitHub
+ViewContentSourceGitHub:
+  en: View content source on GitHub
+  fr: Voir la source du contenu sur GitHub
+ViewTemplateSourceGitHub:
+  en: View template source on GitHub
+  fr: Voir la source du modèle sur GitHub
 SubmitIssueGitHub:
   en: Submit an issue on GitHub
   fr: Soumettre un problème sur GitHub

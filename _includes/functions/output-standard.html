@@ -1,19 +1,17 @@
 {% comment %}@overview Outputs the content for a standard{% endcomment %}{% 
-comment %}@param standard {Object/Number} Standard object or the standard number (not index), which is used to retrieve the Standard object{% endcomment %}{% 
-comment %}@param includeStandardTitle {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such when there are multiple standards on the same page{% endcomment %}{% 
-comment %}@param relevantGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline indexes or an array of guideline objects. Guidelines for the current standard that should be displayed{% endcomment %}{% 
-comment %}@param relevantRelatedGuidelines {String/Array} Optional (defaults to all). Comma-separated guideline numbers (e.g., "3.4,4.2") or an array of guidelines numbers. Guidelines that should be displayed if they are related to this standard{% endcomment %}{% 
-comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tags or array of tags that content must have at least one of to be displayed.{% endcomment %}{% 
-comment %}@param relevantTagsSubsections {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Use of this parameter triggers the generation of sub-sections within each guideline section for each entry in relevantTags. Must have the same number of entries in the same order as relevantTags.{% endcomment %}{% 
+comment %}@param standardIndex {Number} Index used to retrieve the Standard object.{% endcomment %}{% 
+comment %}@param includeStandardTitle {Boolean} Optional (defaults to false). Whether or not to output a heading for the Standard (such when there are multiple standards on the same page).{% endcomment %}{% 
+comment %}@param currentHeadingLevel {Number} Optional (defaults to 1). Heading level of the current section.{% endcomment %}{% 
+comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to group the content according to the specified tags (in the specified order). Content that matches multiple tags will be duplicated in each of the related groupings. Content that is not associated to any of the specified tags will be included in a separate grouping (to filter out content completely, use relevantTags and irrelevantTags). If groupByTagsTitles is used, then the groupings will be put in sections with the specified titles for the headings. Groupings not in sections will be put at the beginning while groupings in sections will put in the end.{% endcomment %}{% 
+comment %}@param groupByTagsTitles {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Puts the groupByTagsTags groupings in sections with headings using the subsection titles. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as groupByTagsTags. Empty entries can be used to selectively not apply sections.{% endcomment %}{% 
 comment %}@param relevantSections {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.{% endcomment %}{% 
-comment %}@param collapseIntroSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for an introduction sub-section (e.g., section found in an introduction content array) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
-comment %}@param collapseContentSubsections {Boolean} Optional (defaults to false). Whether or not the heading and section elements for a content sub-section (e.g., section found in a content array for content such as a checklist) should be output (does not affect content within the sub-section and replaces section with a div).{% endcomment %}{% 
+comment %}@param guidelineSectionsOrder {String/Array} Optional (defaults to site.guidelineSectionsOrder). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).{% endcomment %}{% 
 comment %}@param guidelinesDetailsSummary {Boolean} Optional (defaults to true). Whether guidelines list should be in details/summary.{% endcomment %}{% 
 comment %}@param guidelinesListClasses {String} Optional. Classes (separated by a space) to add to the guidelines list.{% endcomment %}{% 
-comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space)vto add to the guidelines list items.{% endcomment %}{% 
+comment %}@param guidelinesListItemClasses {String} Optional. Classes (separated by a space) to add to the guidelines list items.{% endcomment %}{% 
 comment %}@param guidelinesLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item links.{% endcomment %}{% 
 comment %}@param guidelinesSubLinkClasses {String} Optional. Classes (separated by a space) to add to the guidelines list item link content.{% endcomment %}{% 
-comment %}@return {String} Outputs the content for the standard and the included guidelines{% endcomment %}{% 
+comment %}@return {String} Outputs the content for the standard and the included guidelines.{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
 if include.relevantSections.size > 0 %}{% 
@@ -23,13 +21,9 @@ if include.relevantSections.size > 0 %}{%
     assign relevantSectionsArray = include.relevantSections | replace: " ", "" | split: "," %}{% 
   endif %}{% 
 endif %}{% 
-comment %}If standard is not an object, then turn the number into an index (minus 1) and retrieve the standard object from the dataset{% endcomment %}{% 
-if include.standard.title.size > 0 %}{% 
-  assign standard = include.standard %}{% 
-else %}{% 
-  assign currentStandardIndex = include.standard | minus: 1 %}{% 
-  assign standard = dataSource.standards.content[currentStandardIndex] %}{% 
-endif %}{% 
+comment %}Retrieve the standard object from the dataset{% endcomment %}{% 
+assign currentStandardIndex = include.standardIndex | plus: 0 %}{% 
+assign standard = dataSource.standards.content[currentStandardIndex] %}{% 
 assign standardHeadingLevel = include.currentHeadingLevel | default: 1 %}{% 
 comment %}If the Standard heading will be included, then create a section, output the Standard heading and then increment the heading level by 1{% endcomment %}{% 
 if include.includeStandardTitle %}{% 
@@ -59,7 +53,7 @@ if tagsCompareResult contains "true" %}{%
   endcapture %}
 <div{{ classOutput | rstrip }}>
 
-{%  include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel relevantTags=include.relevantTags collapseSubsections=include.collapseIntroSubsections %}
+{%  include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel relevantTags=include.relevantTags %}
 
 </div>
 {% endif %}
@@ -89,10 +83,15 @@ if tagsCompareResult contains "true" %}{%
     else %}{% 
       assign outputGuidelinesArray = include.relevantGuidelines | replace: " ", "" | split: "," %}{% 
     endif %}{% 
-    include functions/guideline-links.html guidelineIndexes=outputGuidelinesArray standard=standard samePage=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
+    include functions/guideline-links.html guidelineIndexes=outputGuidelinesArray standard=standard samePage=true includeStandardTitle=true currentHeadingLevel=1 guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
   else %}{% 
-    assign outputGuidelinesArray = standard.guidelines.content %}{% 
-    include functions/guideline-links.html guidelines=outputGuidelinesArray standard=standard samePage=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
+    assign maxIndex = standard.guidelines.content.size | minus: 1 %}{% 
+    assign allGuidelineIndexes = "0" %}{% 
+    for index in (1..maxIndex) %}{% 
+      assign allGuidelineIndexes = allGuidelineIndexes | append: "," | append: index %}{% 
+    endfor %}{% 
+    assign outputGuidelinesArray = allGuidelineIndexes | split: "," %}{% 
+    include functions/guideline-links.html guidelines=standard.guidelines.content samePage=true includeStandardTitle=true currentHeadingLevel=1 guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
   endif %}{% 
   unless include.guidelinesDetailsSummary == false 
   %}</details>{% 
@@ -147,20 +146,17 @@ if tagsCompareResult contains "true" %}{%
   else 
     %}<details>
 <summary markdown="0">{{ standard.relatedguidelines.title }}</summary>{% 
-  endif %}
-
-{%  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseIntroSubsections guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}
-
-{%  unless include.guidelinesDetailsSummary == false 
+  endif %}{% 
+  include functions/guideline-links.html guidelines=remainingRelatedGuidelines samePage=true includeStandardTitle=true includeStandardTitle=true currentHeadingLevel=1 guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
+  unless include.guidelinesDetailsSummary == false 
   %}</details>{% 
-    endunless %}
+  endunless %}
 </div>
 {% endif %}{% 
-endif %}
-
-{% comment %}Output each guideline as a new section and output the included content{% endcomment %}{% 
-for item in outputGuidelinesArray %}{% 
-  include functions/output-guideline.html guideline=item guidelineHeadingLevel=guidelineHeadingLevel standard=standard relevantTags=include.relevantTags relevantTagsSubsections=include.relevantTagsSubsections relevantSections=relevantSectionsArray collapseIntroSubsections=include.collapseIntroSubsections collapseContentSubsections=include.collapseContentSubsections %}{% 
+endif %}{% 
+comment %}Output each guideline as a new section and output the included content{% endcomment %}{% 
+for guidelineIndex in outputGuidelinesArray %}{% 
+  include functions/output-guideline.html guidelineHeadingLevel=guidelineHeadingLevel standardIndex=currentStandardIndex guidelineIndex=guidelineIndex relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=relevantSectionsArray guidelineSectionsOrder=include.guidelineSectionsOrder %}{% 
 endfor %}{% 
 comment %}Output a closing section tag if the Standard heading was included{% endcomment %}{% 
 if include.includeStandardTitle %}
