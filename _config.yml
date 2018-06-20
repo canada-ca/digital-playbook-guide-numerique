@@ -425,9 +425,12 @@ PageColon:
 FeedbackAsk:
   en: Give feedback about this page
   fr: Donnez votre avis sur cette page
-ViewSourceGitHub:
-  en: View source on GitHub
-  fr: Voir la source sur GitHub
+ViewContentSourceGitHub:
+  en: View content source on GitHub
+  fr: Voir la source du contenu sur GitHub
+ViewTemplateSourceGitHub:
+  en: View template source on GitHub
+  fr: Voir la source du modèle sur GitHub
 SubmitIssueGitHub:
   en: Submit an issue on GitHub
   fr: Soumettre un problème sur GitHub
