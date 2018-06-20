@@ -1,14 +1,19 @@
 <ul class="list-unstyled{% if include.alignment %} {{ include.alignment }}{% endif %}">
-  <li><a href="#feedback-popup" aria-controls="feedback-popup" class="wb-lbx" role="button">{{ site.FeedbackAsk[page.lang] }}</a></li>
-{% if page.path contains "standards-normes" %}{% 
-  assign pageIndex = page.standard | minus: 1 %}
-  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.lang }}/{{ site.standardFile[pageIndex][page.lang] }}.md">{{ site.ViewContentSourceGitHub[page.lang] }}</a></li>
-{% else %}
-  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.lang }}">{{ site.ViewContentSourceGitHub[page.lang] }}</a></li>
-{% endif %}
-  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.path }}">{{ site.ViewTemplateSourceGitHub[page.lang] }}</a></li>
-{% assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
+  <li><a href="#feedback-popup" aria-controls="feedback-popup" class="wb-lbx" role="button">{{ site.FeedbackAsk[page.lang] }}</a></li>{% 
+if page.path contains "standards-normes" %}{% 
+  assign overviewFile = site.overviewFile[page.lang] %}{% 
+  if page.path contains overviewFile %} 
+  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.lang }}/{{ overviewFile }}.md">{{ site.ViewContentSourceGitHub[page.lang] }}</a></li>{% 
+  else %}{% 
+    assign pageIndex = page.standard | minus: 1 %}
+  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.lang }}/{{ site.standardFile[pageIndex][page.lang] }}.md">{{ site.ViewContentSourceGitHub[page.lang] }}</a></li>{% 
+  endif %}{% 
+else %}
+  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.lang }}">{{ site.ViewContentSourceGitHub[page.lang] }}</a></li>{% 
+endif %}
+  <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.path }}">{{ site.ViewTemplateSourceGitHub[page.lang] }}</a></li>{% 
+assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
 unless page.url contains overviewPath or page.url contains "compar" %}
-  <li><p><a href="#filter-panel" aria-controls="filter-panel" class="overlay-lnk btn btn-primary" role="button">{{ site.ShowFilters[page.lang] }}</a></li>
-{% endunless %}
+  <li><p><a href="#filter-panel" aria-controls="filter-panel" class="overlay-lnk btn btn-primary" role="button">{{ site.ShowFilters[page.lang] }}</a></li>{% 
+endunless %}
 </ul>
