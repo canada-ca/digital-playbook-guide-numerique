@@ -84,6 +84,7 @@ Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+- [Socle Logiciels Libres (France)](https://references.modernisation.gouv.fr/socle-logiciels-libres)
 - [Working with open standards (Service Manual (UK))](https://www.gov.uk/service-manual/technology/working-with-open-standards)
 - [Choosing technology: an introduction (Service Manual (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
 - [Australian Government ICT Policy Guides and Procurement (AU)](http://finance.gov.au/policy-guides-procurement/)
