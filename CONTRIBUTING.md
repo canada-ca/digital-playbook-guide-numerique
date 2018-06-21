@@ -15,7 +15,7 @@ If this is your first time contributing on GitHub, don't worry! Let us know if y
 All proposed changes will go through two levels of review:
 
 1. Automated checks (e.g., markdownlint, link checks)
-1. Manual checks (e.g., manua content review, code inspection)
+1. Manual checks (e.g., manual content review, code inspection)
 
 Pull requests will not be merged in until after they have passed both levels of review.
 
