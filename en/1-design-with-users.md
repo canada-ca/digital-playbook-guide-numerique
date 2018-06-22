@@ -26,7 +26,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="2.1, 2.2, 2.3, 2.4, 3.2, 6.5, 7.1, 7.4, 8.2, 8.4, 10.1" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="2.1, 2.2, 2.3, 2.4, 3.2, 6.2, 7.1, 7.4, 8.2, 8.4, 10.1" samePage=false includeStandardTitle=true %}
 
 </div>
 
@@ -39,6 +39,9 @@ altLangPage: 1-concevoir-avec-utilisateurs
 Focus on the needs of your users, using agile, iterative and user-centred methods when building a service. Start with extensive research and analysis to help understand who is using the service, what their needs are and how the service will affect their lives to better understand how the service should be designed. The absence of the user voice leads to assumptions that may be incorrect and costly.
 
 Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched. **(GC)**
+
+**Make services simple, intutive and consistent (formerly guideline 1.6):**
+{: .dpgn-data-ignore}
 
 Create a service which is simple to use and intuitive enough that users succeed the first time.
 
@@ -72,6 +75,10 @@ Writing and designing content so it is consistent, plain and in the language of 
 - Put in place a plan to pay for user research and usability tests throughout the design of the service and after it's built
 - Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement
 - Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7)).
+
+**Make services simple, intutive and consistent (formerly guideline 1.6):**
+{: .dpgn-data-ignore}
+
 - Make services simple, intuitive and consistent
 - Test the name of the service and see if it makes sense to users **(Digital Service Standard (Ontario))**
 - Give users clear information about where they are in each step of the process **(Digital Services Playbook (US))**
@@ -101,6 +108,9 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 **[TODO: Add/revise implementation guide items]**
 
+**Make services simple, intutive and consistent (formerly guideline 1.6):**
+{: .dpgn-data-ignore}
+
 - [How user research improves service design (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
 - [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
 - [Understanding users who don't use digital services (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
@@ -120,6 +130,9 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 **[TODO: Add/revise reusable solutions]**
 
+**Make services simple, intutive and consistent (formerly guideline 1.6):**
+{: .dpgn-data-ignore}
+
 - [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
@@ -129,6 +142,10 @@ Writing and designing content so it is consistent, plain and in the language of 
 ### Similar resources
 
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
+
+**Make services simple, intutive and consistent (formerly guideline 1.6):**
+{: .dpgn-data-ignore}
+
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 - [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
 - [3. Be consistent (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
@@ -229,6 +246,9 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 A key part of building digital services that work for users is developing a good understanding of who are the users, what are their needs and how the service will affect their lives. It is equally important to develop a good understanding of the different contexts in which users could be interacting, since user needs and expectations can vary depending upon where, when and how they use a digital service. **(GC)**
 
+**Support people who cannot use digital services on their own (formerly guideline 1.8):**
+{: .dpgn-data-ignore}
+
 Put tools in place across all channels to support people who cannot use digital services on their own.
 
 Not everyone will have the same access, comfort and skill level to use digital service by default. Understand how and where users require support, make that support available, and raise awareness of that support. **(Digital Service Standard (Ontario) (Support those who need it))**
@@ -245,8 +265,15 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 **[TODO: Add/revise checklist items]**
 
+**Provide services that can be obtained anytime, anywhere and on any device (formerly guideline 1.5):**
+{: .dpgn-data-ignore}
+
 - Provide services that can be obtained anytime, anywhere and on any device
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
+
+**Support people who cannot use digital services on their own (formerly guideline 1.8):**
+{: .dpgn-data-ignore}
+
 - Support people who cannot use digital services on their own
 - Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
 - Do user research as early as possible to: **(Digital Service Standard (Ontario))**
@@ -337,6 +364,10 @@ You need to have a plan for what to do if your service goes offline so that you 
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
+
+**Support people who cannot use digital services on their own (formerly guideline 1.8):**
+{: .dpgn-data-ignore}
+
 - [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
 - [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
@@ -362,7 +393,15 @@ You need to have a plan for what to do if your service goes offline so that you 
 - [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 - [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+
+**Provide services that can be obtained anytime, anywhere and on any device (formerly guideline 1.5):**
+{: .dpgn-data-ignore}
+
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+
+**Support people who cannot use digital services on their own (formerly guideline 1.8):**
+{: .dpgn-data-ignore}
+
 - [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 - [12. Support those who need it (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
 
@@ -377,6 +416,9 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 **[TODO: Add/revise introductory text]**
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
+
+**Make it more convenient and practical to use digital services (formerly guideline 1.7):**
+{: .dpgn-data-ignore}
 
 Encourage people to choose the digital service through every interaction they have with government.
 
@@ -412,9 +454,13 @@ We still need to help users who are unable to use digital channels and provide s
 - Identify pain points in the current way users interact with the service, and prioritize these according to user needs **(Digital Services Playbook (US))**
 - Design the digital parts of the service so that they are integrated with the offline touch points people use to interact with the service **(Digital Services Playbook (US))**
 - Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
+
+**Make services simple, intutive and consistent (formerly guideline 1.6):**
+{: .dpgn-data-ignore}
+
 - Make it more convenient and practical to use digital services
 
-**Alpha stage:**
+**Alpha stage (Make it more convenient and practical to use digital services (formerly guideline 1.7)):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -437,7 +483,7 @@ We still need to help users who are unable to use digital channels and provide s
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
-**Beta stage:**
+**Beta stage (Make it more convenient and practical to use digital services (formerly guideline 1.7)):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -452,7 +498,7 @@ We still need to help users who are unable to use digital channels and provide s
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
-**Live stage:**
+**Live stage (Make it more convenient and practical to use digital services (formerly guideline 1.7)):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -467,7 +513,7 @@ We still need to help users who are unable to use digital channels and provide s
 {: .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
-**Beta and live stages:**
+**Beta and live stages (Make it more convenient and practical to use digital services (formerly guideline 1.7)):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -484,6 +530,9 @@ We still need to help users who are unable to use digital channels and provide s
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
+
+**Make services simple, intutive and consistent (formerly guideline 1.6):**
+{: .dpgn-data-ignore}
 
 - [How to measure digital take-up (Service Manual (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
 - [Encouraging people to use your digital service (Service Manual (UK))](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service)
@@ -504,6 +553,10 @@ We still need to help users who are unable to use digital channels and provide s
 ### Similar resources
 
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
+
+**Make services simple, intutive and consistent (formerly guideline 1.6):**
+{: .dpgn-data-ignore}
+
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 - [11. Encourage people to use digital services (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-12)
 - [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
