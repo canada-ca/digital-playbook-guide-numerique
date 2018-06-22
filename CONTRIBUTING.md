@@ -19,6 +19,22 @@ All proposed changes will go through two levels of review:
 
 Pull requests will not be merged in until after they have passed both levels of review.
 
+Examples of common automated check issues are:
+
+- [MD009 - Trailing spaces (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md009---trailing-spaces)
+  - Solution: Remove the spaces at the end of line where the issue occurs
+- [MD012 - Multiple consecutive blank lines (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md022---headers-should-be-surrounded-by-blank-lines)
+  - Solution: Reduce the number of blank lines to one where the issue occurs
+- [MD022 - Headers should be surrounded by blank lines (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md022---headers-should-be-surrounded-by-blank-lines)
+  - Solution 1: Ensure there is a blank line before and after the header where the issue occurs
+  - Solution 2: If the issue is caused by applying classes or attributes to the header (or another legitimate reason), then put ``&lt;!-- markdownlint-disable MD022 --&gt;`` and ``&lt;!-- markdownlint-enable MD022 --&gt;`` before and after the area where the issue occurs
+- [MD032 - Lists should be surrounded by blank lines (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md032---lists-should-be-surrounded-by-blank-lines)
+  - Solution 1: Ensure there is a blank line before and after the header where the issue occurs
+  - Solution 2: If the issue is caused by applying classes or attributes to the header (or another legitimate reason), then put ``&lt;!-- markdownlint-disable MD032 --&gt;`` and ``&lt;!-- markdownlint-enable MD032 --&gt;`` before and after the area where the issue occurs
+- [MD034 - Bare URL used (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md034---bare-url-used)
+  - Solution 1: Use a proper markdown link instead of the bare URL (e.g., ``[link text](url)``)
+  - Solution 2: If there is a legitimate reason to use a bare URL, then put ``&lt;!-- markdownlint-disable MD034 --&gt;`` and ``&lt;!-- markdownlint-enable MD034 --&gt;`` before and after the area where the issue occurs
+
 ## Changes to content
 
 All of the authoring content can be found in the ``.md`` files found in the ``/en`` and ``/fr`` directories off of the repository root. These files are coded using [Kramdown](https://kramdown.gettalong.org/syntax.html), an extended version of Markdown.
@@ -62,6 +78,22 @@ Tous les changements proposés passeront par deux niveaux d'examen&#160;:
 1. Vérifications manuelles (par exemple, examen du contenu manuel, inspection de code)
 
 Les demandes de tirage ne seront fusionnées qu'après avoir passé les deux niveaux d'examen.
+
+Des exemples de problèmes de vérification automatisés courants sont&#160;:
+
+- [MD009 - Trailing spaces (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md009---trailing-spaces)
+  - Solution&#160;: Supprimez les espaces à la fin de la ligne où le problème se produit
+- [MD012 - Multiple consecutive blank lines (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md022---headers-should-be-surrounded-by-blank-lines)
+  - Solution&#160;: Réduisez le nombre de lignes vides à une ligne où le problème se produit
+- [MD022 - Headers should be surrounded by blank lines (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md022---headers-should-be-surrounded-by-blank-lines)
+  - Solution 1&#160;: Assurez-vous qu'il existe une ligne vide avant et après l'en-tête où le problème se produit
+  - Solution 2&#160;: Si le problème est dû à l'application de classes ou d'attributs à l'en-tête (ou à une autre raison légitime), mettez ``&lt;!-- markdownlint-disable MD022 --&gt;`` et ``&lt;!-- markdownlint-enable MD022 --&gt;`` avant et après la zone où le problème se produit
+- [MD032 - Lists should be surrounded by blank lines (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md032---lists-should-be-surrounded-by-blank-lines)
+  - Solution 1&#160;: Assurez-vous qu'il existe une ligne vide avant et après l'en-tête où le problème se produit
+  - Solution 2&#160;: Si le problème est dû à l'application de classes ou d'attributs à l'en-tête (ou à une autre raison légitime), mettez ``&lt;!-- markdownlint-disable MD032 --&gt;`` et ``&lt;!-- markdownlint-enable MD032 --&gt;`` avant et après la zone où le problème se produit
+- [MD034 - Bare URL used (markdownlint)](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md034---bare-url-used)
+  - Solution 1&#160;: Utilisez un lien de démarquage approprié au lieu de l'URL simple (par exemle, ``[link text](url)``)
+  - Solution 2&#160;: S'il y a une raison légitime d'utiliser une simple URL, mettez ``&lt;!-- markdownlint-disable MD034 --&gt;`` and ``&lt;!-- markdownlint-enable MD034 --&gt;`` avant et après la zone où le problème se produit
 
 ## Changements de contenu
 
