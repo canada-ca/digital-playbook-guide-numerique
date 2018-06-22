@@ -355,54 +355,6 @@ A key part of building digital services that work for users is developing a good
 **[TODO: Add/revise introductory text]**
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
 
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Understand the different points at which people will interact with the service -- both online and in person **(Digital Services Playbook (US))**
-- Identify pain points in the current way users interact with the service, and prioritize these according to user needs **(Digital Services Playbook (US))**
-- Design the digital parts of the service so that they are integrated with the offline touch points people use to interact with the service **(Digital Services Playbook (US))**
-- Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.7 Make it more convenient and practical to use digital services
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
 Encourage people to choose the digital service through every interaction they have with government.
 
 Encouraging people to use digital service will:
@@ -436,6 +388,12 @@ We still need to help users who are unable to use digital channels and provide s
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+- Understand the different points at which people will interact with the service -- both online and in person **(Digital Services Playbook (US))**
+- Identify pain points in the current way users interact with the service, and prioritize these according to user needs **(Digital Services Playbook (US))**
+- Design the digital parts of the service so that they are integrated with the offline touch points people use to interact with the service **(Digital Services Playbook (US))**
+- Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
+- Make it more convenient and practical to use digital services
 
 **Alpha stage:**
 {: .dpgn-data-ignore}
@@ -526,11 +484,13 @@ We still need to help users who are unable to use digital channels and provide s
 
 ### Similar resources
 
+- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 - [11. Encourage people to use digital services (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-12)
 - [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
 
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
