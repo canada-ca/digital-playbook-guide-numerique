@@ -202,6 +202,8 @@ To improve our chances of success when contracting out development work, we need
 
 It is essential that business processes be reviewed to identify opportunities to improve service delivery. A website is not a service; it is just one channel for accessing or delivering a service. Designing new or redesigning existing digital services should also facilitate service delivery best practices (e.g., open data and joined-up services). **(Do - Digital Design Playbook (ISED))**
 
+Each service must have one person who has the authority and is responsibile for making business, product and technical decisions. This person is responsible for communicating the vision, making decisions in a timely fashion, managing stakeholder/vendor relationships, monitoring project health and is accountable for the success or failure of the service. This person also sets the strategy for the service, defines the features of the service, and is responsible for the service on an ongoing basis, until it is decommissioned. **(GC)**
+
 </div>
 
 <section class="dpgn-section-checklist">
@@ -226,6 +228,17 @@ It is essential that business processes be reviewed to identify opportunities to
 - Identify policy constraints. **(Do - Digital Design Playbook (ISED))**
 - Identify opportunities for improving processes and reducing complexity. **(Do - Digital Design Playbook (ISED))**
 - Improve the service first and consider if a policy change or update might be needed. Second, build the digital platform/website. **(Do - Digital Design Playbook (ISED))**
+- Make one person accountable for the service
+  - Has a product management background with technical experience to assess alternatives and weigh trade-offs
+  - Has a strong knowledge of the procurement process and is able to articulate value for money is achieved when buying any tools
+  - Has appropriate seniority, knowledge, skill and personal qualities
+  - Has agreement from all stakeholders about authority to assign tasks and make decisions about features and technical implementation details
+  - Utilizes streamlined procurement processes and utilize experienced budgeting and contracting resources when contracting out development work
+  - Has a work plan that includes budget estimates and identifies funding sources **(Digital Services Playbook (US))**
+  - Develops a plan and capabilities to track concurrent users in real-time, and monitor user behaviors in the aggregate to determine how well the service meets user needs
+  - Identifies data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service
+  - Develops an ongoing roadmap for performance analysis and designate responsibility for identifying actionable data insights
+  - Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility
 
 **Build It Right Principles (GC):**
 {: .dpgn-data-ignore}
@@ -259,6 +272,7 @@ It is essential that business processes be reviewed to identify opportunities to
 - [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
+- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 </section>
 </section>
@@ -326,62 +340,6 @@ Working to create an environment that empowers employees has been shown to not o
 ### Ressources similaires
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 4.5 Make one person accountable for the service
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
-Each service must have one person who has the authority and is responsibile for making business, product and technical decisions. This person is responsible for communicating the vision, making decisions in a timely fashion, managing stakeholder/vendor relationships, monitoring project health and is accountable for the success or failure of the service. This person also sets the strategy for the service, defines the features of the service, and is responsible for the service on an ongoing basis, until it is decommissioned.
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Has a product management background with technical experience to assess alternatives and weigh trade-offs
-- Has a strong knowledge of the procurement process and is able to articulate value for money is achieved when buying any tools
-- Has appropriate seniority, knowledge, skill and personal qualities
-- Has agreement from all stakeholders about authority to assign tasks and make decisions about features and technical implementation details
-- Utilizes streamlined procurement processes and utilize experienced budgeting and contracting resources when contracting out development work
-- Has a work plan that includes budget estimates and identifies funding sources **(Digital Services Playbook (US))**
-- Develops a plan and capabilities to track concurrent users in real-time, and monitor user behaviors in the aggregate to determine how well the service meets user needs
-- Identifies data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service
-- Develops an ongoing roadmap for performance analysis and designate responsibility for identifying actionable data insights
-- Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 </section>
 </section>
