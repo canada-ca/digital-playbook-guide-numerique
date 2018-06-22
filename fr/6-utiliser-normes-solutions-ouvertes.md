@@ -26,7 +26,7 @@ altLangPage: 6-use-open-standards-solutions
 
 **Lignes directrices connexes:**
 
-{% include functions/guideline-links.html guidelines="1.5, 3.4, 5.1, 5.5, 10.3" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.3, 3.4, 5.1, 5.5, 10.3" samePage=false includeStandardTitle=true %}
 
 </div>
 
