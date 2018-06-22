@@ -83,6 +83,7 @@ This includes working in the open, sharing any and all data and information prod
 **Work in the open and make source code open and reusable (formerly guideline 5.5):**
 {: .dpgn-data-ignore}
 
+- Work in the open and make source code open and reusable
 - Host source code publicly in an open internet source code repository
 - Use an Open Source Initiative approved licence
 - Offer users a mechanism to report bugs and issues, and be responsive to these reports
