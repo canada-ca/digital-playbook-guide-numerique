@@ -261,9 +261,9 @@ Canadians want to have confidence that government digital services are designed 
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-security-privacy-1} Security shall be considered across all architectural layers.
-- {: .dpgn-digital-architectural-security-privacy-2} Information shall be identified, categorized, and protected as required based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability.
-- {: .dpgn-digital-architectural-security-privacy-3} A privacy impact assessment (PIA) shall be completed wherever personal information is involved.
+* {: .dpgn-digital-architectural-security-privacy-1} Security shall be considered across all architectural layers.
+* {: .dpgn-digital-architectural-security-privacy-2} Information shall be identified, categorized, and protected as required based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability.
+* {: .dpgn-digital-architectural-security-privacy-3} A privacy impact assessment (PIA) shall be completed wherever personal information is involved.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -298,7 +298,7 @@ Canadians want to have confidence that government digital services are designed 
 * [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 * [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} 10. Security and Provacy by Design **(Build It Right Principles (GC))**
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} 10. Security and Provacy by Design **(Build It Right Principles (GC))**
 
 </section>
 </section>
