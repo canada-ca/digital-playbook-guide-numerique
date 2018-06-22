@@ -233,7 +233,11 @@ User needs are constantly evolving which it is why it is important to plan for o
 ### Similar resources
 
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} 3. Design for Users First (Including designing for Accessibility and Official Languages support) **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Including designing for Accessibility and Official Languages support) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support)**
 
 </section>
 </section>

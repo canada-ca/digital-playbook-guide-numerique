@@ -149,7 +149,11 @@ At every stage of a project, we should measure how well our service is working f
 ### Ressources similaires
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
 
 </section>
 </section>
@@ -316,7 +320,11 @@ Every service must aim for continuous improvement. Metrics are an important star
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 - [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-14)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
 
 </section>
 </section>
@@ -376,7 +384,10 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 ### Ressources similaires
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
 
 </section>
 </section>

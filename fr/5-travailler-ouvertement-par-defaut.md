@@ -124,7 +124,11 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 ### Similar resources
 
 - [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} 1. Open by Default (Proprietary by Necessity) **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#open-by-default-proprietary-by-neccessity)
 
 **Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5) :**
 {: .dpgn-data-ignore}
@@ -187,7 +191,10 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 ### Ressources similaires
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} 7. Design Systems to be Measurable and Accountable **(Build It Right Principles (GC))**
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable)
 
 </section>
 </section>
@@ -283,7 +290,11 @@ Setting performance indicators allows you to continuously improve your service b
 ### Ressources similaires
 
 - [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
-- {: .dpgn-digital-architecutral .dpgn-digital-architectural-measurable-accountable} 7. Design Systems to be Measurable and Accountable **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architecutral .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable)
 
 </section>
 </section>
