@@ -38,7 +38,23 @@ altLangPage: 1-design-with-users
 
 Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes agiles, itératives et centrées sur l'utilisateur lors de la construction d'un service. Commencez par une recherche et une analyse approfondies pour vous aider à comprendre qui utilise le service, quels sont ses besoins et comment le service affectera sa vie pour mieux comprendre comment le service devrait être conçu. L'absence de la voix de l'utilisateur conduit à des hypothèses qui peuvent être incorrectes et coûteuses.
 
-Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service.
+Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service. **(GC)**
+
+Create a service which is simple to use and intuitive enough that users succeed the first time.
+
+All users should be able to complete the task your service provides the first time they try, as quickly and easily as possible.
+
+This includes user with disabilities or those who need assisted digital support.
+
+If users find it difficult to complete the task the first time, they may avoid using your service or contact your organisation to get help. **(Digital Service Standard (UK))**
+
+Using responsive design, following common design patterns and style guidance for digital content, and making sure the service is accessible means it will be simpler, clearer and faster for all users. It will also be available on the platforms and devices that users choose.
+
+Consistent design that is responsive to different devices helps you to save time and money by re-using something that already exists that follows better practice, and is based on data and user research. This means you can concentrate on the unique things your service needs to do.
+
+Responsive design ensures that users can interact with your service regardless of their device size or type, and browser or device processing power. The service should follow mobile-first design principles, consider users on slow internet connections or with limited download data, work well for both mouse and touch devices, and use front-end technology that works well regardless of device processing power.
+
+Writing and designing content so it is consistent, plain and in the language of your users helps people gain trust and confidence in using different services. By providing information they can easily understand they may be less likely to use alternative websites that could be misleading. **(Digital Service Standard (AU))**
 
 </div>
 
@@ -56,6 +72,26 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 - Mettre en place un plan de paiement pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après sa construction
 - Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer
 - Fournir un mécanisme aux utilisateurs permettant de recevoir une rétroaction et de régler en temps opportun les problèmes de services (comme l'exige la [Politique sur les services](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27916#cha7))
+- Rendre les services simples, intuitifs et cohérents
+- Testez le nom du service et vérifiez que les utilisateurs le comprennent **(Normes des services numériques (Ontario))**
+- Give users clear information about where they are in each step of the process **(Digital Services Playbook (US))**
+- Provide users with a way to exit and return later to complete the process **(Digital Services Playbook (US))**
+- Use language that is familiar to the user and easy to understand **(Digital Services Playbook (US))**
+- Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
+- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
+- Utilisez des données analytiques et vos recherches utilisateurs pour réduire le nombre de personnes qui n'accomplissent pas la tâche qu'elles souhaitaient effectuer en ligne (par exemple, renouveler leur permis de conduire) **(Normes des services numériques (Ontario))**
+- Document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK))**
+- Rendez les services accessibles, y compris aux utilisateurs dont les compétences numériques sont peu développées **(Normes des services numériques (Ontario))**
+- démontrez que le service est adaptatif et qu'il fournit le même contenu et les mêmes fonctionnalités sur tous les appareils, y compris sur les appareils mobiles **(Normes des services numériques (Ontario / UK / AU))**
+- Do usability testing:
+  - including with users with the lowest level of digital skills **(Digital Service Standard (UK))**
+  - au moins une fois avant et après la mise en ligne du service et procédez aux améliorations nécessaires **(Normes des services numériques (Ontario))**
+- basez vos décisions en matière de conception et de contenu sur vos recherches, tests et données analytiques **(Normes des services numériques (Ontario / UK)**
+- change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
+- understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
+- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
+- follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA **(Digital Service Standard (AU))**
+- ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
 
 </section>
 
@@ -65,6 +101,17 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
 
+- [How user research improves service design (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
+- [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
+- [Understanding users who don't use digital services (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
+- [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
+- [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
+- [Design patterns (Service Manual (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
+- [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
+- [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
+- [Looking at the different ways to test content (18F (US))](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/)
+- [Government Digital Service (GDS) style guide (Government Digital Service (UK))](https://www.gov.uk/guidance/style-guide)
+
 </section>
 
 <section class="dpgn-section-solutions">
@@ -73,6 +120,8 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
+- [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
+
 </section>
 
 <section class="dpgn-section-similar">
@@ -80,6 +129,14 @@ Les utilisateurs doivent être impliqués tout au long du cycle de vie du servic
 ### Ressources similaires
 
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
+- [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
+- [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
+- [3. Faire preuve de constance (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-4)
+- [5. Réussite assurée dès le premier essai des utilisateurs (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-6)
+- [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
+- [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
+- [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 </section>
 </section>
@@ -170,7 +227,15 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 <div class="dpgn-section-intro-guideline">
 
-Un élément clé du développement de services numériques qui fonctionnent pour les utilisateurs consiste à bien comprendre qui sont les utilisateurs, quels sont leurs besoins et comment le service affectera leur vie. Il est également important de développer une bonne compréhension des différents contextes dans lesquels les utilisateurs peuvent interagir, car les besoins et les attentes des utilisateurs peuvent varier en fonction du lieu, du moment et de la manière dont ils utilisent un service numérique.
+Un élément clé du développement de services numériques qui fonctionnent pour les utilisateurs consiste à bien comprendre qui sont les utilisateurs, quels sont leurs besoins et comment le service affectera leur vie. Il est également important de développer une bonne compréhension des différents contextes dans lesquels les utilisateurs peuvent interagir, car les besoins et les attentes des utilisateurs peuvent varier en fonction du lieu, du moment et de la manière dont ils utilisent un service numérique. **(GC)**
+
+Mettez en place dans tous les canaux des outils visant à soutenir les personnes qui ne peuvent pas utiliser elles-mêmes des services numériques.
+
+Tout le monde ne disposera pas automatiquement du même niveau d’accès, de confort et de compétences pour utiliser le service numérique. Comprenez à quels niveaux les utilisateurs ont besoin de soutien, mettez ce soutien à disposition et sensibilisez à l’existence de ce soutien. **(Normes des services numériques (Ontario) (Soutien aux personnes qui en ont besoin))**
+
+Users may expect that an online service is available 24 hours a day, 365 days a year.
+
+You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
 
 </div>
 
@@ -179,6 +244,22 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+- Fournir des services qui peuvent être tout, quand et n'importe quel appareil
+- Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
+- Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
+- Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
+- Effectuez le plus tôt possible une étude des utilisateurs afin de : **(Normes des services numériques (Ontario))**
+  - comprendre l’accès, la confiance et les compétences numériques dont disposent les utilisateurs
+  - savoir pourquoi certains utilisateurs ne peuvent pas utiliser le service numérique de façon autonome, par exemple à cause d’obstacles dus à la maîtrise linguistique ou à la maîtrise d’Internet
+  - découvrir les besoins des utilisateurs en matière de soutien
+- Menez des recherches sur les utilisateurs qui : **(Normes des services numériques (Ontario))**
+  - utilisent déjà ou utiliseront le service
+  - disposent du niveau le plus bas d’accès, de confiance et de compétences numériques
+  - font actuellement appel à d’autres personnes pour obtenir de l’aide numérique (amis, famille, collègues, entreprises ou organismes de bienfaisance)
+- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
+- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
+- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 **Stage alpha :**
 {: .dpgn-data-ignore}
@@ -256,6 +337,8 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
+- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
+- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
 </section>
 
@@ -279,6 +362,9 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 - [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
+- [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 
 </section>
 </section>
@@ -293,198 +379,6 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
 
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Understand the different points at which people will interact with the service -- both online and in person **(Digital Services Playbook (US))**
-- Identify pain points in the current way users interact with the service, and prioritize these according to user needs **(Digital Services Playbook (US))**
-- Design the digital parts of the service so that they are integrated with the offline touch points people use to interact with the service **(Digital Services Playbook (US))**
-- Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'application
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.5 Fournir des services qui peuvent être tout, quand et n'importe quel appareil
-
-<div class="dpgn-section-intro-guideline">
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'application
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.6 Rendre les services simples, intuitifs et cohérents
-
-<div class="dpgn-section-intro-guideline">
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-Create a service which is simple to use and intuitive enough that users succeed the first time.
-
-All users should be able to complete the task your service provides the first time they try, as quickly and easily as possible.
-
-This includes user with disabilities or those who need assisted digital support.
-
-If users find it difficult to complete the task the first time, they may avoid using your service or contact your organisation to get help. **(Digital Service Standard (UK))**
-
-Using responsive design, following common design patterns and style guidance for digital content, and making sure the service is accessible means it will be simpler, clearer and faster for all users. It will also be available on the platforms and devices that users choose.
-
-Consistent design that is responsive to different devices helps you to save time and money by re-using something that already exists that follows better practice, and is based on data and user research. This means you can concentrate on the unique things your service needs to do.
-
-Responsive design ensures that users can interact with your service regardless of their device size or type, and browser or device processing power. The service should follow mobile-first design principles, consider users on slow internet connections or with limited download data, work well for both mouse and touch devices, and use front-end technology that works well regardless of device processing power.
-
-Writing and designing content so it is consistent, plain and in the language of your users helps people gain trust and confidence in using different services. By providing information they can easily understand they may be less likely to use alternative websites that could be misleading. **(Digital Service Standard (AU))**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Testez le nom du service et vérifiez que les utilisateurs le comprennent **(Normes des services numériques (Ontario))**
-- Give users clear information about where they are in each step of the process **(Digital Services Playbook (US))**
-- Provide users with a way to exit and return later to complete the process **(Digital Services Playbook (US))**
-- Use language that is familiar to the user and easy to understand **(Digital Services Playbook (US))**
-- Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
-- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
-- Utilisez des données analytiques et vos recherches utilisateurs pour réduire le nombre de personnes qui n'accomplissent pas la tâche qu'elles souhaitaient effectuer en ligne (par exemple, renouveler leur permis de conduire) **(Normes des services numériques (Ontario))**
-- Document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK))**
-- Rendez les services accessibles, y compris aux utilisateurs dont les compétences numériques sont peu développées **(Normes des services numériques (Ontario))**
-- démontrez que le service est adaptatif et qu'il fournit le même contenu et les mêmes fonctionnalités sur tous les appareils, y compris sur les appareils mobiles **(Normes des services numériques (Ontario / UK / AU))**
-- Do usability testing:
-  - including with users with the lowest level of digital skills **(Digital Service Standard (UK))**
-  - au moins une fois avant et après la mise en ligne du service et procédez aux améliorations nécessaires **(Normes des services numériques (Ontario))**
-- basez vos décisions en matière de conception et de contenu sur vos recherches, tests et données analytiques **(Normes des services numériques (Ontario / UK)**
-- change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
-- understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
-- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
-- follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA **(Digital Service Standard (AU))**
-- ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'application
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-- [How user research improves service design (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
-- [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
-- [Understanding users who don't use digital services (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
-- [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
-- [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
-- [Design patterns (Service Manual (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
-- [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
-- [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
-- [Looking at the different ways to test content (18F (US))](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/)
-- [Government Digital Service (GDS) style guide (Government Digital Service (UK))](https://www.gov.uk/guidance/style-guide)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-- [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
-- [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
-- [3. Faire preuve de constance (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-4)
-- [5. Réussite assurée dès le premier essai des utilisateurs (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-6)
-- [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
-- [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
-- [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-- [A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.7 Rendre plus pratique et pratique l'utilisation des services numériques
-
-<div class="dpgn-section-intro-guideline">
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
 Encouragez les personnes à choisir le service numérique à chacune de leurs interactions avec le gouvernement.
 
 Le fait d’encourager les personnes à utiliser le service numérique permettra :
@@ -497,9 +391,7 @@ Le fait d’encourager les personnes à utiliser le service numérique permettra
 
 Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion.
 
-People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible.
-
-**(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
 Encourage users to choose the digital service and consolidate or phase out existing alternative channels where appropriate.
 
@@ -507,9 +399,7 @@ As we build simpler, clearer and faster government services the digital channel 
 
 Measuring digital take-up helps you to understand how well your service is being used. It’s one of the 4 mandatory KPIs services must report on the Performance Dashboard.
 
-We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can.
-
-**(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 </div>
 
@@ -518,6 +408,12 @@ We still need to help users who are unable to use digital channels and provide s
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+- Understand the different points at which people will interact with the service -- both online and in person **(Digital Services Playbook (US))**
+- Identify pain points in the current way users interact with the service, and prioritize these according to user needs **(Digital Services Playbook (US))**
+- Design the digital parts of the service so that they are integrated with the offline touch points people use to interact with the service **(Digital Services Playbook (US))**
+- Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
+- Rendre plus pratique et pratique l'utilisation des services numériques
 
 **Stage alpha :**
 {: .dpgn-data-ignore}
@@ -585,7 +481,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 <section class="dpgn-section-guides">
 
-### Guides d'implémentation
+### Guides d'application
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
@@ -607,77 +503,11 @@ We still need to help users who are unable to use digital channels and provide s
 
 ### Ressources similaires
 
+- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 - [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 - [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
-
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
-
-<div class="dpgn-section-intro-guideline">
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-Mettez en place dans tous les canaux des outils visant à soutenir les personnes qui ne peuvent pas utiliser elles-mêmes des services numériques.
-
-Tout le monde ne disposera pas automatiquement du même niveau d’accès, de confort et de compétences pour utiliser le service numérique. Comprenez à quels niveaux les utilisateurs ont besoin de soutien, mettez ce soutien à disposition et sensibilisez à l’existence de ce soutien. **(Normes des services numériques (Ontario) (Soutien aux personnes qui en ont besoin))**
-
-Users may expect that an online service is available 24 hours a day, 365 days a year.
-
-You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
-- Effectuez le plus tôt possible une étude des utilisateurs afin de : **(Normes des services numériques (Ontario))**
-  - comprendre l’accès, la confiance et les compétences numériques dont disposent les utilisateurs
-  - savoir pourquoi certains utilisateurs ne peuvent pas utiliser le service numérique de façon autonome, par exemple à cause d’obstacles dus à la maîtrise linguistique ou à la maîtrise d’Internet
-  - découvrir les besoins des utilisateurs en matière de soutien
-- Menez des recherches sur les utilisateurs qui : **(Normes des services numériques (Ontario))**
-  - utilisent déjà ou utiliseront le service
-  - disposent du niveau le plus bas d’accès, de confiance et de compétences numériques
-  - font actuellement appel à d’autres personnes pour obtenir de l’aide numérique (amis, famille, collègues, entreprises ou organismes de bienfaisance)
-- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
-- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
-- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'implémentation
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
-- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
-- [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 
 </section>
 </section>
