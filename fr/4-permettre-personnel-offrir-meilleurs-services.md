@@ -26,7 +26,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="3.1, 3.2, 3.3, 5.4, 5.5, 6.1, 6.2, 7.1, 7.2, 7.3, 7.4" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="3.1, 3.2, 3.3, 5.1, 5.4, 6.1, 6.2, 7.1, 7.2, 7.3, 7.4" samePage=false includeStandardTitle=true %}
 
 </div>
 
