@@ -38,9 +38,7 @@ altLangPage: 1-concevoir-avec-utilisateurs
 
 Focus on the needs of your users, using agile, iterative and user-centred methods when building a service. Start with extensive research and analysis to help understand who is using the service, what their needs are and how the service will affect their lives to better understand how the service should be designed. The absence of the user voice leads to assumptions that may be incorrect and costly.
 
-Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched.
-
-**(GC)**
+Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched. **(GC)**
 
 Create a service which is simple to use and intuitive enough that users succeed the first time.
 
@@ -229,9 +227,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 <div class="dpgn-section-intro-guideline">
 
-A key part of building digital services that work for users is developing a good understanding of who are the users, what are their needs and how the service will affect their lives. It is equally important to develop a good understanding of the different contexts in which users could be interacting, since user needs and expectations can vary depending upon where, when and how they use a digital service.
-
-**(GC)**
+A key part of building digital services that work for users is developing a good understanding of who are the users, what are their needs and how the service will affect their lives. It is equally important to develop a good understanding of the different contexts in which users could be interacting, since user needs and expectations can vary depending upon where, when and how they use a digital service. **(GC)**
 
 Put tools in place across all channels to support people who cannot use digital services on their own.
 
@@ -394,9 +390,7 @@ Encouraging people to use digital service will:
 
 Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion.
 
-People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible.
-
-**(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
 Encourage users to choose the digital service and consolidate or phase out existing alternative channels where appropriate.
 
@@ -404,9 +398,7 @@ As we build simpler, clearer and faster government services the digital channel 
 
 Measuring digital take-up helps you to understand how well your service is being used. It’s one of the 4 mandatory KPIs services must report on the Performance Dashboard.
 
-We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can.
-
-**(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 </div>
 
