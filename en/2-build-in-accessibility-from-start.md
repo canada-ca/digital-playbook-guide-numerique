@@ -69,7 +69,7 @@ These limitations are sometimes mentioned as an example of how accessible design
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 1.3, 1.5, 1.6, 1.8, 8.4" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 1.3, 8.4" samePage=false includeStandardTitle=true %}
 
 </div>
 
