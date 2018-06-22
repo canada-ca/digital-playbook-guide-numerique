@@ -278,7 +278,11 @@ Each service must have one person who has the authority and is responsibile for 
 
 - [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams-including-using-devops)
 
 **Make one person accountable for the service (formerly guideline 4.5):**
 {: .dpgn-data-ignore}
@@ -350,7 +354,10 @@ Working to create an environment that empowers employees has been shown to not o
 
 ### Ressources similaires
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams-including-using-devops)
 
 </section>
 </section>
