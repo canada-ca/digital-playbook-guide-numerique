@@ -231,6 +231,16 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 A key part of building digital services that work for users is developing a good understanding of who are the users, what are their needs and how the service will affect their lives. It is equally important to develop a good understanding of the different contexts in which users could be interacting, since user needs and expectations can vary depending upon where, when and how they use a digital service.
 
+**(GC)**
+
+Put tools in place across all channels to support people who cannot use digital services on their own.
+
+Not everyone will have the same access, comfort and skill level to use digital service by default. Understand how and where users require support, make that support available, and raise awareness of that support. **(Digital Service Standard (Ontario) (Support those who need it))**
+
+Users may expect that an online service is available 24 hours a day, 365 days a year.
+
+You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
+
 </div>
 
 <section class="dpgn-section-checklist">
@@ -241,6 +251,19 @@ A key part of building digital services that work for users is developing a good
 
 - Provide services that can be obtained anytime, anywhere and on any device
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
+- Support people who cannot use digital services on their own
+- Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
+- Do user research as early as possible to: **(Digital Service Standard (Ontario))**
+  - understand users' digital skill, confidence and access
+  - find out why some users can't use the digital service independently, for example language or internet barriers
+  - find out user needs for support
+- Conduct research with users who: **(Digital Service Standard (Ontario))**
+  - already use the service or would use it
+  - have the lowest level of digital skills, confidence and access
+  - currently seek assisted digital support from others (like friends and family, colleagues, companies or charities)
+- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
+- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
+- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 **Alpha stage:**
 {: .dpgn-data-ignore}
@@ -318,6 +341,8 @@ A key part of building digital services that work for users is developing a good
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
+- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
+- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
 </section>
 
@@ -342,6 +367,8 @@ A key part of building digital services that work for users is developing a good
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 - [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
+- [12. Support those who need it (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
 
 </section>
 </section>
@@ -489,74 +516,6 @@ We still need to help users who are unable to use digital channels and provide s
 - [11. Encourage people to use digital services (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-12)
 - [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.8 Support people who cannot use digital services on their own
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
-Put tools in place across all channels to support people who cannot use digital services on their own.
-
-Not everyone will have the same access, comfort and skill level to use digital service by default. Understand how and where users require support, make that support available, and raise awareness of that support. **(Digital Service Standard (Ontario) (Support those who need it))**
-
-Users may expect that an online service is available 24 hours a day, 365 days a year.
-
-You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
-- Do user research as early as possible to: **(Digital Service Standard (Ontario))**
-  - understand users' digital skill, confidence and access
-  - find out why some users can't use the digital service independently, for example language or internet barriers
-  - find out user needs for support
-- Conduct research with users who: **(Digital Service Standard (Ontario))**
-  - already use the service or would use it
-  - have the lowest level of digital skills, confidence and access
-  - currently seek assisted digital support from others (like friends and family, colleagues, companies or charities)
-- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
-- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
-- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
-- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
-- [12. Support those who need it (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
 
 </section>
 </section>
