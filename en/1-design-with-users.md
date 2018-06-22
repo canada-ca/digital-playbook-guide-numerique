@@ -180,6 +180,9 @@ A key part of building digital services that work for users is developing a good
 
 **[TODO: Add/revise checklist items]**
 
+- Provide services that can be obtained anytime, anywhere and on any device
+- Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
+
 **Alpha stage:**
 {: .dpgn-data-ignore}
 
@@ -279,6 +282,7 @@ A key part of building digital services that work for users is developing a good
 - [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 - [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 </section>
 </section>
@@ -328,51 +332,6 @@ We need to understand the different ways people will interact with our services,
 ### Similar resources
 
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.5 Provide services that can be obtained anytime, anywhere and on any device
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 </section>
 </section>
