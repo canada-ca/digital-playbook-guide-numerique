@@ -1944,36 +1944,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-design-for-users-first"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-design-for-users-first"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-design-for-users-first"
-                                    ],
-                                    "content": "Design for Users First (Including designing for Accessibility and Official Languages support) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support\">3. Design for Users First (Including designing for Accessibility and Official Languages support) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -7509,36 +7485,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-design-for-users-first"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-design-for-users-first"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-design-for-users-first"
-                                    ],
-                                    "content": "Design for Users First (Including designing for Accessibility and Official Language support) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support\">3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -11077,36 +11029,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-design-for-users-first"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-design-for-users-first"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-design-for-users-first"
-                                    ],
-                                    "content": "Design for Users First (Including designing for Accessibility and Official Language support) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support\">3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -12400,36 +12328,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-multidisciplinary-teams"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-multidisciplinary-teams"
-                                    ],
-                                    "content": "Deliver with Multidisciplinary Teams (Including using DevOps) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#deliver-with-multidisciplinary-teams-including-using-devops\">4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -16102,36 +16006,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-multidisciplinary-teams"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-multidisciplinary-teams"
-                                    ],
-                                    "content": "Deliver with Multidisciplinary Teams (Including using DevOps) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#deliver-with-multidisciplinary-teams-including-using-devops\">4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       },
@@ -16480,36 +16360,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-multidisciplinary-teams"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-multidisciplinary-teams"
-                                    ],
-                                    "content": "Deliver with Multidisciplinary Teams (Including using DevOps) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#deliver-with-multidisciplinary-teams-including-using-devops\">4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -17331,36 +17187,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-open-by-default"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-open-by-default"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-open-by-default"
-                                    ],
-                                    "content": "Open by Default (Proprietary by Necessity) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#open-by-default-proprietary-by-neccessity\">1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       },
@@ -17681,36 +17513,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-measurable-accountable"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-measurable-accountable"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-measurable-accountable"
-                                    ],
-                                    "content": "Design Systems to be Measurable and Accountable <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable\">7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -18436,36 +18244,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architecutral",
                               "dpgn-digital-architectural-measurable-accountable"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architecutral",
-                                  "dpgn-digital-architectural-measurable-accountable"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architecutral",
-                                      "dpgn-digital-architectural-measurable-accountable"
-                                    ],
-                                    "content": "Design Systems to be Measurable and Accountable <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable\">7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -20088,36 +19872,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-open-by-default"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-open-by-default"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-open-by-default"
-                                    ],
-                                    "content": "Open by Default (Proprietary by Necessity) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#open-by-default-proprietary-by-neccessity\">1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       },
@@ -20133,36 +19893,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-performance-availability-scalability"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-performance-availability-scalability"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-performance-availability-scalability"
-                                    ],
-                                    "content": "Design for Performance, Availability, and Scalibility <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-performance-availability-and-scalability\">5. Design for Performance, Availability, and Scalibility (Build It Right Principles (GC))</a>"
                           }
                         ]
                       },
@@ -20178,36 +19914,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-expose-functionality-services"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-expose-functionality-services"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-expose-functionality-services"
-                                    ],
-                                    "content": "Expose all functionality as services <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#expose-all-functionality-as-services\">6. Expose all functionality as services (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -22474,36 +22186,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-maximize-reuse"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-maximize-reuse"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-maximize-reuse"
-                                    ],
-                                    "content": "Maximize Reuse (Enterprise First) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#maximize-reuse-enterprise-first\">2. Maximize Reuse (Enterprise First) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       },
@@ -22519,36 +22207,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-expose-functionality-services"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-expose-functionality-services"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-expose-functionality-services"
-                                    ],
-                                    "content": "Expose all functionality as services <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#expose-all-functionality-as-services\">6. Expose all functionality as services (Build It Right Principles (GC))</a>"
                           }
                         ]
                       },
@@ -22564,36 +22228,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-cloud-first"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-cloud-first"
-                                    ],
-                                    "content": "Cloud First <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#cloud-first\">9. Cloud First (Build It Right Principles (GC))</a>"
                           }
                         ]
                       },
@@ -23107,36 +22747,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-expose-functionality-services"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-expose-functionality-services"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-expose-functionality-services"
-                                    ],
-                                    "content": "Expose all functionality as services <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#expose-all-functionality-as-services\">6. Expose all functionality as services (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -23396,36 +23012,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-open-by-default"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-open-by-default"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-open-by-default"
-                                    ],
-                                    "content": "Open by Default (Proprietary by Necessity) <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#open-by-default-proprietary-by-neccessity\">1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -29958,36 +29550,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-security-privacy"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-security-privacy"
-                                    ],
-                                    "content": "Security and Provacy by Design <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#security-and-privacy-by-design\">10. Security and Provacy by Design (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -30809,36 +30377,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-keep-data-organized"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-keep-data-organized"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-keep-data-organized"
-                                    ],
-                                    "content": "Keep data organized <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized\">8. Keep data organized (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -32465,36 +32009,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-keep-data-organized"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-keep-data-organized"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-keep-data-organized"
-                                    ],
-                                    "content": "Keep data organized <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized\">8. Keep data organized (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
@@ -32841,36 +32361,12 @@
                         ],
                         "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "source_attributes": {
-                            },
+                            "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-keep-data-organized"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "source_attributes": {
-                                },
-                                "tags": [
-                                  "dpgn-digital-architectural",
-                                  "dpgn-digital-architectural-keep-data-organized"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural",
-                                      "dpgn-digital-architectural-keep-data-organized"
-                                    ],
-                                    "content": "Keep data organized <strong>(Build It Right Principles (GC))</strong>"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized\">8. Keep data organized (Build It Right Principles (GC))</a>"
                           }
                         ]
                       }
