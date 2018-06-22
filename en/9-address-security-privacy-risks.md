@@ -298,7 +298,11 @@ Canadians want to have confidence that government digital services are designed 
 * [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 * [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} 10. Security and Provacy by Design **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Provacy by Design (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
 
 </section>
 </section>
