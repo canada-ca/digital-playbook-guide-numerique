@@ -227,6 +227,13 @@ It is essential that business processes be reviewed to identify opportunities to
 - Identify opportunities for improving processes and reducing complexity. **(Do - Digital Design Playbook (ISED))**
 - Improve the service first and consider if a policy change or update might be needed. Second, build the digital platform/website. **(Do - Digital Design Playbook (ISED))**
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-multidisciplinary-teams-3} Ensure quality is considered throughout the SDLC. For clarification, one of the most frequent friction points between Business and IT is the perceived quality of the systems being delivered. Encouraging and adopting methodologies such as Test Driven Deployment (TDD) is instrumental in improving the trust between Business and IT.
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -251,6 +258,7 @@ It is essential that business processes be reviewed to identify opportunities to
 
 - [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -287,6 +295,14 @@ Working to create an environment that empowers employees has been shown to not o
 - Support a learning environment:  This is an ongoing process whereby teams look at various situations and discuss them together to determine how they might handle things differently in the future to achieve a different result.  This is really what our lives are all about...learning new things as we age, by analyzing the things we’ve done in the past. **([6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
 - Let teams become the hierarchy:  This occurs by slowly and carefully transferring responsibilities from managers to teams.  This can be a very scary and difficult process that takes time, training and a lot of persistence (Kinicki & Kreitner, 2008, p. 335).  It’s been my personal experience that this requires a lot of support time to the teams as they move from depending on a manager to make decisions to being autonomous. **([6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-multidisciplinary-teams-2} Under a DevOps model, development and operations teams are merged into a single team where the engineers work across the entire application lifecycle, from development and test to deployment to operations, and develop a range of skills not limited to a single function.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -302,6 +318,14 @@ Working to create an environment that empowers employees has been shown to not o
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
+
+</section>
+
+<section class="dpgn-section-similar">
+
+### Ressources similaires
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
 
 </section>
 </section>

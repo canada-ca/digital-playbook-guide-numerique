@@ -28,8 +28,16 @@ assign standardHeadingLevel = include.currentHeadingLevel | default: 1 %}{%
 comment %}If the Standard heading will be included, then create a section, output the Standard heading and then increment the heading level by 1{% endcomment %}{% 
 if include.includeStandardTitle %}{% 
   assign standardHeadingLevel = standardHeadingLevel | plus: 1 %}{% 
+  if site.defaultClasses.section.size > 0 %}{% 
+    assign allTags = site.defaultClasses.section | split: " " %}{% 
+    if standard.tags.size > 0 %}{% 
+      assign allTags = allTags | concat: standard.tags %}{% 
+    endif %}{% 
+  else %}{% 
+    assign allTags = standard.tags %}{% 
+  endif %}{% 
   capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=standard.tags %}{% 
+    include /functions/class-from-tags.html tags=allTags %}{% 
   endcapture %}
 <section{{ classOutput | rstrip }}>
 {% capture headerId %}{% 

@@ -100,6 +100,16 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 **[TODO: Add/revise checklist items]**
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-design-for-users-first-1} Focus on the needs of users, using agile, iterative and user-centred methods when building a service.
+- {: .dpgn-digital-architectural-design-for-users-first-2} Start with extensive research and analysis.
+- {: .dpgn-digital-architectural-design-for-users-first-3} Users shall be involved throughout the lifecycle, with user research and testing informing the earliest design phases through to continuous improvements post launch. Iterative processes, continuous user feedback, rapid prototyping, and co-design processes are favoured over waterfall. Furthermore, departments and agencies shall demonstrate investment in the appropriate tools to support these processes.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 **Alpha stage:**
 {: .dpgn-data-ignore}
 
@@ -149,6 +159,7 @@ User needs are constantly evolving which it is why it is important to plan for o
 ### Similar resources
 
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} 3. Design for Users First (Including designing for Accessibility and Official Languages support) **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -168,9 +179,6 @@ A key part of building digital services that work for users is developing a good
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
-
-- {: .dpgn-digital-architectural} Clearly defined user needs **({{ site.DigitalArchitectural.en }})**
-  - User research, requirements and usability testing must be incorporated and tracked from the very beginning of any digital project
 
 **Alpha stage:**
 {: .dpgn-data-ignore}
@@ -271,10 +279,6 @@ A key part of building digital services that work for users is developing a good
 - [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 - [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-- Stakeholders/Users requirements based solutions (Current GC EARB Principles)
-- Services & client orientation (Current GC EARB Principles)
-- Business User first (GC EA principles)
-- {: .dpgn-digital-architectural} Clearly defined user needs ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
@@ -345,8 +349,6 @@ We need to understand the different ways people will interact with our services,
 **[TODO: Add/revise checklist items]**
 
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
-- {: .dpgn-digital-architectural} Platform agnostic **({{ site.DigitalArchitectural.en }})**
-  - Build applications for easy deployment and portability regardless of platform/operating system by default (e.g., open standard containers)
 
 </section>
 
@@ -371,9 +373,6 @@ We need to understand the different ways people will interact with our services,
 ### Similar resources
 
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-- Mobility Preferred (Current GC EARB Principles)
-- Any Device - Mobility (GC EA principles)
-- {: .dpgn-digital-architectural} Platform agnostic ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>
