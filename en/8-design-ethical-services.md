@@ -26,7 +26,7 @@ altLangPage: 8-concevoir-services-ethiques
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.2, 1.3, 1.4, 1.8, 2.1, 2.2, 2.4, 5.2, 5.3, 5.4, 9.1, 9.2, 9.3, 9.4, 10.2" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.2, 1.3, 1.4, 2.1, 2.2, 2.4, 5.2, 5.3, 5.4, 9.1, 9.2, 9.3, 9.4, 10.2" samePage=false includeStandardTitle=true %}
 
 </div>
 
