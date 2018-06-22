@@ -26,7 +26,7 @@ altLangPage: 3-collaborate-widely
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.3, 5.5" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.3, 5.1" samePage=false includeStandardTitle=true %}
 
 </div>
 
