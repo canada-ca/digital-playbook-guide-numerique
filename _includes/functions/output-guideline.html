@@ -33,8 +33,16 @@ else %}{%
   assign tagsCompareResult="true" %}{% 
 endif %}{% 
 if tagsCompareResult contains "true" %}{% 
+  if site.defaultClasses.section.size > 0 %}{% 
+    assign allTags = site.defaultClasses.section | split: " " %}{% 
+    if guideline.tags.size > 0 %}{% 
+      assign allTags = allTags | concat: guideline.tags %}{% 
+    endif %}{% 
+  else %}{% 
+    assign allTags = guideline.tags %}{% 
+  endif %}{% 
   capture classOutput %}{% 
-    include /functions/class-from-tags.html tags=guideline.tags %}{% 
+    include /functions/class-from-tags.html tags=allTags %}{% 
   endcapture %}
 <section{{ classOutput | rstrip }}>{% 
   capture headerId %}{% 

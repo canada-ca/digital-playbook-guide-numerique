@@ -19,6 +19,7 @@ if site_data == nil
 end
 common_data = site_data["common"]
 jekyll_output_dir = "rendered_site/"
+jekyll_exclude = ["views-vues", "docs"]
 
 def build_content_array(html_block, is_parent, parent_heading_level, logger, parent_tags)
 	content_array = Array.new
@@ -157,7 +158,8 @@ end
 # Generate the site
 conf = Jekyll.configuration({
 	'source' => '.',
-	'destination' => jekyll_output_dir
+	'destination' => jekyll_output_dir,
+        'exclude' => jekyll_exclude
 })
 logger.info("Generating temporary site with Jekyll")
 Jekyll::Site.new(conf).process

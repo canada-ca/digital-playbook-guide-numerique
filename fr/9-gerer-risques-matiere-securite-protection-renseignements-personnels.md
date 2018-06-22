@@ -156,8 +156,6 @@ Organizations have a responsibility to ensure that the data under their care rem
 ### Ressources similaires
 
 * [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
-* Privacy Aware (Current GC EARB Principles)
-* Privacy Aware (GC EA Principles)
 * [Loi sur la protection des renseignements personnels (Commissariat à la protection de la vie privée du Canada)](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-loi-sur-la-protection-des-renseignements-personnels/)
 * [Loi sur la protection des renseignements personnels et les documents électroniques (LPRPDE) (Commissariat à la protection de la vie privée du Canada)](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-loi-sur-la-protection-des-renseignements-personnels-et-les-documents-electroniques-lprpde/)
 * [Protection de la vie privée dès la conception (Wikipédia)](https://fr.wikipedia.org/wiki/Protection_de_la_vie_priv%C3%A9e_d%C3%A8s_la_conception)
@@ -183,7 +181,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Liste de contrôle
 
-* {: .dpgn-digital-architectural} Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
+* Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
 * Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies.
 * Use deployment scripts to ensure configuration of production environment remains consistent and controllable.
 * Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
@@ -196,7 +194,7 @@ Integrating security from the outset and “shifting security left” in the ser
 * Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
 * Determine how long you need to protect your assets during and after their life / intended use.
 * Document the plan and process for maintaining up-to-date and supported software for services/system
-* {: .dpgn-digital-architectural} Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
+* Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
 
 </section>
 
@@ -214,7 +212,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
-* {: .dpgn-digital-architectural} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 
@@ -223,8 +221,6 @@ Integrating security from the outset and “shifting security left” in the ser
 ### Ressources similaires
 
 * [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
-* Privacy Aware **(Current GC EARB Principles)**
-* Privacy Aware **(GC EA Principles)**
 * [Information security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/information-security.html)
 * [Cloud security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/operations/cloud-security.html)
 * [User accounts and logins (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/user-accounts)
@@ -262,6 +258,16 @@ Canadians want to have confidence that government digital services are designed 
 * Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
 * Establish terms of services to ensure users understand how their data will be used and how it will be accessed
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+* {: .dpgn-digital-architectural-security-privacy-1} Security shall be considered across all architectural layers.
+* {: .dpgn-digital-architectural-security-privacy-2} Information shall be identified, categorized, and protected as required based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability.
+* {: .dpgn-digital-architectural-security-privacy-3} A privacy impact assessment (PIA) shall be completed wherever personal information is involved.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -291,6 +297,7 @@ Canadians want to have confidence that government digital services are designed 
 * [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 * [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} 10. Security and Provacy by Design **(Build It Right Principles (GC))**
 
 </section>
 </section>

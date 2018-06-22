@@ -63,14 +63,6 @@ altLangPage: 10-be-good-data-stewards
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- Tell me once - Data/Information centricity (GC EA Principles)
-
-</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -100,6 +92,15 @@ At every stage of a project, we should measure how well our service is working f
 - Publish metrics externally **(Digital Services Playbook (US))**
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-keep-data-organized-1} Master Data will be decoupled wherever possible from applications and will be hosted in the appropriate system of record.
+- {: .dpgn-digital-architectural-keep-data-organized-3} Systems of record shall be authoritative central sources that serve data, once validated, to downstream business applications and upstream source systems.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -128,6 +129,7 @@ At every stage of a project, we should measure how well our service is working f
 ### Ressources similaires
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -169,6 +171,14 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-keep-data-organized-2} Custodians shall ensure data is correct, consistent, and complete.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 **Stages alpha, bêta et en direct :**
 {: .dpgn-data-ignore}
@@ -278,6 +288,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 - [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-14)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -297,6 +308,14 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-keep-data-organized-4} Appropriate governance must be applied.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -324,6 +343,14 @@ Every service must aim for continuous improvement. Metrics are an important star
 - [Digital preservation tools (Preserving digital collections (The National Archives (UK)))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/digital-preservation-tools/)
 
 </section>
+
+<section class="dpgn-section-similar">
+
+### Ressources similaires
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -342,10 +369,6 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- {: .dpgn-digital-architectural} Data is the new gold **({{ site.DigitalArchitectural.en }})**
-  - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
-  - Ensure data is able to be shared and can be easily accessed
-
 </section>
 
 <section class="dpgn-section-guides">
@@ -361,15 +384,6 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Solutions réutilisables
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- Information/Data is an asset (Current GC EARB Principles)
-- {: .dpgn-digital-architectural} Data is the new gold ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>

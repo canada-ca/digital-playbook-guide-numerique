@@ -104,6 +104,14 @@ Good government services are built quickly and iteratively, based on user needs.
 - demonstrate how you plan to share information, collaborate and troubleshoot issues within the team as well as with key people external to the team **(Digital Service Standard (AU))**
 - explain your plan to transfer knowledge and skills from any external people who work with the team. **(Digital Service Standard (AU))**
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-multidisciplinary-teams-1} Teams shall be Multidisciplinary (for example teams should include a service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, and front-end developer.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -136,6 +144,7 @@ Good government services are built quickly and iteratively, based on user needs.
 - [2. Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-3)
 - [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
 - [2. Have a multidisciplinary team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/2-multidisciplinary-team/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
 
 </section>
 </section>

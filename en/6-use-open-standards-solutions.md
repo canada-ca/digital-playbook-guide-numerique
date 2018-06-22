@@ -70,11 +70,30 @@ Using open source software means you can benefit from:
 - Factor in the use of open Standards and open source software when calculating total cost of ownership of a solutions including exit or transition costs
 - Avoiding lock-in to any proprietary solutions where open source software and/or open standards are available
 - Ensure that software can be deployed on a variety of commodity hardware types
-- {: .dpgn-digital-architectural} Use emerging technologies **({{ site.DigitalArchitectural.en }})**
-  - Leverage new technologies (e.g., AI and blockchain) to shift investments to more modern tech
-- {: .dpgn-digital-architectural} Build standards-based solution **({{ site.DigitalArchitectural.en }})**
-  - Adhere to GC technical standards and guidance, leveraging open standards when possible
-  - Leverage common business capabilities and harness GC-wide solutions that can be reused across the enterprise
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-open-by-default-1} Open source standards, components, and leading practices will be used wherever practical.
+- {: .dpgn-digital-architectural-open-by-default-2} When Open Source offerings cannot be used, Platform Agnostic COTS offerings are preferable to custom-built solutions. For clarity, the order of preference shall be:
+  1. Open Standard
+  1. Platform Agnostic COTS
+  1. Proprietary COTS
+  1. Custom
+- {: .dpgn-digital-architectural-performance-availability-scalability-1} All services will respond in 500ms or less wherever possible. Flexible support services should automatically adjust to meet demand as needed.
+- {: .dpgn-digital-architectural-performance-availability-scalability-2} Cloud providers should have geographically-separated data centers that are backed up at the transaction level and automatically fail over while maintaining client sessions.
+- {: .dpgn-digital-architectural-performance-availability-scalability-3} Critical applications shall be 99.999% available including planned maintenance.
+- {: .dpgn-digital-architectural-performance-availability-scalability-4} Support for zero-downtime version updates default.
+- {: .dpgn-digital-architectural-performance-availability-scalability-5} Systems shall be designed for resiliency. For example:
+  - Leveraging distributed architectures,
+  - Assuming failure will occur,
+  - Designing graceful error handling,
+  - Leveraging active monitoring
+- {: .dpgn-digital-architectural-performance-availability-scalability-6} Consideration shall be given to risks of over-centralization or including too much complexity into a single system.
+- {: .dpgn-digital-architectural-expose-functionality-services-2} Open standards will be used for all interoperability.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -119,9 +138,9 @@ Using open source software means you can benefit from:
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 - [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
-- Open Source Standards (GC EA Principles)
-- {: .dpgn-digital-architectural} Use emerging technologies ({{ site.DigitalArchitectural.en }})
-- {: .dpgn-digital-architectural} Build standards-based solution ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} 1. Open by Default (Proprietary by Necessity) **(Build It Right Principles (GC))**
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} 5. Design for Performance, Availability, and Scalibility **(Build It Right Principles (GC))**
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} 6. Expose all functionality as services **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -156,12 +175,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
 - Choose software frameworks that are commonly used by private-sector companies creating similar services **(Digital Services Playbook (US))**
 - Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
-- {: .dpgn-digital-architectural} Digital Exchange Platform (DXP) **({{ site.DigitalArchitectural.en }})**
-  - Mandatory use of DXP (Canada’s XRoad) to foster seamless service delivery
-- {: .dpgn-digital-architectural} Pan-Canadian Trust Framework **({{ site.DigitalArchitectural.en }})**
-  - Embed all services in Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery
-- {: .dpgn-digital-architectural} Build toward OneGC **({{ site.DigitalArchitectural.en }})**
-  - OneGC is where Digital business changes are built to support a government as a platform where everyone can maximise shared capability (Platforms) and minimise unique department products
 - Use departmental/GC standards. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Adopt the business number as the client identifier - do not create other unique identifiers. This enables data sharing across service lines, departments and jurisdictions.
   - Authenticated services must use only the federated credentials (e.g., SecureKey, GCKey). This enables a single login so clients do not need to re-authenticate their identity for each ISED service. It also ensures a sufficient level of security.
@@ -180,6 +193,33 @@ Using common, proven government solutions, approaches, and platforms will help t
   - Open data increases transparency.
   - Open data leverages public sector information to develop consumer and commercial products.
   - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-maximize-reuse-1} Where feasible, existing components and processes across the GC shall be leveraged/reused to create new solutions.
+- {: .dpgn-digital-architectural-maximize-reuse-2} Net new development shall consider GC Enterprise/GC Enterprise Cluster requirements first over Departmental Specific Solutions. For clarity, the order of scope preference is:
+  - Enterprise
+  - Enterprise Cluster
+  - Departmental (recognising institutional uniqueness)
+- {: .dpgn-digital-architectural-maximize-reuse-3} Reuse first, buy second, build last.
+- {: .dpgn-digital-architectural-maximize-reuse-4} Simplification will be achieved by minimizing duplication of active components in use, adhering to established standards.
+- {: .dpgn-digital-architectural-maximize-reuse-5} Perform IT lifecycle management so that no HW or SW platform is unsupported or obsolete.
+- {: .dpgn-digital-architectural-maximize-reuse-6} GC institutions shall identify opportunities to TBS where their investments/innovations contribute to move the whole GC forward.
+- {: .dpgn-digital-architectural-maximize-reuse-7} Solutions shall be designed with Enterprise scale in mind.
+  - For example, many initiatives involving containerization and managing applications in the Cloud are based on custom operational scripts leveraging open source tools. While that's fantastic for early stage exploration, it's not a sustainable model for production scale systems. As newer architectures come through EARB, we should be looking at their long term viability.
+- {: .dpgn-digital-architectural-expose-functionality-services-3} Applications shall be run in containers.
+- {: .dpgn-digital-architectural-expose-functionality-services-5} Services shall be designed using standardized information models and schemas (e.g., NIEM, HRXML). API's are nearly useless if they expose proprietary schemas.
+  - For example, services generated by whatever technology they're exposing are not interop-friendly. Furthermore, they tend to tightly couple the API to the backend implementation which defeats the point of having a service.
+- {: .dpgn-digital-architectural-cloud-first-1} The order of preference for hosting is:
+  - Public Cloud for SaaS (Software as a Service, also known as Managed Services).
+  - Public PaaS (Platform as a Service)
+  - Public IaaS (Infrastructure as a Service)
+  - Private Cloud (Where Public hosting is not possible)
+  - Non-cloud (Where cloud hosting is not possible)
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -211,14 +251,9 @@ Using common, proven government solutions, approaches, and platforms will help t
 - [Three-Step Software Solutions Analysis (Federal Source Code Policy (US))](https://sourcecode.cio.gov/Three-Step-Software-Solutions-Analysis/)
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
-- GC Enterprise First, Enterprise Cluster second, Departmental uniqueness last (Current GC EARB Principles)
-- Reuse First, Buy Second, Build Last (Current GC EARB Principles)
-- Technology Debt Managed (Current GC EARB Principles)
-- Containerized by default - Platform Independence Lift & Shift (GC EA Principles)
-- Architecturally Fit for the GC Enterprise (GC EA Principles)
-- {: .dpgn-digital-architectural} Digital Exchange Platform (DXP) ({{ site.DigitalArchitectural.en }})
-- {: .dpgn-digital-architectural} Pan-Canadian Trust Framework ({{ site.DigitalArchitectural.en }})
-- {: .dpgn-digital-architectural} Build toward OneGC ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} 2. Maximize Reuse (Enterprise First) **(Build It Right Principles (GC))**
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} 6. Expose all functionality as services **(Build It Right Principles (GC))**
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} 9. Cloud First **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -249,9 +284,15 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 - Design APIs to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
 - Design APIs to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily understand code that uses the API.
 - Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
-- {: .dpgn-digital-architectural} API first **({{ site.DigitalArchitectural.en }})**
-  - APIs created for every service, exposing data and functionality, to foster data sharing within GC and externally
-  - Build microservices that work together within an ecosystem allowing for rapid deployment and built-in redundancy
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-expose-functionality-services-1} The microservices architecture is a design approach to build a single application as a set of small services. Microservices are built around business capabilities; each service is scoped to a single purpose. Components will be architected to minimize the costs of future changes.
+- {: .dpgn-digital-architectural-expose-functionality-services-4} Each service shall in its own process and communicate with other services through a well-defined interface using a lightweight mechanism, typicall an HTTP-based application programming interface (API).
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -279,9 +320,7 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 ### Similar resources
 
-- Interoperability (Current GC EARB Principles)
-- Interoperability (ESB/APIs - Micro Services) (GC EA Principles)
-- {: .dpgn-digital-architectural} API first ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} 6. Expose all functionality as services **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -301,6 +340,14 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-open-by-default-4} Information should be open to other GC organizations and exposed via API's. Any legislative barriers to doing so shall be flagged to TBS.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -325,6 +372,13 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 </section>
 
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} 1. Open by Default (Proprietary by Necessity) **(Build It Right Principles (GC))**
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -422,7 +476,6 @@ There are many potential benefits from the greater use of digital services, incl
 - [6. Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 - [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
-- DevOps (automated test and deployment tool) (GC EA Principles)
 
 </section>
 </section>
@@ -463,8 +516,6 @@ Public cloud services offer benefits that enable significant advances in the fol
 - Design so static assets are served through a content delivery network **(OneGC product design criteria) /** Static assets are served through a content delivery network **(Digital Services Playbook (US))**
 - Resources are provisioned through an API **(Digital Services Playbook (US))**
 - Application is hosted on commodity hardware **(Digital Services Playbook (US))**
-- {: .dpgn-digital-architectural} Cloud first **({{ site.DigitalArchitectural.en }})**
-  - SaaS considered first, PaaS, IaaS second to grow more modern infrastructure which includes public, private and hybrid cloud solutions
 
 </section>
 
@@ -489,9 +540,6 @@ Public cloud services offer benefits that enable significant advances in the fol
 ### Similar ressources
 
 - [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
-- Cloud First (Current GC EARB Principles)
-- (Public) Cloud First: SaaS - PaaS - IaaS (GC EA Principles)
-- {: .dpgn-digital-architectural} Cloud first ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>

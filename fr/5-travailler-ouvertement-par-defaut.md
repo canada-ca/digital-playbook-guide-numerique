@@ -53,6 +53,15 @@ altLangPage: 5-work-in-open-by-default
 - Ensure that we maintain the rights to all data developed by third parties in a manner that is releasable and reusable at no cost to the public **(Digital Services Playbook (US))**
 - Data and code is shared so that clients can extract/create value. **(General design principles - Digital Design Playbook (ISED))**
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-open-by-default-3} For custom-built solutions, make source code open and reusable under an appropriate open source software license where possible.
+- {: .dpgn-digital-architectural-open-by-default-5} Solution designs must support the ability to identify and extract public data from protected data in order to support Open Data and Open Information initiatives.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -79,6 +88,7 @@ altLangPage: 5-work-in-open-by-default
 ### Similar resources
 
 - [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} 1. Open by Default (Proprietary by Necessity) **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -99,6 +109,14 @@ altLangPage: 5-work-in-open-by-default
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-measurable-accountable-1} All services shall have a published Service Level Agreement.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -114,6 +132,14 @@ altLangPage: 5-work-in-open-by-default
 ### Solutions réutilisables
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
+
+</section>
+
+<section class="dpgn-section-similar">
+
+### Ressources similaires
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} 7. Design Systems to be Measurable and Accountable **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -142,6 +168,17 @@ Setting performance indicators allows you to continuously improve your service b
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-measurable-accountable-2} An audit trail will be available for all transactions, system changes, and information updates to ensure both accountability and non-repudiation.
+- {: .dpgn-digital-architectural-measurable-accountable-3} Solutions shall provide the ability to track and report on business process KPI's. For clarification:
+  - IT shall suggest appropriate metrics to enable business outcomes.
+  - The ability to measure business performance is one of the key functions of technology-enabled processes and IT should be seen as the experts who can bring that to the table. Furthermore, metrics justify IT ongoing investment.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 **Stages alpha, bêta et en direct :**
 {: .dpgn-data-ignore}
@@ -198,6 +235,7 @@ Setting performance indicators allows you to continuously improve your service b
 ### Ressources similaires
 
 - [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
+- {: .dpgn-digital-architecutral .dpgn-digital-architectural-measurable-accountable} 7. Design Systems to be Measurable and Accountable **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -292,9 +330,6 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - Utiliser une licence approuvée par l'Open Source Initiative
 - Proposer aux utilisateurs un mécanisme de signalement des bogues et des problèmes, et être réactif à ces rapports
 - Gardez une trace des modifications à l'aide du contrôle de version
-- {: .dpgn-digital-architectural} Build and develop open **({{ site.DigitalArchitectural.en }})**
-  - Actively use and contribute to open source tools and solutions
-  - Develop in the open by sharing and reusing all types of code and platform configuration
 
 </section>
 
@@ -332,8 +367,6 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - [Open Source Software (Federal Source Code Policy (US))](https://sourcecode.cio.gov/OSS/)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
-- Open By Default, Proprietary by Necessity (Current GC EARB Principles)
-- {: .dpgn-digital-architectural} Build and develop open ({{ site.DigitalArchitectural.en }})
 
 </section>
 </section>

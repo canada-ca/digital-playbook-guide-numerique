@@ -63,14 +63,6 @@ altLangPage: 10-etre-bons-utilisateurs-donnees
 **[TODO: Add/revise reusable solutions]**
 
 </section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- Tell me once - Data/Information centricity (GC EA Principles)
-
-</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -100,6 +92,15 @@ At every stage of a project, we should measure how well our service is working f
 - Publish metrics externally **(Digital Services Playbook (US))**
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-keep-data-organized-1} Master Data will be decoupled wherever possible from applications and will be hosted in the appropriate system of record.
+- {: .dpgn-digital-architectural-keep-data-organized-3} Systems of record shall be authoritative central sources that serve data, once validated, to downstream business applications and upstream source systems.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -128,6 +129,7 @@ At every stage of a project, we should measure how well our service is working f
 ### Similar resources
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -169,6 +171,14 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-keep-data-organized-2} Custodians shall ensure data is correct, consistent, and complete.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 **Alpha, beta and live stages:**
 {: .dpgn-data-ignore}
@@ -277,6 +287,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 - [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-14)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
 
 </section>
 </section>
@@ -297,53 +308,13 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 **[TODO: Add/revise checklist items]**
 
-</section>
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-- [Preserving digital collections (The National Archives (UK))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/)
-  - [How to get started (Preserving digital collections (The National Archives (UK)))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/how-to-get-started/)
-  - [Developing a digital preservation strategy and policy (Preserving digital collections (The National Archives (UK)))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/developing-a-digital-preservation-strategy-and-policy/)
-- [Sustainability of Digital Formats: Planning for Library of Congress Collections (US)](https://www.loc.gov/preservation/digital/formats/index.html)
-  - [Formats, Evluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml)
-  - [Sustainability Factors (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/sustain/sustain.shtml)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-- [Digital preservation tools (Preserving digital collections (The National Archives (UK)))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/digital-preservation-tools/)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 10.5 Ensure data and information is complete, accurate and up-to-date
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- {: .dpgn-digital-architectural} Data is the new gold **({{ site.DigitalArchitectural.en }})**
-  - Make certain that data is complete, authoritative, accurate, and timely to ensure a high level of data quality
-  - Ensure data is able to be shared and can be easily accessed
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-keep-data-organized-4} Appropriate governance must be applied.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -376,8 +347,51 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 ### Similar resources
 
-- Information/Data is an asset (Current GC EARB Principles)
-- {: .dpgn-digital-architectural} Data is the new gold ({{ site.DigitalArchitectural.en }})
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
+
+</section>
+</section>
+
+<section class="dpgn-section-guideline">
+
+## 10.5 Ensure data and information is complete, accurate and up-to-date
+
+<div class="dpgn-section-intro-guideline">
+
+**[TODO: Add/revise introductory text]**
+
+</div>
+
+<section class="dpgn-section-checklist">
+
+### Checklist
+
+**[TODO: Add/revise checklist items]**
+
+</section>
+
+<section class="dpgn-section-guides">
+
+### Implementation guides
+
+**[TODO: Add/revise implementation guide items]**
+
+- [Preserving digital collections (The National Archives (UK))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/)
+  - [How to get started (Preserving digital collections (The National Archives (UK)))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/how-to-get-started/)
+  - [Developing a digital preservation strategy and policy (Preserving digital collections (The National Archives (UK)))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/developing-a-digital-preservation-strategy-and-policy/)
+- [Sustainability of Digital Formats: Planning for Library of Congress Collections (US)](https://www.loc.gov/preservation/digital/formats/index.html)
+  - [Formats, Evluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml)
+  - [Sustainability Factors (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))](https://www.loc.gov/preservation/digital/formats/sustain/sustain.shtml)
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+- [Digital preservation tools (Preserving digital collections (The National Archives (UK)))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/digital-preservation-tools/)
 
 </section>
 </section>
