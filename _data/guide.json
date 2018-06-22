@@ -19490,6 +19490,42 @@
                             "tags": [
 
                             ],
+                            "content": "<a href=\"https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf\">Logiciels libres et ouverts - Guide de référence (Québec)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md\">Politique du libre (Montréal)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open\">8. Make all new source code open (Digital Service Standard (UK))</a>"
                           }
                         ]
@@ -20417,6 +20453,60 @@
                             "tags": [
 
                             ],
+                            "content": "<a href=\"https://references.modernisation.gouv.fr/socle-logiciels-libres\">Socle Logiciels Libres (France)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/pollo.pdf\">Logiciels libres et ouverts - Guide d’analyse de maturité (Québec)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ctp.pdf\">Logiciels libres et ouverts - Guide d’analyse du coût total de propriété (Québec)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/working-with-open-standards\">Working with open standards (Service Manual (UK))</a>"
                           }
                         ]
@@ -20618,6 +20708,42 @@
 
                             ],
                             "content": "<a href=\"https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/3_Logiciel_libre_Utilisation.md\">Logiciels libres - Utilisation (Livre blanc ouvert en premier (GC))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf\">Logiciels libres et ouverts - Guide de référence (Québec)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md\">Politique du libre (Montréal)</a>"
                           }
                         ]
                       },
