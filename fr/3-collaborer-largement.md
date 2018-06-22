@@ -144,7 +144,11 @@ Good government services are built quickly and iteratively, based on user needs.
 - [2. Former une équipe adaptée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-3)
 - [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
 - [2. Have a multidisciplinary team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/2-multidisciplinary-team/)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#deliver-with-multidisciplinary-teams-including-using-devops)
 
 </section>
 </section>
