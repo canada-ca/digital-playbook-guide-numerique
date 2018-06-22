@@ -101,6 +101,11 @@ At every stage of a project, we should measure how well our service is working f
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
+**Ensure data and information is complete, accurate and up-to-date (formerly guideline 10.5):**
+{: .dpgn-data-ignore}
+
+- Ensure data and information is complete, accurate and up-to-date
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -198,6 +203,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 **Ensure data and information is complete, accurate and up-to-date (formerly guideline 10.6):**
 {: .dpgn-data-ignore}
 
+- Ensure data and information is complete, accurate and up-to-date
 - Design data to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
 - Design data to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily integrate and reuse it.
 - Design data with a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
