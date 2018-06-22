@@ -38,9 +38,7 @@ altLangPage: 1-design-with-users
 
 Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes agiles, itératives et centrées sur l'utilisateur lors de la construction d'un service. Commencez par une recherche et une analyse approfondies pour vous aider à comprendre qui utilise le service, quels sont ses besoins et comment le service affectera sa vie pour mieux comprendre comment le service devrait être conçu. L'absence de la voix de l'utilisateur conduit à des hypothèses qui peuvent être incorrectes et coûteuses.
 
-Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service.
-
-**(GC)**
+Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service. **(GC)**
 
 Create a service which is simple to use and intuitive enough that users succeed the first time.
 
@@ -356,56 +354,6 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
 
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Understand the different points at which people will interact with the service -- both online and in person **(Digital Services Playbook (US))**
-- Identify pain points in the current way users interact with the service, and prioritize these according to user needs **(Digital Services Playbook (US))**
-- Design the digital parts of the service so that they are integrated with the offline touch points people use to interact with the service **(Digital Services Playbook (US))**
-- Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'application
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-<section class="dpgn-section-guideline">
-
-## 1.7 Rendre plus pratique et pratique l'utilisation des services numériques
-
-<div class="dpgn-section-intro-guideline">
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
 Encouragez les personnes à choisir le service numérique à chacune de leurs interactions avec le gouvernement.
 
 Le fait d’encourager les personnes à utiliser le service numérique permettra :
@@ -418,9 +366,7 @@ Le fait d’encourager les personnes à utiliser le service numérique permettra
 
 Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion.
 
-People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible.
-
-**(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
 Encourage users to choose the digital service and consolidate or phase out existing alternative channels where appropriate.
 
@@ -428,9 +374,7 @@ As we build simpler, clearer and faster government services the digital channel 
 
 Measuring digital take-up helps you to understand how well your service is being used. It’s one of the 4 mandatory KPIs services must report on the Performance Dashboard.
 
-We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can.
-
-**(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
+We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 
 </div>
 
@@ -439,6 +383,12 @@ We still need to help users who are unable to use digital channels and provide s
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+- Understand the different points at which people will interact with the service -- both online and in person **(Digital Services Playbook (US))**
+- Identify pain points in the current way users interact with the service, and prioritize these according to user needs **(Digital Services Playbook (US))**
+- Design the digital parts of the service so that they are integrated with the offline touch points people use to interact with the service **(Digital Services Playbook (US))**
+- Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
+- Rendre plus pratique et pratique l'utilisation des services numériques
 
 **Stage alpha :**
 {: .dpgn-data-ignore}
@@ -506,7 +456,7 @@ We still need to help users who are unable to use digital channels and provide s
 
 <section class="dpgn-section-guides">
 
-### Guides d'implémentation
+### Guides d'application
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
@@ -528,11 +478,13 @@ We still need to help users who are unable to use digital channels and provide s
 
 ### Ressources similaires
 
+- [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 - [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 - [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
 
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
