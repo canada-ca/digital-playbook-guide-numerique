@@ -40,6 +40,24 @@ Focus on the needs of your users, using agile, iterative and user-centred method
 
 Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched.
 
+**(GC)**
+
+Create a service which is simple to use and intuitive enough that users succeed the first time.
+
+All users should be able to complete the task your service provides the first time they try, as quickly and easily as possible.
+
+This includes user with disabilities or those who need assisted digital support.
+
+If users find it difficult to complete the task the first time, they may avoid using your service or contact your organisation to get help. **(Digital Service Standard (UK))**
+
+Using responsive design, following common design patterns and style guidance for digital content, and making sure the service is accessible means it will be simpler, clearer and faster for all users. It will also be available on the platforms and devices that users choose.
+
+Consistent design that is responsive to different devices helps you to save time and money by re-using something that already exists that follows better practice, and is based on data and user research. This means you can concentrate on the unique things your service needs to do.
+
+Responsive design ensures that users can interact with your service regardless of their device size or type, and browser or device processing power. The service should follow mobile-first design principles, consider users on slow internet connections or with limited download data, work well for both mouse and touch devices, and use front-end technology that works well regardless of device processing power.
+
+Writing and designing content so it is consistent, plain and in the language of your users helps people gain trust and confidence in using different services. By providing information they can easily understand they may be less likely to use alternative websites that could be misleading. **(Digital Service Standard (AU))**
+
 </div>
 
 <section class="dpgn-section-checklist">
@@ -56,6 +74,26 @@ Users should be involved throughout the lifecycle of the service, with user rese
 - Put in place a plan to pay for user research and usability tests throughout the design of the service and after it's built
 - Use qualitative and quantitative data to help improve your understanding of user needs and identify areas for improvement
 - Provide a mechanism for users to provide feedback and to address service issues in a timely manner (as required by the [Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916#cha7)).
+- Make services simple, intuitive and consistent
+- Test the name of the service and see if it makes sense to users **(Digital Service Standard (Ontario))**
+- Give users clear information about where they are in each step of the process **(Digital Services Playbook (US))**
+- Provide users with a way to exit and return later to complete the process **(Digital Services Playbook (US))**
+- Use language that is familiar to the user and easy to understand **(Digital Services Playbook (US))**
+- Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
+- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
+- Use analytics and user research to reduce the number of people who didn't complete the task they set out to do online (e.g. renew a driver's licence) **(Digital Service Standard (Ontario))**
+- Document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK))**
+- Make the service accessible, including for users with lower levels of digital skills **(Digital Service Standard (Ontario))**
+- Make sure the service is responsive, with the same content and functionality on all devices, and works on mobile devices **(Digital Service Standard (Ontario / UK / AU))**
+- Do usability testing:
+  - including with users with the lowest level of digital skills **(Digital Service Standard (UK))**
+  - at least once before and after the service goes live and make improvements accordingly **(Digital Service Standard (Ontario))**
+- Make design and content decisions based on research, testing and analytics **(Digital Service Standard (Ontario / UK))**
+- change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
+- understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
+- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
+- follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA **(Digital Service Standard (AU))**
+- ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
 
 </section>
 
@@ -65,6 +103,17 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 **[TODO: Add/revise implementation guide items]**
 
+- [How user research improves service design (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
+- [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
+- [Understanding users who don't use digital services (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
+- [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
+- [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
+- [Design patterns (Service Manual (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
+- [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
+- [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
+- [Looking at the different ways to test content (18F (US))](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/)
+- [Government Digital Service (GDS) style guide (Government Digital Service (UK))](https://www.gov.uk/guidance/style-guide)
+
 </section>
 
 <section class="dpgn-section-solutions">
@@ -73,6 +122,8 @@ Users should be involved throughout the lifecycle of the service, with user rese
 
 **[TODO: Add/revise reusable solutions]**
 
+- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
+
 </section>
 
 <section class="dpgn-section-similar">
@@ -80,6 +131,14 @@ Users should be involved throughout the lifecycle of the service, with user rese
 ### Similar resources
 
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
+- [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
+- [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
+- [3. Be consistent (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
+- [5. Ensure users succeed the first time (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
+- [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
+- [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
+- [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 </section>
 </section>
@@ -332,105 +391,6 @@ We need to understand the different ways people will interact with our services,
 ### Similar resources
 
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.6 Make services simple, intuitive and consistent
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
-Create a service which is simple to use and intuitive enough that users succeed the first time.
-
-All users should be able to complete the task your service provides the first time they try, as quickly and easily as possible.
-
-This includes user with disabilities or those who need assisted digital support.
-
-If users find it difficult to complete the task the first time, they may avoid using your service or contact your organisation to get help. **(Digital Service Standard (UK))**
-
-Using responsive design, following common design patterns and style guidance for digital content, and making sure the service is accessible means it will be simpler, clearer and faster for all users. It will also be available on the platforms and devices that users choose.
-
-Consistent design that is responsive to different devices helps you to save time and money by re-using something that already exists that follows better practice, and is based on data and user research. This means you can concentrate on the unique things your service needs to do.
-
-Responsive design ensures that users can interact with your service regardless of their device size or type, and browser or device processing power. The service should follow mobile-first design principles, consider users on slow internet connections or with limited download data, work well for both mouse and touch devices, and use front-end technology that works well regardless of device processing power.
-
-Writing and designing content so it is consistent, plain and in the language of your users helps people gain trust and confidence in using different services. By providing information they can easily understand they may be less likely to use alternative websites that could be misleading. **(Digital Service Standard (AU))**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Test the name of the service and see if it makes sense to users **(Digital Service Standard (Ontario))**
-- Give users clear information about where they are in each step of the process **(Digital Services Playbook (US))**
-- Provide users with a way to exit and return later to complete the process **(Digital Services Playbook (US))**
-- Use language that is familiar to the user and easy to understand **(Digital Services Playbook (US))**
-- Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
-- Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
-- Use analytics and user research to reduce the number of people who didn't complete the task they set out to do online (e.g. renew a driver's licence) **(Digital Service Standard (Ontario))**
-- Document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK))**
-- Make the service accessible, including for users with lower levels of digital skills **(Digital Service Standard (Ontario))**
-- Make sure the service is responsive, with the same content and functionality on all devices, and works on mobile devices **(Digital Service Standard (Ontario / UK / AU))**
-- Do usability testing:
-  - including with users with the lowest level of digital skills **(Digital Service Standard (UK))**
-  - at least once before and after the service goes live and make improvements accordingly **(Digital Service Standard (Ontario))**
-- Make design and content decisions based on research, testing and analytics **(Digital Service Standard (Ontario / UK))**
-- change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
-- understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
-- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
-- follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA **(Digital Service Standard (AU))**
-- ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-- [How user research improves service design (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
-- [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
-- [Understanding users who don't use digital services (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
-- [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
-- [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
-- [Design patterns (Service Manual (UK))](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
-- [Australian Government Style manual (AU)](http://www.australia.gov.au/about-government/publications/style-manual)
-- [18F Content Guide (18F (US))](https://content-guide.18f.gov/)
-- [Looking at the different ways to test content (18F (US))](https://18f.gsa.gov/2016/04/19/looking-at-the-different-ways-to-test-content/)
-- [Government Digital Service (GDS) style guide (Government Digital Service (UK))](https://www.gov.uk/guidance/style-guide)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
-- [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
-- [3. Be consistent (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
-- [5. Ensure users succeed the first time (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
-- [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
-- [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
-- [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-- [A consistent client experience when using services is key (General design principles - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
 </section>
 </section>
