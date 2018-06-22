@@ -32,7 +32,7 @@ altLangPage: 5-work-in-open-by-default
 
 <section class="dpgn-section-guideline">
 
-## 5.1 Ouvrir au monde extérieur toutes les données et tous les renseignements non sensibles pour le partage et la réutilisation sous licence ouverte
+## 5.1 Ouvrir au monde extérieur toutes les données, tous les renseignements et tout nouveau code source ouvert non sensibles pour le partage et la réutilisation sous licence ouverte
 
 <div class="dpgn-section-intro-guideline">
 
