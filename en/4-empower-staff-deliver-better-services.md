@@ -202,6 +202,9 @@ To improve our chances of success when contracting out development work, we need
 
 It is essential that business processes be reviewed to identify opportunities to improve service delivery. A website is not a service; it is just one channel for accessing or delivering a service. Designing new or redesigning existing digital services should also facilitate service delivery best practices (e.g., open data and joined-up services). **(Do - Digital Design Playbook (ISED))**
 
+**Make one person accountable for the service (formerly guideline 4.5):**
+{: .dpgn-data-ignore}
+
 Each service must have one person who has the authority and is responsibile for making business, product and technical decisions. This person is responsible for communicating the vision, making decisions in a timely fashion, managing stakeholder/vendor relationships, monitoring project health and is accountable for the success or failure of the service. This person also sets the strategy for the service, defines the features of the service, and is responsible for the service on an ongoing basis, until it is decommissioned. **(GC)**
 
 </div>
@@ -228,6 +231,10 @@ Each service must have one person who has the authority and is responsibile for 
 - Identify policy constraints. **(Do - Digital Design Playbook (ISED))**
 - Identify opportunities for improving processes and reducing complexity. **(Do - Digital Design Playbook (ISED))**
 - Improve the service first and consider if a policy change or update might be needed. Second, build the digital platform/website. **(Do - Digital Design Playbook (ISED))**
+
+**Make one person accountable for the service (formerly guideline 4.5):**
+{: .dpgn-data-ignore}
+
 - Make one person accountable for the service
   - Has a product management background with technical experience to assess alternatives and weigh trade-offs
   - Has a strong knowledge of the procurement process and is able to articulate value for money is achieved when buying any tools
@@ -272,6 +279,10 @@ Each service must have one person who has the authority and is responsibile for 
 - [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} 4. Deliver with Multidisciplinary Teams (Including using DevOps) **(Build It Right Principles (GC))**
+
+**Make one person accountable for the service (formerly guideline 4.5):**
+{: .dpgn-data-ignore}
+
 - [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 </section>

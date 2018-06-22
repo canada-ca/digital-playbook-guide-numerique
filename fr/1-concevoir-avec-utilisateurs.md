@@ -40,6 +40,9 @@ Concentrez-vous sur les besoins de vos utilisateurs, en utilisant des méthodes 
 
 Les utilisateurs doivent être impliqués tout au long du cycle de vie du service, les recherches et les tests des utilisateurs informant les premières phases de la conception jusqu'à des améliorations continues après le lancement du service. **(GC)**
 
+**Rendre les services simples, intuitifs et cohérents (anciennement ligne directrice 1.6) :**
+{: .dpgn-data-ignore}
+
 Create a service which is simple to use and intuitive enough that users succeed the first time.
 
 All users should be able to complete the task your service provides the first time they try, as quickly and easily as possible.
@@ -72,6 +75,10 @@ Writing and designing content so it is consistent, plain and in the language of 
 - Mettre en place un plan de paiement pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après sa construction
 - Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer
 - Fournir un mécanisme aux utilisateurs permettant de recevoir une rétroaction et de régler en temps opportun les problèmes de services (comme l'exige la [Politique sur les services](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27916#cha7))
+
+**Rendre les services simples, intuitifs et cohérents (anciennement ligne directrice 1.6) :**
+{: .dpgn-data-ignore}
+
 - Rendre les services simples, intuitifs et cohérents
 - Testez le nom du service et vérifiez que les utilisateurs le comprennent **(Normes des services numériques (Ontario))**
 - Give users clear information about where they are in each step of the process **(Digital Services Playbook (US))**
@@ -101,6 +108,9 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 **[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]**
 
+**Rendre les services simples, intuitifs et cohérents (anciennement ligne directrice 1.6) :**
+{: .dpgn-data-ignore}
+
 - [How user research improves service design (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
 - [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
 - [Understanding users who don't use digital services (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/understanding-users-who-dont-use-digital-services)
@@ -120,6 +130,9 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
+**Rendre les services simples, intuitifs et cohérents (anciennement ligne directrice 1.6) :**
+{: .dpgn-data-ignore}
+
 - [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
 </section>
@@ -129,6 +142,10 @@ Writing and designing content so it is consistent, plain and in the language of 
 ### Ressources similaires
 
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
+
+**Rendre les services simples, intuitifs et cohérents (anciennement ligne directrice 1.6) :**
+{: .dpgn-data-ignore}
+
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 - [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
 - [3. Faire preuve de constance (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-4)
@@ -229,6 +246,9 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 Un élément clé du développement de services numériques qui fonctionnent pour les utilisateurs consiste à bien comprendre qui sont les utilisateurs, quels sont leurs besoins et comment le service affectera leur vie. Il est également important de développer une bonne compréhension des différents contextes dans lesquels les utilisateurs peuvent interagir, car les besoins et les attentes des utilisateurs peuvent varier en fonction du lieu, du moment et de la manière dont ils utilisent un service numérique. **(GC)**
 
+**Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (anciennement ligne directrice 1.8) :**
+{: .dpgn-data-ignore}
+
 Mettez en place dans tous les canaux des outils visant à soutenir les personnes qui ne peuvent pas utiliser elles-mêmes des services numériques.
 
 Tout le monde ne disposera pas automatiquement du même niveau d’accès, de confort et de compétences pour utiliser le service numérique. Comprenez à quels niveaux les utilisateurs ont besoin de soutien, mettez ce soutien à disposition et sensibilisez à l’existence de ce soutien. **(Normes des services numériques (Ontario) (Soutien aux personnes qui en ont besoin))**
@@ -245,8 +265,15 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
+**Fournir des services qui peuvent être tout, quand et n’importe quel appareil (anciennement ligne directrice 1.5) :**
+{: .dpgn-data-ignore}
+
 - Fournir des services qui peuvent être tout, quand et n'importe quel appareil
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
+
+**Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (anciennement ligne directrice 1.8) :**
+{: .dpgn-data-ignore}
+
 - Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
 - Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
 - Effectuez le plus tôt possible une étude des utilisateurs afin de : **(Normes des services numériques (Ontario))**
@@ -337,6 +364,10 @@ You need to have a plan for what to do if your service goes offline so that you 
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
+
+**Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (anciennement ligne directrice 1.8) :**
+{: .dpgn-data-ignore}
+
 - [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
 - [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
@@ -362,7 +393,15 @@ You need to have a plan for what to do if your service goes offline so that you 
 - [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 - [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+
+**Fournir des services qui peuvent être tout, quand et n’importe quel appareil (anciennement ligne directrice 1.5) :**
+{: .dpgn-data-ignore}
+
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+
+**Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (anciennement ligne directrice 1.8) :**
+{: .dpgn-data-ignore}
+
 - [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 - [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 
@@ -378,6 +417,9 @@ You need to have a plan for what to do if your service goes offline so that you 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
+
+**Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7) :**
+{: .dpgn-data-ignore}
 
 Encouragez les personnes à choisir le service numérique à chacune de leurs interactions avec le gouvernement.
 
@@ -415,7 +457,7 @@ We still need to help users who are unable to use digital channels and provide s
 - Develop metrics that will measure how well the service is meeting user needs at each step of the service **(Digital Services Playbook (US))**
 - Rendre plus pratique et pratique l'utilisation des services numériques
 
-**Stage alpha :**
+**Stage alpha (Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7)) :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -437,7 +479,7 @@ We still need to help users who are unable to use digital channels and provide s
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
-**Stage bêta :**
+**Stage bêta (Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7)) :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -452,7 +494,7 @@ We still need to help users who are unable to use digital channels and provide s
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
-**Stage en direct :**
+**Stage en direct (Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7)) :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -467,7 +509,7 @@ We still need to help users who are unable to use digital channels and provide s
 {: .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
-**Stages bêta et en direct :**
+**Stages bêta et en direct (Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7)) :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -484,6 +526,9 @@ We still need to help users who are unable to use digital channels and provide s
 ### Guides d'application
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+**Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7) :**
+{: .dpgn-data-ignore}
 
 - [How to measure digital take-up (Service Manual (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
 - [Encouraging people to use your digital service (Service Manual (UK))](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service)
@@ -504,6 +549,10 @@ We still need to help users who are unable to use digital channels and provide s
 ### Ressources similaires
 
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
+
+**Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7) :**
+{: .dpgn-data-ignore}
+
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
 - [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 - [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
