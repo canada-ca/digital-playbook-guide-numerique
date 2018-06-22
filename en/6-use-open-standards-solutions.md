@@ -161,12 +161,12 @@ Using common, proven government solutions, approaches, and platforms will help t
 - make users' experience of government more consistent, which generates trust
 - save time and money by reusing things that are already available
 
-**Design, build and test end-to-end digital services:**
+**Design, build and test end-to-end digital services (formerly guideline 6.5):**
 {: .dpgn-data-ignore}
 
 There are many potential benefits from the greater use of digital services, including greater convenience for users, quicker and more responsive service delivery, increased security and reliability and reduced costs. To maximize these potential benefits and avoid user reliance on less convenient ways of interacting with government, services should be designed to be digital from end-to-end.
 
-**Cloud first:**
+**Cloud first (formerly guideline 6.6):**
 {: .dpgn-data-ignore}
 
 Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. **(Digital Services Playbook (US))**
@@ -215,7 +215,7 @@ Public cloud services offer benefits that enable significant advances in the fol
   - Open data leverages public sector information to develop consumer and commercial products.
   - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
 
-**Design, build and test end-to-end digital services**
+**Design, build and test end-to-end digital services (formerly guideline 6.5):**
 {: .dpgn-data-ignore}
 
 - Design, build and test end-to-end digital services
@@ -235,7 +235,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques **(Digital Services Playbook (US))**
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
-**Cloud first:**
+**Cloud first (formerly guideline 6.6):**
 {: .dpgn-data-ignore}
 
 - Cloud first
@@ -274,7 +274,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-**Alpha stage (Design, build and test end-to-end digital services):**
+**Alpha stage (Design, build and test end-to-end digital services (formerly guideline 6.5)):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -282,7 +282,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
-**Beta and live stages (Design, build and test end-to-end digital services):**
+**Beta and live stages (Design, build and test end-to-end digital services (formerly guideline 6.5)):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -309,7 +309,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
 - [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
 
-**Design, build and test end-to-end digital services:**
+**Design, build and test end-to-end digital services (formerly guideline 6.5):**
 {: .dpgn-data-ignore}
 
 - [Quality assurance: testing your service regularly (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)
@@ -345,7 +345,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} 6. Expose all functionality as services **(Build It Right Principles (GC))**
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} 9. Cloud First **(Build It Right Principles (GC))**
 
-**Design, build and test end-to-end digital services:**
+**Design, build and test end-to-end digital services (formerly guideline 6.5):**
 {: .dpgn-data-ignore}
 
 - [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
@@ -354,7 +354,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 - [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
 
-**Cloud first:**
+**Cloud first (formerly guideline 6.6):**
 {: .dpgn-data-ignore}
 
 - [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
