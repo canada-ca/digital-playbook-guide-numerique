@@ -161,12 +161,12 @@ Using common, proven government solutions, approaches, and platforms will help t
 - make users' experience of government more consistent, which generates trust
 - save time and money by reusing things that are already available
 
-**Concevoir, créer et tester des services numériques de bout en bout :**
+**Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5) :**
 {: .dpgn-data-ignore}
 
 There are many potential benefits from the greater use of digital services, including greater convenience for users, quicker and more responsive service delivery, increased security and reliability and reduced costs. To maximize these potential benefits and avoid user reliance on less convenient ways of interacting with government, services should be designed to be digital from end-to-end.
 
-**Nuage d'abord :**
+**Nuage d'abord (anciennement ligne directrice 6.6) :**
 {: .dpgn-data-ignore}
 
 Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. **(Digital Services Playbook (US))**
@@ -214,7 +214,7 @@ Public cloud services offer benefits that enable significant advances in the fol
   - Open data leverages public sector information to develop consumer and commercial products.
   - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
 
-**Concevoir, créer et tester des services numériques de bout en bout:**
+**Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5) :**
 {: .dpgn-data-ignore}
 
 - Concevoir, créer et tester des services numériques de bout en bout
@@ -234,7 +234,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques **(Digital Services Playbook (US))**
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
-**Nuage d'abord :**
+**Nuage d'abord (anciennement ligne directrice 6.6) :**
 {: .dpgn-data-ignore}
 
 - Ensure that resources are provisioned on demand **(OneGC product design criteria) /** Resources are provisioned on demand **(Digital Services Playbook (US))**
@@ -272,7 +272,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-**Stage alpha (Concevoir, créer et tester des services numériques de bout en bout) :**
+**Stage alpha (Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5)) :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -280,7 +280,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
-**Stage bêta et en direct (Concevoir, créer et tester des services numériques de bout en bout) :**
+**Stage bêta et en direct (Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5)) :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
@@ -307,7 +307,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
 - [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
 
-**Concevoir, créer et tester des services numériques de bout en bout:**
+**Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5) :**
 {: .dpgn-data-ignore}
 
 - [Quality assurance: testing your service regularly (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)
@@ -343,7 +343,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} 6. Expose all functionality as services **(Build It Right Principles (GC))**
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} 9. Cloud First **(Build It Right Principles (GC))**
 
-**Concevoir, créer et tester des services numériques de bout en bout:**
+**Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5) :**
 {: .dpgn-data-ignore}
 
 - [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
@@ -352,7 +352,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 - [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
 
-**Nuage d'abord :**
+**Nuage d'abord (anciennement ligne directrice 6.6) :**
 {: .dpgn-data-ignore}
 
 - [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
