@@ -238,6 +238,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 **Cloud first:**
 {: .dpgn-data-ignore}
 
+- Cloud first
 - Ensure that resources are provisioned on demand **(OneGC product design criteria) /** Resources are provisioned on demand **(Digital Services Playbook (US))**
 - Enable resources to scale based on real-time user demand **(OneGC product design criteria) /** Resources scale based on real-time user demand **(Digital Services Playbook (US))**
 - Ensure resources are available in multiple regions **(OneGC product design criteria) /** Resources are available in multiple regions **(Digital Services Playbook (US))**
