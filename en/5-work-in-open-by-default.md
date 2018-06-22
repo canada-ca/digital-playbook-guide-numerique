@@ -38,6 +38,24 @@ altLangPage: 5-travailler-ouvertement-par-defaut
 
 **[TODO: Add/revise introductory text]**
 
+**Work in the open and make source code open and reusable (formerly guideline 5.5):**
+{: .dpgn-data-ignore}
+
+Make all source code open and reusable under an appropriate open source software licence, so that other developers can:
+
+- benefit from your work and build on it
+- learn from your experiences
+- identify parts of your code for reuse which you might not have recognised yourself
+
+This includes working in the open, sharing any and all data and information produced in developing the solution, and making the final solution available as open source software. Publishing your code and data from the beginning of your technology project or programme will encourage:
+
+- clearer documentation, making it easier for your team to maintain the code, track changes to it and for other people to use it
+- cleaner and well-structured code that is easier to maintain
+- processes that will allow you to continuously publish code as it is written
+- clarity around data that needs to remain protected and how that's achieved
+- suggestions about how the code can be improved or where security can be improved
+- others to contribute ideas as the project is in progress
+
 </div>
 
 <section class="dpgn-section-checklist">
@@ -62,6 +80,15 @@ altLangPage: 5-travailler-ouvertement-par-defaut
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
+**Work in the open and make source code open and reusable (formerly guideline 5.5):**
+{: .dpgn-data-ignore}
+
+- Work in the open and make source code open and reusable
+- Host source code publicly in an open internet source code repository
+- Use an Open Source Initiative approved licence
+- Offer users a mechanism to report bugs and issues, and be responsive to these reports
+- Keep track of changes to it using version control
+
 </section>
 
 <section class="dpgn-section-guides">
@@ -72,6 +99,15 @@ altLangPage: 5-travailler-ouvertement-par-defaut
 
 - [Open Data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
 - [Statistical Data Integration (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/)
+
+**Work in the open and make source code open and reusable (formerly guideline 5.5):**
+{: .dpgn-data-ignore}
+
+- [Making source code open and reusable (Service Manual (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
+- [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
+- [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
+- [Comparison of free and open-source software licences (Wikipedia)](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
+- [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
 
 </section>
 
@@ -89,6 +125,18 @@ altLangPage: 5-travailler-ouvertement-par-defaut
 
 - [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} 1. Open by Default (Proprietary by Necessity) **(Build It Right Principles (GC))**
+
+**Work in the open and make source code open and reusable (formerly guideline 5.5):**
+{: .dpgn-data-ignore}
+
+- [Open Source Software Contribution (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/4_Open_Source_Software_Contribution.md)
+- [Open Culture (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/6_Open_Culture.md)
+- [Logiciels libres et ouverts - Guide de référence (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf)
+- [Politique du libre (Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
+- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+- [Open Source Software (Federal Source Code Policy (US))](https://sourcecode.cio.gov/OSS/)
+- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
+- [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 
 </section>
 </section>
@@ -291,82 +339,6 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 - [Open Markets (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/5_Open_Markets.md)
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 5.5 Work in the open and make source code open and reusable
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
-Make all source code open and reusable under an appropriate open source software licence, so that other developers can:
-
-- benefit from your work and build on it
-- learn from your experiences
-- identify parts of your code for reuse which you might not have recognised yourself
-
-This includes working in the open, sharing any and all data and information produced in developing the solution, and making the final solution available as open source software. Publishing your code and data from the beginning of your technology project or programme will encourage:
-
-- clearer documentation, making it easier for your team to maintain the code, track changes to it and for other people to use it
-- cleaner and well-structured code that is easier to maintain
-- processes that will allow you to continuously publish code as it is written
-- clarity around data that needs to remain protected and how that's achieved
-- suggestions about how the code can be improved or where security can be improved
-- others to contribute ideas as the project is in progress
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Host source code publicly in an open internet source code repository
-- Use an Open Source Initiative approved licence
-- Offer users a mechanism to report bugs and issues, and be responsive to these reports
-- Keep track of changes to it using version control
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-- [Making source code open and reusable (Service Manual (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
-- [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
-- [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
-- [Comparison of free and open-source software licences (Wikipedia)](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
-- [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- [Open Source Software Contribution (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/4_Open_Source_Software_Contribution.md)
-- [Open Culture (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/6_Open_Culture.md)
-- [Logiciels libres et ouverts - Guide de référence (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf)
-- [Politique du libre (Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
-- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
-- [Open Source Software (Federal Source Code Policy (US))](https://sourcecode.cio.gov/OSS/)
-- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
-- [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 
 </section>
 </section>

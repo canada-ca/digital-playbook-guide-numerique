@@ -26,7 +26,7 @@ altLangPage: 6-utiliser-normes-solutions-ouvertes
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.3, 3.4, 5.1, 5.5, 10.3" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.3, 3.4, 5.1, 10.3" samePage=false includeStandardTitle=true %}
 
 </div>
 
