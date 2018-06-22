@@ -17404,7 +17404,7 @@
                               "dpgn-digital-architectural-open-by-default-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "For custom-built solutions, make source code open and reusable under and appropriate open source software license where possible."
+                            "content": "For custom-built solutions, make source code open and reusable under an appropriate open source software license where possible."
                           }
                         ]
                       },
@@ -20225,7 +20225,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Critical applicatons shall be 99.999% available including planned maintenance."
+                            "content": "Critical applications shall be 99.999% available including planned maintenance."
                           }
                         ]
                       },
@@ -21673,7 +21673,7 @@
                               "dpgn-digital-architectural-maximize-reuse-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Net new development shall consider GC Enterprise/GC Enterprise Cluster requirements first over Departmental Specific Solutions. For clarity, the order of scope of preference is:\n        "
+                            "content": "Net new development shall consider GC Enterprise/GC Enterprise Cluster requirements first over Departmental Specific Solutions. For clarity, the order of scope preference is:\n        "
                           },
                           {
                             "content_type": "block",
@@ -31445,7 +31445,28 @@
                               "dpgn-digital-architectural-keep-data-organized-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Master Data will be decoupled wherever possible from applications and will be hosted in the appropriate system of record.\n{: .dpgn-digital-architectural-keep-data-organized-3} Systems of record shall be authoritative central sources that servce data, once validated, to downstream business applications and upstream source systems."
+                            "content": "Master Data will be decoupled wherever possible from applications and will be hosted in the appropriate system of record."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural-keep-data-organized-3"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural-keep-data-organized-3",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-keep-data-organized-3",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Systems of record shall be authoritative central sources that serve data, once validated, to downstream business applications and upstream source systems."
                           }
                         ]
                       }

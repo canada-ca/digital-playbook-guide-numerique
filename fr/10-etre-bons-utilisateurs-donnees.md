@@ -97,7 +97,7 @@ At every stage of a project, we should measure how well our service is working f
 
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-keep-data-organized-1} Master Data will be decoupled wherever possible from applications and will be hosted in the appropriate system of record.
-{: .dpgn-digital-architectural-keep-data-organized-3} Systems of record shall be authoritative central sources that servce data, once validated, to downstream business applications and upstream source systems.
+- {: .dpgn-digital-architectural-keep-data-organized-3} Systems of record shall be authoritative central sources that serve data, once validated, to downstream business applications and upstream source systems.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 

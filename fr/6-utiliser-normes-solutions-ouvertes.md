@@ -83,7 +83,7 @@ Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
   1. Custom
 - {: .dpgn-digital-architectural-performance-availability-scalability-1} All services will respond in 500ms or less wherever possible. Flexible support services should automatically adjust to meet demand as needed.
 - {: .dpgn-digital-architectural-performance-availability-scalability-2} Cloud providers should have geographically-separated data centers that are backed up at the transaction level and automatically fail over while maintaining client sessions.
-- {: .dpgn-digital-architectural-performance-availability-scalability-3} Critical applicatons shall be 99.999% available including planned maintenance.
+- {: .dpgn-digital-architectural-performance-availability-scalability-3} Critical applications shall be 99.999% available including planned maintenance.
 - {: .dpgn-digital-architectural-performance-availability-scalability-4} Support for zero-downtime version updates default.
 - {: .dpgn-digital-architectural-performance-availability-scalability-5} Systems shall be designed for resiliency. For example:
   - Leveraging distributed architectures,
@@ -199,7 +199,7 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 <!-- markdownlint-disable MD032 -->
 - {:.dpgn-digital-architectural-maximize-reuse-1} Where feasible, existing components and processes across the GC shall be leveraged/reused to create new solutions.
-- {: .dpgn-digital-architectural-maximize-reuse-2} Net new development shall consider GC Enterprise/GC Enterprise Cluster requirements first over Departmental Specific Solutions. For clarity, the order of scope of preference is:
+- {: .dpgn-digital-architectural-maximize-reuse-2} Net new development shall consider GC Enterprise/GC Enterprise Cluster requirements first over Departmental Specific Solutions. For clarity, the order of scope preference is:
   - Enterprise
   - Enterprise Cluster
   - Departmental (recognising institutional uniqueness)

@@ -57,7 +57,7 @@ altLangPage: 5-work-in-open-by-default
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-open-by-default-3} For custom-built solutions, make source code open and reusable under and appropriate open source software license where possible.
+- {: .dpgn-digital-architectural-open-by-default-3} For custom-built solutions, make source code open and reusable under an appropriate open source software license where possible.
 - {: .dpgn-digital-architectural-open-by-default-5} Solution designs must support the ability to identify and extract public data from protected data in order to support Open Data and Open Information initiatives.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
