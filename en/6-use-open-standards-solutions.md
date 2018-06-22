@@ -138,9 +138,13 @@ Using open source software means you can benefit from:
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 - [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} 1. Open by Default (Proprietary by Necessity) **(Build It Right Principles (GC))**
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} 5. Design for Performance, Availability, and Scalibility **(Build It Right Principles (GC))**
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} 6. Expose all functionality as services **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#open-by-default-proprietary-by-neccessity)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Design for Performance, Availability, and Scalibility (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} [6. Expose all functionality as services (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#expose-all-functionality-as-services)
 
 </section>
 </section>
@@ -341,9 +345,13 @@ Public cloud services offer benefits that enable significant advances in the fol
 - [Three-Step Software Solutions Analysis (Federal Source Code Policy (US))](https://sourcecode.cio.gov/Three-Step-Software-Solutions-Analysis/)
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} 2. Maximize Reuse (Enterprise First) **(Build It Right Principles (GC))**
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} 6. Expose all functionality as services **(Build It Right Principles (GC))**
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} 9. Cloud First **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [2. Maximize Reuse (Enterprise First) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#maximize-reuse-enterprise-first)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} [6. Expose all functionality as services (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#expose-all-functionality-as-services)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [9. Cloud First (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#cloud-first)
 
 **Design, build and test end-to-end digital services (formerly guideline 6.5):**
 {: .dpgn-data-ignore}
@@ -424,7 +432,10 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 ### Similar resources
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} 6. Expose all functionality as services **(Build It Right Principles (GC))**
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} [6. Expose all functionality as services (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#expose-all-functionality-as-services)
 
 </section>
 </section>
@@ -480,7 +491,10 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 ### Similar resources
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} 1. Open by Default (Proprietary by Necessity) **(Build It Right Principles (GC))**
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#open-by-default-proprietary-by-neccessity)
 
 </section>
 </section>
