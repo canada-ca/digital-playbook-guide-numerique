@@ -286,7 +286,11 @@ Your service must be accessible to users regardless of their digital confidence 
 
 - [7. Make it accessible (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-8)
 - [9. Make it accessible (Digital Service Standard (AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} 3. Design for Users First (Including designing for Accessibility and Official Language support) **(Build It Right Principles (GC))**
+
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support)
 
 </section>
 </section>
@@ -545,7 +549,10 @@ Until you consider the needs of the range of people that will be using your serv
 
 ### Similar resources
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} 3. Design for Users First (Including designing for Accessibility and Official Language support) **(Build It Right Principles (GC))**
+**Build It Right Principles (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support)
 
 </section>
 </section>
