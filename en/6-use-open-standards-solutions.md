@@ -32,7 +32,7 @@ altLangPage: 6-utiliser-normes-solutions-ouvertes
 
 <section class="dpgn-section-guideline">
 
-## 6.1 Leverage open standards and embrace leading practices
+## 6.1 Leverage open standards and embrace leading practices, including use of open source software where appropriate
 
 <div class="dpgn-section-intro-guideline">
 
