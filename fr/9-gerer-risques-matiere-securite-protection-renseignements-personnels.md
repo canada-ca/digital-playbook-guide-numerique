@@ -34,7 +34,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 **Lignes directives connexes :**
 
-{% include functions/guideline-links.html guidelines="1.5, 1.6, 1.7, 6.1, 6.2, 8.3, 8.4" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.1, 1.3, 1.4, 6.1, 6.2, 8.3, 8.4" samePage=false includeStandardTitle=true %}
 
 </div>
 
