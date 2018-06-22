@@ -149,7 +149,7 @@ At every stage of a project, we should measure how well our service is working f
 ### Similar resources
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized)
 
 </section>
 </section>
@@ -315,7 +315,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 - [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-14)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized)
 
 </section>
 </section>
@@ -375,7 +375,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 ### Similar resources
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} 8. Keep data organized **(Build It Right Principles (GC))**
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized)
 
 </section>
 </section>
