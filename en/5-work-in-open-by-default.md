@@ -32,7 +32,7 @@ altLangPage: 5-travailler-ouvertement-par-defaut
 
 <section class="dpgn-section-guideline">
 
-## 5.1 Make all non-sensitive data and information open to the outside world for sharing and reuse under an open licence
+## 5.1 Make all non-sensitive data, information and new source code open to the outside world for sharing and reuse under an open licence
 
 <div class="dpgn-section-intro-guideline">
 

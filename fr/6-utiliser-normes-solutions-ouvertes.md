@@ -32,7 +32,7 @@ altLangPage: 6-use-open-standards-solutions
 
 <section class="dpgn-section-guideline">
 
-## 6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires
+## 6.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires, y compris l'utilisation de logiciels libres, le cas échéant
 
 <div class="dpgn-section-intro-guideline">
 
