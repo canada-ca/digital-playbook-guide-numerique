@@ -227,7 +227,15 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 <div class="dpgn-section-intro-guideline">
 
-Un élément clé du développement de services numériques qui fonctionnent pour les utilisateurs consiste à bien comprendre qui sont les utilisateurs, quels sont leurs besoins et comment le service affectera leur vie. Il est également important de développer une bonne compréhension des différents contextes dans lesquels les utilisateurs peuvent interagir, car les besoins et les attentes des utilisateurs peuvent varier en fonction du lieu, du moment et de la manière dont ils utilisent un service numérique.
+Un élément clé du développement de services numériques qui fonctionnent pour les utilisateurs consiste à bien comprendre qui sont les utilisateurs, quels sont leurs besoins et comment le service affectera leur vie. Il est également important de développer une bonne compréhension des différents contextes dans lesquels les utilisateurs peuvent interagir, car les besoins et les attentes des utilisateurs peuvent varier en fonction du lieu, du moment et de la manière dont ils utilisent un service numérique. **(GC)**
+
+Mettez en place dans tous les canaux des outils visant à soutenir les personnes qui ne peuvent pas utiliser elles-mêmes des services numériques.
+
+Tout le monde ne disposera pas automatiquement du même niveau d’accès, de confort et de compétences pour utiliser le service numérique. Comprenez à quels niveaux les utilisateurs ont besoin de soutien, mettez ce soutien à disposition et sensibilisez à l’existence de ce soutien. **(Normes des services numériques (Ontario) (Soutien aux personnes qui en ont besoin))**
+
+Users may expect that an online service is available 24 hours a day, 365 days a year.
+
+You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
 
 </div>
 
@@ -239,6 +247,19 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 - Fournir des services qui peuvent être tout, quand et n'importe quel appareil
 - Ensure that services are designed for the mobile digital channel first, and then adapted to other service channels. Refer to the related technical standard. **(General design principles - Digital Design Playbook (ISED))**
+- Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
+- Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
+- Effectuez le plus tôt possible une étude des utilisateurs afin de : **(Normes des services numériques (Ontario))**
+  - comprendre l’accès, la confiance et les compétences numériques dont disposent les utilisateurs
+  - savoir pourquoi certains utilisateurs ne peuvent pas utiliser le service numérique de façon autonome, par exemple à cause d’obstacles dus à la maîtrise linguistique ou à la maîtrise d’Internet
+  - découvrir les besoins des utilisateurs en matière de soutien
+- Menez des recherches sur les utilisateurs qui : **(Normes des services numériques (Ontario))**
+  - utilisent déjà ou utiliseront le service
+  - disposent du niveau le plus bas d’accès, de confiance et de compétences numériques
+  - font actuellement appel à d’autres personnes pour obtenir de l’aide numérique (amis, famille, collègues, entreprises ou organismes de bienfaisance)
+- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
+- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
+- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 **Stage alpha :**
 {: .dpgn-data-ignore}
@@ -316,6 +337,8 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
+- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
+- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
 </section>
 
@@ -340,6 +363,8 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 - [Services designed with clients, for client needs (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 - [Digital by design, optimized for mobile (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
+- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
+- [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 
 </section>
 </section>
@@ -483,74 +508,6 @@ We still need to help users who are unable to use digital channels and provide s
 - [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 - [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 1.8 Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
-
-<div class="dpgn-section-intro-guideline">
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-Mettez en place dans tous les canaux des outils visant à soutenir les personnes qui ne peuvent pas utiliser elles-mêmes des services numériques.
-
-Tout le monde ne disposera pas automatiquement du même niveau d’accès, de confort et de compétences pour utiliser le service numérique. Comprenez à quels niveaux les utilisateurs ont besoin de soutien, mettez ce soutien à disposition et sensibilisez à l’existence de ce soutien. **(Normes des services numériques (Ontario) (Soutien aux personnes qui en ont besoin))**
-
-Users may expect that an online service is available 24 hours a day, 365 days a year.
-
-You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
-- Effectuez le plus tôt possible une étude des utilisateurs afin de : **(Normes des services numériques (Ontario))**
-  - comprendre l’accès, la confiance et les compétences numériques dont disposent les utilisateurs
-  - savoir pourquoi certains utilisateurs ne peuvent pas utiliser le service numérique de façon autonome, par exemple à cause d’obstacles dus à la maîtrise linguistique ou à la maîtrise d’Internet
-  - découvrir les besoins des utilisateurs en matière de soutien
-- Menez des recherches sur les utilisateurs qui : **(Normes des services numériques (Ontario))**
-  - utilisent déjà ou utiliseront le service
-  - disposent du niveau le plus bas d’accès, de confiance et de compétences numériques
-  - font actuellement appel à d’autres personnes pour obtenir de l’aide numérique (amis, famille, collègues, entreprises ou organismes de bienfaisance)
-- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
-- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
-- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'implémentation
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
-- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
-- [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 
 </section>
 </section>
