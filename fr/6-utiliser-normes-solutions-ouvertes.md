@@ -338,7 +338,7 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Gouvernement du Canada Guide de Sélection du Nuage Approprié](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/gouvernement-canada-guide-selection-nuage-approprie.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l'informatique en nuage](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html)
-{: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Stratégie d’adoption de l’informatique en nuage du Gouvernement du Canada](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/strategie-adoption-information-nuage-gouvernement-canada.html)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Stratégie d’adoption de l’informatique en nuage du Gouvernement du Canada](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/strategie-adoption-information-nuage-gouvernement-canada.html)
 
 </section>
 

@@ -22327,7 +22327,28 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>\n{: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-cloud-first"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
                           }
                         ]
                       }

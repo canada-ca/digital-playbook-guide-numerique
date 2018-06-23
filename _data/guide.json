@@ -22281,7 +22281,28 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html\">Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l’informatique en nuage</a>\n{: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/strategie-adoption-information-nuage-gouvernement-canada.html\">Stratégie d’adoption de l’informatique en nuage du Gouvernement du Canada</a>"
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html\">Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l’informatique en nuage</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-cloud-first"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/strategie-adoption-information-nuage-gouvernement-canada.html\">Stratégie d’adoption de l’informatique en nuage du Gouvernement du Canada</a>"
                           }
                         ]
                       }
@@ -29638,6 +29659,38 @@
 
                         ],
                         "content": "<strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong>"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "source_attributes": {
+                    },
+                    "tags": [
+
+                    ],
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
+                            "content": "<a href=\"https://github.com/canada-ca/PCTF\">Pan-Canadian Trust Framework</a>"
+                          }
+                        ]
                       }
                     ]
                   }
