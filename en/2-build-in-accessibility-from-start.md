@@ -114,7 +114,7 @@ Development of accessible (regardless of ability, device or environment) digital
   - [How to Meet WCAG 2.0 (W3C)](https://www.w3.org/WAI/WCAG20/quickref/)
   - [Understanding WCAG 2.0 (W3C)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
   - [Techniques for WCAG 2.0 (W3C)](https://www.w3.org/TR/WCAG20-TECHS/)
-- [Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)](https://www.w3.org/TR/WCAG21/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)](https://www.w3.org/TR/WCAG21/)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.1 (W3C)](https://www.w3.org/TR/wai-aria-1.1/)
   - [Digital Publishing WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/dpub-aria-1.0/)
   - [Graphics WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/graphics-aria-1.0/)
@@ -135,7 +135,7 @@ Development of accessible (regardless of ability, device or environment) digital
 
 **[TODO: Add/revise reusable solutions]**
 
-- [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
 </section>
 </section>

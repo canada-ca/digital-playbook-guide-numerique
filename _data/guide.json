@@ -1870,6 +1870,38 @@
                         "content": "<strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong>"
                       }
                     ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "source_attributes": {
+                    },
+                    "tags": [
+
+                    ],
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-design-for-users-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/user-research\">User research (Service Manual (UK))</a>"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
@@ -2966,15 +2998,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-design-for-users-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs\">Start by learning user needs (Service Manual (UK))</a>"
                           }
@@ -2984,15 +3019,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-design-for-users-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design\">Improve service design with user research (Service Manual (UK))</a>"
                           }
@@ -3002,15 +3040,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-design-for-users-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
                             ],
                             "content": "<a href=\"http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/\">Introduction to User-centred Design (usabilityfirst.com)</a>"
                           }
@@ -3345,15 +3386,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-design-for-users-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
                             ],
                             "content": "<a href=\"https://methods.18f.gov/index.html\">Method Cards (18F (US))</a>"
                           }
@@ -5621,15 +5665,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-design-for-users-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
                             ],
                             "content": "<a href=\"https://www.w3.org/TR/WCAG21/\">Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)</a>"
                           }
@@ -5794,15 +5841,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-design-for-users-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
                             ],
                             "content": "<a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601\">Norme sur l’accessibilité des sites Web</a>"
                           },
@@ -5812,7 +5862,8 @@
                             "source_attributes": {
                             },
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
                             ],
                             "content": [
                               {
@@ -5821,13 +5872,15 @@
                                 "source_attributes": {
                                 },
                                 "tags": [
-
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-design-for-users-first"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-
+                                      "dpgn-digital-architectural",
+                                      "dpgn-digital-architectural-design-for-users-first"
                                     ],
                                     "content": "<a href=\"http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp\">Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web</a>"
                                   }
@@ -5896,15 +5949,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-design-for-users-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-design-for-users-first"
                             ],
                             "content": "<a href=\"http://wet-boew.github.io/wet-boew/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
                           }
@@ -12113,15 +12169,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-multidisciplinary-teams"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/the-team\">Setting up the right team (Digital Service Standard (UK))</a>"
                           }
@@ -12131,15 +12190,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-multidisciplinary-teams"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/the-team/\">The digital delivery team (Digital Service Standard (AU))</a>"
                           }
@@ -12185,15 +12247,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-multidisciplinary-teams"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
                             "content": "<a href=\"https://18f.gsa.gov/2016/04/18/the-teams-they-are-a-changin/\">The teams, they are a changin’ (18F (US))</a>"
                           }
@@ -16990,15 +17055,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-open-by-default"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-open-by-default"
                             ],
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/open-data/\">Open Data (Digital Service Standard (AU))</a>"
                           }
@@ -17026,15 +17094,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-open-by-default"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-open-by-default"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable\">Making source code open and reusable (Service Manual (UK))</a>"
                           }
@@ -18065,15 +18136,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-measurable-accountable"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-measurable-accountable"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction\">Using data to improve your service: an introduction (Digital Service Standard (UK))</a>"
                           }
@@ -18083,15 +18157,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-measurable-accountable"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-measurable-accountable"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools\">Choosing digital analytics tools (Digital Service Standard (UK))</a>"
                           }
@@ -18137,15 +18214,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-measurable-accountable"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-measurable-accountable"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate\">Measuring success (Digital Service Standard (UK))</a>"
                           }
@@ -18155,15 +18235,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-measurable-accountable"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-measurable-accountable"
                             ],
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/performance-testing/\">Performance Testing (Digital Service Standard (AU))</a>"
                           }
@@ -18929,6 +19012,24 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "source_attributes": {
+                    },
+                    "tags": [
+
+                    ],
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "tags": [
+
+                        ],
+                        "content": "There are many potential benefits from the greater use of digital services, including greater convenience for users, quicker and more responsive service delivery, increased security and reliability and reduced costs. To maximize these potential benefits and avoid user reliance on less convenient ways of interacting with government, services should be designed to be digital from end-to-end."
+                      }
+                    ]
                   }
                 ]
               },
@@ -19406,6 +19507,492 @@
                             "content": "Open standards will be used for all interoperability."
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Concevoir, créer et tester des services numériques de bout en bout"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Be sure that you can clearly explain your service, what it does, and how you plan to move users to the digital service"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Design the digital service in a way that gives it clear advantages over other channels"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "examine other channels to understand the steps users take to complete their goal and how your service fits <strong>(Digital Service Standard (Ontario))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "develop a journey map of all the touch points in a user’s experience of the service, from awareness of the service to completion and receipt of product (if applicable) <strong>(Digital Service Standard (Ontario))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Use familiar language and simple design consistently throughout the service, including online and offline touch points, by ensuring consistent design across related digital services"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "ensure prototypes incorporate the end-to-end user experience <strong>(Digital Service Standard (Ontario))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "design and test your service to work with the devices and browsers your users use - find out the browsers you must test with <strong>(Digital Service Standard (UK))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "test the service in an environment that is as similar to the live environment as possible <strong>(Digital Service Standard (Ontario))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "have a process for testing changes made to the service <strong>(Digital Service Standard (Ontario))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "have a process for monitoring and testing the service frequently even when changes are not being made <strong>(Digital Service Standard (Ontario))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Create automated tests that verify all user-facing functionality <strong>(Digital Services Playbook (US))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Create unit and integration tests to verify modules and components <strong>(Digital Services Playbook (US))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Run tests automatically as part of the build process <strong>(Digital Services Playbook (US))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques <strong>(Digital Services Playbook (US))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "Conduct load and performance tests at regular intervals, including before public launch <strong>(Digital Services Playbook (US))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-alpha"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha"
+                            ],
+                            "content": "test your prototypes with users. <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show the steps required to achieve an end-to-end service delivery outcome for the user <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show the testing environment; using test plans, real world scenarios and user stories <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show the deployment environment <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show ability to create new environments quickly and easily <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show that your service can perform under expected loads with suitable scale contingencies <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show you understand the systems you need and the testing environments for non-digital parts of the service <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show that users can seamlessly move between channels as required <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show how you explored integrating automated testing into the deployment process <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "show you have a business continuity plan and a roll-back option. <strong>(Digital Service Standard (AU))</strong>"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -19502,15 +20089,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-open-by-default"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-open-by-default"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/working-with-open-standards\">Working with open standards (Service Manual (UK))</a>"
                           }
@@ -19520,15 +20110,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-open-by-default"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-open-by-default"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction\">Choosing technology: an introduction (Service Manual (UK))</a>"
                           }
@@ -19632,6 +20225,180 @@
 
                             ],
                             "content": "<a href=\"https://www.oasis-open.org/standards\">OASIS Standards (oasis-open.org)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly\">Quality assurance: testing your service regularly (Digital Service Standard (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-performance-availability-scalability"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-performance-availability-scalability"
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices\">Designing for different browsers and devices (Digital Service Standard (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-performance-availability-scalability"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-performance-availability-scalability"
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/test-your-services-performance\">Test your service’s performance (Digital Service Standard (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/exploratory-testing\">Exploratory testing (Digital Service Standard (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-performance-availability-scalability"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-performance-availability-scalability"
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/making-software/deployment.html\">Deployment environments (Digital Service Standard (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing\">Vulnerability and penetration testing (Digital Service Standard (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
+                        },
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-performance-availability-scalability"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-performance-availability-scalability"
+                            ],
+                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/performance-testing/\">Performance testing (Digital Service Standard (AU))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology#testing-your-service\">Testing your service (Service Manual (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://testing-cookbook.18f.gov/\">Testing Cookbook (18F (US))</a>"
                           }
                         ]
                       }
@@ -19922,6 +20689,96 @@
                             "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#expose-all-functionality-as-services\">6. Expose all functionality as services (Build It Right Principles (GC))</a>"
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service\">10. Test the end-to-end service (Digital Service Standard (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-5\">4. Conception du service du début à la fin (Normes des services numériques (Ontario))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-7\">6. Tester le service de bout en bout (Normes des services numériques (Ontario))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://playbook.cio.gov/#play10\">10. Automate testing and deployments (Digital Services Playbook (US))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "source_attributes": {
+                        },
+                        "tags": [
+
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+
+                            ],
+                            "content": "<a href=\"https://www.dta.gov.au/standard/10-test-the-service/\">10. Test the service (Digital Service Standard (AU))</a>"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -20054,24 +20911,6 @@
                             "content": "save time and money by reusing things that are already available"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "source_attributes": {
-                    },
-                    "tags": [
-
-                    ],
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "tags": [
-
-                        ],
-                        "content": "There are many potential benefits from the greater use of digital services, including greater convenience for users, quicker and more responsive service delivery, increased security and reliability and reduced costs. To maximize these potential benefits and avoid user reliance on less convenient ways of interacting with government, services should be designed to be digital from end-to-end."
                       }
                     ]
                   },
@@ -20745,420 +21584,6 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Concevoir, créer et tester des services numériques de bout en bout"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Be sure that you can clearly explain your service, what it does, and how you plan to move users to the digital service"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Design the digital service in a way that gives it clear advantages over other channels"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "examine other channels to understand the steps users take to complete their goal and how your service fits <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "develop a journey map of all the touch points in a user’s experience of the service, from awareness of the service to completion and receipt of product (if applicable) <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Use familiar language and simple design consistently throughout the service, including online and offline touch points, by ensuring consistent design across related digital services"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "ensure prototypes incorporate the end-to-end user experience <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "design and test your service to work with the devices and browsers your users use - find out the browsers you must test with <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "test the service in an environment that is as similar to the live environment as possible <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "have a process for testing changes made to the service <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "have a process for monitoring and testing the service frequently even when changes are not being made <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Create automated tests that verify all user-facing functionality <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Create unit and integration tests to verify modules and components <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Run tests automatically as part of the build process <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Conduct load and performance tests at regular intervals, including before public launch <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Ensure that resources are provisioned on demand <strong>(OneGC product design criteria) /</strong> Resources are provisioned on demand <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Enable resources to scale based on real-time user demand <strong>(OneGC product design criteria) /</strong> Resources scale based on real-time user demand <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Ensure resources are available in multiple regions <strong>(OneGC product design criteria) /</strong> Resources are available in multiple regions <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Pay for only the resources that are used <strong>(OneGC product design criteria) /</strong> We only pay for resources we use <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Design so static assets are served through a content delivery network <strong>(OneGC product design criteria) /</strong> Static assets are served through a content delivery network <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Resources are provisioned through an API <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "Application is hosted on commodity hardware <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
                           "class": "dpgn-digital-architectural-maximize-reuse-1"
                         },
                         "tags": [
@@ -21619,15 +22044,15 @@
                         "source_attributes": {
                         },
                         "tags": [
-                          "dpgn-stage-alpha"
+
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-stage-alpha"
+
                             ],
-                            "content": "test your prototypes with users. <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Ensure that resources are provisioned on demand <strong>(OneGC product design criteria) /</strong> Resources are provisioned on demand <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
                       },
@@ -21637,17 +22062,15 @@
                         "source_attributes": {
                         },
                         "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
+
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
+
                             ],
-                            "content": "show the steps required to achieve an end-to-end service delivery outcome for the user <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Enable resources to scale based on real-time user demand <strong>(OneGC product design criteria) /</strong> Resources scale based on real-time user demand <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
                       },
@@ -21657,17 +22080,15 @@
                         "source_attributes": {
                         },
                         "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
+
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
+
                             ],
-                            "content": "show the testing environment; using test plans, real world scenarios and user stories <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Ensure resources are available in multiple regions <strong>(OneGC product design criteria) /</strong> Resources are available in multiple regions <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
                       },
@@ -21677,17 +22098,15 @@
                         "source_attributes": {
                         },
                         "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
+
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
+
                             ],
-                            "content": "show the deployment environment <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Pay for only the resources that are used <strong>(OneGC product design criteria) /</strong> We only pay for resources we use <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
                       },
@@ -21697,17 +22116,15 @@
                         "source_attributes": {
                         },
                         "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
+
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
+
                             ],
-                            "content": "show ability to create new environments quickly and easily <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Design so static assets are served through a content delivery network <strong>(OneGC product design criteria) /</strong> Static assets are served through a content delivery network <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
                       },
@@ -21717,17 +22134,15 @@
                         "source_attributes": {
                         },
                         "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
+
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
+
                             ],
-                            "content": "show that your service can perform under expected loads with suitable scale contingencies <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Resources are provisioned through an API <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
                       },
@@ -21737,77 +22152,15 @@
                         "source_attributes": {
                         },
                         "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
+
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
+
                             ],
-                            "content": "show you understand the systems you need and the testing environments for non-digital parts of the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show that users can seamlessly move between channels as required <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show how you explored integrating automated testing into the deployment process <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show you have a business continuity plan and a roll-back option. <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Application is hosted on commodity hardware <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
                       }
@@ -21852,15 +22205,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-maximize-reuse"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-maximize-reuse"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-maximize-reuse"
                             ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html\">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>"
                           }
@@ -21870,15 +22226,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-maximize-reuse"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-maximize-reuse"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-maximize-reuse"
                             ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html\">Guide de rédaction du contenu du site Canada.ca</a>"
                           }
@@ -21888,17 +22247,20 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-cloud-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly\">Quality assurance: testing your service regularly (Digital Service Standard (UK))</a>"
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/gouvernement-canada-guide-selection-nuage-approprie.html\">Gouvernement du Canada Guide de Sélection du Nuage Approprié</a>"
                           }
                         ]
                       },
@@ -21906,143 +22268,20 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-cloud-first"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices\">Designing for different browsers and devices (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/test-your-services-performance\">Test your service’s performance (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/exploratory-testing\">Exploratory testing (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/making-software/deployment.html\">Deployment environments (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing\">Vulnerability and penetration testing (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/performance-testing/\">Performance testing (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology#testing-your-service\">Testing your service (Service Manual (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://testing-cookbook.18f.gov/\">Testing Cookbook (18F (US))</a>"
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html\">Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l’informatique en nuage</a>\n{: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/strategie-adoption-information-nuage-gouvernement-canada.html\">Stratégie d’adoption de l’informatique en nuage du Gouvernement du Canada</a>"
                           }
                         ]
                       }
@@ -22087,15 +22326,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-maximize-reuse"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-maximize-reuse"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-maximize-reuse"
                             ],
                             "content": "<a href=\"http://wet-boew.github.io/wet-boew/index-fr.html\">Boîte à outils de l’expérience Web (BOEW)</a>"
                           }
@@ -22234,96 +22476,6 @@
                               "dpgn-digital-architectural-cloud-first"
                             ],
                             "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#cloud-first\">9. Cloud First (Build It Right Principles (GC))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service\">10. Test the end-to-end service (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-5\">4. Conception du service du début à la fin (Normes des services numériques (Ontario))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-7\">6. Tester le service de bout en bout (Normes des services numériques (Ontario))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://playbook.cio.gov/#play10\">10. Automate testing and deployments (Digital Services Playbook (US))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "source_attributes": {
-                        },
-                        "tags": [
-
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-
-                            ],
-                            "content": "<a href=\"https://www.dta.gov.au/standard/10-test-the-service/\">10. Test the service (Digital Service Standard (AU))</a>"
                           }
                         ]
                       },
@@ -22640,15 +22792,20 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default dpgn-digital-architectural-expose-functionality-services"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-open-by-default",
+                          "dpgn-digital-architectural-expose-functionality-services"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-open-by-default",
+                              "dpgn-digital-architectural-expose-functionality-services"
                             ],
                             "content": "<a href=\"https://www.gov.uk/guidance/gds-api-technical-and-data-standards\">API technical and data standards (Government Digital Service (UK))</a>"
                           }
@@ -22658,15 +22815,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-expose-functionality-services"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-expose-functionality-services"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-expose-functionality-services"
                             ],
                             "content": "<a href=\"https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/\">Developing cross-government API data and technical standards (Government Digital Service Blog (UK))</a>"
                           }
@@ -22676,15 +22836,20 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default dpgn-digital-architectural-expose-functionality-services"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-open-by-default",
+                          "dpgn-digital-architectural-expose-functionality-services"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-open-by-default",
+                              "dpgn-digital-architectural-expose-functionality-services"
                             ],
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/api/\">Application Programming Interfaces (APIs) (Digital Service Standard (AU))</a>"
                           }
@@ -27767,15 +27932,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-security-privacy"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-security-privacy"
                             ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ce-que-nous-faisons.html\">Instruments de politique de gestion de la sécurité et de l’identité</a>"
                           }
@@ -27785,15 +27953,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-security-privacy"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-security-privacy"
                             ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ressources.html\">Centre de ressources en matière de sécurité</a>"
                           }
@@ -28277,15 +28448,18 @@
                         "content_type": "block",
                         "source_element": "li",
                         "source_attributes": {
+                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
                         },
                         "tags": [
-
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-security-privacy"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-security-privacy"
                             ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/protection-renseignement-personnels/document-orientation-pris-compte-protection-renseignements-personnels-avant-conclure-marche.html\">Document d’orientation : Prise en compte de la protection des renseignements personnels avant de conclure un marché</a>"
                           }
@@ -30107,15 +30281,18 @@
                                 "content_type": "block",
                                 "source_element": "li",
                                 "source_attributes": {
+                                  "class": "dpgn-digital-architectural dpgn-digital-architectural-keep-data-organized"
                                 },
                                 "tags": [
-
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-keep-data-organized"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-
+                                      "dpgn-digital-architectural",
+                                      "dpgn-digital-architectural-keep-data-organized"
                                     ],
                                     "content": "<a href=\"https://www.w3.org/TR/dwbp/#LocaleParametersMetadata\">Local Neutral Data Representation (Data on the Web Best Practices (W3C))</a>"
                                   }
@@ -30125,15 +30302,18 @@
                                 "content_type": "block",
                                 "source_element": "li",
                                 "source_attributes": {
+                                  "class": "dpgn-digital-architectural dpgn-digital-architectural-keep-data-organized"
                                 },
                                 "tags": [
-
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-keep-data-organized"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-
+                                      "dpgn-digital-architectural",
+                                      "dpgn-digital-architectural-keep-data-organized"
                                     ],
                                     "content": "<a href=\"https://www.w3.org/TR/dwbp/#AccessRealTime\">Real Time Access (Data on the Web Best Practices (W3C))</a>"
                                   }
@@ -30247,7 +30427,7 @@
                                     "tags": [
 
                                     ],
-                                    "content": "<a href=\"https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml\">Formats, Evluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))</a>"
+                                    "content": "<a href=\"https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml\">Formats, Evaluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))</a>"
                                   }
                                 ]
                               },
@@ -32249,7 +32429,7 @@
                                     "tags": [
 
                                     ],
-                                    "content": "<a href=\"https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml\">Formats, Evluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))</a>"
+                                    "content": "<a href=\"https://www.loc.gov/preservation/digital/formats/intro/format_eval_rel.shtml\">Formats, Evaluation Factors and Relationships (Sustainability of Digital Formats: Planning for Library of Congress Collections (US))</a>"
                                   }
                                 ]
                               },

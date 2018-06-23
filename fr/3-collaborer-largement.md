@@ -120,11 +120,11 @@ Good government services are built quickly and iteratively, based on user needs.
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Setting up the right team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team)
-- [The digital delivery team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/the-team/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [Setting up the right team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [The digital delivery team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/the-team/)
 - [DTA Guide to Discovery (Service Handbook (AU))](https://ausdto.github.io/service-handbook/discovery/)
 - [DTA Guide to Alpha (Service Handbook (AU))](http://ausdto.github.io/service-handbook/alpha/)
-- [The teams, they are a changin’ (18F (US))](https://18f.gsa.gov/2016/04/18/the-teams-they-are-a-changin/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [The teams, they are a changin’ (18F (US))](https://18f.gsa.gov/2016/04/18/the-teams-they-are-a-changin/)
 
 </section>
 

@@ -218,6 +218,8 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [User research (Service Manual (UK))](https://www.gov.uk/service-manual/user-research)
+
 </section>
 
 <section class="dpgn-section-solutions">
@@ -351,9 +353,9 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
-- [Improve service design with user research (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
-- [Introduction to User-centred Design (usabilityfirst.com)](http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Start by learning user needs (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Improve service design with user research (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Introduction to User-centred Design (usabilityfirst.com)](http://www.usabilityfirst.com/about-usability/introduction-to-user-centered-design/)
 - [User Research Skills (Service Manual (UK))](https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team)
 - [How Users Read (Writing for GOV.UK)](https://www.gov.uk/guidance/content-design/writing-for-gov-uk#how-people-read)
 - [Designing government services (Service Manual (UK))](https://www.gov.uk/service-manual/design/introduction-designing-government-services)
@@ -383,7 +385,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
-- [Method Cards (18F (US))](https://methods.18f.gov/index.html)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Method Cards (18F (US))](https://methods.18f.gov/index.html)
 
 </section>
 
