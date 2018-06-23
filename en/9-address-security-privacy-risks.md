@@ -16,6 +16,7 @@ Canadians who use government services must have confidence that:
 * the system they’re using is safe and secure
 
 If a service cannot guarantee confidentiality, integrity and availability of the system, people will not use it. Effective cyber and IT security is an essential enabler of digital transformation. Securing #GCDigital requires the delivery of government services that are safe, secure and trusted by Canadians.
+
 </div>
 
 <div class="dpgn-section-guidelines">
@@ -72,8 +73,8 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 ### Implementation guides
 
 * [Information Technology Policy Implementation Notices (ITPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
-* [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
-* [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
 
 </section>
 
@@ -136,7 +137,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 * [For federal institutions (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/for-federal-institutions/)
 * [Guidance on Preparing Information Sharing Agreements Involving Personal Information](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html)
-* [Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
 * [Guidelines for obtaining meaningful consent (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gl_omc_201805/)
 * [Guidance on inappropriate data practices: Interpretation and application of subsection 5(3) (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gd_53_201805/)
 
@@ -287,7 +288,7 @@ Canadians want to have confidence that government digital services are designed 
 
 **[TODO: Add/revise reusable solutions]**
 
-* [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 

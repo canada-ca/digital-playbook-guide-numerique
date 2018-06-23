@@ -97,13 +97,13 @@ This includes working in the open, sharing any and all data and information prod
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Open Data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [Open Data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
 - [Statistical Data Integration (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/)
 
 **Work in the open and make source code open and reusable (formerly guideline 5.5):**
 {: .dpgn-data-ignore}
 
-- [Making source code open and reusable (Service Manual (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [Making source code open and reusable (Service Manual (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
 - [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
 - [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
 - [Comparison of free and open-source software licences (Wikipedia)](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
@@ -194,7 +194,7 @@ This includes working in the open, sharing any and all data and information prod
 **Build It Right Principles (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dogn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable)
 
 </section>
 </section>
@@ -268,12 +268,12 @@ Setting performance indicators allows you to continuously improve your service b
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Using data to improve your service: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)
-- [Choosing digital analytics tools (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Using data to improve your service: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Choosing digital analytics tools (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)
 - [Measuring digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
 - [Sharing data on the Performance Platform (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform)
-- [Measuring success (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)
-- [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Measuring success (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 
 </section>
 

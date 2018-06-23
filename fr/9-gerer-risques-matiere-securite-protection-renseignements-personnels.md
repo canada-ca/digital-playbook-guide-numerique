@@ -73,8 +73,8 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 ### Guides d'implémentation
 
 * [Avis de mise en œuvre de la Politique sur la technologie de l’information (AMPTI)](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique.html)
-* [Instruments de politique de gestion de la sécurité et de l'identité](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ce-que-nous-faisons.html)
-* [Centre de ressources en matière de sécurité](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ressources.html)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Instruments de politique de gestion de la sécurité et de l'identité](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ce-que-nous-faisons.html)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Centre de ressources en matière de sécurité](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ressources.html)
 
 </section>
 
@@ -137,7 +137,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 * [Pour les institutions fédérales (Commissariat à la protection de la vie privée du Canada)](https://www.priv.gc.ca/fr/pour-les-institutions-federales/)
 * [Document d'orientation pour aider à préparer des Ententes d'échange de renseignements personnels](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/protection-renseignement-personnels/document-orientation-aider-preparer-ententes-echange-renseignements-personnels.html)
-* [Document d'orientation : Prise en compte de la protection des renseignements personnels avant de conclure un marché](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/protection-renseignement-personnels/document-orientation-pris-compte-protection-renseignements-personnels-avant-conclure-marche.html)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Document d'orientation : Prise en compte de la protection des renseignements personnels avant de conclure un marché](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/protection-renseignement-personnels/document-orientation-pris-compte-protection-renseignements-personnels-avant-conclure-marche.html)
 * [Lignes directrices pour l’obtention d’un consentement valable (Commissariat à la protection de la vie privée du Canada)](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gl_omc_201805/)
 * [Document d’orientation sur les pratiques inacceptables du traitement des données : Interprétation et application du paragraphe 5(3) (Commissariat à la protection de la vie privée du Canada)](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gd_53_201805/)
 
@@ -287,6 +287,8 @@ Canadians want to have confidence that government digital services are designed 
 ### Solutions réutilisables
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
+
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 
