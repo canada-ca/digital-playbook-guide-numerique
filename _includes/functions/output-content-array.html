@@ -6,6 +6,8 @@ comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Com
 comment %}@param relevantSourceElements {String/Array} Optional (defaults to all). Comma-separated source elements or an array of source elements for which content to display (e.g., "ul,ol"). Can be overridden by irrelevantSourceElements. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).{% endcomment %}{% 
 comment %}@param irrelevantSourceElements {String/Array} Optional (defaults to none). Comma-separated source elements or an array of source elements for which content not to display (e.g., "ul,ol"). Overrides by relevantSourceElements. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).{% endcomment %}{% 
 comment %}@param suppressParentListElement {Boolean} Optional (defaults to false). Prevents the output of the parent list element (useful when used with relevantSourceElements to merge lists together). Only affects lists at the current level (i.e., doesn't affect descendant lists).{% endcomment %}{% 
+comment %}@param contentStandardIndex {Number} Optional (required if guideline is provided, defaults to none). Index of the standard that is an ancestor of the content being processed.{% endcomment %}{% 
+comment %}@param contentGuidelineIndex {Number} Optional (defaults to none) Index of the guideline that is an ancestor of the content being processed.{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
 assign currentHeadingLevel = include.parentHeadingLevel %}{% 
 comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
@@ -48,6 +50,19 @@ for item in include.contentArray %}{%
     endif %}{% 
   else %}{% 
     assign irrelevantSourceElementsArray = "" %}{% 
+  endif %}{% 
+  comment %}Retrieve the title of the standard that is the ancestor of the content being processed{% endcomment %}{% 
+  if include.contentStandardIndex %}{% 
+    assign contentStandardTitle = dataSource.standards.content[include.contentStandardIndex].title %}{% 
+    assign contentStandardFilePath = site.baseurl | append: site.defaultView | append: "/" | append: page.lang | append: "/" | append: site.standardFile[include.contentStandardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
+    comment %}Retrieve the title of the guideline that is the ancestor of the content being processed{% endcomment %}{% 
+    if include.contentGuidelineIndex %}{% 
+      assign contentGuidelineTitle = dataSource.standards.content[include.contentStandardIndex].guidelines.content[include.contentGuidelineIndex].title %}{% 
+      capture guidelineId %}{% 
+        include /functions/generate-id.html string=contentGuidelineTitle %}{% 
+      endcapture %}{% 
+      assign contentGuidelineId = guidelineId | strip %}{% 
+    endif %}{% 
   endif %}{% 
   comment %}Go to the next item in the content array if there is an irrelevant requirement match (i.e., irrelevant tag match, irrelevant source element match or no relevant source element match).{% endcomment %}{% 
   if irrelevantTagsArray.size > 0 %}{% 
@@ -95,7 +110,7 @@ for item in include.contentArray %}{%
       assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedOutputSection %}{% 
-        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
+        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
@@ -131,7 +146,7 @@ for item in include.contentArray %}{%
       comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedBlockContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
+        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 
@@ -156,13 +171,31 @@ for item in include.contentArray %}{%
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}{% 
+        if include.contentStandardIndex and item.source_element == "li" or item.source_element == "p" or item.source_element == "td" or item.source_element == "div" %}{% 
+          capture contentDetailsBlock %}
+<details class="dpgn-content-details hide">
+<summary>{{ site.ContentDetails[page.lang] }}</summary>
+<ul>
+<li><strong>{{ site.DigitalStandardNbsp[page.lang] }}{{ site.Colon[page.lang] }}</strong> <a href="{{ contentStandardFilePath }}">{{ contentStandardTitle }}</a></li>{% 
+            if include.contentGuidelineIndex %}
+<li><strong>{{ site.Guideline[page.lang] }}{{ site.Colon[page.lang] }}</strong> <a href="{{ contentStandardFilePath }}#{{ contentGuidelineId }}">{{ contentGuidelineTitle }}</a></li>{% 
+            endif %}
+<li><strong>{{ site.Tags[page.lang] }}{{ site.Colon[page.lang] }}</strong> <code>{{ item.tags | join: ", " }}</code></li>
+</ul>
+</details>
+{%        endcapture %}{% 
+        else %}{% 
+          assign contentDetailsBlock = "" %}{% 
+        endif %}{% 
         unless include.suppressParentListElement == true and (item.source_element == "ul" or item.source_element == "ol") %}
 <{{ item.source_element }}{{ classOutput | rstrip }}{{ attributesOutput }}>{% 
         endunless %}
 {{ nestedBlockContentStrip }}
-{%      unless include.suppressParentListElement == true and (item.source_element == "ul" or item.source_element == "ol") 
+{%      if contentDetailsBlock.size > 0 and item.source_element != "p" %}{{ contentDetailsBlock }}{% endif %}{% 
+        unless include.suppressParentListElement == true and (item.source_element == "ul" or item.source_element == "ol") 
 %}</{{ item.source_element }}>
 {%      endunless %}{% 
+        if contentDetailsBlock.size > 0 and item.source_element == "p" %}{{ contentDetailsBlock }}{% endif %}{% 
       endif %}{% 
     endif %}{% 
   endcapture %}{% 

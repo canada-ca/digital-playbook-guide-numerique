@@ -175,7 +175,7 @@ ComparisonPlaybookFile:
   fr: tableau-comparatif-guide-numerique-gc
 Colon:
   en: ":"
-  fr: " :"
+  fr: "&#160;:"
 
 # Canada.ca theme translations
 home:
@@ -410,8 +410,14 @@ ExclusiveFilters:
   en: Exclusive filters
   fr: Filtres exclusifs
 DigitalArchitectural:
-  en: Build It Right - OneGC Architectural Checklist (draft)
-  fr: Construisez-le bien - Liste de contrôle architecturale unGC (ébauche)
+  en: Build It Right Principles (draft)
+  fr: Principes Construisez-le bien (ébauche)
+Show:
+  en: Show
+  fr: Afficher
+Hide:
+  en: Hide
+  fr: Masquer
 
 # Feedback and view source translations
 PageColon:
@@ -458,7 +464,7 @@ GoTo:
 
 # Comparison table translations
 DigitalStandardNbsp:
-  en: Digital&#160;standard
+  en: Digital&#160;Standard
   fr: Norme&#160;numérique
 DigitalPlaybookGuideline:
   en: Digital Playbook guideline
@@ -471,3 +477,9 @@ ComparableStandardsCriteria:
 RelatedTo:
   en: related to
   fr: relié à
+ContentDetails:
+  en: Content details
+  fr: Détails du contenu
+Tags:
+  en: Tags
+  fr: Mots clés
