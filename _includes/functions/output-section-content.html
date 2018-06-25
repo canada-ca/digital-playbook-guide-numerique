@@ -55,7 +55,7 @@ for currentStandardIndex in (startStandardIndex..endStandardIndex) %}{%
     assign sectionContent = guideline[include.sectionKey].content %}{% 
     comment %}Output the guideline section{% endcomment %}{% 
     capture subSectionContent %}{% 
-      include /functions/output-content-array.html contentArray=sectionContent parentHeadingLevel=include.parentHeadingLevel relevantTags=relevantTagsArraySectionContent irrelevantTags=irrelevantTagsArraySectionContent relevantSourceElements=include.relevantSourceElements irrelevantSourceElements=include.irrelevantSourceElements suppressParentListElement=include.suppressParentListElement %}{%  
+      include /functions/output-content-array.html contentArray=sectionContent parentHeadingLevel=include.parentHeadingLevel relevantTags=relevantTagsArraySectionContent irrelevantTags=irrelevantTagsArraySectionContent relevantSourceElements=include.relevantSourceElements irrelevantSourceElements=include.irrelevantSourceElements suppressParentListElement=include.suppressParentListElement contentStandardIndex=currentStandardIndex contentGuidelineIndex=currentGuidelineIndex %}{%  
     endcapture 
 %}{{ subSectionContent | strip }}{% 
   endfor %}{% 

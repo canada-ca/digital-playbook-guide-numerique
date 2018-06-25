@@ -9,6 +9,14 @@ assign guideline = standard.guidelines.content.first %}
 <div class="modal-body">
 <form action="#" method="post" class="wb-contentfilter">
 <fieldset>
+  <legend>{{ site.ContentDetails[page.lang] }}</legend>
+  <div class="btn-group mrgn-bttm-md">
+    <button type="button" class="btn btn-default wb-toggle" data-toggle='{"selector": ".dpgn-content-details", "type": "on", "stateOn": "show", "stateOff": "hide"}'>{{ site.Show[page.lang] }}</button>
+    <button type="button" class="btn btn-default wb-toggle" data-toggle='{"selector": ".dpgn-content-details", "type": "off", "stateOn": "show", "stateOff": "hide"}'>{{ site.Hide[page.lang] }}</button>
+  </div>
+</fieldset>
+
+<fieldset>
   <legend>{{ site.DevelopmentStage[page.lang] }}</legend>
   <ul class="list-unstyled">
     <li><input type="checkbox" id="dpgn-stage-alpha" /> <label for="dpgn-stage-alpha">{{ site.Alpha[page.lang] }}</label></li>
@@ -16,6 +24,7 @@ assign guideline = standard.guidelines.content.first %}
     <li><input type="checkbox" id="dpgn-stage-live" /> <label for="dpgn-stage-live">{{ site.Live[page.lang] }}</label></li>
   </ul>
 </fieldset>
+
 <fieldset>
   <legend>{{ site.SectionType[page.lang] }}</legend>
   <ul class="list-unstyled">
