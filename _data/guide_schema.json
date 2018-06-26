@@ -4,6 +4,17 @@
     "title": {
       "type": "string"
     },
+    "uri": {
+      "type": "string",
+      "format": "uri"
+    },
+    "content_source": {
+      "type": "object",
+      "properties": {
+        "title": {"$ref": "#/definitions/title"},
+        "uri": {"$ref": "#/definitions/uri"}
+      }
+    },
     "tags": {
       "type": "array",
       "items": {
@@ -39,6 +50,7 @@
           "type": "string",
           "enum": ["section"]
         },
+        "content_source": {"$ref": "#/definitions/content_source"},
         "source_element": {
           "type": "string"
 	},
@@ -58,6 +70,7 @@
           "type": "string",
           "enum": ["block"]
         },
+        "content_source": {"$ref": "#/definitions/content_source"},
         "source_element": {
           "type": "string"
 	},

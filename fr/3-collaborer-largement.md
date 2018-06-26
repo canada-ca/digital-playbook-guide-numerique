@@ -112,6 +112,35 @@ Good government services are built quickly and iteratively, based on user needs.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
+**Automated Decision Systems:**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD034 -->
+- {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Retain the appropriate expert to review the Automated Decision system, based on the Impact Assessment Level:
+  - {: .dpgn-automated-decision-level-i} **Level I:** None
+  - {: .dpgn-automated-decision-level-ii} **Level II:** At least one of:
+    - Qualified expert from a federal, provincial, territorial or municipal government institution
+    - Qualified members of faculty of a post-secondary institution
+    - Qualified researchers from a relevant non- governmental organization
+    - Contracted third-party vendor with a related specialization
+    - Publishing specifications of the Automated Decision System in a peer-reviewed journal
+  - {: .dpgn-automated-decision-level-iii} **Level III:** At least one of:
+    - Qualified expert from a federal, provincial, territorial or municipal government institution
+    - Qualified members of faculty of a post-secondary institution
+    - Qualified researchers from a relevant non- governmental organization
+    - Contracted third-party vendor with a related specialization
+    - Publishing specifications of the Automated Decision System in a peer-reviewed journal
+  - {: .dpgn-automated-decision-level-iv} **Level IV:** At least two of:
+    - Qualified experts from the National Research Council of Canada or Statistics Canada
+    - Qualified members of faculty of a post-secondary institution
+    - Qualified researchers from a relevant non- governmental organization
+    - Contracted third-party vendor with a related specialization
+    - **OR:** Publishing specifications of the Automated Decision System in a peer-reviewed journal
+{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+<!-- markdownlint-enable MD034 -->
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">

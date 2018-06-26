@@ -106,6 +106,17 @@ At every stage of a project, we should measure how well our service is working f
 
 - Ensure data and information is complete, accurate and up-to-date
 
+**Automated Decision Systems:**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD034 -->
+- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 7.3.3, Standard on Automated Decision-Making (draft) (GC)"} Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices.
+- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 7.5.2, Standard on Automated Decision-Making (draft) (GC)"} When requested, information on the achievement of the expected results of the Automated Decision System and compliance with this Standard will be provided to the Treasury Board of Canada Secretariat.
+{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+<!-- markdownlint-enable MD034 -->
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">

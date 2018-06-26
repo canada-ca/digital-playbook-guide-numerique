@@ -483,3 +483,6 @@ ContentDetails:
 Tags:
   en: Tags
   fr: Mots clés
+ContentSource:
+  en: Content source
+  fr: Source du contenu

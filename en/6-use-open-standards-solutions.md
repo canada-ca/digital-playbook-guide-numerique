@@ -120,6 +120,16 @@ There are many potential benefits from the greater use of digital services, incl
 - Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques **(Digital Services Playbook (US))**
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
 
+**Automated Decision Systems:**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD034 -->
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.3.1, Standard on Automated Decision-Making (draft) (GC)"} Before going into production, develop the appropriate processes to ensure that training data is tested for unintended biases and other factors that may unfairly impact outcomes.
+{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+<!-- markdownlint-enable MD034 -->
+<!-- markdownlint-enable MD032 -->
+
 **Alpha stage (Design, build and test end-to-end digital services (formerly guideline 6.5)):**
 {: .dpgn-data-ignore}
 

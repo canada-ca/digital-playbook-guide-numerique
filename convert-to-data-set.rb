@@ -21,7 +21,7 @@ common_data = site_data["common"]
 jekyll_output_dir = "rendered_site/"
 jekyll_exclude = ["views-vues", "docs"]
 
-def build_content_array(html_block, is_parent, parent_heading_level, logger, parent_tags)
+def build_content_array(html_block, is_parent, parent_heading_level, logger, parent_tags, parent_content_source = nil)
 	content_array = Array.new
 	ignore_nodes_number = 0
 	if is_parent
@@ -38,12 +38,32 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 				cancel_content_push = false
 
 				node_class = node.get_attribute("class")
-				if node_class.nil? || node_class.length === 0
-					tags = Array.new
-				elsif node_class.include? "dpgn-data-ignore"
+				if !node_class.nil? && (node_class.include? "dpgn-data-ignore")
 					next
-				else
+				elsif !node_class.nil? && node_class.length > 0
 					tags = node_class.split(" ")
+				else
+					tags = Array.new
+				end
+
+				content_source_title = node.get_attribute("data-content-source-title")
+				content_source_uri = node.get_attribute("data-content-source-uri")
+				if !content_source_title.nil? || !content_source_uri.nil?
+					content_source = Hash.new
+					if !content_source_title.nil?					
+						content_source["title"] = content_source_title
+					elsif !parent_content_source.nil? && !parent_content_source["title"].nil?
+						content_source["title"] = parent_content_source["title"]
+					end
+					if !content_source_uri.nil?
+						content_source["uri"] = content_source_uri
+					elsif !parent_content_source.nil? && !parent_content_source["uri"].nil?
+						content_source["uri"] = parent_content_source["uri"]
+					end
+				elsif !parent_content_source.nil?
+					content_source = parent_content_source
+				else
+					content_source = nil
 				end
 
 				# If parent_tags exists, then append it to the current tags, eliminating duplicates
@@ -54,9 +74,16 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 
 				if node.name === "section" || node.name === "article" || node.name === "aside" || node.name === "nav"
 					item["content_type"] = "section"
+					if !content_source.nil? && !content_source["title"].nil?
+						item["content_source"] = content_source
+					end
 					item["source_element"] = node.name
-					item["source_attributes"] = node.attributes
-					item["tags"] = tags
+					if !node.attributes.nil? && node.attributes.size > 0
+						item["source_attributes"] = node.attributes
+					end
+					if !tags.nil? && tags.length > 0
+						item["tags"] = tags
+					end
 					heading = node.css("h#{parent_heading_level + 1}")
 					if heading.count >= 1
 						item["title"] = heading[0].inner_html
@@ -65,12 +92,16 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 						logger.error("h#{parent_heading_level + 1} could not be found when processing #{node.name} (build_content_array)")
 						logger.debug(node)
 					end
-					item["content"] = build_content_array(node, true, parent_heading_level + 1, logger, tags)
+					item["content"] = build_content_array(node, true, parent_heading_level + 1, logger, tags, content_source)
 				elsif node.name === ("h#{parent_heading_level + 1}")
 					item["content_type"] = "section"
 					item["source_element"] = "section"
-					item["source_attributes"] = Hash.new
-					item["tags"] = tags
+					if !node.attributes.nil? && node.attributes.size > 0
+						item["source_attributes"] = node.attributes
+					end
+					if !tags.nil? && tags.length > 0
+						item["tags"] = tags
+					end
 					item["title"] = node.inner_html
 					node_array = Array.new
 					next_node = node.next
@@ -81,7 +112,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 						next_node = next_node.next
 					end
 					ignore_nodes_number += node_array.count
-					item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger, tags)
+					item["content"] = build_content_array(node_array, false, parent_heading_level + 1, logger, tags, content_source)
 				elsif node.text? || (!node.description.nil? && node.description.inline?)
 					# Processing inline content
 
@@ -104,7 +135,9 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					else
 						# Add a new inline item because it is the first in a series
 						item["content_type"] = "inline"
-						item["tags"] = tags
+						if !tags.nil? && tags.size > 0
+							item["tags"] = tags
+						end
 						item["content"] = node.to_s
 					end
 				elsif node.name != "h#{parent_heading_level}"
@@ -114,24 +147,28 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					last_item_index = content_array.length - 1
 					if last_item_index >= 0 && (node.name === "ol" || node.name == "ul") && content_array[last_item_index]["source_element"] === node.name
 						# Clear the tags on the ol/ul since they may not be representative (will be on the individual items anyway)
-						content_array[last_item_index]["tags"] = Array.new
+						content_array[last_item_index]["tags"] = nil
 
 						# Combine the class and source attributes
-						content_array[last_item_index]["source_attributes"].each do |name, value|
-							if name != "id"
-								if name === "class"
-									separator = " "
-								else
-									separator = ","
+						if !content_array[last_item_index]["source_attributes"].nil?
+							content_array[last_item_index]["source_attributes"].each do |name, value|
+								if name != "id"
+									if name === "class"
+										separator = " "
+									else
+										separator = ","
+									end
+									new_value = value.to_s + separator + node[name].to_s
+									content_array[last_item_index]["source_attributes"][name] = new_value.split(separator).uniq.join(separator)
 								end
-								new_value = value.to_s + separator + node[name].to_s
-								content_array[last_item_index]["source_attributes"][name] = new_value.split(separator).uniq.join(separator)
 							end
+						else
+							content_array[last_item_index]["source_attributes"] = node.attributes
 						end
 
 						# Combine the list items
 						last_list_items = content_array[last_item_index]["content"]
-						new_list_items = build_content_array(node, true, parent_heading_level, logger, tags)
+						new_list_items = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
 						last_list_items.push(*new_list_items)
 						content_array[last_item_index]["content"] = last_list_items
 
@@ -139,10 +176,17 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 						cancel_content_push = true
 					else
 						item["content_type"] = "block"
+						if !content_source.nil? && !content_source["title"].nil?
+							item["content_source"] = content_source
+						end
 						item["source_element"] = node.name
-						item["source_attributes"] = node.attributes
-						item["tags"] = tags
-						item["content"] = build_content_array(node, true, parent_heading_level, logger, tags)
+						if !node.attributes.nil? && node.attributes.size > 0
+							item["source_attributes"] = node.attributes
+						end
+						if !tags.nil? && tags.size > 0
+							item["tags"] = tags
+						end
+						item["content"] = build_content_array(node, true, parent_heading_level, logger, tags, content_source)
 					end
 				end
 

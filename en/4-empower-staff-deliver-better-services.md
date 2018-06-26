@@ -46,6 +46,16 @@ altLangPage: 4-permettre-personnel-offrir-meilleurs-services
 
 **[TODO: Add/revise checklist items]**
 
+**Automated Decision Systems:**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD034 -->
+- {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)"} Ensure that some employees are sufficiently trained  in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required.
+{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+<!-- markdownlint-enable MD034 -->
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">
