@@ -7,7 +7,7 @@
       "pattern": "http://www.gcpedia.gc.ca/"
     },
     {
-      "pattern": /data-content-source-uri=\".+\"/g
+      "pattern": "data-content-source-uri=\".+\""
     }
   ],
   "replacementPatterns": [
