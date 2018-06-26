@@ -17,7 +17,7 @@ var componentName = "wb-contentfilter",
     selector = "." + componentName,
     initEvent = "wb-init" + selector,
     $document = wb.doc,
-    buttonId = "#filter-button",
+    buttonClass = ".contentfilter-button",
     rememberId = "filters-remember",
     exclusiveFiltersClass = "dpgn-exclusive-filters",
 
@@ -82,7 +82,7 @@ var componentName = "wb-contentfilter",
         // Restore the previously applied filters
         $filters.filter( filtersChecked ).prop( "checked", true );
         $filters.not( filtersChecked ).prop( "checked", false );
-        $( buttonId ).trigger( "click", fromStorage );
+        $( buttonClass ).first().trigger( "click", fromStorage );
       }
     };
 
@@ -108,7 +108,7 @@ $document.on( "click", selector + " input:checkbox", function( event )  {
   }
 } );
 
-$document.on( "click", buttonId, function( event, fromStorage ) {
+$document.on( "click", buttonClass, function( event, fromStorage ) {
 	var $filterForm = $( selector ),
 		$groups = $filterForm.find( "fieldset" ),
 		groupsLen = $groups.length,

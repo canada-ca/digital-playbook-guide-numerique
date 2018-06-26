@@ -174,13 +174,16 @@ for item in include.contentArray %}{%
         if include.contentStandardIndex and item.source_element == "li" or item.source_element == "p" or item.source_element == "td" or item.source_element == "div" %}{% 
           capture contentDetailsBlock %}
 <details class="dpgn-content-details hide">
-<summary>{{ site.ContentDetails[page.lang] }}</summary>
+<summary markdown="0">{{ site.ContentDetails[page.lang] }}</summary>
 <ul>
 <li><strong>{{ site.DigitalStandardNbsp[page.lang] }}{{ site.Colon[page.lang] }}</strong> <a href="{{ contentStandardFilePath }}">{{ contentStandardTitle }}</a></li>{% 
             if include.contentGuidelineIndex %}
 <li><strong>{{ site.Guideline[page.lang] }}{{ site.Colon[page.lang] }}</strong> <a href="{{ contentStandardFilePath }}#{{ contentGuidelineId }}">{{ contentGuidelineTitle }}</a></li>{% 
             endif %}
-<li><strong>{{ site.Tags[page.lang] }}{{ site.Colon[page.lang] }}</strong> <code>{{ item.tags | join: ", " }}</code></li>
+<li><strong>{{ site.Tags[page.lang] }}{{ site.Colon[page.lang] }}</strong> <code>{{ item.tags | join: ", " }}</code></li>{% 
+            if item.content_source %}
+<li><strong>{{ site.ContentSource[page.lang] }}{{ site.Colon[page.lang] }}</strong> {% if item.content_source.uri.size > 0 %}<a href="{{ item.content_source.uri }}">{% endif %}{{ item.content_source.title }}{% if item.content_source.uri.size > 0 %}</a>{% endif %}</li>{% 
+            endif %}
 </ul>
 </details>
 {%        endcapture %}{% 
