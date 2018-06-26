@@ -8,11 +8,22 @@
     },
     {
       "pattern": "/data-content-source-uri=\".+\"/g"
+    },
+    {
+      "pattern": "&quot;"
     }
   ],
   "replacementPatterns": [
     {
       "pattern": "https://canada-ca.github.io/digital-playbook-guide-numerique/",
+      "replacement": ""
+    },
+    {
+      "pattern": "&quot;",
+      "replacement": ""
+    }
+    {
+      "pattern": "\"",
       "replacement": ""
     }
   ]
