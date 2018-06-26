@@ -42,6 +42,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					next
 				elsif !node_class.nil? && node_class.length > 0
 					tags = node_class.split(" ")
+					node.delete("class")
 				else
 					tags = Array.new
 				end
@@ -52,11 +53,13 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					content_source = Hash.new
 					if !content_source_title.nil?					
 						content_source["title"] = content_source_title
+						node.delete("data-content-source-title")
 					elsif !parent_content_source.nil? && !parent_content_source["title"].nil?
 						content_source["title"] = parent_content_source["title"]
 					end
 					if !content_source_uri.nil?
 						content_source["uri"] = content_source_uri
+						node.delete("data-content-source-uri")
 					elsif !parent_content_source.nil? && !parent_content_source["uri"].nil?
 						content_source["uri"] = parent_content_source["uri"]
 					end
@@ -162,7 +165,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 									content_array[last_item_index]["source_attributes"][name] = new_value.split(separator).uniq.join(separator)
 								end
 							end
-						else
+						elsif !node.attributes.nil? && node.attributes.size > 0
 							content_array[last_item_index]["source_attributes"] = node.attributes
 						end
 

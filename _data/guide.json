@@ -10,9 +10,6 @@
       {
         "content_type": "block",
         "source_element": "p",
-        "source_attributes": {
-          "class": "dpgn-overview-start"
-        },
         "tags": [
           "dpgn-overview-start"
         ],
@@ -29,9 +26,6 @@
       {
         "content_type": "section",
         "source_element": "section",
-        "source_attributes": {
-          "class": "dpgn-overview-start"
-        },
         "tags": [
           "dpgn-overview-start"
         ],
@@ -666,9 +660,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -931,9 +923,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -979,17 +969,11 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    },
                     "tags": null,
                     "content": [
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-design-for-users-first-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-design-for-users-first-1",
                           "dpgn-digital-architectural"
@@ -1008,9 +992,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-design-for-users-first-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-design-for-users-first-2",
                           "dpgn-digital-architectural"
@@ -1029,9 +1010,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-design-for-users-first-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-design-for-users-first-3",
                           "dpgn-digital-architectural"
@@ -1282,9 +1260,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -1345,9 +1320,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -1364,9 +1336,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -2096,9 +2066,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -2125,9 +2093,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -2146,9 +2111,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -2167,9 +2129,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -2346,9 +2305,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -2375,9 +2332,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -2498,9 +2452,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -3284,10 +3236,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -3424,9 +3373,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -3918,9 +3865,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -4025,9 +3969,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -4108,9 +4049,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -4235,9 +4173,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility"
-                        },
                         "tags": [
                           "dpgn-accessibility"
                         ],
@@ -4254,9 +4189,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability"
                         ],
@@ -4323,9 +4255,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability"
                         ],
@@ -4342,9 +4271,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability"
                         ],
@@ -4401,9 +4327,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-design-for-users-first-4"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-design-for-users-first-4",
                           "dpgn-digital-architectural"
@@ -4422,9 +4345,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-design-for-users-first-6"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-design-for-users-first-6",
                           "dpgn-digital-architectural"
@@ -4443,9 +4363,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability",
                           "dpgn-stage-alpha"
@@ -4464,9 +4381,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability",
                           "dpgn-stage-alpha"
@@ -4565,9 +4479,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability",
                           "dpgn-stage-alpha"
@@ -4586,9 +4497,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability",
                           "dpgn-stage-beta"
@@ -4639,9 +4547,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability",
                           "dpgn-stage-beta"
@@ -4852,9 +4757,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-accessibility-usability"
-                        },
                         "tags": [
                           "dpgn-accessibility-usability",
                           "dpgn-stage-live"
@@ -4967,10 +4869,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -5283,9 +5182,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -5302,9 +5198,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -6126,17 +6020,11 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural"
-                    },
                     "tags": null,
                     "content": [
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-design-for-users-first-5"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-design-for-users-first-5",
                           "dpgn-digital-architectural"
@@ -7313,9 +7201,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-design-for-users-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-design-for-users-first"
@@ -7942,10 +7827,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-design-build",
-                          "data-content-source-title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-design-build",
                           "dpgn-automated-decision"
@@ -7978,9 +7859,6 @@
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "class": "dpgn-automated-decision-level-i"
-                                },
                                 "tags": [
                                   "dpgn-automated-decision-level-i",
                                   "dpgn-automated-decision-design-build",
@@ -8005,9 +7883,6 @@
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "class": "dpgn-automated-decision-level-ii"
-                                },
                                 "tags": [
                                   "dpgn-automated-decision-level-ii",
                                   "dpgn-automated-decision-design-build",
@@ -8167,9 +8042,6 @@
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "class": "dpgn-automated-decision-level-iii"
-                                },
                                 "tags": [
                                   "dpgn-automated-decision-level-iii",
                                   "dpgn-automated-decision-design-build",
@@ -8329,9 +8201,6 @@
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "class": "dpgn-automated-decision-level-iv"
-                                },
                                 "tags": [
                                   "dpgn-automated-decision-level-iv",
                                   "dpgn-automated-decision-design-build",
@@ -8489,10 +8358,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-automated-decision"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -8519,9 +8385,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-multidisciplinary-teams"
@@ -8540,9 +8403,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-multidisciplinary-teams"
@@ -8581,9 +8441,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-multidisciplinary-teams"
@@ -8674,9 +8531,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-multidisciplinary-teams"
@@ -8693,9 +8547,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -9541,10 +9393,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-stage-alpha dpgn-stage-live"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -9840,10 +9689,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-design-build",
-                          "data-content-source-title": "Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-design-build",
                           "dpgn-automated-decision"
@@ -9860,11 +9705,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-automated-decision",
-                      "data-content-source-uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -10673,10 +10514,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -11118,9 +10956,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-multidisciplinary-teams-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-multidisciplinary-teams-3",
                           "dpgn-digital-architectural"
@@ -11137,9 +10972,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -11212,9 +11045,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-multidisciplinary-teams"
@@ -11241,9 +11071,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -11373,9 +11201,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-multidisciplinary-teams-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-multidisciplinary-teams-2"
                         ],
@@ -11392,9 +11217,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural"
-                        },
                         "tags": [
                           "dpgn-digital-architectural"
                         ],
@@ -11403,9 +11225,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -11458,9 +11278,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-multidisciplinary-teams"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-multidisciplinary-teams"
@@ -11752,9 +11569,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-open-by-default-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-open-by-default-3",
                           "dpgn-digital-architectural"
@@ -11773,9 +11587,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-open-by-default-5"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-open-by-default-5",
                           "dpgn-digital-architectural"
@@ -11848,10 +11659,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-initiation-4",
-                          "data-content-source-title": "Section 7.1.4, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-initiation-4",
                           "dpgn-automated-decision"
@@ -11874,10 +11681,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.2.4, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -11900,10 +11703,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.2.5, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -11926,10 +11725,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.2.5, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -11946,10 +11741,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-automated-decision"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -11976,9 +11768,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default"
@@ -12007,9 +11796,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default"
@@ -12066,9 +11852,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -12113,9 +11897,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default"
@@ -12212,9 +11993,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -12260,9 +12039,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural"
-                    },
                     "tags": [
                       "dpgn-digital-architectural"
                     ],
@@ -12270,9 +12046,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-measurable-accountable-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-measurable-accountable-1",
                           "dpgn-digital-architectural"
@@ -12341,9 +12114,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-measurable-accountable"
@@ -12461,17 +12231,11 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-automated-decision dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    },
                     "tags": null,
                     "content": [
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-measurable-accountable-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-measurable-accountable-2",
                           "dpgn-digital-architectural"
@@ -12490,9 +12254,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-measurable-accountable-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-measurable-accountable-3",
                           "dpgn-digital-architectural"
@@ -12561,10 +12322,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-evaluation",
-                          "data-content-source-title": "Section 7.3.2, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-evaluation",
                           "dpgn-automated-decision"
@@ -12587,10 +12344,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-evaluation",
-                          "data-content-source-title": "Section 7.5.1, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-evaluation",
                           "dpgn-automated-decision"
@@ -12849,9 +12602,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-measurable-accountable"
@@ -12870,9 +12620,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-measurable-accountable"
@@ -12911,9 +12658,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-measurable-accountable"
@@ -12932,9 +12676,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-measurable-accountable"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-measurable-accountable"
@@ -12995,9 +12736,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architecutral dpgn-digital-architectural-measurable-accountable"
-                        },
                         "tags": [
                           "dpgn-digital-architecutral",
                           "dpgn-digital-architectural-measurable-accountable"
@@ -13014,9 +12752,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -13508,9 +13244,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-open-by-default-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-open-by-default-1",
                           "dpgn-digital-architectural"
@@ -13529,9 +13262,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-open-by-default-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-open-by-default-2",
                           "dpgn-digital-architectural"
@@ -13632,9 +13362,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-performance-availability-scalability-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-performance-availability-scalability-1",
                           "dpgn-digital-architectural"
@@ -13653,9 +13380,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-performance-availability-scalability-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-performance-availability-scalability-2",
                           "dpgn-digital-architectural"
@@ -13674,9 +13398,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-performance-availability-scalability-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-performance-availability-scalability-3",
                           "dpgn-digital-architectural"
@@ -13695,9 +13416,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-performance-availability-scalability-4"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-performance-availability-scalability-4",
                           "dpgn-digital-architectural"
@@ -13716,9 +13434,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-performance-availability-scalability-5"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-performance-availability-scalability-5",
                           "dpgn-digital-architectural"
@@ -13835,9 +13550,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-expose-functionality-services-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-expose-functionality-services-2",
                           "dpgn-digital-architectural"
@@ -14020,10 +13732,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.3.1, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -14218,10 +13926,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-automated-decision dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -14278,9 +13983,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default"
@@ -14299,9 +14001,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default"
@@ -14386,9 +14085,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-performance-availability-scalability"
@@ -14407,9 +14103,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-performance-availability-scalability"
@@ -14438,9 +14131,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-performance-availability-scalability"
@@ -14469,9 +14159,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-performance-availability-scalability"
@@ -14508,9 +14195,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -14645,9 +14330,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default"
@@ -14666,9 +14348,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-performance-availability-scalability"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-performance-availability-scalability"
@@ -14687,9 +14366,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-expose-functionality-services"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-expose-functionality-services"
@@ -14756,9 +14432,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -15214,9 +14888,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-maximize-reuse-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-maximize-reuse-1",
                           "dpgn-digital-architectural"
@@ -15235,9 +14906,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-maximize-reuse-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-maximize-reuse-2",
                           "dpgn-digital-architectural"
@@ -15320,9 +14988,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-maximize-reuse-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-maximize-reuse-3",
                           "dpgn-digital-architectural"
@@ -15341,9 +15006,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-maximize-reuse-4"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-maximize-reuse-4",
                           "dpgn-digital-architectural"
@@ -15362,9 +15024,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-maximize-reuse-5"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-maximize-reuse-5",
                           "dpgn-digital-architectural"
@@ -15383,9 +15042,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-maximize-reuse-6"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-maximize-reuse-6",
                           "dpgn-digital-architectural"
@@ -15404,9 +15060,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-maximize-reuse-7"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-maximize-reuse-7",
                           "dpgn-digital-architectural"
@@ -15453,9 +15106,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-expose-functionality-services-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-expose-functionality-services-3",
                           "dpgn-digital-architectural"
@@ -15474,9 +15124,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-expose-functionality-services-5"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-expose-functionality-services-5",
                           "dpgn-digital-architectural"
@@ -15523,9 +15170,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-cloud-first-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-cloud-first-1",
                           "dpgn-digital-architectural"
@@ -15712,10 +15356,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -15742,9 +15383,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-maximize-reuse"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-maximize-reuse"
@@ -15763,9 +15401,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-maximize-reuse"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-maximize-reuse"
@@ -15784,9 +15419,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-cloud-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-cloud-first"
@@ -15805,9 +15437,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-cloud-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-cloud-first"
@@ -15826,9 +15455,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-cloud-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-cloud-first"
@@ -15845,9 +15471,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -15874,9 +15498,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-maximize-reuse"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-maximize-reuse"
@@ -15939,9 +15560,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-maximize-reuse"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-maximize-reuse"
@@ -15960,9 +15578,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-expose-functionality-services"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-expose-functionality-services"
@@ -15981,9 +15596,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-cloud-first"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-cloud-first"
@@ -16010,9 +15622,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -16142,9 +15752,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-expose-functionality-services-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-expose-functionality-services-1",
                           "dpgn-digital-architectural"
@@ -16163,9 +15770,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-expose-functionality-services-4"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-expose-functionality-services-4",
                           "dpgn-digital-architectural"
@@ -16182,10 +15786,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -16212,9 +15813,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default dpgn-digital-architectural-expose-functionality-services"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default",
@@ -16235,9 +15833,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-expose-functionality-services"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-expose-functionality-services"
@@ -16256,9 +15851,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default dpgn-digital-architectural-expose-functionality-services"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default",
@@ -16311,9 +15903,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-expose-functionality-services"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-expose-functionality-services"
@@ -16375,9 +15964,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural"
-                    },
                     "tags": [
                       "dpgn-digital-architectural"
                     ],
@@ -16385,9 +15971,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-open-by-default-4"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-open-by-default-4",
                           "dpgn-digital-architectural"
@@ -16502,9 +16085,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-open-by-default"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-by-default"
@@ -16880,9 +16460,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    },
                     "tags": null,
                     "content": [
                       {
@@ -18973,10 +18550,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -19203,11 +18777,6 @@
                 "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
               },
               "source_element": "p",
-              "source_attributes": {
-                "class": "dpgn-automated-decision-introduction",
-                "data-content-source-title": "Section 3.1, Standard on Automated Decision-Making (draft) (GC)",
-                "data-content-source-uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-              },
               "tags": [
                 "dpgn-automated-decision-introduction"
               ],
@@ -19228,11 +18797,6 @@
                 "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
               },
               "source_element": "p",
-              "source_attributes": {
-                "class": "dpgn-automated-decision-introduction",
-                "data-content-source-title": "Section 3.2, Standard on Automated Decision-Making (draft) (GC)",
-                "data-content-source-uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-              },
               "tags": [
                 "dpgn-automated-decision-introduction"
               ],
@@ -19317,10 +18881,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-automated-decision",
-                      "data-content-source-uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                    },
                     "tags": [
                       "dpgn-automated-decision"
                     ],
@@ -19332,10 +18892,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.2.1, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -19358,10 +18914,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.2.2, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -19464,10 +19016,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.2.3, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -19500,10 +19048,6 @@
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "class": "dpgn-automated-decision-type-classify-cases dpgn-automated-decision-type-identify-cases",
-                                  "data-content-source-title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)"
-                                },
                                 "tags": [
                                   "dpgn-automated-decision-type-classify-cases",
                                   "dpgn-automated-decision-type-identify-cases",
@@ -19542,9 +19086,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-i"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
                                           "dpgn-automated-decision-type-classify-cases",
@@ -19573,9 +19114,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-ii"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
                                           "dpgn-automated-decision-type-classify-cases",
@@ -19604,9 +19142,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-iii"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
                                           "dpgn-automated-decision-type-classify-cases",
@@ -19635,9 +19170,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-iv"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
                                           "dpgn-automated-decision-type-classify-cases",
@@ -19670,10 +19202,6 @@
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "class": "dpgn-automated-decision-type-recommendation dpgn-automated-decision-type-final-decision",
-                                  "data-content-source-title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)"
-                                },
                                 "tags": [
                                   "dpgn-automated-decision-type-recommendation",
                                   "dpgn-automated-decision-type-final-decision",
@@ -19712,9 +19240,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-i"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
                                           "dpgn-automated-decision-type-recommendation",
@@ -19743,9 +19268,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-ii"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
                                           "dpgn-automated-decision-type-recommendation",
@@ -19774,9 +19296,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-iii"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
                                           "dpgn-automated-decision-type-recommendation",
@@ -19805,9 +19324,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-iv"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
                                           "dpgn-automated-decision-type-recommendation",
@@ -19928,10 +19444,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-automated-decision",
-                      "data-content-source-uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                    },
                     "tags": [
                       "dpgn-automated-decision"
                     ],
@@ -19943,10 +19455,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-initiation-1",
-                          "data-content-source-title": "Section 7.1.1, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-initiation-1",
                           "dpgn-automated-decision"
@@ -19969,10 +19477,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-initiation-3",
-                          "data-content-source-title": "Section 7.1.3, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-initiation-3",
                           "dpgn-automated-decision"
@@ -20079,10 +19583,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-automated-decision",
-                      "data-content-source-uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                    },
                     "tags": [
                       "dpgn-automated-decision"
                     ],
@@ -20094,10 +19594,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-initiation-2",
-                          "data-content-source-title": "Section 7.1.2, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-initiation-2",
                           "dpgn-automated-decision"
@@ -20130,9 +19626,6 @@
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "data-content-source-title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)"
-                                },
                                 "tags": [
                                   "dpgn-automated-decision-initiation-2",
                                   "dpgn-automated-decision"
@@ -20165,9 +19658,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-i"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
                                           "dpgn-automated-decision-initiation-2",
@@ -20192,9 +19682,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-ii"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
                                           "dpgn-automated-decision-initiation-2",
@@ -20219,9 +19706,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-iii"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
                                           "dpgn-automated-decision-initiation-2",
@@ -20246,9 +19730,6 @@
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
-                                        "source_attributes": {
-                                          "class": "dpgn-automated-decision-level-iv"
-                                        },
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
                                           "dpgn-automated-decision-initiation-2",
@@ -20281,10 +19762,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-analysis-approach",
-                          "data-content-source-title": "Section 7.3.8, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-analysis-approach",
                           "dpgn-automated-decision"
@@ -20307,10 +19784,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.4.1, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -20417,10 +19890,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-automated-decision",
-                      "data-content-source-uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                    },
                     "tags": [
                       "dpgn-automated-decision"
                     ],
@@ -20432,10 +19901,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-deployment-operation",
-                          "data-content-source-title": "Section 7.3.6, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-deployment-operation",
                           "dpgn-automated-decision"
@@ -20782,9 +20247,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
@@ -20803,9 +20265,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
@@ -21107,9 +20566,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
@@ -21706,9 +21162,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-security-privacy-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-security-privacy-1",
                           "dpgn-digital-architectural"
@@ -21727,9 +21180,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-security-privacy-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-security-privacy-2",
                           "dpgn-digital-architectural"
@@ -21748,9 +21198,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-security-privacy-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-security-privacy-3",
                           "dpgn-digital-architectural"
@@ -21773,10 +21220,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-analysis-approach",
-                          "data-content-source-title": "Section 7.3.7, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-analysis-approach",
                           "dpgn-automated-decision"
@@ -21793,10 +21236,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-automated-decision"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -21887,9 +21327,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
@@ -21952,9 +21389,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-security-privacy"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
@@ -21971,9 +21405,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -22247,9 +21679,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-keep-data-organized-1"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-keep-data-organized-1",
                           "dpgn-digital-architectural"
@@ -22268,9 +21697,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-keep-data-organized-3"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-keep-data-organized-3",
                           "dpgn-digital-architectural"
@@ -22303,10 +21729,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-evaluation",
-                          "data-content-source-title": "Section 7.3.3, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-evaluation",
                           "dpgn-automated-decision"
@@ -22329,10 +21751,6 @@
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-automated-decision-evaluation",
-                          "data-content-source-title": "Section 7.5.2, Standard on Automated Decision-Making (draft) (GC)"
-                        },
                         "tags": [
                           "dpgn-automated-decision-evaluation",
                           "dpgn-automated-decision"
@@ -22349,10 +21767,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-automated-decision"
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -22401,9 +21816,6 @@
                               {
                                 "content_type": "block",
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "class": "dpgn-digital-architectural dpgn-digital-architectural-keep-data-organized"
-                                },
                                 "tags": [
                                   "dpgn-digital-architectural",
                                   "dpgn-digital-architectural-keep-data-organized"
@@ -22422,9 +21834,6 @@
                               {
                                 "content_type": "block",
                                 "source_element": "li",
-                                "source_attributes": {
-                                  "class": "dpgn-digital-architectural dpgn-digital-architectural-keep-data-organized"
-                                },
                                 "tags": [
                                   "dpgn-digital-architectural",
                                   "dpgn-digital-architectural-keep-data-organized"
@@ -22517,9 +21926,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               },
@@ -22580,9 +21987,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-keep-data-organized"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-keep-data-organized"
@@ -22599,9 +22003,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -22779,17 +22181,11 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural dpgn-stage-alpha dpgn-stage-beta dpgn-stage-live"
-                    },
                     "tags": null,
                     "content": [
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-keep-data-organized-2"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-keep-data-organized-2",
                           "dpgn-digital-architectural"
@@ -23841,9 +23237,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-keep-data-organized"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-keep-data-organized"
@@ -23860,9 +23253,7 @@
                         ]
                       }
                     ],
-                    "tags": null,
-                    "source_attributes": {
-                    }
+                    "tags": null
                   }
                 ]
               }
@@ -23908,9 +23299,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "source_attributes": {
-                      "class": "dpgn-digital-architectural"
-                    },
                     "tags": [
                       "dpgn-digital-architectural"
                     ],
@@ -23918,9 +23306,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural-keep-data-organized-4"
-                        },
                         "tags": [
                           "dpgn-digital-architectural-keep-data-organized-4",
                           "dpgn-digital-architectural"
@@ -24083,9 +23468,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "source_attributes": {
-                          "class": "dpgn-digital-architectural dpgn-digital-architectural-keep-data-organized"
-                        },
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-keep-data-organized"

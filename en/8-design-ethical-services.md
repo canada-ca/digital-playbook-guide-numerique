@@ -172,7 +172,6 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
-
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
 

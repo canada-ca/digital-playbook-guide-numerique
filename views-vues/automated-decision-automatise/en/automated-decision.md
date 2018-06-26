@@ -1,17 +1,17 @@
 ---
 layout: default
-title: How should I implement an Automated Descision System? (draft)
+title: How should I implement an Automated Decision System? (draft)
 lang: en
 altLang: fr
 altLangPage: decision-automatise
 collectionDirectory: views-vues/automated-decision-automatise
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
-assign dataSource = site.data[dataVariable] %} 
+assign dataSource = site.data[dataVariable] %}
 
 This page provides personalized guidance for how projects can implement an Automated Decision System.
 
-{% assign currentStandard = dataSource.standards.content[7] %}{% 
+{% assign currentStandard = dataSource.standards.content[7] %}{%
 include /functions/output-content-array.html contentArray=currentStandard.introduction.content parentHeadingLevel="1" relevantTags="dpgn-automated-decision-introduction" contentStandardIndex=7 %}
 
 <!-- markdownlint-disable MD032 -->
@@ -78,7 +78,6 @@ include /functions/output-content-array.html contentArray=currentStandard.introd
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-initiation-1,dpgn-automated-decision-initiation-2,dpgn-automated-decision-initiation-3,dpgn-automated-decision-initiation-4" groupListsSeparately=true groupByTagsTags="dpgn-automated-decision-initiation-1,dpgn-automated-decision-initiation-2,dpgn-automated-decision-initiation-3,dpgn-automated-decision-initiation-4" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-initiation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
-
 
 </section>
 

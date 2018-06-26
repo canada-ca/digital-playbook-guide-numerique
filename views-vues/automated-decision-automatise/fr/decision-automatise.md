@@ -6,13 +6,12 @@ altLang: en
 altLangPage: automated-decision
 collectionDirectory: views-vues/automated-decision-automatise
 ---
-
 {% assign dataVariable = site.playbookData[page.lang] %}{%
-assign dataSource = site.data[dataVariable] %} 
+assign dataSource = site.data[dataVariable] %}
 
 Cette page fournit des conseils personnalisés sur la façon dont les projets peuvent mettre en œuvre un système de décision automatisé.
 
-{% assign currentStandard = dataSource.standards.content[7] %}{% 
+{% assign currentStandard = dataSource.standards.content[7] %}{%
 include /functions/output-content-array.html contentArray=currentStandard.introduction.content parentHeadingLevel="1" relevantTags="dpgn-automated-decision-introduction" contentStandardIndex=7 %}
 
 <!-- markdownlint-disable MD032 -->
