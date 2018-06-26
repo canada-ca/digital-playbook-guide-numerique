@@ -14,10 +14,10 @@ altLangPage: 8-concevoir-services-ethiques
 
 <!-- markdownlint-disable MD034 -->
 The Government of Canada is increasingly looking to utilise technology and automated systems to make, or assist in making, administrative decisions to improve service delivery.
-{: .dpgn-automated-decision-introduction data-content-source-title="Section 3.1, Standard on Automated Decision-Making (draft) (GC)" data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+{: .dpgn-automated-decision-introduction data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" data-content-source-title="Section 3.1, Standard on Automated Decision-Making (draft) (GC)"}
 
 The Government of Canada is committed to ensure that the use of Automated Decision Systems are compatible with core administrative law principles such as transparency, accountability, legality and procedural fairness.
-{: .dpgn-automated-decision-introduction data-content-source-title="Section 3.2, Standard on Automated Decision-Making (draft) (GC)" data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+{: .dpgn-automated-decision-introduction data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" data-content-source-title="Section 3.2, Standard on Automated Decision-Making (draft) (GC)"}
 <!-- markdownlint-enable MD034 -->
 
 </div>
@@ -78,7 +78,7 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
     - {: .dpgn-automated-decision-level-ii} **Level II:** Meaningful explanation provided upon request based on machine or human review.
     - {: .dpgn-automated-decision-level-iii} **Level III:** Meaningful explanation, including variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated.
     - {: .dpgn-automated-decision-level-iv} **Level IV:** Meaningful explanation, including variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated.
-{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -124,7 +124,7 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 <!-- markdownlint-disable MD034 -->
 - {: .dpgn-automated-decision-initiation-1 data-content-source-title="Section 7.1.1, Standard on Automated Decision-Making (draft) (GC)"} Complete an Algorithmic Impact Assessment, prior to the production of any Automated Decision System.
 - {: .dpgn-automated-decision-initiation-3 data-content-source-title="Section 7.1.3, Standard on Automated Decision-Making (draft) (GC)"} Ensure that the Algorithmic Impact Assessment remains up to date and accurately reflects the functionality of the Automated Decision System.
-{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -155,6 +155,14 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 
 **[TODO: Add/revise introductory text]**
 
+</div>
+
+<section class="dpgn-section-checklist">
+
+### Checklist
+
+**[TODO: Add/revise checklist items]**
+
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
 
@@ -168,27 +176,9 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
     - {: .dpgn-automated-decision-level-iv} **Level IV:** Requires specific authority from Cabinet
 - {: .dpgn-automated-decision-analysis-approach data-content-source-title="Section 7.3.8, Standard on Automated Decision-Making (draft) (GC)"} Consult with the institution’s legal services unit, to ensure that the use of the Automated Decision System System is compliant with applicable legal requirements.
 - {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.4.1, Standard on Automated Decision-Making (draft) (GC)"} Affected individuals must be provided with information with regards to the options that are available to them for recourse to challenge the automated decision.
-{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
-
-**Automated Decision Systems:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-<!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-analysis-approach data-content-source-title="Section 7.3.7, Standard on Automated Decision-Making (draft) (GC)"} Conduct risk assessments throughout the development of the system and ensure appropriate safeguards to be applied, as per the [Policy on Government Security](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578).
-{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
-<!-- markdownlint-enable MD034 -->
-<!-- markdownlint-enable MD032 -->
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
 
 </section>
 
@@ -231,7 +221,7 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
 - {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.3.6, Standard on Automated Decision-Making (draft) (GC)"} Ensure that a contingency systems and/or processes are available should the Automated Decision System be unavailable for an extended period of time.
-{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 

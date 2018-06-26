@@ -134,7 +134,7 @@ Good government services are built quickly and iteratively, based on user needs.
     - Qualified researchers from a relevant non- governmental organization
     - Contracted third-party vendor with a related specialization
     - **OR:** Publishing specifications of the Automated Decision System in a peer-reviewed journal
-{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 

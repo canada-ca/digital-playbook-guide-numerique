@@ -274,7 +274,7 @@ Canadians want to have confidence that government digital services are designed 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
 * {: .dpgn-automated-decision-analysis-approach data-content-source-title="Section 7.3.7, Standard on Automated Decision-Making (draft) (GC)"} Conduct risk assessments throughout the development of the system and ensure appropriate safeguards to be applied, as per the [Policy on Government Security](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578).
-{: .dpgn-automated-decision data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"}
+{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
