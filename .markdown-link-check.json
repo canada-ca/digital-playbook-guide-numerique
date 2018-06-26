@@ -21,10 +21,17 @@
     {
       "pattern": "&quot;",
       "replacement": ""
-    }
+    },
     {
       "pattern": "\"",
       "replacement": ""
-    }
+    },
+    {
+      "pattern": "&quot;}",
+      "replacement": ""
+    },
+    {
+      "pattern": "\"}",
+      "replacement": ""
   ]
 }
