@@ -10,4 +10,4 @@ before_install:
   - bundle install
 
 before_script:
-  - bundle exec jekyll build
+  - bundle exec jekyll build --verbose
