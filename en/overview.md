@@ -50,7 +50,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 <section class="dpgn-overview-end">
   
-#### Objective 
+#### Objective
 
 The objective of the Digital Playbook is to provide detailed guidance for implementing the Digital Standards, whose purpose is to guide the Government of Canada in digital transformation and augmented service delivery. The Digital Playbook is intended to be flexible and adaptable, helping users to focus on the guidance that is most relevant to them.
 
@@ -64,7 +64,7 @@ The objective of the Digital Playbook is to provide detailed guidance for implem
 
 <section class="dpgn-overview-end">
 
-#### Implementation approach 
+#### Implementation approach
 
 The approach to developing and releasing the Digital Playbook will be similar to the Web Experience Toolkit and HTML5, where the Digital Playbook continuously evolves on GitHub and stable snapshots of that work are released as formal versions through Canada.ca. This enables the Digital Playbook to be both agile and ever-improving on GitHub while also providing a stable version through Canada.ca that can be relied upon for guidance.
 
