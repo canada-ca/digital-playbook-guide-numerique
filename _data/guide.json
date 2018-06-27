@@ -11136,7 +11136,7 @@
                               "dpgn-automated-decision-evaluation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the Standard on Automated Decision-Making."
+                            "content": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the <a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Standard on Automated Decision-Making</a>."
                           }
                         ]
                       },
@@ -11493,8 +11493,27 @@
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/performance-testing/\">Performance Testing (Digital Service Standard (AU))</a>"
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-automated-decision-evaluation",
+                          "dpgn-automated-decision"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-automated-decision-evaluation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": "<a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Standard on Automated Decision-Making</a>"
+                          }
+                        ]
                       }
-                    ]
+                    ],
+                    "tags": null
                   }
                 ]
               },
@@ -14082,6 +14101,168 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Les services d’informatique en nuage sont désignés et évalués comme la principale option de prestation de services lorsqu’on procède à des investissements en matière de TI ou qu’on lance des initiatives, des stratégies et des projets de la TI."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "À l’aide du <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/gouvernement-canada-guide-selection-nuage-approprie.html\">Guide de sélection du nuage approprié du gouvernement du Canada</a> pour éclairer leur décision, les DPI des ministères et organismes choisiront l’un des modèles de déploiement ci-dessous, dans l’ordre de priorité suivant :\n        "
+                          },
+                          {
+                            "content_type": "block",
+                            "source_element": "ul",
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "nuage public"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "nuage hybride"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "nuage privé"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "hors-nuage"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Les DPI des ministères et organismes choisiront l’un des modèles de services d’informatique en nuage ci-dessous, dans l’ordre de priorité suivant :\n        "
+                          },
+                          {
+                            "content_type": "block",
+                            "source_element": "ul",
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "logiciel en tant que service (SaaS)"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "plateforme en tant que service (PaaS)"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "infrastructure en tant que service (IaaS)"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Pour déterminer comment gérer les risques pour la sécurité, les ministères et organismes doivent observer le contenu des documents <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html\">Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage du gouvernement du Canada</a> et <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/orientation-utilisation-securisee-services-commerciaux-informatique-nuage-amops.html\">Orientation sur l’utilisation sécurisée des services commerciaux d’informatique en nuage : Avis de mise en œuvre de la Politique sur la sécurité (AMOPS)</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Les ministères et organismes peuvent déployer des solutions dont les exigences en matière de catégorisation de données ne correspondent pas à un profil de contrôle de sécurité de l’informatique en nuage donné, comme il est indiqué dans le <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html\">Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l’informatique en nuage</a>, avec des mesures d’atténuation des risques appropriées élaborées de concert avec des partenaires de la sécurité du GC."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Pour garantir, dans la mesure du possible, l’accès continu du GC aux données de nature délicate, les ministères et organismes doivent se conformer à l’<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html\">Orientation relative à la résidence des données électroniques</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Pour assurer la continuité des activités et gérer les risques, les ministères et organismes élaboreront une stratégie de retrait appropriée avant d’utiliser les services d’informatique en nuage."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Les ministères et organismes devraient tenir compte de la transférabilité et de l’interopérabilité des services au moment d’élaborer des solutions d’informatique en nuage."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-cloud-first"
@@ -14130,6 +14311,78 @@
                               "dpgn-digital-architectural-cloud-first"
                             ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/strategie-adoption-information-nuage-gouvernement-canada.html\">Stratégie d’adoption de l’informatique en nuage du Gouvernement du Canada</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/gc-livre-blanc-souverainete-donnees-nuage-public.html\">Gouvernement du Canada Livre blanc : Souveraineté des données et nuage public</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html\">Gouvernement du Canada Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/orientation-utilisation-securisee-services-commerciaux-informatique-nuage-amops.html\">Orientation sur l’utilisation sécurisée des services commerciaux d’informatique en nuage : Avis de mise en œuvre de la Politique sur la sécurité (AMOPS)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html\">Orientation relative à la résidence des données électroniques</a>"
                           }
                         ]
                       }
@@ -18129,7 +18382,7 @@
                               "dpgn-automated-decision-initiation-1",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Complete an Algorithmic Impact Assessment, prior to the production of any Automated Decision System."
+                            "content": "Complete an <a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment</a>, prior to the production of any Automated Decision System."
                           }
                         ]
                       },
@@ -18151,7 +18404,7 @@
                               "dpgn-automated-decision-initiation-3",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that the Algorithmic Impact Assessment remains up to date and accurately reflects the functionality of the Automated Decision System."
+                            "content": "Ensure that the <a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment</a> remains up to date and accurately reflects the functionality of the Automated Decision System."
                           }
                         ]
                       }
@@ -18172,6 +18425,33 @@
                       {
                         "content_type": "inline",
                         "content": "<strong>[TODO: Ajouter / réviser les éléments du guide de mise en œuvre]</strong>"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "tags": [
+                      "dpgn-automated-decision"
+                    ],
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-automated-decision-initiation",
+                          "dpgn-automated-decision"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-automated-decision-initiation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": "<a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment (GC)</a>"
+                          }
+                        ]
                       }
                     ]
                   }
