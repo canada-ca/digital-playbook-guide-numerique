@@ -61,7 +61,7 @@ if tagsCompareResult contains "true" %}{%
   endcapture %}
 <div{{ classOutput | rstrip }}>
 
-{%  include /functions/output-content-array.html contentArray=standard.introduction.content currHeadingLevel=standardHeadingLevel relevantTags=include.relevantTags %}
+{%  include /functions/output-content-array.html contentArray=standard.introduction.content parentHeadingLevel=standardHeadingLevel relevantTags=include.relevantTags %}
 
 </div>
 {% endif %}
