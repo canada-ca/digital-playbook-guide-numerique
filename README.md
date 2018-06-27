@@ -57,7 +57,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 
 ## About the Digital Playbook
 
-### Objective 
+### Objective
 
 The objective of the Digital Playbook is to provide detailed guidance for implementing the Digital Standards, whose purpose is to guide the Government of Canada in digital transformation and augmented service delivery. The Digital Playbook is intended to be flexible and adaptable, helping users to focus on the guidance that is most relevant to them.
 
@@ -67,7 +67,7 @@ The objective of the Digital Playbook is to provide detailed guidance for implem
 
 **Together we’ll make them better.** This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone.
 
-### Implementation approach 
+### Implementation approach
 
 The approach to developing and releasing the Digital Playbook will be similar to the Web Experience Toolkit and HTML5, where the Digital Playbook continuously evolves on GitHub and stable snapshots of that work are released as formal versions through Canada.ca. This enables the Digital Playbook to be both agile and ever-improving on GitHub while also providing a stable version through Canada.ca that can be relied upon for guidance.
 
@@ -140,7 +140,7 @@ L'objectif du guide numérique est de fournir des conseils détaillés sur la mi
 
 **Ensemble nous le ferons mieux.** Ceci est un guide vivant, et nous continuerons de le mettre à jour et de le faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à l'amélioration du guide. Ce guide reflètera la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
 
-### Approche de mise en œuvre 
+### Approche de mise en œuvre
 
 L'approche du développement et de la diffusion du guide numérique sera similaire à celle de la Boîte à outils de l'expérience Web et de HTML5, où le guide numérique évolue constamment sur GitHub et où des clichés stables de ce travail sont publiés sous forme de versions officielles sur Canada.ca. Cela permet au guide numérique d'être agile et de s'améliorer constamment sur GitHub tout en offrant une version stable à travers Canada.ca sur laquelle on peut compter pour obtenir des conseils.
 
