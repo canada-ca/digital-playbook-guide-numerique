@@ -66,7 +66,7 @@ L'objectif du guide numérique est de fournir des conseils détaillés sur la mi
 
 <section class="dpgn-overview-end">
   
-#### Approche de mise en œuvre 
+#### Approche de mise en œuvre
 
 L'approche du développement et de la diffusion du guide numérique sera similaire à celle de la Boîte à outils de l'expérience Web et de HTML5, où le guide numérique évolue constamment sur GitHub et où des clichés stables de ce travail sont publiés sous forme de versions officielles sur Canada.ca. Cela permet au guide numérique d'être agile et de s'améliorer constamment sur GitHub tout en offrant une version stable à travers Canada.ca sur laquelle on peut compter pour obtenir des conseils.
 
