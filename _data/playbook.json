@@ -517,6 +517,26 @@
                         "content": [
                           {
                             "content_type": "inline",
+                            "content": "use research, testing and analytics to improve the service <strong>(7. Make it accessible, Digital Service Standard (Ontario))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "explain all end-to-end user experiences, show they work and how they were tested <strong>(7. Make it accessible, Digital Service Standard (Ontario))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
                             "content": "Make services simple, intuitive and consistent"
                           }
                         ]
@@ -568,6 +588,16 @@
                           {
                             "content_type": "inline",
                             "content": "Use language and design consistently throughout the service, including online and offline touch points <strong>(Digital Services Playbook (US))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       },
@@ -684,36 +714,6 @@
                           {
                             "content_type": "inline",
                             "content": "understand how you will use existing design patterns and a front-end toolkit to make the service consistent <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "ensure appropriate design, content design and front-end developer support is provided to the team. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       }
@@ -926,7 +926,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-4\">3. Be consistent (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-3\">3. Be consistent (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -936,7 +936,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-6\">5. Ensure users succeed the first time (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-5\">5. Ensure users succeed the first time (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -2435,7 +2435,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-2\">1. Understand users and their needs (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-1\">1. Understand users and their needs (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -2505,7 +2505,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-13\">12. Support those who need it (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-12\">12. Support those who need it (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       }
@@ -2531,7 +2531,17 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise introductory text]</strong>\nWe need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter — whether it’s online or offline — should move the user closer towards their goal. <strong>(Digital Services Playbook (US))</strong>"
+                        "content": "<strong>[TODO: Add/revise introductory text]</strong>"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter — whether it’s online or offline — should move the user closer towards their goal. <strong>(Digital Services Playbook (US))</strong>"
                       }
                     ]
                   },
@@ -2618,46 +2628,6 @@
                       {
                         "content_type": "inline",
                         "content": "People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Encourage users to choose the digital service and consolidate or phase out existing alternative channels where appropriate."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "As we build simpler, clearer and faster government services the digital channel will become more convenient for users than non-digital channels like post, phone and shopfronts. Increased digital take-up will mean users can spend less time interacting with government. This will result in greater cost efficiencies for government."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Measuring digital take-up helps you to understand how well your service is being used. It’s one of the 4 mandatory KPIs services must report on the Performance Dashboard."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can. <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
                       }
                     ]
                   }
@@ -2897,102 +2867,6 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show you understand if there are any repeat transactions by users over different channels <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show you understand the interactions occurring between the channels that deliver and capture user transactions. <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show you understand the users’ journeys and how they interact with your service, digitally or otherwise <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show you understand existing alternative channels and how users currently interact with them <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show you understand what percentage of users access digital and non-digital channels <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show you understand how you will increase digital take-up and what targets you will set. <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
                           "dpgn-stage-beta"
                         ],
                         "content": [
@@ -3050,54 +2924,6 @@
                               "dpgn-stage-beta"
                             ],
                             "content": "Collect analytics data that shows how your new ways of communicating have performed <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "be increasing digital take-up; revising your targets and considering relevant performance metrics <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "have a plan of how to move users to the digital channel where possible, including a communications plan to promote the service <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "have agreed analytics/metrics for the volume of usage across channels <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
                           }
                         ]
                       },
@@ -3412,7 +3238,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-12\">11. Encourage people to use digital services (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-11\">11. Encourage people to use digital services (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -4138,17 +3964,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "Accessibility is not only required by law, it’s also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Ensure the service is accessible to all users regardless of their ability and environment. This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can’t use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person."
+                        "content": "Accessibility is not only required by law, it’s also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device, environment or quality of access."
                       }
                     ]
                   },
@@ -4168,7 +3984,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "You need to make sure everyone who needs your service can use it. This includes people with disabilities and older people, and people who can’t use, or struggle with, digital services. If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. <strong>(Digital Service Standard (Ontario))</strong>"
+                        "content": "This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can’t use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person."
                       }
                     ]
                   },
@@ -4178,7 +3994,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "Your service must be accessible to users regardless of their digital confidence and access to a digital environment. This includes users in remote areas and users’ different devices. <strong>(Digital Service Standard (AU))</strong>"
+                        "content": "If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. <strong>(Digital Service Standard (Ontario))</strong>"
                       }
                     ]
                   }
@@ -4217,22 +4033,6 @@
                               "dpgn-accessibility"
                             ],
                             "content": "meet the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601\">Standard on Web Accessibility</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-accessibility-usability"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-accessibility-usability"
-                            ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html\">Design with users</a>"
                           }
                         ]
                       },
@@ -4279,16 +4079,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "contribute to the development of best practices and publish approaches the province has used to implement the AODA <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
                         "tags": [
                           "dpgn-accessibility-usability"
                         ],
@@ -4299,42 +4089,6 @@
                               "dpgn-accessibility-usability"
                             ],
                             "content": "conduct research and testing to ensure the service is accessible to people of all abilities no matter how they access the service <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-accessibility-usability"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-accessibility-usability"
-                            ],
-                            "content": "use research, testing and analytics to improve the service, including the assisted digital support model <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "explain all end-to-end user experiences, show they work and how they were tested <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "make sure the assisted digital support will be sustainably funded and free to use <strong>(Digital Service Standard (Ontario))</strong>"
                           }
                         ]
                       },
@@ -4498,22 +4252,6 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show any accessibility issues and barriers that might need addressing in the Beta stage <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
                           "dpgn-accessibility-usability",
                           "dpgn-stage-alpha"
                         ],
@@ -4574,201 +4312,7 @@
                             "tags": [
                               "dpgn-stage-beta"
                             ],
-                            "content": "show end-to-end user journeys, including assisted digital journeys, and demonstrate that they work and how you tested them <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-accessibility-usability",
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-accessibility-usability",
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show how you’ve included cultural and linguistically diverse communities in your design <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show a plan to include translation for non-English speaking audiences, as appropriate <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show you have testing environments, systems and approaches for non-digital parts of the service (including assisted digital routes); for example, a testing plan <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show how the service will perform under expected loads (including assisted digital routes) <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show strong understanding of the environments your users may access the service in, for example which browsers, desktop and mobile devices they will use, and which remote locations; you might use user stories and a journey map to show this <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show definition of supported browsers and devices, and how they are accommodated <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
                             "content": "show any barriers to the digital service and its content on mobile devices, and plans to address them <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show the design requirements for users using a mobile device and other identified environments, for example design specifications <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show how you have tested for the users’ ability to complete all digital transactions on supported devices and platforms <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show detail of users’ interactions with the product during testing <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show a demonstration your service in a live-like environment <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "show the majority of users can access the service in their environment. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       },
@@ -5199,7 +4743,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-8\">7. Make it accessible (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-7\">7. Make it accessible (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -7328,7 +6872,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "Put in place a sustainable multidisciplinary team that can design, build and continuously improve the digital service, led by a skilled product manager who is empowered to make decisions."
+                        "content": "It’s important to have a strong multidisciplinary team in place, led by one person who is accountable and has the authority to make decisions based on the outcomes of research, testing and prototypes."
                       }
                     ]
                   },
@@ -7397,72 +6941,6 @@
                         "content": "<strong>(Digital Service Standard (Ontario))</strong>"
                       }
                     ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Establish a sustainable multidisciplinary team to design, build, operate and iterate the service, led by an experienced product manager with decision-making responsibility."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Good government services are built quickly and iteratively, based on user needs. Your digital delivery team must be set up in the right way to do this. They need:"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "a broad mix of skills and roles from the start"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "quick decision-making processes and the ability to change and adapt as the service evolves"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "to be adequately resourced and empowered to deliver the product or service."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>(Digital Service Standard (AU))</strong>"
-                      }
-                    ]
                   }
                 ]
               },
@@ -7486,16 +6964,6 @@
                     "content_type": "block",
                     "source_element": "ul",
                     "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Employ people in the following roles on the delivery team: service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, front-end developer <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -7633,212 +7101,6 @@
                           {
                             "content_type": "inline",
                             "content": "Involve the maintenance team for the service early on in the project <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Your digital delivery team should have, or easily get, the following roles, as relevant to your service: <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "service manager"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "product manager"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "delivery manager"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "technical architect"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "service and/or interaction designer(s)"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "content designer"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "user researcher(s)"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "developer"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "web operations engineer"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "performance analyst"
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "show the team principles, vision, rituals and agile practices, for example through team charter <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "demonstrate you have a product manager with the knowledge and power to make day-to-day decisions to improve the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "show how team members stay with the service through the stages and how new members will establish empathy with the users <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "show the decision making and approval processes <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "know who the stakeholders are <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "show that the team’s user research activities were developed and overseen by an experienced user researcher and that all team members participated in research <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "demonstrate an understanding of where gaps may emerge in the team structure and how to fill them <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "demonstrate how you plan to share information, collaborate and troubleshoot issues within the team as well as with key people external to the team <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "explain your plan to transfer knowledge and skills from any external people who work with the team. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       },
@@ -8544,7 +7806,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-3\">2. Establish the right team (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-2\">2. Establish the right team (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -9057,26 +8319,6 @@
                         "content": "<strong>[TODO: Add/revise introductory text]</strong>"
                       }
                     ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>[TODO: Determine what is meant by “link to the work of other” and then add related content]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>Very similar to guideline 5.5 (guideline 5.5 is more specific about open source)</strong>"
-                      }
-                    ]
                   }
                 ]
               },
@@ -9116,46 +8358,6 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Ensure that we maintain contractual rights to all custom software developed by third parties in a manner that is publishable and reusable at no cost <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "When appropriate, create an API for third parties and internal users to interact with the service directly <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Make all new source code open and reusable and explain how it can be reused"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Show your code in an open Internet source code repository and enable contributions and comments on the code"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
                             "content": "Link to the work of others"
                           }
                         ]
@@ -9163,127 +8365,9 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Determine the licences you’re using to release code during beta <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Confirm that you own the intellectual property <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Determine how a team in another department can reuse your code <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Determine how you’re using code from other teams or services <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show that you have considered a plan to release it under a licence that is suitable for your service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "share your code in a repository <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
                             "content": "Document how you accept contributions and comments on the code <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
@@ -9291,15 +8375,9 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
                             "content": "Document how you’re handling updates and bug fixes to the code <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
@@ -9307,47 +8385,9 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Determine the licences you’re using to release code <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Confirm that you own the intellectual property <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
                             "content": "Document the code you’ve not made open and why <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
@@ -9355,69 +8395,14 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
                             "content": "Determine how a team in another department can reuse your code <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show how you are making new source code open and reusable, for example, storing in repositories, releasing code under licence, using APIs <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show how you have provided a plan or guidance for contributors <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show how you’re handling updates and bug fixes to the code. <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -9434,82 +8419,6 @@
                       {
                         "content_type": "inline",
                         "content": "<strong>[TODO: Add/revise implementation guide items]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable\">Making source code open and reusable (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.gov.uk/service-manual/making-software/open-source.html\">Using open source software (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction\">Choosing technology: an introduction (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/code-sharing/\">Code sharing (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://choosealicense.com/\">Choose an open source licence (choosealicense.com)</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses\">Comparison of free and open-source software licences (Wikipedia)</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/blog/making-source-code-open/\">Making source code open (DTA Blog (AU))</a>"
-                          }
-                        ]
                       }
                     ]
                   }
@@ -9580,16 +8489,6 @@
                           {
                             "content_type": "inline",
                             "content": "<a href=\"https://playbook.cio.gov/#play13\">13. Default to open (Digital Services Playbook (US))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/8-make-source-code-open/\">8. Make source code open (Digital Service Standard (AU))</a>"
                           }
                         ]
                       }
@@ -9711,7 +8610,7 @@
                               "dpgn-automated-decision-design-build",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that some employees are sufficiently trained  in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required."
+                            "content": "Ensure that some employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required."
                           }
                         ]
                       }
@@ -10145,22 +9044,6 @@
                             "tags": [
                               "dpgn-stage-alpha"
                             ],
-                            "content": "understand the development tool chain required for Beta <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
                             "content": "understand the existing IT systems, data stores and in-flight processes for the service <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
@@ -10337,39 +9220,7 @@
                             "tags": [
                               "dpgn-stage-beta"
                             ],
-                            "content": "have the ability to conduct technical health checks of the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
                             "content": "arrange for appropriate ongoing technical support and service level agreements for underlying or dependent services <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "outsource decision-making about technology only where appropriate. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       },
@@ -10466,54 +9317,6 @@
                               "dpgn-stage-live"
                             ],
                             "content": "Document any decisions you’ve outsourced and why you chose to do this <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "procedures for ongoing operations, including iterations, maintenance, monitoring, patching and upgrading system components <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "funding to cover the long-term life of the product, including activities such as security accreditation <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "evidence or artefacts that demonstrate you achieved the objective of the criteria for the Live stage. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       }
@@ -13607,57 +12410,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Be sure that you can clearly explain your service, what it does, and how you plan to move users to the digital service"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Design the digital service in a way that gives it clear advantages over other channels"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "examine other channels to understand the steps users take to complete their goal and how your service fits <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "develop a journey map of all the touch points in a user’s experience of the service, from awareness of the service to completion and receipt of product (if applicable) <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Use familiar language and simple design consistently throughout the service, including online and offline touch points, by ensuring consistent design across related digital services"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "ensure prototypes incorporate the end-to-end user experience <strong>(Digital Service Standard (Ontario))</strong>"
+                            "content": "ensure prototypes incorporate the end-to-end user experience <strong>(4. Design the service from start to finish, Digital Service Standard (Ontario))</strong>"
                           }
                         ]
                       },
@@ -13803,24 +12556,6 @@
                               "dpgn-stage-beta",
                               "dpgn-stage-live"
                             ],
-                            "content": "show the steps required to achieve an end-to-end service delivery outcome for the user <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
                             "content": "show the testing environment; using test plans, real world scenarios and user stories <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
@@ -13839,79 +12574,7 @@
                               "dpgn-stage-beta",
                               "dpgn-stage-live"
                             ],
-                            "content": "show the deployment environment <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show ability to create new environments quickly and easily <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
                             "content": "show that your service can perform under expected loads with suitable scale contingencies <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show you understand the systems you need and the testing environments for non-digital parts of the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show that users can seamlessly move between channels as required <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       },
@@ -14339,7 +13002,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-10\">9. Use open standards and common platforms (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-9\">9. Use open standards and common platforms (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -14423,7 +13086,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-5\">4. Design the service from start to finish (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-4\">4. Design the service from start to finish (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -14433,7 +13096,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-7\">6. Test the end-to-end service (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-6\">6. Test the end-to-end service (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -17705,7 +16368,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-9\">8. Be agile and user-centred (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-8\">8. Be agile and user-centred (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -19587,11 +18250,31 @@
                         "content": "<strong>[TODO: Add/revise introductory text]</strong>"
                       }
                     ]
+                  }
+                ]
+              },
+              "checklist": {
+                "title": "Checklist",
+                "tags": [
+                  "dpgn-section-checklist"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Add/revise checklist items]</strong>"
+                      }
+                    ]
                   },
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "tags": null,
+                    "tags": [
+                      "dpgn-automated-decision"
+                    ],
                     "content": [
                       {
                         "content_type": "block",
@@ -19804,46 +18487,6 @@
                             "content": "Affected individuals must be provided with information with regards to the options that are available to them for recourse to challenge the automated decision."
                           }
                         ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 7.3.7, Standard on Automated Decision-Making (draft) (GC)",
-                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                        },
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-automated-decision-analysis-approach",
-                          "dpgn-automated-decision"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-automated-decision-analysis-approach",
-                              "dpgn-automated-decision"
-                            ],
-                            "content": "Conduct risk assessments throughout the development of the system and ensure appropriate safeguards to be applied, as per the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578\">Policy on Government Security</a>."
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              "checklist": {
-                "title": "Checklist",
-                "tags": [
-                  "dpgn-section-checklist"
-                ],
-                "content": [
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise checklist items]</strong>"
                       }
                     ]
                   }
@@ -20685,7 +19328,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-11\">10. Embed privacy and security by design (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-10\">10. Embed privacy and security by design (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -20994,7 +19637,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-11\">10. Embed privacy and security by design (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-10\">10. Embed privacy and security by design (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },
@@ -22080,7 +20723,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "<strong>Introduction examples:</strong>"
+                        "content": "Continuously capture and monitor performance data to inform ongoing service improvements."
                       }
                     ]
                   },
@@ -22090,17 +20733,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "<strong>Digital Service Standard (UK):</strong> Use tools for analysis that collect performance data. Use this data to analyse the success of the service and to translate this into features and tasks for the next phase of development."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Collecting performance data means you can continuously improve your service by:"
+                        "content": "Measuring performance means continuously improving a service by:"
                       }
                     ]
                   },
@@ -22124,7 +20757,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "using the data to support improvements you make"
+                            "content": "using data to support changes"
                           }
                         ]
                       }
@@ -22136,73 +20769,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "<strong>Digital Service Standard (Ontario):</strong> Continuously capture and monitor performance data to inform ongoing service improvements."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "section",
-                    "source_element": "section",
-                    "source_attributes": {
-                      "id": "why-it-matters"
-                    },
-                    "title": "Why it matters",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "p",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Measuring performance means continuously improving a service by:"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "ul",
-                        "content": [
-                          {
-                            "content_type": "block",
-                            "source_element": "li",
-                            "content": [
-                              {
-                                "content_type": "inline",
-                                "content": "learning its strengths and weaknesses"
-                              }
-                            ]
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "li",
-                            "content": [
-                              {
-                                "content_type": "inline",
-                                "content": "using data to support changes"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "p",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<strong>Digital Service Standard (AU):</strong> Measure performance against KPIs set out in the guides. Report on public dashboard."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "p",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Every service must aim for continuous improvement. Metrics are an important starting point for discussions about a service’s strengths and weaknesses. By identifying and capturing the right metrics - with the right tools - you can make sure all your decisions to improve the service are supported by data."
-                          }
-                        ]
+                        "content": "<strong>(Digital Service Standard (Ontario))</strong>"
                       }
                     ]
                   }
@@ -22404,26 +20971,6 @@
                               "dpgn-stage-live"
                             ],
                             "content": "map user journeys through the service and track them to identify completions and areas of poor performance <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "measure assisted digital support <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
                       },
@@ -22761,22 +21308,6 @@
                             "tags": [
                               "dpgn-stage-beta"
                             ],
-                            "content": "discuss a start page and feedback page with GOV.UK <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
                             "content": "which metrics and measurements you will use to monitor your KPIs <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
@@ -22809,39 +21340,7 @@
                             "tags": [
                               "dpgn-stage-beta"
                             ],
-                            "content": "that the team is ready to report their performance on the Performance Dashboard <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
                             "content": "which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "what you have learned from qualitative and quantitative data; for example key evidence. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       },
@@ -22970,22 +21469,6 @@
                               "dpgn-stage-live"
                             ],
                             "content": "demonstrate how service performance compares to other similar government and private sector services <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "share your review findings with leadership <strong>(Digital Service Standard (Ontario))</strong>"
                           }
                         ]
                       },
@@ -23250,7 +21733,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-14\">13. Measure performance (Digital Service Standard (Ontario))</a>"
+                            "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-13\">13. Measure performance (Digital Service Standard (Ontario))</a>"
                           }
                         ]
                       },

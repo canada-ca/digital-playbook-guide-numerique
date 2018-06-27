@@ -177,27 +177,14 @@ At every stage of a project, we should measure how well our service is working f
 
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
-
-**Digital Service Standard (UK):** Use tools for analysis that collect performance data. Use this data to analyse the success of the service and to translate this into features and tasks for the next phase of development.
-
-Collecting performance data means you can continuously improve your service by:
-
-- learning its strengths and weaknesses
-- using the data to support improvements you make
-
-**Digital Service Standard (Ontario):** Continuously capture and monitor performance data to inform ongoing service improvements.
-
-### Why it matters
+Continuously capture and monitor performance data to inform ongoing service improvements.
 
 Measuring performance means continuously improving a service by:
 
 - learning its strengths and weaknesses
 - using data to support changes
 
-**Digital Service Standard (AU):** Measure performance against KPIs set out in the guides. Report on public dashboard.
-
-Every service must aim for continuous improvement. Metrics are an important starting point for discussions about a service’s strengths and weaknesses. By identifying and capturing the right metrics - with the right tools - you can make sure all your decisions to improve the service are supported by data.
+**(Digital Service Standard (Ontario))**
 
 </div>
 
@@ -233,7 +220,6 @@ Every service must aim for continuous improvement. Metrics are an important star
 - choose suitable data analysis tools **(Digital Service Standard (UK))**
 - address information security and privacy issues appropriately **(Digital Service Standard (UK))**
 - map user journeys through the service and track them to identify completions and areas of poor performance **(Digital Service Standard (UK))**
-- measure assisted digital support **(Digital Service Standard (UK))**
 - document the next user story related to performance analysis **(Digital Service Standard (UK))**
 - All services must, at a minimum, measure 4 KPIs. **(Digital Service Standard (AU))**
   - User satisfaction - to help continually improve the user experience of your service
@@ -260,16 +246,13 @@ Every service must aim for continuous improvement. Metrics are an important star
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
-**Beta stage:**
+**Stage bêta :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- discuss a start page and feedback page with GOV.UK **(Digital Service Standard (UK))**
 - which metrics and measurements you will use to monitor your KPIs **(Digital Service Standard (AU))**
 - the baseline measures and the benchmarks for success **(Digital Service Standard (AU))**
-- that the team is ready to report their performance on the Performance Dashboard **(Digital Service Standard (AU))**
 - which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) **(Digital Service Standard (AU))**
-- what you have learned from qualitative and quantitative data; for example key evidence. **(Digital Service Standard (AU))**
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
@@ -285,7 +268,6 @@ Every service must aim for continuous improvement. Metrics are an important star
 - {: .dpgn-stage-live} regularly review the technology used to provide the service and the processes that support the service **(Digital Service Standard (Ontario))**
 - base your service review frequency on the volume of users ( e.g. 10,000 or less unique users per year = 2 year review cycle; 10,000-100,000 = annual; 100,000-1 million = every 6 months) **(Digital Service Standard (Ontario))**
 - demonstrate how service performance compares to other similar government and private sector services **(Digital Service Standard (Ontario))**
-- share your review findings with leadership **(Digital Service Standard (Ontario))**
 - Your data should show: **(Digital Service Standard (AU))**
   - user satisfaction has increased
   - digital take-up is increasing in line with service plans
@@ -328,7 +310,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Similar resources
 
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
-- [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-14)
+- [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
 
 **Build It Right Principles (GC):**

@@ -149,15 +149,13 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-Accessibility is not only required by law, it's also good design. Creating fully accessible digital products and services improves the experience for everybody. Ensure the service is accessible to all users regardless of their individual abilities, device or environment.
+L'accessibilité est non seulement obligatoire, mais elle constitue également un bon modèle de conception. La création de produits et de services numériques entièrement accessibles améliore l’expérience de tous les utilisateurs. Assurez-vous que le service est accessible à tous les utilisateurs, quels que soient leurs capacités, leur appareil, leur environnement ou leur qualité de l’accès.
 
-Ensure the service is accessible to all users regardless of their ability and environment. This includes users with disabilities or those who need help accessing digital tools. Assisted digital support means providing support to those who can't use digital services on their own, and may include options to help people navigate an online service, such as offering assistance by phone and in person.
+Tous les utilisateurs doivent pouvoir atteindre leur objectif dès leur première utilisation du service, aussi rapidement et facilement que possible.
 
-All users should be able to complete the service the first time they try, as quickly and easily as possible.
+Ceci est également valable pour les utilisateurs atteints d’une déficience ou ceux ayant besoin d'aide pour accéder aux outils numériques. L'aide à l'utilisation des services numériques consiste à fournir une assistance aux personnes qui ne peuvent pas utiliser les services numériques par elles-mêmes. Elle comprend, entre autres, des options pour les aider à naviguer dans un service en ligne, par téléphone ou en personne.
 
-You need to make sure everyone who needs your service can use it. This includes people with disabilities and older people, and people who can’t use, or struggle with, digital services. If users find it difficult to complete the task the first time, they may avoid using the service or contact your organization to get help. **(Digital Service Standard (Ontario))**
-
-Your service must be accessible to users regardless of their digital confidence and access to a digital environment. This includes users in remote areas and users’ different devices. **(Digital Service Standard (AU))**
+Si les utilisateurs ont des difficultés à atteindre leur objectif du premier coup, ils pourraient ensuite éviter d'utiliser le service ou contacter votre organisation pour obtenir de l'aide. **(Normes des services numériques (Ontario))**
 
 </div>
 
@@ -168,18 +166,13 @@ Your service must be accessible to users regardless of their digital confidence 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - {: .dpgn-accessibility} meet the [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
-- {: .dpgn-accessibility-usability} [Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/en/1-design-with-users.html)
-- formalize an approach to integrating automated testing tools into the process of developing and maintaining government ICT **(Digital Service Standard (Ontario))**
-- train development staff on use of keyboard only navigation and ensure that new features are regularly tested **(Digital Service Standard (Ontario))**
-- make it easy for People with Disabilities to reach out to the accessibility team to address the problem **(Digital Service Standard (Ontario))**
-- ensure when technology platforms are considered that there is transparency about known WCAG 2.0 AA issues and efforts to implement ATAG 2.0 - Part A & B **(Digital Service Standard (Ontario))**
-- contribute to the development of best practices and publish approaches the province has used to implement the AODA **(Digital Service Standard (Ontario))**
-- {: .dpgn-accessibility-usability} conduct research and testing to ensure the service is accessible to people of all abilities no matter how they access the service **(Digital Service Standard (Ontario))**
-- {: .dpgn-accessibility-usability} use research, testing and analytics to improve the service, including the assisted digital support model **(Digital Service Standard (Ontario))**
-- explain all end-to-end user experiences, show they work and how they were tested **(Digital Service Standard (Ontario))**
-- make sure the assisted digital support will be sustainably funded and free to use **(Digital Service Standard (Ontario))**
-- provide an accessible method for all users to provide feedback on the service or request additional support at any time **(Digital Service Standard (Ontario))**
-- make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
+- formaliser une approche intégrant des outils de test automatisés au processus de développement et de maintien des technologies de l'information et de la communication (TIC) du gouvernement **(Normes des services numériques (Ontario))**
+- former le personnel développeur sur la navigation par clavier seulement et veiller à la mise à l’essai régulière des nouvelles fonctions **(Normes des services numériques (Ontario))**
+- faire en sorte qu’il soit facile pour les personnes handicapées de joindre l’équipe responsable de l’accessibilité en cas de problème **(Normes des services numériques (Ontario))**
+- s’assurer, lorsque des plateformes technologiques sont prises en considération, qu’il existe une transparence au sujet des problèmes connus liés aux Règles pour l'accessibilité des contenus Web (WCAG 2.0) AA et que l’on s’efforce de mettre en oeuvre les Règles d'accessibilité pour les outils d'édition (ATAG) 2.0 - parties A et B **(Normes des services numériques (Ontario))**
+- {: .dpgn-accessibility-usability} effectuez des recherches et des tests pour vous assurer que le service est accessible à tous les utilisateurs, quelles que soient leurs capacités et la manière dont ils ont accédé au service **(Normes des services numériques (Ontario))**
+- fournir une méthode accessible permettant à tous les utilisateurs de faire des commentaires sur le service ou de demander du soutien supplémentaire à tout moment **(Normes des services numériques (Ontario))**
+- démontrer de quelle manière votre personnel connaîtra les obstacles à l’accessibilité et sera formé pour aider les utilisateurs handicapés à faire ce qu’ils veulent faire et à accéder à l’information **(Normes des services numériques (Ontario))**
 
 **Build It Right Principles (GC):**
 {: .dpgn-data-ignore}
@@ -200,7 +193,6 @@ Your service must be accessible to users regardless of their digital confidence 
 - show the plan to meet accessibility requirements in the design of the product, for example how it will meet WCAG 2.0 AA **(Digital Service Standard (AU))**
 - show what digital assistance might be needed to support users; for example web chat, telephone assistance, face-to-face, clear instructions, checklists, and so on. **(Digital Service Standard (AU))**
 - show your prototypes can accommodate users from different backgrounds and users with disability **(Digital Service Standard (AU))**
-- show any accessibility issues and barriers that might need addressing in the Beta stage **(Digital Service Standard (AU))**
 - {: .dpgn-accessibility-usability} show you have access to facilities to perform testing on various devices or platforms, for example a plan for testing. **(Digital Service Standard (AU))**
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
@@ -211,19 +203,7 @@ Your service must be accessible to users regardless of their digital confidence 
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-accessibility-usability} show iteration in the design and content of your service to meet accessibility requirements and improve usability for people with disability **(Digital Service Standard (AU))**
 - show non-digital access and support for people unable to use, or struggling with, the digital service
-- show end-to-end user journeys, including assisted digital journeys, and demonstrate that they work and how you tested them **(Digital Service Standard (AU))**
-- {: .dpgn-accessibility-usability} show how you’ve included cultural and linguistically diverse communities in your design **(Digital Service Standard (AU))**
-- show a plan to include translation for non-English speaking audiences, as appropriate **(Digital Service Standard (AU))**
-- show you have testing environments, systems and approaches for non-digital parts of the service (including assisted digital routes); for example, a testing plan **(Digital Service Standard (AU))**
-- show how the service will perform under expected loads (including assisted digital routes) **(Digital Service Standard (AU))**
-- show strong understanding of the environments your users may access the service in, for example which browsers, desktop and mobile devices they will use, and which remote locations; you might use user stories and a journey map to show this **(Digital Service Standard (AU))**
-- show definition of supported browsers and devices, and how they are accommodated **(Digital Service Standard (AU))**
 - show any barriers to the digital service and its content on mobile devices, and plans to address them **(Digital Service Standard (AU))**
-- show the design requirements for users using a mobile device and other identified environments, for example design specifications **(Digital Service Standard (AU))**
-- show how you have tested for the users’ ability to complete all digital transactions on supported devices and platforms **(Digital Service Standard (AU))**
-- show detail of users’ interactions with the product during testing **(Digital Service Standard (AU))**
-- show a demonstration your service in a live-like environment **(Digital Service Standard (AU))**
-- show the majority of users can access the service in their environment. **(Digital Service Standard (AU))**
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
@@ -285,7 +265,7 @@ Your service must be accessible to users regardless of their digital confidence 
 
 ### Ressources similaires
 
-- [7. Rendre le service accessible (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-8)
+- [7. Rendre le service accessible (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-7)
 - [9. Make it accessible (Digital Service Standard (AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
 
 **Build It Right Principles (GC):**

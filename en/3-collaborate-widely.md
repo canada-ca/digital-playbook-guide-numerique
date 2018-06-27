@@ -38,9 +38,9 @@ altLangPage: 3-collaborer-largement
 
 **[TODO: Add/revise introductory text]**
 
-Put in place a sustainable multidisciplinary team that can design, build and continuously improve the digital service, led by a skilled product manager who is empowered to make decisions.
+It’s important to have a strong multidisciplinary team in place, led by one person who is accountable and has the authority to make decisions based on the outcomes of research, testing and prototypes.
 
-The team's skills and focus need to evolve as the service is designed and developed. The team also needs to adapt its structure based on the needs of the service and the phase of work.
+The team’s skills and focus need to evolve as the service is designed and developed. The team also needs to adapt its structure based on the needs of the service and the phase of work.
 
 To be successful, build a team with:
 
@@ -50,16 +50,6 @@ To be successful, build a team with:
 
 **(Digital Service Standard (Ontario))**
 
-Establish a sustainable multidisciplinary team to design, build, operate and iterate the service, led by an experienced product manager with decision-making responsibility.
-
-Good government services are built quickly and iteratively, based on user needs. Your digital delivery team must be set up in the right way to do this. They need:
-
-- a broad mix of skills and roles from the start
-- quick decision-making processes and the ability to change and adapt as the service evolves
-- to be adequately resourced and empowered to deliver the product or service.
-
-**(Digital Service Standard (AU))**
-
 </div>
 
 <section class="dpgn-section-checklist">
@@ -68,7 +58,6 @@ Good government services are built quickly and iteratively, based on user needs.
 
 **[TODO: Add/revise checklist items]**
 
-- Employ people in the following roles on the delivery team: service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, front-end developer **(Digital Service Standard (UK))**
 - Have a manager with the ability to make day-to-day decisions to improve the service **(Digital Service Standard (Ontario))**
 - Make sure you have at least one user researcher working at least 3 days each week **(Digital Service Standard (UK))**
 - Make sure there is separation of key roles in the team, meaning that nobody is performing multiple roles **(Digital Service Standard (UK))**
@@ -83,26 +72,6 @@ Good government services are built quickly and iteratively, based on user needs.
 - Make sure you'll have a team that can keep improving the service after it goes live **(Digital Service Standard (UK))**
 - Make sure the team fully understands the service after it's gone live **(Digital Service Standard (UK))**
 - Involve the maintenance team for the service early on in the project **(Digital Service Standard (Ontario))**
-- Your digital delivery team should have, or easily get, the following roles, as relevant to your service: **(Digital Service Standard (AU))**
-  - service manager
-  - product manager
-  - delivery manager
-  - technical architect
-  - service and/or interaction designer(s)
-  - content designer
-  - user researcher(s)
-  - developer
-  - web operations engineer
-  - performance analyst
-- show the team principles, vision, rituals and agile practices, for example through team charter **(Digital Service Standard (AU))**
-- demonstrate you have a product manager with the knowledge and power to make day-to-day decisions to improve the service **(Digital Service Standard (AU))**
-- show how team members stay with the service through the stages and how new members will establish empathy with the users **(Digital Service Standard (AU))**
-- show the decision making and approval processes **(Digital Service Standard (AU))**
-- know who the stakeholders are **(Digital Service Standard (AU))**
-- show that the team’s user research activities were developed and overseen by an experienced user researcher and that all team members participated in research **(Digital Service Standard (AU))**
-- demonstrate an understanding of where gaps may emerge in the team structure and how to fill them **(Digital Service Standard (AU))**
-- demonstrate how you plan to share information, collaborate and troubleshoot issues within the team as well as with key people external to the team **(Digital Service Standard (AU))**
-- explain your plan to transfer knowledge and skills from any external people who work with the team. **(Digital Service Standard (AU))**
 
 **Build It Right Principles (GC):**
 {: .dpgn-data-ignore}
@@ -167,7 +136,7 @@ Good government services are built quickly and iteratively, based on user needs.
 ### Similar resources
 
 - [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
-- [2. Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-3)
+- [2. Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
 - [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
 - [2. Have a multidisciplinary team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/2-multidisciplinary-team/)
 
@@ -284,10 +253,6 @@ Good government services are built quickly and iteratively, based on user needs.
 
 **[TODO: Add/revise introductory text]**
 
-**[TODO: Determine what is meant by "link to the work of other" and then add related content]**
-
-**Very similar to guideline 5.5 (guideline 5.5 is more specific about open source)**
-
 </div>
 
 <section class="dpgn-section-checklist">
@@ -297,48 +262,11 @@ Good government services are built quickly and iteratively, based on user needs.
 **[TODO: Add/revise checklist items]**
 
 - Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
-- Ensure that we maintain contractual rights to all custom software developed by third parties in a manner that is publishable and reusable at no cost **(Digital Services Playbook (US))**
-- When appropriate, create an API for third parties and internal users to interact with the service directly **(Digital Services Playbook (US))**
-- Make all new source code open and reusable and explain how it can be reused
-- Show your code in an open Internet source code repository and enable contributions and comments on the code
 - Link to the work of others
-
-**Alpha stage:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- Determine the licences you're using to release code during beta **(Digital Service Standard (UK))**
-- Confirm that you own the intellectual property **(Digital Service Standard (UK))**
-- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
-- Determine how you're using code from other teams or services **(Digital Service Standard (UK))**
-- show that you have considered a plan to release it under a licence that is suitable for your service **(Digital Service Standard (AU))**
-- consider publishing the source code on a platform with wide adoption in the open source community, such as GitHub. **(Digital Service Standard (AU))**
-{: .dpgn-stage-alpha}
-<!-- markdownlint-enable MD032 -->
-
-**Beta stage:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- share your code in a repository **(Digital Service Standard (AU))**
-{: .dpgn-stage-beta}
-<!-- markdownlint-enable MD032 -->
-
-**Live stage:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
 - Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
 - Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
-- Determine the licences you're using to release code **(Digital Service Standard (UK))**
-- Confirm that you own the intellectual property **(Digital Service Standard (UK))**
 - Document the code you've not made open and why **(Digital Service Standard (UK))**
 - Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
-- show how you are making new source code open and reusable, for example, storing in repositories, releasing code under licence, using APIs **(Digital Service Standard (AU))**
-- show how you have provided a plan or guidance for contributors **(Digital Service Standard (AU))**
-- show how you’re handling updates and bug fixes to the code. **(Digital Service Standard (AU))**
-{: .dpgn-stage-live}
-<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -347,14 +275,6 @@ Good government services are built quickly and iteratively, based on user needs.
 ### Implementation guides
 
 **[TODO: Add/revise implementation guide items]**
-
-- [Making source code open and reusable (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
-- [Using open source software (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/open-source.html)
-- [Choosing technology: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
-- [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
-- [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
-- [Comparison of free and open-source software licences (Wikipedia)](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
-- [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
 
 </section>
 
@@ -374,7 +294,6 @@ Good government services are built quickly and iteratively, based on user needs.
 - [Open Culture (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/6_Open_Culture.md)
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
-- [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 
 </section>
 </section>
