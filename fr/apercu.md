@@ -72,7 +72,7 @@ L'approche du développement et de la diffusion du guide numérique sera similai
 
 Les réactions de la communauté et les contributions au guide numérique sont encouragées, les réviseurs désignés pour chaque partie du guide numérique étant chargés d'examiner, de répondre, de demander des changements (au besoin) et d'approuver ou de refuser les commentaires et les contributions. Les examinateurs principaux sont des personnes provenant des secteurs de politiques connexes et des domaines d'expertise, et sont également chargés de contribuer au contenu et de s'engager auprès de leurs communautés respectives.
 
-Pour s'assurer que le guide numérique soit aussi facile à utiliser que possible, les contributeurs / réviseurs travailleront avec leurs communautés respectives pour déterminer comment rendre le guide numérique plus applicable à leur travail quotidien, y compris pour quelles tâches / scénarios personnalisés les [vues du guide numérique]({{ site.baseurl }}/docs/{{ page.lang }}/vues{{ RenderedFileExtension }}) doivent être fournies.
+Pour s'assurer que le guide numérique soit aussi facile à utiliser que possible, les contributeurs / réviseurs travailleront avec leurs communautés respectives pour déterminer comment rendre le guide numérique plus applicable à leur travail quotidien, y compris pour quelles tâches / scénarios personnalisés les [vues du guide numérique]({{ site.baseurl }}/docs/{{ page.lang }}/vues{{ site.RenderedFileExtension }}) doivent être fournies.
 
 </section>
 </section>
