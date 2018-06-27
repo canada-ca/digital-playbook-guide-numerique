@@ -30,6 +30,9 @@
           "dpgn-overview-start"
         ],
         "title": "Structure du guide numérique (ébauche)",
+        "source_attributes": {
+          "id": "structure-du-guide-numrique-bauche"
+        },
         "content": [
           {
             "content_type": "block",
@@ -3287,6 +3290,9 @@
               "content_type": "section",
               "source_element": "section",
               "title": "Curb Cut Effect",
+              "source_attributes": {
+                "id": "curb-cut-effect"
+              },
               "content": [
                 {
                   "content_type": "block",
@@ -3314,6 +3320,9 @@
               "content_type": "section",
               "source_element": "section",
               "title": "Situational Limitations",
+              "source_attributes": {
+                "id": "situational-limitations"
+              },
               "content": [
                 {
                   "content_type": "block",
@@ -3407,6 +3416,9 @@
               "content_type": "section",
               "source_element": "section",
               "title": "Added Benefits",
+              "source_attributes": {
+                "id": "added-benefits"
+              },
               "content": [
                 {
                   "content_type": "block",

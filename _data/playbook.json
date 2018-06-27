@@ -30,6 +30,9 @@
           "dpgn-overview-start"
         ],
         "title": "Structure of the Digital Playbook (draft)",
+        "source_attributes": {
+          "id": "structure-of-the-digital-playbook-draft"
+        },
         "content": [
           {
             "content_type": "block",
@@ -177,6 +180,9 @@
           "dpgn-overview-end"
         ],
         "title": "About the Digital Playbook",
+        "source_attributes": {
+          "id": "about-the-digital-playbook"
+        },
         "content": [
           {
             "content_type": "section",
@@ -185,6 +191,9 @@
               "dpgn-overview-end"
             ],
             "title": "Objective",
+            "source_attributes": {
+              "id": "objective"
+            },
             "content": [
               {
                 "content_type": "block",
@@ -259,6 +268,9 @@
               "dpgn-overview-end"
             ],
             "title": "Implementation approach",
+            "source_attributes": {
+              "id": "implementation-approach"
+            },
             "content": [
               {
                 "content_type": "block",
@@ -3445,6 +3457,9 @@
               "content_type": "section",
               "source_element": "section",
               "title": "Curb Cut Effect",
+              "source_attributes": {
+                "id": "curb-cut-effect"
+              },
               "content": [
                 {
                   "content_type": "block",
@@ -3472,6 +3487,9 @@
               "content_type": "section",
               "source_element": "section",
               "title": "Situational Limitations",
+              "source_attributes": {
+                "id": "situational-limitations"
+              },
               "content": [
                 {
                   "content_type": "block",
@@ -3565,6 +3583,9 @@
               "content_type": "section",
               "source_element": "section",
               "title": "Added Benefits",
+              "source_attributes": {
+                "id": "added-benefits"
+              },
               "content": [
                 {
                   "content_type": "block",
