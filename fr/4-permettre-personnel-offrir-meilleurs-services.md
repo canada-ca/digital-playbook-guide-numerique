@@ -51,7 +51,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)"} Ensure that some employees are sufficiently trained  in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required.
+- {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)"} Ensure that some employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required.
 {: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
@@ -129,7 +129,6 @@ The technology you choose to build your service must help you respond quickly an
 - identify the appropriate languages, frameworks, and other technical choices that are required to build the product **(Digital Service Standard (AU))**
 - understand who will own the intellectual property **(Digital Service Standard (AU))**
 - understand any data requirements of the service **(Digital Service Standard (AU))**
-- understand the development tool chain required for Beta **(Digital Service Standard (AU))**
 - understand the existing IT systems, data stores and in-flight processes for the service **(Digital Service Standard (AU))**
 - understand any potential external dependencies or integrations that would be required to build the product **(Digital Service Standard (AU))**
 - know the initial and ongoing costs for proposed tools and systems. **(Digital Service Standard (AU))**
@@ -148,9 +147,7 @@ The technology you choose to build your service must help you respond quickly an
 - manage any constraints that the chosen development tools and software have placed on the service **(Digital Service Standard (AU))**
 - have a strong rationale for the technology choices you’ve made, including the languages, frameworks and development tools **(Digital Service Standard (AU))**
 - procure the appropriate tools, systems and contractual arrangements and ensure you are getting value for money **(Digital Service Standard (AU))**
-- have the ability to conduct technical health checks of the service **(Digital Service Standard (AU))**
 - arrange for appropriate ongoing technical support and service level agreements for underlying or dependent services **(Digital Service Standard (AU))**
-- outsource decision-making about technology only where appropriate. **(Digital Service Standard (AU))**
 {: .dpgn-stage-beta}
 <!-- markdownlint-disable MD032 -->
 
@@ -164,9 +161,6 @@ The technology you choose to build your service must help you respond quickly an
 - Document how you'll check if the service is healthy **(Digital Service Standard (UK))**
 - Document the support arrangements that you've set up for live **(Digital Service Standard (UK))**
 - Document any decisions you've outsourced and why you chose to do this **(Digital Service Standard (UK))**
-- procedures for ongoing operations, including iterations, maintenance, monitoring, patching and upgrading system components **(Digital Service Standard (AU))**
-- funding to cover the long-term life of the product, including activities such as security accreditation **(Digital Service Standard (AU))**
-- evidence or artefacts that demonstrate you achieved the objective of the criteria for the Live stage. **(Digital Service Standard (AU))**
 {: .dpgn-stage-live}
 <!-- markdownlint-disable MD032 -->
 

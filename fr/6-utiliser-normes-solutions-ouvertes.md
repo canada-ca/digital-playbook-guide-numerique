@@ -104,16 +104,11 @@ There are many potential benefits from the greater use of digital services, incl
 {: .dpgn-data-ignore}
 
 - Concevoir, créer et tester des services numériques de bout en bout
-- Be sure that you can clearly explain your service, what it does, and how you plan to move users to the digital service
-- Design the digital service in a way that gives it clear advantages over other channels
-- examine other channels to understand the steps users take to complete their goal and how your service fits **(Digital Service Standard (Ontario))**
-- develop a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(Digital Service Standard (Ontario))**
-- Use familiar language and simple design consistently throughout the service, including online and offline touch points, by ensuring consistent design across related digital services
-- ensure prototypes incorporate the end-to-end user experience **(Digital Service Standard (Ontario))**
+- assurez-vous que les prototypes intègrent l'expérience utilisateur de bout en bout **(4. Conception du service du début à la fin, Normes des services numériques (Ontario))**
 - design and test your service to work with the devices and browsers your users use - find out the browsers you must test with **(Digital Service Standard (UK))**
-- test the service in an environment that is as similar to the live environment as possible **(Digital Service Standard (Ontario))**
-- have a process for testing changes made to the service **(Digital Service Standard (Ontario))**
-- have a process for monitoring and testing the service frequently even when changes are not being made **(Digital Service Standard (Ontario))**
+- testez le service dans un environnement aussi semblable que possible à l'environnement de déploiement **(Normes des services numériques (Ontario))**
+- adoptez un processus de test des modifications apportées au service **(Normes des services numériques (Ontario))**
+- mettez en place un processus périodique de contrôle et de test du service, même quand il n'a pas subi de modifications **(Normes des services numériques (Ontario))**
 - Create automated tests that verify all user-facing functionality **(Digital Services Playbook (US))**
 - Create unit and integration tests to verify modules and components **(Digital Services Playbook (US))**
 - Run tests automatically as part of the build process **(Digital Services Playbook (US))**
@@ -142,13 +137,8 @@ There are many potential benefits from the greater use of digital services, incl
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- show the steps required to achieve an end-to-end service delivery outcome for the user **(Digital Service Standard (AU))**
 - show the testing environment; using test plans, real world scenarios and user stories **(Digital Service Standard (AU))**
-- show the deployment environment **(Digital Service Standard (AU))**
-- show ability to create new environments quickly and easily **(Digital Service Standard (AU))**
 - show that your service can perform under expected loads with suitable scale contingencies **(Digital Service Standard (AU))**
-- show you understand the systems you need and the testing environments for non-digital parts of the service **(Digital Service Standard (AU))**
-- show that users can seamlessly move between channels as required **(Digital Service Standard (AU))**
 - show how you explored integrating automated testing into the deployment process **(Digital Service Standard (AU))**
 - show you have a business continuity plan and a roll-back option. **(Digital Service Standard (AU))**
 {: .dpgn-stage-beta .dpgn-stage-live}
@@ -208,7 +198,7 @@ There are many potential benefits from the greater use of digital services, incl
 - [3. Be open and use open source (Technology Code of Practice (UK))](https://www.gov.uk/guidance/be-open-and-use-open-source)
 - [4. Make use of open standards (Technology Code of Practice (UK))](https://www.gov.uk/guidance/make-use-of-open-standards)
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
-- [9. Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-10)
+- [9. Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-9)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 
 **Build It Right Principles (GC):**

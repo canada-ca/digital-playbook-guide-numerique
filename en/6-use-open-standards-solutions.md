@@ -104,12 +104,7 @@ There are many potential benefits from the greater use of digital services, incl
 {: .dpgn-data-ignore}
 
 - Design, build and test end-to-end digital services
-- Be sure that you can clearly explain your service, what it does, and how you plan to move users to the digital service
-- Design the digital service in a way that gives it clear advantages over other channels
-- examine other channels to understand the steps users take to complete their goal and how your service fits **(Digital Service Standard (Ontario))**
-- develop a journey map of all the touch points in a user's experience of the service, from awareness of the service to completion and receipt of product (if applicable) **(Digital Service Standard (Ontario))**
-- Use familiar language and simple design consistently throughout the service, including online and offline touch points, by ensuring consistent design across related digital services
-- ensure prototypes incorporate the end-to-end user experience **(Digital Service Standard (Ontario))**
+- ensure prototypes incorporate the end-to-end user experience **(4. Design the service from start to finish, Digital Service Standard (Ontario))**
 - design and test your service to work with the devices and browsers your users use - find out the browsers you must test with **(Digital Service Standard (UK))**
 - test the service in an environment that is as similar to the live environment as possible **(Digital Service Standard (Ontario))**
 - have a process for testing changes made to the service **(Digital Service Standard (Ontario))**
@@ -142,13 +137,8 @@ There are many potential benefits from the greater use of digital services, incl
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- show the steps required to achieve an end-to-end service delivery outcome for the user **(Digital Service Standard (AU))**
 - show the testing environment; using test plans, real world scenarios and user stories **(Digital Service Standard (AU))**
-- show the deployment environment **(Digital Service Standard (AU))**
-- show ability to create new environments quickly and easily **(Digital Service Standard (AU))**
 - show that your service can perform under expected loads with suitable scale contingencies **(Digital Service Standard (AU))**
-- show you understand the systems you need and the testing environments for non-digital parts of the service **(Digital Service Standard (AU))**
-- show that users can seamlessly move between channels as required **(Digital Service Standard (AU))**
 - show how you explored integrating automated testing into the deployment process **(Digital Service Standard (AU))**
 - show you have a business continuity plan and a roll-back option. **(Digital Service Standard (AU))**
 {: .dpgn-stage-beta .dpgn-stage-live}
@@ -208,7 +198,7 @@ There are many potential benefits from the greater use of digital services, incl
 - [3. Be open and use open source (Technology Code of Practice (UK))](https://www.gov.uk/guidance/be-open-and-use-open-source)
 - [4. Make use of open standards (Technology Code of Practice (UK))](https://www.gov.uk/guidance/make-use-of-open-standards)
 - [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
-- [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
+- [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 
 **Build It Right Principles (GC):**
@@ -222,8 +212,8 @@ There are many potential benefits from the greater use of digital services, incl
 {: .dpgn-data-ignore}
 
 - [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
-- [4. Design the service from start to finish (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-5)
-- [6. Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
+- [4. Design the service from start to finish (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
+- [6. Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 - [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
 

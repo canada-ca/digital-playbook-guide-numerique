@@ -177,27 +177,14 @@ At every stage of a project, we should measure how well our service is working f
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
 
-**Exemples d'introduction:**
+Enregistrez et surveillez en permanence les données de rendement afin d’éclairer les améliorations du service en cours.
 
-**Digital Service Standard (UK):** Use tools for analysis that collect performance data. Use this data to analyse the success of the service and to translate this into features and tasks for the next phase of development.
+La mesure du rendement permet d’améliorer en continu un service en :
 
-Collecting performance data means you can continuously improve your service by:
+- montrant ses forces et ses faiblesses 
+- fournissant des données sur lesquelles s’appuyer pour effectuer des modifications
 
-- learning its strengths and weaknesses
-- using the data to support improvements you make
-
-**Digital Service Standard (Ontario):** Continuously capture and monitor performance data to inform ongoing service improvements.
-
-### Why it matters
-
-Measuring performance means continuously improving a service by:
-
-- learning its strengths and weaknesses
-- using data to support changes
-
-**Digital Service Standard (AU):** Measure performance against KPIs set out in the guides. Report on public dashboard.
-
-Every service must aim for continuous improvement. Metrics are an important starting point for discussions about a service’s strengths and weaknesses. By identifying and capturing the right metrics - with the right tools - you can make sure all your decisions to improve the service are supported by data.
+**(Normes des services numériques (Ontario))**
 
 </div>
 
@@ -233,7 +220,6 @@ Every service must aim for continuous improvement. Metrics are an important star
 - choose suitable data analysis tools **(Digital Service Standard (UK))**
 - address information security and privacy issues appropriately **(Digital Service Standard (UK))**
 - map user journeys through the service and track them to identify completions and areas of poor performance **(Digital Service Standard (UK))**
-- measure assisted digital support **(Digital Service Standard (UK))**
 - document the next user story related to performance analysis **(Digital Service Standard (UK))**
 - All services must, at a minimum, measure 4 KPIs. **(Digital Service Standard (AU))**
   - User satisfaction - to help continually improve the user experience of your service
@@ -264,12 +250,9 @@ Every service must aim for continuous improvement. Metrics are an important star
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- discuss a start page and feedback page with GOV.UK **(Digital Service Standard (UK))**
 - which metrics and measurements you will use to monitor your KPIs **(Digital Service Standard (AU))**
 - the baseline measures and the benchmarks for success **(Digital Service Standard (AU))**
-- that the team is ready to report their performance on the Performance Dashboard **(Digital Service Standard (AU))**
 - which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) **(Digital Service Standard (AU))**
-- what you have learned from qualitative and quantitative data; for example key evidence. **(Digital Service Standard (AU))**
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
@@ -278,15 +261,14 @@ Every service must aim for continuous improvement. Metrics are an important star
 
 <!-- markdownlint-disable MD032 -->
 - collect feedback from users, during and after their user journey **(Digital Service Standard (UK))**
-- use web analytics to capture information about user behaviour online **(Digital Service Standard (Ontario))**
-- monitor and evaluate user feedback and complaints from the digital service and other service touch-points such as phone and in person **(Digital Service Standard (Ontario))**
-- analyze performance and identify actionable data insights as early as possible **(Digital Service Standard (Ontario))**
-- define performance metrics for the service up-front, early on in the design process **(Digital Service Standard (Ontario))**
-- regularly review the technology used to provide the service and the processes that support the service **(Digital Service Standard (Ontario))**
-- base your service review frequency on the volume of users ( e.g. 10,000 or less unique users per year = 2 year review cycle; 10,000-100,000 = annual; 100,000-1 million = every 6 months) **(Digital Service Standard (Ontario))**
+- utilisez une analytique Web afin d’enregistrer des données concernant le comportement des utilisateurs en ligne **(Normes des services numériques (Ontario))**
+- surveillez et évaluez les commentaires et les plaintes des utilisateurs concernant le service numérique et les autres points de contact du service (par téléphone, en personne) **(Normes des services numériques (Ontario))**
+- analysez le rendement et identifiez le plus tôt possible les données exploitables **(Normes des services numériques (Ontario))**
+- définissez des mesures du rendement dès le début du service, en amont dans le processus de conception **(Normes des services numériques (Ontario))**
+- réexaminez régulièrement la technologie servant à fournir le service et les processus le soutenant **(Normes des services numériques (Ontario))**
+- établissez la fréquence de vos réexamens du service selon le nombre d’utilisateurs (p. ex. 10 000 utilisateurs uniques ou moins par an = cycle de réexamen de 2 ans; 10 000-100 000 = annuel; 100 000-1 million = aux 6 mois) **(Normes des services numériques (Ontario))**
 - use data to determine the cost per use for each channel, accounting for the cost to build and ongoing maintenance as well **(Digital Service Standard (Ontario))**
-- demonstrate how service performance compares to other similar government and private sector services **(Digital Service Standard (Ontario))**
-- share your review findings with leadership **(Digital Service Standard (Ontario))**
+- utilisez les données pour déterminer le coût par utilisation de chaque avenue, en tenant compte aussi du coût de création et de maintenance continue **(Normes des services numériques (Ontario))**
 - Your data should show: **(Digital Service Standard (AU))**
   - user satisfaction has increased
   - digital take-up is increasing in line with service plans
@@ -329,7 +311,7 @@ Every service must aim for continuous improvement. Metrics are an important star
 ### Ressources similaires
 
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
-- [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-14)
+- [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
 
 **Build It Right Principles (GC):**

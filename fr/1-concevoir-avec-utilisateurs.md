@@ -75,6 +75,8 @@ Writing and designing content so it is consistent, plain and in the language of 
 - Mettre en place un plan de paiement pour la recherche de l'utilisateur et les tests d'utilisabilité tout au long de la conception du service et après sa construction
 - Utiliser des données qualitatives et quantitatives pour vous aider à mieux comprendre les besoins des utilisateurs et identifier les points à améliorer
 - Fournir un mécanisme aux utilisateurs permettant de recevoir une rétroaction et de régler en temps opportun les problèmes de services (comme l'exige la [Politique sur les services](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27916#cha7))
+- ayez recours aux recherches, aux tests et aux données analytiques pour améliorer le service **(7. Rendre le service accessible, Normes des services numériques (Ontario))**
+- expliquez l'ensemble des expériences utilisateurs de bout en bout, et montrez comment elles fonctionnent et ont été testées **(7. Rendre le service accessible, Normes des services numériques (Ontario))**
 
 **Rendre les services simples, intuitifs et cohérents (anciennement ligne directrice 1.6) :**
 {: .dpgn-data-ignore}
@@ -85,6 +87,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 - Provide users with a way to exit and return later to complete the process **(Digital Services Playbook (US))**
 - Use language that is familiar to the user and easy to understand **(Digital Services Playbook (US))**
 - Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
+- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
 - Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
 - Utilisez des données analytiques et vos recherches utilisateurs pour réduire le nombre de personnes qui n'accomplissent pas la tâche qu'elles souhaitaient effectuer en ligne (par exemple, renouveler leur permis de conduire) **(Normes des services numériques (Ontario))**
 - Document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK))**
@@ -96,9 +99,6 @@ Writing and designing content so it is consistent, plain and in the language of 
 - basez vos décisions en matière de conception et de contenu sur vos recherches, tests et données analytiques **(Normes des services numériques (Ontario / UK)**
 - change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
 - understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
-- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
-- follow accessibility better practice and are planning how your public prototype will meet WCAG 2.0 level AA **(Digital Service Standard (AU))**
-- ensure appropriate design, content design and front-end developer support is provided to the team. **(Digital Service Standard (AU))**
 
 </section>
 
@@ -148,8 +148,8 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
 - [13. Make the user experience consistent with GOV.UK (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-the-user-experience-consistent-with-govuk)
-- [3. Faire preuve de constance (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-4)
-- [5. Réussite assurée dès le premier essai des utilisateurs (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-6)
+- [3. Faire preuve de constance (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-3)
+- [5. Réussite assurée dès le premier essai des utilisateurs (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-5)
 - [3. Make it simple and intuitive (Digital Services Playbook (US))](https://playbook.cio.gov/#play3)
 - [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
 - [Do the hard work to make it easy (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
@@ -394,7 +394,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 ### Ressources similaires
 
 - [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
-- [1. Comprendre les utilisateurs et leurs besoins (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-2)
+- [1. Comprendre les utilisateurs et leurs besoins (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-1)
 - [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
 - [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
@@ -409,7 +409,7 @@ You need to have a plan for what to do if your service goes offline so that you 
 {: .dpgn-data-ignore}
 
 - [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
-- [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
+- [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 
 </section>
 </section>
@@ -441,14 +441,6 @@ Ensure that people who use the digital service can also use the other available 
 
 People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
-Encourage users to choose the digital service and consolidate or phase out existing alternative channels where appropriate.
-
-As we build simpler, clearer and faster government services the digital channel will become more convenient for users than non-digital channels like post, phone and shopfronts. Increased digital take-up will mean users can spend less time interacting with government. This will result in greater cost efficiencies for government.
-
-Measuring digital take-up helps you to understand how well your service is being used. It’s one of the 4 mandatory KPIs services must report on the Performance Dashboard.
-
-We still need to help users who are unable to use digital channels and provide support to those who need it. But we want to ensure digital channels are used whenever possible and to scale back, or phase out, alternative channels when we can. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-
 </div>
 
 <section class="dpgn-section-checklist">
@@ -476,12 +468,6 @@ We still need to help users who are unable to use digital channels and provide s
 - Concevez le service numérique de telle sorte qu’il présente des avantages indéniables par rapport aux autres canaux **(Normes des services numériques (Ontario))**
 - show you understand existing channels and how they interact with the service and with each other **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 - show you understand the channels required to support all groups of users of the service, and where a user may need to change channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- show you understand if there are any repeat transactions by users over different channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- show you understand the interactions occurring between the channels that deliver and capture user transactions. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- show you understand the users’ journeys and how they interact with your service, digitally or otherwise **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show you understand existing alternative channels and how users currently interact with them **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show you understand what percentage of users access digital and non-digital channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show you understand how you will increase digital take-up and what targets you will set. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
@@ -493,9 +479,6 @@ We still need to help users who are unable to use digital channels and provide s
 - Collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
 - Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))**
 - Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
-- be increasing digital take-up; revising your targets and considering relevant performance metrics **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- have a plan of how to move users to the digital channel where possible, including a communications plan to promote the service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- have agreed analytics/metrics for the volume of usage across channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 - understand the full impact of retiring any potentially redundant services and channels. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
@@ -560,7 +543,7 @@ We still need to help users who are unable to use digital channels and provide s
 {: .dpgn-data-ignore}
 
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
-- [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
+- [11. Utilisation des services numériques encouragée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-11)
 - [12. Don’t forget the non-digital experience (Digital Service Standard (AU))](https://www.dta.gov.au/standard/12-non-digital-experience/)
 - [13. Encourage everyone to use the digital service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/13-encourage-use-of-the-digital-service/)
 

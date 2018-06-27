@@ -155,7 +155,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 ### Similar resources
 
-* [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
+* [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 * [Privacy Act (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-privacy-act/)
 * [Personal Information Protection & Electronic Documents Act (PIPEDA) (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
 * [Privacy by Design (Wikipedia)](https://en.wikipedia.org/wiki/Privacy_by_design)
@@ -220,7 +220,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Similar resources
 
-* [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-11)
+* [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 * [Information security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/information-security.html)
 * [Cloud security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/operations/cloud-security.html)
 * [User accounts and logins (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/user-accounts)
