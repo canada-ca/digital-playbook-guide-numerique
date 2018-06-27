@@ -181,7 +181,7 @@ Enregistrez et surveillez en permanence les données de rendement afin d’écla
 
 La mesure du rendement permet d’améliorer en continu un service en :
 
-- montrant ses forces et ses faiblesses 
+- montrant ses forces et ses faiblesses
 - fournissant des données sur lesquelles s’appuyer pour effectuer des modifications
 
 **(Normes des services numériques (Ontario))**
