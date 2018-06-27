@@ -90,6 +90,17 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					heading = node.css("h#{parent_heading_level + 1}")
 					if heading.count >= 1
 						item["title"] = heading[0].inner_html
+						if item["source_attributes"].nil?
+							headingAttributes = heading[0].attributes
+							if !headingAttributes.nil? && headingAttributes.size > 0
+								item["source_attributes"] = headingAttributes
+							end
+						else
+							headingId = heading[0].attribute("id")
+							if !headingId.nil?
+								item["source_attributes"].push(headingId)
+							end
+						end
 					else
 						# Handle missing heading
 						logger.error("h#{parent_heading_level + 1} could not be found when processing #{node.name} (build_content_array)")

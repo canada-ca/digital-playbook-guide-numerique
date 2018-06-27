@@ -130,7 +130,7 @@ for item in include.contentArray %}{%
         endcapture %}
 <{{ sectionTag }}{{ classOutput | rstrip }}>
 
-<h{{ nextHeadingLevel }}>{{ item.title }}</h{{ nextHeadingLevel }}>
+<h{{ nextHeadingLevel }}{% if item.source_attributes.id.size > 0 %} id="{{ item.source_attributes.id }}"{% endif %}>{{ item.title }}</h{{ nextHeadingLevel }}>
 
 {{ nestedOutputStrip }}
 
