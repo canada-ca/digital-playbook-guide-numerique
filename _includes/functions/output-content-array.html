@@ -9,7 +9,6 @@ comment %}@param suppressParentListElement {Boolean} Optional (defaults to false
 comment %}@param contentStandardIndex {Number} Optional (required if guideline is provided, defaults to none). Index of the standard that is an ancestor of the content being processed.{% endcomment %}{% 
 comment %}@param contentGuidelineIndex {Number} Optional (defaults to none) Index of the guideline that is an ancestor of the content being processed.{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
-assign currentHeadingLevel = include.parentHeadingLevel %}{% 
 comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
 if include.relevantTags.size > 0 %}{% 
   if include.relevantTags.first %}{% 
@@ -107,7 +106,7 @@ for item in include.contentArray %}{%
   capture rawOutput %}{% 
     if item.content_type == 'section' %}{%
       comment %}Content block is a section, so output the section elements, the heading and then call this function to process the nested content array{% endcomment %}{% 
-      assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
+      assign nextHeadingLevel = include.parentHeadingLevel | plus: 1 %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedOutputSection %}{% 
         include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex %}{% 
@@ -115,7 +114,7 @@ for item in include.contentArray %}{%
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if relevantItem or nestedOutputStrip.size > 0 %}{% 
-	assign source_element = item.source_element %}{% 
+        assign source_element = item.source_element %}{% 
         if site.defaultClasses[source_element].size > 0 %}{% 
           assign allClasses = site.defaultClasses[source_element] | split: " " %}{% 
           if item.tags.size > 0 %}{% 
@@ -125,7 +124,7 @@ for item in include.contentArray %}{%
           assign allClasses = item.tags %}{% 
         endif %}{% 
         assign sectionTag = item.source_element %}{% 
-        assign nextHeadingLevel = currentHeadingLevel | plus: 1 %}{% 
+        assign nextHeadingLevel = include.parentHeadingLevel | plus: 1 %}{% 
         capture classOutput %}{% 
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}
@@ -146,7 +145,7 @@ for item in include.contentArray %}{%
       comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedBlockContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=currentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex %}{% 
+        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=include.parentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 
