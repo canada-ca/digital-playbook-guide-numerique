@@ -70,7 +70,7 @@ The approach to developing and releasing the Digital Playbook will be similar to
 
 Community feedback and contributions to the Digital Playbook are encouraged, with designated reviewers for each part of the Digital Playbook being responsible for reviewing, responding to, requesting changes (as needed) and eventually approving or declining the feedback and contributions. The primary reviewers are individuals from the related policy areas and areas of expertise, and are also responsible for contributing content and engaging with their respective communities.
 
-To ensure that the Digital Playbook is as easy to use as possible, contributors/reviewers would work with their respective communities to determine how to make the Digital Playbook more applicable to their day-to-day work, including for which tasks/scenarios personalized [Digital Playbook views]({{ site.baseurl }}/docs/{{ page.lang }}/views{{ site.RenderedFileExtension }}) should be provided.
+To ensure that the Digital Playbook is as easy to use as possible, contributors/reviewers would work with their respective communities to determine how to make the Digital Playbook more applicable to their day-to-day work, including for which tasks/scenarios personalized [Digital Playbook views]({{ site.baseurl }}/docs/{{ page.lang }}/views{{ site.RenderedFileExtension }}) should be provided.
 
 </section>
 </section>

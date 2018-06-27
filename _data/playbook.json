@@ -179,50 +179,134 @@
         "title": "About the Digital Playbook",
         "content": [
           {
-            "content_type": "block",
-            "source_element": "p",
+            "content_type": "section",
+            "source_element": "section",
             "tags": [
               "dpgn-overview-end"
             ],
+            "title": "Objective",
             "content": [
               {
-                "content_type": "inline",
+                "content_type": "block",
+                "source_element": "p",
                 "tags": [
                   "dpgn-overview-end"
                 ],
-                "content": "<strong>Improving government services in the digital age.</strong> Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. This Digital Playbook, and the Digital Standards it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey."
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "The objective of the Digital Playbook is to provide detailed guidance for implementing the Digital Standards, whose purpose is to guide the Government of Canada in digital transformation and augmented service delivery. The Digital Playbook is intended to be flexible and adaptable, helping users to focus on the guidance that is most relevant to them."
+                  }
+                ]
+              },
+              {
+                "content_type": "block",
+                "source_element": "p",
+                "tags": [
+                  "dpgn-overview-end"
+                ],
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "<strong>Improving government services in the digital age.</strong> Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. This Digital Playbook, and the Digital Standards it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey."
+                  }
+                ]
+              },
+              {
+                "content_type": "block",
+                "source_element": "p",
+                "tags": [
+                  "dpgn-overview-end"
+                ],
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "<strong>It takes a village.</strong> The goal is to co-create this Digital Playbook with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. We believe it will take a community of individuals, with varying backgrounds and perspectives, to come together and help define and share guidance, direction, approaches, tools and stories. We hope to make the playbook as collaborative as possible. And of course the foundation will be built upon the Government Canada Digital Standards and the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you."
+                  }
+                ]
+              },
+              {
+                "content_type": "block",
+                "source_element": "p",
+                "tags": [
+                  "dpgn-overview-end"
+                ],
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "<strong>Together we’ll make them better.</strong> This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone."
+                  }
+                ]
               }
             ]
           },
           {
-            "content_type": "block",
-            "source_element": "p",
+            "content_type": "section",
+            "source_element": "section",
             "tags": [
               "dpgn-overview-end"
             ],
+            "title": "Implementation approach",
             "content": [
               {
-                "content_type": "inline",
+                "content_type": "block",
+                "source_element": "p",
                 "tags": [
                   "dpgn-overview-end"
                 ],
-                "content": "<strong>It takes a village.</strong> The goal is to co-create this Digital Playbook with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. We believe it will take a community of individuals, with varying backgrounds and perspectives, to come together and help define and share guidance, direction, approaches, tools and stories. We hope to make the playbook as collaborative as possible. And of course the foundation will be built upon the Government Canada Digital Standards and the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you."
-              }
-            ]
-          },
-          {
-            "content_type": "block",
-            "source_element": "p",
-            "tags": [
-              "dpgn-overview-end"
-            ],
-            "content": [
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "The approach to developing and releasing the Digital Playbook will be similar to the Web Experience Toolkit and HTML5, where the Digital Playbook continuously evolves on GitHub and stable snapshots of that work are released as formal versions through Canada.ca. This enables the Digital Playbook to be both agile and ever-improving on GitHub while also providing a stable version through Canada.ca that can be relied upon for guidance."
+                  }
+                ]
+              },
               {
-                "content_type": "inline",
+                "content_type": "block",
+                "source_element": "p",
                 "tags": [
                   "dpgn-overview-end"
                 ],
-                "content": "<strong>Together we’ll make them better.</strong> This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone."
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "Community feedback and contributions to the Digital Playbook are encouraged, with designated reviewers for each part of the Digital Playbook being responsible for reviewing, responding to, requesting changes (as needed) and eventually approving or declining the feedback and contributions. The primary reviewers are individuals from the related policy areas and areas of expertise, and are also responsible for contributing content and engaging with their respective communities."
+                  }
+                ]
+              },
+              {
+                "content_type": "block",
+                "source_element": "p",
+                "tags": [
+                  "dpgn-overview-end"
+                ],
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "To ensure that the Digital Playbook is as easy to use as possible, contributors/reviewers would work with their respective communities to determine how to make the Digital Playbook more applicable to their day-to-day work, including for which tasks/scenarios personalized <a href=\"/digital-playbook-guide-numerique/docs/en/views.html\">Digital Playbook views</a> should be provided."
+                  }
+                ]
               }
             ]
           }
@@ -11160,7 +11244,7 @@
                               "dpgn-automated-decision-evaluation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the Standard on Automated Decision-Making."
+                            "content": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the <a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Standard on Automated Decision-Making</a>."
                           }
                         ]
                       },
@@ -11517,8 +11601,27 @@
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/performance-testing/\">Performance Testing (Digital Service Standard (AU))</a>"
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-automated-decision-evaluation",
+                          "dpgn-automated-decision"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-automated-decision-evaluation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": "<a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Standard on Automated Decision-Making</a>"
+                          }
+                        ]
                       }
-                    ]
+                    ],
+                    "tags": null
                   }
                 ]
               },
@@ -13986,7 +14089,159 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Cloud first"
+                            "content": "Cloud services are identified and evaluated as the principal delivery option when initiating IT investments, initiatives, strategies and projects."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Using the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-right-cloud-selection-guidance.html\">Government of Canada Right Cloud Selection Guidance</a> to guide their decision, departmental and agency CIOs will select one of the following deployment models, in the following order of priority:\n        "
+                          },
+                          {
+                            "content_type": "block",
+                            "source_element": "ul",
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "public cloud"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "hybrid cloud"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "private cloud"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "non-cloud"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Departmental and agency CIOs will select one of the following cloud service models, in the following order of priority:\n        "
+                          },
+                          {
+                            "content_type": "block",
+                            "source_element": "ul",
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "software as a service (SaaS)"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "platform as a service (PaaS)"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "infrastructure as a service (IaaS)"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "In considering how to manage security risks, departments and agencies must follow the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html\">GC Cloud Security Risk Management Approach and Procedures</a> and the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Departments and agencies may deploy solutions that have data-categorization requirements that fall outside of a particular cloud security control profile, as described in the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>, with appropriate risk-mitigation measures that have been developed in consultation with GC security partners."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "To ensure, to the greatest extent possible, the GC’s continuous access to sensitive data, departments and agencies must comply with the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "To ensure business continuity and to manage risks, departments and agencies will develop an appropriate exit strategy before using cloud services."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Departments and agencies should consider portability and interoperability of services when designing cloud-based solutions."
                           }
                         ]
                       },
@@ -14172,6 +14427,78 @@
                               "dpgn-digital-architectural-cloud-first"
                             ],
                             "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/gc-white-paper-data-sovereignty-public-cloud.html\">Government of Canada White Paper: Data Sovereignty and Public Cloud</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html\">Government of Canada Cloud Security Risk Management Approach and Procedures</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-cloud-first"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-cloud-first"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>"
                           }
                         ]
                       }
@@ -18155,7 +18482,7 @@
                               "dpgn-automated-decision-initiation-1",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Complete an Algorithmic Impact Assessment, prior to the production of any Automated Decision System."
+                            "content": "Complete an <a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment</a>, prior to the production of any Automated Decision System."
                           }
                         ]
                       },
@@ -18177,7 +18504,7 @@
                               "dpgn-automated-decision-initiation-3",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that the Algorithmic Impact Assessment remains up to date and accurately reflects the functionality of the Automated Decision System."
+                            "content": "Ensure that the <a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment</a> remains up to date and accurately reflects the functionality of the Automated Decision System."
                           }
                         ]
                       }
@@ -18198,6 +18525,33 @@
                       {
                         "content_type": "inline",
                         "content": "<strong>[TODO: Add/revise implementation guide items]</strong>"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "tags": [
+                      "dpgn-automated-decision"
+                    ],
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-automated-decision-initiation",
+                          "dpgn-automated-decision"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-automated-decision-initiation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": "<a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment (GC)</a>"
+                          }
+                        ]
                       }
                     ]
                   }
