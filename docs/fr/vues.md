@@ -133,6 +133,7 @@ The following tags are supported by default by the Digital Playbook:
 **View tags:**
 
 <!-- markdownlint-disable MD032 -->
+- ``dpgn-standards-hide``: Content should be hidden from the standards-normes and single-page-seule views
 - ``dpgn-stage-alpha``: Content is related to the alpha development stage
 - ``dpgn-stage-beta``: Content is related to the beta development stage
 - ``dpgn-stage-live``: Content is related to the live development stage
@@ -193,7 +194,7 @@ The following are three of the more commonly used helper functions. For the rest
 - **Overview:** Outputs filtered and ordered content from the dataset according to the specified tags.
 - **Example usage:** ``&#123;% include /functions/filtered-standard-guideline-content.html relevantTags="dpgn-group-group1,dpgn-group-group2" relevantSections="dpgn-section-guidelines,dpgn-section-guideline,dpgn-section-checklist" %&#125;``
 - **Parameters:**
-  - ``standardIndexes`` {Number} Optional (default to all) Comma-separated indexes or array of indexes of standards to display.
+  - ``standardIndexes`` {String/Array} Optional (default to all) Comma-separated indexes or array of indexes of standards to display.
   - ``relevantTags`` {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "``+``" (e.g., ``"string1,string2+string3"``). This means that the target array must have an entry that either matches ``string1`` or entries that match ``string2`` and ``string3``. Partial match criteria (contains) start with "``~``" (e.g., ``"string1+~string2"``). Can be overridden by ``irrelevantTags``.
   - ``irrelevantTags`` {String/Array} Optional (defaults to none). Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "``+``" (e.g., ``"string1,string2+string3"``). This means that the target array must have an entry that either matches ``string1`` or entries that match ``string2`` and ``string3``. Partial match criteria (contains) start with "``~``" (e.g., ``"string1+~string2"``). Can be overridden by ``irrelevantTags``.
   - ``groupByTagsTags`` {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.

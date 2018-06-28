@@ -1,10 +1,2 @@
 {% assign defaultSubsectionTitles = site.defaultSubsectionTitles[page.lang] %}{% 
-assign dataVariable = site.playbookData[page.lang] %}{%
-assign dataSource = site.data[dataVariable] %}
-
-{% include functions/output-overview.html samePage=true %}
-
-{% assign maxIndex = dataSource.standards.content.size | minus: 1 %}{%  
-for currentIndex in (0..maxIndex) %}{% 
-  include functions/output-standard.html standardIndex=currentIndex includeStandardTitle=true currentHeadingLevel=1 groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}{% 
-endfor %}
+include functions/filtered-standard-guideline-content.html irrelevantTags="dpgn-standard-hide" currentHeadingLevel=1 groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}
