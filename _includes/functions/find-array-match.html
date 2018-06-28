@@ -9,7 +9,8 @@ for fullMatch in include.array2 %}{%
     assign first_char = comparator | slice: 0 %}{% 
     if first_char == "~" %}{% 
       comment %}Only looking for a partial match{% endcomment %}{% 
-      assign partialComparator = comparator | replace: "~", "" %}{% 
+      assign slicedLength = comparator.size | minus: 1 %}{% 
+      assign partialComparator = comparator | slice: 1, slicedLength %}{% 
       for target in include.array1 %}{% 
         if target contains partialComparator %}{% 
           assign numMatches = numMatches | plus: 1 %}{% 
@@ -26,8 +27,7 @@ for fullMatch in include.array2 %}{%
       endfor %}{% 
     endif %}{% 
   endfor %}{% 
-  comment %}All the criteria for the requirement were met so return "true"{% endcomment %}
-<p>numMatches: {{ numMatches }}, fullMatchArray.size: {{ fullMatchArray.size }}{% 
+  comment %}All the criteria for the requirement were met so return "true"{% endcomment %}{% 
   if numMatches == fullMatchArray.size 
     %}{{ "true" }}{% 
     break %}{% 
