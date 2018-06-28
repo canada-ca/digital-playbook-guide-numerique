@@ -9,6 +9,23 @@ comment %}@param suppressParentListElement {Boolean} Optional (defaults to false
 comment %}@param contentStandardIndex {Number} Optional (required if guideline is provided, defaults to none). Index of the standard that is an ancestor of the content being processed.{% endcomment %}{% 
 comment %}@param contentGuidelineIndex {Number} Optional (defaults to none) Index of the guideline that is an ancestor of the content being processed.{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
+comment %}Retrieve the title of the standard that is the ancestor of the content being processed{% endcomment %}{% 
+if include.contentStandardIndex %}{% 
+  if include.contentStandardIndex != lastContentStandardIndex %}{% 
+    assign lastContentStandardIndex = include.contentStandardIndex %}{% 
+    assign contentStandardTitle = dataSource.standards.content[include.contentStandardIndex].title %}{% 
+    assign contentStandardFilePath = site.baseurl | append: site.defaultView | append: "/" | append: page.lang | append: "/" | append: site.standardFile[include.contentStandardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
+  endif %}{% 
+  comment %}Retrieve the title of the guideline that is the ancestor of the content being processed{% endcomment %}{% 
+  if include.contentGuidelineIndex and include.contentGuidelineIndex != lastContentGuidelineIndex %}{% 
+    assign lastContentGuidelineIndex = include.contentGuidelineIndex %}{% 
+    assign contentGuidelineTitle = dataSource.standards.content[include.contentStandardIndex].guidelines.content[include.contentGuidelineIndex].title %}{% 
+    capture guidelineId %}{% 
+      include /functions/generate-id.html string=contentGuidelineTitle %}{% 
+    endcapture %}{% 
+    assign contentGuidelineId = guidelineId | strip %}{% 
+  endif %}{% 
+endif %}{% 
 comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
 if include.relevantTags.size > 0 %}{% 
   if include.relevantTags.first %}{% 
@@ -30,39 +47,6 @@ else %}{%
   assign irrelevantTagsArray = "" %}{% 
 endif %}{% 
 for item in include.contentArray %}{% 
-  comment %}Ensure the relevant source elements are in an array (done in loop since not passed down through recursions){% endcomment %}{% 
-  if include.relevantSourceElements.size > 0 %}{% 
-    if include.relevantSourceElements.first %}{% 
-      assign relevantSourceElementsArray = include.relevantSourceElements %}{% 
-    else %}{% 
-      assign relevantSourceElementsArray = include.relevantSourceElements | replace: " ", "" | split: "," %}{% 
-    endif %}{% 
-  else %}{% 
-    assign relevantSourceElementsArray = "" %}{% 
-  endif %}{% 
-  comment %}Ensure the irrelevant source elements are in an array (done in loop since not passed down through recursions){% endcomment %}{% 
-  if include.irrelevantSourceElements.size > 0 %}{% 
-    if include.irrelevantSourceElements.first %}{% 
-      assign irrelevantSourceElementsArray = include.irrelevantSourceElements %}{% 
-    else %}{% 
-      assign irrelevantSourceElementsArray = include.irrelevantSourceElements | replace: " ", "" | split: "," %}{% 
-    endif %}{% 
-  else %}{% 
-    assign irrelevantSourceElementsArray = "" %}{% 
-  endif %}{% 
-  comment %}Retrieve the title of the standard that is the ancestor of the content being processed{% endcomment %}{% 
-  if include.contentStandardIndex %}{% 
-    assign contentStandardTitle = dataSource.standards.content[include.contentStandardIndex].title %}{% 
-    assign contentStandardFilePath = site.baseurl | append: site.defaultView | append: "/" | append: page.lang | append: "/" | append: site.standardFile[include.contentStandardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
-    comment %}Retrieve the title of the guideline that is the ancestor of the content being processed{% endcomment %}{% 
-    if include.contentGuidelineIndex %}{% 
-      assign contentGuidelineTitle = dataSource.standards.content[include.contentStandardIndex].guidelines.content[include.contentGuidelineIndex].title %}{% 
-      capture guidelineId %}{% 
-        include /functions/generate-id.html string=contentGuidelineTitle %}{% 
-      endcapture %}{% 
-      assign contentGuidelineId = guidelineId | strip %}{% 
-    endif %}{% 
-  endif %}{% 
   comment %}Go to the next item in the content array if there is an irrelevant requirement match (i.e., irrelevant tag match, irrelevant source element match or no relevant source element match).{% endcomment %}{% 
   if irrelevantTagsArray.size > 0 %}{% 
     capture tagsCompareIrrelevantResult %}{% 
@@ -72,7 +56,13 @@ for item in include.contentArray %}{%
       continue %}{% 
     endif %}{% 
   endif %}{% 
-  if irrelevantSourceElementsArray.size > 0 %}{% 
+  if include.irrelevantSourceElements.size > 0 %}{% 
+    comment %}Ensure the irrelevant source elements are in an array (done in loop since not passed down through recursions){% endcomment %}{% 
+    if include.irrelevantSourceElements.first %}{% 
+      assign irrelevantSourceElementsArray = include.irrelevantSourceElements %}{% 
+    else %}{% 
+      assign irrelevantSourceElementsArray = include.irrelevantSourceElements | replace: " ", "" | split: "," %}{% 
+    endif %}{% 
     assign sourceElementArray = item.source_element | split: "," %}{% 
     capture tagsCompareIrrelevantResult %}{% 
       include /functions/find-array-match.html array1=sourceElementArray array2=irrelevantSourceElementsArray %}{% 
@@ -80,8 +70,16 @@ for item in include.contentArray %}{%
     if tagsCompareIrrelevantResult contains "true" %}{% 
       continue %}{% 
     endif %}{% 
+  else %}{% 
+    assign irrelevantSourceElementsArray = "" %}{% 
   endif %}{% 
-  if relevantSourceElementsArray.size > 0 %}{% 
+  if include.relevantSourceElements.size > 0 %}{% 
+    comment %}Ensure the relevant source elements are in an array (done in loop since not passed down through recursions){% endcomment %}{% 
+    if include.relevantSourceElements.first %}{% 
+      assign relevantSourceElementsArray = include.relevantSourceElements %}{% 
+    else %}{% 
+      assign relevantSourceElementsArray = include.relevantSourceElements | replace: " ", "" | split: "," %}{% 
+    endif %}{% 
     assign sourceElementArray = item.source_element | split: "," %}{% 
     capture tagsCompareRelevantResult %}{% 
       include /functions/find-array-match.html array1=sourceElementArray array2=relevantSourceElementsArray %}{% 
@@ -89,6 +87,8 @@ for item in include.contentArray %}{%
     unless tagsCompareRelevantResult contains "true" %}{% 
       continue %}{% 
     endunless %}{% 
+  else %}{% 
+    assign relevantSourceElementsArray = "" %}{% 
   endif %}{% 
   comment %}Item is relevant if there is a relevant requirement match.{% endcomment %}{% 
   if relevantTagsArray.size > 0 %}{% 

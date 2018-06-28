@@ -79,6 +79,9 @@ RenderedFileExtension: ".html"
 # Default order of the guideline sections
 guidelineSectionsOrder: ["introduction", "checklist", "guides", "solutions", "similar"]
 
+# List element array
+listElementArray: ["ul", "ol"]
+
 # Default sub-section tags and titles
 defaultSubsectionTags: []
 defaultSubsectionTitles:

@@ -39,17 +39,19 @@ else %}{%
   assign startStandardIndex = 0 %}{% 
   assign endStandardIndex = dataSource.standards.content.size | minus: 1 %}{% 
 endif %}{% 
+if include.guidelineIndex %}{% 
+  assign startGuidelineIndex = include.guidelineIndex %}{% 
+  assign endGuidelineIndex = include.guidelineIndex %}{% 
+else %}{% 
+  assign startGuidelineIndex = 0 %}{% 
+endif %}{% 
 assign sectionContentSubStripAll = "" %}{% 
 for currentStandardIndex in (startStandardIndex..endStandardIndex) %}{% 
   assign standard = dataSource.standards.content[currentStandardIndex] %}{% 
-  comment %}Assign the start and end guideline indexes{% endcomment %}{% 
-  if include.guidelineIndex %}{% 
-    assign startGuidelineIndex = include.guidelineIndex %}{% 
-    assign endGuidelineIndex = include.guidelineIndex %}{% 
-  else %}{% 
-    assign startGuidelineIndex = 0 %}{% 
+  comment %}Assign the end guideline index if needed{% endcomment %}{% 
+  unless include.guidelineIndex %}{% 
     assign endGuidelineIndex = standard.guidelines.content.size | minus: 1 %}{% 
-  endif %}{% 
+  endunless %}{% 
   for currentGuidelineIndex in (startGuidelineIndex..endGuidelineIndex) %}{% 
     assign guideline = standard.guidelines.content[currentGuidelineIndex] %}{% 
     assign sectionContent = guideline[include.sectionKey].content %}{% 
