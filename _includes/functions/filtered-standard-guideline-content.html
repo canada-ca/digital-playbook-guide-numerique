@@ -1,5 +1,5 @@
 {% comment %}@overview Outputs filtered and ordered content from the dataset according to the specified tags.{% endcomment %}{% 
-comment %}@param standardIndexes {Number} Optional (default to all) Comma-separated indexes or array of indexes of standards to display.{% endcomment %}{% 
+comment %}@param standardIndexes {String/Array} Optional (default to all) Comma-separated indexes or array of indexes of standards to display.{% endcomment %}{% 
 comment %}@param relevantTags {String/Array} Optional (defaults to all). Comma-separated tag requirements or an array of tag requirements for which content to display. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3"). This means that the target array must have an entry that either matches string1 or entries that match string2 and string3. Partial match criteria (contains) start with "~" (e.g., "string1+~string2"). Can be overridden by irrelevantTags.{% endcomment %}{% 
 comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Comma-separated tag requirements or an array of tag requirements for which content to filter out. Each requirement can include multiple criteria, separated by "+" (e.g., "string1,string2+string3"). This means that the target array must have an entry that either matches string1 or entries that match string2 and string3. Partial match criteria (contains) start with "~" (e.g., "string1+~string2"). Can be overridden by irrelevantTags.{% endcomment %}{% 
 comment %}@param groupByTagsTags {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to group the content according to the specified tags (in the specified order). Content that matches multiple tags will be duplicated in each of the related groupings. Content that is not associated to any of the specified tags will be included in a separate grouping (to filter out content completely, use relevantTags and irrelevantTags). If groupByTagsTitles is used, then the groupings will be put in sections with the specified titles for the headings. Groupings not in sections will be put at the beginning while groupings in sections will put in the end.{% endcomment %}{% 
@@ -32,7 +32,9 @@ capture relevantStandardsGuidelines %}{%
   include /functions/find-relevant-standards-guidelines.html relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags %}{% 
 endcapture %}{% 
 assign relevantStandardsGuidelinesArray = relevantStandardsGuidelines | strip | split: ";" %}{% 
-unless standardIndexesArray.size == 1 %}
+assign includeStandardTitle = false %}{% 
+unless standardIndexesArray.size == 1 %}{%
+  assign includeStandardTitle = true %}
 
 <section>
 <h2>{{ dataSource.standards.title }}</h2>
@@ -75,9 +77,10 @@ else %}{%
 endif %}{% 
 for relevantGuidelines in relevantStandardsGuidelinesArray %}{% 
   if relevantGuidelines.size > 0 %}{% 
-    assign displayStandard = false %}{% 
-    for displayStandardIndex in standardIndexes %}{% 
-      if displayStandardIndex == relevantStandardIndex %}{% 
+    assign displayStandard = false %}{%
+    assign relevantStandardIndexCompare = relevantStandardIndex | downcase %}{% 
+    for displayStandardIndexCompare in standardIndexesArray %}{% 
+      if displayStandardIndexCompare == relevantStandardIndexCompare %}{% 
         assign displayStandard = true %}{% 
         break %}{% 
       endif %}{% 
@@ -87,7 +90,7 @@ for relevantGuidelines in relevantStandardsGuidelinesArray %}{%
     if displayStandard == true %}{% 
       assign currentRelevantStandard = dataSource.standards.content[relevantStandardIndex] %}{% 
       assign relevantGuidelinesArray = relevantGuidelines | split: "," %}{% 
-      include functions/output-standard.html standardIndex=relevantStandardIndex relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=include.relevantSections guidelineSectionsOrder=include.guidelineSectionsOrder includeStandardTitle=true currentHeadingLevel=headingLevel guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
+      include functions/output-standard.html standardIndex=relevantStandardIndex relevantGuidelines=relevantGuidelinesArray relevantRelatedGuidelines=relevantRelatedGuidelines relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=include.relevantSections guidelineSectionsOrder=include.guidelineSectionsOrder includeStandardTitle=includeStandardTitle currentHeadingLevel=headingLevel guidelinesListClasses=include.guidelinesListClasses guidelinesListItemClasses=include.guidelinesListItemClasses guidelinesLinkClasses=include.guidelinesLinkClasses guidelinesSubLinkClasses=include.guidelinesSubLinkClasses %}{% 
     endif %}{% 
   endif %}{% 
   assign relevantStandardIndex = relevantStandardIndex | plus: 1 %}{% 
