@@ -9,8 +9,7 @@ for fullMatch in include.array2 %}{%
     assign first_char = comparator | slice: 0 %}{% 
     if first_char == "~" %}{% 
       comment %}Only looking for a partial match{% endcomment %}{% 
-      assign slicedLength = comparator.size | minus: 1 %}{% 
-      assign partialComparator = comparator | slice: 1, slicedLength %}{% 
+      assign partialComparator = comparator | slice: 1, comparator.size %}{% 
       for target in include.array1 %}{% 
         if target contains partialComparator %}{% 
           assign numMatches = numMatches | plus: 1 %}{% 
