@@ -202,10 +202,10 @@ Measuring performance means continuously improving a service by:
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-**Ensure data and information is complete, accurate and up-to-date (formerly guideline 10.6):**
+**Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others (formerly guideline 10.6):**
 {: .dpgn-data-ignore}
 
-- Ensure data and information is complete, accurate and up-to-date
+- Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others
 - Design data to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
 - Design data to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily integrate and reuse it.
 - Design data with a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
@@ -284,6 +284,7 @@ Measuring performance means continuously improving a service by:
 
 **[TODO: Add/revise implementation guide items]**
 
+- [Data quality toolkit (Statistics Canada (GC))](https://www.statcan.gc.ca/eng/data-quality-toolkit)
 - [Using data to improve your service: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)
 - [Choosing digital analytics tools (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)
 - [Measuring digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
@@ -302,6 +303,9 @@ Measuring performance means continuously improving a service by:
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
+
+- [Data producer quality self-assessment checklist (Data quality toolkit (Statistics Canada (GC)))](https://www.statcan.gc.ca/eng/data-quality-toolkit/data-producer)
+- [Data user quality assessment checklist (Data quality toolkit (Statistics Canada (GC)))](https://www.statcan.gc.ca/eng/data-quality-toolkit/data-user)
 
 </section>
 
