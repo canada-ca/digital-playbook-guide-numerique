@@ -202,7 +202,7 @@ La mesure du rendement permet d’améliorer en continu un service en :
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-**Assurer les données et dans la formation est complète, précise et à jour (anciennement ligne directrice 10.6):**
+**Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d'autres (anciennement ligne directrice 10.6):**
 {: .dpgn-data-ignore}
 
 - Assurez-vous que les données sont bien structurées, intuitives et dans un format facile à intégrer et réutiliser par d'autres
@@ -285,6 +285,7 @@ La mesure du rendement permet d’améliorer en continu un service en :
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
+- [Trousse de la qualité des données (Statistique Canada (GC))](https://www.statcan.gc.ca/fra/trousse-qualite-donnees)
 - [Using data to improve your service: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)
 - [Choosing digital analytics tools (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)
 - [Measuring digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
@@ -303,6 +304,9 @@ La mesure du rendement permet d’améliorer en continu un service en :
 ### Solutions réutilisables
 
 **[TODO: Ajouter / réviser les solutions réutilisables]**
+
+- [Liste de contrôle d'autoévaluation de la qualité des producteurs de données (Trousse de la qualité des données (Statistique Canada (GC)))](https://www.statcan.gc.ca/fra/trousse-qualite-donnees/producteurs-donnees)
+- [Liste de contrôle de l'évaluation de la qualité des utilisateurs de données (Trousse de la qualité des données (Statistique Canada (GC)))](https://www.statcan.gc.ca/fra/trousse-qualite-donnees/utilisateurs-donnees)
 
 </section>
 
