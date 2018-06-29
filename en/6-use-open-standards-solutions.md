@@ -80,12 +80,8 @@ There are many potential benefits from the greater use of digital services, incl
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-open-by-default-1} Open source standards, components, and leading practices will be used wherever practical.
-- {: .dpgn-digital-architectural-open-by-default-2} When Open Source offerings cannot be used, Platform Agnostic COTS offerings are preferable to custom-built solutions. For clarity, the order of preference shall be:
-  1. Open Standard
-  1. Platform Agnostic COTS
-  1. Proprietary COTS
-  1. Custom
+- {: .dpgn-digital-architectural-open-standards-solutions-1} Use open source standards, solutions, components, and leading practices.
+- {: .dpgn-digital-architectural-open-standards-solutions-2} Enforce this order of preference: open, platform-agnostic COTS, proprietary COTS, and then custom.
 - {: .dpgn-digital-architectural-performance-availability-scalability-1} All services will respond in 500ms or less wherever possible. Flexible support services should automatically adjust to meet demand as needed.
 - {: .dpgn-digital-architectural-performance-availability-scalability-2} Cloud providers should have geographically-separated data centers that are backed up at the transaction level and automatically fail over while maintaining client sessions.
 - {: .dpgn-digital-architectural-performance-availability-scalability-3} Critical applications shall be 99.999% available including planned maintenance.
@@ -155,8 +151,8 @@ There are many potential benefits from the greater use of digital services, incl
 - [Socle Logiciels Libres (France)](https://references.modernisation.gouv.fr/socle-logiciels-libres)
 - [Logiciels libres et ouverts - Guide d'analyse de maturité (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/pollo.pdf)
 - [Logiciels libres et ouverts - Guide d'analyse du coût total de propriété (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ctp.pdf)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [Working with open standards (Service Manual (UK))](https://www.gov.uk/service-manual/technology/working-with-open-standards)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [Choosing technology: an introduction (Service Manual (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [Working with open standards (Service Manual (UK))](https://www.gov.uk/service-manual/technology/working-with-open-standards)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [Choosing technology: an introduction (Service Manual (UK))](https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction)
 - [Australian Government ICT Policy Guides and Procurement (AU)](http://finance.gov.au/policy-guides-procurement/)
 - [W3C Standards (W3C)](https://www.w3.org/standards/)
   - [Web Design and Applications - W3C Web design standards (W3C)](https://www.w3.org/standards/webdesign/)
@@ -204,7 +200,7 @@ There are many potential benefits from the greater use of digital services, incl
 **Build It Right Principles (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#open-by-default-proprietary-by-neccessity)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#use-open-standards-and-solutions-by-default)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Design for Performance, Availability, and Scalibility (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} [6. Expose all functionality as services (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#expose-all-functionality-as-services)
 
@@ -443,9 +439,9 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 **[TODO: Add/revise implementation guide items]**
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default .dpgn-digital-architectural-expose-functionality-services} [API technical and data standards (Government Digital Service (UK))](https://www.gov.uk/guidance/gds-api-technical-and-data-standards)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions .dpgn-digital-architectural-expose-functionality-services} [API technical and data standards (Government Digital Service (UK))](https://www.gov.uk/guidance/gds-api-technical-and-data-standards)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-expose-functionality-services} [Developing cross-government API data and technical standards (Government Digital Service blog (UK))](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default .dpgn-architectural-expose-functionality-services} [Application Programming Interfaces (APIs) (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions .dpgn-architectural-expose-functionality-services} [Application Programming Interfaces (APIs) (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
 
 </section>
 
@@ -485,14 +481,6 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 **[TODO: Add/revise checklist items]**
 
-**Build It Right Principles (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-open-by-default-4} Information should be open to other GC organizations and exposed via API's. Any legislative barriers to doing so shall be flagged to TBS.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
@@ -513,17 +501,6 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-**Build It Right Principles (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#open-by-default-proprietary-by-neccessity)
 
 </section>
 </section>
