@@ -73,11 +73,11 @@ To be successful, build a team with:
 - Make sure the team fully understands the service after it's gone live **(Digital Service Standard (UK))**
 - Involve the maintenance team for the service early on in the project **(Digital Service Standard (Ontario))**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-multidisciplinary-teams-1} Teams shall be Multidisciplinary (for example teams should include a service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, and front-end developer.
+- {: .dpgn-digital-architectural-multidisciplinary-teams-1} Include all skillsets required for delivery from requirements, design, development, to operations.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -140,10 +140,10 @@ To be successful, build a team with:
 - [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
 - [2. Have a multidisciplinary team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/2-multidisciplinary-team/)
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams-including-using-devops)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
 
 </section>
 </section>
