@@ -81,6 +81,9 @@ To be successful, build a team with:
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
+**Automated Decision Systems:**
+{: .dpgn-data-ignore}
+
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
 - {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Retain the appropriate expert to review the Automated Decision system, based on the Impact Assessment Level:
