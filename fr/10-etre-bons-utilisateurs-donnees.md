@@ -92,12 +92,14 @@ At every stage of a project, we should measure how well our service is working f
 - Publish metrics externally **(Digital Services Playbook (US))**
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-1} Master Data will be decoupled wherever possible from applications and will be hosted in the appropriate system of record.
-- {: .dpgn-digital-architectural-keep-data-organized-3} Systems of record shall be authoritative central sources that serve data, once validated, to downstream business applications and upstream source systems.
+- {: .dpgn-digital-architectural-keep-data-organized-1} Decouple Master Data from applications and host using the appropriate system of record.
+- {: .dpgn-digital-architectural-keep-data-organized-2} Systems of record shall be authoritative central sources.
+- {: .dpgn-digital-architectural-keep-data-organized-4} Data Resiliency shall be designed in accordance with GC policies and standards.
+- {: .dpgn-digital-architectural-keep-data-organized-5} Publish Master Data Management to appropriate stakeholders.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -161,10 +163,10 @@ At every stage of a project, we should measure how well our service is working f
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep Data Organized (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
 
 </section>
 </section>
@@ -194,11 +196,11 @@ La mesure du rendement permet d’améliorer en continu un service en :
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-2} Custodians shall ensure data is correct, consistent, and complete.
+- {: .dpgn-digital-architectural-keep-data-organized-3} Custodians shall ensure data is correct, consistent, and complete.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -318,10 +320,10 @@ La mesure du rendement permet d’améliorer en continu un service en :
 - [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep Data Organized (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
 
 </section>
 </section>
@@ -341,14 +343,6 @@ La mesure du rendement permet d’améliorer en continu un service en :
 ### Liste de contrôle
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-**Build It Right Principles (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-4} Appropriate governance must be applied.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -374,17 +368,6 @@ La mesure du rendement permet d’améliorer en continu un service en :
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
 - [Digital preservation tools (Preserving digital collections (The National Archives (UK)))](https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/managing-your-collection/preserving-digital-collections/digital-preservation-tools/)
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-**Build It Right Principles (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep data organized (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
 
 </section>
 </section>
