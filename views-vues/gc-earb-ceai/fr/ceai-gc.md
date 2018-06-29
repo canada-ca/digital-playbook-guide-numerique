@@ -7,7 +7,7 @@ altLangPage: gc-earb
 collectionDirectory: views-vues/gc-earb-ceai
 ---
 
-This page provides personalized guidance for how projects can meet the digital architectural principles of the Government of Canada Enterprise Architecture Review Board (GC EARB).
+This page provides personalized guidance for how projects can meet the Digital Architectural Standards of the Government of Canada Enterprise Architecture Review Board (GC EARB).
 
 <!-- markdownlint-disable MD032 -->
 - TOC
@@ -26,9 +26,9 @@ This page provides personalized guidance for how projects can meet the digital a
 
 <section>
 
-## 2. Maximize Reuse (Enterprise First)
+## 2. Maximize Reuse
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-maximize-reuse-1,dpgn-digital-architectural-maximize-reuse-2,dpgn-digital-architectural-maximize-reuse-3,dpgn-digital-architectural-maximize-reuse-4,dpgn-digital-architectural-maximize-reuse-5,dpgn-digital-architectural-maximize-reuse-6,dpgn-digital-architectural-maximize-reuse-7,dpgn-digital-architectural-maximize-reuse-8" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-maximize-reuse-1,dpgn-digital-architectural-maximize-reuse-2,dpgn-digital-architectural-maximize-reuse-3,dpgn-digital-architectural-maximize-reuse-4,dpgn-digital-architectural-maximize-reuse-5,dpgn-digital-architectural-maximize-reuse-6,dpgn-digital-architectural-maximize-reuse-7,dpgn-digital-architectural-maximize-reuse-8" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-maximize-reuse-1,dpgn-digital-architectural-maximize-reuse-2,dpgn-digital-architectural-maximize-reuse-3,dpgn-digital-architectural-maximize-reuse-4,dpgn-digital-architectural-maximize-reuse-5" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-maximize-reuse-1,dpgn-digital-architectural-maximize-reuse-2,dpgn-digital-architectural-maximize-reuse-3,dpgn-digital-architectural-maximize-reuse-4,dpgn-digital-architectural-maximize-reuse-5" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-maximize-reuse" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
@@ -58,7 +58,7 @@ This page provides personalized guidance for how projects can meet the digital a
 
 ## 5. Design for Performance, Availability, and Scalability
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-performance-availability-scalability-1,dpgn-digital-architectural-performance-availability-scalability-2,dpgn-digital-architectural-performance-availability-scalability-3,dpgn-digital-architectural-performance-availability-scalability-4,dpgn-digital-architectural-performance-availability-scalability-5,dpgn-digital-architectural-performance-availability-scalability-6" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-performance-availability-scalability-1,dpgn-digital-architectural-performance-availability-scalability-2,dpgn-digital-architectural-performance-availability-scalability-3,dpgn-digital-architectural-performance-availability-scalability-4,dpgn-digital-architectural-performance-availability-scalability-5,dpgn-digital-architectural-performance-availability-scalability-6" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-performance-availability-scalability-1,dpgn-digital-architectural-performance-availability-scalability-2,dpgn-digital-architectural-performance-availability-scalability-3,dpgn-digital-architectural-performance-availability-scalability-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-performance-availability-scalability-1,dpgn-digital-architectural-performance-availability-scalability-2,dpgn-digital-architectural-performance-availability-scalability-3,dpgn-digital-architectural-performance-availability-scalability-4" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-performance-availability-scalability" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
@@ -66,11 +66,11 @@ This page provides personalized guidance for how projects can meet the digital a
 
 <section>
 
-## 6. Expose all functionality as services
+## 6. Enable Interoperability
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-expose-functionality-services-1,dpgn-digital-architectural-expose-functionality-services-2,dpgn-digital-architectural-expose-functionality-services-3,dpgn-digital-architectural-expose-functionality-services-4,dpgn-digital-architectural-expose-functionality-services-5" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-expose-functionality-services-1,dpgn-digital-architectural-expose-functionality-services-2,dpgn-digital-architectural-expose-functionality-services-3,dpgn-digital-architectural-expose-functionality-services-4,dpgn-digital-architectural-expose-functionality-services-5" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-enable-interoperability-1,dpgn-digital-architectural-enable-interoperability-2,dpgn-digital-architectural-enable-interoperability-3,dpgn-digital-architectural-enable-interoperability-4,dpgn-digital-architectural-enable-interoperability-5" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-enable-interoperability-1,dpgn-digital-architectural-enable-interoperability-2,dpgn-digital-architectural-enable-interoperability-3,dpgn-digital-architectural-enable-interoperability-4,dpgn-digital-architectural-enable-interoperability-5" guidelineSectionsOrder="checklist" %}
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-expose-functionality-services" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-enable-interoperability" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 
@@ -96,9 +96,9 @@ This page provides personalized guidance for how projects can meet the digital a
 
 <section>
 
-## 9. Cloud First
+## 9. Use Cloud First
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-cloud-first-1" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-cloud-first-1" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-cloud-first-1,dpgn-digital-architectural-cloud-first-2,dpgn-digital-architectural-cloud-first-3,dpgn-digital-architectural-cloud-first-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-cloud-first-1,dpgn-digital-architectural-cloud-first-2,dpgn-digital-architectural-cloud-first-3,dpgn-digital-architectural-cloud-first-4" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-cloud-first" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
