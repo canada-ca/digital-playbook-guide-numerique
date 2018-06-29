@@ -71,12 +71,12 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - Ensure that we maintain the rights to all data developed by third parties in a manner that is releasable and reusable at no cost to the public **(Digital Services Playbook (US))**
 - Data and code is shared so that clients can extract/create value. **(General design principles - Digital Design Playbook (ISED))**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-open-by-default-3} For custom-built solutions, make source code open and reusable under an appropriate open source software license where possible.
-- {: .dpgn-digital-architectural-open-by-default-5} Solution designs must support the ability to identify and extract public data from protected data in order to support Open Data and Open Information initiatives.
+- {: .dpgn-digital-architectural-open-standards-solutions-3} Make source code open and reusable under an appropriate open source software license.
+- {: .dpgn-digital-architectural-open-standards-solutions-4} Expose public data to implement Open Data and Open Information initiatives.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -110,13 +110,13 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [Open Data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [Open Data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
 - [Statistical Data Integration (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/)
 
 **Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5) :**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [Making source code open and reusable (Service Manual (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [Making source code open and reusable (Service Manual (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
 - [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
 - [Choose an open source licence(choosealicense.com)](https://choosealicense.com/)
 - [Liste de licences libres (Wikipédia)](https://fr.wikipedia.org/wiki/Liste_de_licences_libres)
@@ -138,10 +138,10 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 - [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-by-default} [1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#open-by-default-proprietary-by-neccessity)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-open-standards-and-solutions-by-default)
 
 **Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5) :**
 {: .dpgn-data-ignore}
