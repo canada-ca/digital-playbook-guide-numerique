@@ -16,11 +16,11 @@ This page provides personalized guidance for how projects can meet the digital a
 
 <section>
 
-## 1. Open by Default (Proprietary by Neccessity)
+## 1. Use Open Standards and Solutions by Default
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-open-by-default-1,dpgn-digital-architectural-open-by-default-2,dpgn-digital-architectural-open-by-default-3,dpgn-digital-architectural-open-by-default-4,dpgn-digital-architectural-open-by-default-5" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-open-by-default-1,dpgn-digital-architectural-open-by-default-2,dpgn-digital-architectural-open-by-default-3,dpgn-digital-architectural-open-by-default-4,dpgn-digital-architectural-open-by-default-5" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-open-standards-solutions-1,dpgn-digital-architectural-open-standards-solutions-2,dpgn-digital-architectural-open-standards-solutions-3,dpgn-digital-architectural-open-standards-solutions-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-open-standards-solutions-1,dpgn-digital-architectural-open-standards-solutions-2,dpgn-digital-architectural-open-standards-solutions-3,dpgn-digital-architectural-open-standards-solutions-4" guidelineSectionsOrder="checklist" %}
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-open-by-default" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-open-standards-solutions" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 
@@ -38,7 +38,7 @@ This page provides personalized guidance for how projects can meet the digital a
 
 ## 3. Design for Users First (Including designing for Accessibility and Official Language support)
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-design-for-users-first-1,dpgn-digital-architectural-design-for-users-first-2,dpgn-digital-architectural-design-for-users-first-3,dpgn-digital-architectural-design-for-users-first-4,dpgn-digital-architectural-design-for-users-first-5,dpgn-digital-architectural-design-for-users-first-6" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-design-for-users-first-1,dpgn-digital-architectural-design-for-users-first-2,dpgn-digital-architectural-design-for-users-first-3,dpgn-digital-architectural-design-for-users-first-4,dpgn-digital-architectural-design-for-users-first-5,dpgn-digital-architectural-design-for-users-first-6" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-design-for-users-first-1,dpgn-digital-architectural-design-for-users-first-2,dpgn-digital-architectural-design-for-users-first-3" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-design-for-users-first-1,dpgn-digital-architectural-design-for-users-first-2,dpgn-digital-architectural-design-for-users-first-3" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-design-for-users-first" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
@@ -46,9 +46,9 @@ This page provides personalized guidance for how projects can meet the digital a
 
 <section>
 
-## 4. Deliver with Multidisciplinary Teams (Including using DevOps)
+## 4. Deliver with Multidisciplinary Teams
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-multidisciplinary-teams-1,dpgn-digital-architectural-multidisciplinary-teams-2,dpgn-digital-architectural-multidisciplinary-teams-3" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-multidisciplinary-teams-1,dpgn-digital-architectural-multidisciplinary-teams-2,dpgn-digital-architectural-multidisciplinary-teams-3" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-multidisciplinary-teams-1,dpgn-digital-architectural-multidisciplinary-teams-2,dpgn-digital-architectural-multidisciplinary-teams-3,dpgn-digital-architectural-multidisciplinary-teams-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-multidisciplinary-teams-1,dpgn-digital-architectural-multidisciplinary-teams-2,dpgn-digital-architectural-multidisciplinary-teams-3,dpgn-digital-architectural-multidisciplinary-teams-4" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-multidisciplinary-teams" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
@@ -78,7 +78,7 @@ This page provides personalized guidance for how projects can meet the digital a
 
 ## 7. Design Systems to be Measurable and Accountable
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-measurable-accountable-1,dpgn-digital-architectural-measurable-accountable-2,dpgn-digital-architectural-measurable-accountable-3" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-measurable-accountable-1,dpgn-digital-architectural-measurable-accountable-2,dpgn-digital-architectural-measurable-accountable-3" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-measurable-accountable-1,dpgn-digital-architectural-measurable-accountable-2,dpgn-digital-architectural-measurable-accountable-3,dpgn-digital-architectural-measurable-accountable-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-measurable-accountable-1,dpgn-digital-architectural-measurable-accountable-2,dpgn-digital-architectural-measurable-accountable-3,dpgn-digital-architectural-measurable-accountable-4" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-measurable-accountable" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
@@ -86,9 +86,9 @@ This page provides personalized guidance for how projects can meet the digital a
 
 <section>
 
-## 8. Keep data organized
+## 8. Keep Data Organized
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-keep-data-organized-1,dpgn-digital-architectural-keep-data-organized-2,dpgn-digital-architectural-keep-data-organized-3,dpgn-digital-architectural-keep-data-organized-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-keep-data-organized-1,dpgn-digital-architectural-keep-data-organized-2,dpgn-digital-architectural-keep-data-organized-3,dpgn-digital-architectural-keep-data-organized-4" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-keep-data-organized-1,dpgn-digital-architectural-keep-data-organized-2,dpgn-digital-architectural-keep-data-organized-3,dpgn-digital-architectural-keep-data-organized-4,dpgn-digital-architectural-keep-data-organized-5" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-keep-data-organized-1,dpgn-digital-architectural-keep-data-organized-2,dpgn-digital-architectural-keep-data-organized-3,dpgn-digital-architectural-keep-data-organized-4,dpgn-digital-architectural-keep-data-organized-5" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-keep-data-organized" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
