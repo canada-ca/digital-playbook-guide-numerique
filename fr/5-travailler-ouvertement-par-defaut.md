@@ -174,11 +174,11 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-measurable-accountable-1} All services shall have a published Service Level Agreement.
+- {: .dpgn-digital-architectural-measurable-accountable-1} Publish a Service Level Agreement for each service.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -204,10 +204,10 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 ### Ressources similaires
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable)
 
 </section>
 </section>
@@ -237,14 +237,13 @@ Setting performance indicators allows you to continuously improve your service b
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-measurable-accountable-2} An audit trail will be available for all transactions, system changes, and information updates to ensure both accountability and non-repudiation.
-- {: .dpgn-digital-architectural-measurable-accountable-3} Solutions shall provide the ability to track and report on business process KPI's. For clarification:
-  - IT shall suggest appropriate metrics to enable business outcomes.
-  - The ability to measure business performance is one of the key functions of technology-enabled processes and IT should be seen as the experts who can bring that to the table. Furthermore, metrics justify IT ongoing investment.
+- {: .dpgn-digital-architectural-measurable-accountable-2} Make an audit trail available for all transactions to ensure accountability and non-repudiation.
+- {: .dpgn-digital-architectural-measurable-accountable-3} Establish business and IT metrics to enable business outcomes.
+- {: .dpgn-digital-architectural-measurable-accountable-4} Apply oversight and lifecycle management to digital investments through governance.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -323,10 +322,10 @@ Setting performance indicators allows you to continuously improve your service b
 
 - [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architecutral .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable)
+- {: .dpgn-digital-architecutral .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable)
 
 </section>
 </section>
