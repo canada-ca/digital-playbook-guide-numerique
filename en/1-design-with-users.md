@@ -174,13 +174,13 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 **[TODO: Add/revise checklist items]**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-1} Focus on the needs of users, using agile, iterative and user-centred methods when building a service.
-- {: .dpgn-digital-architectural-design-for-users-first-2} Start with extensive research and analysis.
-- {: .dpgn-digital-architectural-design-for-users-first-3} Users shall be involved throughout the lifecycle, with user research and testing informing the earliest design phases through to continuous improvements post launch. Iterative processes, continuous user feedback, rapid prototyping, and co-design processes are favoured over waterfall. Furthermore, departments and agencies shall demonstrate investment in the appropriate tools to support these processes.
+- {: .dpgn-digital-architectural-design-for-users-first-1} Focus on the needs of users, using agile, iterative and user-centred methods.
+- {: .dpgn-digital-architectural-design-for-users-first-2} Perform user research from the earliest design through to continuous improvements post-launch.
+- {: .dpgn-digital-architectural-design-for-users-first-3} Conform to both accessibility and official languages requirements.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
