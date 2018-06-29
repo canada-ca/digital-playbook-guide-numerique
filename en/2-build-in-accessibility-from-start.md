@@ -397,14 +397,6 @@ Until you consider the needs of the range of people that will be using your serv
 
 **[TODO: Add/revise checklist items]**
 
-**Build It Right Principles (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-5} Recognize that not everyone will have the same access, comfort and skill level by default.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 - Designing for users on the autistic spectrum ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
   - Do:
     - use simple colours
@@ -521,17 +513,6 @@ Until you consider the needs of the range of people that will be using your serv
 **[TODO: Add/revise reusable solutions]**
 
 - [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-**Build It Right Principles (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support)
 
 </section>
 </section>
