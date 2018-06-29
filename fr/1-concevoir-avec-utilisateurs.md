@@ -180,7 +180,6 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-design-for-users-first-1} Focus on the needs of users, using agile, iterative and user-centred methods.
 - {: .dpgn-digital-architectural-design-for-users-first-2} Perform user research from the earliest design through to continuous improvements post-launch.
-- {: .dpgn-digital-architectural-design-for-users-first-3} Conform to both accessibility and official languages requirements.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
