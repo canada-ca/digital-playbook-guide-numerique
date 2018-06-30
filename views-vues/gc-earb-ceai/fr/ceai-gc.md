@@ -108,7 +108,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 ## 10. Security and Privacy by Design
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-security-privacy-1,dpgn-digital-architectural-security-privacy-2,dpgn-digital-architectural-security-privacy-3" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-security-privacy-1,dpgn-digital-architectural-security-privacy-2,dpgn-digital-architectural-security-privacy-3" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-security-privacy-1,dpgn-digital-architectural-security-privacy-2,dpgn-digital-architectural-security-privacy-3,dpgn-digital-architectural-security-privacy-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-security-privacy-1,dpgn-digital-architectural-security-privacy-2,dpgn-digital-architectural-security-privacy-3,dpgn-digital-architectural-security-privacy-4" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-security-privacy" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
