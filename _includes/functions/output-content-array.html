@@ -6,6 +6,7 @@ comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Com
 comment %}@param relevantSourceElements {String/Array} Optional (defaults to all). Comma-separated source elements or an array of source elements for which content to display (e.g., "ul,ol"). Can be overridden by irrelevantSourceElements. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).{% endcomment %}{% 
 comment %}@param irrelevantSourceElements {String/Array} Optional (defaults to none). Comma-separated source elements or an array of source elements for which content not to display (e.g., "ul,ol"). Overrides by relevantSourceElements. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).{% endcomment %}{% 
 comment %}@param suppressParentListElement {Boolean} Optional (defaults to false). Prevents the output of the parent list element (useful when used with relevantSourceElements to merge lists together). Only affects lists at the current level (i.e., doesn't affect descendant lists).{% endcomment %}{% 
+comment %}@param collapseSubsections {Boolean} Optional (defaults to true). Collapses subsections, preventing the output of the section element and heading without affecting content of the subsections.{% endcomment %}{% 
 comment %}@param contentStandardIndex {Number} Optional (required if guideline is provided, defaults to none). Index of the standard that is an ancestor of the content being processed.{% endcomment %}{% 
 comment %}@param contentGuidelineIndex {Number} Optional (defaults to none) Index of the guideline that is an ancestor of the content being processed.{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
@@ -57,7 +58,6 @@ for item in include.contentArray %}{%
     endif %}{% 
   endif %}{% 
   if include.irrelevantSourceElements.size > 0 %}{% 
-    comment %}Ensure the irrelevant source elements are in an array (done in loop since not passed down through recursions){% endcomment %}{% 
     if include.irrelevantSourceElements.first %}{% 
       assign irrelevantSourceElementsArray = include.irrelevantSourceElements %}{% 
     else %}{% 
@@ -74,18 +74,20 @@ for item in include.contentArray %}{%
     assign irrelevantSourceElementsArray = "" %}{% 
   endif %}{% 
   if include.relevantSourceElements.size > 0 %}{% 
-    comment %}Ensure the relevant source elements are in an array (done in loop since not passed down through recursions){% endcomment %}{% 
-    if include.relevantSourceElements.first %}{% 
-      assign relevantSourceElementsArray = include.relevantSourceElements %}{% 
-    else %}{% 
-      assign relevantSourceElementsArray = include.relevantSourceElements | replace: " ", "" | split: "," %}{% 
-    endif %}{% 
-    assign sourceElementArray = item.source_element | split: "," %}{% 
-    capture tagsCompareRelevantResult %}{% 
-      include /functions/find-array-match.html array1=sourceElementArray array2=relevantSourceElementsArray %}{% 
-    endcapture %}{% 
-    unless tagsCompareRelevantResult contains "true" %}{% 
-      continue %}{% 
+    comment %}Ignore this check when dealing with a section and sections are supposed to be collapsed{% endcomment %}{% 
+    unless item.content_type == 'section' and include.collapseSubsections != false %}{% 
+      if include.relevantSourceElements.first %}{% 
+        assign relevantSourceElementsArray = include.relevantSourceElements %}{% 
+      else %}{% 
+        assign relevantSourceElementsArray = include.relevantSourceElements | replace: " ", "" | split: "," %}{% 
+      endif %}{% 
+      assign sourceElementArray = item.source_element | split: "," %}{% 
+      capture tagsCompareRelevantResult %}{% 
+        include /functions/find-array-match.html array1=sourceElementArray array2=relevantSourceElementsArray %}{% 
+      endcapture %}{% 
+      unless tagsCompareRelevantResult contains "true" %}{% 
+        continue %}{% 
+      endunless %}{% 
     endunless %}{% 
   else %}{% 
     assign relevantSourceElementsArray = "" %}{% 
@@ -109,33 +111,41 @@ for item in include.contentArray %}{%
       assign nextHeadingLevel = include.parentHeadingLevel | plus: 1 %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedOutputSection %}{% 
-        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex %}{% 
+        if include.collapseSubsections == false %}{% 
+          include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex collapseSubsections=false %}{% 
+        else %}{% 
+          include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=nextHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex relevantSourceElements=include.relevantSourceElements irrelevantSourceElements=include.irrelevantSourceElements collapseSubsections=true suppressParentListElement=include.suppressParentListElement %}{% 
+        endif %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedOutputStrip = nestedOutputSection | strip %}{% 
       if relevantItem or nestedOutputStrip.size > 0 %}{% 
-        assign source_element = item.source_element %}{% 
-        if site.defaultClasses[source_element].size > 0 %}{% 
-          assign allClasses = site.defaultClasses[source_element] | split: " " %}{% 
-          if item.tags.size > 0 %}{% 
-            assign allClasses = allClasses | concat: item.tags %}{% 
+        if include.collapseSubsections == false %}{% 
+          assign source_element = item.source_element %}{% 
+          if site.defaultClasses[source_element].size > 0 %}{% 
+            assign allClasses = site.defaultClasses[source_element] | split: " " %}{% 
+            if item.tags.size > 0 %}{% 
+              assign allClasses = allClasses | concat: item.tags %}{% 
+            endif %}{% 
+          else %}{% 
+            assign allClasses = item.tags %}{% 
           endif %}{% 
-        else %}{% 
-          assign allClasses = item.tags %}{% 
-        endif %}{% 
-        assign sectionTag = item.source_element %}{% 
-        assign nextHeadingLevel = include.parentHeadingLevel | plus: 1 %}{% 
-        capture classOutput %}{% 
-          include /functions/class-from-tags.html tags=allClasses %}{% 
-        endcapture %}
+          assign sectionTag = item.source_element %}{% 
+          assign nextHeadingLevel = include.parentHeadingLevel | plus: 1 %}{% 
+          capture classOutput %}{% 
+            include /functions/class-from-tags.html tags=allClasses %}{% 
+          endcapture %}
 <{{ sectionTag }}{{ classOutput | rstrip }}>
 
 <h{{ nextHeadingLevel }}{% if item.source_attributes.id.size > 0 %} id="{{ item.source_attributes.id }}"{% endif %}>{{ item.title }}</h{{ nextHeadingLevel }}>
 
+{%      endif %}
 {{ nestedOutputStrip }}
+{%      if include.collapseSubsections == false %}
 
 </{{ sectionTag }}>
-{%    endif %}{% 
+{%      endif %}{% 
+      endif %}{% 
     elsif item.content_type == 'inline' %}{%  
       comment %}Is inline content, so output the content as is if it is relevant{% endcomment %}{% 
       if relevantItem 
@@ -145,7 +155,7 @@ for item in include.contentArray %}{%
       comment %}Is a content block, so output the source element and then call this function to process the nested content{% endcomment %}{% 
       include /functions/store-data.html name="item-heading" %}{% 
       capture nestedBlockContent %}{% 
-        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=include.parentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex %}{% 
+        include /functions/output-content-array.html contentArray=item.content parentHeadingLevel=include.parentHeadingLevel relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex collapseSubsections=include.collapseSubsections %}{% 
       endcapture %}{% 
       include /functions/retrieve-data.html name="item-heading" %}{% 
       assign nestedBlockContentStrip = nestedBlockContent | rstrip %}{% 

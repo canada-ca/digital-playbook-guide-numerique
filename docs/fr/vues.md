@@ -246,8 +246,9 @@ The following are three of the more commonly used helper functions. For the rest
   - ``groupListsSeparately`` {Boolean} Optional (defaults to false). When enabled, top-level lists will be grouped and merged together, followed by the rest of the content.
   - ``groupByTagsTags`` {String/Array} Optional (defaults to none). Comma-separated tags or array of tags that will be used to create filtered sub-sections for each tag, with a final section for anything that doesn't match any of the tags (to filter out content completely, use relevantTags instead). If a title is provided for the final section, that final section will be put at the end, otherwise the content will be put at the start.
   - ``groupByTagsTitles`` {String/Array} Optional (defaults to none). Semi-colon-separated subsection titles or array of subsection titles. Used to provide titles for the subsections for each tag in ``groupByTagsTags``. Provide an extra title (at the end) to group everything else in a final section at the end (otherwise anything that doesn't match will be put at the start). Must have at minimum the same number of entries in the same order as ``groupByTagsTags``.
-- ``relevantSections`` {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
-- ``guidelineSectionsOrder`` {String/Array} Optional (defaults to ``site.guidelineSectionsOrder``). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).
+  - ``relevantSections`` {String/Array} Optional (defaults to all). Comma-separated section tags or array of section tags that content must have at least one of to be displayed.
+  - ``guidelineSectionsOrder`` {String/Array} Optional (defaults to ``site.guidelineSectionsOrder``). Comma-separated section keys or array of section keys determining the order to display the sections (omitting a section will prevent it from being displayed).
+  - ``collapseSubsections`` {Boolean} Optional (defaults to true). Collapses subsections, preventing the output of the section element and heading without affecting content of the subsections.
 - **Returns:** {String} Outputs the guideline sections.
 <!-- markdownlint-enable MD032 -->
 
@@ -266,6 +267,7 @@ The following are three of the more commonly used helper functions. For the rest
   - ``relevantSourceElements`` {String/Array} Optional (defaults to all). Comma-separated source elements or an array of source elements for which content to display (e.g., ``"ul,ol"``). Can be overridden by ``irrelevantSourceElements``. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).
   - ``irrelevantSourceElements`` {String/Array} Optional (defaults to none). Comma-separated source elements or an array of source elements for which content not to display (e.g., ``"ul,ol"``). Overrides ``relevantSourceElements``. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).
   - ``suppressParentListElement`` {Boolean} Optional (defaults to false). Prevents the output of the parent list element (useful when used with ``relevantSourceElements`` to merge lists together). Only affects lists at the current level (i.e., doesn't affect descendant lists).
+  - ``collapseSubsections`` {Boolean} Optional (defaults to true). Collapses subsections, preventing the output of the section element and heading without affecting content of the subsections.
 - **Returns:** {String} Outputs the guideline sections.
 <!-- markdownlint-enable MD032 -->
 
@@ -282,6 +284,7 @@ The following are three of the more commonly used helper functions. For the rest
   - ``relevantSourceElements`` {String/Array} Optional (defaults to all). Comma-separated source elements or an array of source elements for which content to display (e.g., ``"ul,ol"``). Can be overridden by ``irrelevantSourceElements``. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).
   - ``irrelevantSourceElements`` {String/Array} Optional (defaults to none). Comma-separated source elements or an array of source elements for which content not to display (e.g., ``"ul,ol"``). Overrides ``relevantSourceElements``. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).
   - ``suppressParentListElement`` {Boolean} Optional (defaults to false). Prevents the output of the parent list element (useful when used with ``relevantSourceElements`` to merge lists together). Only affects lists at the current level (i.e., doesn't affect descendant lists).
+  - ``collapseSubsections`` {Boolean} Optional (defaults to true). Collapses subsections, preventing the output of the section element and heading without affecting content of the subsections.
   - ``contentStandardIndex`` {Number} Optional (required if guideline is provided, defaults to none). Index of the standard that is an ancestor of the content being processed.
   - ``contentGuidelineIndex`` {Number} Optional (defaults to none) Index of the guideline that is an ancestor of the content being processed.
 - **Returns:** {String} Returns the processed output from the content array.
