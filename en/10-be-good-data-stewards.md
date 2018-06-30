@@ -96,11 +96,11 @@ At every stage of a project, we should measure how well our service is working f
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-1} Decouple Master Data from applications and host using the appropriate system of record.
-- {: .dpgn-digital-architectural-keep-data-organized-2} Systems of record shall be authoritative central sources.
+- {: .dpgn-digital-architectural-keep-data-organized-1} Decouple Master Data from applications and host within the appropriate system of record.
+- {: .dpgn-digital-architectural-keep-data-organized-2} Make systems of record authoritative central sources.
 {: .dpgn-digital-architectural}
-- {: .dpgn-digital-architectural-keep-data-organized-4} Data Resiliency shall be designed in accordance with GC policies and standards.
-- {: .dpgn-digital-architectural-keep-data-organized-5} Publish Master Data Management to appropriate stakeholders.
+- {: .dpgn-digital-architectural-keep-data-organized-4} Design data resiliency in accordance with GC policies and standards.
+- {: .dpgn-digital-architectural-keep-data-organized-5} Use Master Data Management to provide a single point of reference for appropriate stakeholders.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -201,7 +201,7 @@ Measuring performance means continuously improving a service by:
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-3} Custodians shall ensure data is correct, consistent, and complete.
+- {: .dpgn-digital-architectural-keep-data-organized-3} Assign data custodians to ensuring data is correct, consistent, and complete.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
