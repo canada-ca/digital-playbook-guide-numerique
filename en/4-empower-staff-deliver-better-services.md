@@ -32,7 +32,7 @@ altLangPage: 4-permettre-personnel-offrir-meilleurs-services
 
 <section class="dpgn-section-guideline">
 
-## 4.1 Build a team culture that is collaborative and adaptive, and is committed to enabling quality services for users
+## 4.1 Provide ongoing training and learning opportunities to continually improve the skills of the team and the broader network
 
 <div class="dpgn-section-intro-guideline">
 
@@ -44,13 +44,23 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 
 ### Checklist
 
-- Ensure team members can achieve their full potential; allow them to participate in knowledge-sharing across the government and ensure they receive the training they require
-- Seek the best results for Canadians by encouraging evidence-based decision-making and extensive collaboration
-- Develop and maintain a core set of principles that prioritze commitment to users
-- Determine the team's decision making/approval processes, support practices (pairing, peer review), and working practices (stand-ups, sprint planning, etc.)
-- Determine how the team will apply modern methods for project management and design (Agile, co-design, service design)
-- Identify, and maintain effective methods for engaging users, stakeholders, and advisors/experts
-- Be prepared to adapt to a frequently changing digital environment that is consistently evolving (emerging tech, emerging threats/security concerns, increased use of artificial intelligence, etc.), and act accordingly
+- Ensure team members can achieve their full potential; allow them to participate in knowledge-sharing across the government and ensure they receive the training they require.
+- Seek the best results for Canadians by encouraging evidence-based decision-making and extensive collaboration.
+- Develop and maintain a core set of principles that prioritize commitment to users.
+- Determine the team's decision making/approval processes, support practices (e.g., pairing, peer review), and working practices (e.g., stand-ups, sprint planning, etc.).
+- Determine how the team will apply modern methods for project management and design (Agile, co-design, service design).
+- Identify and maintain effective methods for engaging users, stakeholders, and advisors/experts.
+- Be prepared to adapt to a frequently changing digital environment that is consistently evolving (e.g., emerging tech, emerging threats/security concerns, increased use of artificial intelligence, etc.), and act accordingly.
+
+**Automated Decision Systems:**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD034 -->
+- {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)"} Ensure that some employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required.
+{: .dpgn-section-hide data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+<!-- markdownlint-enable MD034 -->
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -74,7 +84,7 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 
 ### Similar resources
 
-- [6. Create and empower an interdisciplinary team (Digital service design atandard (NZ))](https://www.digital.govt.nz/standards-and-guidance/digital-service-design-standard/principles/create-and-empower-an-interdisciplinary-team/)
+- [6. Create and empower an interdisciplinary team (Digital service design standard (NZ))](https://www.digital.govt.nz/standards-and-guidance/digital-service-design-standard/principles/create-and-empower-an-interdisciplinary-team/)
 
 </section>
 </section>
@@ -93,16 +103,16 @@ We need to evaluate and determine the tools and systems that we will use to buil
 
 ### Checklist
 
-- Maintain a modern workplace with the professional development, IM-IT tools, and environment necessary for employees to do their jobs effectively
-- Check for risks or restrictions associated with the tools and avoid any contracts that will prevent you from changing/improving your service
-- Ensure that the system you build will be both sustainable and easily maintainable once the service is live
+- Maintain a modern workplace with the professional development, IM-IT tools, and environment necessary for employees to do their jobs effectively.
+- Check for risks or restrictions associated with the tools and avoid any contracts that will prevent you from changing/improving your service.
+- Ensure that the system you build will be both sustainable and easily maintainable once the service is live.
 
 **Alpha stage:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- Determine technical choices and programming tools
-- Determine how you will net value for money spent on tools and how you will monitor your service
+- Determine technical choices and programming tools.
+- Determine how you will net value for money spent on tools and how you will monitor your service.
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
@@ -110,8 +120,8 @@ We need to evaluate and determine the tools and systems that we will use to buil
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- Determine how you will manage limits placed on the service 
-- Document purchases and value for money, how you will monitor the service, support arrangments, and the specifics and reasons behind third party decisions
+- Determine how you will manage limits placed on the service.
+- Document purchases and value for money, how you will monitor the service, support arrangements, and the specifics and reasons behind third-party decisions.
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
@@ -119,8 +129,8 @@ We need to evaluate and determine the tools and systems that we will use to buil
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- Document tech stacks and development toolchain changes made during beta and why
-- Document how you are continuing to get the value for money, how you will check the health of the service, support arrangements that have been set up, and the specifics and reasons behind outsourced decisions
+- Document tech stacks and development toolchain changes made during beta and why.
+- Document how you are continuing to get the value for money, how you will check the health of the service, support arrangements that have been set up, and the specifics and reasons behind outsourced decisions.
 {: .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
@@ -160,7 +170,9 @@ We need to evaluate and determine the tools and systems that we will use to buil
 
 <div class="dpgn-section-intro-guideline">
 
-We must always be searching for ways to improve service delivery, through review of business processes, user testing, and commitment to best practises for service delivery when designing or redesigning digital services. We need to maintain a strong working relationship with experienced contracting and budgeting officers to facilitate a smooth contracting process.
+We must always be searching for ways to improve service delivery, through review of business processes, user testing, and commitment to best practices for service delivery when designing or redesigning digital services. We need to maintain a strong working relationship with experienced contracting and budgeting officers to facilitate a smooth contracting process.
+
+Every service must have a person that will hold the designate authority to make critical decisions (product owner). Key responsibilities will include managing how the project's vision is articulated, stakeholder/vendor relationships, efficiency, and accountability. This individual will also determine features of the service.
 
 </div>
 
@@ -168,16 +180,33 @@ We must always be searching for ways to improve service delivery, through review
 
 ### Checklist
 
-- Seek opportunities to connect and integrate with relevant existing services to simplify the experience for users and clients
-- Use up-to-date IM-IT management practices and tools
-- Ensure that the budget includes research and discovery activities, as well as prototyping processes
-- Maintain contracts that are structured to request regular deliverables and hold the vendors accountable accordingly
-- Ensure that contracts commit to the evaluation of open source solutions
-- Ensure contracts specify that the software and data to be generated by third parties will remain under our control, with the potential to use, reuse, and release to the public if appropriate and lawful
-- Maintain that contracts specify a warranty period, a transition of services period, and a transition-out plan 
-- Use business intelligence and business analytics
-- Idenify the policy and data constraints that may restrict the project
-- Build the digital platform when the potential for improvements and relevant considerations are accounted for
+- Seek opportunities to connect and integrate with relevant existing services to simplify the experience for users and clients.
+- Use up-to-date IM-IT management practices and tools.
+- Ensure that the budget includes research and discovery activities, as well as prototyping processes.
+- Maintain contracts that are structured to request regular deliverables and hold the vendors accountable accordingly.
+- Ensure that contracts commit to the evaluation of open source solutions.
+- Ensure contracts specify that the software and data to be generated by third parties will remain under our control, with the potential to use, reuse, and release to the public if appropriate and lawful.
+- Maintain that contracts specify a warranty period, a transition of services period, and a transition-out plan.
+- Use business intelligence and business analytics.
+- Identify the policy and data constraints that may restrict the project.
+- Build the digital platform when the potential for improvements and relevant considerations are accounted for.
+- A product owner is identified and all stakeholders agree that the owner has the authority necessary to assign tasks and make critical decisions regarding product features and technical implementation.
+- The product owner has the necessary qualities to fill the role, including apt knowledge and seniority.
+- The product owner has technical experience and a project management background, with strong knowledge of the procurment/development process.
+- The product owner has a work plan complete with budget estimates and identified funding sources.
+- The product owner's relationship with the contracting officer/development team is strong and able to endure potential challenges throughout the process.
+- There is a plan to conduct regular user testing to deduce the success of the service's ability to meet the users' needs.
+- The particular data sources and data-capture methods are appropriately identified; a roadmap highlights performance analysis and responsibilities for the identification of actionable data insights.
+- The service can be improved through iteration with the necessary resources and flexibility.
+
+**Digital Architectural Standards (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-multidisciplinary-teams-3} Ensure quality is considered throughout the Software Development Lifecycle.
+- {: .dpgn-digital-architectural-multidisciplinary-teams-4} Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT.
+{: .dpgn-standard-hide}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -203,6 +232,12 @@ We must always be searching for ways to improve service delivery, through review
 
 - [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
+- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
+
+**Digital Architectural Standards (GC):**
+{: .dpgn-data-ignore}
+
+- {: .dpgn-standard-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
 
 </section>
 </section>
@@ -221,13 +256,21 @@ We must empower staff to share power and control over projects. This can involve
 
 ### Checklist
 
-- Encourage learning, even if it is through well-intended efforts that result in mistakes
-- Remember to celebrate employees' hard-work including successes and failures
-- Focus on a strong governance approach in the workplace
-- Emphasize sustainability and innovation
-- Promote information-sharing to build better decision-making capacity
-- Have clear objectives, milestones, and defined roles to assist employees as they navigate interactions with users
-- Allow employees to grow into personal roles, and avoid the limits of hierarchy within team member/manager dynamics
+- Encourage learning, even if it is through well-intended efforts that result in mistakes.
+- Remember to celebrate employees' hard-work, including successes and failures.
+- Focus on a strong governance approach in the workplace.
+- Emphasize sustainability and innovation.
+- Promote information-sharing to build better decision-making capacity.
+- Have clear objectives, milestones, and defined roles to assist employees as they navigate interactions with users.
+- Allow employees to grow into personal roles, and avoid the limits of hierarchy within team member/manager dynamics.
+
+**Digital Architectural Standards (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-digital-architectural-multidisciplinary-teams-2} Work across the entire application lifecycle, from development and test to deployment to operations.
+{: .dpgn-standard-hide .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -249,59 +292,14 @@ We must empower staff to share power and control over projects. This can involve
 
 <section class="dpgn-section-similar">
 
-### Ressources similaires
+### Similar resources
 
 - [Forbes - 6 ways to empower others to succeed](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#32a2a275c620)
 
-</section>
-</section>
+**Digital Architectural Standards (GC):**
+{: .dpgn-data-ignore}
 
-<section class="dpgn-section-guideline">
-
-## 4.5 Make one person accountable for the service
-
-<div class="dpgn-section-intro-guideline">
-
-Every service must have a person that will hold the designate authority to make critical decisions (product owner). Key responsibilities will include managing how the project's vision is articulated, stakeholder/vender relationships, efficiency, and accountabilitiy. This individual will also determine features of the service.
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-- A product owner is identified and all stakeholders agree that the owner has the authority necessary to assign tasks and make critical decisions regarding product features and technical implementation
-- The product owner has the necessary qualities to fill the role, including apt knowledge and seniority
-- The product owner has technical experience and a project management background, with strong knowledge of the procurment/development process
-- The product owner has a work plan complete with budget estimates and identified funding sources
-- The product owner's relationship with the contracting officer/development team is strong and able to endure potential challenges throughout the process 
-- There is a plan to conduct regular user testing to deduce the success of the service's abilitiy to meet the users' needs
-- The particular data sources and data-capture methods are appropriately identified; a roadmap highlights performance analysis and responsibilities for the identification of actionable data insights
-- The service can be improved through iteration with the necessary resources and flexibilitiy 
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
+- {: .dpgn-standard-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
 
 </section>
 </section>

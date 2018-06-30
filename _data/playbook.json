@@ -1139,7 +1139,7 @@
                               "dpgn-digital-architectural-design-for-users-first-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Focus on the needs of users, using agile, iterative and user-centred methods when building a service."
+                            "content": "Focus on the needs of users, using agile, iterative and user-centred methods."
                           }
                         ]
                       },
@@ -1157,25 +1157,7 @@
                               "dpgn-digital-architectural-design-for-users-first-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Start with extensive research and analysis."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-design-for-users-first-3",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-design-for-users-first-3",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Users shall be involved throughout the lifecycle, with user research and testing informing the earliest design phases through to continuous improvements post launch. Iterative processes, continuous user feedback, rapid prototyping, and co-design processes are favoured over waterfall. Furthermore, departments and agencies shall demonstrate investment in the appropriate tools to support these processes."
+                            "content": "Perform user research from the earliest design through to continuous improvements post-launch."
                           }
                         ]
                       },
@@ -1485,7 +1467,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-design-for-users-first"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support\">3. Design for Users First (Including designing for Accessibility and Official Languages support) (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first\">3. Design for Users First (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -4221,35 +4203,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-design-for-users-first-4",
+                          "dpgn-digital-architectural-design-for-users-first-3",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-design-for-users-first-4",
+                              "dpgn-digital-architectural-design-for-users-first-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Solutions will conform to both accessibility and official languages guidelines."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-design-for-users-first-6",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-design-for-users-first-6",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Ensure a high level of Web accessibility is applied uniformly across Government of Canada websites and Web applications."
+                            "content": "Conform to both accessibility and official languages requirements."
                           }
                         ]
                       },
@@ -4876,7 +4840,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-design-for-users-first"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support\">3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first\">3. Design for Users First (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -5697,26 +5661,7 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "tags": null,
                     "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-design-for-users-first-5",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-design-for-users-first-5",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Recognize that not everyone will have the same access, comfort and skill level by default."
-                          }
-                        ]
-                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -6881,30 +6826,7 @@
                   "dpgn-section-similar"
                 ],
                 "content": [
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-design-for-users-first"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-design-for-users-first"
-                            ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support\">3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))</a>"
-                          }
-                        ]
-                      }
-                    ]
-                  }
+
                 ]
               }
             }
@@ -7223,7 +7145,7 @@
                               "dpgn-digital-architectural-multidisciplinary-teams-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Teams shall be Multidisciplinary (for example teams should include a service owner, product manager, delivery manager, technical architect, assisted digital lead, designer, user researcher, developer, content designer, web operations engineer, performance analyst, and front-end developer."
+                            "content": "Include all skillsets required for delivery from requirements, design, development, to operations."
                           }
                         ]
                       },
@@ -7949,7 +7871,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams-including-using-devops\">4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams\">4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -9877,7 +9799,23 @@
                             "tags": [
                               "dpgn-digital-architectural-multidisciplinary-teams-3"
                             ],
-                            "content": "Ensure quality is considered throughout the SDLC. For clarification, one of the most frequent friction points between Business and IT is the perceived quality of the systems being delivered. Encouraging and adopting methodologies such as Test Driven Deployment (TDD) is instrumental in improving the trust between Business and IT.\n"
+                            "content": "Ensure quality is considered throughout the Software Development Lifecycle."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-multidisciplinary-teams-4"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-multidisciplinary-teams-4"
+                            ],
+                            "content": "Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT.\n"
                           }
                         ]
                       }
@@ -9966,7 +9904,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams-including-using-devops\">4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams\">4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       },
@@ -10152,7 +10090,7 @@
                               "dpgn-digital-architectural-multidisciplinary-teams-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Under a DevOps model, development and operations teams are merged into a single team where the engineers work across the entire application lifecycle, from development and test to deployment to operations, and develop a range of skills not limited to a single function."
+                            "content": "Work across the entire application lifecycle, from development and test to deployment to operations."
                           }
                         ]
                       }
@@ -10221,7 +10159,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams-including-using-devops\">4. Deliver with Multidisciplinary Teams (Including using DevOps) (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams\">4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -10502,17 +10440,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-open-by-default-3",
+                          "dpgn-digital-architectural-open-standards-solutions-3",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-open-by-default-3",
+                              "dpgn-digital-architectural-open-standards-solutions-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "For custom-built solutions, make source code open and reusable under an appropriate open source software license where possible."
+                            "content": "Make source code open and reusable under an appropriate open source software license."
                           }
                         ]
                       },
@@ -10520,17 +10458,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-open-by-default-5",
+                          "dpgn-digital-architectural-open-standards-solutions-4",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-open-by-default-5",
+                              "dpgn-digital-architectural-open-standards-solutions-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Solution designs must support the ability to identify and extract public data from protected data in order to support Open Data and Open Information initiatives."
+                            "content": "Expose public data to implement Open Data and Open Information initiatives."
                           }
                         ]
                       },
@@ -10702,14 +10640,14 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default"
+                          "dpgn-digital-architectural-open-standards-solutions"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default"
+                              "dpgn-digital-architectural-open-standards-solutions"
                             ],
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/open-data/\">Open Data (Digital Service Standard (AU))</a>"
                           }
@@ -10730,14 +10668,14 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default"
+                          "dpgn-digital-architectural-open-standard-solutions"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default"
+                              "dpgn-digital-architectural-open-standard-solutions"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable\">Making source code open and reusable (Service Manual (UK))</a>"
                           }
@@ -10831,16 +10769,16 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default"
+                          "dpgn-digital-architectural-open-standard-solutions"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default"
+                              "dpgn-digital-architectural-open-standard-solutions"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#open-by-default-proprietary-by-neccessity\">1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-open-standards-and-solutions-by-default\">1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       },
@@ -10989,7 +10927,7 @@
                               "dpgn-digital-architectural-measurable-accountable-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "All services shall have a published Service Level Agreement."
+                            "content": "Publish a Service Level Agreement for each service."
                           }
                         ]
                       }
@@ -11057,7 +10995,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-measurable-accountable"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable\">7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable\">7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -11179,7 +11117,7 @@
                               "dpgn-digital-architectural-measurable-accountable-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "An audit trail will be available for all transactions, system changes, and information updates to ensure both accountability and non-repudiation."
+                            "content": "Make an audit trail available for all transactions to ensure accountability and non-repudiation."
                           }
                         ]
                       },
@@ -11197,53 +11135,25 @@
                               "dpgn-digital-architectural-measurable-accountable-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Solutions shall provide the ability to track and report on business process KPI’s. For clarification:\n        "
-                          },
+                            "content": "Establish business and IT metrics to enable business outcomes."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-measurable-accountable-4",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ul",
+                            "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-measurable-accountable-3",
+                              "dpgn-digital-architectural-measurable-accountable-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-measurable-accountable-3",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-measurable-accountable-3",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "IT shall suggest appropriate metrics to enable business outcomes."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-measurable-accountable-3",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-measurable-accountable-3",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "The ability to measure business performance is one of the key functions of technology-enabled processes and IT should be seen as the experts who can bring that to the table. Furthermore, metrics justify IT ongoing investment."
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "Apply oversight and lifecycle management to digital investments through governance."
                           }
                         ]
                       },
@@ -11698,7 +11608,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-measurable-accountable"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable\">7. Design Systems to be Measurable and Accountable (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable\">7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -12196,17 +12106,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-open-by-default-1",
+                          "dpgn-digital-architectural-open-standards-solutions-1",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-open-by-default-1",
+                              "dpgn-digital-architectural-open-standards-solutions-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Open source standards, components, and leading practices will be used wherever practical."
+                            "content": "Use open source standards, solutions, components, and leading practices."
                           }
                         ]
                       },
@@ -12214,99 +12124,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-open-by-default-2",
+                          "dpgn-digital-architectural-open-standards-solutions-2",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-open-by-default-2",
+                              "dpgn-digital-architectural-open-standards-solutions-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "When Open Source offerings cannot be used, Platform Agnostic COTS offerings are preferable to custom-built solutions. For clarity, the order of preference shall be:\n        "
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ol",
-                            "tags": [
-                              "dpgn-digital-architectural-open-by-default-2",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-open-by-default-2",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-open-by-default-2",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Open Standard"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-open-by-default-2",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-open-by-default-2",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Platform Agnostic COTS"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-open-by-default-2",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-open-by-default-2",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Proprietary COTS"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-open-by-default-2",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-open-by-default-2",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Custom"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "Enforce this order of preference: open, platform-agnostic COTS, proprietary COTS, and then custom."
                           }
                         ]
                       },
@@ -12324,7 +12152,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "All services will respond in 500ms or less wherever possible. Flexible support services should automatically adjust to meet demand as needed."
+                            "content": "Design for resiliency."
                           }
                         ]
                       },
@@ -12342,7 +12170,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Cloud providers should have geographically-separated data centers that are backed up at the transaction level and automatically fail over while maintaining client sessions."
+                            "content": "Ensure response times meet user needs, and critical services are highly available."
                           }
                         ]
                       },
@@ -12360,7 +12188,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Critical applications shall be 99.999% available including planned maintenance."
+                            "content": "Support zero-downtime deployments for planned and unplanned maintenance."
                           }
                         ]
                       },
@@ -12378,143 +12206,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Support for zero-downtime version updates default."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-performance-availability-scalability-5",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-performance-availability-scalability-5",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Systems shall be designed for resiliency. For example:\n        "
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "tags": [
-                              "dpgn-digital-architectural-performance-availability-scalability-5",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-performance-availability-scalability-5",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-performance-availability-scalability-5",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Leveraging distributed architectures,"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-performance-availability-scalability-5",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-performance-availability-scalability-5",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Assuming failure will occur,"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-performance-availability-scalability-5",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-performance-availability-scalability-5",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Designing graceful error handling,"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-performance-availability-scalability-5",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-performance-availability-scalability-5",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Leveraging active monitoring"
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-performance-availability-scalability-6",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-performance-availability-scalability-6",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Consideration shall be given to risks of over-centralization or including too much complexity into a single system."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-expose-functionality-services-2",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-expose-functionality-services-2",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Open standards will be used for all interoperability."
+                            "content": "Use distributed architectures, assume failure will happen, handle errors gracefully, and actively monitor."
                           }
                         ]
                       },
@@ -12798,14 +12490,14 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default"
+                          "dpgn-digital-architectural-open-standards-solutions"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default"
+                              "dpgn-digital-architectural-open-standards-solutions"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/working-with-open-standards\">Working with open standards (Service Manual (UK))</a>"
                           }
@@ -12816,14 +12508,14 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default"
+                          "dpgn-digital-architectural-open-standards-solutions"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default"
+                              "dpgn-digital-architectural-open-standards-solutions"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/choosing-technology-an-introduction\">Choosing technology: an introduction (Service Manual (UK))</a>"
                           }
@@ -13145,16 +12837,16 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default"
+                          "dpgn-digital-architectural-open-standards-solutions"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default"
+                              "dpgn-digital-architectural-open-standards-solutions"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#open-by-default-proprietary-by-neccessity\">1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#use-open-standards-and-solutions-by-default\">1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       },
@@ -13172,25 +12864,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-performance-availability-scalability"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability\">5. Design for Performance, Availability, and Scalibility (Build It Right Principles (GC))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-expose-functionality-services"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-expose-functionality-services"
-                            ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#expose-all-functionality-as-services\">6. Expose all functionality as services (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability\">5. Design for Performance, Availability, and Scalibility (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       },
@@ -13718,7 +13392,7 @@
                               "dpgn-digital-architectural-maximize-reuse-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Where feasible, existing components and processes across the GC shall be leveraged/reused to create new solutions."
+                            "content": "Leverage/reuse existing solutions, components, and processes."
                           }
                         ]
                       },
@@ -13736,71 +13410,7 @@
                               "dpgn-digital-architectural-maximize-reuse-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Net new development shall consider GC Enterprise/GC Enterprise Cluster requirements first over Departmental Specific Solutions. For clarity, the order of scope preference is:\n        "
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "tags": [
-                              "dpgn-digital-architectural-maximize-reuse-2",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-maximize-reuse-2",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-maximize-reuse-2",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Enterprise"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-maximize-reuse-2",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-maximize-reuse-2",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Enterprise Cluster"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-maximize-reuse-2",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-maximize-reuse-2",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Departmental (recognising institutional uniqueness)"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "Select enterprise or cluster solutions over department-specific solutions."
                           }
                         ]
                       },
@@ -13818,7 +13428,7 @@
                               "dpgn-digital-architectural-maximize-reuse-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Reuse first, buy second, build last."
+                            "content": "Achieve simplification by minimizing duplication of components and adhering to relevant standards."
                           }
                         ]
                       },
@@ -13836,7 +13446,7 @@
                               "dpgn-digital-architectural-maximize-reuse-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Simplification will be achieved by minimizing duplication of active components in use, adhering to established standards."
+                            "content": "Identify departmental investments/innovations to the GC EARB."
                           }
                         ]
                       },
@@ -13854,7 +13464,7 @@
                               "dpgn-digital-architectural-maximize-reuse-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Perform IT lifecycle management so that no HW or SW platform is unsupported or obsolete."
+                            "content": "Share code publically when appropriate, when not, share within the Government of Canada."
                           }
                         ]
                       },
@@ -13862,17 +13472,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-maximize-reuse-6",
+                          "dpgn-digital-architectural-enable-interoperability-4",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-maximize-reuse-6",
+                              "dpgn-digital-architectural-enable-interoperability-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "GC institutions shall identify opportunities to TBS where their investments/innovations contribute to move the whole GC forward."
+                            "content": "Run applications in containers."
                           }
                         ]
                       },
@@ -13880,109 +13490,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-maximize-reuse-7",
+                          "dpgn-digital-architectural-enable-interoperability-5",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-maximize-reuse-7",
+                              "dpgn-digital-architectural-enable-interoperability-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Solutions shall be designed with Enterprise scale in mind.\n        "
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "tags": [
-                              "dpgn-digital-architectural-maximize-reuse-7",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-maximize-reuse-7",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-maximize-reuse-7",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "For example, many initiatives involving containerization and managing applications in the Cloud are based on custom operational scripts leveraging open source tools. While that’s fantastic for early stage exploration, it’s not a sustainable model for production scale systems. As newer architectures come through EARB, we should be looking at their long term viability."
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-expose-functionality-services-3",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-expose-functionality-services-3",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Applications shall be run in containers."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-expose-functionality-services-5",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-expose-functionality-services-5",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Services shall be designed using standardized information models and schemas (e.g., NIEM, HRXML). API’s are nearly useless if they expose proprietary schemas.\n        "
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "tags": [
-                              "dpgn-digital-architectural-expose-functionality-services-5",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-expose-functionality-services-5",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-expose-functionality-services-5",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "For example, services generated by whatever technology they’re exposing are not interop-friendly. Furthermore, they tend to tightly couple the API to the backend implementation which defeats the point of having a service."
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "Manages services through a service bus (DXP) and an API store."
                           }
                         ]
                       },
@@ -14000,107 +13518,61 @@
                               "dpgn-digital-architectural-cloud-first-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "The order of preference for hosting is:\n        "
-                          },
+                            "content": "Software as a Service, (SaaS ) first, then Platform as a Service (PaaS), then Infrastructure as a Service (IaaS)."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-cloud-first-2",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ul",
+                            "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-cloud-first-1",
+                              "dpgn-digital-architectural-cloud-first-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-cloud-first-1",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-cloud-first-1",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Public Cloud for SaaS (Software as a Service, also known as Managed Services)."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-cloud-first-1",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-cloud-first-1",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Public PaaS (Platform as a Service)"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-cloud-first-1",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-cloud-first-1",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Public IaaS (Infrastructure as a Service)"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-cloud-first-1",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-cloud-first-1",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Private Cloud (Where Public hosting is not possible)"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-digital-architectural-cloud-first-1",
-                                  "dpgn-digital-architectural"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-digital-architectural-cloud-first-1",
-                                      "dpgn-digital-architectural"
-                                    ],
-                                    "content": "Non-cloud (Where cloud hosting is not possible)"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "Public cloud first, then Hybrid, then Private Cloud."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-cloud-first-3",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-cloud-first-3",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Lastly non-cloud (on premise) solutions."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-cloud-first-4",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-cloud-first-4",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Design for cloud mobility and an exit strategy to avoid vendor lock-in."
                           }
                         ]
                       },
@@ -14624,7 +14096,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-maximize-reuse"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#maximize-reuse-enterprise-first\">2. Maximize Reuse (Enterprise First) (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#maximize-reuse\">2. Maximize Reuse (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       },
@@ -14633,16 +14105,16 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-expose-functionality-services"
+                          "dpgn-digital-architectural-enable-interoperability"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-expose-functionality-services"
+                              "dpgn-digital-architectural-enable-interoperability"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#expose-all-functionality-as-services\">6. Expose all functionality as services (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#enable-interoperability\">6. Enable Interoperability (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       },
@@ -14660,7 +14132,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#cloud-first\">9. Cloud First (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-cloud-first\">9. Use Cloud First (Digital Architectural Standards Principles (GC))</a>"
                           }
                         ]
                       },
@@ -14806,17 +14278,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-expose-functionality-services-1",
+                          "dpgn-digital-architectural-enable-interoperability-1",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-expose-functionality-services-1",
+                              "dpgn-digital-architectural-enable-interoperability-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "The microservices architecture is a design approach to build a single application as a set of small services. Microservices are built around business capabilities; each service is scoped to a single purpose. Components will be architected to minimize the costs of future changes."
+                            "content": "Expose all functionality as services."
                           }
                         ]
                       },
@@ -14824,17 +14296,35 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-expose-functionality-services-4",
+                          "dpgn-digital-architectural-enable-interoperability-2",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-expose-functionality-services-4",
+                              "dpgn-digital-architectural-enable-interoperability-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Each service shall in its own process and communicate with other services through a well-defined interface using a lightweight mechanism, typicall an HTTP-based application programming interface (API)."
+                            "content": "Use microservices built around business capabilities. Scope each service to a single purpose."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-enable-interoperability-3",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-enable-interoperability-3",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Run each service in its own process and have it communicate with other services through a well-defined interface, such as an HTTPS-based application programming interface (API)."
                           }
                         ]
                       }
@@ -14868,16 +14358,16 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default",
-                          "dpgn-digital-architectural-expose-functionality-services"
+                          "dpgn-digital-architectural-open-standards-solutions",
+                          "dpgn-digital-architectural-enable-interoperability"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default",
-                              "dpgn-digital-architectural-expose-functionality-services"
+                              "dpgn-digital-architectural-open-standards-solutions",
+                              "dpgn-digital-architectural-enable-interoperability"
                             ],
                             "content": "<a href=\"https://www.gov.uk/guidance/gds-api-technical-and-data-standards\">API technical and data standards (Government Digital Service (UK))</a>"
                           }
@@ -14888,14 +14378,14 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-expose-functionality-services"
+                          "dpgn-digital-architectural-enable-interoperability"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-expose-functionality-services"
+                              "dpgn-digital-architectural-enable-interoperability"
                             ],
                             "content": "<a href=\"https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/\">Developing cross-government API data and technical standards (Government Digital Service blog (UK))</a>"
                           }
@@ -14906,16 +14396,16 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default",
-                          "dpgn-architectural-expose-functionality-services"
+                          "dpgn-digital-architectural-open-standards-solutions",
+                          "dpgn-architectural-enable-interoperability"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default",
-                              "dpgn-architectural-expose-functionality-services"
+                              "dpgn-digital-architectural-open-standards-solutions",
+                              "dpgn-architectural-enable-interoperability"
                             ],
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/api/\">Application Programming Interfaces (APIs) (Digital Service Standard (AU))</a>"
                           }
@@ -14958,16 +14448,16 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-expose-functionality-services"
+                          "dpgn-digital-architectural-enable-interoperability"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-expose-functionality-services"
+                              "dpgn-digital-architectural-enable-interoperability"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#expose-all-functionality-as-services\">6. Expose all functionality as services (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#enable-interoperability\">6. Enable Interoperability (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -15011,33 +14501,6 @@
                       {
                         "content_type": "inline",
                         "content": "<strong>[TODO: Add/revise checklist items]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "tags": [
-                      "dpgn-digital-architectural"
-                    ],
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-open-by-default-4",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-open-by-default-4",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Information should be open to other GC organizations and exposed via API’s. Any legislative barriers to doing so shall be flagged to TBS."
-                          }
-                        ]
                       }
                     ]
                   }
@@ -15131,30 +14594,7 @@
                   "dpgn-section-similar"
                 ],
                 "content": [
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-by-default"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-by-default"
-                            ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#open-by-default-proprietary-by-neccessity\">1. Open by Default (Proprietary by Necessity) (Build It Right Principles (GC))</a>"
-                          }
-                        ]
-                      }
-                    ]
-                  }
+
                 ]
               }
             }
@@ -19283,8 +18723,27 @@
                             "content": "Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned."
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-security-privacy-4",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-security-privacy-4",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Security shall be considered across all architectural layersBalance user and business needs with proportionate security measures."
+                          }
+                        ]
                       }
-                    ]
+                    ],
+                    "tags": null
                   }
                 ]
               },
@@ -19405,8 +18864,27 @@
                             "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/secure-services/\">Secure services (Digital Service Standards (AU))</a>"
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Provacy by Design (Digital Architectural Standards (GC))</a>"
+                          }
+                        ]
                       }
-                    ]
+                    ],
+                    "tags": null
                   }
                 ]
               }
@@ -20237,7 +19715,7 @@
                               "dpgn-digital-architectural-security-privacy-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Security shall be considered across all architectural layers."
+                            "content": "Implement security across all architectural layers."
                           }
                         ]
                       },
@@ -20255,7 +19733,7 @@
                               "dpgn-digital-architectural-security-privacy-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Information shall be identified, categorized, and protected as required based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability."
+                            "content": "Categorize data properly to determine appropriate safeguards."
                           }
                         ]
                       },
@@ -20273,7 +19751,7 @@
                               "dpgn-digital-architectural-security-privacy-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "A privacy impact assessment (PIA) shall be completed wherever personal information is involved."
+                            "content": "Perform a privacy impact assessment (PIA) when personal information is involved."
                           }
                         ]
                       },
@@ -20464,7 +19942,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Provacy by Design (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Provacy by Design (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -20754,7 +20232,7 @@
                               "dpgn-digital-architectural-keep-data-organized-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Master Data will be decoupled wherever possible from applications and will be hosted in the appropriate system of record."
+                            "content": "Decouple Master Data from applications and host using the appropriate system of record."
                           }
                         ]
                       },
@@ -20762,17 +20240,53 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-keep-data-organized-3",
+                          "dpgn-digital-architectural-keep-data-organized-2",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-keep-data-organized-3",
+                              "dpgn-digital-architectural-keep-data-organized-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Systems of record shall be authoritative central sources that serve data, once validated, to downstream business applications and upstream source systems."
+                            "content": "Systems of record shall be authoritative central sources."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-keep-data-organized-4",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-keep-data-organized-4",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Data Resiliency shall be designed in accordance with GC policies and standards."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-keep-data-organized-5",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-keep-data-organized-5",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Publish Master Data Management to appropriate stakeholders."
                           }
                         ]
                       },
@@ -21062,7 +20576,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-keep-data-organized"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized\">8. Keep data organized (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized\">8. Keep Data Organized (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -21175,14 +20689,14 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-keep-data-organized-2",
+                          "dpgn-digital-architectural-keep-data-organized-3",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-keep-data-organized-2",
+                              "dpgn-digital-architectural-keep-data-organized-3",
                               "dpgn-digital-architectural"
                             ],
                             "content": "Custodians shall ensure data is correct, consistent, and complete."
@@ -21195,7 +20709,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Ensure data and information is complete, accurate and up-to-date"
+                            "content": "Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others"
                           }
                         ]
                       },
@@ -21966,6 +21480,16 @@
                         "content": [
                           {
                             "content_type": "inline",
+                            "content": "<a href=\"https://www.statcan.gc.ca/eng/data-quality-toolkit\">Data quality toolkit (Statistics Canada (GC))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
                             "content": "<a href=\"https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction\">Using data to improve your service: an introduction (Digital Service Standard (UK))</a>"
                           }
                         ]
@@ -22079,6 +21603,32 @@
                         "content": "<strong>[TODO: Add/revise reusable solutions]</strong>"
                       }
                     ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://www.statcan.gc.ca/eng/data-quality-toolkit/data-producer\">Data producer quality self-assessment checklist (Data quality toolkit (Statistics Canada (GC)))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://www.statcan.gc.ca/eng/data-quality-toolkit/data-user\">Data user quality assessment checklist (Data quality toolkit (Statistics Canada (GC)))</a>"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
@@ -22136,7 +21686,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-keep-data-organized"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized\">8. Keep data organized (Build It Right Principles (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized\">8. Keep Data Organized (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -22181,33 +21731,6 @@
                       {
                         "content_type": "inline",
                         "content": "<strong>[TODO: Add/revise checklist items]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "tags": [
-                      "dpgn-digital-architectural"
-                    ],
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-keep-data-organized-4",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-keep-data-organized-4",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Appropriate governance must be applied."
-                          }
-                        ]
                       }
                     ]
                   }
@@ -22349,30 +21872,7 @@
                   "dpgn-section-similar"
                 ],
                 "content": [
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-keep-data-organized"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-keep-data-organized"
-                            ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized\">8. Keep data organized (Build It Right Principles (GC))</a>"
-                          }
-                        ]
-                      }
-                    ]
-                  }
+
                 ]
               }
             }

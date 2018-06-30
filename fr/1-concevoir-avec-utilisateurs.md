@@ -174,13 +174,12 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-1} Focus on the needs of users, using agile, iterative and user-centred methods when building a service.
-- {: .dpgn-digital-architectural-design-for-users-first-2} Start with extensive research and analysis.
-- {: .dpgn-digital-architectural-design-for-users-first-3} Users shall be involved throughout the lifecycle, with user research and testing informing the earliest design phases through to continuous improvements post launch. Iterative processes, continuous user feedback, rapid prototyping, and co-design processes are favoured over waterfall. Furthermore, departments and agencies shall demonstrate investment in the appropriate tools to support these processes.
+- {: .dpgn-digital-architectural-design-for-users-first-1} Focus on the needs of users, using agile, iterative and user-centred methods.
+- {: .dpgn-digital-architectural-design-for-users-first-2} Perform user research from the earliest design through to continuous improvements post-launch.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -236,10 +235,10 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Including designing for Accessibility and Official Languages support) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first)
 
 </section>
 </section>

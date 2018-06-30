@@ -94,6 +94,11 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * [Privacy (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/privacy/)
 * [Secure services (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 
+**Digital Architectural Standards (GC):**
+{: .dpgn-data-ignore}
+
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Provacy by Design (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
+
 </section>
 </section>
 
@@ -258,13 +263,13 @@ Canadians want to have confidence that government digital services are designed 
 * Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
 * Establish terms of services to ensure users understand how their data will be used and how it will be accessed
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-* {: .dpgn-digital-architectural-security-privacy-1} Security shall be considered across all architectural layers.
-* {: .dpgn-digital-architectural-security-privacy-2} Information shall be identified, categorized, and protected as required based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability.
-* {: .dpgn-digital-architectural-security-privacy-3} A privacy impact assessment (PIA) shall be completed wherever personal information is involved.
+* {: .dpgn-digital-architectural-security-privacy-1} Implement security across all architectural layers.
+* {: .dpgn-digital-architectural-security-privacy-2} Categorize data properly to determine appropriate safeguards.
+* {: .dpgn-digital-architectural-security-privacy-3} Perform a privacy impact assessment (PIA) when personal information is involved.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -310,10 +315,10 @@ Canadians want to have confidence that government digital services are designed 
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 * [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Provacy by Design (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#security-and-privacy-by-design)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Provacy by Design (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
 
 </section>
 </section>
