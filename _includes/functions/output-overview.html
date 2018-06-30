@@ -13,7 +13,7 @@ endcapture %}
 
 ## {{ dataSource.introduction.title }}
 
-{% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags="dpgn-overview-start" parentHeadingLevel="2" %}
+{% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags="dpgn-overview-start" parentHeadingLevel="2" collapseSubsections=false %}
 
 <section>
 
@@ -25,6 +25,6 @@ endcapture %}
 
 {% include views-vues.html lang=page.lang %}
 
-{% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags="dpgn-overview-end" parentHeadingLevel="2" %}
+{% include /functions/output-content-array.html contentArray=dataSource.introduction.content relevantTags="dpgn-overview-end" parentHeadingLevel="2" collapseSubsections=false %}
 
 </section>
