@@ -174,12 +174,11 @@ Si les utilisateurs ont des difficultés à atteindre leur objectif du premier c
 - fournir une méthode accessible permettant à tous les utilisateurs de faire des commentaires sur le service ou de demander du soutien supplémentaire à tout moment **(Normes des services numériques (Ontario))**
 - démontrer de quelle manière votre personnel connaîtra les obstacles à l’accessibilité et sera formé pour aider les utilisateurs handicapés à faire ce qu’ils veulent faire et à accéder à l’information **(Normes des services numériques (Ontario))**
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-4} Solutions will conform to both accessibility and official languages guidelines.
-- {: .dpgn-digital-architectural-design-for-users-first-6} Ensure a high level of Web accessibility is applied uniformly across Government of Canada websites and Web applications.
+- {: .dpgn-digital-architectural-design-for-users-first-3} Conform to both accessibility and official languages requirements.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -268,10 +267,10 @@ Si les utilisateurs ont des difficultés à atteindre leur objectif du premier c
 - [7. Rendre le service accessible (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-7)
 - [9. Make it accessible (Digital Service Standard (AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
 
-**Build It Right Principles (GC):**
+**Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first)
 
 </section>
 </section>
@@ -399,14 +398,6 @@ Until you consider the needs of the range of people that will be using your serv
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Build It Right Principles (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-5} Recognize that not everyone will have the same access, comfort and skill level by default.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 - Designing for users on the autistic spectrum ([Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/))
   - Do:
     - use simple colours
@@ -522,17 +513,6 @@ Until you consider the needs of the range of people that will be using your serv
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
 - [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-**Build It Right Principles (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Including designing for Accessibility and Official Language support) (Build It Right Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first-including-designing-for-accessibility-and-official-language-support)
 
 </section>
 </section>
