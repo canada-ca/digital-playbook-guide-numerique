@@ -50,7 +50,7 @@ if tagsCompareResult contains "true" %}{%
   endcapture %}
 <h{{ include.guidelineHeadingLevel }} id="{{ headerId | strip }}">{{ guideline.title }}</h{{ include.guidelineHeadingLevel }}>
 
-{% include /functions/output-sections.html parentHeadingLevel=include.guidelineHeadingLevel standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=relevantSectionsArray guidelineSectionsOrder=include.guidelineSectionsOrder %}
+{% include /functions/output-sections.html parentHeadingLevel=include.guidelineHeadingLevel standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=include.relevantTags irrelevantTags=include.irrelevantTags groupByTagsTags=include.groupByTagsTags groupByTagsTitles=include.groupByTagsTitles relevantSections=relevantSectionsArray guidelineSectionsOrder=include.guidelineSectionsOrder collapseSubsections=false %}
 
 </section>
 

@@ -8,6 +8,7 @@ comment %}@param irrelevantTags {String/Array} Optional (defaults to none).  Com
 comment %}@param relevantSourceElements {String/Array} Optional (defaults to all). Comma-separated source elements or an array of source elements for which content to display (e.g., "ul,ol"). Can be overridden by irrelevantSourceElements. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).{% endcomment %}{% 
 comment %}@param irrelevantSourceElements {String/Array} Optional (defaults to none). Comma-separated source elements or an array of source elements for which content not to display (e.g., "ul,ol"). Overrides relevantSourceElements. Only affects content at the current level (i.e., doesn't affect nested content for parent content that isn't filtered out).{% endcomment %}{% 
 comment %}@param suppressParentListElement {Boolean} Optional (defaults to false). Prevents the output of the parent list element (useful when used with relevantSourceElements to merge lists together). Only affects lists at the current level (i.e., doesn't affect descendant lists).{% endcomment %}{% 
+comment %}@param collapseSubsections {Boolean} Optional (defaults to true). Collapses subsections, preventing the output of the section element and heading without affecting content of the subsections.{% endcomment %}{% 
 comment %}@return {String} Outputs the content for the guideline sections.{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
@@ -57,7 +58,7 @@ for currentStandardIndex in (startStandardIndex..endStandardIndex) %}{%
     assign sectionContent = guideline[include.sectionKey].content %}{% 
     comment %}Output the guideline section{% endcomment %}{% 
     capture subSectionContent %}{% 
-      include /functions/output-content-array.html contentArray=sectionContent parentHeadingLevel=include.parentHeadingLevel relevantTags=relevantTagsArraySectionContent irrelevantTags=irrelevantTagsArraySectionContent relevantSourceElements=include.relevantSourceElements irrelevantSourceElements=include.irrelevantSourceElements suppressParentListElement=include.suppressParentListElement contentStandardIndex=currentStandardIndex contentGuidelineIndex=currentGuidelineIndex %}{%  
+      include /functions/output-content-array.html contentArray=sectionContent parentHeadingLevel=include.parentHeadingLevel relevantTags=relevantTagsArraySectionContent irrelevantTags=irrelevantTagsArraySectionContent relevantSourceElements=include.relevantSourceElements irrelevantSourceElements=include.irrelevantSourceElements suppressParentListElement=include.suppressParentListElement contentStandardIndex=currentStandardIndex contentGuidelineIndex=currentGuidelineIndex collapseSubsections=include.collapseSubsections %}{%  
     endcapture 
 %}{{ subSectionContent | strip }}{% 
   endfor %}{% 
