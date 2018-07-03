@@ -8590,7 +8590,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise introductory text]</strong>"
+                        "content": "We must seek out and use modern methods such as Agile to ensure that the digital services we own and implement are innovative. We must ensure that our teams are consistently engaged through various opportunities to learn and participate in knowledge-sharing, and that we are successfully collaborating with both internal and external partners."
                       }
                     ]
                   }
@@ -8604,21 +8604,78 @@
                 "content": [
                   {
                     "content_type": "block",
-                    "source_element": "p",
+                    "source_element": "ul",
                     "content": [
                       {
-                        "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise checklist items]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "tags": [
-                      "dpgn-automated-decision"
-                    ],
-                    "content": [
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Ensure team members can achieve their full potential; allow them to participate in knowledge-sharing across the government and ensure they receive the training they require."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Seek the best results for Canadians by encouraging evidence-based decision-making and extensive collaboration."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Develop and maintain a core set of principles that prioritize commitment to users."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Determine the team’s decision making/approval processes, support practices (e.g., pairing, peer review), and working practices (e.g., stand-ups, sprint planning, etc.)."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Determine how the team will apply modern methods for project management and design (Agile, co-design, service design)."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Identify and maintain effective methods for engaging users, stakeholders, and advisors/experts."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Be prepared to adapt to a frequently changing digital environment that is consistently evolving (e.g., emerging tech, emerging threats/security concerns, increased use of artificial intelligence, etc.), and act accordingly."
+                          }
+                        ]
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -8628,6 +8685,7 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-automated-decision-design-build",
+                          "dpgn-standards-hide",
                           "dpgn-automated-decision"
                         ],
                         "content": [
@@ -8635,13 +8693,15 @@
                             "content_type": "inline",
                             "tags": [
                               "dpgn-automated-decision-design-build",
+                              "dpgn-standards-hide",
                               "dpgn-automated-decision"
                             ],
                             "content": "Ensure that some employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required."
                           }
                         ]
                       }
-                    ]
+                    ],
+                    "tags": null
                   }
                 ]
               },
@@ -8687,7 +8747,22 @@
                   "dpgn-section-similar"
                 ],
                 "content": [
-
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://www.digital.govt.nz/standards-and-guidance/digital-service-design-standard/principles/create-and-empower-an-interdisciplinary-team/\">6. Create and empower an interdisciplinary team (Digital service design standard (NZ))</a>"
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             },
@@ -8707,179 +8782,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise introductory text]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Evaluate what tools and systems will be used to build, host, operate and measure the service, and how to procure them."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Evaluating the tools and systems you use to build your service helps you to:"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "check any risks or constraints associated with them"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "avoid contracts that lock you in and stop you improving your service"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "build a sustainable system which you can easily manage after your service goes live"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>(Digital Service Standard (UK))</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "The technology you choose to build your service must help you respond quickly and regularly to the needs and expectations of users. This criterion ensures you:"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "consider all the risks and constraints associated with the technology you choose"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "avoid contracts that lock you into particular solutions and limit your ability to make decisions to improve the service"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "build a sustainable system that can be easily managed once live"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "identify the required infrastructure to successfully and continuously deliver the digital service"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "have a procurement approach that will not restrict, inhibit or limit ongoing and future service delivery"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "consider existing tools and systems and avoid unnecessary fragmentation and/or costs"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "consider appropriate tools and systems already in use in government"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "embed measurement tools at the start of development."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>(Digital Service Standard (AU))</strong>"
+                        "content": "We need to evaluate and determine the tools and systems that we will use to build and host the service, as well as prepare for the operation and measurement of the service. We will also need to determine how to procure or build these tools and systems efficiently."
                       }
                     ]
                   }
@@ -8893,16 +8796,6 @@
                 "content": [
                   {
                     "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise checklist items]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
                     "source_element": "ul",
                     "content": [
                       {
@@ -8911,7 +8804,27 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Ensure the project team has a modern workplace, professional development and the IM-IT tools they need to do their jobs"
+                            "content": "Maintain a modern workplace with the professional development, IM-IT tools, and environment necessary for employees to do their jobs effectively."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Check for risks or restrictions associated with the tools and avoid any contracts that will prevent you from changing/improving your service."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Ensure that the system you build will be both sustainable and easily maintainable once the service is live."
                           }
                         ]
                       },
@@ -8927,7 +8840,7 @@
                             "tags": [
                               "dpgn-stage-alpha"
                             ],
-                            "content": "Determine the languages, frameworks and other technical choices you’ve made in alpha, and how this will affect the decisions you make in beta <strong>(Digital Service Standard (UK))</strong>"
+                            "content": "Determine technical choices and programming tools."
                           }
                         ]
                       },
@@ -8943,167 +8856,7 @@
                             "tags": [
                               "dpgn-stage-alpha"
                             ],
-                            "content": "Determine the set of programming tools you’d like to choose for beta and why <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Determine how you’ll get value for money when buying any tools <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Determine how you’ll monitor the status of your service <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "review the types of tools and systems already available <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "identify potential development tools and software to build the product <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "identify the appropriate languages, frameworks, and other technical choices that are required to build the product <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "understand who will own the intellectual property <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "understand any data requirements of the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "understand the existing IT systems, data stores and in-flight processes for the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "understand any potential external dependencies or integrations that would be required to build the product <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "know the initial and ongoing costs for proposed tools and systems. <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Determine how you will net value for money spent on tools and how you will monitor your service."
                           }
                         ]
                       },
@@ -9119,7 +8872,7 @@
                             "tags": [
                               "dpgn-stage-beta"
                             ],
-                            "content": "Determine how you’re managing the limits placed on your service by the technology stack and development toolchain you’ve chosen <strong>(Digital Service Standard (UK))</strong>"
+                            "content": "Determine how you will manage limits placed on the service."
                           }
                         ]
                       },
@@ -9135,119 +8888,7 @@
                             "tags": [
                               "dpgn-stage-beta"
                             ],
-                            "content": "Document what you’ve bought and how you’re getting value for money <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "Document how you’ll monitor the status of your service <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "Document the support arrangements you have in place, in normal hours and out of hours <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "Document any decisions you’ve outsourced to third parties and why you chose to do this <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "manage any constraints that the chosen development tools and software have placed on the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "have a strong rationale for the technology choices you’ve made, including the languages, frameworks and development tools <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "procure the appropriate tools, systems and contractual arrangements and ensure you are getting value for money <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "arrange for appropriate ongoing technical support and service level agreements for underlying or dependent services <strong>(Digital Service Standard (AU))</strong>"
+                            "content": "Document purchases and value for money, how you will monitor the service, support arrangements, and the specifics and reasons behind third-party decisions."
                           }
                         ]
                       },
@@ -9263,7 +8904,7 @@
                             "tags": [
                               "dpgn-stage-live"
                             ],
-                            "content": "Document the tech stack changes you made during beta and why <strong>(Digital Service Standard (UK))</strong>"
+                            "content": "Document tech stacks and development toolchain changes made during beta and why."
                           }
                         ]
                       },
@@ -9279,71 +8920,7 @@
                             "tags": [
                               "dpgn-stage-live"
                             ],
-                            "content": "Document the development toolchain changes you’ve made during beta and why <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Document how you’re continuing to get value for money from the systems you chose and bought at beta <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Document how you’ll check if the service is healthy <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Document the support arrangements that you’ve set up for live <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Document any decisions you’ve outsourced and why you chose to do this <strong>(Digital Service Standard (UK))</strong>"
+                            "content": "Document how you are continuing to get the value for money, how you will check the health of the service, support arrangements that have been set up, and the specifics and reasons behind outsourced decisions."
                           }
                         ]
                       }
@@ -9455,7 +9032,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise introductory text]</strong>"
+                        "content": "We must always be searching for ways to improve service delivery, through review of business processes, user testing, and commitment to best practices for service delivery when designing or redesigning digital services. We need to maintain a strong working relationship with experienced contracting and budgeting officers to facilitate a smooth contracting process."
                       }
                     ]
                   },
@@ -9465,27 +9042,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "To improve our chances of success when contracting out development work, we need to work with experienced budgeting and contracting officers. In cases where we use third parties to help build a service, a well-defined contract can facilitate good development practices like conducting a research and prototyping phase, refining product requirements as the service is built, evaluating open source alternatives, ensuring frequent delivery milestones, and allowing the flexibility to purchase cloud computing resources. <strong>(Digital Services Playbook (US))</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "It is essential that business processes be reviewed to identify opportunities to improve service delivery. A website is not a service; it is just one channel for accessing or delivering a service. Designing new or redesigning existing digital services should also facilitate service delivery best practices (e.g., open data and joined-up services). <strong>(Do - Digital Design Playbook (ISED))</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Each service must have one person who has the authority and is responsibile for making business, product and technical decisions. This person is responsible for communicating the vision, making decisions in a timely fashion, managing stakeholder/vendor relationships, monitoring project health and is accountable for the success or failure of the service. This person also sets the strategy for the service, defines the features of the service, and is responsible for the service on an ongoing basis, until it is decommissioned. <strong>(GC)</strong>"
+                        "content": "Every service must have a person that will hold the designate authority to make critical decisions (product owner). Key responsibilities will include managing how the project’s vision is articulated, stakeholder/vendor relationships, efficiency, and accountability. This individual will also determine features of the service."
                       }
                     ]
                   }
@@ -9499,16 +9056,6 @@
                 "content": [
                   {
                     "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise checklist items]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
                     "source_element": "ul",
                     "content": [
                       {
@@ -9517,7 +9064,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Employ the most recent IM-IT management practices, process and tools"
+                            "content": "Seek opportunities to connect and integrate with relevant existing services to simplify the experience for users and clients."
                           }
                         ]
                       },
@@ -9527,7 +9074,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Budget includes research, discovery, and prototyping activities <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Use up-to-date IM-IT management practices and tools."
                           }
                         ]
                       },
@@ -9537,7 +9084,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Contract is structured to request frequent deliverables, not multi-month milestones <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Ensure that the budget includes research and discovery activities, as well as prototyping processes."
                           }
                         ]
                       },
@@ -9547,7 +9094,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Contract is structured to hold vendors accountable to deliverables <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Maintain contracts that are structured to request regular deliverables and hold the vendors accountable accordingly."
                           }
                         ]
                       },
@@ -9557,7 +9104,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Contract gives the government delivery team enough flexibility to adjust feature prioritization and delivery schedule as the project evolves <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Ensure that contracts commit to the evaluation of open source solutions."
                           }
                         ]
                       },
@@ -9567,7 +9114,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Contract ensures open source solutions are evaluated when technology choices are made <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Ensure contracts specify that the software and data to be generated by third parties will remain under our control, with the potential to use, reuse, and release to the public if appropriate and lawful."
                           }
                         ]
                       },
@@ -9577,7 +9124,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Contract specifies that software and data generated by third parties remains under our control, and can be reused and released to the public as appropriate and in accordance with the law <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Maintain that contracts specify a warranty period, a transition of services period, and a transition-out plan."
                           }
                         ]
                       },
@@ -9587,7 +9134,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Contract allows us to use tools, services, and hosting from vendors with a variety of pricing models, including fixed fees and variable models like “pay-for-what-you-use” services <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Use business intelligence and business analytics."
                           }
                         ]
                       },
@@ -9597,7 +9144,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Contract specifies a warranty period where defects uncovered by the public are addressed by the vendor at no additional cost to the government <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Identify the policy and data constraints that may restrict the project."
                           }
                         ]
                       },
@@ -9607,7 +9154,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Contract includes a transition of services period and transition-out plan <strong>(Digital Services Playbook (US))</strong>"
+                            "content": "Build the digital platform when the potential for improvements and relevant considerations are accounted for."
                           }
                         ]
                       },
@@ -9617,7 +9164,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Uncover user needs and confirm with clients their understanding of the desired result. <strong>(Do - Digital Design Playbook (ISED))</strong>"
+                            "content": "A product owner is identified and all stakeholders agree that the owner has the authority necessary to assign tasks and make critical decisions regarding product features and technical implementation."
                           }
                         ]
                       },
@@ -9627,7 +9174,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Look for opportunities to integrate with other relevant or similar services (i.e. joined-up services) to simplify the client experience <strong>(Do - Digital Design Playbook (ISED))</strong>"
+                            "content": "The product owner has the necessary qualities to fill the role, including apt knowledge and seniority."
                           }
                         ]
                       },
@@ -9637,7 +9184,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Look for opportunities to use business intelligence and analytics (BI/BA) to improve the client experience. <strong>(Do - Digital Design Playbook (ISED))</strong>"
+                            "content": "The product owner has technical experience and a project management background, with strong knowledge of the procurment/development process."
                           }
                         ]
                       },
@@ -9647,7 +9194,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Identify policy constraints. <strong>(Do - Digital Design Playbook (ISED))</strong>"
+                            "content": "The product owner has a work plan complete with budget estimates and identified funding sources."
                           }
                         ]
                       },
@@ -9657,7 +9204,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Identify opportunities for improving processes and reducing complexity. <strong>(Do - Digital Design Playbook (ISED))</strong>"
+                            "content": "The product owner’s relationship with the contracting officer/development team is strong and able to endure potential challenges throughout the process."
                           }
                         ]
                       },
@@ -9667,7 +9214,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Improve the service first and consider if a policy change or update might be needed. Second, build the digital platform/website. <strong>(Do - Digital Design Playbook (ISED))</strong>"
+                            "content": "There is a plan to conduct regular user testing to deduce the success of the service’s ability to meet the users’ needs."
                           }
                         ]
                       },
@@ -9677,113 +9224,17 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Make one person accountable for the service\n        "
-                          },
+                            "content": "The particular data sources and data-capture methods are appropriately identified; a roadmap highlights performance analysis and responsibilities for the identification of actionable data insights."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
                           {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Has a product management background with technical experience to assess alternatives and weigh trade-offs"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Has a strong knowledge of the procurement process and is able to articulate value for money is achieved when buying any tools"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Has appropriate seniority, knowledge, skill and personal qualities"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Has agreement from all stakeholders about authority to assign tasks and make decisions about features and technical implementation details"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Utilizes streamlined procurement processes and utilize experienced budgeting and contracting resources when contracting out development work"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Has a work plan that includes budget estimates and identifies funding sources <strong>(Digital Services Playbook (US))</strong>"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Develops a plan and capabilities to track concurrent users in real-time, and monitor user behaviors in the aggregate to determine how well the service meets user needs"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Identifies data you need to capture, where you need to capture it from and how you’ll capture it based on the projected size and shape of the service"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Develops an ongoing roadmap for performance analysis and designate responsibility for identifying actionable data insights"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility"
-                                  }
-                                ]
-                              }
-                            ]
+                            "content_type": "inline",
+                            "content": "The service can be improved through iteration with the necessary resources and flexibility."
                           }
                         ]
                       },
@@ -9791,13 +9242,19 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-multidisciplinary-teams-3"
+                          "dpgn-digital-architectural-multidisciplinary-teams-3",
+                          "dpgn-standards-hide",
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-multidisciplinary-teams"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-multidisciplinary-teams-3"
+                              "dpgn-digital-architectural-multidisciplinary-teams-3",
+                              "dpgn-standards-hide",
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
                             "content": "Ensure quality is considered throughout the Software Development Lifecycle."
                           }
@@ -9807,15 +9264,21 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-multidisciplinary-teams-4"
+                          "dpgn-digital-architectural-multidisciplinary-teams-4",
+                          "dpgn-standards-hide",
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-multidisciplinary-teams"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-digital-architectural-multidisciplinary-teams-4"
+                              "dpgn-digital-architectural-multidisciplinary-teams-4",
+                              "dpgn-standards-hide",
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT.\n"
+                            "content": "Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT."
                           }
                         ]
                       }
@@ -9893,7 +9356,18 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://playbook.cio.gov/#play6\">6. Assign one leader and hold that person accountable (Digital Services Playbook (US))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
                         "tags": [
+                          "dpgn-standards-hide",
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-multidisciplinary-teams"
                         ],
@@ -9901,20 +9375,11 @@
                           {
                             "content_type": "inline",
                             "tags": [
+                              "dpgn-standards-hide",
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
                             "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams\">4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://playbook.cio.gov/#play6\">6. Assign one leader and hold that person accountable (Digital Services Playbook (US))</a>"
                           }
                         ]
                       }
@@ -9940,37 +9405,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise introductory text]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Have you ever been to a restaurant and had your food come to the table either cold or the wrong meal delivered and then had the waitress or waiter bend over backwards to correct the situation (even if it wasn’t their fault)?  Many companies are spending more time training managers on how to “empower” their employees.  But what does empowerment really mean?\nAccording to Kinicki &amp; Kreitner, empowerment is about “sharing degrees of power with lower-level employees to better serve the customer” (2008, p. 333).  To me, empowerment is about giving employees the permission to give customers priority and to use their creative talents to find solutions when issues arise, without having to run to management and ask for permission to do something.  Southwest Airlines is a good example of a company that highly empowers their employees and gives them great latitude to keep customers happy."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Empowering employees isn’t easy though, because it requires that a company and their management be committed to continuous employee development.  It means fostering an environment of trust and helping employees learn from successes and analyze failures."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Working to create an environment that empowers employees has been shown to not only increase customer satisfaction levels, but also improve employee morale.  It takes training, practice, and the ability to accept mistakes as a part of the learning process – but it is well worth the effort in the long run! <strong>(<a href=\"https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62\">6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)</a>)</strong>"
+                        "content": "We must empower staff to share power and control over projects. This can involve assigning tasks, setting priorities, troubleshooting problems, and assessing issues. As a whole, this will mean balancing a recognition of talent with a frank assessment of results."
                       }
                     ]
                   }
@@ -9984,16 +9419,6 @@
                 "content": [
                   {
                     "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>[TODO: Add/revise checklist items]</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
                     "source_element": "ul",
                     "content": [
                       {
@@ -10002,7 +9427,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Ensure a strong governance approach is in place"
+                            "content": "Encourage learning, even if it is through well-intended efforts that result in mistakes."
                           }
                         ]
                       },
@@ -10012,7 +9437,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Focus on innovation and sustainability"
+                            "content": "Remember to celebrate employees’ hard-work, including successes and failures."
                           }
                         ]
                       },
@@ -10022,7 +9447,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Share information:  Sharing information with employees is important because it not only helps to build trust; it gives employees important information that will allow them to make the best possible decisions in critical situations. <strong>(<a href=\"https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62\">6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)</a>)</strong>"
+                            "content": "Focus on a strong governance approach in the workplace."
                           }
                         ]
                       },
@@ -10032,7 +9457,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Create clear goals and objectives:  Be clear with your vision, goals/objectives, and roles.  This will help create the framework necessary to guide employees to make empowered decisions to keep customers happy. <strong>(<a href=\"https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62\">6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)</a>)</strong>"
+                            "content": "Emphasize sustainability and innovation."
                           }
                         ]
                       },
@@ -10042,7 +9467,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Teach that it’s o.k. to make mistakes:  If you empower employees to make decisions that will help keep customers happy, then you have to be willing to allow them to make mistakes and learn from those mistakes.  Berating an employee who tried something new will only serve to keep others from trying new things. <strong>(<a href=\"https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62\">6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)</a>)</strong>"
+                            "content": "Promote information-sharing to build better decision-making capacity."
                           }
                         ]
                       },
@@ -10052,7 +9477,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Create an environment that celebrates both successes and failures:  Don’t just celebrate the successes, celebrate the employees who took a risk but maybe didn’t obtain the results intended but learned valuable lessons themselves and for the company. <strong>(<a href=\"https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62\">6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)</a>)</strong>"
+                            "content": "Have clear objectives, milestones, and defined roles to assist employees as they navigate interactions with users."
                           }
                         ]
                       },
@@ -10062,17 +9487,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Support a learning environment:  This is an ongoing process whereby teams look at various situations and discuss them together to determine how they might handle things differently in the future to achieve a different result.  This is really what our lives are all about…learning new things as we age, by analyzing the things we’ve done in the past. <strong>(<a href=\"https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62\">6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)</a>)</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Let teams become the hierarchy:  This occurs by slowly and carefully transferring responsibilities from managers to teams.  This can be a very scary and difficult process that takes time, training and a lot of persistence (Kinicki &amp; Kreitner, 2008, p. 335).  It’s been my personal experience that this requires a lot of support time to the teams as they move from depending on a manager to make decisions to being autonomous. <strong>(<a href=\"https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62\">6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)</a>)</strong>"
+                            "content": "Allow employees to grow into personal roles, and avoid the limits of hierarchy within team member/manager dynamics."
                           }
                         ]
                       },
@@ -10081,14 +9496,18 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural-multidisciplinary-teams-2",
-                          "dpgn-digital-architectural"
+                          "dpgn-standards-hide",
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-multidisciplinary-teams"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
                               "dpgn-digital-architectural-multidisciplinary-teams-2",
-                              "dpgn-digital-architectural"
+                              "dpgn-standards-hide",
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
                             "content": "Work across the entire application lifecycle, from development and test to deployment to operations."
                           }
@@ -10148,7 +9567,18 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#32a2a275c620\">Forbes - 6 ways to empower others to succeed</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
                         "tags": [
+                          "dpgn-standards-hide",
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-multidisciplinary-teams"
                         ],
@@ -10156,6 +9586,7 @@
                           {
                             "content_type": "inline",
                             "tags": [
+                              "dpgn-standards-hide",
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
@@ -10163,7 +9594,8 @@
                           }
                         ]
                       }
-                    ]
+                    ],
+                    "tags": null
                   }
                 ]
               }

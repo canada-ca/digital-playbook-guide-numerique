@@ -36,7 +36,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 <div class="dpgn-section-intro-guideline">
 
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
+We must seek out and use modern methods such as Agile to ensure that the digital services we own and implement are innovative. We must ensure that our teams are consistently engaged through various opportunities to learn and participate in knowledge-sharing, and that we are successfully collaborating with both internal and external partners.
 
 </div>
 
@@ -44,7 +44,13 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 ### Liste de contrôle
 
-- **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+- Ensure team members can achieve their full potential; allow them to participate in knowledge-sharing across the government and ensure they receive the training they require.
+- Seek the best results for Canadians by encouraging evidence-based decision-making and extensive collaboration.
+- Develop and maintain a core set of principles that prioritize commitment to users.
+- Determine the team's decision making/approval processes, support practices (e.g., pairing, peer review), and working practices (e.g., stand-ups, sprint planning, etc.).
+- Determine how the team will apply modern methods for project management and design (Agile, co-design, service design).
+- Identify and maintain effective methods for engaging users, stakeholders, and advisors/experts.
+- Be prepared to adapt to a frequently changing digital environment that is consistently evolving (e.g., emerging tech, emerging threats/security concerns, increased use of artificial intelligence, etc.), and act accordingly.
 
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
@@ -52,7 +58,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
 - {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)"} Ensure that some employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required.
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+{: .dpgn-standards-hide data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -73,6 +79,14 @@ altLangPage: 4-empower-staff-deliver-better-services
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
+
+<section class="dpgn-section-similar">
+
+### Ressources similaires
+
+- [6. Create and empower an interdisciplinary team (Digital service design standard (NZ))](https://www.digital.govt.nz/standards-and-guidance/digital-service-design-standard/principles/create-and-empower-an-interdisciplinary-team/)
+
+</section>
 </section>
 
 <section class="dpgn-section-guideline">
@@ -81,30 +95,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 
 <div class="dpgn-section-intro-guideline">
 
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-Evaluate what tools and systems will be used to build, host, operate and measure the service, and how to procure them.
-
-Evaluating the tools and systems you use to build your service helps you to:
-
-- check any risks or constraints associated with them
-- avoid contracts that lock you in and stop you improving your service
-- build a sustainable system which you can easily manage after your service goes live
-
-**(Digital Service Standard (UK))**
-
-The technology you choose to build your service must help you respond quickly and regularly to the needs and expectations of users. This criterion ensures you:
-
-- consider all the risks and constraints associated with the technology you choose
-- avoid contracts that lock you into particular solutions and limit your ability to make decisions to improve the service
-- build a sustainable system that can be easily managed once live
-- identify the required infrastructure to successfully and continuously deliver the digital service
-- have a procurement approach that will not restrict, inhibit or limit ongoing and future service delivery
-- consider existing tools and systems and avoid unnecessary fragmentation and/or costs
-- consider appropriate tools and systems already in use in government
-- embed measurement tools at the start of development.
-
-**(Digital Service Standard (AU))**
+We need to evaluate and determine the tools and systems that we will use to build and host the service, as well as prepare for the operation and measurement of the service. We will also need to determine how to procure or build these tools and systems efficiently.
 
 </div>
 
@@ -112,57 +103,36 @@ The technology you choose to build your service must help you respond quickly an
 
 ### Liste de contrôle
 
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Ensure the project team has a modern workplace, professional development and the IM-IT tools they need to do their jobs
+- Maintain a modern workplace with the professional development, IM-IT tools, and environment necessary for employees to do their jobs effectively.
+- Check for risks or restrictions associated with the tools and avoid any contracts that will prevent you from changing/improving your service.
+- Ensure that the system you build will be both sustainable and easily maintainable once the service is live.
 
 **Stage alpha :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- Determine the languages, frameworks and other technical choices you've made in alpha, and how this will affect the decisions you make in beta **(Digital Service Standard (UK))**
-- Determine the set of programming tools you'd like to choose for beta and why **(Digital Service Standard (UK))**
-- Determine how you'll get value for money when buying any tools **(Digital Service Standard (UK))**
-- Determine how you'll monitor the status of your service **(Digital Service Standard (UK))**
-- review the types of tools and systems already available **(Digital Service Standard (AU))**
-- identify potential development tools and software to build the product **(Digital Service Standard (AU))**
-- identify the appropriate languages, frameworks, and other technical choices that are required to build the product **(Digital Service Standard (AU))**
-- understand who will own the intellectual property **(Digital Service Standard (AU))**
-- understand any data requirements of the service **(Digital Service Standard (AU))**
-- understand the existing IT systems, data stores and in-flight processes for the service **(Digital Service Standard (AU))**
-- understand any potential external dependencies or integrations that would be required to build the product **(Digital Service Standard (AU))**
-- know the initial and ongoing costs for proposed tools and systems. **(Digital Service Standard (AU))**
+- Determine technical choices and programming tools.
+- Determine how you will net value for money spent on tools and how you will monitor your service.
 {: .dpgn-stage-alpha}
-<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-enable MD032 -->
 
 **Stage bêta :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- Determine how you're managing the limits placed on your service by the technology stack and development toolchain you've chosen **(Digital Service Standard (UK))**
-- Document what you've bought and how you're getting value for money **(Digital Service Standard (UK))**
-- Document how you'll monitor the status of your service **(Digital Service Standard (UK))**
-- Document the support arrangements you have in place, in normal hours and out of hours **(Digital Service Standard (UK))**
-- Document any decisions you've outsourced to third parties and why you chose to do this **(Digital Service Standard (UK))**
-- manage any constraints that the chosen development tools and software have placed on the service **(Digital Service Standard (AU))**
-- have a strong rationale for the technology choices you’ve made, including the languages, frameworks and development tools **(Digital Service Standard (AU))**
-- procure the appropriate tools, systems and contractual arrangements and ensure you are getting value for money **(Digital Service Standard (AU))**
-- arrange for appropriate ongoing technical support and service level agreements for underlying or dependent services **(Digital Service Standard (AU))**
+- Determine how you will manage limits placed on the service.
+- Document purchases and value for money, how you will monitor the service, support arrangements, and the specifics and reasons behind third-party decisions.
 {: .dpgn-stage-beta}
-<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-ensable MD032 -->
 
 **Stage en direct :**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- Document the tech stack changes you made during beta and why **(Digital Service Standard (UK))**
-- Document the development toolchain changes you've made during beta and why **(Digital Service Standard (UK))**
-- Document how you're continuing to get value for money from the systems you chose and bought at beta **(Digital Service Standard (UK))**
-- Document how you'll check if the service is healthy **(Digital Service Standard (UK))**
-- Document the support arrangements that you've set up for live **(Digital Service Standard (UK))**
-- Document any decisions you've outsourced and why you chose to do this **(Digital Service Standard (UK))**
+- Document tech stacks and development toolchain changes made during beta and why.
+- Document how you are continuing to get the value for money, how you will check the health of the service, support arrangements that have been set up, and the specifics and reasons behind outsourced decisions.
 {: .dpgn-stage-live}
-<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-ensable MD032 -->
 
 </section>
 
@@ -200,16 +170,9 @@ The technology you choose to build your service must help you respond quickly an
 
 <div class="dpgn-section-intro-guideline">
 
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
+We must always be searching for ways to improve service delivery, through review of business processes, user testing, and commitment to best practices for service delivery when designing or redesigning digital services. We need to maintain a strong working relationship with experienced contracting and budgeting officers to facilitate a smooth contracting process.
 
-To improve our chances of success when contracting out development work, we need to work with experienced budgeting and contracting officers. In cases where we use third parties to help build a service, a well-defined contract can facilitate good development practices like conducting a research and prototyping phase, refining product requirements as the service is built, evaluating open source alternatives, ensuring frequent delivery milestones, and allowing the flexibility to purchase cloud computing resources. **(Digital Services Playbook (US))**
-
-It is essential that business processes be reviewed to identify opportunities to improve service delivery. A website is not a service; it is just one channel for accessing or delivering a service. Designing new or redesigning existing digital services should also facilitate service delivery best practices (e.g., open data and joined-up services). **(Do - Digital Design Playbook (ISED))**
-
-**Rendre une personne responsable du service (anciennement ligne directrice 4.5) :**
-{: .dpgn-data-ignore}
-
-Each service must have one person who has the authority and is responsibile for makingt business, product and technical decisions. This person is responsible for communicating the vision, making decisions in a timely fashion, managing stakeholder/vendor relationships, monitoring project health and is accountable for the success or failure of the service. This person also sets the strategy for the service, defines the features of the service, and is responsible for the service on an ongoing basis, until it is decommissioned. **(GC)**
+Every service must have a person that will hold the designate authority to make critical decisions (product owner). Key responsibilities will include managing how the project's vision is articulated, stakeholder/vendor relationships, efficiency, and accountability. This individual will also determine features of the service.
 
 </div>
 
@@ -217,39 +180,24 @@ Each service must have one person who has the authority and is responsibile for 
 
 ### Liste de contrôle
 
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Employ the most recent IM-IT management practices, process and tools
-- Budget includes research, discovery, and prototyping activities **(Digital Services Playbook (US))**
-- Contract is structured to request frequent deliverables, not multi-month milestones **(Digital Services Playbook (US))**
-- Contract is structured to hold vendors accountable to deliverables **(Digital Services Playbook (US))**
-- Contract gives the government delivery team enough flexibility to adjust feature prioritization and delivery schedule as the project evolves **(Digital Services Playbook (US))**
-- Contract ensures open source solutions are evaluated when technology choices are made **(Digital Services Playbook (US))**
-- Contract specifies that software and data generated by third parties remains under our control, and can be reused and released to the public as appropriate and in accordance with the law **(Digital Services Playbook (US))**
-- Contract allows us to use tools, services, and hosting from vendors with a variety of pricing models, including fixed fees and variable models like "pay-for-what-you-use" services **(Digital Services Playbook (US))**
-- Contract specifies a warranty period where defects uncovered by the public are addressed by the vendor at no additional cost to the government **(Digital Services Playbook (US))**
-- Contract includes a transition of services period and transition-out plan **(Digital Services Playbook (US))**
-- Uncover user needs and confirm with clients their understanding of the desired result. **(Do - Digital Design Playbook (ISED))**
-- Look for opportunities to integrate with other relevant or similar services (i.e. joined-up services) to simplify the client experience **(Do - Digital Design Playbook (ISED))**
-- Look for opportunities to use business intelligence and analytics (BI/BA) to improve the client experience. **(Do - Digital Design Playbook (ISED))**
-- Identify policy constraints. **(Do - Digital Design Playbook (ISED))**
-- Identify opportunities for improving processes and reducing complexity. **(Do - Digital Design Playbook (ISED))**
-- Improve the service first and consider if a policy change or update might be needed. Second, build the digital platform/website. **(Do - Digital Design Playbook (ISED))**
-
-**Rendre une personne responsable du service (anciennement ligne directrice 4.5) :**
-{: .dpgn-data-ignore}
-
-- Rendre une personne responsable du service
-  - Has a product management background with technical experience to assess alternatives and weigh trade-offs
-  - Has a strong knowledge of the procurement process and is able to articulate value for money is achieved when buying any tools
-  - Has appropriate seniority, knowledge, skill and personal qualities
-  - Has agreement from all stakeholders about authority to assign tasks and make decisions about features and technical implementation details
-  - Utilizes streamlined procurement processes and utilize experienced budgeting and contracting resources when contracting out development work
-  - Has a work plan that includes budget estimates and identifies funding sources **(Digital Services Playbook (US))**
-  - Develops a plan and capabilities to track concurrent users in real-time, and monitor user behaviors in the aggregate to determine how well the service meets user needs
-  - Identifies data you need to capture, where you need to capture it from and how you'll capture it based on the projected size and shape of the service
-  - Develops an ongoing roadmap for performance analysis and designate responsibility for identifying actionable data insights
-  - Includes the ability to improve the service on a frequent basis through iteration enabled by the right capacity, resources, and technical flexibility
+- Seek opportunities to connect and integrate with relevant existing services to simplify the experience for users and clients.
+- Use up-to-date IM-IT management practices and tools.
+- Ensure that the budget includes research and discovery activities, as well as prototyping processes.
+- Maintain contracts that are structured to request regular deliverables and hold the vendors accountable accordingly.
+- Ensure that contracts commit to the evaluation of open source solutions.
+- Ensure contracts specify that the software and data to be generated by third parties will remain under our control, with the potential to use, reuse, and release to the public if appropriate and lawful.
+- Maintain that contracts specify a warranty period, a transition of services period, and a transition-out plan.
+- Use business intelligence and business analytics.
+- Identify the policy and data constraints that may restrict the project.
+- Build the digital platform when the potential for improvements and relevant considerations are accounted for.
+- A product owner is identified and all stakeholders agree that the owner has the authority necessary to assign tasks and make critical decisions regarding product features and technical implementation.
+- The product owner has the necessary qualities to fill the role, including apt knowledge and seniority.
+- The product owner has technical experience and a project management background, with strong knowledge of the procurment/development process.
+- The product owner has a work plan complete with budget estimates and identified funding sources.
+- The product owner's relationship with the contracting officer/development team is strong and able to endure potential challenges throughout the process.
+- There is a plan to conduct regular user testing to deduce the success of the service's ability to meet the users' needs.
+- The particular data sources and data-capture methods are appropriately identified; a roadmap highlights performance analysis and responsibilities for the identification of actionable data insights.
+- The service can be improved through iteration with the necessary resources and flexibility.
 
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
@@ -257,6 +205,7 @@ Each service must have one person who has the authority and is responsibile for 
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-multidisciplinary-teams-3} Ensure quality is considered throughout the Software Development Lifecycle.
 - {: .dpgn-digital-architectural-multidisciplinary-teams-4} Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT.
+{: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams}
 <!-- markdownlint-enable MD032 -->
 
 </section>
@@ -283,19 +232,15 @@ Each service must have one person who has the authority and is responsibile for 
 
 - [5. Structure budgets and contracts to support delivery (Digital Services Playbook (US))](https://playbook.cio.gov/#play5)
 - [1. Better services rather than new websites. Optimize business processes before designing technological solutions. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#1._Better_services_rather_than_new_websites._Optimize_business_processes_before_designing_technological_solutions.)
+- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-multidisciplinary-teams-2} Work across the entire application lifecycle, from development and test to deployment to operations.
-{: .dpgn-digital-architectural}
+- {: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
+{: .dpgn-standards-hide .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
-
-**Rendre une personne responsable du service (anciennement ligne directrice 4.5) :**
-{: .dpgn-data-ignore}
-
-- [6. Assign one leader and hold that person accountable (Digital Services Playbook (US))](https://playbook.cio.gov/#play6)
 
 </section>
 </section>
@@ -306,7 +251,7 @@ Each service must have one person who has the authority and is responsibile for 
 
 <div class="dpgn-section-intro-guideline">
 
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
+We must empower staff to share power and control over projects. This can involve assigning tasks, setting priorities, troubleshooting problems, and assessing issues. As a whole, this will mean balancing a recognition of talent with a frank assessment of results.
 
 </div>
 
@@ -316,21 +261,20 @@ Each service must have one person who has the authority and is responsibile for 
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- S'assurer qu'une approche de gouvernance solide est en place
-- Mettre l'accent sur l'innovation et la durabilité
-- Share information:  Sharing information with employees is important because it not only helps to build trust; it gives employees important information that will allow them to make the best possible decisions in critical situations. **([6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
-- Create clear goals and objectives:  Be clear with your vision, goals/objectives, and roles.  This will help create the framework necessary to guide employees to make empowered decisions to keep customers happy. **([6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
-- Teach that it’s o.k. to make mistakes:  If you empower employees to make decisions that will help keep customers happy, then you have to be willing to allow them to make mistakes and learn from those mistakes.  Berating an employee who tried something new will only serve to keep others from trying new things. **([6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
-- Create an environment that celebrates both successes and failures:  Don’t just celebrate the successes, celebrate the employees who took a risk but maybe didn’t obtain the results intended but learned valuable lessons themselves and for the company. **([6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
-- Support a learning environment:  This is an ongoing process whereby teams look at various situations and discuss them together to determine how they might handle things differently in the future to achieve a different result.  This is really what our lives are all about...learning new things as we age, by analyzing the things we’ve done in the past. **([6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
-- Let teams become the hierarchy:  This occurs by slowly and carefully transferring responsibilities from managers to teams.  This can be a very scary and difficult process that takes time, training and a lot of persistence (Kinicki & Kreitner, 2008, p. 335).  It’s been my personal experience that this requires a lot of support time to the teams as they move from depending on a manager to make decisions to being autonomous. **([6 Ways To Empower Others To Succeed (Lisa Quast, Forbes.com contributor)](https://www.forbes.com/sites/lisaquast/2011/02/28/6-ways-to-empower-others-to-succeed/#3da10ac35c62))**
+- Encourage learning, even if it is through well-intended efforts that result in mistakes.
+- Remember to celebrate employees' hard-work, including successes and failures.
+- Focus on a strong governance approach in the workplace.
+- Emphasize sustainability and innovation.
+- Promote information-sharing to build better decision-making capacity.
+- Have clear objectives, milestones, and defined roles to assist employees as they navigate interactions with users.
+- Allow employees to grow into personal roles, and avoid the limits of hierarchy within team member/manager dynamics.
 
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-multidisciplinary-teams-2} Work across the entire application lifecycle, from development and test to deployment to operations.
-{: .dpgn-digital-architectural}
+{: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams}
 <!-- markdownlint-enable MD032 -->
 
 </section>
@@ -358,7 +302,10 @@ Each service must have one person who has the authority and is responsibile for 
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
+{: .dpgn-standards-hide .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 </section>
