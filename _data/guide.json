@@ -6994,15 +6994,17 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
+                          "dpgn-digital-architectural-multidisciplinary-teams-1",
                           "dpgn-digital-architectural"
                         ],
                         "content": [
                           {
                             "content_type": "inline",
                             "tags": [
+                              "dpgn-digital-architectural-multidisciplinary-teams-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": ".dpgn-digital-architectural-multidisciplinary-teams-1} Include all skillsets required for delivery from requirements, design, development, to operations."
+                            "content": "Include all skillsets required for delivery, including for requirements, design, development, and operations."
                           }
                         ]
                       },
@@ -11546,7 +11548,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Use distributed architectures, assume failure will happen, handle errors gracefully, and actively monitor."
+                            "content": "Use distributed architectures, assume failure will happen, handle errors gracefully, and monitor actively."
                           }
                         ]
                       },
@@ -12798,7 +12800,7 @@
                               "dpgn-digital-architectural-maximize-reuse-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Share code publicly when appropriate, when not, share within the Government of Canada."
+                            "content": "Share code publicly when appropriate, and when not, share within the Government of Canada."
                           }
                         ]
                       },
@@ -12834,7 +12836,7 @@
                               "dpgn-digital-architectural-enable-interoperability-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Manage services through a service bus (DXP) and an API store."
+                            "content": "Leverage enterprise digital exchange components (GC Service Bus, Digital Exchange Platform, and the API Store)."
                           }
                         ]
                       },
@@ -12852,7 +12854,7 @@
                               "dpgn-digital-architectural-cloud-first-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), abnd lastly Infrastructure as a Service (IaaS)."
+                            "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)."
                           }
                         ]
                       },
@@ -12870,7 +12872,7 @@
                               "dpgn-digital-architectural-cloud-first-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on premise) solutions."
+                            "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions."
                           }
                         ]
                       },
@@ -18055,8 +18057,27 @@
                             "content": "Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned."
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-security-privacy-4",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-security-privacy-4",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Balance user and business needs with proportionate security measures."
+                          }
+                        ]
                       }
-                    ]
+                    ],
+                    "tags": null
                   }
                 ]
               },
