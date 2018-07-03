@@ -70,7 +70,7 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-* {: .dpgn-digital-architectural-security-privacy-4} Security shall be considered across all architectural layersBalance user and business needs with proportionate security measures.
+* {: .dpgn-digital-architectural-security-privacy-4} Balance user and business needs with proportionate security measures.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
