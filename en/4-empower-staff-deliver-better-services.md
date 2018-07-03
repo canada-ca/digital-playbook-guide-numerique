@@ -58,7 +58,7 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
 - {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)"} Ensure that some employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required.
-{: .dpgn-section-hide data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+{: .dpgn-standards-hide data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -205,7 +205,7 @@ Every service must have a person that will hold the designate authority to make 
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-multidisciplinary-teams-3} Ensure quality is considered throughout the Software Development Lifecycle.
 - {: .dpgn-digital-architectural-multidisciplinary-teams-4} Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT.
-{: .dpgn-standard-hide}
+{: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams}
 <!-- markdownlint-enable MD032 -->
 
 </section>
@@ -237,7 +237,10 @@ Every service must have a person that will hold the designate authority to make 
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-standard-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
+{: .dpgn-standards-hide .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 </section>
@@ -269,7 +272,7 @@ We must empower staff to share power and control over projects. This can involve
 
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-multidisciplinary-teams-2} Work across the entire application lifecycle, from development and test to deployment to operations.
-{: .dpgn-standard-hide .dpgn-digital-architectural}
+{: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams}
 <!-- markdownlint-enable MD032 -->
 
 </section>
@@ -299,7 +302,10 @@ We must empower staff to share power and control over projects. This can involve
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-standard-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
+<!-- markdownlint-disable MD032 -->
+- {: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams)
+{: .dpgn-standards-hide .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
 
 </section>
 </section>
