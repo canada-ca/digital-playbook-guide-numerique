@@ -12134,7 +12134,7 @@
                               "dpgn-digital-architectural-open-standards-solutions-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Enforce this order of preference: open, platform-agnostic COTS, proprietary COTS, and then custom."
+                            "content": "Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built."
                           }
                         ]
                       },
@@ -13392,7 +13392,7 @@
                               "dpgn-digital-architectural-maximize-reuse-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Leverage/reuse existing solutions, components, and processes."
+                            "content": "Leverage and reuse existing solutions, components, and processes."
                           }
                         ]
                       },
@@ -13410,7 +13410,7 @@
                               "dpgn-digital-architectural-maximize-reuse-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Select enterprise or cluster solutions over department-specific solutions."
+                            "content": "Select enterprise and cluster solutions over department-specific solutions."
                           }
                         ]
                       },
@@ -13446,7 +13446,7 @@
                               "dpgn-digital-architectural-maximize-reuse-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Identify departmental investments/innovations to the GC EARB."
+                            "content": "Inform the GC EARB about departmental investments and innovations."
                           }
                         ]
                       },
@@ -13464,7 +13464,7 @@
                               "dpgn-digital-architectural-maximize-reuse-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Share code publically when appropriate, when not, share within the Government of Canada."
+                            "content": "Share code publicly when appropriate, when not, share within the Government of Canada."
                           }
                         ]
                       },
@@ -13500,7 +13500,7 @@
                               "dpgn-digital-architectural-enable-interoperability-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Manages services through a service bus (DXP) and an API store."
+                            "content": "Manage services through a service bus (DXP) and an API store."
                           }
                         ]
                       },
@@ -13518,7 +13518,7 @@
                               "dpgn-digital-architectural-cloud-first-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Software as a Service, (SaaS ) first, then Platform as a Service (PaaS), then Infrastructure as a Service (IaaS)."
+                            "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), abnd lastly Infrastructure as a Service (IaaS)."
                           }
                         ]
                       },
@@ -13536,7 +13536,7 @@
                               "dpgn-digital-architectural-cloud-first-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Public cloud first, then Hybrid, then Private Cloud."
+                            "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on premise) solutions."
                           }
                         ]
                       },
@@ -13554,25 +13554,7 @@
                               "dpgn-digital-architectural-cloud-first-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Lastly non-cloud (on premise) solutions."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-cloud-first-4",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-cloud-first-4",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Design for cloud mobility and an exit strategy to avoid vendor lock-in."
+                            "content": "Design for cloud mobility and develop an exit strategy to avoid vendor lock-in."
                           }
                         ]
                       },
@@ -20232,7 +20214,7 @@
                               "dpgn-digital-architectural-keep-data-organized-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Decouple Master Data from applications and host using the appropriate system of record."
+                            "content": "Decouple Master Data from applications and host within the appropriate system of record."
                           }
                         ]
                       },
@@ -20250,7 +20232,7 @@
                               "dpgn-digital-architectural-keep-data-organized-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Systems of record shall be authoritative central sources."
+                            "content": "Make systems of record authoritative central sources."
                           }
                         ]
                       },
@@ -20268,7 +20250,7 @@
                               "dpgn-digital-architectural-keep-data-organized-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Data Resiliency shall be designed in accordance with GC policies and standards."
+                            "content": "Design data resiliency in accordance with GC policies and standards."
                           }
                         ]
                       },
@@ -20286,7 +20268,7 @@
                               "dpgn-digital-architectural-keep-data-organized-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Publish Master Data Management to appropriate stakeholders."
+                            "content": "Use Master Data Management to provide a single point of reference for appropriate stakeholders."
                           }
                         ]
                       },
@@ -20699,7 +20681,7 @@
                               "dpgn-digital-architectural-keep-data-organized-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Custodians shall ensure data is correct, consistent, and complete."
+                            "content": "Assign data custodians to ensuring data is correct, consistent, and complete."
                           }
                         ]
                       },

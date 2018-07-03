@@ -7,6 +7,8 @@ altLangPage: gc-earb
 collectionDirectory: views-vues/gc-earb-ceai
 ---
 
+The Government of Canada Digital Architectural Standards shall be applied to digital projects and initiatives in order to successfully align with the Government of Canada digital direction. The Government of Canada Enterprise Architecture Review Board (GC EARB) will use these standards to evaluate digital investments and solutions. The Digital Architectural Standards build upon the Government of Canada Digital Standards, focusing on best practices for architectural and design planning.
+
 This page provides personalized guidance for how projects can meet the Digital Architectural Standards of the Government of Canada Enterprise Architecture Review Board (GC EARB).
 
 <!-- markdownlint-disable MD032 -->
@@ -98,7 +100,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 ## 9. Use Cloud First
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-cloud-first-1,dpgn-digital-architectural-cloud-first-2,dpgn-digital-architectural-cloud-first-3,dpgn-digital-architectural-cloud-first-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-cloud-first-1,dpgn-digital-architectural-cloud-first-2,dpgn-digital-architectural-cloud-first-3,dpgn-digital-architectural-cloud-first-4" guidelineSectionsOrder="checklist" %}
+{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-cloud-first-1,dpgn-digital-architectural-cloud-first-2,dpgn-digital-architectural-cloud-first-3" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-cloud-first-1,dpgn-digital-architectural-cloud-first-2,dpgn-digital-architectural-cloud-first-3" guidelineSectionsOrder="checklist" %}
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-cloud-first" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
