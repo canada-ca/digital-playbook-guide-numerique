@@ -66,6 +66,14 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * Document the process for identifying, understanding new or ongoing security and privacy threats and the process for managing them
 * Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned.
 
+**Digital Architectural Standards (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
+* {: .dpgn-digital-architectural-security-privacy-4} Balance user and business needs with proportionate security measures.
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
 </section>
 
 <section class="dpgn-section-guides">

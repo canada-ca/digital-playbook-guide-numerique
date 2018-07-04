@@ -77,7 +77,7 @@ To be successful, build a team with:
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-multidisciplinary-teams-1} Include all skillsets required for delivery from requirements, design, development, to operations.
+- {: .dpgn-digital-architectural-multidisciplinary-teams-1} Include all skillsets required for delivery, including for requirements, design, development, and operations.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
