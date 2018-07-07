@@ -1,7 +1,7 @@
 /**
  * @title Calculate
- * @overview Calculates values through basic math operations
- * @license open.canada.ca/en/open-government-licence-canada / http://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada
+ * @overview Calculates values through basic math operations and conditionally performs specified actions
+ * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
 ( function( $, window, document, wb ) {
@@ -83,11 +83,18 @@ var componentName = "wb-calculate",
      * - divide: Calculate the result of dividing two or more numbers in sequence (e.g., a / b / c)
      * - power: Calculate the result of the powers of two or more numbers in sequence (e.g., a ** b ** c)
      * - modulus: Calculate the result of the modulus of two or more numbers in sequence (e.g., a % b % c )
+     * - conditional: Perform an action of "actionType" if all conditions in "inputs" are met. 
      * decimalPlaces {Integer} Optional (defaults to unlimited). Number of decimal plays to allow for the result.
      * value {Number} Optional (can be used instead of "query", only permitted for "number" type). The value of the number to use.
      * query {String} Optional (required for "count" type and "number" type when "value" is not specified) The CSS query for where to retrieve the number (uses first result) or for the items to count.
-     * items {Array} Optional (required for "add", "subtract", "multiply", "divide", "power" and "modulus" types). Array of operations that provide the values to use in the current operation.
+     * inputs {Array} Optional (required for "add", "subtract", "multiply", "divide", "power", "modulus" and "conditional" types). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
      * increment {Integer} Optional (can only be used with "count" type). The size of the increment to use for each item counted.
+     * actions {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
+     * outputEvent {String} Optional (required for action type of "event" for "conditional" type). Event type 
+     * outputEventParameter {Array/Plain object} Optional (only used for action type of "event" for "conditional" type).
+     * operations {Array} Optional (required for action type of "operations" for "conditional" type). Operations to execute.
+     * class {String} Optional (required for action type of "addClass" or "removeClass" for "conditional" type). Class to add or remove.  
+     * outputTarget {String} Optional (required for operations that output the result and for action type of "event", "addClass" or "removeClass" for "conditional" type). CSS selector for where to output the result of the operation or for where to trigger the event.
      */
     calculate = function( operation ) {
 
@@ -98,7 +105,7 @@ var componentName = "wb-calculate",
           inputs = operation[ "inputs" ],
           inputsLength = inputs ? inputs.length : null,
           decimalPlaces = operation[ "decimalPlaces" ],
-          index;
+          index, conditionMet;
 
       if ( type === "number" ) {
         if ( $query ) {
@@ -145,6 +152,59 @@ var componentName = "wb-calculate",
         value = calculate( inputs[ 0 ] );
         for ( index = 1; index < inputsLength; index += 1 ) {
           value = value % calculate( inputs[ index ] );
+        }
+      } else if ( type === "conditional" ) {
+        for ( index = 0; index < inputsLength; index += 1 ) {
+          conditionMet = false;
+          let condition = inputs[ index ],
+              conditionType = condition[ "type" ],
+              values = condition[ "inputs" ];
+
+          if ( conditionType === "=" || conditionType === "==" ) {
+            // Equal to
+            conditionMet = calculate( values[ 0 ] ) == calculate( values[ 1 ] );
+          } else if ( conditionType === ">" ) {
+            // Greater than
+            conditionMet = calculate( values[ 0 ] ) > calculate( values[ 1 ] );
+          } else if ( conditionType === "<" ) {
+            // Less than
+            conditionMet = calculate( values[ 0 ] ) < calculate( values[ 1 ] );
+          } else if ( conditionType === ">=" ) {
+            // Greater than or equal to
+            conditionMet = calculate( values[ 0 ] ) >= calculate( values[ 1 ] );
+          } else if ( conditionType === "<=" ) {
+            // Less than or equal to
+            conditionMet = calculate( values[ 0 ] ) <= calculate( values[ 1 ] );
+          } else if ( conditionType === "!=" ) {
+            // Not equal to
+            conditionMet = calculate( values[ 0 ] ) != calculate( values[ 1 ] );
+          }
+
+          if ( !conditionMet ) {
+            break;
+          }
+        }
+
+        if ( conditionMet ) {
+          var actions = operation[ "actions" ],
+              actionsLength = actions.length,
+              action, actionType;
+
+          for ( index = 0; index < actionsLength; index += 1 ) {
+            action = actions[ index ];
+            actionType = action[ "type" ];
+            if ( actionType === "event" ) {
+              $( action[ "outputTarget" ] ).trigger( action[ "outputEvent" ], action[ "outputEventParameters" ] );
+            } else if ( actionType === "operations" ) {
+              iterate( action[ "operations" ] );
+            } else if ( actionType === "addClass" ) {
+              $( action[ "outputTarget" ] ).addClass( action[ "class" ] );
+            } else if ( actionType === "removeClass" ) {
+              $( action[ "outputTarget" ] ).removeClass( action[ "class" ] );
+            } else if ( actionType === "conditional" ) {
+              calculate( action );
+            }
+          }
         }
       }
 
