@@ -693,16 +693,6 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
                             "content": "Make sure most people can get through the service end-to-end without assistance <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
@@ -724,16 +714,6 @@
                           {
                             "content_type": "inline",
                             "content": "Document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Make the service accessible, including for users with lower levels of digital skills <strong>(Digital Service Standard (Ontario))</strong>"
                           }
                         ]
                       },
@@ -800,16 +780,6 @@
                           {
                             "content_type": "inline",
                             "content": "change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "understand how you will use existing design patterns and a front-end toolkit to make the service consistent <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       }
@@ -1516,26 +1486,6 @@
                         "content": "Not everyone will have the same access, comfort and skill level to use digital service by default. Understand how and where users require support, make that support available, and raise awareness of that support. <strong>(Digital Service Standard (Ontario) (Support those who need it))</strong>"
                       }
                     ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Users may expect that an online service is available 24 hours a day, 365 days a year."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. <strong>(Digital Service Standard (UK) (Make a plan for being offline))</strong>"
-                      }
-                    ]
                   }
                 ]
               },
@@ -1586,16 +1536,6 @@
                           {
                             "content_type": "inline",
                             "content": "Support people who cannot use digital services on their own"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel"
                           }
                         ]
                       },
@@ -1694,36 +1634,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Determine how users would be affected if your service was unavailable for any length of time and how that’s changed since beta <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Determine the most likely ways the service could go offline and how you plan to stop them <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Determine your strategy for dealing with outages, including who’s responsible and the decisions they can make <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
                         "tags": [
                           "dpgn-stage-alpha"
                         ],
@@ -1814,86 +1724,6 @@
                               "dpgn-stage-alpha"
                             ],
                             "content": "Identify parts of the service that users find difficult and any problems that need to be overcome to design the service <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "<strong>Who are the users?</strong> What about their motivations, triggers, contexts are significant for your service? How can you find them to invite them to participate in user research? You must include users with varying needs (such as needs arising from disability, cultural diversity, literacy and remoteness). Consider all the users in the service including end users, users in government who are delivering the service, and key intermediaries (professional and personal network) <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "<strong>What is the real task(s) that people are trying to achieve</strong> when they encounter your service. What is the ‘job’ people are trying to get done that your service is a part of? (You need to describe this in words that real end users would use, not using government terminology) <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "<strong>How are users currently doing the task</strong> your service aims to help them do and key touch points, for example through journey maps. What other relevant government and non-government services are also in use at this time? Where are the pain points in the current experience? <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "<strong>What are the user needs?</strong> What are the opportunities to remove or reduce the pain points? How might we better meet the user needs? (Demonstrate this through research, testing and validating possible solutions with prototypes) <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "<strong>Are you designing the right thing?</strong> How have your insights from user research helped you to define your minimum viable product (MVP)? How does the MVP create value for users and government by better meeting user needs? <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       },
@@ -2029,102 +1859,6 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "Greater depth and diversity of knowledge on all of the points above from Alpha <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "<strong>How has your service been shaped by user needs?</strong> Show how you have made changes in the service and interaction design in response to user research and usability testing. You can evidence this by showing how the design has changed over time and the appropriate research findings that have driven this change <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "<strong>How you tested the system in the users’ context with a full range of users</strong> (including users with varying needs). You can evidence this with artefacts of research, for example, video clips and outcomes from research analysis <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "<strong>Are you prepared for ongoing user research?</strong> Show how you plan to continue to test the system with users and the resources for this, for example through an ongoing research plan and budget <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "<strong>What have you not solved yet?</strong> What the significant design challenges are, for example through key insights, how have you approached them? How do you plan to continue to tackle them? <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "<strong>How will you know if your design is working?</strong> Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
                           "dpgn-stage-live"
                         ],
                         "content": [
@@ -2150,54 +1884,6 @@
                               "dpgn-stage-live"
                             ],
                             "content": "Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Be able to show greater depth of knowledge for all the points above (from Alpha/Beta) <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "<strong>Show how you are using data from real use</strong> to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Know how you will measure and monitor your service to ensure it is serving its users well <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       }
@@ -2419,29 +2105,8 @@
                             "content": "<a href=\"https://medium.com/@userfocus/evangelising-user-research-849430701b6e\">Evangelising user research (David Travis (Medium.com))</a>"
                           }
                         ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online\">Keeping your service online (Service Manual (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/assisted-digital/\">Assisted Digital (Digital Service Standard (AU))</a>"
-                          }
-                        ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -2573,16 +2238,6 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline\">11. Make a plan for being offline (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
                             "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-12\">12. Support those who need it (Digital Service Standard (Ontario))</a>"
                           }
                         ]
@@ -2620,6 +2275,36 @@
                       {
                         "content_type": "inline",
                         "content": "We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter — whether it’s online or offline — should move the user closer towards their goal. <strong>(Digital Services Playbook (US))</strong>"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>(Digital Service Standard (Ontario))</strong>"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion."
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
                       }
                     ]
                   },
@@ -2676,36 +2361,6 @@
                             "content": "give better support to those who can’t use digital services on their own"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>(Digital Service Standard (Ontario))</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
                       }
                     ]
                   }
@@ -2913,38 +2568,6 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show you understand existing channels and how they interact with the service and with each other <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "show you understand the channels required to support all groups of users of the service, and where a user may need to change channels <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
                           "dpgn-stage-beta"
                         ],
                         "content": [
@@ -3009,22 +2632,6 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "understand the full impact of retiring any potentially redundant services and channels. <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
                           "dpgn-stage-live"
                         ],
                         "content": [
@@ -3066,140 +2673,6 @@
                               "dpgn-stage-live"
                             ],
                             "content": "Measure the expected impact on other service points, such as phone and in person, and how that could impact funding and resource allocation <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show how you’ve revised the targets you made in the Beta stage to increase the number of users (including users we need to assist) of your digital service <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show what you’ve learned from testing different approaches to encourage users (including users we need to assist) to choose the digital service over non-digital alternatives, and which ones you’ll use in the Live stage <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show your retirement strategy for any redundant services and channels <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show that your service load capacity is scalable to meet increased digital take-up <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. <strong>(13. Encourage everyone to use the digital service - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "detail the channels required to support all groups of users of the service <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "understand the non-digital service channels and have a plan to move users to the digital channel where appropriate <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "have developed and tested the service so that a user can change channels without repeating themselves. <strong>(12. Don’t forget the non-digital experience - Digital Service Standard (AU))</strong>"
                           }
                         ]
                       }
@@ -11754,6 +11227,36 @@
                       },
                       {
                         "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Determine how users would be affected if your service was unavailable for any length of time and how that’s changed since beta <strong>(Digital Service Standard (UK))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Determine the most likely ways the service could go offline and how you plan to stop them <strong>(Digital Service Standard (UK))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Determine your strategy for dealing with outages, including who’s responsible and the decisions they can make <strong>(Digital Service Standard (UK))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
                         "content_source": {
                           "title": "Section 7.3.1, Standard on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
@@ -11771,94 +11274,6 @@
                               "dpgn-automated-decision"
                             ],
                             "content": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended biases and other factors that may unfairly impact outcomes."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "test your prototypes with users. <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show the testing environment; using test plans, real world scenarios and user stories <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show that your service can perform under expected loads with suitable scale contingencies <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show how you explored integrating automated testing into the deployment process <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "show you have a business continuity plan and a roll-back option. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
                       }
@@ -12130,6 +11545,16 @@
                             "content": "<a href=\"https://testing-cookbook.18f.gov/\">Testing Cookbook (18F (US))</a>"
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online\">Keeping your service online (Service Manual (UK))</a>"
+                          }
+                        ]
                       }
                     ],
                     "tags": null
@@ -12349,6 +11774,16 @@
                             "content": "<a href=\"https://www.dta.gov.au/standard/10-test-the-service/\">10. Test the service (Digital Service Standard (AU))</a>"
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline\">11. Make a plan for being offline (Digital Service Standard (UK))</a>"
+                          }
+                        ]
                       }
                     ],
                     "tags": null
@@ -12431,98 +11866,6 @@
                         ]
                       }
                     ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. <strong>(Digital Services Playbook (US))</strong>"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "Public cloud services offer benefits that enable significant advances in the following:"
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "ul",
-                    "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "block",
-                            "source_element": "p",
-                            "content": [
-                              {
-                                "content_type": "inline",
-                                "content": "Service performance: Self-service provisioning of computing resources can dramatically reduce the time to meet a requirement. Metrics-based service levels that are contractually enforced help ensure consistent performance levels."
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Security: Cloud-service providers hold internationally recognized security certifications that are assessed by third-party security professionals. These certifications include robust security features that would be a challenge for any one consumer to fund individually."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Innovation: New features are being continuously deployed, and the costs are amortized across a global service customer base. New technologies such as social media, mobile platforms and analytic tools are all available through subscriptions without large capital investments."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Agility: Rapid access is available to multi-featured computing resources at the required capacity to carry out projects from planning to full operation."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Elasticity: Commoditized services can grow and shrink with the level of demand; consumers pay only for what is needed for the time it is needed."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
-                      {
-                        "content_type": "inline",
-                        "content": "<strong>(GC)</strong>"
-                      }
-                    ]
                   }
                 ]
               },
@@ -12546,152 +11889,6 @@
                     "content_type": "block",
                     "source_element": "ul",
                     "content": [
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "follow government better practice and standards in the design of the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "identify tools, systems, processes that can be adopted or reused from other services <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "search for similar solutions in other jurisdictions. <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "addressing any common user needs in a way that is consistent with the rest of government. <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Choose software frameworks that are commonly used by private-sector companies creating similar services <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Use departmental/GC standards. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Adopt the business number as the client identifier - do not create other unique identifiers. This enables data sharing across service lines, departments and jurisdictions."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Authenticated services must use only the federated credentials (e.g., SecureKey, GCKey). This enables a single login so clients do not need to re-authenticate their identity for each ISED service. It also ensures a sufficient level of security."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Build in client relationship management (e.g., MS Dynamics). This enables many capabilities such as the “Tell-me-once” feature, real-time status updates and omni-channel service delivery."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Utilize resources offered by the Chief Information Office (e.g., Master Data Management) to retrieve information that can help you have a holistic view of clients across the department."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Follow the <a href=\"https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp\">Canada.ca Content Style Guide</a>"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "For services that receive payments, adopt the departmental standard e-payment system. This provides a consistent client experience across ISED services."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Build in real-time status updates to your services, where appropriate."
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12734,23 +11931,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Choose solutions or parts thereof that are re-usable in another service context. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Use technology solutions that other business lines can reuse or adapt to their needs. This is both economical and practical as it permits future interoperability, and reduces the overall cost of follow-on digital transformation initiatives."
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "Follow the <a href=\"https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp\">Canada.ca Content Style Guide</a>"
                           }
                         ]
                       },
@@ -12760,53 +11941,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Consider open data to the extent possible. <strong>(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Open data increases transparency."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Open data leverages public sector information to develop consumer and commercial products."
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store."
-                                  }
-                                ]
-                              }
-                            ]
+                            "content": "Static assets are served through a content delivery network <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
                       },
@@ -12935,295 +12070,140 @@
                             "content": "Leverage enterprise digital exchange components (GC Service Bus, Digital Exchange Platform, and the API Store)."
                           }
                         ]
-                      },
+                      }
+                    ],
+                    "tags": null
+                  },
+                  {
+                    "content_type": "section",
+                    "source_element": "section",
+                    "title": "Cloud services",
+                    "source_attributes": {
+                      "id": "cloud-services"
+                    },
+                    "content": [
                       {
                         "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-cloud-first-1",
-                          "dpgn-digital-architectural"
-                        ],
+                        "source_element": "ul",
+                        "tags": null,
                         "content": [
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural-cloud-first-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-cloud-first-2",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural-cloud-first-1",
+                                  "dpgn-digital-architectural"
+                                ],
+                                "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)."
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural-cloud-first-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-cloud-first-3",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural-cloud-first-2",
+                                  "dpgn-digital-architectural"
+                                ],
+                                "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions."
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural-cloud-first-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Design for cloud mobility and develop an exit strategy to avoid vendor lock-in."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Cloud services are identified and evaluated as the principal delivery option when initiating IT investments, initiatives, strategies and projects."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Using the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-right-cloud-selection-guidance.html\">Government of Canada Right Cloud Selection Guidance</a> to guide their decision, departmental and agency CIOs will select one of the following deployment models, in the following order of priority:\n        "
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural-cloud-first-3",
+                                  "dpgn-digital-architectural"
+                                ],
+                                "content": "Design for cloud mobility and develop an exit strategy to avoid vendor lock-in."
+                              }
+                            ]
                           },
                           {
                             "content_type": "block",
-                            "source_element": "ul",
+                            "source_element": "li",
                             "content": [
                               {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "public cloud"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "hybrid cloud"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "private cloud"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "non-cloud"
-                                  }
-                                ]
+                                "content_type": "inline",
+                                "content": "Cloud services are identified and evaluated as the principal delivery option when initiating IT investments, initiatives, strategies and projects."
                               }
                             ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Departmental and agency CIOs will select one of the following cloud service models, in the following order of priority:\n        "
                           },
                           {
                             "content_type": "block",
-                            "source_element": "ul",
+                            "source_element": "li",
                             "content": [
                               {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "software as a service (SaaS)"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "platform as a service (PaaS)"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "infrastructure as a service (IaaS)"
-                                  }
-                                ]
+                                "content_type": "inline",
+                                "content": "In considering how to manage security risks, departments and agencies must follow the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html\">GC Cloud Security Risk Management Approach and Procedures</a> and the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>."
                               }
                             ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
+                          },
                           {
-                            "content_type": "inline",
-                            "content": "In considering how to manage security risks, departments and agencies must follow the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html\">GC Cloud Security Risk Management Approach and Procedures</a> and the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
+                            "content_type": "block",
+                            "source_element": "li",
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "content": "Departments and agencies may deploy solutions that have data-categorization requirements that fall outside of a particular cloud security control profile, as described in the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>, with appropriate risk-mitigation measures that have been developed in consultation with GC security partners."
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
-                            "content": "Departments and agencies may deploy solutions that have data-categorization requirements that fall outside of a particular cloud security control profile, as described in the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>, with appropriate risk-mitigation measures that have been developed in consultation with GC security partners."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
+                            "content_type": "block",
+                            "source_element": "li",
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "content": "To ensure, to the greatest extent possible, the GC’s continuous access to sensitive data, departments and agencies must comply with the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>."
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
-                            "content": "To ensure, to the greatest extent possible, the GC’s continuous access to sensitive data, departments and agencies must comply with the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
+                            "content_type": "block",
+                            "source_element": "li",
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "content": "To ensure business continuity and to manage risks, departments and agencies will develop an appropriate exit strategy before using cloud services."
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
-                            "content": "To ensure business continuity and to manage risks, departments and agencies will develop an appropriate exit strategy before using cloud services."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Departments and agencies should consider portability and interoperability of services when designing cloud-based solutions."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Ensure that resources are provisioned on demand <strong>(OneGC product design criteria) /</strong> Resources are provisioned on demand <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Enable resources to scale based on real-time user demand <strong>(OneGC product design criteria) /</strong> Resources scale based on real-time user demand <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Ensure resources are available in multiple regions <strong>(OneGC product design criteria) /</strong> Resources are available in multiple regions <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Pay for only the resources that are used <strong>(OneGC product design criteria) /</strong> We only pay for resources we use <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Design so static assets are served through a content delivery network <strong>(OneGC product design criteria) /</strong> Static assets are served through a content delivery network <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Resources are provisioned through an API <strong>(Digital Services Playbook (US))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Application is hosted on commodity hardware <strong>(Digital Services Playbook (US))</strong>"
+                            "content_type": "block",
+                            "source_element": "li",
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "content": "Departments and agencies should consider portability and interoperability of services when designing cloud-based solutions."
+                              }
+                            ]
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -13282,135 +12262,150 @@
                             "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html\">Canada.ca Content Style Guide</a>"
                           }
                         ]
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "section",
+                    "source_element": "section",
+                    "title": "Cloud services",
+                    "source_attributes": {
+                      "id": "cloud-services-1"
+                    },
+                    "content": [
                       {
                         "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-cloud-first"
-                        ],
+                        "source_element": "ul",
                         "content": [
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-right-cloud-selection-guidance.html\">Government of Canada Right Cloud Selection Guidance</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-cloud-first"
-                        ],
-                        "content": [
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-cloud-first"
+                                ],
+                                "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-right-cloud-selection-guidance.html\">Government of Canada Right Cloud Selection Guidance</a>"
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-cloud-first"
-                        ],
-                        "content": [
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-cloud-first"
+                                ],
+                                "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>"
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-cloud-first"
-                        ],
-                        "content": [
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-cloud-first"
+                                ],
+                                "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/gc-white-paper-data-sovereignty-public-cloud.html\">Government of Canada White Paper: Data Sovereignty and Public Cloud</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-cloud-first"
-                        ],
-                        "content": [
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-cloud-first"
+                                ],
+                                "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/gc-white-paper-data-sovereignty-public-cloud.html\">Government of Canada White Paper: Data Sovereignty and Public Cloud</a>"
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html\">Government of Canada Cloud Security Risk Management Approach and Procedures</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-cloud-first"
-                        ],
-                        "content": [
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-cloud-first"
+                                ],
+                                "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html\">Government of Canada Cloud Security Risk Management Approach and Procedures</a>"
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-cloud-first"
-                        ],
-                        "content": [
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-cloud-first"
+                                ],
+                                "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>"
+                              }
+                            ]
+                          },
                           {
-                            "content_type": "inline",
+                            "content_type": "block",
+                            "source_element": "li",
                             "tags": [
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>"
+                            "content": [
+                              {
+                                "content_type": "inline",
+                                "tags": [
+                                  "dpgn-digital-architectural",
+                                  "dpgn-digital-architectural-cloud-first"
+                                ],
+                                "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>"
+                              }
+                            ]
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -13627,7 +12622,62 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
+                    "tags": null,
                     "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-enable-interoperability-1",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-enable-interoperability-1",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Expose all functionality as services."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-enable-interoperability-2",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-enable-interoperability-2",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Use microservices built around business capabilities. Scope each service to a single purpose."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-enable-interoperability-3",
+                          "dpgn-digital-architectural"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-enable-interoperability-3",
+                              "dpgn-digital-architectural"
+                            ],
+                            "content": "Run each service in its own process and have it communicate with other services through a well-defined interface, such as an HTTPS-based application programming interface (API)."
+                          }
+                        ]
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -13687,63 +12737,8 @@
                             "content": "Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible."
                           }
                         ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-enable-interoperability-1",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-enable-interoperability-1",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Expose all functionality as services."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-enable-interoperability-2",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-enable-interoperability-2",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Use microservices built around business capabilities. Scope each service to a single purpose."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-enable-interoperability-3",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-enable-interoperability-3",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Run each service in its own process and have it communicate with other services through a well-defined interface, such as an HTTPS-based application programming interface (API)."
-                          }
-                        ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -19706,16 +18701,6 @@
                       },
                       {
                         "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Ensure data and information is complete, accurate and up-to-date"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
                         "content_source": {
                           "title": "Section 7.3.3, Standard on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
@@ -20301,356 +19286,6 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "All services must, at a minimum, measure 4 KPIs. <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "User satisfaction - to help continually improve the user experience of your service"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "Digital take-up - to show how many people are using the service and to help encourage users to choose the digital service"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "Completion rate - to show which parts of the service you need to fix"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "Cost per transaction - to make your service more cost efficient"
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "There will be other metrics your service needs to measure and monitor to understand how it is performing, such as: <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "error rates"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "time to completion"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "costs, benefits and return on investment"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "content metrics (readability, length)."
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "explored the data that is already available for an existing service, where it is kept and how you might access and use it, and also shared your own insights <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "collected baseline data for the service operation in all of its channels <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "estimated the number of people you expect to use the service <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "started creating a performance framework outlining your objectives and what metrics your team will use to demonstrate you meet them <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "considered the metrics you will need to measure the 4 KPIs and where the data will come from. <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "which metrics and measurements you will use to monitor your KPIs <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "the baseline measures and the benchmarks for success <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta"
-                            ],
-                            "content": "which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) <strong>(Digital Service Standard (AU))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
                           "dpgn-stage-live"
                         ],
                         "content": [
@@ -20772,95 +19407,6 @@
                               "dpgn-stage-live"
                             ],
                             "content": "demonstrate how service performance compares to other similar government and private sector services <strong>(Digital Service Standard (Ontario))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Your data should show: <strong>(Digital Service Standard (AU))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "user satisfaction has increased"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "digital take-up is increasing in line with service plans"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "completion rate has been maintained"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "cost per transaction is decreasing in line with service plans."
-                                  }
-                                ]
-                              }
-                            ]
                           }
                         ]
                       }
