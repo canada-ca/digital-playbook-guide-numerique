@@ -1,7 +1,7 @@
 /**
  * @title Calculate
- * @overview Calculates values through basic math operations
- * @license open.canada.ca/en/open-government-licence-canada / http://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada
+ * @overview Calculates values through basic math operations and conditionally performs specified actions
+ * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
 ( function( $, window, document, wb ) {

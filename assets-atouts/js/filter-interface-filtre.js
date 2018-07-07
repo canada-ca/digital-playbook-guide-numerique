@@ -1,7 +1,7 @@
 /**
  * @title Content filtering
  * @overview Persistent content filtering through checkbox groups, query string and function call
- * @license open.canada.ca/en/open-government-licence-canada / http://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada
+ * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
 ( function( $, window, document, wb ) {
