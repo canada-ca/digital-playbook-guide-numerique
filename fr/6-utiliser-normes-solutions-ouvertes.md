@@ -224,21 +224,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - make users' experience of government more consistent, which generates trust
 - save time and money by reusing things that are already available
 
-**Nuage d'abord (anciennement ligne directrice 6.6) :**
-{: .dpgn-data-ignore}
-
-Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. **(Digital Services Playbook (US))**
-
-Public cloud services offer benefits that enable significant advances in the following:
-
-- Service performance: Self-service provisioning of computing resources can dramatically reduce the time to meet a requirement. Metrics-based service levels that are contractually enforced help ensure consistent performance levels.
-- Security: Cloud-service providers hold internationally recognized security certifications that are assessed by third-party security professionals. These certifications include robust security features that would be a challenge for any one consumer to fund individually.
-- Innovation: New features are being continuously deployed, and the costs are amortized across a global service customer base. New technologies such as social media, mobile platforms and analytic tools are all available through subscriptions without large capital investments.
-- Agility: Rapid access is available to multi-featured computing resources at the required capacity to carry out projects from planning to full operation.
-- Elasticity: Commoditized services can grow and shrink with the level of demand; consumers pay only for what is needed for the time it is needed.
-
-**(GC)**
-
 </div>
 
 <section class="dpgn-section-checklist">
@@ -289,6 +274,16 @@ Public cloud services offer benefits that enable significant advances in the fol
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
+**Stratégie d’adoption de l’informatique en nuage du gouvernement du Canada :**
+{: .dpgn-data-ignore}
+
+- Les services d’informatique en nuage sont désignés et évalués comme la principale option de prestation de services lorsqu’on procède à des investissements en matière de TI ou qu’on lance des initiatives, des stratégies et des projets de la TI.
+- Pour déterminer comment gérer les risques pour la sécurité, les ministères et organismes doivent observer le contenu des documents [Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage du gouvernement du Canada](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html) et [Orientation sur l’utilisation sécurisée des services commerciaux d’informatique en nuage : Avis de mise en œuvre de la Politique sur la sécurité (AMOPS)](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/orientation-utilisation-securisee-services-commerciaux-informatique-nuage-amops.html).
+- Les ministères et organismes peuvent déployer des solutions dont les exigences en matière de catégorisation de données ne correspondent pas à un profil de contrôle de sécurité de l’informatique en nuage donné, comme il est indiqué dans le [Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l’informatique en nuage](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html), avec des mesures d’atténuation des risques appropriées élaborées de concert avec des partenaires de la sécurité du GC.
+- Pour garantir, dans la mesure du possible, l’accès continu du GC aux données de nature délicate, les ministères et organismes doivent se conformer à l’[Orientation relative à la résidence des données électroniques](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html).
+- Pour assurer la continuité des activités et gérer les risques, les ministères et organismes élaboreront une stratégie de retrait appropriée avant d’utiliser les services d’informatique en nuage.
+- Les ministères et organismes devraient tenir compte de la transférabilité et de l’interopérabilité des services au moment d’élaborer des solutions d’informatique en nuage.
+
 **Nuage d'abord (anciennement ligne directrice 6.6) :**
 {: .dpgn-data-ignore}
 
@@ -310,16 +305,6 @@ Public cloud services offer benefits that enable significant advances in the fol
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
-
-**Stratégie d’adoption de l’informatique en nuage du gouvernement du Canada :**
-{: .dpgn-data-ignore}
-
-- Les services d’informatique en nuage sont désignés et évalués comme la principale option de prestation de services lorsqu’on procède à des investissements en matière de TI ou qu’on lance des initiatives, des stratégies et des projets de la TI.
-- Pour déterminer comment gérer les risques pour la sécurité, les ministères et organismes doivent observer le contenu des documents [Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage du gouvernement du Canada](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html) et [Orientation sur l’utilisation sécurisée des services commerciaux d’informatique en nuage : Avis de mise en œuvre de la Politique sur la sécurité (AMOPS)](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/orientation-utilisation-securisee-services-commerciaux-informatique-nuage-amops.html).
-- Les ministères et organismes peuvent déployer des solutions dont les exigences en matière de catégorisation de données ne correspondent pas à un profil de contrôle de sécurité de l’informatique en nuage donné, comme il est indiqué dans le [Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l’informatique en nuage](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html), avec des mesures d’atténuation des risques appropriées élaborées de concert avec des partenaires de la sécurité du GC.
-- Pour garantir, dans la mesure du possible, l’accès continu du GC aux données de nature délicate, les ministères et organismes doivent se conformer à l’[Orientation relative à la résidence des données électroniques](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html).
-- Pour assurer la continuité des activités et gérer les risques, les ministères et organismes élaboreront une stratégie de retrait appropriée avant d’utiliser les services d’informatique en nuage.
-- Les ministères et organismes devraient tenir compte de la transférabilité et de l’interopérabilité des services au moment d’élaborer des solutions d’informatique en nuage.
 
 **Nuage d'abord (anciennement ligne directrice 6.6) :**
 {: .dpgn-data-ignore}
