@@ -103,6 +103,9 @@ There are many potential benefits from the greater use of digital services, incl
 - Run tests automatically as part of the build process **(Digital Services Playbook (US))**
 - Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques **(Digital Services Playbook (US))**
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
+- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
+- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
+- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
@@ -112,25 +115,6 @@ There are many potential benefits from the greater use of digital services, incl
 - {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.3.1, Standard on Automated Decision-Making (draft) (GC)"} Before going into production, develop the appropriate processes to ensure that training data is tested for unintended biases and other factors that may unfairly impact outcomes.
 {: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
-<!-- markdownlint-enable MD032 -->
-
-**Stage alpha (Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5)) :**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- test your prototypes with users. **(Digital Service Standard (AU))**
-{: .dpgn-stage-alpha}
-<!-- markdownlint-enable MD032 -->
-
-**Stage bêta et en direct (Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5)) :**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- show the testing environment; using test plans, real world scenarios and user stories **(Digital Service Standard (AU))**
-- show that your service can perform under expected loads with suitable scale contingencies **(Digital Service Standard (AU))**
-- show how you explored integrating automated testing into the deployment process **(Digital Service Standard (AU))**
-- show you have a business continuity plan and a roll-back option. **(Digital Service Standard (AU))**
-{: .dpgn-stage-beta .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
 </section>
@@ -164,6 +148,7 @@ There are many potential benefits from the greater use of digital services, incl
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Performance testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 - [Testing your service (Service Manual (UK))](https://www.gov.uk/service-manual/technology#testing-your-service)
 - [Testing Cookbook (18F (US))](https://testing-cookbook.18f.gov/)
+- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
 
 </section>
 
@@ -204,6 +189,7 @@ There are many potential benefits from the greater use of digital services, incl
 - [6. Tester le service de bout en bout (Normes des services numériques (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 - [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
+- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
 </section>
 </section>
@@ -232,30 +218,11 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- follow government better practice and standards in the design of the service **(Digital Service Standard (AU))**
-- identify tools, systems, processes that can be adopted or reused from other services **(Digital Service Standard (AU))**
-- search for similar solutions in other jurisdictions. **(Digital Service Standard (AU))**
-- addressing any common user needs in a way that is consistent with the rest of government. **(Digital Service Standard (AU))**
-- Choose software frameworks that are commonly used by private-sector companies creating similar services **(Digital Services Playbook (US))**
-- Ensure that each project has clear, understandable instructions for setting up a local development environment, and that team members can be quickly added or removed from projects **(Digital Services Playbook (US))**
-- Use departmental/GC standards. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Adopt the business number as the client identifier - do not create other unique identifiers. This enables data sharing across service lines, departments and jurisdictions.
-  - Authenticated services must use only the federated credentials (e.g., SecureKey, GCKey). This enables a single login so clients do not need to re-authenticate their identity for each ISED service. It also ensures a sufficient level of security.
-  - Build in client relationship management (e.g., MS Dynamics). This enables many capabilities such as the “Tell-me-once” feature, real-time status updates and omni-channel service delivery.
-  - Utilize resources offered by the Chief Information Office (e.g., Master Data Management) to retrieve information that can help you have a holistic view of clients across the department.
-  - Follow the [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp)
-  - For services that receive payments, adopt the departmental standard e-payment system. This provides a consistent client experience across ISED services.
-  - Build in real-time status updates to your services, where appropriate.
 - Use device-agnostic and modular technology. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
   - Use technology that allows your service to function regardless of the device or operating system. Make sure mobile apps can function on all devices.
   - Modular technology can be reused, in part or in whole to innovate new solutions and uses for it. It also allows you to add new capabilities and capacities to your technology in response to changing operational environments.
-- Choose solutions or parts thereof that are re-usable in another service context. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Use technology solutions that other business lines can reuse or adapt to their needs. This is both economical and practical as it permits future interoperability, and reduces the overall cost of follow-on digital transformation initiatives.
-- Consider open data to the extent possible. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Open data is structured data that is machine-readable, is freely shared and can be used and/or built on without restrictions. It relies on three things: a permissive licensing model that encourages reuse, data discoverability and data accessibility. It also requires anonymization of data when involving potentially private information.
-  - Open data increases transparency.
-  - Open data leverages public sector information to develop consumer and commercial products.
-  - Utilize the Government of Canada’s and ISED’s Application Programming Interface (API) Store.
+- Follow the [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp)
+- Static assets are served through a content delivery network **(Digital Services Playbook (US))**
 
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
@@ -294,17 +261,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - Pour garantir, dans la mesure du possible, l’accès continu du GC aux données de nature délicate, les ministères et organismes doivent se conformer à l’[Orientation relative à la résidence des données électroniques](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html).
 - Pour assurer la continuité des activités et gérer les risques, les ministères et organismes élaboreront une stratégie de retrait appropriée avant d’utiliser les services d’informatique en nuage.
 - Les ministères et organismes devraient tenir compte de la transférabilité et de l’interopérabilité des services au moment d’élaborer des solutions d’informatique en nuage.
-
-**Nuage d'abord (anciennement ligne directrice 6.6) :**
-{: .dpgn-data-ignore}
-
-- Resources are provisioned on demand **(Digital Services Playbook (US))**
-- Resources scale based on real-time user demand **(Digital Services Playbook (US))**
-- Resources are available in multiple regions **(Digital Services Playbook (US))**
-- We only pay for resources we use **(Digital Services Playbook (US))**
-- Static assets are served through a content delivery network **(Digital Services Playbook (US))**
-- Resources are provisioned through an API **(Digital Services Playbook (US))**
-- Application is hosted on commodity hardware **(Digital Services Playbook (US))**
 
 </section>
 
@@ -391,13 +347,6 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-- Build services that are API-centric services, which execute most, if not all, functionality through API calls (e.g., connecting frontend to backend through an API)
-- Plan out API access from the beginning, designing services to be able to safely and securely expose functionality to other systems and the public.
-- Design APIs to be compete but also minimal, ensuring the expected functionality is provided but with as few public members per class and as few classes as possible. This makes it easier to understand, remember, debug and change the API.
-- Design APIs to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
-- Design APIs to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily understand code that uses the API.
-- Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
-
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
@@ -407,6 +356,13 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 - {: .dpgn-digital-architectural-enable-interoperability-3} Run each service in its own process and have it communicate with other services through a well-defined interface, such as an HTTPS-based application programming interface (API).
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
+
+- Build services that are API-centric services, which execute most, if not all, functionality through API calls (e.g., connecting frontend to backend through an API)
+- Plan out API access from the beginning, designing services to be able to safely and securely expose functionality to other systems and the public.
+- Design APIs to be compete but also minimal, ensuring the expected functionality is provided but with as few public members per class and as few classes as possible. This makes it easier to understand, remember, debug and change the API.
+- Design APIs to have clear and simple semantics to make common tasks easy. Rare tasks should still be possible but not the focus. Avoid being overly general, optimizing specific use cases.
+- Design APIs to be intuitive so that a semi-experienced user can be successful with minimal assistance from the documentation and programmers can easily understand code that uses the API.
+- Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible.
 
 </section>
 

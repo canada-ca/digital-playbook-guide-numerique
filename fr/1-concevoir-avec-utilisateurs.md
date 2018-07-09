@@ -87,18 +87,15 @@ Writing and designing content so it is consistent, plain and in the language of 
 - Provide users with a way to exit and return later to complete the process **(Digital Services Playbook (US))**
 - Use language that is familiar to the user and easy to understand **(Digital Services Playbook (US))**
 - Use language and design consistently throughout the service, including online and offline touch points **(Digital Services Playbook (US))**
-- create simpler and clearer information by understanding the language of your users, using plain language by default, and applying contemporary online writing methods **(Digital Service Standard (AU))**
 - Make sure most people can get through the service end-to-end without assistance **(Digital Service Standard (UK))**
 - Utilisez des données analytiques et vos recherches utilisateurs pour réduire le nombre de personnes qui n'accomplissent pas la tâche qu'elles souhaitaient effectuer en ligne (par exemple, renouveler leur permis de conduire) **(Normes des services numériques (Ontario))**
 - Document all end-to-end user journeys, including assisted digital journeys, demonstrate that they work and how you tested them **(Digital Service Standard (UK))**
-- Rendez les services accessibles, y compris aux utilisateurs dont les compétences numériques sont peu développées **(Normes des services numériques (Ontario))**
 - démontrez que le service est adaptatif et qu'il fournit le même contenu et les mêmes fonctionnalités sur tous les appareils, y compris sur les appareils mobiles **(Normes des services numériques (Ontario / UK / AU))**
 - Do usability testing:
   - including with users with the lowest level of digital skills **(Digital Service Standard (UK))**
   - au moins une fois avant et après la mise en ligne du service et procédez aux améliorations nécessaires **(Normes des services numériques (Ontario))**
 - basez vos décisions en matière de conception et de contenu sur vos recherches, tests et données analytiques **(Normes des services numériques (Ontario / UK)**
 - change the interface design in response to usability testing, documenting the hypotheses you tested, what happened and how you reacted **(Digital Service Standard (UK))**
-- understand how you will use existing design patterns and a front-end toolkit to make the service consistent **(Digital Service Standard (AU))**
 
 </section>
 
@@ -258,10 +255,6 @@ Mettez en place dans tous les canaux des outils visant à soutenir les personnes
 
 Tout le monde ne disposera pas automatiquement du même niveau d’accès, de confort et de compétences pour utiliser le service numérique. Comprenez à quels niveaux les utilisateurs ont besoin de soutien, mettez ce soutien à disposition et sensibilisez à l’existence de ce soutien. **(Normes des services numériques (Ontario) (Soutien aux personnes qui en ont besoin))**
 
-Users may expect that an online service is available 24 hours a day, 365 days a year.
-
-You need to have a plan for what to do if your service goes offline so that you know how users will be affected and how to get it back online. **(Digital Service Standard (UK) (Make a plan for being offline))**
-
 </div>
 
 <section class="dpgn-section-checklist">
@@ -280,7 +273,6 @@ You need to have a plan for what to do if your service goes offline so that you 
 {: .dpgn-data-ignore}
 
 - Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens
-- Leverage opportunities across multiple channels, implementing the relevant GC Policy requirements for each channel
 - Effectuez le plus tôt possible une étude des utilisateurs afin de : **(Normes des services numériques (Ontario))**
   - comprendre l’accès, la confiance et les compétences numériques dont disposent les utilisateurs
   - savoir pourquoi certains utilisateurs ne peuvent pas utiliser le service numérique de façon autonome, par exemple à cause d’obstacles dus à la maîtrise linguistique ou à la maîtrise d’Internet
@@ -289,9 +281,6 @@ You need to have a plan for what to do if your service goes offline so that you 
   - utilisent déjà ou utiliseront le service
   - disposent du niveau le plus bas d’accès, de confiance et de compétences numériques
   - font actuellement appel à d’autres personnes pour obtenir de l’aide numérique (amis, famille, collègues, entreprises ou organismes de bienfaisance)
-- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
-- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
-- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 **Stage alpha :**
 {: .dpgn-data-ignore}
@@ -303,11 +292,6 @@ You need to have a plan for what to do if your service goes offline so that you 
 - Use a range of qualitative and quantitative research methods to determine people's goals, needs, and behaviors; be thoughtful about the time spent **(Digital Services Playbook (US))**
 - Create a prioritized list of tasks the user is trying to accomplish, also known as "user stories" **(Digital Services Playbook (US))**
 - Identifiez les parties du service qui ont posé des difficultés aux utilisateurs et tout problème qui doit être résolu lors de la conception du service **(Normes des services numériques (Ontario))**
-- **Who are the users?** What about their motivations, triggers, contexts are significant for your service? How can you find them to invite them to participate in user research? You must include users with varying needs (such as needs arising from disability, cultural diversity, literacy and remoteness). Consider all the users in the service including end users, users in government who are delivering the service, and key intermediaries (professional and personal network) **(Digital Service Standard (AU))**
-- **What is the real task(s) that people are trying to achieve** when they encounter your service. What is the ‘job’ people are trying to get done that your service is a part of? (You need to describe this in words that real end users would use, not using government terminology) **(Digital Service Standard (AU))**
-- **How are users currently doing the task** your service aims to help them do and key touch points, for example through journey maps. What other relevant government and non-government services are also in use at this time? Where are the pain points in the current experience? **(Digital Service Standard (AU))**
-- **What are the user needs?** What are the opportunities to remove or reduce the pain points? How might we better meet the user needs? (Demonstrate this through research, testing and validating possible solutions with prototypes) **(Digital Service Standard (AU))**
-- **Are you designing the right thing?** How have your insights from user research helped you to define your minimum viable product (MVP)? How does the MVP create value for users and government by better meeting user needs? **(Digital Service Standard (AU))**
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
@@ -323,12 +307,6 @@ You need to have a plan for what to do if your service goes offline so that you 
 - Document user stories, personas or profiles for your service - ie identify people who need to use the service and what they use it for, including users who need assisted digital support **(Digital Service Standard (UK))**
 - Document any problems that you found in research which you'll have to overcome to design the service **(Digital Service Standard (UK))**
 - Document how the design of the service has changed over time because of what you found in user research **(Digital Service Standard (UK))**
-- Greater depth and diversity of knowledge on all of the points above from Alpha **(Digital Service Standard (AU))**
-- **How has your service been shaped by user needs?** Show how you have made changes in the service and interaction design in response to user research and usability testing. You can evidence this by showing how the design has changed over time and the appropriate research findings that have driven this change **(Digital Service Standard (AU))**
-- **How you tested the system in the users’ context with a full range of users** (including users with varying needs). You can evidence this with artefacts of research, for example, video clips and outcomes from research analysis **(Digital Service Standard (AU))**
-- **Are you prepared for ongoing user research?** Show how you plan to continue to test the system with users and the resources for this, for example through an ongoing research plan and budget **(Digital Service Standard (AU))**
-- **What have you not solved yet?** What the significant design challenges are, for example through key insights, how have you approached them? How do you plan to continue to tackle them? **(Digital Service Standard (AU))**
-- **How will you know if your design is working?** Make sure that research has fed into the metrics you have developed to know that you continue to meet your user needs **(Digital Service Standard (AU))**
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
@@ -338,9 +316,6 @@ You need to have a plan for what to do if your service goes offline so that you 
 <!-- markdownlint-disable MD032 -->
 - Use research and testing results to continuously improve the service **(Digital Service Standard (UK))**
 - Identify parts of the task which users find difficult and change the service to make these parts of the task easier for users, testing and researching to confirm this **(Digital Service Standard (UK))**
-- Be able to show greater depth of knowledge for all the points above (from Alpha/Beta) **(Digital Service Standard (AU))**
-- **Show how you are using data from real use** to understand which parts of the task users are finding difficult and how you are designing experiments to reduce friction and increase success for users **(Digital Service Standard (AU))**
-- Know how you will measure and monitor your service to ensure it is serving its users well **(Digital Service Standard (AU))**
 {: .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
@@ -369,12 +344,6 @@ You need to have a plan for what to do if your service goes offline so that you 
 - [Using prototypes in user research (Government Digital Service Blog (UK))](https://userresearch.blog.gov.uk/2014/08/27/using-prototypes-in-user-research/)
 - [How designers prototype at GDS (Government Digital Service Blog (UK))](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)
 - [Evangelising user research (David Travis (Medium.com))](https://medium.com/@userfocus/evangelising-user-research-849430701b6e)
-
-**Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (anciennement ligne directrice 1.8) :**
-{: .dpgn-data-ignore}
-
-- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
-- [Assisted Digital (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/assisted-digital/)
 
 </section>
 
@@ -407,7 +376,6 @@ You need to have a plan for what to do if your service goes offline so that you 
 **Soutenir les personnes qui ne peuvent pas utiliser les services numériques par leurs propres moyens (anciennement ligne directrice 1.8) :**
 {: .dpgn-data-ignore}
 
-- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 - [12. Soutien aux personnes qui en ont besoin (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-12)
 
 </section>
@@ -423,6 +391,12 @@ You need to have a plan for what to do if your service goes offline so that you 
 
 We need to understand the different ways people will interact with our services, including the actions they take online, through a mobile application, on a phone, or in person. Every encounter --- whether it's online or offline --- should move the user closer towards their goal. **(Digital Services Playbook (US))**
 
+**(Normes des services numériques (Ontario))**
+
+Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion.
+
+People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
+
 **Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7) :**
 {: .dpgn-data-ignore}
 
@@ -433,12 +407,6 @@ Le fait d’encourager les personnes à utiliser le service numérique permettra
 - d’économiser de l’argent en réduisant le nombre de personnes qui empruntent des canaux non numériques, notamment les centres d’appels
 - d’aider les utilisateurs à acquérir des compétences numériques
 - permettez aux ressources non numériques d’accorder plus d’attention aux utilisateurs qui ne peuvent utiliser par eux-mêmes les services numériques.
-
-**(Normes des services numériques (Ontario))**
-
-Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion.
-
-People often start using a service and have to come back to it later, or switch to a non-digital channel to complete the transaction. We need to make sure users’ transitions between non-digital and digital channels, when they need to happen, are as smooth as possible. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 
 </div>
 
@@ -465,8 +433,6 @@ People often start using a service and have to come back to it later, or switch 
 - Constituez une base de connaissances à partir de l’étude des utilisateurs, notamment le profil démographique, les attitudes, les comportements, les canaux de préférence et la cartographie des parcours des utilisateurs **(Normes des services numériques (Ontario))**
 - Comprenez comment chaque canal satisfait les besoins des différents utilisateurs **(Normes des services numériques (Ontario))**
 - Concevez le service numérique de telle sorte qu’il présente des avantages indéniables par rapport aux autres canaux **(Normes des services numériques (Ontario))**
-- show you understand existing channels and how they interact with the service and with each other **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- show you understand the channels required to support all groups of users of the service, and where a user may need to change channels **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
 {: .dpgn-stage-alpha}
 <!-- markdownlint-enable MD032 -->
 
@@ -478,7 +444,6 @@ People often start using a service and have to come back to it later, or switch 
 - Collect weekly analytics or metrics for usage volumes across channels **(Digital Service Standard (UK))**
 - Improve the way you communicate with users based on user insight **(Digital Service Standard (UK))**
 - Collect analytics data that shows how your new ways of communicating have performed **(Digital Service Standard (UK))**
-- understand the full impact of retiring any potentially redundant services and channels. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 {: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
@@ -489,22 +454,7 @@ People often start using a service and have to come back to it later, or switch 
 - Plan for moving users to the digital service including yearly targets for increasing digital take-up for the next 5 years **(Digital Service Standard (UK))**
 - Measure usage volumes (and trends) per channel **(Digital Service Standard (UK))**
 - Mesurez l’incidence prévue sur les autres points de service (par téléphone, en personne) et la façon dont elle pourrait influencer l’attribution des financements et des ressources **(Normes des services numériques (Ontario))**
-- show how you’ve revised the targets you made in the Beta stage to increase the number of users (including users we need to assist) of your digital service **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show what you’ve learned from testing different approaches to encourage users (including users we need to assist) to choose the digital service over non-digital alternatives, and which ones you’ll use in the Live stage **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show your retirement strategy for any redundant services and channels **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show that your service load capacity is scalable to meet increased digital take-up **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
-- show how you will promote your service and encourage people to use it, including how your messaging will appear in places where the users will see it. **(13. Encourage everyone to use the digital service - Digital Service Standard (AU))**
 {: .dpgn-stage-live}
-<!-- markdownlint-enable MD032 -->
-
-**Stages bêta et en direct (Rendre plus pratique et pratique l’utilisation des services numériques (anciennement ligne directrice 1.7)) :**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- detail the channels required to support all groups of users of the service **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- understand the non-digital service channels and have a plan to move users to the digital channel where appropriate **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-- have developed and tested the service so that a user can change channels without repeating themselves. **(12. Don’t forget the non-digital experience - Digital Service Standard (AU))**
-{: .dpgn-stage-beta .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
 </section>
