@@ -103,6 +103,9 @@ There are many potential benefits from the greater use of digital services, incl
 - Run tests automatically as part of the build process **(Digital Services Playbook (US))**
 - Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques **(Digital Services Playbook (US))**
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
+- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
+- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
+- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
@@ -145,6 +148,7 @@ There are many potential benefits from the greater use of digital services, incl
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Performance testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 - [Testing your service (Service Manual (UK))](https://www.gov.uk/service-manual/technology#testing-your-service)
 - [Testing Cookbook (18F (US))](https://testing-cookbook.18f.gov/)
+- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
 
 </section>
 
@@ -185,6 +189,7 @@ There are many potential benefits from the greater use of digital services, incl
 - [6. Tester le service de bout en bout (Normes des services numériques (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
 - [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
+- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
 
 </section>
 </section>
