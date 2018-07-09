@@ -268,6 +268,17 @@ Using common, proven government solutions, approaches, and platforms will help t
 - {: .dpgn-digital-architectural-maximize-reuse-5} Share code publicly when appropriate, and when not, share within the Government of Canada.
 - {: .dpgn-digital-architectural-enable-interoperability-4} Run applications in containers.
 - {: .dpgn-digital-architectural-enable-interoperability-5} Leverage enterprise digital exchange components (GC Service Bus, Digital Exchange Platform, and the API Store).
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
+<section>
+  
+#### Cloud services
+
+**Digital Architectural Standards (GC):**
+{: .dpgn-data-ignore}
+
+<!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-cloud-first-1} Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS).
 - {: .dpgn-digital-architectural-cloud-first-2} Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions.
 - {: .dpgn-digital-architectural-cloud-first-3} Design for cloud mobility and develop an exit strategy to avoid vendor lock-in.
@@ -296,6 +307,8 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 </section>
 
+</section>
+
 <section class="dpgn-section-guides">
 
 ### Implementation guides
@@ -304,6 +317,10 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse}[Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
+
+<section>
+
+#### Cloud services
 
 **Cloud first (formerly guideline 6.6):**
 {: .dpgn-data-ignore}
@@ -315,6 +332,8 @@ Using common, proven government solutions, approaches, and platforms will help t
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Government of Canada Cloud Security Risk Management Approach and Procedures](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
+
+</section>
 
 </section>
 
