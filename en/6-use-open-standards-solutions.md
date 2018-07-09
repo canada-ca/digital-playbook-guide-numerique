@@ -294,15 +294,6 @@ Public cloud services offer benefits that enable significant advances in the fol
 {: .dpgn-data-ignore}
 
 - Cloud services are identified and evaluated as the principal delivery option when initiating IT investments, initiatives, strategies and projects.
-- Using the [Government of Canada Right Cloud Selection Guidance](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-right-cloud-selection-guidance.html) to guide their decision, departmental and agency CIOs will select one of the following deployment models, in the following order of priority:
-  - public cloud
-  - hybrid cloud
-  - private cloud
-  - non-cloud
-- Departmental and agency CIOs will select one of the following cloud service models, in the following order of priority:
-  - software as a service (SaaS)
-  - platform as a service (PaaS)
-  - infrastructure as a service (IaaS)
 - In considering how to manage security risks, departments and agencies must follow the [GC Cloud Security Risk Management Approach and Procedures](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html) and the [Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html).
 - Departments and agencies may deploy solutions that have data-categorization requirements that fall outside of a particular cloud security control profile, as described in the [Government of Canada Security Control Profile for Cloud-Based GC IT Services](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html), with appropriate risk-mitigation measures that have been developed in consultation with GC security partners.
 - To ensure, to the greatest extent possible, the GC’s continuous access to sensitive data, departments and agencies must comply with the [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html).
@@ -312,13 +303,12 @@ Public cloud services offer benefits that enable significant advances in the fol
 **Cloud first (formerly guideline 6.6):**
 {: .dpgn-data-ignore}
 
-- Ensure that resources are provisioned on demand **(OneGC product design criteria) /** Resources are provisioned on demand **(Digital Services Playbook (US))**
-- Enable resources to scale based on real-time user demand **(OneGC product design criteria) /** Resources scale based on real-time user demand **(Digital Services Playbook (US))**
-- Ensure resources are available in multiple regions **(OneGC product design criteria) /** Resources are available in multiple regions **(Digital Services Playbook (US))**
-- Pay for only the resources that are used **(OneGC product design criteria) /** We only pay for resources we use **(Digital Services Playbook (US))**
-- Design so static assets are served through a content delivery network **(OneGC product design criteria) /** Static assets are served through a content delivery network **(Digital Services Playbook (US))**
+- Resources are provisioned on demand **(Digital Services Playbook (US))**
+- Resources scale based on real-time user demand **(Digital Services Playbook (US))**
+- Resources are available in multiple regions **(Digital Services Playbook (US))**
+- We only pay for resources we use **(Digital Services Playbook (US))**
+- Static assets are served through a content delivery network **(Digital Services Playbook (US))**
 - Resources are provisioned through an API **(Digital Services Playbook (US))**
-- Application is hosted on commodity hardware **(Digital Services Playbook (US))**
 
 </section>
 
