@@ -268,6 +268,14 @@ Using common, proven government solutions, approaches, and platforms will help t
 - {: .dpgn-digital-architectural-maximize-reuse-5} Share code publicly when appropriate, and when not, share within the Government of Canada.
 - {: .dpgn-digital-architectural-enable-interoperability-4} Run applications in containers.
 - {: .dpgn-digital-architectural-enable-interoperability-5} Leverage enterprise digital exchange components (GC Service Bus, Digital Exchange Platform, and the API Store).
+{: .dpgn-digital-architectural}
+<!-- markdownlint-enable MD032 -->
+
+<section>
+
+#### Services d’informatique en nuage
+
+<!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-cloud-first-1} Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS).
 - {: .dpgn-digital-architectural-cloud-first-2} Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions.
 - {: .dpgn-digital-architectural-cloud-first-3} Design for cloud mobility and develop an exit strategy to avoid vendor lock-in.
@@ -297,6 +305,8 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 </section>
 
+</section>
+
 <section class="dpgn-section-guides">
 
 ### Guides d'implémentation
@@ -305,6 +315,10 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [Spécifications du contenu et de l’architecture de l'information pour Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [Guide de rédaction du contenu du site Canada.ca](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)
+
+<section>
+
+#### Services d’informatique en nuage
 
 **Nuage d'abord (anciennement ligne directrice 6.6) :**
 {: .dpgn-data-ignore}
@@ -316,6 +330,8 @@ Using common, proven government solutions, approaches, and platforms will help t
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Gouvernement du Canada Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Orientation sur l’utilisation sécurisée des services commerciaux d’informatique en nuage : Avis de mise en œuvre de la Politique sur la sécurité (AMOPS)](https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/orientation-utilisation-securisee-services-commerciaux-informatique-nuage-amops.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Orientation relative à la résidence des données électroniques](https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html)
+
+</section>
 
 </section>
 
