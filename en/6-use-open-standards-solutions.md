@@ -275,6 +275,9 @@ Using common, proven government solutions, approaches, and platforms will help t
   
 #### Cloud services
 
+**Digital Architectural Standards (GC):**
+{: .dpgn-data-ignore}
+
 <!-- markdownlint-disable MD032 -->
 - {: .dpgn-digital-architectural-cloud-first-1} Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS).
 - {: .dpgn-digital-architectural-cloud-first-2} Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions.
