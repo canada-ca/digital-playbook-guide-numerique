@@ -104,11 +104,6 @@ At every stage of a project, we should measure how well our service is working f
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-**Assurer les données et dans la formation est complète, précise et à jour (anciennement ligne directrice 10.5):**
-{: .dpgn-data-ignore}
-
-- Assurer les données et dans la formation est complète, précise et à jour
-
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
 
@@ -224,39 +219,7 @@ La mesure du rendement permet d’améliorer en continu un service en :
 - address information security and privacy issues appropriately **(Digital Service Standard (UK))**
 - map user journeys through the service and track them to identify completions and areas of poor performance **(Digital Service Standard (UK))**
 - document the next user story related to performance analysis **(Digital Service Standard (UK))**
-- All services must, at a minimum, measure 4 KPIs. **(Digital Service Standard (AU))**
-  - User satisfaction - to help continually improve the user experience of your service
-  - Digital take-up - to show how many people are using the service and to help encourage users to choose the digital service
-  - Completion rate - to show which parts of the service you need to fix
-  - Cost per transaction - to make your service more cost efficient
-- There will be other metrics your service needs to measure and monitor to understand how it is performing, such as: **(Digital Service Standard (AU))**
-  - error rates
-  - time to completion
-  - costs, benefits and return on investment
-  - content metrics (readability, length).
 {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
-<!-- markdownlint-enable MD032 -->
-
-**Stage alpha :**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- explored the data that is already available for an existing service, where it is kept and how you might access and use it, and also shared your own insights **(Digital Service Standard (AU))**
-- collected baseline data for the service operation in all of its channels **(Digital Service Standard (AU))**
-- estimated the number of people you expect to use the service **(Digital Service Standard (AU))**
-- started creating a performance framework outlining your objectives and what metrics your team will use to demonstrate you meet them **(Digital Service Standard (AU))**
-- considered the metrics you will need to measure the 4 KPIs and where the data will come from. **(Digital Service Standard (AU))**
-{: .dpgn-stage-alpha}
-<!-- markdownlint-enable MD032 -->
-
-**Stage bêta :**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- which metrics and measurements you will use to monitor your KPIs **(Digital Service Standard (AU))**
-- the baseline measures and the benchmarks for success **(Digital Service Standard (AU))**
-- which tools you use for analysis and web analytics in Beta (and Alpha if appropriate) **(Digital Service Standard (AU))**
-{: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
 **Stage en direct :**
@@ -272,11 +235,6 @@ La mesure du rendement permet d’améliorer en continu un service en :
 - établissez la fréquence de vos réexamens du service selon le nombre d’utilisateurs (p. ex. 10 000 utilisateurs uniques ou moins par an = cycle de réexamen de 2 ans; 10 000-100 000 = annuel; 100 000-1 million = aux 6 mois) **(Normes des services numériques (Ontario))**
 - use data to determine the cost per use for each channel, accounting for the cost to build and ongoing maintenance as well **(Digital Service Standard (Ontario))**
 - utilisez les données pour déterminer le coût par utilisation de chaque avenue, en tenant compte aussi du coût de création et de maintenance continue **(Normes des services numériques (Ontario))**
-- Your data should show: **(Digital Service Standard (AU))**
-  - user satisfaction has increased
-  - digital take-up is increasing in line with service plans
-  - completion rate has been maintained
-  - cost per transaction is decreasing in line with service plans.
 {: .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
