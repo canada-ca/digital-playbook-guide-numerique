@@ -224,22 +224,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - make users' experience of government more consistent, which generates trust
 - save time and money by reusing things that are already available
 
-**Cloud first (formerly guideline 6.6):**
-{: .dpgn-data-ignore}
-
-Our services should be deployed on flexible infrastructure, where resources can be provisioned in real-time to meet spikes in traffic and user demand. **(Digital Services Playbook (US))**
-
-Public cloud services offer benefits that enable significant advances in the following:
-
-- Service performance: Self-service provisioning of computing resources can dramatically reduce the time to meet a requirement. Metrics-based service levels that are contractually enforced help ensure consistent performance levels.
-
-- Security: Cloud-service providers hold internationally recognized security certifications that are assessed by third-party security professionals. These certifications include robust security features that would be a challenge for any one consumer to fund individually.
-- Innovation: New features are being continuously deployed, and the costs are amortized across a global service customer base. New technologies such as social media, mobile platforms and analytic tools are all available through subscriptions without large capital investments.
-- Agility: Rapid access is available to multi-featured computing resources at the required capacity to carry out projects from planning to full operation.
-- Elasticity: Commoditized services can grow and shrink with the level of demand; consumers pay only for what is needed for the time it is needed.
-
-**(GC)**
-
 </div>
 
 <section class="dpgn-section-checklist">
