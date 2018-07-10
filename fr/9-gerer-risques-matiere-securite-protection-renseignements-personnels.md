@@ -66,11 +66,11 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * Document the process for identifying, understanding new or ongoing security and privacy threats and the process for managing them
 * Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned.
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-* {: .dpgn-digital-architectural-security-privacy-4} Balance user and business needs with proportionate security measures.
+* {: .dpgn-digital-architectural-security-privacy-4} Équilibrer les besoins des utilisateurs aux besoins organisationnels en se dotant de mesures de sécurité proportionnelles.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -102,10 +102,10 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * [Privacy (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/privacy/)
 * [Secure services (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Provacy by Design (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Concevoir en vue de la sécurité et de la protection des renseignements personnels (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#concevoir-en-vue-de-la-scurit-et-de-la-protection-des-renseignements-personnels)
 
 </section>
 </section>
@@ -275,9 +275,9 @@ Canadians want to have confidence that government digital services are designed 
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-* {: .dpgn-digital-architectural-security-privacy-1} Implement security across all architectural layers.
-* {: .dpgn-digital-architectural-security-privacy-2} Categorize data properly to determine appropriate safeguards.
-* {: .dpgn-digital-architectural-security-privacy-3} Perform a privacy impact assessment (PIA) when personal information is involved.
+* {: .dpgn-digital-architectural-security-privacy-1} Procéder à la mise en œuvre de la sécurité à l’échelle de tous les niveaux de l’architecture.
+* {: .dpgn-digital-architectural-security-privacy-2} Catégoriser les données correctement afin de déterminer les mécanismes de protection qui s’imposent.
+* {: .dpgn-digital-architectural-security-privacy-3} Mener une Évaluation des facteurs relatifs à la vie privée (ÉFVP) lorsque des renseignements personnels sont en jeu.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -323,10 +323,10 @@ Canadians want to have confidence that government digital services are designed 
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 * [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Provacy by Design (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Concevoir en vue de la sécurité et de la protection des renseignements personnels (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#concevoir-en-vue-de-la-scurit-et-de-la-protection-des-renseignements-personnels)
 
 </section>
 </section>
