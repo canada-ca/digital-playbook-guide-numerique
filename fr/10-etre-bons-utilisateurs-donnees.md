@@ -162,7 +162,7 @@ At every stage of a project, we should measure how well our service is working f
 **Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Veiller à l’organisation des données (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#veiller-lorganisation-des-donnes)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Veiller à l’organisation des données (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#veiller--lorganisation-des-donnes)
 
 </section>
 </section>
@@ -282,7 +282,7 @@ La mesure du rendement permet d’améliorer en continu un service en :
 **Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Veiller à l’organisation des données (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#veiller-lorganisation-des-donnes)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Veiller à l’organisation des données (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#veiller--lorganisation-des-donnes)
 
 </section>
 </section>
