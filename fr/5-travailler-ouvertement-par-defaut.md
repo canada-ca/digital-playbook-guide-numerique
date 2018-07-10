@@ -71,13 +71,14 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - Ensure that we maintain the rights to all data developed by third parties in a manner that is releasable and reusable at no cost to the public **(Digital Services Playbook (US))**
 - Data and code is shared so that clients can extract/create value. **(General design principles - Digital Design Playbook (ISED))**
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-open-standards-solutions-3} Make source code open and reusable under an appropriate open source software license.
-- {: .dpgn-digital-architectural-open-standards-solutions-4} Expose public data to implement Open Data and Open Information initiatives.
+- {: .dpgn-digital-architectural-open-standards-solutions-3} Rendre le code source ouvert et réutilisable en vertu d’une licence de logiciel à source ouverte.
+- {: .dpgn-digital-architectural-open-standards-solutions-4} Exposer les données publiques afin de procéder à la mise en œuvre d’initiatives sur les données ouvertes et l’information ouverte.
 {: .dpgn-digital-architectural}
+- {: .dpgn-digital-architectural-maximize-reuse-5} Partager le code publiquement lorsqu’il est approprié de le faire et, lorsqu’il n’est pas pratique de le faire, le partager au sein du gouvernement du Canada.
 <!-- markdownlint-enable MD032 -->
 
 **Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5) :**
@@ -138,12 +139,13 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 - [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-open-standards-and-solutions-by-default)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [1. Se servir de normes et de solutions ouvertes par défaut (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#se-servir-de-normes-et-de-solutions-ouvertes-par-dfaut)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [2. Maximiser la réutilisation (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#maximiser-la-rutilisation)
 
-**Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5) :**
+**Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5)&#160;:**
 {: .dpgn-data-ignore}
 
 - [Logiciel libre - Contribution (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Logiciel_libre_Contribution.md)
@@ -174,11 +176,11 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-measurable-accountable-1} Publish a Service Level Agreement for each service.
+- {: .dpgn-digital-architectural-measurable-accountable-1} Publier un accord sur les niveaux de service pour chaque service.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -204,10 +206,10 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 ### Ressources similaires
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Concevoir des systèmes mesurables et responsables (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#concevoir-des-systmes-mesurables-et-responsables)
 
 </section>
 </section>
@@ -237,13 +239,13 @@ Setting performance indicators allows you to continuously improve your service b
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-measurable-accountable-2} Make an audit trail available for all transactions to ensure accountability and non-repudiation.
-- {: .dpgn-digital-architectural-measurable-accountable-3} Establish business and IT metrics to enable business outcomes.
-- {: .dpgn-digital-architectural-measurable-accountable-4} Apply oversight and lifecycle management to digital investments through governance.
+- {: .dpgn-digital-architectural-measurable-accountable-2} Veiller à ce qu’une piste d’audit soit disponible pour toutes les transactions, afin d’assurer la responsabilisation et la non-répudiation.
+- {: .dpgn-digital-architectural-measurable-accountable-3} Établir des paramètres opérationnels et de la TI afin de faciliter l’atteinte de résultats opérationnels.
+- {: .dpgn-digital-architectural-measurable-accountable-4} Appliquer des principes de surveillance et de gestion du cycle de vie aux investissements numériques par l’entremise de la gouvernance.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -322,10 +324,10 @@ Setting performance indicators allows you to continuously improve your service b
 
 - [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architecutral .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable)
+- {: .dpgn-digital-architecutral .dpgn-digital-architectural-measurable-accountable} [7. Concevoir des systèmes mesurables et responsables (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir-des-systmes-mesurables-et-responsables)
 
 </section>
 </section>

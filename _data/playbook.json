@@ -9380,6 +9380,22 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-maximize-reuse-5"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-maximize-reuse-5"
+                            ],
+                            "content": "Share code publicly when appropriate, and when not, share within the Government of Canada.\n"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
                         "content": [
                           {
                             "content_type": "inline",
@@ -9684,6 +9700,24 @@
                               "dpgn-digital-architectural-open-standard-solutions"
                             ],
                             "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-open-standards-and-solutions-by-default\">1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-maximize-reuse"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-maximize-reuse"
+                            ],
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#maximize-reuse\">2. Maximize Reuse (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       },
@@ -12021,24 +12055,6 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-digital-architectural-maximize-reuse-5",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-maximize-reuse-5",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Share code publicly when appropriate, and when not, share within the Government of Canada."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
                           "dpgn-digital-architectural-enable-interoperability-4",
                           "dpgn-digital-architectural"
                         ],
@@ -12067,7 +12083,7 @@
                               "dpgn-digital-architectural-enable-interoperability-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Leverage enterprise digital exchange components (GC Service Bus, Digital Exchange Platform, and the API Store)."
+                            "content": "Leverage enterprise digital exchange components such as the GC Service Bus, Digital Exchange Platform, and the API Store based on fit-for-use)."
                           }
                         ]
                       }

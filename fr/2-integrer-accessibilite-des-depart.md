@@ -174,11 +174,11 @@ Si les utilisateurs ont des difficultés à atteindre leur objectif du premier c
 - fournir une méthode accessible permettant à tous les utilisateurs de faire des commentaires sur le service ou de demander du soutien supplémentaire à tout moment **(Normes des services numériques (Ontario))**
 - démontrer de quelle manière votre personnel connaîtra les obstacles à l’accessibilité et sera formé pour aider les utilisateurs handicapés à faire ce qu’ils veulent faire et à accéder à l’information **(Normes des services numériques (Ontario))**
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-3} Conform to both accessibility and official languages requirements.
+- {: .dpgn-digital-architectural-design-for-users-first-3} Se conformer aux exigences en matière d’accessibilité et de langues officielles.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -267,10 +267,11 @@ Si les utilisateurs ont des difficultés à atteindre leur objectif du premier c
 - [7. Rendre le service accessible (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-7)
 - [9. Make it accessible (Digital Service Standard (AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Concevoir pour les utilisateurs d’abord
+ (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir-pour-les-utilisateurs-dabord)
 
 </section>
 </section>

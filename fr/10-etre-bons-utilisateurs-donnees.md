@@ -92,15 +92,15 @@ At every stage of a project, we should measure how well our service is working f
 - Publish metrics externally **(Digital Services Playbook (US))**
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-1} Decouple Master Data from applications and host within the appropriate system of record.
-- {: .dpgn-digital-architectural-keep-data-organized-2} Make systems of record authoritative central sources.
+- {: .dpgn-digital-architectural-keep-data-organized-1} Dissocier les données de base des applications et de l’hôte au sein d’un système d’enregistrement approprié.
+- {: .dpgn-digital-architectural-keep-data-organized-2} Veiller à ce que les systèmes d’enregistrement des sources centrales fassent autorité.
 {: .dpgn-digital-architectural}
-- {: .dpgn-digital-architectural-keep-data-organized-4} Design data resiliency in accordance with GC policies and standards.
-- {: .dpgn-digital-architectural-keep-data-organized-5} Use Master Data Management to provide a single point of reference for appropriate stakeholders.
+- {: .dpgn-digital-architectural-keep-data-organized-4} Concevoir la résilience des données conformément aux politiques et normes du GC.
+- {: .dpgn-digital-architectural-keep-data-organized-5} Se servir de la gestion des données de base pour fournir un point de référence unique à l’intention des intervenants pertinents.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -159,10 +159,10 @@ At every stage of a project, we should measure how well our service is working f
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep Data Organized (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Veiller à l’organisation des données (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#veiller--lorganisation-des-donnes)
 
 </section>
 </section>
@@ -192,11 +192,11 @@ La mesure du rendement permet d’améliorer en continu un service en :
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-3} Assign data custodians to ensuring data is correct, consistent, and complete.
+- {: .dpgn-digital-architectural-keep-data-organized-3} Assigner des gardiens des données afin de veiller à ce que les données soient précises, uniformes et intégrales.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -279,10 +279,10 @@ La mesure du rendement permet d’améliorer en continu un service en :
 - [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep Data Organized (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Veiller à l’organisation des données (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#veiller--lorganisation-des-donnes)
 
 </section>
 </section>

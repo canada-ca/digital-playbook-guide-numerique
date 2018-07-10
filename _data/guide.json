@@ -958,7 +958,7 @@
                               "dpgn-digital-architectural-design-for-users-first-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Focus on the needs of users, using agile, iterative and user-centred methods."
+                            "content": "Miser sur les besoins des utilisateurs; se servir de méthodes agiles, itératives et axées sur l’utilisateur."
                           }
                         ]
                       },
@@ -976,7 +976,7 @@
                               "dpgn-digital-architectural-design-for-users-first-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Perform user research from the earliest design through to continuous improvements post-launch."
+                            "content": "Mener des recherches sur les utilisateurs à partir des toutes premières conceptions, jusqu’aux améliorations ayant été apportées après le lancement."
                           }
                         ]
                       },
@@ -1286,7 +1286,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-design-for-users-first"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first\">3. Design for Users First (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir-pour-les-utilisateurs-dabord\">3. Concevoir pour les utilisateurs d’abord (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       }
@@ -3549,7 +3549,7 @@
                               "dpgn-digital-architectural-design-for-users-first-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Conform to both accessibility and official languages requirements."
+                            "content": "Se conformer aux exigences en matière d’accessibilité et de langues officielles."
                           }
                         ]
                       },
@@ -4176,7 +4176,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-design-for-users-first"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-users-first\">3. Design for Users First (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir-pour-les-utilisateurs-dabord\">3. Concevoir pour les utilisateurs d’abord\n (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -6477,7 +6477,7 @@
                               "dpgn-digital-architectural-multidisciplinary-teams-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Include all skillsets required for delivery, including for requirements, design, development, and operations."
+                            "content": "Tenir compte de toutes les compétences nécessaires à la prestation, y compris celles qui ont trait aux exigences, à la conception, à l’élaboration et aux opérations."
                           }
                         ]
                       },
@@ -7203,7 +7203,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#deliver-with-multidisciplinary-teams\">4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#assurer-la-prestation--laide-d%C3%A9quipes-multidisciplinaires\">4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       }
@@ -8636,7 +8636,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "Ensure quality is considered throughout the Software Development Lifecycle."
+                            "content": "Veiller à ce que l’on tienne compte de la qualité tout au long du cycle de vie d’élaboration du logiciel."
                           }
                         ]
                       },
@@ -8658,7 +8658,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT."
+                            "content": "Encourager et adopter le développement piloté par les tests (DPT) pour améliorer la confiance qui règne entre les entreprises et la TI."
                           }
                         ]
                       }
@@ -8759,7 +8759,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams\">4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#assurer-la-prestation--laide-d%C3%A9quipes-multidisciplinaires\">4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       }
@@ -8899,7 +8899,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "Work across the entire application lifecycle, from development and test to deployment to operations."
+                            "content": "Travailler de façon à couvrir le cycle de vie tout entier de l’application, de son élaboration à sa mise à l’essai, et du déploiement aux opérations."
                           }
                         ]
                       }
@@ -8974,7 +8974,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#deliver-with-multidisciplinary-teams\">4. Deliver with Multidisciplinary Teams (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#assurer-la-prestation--laide-d%C3%A9quipes-multidisciplinaires\">4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       }
@@ -9265,7 +9265,7 @@
                               "dpgn-digital-architectural-open-standards-solutions-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Make source code open and reusable under an appropriate open source software license."
+                            "content": "Rendre le code source ouvert et réutilisable en vertu d’une licence de logiciel à source ouverte."
                           }
                         ]
                       },
@@ -9283,7 +9283,23 @@
                               "dpgn-digital-architectural-open-standards-solutions-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Expose public data to implement Open Data and Open Information initiatives."
+                            "content": "Exposer les données publiques afin de procéder à la mise en œuvre d’initiatives sur les données ouvertes et l’information ouverte."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural-maximize-reuse-5"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural-maximize-reuse-5"
+                            ],
+                            "content": "Partager le code publiquement lorsqu’il est approprié de le faire et, lorsqu’il n’est pas pratique de le faire, le partager au sein du gouvernement du Canada.\n"
                           }
                         ]
                       },
@@ -9593,7 +9609,25 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-open-standard-solutions"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-open-standards-and-solutions-by-default\">1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#se-servir-de-normes-et-de-solutions-ouvertes-par-dfaut\">1. Se servir de normes et de solutions ouvertes par défaut (Normes architecturales sur le numérique (GC))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-maximize-reuse"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-maximize-reuse"
+                            ],
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#maximiser-la-rutilisation\">2. Maximiser la réutilisation (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       },
@@ -9742,7 +9776,7 @@
                               "dpgn-digital-architectural-measurable-accountable-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Publish a Service Level Agreement for each service."
+                            "content": "Publier un accord sur les niveaux de service pour chaque service."
                           }
                         ]
                       }
@@ -9810,7 +9844,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-measurable-accountable"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable\">7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#concevoir-des-systmes-mesurables-et-responsables\">7. Concevoir des systèmes mesurables et responsables (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       }
@@ -9932,7 +9966,7 @@
                               "dpgn-digital-architectural-measurable-accountable-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Make an audit trail available for all transactions to ensure accountability and non-repudiation."
+                            "content": "Veiller à ce qu’une piste d’audit soit disponible pour toutes les transactions, afin d’assurer la responsabilisation et la non-répudiation."
                           }
                         ]
                       },
@@ -9950,7 +9984,7 @@
                               "dpgn-digital-architectural-measurable-accountable-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Establish business and IT metrics to enable business outcomes."
+                            "content": "Établir des paramètres opérationnels et de la TI afin de faciliter l’atteinte de résultats opérationnels."
                           }
                         ]
                       },
@@ -9968,7 +10002,7 @@
                               "dpgn-digital-architectural-measurable-accountable-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Apply oversight and lifecycle management to digital investments through governance."
+                            "content": "Appliquer des principes de surveillance et de gestion du cycle de vie aux investissements numériques par l’entremise de la gouvernance."
                           }
                         ]
                       },
@@ -10423,7 +10457,7 @@
                               "dpgn-digital-architecutral",
                               "dpgn-digital-architectural-measurable-accountable"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-systems-to-be-measurable-and-accountable\">7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir-des-systmes-mesurables-et-responsables\">7. Concevoir des systèmes mesurables et responsables (GC))</a>"
                           }
                         ]
                       }
@@ -10931,7 +10965,7 @@
                               "dpgn-digital-architectural-open-standards-solutions-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Use open source standards, solutions, components, and leading practices."
+                            "content": "Se servir de normes, solutions, composantes et pratiques de pointe en matière de source ouverte."
                           }
                         ]
                       },
@@ -10949,7 +10983,7 @@
                               "dpgn-digital-architectural-open-standards-solutions-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built."
+                            "content": "Préconiser cet ordre de préférences : source ouverte d’abord, puis les logiciels disponibles sur le marché qui sont indifférents à la plateforme, puis les logiciels disponibles sur le marché exclusifs, puis en dernier lieu, les logiciels conçus sur mesure."
                           }
                         ]
                       },
@@ -10967,7 +11001,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Design for resiliency."
+                            "content": "Concevoir à des fins de résilience."
                           }
                         ]
                       },
@@ -10985,7 +11019,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Ensure response times meet user needs, and critical services are highly available."
+                            "content": "Veiller à ce que les temps de réponse répondent aux besoins des utilisateurs, et que les services critiques soient grandement disponibles."
                           }
                         ]
                       },
@@ -11003,7 +11037,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Support zero-downtime deployments for planned and unplanned maintenance."
+                            "content": "Appuyer les déploiements sans temps morts, dans les cas de maintenance planifiée et non planifiée."
                           }
                         ]
                       },
@@ -11021,7 +11055,7 @@
                               "dpgn-digital-architectural-performance-availability-scalability-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Use distributed architectures, assume failure will happen, handle errors gracefully, and monitor actively."
+                            "content": "Se servir d’architectures distribuées, en présumant que des échecs se produiront, traiter des erreurs avec dignité, et surveiller activement."
                           }
                         ]
                       },
@@ -11613,7 +11647,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-open-standards-solutions"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#use-open-standards-and-solutions-by-default\">1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#se-servir-de-normes-et-de-solutions-ouvertes-par-dfaut\">1. Se servir de normes et de solutions ouvertes par défaut (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       },
@@ -11631,7 +11665,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-performance-availability-scalability"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-performance-availability-and-scalability\">5. Design for Performance, Availability, and Scalibility (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir--des-fins-de-rendement-de-disponibilit-et-dchelonnabilit\">5. Concevoir à des fins de rendement, de disponibilité et d’échelonnabilité (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       },
@@ -11869,7 +11903,7 @@
                               "dpgn-digital-architectural-maximize-reuse-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Leverage and reuse existing solutions, components, and processes."
+                            "content": "Tirer parti et réutiliser les solutions, composantes et processus qui existent déjà."
                           }
                         ]
                       },
@@ -11887,7 +11921,7 @@
                               "dpgn-digital-architectural-maximize-reuse-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Select enterprise and cluster solutions over department-specific solutions."
+                            "content": "Sélectionner des solutions intégrées et regroupées avant d’opter pour des solutions spécifiques à un ministère."
                           }
                         ]
                       },
@@ -11905,7 +11939,7 @@
                               "dpgn-digital-architectural-maximize-reuse-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Achieve simplification by minimizing duplication of components and adhering to relevant standards."
+                            "content": "Réaliser la simplification en minimisant le dédoublement des composantes et en s’en tenant aux normes pertinentes."
                           }
                         ]
                       },
@@ -11923,25 +11957,7 @@
                               "dpgn-digital-architectural-maximize-reuse-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Inform the GC EARB about departmental investments and innovations."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural-maximize-reuse-5",
-                          "dpgn-digital-architectural"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural-maximize-reuse-5",
-                              "dpgn-digital-architectural"
-                            ],
-                            "content": "Share code publicly when appropriate, and when not, share within the Government of Canada."
+                            "content": "Informer le CEAI GC des investissements et des innovations ministériels."
                           }
                         ]
                       },
@@ -11959,7 +11975,7 @@
                               "dpgn-digital-architectural-enable-interoperability-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Run applications in containers."
+                            "content": "Faire rouler les applications en conteneurs."
                           }
                         ]
                       },
@@ -11977,7 +11993,7 @@
                               "dpgn-digital-architectural-enable-interoperability-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Leverage enterprise digital exchange components (GC Service Bus, Digital Exchange Platform, and the API Store)."
+                            "content": "Tirer parti des composantes intégrées d’échange numérique comme le Bus de service du GC, la plateforme d’échange numérique, et le magasin IPA conçu à des fins d’utilisation sur mesure."
                           }
                         ]
                       }
@@ -12011,7 +12027,7 @@
                                   "dpgn-digital-architectural-cloud-first-1",
                                   "dpgn-digital-architectural"
                                 ],
-                                "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)."
+                                "content": "Préconiser cet ordre de préférences : Logiciel comme service (SaaS) d’abord, puis Plateforme comme service (PaaS), et en dernier lieu, l’Infrastructure comme service (IaaS)."
                               }
                             ]
                           },
@@ -12029,7 +12045,7 @@
                                   "dpgn-digital-architectural-cloud-first-2",
                                   "dpgn-digital-architectural"
                                 ],
-                                "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions."
+                                "content": "Préconiser cet ordre de préférences : Le nuage public d’abord, ensuite, le nuage hybride, puis le nuage privé et, en dernier lieu, les solutions non nuagiques (sur site)."
                               }
                             ]
                           },
@@ -12047,7 +12063,7 @@
                                   "dpgn-digital-architectural-cloud-first-3",
                                   "dpgn-digital-architectural"
                                 ],
-                                "content": "Design for cloud mobility and develop an exit strategy to avoid vendor lock-in."
+                                "content": "Concevoir en vue d’une mobilité nuagique, et élaborer une stratégie de sortie afin d’éviter l’enfermement propriétaire."
                               }
                             ]
                           },
@@ -12415,7 +12431,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-maximize-reuse"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#maximize-reuse\">2. Maximize Reuse (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#maximiser-la-rutilisation\">2. Maximiser la réutilisation (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       },
@@ -12433,7 +12449,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-enable-interoperability"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#enable-interoperability\">6. Enable Interoperability (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#permettre-linteroprabilit\">6. Permettre l’interopérabilité (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       },
@@ -12451,7 +12467,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#use-cloud-first\">9. Use Cloud First (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#se-servir-du-nuage-dabord\">9. Se servir du nuage d’abord (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       },
@@ -12548,7 +12564,7 @@
                               "dpgn-digital-architectural-enable-interoperability-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Expose all functionality as services."
+                            "content": "Exposer toutes les fonctionnalités en tant que services."
                           }
                         ]
                       },
@@ -12566,7 +12582,7 @@
                               "dpgn-digital-architectural-enable-interoperability-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Use microservices built around business capabilities. Scope each service to a single purpose."
+                            "content": "Se servir de microservices ayant été conçus autour des capacités opérationnelles. Concevoir chaque servir à une fin particulière."
                           }
                         ]
                       },
@@ -12584,7 +12600,7 @@
                               "dpgn-digital-architectural-enable-interoperability-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Run each service in its own process and have it communicate with other services through a well-defined interface, such as an HTTPS-based application programming interface (API)."
+                            "content": "Exploiter chaque service selon son propre processus, et veiller à ce qu’il communique avec les autres services par l’entremise d’une interface bien définie, comme une Interface de programmation d’applications (IPA) axée sur un protocole HTTPS."
                           }
                         ]
                       },
@@ -12776,7 +12792,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-enable-interoperability"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#enable-interoperability\">6. Enable Interoperability (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#permettre-linteroprabilit\">6. Permettre l’interopérabilité (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       }
@@ -17073,7 +17089,7 @@
                               "dpgn-digital-architectural-security-privacy-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Balance user and business needs with proportionate security measures."
+                            "content": "Équilibrer les besoins des utilisateurs aux besoins organisationnels en se dotant de mesures de sécurité proportionnelles."
                           }
                         ]
                       }
@@ -17214,7 +17230,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Provacy by Design (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#concevoir-en-vue-de-la-scurit-et-de-la-protection-des-renseignements-personnels\">10. Concevoir en vue de la sécurité et de la protection des renseignements personnels (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -18050,7 +18066,7 @@
                               "dpgn-digital-architectural-security-privacy-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Implement security across all architectural layers."
+                            "content": "Procéder à la mise en œuvre de la sécurité à l’échelle de tous les niveaux de l’architecture."
                           }
                         ]
                       },
@@ -18068,7 +18084,7 @@
                               "dpgn-digital-architectural-security-privacy-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Categorize data properly to determine appropriate safeguards."
+                            "content": "Catégoriser les données correctement afin de déterminer les mécanismes de protection qui s’imposent."
                           }
                         ]
                       },
@@ -18086,7 +18102,7 @@
                               "dpgn-digital-architectural-security-privacy-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Perform a privacy impact assessment (PIA) when personal information is involved."
+                            "content": "Mener une Évaluation des facteurs relatifs à la vie privée (ÉFVP) lorsque des renseignements personnels sont en jeu."
                           }
                         ]
                       },
@@ -18277,7 +18293,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Provacy by Design (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#concevoir-en-vue-de-la-scurit-et-de-la-protection-des-renseignements-personnels\">10. Concevoir en vue de la sécurité et de la protection des renseignements personnels (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -18567,7 +18583,7 @@
                               "dpgn-digital-architectural-keep-data-organized-1",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Decouple Master Data from applications and host within the appropriate system of record."
+                            "content": "Dissocier les données de base des applications et de l’hôte au sein d’un système d’enregistrement approprié."
                           }
                         ]
                       },
@@ -18585,7 +18601,7 @@
                               "dpgn-digital-architectural-keep-data-organized-2",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Make systems of record authoritative central sources."
+                            "content": "Veiller à ce que les systèmes d’enregistrement des sources centrales fassent autorité."
                           }
                         ]
                       },
@@ -18603,7 +18619,7 @@
                               "dpgn-digital-architectural-keep-data-organized-4",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Design data resiliency in accordance with GC policies and standards."
+                            "content": "Concevoir la résilience des données conformément aux politiques et normes du GC."
                           }
                         ]
                       },
@@ -18621,7 +18637,7 @@
                               "dpgn-digital-architectural-keep-data-organized-5",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Use Master Data Management to provide a single point of reference for appropriate stakeholders."
+                            "content": "Se servir de la gestion des données de base pour fournir un point de référence unique à l’intention des intervenants pertinents."
                           }
                         ]
                       },
@@ -18901,7 +18917,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-keep-data-organized"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized\">8. Keep Data Organized (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#veiller--lorganisation-des-donnes\">8. Veiller à l’organisation des données (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       }
@@ -19024,7 +19040,7 @@
                               "dpgn-digital-architectural-keep-data-organized-3",
                               "dpgn-digital-architectural"
                             ],
-                            "content": "Assign data custodians to ensuring data is correct, consistent, and complete."
+                            "content": "Assigner des gardiens des données afin de veiller à ce que les données soient précises, uniformes et intégrales."
                           }
                         ]
                       },
@@ -19588,7 +19604,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-keep-data-organized"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#keep-data-organized\">8. Keep Data Organized (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#veiller--lorganisation-des-donnes\">8. Veiller à l’organisation des données (Normes architecturales sur le numérique (GC))</a>"
                           }
                         ]
                       }
