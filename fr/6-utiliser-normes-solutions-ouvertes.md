@@ -76,16 +76,16 @@ There are many potential benefits from the greater use of digital services, incl
 - Éviter le verrouillage à toutes les solutions propriétaires où des logiciels libres et / ou des normes ouvertes sont disponibles
 - Assurez-vous que le logiciel peut être déployé sur une variété de types de matériel de base
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-open-standards-solutions-1} Use open source standards, solutions, components, and leading practices.
-- {: .dpgn-digital-architectural-open-standards-solutions-2} Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built.
-- {: .dpgn-digital-architectural-performance-availability-scalability-1} Design for resiliency.
-- {: .dpgn-digital-architectural-performance-availability-scalability-2} Ensure response times meet user needs, and critical services are highly available.
-- {: .dpgn-digital-architectural-performance-availability-scalability-3} Support zero-downtime deployments for planned and unplanned maintenance.
-- {: .dpgn-digital-architectural-performance-availability-scalability-4} Use distributed architectures, assume failure will happen, handle errors gracefully, and monitor actively.
+- {: .dpgn-digital-architectural-open-standards-solutions-1} Se servir de normes, solutions, composantes et pratiques de pointe en matière de source ouverte.
+- {: .dpgn-digital-architectural-open-standards-solutions-2} Préconiser cet ordre de préférences : source ouverte d’abord, puis les logiciels disponibles sur le marché qui sont indifférents à la plateforme, puis les logiciels disponibles sur le marché exclusifs, puis en dernier lieu, les logiciels conçus sur mesure.
+- {: .dpgn-digital-architectural-performance-availability-scalability-1} Concevoir à des fins de résilience.
+- {: .dpgn-digital-architectural-performance-availability-scalability-2} Veiller à ce que les temps de réponse répondent aux besoins des utilisateurs, et que les services critiques soient grandement disponibles.
+- {: .dpgn-digital-architectural-performance-availability-scalability-3} Appuyer les déploiements sans temps morts, dans les cas de maintenance planifiée et non planifiée.
+- {: .dpgn-digital-architectural-performance-availability-scalability-4} Se servir d’architectures distribuées, en présumant que des échecs se produiront, traiter des erreurs avec dignité, et surveiller activement.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -175,11 +175,11 @@ There are many potential benefits from the greater use of digital services, incl
 - [9. Utiliser des normes ouvertes et des plateformes communes (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-9)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#use-open-standards-and-solutions-by-default)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Design for Performance, Availability, and Scalibility (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#design-for-performance-availability-and-scalability)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [1. Se servir de normes et de solutions ouvertes par défaut (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#se-servir-de-normes-et-de-solutions-ouvertes-par-dfaut)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Concevoir à des fins de rendement, de disponibilité et d’échelonnabilité (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir-des-fins-de-rendement-de-disponibilit-et-dchelonnabilit)
 
 **Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5) :**
 {: .dpgn-data-ignore}
@@ -224,16 +224,16 @@ Using common, proven government solutions, approaches, and platforms will help t
 - Follow the [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp)
 - Static assets are served through a content delivery network **(Digital Services Playbook (US))**
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-maximize-reuse-1} Leverage and reuse existing solutions, components, and processes.
-- {: .dpgn-digital-architectural-maximize-reuse-2} Select enterprise and cluster solutions over department-specific solutions.
-- {: .dpgn-digital-architectural-maximize-reuse-3} Achieve simplification by minimizing duplication of components and adhering to relevant standards.
-- {: .dpgn-digital-architectural-maximize-reuse-4} Inform the GC EARB about departmental investments and innovations.
-- {: .dpgn-digital-architectural-enable-interoperability-4} Run applications in containers.
-- {: .dpgn-digital-architectural-enable-interoperability-5} Leverage enterprise digital exchange components (GC Service Bus, Digital Exchange Platform, and the API Store).
+- {: .dpgn-digital-architectural-maximize-reuse-1} Tirer parti et réutiliser les solutions, composantes et processus qui existent déjà.
+- {: .dpgn-digital-architectural-maximize-reuse-2} Sélectionner des solutions intégrées et regroupées avant d’opter pour des solutions spécifiques à un ministère.
+- {: .dpgn-digital-architectural-maximize-reuse-3} Réaliser la simplification en minimisant le dédoublement des composantes et en s’en tenant aux normes pertinentes.
+- {: .dpgn-digital-architectural-maximize-reuse-4} Informer le CEAI GC des investissements et des innovations ministériels.
+- {: .dpgn-digital-architectural-enable-interoperability-4} Faire rouler les applications en conteneurs.
+- {: .dpgn-digital-architectural-enable-interoperability-5} Tirer parti des composantes intégrées d’échange numérique comme le Bus de service du GC, la plateforme d’échange numérique, et le magasin IPA conçu à des fins d’utilisation sur mesure.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -241,13 +241,13 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 #### Services d’informatique en nuage
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-cloud-first-1} Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS).
-- {: .dpgn-digital-architectural-cloud-first-2} Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions.
-- {: .dpgn-digital-architectural-cloud-first-3} Design for cloud mobility and develop an exit strategy to avoid vendor lock-in.
+- {: .dpgn-digital-architectural-cloud-first-1} Préconiser cet ordre de préférences : Logiciel comme service (SaaS) d’abord, puis Plateforme comme service (PaaS), et en dernier lieu, l’Infrastructure comme service (IaaS).
+- {: .dpgn-digital-architectural-cloud-first-2} Préconiser cet ordre de préférences : Le nuage public d’abord, ensuite, le nuage hybride, puis le nuage privé et, en dernier lieu, les solutions non nuagiques (sur site).
+- {: .dpgn-digital-architectural-cloud-first-3} Concevoir en vue d’une mobilité nuagique, et élaborer une stratégie de sortie afin d’éviter l’enfermement propriétaire.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -311,12 +311,12 @@ Using common, proven government solutions, approaches, and platforms will help t
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [2. Maximize Reuse (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#maximize-reuse)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-enable-interoperability} [6. Enable Interoperability (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#enable-interoperability)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [9. Use Cloud First (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#use-cloud-first)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [2. Maximiser la réutilisation (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#maximiser-la-rutilisation)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-enable-interoperability} [6. Permettre l’interopérabilité (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#permettre-linteroprabilit)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [9. Se servir du nuage d’abord (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#se-servir-du-nuage-dabord)
 
 **Nuage d'abord (anciennement ligne directrice 6.6) :**
 {: .dpgn-data-ignore}
@@ -346,13 +346,13 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Digital Architectural Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-enable-interoperability-1} Expose all functionality as services.
-- {: .dpgn-digital-architectural-enable-interoperability-2} Use microservices built around business capabilities. Scope each service to a single purpose.
-- {: .dpgn-digital-architectural-enable-interoperability-3} Run each service in its own process and have it communicate with other services through a well-defined interface, such as an HTTPS-based application programming interface (API).
+- {: .dpgn-digital-architectural-enable-interoperability-1} Exposer toutes les fonctionnalités en tant que services.
+- {: .dpgn-digital-architectural-enable-interoperability-2} Se servir de microservices ayant été conçus autour des capacités opérationnelles. Concevoir chaque servir à une fin particulière.
+- {: .dpgn-digital-architectural-enable-interoperability-3} Exploiter chaque service selon son propre processus, et veiller à ce qu’il communique avec les autres services par l’entremise d’une interface bien définie, comme une Interface de programmation d’applications (IPA) axée sur un protocole HTTPS.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -389,10 +389,10 @@ Les interfaces de programme d'application (API) sont un moyen par lequel les fon
 
 ### Ressources similaires
 
-**Digital Architecutral Standards (GC):**
+**Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-enable-interoperability} [6. Enable Interoperability (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#enable-interoperability)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-enable-interoperability} [6. Permettre l’interopérabilité (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#permettre-linteroprabilit)
 
 </section>
 </section>
