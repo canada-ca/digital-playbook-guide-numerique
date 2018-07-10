@@ -109,11 +109,11 @@ for sectionKey in guidelineSectionsOrderArray %}{%
         if include.groupListsSeparately == true %}{% 
           assign sectionGroupedContentStrip = "" %}{% 
           capture sectionGroupedContent %}{% 
-            include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline relevantSourceElements=localListElementArray suppressParentListElement=true collapseSubsections=include.collapseSubsections %}{% 
+            include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline relevantSourceElements=localListElementArray suppressParentListElement=true collapseSubsections=include.collapseSubsections %}{% 
           endcapture %}{% 
           assign sectionGroupedContentStrip1 = sectionGroupedContent | strip %}{%  
           capture sectionGroupedContent %}{% 
-            include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline irrelevantSourceElements=localListElementArray collapseSubsections=include.collapseSubsections %}{% 
+            include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline irrelevantSourceElements=localListElementArray collapseSubsections=include.collapseSubsections %}{% 
           endcapture %}{% 
           assign sectionGroupedContentStrip2 = sectionGroupedContent | strip %}{% 
           if sectionGroupedContentStrip1.size > 0 %}{% 
@@ -136,7 +136,7 @@ for sectionKey in guidelineSectionsOrderArray %}{%
           endif %}{% 
         else %}{% 
           capture sectionGroupedContent %}{% 
-            include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline collapseSubsections=include.collapseSubsections %}{% 
+            include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=currentTag irrelevantTags=irrelevantTagsArrayGuideline collapseSubsections=include.collapseSubsections %}{% 
           endcapture %}{% 
           assign sectionGroupedContentStrip = sectionGroupedContent | strip %}{%  
         endif %}{% 
@@ -167,11 +167,11 @@ for sectionKey in guidelineSectionsOrderArray %}{%
       if include.groupListsSeparately == true %}{% 
         assign sectionUngroupedContentStrip = "" %}{% 
         capture sectionUngroupedContent %}{% 
-          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray relevantSourceElements=localListElementArray suppressParentListElement=true collapseSubsections=include.collapseSubsections %}{% 
+          include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray relevantSourceElements=localListElementArray suppressParentListElement=true collapseSubsections=include.collapseSubsections %}{% 
         endcapture %}{% 
         assign sectionUngroupedContentStrip1 = sectionUngroupedContent | strip %}{% 
         capture sectionUngroupedContent %}{% 
-          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray irrelevantSourceElements=localListElementArray collapseSubsections=include.collapseSubsections %}{% 
+          include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray irrelevantSourceElements=localListElementArray collapseSubsections=include.collapseSubsections %}{% 
         endcapture %}{% 
         assign sectionUngroupedContentStrip2 = sectionUngroupedContent | strip %}{% 
         if groupByTagsTitlesArray[subsectionIndex].size > 0 or lastContentWasList == false %}{% 
@@ -205,7 +205,7 @@ for sectionKey in guidelineSectionsOrderArray %}{%
         endif %}{% 
       else %}{% 
         capture sectionUngroupedContent %}{% 
-          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray collapseSubsections=include.collapseSubsections %}{% 
+          include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=tagsToFilterOutArray collapseSubsections=include.collapseSubsections %}{% 
         endcapture %}{% 
         assign sectionUngroupedContentStrip = sectionUngroupedContent | strip %}{% 
       endif %}{% 
@@ -236,7 +236,7 @@ for sectionKey in guidelineSectionsOrderArray %}{%
       comment %}Don't output any content groups (output all of the relevant content in the order it is in the dataset){% endcomment %}{% 
       if include.groupListsSeparately == true and sectionKey %}{% 
         capture sectionGroupedContent %}{% 
-          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline relevantSourceElements=localListElementArray suppressParentListElement=true collapseSubsections=include.collapseSubsections %}{% 
+          include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline relevantSourceElements=localListElementArray suppressParentListElement=true collapseSubsections=include.collapseSubsections %}{% 
         endcapture %}{% 
         assign sectionContentStrip = sectionGroupedContent | strip %}{% 
         if sectionContentStrip.size > 0 %}{% 
@@ -247,7 +247,7 @@ for sectionKey in guidelineSectionsOrderArray %}{%
 {%        endcapture %}{% 
         endif %}{% 
         capture sectionGroupedContent %}{% 
-          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline irrelevantSourceElements=localListElementArray collapseSubsections=include.collapseSubsections %}{% 
+          include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline irrelevantSourceElements=localListElementArray collapseSubsections=include.collapseSubsections %}{% 
         endcapture %}{% 
         assign sectionContentStrip2 = sectionGroupedContent | strip %}{% 
         if sectionContentStrip2.size > 0 %}{% 
@@ -255,7 +255,7 @@ for sectionKey in guidelineSectionsOrderArray %}{%
         endif %}{% 
       else %}{% 
         capture sectionGroupedContent %}{% 
-          include /functions/output-section-content.html currHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline collapseSubsections=include.collapseSubsections %}{% 
+          include /functions/output-section-content.html parentHeadingLevel=subSubsectionHeadingLevel sectionKey=sectionKey standardIndex=include.standardIndex guidelineIndex=include.guidelineIndex relevantTags=relevantTagsArrayGuideline irrelevantTags=irrelevantTagsArrayGuideline collapseSubsections=include.collapseSubsections %}{% 
         endcapture %}{% 
         assign sectionContentStrip = sectionGroupedContent | strip %}{% 
       endif %}{% 
