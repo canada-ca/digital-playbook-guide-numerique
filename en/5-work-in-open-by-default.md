@@ -78,6 +78,7 @@ This includes working in the open, sharing any and all data and information prod
 - {: .dpgn-digital-architectural-open-standards-solutions-3} Make source code open and reusable under an appropriate open source software license.
 - {: .dpgn-digital-architectural-open-standards-solutions-4} Expose public data to implement Open Data and Open Information initiatives.
 {: .dpgn-digital-architectural}
+- {: .dpgn-digital-architectural-maximize-reuse-5} Share code publicly when appropriate, and when not, share within the Government of Canada.
 <!-- markdownlint-enable MD032 -->
 
 **Work in the open and make source code open and reusable (formerly guideline 5.5):**
