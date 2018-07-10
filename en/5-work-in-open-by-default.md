@@ -143,6 +143,7 @@ This includes working in the open, sharing any and all data and information prod
 {: .dpgn-data-ignore}
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-open-standards-and-solutions-by-default)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [2. Maximize Reuse (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#maximize-reuse)
 
 **Work in the open and make source code open and reusable (formerly guideline 5.5):**
 {: .dpgn-data-ignore}
