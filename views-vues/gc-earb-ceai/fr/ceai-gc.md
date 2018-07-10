@@ -7,9 +7,9 @@ altLangPage: gc-earb
 collectionDirectory: views-vues/gc-earb-ceai
 ---
 
-The Government of Canada Digital Architectural Standards shall be applied to digital projects and initiatives in order to successfully align with the Government of Canada digital direction. The Government of Canada Enterprise Architecture Review Board (GC EARB) will use these standards to evaluate digital investments and solutions. The Digital Architectural Standards build upon the Government of Canada Digital Standards, focusing on best practices for architectural and design planning.
+Les normes architecturales sur le numérique du gouvernement du Canada s’appliqueront à tous les projets et toutes les initiatives afin de bien s’harmoniser avec l’orientation numérique du gouvernement du Canada. Le Comité d’examen de l’architecture intégrée du gouvernement du Canada (CEAI GC) se servira de ces normes pour évaluer les investissements et les solutions en matière de numérique. Les normes architecturales sur le numérique viennent compléter les normes sur le numérique du gouvernement du Canada, en misant sur les pratiques exemplaires qui visent la planification architecturale et la conception.
 
-This page provides personalized guidance for how projects can meet the Digital Architectural Standards of the Government of Canada Enterprise Architecture Review Board (GC EARB).
+Cette page fournit des conseils personnalisés sur la façon dont les projets peuvent répondre aux normes architecturales sur le numérique d'architecture numérique du Comité d’examen de l’architecture intégrée du gouvernement du Canada (CEAI GC).
 
 <!-- markdownlint-disable MD032 -->
 - TOC
@@ -18,7 +18,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 1. Use Open Standards and Solutions by Default
+## 1. Se servir de normes et de solutions ouvertes par défaut
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-open-standards-solutions-1,dpgn-digital-architectural-open-standards-solutions-2,dpgn-digital-architectural-open-standards-solutions-3,dpgn-digital-architectural-open-standards-solutions-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-open-standards-solutions-1,dpgn-digital-architectural-open-standards-solutions-2,dpgn-digital-architectural-open-standards-solutions-3,dpgn-digital-architectural-open-standards-solutions-4" guidelineSectionsOrder="checklist" %}
 
@@ -28,7 +28,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 2. Maximize Reuse
+## 2. Maximiser la réutilisation
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-maximize-reuse-1,dpgn-digital-architectural-maximize-reuse-2,dpgn-digital-architectural-maximize-reuse-3,dpgn-digital-architectural-maximize-reuse-4,dpgn-digital-architectural-maximize-reuse-5" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-maximize-reuse-1,dpgn-digital-architectural-maximize-reuse-2,dpgn-digital-architectural-maximize-reuse-3,dpgn-digital-architectural-maximize-reuse-4,dpgn-digital-architectural-maximize-reuse-5" guidelineSectionsOrder="checklist" %}
 
@@ -38,7 +38,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 3. Design for Users First (Including designing for Accessibility and Official Language support)
+## 3. Concevoir pour les utilisateurs d’abord
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-design-for-users-first-1,dpgn-digital-architectural-design-for-users-first-2,dpgn-digital-architectural-design-for-users-first-3" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-design-for-users-first-1,dpgn-digital-architectural-design-for-users-first-2,dpgn-digital-architectural-design-for-users-first-3" guidelineSectionsOrder="checklist" %}
 
@@ -48,7 +48,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 4. Deliver with Multidisciplinary Teams
+## 4. Assurer la prestation à l’aide d’équipes multidisciplinaires
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-multidisciplinary-teams-1,dpgn-digital-architectural-multidisciplinary-teams-2,dpgn-digital-architectural-multidisciplinary-teams-3,dpgn-digital-architectural-multidisciplinary-teams-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-multidisciplinary-teams-1,dpgn-digital-architectural-multidisciplinary-teams-2,dpgn-digital-architectural-multidisciplinary-teams-3,dpgn-digital-architectural-multidisciplinary-teams-4" guidelineSectionsOrder="checklist" %}
 
@@ -58,7 +58,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 5. Design for Performance, Availability, and Scalability
+## 5. Concevoir à des fins de rendement, de disponibilité et d’échelonnabilité
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-performance-availability-scalability-1,dpgn-digital-architectural-performance-availability-scalability-2,dpgn-digital-architectural-performance-availability-scalability-3,dpgn-digital-architectural-performance-availability-scalability-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-performance-availability-scalability-1,dpgn-digital-architectural-performance-availability-scalability-2,dpgn-digital-architectural-performance-availability-scalability-3,dpgn-digital-architectural-performance-availability-scalability-4" guidelineSectionsOrder="checklist" %}
 
@@ -68,7 +68,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 6. Enable Interoperability
+## 6. Permettre l’interopérabilité
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-enable-interoperability-1,dpgn-digital-architectural-enable-interoperability-2,dpgn-digital-architectural-enable-interoperability-3,dpgn-digital-architectural-enable-interoperability-4,dpgn-digital-architectural-enable-interoperability-5" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-enable-interoperability-1,dpgn-digital-architectural-enable-interoperability-2,dpgn-digital-architectural-enable-interoperability-3,dpgn-digital-architectural-enable-interoperability-4,dpgn-digital-architectural-enable-interoperability-5" guidelineSectionsOrder="checklist" %}
 
@@ -78,7 +78,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 7. Design Systems to be Measurable and Accountable
+## 7. Concevoir des systèmes mesurables et responsables
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-measurable-accountable-1,dpgn-digital-architectural-measurable-accountable-2,dpgn-digital-architectural-measurable-accountable-3,dpgn-digital-architectural-measurable-accountable-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-measurable-accountable-1,dpgn-digital-architectural-measurable-accountable-2,dpgn-digital-architectural-measurable-accountable-3,dpgn-digital-architectural-measurable-accountable-4" guidelineSectionsOrder="checklist" %}
 
@@ -88,7 +88,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 8. Keep Data Organized
+## 8. Veiller à l’organisation des données
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-keep-data-organized-1,dpgn-digital-architectural-keep-data-organized-2,dpgn-digital-architectural-keep-data-organized-3,dpgn-digital-architectural-keep-data-organized-4,dpgn-digital-architectural-keep-data-organized-5" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-keep-data-organized-1,dpgn-digital-architectural-keep-data-organized-2,dpgn-digital-architectural-keep-data-organized-3,dpgn-digital-architectural-keep-data-organized-4,dpgn-digital-architectural-keep-data-organized-5" guidelineSectionsOrder="checklist" %}
 
@@ -98,7 +98,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 9. Use Cloud First
+## 9. Se servir du nuage d’abord
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-cloud-first-1,dpgn-digital-architectural-cloud-first-2,dpgn-digital-architectural-cloud-first-3" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-cloud-first-1,dpgn-digital-architectural-cloud-first-2,dpgn-digital-architectural-cloud-first-3" guidelineSectionsOrder="checklist" %}
 
@@ -108,7 +108,7 @@ This page provides personalized guidance for how projects can meet the Digital A
 
 <section>
 
-## 10. Security and Privacy by Design
+## 10. Concevoir en vue de la sécurité et de la protection des        renseignements personnels
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-security-privacy-1,dpgn-digital-architectural-security-privacy-2,dpgn-digital-architectural-security-privacy-3,dpgn-digital-architectural-security-privacy-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-security-privacy-1,dpgn-digital-architectural-security-privacy-2,dpgn-digital-architectural-security-privacy-3,dpgn-digital-architectural-security-privacy-4" guidelineSectionsOrder="checklist" %}
 
