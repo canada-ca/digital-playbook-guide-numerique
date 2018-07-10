@@ -16,6 +16,7 @@ assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}{% 
 assign localListElementArray = site.listElementArray %}{% 
 assign subsectionHeadingLevel = include.parentHeadingLevel | plus: 1 %}{% 
+assign subSubsectionHeadingLevel = subsectionHeadingLevel | plus: 1 %}{% 
 if site.defaultClasses.ul.size > 0 %}{% 
   assign sectionUlClasses = ' class="' | append: site.defaultClasses.ul | append: '"' %}{% 
 else %}{% 
@@ -93,7 +94,6 @@ for sectionKey in guidelineSectionsOrderArray %}{%
       comment %}Output a content group for each tag in groupByTagsTagsArray (if there is any relevant content){% endcomment %}{% 
       assign subsectionIndex = 0 %}{% 
       assign sectionAllGroupedContentStrip = "" %}{% 
-      assign subSubsectionHeadingLevel = subsectionHeadingLevel | plus: 1 %}{% 
       assign lastContentWasList = false %}{% 
       for currentTag in groupByTagsTagsArray %}{% 
         comment %}If there are relevant tags, ignore currentTag if it does not match one of the relevant tags{% endcomment %}{% 
