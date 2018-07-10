@@ -238,7 +238,7 @@ Every service must have a person that will hold the designate authority to make 
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#assurer-la-prestation-laide-déquipes-multidisciplinaires)
+- {: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#assurer-la-prestation--laide-déquipes-multidisciplinaires)
 {: .dpgn-standards-hide .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -303,7 +303,7 @@ We must empower staff to share power and control over projects. This can involve
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#assurer-la-prestation-laide-déquipes-multidisciplinaires)
+- {: .dpgn-standards-hide .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#assurer-la-prestation--laide-déquipes-multidisciplinaires)
 {: .dpgn-standards-hide .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
