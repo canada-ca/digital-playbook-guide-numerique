@@ -179,7 +179,7 @@ There are many potential benefits from the greater use of digital services, incl
 {: .dpgn-data-ignore}
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [1. Se servir de normes et de solutions ouvertes par défaut (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#se-servir-de-normes-et-de-solutions-ouvertes-par-dfaut)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Concevoir à des fins de rendement, de disponibilité et d’échelonnabilité (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir-des-fins-de-rendement-de-disponibilit-et-dchelonnabilit)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Concevoir à des fins de rendement, de disponibilité et d’échelonnabilité (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir--des-fins-de-rendement-de-disponibilit-et-dchelonnabilit)
 
 **Concevoir, créer et tester des services numériques de bout en bout (anciennement ligne directrice 6.5) :**
 {: .dpgn-data-ignore}
