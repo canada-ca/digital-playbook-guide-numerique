@@ -143,6 +143,7 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 {: .dpgn-data-ignore}
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [1. Se servir de normes et de solutions ouvertes par défaut (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#se-servir-de-normes-et-de-solutions-ouvertes-par-dfaut)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [2. Maximiser la réutilisation (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#maximiser-la-rutilisation)
 
 **Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5)&#160;:**
 {: .dpgn-data-ignore}
