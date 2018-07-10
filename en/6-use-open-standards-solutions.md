@@ -232,7 +232,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - {: .dpgn-digital-architectural-maximize-reuse-2} Select enterprise and cluster solutions over department-specific solutions.
 - {: .dpgn-digital-architectural-maximize-reuse-3} Achieve simplification by minimizing duplication of components and adhering to relevant standards.
 - {: .dpgn-digital-architectural-maximize-reuse-4} Inform the GC EARB about departmental investments and innovations.
-- {: .dpgn-digital-architectural-maximize-reuse-5} Share code publicly when appropriate, and when not, share within the Government of Canada.
 - {: .dpgn-digital-architectural-enable-interoperability-4} Run applications in containers.
 - {: .dpgn-digital-architectural-enable-interoperability-5} Leverage enterprise digital exchange components (GC Service Bus, Digital Exchange Platform, and the API Store).
 {: .dpgn-digital-architectural}
