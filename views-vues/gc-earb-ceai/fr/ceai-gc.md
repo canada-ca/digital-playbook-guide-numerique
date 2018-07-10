@@ -9,7 +9,7 @@ collectionDirectory: views-vues/gc-earb-ceai
 
 Les normes architecturales sur le numérique du gouvernement du Canada s’appliqueront à tous les projets et toutes les initiatives afin de bien s’harmoniser avec l’orientation numérique du gouvernement du Canada. Le Comité d’examen de l’architecture intégrée du gouvernement du Canada (CEAI GC) se servira de ces normes pour évaluer les investissements et les solutions en matière de numérique. Les normes architecturales sur le numérique viennent compléter les normes sur le numérique du gouvernement du Canada, en misant sur les pratiques exemplaires qui visent la planification architecturale et la conception.
 
-Cette page fournit des conseils personnalisés sur la façon dont les projets peuvent répondre aux normes architecturales sur le numérique d'architecture numérique du Comité d’examen de l’architecture intégrée du gouvernement du Canada (CEAI GC).
+Cette page fournit des conseils personnalisés sur la façon dont les projets peuvent répondre aux normes architecturales sur le numérique d'architecture numérique exigées du gouvernement du Canada par le Comité d’examen de l’architecture intégrée du gouvernement du Canada (CEAI GC).
 
 <!-- markdownlint-disable MD032 -->
 - TOC
