@@ -146,7 +146,7 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 **Normes architecturales sur le numérique (GC)&#160;:**
 {: .dpgn-data-ignore}
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#assurer-la-prestation-laide-déquipes-multidisciplinaires)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#assurer-la-prestation--laide-déquipes-multidisciplinaires)
 
 </section>
 </section>
