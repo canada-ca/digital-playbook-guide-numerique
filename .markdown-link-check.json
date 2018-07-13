@@ -5,12 +5,6 @@
     },
     {
       "pattern": "http://www.gcpedia.gc.ca/"
-    },
-    {
-      "pattern": "/data-content-source-uri=\".+\"/g"
-    },
-    {
-      "pattern": "&quot;"
     }
   ],
   "replacementPatterns": [
@@ -20,18 +14,6 @@
     },
     {
       "pattern": "&quot;",
-      "replacement": ""
-    },
-    {
-      "pattern": "\"",
-      "replacement": ""
-    },
-    {
-      "pattern": "&quot;}",
-      "replacement": ""
-    },
-    {
-      "pattern": "\"}",
       "replacement": ""
     }
   ]
