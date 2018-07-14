@@ -40,7 +40,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 ### Scenario/task-based views
 
 - [How should I ensure my project meets GC EARB requirements? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html)
-- [How should I implement an Automated Descision System? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/automated-decision.html)
+- [How should I implement an Automated Decision System? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/automated-decision.html)
 - [Right Cloud Decision Tool (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/cloud-nuage/en/cloud-decision-tool.html)
 
 ### Development stages

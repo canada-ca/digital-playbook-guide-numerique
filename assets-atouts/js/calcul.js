@@ -35,7 +35,7 @@ var componentName = "wb-calculate",
         var $elm = $( elm ),
             settings = {
               ignoreInit: false
-            };
+            }, $eventElement;
 
         // Extend the settings with window[ "wb-calculate" ] then data-wb-calculate
         settings = $.extend(
@@ -45,12 +45,12 @@ var componentName = "wb-calculate",
           wb.getData( $elm, componentName )
         );
 
-        $document.on( settings[ "eventTrigger" ], function( event) {
-          iterate( settings[ "operations" ] );
+        $document.on( settings[ "eventTrigger" ], settings[ "eventElement" ], function( event) {
+          iterate( settings[ "operations" ], $eventElement );
         } );
 
         if ( !settings[ "ignoreInit" ] ) {
-          iterate( settings[ "operations" ] );
+          iterate( settings[ "operations" ], $eventElement );
         }
       }
     },
@@ -70,7 +70,7 @@ var componentName = "wb-calculate",
 
     /**
      * @method calculate
-     * @param operation {Object} Operation object to process
+     * @param operation {Object or Number} Operation object or number to process
      * @return {Number} Calculated value
      * Operation object has the following constraints:
      * type {String} Operation to perform. Following types are supported:
@@ -86,8 +86,8 @@ var componentName = "wb-calculate",
      * - conditional: Perform an action of "actionType" if all conditions in "inputs" are met. 
      * decimalPlaces {Integer} Optional (defaults to unlimited). Number of decimal plays to allow for the result.
      * value {Number} Optional (can be used instead of "query", only permitted for "number" type). The value of the number to use.
-     * query {String} Optional (required for "count" type and "number" type when "value" is not specified) The CSS query for where to retrieve the number (uses first result) or for the items to count.
-     * inputs {Array} Optional (required for "add", "subtract", "multiply", "divide", "power", "modulus" and "conditional" types). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
+     * query {String} Optional (required for "count" type, "number" type when "value" is not specified and other types when "inputs" is not specified) The CSS query for where to retrieve the numbers (uses first result for "number") or for the items to count.
+     * inputs {Array} Optional (used for "conditional" type, including condition objects, and can also be used for "add", "subtract", "multiply", "divide", "power" and "modulus" types in place of query). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
      * increment {Integer} Optional (can only be used with "count" type). The size of the increment to use for each item counted.
      * actions {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
      * outputEvent {String} Optional (required for action type of "event" for "conditional" type). Event type 
@@ -98,18 +98,22 @@ var componentName = "wb-calculate",
      */
     calculate = function( operation ) {
 
+      // Return right away if operation is a number (nothing to process)
+      if ( typeof operation === "number" ) {
+        return operation;
+      }
+
       var type = operation[ "type" ],
           value = operation[ "value" ],
           query = operation[ "query" ],
           $query = value || !query ? null : $( query ),
-          inputs = operation[ "inputs" ],
-          inputsLength = inputs ? inputs.length : null,
+          queryResultsSize = !$query ? null : $query.length, 
           decimalPlaces = operation[ "decimalPlaces" ],
-          index, conditionMet;
+          inputs, inputsLength, item, index, conditionMet;
 
       if ( type === "number" ) {
         if ( $query ) {
-          value = $query.text();
+          value = $query.eq( 0 ).text();
           if ( value.indexOf( "." ) > -1 ) {
             value = parseFloat( value );
           } else {
@@ -117,92 +121,114 @@ var componentName = "wb-calculate",
           }
         }
       } else if ( type === "count" ) {
-        value = $query.length;
+        value = queryResultsSize;
         if ( operation[ "increment" ] ) {
           value = value * operation[ "increment" ];
         }
-      } else if ( type === "percent" ) {
-        value = ( calculate( inputs[ 0 ] ) / calculate( inputs[ 1 ] ) ) * 100;
-      } else if ( type === "add" ) {
-        value = calculate( inputs[ 0 ] );
-        for ( index = 1; index < inputsLength; index += 1 ) {
-          value += calculate( inputs[ index ] );
-        }
-      } else if ( type === "subtract" ) {
-        value = calculate( inputs[ 0 ] );
-        for ( index = 1; index < inputsLength; index += 1 ) {
-          value -= calculate( inputs[ index ] );
-        }
-      } else if ( type === "multiply" ) {
-        value = calculate( inputs[ 0 ] );
-        for ( index = 1; index < inputsLength; index += 1 ) {
-          value = value * calculate( inputs[ index ] );
-        }
-      } else if ( type === "divide" ) {
-        value = calculate( inputs[ 0 ] );
-        for ( index = 1; index < inputsLength; index += 1 ) {
-          value = value / calculate( inputs[ index ] );
-        }
-      } else if ( type === "power" ) {
-        value = calculate( inputs[ 0 ] );
-        for ( index = 1; index < inputsLength; index += 1 ) {
-          value = value ** calculate( inputs[ index ] );
-        }
-      } else if ( type === "modulus" ) {
-        value = calculate( inputs[ 0 ] );
-        for ( index = 1; index < inputsLength; index += 1 ) {
-          value = value % calculate( inputs[ index ] );
-        }
-      } else if ( type === "conditional" ) {
-        for ( index = 0; index < inputsLength; index += 1 ) {
-          conditionMet = false;
-          let condition = inputs[ index ],
-              conditionType = condition[ "type" ],
-              values = condition[ "inputs" ];
+      } else {
+        inputs = operation[ "inputs" ];
 
-          if ( conditionType === "=" || conditionType === "==" ) {
-            // Equal to
-            conditionMet = calculate( values[ 0 ] ) == calculate( values[ 1 ] );
-          } else if ( conditionType === ">" ) {
-            // Greater than
-            conditionMet = calculate( values[ 0 ] ) > calculate( values[ 1 ] );
-          } else if ( conditionType === "<" ) {
-            // Less than
-            conditionMet = calculate( values[ 0 ] ) < calculate( values[ 1 ] );
-          } else if ( conditionType === ">=" ) {
-            // Greater than or equal to
-            conditionMet = calculate( values[ 0 ] ) >= calculate( values[ 1 ] );
-          } else if ( conditionType === "<=" ) {
-            // Less than or equal to
-            conditionMet = calculate( values[ 0 ] ) <= calculate( values[ 1 ] );
-          } else if ( conditionType === "!=" ) {
-            // Not equal to
-            conditionMet = calculate( values[ 0 ] ) != calculate( values[ 1 ] );
-          }
-
-          if ( !conditionMet ) {
-            break;
+        if ( !inputs ) {
+          inputs = [];
+          for ( index = 0; index < queryResultsSize; index += 1 ) {
+            item = $query.eq( index ).text();
+            if ( item.indexOf( "." ) > -1 ) {
+              inputs.push( parseFloat( item ) );
+            } else {
+              inputs.push( parseInt( item ) );
+            }
           }
         }
 
-        if ( conditionMet ) {
-          var actions = operation[ "actions" ],
-              actionsLength = actions.length,
-              action, actionType;
+        inputsLength = inputs.length;
 
-          for ( index = 0; index < actionsLength; index += 1 ) {
-            action = actions[ index ];
-            actionType = action[ "type" ];
-            if ( actionType === "event" ) {
-              $( action[ "outputTarget" ] ).trigger( action[ "outputEvent" ], action[ "outputEventParameters" ] );
-            } else if ( actionType === "operations" ) {
-              iterate( action[ "operations" ] );
-            } else if ( actionType === "addClass" ) {
-              $( action[ "outputTarget" ] ).addClass( action[ "class" ] );
-            } else if ( actionType === "removeClass" ) {
-              $( action[ "outputTarget" ] ).removeClass( action[ "class" ] );
-            } else if ( actionType === "conditional" ) {
-              calculate( action );
+        if ( inputsLength === 0 ) {
+          return 0;
+        }
+
+        if ( type === "percent" ) {
+          value = ( calculate( inputs[ 0 ] ) / calculate( inputs[ 1 ] ) ) * 100;
+        } else if ( type === "add" ) {
+          value = calculate( inputs[ 0 ] );
+          for ( index = 1; index < inputsLength; index += 1 ) {
+            value += calculate( inputs[ index ] );
+          }
+        } else if ( type === "subtract" ) {
+          value = calculate( inputs[ 0 ] );
+          for ( index = 1; index < inputsLength; index += 1 ) {
+            value -= calculate( inputs[ index ] );
+          }
+        } else if ( type === "multiply" ) {
+          value = calculate( inputs[ 0 ] );
+          for ( index = 1; index < inputsLength; index += 1 ) {
+            value = value * calculate( inputs[ index ] );
+          }
+        } else if ( type === "divide" ) {
+          value = calculate( inputs[ 0 ] );
+          for ( index = 1; index < inputsLength; index += 1 ) {
+            value = value / calculate( inputs[ index ] );
+          }
+        } else if ( type === "power" ) {
+          value = calculate( inputs[ 0 ] );
+          for ( index = 1; index < inputsLength; index += 1 ) {
+            value = value ** calculate( inputs[ index ] );
+          }
+        } else if ( type === "modulus" ) {
+          value = calculate( inputs[ 0 ] );
+          for ( index = 1; index < inputsLength; index += 1 ) {
+            value = value % calculate( inputs[ index ] );
+          }          
+        } else if ( type === "conditional" ) {
+          for ( index = 0; index < inputsLength; index += 1 ) {
+            conditionMet = false;
+            let condition = inputs[ index ],
+                conditionType = condition[ "type" ],
+                values = condition[ "inputs" ];
+
+            if ( conditionType === "=" || conditionType === "==" ) {
+              // Equal to
+              conditionMet = calculate( values[ 0 ] ) == calculate( values[ 1 ] );
+            } else if ( conditionType === ">" ) {
+              // Greater than
+              conditionMet = calculate( values[ 0 ] ) > calculate( values[ 1 ] );
+            } else if ( conditionType === "<" ) {
+              // Less than
+              conditionMet = calculate( values[ 0 ] ) < calculate( values[ 1 ] );
+            } else if ( conditionType === ">=" ) {
+              // Greater than or equal to
+              conditionMet = calculate( values[ 0 ] ) >= calculate( values[ 1 ] );
+            } else if ( conditionType === "<=" ) {
+              // Less than or equal to
+              conditionMet = calculate( values[ 0 ] ) <= calculate( values[ 1 ] );
+            } else if ( conditionType === "!=" ) {
+              // Not equal to
+              conditionMet = calculate( values[ 0 ] ) != calculate( values[ 1 ] );
+            }
+
+            if ( !conditionMet ) {
+              break;
+            }
+          }
+
+          if ( conditionMet ) {
+            var actions = operation[ "actions" ],
+                actionsLength = actions.length,
+                action, actionType;
+
+            for ( index = 0; index < actionsLength; index += 1 ) {
+              action = actions[ index ];
+              actionType = action[ "type" ];
+              if ( actionType === "event" ) {
+                $( action[ "outputTarget" ] ).trigger( action[ "outputEvent" ], action[ "outputEventParameters" ] );
+              } else if ( actionType === "operations" ) {
+                iterate( action[ "operations" ] );
+              } else if ( actionType === "addClass" ) {
+                $( action[ "outputTarget" ] ).addClass( action[ "class" ] );
+              } else if ( actionType === "removeClass" ) {
+                $( action[ "outputTarget" ] ).removeClass( action[ "class" ] );
+              } else if ( actionType === "conditional" ) {
+                calculate( action );
+              }
             }
           }
         }
