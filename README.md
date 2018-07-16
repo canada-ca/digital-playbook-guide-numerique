@@ -40,6 +40,7 @@ The Government of Canada Digital Playbook is available under the [Open Governmen
 ### Scenario/task-based views
 
 - [How should I ensure my project meets GC EARB requirements? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html)
+- [Algorithmic Impact Assessment (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html)
 - [How should I implement an Automated Decision System? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/automated-decision.html)
 - [Right Cloud Decision Tool (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/cloud-nuage/en/cloud-decision-tool.html)
 
@@ -114,6 +115,7 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 ### Vues basées sur un scénario / une tâche
 
 - [Comment dois-je m'assurer que mon projet respecte les exigences du CAEI GC? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html)
+- [Évaluation d'impact algorithmique (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html)
 - [Comment dois-je mettre en place un système de décision automatisé? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/decision-automatise.html)
 - [Outil décisionnel du nuage approprié (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/cloud-nuage/fr/nuage-outil-decisionnel.html)
 
