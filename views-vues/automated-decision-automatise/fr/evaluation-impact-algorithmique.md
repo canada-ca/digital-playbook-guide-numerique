@@ -705,7 +705,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 </div>
 
 <!-- Question 35.1 -->
-<div id="question-34-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": { "action": "addClass", "source": ".question-35-1-yes, .question-35-1-no", "class": "hidden" } }'>
+<div id="question-35-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": { "action": "addClass", "source": ".question-35-1-yes, .question-35-1-no", "class": "hidden" } }'>
 <p>35.1 Does the audit trail clearly set out all decision points made by the system?</p>
 <ul>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-35-1-yes", "class": "hidden" }'>Yes</li>
@@ -1124,6 +1124,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-10d-yes">0</span><span class="criteria-4-score criteria-4-score-max question-10d-no">0</span></td>
 <td><span class="hidden criteria-5-score question-10d-yes">0</span><span class="criteria-5-score criteria-5-score-max question-10d-no">0</span></td>
 </tr>
+<tr id="question-10e-result" class="question-10-checkbox-score">
 <th>10e</th>
 <td><span class="hidden criteria-1-score question-10e-yes">-2</span><span class="criteria-1-score criteria-1-score-max question-10e-no">0</span></td>
 <td><span class="hidden criteria-2-score question-10e-yes">0</span><span class="criteria-2-score criteria-2-score-max question-10e-no">0</span></td>
