@@ -13,7 +13,7 @@ twitter_username: canada-ca
 github_username:  canada-ca
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
 wet_cdts_version: "v4_0_28"
-exclude: ['CONTRIBUTING.md', 'LICENSE.md', 'README.md', 'node_modules/', '\.*', "Gemfile", "*.rb", "link-check.js", "package*.json"]
+exclude: ['CONTRIBUTING.md', 'LICENSE.md', 'README.md', 'node_modules/', '\.*', "Gemfile", "*.rb", "link-check.js", "package*.json", "CODE_OF_CONDUCT.md"]
 markdown: kramdown
 kramdown:
   parse_block_html: true

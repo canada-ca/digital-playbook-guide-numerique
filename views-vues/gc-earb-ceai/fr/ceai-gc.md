@@ -108,7 +108,7 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 
 <section>
 
-## 10. Concevoir en vue de la sécurité et de la protection des        renseignements personnels
+## 10. Concevoir en vue de la sécurité et de la protection des renseignements personnels
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-security-privacy-1,dpgn-digital-architectural-security-privacy-2,dpgn-digital-architectural-security-privacy-3,dpgn-digital-architectural-security-privacy-4" groupListsSeparately=true groupByTagsTags="dpgn-digital-architectural-security-privacy-1,dpgn-digital-architectural-security-privacy-2,dpgn-digital-architectural-security-privacy-3,dpgn-digital-architectural-security-privacy-4" guidelineSectionsOrder="checklist" %}
 
