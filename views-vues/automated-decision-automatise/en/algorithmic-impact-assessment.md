@@ -269,7 +269,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 
 <!-- Question 12 -->
 <fieldset>
-<legend class="mrgn-bttm-0 h5 required" aria-required="true">12. Has the design team consulted the following experts within their organization? <strong class="required" aria-required="true">(required)</strong></legend>
+<legend class="mrgn-bttm-0 h5 required">12. Has the design team consulted the following experts within their organization? <strong class="required">(required)</strong></legend>
 <span class="clearfix"></span>
 
 <div id="question-12a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-12a-yes, .question-12a-no, .question-12a-na", "class": "hidden" } }'>
@@ -476,7 +476,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 
 <!-- Question 21 -->
 <fieldset>
-<legend class="mrgn-bttm-0 h5 required" aria-required="true">21. Are you planning to make information about system functionality publicly available? <strong class="required" aria-required="true">(required)</strong></legend>
+<legend class="mrgn-bttm-0 h5 required">21. Are you planning to make information about system functionality publicly available? <strong class="required">(required)</strong></legend>
 <span class="clearfix"></span>
 
 <div id="question-21a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-21a-yes, .question-21a-no, .question-21a-na", "class": "hidden" } }'>
