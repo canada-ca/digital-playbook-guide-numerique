@@ -648,7 +648,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-30-yes", "class": "hidden" }'>Yes</li>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-30-no", "class": "hidden" }'>No</li>
 </ul>
-</div
+</div>
 
 <!-- Question 31 -->
 <div id="question-31"  class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-31-yes, .question-31-no", "class": "hidden" } }'>
