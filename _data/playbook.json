@@ -16368,7 +16368,7 @@
                               "dpgn-automated-decision-initiation-1",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Complete an <a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment</a>, prior to the production of any Automated Decision System."
+                            "content": "Complete an <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">Algorithmic Impact Assessment</a>, prior to the production of any Automated Decision System."
                           }
                         ]
                       },
@@ -16390,7 +16390,7 @@
                               "dpgn-automated-decision-initiation-3",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that the <a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment</a> remains up to date and accurately reflects the functionality of the Automated Decision System."
+                            "content": "Ensure that the <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">Algorithmic Impact Assessment</a> remains up to date and accurately reflects the functionality of the Automated Decision System."
                           }
                         ]
                       }
@@ -16435,7 +16435,7 @@
                               "dpgn-automated-decision-initiation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "<a href=\"https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/\">Algorithmic Impact Assessment (GC)</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">Algorithmic Impact Assessment (GC)</a>"
                           }
                         ]
                       }
@@ -16534,7 +16534,7 @@
                               "dpgn-automated-decision-initiation-2",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Apply the following relevant requirements as recommended by the Algorithmic Impact Assessment:\n        "
+                            "content": "Apply the following relevant requirements as recommended by the <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">Algorithmic Impact Assessment</a>:\n        "
                           },
                           {
                             "content_type": "block",
