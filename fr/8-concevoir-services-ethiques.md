@@ -121,8 +121,8 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-initiation-1 data-content-source-title="Section 7.1.1, Standard on Automated Decision-Making (draft) (GC)"} Complete an [Algorithmic Impact Assessment](https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/), prior to the production of any Automated Decision System.
-- {: .dpgn-automated-decision-initiation-3 data-content-source-title="Section 7.1.3, Standard on Automated Decision-Making (draft) (GC)"} Ensure that the [Algorithmic Impact Assessment](https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/) remains up to date and accurately reflects the functionality of the Automated Decision System.
+- {: .dpgn-automated-decision-initiation-1 data-content-source-title="Section 7.1.1, Standard on Automated Decision-Making (draft) (GC)"} Complete an [Algorithmic Impact Assessment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html), prior to the production of any Automated Decision System.
+- {: .dpgn-automated-decision-initiation-3 data-content-source-title="Section 7.1.3, Standard on Automated Decision-Making (draft) (GC)"} Ensure that the [Algorithmic Impact Assessment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html) remains up to date and accurately reflects the functionality of the Automated Decision System.
 {: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
@@ -136,7 +136,7 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-automated-decision-initiation} [Algorithmic Impact Assessment (GC)](https://docs.google.com/document/d/1nS9F4d9QdxZhXLc7QWc8E-QT7OTWMu7Y_kiHT--AXak/)
+- {: .dpgn-automated-decision-initiation} [Algorithmic Impact Assessment (GC)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html)
 {: .dpgn-automated-decision}
 <!-- markdownlint-enable MD032 -->
 
@@ -172,7 +172,7 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-initiation-2 data-content-source-title="Section 7.1.2, Standard on Automated Decision-Making (draft) (GC)"} Apply the following relevant requirements as recommended by the Algorithmic Impact Assessment:
+- {: .dpgn-automated-decision-initiation-2 data-content-source-title="Section 7.1.2, Standard on Automated Decision-Making (draft) (GC)"} Apply the following relevant requirements as recommended by the [Algorithmic Impact Assessment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html):
   - {: data-content-source-title="Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Approval:
     - {: .dpgn-automated-decision-level-i} **Level I:** None
     - {: .dpgn-automated-decision-level-ii} **Level II:** Enterprise Architecture Review Board

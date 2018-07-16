@@ -14,6 +14,6 @@ endif %}
   <li><a href="https://github.com/{{ site.github_username }}{{ site.baseurl }}/tree/master/{{ page.path }}">{{ site.ViewTemplateSourceGitHub[page.lang] }}</a></li>{% 
 assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
 unless page.url contains overviewPath or page.url contains "compar" %}
-  <li><p><a href="#filter-panel" aria-controls="filter-panel" class="overlay-lnk btn btn-primary" role="button">{{ site.ShowFilters[page.lang] }}</a></li>{% 
+  <li><a href="#filter-panel" aria-controls="filter-panel" class="overlay-lnk btn btn-primary" role="button">{{ site.ShowFilters[page.lang] }}</a></li>{% 
 endunless %}
 </ul>
