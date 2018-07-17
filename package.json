@@ -6,7 +6,7 @@
   "scripts": {
     "link-check": "node link-check.js",
     "lint": "markdownlint -i node_modules \"**/*.md\"",
-    "test": "npm run lint && npm run link-check && npm run vnu-jar",
+    "test": "npm run lint && npm run vnu-jar && npm run link-check",
     "vnu-jar": "java -Xss4m -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --skip-non-html --filterfile .vnurc --no-langdetect _site/"
   },
   "repository": {
