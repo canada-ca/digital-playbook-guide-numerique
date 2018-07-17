@@ -5,6 +5,7 @@ cache:
   directories:
   - node_modules
   - /home/travis/.rvm/
+  - _site/
 
 node_js:
   - "node"
@@ -13,7 +14,11 @@ rvm:
   - "2.2"
 
 before_install:
+  - mv _site/.jekyll-metadata .jekyll-metadata 2>/dev/null || true
   - bundle install
 
 before_script:
-  - bundle exec jekyll build --verbose
+  - bundle exec jekyll build --incremental --verbose
+
+before_cache:
+  - mv .jekyll-metadata _site/.jekyll-metadata
