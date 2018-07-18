@@ -1,9 +1,9 @@
 ---
 ---
-{% assign dataVariable = site.playbookData["en"] %}{% 
-assign dataSourceEn = site.data[dataVariable] %}{% 
-assign dataVariable = site.playbookData["fr"] %}{% 
-assign dataSourceFr = site.data[dataVariable] %}
+{% assign dataVariable = site.playbookData["en"] %}{%
+ assign dataSourceEn = site.data[dataVariable] %}{%
+ assign dataVariable = site.playbookData["fr"] %}{%
+ assign dataSourceFr = site.data[dataVariable] %}
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]--><!--[if gt IE 8]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -12,7 +12,7 @@ assign dataSourceFr = site.data[dataVariable] %}
 <title>{{ dataSourceEn.title }} / {{ dataSourceFr.title }}</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <meta name="description" content="{{ site.description["en"] }}">
-<meta name="description" lang="fr" content="{{ site.description["en"] }}">
+<meta name="description" lang="fr" content="{{ site.description["fr"] }}">
 <meta name="dcterms.creator" content="{{ site.creator["en"] }}">
 <meta name="dcterms.creator" lang="fr" content="{{ site.creator["fr"] }}">
 <meta name="dcterms.title" content="{{ dataSourceEn.title }}">
@@ -37,8 +37,8 @@ assign dataSourceFr = site.data[dataVariable] %}
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew.min.js"></script>
 <![endif]-->
 <!--[if lte IE 9]>
-		
-		
+
+
 <![endif]-->
 <noscript><link rel="stylesheet" href="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/css/noscript.min.css" /></noscript>
 </head>
@@ -83,7 +83,7 @@ assign dataSourceFr = site.data[dataVariable] %}
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]>
-<script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>	
+<script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
 <![endif]-->
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
 </body>

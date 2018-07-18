@@ -28,7 +28,7 @@ include /functions/output-content-array.html contentArray=currentStandard.introd
 <li><input type="checkbox" id="dpgn-automated-decision-type-classify" /> <label for="dpgn-automated-decision-type-classify">Classify cases in terms of risk and priority</label></li>
 <li><input type="checkbox" id="dpgn-automated-decision-type-identify" /> <label for="dpgn-automated-decision-type-identify">Identify cases for human review or investigation</label></li>
 <li><input type="checkbox" id="dpgn-automated-decision-type-recommendation" /> <label for="dpgn-automated-decision-type-recommendation">Provide overall recommendations about whether an application should be approved</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-final" /> <label for="dpgn-automated-decision-final">Render the complete administrative decision</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-final" /> <label for="dpgn-automated-decision-type-final">Render the complete administrative decision</label></li>
 </ul>
 </fieldset>
 
