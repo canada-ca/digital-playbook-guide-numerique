@@ -136,16 +136,16 @@ In developing this proposed AIA Framework, the following three key goals have be
 </div>
 
 <!-- Question 5.1 -->
-<div id="question-5-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": { "action": "addClass", "source": ".question-5-1-yes, .question-5-1-no", "class": "hidden" } }'>
+<div id="question-5-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": [{ "action": "removeClass", "source": "#question-5-2-result", "class": "hidden" }, { "action": "addClass", "source": ".question-5-1-yes, .question-5-1-no, .question-5-2-yes, .question-5-2-no, #question-5-2-1-result, .question-5-2-1-yes, .question-5-2-1-no", "class": "hidden" }, { "action": "addClass", "source": "#question-5-2-result", "class": "hidden" }] }'>
 <p>5.1 Is this funding for a social or economic support program?</p>
 <ul>
-<li data-wb-fieldflow='[{ "action": "append", "source": "#question-5-1-1" }, { "action": "removeClass", "source": "#question-5-1-1-result", "class": "hidden" }, { "action": "addClass", "source": "#question-5-2-result, .question-5-2-yes, .question-5-2-no, #question-5-2-1-result, .question-5-2-1-yes, .question-5-2-1-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-5-1-yes", "class": "hidden" }]'>Yes</li>
-<li data-wb-fieldflow='[{ "action": "append", "source": "#question-5-2" }, { "action": "removeClass", "source": "#question-5-2-result", "class": "hidden" }, { "action": "addClass", "source": "#question-5-1-1-result, .question-5-1-1-yes, .question-5-1-1-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-5-1-no", "class": "hidden" }]'>No</li>
+<li data-wb-fieldflow='[{ "action": "append", "source": "#question-5-1-1" }, { "action": "append", "source": "#question-5-2" }, { "action": "removeClass", "source": "#question-5-1-1-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-5-1-yes", "class": "hidden" }]'>Yes</li>
+<li data-wb-fieldflow='[{ "action": "append", "source": "#question-5-2" }, { "action": "addClass", "source": "#question-5-1-1-result, .question-5-1-1-yes, .question-5-1-1-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-5-1-no", "class": "hidden" }]'>No</li>
 </ul>
 </div>
 
 <!-- Question 5.1.1 -->
-<div id="question-5-1-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": [{ "action": "append", "source": "#question-5-2" }, { "action": "removeClass", "source": "#question-5-2-result", "class": "hidden" }, { "action": "addClass", "source": ".question-5-1-1-yes, .question-5-1-1-no", "class": "hidden" }] }'>
+<div id="question-5-1-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": { "action": "addClass", "source": ".question-5-1-1-yes, .question-5-1-1-no", "class": "hidden" } }'>
 <p>5.1.1 If funding were to be denied, could it leave the client in a precarious economic positions? (e.g., could render and individual homeless or a business to close)</p>
 <ul>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-5-1-1-yes", "class": "hidden" }'>Yes</li>
@@ -173,7 +173,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 
 <!-- Question 6 -->
 <div id="question-6" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-6-yes, .question-6-no", "class": "hidden" } }'>
-<p>6. Does this syst, result in the issuance of a fine, administrative monetary penalty, or a debt collection notice?</p>
+<p>6. Does this system, result in the issuance of a fine, administrative monetary penalty, or a debt collection notice?</p>
 <ul>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-6-yes", "class": "hidden" }'>Yes</li>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-6-no", "class": "hidden" }'>No</li>
@@ -190,16 +190,16 @@ In developing this proposed AIA Framework, the following three key goals have be
 </div>
 
 <!-- Question 7.1 -->
-<div id="question-7-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": { "action": "addClass", "source": ".question-7-1-yes, .question-7-1-no", "class": "hidden" } }'>
+<div id="question-7-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": [{ "action": "removeClass", "source": "#question-7-2-result, #question-7-3-result", "class": "hidden" }, { "action": "addClass", "source": ".question-7-1-yes, .question-7-1-no, .question-7-2-yes, #question-7-2-no, .question-7-3-yes, #question-7-3-no", "class": "hidden" }] }'>
 <p>7.1 Does this involve the collection, transportation, storage, purchase or sale of a regulated good or substance?</p>
 <ul>
-<li data-wb-fieldflow='[{ "action": "append", "source": "#question-7-1-1" }, { "action": "removeClass", "source": "#question-7-1-1-result", "class": "hidden" }, { "action": "addClass", "source": "#question-7-2-result, .question-7-2-yes, #question-7-2-no, #question-7-3-result, .question-7-3-yes, #question-7-3-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-7-1-yes", "class": "hidden" }]'>Yes</li>
-<li data-wb-fieldflow='[{ "action": "append", "source": "#question-7-2" }, { "action": "append", "source": "#question-7-3" }, { "action": "removeClass", "source": "#question-7-2-result, #question-7-3-result", "class": "hidden" }, { "action": "addClass", "source": "#question-7-1-1-result, .question-7-1-1-yes, #question-7-1-1-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-7-1-no", "class": "hidden" }]'>No</li>
+<li data-wb-fieldflow='[{ "action": "append", "source": "#question-7-1-1" }, { "action": "append", "source": "#question-7-2" }, { "action": "append", "source": "#question-7-3" }, { "action": "removeClass", "source": "#question-7-1-1-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-7-1-yes", "class": "hidden" }]'>Yes</li>
+<li data-wb-fieldflow='[{ "action": "append", "source": "#question-7-2" }, { "action": "append", "source": "#question-7-3" }, { "action": "addClass", "source": "#question-7-1-1-result, .question-7-1-1-yes, #question-7-1-1-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-7-1-no", "class": "hidden" }]'>No</li>
 </ul>
 </div>
 
 <!-- Question 7.1.1 -->
-<div id="question-7-1-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": [{ "action": "append", "source": "#question-7-2" }, { "action": "append", "source": "#question-7-3" }, { "action": "removeClass", "source": "#question-7-2-result, #question-7-3-result", "class": "hidden" }, { "action": "addClass", "source": ".question-7-1-1-yes, .question-7-1-1-no", "class": "hidden" }] }'>
+<div id="question-7-1-1" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": { "action": "addClass", "source": ".question-7-1-1-yes, .question-7-1-1-no", "class": "hidden" } }'>
 <p>7.1.1 Does this involve the collection, transportation, storage, purchase or sale of a regulated good or substance?</p>
 <ul>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-7-1-1-yes", "class": "hidden" }'>Yes</li>
@@ -270,7 +270,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <!-- Question 12 -->
 <fieldset>
 <legend class="mrgn-bttm-0 h5 required" aria-required="true">12. Has the design team consulted the following experts within their organization? <strong class="required" aria-required="true">(required)</strong></legend>
-<span class="clearfix"></span>
+<div class="clearfix"></div>
 
 <div id="question-12a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-12a-yes, .question-12a-no, .question-12a-na", "class": "hidden" } }'>
 <p>a. Communications</p>
@@ -396,7 +396,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <div id="question-17" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-17-yes, .question-17-no", "class": "hidden" } }'>
 <p>17. Will your system make decisions specifically about Indigenous peoples or territory?</p>
 <ul>
-<li data-wb-fieldflow='[{ "action": "append", "source": "#question-17-1" }, { "action": "append", "source": "#question-17-2" }, { "action": "removeClass", "source": "#question-17-1-result, "#question-17-2-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-17-yes", "class": "hidden" }]'>Yes</li>
+<li data-wb-fieldflow='[{ "action": "append", "source": "#question-17-1" }, { "action": "append", "source": "#question-17-2" }, { "action": "removeClass", "source": "#question-17-1-result, #question-17-2-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-17-yes", "class": "hidden" }]'>Yes</li>
 <li data-wb-fieldflow='[{ "action": "addClass", "source": "#question-17-1-result, .question-17-1-yes, .question-17-1-no, .question-17-1-na, #question-17-2-result, .question-17-2-yes, .question-17-2-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-17-no", "class": "hidden" }]'>No</li>
 </ul>
 </div>
@@ -424,7 +424,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <div id="question-18" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-18-yes, .question-18-no", "class": "hidden" } }'>
 <p>18. Does your system use contactless machine vision for biometric recognition (e.g. facial, full-body person, gait)?</p>
 <ul>
-<li data-wb-fieldflow='[{ "action": "append", "source": "#question-18-1" }, { "action": "append", "source": "#question-18-2" }, { "action": "removeClass", "source": "#question-18-1-result, "#question-18-2-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-18-yes", "class": "hidden" }]'>Yes</li>
+<li data-wb-fieldflow='[{ "action": "append", "source": "#question-18-1" }, { "action": "append", "source": "#question-18-2" }, { "action": "removeClass", "source": "#question-18-1-result, #question-18-2-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-18-yes", "class": "hidden" }]'>Yes</li>
 <li data-wb-fieldflow='[{ "action": "addClass", "source": "#question-18-1-result, .question-18-1-yes, .question-18-1-no, #question-18-2-result, .question-18-2-yes, .question-18-2-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-18-no", "class": "hidden" }]'>No</li>
 </ul>
 </div>
@@ -449,7 +449,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 
 <!-- Question 19 -->
 <div id="question-19" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-19-yes, .question-19-no", "class": "hidden" } }'>
-<p>19. Does the governance strucutre assign accountability for the design, development, maintenance, and improvement of the system?</p>
+<p>19. Does the governance structure assign accountability for the design, development, maintenance, and improvement of the system?</p>
 <ul>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-yes", "class": "hidden" }'>Yes</li>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-no", "class": "hidden" }'>No</li>
@@ -460,8 +460,8 @@ In developing this proposed AIA Framework, the following three key goals have be
 <div id="question-20" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-20-yes, .question-20-no", "class": "hidden" } }'>
 <p>20. Does the system interface with other IT systems?</p>
 <ul>
-<li data-wb-fieldflow='[{ "action": "append", "source": "#question-20-1" }, { "action": "removeClass", "source": "#question-20-1-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-20-yes", "class": "hidden" }]'>Yes</li>
-<li data-wb-fieldflow='[{ "action": "addClass", "source": "#question-20-1-result, .question-20-1-yes, .question-20-1-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-20-no", "class": "hidden" }]'>No</li>
+<li data-wb-fieldflow='[{ "action": "append", "source": "#question-20-1" }, { "action": "append", "source": "#question-20-2" }, { "action": "removeClass", "source": "#question-20-1-result, #question-20-2-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-20-yes", "class": "hidden" }]'>Yes</li>
+<li data-wb-fieldflow='[{ "action": "addClass", "source": "#question-20-1-result, .question-20-1-yes, .question-20-1-no, #question-20-2-result, .question-20-2-yes, .question-20-2-no", "class": "hidden" }, { "action": "removeClass", "source": ".question-20-no", "class": "hidden" }]'>No</li>
 </ul>
 </div>
 
@@ -474,10 +474,19 @@ In developing this proposed AIA Framework, the following three key goals have be
 </ul>
 </div>
 
+<!-- Question 20.2 -->
+<div id="question-20-2" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "default": { "action": "addClass", "source": ".question-20-2-yes, .question-20-2-no", "class": "hidden" } }'>
+<p>20.2 Have you gone to the Enterprise Architecture Review Board with a concept case^</p>
+<ul>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-20-2-yes", "class": "hidden" }'>Yes</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-20-2-no", "class": "hidden" }'>No</li>
+</ul>
+</div>
+
 <!-- Question 21 -->
 <fieldset>
 <legend class="mrgn-bttm-0 h5 required" aria-required="true">21. Are you planning to make information about system functionality publicly available? <strong class="required" aria-required="true">(required)</strong></legend>
-<span class="clearfix"></span>
+<div class="clearfix"></div>
 
 <div id="question-21a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-21a-yes, .question-21a-no, .question-21a-na", "class": "hidden" } }'>
 <p>a. Training data sources</p>
@@ -741,11 +750,12 @@ In developing this proposed AIA Framework, the following three key goals have be
 </div>
 
 <!-- Question 37 -->
-<div id="question-37"  class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-37-yes, .question-37-no", "class": "hidden" } }'>
+<div id="question-37"  class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-37-yes, .question-37-no, .question-37-na", "class": "hidden" } }'>
 <p>37. If the system is intended to undertake tasks currently undertaen by human staff, have you engaged with your departmental human resources?</p>
 <ul>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-37-yes", "class": "hidden" }'>Yes</li>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-37-no", "class": "hidden" }'>No</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-37-na", "class": "hidden" }'>Not applicable</li>
 </ul>
 </div>
 
@@ -1323,6 +1333,14 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-20-1-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-20-1-no">0</span></td>
 <td><span class="hidden criteria-5-score question-20-1-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-20-1-no">0</span></td>
 </tr>
+<tr id="question-20-2-result" class="hidden">
+<th>20.2</th>
+<td><span class="hidden criteria-1-score question-20-2-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-20-2-no">0</span></td>
+<td><span class="hidden criteria-2-score question-20-2-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-20-2-no">1</span></td>
+<td><span class="hidden criteria-3-score question-20-2-yes">0</span><span class="hidden criteria-3-score criteria-3-score-max question-20-2-no">1</span></td>
+<td><span class="hidden criteria-4-score question-20-2-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-20-2-no">0</span></td>
+<td><span class="hidden criteria-5-score question-20-2-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-20-2-no">0</span></td>
+</tr>
 <tr>
 <th>21a</th>
 <td><span class="hidden criteria-1-score question-21a-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-21a-no">0</span><span class="hidden criteria-1-score question-21a-na">0</span></td>
@@ -1584,14 +1602,14 @@ In developing this proposed AIA Framework, the following three key goals have be
 </tr>
 <tr id="question-37-result">
 <th>37</th>
-<td><span class="hidden criteria-1-score question-37-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-37-no">0</span></td>
-<td><span class="hidden criteria-2-score question-37-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-37-no">1</span></td>
-<td><span class="hidden criteria-3-score question-37-yes">0</span><span class="hidden criteria-3-score criteria-3-score-max question-37-no">0</span></td>
-<td><span class="hidden criteria-4-score question-37-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-37-no">0</span></td>
-<td><span class="hidden criteria-5-score question-37-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-37-no">0</span></td>
+<td><span class="hidden criteria-1-score question-37-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-37-no">0</span><span class="hidden criteria-1-score question-37-na">0</span></td>
+<td><span class="hidden criteria-2-score question-37-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-37-no">1</span><span class="hidden criteria-2-score question-37-na">0</span></td>
+<td><span class="hidden criteria-3-score question-37-yes">0</span><span class="hidden criteria-3-score criteria-3-score-max question-37-no">0</span><span class="hidden criteria-3-score question-37-na">0</span></td>
+<td><span class="hidden criteria-4-score question-37-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-37-no">0</span><span class="hidden criteria-4-score question-37-na">0</span></td>
+<td><span class="hidden criteria-5-score question-37-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-37-no">0</span><span class="hidden criteria-5-score question-37-na">0</span></td>
 </tr>
 <tr id="question-38-result">
-<th>37</th>
+<th>38</th>
 <td><span class="hidden criteria-1-score question-38-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-38-no">0</span></td>
 <td><span class="hidden criteria-2-score question-38-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-38-no">1</span></td>
 <td><span class="hidden criteria-3-score question-38-yes">0</span><span class="hidden criteria-3-score criteria-3-score-max question-38-no">0</span></td>
