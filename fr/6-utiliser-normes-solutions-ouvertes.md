@@ -233,7 +233,7 @@ Using common, proven government solutions, approaches, and platforms will help t
 - {: .dpgn-digital-architectural-maximize-reuse-3} Réaliser la simplification en minimisant le dédoublement des composantes et en s’en tenant aux normes pertinentes.
 - {: .dpgn-digital-architectural-maximize-reuse-4} Informer le CEAI GC des investissements et des innovations ministériels.
 - {: .dpgn-digital-architectural-enable-interoperability-4} Faire rouler les applications en conteneurs.
-- {: .dpgn-digital-architectural-enable-interoperability-5} Tirer parti des composantes intégrées d’échange numérique comme le Bus de service du GC, la plateforme d’échange numérique, et le magasin IPA conçu à des fins d’utilisation sur mesure.
+- {: .dpgn-digital-architectural-enable-interoperability-5} Tirer parti des composantes intégrées d’échange numérique comme le Bus de service du GC, la plateforme d’échange numérique, et le magasin IPA, conçu à des fins d’utilisation sur mesure.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 

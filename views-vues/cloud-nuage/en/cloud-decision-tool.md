@@ -11,7 +11,7 @@ assign dataSource = site.data[dataVariable] %}
 
 To help organize the decision of which cloud deployment model is the right deployment model for your business context, the following tool can be used.
 
-<div class="wb-frmvld">
+<div id="right-cloud-questionnaire" class="wb-frmvld">
 <form method="post" action="#">
 
 <section>
@@ -140,6 +140,36 @@ To help organize the decision of which cloud deployment model is the right deplo
 
 ## Results
 
+**Questionnaire progress:**
+
+<p markdown="0" class="wb-inview" data-inview="progress-bottom"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputAttribute": "value", "inputs": [
+    { "type": "count", "query": "#right-cloud-questionnaire fieldset input:checked" },
+    { "type": "count", "query": "#right-cloud-questionnaire fieldset" }
+  ] },
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-percent-bottom", "inputs": [
+    { "type": "count", "query": "#right-cloud-questionnaire fieldset input:checked" },
+    { "type": "count", "query": "#right-cloud-questionnaire fieldset" }
+  ] },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
+    ],
+    "actions": [ 
+      { "type": "event", "outputTarget": "#questionnaire-progress", "outputEvent": "wb-update-wb-progress" }
+    ] 
+  }
+] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
+
+<section markdown="0" id="progress-bottom" class="wb-overlay modal-content overlay-def wb-bar-b">
+<header>
+<div class="mrgn-tp-md mrgn-bttm-sm h5">
+<h3 class="mrgn-tp-0 mrgn-bttm-0 mrgn-rght-md h5 pull-left">Questionnaire progress</h3>
+<progress id="questionnaire-progress-bottom" value="0" max="100"></progress> <span id="questionnaire-progress-percent-bottom">0</span>%
+</div>
+</header>
+</section>
+
 <table class="table table-bordered table-condensed">
 <thead>
 <tr>
@@ -238,13 +268,13 @@ To help organize the decision of which cloud deployment model is the right deplo
   { "type": "count", "increment": 1, "query": "#public-cloud-sensitivity-passed:not(.hidden), #public-cloud-financial-passed:not(.hidden), #public-cloud-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-public-cloud" },
   { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-mandatory-public-cloud" }, 3], "outputTarget": "#percent-mandatory-public-cloud" },
   { "type": "conditional", "inputs": [
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, { "type": "number", "value": 1 }] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, { "type": "number", "value": 1 }] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, { "type": "number", "value": 1 }] }
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1] },
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, 1] },
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, 1] }
     ],
     "actions": [
-      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-public-cloud"}, { "type": "number", "value": 3 }] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-failed"}, { "type":  "removeClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-passed"}] },
-      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-public-cloud"}, { "type": "number", "value": 3 }] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-failed"}] }
+      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-public-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-failed"}, { "type":  "removeClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-passed"}] },
+      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-public-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-failed"}] }
     ]
   }
 ] }'><span id="tally-mandatory-public-cloud">0</span> / 3 (<span id="percent-mandatory-public-cloud">0</span>%)<span id="mandatory-public-cloud-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span><span id="mandatory-public-cloud-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span></td>
@@ -252,13 +282,13 @@ To help organize the decision of which cloud deployment model is the right deplo
   { "type": "count", "increment": 1, "query": "#private-cloud-sensitivity-passed:not(.hidden), #private-cloud-financial-passed:not(.hidden), #private-cloud-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-private-cloud" },
   { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-mandatory-private-cloud" }, 3], "outputTarget": "#percent-mandatory-private-cloud" },
   { "type": "conditional", "inputs": [
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, { "type": "number", "value": 1 }] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, { "type": "number", "value": 1 }] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, { "type": "number", "value": 1 }] }
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1] },
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, 1] },
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, 1] }
     ],
     "actions": [
-      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-private-cloud"}, { "type": "number", "value": 3 }] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-failed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-passed"}] },
-      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-private-cloud"}, { "type": "number", "value": 3 }] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-failed"}] }
+      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-private-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-failed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-passed"}] },
+      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-private-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-failed"}] }
     ]
   }
 ] }'><span id="tally-mandatory-private-cloud">0</span> / 3 (<span id="percent-mandatory-private-cloud">0</span>%)<span id="mandatory-private-cloud-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span><span id="mandatory-private-cloud-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span></td>
@@ -266,13 +296,13 @@ To help organize the decision of which cloud deployment model is the right deplo
   { "type": "count", "increment": 1, "query": "#non-cloud-sensitivity-passed:not(.hidden), #non-cloud-financial-passed:not(.hidden), #non-cloud-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-non-cloud" },
   { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-mandatory-non-cloud" }, 3], "outputTarget": "#percent-mandatory-non-cloud" },
   { "type": "conditional", "inputs": [
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, { "type": "number", "value": 1 }] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, { "type": "number", "value": 1 }] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, { "type": "number", "value": 1 }] }
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1] },
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, 1] },
+      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, 1] }
     ],
     "actions": [
-      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-non-cloud"}, { "type": "number", "value": 3 }] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-failed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-passed"}] },
-      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-non-cloud"}, { "type": "number", "value": 3 }] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-failed"}] }
+      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-non-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-failed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-passed"}] },
+      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-non-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-failed"}] }
     ]
   }
 ] }'><span id="tally-mandatory-non-cloud">0</span> / 3 (<span id="percent-mandatory-non-cloud">0</span>%)<span id="mandatory-non-cloud-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span><span id="mandatory-non-cloud-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span></td>
