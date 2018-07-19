@@ -155,9 +155,9 @@ Il vous est possible d’utiliser le modèle suivant afin de vous aider à déci
     "inputs": [
       { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
     ],
-    "actions": [ 
+    "actions": [
       { "type": "event", "outputTarget": "#questionnaire-progress", "outputEvent": "wb-update-wb-progress" }
-    ] 
+    ]
   }
 ] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
 

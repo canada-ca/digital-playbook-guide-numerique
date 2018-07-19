@@ -842,9 +842,9 @@ In developing this proposed AIA Framework, the following three key goals have be
     "inputs": [
       { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
     ],
-    "actions": [ 
+    "actions": [
       { "type": "event", "outputTarget": "#questionnaire-progress", "outputEvent": "wb-update-wb-progress" }
-    ] 
+    ]
   }
 ] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
 

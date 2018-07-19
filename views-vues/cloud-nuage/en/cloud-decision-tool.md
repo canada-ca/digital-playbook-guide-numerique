@@ -155,9 +155,9 @@ To help organize the decision of which cloud deployment model is the right deplo
     "inputs": [
       { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
     ],
-    "actions": [ 
+    "actions": [
       { "type": "event", "outputTarget": "#questionnaire-progress", "outputEvent": "wb-update-wb-progress" }
-    ] 
+    ]
   }
 ] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
 
