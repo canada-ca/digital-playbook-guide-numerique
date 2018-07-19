@@ -781,7 +781,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 
 <!-- Question 37 -->
 <div id="question-37" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>37. If the system is intended to undertake tasks currently undertaen by human staff, have you engaged with your departmental human resources?</p>
+<p>37. If the system is intended to undertake tasks currently undertaken by human staff, have you engaged with your departmental human resources?</p>
 <ul>
 <li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-37-yes", "class": "hidden" }, { "action": "addClass", "source": ".question-37-no, .question-37-na", "class": "hidden" }]'>Yes</li>
 <li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-37-no", "class": "hidden" }, { "action": "addClass", "source": ".question-37-yes, .question-37-na", "class": "hidden" }]'>No</li>
@@ -830,20 +830,17 @@ In developing this proposed AIA Framework, the following three key goals have be
 **Questionnaire progress:**
 
 <p markdown="0" class="wb-inview" data-inview="progress-bottom"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
-  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputAttribute": "value", "inputs": [
+  { "type": "percent", "decimalPlaces": 0, "query": "#questionnaire-progress", "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-percent-bottom", "inputs": [
     { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)" },
     { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)" }
   ] },
-  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-percent-bottom", "inputs": [
-    { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)" },
-    { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)" }
-  ] },
+  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
   { "type": "conditional",
     "inputs": [
       { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
     ],
     "actions": [
-      { "type": "event", "outputTarget": "#questionnaire-progress", "outputEvent": "wb-update-wb-progress" }
+      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputEvent": "wb-update-wb-progress" }
     ]
   }
 ] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
@@ -862,54 +859,74 @@ In developing this proposed AIA Framework, the following three key goals have be
 <tr>
 <th>Criteria</th>
 <th>Points total</th>
-<th>Percentage</th>
+<th>Impact</th>
 </tr>
 </thead>
 <tbody>
 <tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-1-score:not(.hidden)", "outputTarget": "#criteria-1-score-total" },
   { "type": "add", "query": ".criteria-1-score-max", "outputTarget": "#criteria-1-max-total" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-1-score-total, #criteria-1-max-total", "outputTarget": "#criteria-1-percent" }
+  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-1-score-total, #criteria-1-max-total", "outputTarget": "#criteria-1-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#criteria-1-percent", "outputTarget": "#progress-individual-entities", "outputAttribute": "value" },
+  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
+    "actions": [ { "type": "event", "outputTarget": "#progress-individual-entities", "outputEvent": "wb-update-wb-progress" } ]
+  }
 ] }'>
 <td>Impact on Individuals and Entities</td>
 <td><span id="criteria-1-score-total">0</span> / <span id="criteria-1-max-total">0</span></td>
-<td><span id="criteria-1-percent">0</span>%</td>
+<td><progress id="progress-individual-entities" value="0" max="100"></progress> <span id="criteria-1-percent">0</span>%</td>
 </tr>
 <tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-2-score:not(.hidden)", "outputTarget": "#criteria-2-score-total" },
   { "type": "add", "query": ".criteria-2-score-max", "outputTarget": "#criteria-2-max-total" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-2-score-total, #criteria-2-max-total", "outputTarget": "#criteria-2-percent" }
+  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-2-score-total, #criteria-2-max-total", "outputTarget": "#criteria-2-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#criteria-2-percent", "outputTarget": "#progress-government-institutions", "outputAttribute": "value" },
+  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
+    "actions": [ { "type": "event", "outputTarget": "#progress-government-institutions", "outputEvent": "wb-update-wb-progress" } ]
+  }
  ] }'>
 <td>Impact on Government Institutions</td>
 <td><span id="criteria-2-score-total">0</span> / <span id="criteria-2-max-total">0</span></td>
-<td><span id="criteria-2-percent">0</span>%</td>
+<td><progress id="progress-government-institutions" value="0" max="100"></progress> <span id="criteria-2-percent">0</span>%</td>
 </tr>
 <tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-3-score:not(.hidden)", "outputTarget": "#criteria-3-score-total" },
   { "type": "add", "query": ".criteria-3-score-max", "outputTarget": "#criteria-3-max-total" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-3-score-total, #criteria-3-max-total", "outputTarget": "#criteria-3-percent" }
+  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-3-score-total, #criteria-3-max-total", "outputTarget": "#criteria-3-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#criteria-3-percent", "outputTarget": "#progress-data-management", "outputAttribute": "value" },
+  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
+    "actions": [ { "type": "event", "outputTarget": "#progress-data-management", "outputEvent": "wb-update-wb-progress" } ]
+  }
  ] }'>
 <td>Data Management</td>
 <td><span id="criteria-3-score-total">0</span> / <span id="criteria-3-max-total">0</span></td>
-<td><span id="criteria-3-percent">0</span>%</td>
+<td><progress id="progress-data-management" value="0" max="100"></progress> <span id="criteria-3-percent">0</span>%</td>
 </tr>
 <tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-4-score:not(.hidden)", "outputTarget": "#criteria-4-score-total" },
   { "type": "add", "query": ".criteria-4-score-max", "outputTarget": "#criteria-4-max-total" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-4-score-total, #criteria-4-max-total", "outputTarget": "#criteria-4-percent" }
+  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-4-score-total, #criteria-4-max-total", "outputTarget": "#criteria-4-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#criteria-4-percent", "outputTarget": "#progress-due-process", "outputAttribute": "value" },
+  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
+    "actions": [ { "type": "event", "outputTarget": "#progress-due-process", "outputEvent": "wb-update-wb-progress" } ]
+  }
  ] }'>
 <td>Due Process</td>
 <td><span id="criteria-4-score-total">0</span> / <span id="criteria-4-max-total">0</span></td>
-<td><span id="criteria-4-percent">0</span>%</td>
+<td><progress id="progress-due-process" value="0" max="100"></progress> <span id="criteria-4-percent">0</span>%</td>
 </tr>
 <tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-5-score:not(.hidden)", "outputTarget": "#criteria-5-score-total" },
   { "type": "add", "query": ".criteria-5-score-max", "outputTarget": "#criteria-5-max-total" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-5-score-total, #criteria-5-max-total", "outputTarget": "#criteria-5-percent" }
+  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-5-score-total, #criteria-5-max-total", "outputTarget": "#criteria-5-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#criteria-5-percent", "outputTarget": "#progress-complexity", "outputAttribute": "value" },
+  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
+    "actions": [ { "type": "event", "outputTarget": "#progress-complexity", "outputEvent": "wb-update-wb-progress" } ]
+  }
  ] }'>
 <td>Complexity</td>
 <td><span id="criteria-5-score-total">0</span> / <span id="criteria-5-max-total">0</span></td>
-<td><span id="criteria-5-percent">0</span>%</td>
+<td><progress id="progress-complexity" value="0" max="100"></progress> <span id="criteria-5-percent">0</span>%</td>
 </tr>
 </tbody>
 </table>
