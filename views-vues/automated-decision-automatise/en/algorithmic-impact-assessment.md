@@ -453,7 +453,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <p>18.1 Does your system perform within acceptable parameters for all skin colours as defined by the Fitzpatrick Skin Type scale or similar measurement?</p>
 <ul>
 <li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-18-1-yes", "class": "hidden" }, { "action": "addClass", "source": ".question-18-1-no", "class": "hidden" }]'>Yes</li>
-<li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-18-1-no", "class": "hidden" }, { "action": "addClass", "source": ".question-18-1-no", "class": "hidden" }]'>No</li>
+<li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-18-1-no", "class": "hidden" }, { "action": "addClass", "source": ".question-18-1-yes", "class": "hidden" }]'>No</li>
 </ul>
 </div>
 
@@ -462,7 +462,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <p>18.2 Where applicable, have you tested to ensure that the system performs within acceptable parameters with persons who have a disability that may cause them to be unduly disadvantaged by the machine vision component? (e.g., ensuring that a gait analysis tool does not unduly disadvantage an individual that uses a wheelchair)?</p>
 <ul>
 <li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-18-2-yes", "class": "hidden" }, { "action": "addClass", "source": ".question-18-2-no", "class": "hidden" }]'>Yes</li>
-<li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-18-2-no", "class": "hidden" }, { "action": "addClass", "source": ".question-18-2-no", "class": "hidden" }]'>No</li>
+<li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-18-2-no", "class": "hidden" }, { "action": "addClass", "source": ".question-18-2-yes", "class": "hidden" }]'>No</li>
 </ul>
 </div>
 </div>
@@ -600,7 +600,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <p>23. Does the Automated Decision System require the use of personal information?</p>
 <ul>
 <li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-23-yes, #question-23-1-wrapper, #question-23-1-result", "class": "hidden" }, { "action": "addClass", "source": ".question-23-no", "class": "hidden" }]'>Yes</li>
-<li data-wb-fieldflow='[{ "action": "addClass", "source": ".question-23-yes, #question-23-1-wrapper, #question-23-1-result", "class": "hidden" }, { "action": "removeClass", "source": ".question-23-no", "class": "hidden" }]'>No</li>
+<li data-wb-fieldflow='[{ "action": "removeClass", "source": ".question-23-no", "class": "hidden" }, { "action": "addClass", "source": ".question-23-yes, #question-23-1-wrapper, #question-23-1-result", "class": "hidden" }]'>No</li>
 </ul>
 </div>
 
