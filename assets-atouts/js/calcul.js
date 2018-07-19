@@ -93,9 +93,10 @@ var componentName = "wb-calculate",
      * - modulus: Calculate the result of the modulus of two or more numbers in sequence (e.g., a % b % c )
      * - conditional: Perform an action of "actionType" if all conditions in "inputs" are met. 
      * decimalPlaces {Integer} Optional (defaults to unlimited). Number of decimal plays to allow for the result.
-     * value {Number} Optional (can be used instead of "query", only permitted for "number" type). The value of the number to use.
+     * value {Number} Optional (can be used instead of "query", only permitted for "number" type). The value of the number to use. Alternatively can use a number directly (instead of an object of type "number").
      * query {String} Optional (required for "count" type, "number" type when "value" is not specified and other types when "inputs" is not specified) The CSS query for where to retrieve the numbers (uses first result for "number") or for the items to count.
      * inputs {Array} Optional (used for "conditional" type, including condition objects, and can also be used for "add", "subtract", "multiply", "divide", "power" and "modulus" types in place of query). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
+     * sourceAttribute {String} (optional, can be used with the "number" type). Attribute from which to retrieve the number.
      * increment {Integer} Optional (can only be used with "count" type). The size of the increment to use for each item counted.
      * actions {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
      * outputEvent {String} Optional (required for action type of "event" for "conditional" type). Event type 
@@ -122,7 +123,12 @@ var componentName = "wb-calculate",
 
       if ( type === "number" ) {
         if ( $query ) {
-          value = $query.eq( 0 ).text();
+          if ( operation[ "sourceAttribute" ] ) {
+            value = $query.attr( operation[ "sourceAttribute" ] );
+          } else {
+            value = $query.eq( 0 ).text();
+          }
+
           if ( value.indexOf( "." ) > -1 ) {
             value = parseFloat( value );
           } else {
