@@ -827,6 +827,36 @@ In developing this proposed AIA Framework, the following three key goals have be
 
 ## Results
 
+**Questionnaire progress:**
+
+<p markdown="0" class="wb-inview" data-inview="progress-bottom"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputAttribute": "value", "inputs": [
+    { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)" },
+    { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)" }
+  ] },
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-percent-bottom", "inputs": [
+    { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)" },
+    { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)" }
+  ] },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
+    ],
+    "actions": [
+      { "type": "event", "outputTarget": "#questionnaire-progress", "outputEvent": "wb-update-wb-progress" }
+    ]
+  }
+] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
+
+<section markdown="0" id="progress-bottom" class="wb-overlay modal-content overlay-def wb-bar-b">
+<header>
+<div class="mrgn-tp-md mrgn-bttm-sm h5">
+<h3 class="mrgn-tp-0 mrgn-bttm-0 mrgn-rght-md h5 pull-left">Questionnaire progress</h3>
+<progress id="questionnaire-progress-bottom" value="0" max="100"></progress> <span id="questionnaire-progress-percent-bottom">0</span>%
+</div>
+</header>
+</section>
+
 <table class="table table-bordered table-condensed">
 <thead>
 <tr>
@@ -840,7 +870,7 @@ In developing this proposed AIA Framework, the following three key goals have be
   { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-1-score:not(.hidden)", "outputTarget": "#criteria-1-score-total" },
   { "type": "add", "query": ".criteria-1-score-max", "outputTarget": "#criteria-1-max-total" },
   { "type": "percent", "decimalPlaces": 1, "query": "#criteria-1-score-total, #criteria-1-max-total", "outputTarget": "#criteria-1-percent" }
- ] }'>
+] }'>
 <td>Impact on Individuals and Entities</td>
 <td><span id="criteria-1-score-total">0</span> / <span id="criteria-1-max-total">0</span></td>
 <td><span id="criteria-1-percent">0</span>%</td>
@@ -1188,7 +1218,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-11-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-11-no">1</span></td>
 <td><span class="hidden criteria-5-score question-11-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-11-no">1</span></td>
 </tr>
-<tr>
+<tr id="question-12a-result">
 <th>12a</th>
 <td><span class="hidden criteria-1-score question-12a-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-12a-no">0</span><span class="hidden criteria-1-score question-12a-na">0</span></td>
 <td><span class="hidden criteria-2-score question-12a-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-12a-no">1</span><span class="hidden criteria-2-score question-12a-na">0</span></td>
@@ -1196,7 +1226,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-12a-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-12a-no">0</span><span class="hidden criteria-4-score question-12a-na">0</span></td>
 <td><span class="hidden criteria-5-score question-12a-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-12a-no">0</span><span class="hidden criteria-5-score question-12a-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-12b-result">
 <th>12b</th>
 <td><span class="hidden criteria-1-score question-12b-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-12b-no">0</span><span class="hidden criteria-1-score question-12b-na">0</span></td>
 <td><span class="hidden criteria-2-score question-12b-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-12b-no">1</span><span class="hidden criteria-2-score question-12b-na">0</span></td>
@@ -1204,7 +1234,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-12b-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-12b-no">0</span><span class="hidden criteria-4-score question-12b-na">0</span></td>
 <td><span class="hidden criteria-5-score question-12b-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-12b-no">0</span><span class="hidden criteria-5-score question-12b-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-12c-result">
 <th>12c</th>
 <td><span class="hidden criteria-1-score question-12c-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-12c-no">0</span><span class="hidden criteria-1-score question-12c-na">0</span></td>
 <td><span class="hidden criteria-2-score question-12c-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-12c-no">1</span><span class="hidden criteria-2-score question-12c-na">0</span></td>
@@ -1212,7 +1242,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-12c-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-12c-no">0</span><span class="hidden criteria-4-score question-12c-na">0</span></td>
 <td><span class="hidden criteria-5-score question-12c-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-12c-no">0</span><span class="hidden criteria-5-score question-12c-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-12d-result">
 <th>12d</th>
 <td><span class="hidden criteria-1-score question-12d-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-12d-no">0</span><span class="hidden criteria-1-score question-12d-na">0</span></td>
 <td><span class="hidden criteria-2-score question-12d-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-12d-no">1</span><span class="hidden criteria-2-score question-12d-na">0</span></td>
@@ -1220,7 +1250,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-12d-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-12d-no">0</span><span class="hidden criteria-4-score question-12d-na">0</span></td>
 <td><span class="hidden criteria-5-score question-12d-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-12d-no">0</span><span class="hidden criteria-5-score question-12d-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-12e-result">
 <th>12e</th>
 <td><span class="hidden criteria-1-score question-12e-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-12e-no">0</span><span class="hidden criteria-1-score question-12e-na">0</span></td>
 <td><span class="hidden criteria-2-score question-12e-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-12e-no">2</span><span class="hidden criteria-2-score question-12e-na">2</span></td>
@@ -1228,7 +1258,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-12e-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-12e-no">0</span><span class="hidden criteria-4-score question-12e-na">0</span></td>
 <td><span class="hidden criteria-5-score question-12e-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-12e-no">0</span><span class="hidden criteria-5-score question-12e-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-12f-result">
 <th>12f</th>
 <td><span class="hidden criteria-1-score question-12f-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-12f-no">0</span><span class="hidden criteria-1-score question-12f-na">0</span></td>
 <td><span class="hidden criteria-2-score question-12f-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-12f-no">1</span><span class="hidden criteria-2-score question-12f-na">1</span></td>
@@ -1236,7 +1266,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-12f-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-12f-no">2</span><span class="hidden criteria-4-score question-12f-na">2</span></td>
 <td><span class="hidden criteria-5-score question-12f-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-12f-no">0</span><span class="hidden criteria-5-score question-12f-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-12g-result">
 <th>12g</th>
 <td><span class="hidden criteria-1-score question-12g-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-12g-no">0</span><span class="hidden criteria-1-score question-12g-na">0</span></td>
 <td><span class="hidden criteria-2-score question-12g-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-12g-no">1</span><span class="hidden criteria-2-score question-12g-na">0</span></td>
@@ -1244,7 +1274,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-12g-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-12g-no">0</span><span class="hidden criteria-4-score question-12g-na">0</span></td>
 <td><span class="hidden criteria-5-score question-12g-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-12g-no">0</span><span class="hidden criteria-5-score question-12g-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-12h-result">
 <th>12h</th>
 <td><span class="hidden criteria-1-score question-12h-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-12h-no">0</span><span class="hidden criteria-1-score question-12h-na">0</span></td>
 <td><span class="hidden criteria-2-score question-12h-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-12h-no">1</span><span class="hidden criteria-2-score question-12h-na">0</span></td>
@@ -1372,7 +1402,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-20-2-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-20-2-no">0</span></td>
 <td><span class="hidden criteria-5-score question-20-2-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-20-2-no">0</span></td>
 </tr>
-<tr>
+<tr id="question-21a-result">
 <th>21a</th>
 <td><span class="hidden criteria-1-score question-21a-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-21a-no">0</span><span class="hidden criteria-1-score question-21a-na">0</span></td>
 <td><span class="hidden criteria-2-score question-21a-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-21a-no">0</span><span class="hidden criteria-2-score question-21a-na">0</span></td>
@@ -1380,7 +1410,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-21a-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-21a-no">0</span><span class="hidden criteria-4-score question-21a-na">0</span></td>
 <td><span class="hidden criteria-5-score question-21a-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-21a-no">0</span><span class="hidden criteria-5-score question-21a-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-21b-result">
 <th>21b</th>
 <td><span class="hidden criteria-1-score question-21b-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-21b-no">0</span><span class="hidden criteria-1-score question-21b-na">0</span></td>
 <td><span class="hidden criteria-2-score question-21b-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-21b-no">0</span><span class="hidden criteria-2-score question-21b-na">0</span></td>
@@ -1388,7 +1418,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-21b-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-21b-no">0</span><span class="hidden criteria-4-score question-21b-na">0</span></td>
 <td><span class="hidden criteria-5-score question-21b-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-21b-no">0</span><span class="hidden criteria-5-score question-21b-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-21c-result">
 <th>21c</th>
 <td><span class="hidden criteria-1-score question-21c-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-21c-no">0</span><span class="hidden criteria-1-score question-21c-na">0</span></td>
 <td><span class="hidden criteria-2-score question-21c-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-21c-no">0</span><span class="hidden criteria-2-score question-21c-na">0</span></td>
@@ -1396,7 +1426,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-21c-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-21c-no">0</span><span class="hidden criteria-4-score question-21c-na">0</span></td>
 <td><span class="hidden criteria-5-score question-21c-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-21c-no">0</span><span class="hidden criteria-5-score question-21c-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-21d-result">
 <th>21d</th>
 <td><span class="hidden criteria-1-score question-21d-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-21d-no">0</span><span class="hidden criteria-1-score question-21d-na">0</span></td>
 <td><span class="hidden criteria-2-score question-21d-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-21d-no">0</span><span class="hidden criteria-2-score question-21d-na">0</span></td>
@@ -1404,7 +1434,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-21d-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-21d-no">0</span><span class="hidden criteria-4-score question-21d-na">0</span></td>
 <td><span class="hidden criteria-5-score question-21d-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-21d-no">0</span><span class="hidden criteria-5-score question-21d-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-21e-result">
 <th>21e</th>
 <td><span class="hidden criteria-1-score question-21e-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-21e-no">0</span><span class="hidden criteria-1-score question-21e-na">0</span></td>
 <td><span class="hidden criteria-2-score question-21e-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-21e-no">0</span><span class="hidden criteria-2-score question-21e-na">0</span></td>
@@ -1412,7 +1442,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 <td><span class="hidden criteria-4-score question-21e-yes">0</span><span class="hidden criteria-4-score criteria-4-score-max question-21e-no">0</span><span class="hidden criteria-4-score question-21e-na">0</span></td>
 <td><span class="hidden criteria-5-score question-21e-yes">0</span><span class="hidden criteria-5-score criteria-5-score-max question-21e-no">0</span><span class="hidden criteria-5-score question-21e-na">0</span></td>
 </tr>
-<tr>
+<tr id="question-21f-result">
 <th>21f</th>
 <td><span class="hidden criteria-1-score question-21f-yes">0</span><span class="hidden criteria-1-score criteria-1-score-max question-21f-no">0</span><span class="hidden criteria-1-score question-21f-na">0</span></td>
 <td><span class="hidden criteria-2-score question-21f-yes">0</span><span class="hidden criteria-2-score criteria-2-score-max question-21f-no">0</span><span class="hidden criteria-2-score question-21f-na">0</span></td>

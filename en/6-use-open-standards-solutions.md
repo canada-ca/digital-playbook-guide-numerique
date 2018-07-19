@@ -233,7 +233,7 @@ Using common, proven government solutions, approaches, and platforms will help t
 - {: .dpgn-digital-architectural-maximize-reuse-3} Achieve simplification by minimizing duplication of components and adhering to relevant standards.
 - {: .dpgn-digital-architectural-maximize-reuse-4} Inform the GC EARB about departmental investments and innovations.
 - {: .dpgn-digital-architectural-enable-interoperability-4} Run applications in containers.
-- {: .dpgn-digital-architectural-enable-interoperability-5} Leverage enterprise digital exchange components such as the GC Service Bus, Digital Exchange Platform, and the API Store based on fit-for-use).
+- {: .dpgn-digital-architectural-enable-interoperability-5} Leverage enterprise digital exchange components such as the GC Service Bus, Digital Exchange Platform, and the API Store, based on fit-for-use.
 {: .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 

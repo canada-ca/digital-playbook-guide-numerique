@@ -61,10 +61,18 @@ var componentName = "wb-calculate",
     iterate = function( operations ) {
 
       var operationsLength = operations.length,
-          operationsIndex, operation;
+          operationsIndex, operation, $target, result, outputAttribute;
       for ( operationsIndex = 0; operationsIndex < operationsLength; operationsIndex += 1 ) {
         operation = operations[ operationsIndex ];
-        $( operation[ "outputTarget" ] ).eq( 0 ).html( calculate( operation ) );
+        $target = $( operation[ "outputTarget" ] );
+        outputAttribute = operation[ "outputAttribute" ];
+        result = calculate( operation );
+
+        if ( outputAttribute ) {
+          $target.attr( outputAttribute, result ); 
+        } else {
+          $target.html( result );
+        }
       } 
     },
 
@@ -95,6 +103,7 @@ var componentName = "wb-calculate",
      * operations {Array} Optional (required for action type of "operations" for "conditional" type). Operations to execute.
      * class {String} Optional (required for action type of "addClass" or "removeClass" for "conditional" type). Class to add or remove.  
      * outputTarget {String} Optional (required for operations that output the result and for action type of "event", "addClass" or "removeClass" for "conditional" type). CSS selector for where to output the result of the operation or for where to trigger the event.
+     * outputAttribute {String} Optional (can be used for operations that output the result). Attribute on the outputTarget to update.
      */
     calculate = function( operation ) {
 
@@ -239,7 +248,7 @@ var componentName = "wb-calculate",
           let modifier = 10 ** decimalPlaces;
           value = Math.round( value * modifier ) / modifier;
         } else {
-          Math.round( value );
+          value = Math.round( value );
         }
       }
 
