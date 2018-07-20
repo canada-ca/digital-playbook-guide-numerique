@@ -6,6 +6,8 @@ if include.lang == "en" or include.lang.size < 2 and page.lang == "en" %}
   <h3 class="dpgn-data-ignore">Digital Playbook views</h3>
   <p class="dpgn-data-ignore"><a href="{{ site.baseurl }}/docs/en/views.html">Digital Playbook views</a> are generated from the <a href="https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json">Digital Playbook dataset</a> and can make the Digital Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.</p>
 
+<div class="wb-filter dpgn-data-ignore" data-wb-filter='{ "section": "section" }'>
+
 <section class="dpgn-data-ignore">
   <h4 class="dpgn-data-ignore">Scenario/task-based views</h4>
   <ul class="dpgn-data-ignore list-unstyled">
@@ -14,6 +16,13 @@ if include.lang == "en" or include.lang.size < 2 and page.lang == "en" %}
     <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/automated-decision-automatise/en/automated-decision.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-tasks mrgn-rght-sm" aria-hidden="true"></span>How should I implement an Automated Decision System? (draft)</span></a></li>
     <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/cloud-nuage/en/cloud-decision-tool.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-cloud mrgn-rght-sm" aria-hidden="true"></span>Right Cloud Decision Tool (draft)</span></a></li>
   </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Digital Standards views</h4>
+ 
+{% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" %}
+
 </section>
 
 <section class="dpgn-data-ignore">
@@ -29,16 +38,21 @@ if include.lang == "en" or include.lang.size < 2 and page.lang == "en" %}
   <h4 class="dpgn-data-ignore">Other views</h4>
   <ul class="dpgn-data-ignore lst-spcd">
     <li><a href="{{ site.baseurl }}/views-vues/comparison-comparatif/en/gc-digital-playbook-comparison-table.html">Government of Canada Digital Playbook comparison table</a></li>
-    <li><a href="{{ site.baseurl }}/views-vues/single-page-seule/en/digital-playbook.html">Government of Canada Digital Playbook (draft) - Single page view</a></li>
+    <li><a href="{{ site.baseurl }}/views-vues/single-page-seule/en/digital-standards.html">Digital Standards (draft) - Single page view</a></li>
     <li><a href="{{ site.baseurl }}/views-vues/dev-stages/en/development-stages.html">Development stages</a></li>
     <li><a href="{{ site.baseurl }}/views-vues/dev-stages/en/development-stages-checklists-only.html">Development stages - Checklists only</a></li>
   </ul>
 </section>
+
+</div>
+
 </section>
 {% elsif include.lang == "fr" or include.lang.size < 2 and page.lang == "fr" %}
 <section class="dpgn-data-ignore">
   <h3 class="dpgn-data-ignore">Vues du guide numérique</h3>
   <p class="dpgn-data-ignore">Les <a href="{{ site.baseurl }}/docs/fr/vues.html">vues du guide numérique</a> sont générés à partir du <a href="https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json">jeu de données du guide numérique</a> et peuvent rendre le guide numérique plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.</p>
+
+<div class="wb-filter dpgn-data-ignore" data-wb-filter='{ "section": "section" }'>
 
 <section class="dpgn-data-ignore">
   <h4 class="dpgn-data-ignore">Vues basées sur un scénario / une tâche</h4>
@@ -48,6 +62,13 @@ if include.lang == "en" or include.lang.size < 2 and page.lang == "en" %}
     <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/automated-decision-automatise/fr/decision-automatise.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-tasks mrgn-rght-sm" aria-hidden="true"></span>Comment dois-je mettre en place un système de décision automatisé? (ébauche)</span></a></li>
     <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/cloud-nuage/fr/nuage-outil-decisionnel.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-cloud mrgn-rght-sm" aria-hidden="true"></span>Outil décisionnel du nuage approprié (ébauche)</span></a></li>
   </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Vues basées sur les normes numériques</h4>
+  
+{% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" %}
+
 </section>
 
 <section class="dpgn-data-ignore">
@@ -63,10 +84,13 @@ if include.lang == "en" or include.lang.size < 2 and page.lang == "en" %}
   <h4 class="dpgn-data-ignore">Autres vues</h4>
   <ul class="dpgn-data-ignore lst-spcd">
     <li><a href="{{ site.baseurl }}/views-vues/comparison-comparatif/fr/tableau-comparatif-guide-numerique-gc.html">Tableau comparatif du guide numérique du gouvernement du Canada</a></li>
-    <li><a href="{{ site.baseurl }}/views-vues/single-page-seule/fr/guide-numerique.html">Guide numérique du gouvernement du Canada (ébauche) - Affichage d'une seule page</a></li>
+    <li><a href="{{ site.baseurl }}/views-vues/single-page-seule/fr/normes-numeriques.html">Normes numériques (ébauche) - Affichage d'une seule page</a></li>
     <li><a href="{{ site.baseurl }}/views-vues/dev-stages/fr/stages-developpement.html">Stages de développement</a></li>
     <li><a href="{{ site.baseurl }}/views-vues/dev-stages/fr/stages-developpement-listes-controle-seulement.html">Stages de développement - Listes de contrôle seulement</a></li>
   </ul>
 </section>
+
+</div>
+
 </section>
 {% endif %}
