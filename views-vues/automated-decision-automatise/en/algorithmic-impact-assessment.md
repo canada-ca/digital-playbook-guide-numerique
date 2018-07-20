@@ -8,10 +8,13 @@ collectionDirectory: views-vues/automated-decision-automatise
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
-
 <section>
 
+<div class="wb-inview" data-inview="progress-overlay">
+
 ## Introduction
+
+</div>
 
 Governments are increasingly looking to utilize Automated Decision Systems to make, or assist in making administrative decisions. However, questions are being raised as to how to adequately assess the impacts that these systems may have on Canadians and federal institutions. The aim of the proposed Algorithmic Impact Assessment is to develop a framework to help institutions better understand and mitigate the risks associated with Automated Decision Systems and to provide the appropriate governance, oversight and reporting/audit requirements that best match the type of application being designed. The AIA supports the TBS Standard on Automated Decision-Making.
 
@@ -829,27 +832,27 @@ In developing this proposed AIA Framework, the following three key goals have be
 
 **Questionnaire progress:**
 
-<p markdown="0" class="wb-inview" data-inview="progress-bottom"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
-  { "type": "percent", "decimalPlaces": 0, "query": "#questionnaire-progress", "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-percent-bottom", "inputs": [
+<p markdown="0"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
     { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)" },
     { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)" }
   ] },
-  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
+  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
   { "type": "conditional",
     "inputs": [
       { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
     ],
     "actions": [
-      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputEvent": "wb-update-wb-progress" }
+      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
 ] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
 
-<section markdown="0" id="progress-bottom" class="wb-overlay modal-content overlay-def wb-bar-b">
+<section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
 <header>
-<div class="mrgn-tp-md mrgn-bttm-sm h5">
+<div class="mrgn-tp-md mrgn-bttm-md h5">
 <h3 class="mrgn-tp-0 mrgn-bttm-0 mrgn-rght-md h5 pull-left">Questionnaire progress</h3>
-<progress id="questionnaire-progress-bottom" value="0" max="100"></progress> <span id="questionnaire-progress-percent-bottom">0</span>%
+<progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>%
 </div>
 </header>
 </section>

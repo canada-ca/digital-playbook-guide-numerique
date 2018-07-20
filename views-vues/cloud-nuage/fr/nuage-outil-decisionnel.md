@@ -8,8 +8,11 @@ collectionDirectory: views-vues/cloud-nuage
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
+<div class="wb-inview" data-inview="progress-overlay">
 
 Il vous est possible d’utiliser le modèle suivant afin de vous aider à décider du bon modèle de déploiement du nuage approprié pour votre contexte opérationnel.
+
+</div>
 
 <div id="right-cloud-questionnaire" class="wb-frmvld">
 <form method="post" action="#">
@@ -142,27 +145,27 @@ Il vous est possible d’utiliser le modèle suivant afin de vous aider à déci
 
 **Progrès sur le questionnaire&#160;:**
 
-<p markdown="0" class="wb-inview" data-inview="progress-bottom"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
-  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-percent-bottom", "inputs": [
+<p markdown="0"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
     { "type": "count", "query": "#right-cloud-questionnaire fieldset input:checked" },
     { "type": "count", "query": "#right-cloud-questionnaire fieldset" }
   ] },
-  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
+  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
   { "type": "conditional",
     "inputs": [
       { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
     ],
     "actions": [
-      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-bottom", "outputEvent": "wb-update-wb-progress" }
+      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
 ] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
 
-<section markdown="0" id="progress-bottom" class="wb-overlay modal-content overlay-def wb-bar-b">
+<section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
 <header>
-<div class="mrgn-tp-md mrgn-bttm-sm h5">
+<div class="mrgn-tp-md mrgn-bttm-md h5">
 <h3 class="mrgn-tp-0 mrgn-bttm-0 mrgn-rght-md h5 pull-left">Progrès sur le questionnaire</h3>
-<progress id="questionnaire-progress-bottom" value="0" max="100"></progress> <span id="questionnaire-progress-percent-bottom">0</span>%
+<progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>%
 </div>
 </header>
 </section>
