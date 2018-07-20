@@ -4,7 +4,7 @@
 
 # Government of Canada Digital Playbook (draft)
 
-([Website version of the Digital Playbook overview overview](https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html))
+([Website version of the Digital Playbook overview](https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html))
 
 Provides practical and detailed guidance to assist the Government of Canada in digital transformation and augmented service delivery, including becoming more agile, open and user-focused. Includes task-specific views and interactive features to make it easier to find relevant guidance and to apply it to day-to-day work.
 
