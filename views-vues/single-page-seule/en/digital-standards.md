@@ -1,8 +1,8 @@
 ---
 layout: default
-lang: fr
-altLang: en
-altLangPage: digital-playbook
+lang: en
+altLang: fr
+altLangPage: guide-numerique
 collectionDirectory: views-vues/single-page-seule
 title: "Digital Standards (draft) - Single page view"
 ---

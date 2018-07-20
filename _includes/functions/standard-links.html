@@ -78,7 +78,7 @@ for standardIndexString in relevantStandardsArray %}{%
     endcapture %}{% 
     assign urlOutput = standardId | strip | prepend: "#" %}{% 
   else %}{% 
-    assign urlOutput = site.baseurl | append: "/views-vues/standards-normes/" | append: site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
+    assign urlOutput = site.baseurl | append: "/views-vues/standards-normes/" | append: page.lang | append: "/" | append: site.standardFile[standardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
   endif %}{% 
   comment %}Convert the tags into classes{% endcomment %}{% 
   if listItemClasses.size > 0 %}{% 
