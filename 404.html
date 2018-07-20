@@ -46,29 +46,15 @@ assign dataSourceFr = site.data[dataVariable] %}
 <section class="col-md-6">
 <h2><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> We couldn't find that Web page (Error 404)</h2>
 <p>We're sorry you ended up here. Sometimes a page gets moved or deleted, but hopefully we can help you find what you're looking for.</p>
-{% assign standardIndex = 0 %}
 <p>Return to:</p>
-<ul>
-<li><a href="{{ site.baseurl }}{{ site.defaultView }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceEn.introduction.title }}</a></li>
-{% for standard in dataSourceEn.standards.content 
-  %}<li><a href="{{ site.baseurl }}{{ site.defaultView }}/en/{{ site.standardFile[standardIndex]['en'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>{% 
-  assign standardIndex = standardIndex | plus: 1 %}{% 
-endfor %}</ul>
-
+<p><a href="{{ site.baseurl }}{{ site.defaultView }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}" class="btn btn-primary">Overview</a></p>
 {% include views-vues.html lang="en" %}
 </section>
 <section class="col-md-6" lang="fr">
 <h2><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> Nous ne pouvons trouver cette page Web (Erreur 404)</h2>
 <p>Nous sommes désolés que vous ayez abouti ici. Il arrive parfois qu'une page ait été déplacée ou supprimée. Heureusement, nous pouvons vous aider à trouver ce que vous cherchez.</p>
-{% assign standardIndex = 0 %}
 <p>Retournez à :</p>
-<ul>
-<li><a href="{{ site.baseurl }}{{ site.defaultView }}/en/{{ site.overviewFile['en'] }}{{ site.RenderedFileExtension }}">{{ dataSourceFr.introduction.title }}</a></li>
-{% for standard in dataSourceFr.standards.content 
-  %}<li><a href="{{ site.baseurl }}{{ site.defaultView }}/fr/{{ site.standardFile[standardIndex]['fr'] }}{{ site.RenderedFileExtension }}">{{ standard.title }}</a></li>{% 
-  assign standardIndex = standardIndex | plus: 1 %}{% 
-endfor %}</ul>
-
+<p><a href="{{ site.baseurl }}{{ site.defaultView }}/fr/{{ site.overviewFile['fr'] }}{{ site.RenderedFileExtension }}" class="btn btn-primary">Aperçu</a></p>
 {% include views-vues.html lang="fr" %}
 </section>
 </div>

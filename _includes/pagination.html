@@ -10,35 +10,19 @@ endif %}{%
 if page.collectionDirectory 
     %}{% assign baseurl = baseurl | append: "/" | append: page.collectionDirectory %}{% 
 endif %}{% 
-assign overviewPath = page.lang | append: "/" | append: site.overviewFile[page.lang] %}{% 
-unless page.url contains overviewPath %}{% 
-  for standard in standards %}{% 
-    assign activeIndex = activeIndex | plus: 1 %}{% 
-    if standard.title == page.title or activeIndex == pageStandardIndex %}{% 
-      break %}{% 
-    endif %}{% 
-  endfor %}{% 
-endunless %}{% 
+for standard in standards %}{% 
+  assign activeIndex = activeIndex | plus: 1 %}{% 
+  if standard.title == page.title or activeIndex == pageStandardIndex %}{% 
+    break %}{% 
+  endif %}{% 
+endfor %}{% 
 assign prevIndex = activeIndex | minus: 1 %}{% 
 assign nextIndex = activeIndex | plus: 1 %}
 <div class="text-center">
 <ul class="pagination">{% 
-if prevIndex == -1 %}
-  <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ dataSource.introduction.title }}</span></a></li>{% 
-elsif prevIndex > -1 %}  
+if prevIndex > 0 %}  
   <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.standardFile[prevIndex][page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ standards[prevIndex].title }}</span></a></li>{% 
-endif %}
-  <li{% 
-if activeIndex == -1 
-  %} class="active"{% 
-endif 
-%}><a href="{% 
-if activeIndex == -1 
-  %}#{% 
-else 
-  %}{{ baseurl }}/{{ page.lang }}/{{ site.overviewFile[page.lang] }}{{ site.RenderedFileExtension }}{% 
-endif 
-%}">{{ dataSource.introduction.title | replace: " (draft)", "" | replace: " (ébauche)", "" }}<span class="wb-inv"> - {{ site.GoTo[page.lang] }} {{ dataSource.introduction.title }}</span></a></li>{% 
+endif %}{% 
 for standard in standards %}
   <li{% 
   if standard.title == page.title or activeIndex == standardIndex
