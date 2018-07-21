@@ -20,7 +20,7 @@ assign prevIndex = activeIndex | minus: 1 %}{%
 assign nextIndex = activeIndex | plus: 1 %}
 <div class="text-center">
 <ul class="pagination">{% 
-if prevIndex > 0 %}  
+if prevIndex > -1 %}  
   <li><a href="{{ baseurl }}/{{ page.lang }}/{{ site.standardFile[prevIndex][page.lang] }}{{ site.RenderedFileExtension }}" rel="prev">{{ site.Previous[page.lang] }}<span class="wb-inv"> - {{ standards[prevIndex].title }}</span></a></li>{% 
 endif %}{% 
 for standard in standards %}
