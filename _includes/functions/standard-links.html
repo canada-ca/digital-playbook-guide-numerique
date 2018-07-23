@@ -5,6 +5,9 @@ comment %}@param listClasses {String} Optional. Classes (separated by a space) t
 comment %}@param listItemClasses {String} Optional. Classes (separated by a space)vto add to the list items.{% endcomment %}{% 
 comment %}@param linkClasses {String} Optional. Classes (separated by a space) to add to the links.{% endcomment %}{% 
 comment %}@param subLinkClasses {String} Optional. Classes (separated by a space) to add to the link content.{% endcomment %}{% 
+comment %}@param suppressListElement {Boolean} Optional (default is false). Whether or not to suppress the ul or ol element.{% endcomment %}{% 
+comment %}@param appendText {String} Optional. Visible text to append to the end of each list item.{% endcomment %}{% 
+comment %}@param appendHiddenText {String} Optional. Hidden text (not readable by screen readers either) to append to the end of each list item.{% endcomment %}{% 
 comment %}@return {String} List of links to the Standards{% endcomment %}{% 
 assign dataVariable = site.playbookData[page.lang] %}{% 
 assign dataSource = site.data[dataVariable] %}{% 
@@ -65,9 +68,9 @@ else %}{%
   endfor %}{% 
   assign relevantStandardsArray = relevantStandards | split: "," %}{% 
 endif %}
-
-<ul{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>
-{% comment %}Only output links for the standards with indexes in relevantStandardsArray{% endcomment %}{% 
+{% unless include.suppressListElement == true %}<ul{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>
+{% endunless %}{% 
+comment %}Only output links for the standards with indexes in relevantStandardsArray{% endcomment %}{% 
 for standardIndexString in relevantStandardsArray %}{% 
   assign standardIndex = standardIndexString | plus: 0 %}{% 
   assign standard = dataSource.standards.content[standardIndex] %}{% 
@@ -95,5 +98,5 @@ for standardIndexString in relevantStandardsArray %}{%
       %}{{ include.listItemClasses }}{% 
     endif %}{% 
   endcapture 
-  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ standard.title }}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a></li>
-{% endfor %}</ul>
+  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ standard.title }}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a>{% if include.appendText %}{{ include.appendText }}{% endif %}{% if include.appendHiddenText %}<span class="hidden">{{ include.appendHiddenText }}{% endif %}</span></li>
+{% endfor %}{% unless include.suppressListElement == true %}</ul>{% endunless %}
