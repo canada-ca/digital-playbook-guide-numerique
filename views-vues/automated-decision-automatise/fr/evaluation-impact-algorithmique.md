@@ -869,8 +869,8 @@ In developing this proposed AIA Framework, the following three key goals have be
 <th>Result</th>
 </tr>
 </thead>
-<tbody>{% 
-for index in (0..4) %}{% 
+<tbody>{%
+for index in (0..4) %}{%
   assign criteriaNumber = index | plus: 1 %}
 <tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "add", "query": ".criteria-{{ criteriaNumber }}-score-max", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total" },
@@ -898,7 +898,7 @@ for index in (0..4) %}{%
           "actions": [
             { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-passed", "class": "hidden" },
             { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-failed", "class": "hidden" }
-          ] 
+          ]
         }
       ] }
     ]
@@ -909,7 +909,7 @@ for index in (0..4) %}{%
 <td><progress id="progress-criteria-{{ criteriaNumber }}" value="100" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent">100</span>%</td>
 <td><span id="criteria-{{ criteriaNumber }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span>
 <span id="criteria-{{ criteriaNumber }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span></td>
-</tr>{% 
+</tr>{%
 endfor %}
 </tbody>
 </table>
