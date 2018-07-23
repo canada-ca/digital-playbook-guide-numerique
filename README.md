@@ -12,12 +12,18 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 [Digital Playbook views](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/views.html) are generated from the [Digital Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json) and can make the Digital Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
 
-### Scenario/task-based views
+### Artificial Intelligence (AI) views
 
-- [How should I ensure my project meets GC EARB requirements? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html)
 - [Algorithmic Impact Assessment (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html)
 - [How should I implement an Automated Decision System? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/automated-decision.html)
+
+### Cloud views
+
 - [Right Cloud Decision Tool (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/cloud-nuage/en/cloud-decision-tool.html)
+
+### Digital Architectural Standards views
+
+- [How should I ensure my project meets GC EARB requirements? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html)
 
 ### Digital Standards views
 
@@ -31,19 +37,19 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 - [8. Design ethical services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/8-design-ethical-services.html)
 - [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/9-address-security-privacy-risks.html)
 - [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/10-be-good-data-stewards.html)
+- [Digital Standards (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/en/digital-standards.html)
 
-### Development stages
+### Development stage views
 
 - [Alpha stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/alpha.html)
 - [Beta stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/beta.html)
 - [Live stage](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/live.html)
+- [Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages.html)
+- [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages-checklists-only.html)
 
 ### Other views
 
 - [Government of Canada Digital Playbook comparison table](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/comparison-comparatif/en/gc-digital-playbook-comparison-table.html)
-- [Digital Standards (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/en/digital-standards.html)
-- [Development stages](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages.html)
-- [Development stages - Checklists only](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/en/development-stages-checklists-only.html)
 
 ## About the Digital Playbook
 
@@ -86,7 +92,16 @@ Fournit des conseils pratiques et détaillés pour aider le gouvernement du Cana
 
 Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/vues.html) sont générés à partir du [jeu de données du guide numérique](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json) et peuvent rendre le guide numérique plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.
 
-### Vues basées sur un scénario / une tâche
+### Vues basées sur l'intelligence artificielle (IA)
+
+- [Évaluation d'impact algorithmique (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html)
+- [Comment dois-je mettre en place un système de décision automatisé? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/decision-automatise.html)
+
+### Vues basées sur l'informatique en nuage
+
+- [Outil décisionnel du nuage approprié (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/cloud-nuage/fr/nuage-outil-decisionnel.html)
+
+### Vues basées sur les normes architecturales sur le numérique
 
 - [Comment dois-je m'assurer que mon projet respecte les exigences du CAEI GC? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html)
 - [Évaluation d'impact algorithmique (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html)
@@ -105,19 +120,19 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 - [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/8-concevoir-services-ethiques.html)
 - [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
 - [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/10-etre-bons-utilisateurs-donnees.html)
+- [Normes numériques (ébauche) - Affichage d'une seule page](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/fr/normes-numeriques.html)
 
-### Stages de développement
+### Vues basées sur les stages de développement
 
 - [Stage alpha](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/alpha.html)
 - [Stage bêta](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/beta.html)
 - [Stage en direct](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/en-direct.html)
+- [Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/stages-developpement.html)
+- [Stages de développement - Listes de contrôle seulement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/stages-developpement-listes-controle-seulement.html)
 
 ### Autres vues
 
 - [Tableau comparatif du guide numérique du gouvernement du Canada](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/comparison-comparatif/fr/tableau-comparatif-guide-numerique-gc.html)
-- [Normes numériques (ébauche) - Affichage d'une seule page](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/fr/normes-numeriques.html)
-- [Stages de développement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/stages-developpement.html)
-- [Stages de développement - Listes de contrôle seulement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/dev-stages/fr/stages-developpement-listes-controle-seulement.html)
 
 ## À propos du guide numérique
 
