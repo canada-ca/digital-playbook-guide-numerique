@@ -69,7 +69,7 @@ else %}{%
   assign relevantStandardsArray = relevantStandards | split: "," %}{% 
 endif %}
 
-{% unless include.suppressListElement == true %}{% 
+{% unless include.suppressListElement == true %}
 <ul{% if listClasses.size > 0 %} class="{{ listClasses }}"{% endif %}>{% 
 endunless %}{% 
 comment %}Only output links for the standards with indexes in relevantStandardsArray{% endcomment %}{% 
@@ -100,5 +100,5 @@ for standardIndexString in relevantStandardsArray %}{%
       %}{{ include.listItemClasses }}{% 
     endif %}{% 
   endcapture 
-  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ standard.title }}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a>{% if include.appendText %}{{ include.appendText }{% endif %}{% if include.appendHiddenText %}<span class="hidden">{{ include.hiddenText }{% endif %}</span></li>
+  %}<li{{ classOutput | rstrip }}><a href="{{ urlOutput }}"{% if linkClasses.size > 0 %} class="{{ linkClasses }}"{% endif %}>{% if subLinkClasses.size > 0 %}<span class="{{ subLinkClasses }}">{% endif %}{{ standard.title }}{% if subLinkClasses.size > 0 %}</span>{% endif %}</a>{% if include.appendText %}{{ include.appendText }{% endif %}{% if include.appendHiddenText %}<span class="hidden">{{ include.appendHiddenText }{% endif %}</span></li>
 {% endfor %}{% unless include.suppressListElement == true %}</ul>{% endunless %}
