@@ -831,14 +831,13 @@ In developing this proposed AIA Framework, the following three key goals have be
 
 ## Results
 
-**Questionnaire progress:**
+<section>
+<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">Questionnaire completed:</h3>
 
-<p markdown="0"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
-  { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)", "outputTarget": "#required-questions-answered, #required-questions-answered-overlay" },
-  { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)", "outputTarget": "#required-questions-total, #required-questions-total-overlay" },
+<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
-    { "type": "number", "query": "#required-questions-answered" },
-    { "type": "number", "query": "#required-questions-total" }
+    { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)", "outputTarget": "#required-questions-answered, #required-questions-answered-overlay" },
+    { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)", "outputTarget": "#required-questions-total, #required-questions-total-overlay" }
   ] },
   { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
   { "type": "conditional",
@@ -849,13 +848,14 @@ In developing this proposed AIA Framework, the following three key goals have be
       { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
-] }'></progress> <span id="questionnaire-progress-percent">0</span>%<span class="hidden"> (<span id="required-questions-answered">0</span> of <span id="required-questions-total">0</span> required questions answered)</span></p>
+] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
+</section>
 
 <section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
 <header>
-<div class="mrgn-tp-md mrgn-bttm-md h5">
-<h3 class="mrgn-tp-0 mrgn-bttm-0 mrgn-rght-md h5 pull-left">Questionnaire progress</h3>
-<progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>%<span class="hidden"> (<span id="required-questions-answered-overlay">0</span> of <span id="required-questions-total-overlay">0</span> required questions answered)</span>
+<div class="h6 mrgn-tp-md mrgn-bttm-md">
+<h3 class="h6 mrgn-tp-0 mrgn-bttm-0 mrgn-rght-sm pull-left">Questionnaire completed:</h3>
+<p><progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>%</p>
 </div>
 </header>
 </section>
@@ -905,7 +905,7 @@ for index in (0..4) %}{%
   }
  ] }'>
 <td>{{ page.aiaCriteria[ index ] }}</td>
-<td><span id="criteria-{{ criteriaNumber }}-score-total">0</span> / <span id="criteria-{{ criteriaNumber }}-max-total">0</span></td>
+<td><span id="criteria-{{ criteriaNumber }}-score-total">0</span> of <span id="criteria-{{ criteriaNumber }}-max-total">0</span></td>
 <td><progress id="progress-criteria-{{ criteriaNumber }}" value="100" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent">100</span>%</td>
 <td><span id="criteria-{{ criteriaNumber }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span>
 <span id="criteria-{{ criteriaNumber }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span></td>
@@ -922,11 +922,11 @@ endfor %}
 <thead>
 <tr>
 <th>Question</th>
-<th>Impact on Individuals and Entities</th>
-<th>Impact on Government Solutions</th>
-<th>Data Management</th>
-<th>Due Process</th>
-<th>Complexity</th>
+<th>{{ page.aiaCriteria[ 0 ] }}</th>
+<th>{{ page.aiaCriteria[ 1 ] }}</th>
+<th>{{ page.aiaCriteria[ 2 ] }}</th>
+<th>{{ page.aiaCriteria[ 3 ] }}</th>
+<th>{{ page.aiaCriteria[ 4 ] }}</th>
 </tr>
 </thead>
 <tbody>

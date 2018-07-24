@@ -5,6 +5,9 @@ lang: fr
 altLang: en
 altLangPage: cloud-decision-tool
 collectionDirectory: views-vues/cloud-nuage
+cloudTypes: [ "public-cloud", "private-cloud", "non-cloud" ]
+criteriaTitles: [ "Délicatesse", "Financier", "Legs", "Commercialisé", "Endroit", "Connectivité", "Rapidité", "Longévité", "Elasticité", "Innovation", "Dév. opérations" ]
+criteriaTags: [ "sensitivity", "financial", "legacy", "commoditized", "location", "connectivity", "speed", "longevity", "elasticity", "innovation", "devops" ]
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
@@ -19,7 +22,7 @@ Il vous est possible d’utiliser le modèle suivant afin de vous aider à déci
 
 <section>
 
-## Mandatory
+## Obligatoire
 
 <!-- Question 1 -->
 <div id="question-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas":"radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".sensitivity-result > span", "class": "hidden" } }'>
@@ -143,9 +146,10 @@ Il vous est possible d’utiliser le modèle suivant afin de vous aider à déci
 
 ## Résultats
 
-**Progrès sur le questionnaire&#160;:**
+<section>
+<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">Questionnaire complété&#160;:</h3>
 
-<p markdown="0"><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
     { "type": "count", "query": "#right-cloud-questionnaire fieldset input:checked" },
     { "type": "count", "query": "#right-cloud-questionnaire fieldset" }
@@ -159,13 +163,14 @@ Il vous est possible d’utiliser le modèle suivant afin de vous aider à déci
       { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
-] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
+] }'></progress> <span id="questionnaire-progress-percent">0</span>&#160;%</p>
+</section>
 
 <section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
 <header>
-<div class="mrgn-tp-md mrgn-bttm-md h5">
-<h3 class="mrgn-tp-0 mrgn-bttm-0 mrgn-rght-md h5 pull-left">Progrès sur le questionnaire</h3>
-<progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>%
+<div class="h6 mrgn-tp-md mrgn-bttm-md">
+<h3 class="h6 mrgn-tp-0 mrgn-bttm-0 mrgn-rght-sm pull-left">Questionnaire complété&#160;:</h3>
+<p><progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>&#160;%</p>
 </div>
 </header>
 </section>
@@ -181,95 +186,69 @@ Il vous est possible d’utiliser le modèle suivant afin de vous aider à déci
 </tr>
 </thead>
 <tbody>
-<tr>
-<th headers="r1h1" id="r2h1" rowspan="3"><strong>Obligatoire</strong></th>
-<th headers="r1h2" id="r2h2"><strong>Délicatesse</strong></th>
-<td headers="r1h3 r2h1 r2h2" class="sensitivity-result"><span id="public-cloud-sensitivity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="public-cloud-sensitivity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-<td headers="r1h4 r2h1 r2h2" class="sensitivity-result"><span id="private-cloud-sensitivity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="private-cloud-sensitivity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-<td headers="r1h5 r2h1 r2h2" class="sensitivity-result"><span id="non-cloud-sensitivity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="non-cloud-sensitivity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-</tr>
+{% for index in (0..2) %}{%
+  assign headerNumber = index | plus: 2 %}{%
+  assign criteriaTitle = page.criteriaTitles[ index ] %}{%
+  assign criteriaTag = page.criteriaTags[ index ]
+%}<tr>{%
+if index == 0 %}
+<th headers="r1h1" id="r2h1" rowspan="3"><strong>Obligatoire</strong></th>{%
+endif %}
+<th headers="r1h2" id="r2h{{ headerNumber }}"><strong>{{ criteriaTitle }}</strong></th>{%
+  for cloudIndex in (0..2) %}{%
+    assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
+    assign cloudType = page.cloudTypes[ cloudIndex ] %}
+<td headers="r1h{{ cloudHeaderNumber}} r2h1 r2h{{ headerNumber }}" class="{{ criteriaTag }}-result"><span id="{{ cloudType }}-{{ criteriaTag }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="{{ cloudType }}-{{ criteriaTag }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>{%
+  endfor %}
+</tr>{%
+endfor %}
+
+{% for index in (3..5) %}{%
+  assign headerNumber = index | minus: 1 %}{%
+  assign criteriaTitle = page.criteriaTitles[ index ] %}{%
+  assign criteriaTag = page.criteriaTags[ index ]
+%}<tr>{%
+if index == 3 %}
+<th headers="r1h1" id="r3h1" rowspan="3"><strong>Bien coté</strong><br /> [20 points chacun]</th>{%
+endif %}
+<th headers="r1h2" id="r3h{{ headerNumber }}"><strong>{{ criteriaTitle }}</strong></th>{%
+  for cloudIndex in (0..2) %}{%
+    assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
+    assign cloudType = page.cloudTypes[ cloudIndex ] %}
+<td headers="r1h{{ cloudHeaderNumber }} r3h1 r3h{{ headerNumber }}" class="{{ criteriaTag }}-result"><span id="{{ cloudType }}-{{ criteriaTag }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="{{ cloudType }}-{{ criteriaTag }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>{%
+  endfor %}
+</tr>{%
+endfor %}
+
+{% for index in (6..10) %}{%
+  assign headerNumber = index | minus: 4 %}{%
+  assign criteriaTitle = page.criteriaTitles[ index ] %}{%
+  assign criteriaTag = page.criteriaTags[ index ]
+%}<tr>{%
+if index == 6 %}
+<th headers="r1h1" id="r4h1" rowspan="5"><strong>Coté</strong><br /> [10 points chacun]</th>{%
+endif %}
+<th headers="r1h2" id="r4h{{ headerNumber }}"><strong>{{ criteriaTitle }}</strong></th>{%
+  for cloudIndex in (0..2) %}{%
+    assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
+    assign cloudType = page.cloudTypes[ cloudIndex ] %}
+<td headers="r1h{{ cloudHeaderNumber }} r4h1 r4h{{ headerNumber }}" class="{{ criteriaTag }}-result"><span id="{{ cloudType }}-{{ criteriaTag }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="{{ cloudType }}-{{ criteriaTag }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>{%
+  endfor %}
+</tr>{%
+endfor %}
 
 <tr>
-<th headers="r1h2" id="r2h3"><strong>Financier</strong></th>
-<td headers="r1h3 r2h1 r2h3" class="financial-result"><span id="public-cloud-financial-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="public-cloud-financial-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-<td headers="r1h4 r2h1 r2h3" class="financial-result"><span id="private-cloud-financial-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="private-cloud-financial-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-<td headers="r1h5 r2h1 r2h3" class="financial-result"><span id="non-cloud-financial-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="non-cloud-financial-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-</tr>
-
-<tr>
-<th headers="r1h2" id="r2h4"><strong>Legs</strong></th>
-<td headers="r1h3 r2h1 r2h4" class="legacy-result"><span id="public-cloud-legacy-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="public-cloud-legacy-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-<td headers="r1h4 r2h1 r2h4" class="legacy-result"><span id="private-cloud-legacy-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="private-cloud-legacy-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-<td headers="r1h5 r2h1 r2h4" class="legacy-result"><span id="non-cloud-legacy-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="non-cloud-legacy-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span></td>
-</tr>
-
-<tr>
-<th headers="r1h1" id="r3h1" rowspan="3"><strong>Bien coté</strong><br /> [20 points chacun]</th>
-<th headers="r1h2" id="r3h2"><strong>Commercialisé</strong></th>
-<td headers="r1h3 r3h1 r3h2" class="commoditized-result"><span id="public-cloud-commoditized-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="public-cloud-commoditized-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h4 r3h1 r3h2" class="commoditized-result"><span id="private-cloud-commoditized-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="private-cloud-commoditized-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h5 r3h1 r3h2" class="commoditized-result"><span id="non-cloud-commoditized-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="non-cloud-commoditized-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-</tr>
-
-<tr>
-<th headers="r1h2" id="r3h3"><strong>Endroit</strong></th>
-<td headers="r1h3 r3h1 r3h3" class="location-result"><span id="public-cloud-location-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="public-cloud-location-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h4 r3h1 r3h3" class="location-result"><span id="private-cloud-location-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="private-cloud-location-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h5 r3h1 r3h3" class="location-result"><span id="non-cloud-location-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="non-cloud-location-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-</tr>
-
-<tr>
-<th headers="r1h2" id="r3h4"><strong>Connectivité</strong></th>
-<td headers="r1h3 r3h1 r3h4" class="connectivity-result"><span id="public-cloud-connectivity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="public-cloud-connectivity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h4 r3h1 r3h4" class="connectivity-result"><span id="private-cloud-connectivity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="private-cloud-connectivity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h5 r3h1 r3h4" class="connectivity-result"><span id="non-cloud-connectivity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 points</span><span id="non-cloud-connectivity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-</tr>
-
-<tr>
-<th headers="r1h1" id="r4h1" rowspan="5"><strong>Coté</strong><br /> [10 points chacun]</th>
-<th headers="r1h2" id="r4h2"><strong>Rapidité</strong></th>
-<td headers="r1h3 r4h1 r4h2" class="speed-result"><span id="public-cloud-speed-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="public-cloud-speed-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h4 r4h1 r4h2" class="speed-result"><span id="private-cloud-speed-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="private-cloud-speed-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h5 r4h1 r4h2" class="speed-result"><span id="non-cloud-speed-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="non-cloud-speed-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-</tr>
-
-<tr>
-<th headers="r1h2" id="r4h3"><strong>Longévité</strong></th>
-<td headers="r1h3 r4h1 r4h3" class="longevity-result"><span id="public-cloud-longevity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="public-cloud-longevity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h4 r4h1 r4h3" class="longevity-result"><span id="private-cloud-longevity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="private-cloud-longevity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h5 r4h1 r4h3" class="longevity-result"><span id="non-cloud-longevity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="non-cloud-longevity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-</tr>
-
-<tr>
-<th headers="r1h2" id="r4h4"><strong>Élasticité</strong></th>
-<td headers="r1h3 r4h1 r4h4" class="elasticity-result"><span id="public-cloud-elasticity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="public-cloud-elasticity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h4 r4h1 r4h4" class="elasticity-result"><span id="private-cloud-elasticity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="private-cloud-elasticity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h5 r4h1 r4h4" class="elasticity-result"><span id="non-cloud-elasticity-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="non-cloud-elasticity-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-</tr>
-
-<tr>
-<th headers="r1h2" id="r4h5"><strong>Innovation</strong></th>
-<td headers="r1h3 r4h1 r4h5" class="innovation-result"><span id="public-cloud-innovation-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="public-cloud-innovation-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h4 r4h1 r4h5" class="innovation-result"><span id="private-cloud-innovation-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="private-cloud-innovation-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h5 r4h1 r4h5" class="innovation-result"><span id="non-cloud-innovation-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="non-cloud-innovation-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-</tr>
-
-<tr>
-<th headers="r1h2" id="r4h6"><strong>Dév. opérations</strong></th>
-<td headers="r1h3 r4h1 r4h6" class="devops-result"><span id="public-cloud-devops-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="public-cloud-devops-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h4 r4h1 r4h6" class="devops-result"><span id="private-cloud-devops-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="private-cloud-devops-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-<td headers="r1h5 r4h1 r4h6" class="devops-result"><span id="non-cloud-devops-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 points</span><span id="non-cloud-devops-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 points</span></td>
-</tr>
-
-<tr>
-<th headers="r1h1" id="r5h1" rowspan="2"><strong>Summary</strong></th>
-<th headers="r1h2" id="r5h2"><strong>Obligatoire respecté</strong></th>
-<td headers="r1h3 r5h1 r5h2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
-  { "type": "count", "increment": 1, "query": "#public-cloud-sensitivity-passed:not(.hidden), #public-cloud-financial-passed:not(.hidden), #public-cloud-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-public-cloud" },
-  { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-mandatory-public-cloud" }, 3], "outputTarget": "#percent-mandatory-public-cloud" },
-  { "type": "number", "decimalPlaces": 0, "query": "#percent-mandatory-public-cloud", "outputTarget": "#progress-mandatory-public-cloud", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
-    "actions": [ { "type": "event", "outputTarget": "#progress-mandatory-public-cloud", "outputEvent": "wb-update-wb-progress" } ]
+<th headers="r1h1" id="r5h1" rowspan="2"><strong>Sommaire</strong></th>
+<th headers="r1h2" id="r5h2"><strong>Obligatoire respecté</strong></th>{%
+for index in (0..2) %}{%
+  assign headerNumber = index | plus: 3 %}{%
+  assign cloudType = page.cloudTypes[ index ] %}
+<td headers="r1h{{ headerNumber }} r5h1 r5h2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+  { "type": "count", "increment": 1, "query": "#{{ cloudType }}-sensitivity-passed:not(.hidden), #{{ cloudType }}-financial-passed:not(.hidden), #{{ cloudType }}-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-{{ cloudType }}" },
+  { "type": "percent", "decimalPlaces": 1, "inputs": [ { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3 ], "outputTarget": "#percent-mandatory-{{ cloudType }}" },
+  { "type": "number", "decimalPlaces": 0, "query": "#percent-mandatory-{{ cloudType }}", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputAttribute": "value" },
+  { "type": "conditional", "inputs": [ { "type": ">", "inputs": [ { "type": "number", "query": "#percent-mandatory-{{ criteriaNumber }}" }, 0 ] } ],
+    "actions": [ { "type": "event", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" } ]
   },
   { "type": "conditional", "inputs": [
       { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1] },
@@ -277,75 +256,28 @@ Il vous est possible d’utiliser le modèle suivant afin de vous aider à déci
       { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, 1] }
     ],
     "actions": [
-      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-public-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-failed"}, { "type":  "removeClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-passed"}] },
-      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-public-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-public-cloud-failed"}] }
+      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"}, { "type":  "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"}] },
+      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"}] }
     ]
   }
-] }'><span id="tally-mandatory-public-cloud">0</span> / 3 (<span id="percent-mandatory-public-cloud">0</span>&#160;%)<span id="mandatory-public-cloud-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="mandatory-public-cloud-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span><div><progress id="progress-mandatory-public-cloud" value="0" max="100"></progress></div></td>
-<td headers="r1h4 r5h1 r5h2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
-  { "type": "count", "increment": 1, "query": "#private-cloud-sensitivity-passed:not(.hidden), #private-cloud-financial-passed:not(.hidden), #private-cloud-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-private-cloud" },
-  { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-mandatory-private-cloud" }, 3], "outputTarget": "#percent-mandatory-private-cloud" },
-  { "type": "number", "decimalPlaces": 0, "query": "#percent-mandatory-private-cloud", "outputTarget": "#progress-mandatory-private-cloud", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
-    "actions": [ { "type": "event", "outputTarget": "#progress-mandatory-private-cloud", "outputEvent": "wb-update-wb-progress" } ]
-  },
-  { "type": "conditional", "inputs": [
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, 1] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, 1] }
-    ],
-    "actions": [
-      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-private-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-failed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-passed"}] },
-      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-private-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-private-cloud-failed"}] }
-    ]
-  }
-] }'><span id="tally-mandatory-private-cloud">0</span> / 3 (<span id="percent-mandatory-private-cloud">0</span>&#160;%)<span id="mandatory-private-cloud-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="mandatory-private-cloud-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span><div><progress id="progress-mandatory-private-cloud" value="0" max="100"></progress></div></td>
-<td headers="r1h5 r5h1 r5h2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
-  { "type": "count", "increment": 1, "query": "#non-cloud-sensitivity-passed:not(.hidden), #non-cloud-financial-passed:not(.hidden), #non-cloud-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-non-cloud" },
-  { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-mandatory-non-cloud" }, 3], "outputTarget": "#percent-mandatory-non-cloud" },
-  { "type": "number", "decimalPlaces": 0, "query": "#percent-mandatory-non-cloud", "outputTarget": "#progress-mandatory-non-cloud", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
-    "actions": [ { "type": "event", "outputTarget": "#progress-mandatory-non-cloud", "outputEvent": "wb-update-wb-progress" } ]
-  },
-  { "type": "conditional", "inputs": [
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, 1] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, 1] }
-    ],
-    "actions": [
-      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-non-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-failed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-passed"}] },
-      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-non-cloud"}, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-non-cloud-failed"}] }
-    ]
-  }
-] }'><span id="tally-mandatory-non-cloud">0</span> / 3 (<span id="percent-mandatory-non-cloud">0</span>&#160;%)<span id="mandatory-non-cloud-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="mandatory-non-cloud-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span><div><progress id="progress-mandatory-non-cloud" value="0" max="100"></progress></div></td>
+] }'><span id="tally-mandatory-{{ cloudType }}">0</span> de 3 (<span id="percent-mandatory-{{ cloudType }}">0</span>&#160;%)<span id="mandatory-{{ cloudType }}-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passé</span><span id="mandatory-{{ cloudType }}-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Échoué</span><div><progress id="progress-mandatory-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
+endfor %}
 </tr>
 
 <tr>
-<th headers="r1h2" id="r5h3"><strong>Totaux cotés</strong></th>
-<td headers="r1h3 r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
-  { "type": "add", "inputs": [{ "type": "count", "increment": 20, "query": "#public-cloud-commoditized-passed:not(.hidden), #public-cloud-location-passed:not(.hidden), #public-cloud-connectivity-passed:not(.hidden)" }, { "type": "count", "increment": 10, "query": "#public-cloud-speed-passed:not(.hidden), #public-cloud-longevity-passed:not(.hidden), #public-cloud-elasticity-passed:not(.hidden), #public-cloud-innovation-passed:not(.hidden), #public-cloud-devops-passed:not(.hidden)" }], "outputTarget": "#tally-rated-public-cloud" },
-  { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-rated-public-cloud" }, 110], "outputTarget": "#percent-rated-public-cloud" },
-  { "type": "number", "decimalPlaces": 0, "query": "#percent-rated-public-cloud", "outputTarget": "#progress-rated-public-cloud", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
-    "actions": [ { "type": "event", "outputTarget": "#progress-rated-public-cloud", "outputEvent": "wb-update-wb-progress" } ]
+<th headers="r1h2" id="r5h3"><strong>Totaux cotés</strong></th>{%
+for index in (0..2) %}{%
+  assign headerNumber = index | plus: 3 %}{%
+  assign cloudType = page.cloudTypes[ index ] %}
+<td headers="r1h{{ headerNumber }} r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+  { "type": "add", "inputs": [{ "type": "count", "increment": 20, "query": "#{{ cloudType }}-commoditized-passed:not(.hidden), #{{ cloudType }}-location-passed:not(.hidden), #{{ cloudType }}-connectivity-passed:not(.hidden)" }, { "type": "count", "increment": 10, "query": "#{{ cloudType }}-speed-passed:not(.hidden), #{{ cloudType }}-longevity-passed:not(.hidden), #{{ cloudType }}-elasticity-passed:not(.hidden), #{{ cloudType }}-innovation-passed:not(.hidden), #{{ cloudType }}-devops-passed:not(.hidden)" }], "outputTarget": "#tally-rated-{{ cloudType }}" },
+  { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-rated-{{ cloudType }}" }, 110], "outputTarget": "#percent-rated-{{ cloudType }}" },
+  { "type": "number", "decimalPlaces": 0, "query": "#percent-rated-{{ cloudType }}", "outputTarget": "#progress-rated-{{ cloudType }}", "outputAttribute": "value" },
+  { "type": "conditional", "inputs": [ { "type": ">", "inputs": [ { "type": "number", "query": "#percent-rated-{{ criteriaNumber }}" }, 0 ] } ],
+    "actions": [ { "type": "event", "outputTarget": "#progress-rated-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" } ]
   }
-] }'><span id="tally-rated-public-cloud">0</span> / 110 (<span id="percent-rated-public-cloud">0</span>&#160;%)<div><progress id="progress-rated-public-cloud" value="0" max="100"></progress></div></td>
-<td headers="r1h4 r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
-  { "type": "add", "inputs": [{ "type": "count", "increment": 20, "query": "#private-cloud-commoditized-passed:not(.hidden), #private-cloud-location-passed:not(.hidden), #private-cloud-connectivity-passed:not(.hidden)" }, { "type": "count", "increment": 10, "query": "#private-cloud-speed-passed:not(.hidden), #private-cloud-longevity-passed:not(.hidden), #private-cloud-elasticity-passed:not(.hidden), #private-cloud-innovation-passed:not(.hidden), #private-cloud-devops-passed:not(.hidden)" }], "outputTarget": "#tally-rated-private-cloud" },
-  { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-rated-private-cloud" }, 110], "outputTarget": "#percent-rated-private-cloud" },
-  { "type": "number", "decimalPlaces": 0, "query": "#percent-rated-private-cloud", "outputTarget": "#progress-rated-private-cloud", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
-    "actions": [ { "type": "event", "outputTarget": "#progress-rated-private-cloud", "outputEvent": "wb-update-wb-progress" } ]
-  }
-] }'><span id="tally-rated-private-cloud">0</span> / 110 (<span id="percent-rated-private-cloud">0</span>&#160;%)<div><progress id="progress-rated-private-cloud" value="0" max="100"></progress></div></td>
-<td headers="r1h5 r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
-  { "type": "add", "inputs": [{ "type": "count", "increment": 20, "query": "#non-cloud-commoditized-passed:not(.hidden), #non-cloud-location-passed:not(.hidden), #non-cloud-connectivity-passed:not(.hidden)" }, { "type": "count", "increment": 10, "query": "#non-cloud-speed-passed:not(.hidden), #non-cloud-longevity-passed:not(.hidden), #non-cloud-elasticity-passed:not(.hidden), #non-cloud-innovation-passed:not(.hidden), #non-cloud-devops-passed:not(.hidden)" }], "outputTarget": "#tally-rated-non-cloud" },
-  { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-rated-non-cloud" }, 110], "outputTarget": "#percent-rated-non-cloud" },
-  { "type": "number", "decimalPlaces": 0, "query": "#percent-rated-non-cloud", "outputTarget": "#progress-rated-non-cloud", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] } ],
-    "actions": [ { "type": "event", "outputTarget": "#progress-rated-non-cloud", "outputEvent": "wb-update-wb-progress" } ]
-  }
-] }'><span id="tally-rated-non-cloud">0</span> / 110 (<span id="percent-rated-non-cloud">0</span>&#160;%)<div><progress id="progress-rated-non-cloud" value="0" max="100"></progress></div></td>
+] }'><span id="tally-rated-{{ cloudType }}">0</span> de 110 (<span id="percent-rated-{{ cloudType }}">0</span>&#160;%)<div><progress id="progress-rated-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
+endfor %}
 </tr>
 </tbody>
 </table>
