@@ -832,9 +832,7 @@ In developing this proposed AIA Framework, the following three key goals have be
 ## Results
 
 <section>
-
-### Questionnaire completed:
-{: .h5 .mrgn-bttm-0 .mrgn-tp-0 .mrgn-rght-sm .pull-left}
+<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">Questionnaire completed:</h3>
 
 <p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [

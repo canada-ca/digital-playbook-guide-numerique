@@ -147,9 +147,7 @@ Il vous est possible d’utiliser le modèle suivant afin de vous aider à déci
 ## Résultats
 
 <section>
-
-### Questionnaire complété&#160;:
-{: .h5 .mrgn-bttm-0 .mrgn-tp-0 .mrgn-rght-sm .pull-left}
+<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">Questionnaire complété&#160;:</h3>
 
 <p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
@@ -225,7 +223,7 @@ endfor %}
 {% for index in (6..10) %}{%
   assign headerNumber = index | minus: 4 %}{%
   assign criteriaTitle = page.criteriaTitles[ index ] %}{%
-  assign criteriaTag = page.criteriaTags[ index ] 
+  assign criteriaTag = page.criteriaTags[ index ]
 %}<tr>{%
 if index == 6 %}
 <th headers="r1h1" id="r4h1" rowspan="5"><strong>Coté</strong><br /> [10 points chacun]</th>{%
@@ -244,7 +242,7 @@ endfor %}
 <th headers="r1h2" id="r5h2"><strong>Obligatoire respecté</strong></th>{%
 for index in (0..2) %}{%
   assign headerNumber = index | plus: 3 %}{%
-  assign cloudType = page.cloudTypes[ index ] %} 
+  assign cloudType = page.cloudTypes[ index ] %}
 <td headers="r1h{{ headerNumber }} r5h1 r5h2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
   { "type": "count", "increment": 1, "query": "#{{ cloudType }}-sensitivity-passed:not(.hidden), #{{ cloudType }}-financial-passed:not(.hidden), #{{ cloudType }}-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-{{ cloudType }}" },
   { "type": "percent", "decimalPlaces": 1, "inputs": [ { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3 ], "outputTarget": "#percent-mandatory-{{ cloudType }}" },
@@ -270,7 +268,7 @@ endfor %}
 <th headers="r1h2" id="r5h3"><strong>Totaux cotés</strong></th>{%
 for index in (0..2) %}{%
   assign headerNumber = index | plus: 3 %}{%
-  assign cloudType = page.cloudTypes[ index ] %} 
+  assign cloudType = page.cloudTypes[ index ] %}
 <td headers="r1h{{ headerNumber }} r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
   { "type": "add", "inputs": [{ "type": "count", "increment": 20, "query": "#{{ cloudType }}-commoditized-passed:not(.hidden), #{{ cloudType }}-location-passed:not(.hidden), #{{ cloudType }}-connectivity-passed:not(.hidden)" }, { "type": "count", "increment": 10, "query": "#{{ cloudType }}-speed-passed:not(.hidden), #{{ cloudType }}-longevity-passed:not(.hidden), #{{ cloudType }}-elasticity-passed:not(.hidden), #{{ cloudType }}-innovation-passed:not(.hidden), #{{ cloudType }}-devops-passed:not(.hidden)" }], "outputTarget": "#tally-rated-{{ cloudType }}" },
   { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-rated-{{ cloudType }}" }, 110], "outputTarget": "#percent-rated-{{ cloudType }}" },
