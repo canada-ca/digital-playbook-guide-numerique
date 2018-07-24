@@ -934,7 +934,7 @@ endfor %}
 <tbody>
 <tr id="question-1a-result" class="question-1-checkbox-score">
 <th>1a</th>
-<td><span class="hidden criteria-1-score question-1a-yes criteria-1-score-max">1</span><span class="criteria-1-score question-1a-no">0</span></td>
+<td><span class="hidden criteria-1-score criteria-1-score-max question-1a-yes">1</span><span class="criteria-1-score question-1a-no">0</span></td>
 <td><span class="hidden criteria-2-score criteria-2-score-max question-1a-yes">1</span><span class="criteria-2-score question-1a-no">0</span></td>
 <td><span class="hidden criteria-3-score criteria-3-score-max question-1a-yes">0</span><span class="criteria-3-score question-1a-no">0</span></td>
 <td><span class="hidden criteria-4-score criteria-4-score-max question-1a-yes">1</span><span class="criteria-4-score question-1a-no">0</span></td>
