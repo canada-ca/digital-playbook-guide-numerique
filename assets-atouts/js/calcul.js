@@ -89,7 +89,7 @@ var componentName = "wb-calculate",
      * - subtract: Calculate the result of subtracting two or more numbers in sequence (e.g., a - b - c) 
      * - multiply: Calculate the result of multiplying two or more numbers in sequence (e.g., a * b * c)
      * - divide: Calculate the result of dividing two or more numbers in sequence (e.g., a / b / c)
-     * - power: Calculate the result of the powers of two or more numbers in sequence (e.g., a ** b ** c)
+     * - power: Calculate the result of the powers of two or more numbers in sequence (e.g., ab = Math.pow( a, b ), abc = Math.pow( ab, c ))
      * - modulus: Calculate the result of the modulus of two or more numbers in sequence (e.g., a % b % c )
      * - conditional: Perform an action of "actionType" if all conditions in "inputs" are met. 
      * decimalPlaces {Integer} Optional (defaults to unlimited). Number of decimal plays to allow for the result.
@@ -186,7 +186,7 @@ var componentName = "wb-calculate",
         } else if ( type === "power" ) {
           value = calculate( inputs[ 0 ] );
           for ( index = 1; index < inputsLength; index += 1 ) {
-            value = Math( value, calculate( inputs[ index ] ) );
+            value = Math.pow( value, calculate( inputs[ index ] ) );
           }
         } else if ( type === "modulus" ) {
           value = calculate( inputs[ 0 ] );
@@ -251,7 +251,7 @@ var componentName = "wb-calculate",
 
       if ( !Number.isInteger( value ) && Number.isInteger( decimalPlaces ) && decimalPlaces >= 0 ) {
         if ( decimalPlaces > 0 ) {
-          let modifier = 10 ** decimalPlaces;
+          let modifier = Math.pow( 10, decimalPlaces );
           value = Math.round( value * modifier ) / modifier;
         } else {
           value = Math.round( value );
