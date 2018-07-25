@@ -180,9 +180,9 @@ To help organize the decision of which cloud deployment model is the right deplo
 <tr>
 <th id="r1h1">Impact Level</th>
 <th id="r1h2">Criteria</th>
-<th id="r1h3"><strong>Public</strong></th>
-<th id="r1h4"><strong>Private</strong></th>
-<th id="r1h5"><strong>Non-Cloud</strong></th>
+<th id="r1h3">Public</th>
+<th id="r1h4">Private</th>
+<th id="r1h5">Non-Cloud</th>
 </tr>
 </thead>
 <tbody>
@@ -192,9 +192,9 @@ To help organize the decision of which cloud deployment model is the right deplo
   assign criteriaTag = page.criteriaTags[ index ]
 %}<tr>{%
 if index == 0 %}
-<th headers="r1h1" id="r2h1" rowspan="3"><strong>Mandatory</strong></th>{%
+<th headers="r1h1" id="r2h1" rowspan="3">Mandatory</th>{%
 endif %}
-<th headers="r1h2" id="r2h{{ headerNumber }}"><strong>{{ criteriaTitle }}</strong></th>{%
+<th headers="r1h2" id="r2h{{ headerNumber }}">{{ criteriaTitle }}</th>{%
   for cloudIndex in (0..2) %}{%
     assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
     assign cloudType = page.cloudTypes[ cloudIndex ] %}
@@ -209,9 +209,9 @@ endfor %}
   assign criteriaTag = page.criteriaTags[ index ]
 %}<tr>{%
 if index == 3 %}
-<th headers="r1h1" id="r3h1" rowspan="3"><strong>Highly Rated</strong><br /> [20 points each]</th>{%
+<th headers="r1h1" id="r3h1" rowspan="3">Highly Rated<br /> [20 points each]</th>{%
 endif %}
-<th headers="r1h2" id="r3h{{ headerNumber }}"><strong>{{ criteriaTitle }}</strong></th>{%
+<th headers="r1h2" id="r3h{{ headerNumber }}">{{ criteriaTitle }}</th>{%
   for cloudIndex in (0..2) %}{%
     assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
     assign cloudType = page.cloudTypes[ cloudIndex ] %}
@@ -226,9 +226,9 @@ endfor %}
   assign criteriaTag = page.criteriaTags[ index ]
 %}<tr>{%
 if index == 6 %}
-<th headers="r1h1" id="r4h1" rowspan="5"><strong>Rated</strong><br /> [10 points each]</th>{%
+<th headers="r1h1" id="r4h1" rowspan="5">Rated<br /> [10 points each]</th>{%
 endif %}
-<th headers="r1h2" id="r4h{{ headerNumber }}"><strong>{{ criteriaTitle }}</strong></th>{%
+<th headers="r1h2" id="r4h{{ headerNumber }}">{{ criteriaTitle }}</th>{%
   for cloudIndex in (0..2) %}{%
     assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
     assign cloudType = page.cloudTypes[ cloudIndex ] %}
@@ -238,8 +238,8 @@ endif %}
 endfor %}
 
 <tr>
-<th headers="r1h1" id="r5h1" rowspan="2"><strong>Summary</strong></th>
-<th headers="r1h2" id="r5h2"><strong>Mandatory Met</strong></th>{%
+<th headers="r1h1" id="r5h1" rowspan="2">Summary</th>
+<th headers="r1h2" id="r5h2">Mandatory Met</th>{%
 for index in (0..2) %}{%
   assign headerNumber = index | plus: 3 %}{%
   assign cloudType = page.cloudTypes[ index ] %}
@@ -260,12 +260,12 @@ for index in (0..2) %}{%
       { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"}] }
     ]
   }
-] }'><span id="tally-mandatory-{{ cloudType }}">0</span> of 3 (<span id="percent-mandatory-{{ cloudType }}">0</span>%)<span id="mandatory-{{ cloudType }}-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span><span id="mandatory-{{ cloudType }}-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span><div><progress id="progress-mandatory-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
+] }'><span id="tally-mandatory-{{ cloudType }}">0</span> out of 3 (<span id="percent-mandatory-{{ cloudType }}">0</span>%)<span id="mandatory-{{ cloudType }}-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span><span id="mandatory-{{ cloudType }}-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span><div><progress id="progress-mandatory-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
 endfor %}
 </tr>
 
 <tr>
-<th headers="r1h2" id="r5h3"><strong>Rated Totals</strong></th>{%
+<th headers="r1h2" id="r5h3">Rated Totals</th>{%
 for index in (0..2) %}{%
   assign headerNumber = index | plus: 3 %}{%
   assign cloudType = page.cloudTypes[ index ] %}
@@ -276,7 +276,7 @@ for index in (0..2) %}{%
   { "type": "conditional", "inputs": [ { "type": ">", "inputs": [ { "type": "number", "query": "#percent-rated-{{ criteriaNumber }}" }, 0 ] } ],
     "actions": [ { "type": "event", "outputTarget": "#progress-rated-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" } ]
   }
-] }'><span id="tally-rated-{{ cloudType }}">0</span> of 110 (<span id="percent-rated-{{ cloudType }}">0</span>%)<div><progress id="progress-rated-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
+] }'><span id="tally-rated-{{ cloudType }}">0</span> out of 110 (<span id="percent-rated-{{ cloudType }}">0</span>%)<div><progress id="progress-rated-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
 endfor %}
 </tr>
 </tbody>

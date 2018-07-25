@@ -12,6 +12,10 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 [Digital Playbook views](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/views.html) are generated from the [Digital Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json) and can make the Digital Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
 
+### Agile views
+
+- [Is Agile Right for My Project? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/agile/en/agile-use-when.html)
+
 ### Artificial Intelligence (AI) views
 
 - [Algorithmic Impact Assessment (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html)
@@ -91,6 +95,10 @@ Fournit des conseils pratiques et détaillés pour aider le gouvernement du Cana
 ## Vues du guide numérique
 
 Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/vues.html) sont générés à partir du [jeu de données du guide numérique](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json) et peuvent rendre le guide numérique plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.
+
+### Vues basées sur Agile
+
+- [Est-ce que Agile est juste pour mon projet? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/agile/fr/agile-quand-utiliser.html)
 
 ### Vues basées sur l'intelligence artificielle (IA)
 
