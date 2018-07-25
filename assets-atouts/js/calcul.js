@@ -249,7 +249,7 @@ var componentName = "wb-calculate",
         }
       }
 
-      if ( !Number.isInteger( value ) && Number.isInteger( decimalPlaces ) && decimalPlaces >= 0 ) {
+      if ( Math.floor( value ) != value && Math.floor( decimalPlaces ) === decimalPlaces && decimalPlaces >= 0 ) {
         if ( decimalPlaces > 0 ) {
           let modifier = Math.pow( 10, decimalPlaces );
           value = Math.round( value * modifier ) / modifier;
