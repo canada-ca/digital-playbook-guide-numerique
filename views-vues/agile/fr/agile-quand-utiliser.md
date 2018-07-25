@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Is Agile Right for My Project? (draft)
-lang: en
-altLang: fr
-altLangPage: agile-quand-utiliser
+title: Est-ce que Agile est juste pour mon projet? (ébauche)
+lang: fr
+altLang: en
+altLangPage: agile-use-when
 collectionDirectory: views-vues/agile
 criteria: [ "Customer Availability", "Scope / Features", "Requirements", "Feature Prioritization", "Team", "Funding", "Track Record of Success", "Software Development Project", "Co-location", "Proactive Product Owners", "Teamwork and Collaboration", "Willingness to Fail and Learn" ]
 criteriaAgilePoints: [ 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 ]
@@ -18,14 +18,14 @@ assign dataSource = site.data[dataVariable] %}
 
 </div>
 
-The goal of this questionnaire is to help determine whether Agile is right for your project. It is not intended to make the decision for you but to instead help inform that decision.
+L'objectif de ce questionnaire est d'aider à déterminer si Agile est bon pour votre projet. Il n'est pas destiné à prendre la décision pour vous mais à aider à informer cette décision.
 
-The questions in this questionnaire are inspired by the following ressources:
+Les questions de ce questionnaire sont inspirées des ressources suivantes&#160;:
 
 <!-- markdownlint-disable MD032 -->
 - [Waterfall vs. Agile: Which is the Right Development Methodology for Your Project? (Segue Technologies)](https://www.seguetech.com/waterfall-vs-agile-methodology/)
 - [How to Know If Agile Is Right for You (ProjectManager.com)](https://www.projectmanager.com/blog/know-agile-right)
-{: .lst-spcd}
+{: .lst-spcd lang="en"}
 <!-- markdownlint-enable MD032 -->
 
 </section>
@@ -147,10 +147,10 @@ The questions in this questionnaire are inspired by the following ressources:
 
 <section>
 
-## Results
+## Résultats
 
 <section>
-<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">Questionnaire completed:</h3>
+<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">Questionnaire complété&#160;:</h3>
 
 <p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
@@ -166,14 +166,14 @@ The questions in this questionnaire are inspired by the following ressources:
       { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
-] }'></progress> <span id="questionnaire-progress-percent">0</span>%</p>
+] }'></progress> <span id="questionnaire-progress-percent">0</span>&#160;%</p>
 </section>
 
 <section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
 <header>
 <div class="h6 mrgn-tp-md mrgn-bttm-md">
-<h3 class="h6 mrgn-tp-0 mrgn-bttm-0 mrgn-rght-sm pull-left">Questionnaire completed:</h3>
-<p><progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>%</p>
+<h3 class="h6 mrgn-tp-0 mrgn-bttm-0 mrgn-rght-sm pull-left">Questionnaire complété&#160;:</h3>
+<p><progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>&#160;%</p>
 </div>
 </header>
 </section>
@@ -182,7 +182,7 @@ The questions in this questionnaire are inspired by the following ressources:
 
 ### Recommendation
 
-<p id="recommendation-not-complete">Please complete the questionnaire first.</p>
+<p id="recommendation-not-complete">Merci de compléter le questionnaire en premier.</p>
 <p class="hidden" id="recommendation-agile-element">Agile may be an element you want to incorporate in your project.</p>
 <p class="hidden" id="recommendation-agile-managing-project">You will likely want to take an agile approach in managing your project.</p>
 <p class="hidden" id="recommendation-agile-managing-project-and-scrum">You will likely want to take an agile approach in managing your project and consider scrum as a useful tool.</p>
@@ -191,14 +191,14 @@ The questions in this questionnaire are inspired by the following ressources:
 
 <section>
 
-### Detailed results
+### Résultats détaillés
 
 <table class="table table-bordered table-condensed">
 <thead>
 <tr>
-<th>Criteria</th>
-<th>Selected answer</th>
-<th>Is Agile recommended?</th>
+<th>Critère</th>
+<th>Réponse sélectionnée</th>
+<th>Agile est-il recommandé?</th>
 <th>Points</th>
 </tr>
 </thead>
@@ -211,8 +211,8 @@ The questions in this questionnaire are inspired by the following ressources:
 <span class="hidden question-{{ questionNumber }}-non-agile">2</span>
 </td>
 <td>
-<span class="hidden question-{{ questionNumber }}-agile"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Yes</span>
-<span class="hidden question-{{ questionNumber }}-non-agile"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> No</span>
+<span class="hidden question-{{ questionNumber }}-agile"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Oui</span>
+<span class="hidden question-{{ questionNumber }}-non-agile"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Non</span>
 </td>
 <td>
 <span class="hidden question-{{ questionNumber }}-agile agile-answer-points">{{ page.criteriaAgilePoints[ index ] }}</span>
@@ -268,12 +268,12 @@ endfor %}
     ]
   }
 ] }'>
-<th>Summary</th>
-<td>n/a</td>
-<td><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Yes for <span id="total-agile-answers">0</span> out of <span id="max-agile-answers">{{ page.criteria | size }}</span> criteria<br />
-<progress id="total-agile-answers-progress" value="0" max="100"></progress> <span id="total-agile-answers-percent">0</span>%</td>
-<td><span id="total-agile-points">0</span> out of <span id="max-agile-points">0</span> points<br />
-<progress id="total-agile-points-progress" value="0" max="100"></progress> <span id="total-agile-points-percent">0</span>%</td>
+<th>Sommaire</th>
+<td>s/o</td>
+<td><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Oui pour <span id="total-agile-answers">0</span> sur <span id="max-agile-answers">{{ page.criteria | size }}</span> critères<br />
+<progress id="total-agile-answers-progress" value="0" max="100"></progress> <span id="total-agile-answers-percent">0</span>&#160;%</td>
+<td><span id="total-agile-points">0</span> sur <span id="max-agile-points">0</span> points<br />
+<progress id="total-agile-points-progress" value="0" max="100"></progress> <span id="total-agile-points-percent">0</span>&#160;%</td>
 </tr>
 </tfoot>
 </table>
