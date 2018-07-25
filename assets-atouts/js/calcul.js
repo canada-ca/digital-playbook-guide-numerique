@@ -186,7 +186,7 @@ var componentName = "wb-calculate",
         } else if ( type === "power" ) {
           value = calculate( inputs[ 0 ] );
           for ( index = 1; index < inputsLength; index += 1 ) {
-            value = value ** calculate( inputs[ index ] );
+            value = Math( value, calculate( inputs[ index ] ) );
           }
         } else if ( type === "modulus" ) {
           value = calculate( inputs[ 0 ] );

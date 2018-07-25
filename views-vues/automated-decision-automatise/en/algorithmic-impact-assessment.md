@@ -905,7 +905,7 @@ for index in (0..4) %}{%
   }
  ] }'>
 <td>{{ page.aiaCriteria[ index ] }}</td>
-<td><span id="criteria-{{ criteriaNumber }}-score-total">0</span> of <span id="criteria-{{ criteriaNumber }}-max-total">0</span></td>
+<td><span id="criteria-{{ criteriaNumber }}-score-total">0</span> out of <span id="criteria-{{ criteriaNumber }}-max-total">0</span></td>
 <td><progress id="progress-criteria-{{ criteriaNumber }}" value="100" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent">100</span>%</td>
 <td><span id="criteria-{{ criteriaNumber }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span>
 <span id="criteria-{{ criteriaNumber }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span></td>
