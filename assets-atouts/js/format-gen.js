@@ -70,9 +70,10 @@ var componentName = "wb-format-gen",
      * @param fileData {String} String containing the data for the file
      * @param mimeType {String} MIME type of the output file (e.g., "text/csv;charset=utf-8;")
      * @param filename {String} Filename for the file to output (excluding file extension)
+     * @param type {String} Type of file (used for the file extension for the msSaveBlob fallback)
      * @return {String} CSV output
      */
-    outputFile = function( fileData, mimeType, filename ) {
+    outputFile = function( fileData, mimeType, filename, type ) {
       var outputLink = document.createElement( "a" ),
           isDownloadAttrSupported = outputLink.download !== undefined,
           blobOutput, urlOutput;
@@ -82,7 +83,7 @@ var componentName = "wb-format-gen",
 
         // Backwards compatibility for IE10+
         if ( !isDownloadAttrSupported && navigator.msSaveBlob ) {
-            navigator.msSaveBlob( blobOutput, filename );
+            navigator.msSaveBlob( blobOutput, filename + "." + type );
             return;
         }
 
@@ -122,7 +123,7 @@ $document.on( "click", selector, function( event ) {
     return;
   }
 
-  outputFile( fileData, mimeType, filename );
+  outputFile( fileData, mimeType, filename, type );
 } );
 
 // Bind the init event of the plugin
