@@ -73,29 +73,27 @@ var componentName = "wb-format-gen",
      * @return {String} CSV output
      */
     outputFile = function( fileData, mimeType, filename ) {
-      var blobOutput, urlOutput, outputLink;
+      var outputLink = document.createElement( "a" ),
+          isDownloadAttrSupported = outputLink.download !== undefined,
+          blobOutput, urlOutput;
+
       try {
         blobOutput = new Blob( [ fileData ], { type: mimeType } );
 
-        try {
-          urlOutput = URL.createObjectURL( blobOutput );
-        } catch ( e ) {
-          if ( navigator.msSaveBlob ) {
-            // Backwards compatibility for IE10
+        // Backwards compatibility for IE10+
+        if ( !isDownloadAttrSupported && navigator.msSaveBlob ) {
             navigator.msSaveBlob( blobOutput, filename );
             return;
-          }
-          // Trigger the fallback approach
-          throw "Use fallback";
         }
+
+        urlOutput = URL.createObjectURL( blobOutput );
       } catch ( e ) {
-        // Fallback for where Blob support doesn't exist
+        // Fallback for where Blob URL support doesn't exist
         urlOutput = encodeURI( "data:" + mimeType.slice( 0, -1 ) + "," + fileData );
       }
 
-      outputLink = document.createElement( "a" );
       outputLink.setAttribute( "href", urlOutput );
-      if ( outputLink.download !== undefined ) {
+      if ( isDownloadAttrSupported ) {
         outputLink.setAttribute( "download", filename );
       }
       outputLink.style.visibility = "hidden";
