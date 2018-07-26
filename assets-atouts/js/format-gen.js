@@ -80,7 +80,7 @@ var componentName = "wb-format-gen",
         try {
           urlOutput = URL.createObjectURL( blobOutput );
         } catch ( e ) {
-          if (navigator.msSaveBlob) {
+          if ( navigator.msSaveBlob ) {
             // Backwards compatibility for IE10
             navigator.msSaveBlob( blobOutput, filename );
             return;
@@ -94,17 +94,14 @@ var componentName = "wb-format-gen",
       }
 
       outputLink = document.createElement( "a" );
+      outputLink.setAttribute( "href", urlOutput );
       if ( outputLink.download !== undefined ) {
-        outputLink.setAttribute( "href", urlOutput );
         outputLink.setAttribute( "download", filename );
-        outputLink.style.visibility = "hidden";
-        document.body.appendChild( outputLink );
-        outputLink.click();
-        document.body.removeChild( outputLink );
-      } else {
-        // Last resort fallback
-        window.open( urlOutput );
       }
+      outputLink.style.visibility = "hidden";
+      document.body.appendChild( outputLink );
+      outputLink.click();
+      document.body.removeChild( outputLink );
     };
 
 
