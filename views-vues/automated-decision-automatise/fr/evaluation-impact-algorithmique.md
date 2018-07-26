@@ -918,6 +918,8 @@ endfor %}
 
 <summary markdown="0">Résultats détaillés</summary>
 
+<button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-resultats-detailles" }'>Télécharger au format CSV</button>
+
 <table id="detailed-results-table" class="table table-bordered table-condensed">
 <thead>
 <tr>
@@ -1695,6 +1697,8 @@ endfor %}
 </tr>
 </tbody>
 </table>
+
+<button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-resultats-detailles" }'>Télécharger au format CSV</button>
 
 </details>
 
