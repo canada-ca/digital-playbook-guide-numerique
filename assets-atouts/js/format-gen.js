@@ -66,24 +66,6 @@ var componentName = "wb-format-gen",
     },
 
     /**
-     * @method toJSON (to build)
-     * @param ?
-     * @return {String} JSON output
-     */
-    toJSON = function() {
-      return;
-    },
-
-    /**
-     * @method toXML (to build)
-     * @param ?
-     * @return {String} XML output
-     */
-    toXML = function() {
-      return;
-    },
-
-    /**
      * @method outputFile
      * @param fileData {String} String containing the data for the file
      * @param mimeType {String} MIME type of the output file (e.g., "text/csv;charset=utf-8;")
@@ -141,12 +123,8 @@ $document.on( "click", selector, function( event ) {
   if ( type === "csv" ) {
     fileData = toCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ] );
     mimeType = "text/csv;charset=utf-8;"
-  } else if ( type === "json" ) {
-    fileData = toJSON(); // To build
-    mimeType = "application/json;charset=utf-8;"
-  } else if ( type === "xml" ) {
-    fileData = toXML(); // To build
-    mimeType = "application/xml;charset=utf-8;"
+  } else {
+    return;
   }
 
   outputFile( fileData, mimeType, filename );
