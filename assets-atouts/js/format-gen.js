@@ -31,17 +31,33 @@ var componentName = "wb-format-gen",
       // Start initialization
       // returns DOM object = proceed with init
       // returns undefined = do not proceed with init (e.g., already initialized)
-      wb.init( event, componentName, selector );
+      var elm = wb.init( event, componentName, selector ),
+          settings, $elm;
+
+      if ( elm ) {
+        $elm = $( elm );
+
+        // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
+        settings = $.extend(
+          true,
+          defaults,
+          window[ componentName ],
+          wb.getData( $elm, componentName )
+        );
+
+        // Apply the extended settings to the element(s)
+        $elm.data( componentName, settings );
+      }
     },
 
     /**
-     * @method toCSV
+     * @method htmlToCSV
      * @param rowSelector {String} CSS selector for the rows (e.g., "tr:not(.hidden)")
      * @param colSelector {String} CSS selector for the cells within the row (e.g., "td:not(.hidden)")
      * @param container {String} (Optional, defaults to document) CSS selector for the container to look in (e.g., "#table-id")
      * @return {String} CSV output
      */
-    toCSV = function( rowSelector, colSelector, container ) {
+    htmlToCSV = function( rowSelector, colSelector, container ) {
       var output = [],
           $source = container ? $( container ) : wb.doc,
           $rows = $source.find( rowSelector ),
@@ -105,19 +121,13 @@ var componentName = "wb-format-gen",
 
 
 $document.on( "click", selector, function( event ) {
-  // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
-  var settings = $.extend(
-    true,
-    defaults,
-    window[ componentName ],
-    wb.getData( $( event.target ), componentName )
-  ),
-  type = settings[ "type" ].toLowerCase(),
-  filename = settings[ "filename" ],
-  fileData, mimeType;
+  var settings = wb.getData( $( event.target ), componentName ),
+      type = settings[ "type" ].toLowerCase(),
+      filename = settings[ "filename" ],
+      fileData, mimeType;
 
   if ( type === "csv" ) {
-    fileData = toCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ] );
+    fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ] );
     mimeType = "text/csv;charset=utf-8;"
   } else {
     return;

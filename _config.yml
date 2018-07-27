@@ -489,3 +489,65 @@ Tags:
 ContentSource:
   en: Content source
   fr: Source du contenu
+
+# Questionnaire strings
+Results:
+  en: Results
+  fr: Résultats
+Result:
+  en: Result
+  fr: Résultat
+FinalResult:
+  en: Final result
+  fr: Résultat final
+AdjustedResults:
+  en: Adjusted results
+  fr: Résultats ajustés
+InitialResults:
+  en: Initial results
+  fr: Premiers résultats
+DetailedResults:
+  en: Detailed results
+  fr: Résultats détaillés
+QuestionnaireCompleted:
+  en: Questionnaire completed
+  fr: Questionnaire complété
+Percent:
+  en: "%"
+  fr: "&#160;%"
+CompleteQuestionnaireFirst:
+  en: Please complete the questionnaire first.
+  fr: Merci de compléter le questionnaire en premier.
+Preferred:
+  en: Preferred
+  fr: Préféré
+Acceptable:
+  en: Acceptable
+  fr: Acceptable
+Critical:
+  en: Critical
+  fr: Critique
+Fail:
+  en: Fail
+  fr: Échec
+Level:
+  en: Level
+  fr: Niveau
+ImpactLevel:
+  en: Impact level
+  fr: Niveau d'impact
+Score:
+  en: Score
+  fr: Score
+Criteria:
+  en: Criteria
+  fr: Critère
+OutOf:
+  en: out of
+  fr: sur
+Multiplier:
+  en: Multiplier
+  fr: Multiplicateur
+DownloadCSV:
+  en: Download in CSV format
+  fr: Télécharger au format CSV
