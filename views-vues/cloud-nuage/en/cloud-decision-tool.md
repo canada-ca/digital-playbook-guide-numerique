@@ -5,9 +5,34 @@ lang: en
 altLang: fr
 altLangPage: nuage-outil-decisionnel
 collectionDirectory: views-vues/cloud-nuage
-cloudTypes: [ "public-cloud", "private-cloud", "non-cloud" ]
-criteriaTitles: [ "Sensitivity", "Financial", "Legacy", "Commoditized", "Location", "Connectivity", "Speed", "Longevity", "Elasticity", "Innovation", "DevOps" ]
-criteriaTags: [ "sensitivity", "financial", "legacy", "commoditized", "location", "connectivity", "speed", "longevity", "elasticity", "innovation", "devops" ]
+cloudTypes:
+ - "public-cloud"
+ - "private-cloud"
+ - "non-cloud"
+criteriaTitles: 
+ - "Sensitivity"
+ - "Financial"
+ - "Legacy"
+ - "Commoditized"
+ - "Location"
+ - "Connectivity"
+ - "Speed"
+ - "Longevity"
+ - "Elasticity"
+ - "Innovation"
+ - "DevOps"
+criteriaTags:
+ - "sensitivity"
+ - "financial"
+ - "legacy"
+ - "commoditized"
+ - "location"
+ - "connectivity"
+ - "speed"
+ - "longevity"
+ - "elasticity"
+ - "innovation"
+ - "devops"
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
@@ -159,7 +184,7 @@ To help organize the decision of which cloud deployment model is the right deplo
     "inputs": [
       { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
     ],
-    "actions": [
+    "actionsTrue": [
       { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
@@ -247,20 +272,62 @@ for index in (0..2) %}{%
   { "type": "count", "increment": 1, "query": "#{{ cloudType }}-sensitivity-passed:not(.hidden), #{{ cloudType }}-financial-passed:not(.hidden), #{{ cloudType }}-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-{{ cloudType }}" },
   { "type": "percent", "decimalPlaces": 1, "inputs": [ { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3 ], "outputTarget": "#percent-mandatory-{{ cloudType }}" },
   { "type": "number", "decimalPlaces": 0, "query": "#percent-mandatory-{{ cloudType }}", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": ">", "inputs": [ { "type": "number", "query": "#percent-mandatory-{{ criteriaNumber }}" }, 0 ] } ],
-    "actions": [ { "type": "event", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" } ]
-  },
-  { "type": "conditional", "inputs": [
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2] input:checked" }, 1] },
-      { "type": ">=", "inputs": [{ "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3] input:checked" }, 1] }
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">", "inputs": [ { "type": "number", "query": "#percent-mandatory-{{ criteriaNumber }}" }, 0 ] }
     ],
-    "actions": [
-      { "type": "conditional", "inputs": [{ "type": "==", "inputs": [{ "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"}, { "type":  "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"}] },
-      { "type": "conditional", "inputs": [{ "type": "!=", "inputs": [{ "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3] }], "actions": [{ "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"}, { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"}] }
+    "actionsTrue": [
+      { "type": "event", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" }
+    ]
+  },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">=",
+        "inputs": [
+          { "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1
+        ]
+      },
+      { "type": ">=",
+        "inputs": [
+          { "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2 ] input:checked" }, 1
+        ]
+      },
+      { "type": ">=",
+        "inputs": [
+          { "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3 ] input:checked" }, 1
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "conditional",
+        "inputs": [
+          { "type": "==",
+            "inputs": [
+              { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"},
+          { "type":  "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"}
+        ]
+      },
+      { "type": "conditional",
+        "inputs": [
+          { "type": "!=",
+            "inputs": [
+              { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"},
+          { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"}
+        ]
+      }
     ]
   }
-] }'><span id="tally-mandatory-{{ cloudType }}">0</span> out of 3 (<span id="percent-mandatory-{{ cloudType }}">0</span>%)<span id="mandatory-{{ cloudType }}-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span><span id="mandatory-{{ cloudType }}-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span><div><progress id="progress-mandatory-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
+] }'><span id="tally-mandatory-{{ cloudType }}">0</span> {{ site.OutOf[ page.lang ] }} 3 (<span id="percent-mandatory-{{ cloudType }}">0</span>%)<span id="mandatory-{{ cloudType }}-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> Passed</span><span id="mandatory-{{ cloudType }}-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> Failed</span><div><progress id="progress-mandatory-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
 endfor %}
 </tr>
 
@@ -270,13 +337,24 @@ for index in (0..2) %}{%
   assign headerNumber = index | plus: 3 %}{%
   assign cloudType = page.cloudTypes[ index ] %}
 <td headers="r1h{{ headerNumber }} r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
-  { "type": "add", "inputs": [{ "type": "count", "increment": 20, "query": "#{{ cloudType }}-commoditized-passed:not(.hidden), #{{ cloudType }}-location-passed:not(.hidden), #{{ cloudType }}-connectivity-passed:not(.hidden)" }, { "type": "count", "increment": 10, "query": "#{{ cloudType }}-speed-passed:not(.hidden), #{{ cloudType }}-longevity-passed:not(.hidden), #{{ cloudType }}-elasticity-passed:not(.hidden), #{{ cloudType }}-innovation-passed:not(.hidden), #{{ cloudType }}-devops-passed:not(.hidden)" }], "outputTarget": "#tally-rated-{{ cloudType }}" },
-  { "type": "percent", "decimalPlaces": 1, "inputs": [{ "type": "number", "query": "#tally-rated-{{ cloudType }}" }, 110], "outputTarget": "#percent-rated-{{ cloudType }}" },
+  { "type": "add",
+    "inputs": [
+      { "type": "count", "increment": 20, "query": "#{{ cloudType }}-commoditized-passed:not(.hidden), #{{ cloudType }}-location-passed:not(.hidden), #{{ cloudType }}-connectivity-passed:not(.hidden)" },
+      { "type": "count", "increment": 10, "query": "#{{ cloudType }}-speed-passed:not(.hidden), #{{ cloudType }}-longevity-passed:not(.hidden), #{{ cloudType }}-elasticity-passed:not(.hidden), #{{ cloudType }}-innovation-passed:not(.hidden), #{{ cloudType }}-devops-passed:not(.hidden)" }
+    ],
+    "outputTarget": "#tally-rated-{{ cloudType }}"
+  },
+  { "type": "percent", "decimalPlaces": 1,
+    "inputs": [
+      { "type": "number", "query": "#tally-rated-{{ cloudType }}" }, 110
+    ],
+    "outputTarget": "#percent-rated-{{ cloudType }}"
+  },
   { "type": "number", "decimalPlaces": 0, "query": "#percent-rated-{{ cloudType }}", "outputTarget": "#progress-rated-{{ cloudType }}", "outputAttribute": "value" },
   { "type": "conditional", "inputs": [ { "type": ">", "inputs": [ { "type": "number", "query": "#percent-rated-{{ criteriaNumber }}" }, 0 ] } ],
-    "actions": [ { "type": "event", "outputTarget": "#progress-rated-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" } ]
+    "actionsTrue": [ { "type": "event", "outputTarget": "#progress-rated-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" } ]
   }
-] }'><span id="tally-rated-{{ cloudType }}">0</span> out of 110 (<span id="percent-rated-{{ cloudType }}">0</span>%)<div><progress id="progress-rated-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
+] }'><span id="tally-rated-{{ cloudType }}">0</span> {{ site.OutOf[ page.lang ] }} 110 (<span id="percent-rated-{{ cloudType }}">0</span>%)<div><progress id="progress-rated-{{ cloudType }}" value="0" max="100"></progress></div></td>{%
 endfor %}
 </tr>
 </tbody>

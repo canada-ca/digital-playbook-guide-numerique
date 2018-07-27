@@ -89,16 +89,25 @@ var componentName = "wb-calculate",
      * - subtract: Calculate the result of subtracting two or more numbers in sequence (e.g., a - b - c) 
      * - multiply: Calculate the result of multiplying two or more numbers in sequence (e.g., a * b * c)
      * - divide: Calculate the result of dividing two or more numbers in sequence (e.g., a / b / c)
-     * - power: Calculate the result of the powers of two or more numbers in sequence (e.g., ab = Math.pow( a, b ), abc = Math.pow( ab, c ))
+     * - pow: Calculate the result of the powers of two or more numbers in sequence (e.g., ab = Math.pow( a, b ), abc = Math.pow( ab, c ))
+     * - sqrt: Calculate the result of the square root of two or more numbers in sequence (e.g., ab = Math.sqrt( a, b ), abc = Math.sqrt( ab, c ))
      * - modulus: Calculate the result of the modulus of two or more numbers in sequence (e.g., a % b % c )
+     * - abs: Calculate the absolute value of a number (e.g., Math.abs( a ))
+     * - round: Calculate the value of a number rounded to its nearest integer (e.g., Math.round( a ))
+     * - ceil: Calculate the value of a number rounded up to its nearest integer (e.g., Math.ceil( a ))
+     * - floor: Calculate the value of a number rounded down to its nearest integer (e.g., Math.floor( a ))
+     * - min: Calculate the value of the lowest number in a set of numbers (e.g., Math.min( a, b, c, d ))
+     * - max: Calculate the value of the highest number in a set of numbers (e.g., Math.max( a, b, c, d ))
+     * - random: Generate a random number between 0 and 1 (e.g., Math.random)
      * - conditional: Perform an action of "actionType" if all conditions in "inputs" are met. 
      * decimalPlaces {Integer} Optional (defaults to unlimited). Number of decimal plays to allow for the result.
      * value {Number} Optional (can be used instead of "query", only permitted for "number" type). The value of the number to use. Alternatively can use a number directly (instead of an object of type "number").
      * query {String} Optional (required for "count" type, "number" type when "value" is not specified and other types when "inputs" is not specified) The CSS query for where to retrieve the numbers (uses first result for "number") or for the items to count.
-     * inputs {Array} Optional (used for "conditional" type, including condition objects, and can also be used for "add", "subtract", "multiply", "divide", "power" and "modulus" types in place of query). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
+     * inputs {Array} Optional (used for "conditional" type, including condition objects, and can also be used for other operations such as"add", "subtract", "multiply", "divide", "power" and "modulus" types in place of query). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
      * sourceAttribute {String} (optional, can be used with the "number" type). Attribute from which to retrieve the number.
      * increment {Integer} Optional (can only be used with "count" type). The size of the increment to use for each item counted.
-     * actions {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
+     * actionsTrue {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
+     * actionsFalse {Array} Optional (can only be used for "conditional" type). Actions to process with if one of the conditions is not met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
      * outputEvent {String} Optional (required for action type of "event" for "conditional" type). Event type 
      * outputEventParameter {Array/Plain object} Optional (only used for action type of "event" for "conditional" type).
      * operations {Array} Optional (required for action type of "operations" for "conditional" type). Operations to execute.
@@ -119,7 +128,7 @@ var componentName = "wb-calculate",
           $query = value || !query ? null : $( query ),
           queryResultsSize = !$query ? null : $query.length, 
           decimalPlaces = operation[ "decimalPlaces" ],
-          inputs, inputsLength, item, index, conditionMet;
+          inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType;
 
       if ( type === "number" ) {
         if ( $query ) {
@@ -183,16 +192,43 @@ var componentName = "wb-calculate",
           for ( index = 1; index < inputsLength; index += 1 ) {
             value = value / calculate( inputs[ index ] );
           }
-        } else if ( type === "power" ) {
+        } else if ( type === "pow" ) {
           value = calculate( inputs[ 0 ] );
           for ( index = 1; index < inputsLength; index += 1 ) {
             value = Math.pow( value, calculate( inputs[ index ] ) );
+          }
+        } else if ( type === "sqrt" ) {
+          value = calculate( inputs[ 0 ] );
+          for ( index = 1; index < inputsLength; index += 1 ) {
+            value = Math.sqrt( value, calculate( inputs[ index ] ) );
           }
         } else if ( type === "modulus" ) {
           value = calculate( inputs[ 0 ] );
           for ( index = 1; index < inputsLength; index += 1 ) {
             value = value % calculate( inputs[ index ] );
-          }          
+          }
+        } else if ( type === "abs" ) {
+          value = Math.abs( calculate( inputs[ 0 ] ) );
+        } else if ( type === "round" ) {
+          value = Math.round( calculate( inputs[ 0 ] ) );
+        } else if ( type === "ceil" ) {
+          value = Math.ceil( calculate( inputs[ 0 ] ) );
+        } else if ( type === "floor" ) {
+          value = Math.floor( calculate( inputs[ 0 ] ) );
+        } else if ( type === "min" ) {
+          values = [];
+          for ( index = 0; index < inputsLength; index += 1 ) {
+            values.push( calculate( inputs[ index ] ) );
+          }
+          value = Math.min.apply( Math, values );
+        } else if ( type === "max" ) {
+          values = [];
+          for ( index = 0; index < inputsLength; index += 1 ) {
+            values.push( calculate( inputs[ index ] ) );
+          }
+          value = Math.max.apply( Math, values );
+        } else if ( type === "random" ) {
+          value = Math.random();
         } else if ( type === "conditional" ) {
           for ( index = 0; index < inputsLength; index += 1 ) {
             conditionMet = false;
@@ -225,25 +261,22 @@ var componentName = "wb-calculate",
             }
           }
 
-          if ( conditionMet ) {
-            var actions = operation[ "actions" ],
-                actionsLength = actions.length,
-                action, actionType;
+          actions = conditionMet ? operation[ "actionsTrue" ] : operation[ "actionsFalse" ];
+          actionsLength = actions ? actions.length : 0;
 
-            for ( index = 0; index < actionsLength; index += 1 ) {
-              action = actions[ index ];
-              actionType = action[ "type" ];
-              if ( actionType === "event" ) {
-                $( action[ "outputTarget" ] ).trigger( action[ "outputEvent" ], action[ "outputEventParameters" ] );
-              } else if ( actionType === "operations" ) {
-                iterate( action[ "operations" ] );
-              } else if ( actionType === "addClass" ) {
-                $( action[ "outputTarget" ] ).addClass( action[ "class" ] );
-              } else if ( actionType === "removeClass" ) {
-                $( action[ "outputTarget" ] ).removeClass( action[ "class" ] );
-              } else if ( actionType === "conditional" ) {
-                calculate( action );
-              }
+          for ( index = 0; index < actionsLength; index += 1 ) {
+            action = actions[ index ];
+            actionType = action[ "type" ];
+            if ( actionType === "event" ) {
+              $( action[ "outputTarget" ] ).trigger( action[ "outputEvent" ], action[ "outputEventParameters" ] );
+            } else if ( actionType === "operations" ) {
+              iterate( action[ "operations" ] );
+            } else if ( actionType === "addClass" ) {
+              $( action[ "outputTarget" ] ).addClass( action[ "class" ] );
+            } else if ( actionType === "removeClass" ) {
+              $( action[ "outputTarget" ] ).removeClass( action[ "class" ] );
+            } else if ( actionType === "conditional" ) {
+              calculate( action );
             }
           }
         }
