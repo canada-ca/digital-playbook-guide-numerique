@@ -23,6 +23,7 @@ multipliers:
  - [1, 1.15, 1.25, 1.5]
  - [0.5, 1, 2]
  - [0.5, 1, 2]
+progressPercentThreshold: 1
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}

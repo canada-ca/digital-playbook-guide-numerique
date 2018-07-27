@@ -35,8 +35,14 @@
 </section>
 
 <section id="final-result-section" class="panel panel-default wb-calculate" data-wb-calculate='{ "eventTrigger": "adjusted-results-updated", "eventElement": "#final-result-section", "operations": [
-  { "type": "conditional", "inputs": [
-      { "type": ">=", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 1 ] }
+  { "type": "conditional",
+      "inputs": [
+        { "type": ">=",
+          "inputs": [
+            { "type": "number", "query": "#questionnaire-progress-percent" },
+            {{ page.progressPercentThreshold }}
+          ]
+        }
     ],
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": "#final-result-section", "class": "panel-default panel-success panel-info panel-warning panel-danger" },
@@ -131,7 +137,7 @@
 
 <section>
 
-### {{ site.AdjustedResults[ page.lang ] }}<span id="total-multiplier-wrapper" class="hidden"> ({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span id="total-multiplier">1</span></span>)
+### {{ site.AdjustedResults[ page.lang ] }}<span id="total-multiplier-wrapper" class="hidden"> ({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span id="total-multiplier">1</span>)</span>
 
 </section>
 
@@ -139,7 +145,8 @@
   { "type": "multiply", "decimalPlaces": 2, "query": "#initial-results-table .criteria-result span:not(.hidden) .score-multiplier", "outputTarget": "#total-multiplier" },{%
 for index in (0..1) %}{%
   assign criteriaNumber = index | plus: 1 %}
-  { "type": "min", "inputs": [
+  { "type": "min",
+    "inputs": [
       { "type": "multiply", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-score-total, #total-multiplier" },
       { "type": "number", "query": "#criteria-{{ criteriaNumber }}-max-total" }
     ],
@@ -148,77 +155,102 @@ for index in (0..1) %}{%
   { "type": "number", "query": "#criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total-adjusted" },
   { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total-adjusted, #criteria-{{ criteriaNumber }}-max-total-adjusted", "outputTarget": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
   { "type": "number", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-percent-adjusted", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": ">=", "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, 0 ] } ],
-    "actionsTrue": [
-      { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputEvent": "wb-update-wb-progress" },
-      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "" }
-    ]
-  },
-  { "type": "conditional", "inputs": [
-      { "type": "==", "inputs": [ { "type": "count", "query": "#criteria-3-level-4:not(.hidden), #criteria-4-level-4:not(.hidden)" }, 0 ] }
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">=",
+        "inputs": [
+          { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, 0
+        ]
+      }
     ],
     "actionsTrue": [
-      { "type": "conditional", 
+      { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputEvent": "wb-update-wb-progress" }
+    ]
+  },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">=",
         "inputs": [
-          { "type": "<",
-            "inputs": [
-              { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-              {{ page.criteriaThresholds[ index ][ 0 ] }}
-            ]
-          }
+          { "type": "number", "query": "#questionnaire-progress-percent" },
+          {{ page.progressPercentThreshold }}
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "" },
+      { "type": "conditional", "inputs": [
+          { "type": "==", "inputs": [ { "type": "count", "query": "#criteria-3-level-4:not(.hidden), #criteria-4-level-4:not(.hidden)" }, 0 ] }
         ],
         "actionsTrue": [
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-success" },
-          { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted", "class": "hidden" },
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-        ],
-        "actionsFalse": [
-          { "type": "conditional",
+          { "type": "conditional", 
             "inputs": [
               { "type": "<",
                 "inputs": [
                   { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-                  {{ page.criteriaThresholds[ index ][ 1 ] }}
+                  {{ page.criteriaThresholds[ index ][ 0 ] }}
                 ]
               }
             ],
             "actionsTrue": [
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-info" },
-              { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2-adjusted", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
+              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-success" },
+              { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted", "class": "hidden" },
+              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
             ],
             "actionsFalse": [
-              { "type": "conditional", 
+              { "type": "conditional",
                 "inputs": [
-                  { "type": "<", "inputs": [
-                    { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-                    {{ page.criteriaThresholds[ index ][ 2 ] }} ]
+                  { "type": "<",
+                    "inputs": [
+                      { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
+                      {{ page.criteriaThresholds[ index ][ 1 ] }}
+                    ]
                   }
                 ],
                 "actionsTrue": [
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-warning" },
-                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-3-adjusted", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
+                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-info" },
+                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2-adjusted", "class": "hidden" },
+                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
                 ],
                 "actionsFalse": [
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-danger" },
-                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-4-adjusted", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
+                  { "type": "conditional", 
+                    "inputs": [
+                      { "type": "<", "inputs": [
+                        { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
+                        {{ page.criteriaThresholds[ index ][ 2 ] }} ]
+                      }
+                    ],
+                    "actionsTrue": [
+                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-warning" },
+                      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-3-adjusted", "class": "hidden" },
+                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
+                    ],
+                    "actionsFalse": [
+                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-danger" },
+                      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-4-adjusted", "class": "hidden" },
+                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
+                    ]
+                  }
                 ]
               }
             ]
           }
+        ],
+        "actionsFalse": [
+          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-danger" },
+          { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" },
+          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted", "class": "hidden" }
         ]
       }
-    ],
-    "actionsFalse": [
-      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-danger" },
-      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted", "class": "hidden" }
     ]
   },{%
 endfor %}
-  { "type": "conditional", "inputs": [ { "type": "==", "inputs": [ 0, 0 ] }
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">",
+        "inputs": [
+          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
+        ]
+      }
     ],
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": "#total-multiplier-wrapper", "class": "hidden" },
@@ -286,8 +318,10 @@ for index in (0..4) %}{%
     ]
   },
   { "type": "conditional", "inputs": [
-      { "type": ">=",
-        "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 1 ]
+      { "type": ">",
+        "inputs": [
+          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
+        ]
       }
     ],
     "actionsTrue": [
