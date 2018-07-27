@@ -34,12 +34,12 @@
 </header>
 </section>
 
-<section id="final-result" class="panel panel-default wb-calculate" data-wb-calculate='{ "eventTrigger": "adjusted-results-updated", "eventElement": "#final-result", "operations": [
+<section id="final-result-section" class="panel panel-default wb-calculate" data-wb-calculate='{ "eventTrigger": "adjusted-results-updated", "eventElement": "#final-result-section", "operations": [
   { "type": "conditional", "inputs": [
       { "type": ">=", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 1 ] }
     ],
     "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#final-result", "class": "panel-default panel-success panel-info panel-warning panel-danger" },
+      { "type": "removeClass", "outputTarget": "#final-result-section", "class": "panel-default panel-success panel-info panel-warning panel-danger" },
       { "type": "addClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },
       { "type": "conditional",
         "inputs": [
@@ -50,7 +50,7 @@
           }
         ],
         "actionsTrue": [
-          { "type": "addClass", "outputTarget": "#final-result", "class": "panel-danger" },
+          { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-danger" },
           { "type": "removeClass", "outputTarget": "#final-result-fail", "class": "hidden" },
           { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-level-4", "class": "hidden" }
         ],
@@ -64,7 +64,7 @@
               }
             ],
             "actionsTrue": [
-              { "type": "addClass", "outputTarget": "#final-result", "class": "panel-danger" },
+              { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-danger" },
               { "type": "removeClass", "outputTarget": "#final-result-level-4", "class": "hidden" },
               { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-fail", "class": "hidden" }
             ],
@@ -78,7 +78,7 @@
                   }
                 ],
                 "actionsTrue": [
-                  { "type": "addClass", "outputTarget": "#final-result", "class": "panel-warning" },
+                  { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-warning" },
                   { "type": "removeClass", "outputTarget": "#final-result-level-3", "class": "hidden" },
                   { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-4, #final-result-fail", "class": "hidden" }
                 ],
@@ -92,12 +92,12 @@
                       }
                     ],
                     "actionsTrue": [
-                      { "type": "addClass", "outputTarget": "#final-result", "class": "panel-info" },
+                      { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-info" },
                       { "type": "removeClass", "outputTarget": "#final-result-level-2", "class": "hidden" },
                       { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
                     ],
                     "actionsFalse":[
-                      { "type": "addClass", "outputTarget": "#final-result", "class": "panel-success" },
+                      { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-success" },
                       { "type": "removeClass", "outputTarget": "#final-result-level-1", "class": "hidden" },
                       { "type": "addClass", "outputTarget": "#final-result-level-2, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
                     ]
@@ -110,7 +110,7 @@
       }
     ],
     "actionsFalse": [
-      { "type": "removeClass", "outputTarget": "#final-result", "class": "" },
+      { "type": "removeClass", "outputTarget": "#final-result-section", "class": "" },
       { "type": "removeClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },
       { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
     ]
@@ -135,8 +135,8 @@
 
 </section>
 
-<table id="adjusted-results" class="table table-bordered table-condensed wb-calculate" data-wb-calculate='{ "eventTrigger": "initial-results-updated", "eventElement": "#adjusted-results", "operations": [
-  { "type": "multiply", "decimalPlaces": 2, "query": "#initial-results .criteria-result span:not(.hidden) .score-multiplier", "outputTarget": "#total-multiplier" },{%
+<table id="adjusted-results-table" class="table table-bordered table-condensed wb-calculate" data-wb-calculate='{ "eventTrigger": "initial-results-updated", "eventElement": "#adjusted-results-table", "operations": [
+  { "type": "multiply", "decimalPlaces": 2, "query": "#initial-results-table .criteria-result span:not(.hidden) .score-multiplier", "outputTarget": "#total-multiplier" },{%
 for index in (0..1) %}{%
   assign criteriaNumber = index | plus: 1 %}
   { "type": "min", "inputs": [
@@ -222,7 +222,7 @@ endfor %}
     ],
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": "#total-multiplier-wrapper", "class": "hidden" },
-      { "type": "event", "outputEvent": "adjusted-results-updated", "outputTarget": "#final-result" }
+      { "type": "event", "outputEvent": "adjusted-results-updated", "outputTarget": "#final-result-section" }
     ]
   }
 ] }'>
@@ -258,7 +258,7 @@ endfor %}
 
 ### {{ site.InitialResults[ page.lang ] }}
 
-<table id="initial-results" class="table table-bordered table-condensed">
+<table id="initial-results-table" class="table table-bordered table-condensed">
 <thead>
 <tr>
 <th>{{ site.Criteria[ page.lang ] }}</th>
@@ -336,7 +336,7 @@ for index in (0..4) %}{%
     "inputs": [ { "type": "==", "inputs": [ 0, 0 ] }
     ],
     "actionsTrue": [
-      { "type": "event", "outputEvent": "initial-results-updated", "outputTarget": "#adjusted-results" }
+      { "type": "event", "outputEvent": "initial-results-updated", "outputTarget": "#adjusted-results-table" }
     ]
   }
  ] }'>
