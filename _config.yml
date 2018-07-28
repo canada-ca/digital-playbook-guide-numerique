@@ -509,6 +509,9 @@ InitialResults:
 DetailedResults:
   en: Detailed results
   fr: Résultats détaillés
+Questionnaire:
+  en: Questionnaire
+  fr: Questionnaire
 QuestionnaireCompleted:
   en: Questionnaire completed
   fr: Questionnaire complété
@@ -527,6 +530,9 @@ Acceptable:
 Critical:
   en: Critical
   fr: Critique
+Pass:
+  en: Pass
+  fr: Succès
 Fail:
   en: Fail
   fr: Échec
@@ -541,7 +547,7 @@ Score:
   fr: Score
 Criteria:
   en: Criteria
-  fr: Critère
+  fr: Critères
 OutOf:
   en: out of
   fr: sur
@@ -551,3 +557,54 @@ Multiplier:
 DownloadCSV:
   en: Download in CSV format
   fr: Télécharger au format CSV
+"Yes":
+  en: "Yes"
+  fr: "Oui"
+"No":
+  en: "No"
+  fr: "Non"
+NotApplicable:
+  en: Not applicable
+  fr: Sans objet
+None:
+  en: None
+  fr: Aucun
+Protected:
+  en: Protected
+  fr: Protégé
+ProtectedA:
+  en: Protected&#160;A
+  fr: Protégé&#160;A
+ProtectedB:
+  en: Protected&#160;B
+  fr: Protégé&#160;B
+ProtectedC:
+  en: Protected&#160;C
+  fr: Protégé&#160;C
+Classified:
+  en: Classified
+  fr: Classifié
+Confidential:
+  en: Confidential
+  fr: Confidentiel
+Secret:
+  en: Secret
+  fr: Secret
+TopSecret:
+  en: Top Secret
+  fr: Très secret
+required:
+  en: required
+  fr: obligatoire
+SelectedAnswer:
+  en: Selected answer
+  fr: 
+Points:
+  en: Points
+  fr: Points
+Recommendation:
+  en: Recommendation
+  fr: Recommendation
+Summary:
+  en: Summary
+  fr: Sommaire

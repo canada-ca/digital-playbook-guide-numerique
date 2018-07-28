@@ -1,2531 +1,1354 @@
-<!--Results-->
 <section>
 
-## {{ site.Results[ page.lang ] }}
+## {{ site.Questionnaire[ page.lang ] }}
 
-<section>
-<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}{{ site.Colon[ page.lang ] }}</h3>
-
-<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
-  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", 
-    "inputs": [
-      { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)", "outputTarget": "#required-questions-answered, #required-questions-answered-overlay" },
-      { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)", "outputTarget": "#required-questions-total, #required-questions-total-overlay" }
-    ]
-  },
-  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
-    ],
-    "actionsTrue": [
-      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
-    ]
-  }
-] }'></progress> <span id="questionnaire-progress-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
-</section>
-
-<section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
-<header>
-<div class="h6 mrgn-tp-md mrgn-bttm-md">
-<h3 class="h6 mrgn-tp-0 mrgn-bttm-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}{{ site.Colon[ page.lang ] }}</h3>
-<p><progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
-</div>
-</header>
-</section>
-
-<section id="final-result-section" class="panel panel-default wb-calculate" data-wb-calculate='{ "eventTrigger": "adjusted-results-updated", "eventElement": "#final-result-section", "operations": [
-  { "type": "conditional",
-      "inputs": [
-        { "type": ">=",
-          "inputs": [
-            { "type": "number", "query": "#questionnaire-progress-percent" },
-            {{ page.progressPercentThreshold }}
-          ]
-        }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#final-result-section", "class": "panel-default panel-success panel-info panel-warning panel-danger" },
-      { "type": "addClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "count", "query": "#criteria-1-fail-adjusted:not(.hidden), #criteria-2-fail-adjusted:not(.hidden)" }, 0
-            ] 
-          }
-        ],
-        "actionsTrue": [
-          { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-danger" },
-          { "type": "removeClass", "outputTarget": "#final-result-fail", "class": "hidden" },
-          { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-level-4", "class": "hidden" }
-        ],
-        "actionsFalse": [
-          { "type": "conditional",
-            "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "count", "query": "#criteria-1-level-4-adjusted:not(.hidden), #criteria-2-level-4-adjusted:not(.hidden)" }, 0
-                ] 
-              }
-            ],
-            "actionsTrue": [
-              { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-danger" },
-              { "type": "removeClass", "outputTarget": "#final-result-level-4", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-fail", "class": "hidden" }
-            ],
-            "actionsFalse":[
-              { "type": "conditional",
-                "inputs": [
-                  { "type": ">",
-                    "inputs": [
-                      { "type": "count", "query": "#criteria-1-level-3-adjusted:not(.hidden), #criteria-2-level-3-adjusted:not(.hidden)" }, 0
-                    ] 
-                  }
-                ],
-                "actionsTrue": [
-                  { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-warning" },
-                  { "type": "removeClass", "outputTarget": "#final-result-level-3", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-4, #final-result-fail", "class": "hidden" }
-                ],
-                "actionsFalse":[
-                  { "type": "conditional",
-                    "inputs": [
-                      { "type": ">",
-                        "inputs": [
-                          { "type": "count", "query": "#criteria-1-level-2-adjusted:not(.hidden), #criteria-2-level-2-adjusted:not(.hidden)" }, 0
-                        ] 
-                      }
-                    ],
-                    "actionsTrue": [
-                      { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-info" },
-                      { "type": "removeClass", "outputTarget": "#final-result-level-2", "class": "hidden" },
-                      { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
-                    ],
-                    "actionsFalse":[
-                      { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-success" },
-                      { "type": "removeClass", "outputTarget": "#final-result-level-1", "class": "hidden" },
-                      { "type": "addClass", "outputTarget": "#final-result-level-2, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "actionsFalse": [
-      { "type": "removeClass", "outputTarget": "#final-result-section", "class": "" },
-      { "type": "removeClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
-    ]
-  }
-] }'>
-<header class="panel-heading">
-<h3 class="panel-title">{{ site.FinalResult[ page.lang ] }}</h3>
-</header>
-<div class="panel-body">
-<p id="final-result-in-progress">{{ site.CompleteQuestionnaireFirst[ page.lang ] }}</p>
-<p id="final-result-level-1" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 1</p>
-<p id="final-result-level-2" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 2</p>
-<p id="final-result-level-3" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 3</p>
-<p id="final-result-level-4" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 4</p>
-<p id="final-result-fail" class="hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</p>
-</div>
-</section>
+<div class="wb-frmvld">
+<form action="#" method="post">
 
 <section>
 
-### {{ site.AdjustedResults[ page.lang ] }}<span id="total-multiplier-wrapper" class="hidden"> ({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span id="total-multiplier">1</span>)</span>
+### {{ page.discretionSection }}
 
-</section>
-
-<table id="adjusted-results-table" class="table table-bordered table-condensed wb-calculate" data-wb-calculate='{ "eventTrigger": "initial-results-updated", "eventElement": "#adjusted-results-table", "operations": [
-  { "type": "multiply", "decimalPlaces": 2, "query": "#initial-results-table .criteria-result span:not(.hidden) .score-multiplier", "outputTarget": "#total-multiplier" },{%
-for index in (0..1) %}{%
-  assign criteriaNumber = index | plus: 1 %}
-  { "type": "min",
-    "inputs": [
-      { "type": "multiply", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-score-total, #total-multiplier" },
-      { "type": "number", "query": "#criteria-{{ criteriaNumber }}-max-total" }
-    ],
-    "outputTarget": "#criteria-{{ criteriaNumber }}-score-total-adjusted"
-  },
-  { "type": "number", "query": "#criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total-adjusted" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total-adjusted, #criteria-{{ criteriaNumber }}-max-total-adjusted", "outputTarget": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-  { "type": "number", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-percent-adjusted", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputAttribute": "value" },
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">=",
-        "inputs": [
-          { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputEvent": "wb-update-wb-progress" }
-    ]
-  },
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">=",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" },
-          {{ page.progressPercentThreshold }}
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "" },
-      { "type": "conditional", "inputs": [
-          { "type": "==", "inputs": [ { "type": "count", "query": "#criteria-3-level-4:not(.hidden), #criteria-4-level-4:not(.hidden)" }, 0 ] }
-        ],
-        "actionsTrue": [
-          { "type": "conditional", 
-            "inputs": [
-              { "type": "<",
-                "inputs": [
-                  { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-                  {{ page.criteriaThresholds[ index ][ 0 ] }}
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-success" },
-              { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-            ],
-            "actionsFalse": [
-              { "type": "conditional",
-                "inputs": [
-                  { "type": "<",
-                    "inputs": [
-                      { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-                      {{ page.criteriaThresholds[ index ][ 1 ] }}
-                    ]
-                  }
-                ],
-                "actionsTrue": [
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-info" },
-                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2-adjusted", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-                ],
-                "actionsFalse": [
-                  { "type": "conditional", 
-                    "inputs": [
-                      { "type": "<", "inputs": [
-                        { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-                        {{ page.criteriaThresholds[ index ][ 2 ] }} ]
-                      }
-                    ],
-                    "actionsTrue": [
-                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-warning" },
-                      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-3-adjusted", "class": "hidden" },
-                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-                    ],
-                    "actionsFalse": [
-                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-danger" },
-                      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-4-adjusted", "class": "hidden" },
-                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "actionsFalse": [
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-danger" },
-          { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" },
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted", "class": "hidden" }
-        ]
-      }
-    ]
-  },{%
-endfor %}
+<!-- Question 1 -->
+<div id="question-1" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "isoptional": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-1", "ignoreInit": true, "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": ">",
         "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
+          { "type": "count", "query": ".question-1-checkbox-score:not(.hidden)" }, 0
         ]
       }
     ],
     "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#total-multiplier-wrapper", "class": "hidden" },
-      { "type": "event", "outputEvent": "adjusted-results-updated", "outputTarget": "#final-result-section" }
+      { "type": "removeClass", "outputTarget": ".question-1-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-1", "outputEvent": "score-updated" }
+    ]
+  },
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "count", "query": "[data-wb-fieldflow-source=question-1] > div:nth-of-type(n+3) input:checked" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "addClass", "outputTarget": "#question-1-1-wrapper, #question-1-1-result, #question-1-1-1-result, #question-1-1-2-result", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-1", "outputEvent": "score-updated" }
     ]
   }
 ] }'>
-<thead>
-<tr>
-<th>{{ site.Criteria[ page.lang ] }}</th>
-<th>{{ site.Score[ page.lang ] }}</th>
-<th>{{ site.Result[ page.lang ] }}</th>
-</tr>
-</thead>
-<tbody>{%
-for index in (0..1) %}{%
-  assign criteriaNumber = index | plus: 1 %}
-<tr>
-<td>{{ page.aiaCriteria[ index ] }}</td>
-<td>
-<span id="criteria-{{ criteriaNumber }}-score-total-adjusted">0</span> {{ site.OutOf[ page.lang ] }} <span id="criteria-{{ criteriaNumber }}-max-total-adjusted">0</span><br />
-<progress id="progress-criteria-{{ criteriaNumber }}-adjusted" value="0" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent-adjusted">0</span>{{ site.Percent[ page.lang ] }}
-</td>
-<td id="criteria-{{ criteriaNumber }}-adjusted-result-adjusted">
-<span id="criteria-{{ criteriaNumber }}-level-1-adjusted" class="hidden">{{ site.Level[ page.lang ] }} 1</span>
-<span id="criteria-{{ criteriaNumber }}-level-2-adjusted" class="hidden">{{ site.Level[ page.lang ] }} 2</span>
-<span id="criteria-{{ criteriaNumber }}-level-3-adjusted" class="hidden">{{ site.Level[ page.lang ] }} 3</span>
-<span id="criteria-{{ criteriaNumber }}-level-4-adjusted" class="hidden">{{ site.Level[ page.lang ] }} 4</span>
-<span id="criteria-{{ criteriaNumber }}-fail-adjusted" class="hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</span>
-</td>
-</tr>{%
-endfor %}
-</tbody>
-</table>
+<p>1. {{ page.questions[ "1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-1a-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-1a-yes", "type": "on" }, "clean": ".question-1a-yes" }
+]'>a. {{ page.questions[ "1a" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-1b-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-1b-yes", "type": "on" }, "clean": ".question-1b-yes" }
+]'>b. {{ page.questions[ "1b" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#question-1-1-wrapper, #question-1-1-result, #question-1-1-1-result.nested-active, #question-1-1-2-result.nested-active", "class": "hidden" },
+  { "action": "toggle", "toggle": { "selector": ".question-1c-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-1c-yes", "type": "on" }, "clean": ".question-1c-yes" }
+]'>c. {{ page.questions[ "1c" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#question-1-1-wrapper, #question-1-1-result, #question-1-1-1-result.nested-active, #question-1-1-2-result.nested-active", "class": "hidden" },
+  { "action": "toggle", "toggle": { "selector": ".question-1d-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-1d-yes", "type": "on" }, "clean": ".question-1d-yes" }
+]'>d. {{ page.questions[ "1d" ] }}</li>
+</ul>
+</div>
 
-<section>
+<!-- Question 1.1 -->
+<div id="question-1-1-wrapper" class="hidden">
+<div id="question-1-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
+<p>1.1 {{ page.questions[ "1.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-1-1-yes, #question-1-1-1-1-1-2-wrapper, #question-1-1-1-result, #question-1-1-2-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-1-1-no", "class": "hidden" },
+  { "action": "addClass", "source": "#question-1-1-1-result, #question-1-1-2-result", "class": "nested-active" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-1-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-1-1-yes, #question-1-1-1-1-1-2-wrapper, #question-1-1-1-result, #question-1-1-2-result", "class": "hidden" },
+  { "action": "removeClass", "source": "#question-1-1-1-result, #question-1-1-2-result", "class": "nested-active" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
 
-### {{ site.InitialResults[ page.lang ] }}
+<div id="question-1-1-1-1-1-2-wrapper" class="hidden">
+<!-- Question 1.1.1 -->
+<div id="question-1-1-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
+<p>1.1.1 {{ page.questions[ "1.1.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-1-1-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-1-1-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-1-1-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-1-1-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
 
-<table id="initial-results-table" class="table table-bordered table-condensed">
-<thead>
-<tr>
-<th>{{ site.Criteria[ page.lang ] }}</th>
-<th>{{ site.Score[ page.lang ] }}</th>
-<th>{{ site.Result[ page.lang ] }}</th>
-</tr>
-</thead>
-<tbody>{%
-for index in (0..4) %}{%
-  assign criteriaNumber = index | plus: 1 %}
-<tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
-  { "type": "add", "query": ".criteria-{{ criteriaNumber }}-score-max", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total" },
-  { "type": "max", "inputs": [ { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-{{ criteriaNumber }}-score:not(.hidden)" }, 0 ], "outputTarget": "#criteria-{{ criteriaNumber }}-score-total" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total, #criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-percent" },
-  { "type": "number", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-percent", "outputTarget": "#progress-criteria-{{ criteriaNumber }}", "outputAttribute": "value" },
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">=",
-        "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, 0 ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}", "outputEvent": "wb-update-wb-progress" },
-      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "" }
-    ]
-  },
-  { "type": "conditional", "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "conditional",
-        "inputs": [
-          { "type": "<", "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, {{ page.criteriaThresholds[ index ][ 0 ] }} ] }
-        ],
-        "actionsTrue": [
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "bg-success" },
-          { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1", "class": "hidden" },
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2, #criteria-{{ criteriaNumber }}-level-3, #criteria-{{ criteriaNumber }}-level-4", "class": "hidden" }
-        ],
-        "actionsFalse": [
-          { "type": "conditional",
-            "inputs": [
-              { "type": "<", "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, {{ page.criteriaThresholds[ index ][ 1 ] }} ] }
-            ],
-            "actionsTrue": [
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "bg-info" },
-              { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1, #criteria-{{ criteriaNumber }}-level-3, #criteria-{{ criteriaNumber }}-level-4", "class": "hidden" }
-            ],
-            "actionsFalse": [
-              { "type": "conditional",
-                "inputs": [
-                  { "type": "<", "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, {{ page.criteriaThresholds[ index ][ 2 ] }} ] }
-                ],
-                "actionsTrue": [
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "bg-warning" },
-                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-3", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1, #criteria-{{ criteriaNumber }}-level-2, #criteria-{{ criteriaNumber }}-level-4", "class": "hidden" }
-                ],
-                "actionsFalse": [
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "bg-danger" },
-                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-4", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1, #criteria-{{ criteriaNumber }}-level-2, #criteria-{{ criteriaNumber }}-level-3", "class": "hidden" }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  { "type": "conditional",
-    "inputs": [ { "type": "==", "inputs": [ 0, 0 ] }
-    ],
-    "actionsTrue": [
-      { "type": "event", "outputEvent": "initial-results-updated", "outputTarget": "#adjusted-results-table" }
-    ]
-  }
- ] }'>
-<td>{{ page.aiaCriteria[ index ] }}</td>
-<td>
-<span id="criteria-{{ criteriaNumber }}-score-total">0</span> {{ site.OutOf[ page.lang ] }} <span id="criteria-{{ criteriaNumber }}-max-total">0</span><br />
-<progress id="progress-criteria-{{ criteriaNumber }}" value="0" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent">0</span>{{ site.Percent[ page.lang ] }}
-</td>
-<td id="criteria-{{ criteriaNumber }}-result" class="criteria-result">{%
-if index == 0 or index == 1 %}
-<span id="criteria-{{ criteriaNumber }}-level-1" class="hidden">{{ site.Level[ page.lang ] }} 1</span>
-<span id="criteria-{{ criteriaNumber }}-level-2" class="hidden">{{ site.Level[ page.lang ] }} 2</span>
-<span id="criteria-{{ criteriaNumber }}-level-3" class="hidden">{{ site.Level[ page.lang ] }} 3</span>
-<span id="criteria-{{ criteriaNumber }}-level-4" class="hidden">{{ site.Level[ page.lang ] }} 4</span>{%
-elsif index == 2 or index == 3 %}
-<span id="criteria-{{ criteriaNumber }}-level-1" class="hidden"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> {{ site.Preferred[ page.lang ] }}<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 0 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-2" class="hidden"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ site.Acceptable[ page.lang ] }}<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 1 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-3" class="hidden"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> {{ site.Critical[ page.lang ] }}<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 2 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-4" class="hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</span>{%
-else %}
-<span id="criteria-{{ criteriaNumber }}-level-1" class="hidden">{{ site.Level[ page.lang ] }} 1<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 0 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-2" class="hidden">{{ site.Level[ page.lang ] }} 2<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 1 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-3" class="hidden">{{ site.Level[ page.lang ] }} 3<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 2 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-4" class="hidden">{{ site.Level[ page.lang ] }} 4<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 3 ] }}</span>)</span>{%
-endif %}
-</td>
-</tr>{%
-endfor %}
-</tbody>
-</table>
-
-<details>
-
-<summary markdown="0">{{ site.DetailedResults[ page.lang ] }}</summary>
-
-<button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
-
-<table id="detailed-results-table" class="table table-bordered table-condensed">
-<thead>
-<tr>
-<th>Question</th>
-<th>{{ page.aiaCriteria[ 0 ] }}</th>
-<th>{{ page.aiaCriteria[ 1 ] }}</th>
-<th>{{ page.aiaCriteria[ 2 ] }}</th>
-<th>{{ page.aiaCriteria[ 3 ] }}</th>
-<th>{{ page.aiaCriteria[ 4 ] }}</th>
-</tr>
-</thead>
-<tbody>
-<tr id="question-1a-result" class="question-1-checkbox-score">
-<th>1a</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1a-yes">1</span>
-<span class="criteria-1-score question-1a-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1a-yes">1</span>
-<span class="criteria-2-score question-1a-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1a-yes">0</span>
-<span class="criteria-3-score question-1a-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1a-yes">1</span>
-<span class="criteria-4-score question-1a-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1a-yes">0</span>
-<span class="criteria-5-score question-1a-no">0</span>
-</td>
-</tr>
-<tr id="question-1b-result" class="question-1-checkbox-score">
-<th>1b</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1b-yes">3</span>
-<span class="criteria-1-score question-1b-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1b-yes">2</span>
-<span class="criteria-2-score question-1b-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1b-yes">0</span>
-<span class="criteria-3-score question-1b-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1b-yes">1</span>
-<span class="criteria-4-score question-1b-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1b-yes">0</span>
-<span class="criteria-5-score question-1b-no">0</span>
-</td>
-</tr>
-<tr id="question-1c-result" class="question-1-checkbox-score">
-<th>1c</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1c-yes">4</span>
-<span class="criteria-1-score question-1c-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1c-yes">2</span>
-<span class="criteria-2-score question-1c-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1c-yes">0</span>
-<span class="criteria-3-score question-1c-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1c-yes">2</span>
-<span class="criteria-4-score question-1c-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1c-yes">1</span>
-<span class="criteria-5-score question-1c-no">0</span>
-</td>
-</tr>
-<tr id="question-1d-result" class="question-1-checkbox-score">
-<th>1d</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1d-yes">5</span>
-<span class="criteria-1-score question-1d-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1d-yes">3</span>
-<span class="criteria-2-score question-1d-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1d-yes">0</span>
-<span class="criteria-3-score question-1d-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1d-yes">3</span>
-<span class="criteria-4-score question-1d-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1d-yes">2</span>
-<span class="criteria-5-score question-1d-no">0</span>
-</td>
-</tr>
-<tr id="question-1-1-result" class="hidden">
-<th>1.1</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1-1-yes">2</span>
-<span class="hidden criteria-1-score question-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1-1-yes">0</span>
-<span class="hidden criteria-2-score question-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1-1-yes">0</span>
-<span class="hidden criteria-3-score question-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1-1-yes">2</span>
-<span class="hidden criteria-4-score question-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1-1-yes">1</span>
-<span class="hidden criteria-5-score question-1-1-no">0</span>
-</td>
-</tr>
-<tr id="question-1-1-1-result" class="hidden">
-<th>1.1.1</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1-1-1-yes">5</span>
-<span class="hidden criteria-1-score question-1-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1-1-1-yes">0</span>
-<span class="hidden criteria-2-score question-1-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1-1-1-yes">0</span>
-<span class="hidden criteria-3-score question-1-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1-1-1-yes">5</span>
-<span class="hidden criteria-4-score question-1-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1-1-1-yes">4</span>
-<span class="hidden criteria-5-score question-1-1-1-no">0</span>
-</td>
-</tr>
-<tr id="question-1-1-2-result" class="hidden">
-<th>1.2</th>
-<td>
-<span class="hidden criteria-1-score question-1-1-2-yes">-2</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-1-1-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-1-1-2-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-1-1-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-1-1-2-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-1-1-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-1-1-2-yes">-2</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-1-1-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-1-1-2-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-1-1-2-no">0</span>
-</td>
-</tr>
-<tr>
-<th id="question-2-result">2</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-2-yes">4</span>
-<span class="hidden criteria-1-score question-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-2-yes">3</span>
-<span class="hidden criteria-2-score question-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-2-yes">0</span>
-<span class="hidden criteria-3-score question-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-2-yes">0</span>
-<span class="hidden criteria-4-score question-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-2-yes">0</span>
-<span class="hidden criteria-5-score question-2-no">0</span>
-</td>
-</tr>
-<tr id="question-3-result">
-<th>3</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-3-yes">5</span>
-<span class="hidden criteria-1-score question-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-3-yes">5</span>
-<span class="hidden criteria-2-score question-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-3-yes">0</span>
-<span class="hidden criteria-3-score question-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-3-yes">0</span>
-<span class="hidden criteria-4-score question-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-3-yes">0</span>
-<span class="hidden criteria-5-score question-3-no">0</span>
-</td>
-</tr>
-<tr id="question-4-result">
-<th>4</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-4-yes">1</span>
-<span class="hidden criteria-1-score question-4-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-4-yes">1</span>
-<span class="hidden criteria-2-score question-4-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-4-yes">0</span>
-<span class="hidden criteria-3-score question-4-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-4-yes">0</span>
-<span class="hidden criteria-4-score question-4-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-4-yes">0</span>
-<span class="hidden criteria-5-score question-4-no">0</span>
-</td>
-</tr>
-<tr id="question-4-1-result" class="hidden">
-<th>4.1</th>
-<td>
-<span class="hidden criteria-1-score question-4-1-none">0</span>
-<span class="hidden criteria-1-score question-4-1-protected">0</span>
-<span class="hidden criteria-1-score question-4-1-protected-a">0</span>
-<span class="hidden criteria-1-score question-4-1-protected-b">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-4-1-protected-c">0</span>
-<span class="hidden criteria-1-score question-4-1-classified">0</span>
-<span class="hidden criteria-1-score question-4-1-confidential">0</span>
-<span class="hidden criteria-1-score question-4-1-secret">0</span>
-<span class="hidden criteria-1-score question-4-1-top-secret">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-4-1-none">0</span>
-<span class="hidden criteria-2-score question-4-1-protected">1</span>
-<span class="hidden criteria-2-score question-4-1-protected-a">3</span>
-<span class="hidden criteria-2-score question-4-1-protected-b">4</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-4-1-protected-c">5</span>
-<span class="hidden criteria-2-score question-4-1-classified">2</span>
-<span class="hidden criteria-2-score question-4-1-confidential">3</span>
-<span class="hidden criteria-2-score question-4-1-secret">4</span>
-<span class="hidden criteria-2-score question-4-1-top-secret">5</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-4-1-none">0</span>
-<span class="hidden criteria-3-score question-4-1-protected">0</span>
-<span class="hidden criteria-3-score question-4-1-protected-a">0</span>
-<span class="hidden criteria-3-score question-4-1-protected-b">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-4-1-protected-c">0</span>
-<span class="hidden criteria-3-score question-4-1-classified">0</span>
-<span class="hidden criteria-3-score question-4-1-confidential">0</span>
-<span class="hidden criteria-3-score question-4-1-secret">0</span>
-<span class="hidden criteria-3-score question-4-1-top-secret">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-4-1-none">0</span>
-<span class="hidden criteria-4-score question-4-1-protected">0</span>
-<span class="hidden criteria-4-score question-4-1-protected-a">0</span>
-<span class="hidden criteria-4-score question-4-1-protected-b">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-4-1-protected-c">0</span>
-<span class="hidden criteria-4-score question-4-1-classified">0</span>
-<span class="hidden criteria-4-score question-4-1-confidential">0</span>
-<span class="hidden criteria-4-score question-4-1-secret">0</span>
-<span class="hidden criteria-4-score question-4-1-top-secret">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-4-1-none">0</span>
-<span class="hidden criteria-5-score question-4-1-protected">0</span>
-<span class="hidden criteria-5-score question-4-1-protected-a">0</span>
-<span class="hidden criteria-5-score question-4-1-protected-b">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-4-1-protected-c">0</span>
-<span class="hidden criteria-5-score question-4-1-classified">0</span>
-<span class="hidden criteria-5-score question-4-1-confidential">0</span>
-<span class="hidden criteria-5-score question-4-1-secret">0</span>
-<span class="hidden criteria-5-score question-4-1-top-secret">0</span>
-</td>
-</tr>
-<tr id="question-5-result">
-<th>5</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-5-yes">3</span>
-<span class="hidden criteria-1-score question-5-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-5-yes">2</span>
-<span class="hidden criteria-2-score question-5-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-5-yes">0</span>
-<span class="hidden criteria-3-score question-5-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-5-yes">0</span>
-<span class="hidden criteria-4-score question-5-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-5-yes">0</span>
-<span class="hidden criteria-5-score question-5-no">0</span>
-</td>
-</tr>
-<tr id="question-5-1-result" class="hidden">
-<th>5.1</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-5-1-yes">0</span>
-<span class="hidden criteria-1-score question-5-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-5-1-yes">0</span>
-<span class="hidden criteria-2-score question-5-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-5-1-yes">0</span>
-<span class="hidden criteria-3-score question-5-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-5-1-yes">0</span>
-<span class="hidden criteria-4-score question-5-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-5-1-yes">0</span>
-<span class="hidden criteria-5-score question-5-1-no">0</span>
-</td>
-</tr>
-<tr id="question-5-1-1-result" class="hidden">
-<th>5.1.1</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-5-1-1-yes">3</span>
-<span class="hidden criteria-1-score question-5-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-5-1-1-yes">0</span>
-<span class="hidden criteria-2-score question-5-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-5-1-1-yes">0</span>
-<span class="hidden criteria-3-score question-5-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-5-1-1-yes">1</span>
-<span class="hidden criteria-4-score question-5-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-5-1-1-yes">0</span>
-<span class="hidden criteria-5-score question-5-1-1-no">0</span>
-</td>
-</tr>
-<tr id="question-5-2-result" class="hidden">
-<th>5.2</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-5-2-yes">0</span>
-<span class="hidden criteria-1-score question-5-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-5-2-yes">1</span>
-<span class="hidden criteria-2-score question-5-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-5-2-yes">0</span>
-<span class="hidden criteria-3-score question-5-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-5-2-yes">0</span>
-<span class="hidden criteria-4-score question-5-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-5-2-yes">0</span>
-<span class="hidden criteria-5-score question-5-2-no">0</span>
-</td>
-</tr>
-<tr id="question-5-2-1-result" class="hidden">
-<th>5.2.1</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-5-2-1-yes">2</span>
-<span class="hidden criteria-1-score question-5-2-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-5-2-1-yes">2</span>
-<span class="hidden criteria-2-score question-5-2-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-5-2-1-yes">0</span>
-<span class="hidden criteria-3-score question-5-2-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-5-2-1-yes">0</span>
-<span class="hidden criteria-4-score question-5-2-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-5-2-1-yes">0</span>
-<span class="hidden criteria-5-score question-5-2-1-no">0</span>
-</td>
-</tr>
-<tr id="question-6-result">
-<th>6</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-6-yes">4</span>
-<span class="hidden criteria-1-score question-6-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-6-yes">2</span>
-<span class="hidden criteria-2-score question-6-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-6-yes">0</span>
-<span class="hidden criteria-3-score question-6-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-6-yes">0</span>
-<span class="hidden criteria-4-score question-6-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-6-yes">0</span>
-<span class="hidden criteria-5-score question-6-no">0</span>
-</td>
-</tr>
-<tr id="question-7-result">
-<th>7</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-7-yes">1</span>
-<span class="hidden criteria-1-score question-7-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-7-yes">1</span>
-<span class="hidden criteria-2-score question-7-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-7-yes">0</span>
-<span class="hidden criteria-3-score question-7-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-7-yes">0</span>
-<span class="hidden criteria-4-score question-7-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-7-yes">0</span>
-<span class="hidden criteria-5-score question-7-no">0</span>
-</td>
-</tr>
-<tr id="question-7-1-result" class="hidden">
-<th>7.1</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-7-1-yes">2</span>
-<span class="hidden criteria-1-score question-7-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-7-1-yes">2</span>
-<span class="hidden criteria-2-score question-7-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-7-1-yes">0</span>
-<span class="hidden criteria-3-score question-7-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-7-1-yes">0</span>
-<span class="hidden criteria-4-score question-7-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-7-1-yes">0</span>
-<span class="hidden criteria-5-score question-7-1-no">0</span>
-</td>
-</tr>
-<tr id="question-7-1-1-result" class="hidden">
-<th>7.1</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-7-1-1-yes">1</span>
-<span class="hidden criteria-1-score question-7-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-7-1-1-yes">3</span>
-<span class="hidden criteria-2-score question-7-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-7-1-1-yes">0</span>
-<span class="hidden criteria-3-score question-7-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-7-1-1-yes">0</span>
-<span class="hidden criteria-4-score question-7-1-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-7-1-1-yes">0</span>
-<span class="hidden criteria-5-score question-7-1-1-no">0</span>
-</td>
-</tr>
-<tr id="question-7-2-result" class="hidden">
-<th>7.2</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-7-2-yes">2</span>
-<span class="hidden criteria-1-score question-7-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-7-2-yes">2</span>
-<span class="hidden criteria-2-score question-7-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-7-2-yes">0</span>
-<span class="hidden criteria-3-score question-7-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-7-2-yes">0</span>
-<span class="hidden criteria-4-score question-7-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-7-2-yes">0</span>
-<span class="hidden criteria-5-score question-7-2-no">0</span>
-</td>
-</tr>
-<tr id="question-7-3-result" class="hidden">
-<th>7.3</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-7-3-yes">3</span>
-<span class="hidden criteria-1-score question-7-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-7-3-yes">2</span>
-<span class="hidden criteria-2-score question-7-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-7-3-yes">0</span>
-<span class="hidden criteria-3-score question-7-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-7-3-yes">0</span>
-<span class="hidden criteria-4-score question-7-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-7-3-yes">0</span>
-<span class="hidden criteria-5-score question-7-3-no">0</span>
-</td>
-</tr>
-<tr id="question-8-result">
-<th>8</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-8-yes">3</span>
-<span class="hidden criteria-1-score question-8-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-8-yes">2</span>
-<span class="hidden criteria-2-score question-8-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-8-yes">0</span>
-<span class="hidden criteria-3-score question-8-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-8-yes">0</span>
-<span class="hidden criteria-4-score question-8-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-8-yes">0</span>
-<span class="hidden criteria-5-score question-8-no">0</span>
-</td>
-</tr>
-<tr>
-<th id="question-9-result">9</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-9-yes">1</span>
-<span class="hidden criteria-1-score question-9-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-9-yes">4</span>
-<span class="hidden criteria-2-score question-9-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-9-yes">0</span>
-<span class="hidden criteria-3-score question-9-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-9-yes">0</span>
-<span class="hidden criteria-4-score question-9-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-9-yes">0</span>
-<span class="hidden criteria-5-score question-9-no">0</span>
-</td>
-</tr>
-<tr id="question-10a-result" class="question-10-checkbox-score">
-<th>10a</th>
-<td>
-<span class="hidden criteria-1-score question-10a-yes">-1</span>
-<span class="criteria-1-score criteria-1-score-max question-10a-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-10a-yes">0</span>
-<span class="criteria-2-score criteria-2-score-max question-10a-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-10a-yes">0</span>
-<span class="criteria-3-score criteria-3-score-max question-10a-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-10a-yes">0</span>
-<span class="criteria-4-score criteria-4-score-max question-10a-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-10a-yes">0</span>
-<span class="criteria-5-score criteria-5-score-max question-10a-no">0</span>
-</td>
-</tr>
-<tr id="question-10b-result" class="question-10-checkbox-score">
-<th>10b</th>
-<td>
-<span class="hidden criteria-1-score question-10b-yes">-1</span>
-<span class="criteria-1-score criteria-1-score-max question-10b-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-10b-yes">0</span>
-<span class="criteria-2-score criteria-2-score-max question-10b-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-10b-yes">0</span>
-<span class="criteria-3-score criteria-3-score-max question-10b-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-10b-yes">0</span>
-<span class="criteria-4-score criteria-4-score-max question-10b-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-10b-yes">0</span>
-<span class="criteria-5-score criteria-5-score-max question-10b-no">0</span>
-</td>
-</tr>
-<tr id="question-10c-result" class="question-10-checkbox-score">
-<th>10c</th>
-<td>
-<span class="hidden criteria-1-score question-10c-yes">0</span>
-<span class="criteria-1-score criteria-1-score-max question-10c-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-10c-yes">-1</span>
-<span class="criteria-2-score criteria-2-score-max question-10c-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-10c-yes">0</span>
-<span class="criteria-3-score criteria-3-score-max question-10c-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-10c-yes">0</span>
-<span class="criteria-4-score criteria-4-score-max question-10c-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-10c-yes">0</span>
-<span class="criteria-5-score criteria-5-score-max question-10c-no">0</span>
-</td>
-</tr>
-<tr id="question-10d-result" class="question-10-checkbox-score">
-<th>10d</th>
-<td>
-<span class="hidden criteria-1-score question-10d-yes">0</span>
-<span class="criteria-1-score criteria-1-score-max question-10d-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-10d-yes">-1</span>
-<span class="criteria-2-score criteria-2-score-max question-10d-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-10d-yes">0</span>
-<span class="criteria-3-score criteria-3-score-max question-10d-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-10d-yes">0</span>
-<span class="criteria-4-score criteria-4-score-max question-10d-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-10d-yes">0</span>
-<span class="criteria-5-score criteria-5-score-max question-10d-no">0</span>
-</td>
-</tr>
-<tr id="question-10e-result" class="question-10-checkbox-score">
-<th>10e</th>
-<td>
-<span class="hidden criteria-1-score question-10e-yes">-2</span>
-<span class="criteria-1-score criteria-1-score-max question-10e-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-10e-yes">0</span>
-<span class="criteria-2-score criteria-2-score-max question-10e-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-10e-yes">0</span>
-<span class="criteria-3-score criteria-3-score-max question-10e-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-10e-yes">0</span>
-<span class="criteria-4-score criteria-4-score-max question-10e-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-10e-yes">0</span>
-<span class="criteria-5-score criteria-5-score-max question-10e-no">0</span>
-</td>
-</tr>
-<tr id="question-10f-result" class="question-10-checkbox-score">
-<th>10f</th>
-<td>
-<span class="hidden criteria-1-score question-10f-yes">0</span>
-<span class="criteria-1-score criteria-1-score-max question-10f-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-10f-yes">-1</span>
-<span class="criteria-2-score criteria-2-score-max question-10f-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-10f-yes">0</span>
-<span class="criteria-3-score criteria-3-score-max question-10f-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-10f-yes">0</span>
-<span class="criteria-4-score criteria-4-score-max question-10f-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-10f-yes">0</span>
-<span class="criteria-5-score criteria-5-score-max question-10f-no">0</span>
-</td>
-</tr>
-<tr id="question-11-result">
-<th>11</th>
-<td>
-<span class="hidden criteria-1-score question-11-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-11-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-11-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-11-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-11-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-11-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-11-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-11-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-11-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-11-no">1</span>
-</td>
-</tr>
-<tr id="question-12a-result">
-<th>12a</th>
-<td>
-<span class="hidden criteria-1-score question-12a-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-12a-no">0</span>
-<span class="hidden criteria-1-score question-12a-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-12a-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-12a-no">1</span>
-<span class="hidden criteria-2-score question-12a-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-12a-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-12a-no">0</span>
-<span class="hidden criteria-3-score question-12a-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-12a-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-12a-no">0</span>
-<span class="hidden criteria-4-score question-12a-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-12a-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-12a-no">0</span>
-<span class="hidden criteria-5-score question-12a-na">0</span>
-</td>
-</tr>
-<tr id="question-12b-result">
-<th>12b</th>
-<td>
-<span class="hidden criteria-1-score question-12b-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-12b-no">0</span>
-<span class="hidden criteria-1-score question-12b-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-12b-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-12b-no">1</span>
-<span class="hidden criteria-2-score question-12b-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-12b-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-12b-no">2</span>
-<span class="hidden criteria-3-score question-12b-na">2</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-12b-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-12b-no">0</span>
-<span class="hidden criteria-4-score question-12b-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-12b-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-12b-no">0</span>
-<span class="hidden criteria-5-score question-12b-na">0</span>
-</td>
-</tr>
-<tr id="question-12c-result">
-<th>12c</th>
-<td>
-<span class="hidden criteria-1-score question-12c-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-12c-no">0</span>
-<span class="hidden criteria-1-score question-12c-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-12c-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-12c-no">1</span>
-<span class="hidden criteria-2-score question-12c-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-12c-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-12c-no">0</span>
-<span class="hidden criteria-3-score question-12c-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-12c-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-12c-no">0</span>
-<span class="hidden criteria-4-score question-12c-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-12c-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-12c-no">0</span>
-<span class="hidden criteria-5-score question-12c-na">0</span>
-</td>
-</tr>
-<tr id="question-12d-result">
-<th>12d</th>
-<td>
-<span class="hidden criteria-1-score question-12d-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-12d-no">0</span>
-<span class="hidden criteria-1-score question-12d-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-12d-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-12d-no">1</span>
-<span class="hidden criteria-2-score question-12d-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-12d-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-12d-no">0</span>
-<span class="hidden criteria-3-score question-12d-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-12d-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-12d-no">0</span>
-<span class="hidden criteria-4-score question-12d-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-12d-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-12d-no">0</span>
-<span class="hidden criteria-5-score question-12d-na">0</span>
-</td>
-</tr>
-<tr id="question-12e-result">
-<th>12e</th>
-<td>
-<span class="hidden criteria-1-score question-12e-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-12e-no">0</span>
-<span class="hidden criteria-1-score question-12e-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-12e-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-12e-no">2</span>
-<span class="hidden criteria-2-score question-12e-na">2</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-12e-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-12e-no">0</span>
-<span class="hidden criteria-3-score question-12e-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-12e-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-12e-no">0</span>
-<span class="hidden criteria-4-score question-12e-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-12e-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-12e-no">0</span>
-<span class="hidden criteria-5-score question-12e-na">0</span>
-</td>
-</tr>
-<tr id="question-12f-result">
-<th>12f</th>
-<td>
-<span class="hidden criteria-1-score question-12f-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-12f-no">0</span>
-<span class="hidden criteria-1-score question-12f-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-12f-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-12f-no">1</span>
-<span class="hidden criteria-2-score question-12f-na">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-12f-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-12f-no">0</span>
-<span class="hidden criteria-3-score question-12f-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-12f-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-12f-no">2</span>
-<span class="hidden criteria-4-score question-12f-na">2</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-12f-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-12f-no">0</span>
-<span class="hidden criteria-5-score question-12f-na">0</span>
-</td>
-</tr>
-<tr id="question-12g-result">
-<th>12g</th>
-<td>
-<span class="hidden criteria-1-score question-12g-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-12g-no">0</span>
-<span class="hidden criteria-1-score question-12g-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-12g-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-12g-no">1</span>
-<span class="hidden criteria-2-score question-12g-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-12g-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-12g-no">0</span>
-<span class="hidden criteria-3-score question-12g-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-12g-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-12g-no">0</span>
-<span class="hidden criteria-4-score question-12g-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-12g-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-12g-no">0</span>
-<span class="hidden criteria-5-score question-12g-na">0</span>
-</td>
-</tr>
-<tr id="question-12h-result">
-<th>12h</th>
-<td>
-<span class="hidden criteria-1-score question-12h-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-12h-no">0</span>
-<span class="hidden criteria-1-score question-12h-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-12h-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-12h-no">1</span>
-<span class="hidden criteria-2-score question-12h-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-12h-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-12h-no">0</span>
-<span class="hidden criteria-3-score question-12h-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-12h-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-12h-no">0</span>
-<span class="hidden criteria-4-score question-12h-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-12h-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-12h-no">0</span>
-<span class="hidden criteria-5-score question-12h-na">0</span>
-</td>
-</tr>
-<tr id="question-13-result">
-<th>13</th>
-<td>
-<span class="hidden criteria-1-score question-13-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-13-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-13-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-13-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-13-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-13-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-13-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-13-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-13-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-13-no">0</span>
-</td>
-</tr>
-<tr id="question-14-result">
-<th>14</th>
-<td>
-<span class="hidden criteria-1-score question-14-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-14-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-14-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-14-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-14-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-14-no">3</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-14-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-14-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-14-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-14-no">0</span>
-</td>
-</tr>
-<tr id="question-15-result">
-<th>15</th>
-<td>
-<span class="hidden criteria-1-score question-15-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-15-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-15-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-15-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-15-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-15-no">3</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-15-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-15-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-15-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-15-no">0</span>
-</td>
-</tr>
-<tr id="question-16-result">
-<th>16</th>
-<td>
-<span class="hidden criteria-1-score question-16-yes">-1</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-16-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-16-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-16-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-16-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-16-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-16-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-16-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-16-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-16-no">0</span>
-</td>
-</tr>
-<tr id="question-16-1-result" class="hidden">
-<th>16.1</th>
-<td>
-<span class="hidden criteria-1-score question-16-1-yes">-1</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-16-1-no">1</span>
-<span class="hidden criteria-1-score question-16-1-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-16-1-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-16-1-no">0</span>
-<span class="hidden criteria-2-score question-16-1-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-16-1-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-16-1-no">1</span>
-<span class="hidden criteria-3-score question-16-1-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-16-1-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-16-1-no">0</span>
-<span class="hidden criteria-4-score question-16-1-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-16-1-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-16-1-no">0</span>
-<span class="hidden criteria-5-score question-16-1-na">0</span>
-</td>
-</tr>
-<tr id="question-17-result">
-<th>17</th>
-<td>
-<span class="hidden criteria-1-score question-17-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-17-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-17-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-17-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-17-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-17-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-17-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-17-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-17-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-17-no">0</span>
-</td>
-</tr>
-<tr id="question-17-1-result" class="hidden">
-<th>17.1</th>
-<td>
-<span class="hidden criteria-1-score question-17-1-yes">-1</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-17-1-no">3</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-17-1-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-17-1-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-17-1-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-17-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-17-1-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-17-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-17-1-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-17-1-no">0</span>
-</td>
-</tr>
-<tr id="question-18-result">
-<th>18</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-18-yes">0</span>
-<span class="hidden criteria-1-score question-18-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-18-yes">0</span>
-<span class="hidden criteria-2-score question-18-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-18-yes">0</span>
-<span class="hidden criteria-3-score question-18-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-18-yes">0</span>
-<span class="hidden criteria-4-score question-18-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-18-yes">1</span>
-<span class="hidden criteria-5-score question-18-no">0</span>
-</td>
-</tr>
-<tr id="question-18-1-result" class="hidden">
-<th>18.1</th>
-<td>
-<span class="hidden criteria-1-score question-18-1-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-18-1-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-18-1-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-18-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-18-1-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-18-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-18-1-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-18-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-18-1-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-18-1-no">0</span>
-</td>
-</tr>
-<tr id="question-18-2-result" class="hidden">
-<th>18.2</th>
-<td>
-<span class="hidden criteria-1-score question-18-2-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-18-2-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-18-2-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-18-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-18-2-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-18-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-18-2-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-18-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-18-2-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-18-2-no">0</span>
-</td>
-</tr>
-<tr id="question-19-result">
-<th>19</th>
-<td>
-<span class="hidden criteria-1-score question-19-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-19-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-19-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-19-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-19-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-19-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-19-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-19-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-19-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-19-no">1</span>
-</td>
-</tr>
-<tr id="question-20-result">
-<th>20</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-20-yes">0</span>
-<span class="hidden criteria-1-score question-20-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-20-yes">0</span>
-<span class="hidden criteria-2-score question-20-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-20-yes">0</span>
-<span class="hidden criteria-3-score question-20-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-20-yes">0</span>
-<span class="hidden criteria-4-score question-20-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-20-yes">2</span>
-<span class="hidden criteria-5-score question-20-no">0</span>
-</td>
-</tr>
-<tr id="question-20-1-result" class="hidden">
-<th>20.1</th>
-<td>
-<span class="hidden criteria-1-score question-20-1-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-20-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-20-1-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-20-1-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-20-1-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-20-1-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-20-1-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-20-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-20-1-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-20-1-no">0</span>
-</td>
-</tr>
-<tr id="question-20-2-result" class="hidden">
-<th>20.2</th>
-<td>
-<span class="hidden criteria-1-score question-20-2-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-20-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-20-2-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-20-2-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-20-2-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-20-2-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-20-2-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-20-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-20-2-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-20-2-no">0</span>
-</td>
-</tr>
-<tr id="question-21a-result">
-<th>21a</th>
-<td>
-<span class="hidden criteria-1-score question-21a-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-21a-no">0</span>
-<span class="hidden criteria-1-score question-21a-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-21a-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-21a-no">0</span>
-<span class="hidden criteria-2-score question-21a-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-21a-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-21a-no">0</span>
-<span class="hidden criteria-3-score question-21a-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-21a-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-21a-no">0</span>
-<span class="hidden criteria-4-score question-21a-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-21a-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-21a-no">0</span>
-<span class="hidden criteria-5-score question-21a-na">0</span>
-</td>
-</tr>
-<tr id="question-21b-result">
-<th>21b</th>
-<td>
-<span class="hidden criteria-1-score question-21b-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-21b-no">0</span>
-<span class="hidden criteria-1-score question-21b-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-21b-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-21b-no">0</span>
-<span class="hidden criteria-2-score question-21b-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-21b-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-21b-no">0</span>
-<span class="hidden criteria-3-score question-21b-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-21b-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-21b-no">0</span>
-<span class="hidden criteria-4-score question-21b-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-21b-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-21b-no">0</span>
-<span class="hidden criteria-5-score question-21b-na">0</span>
-</td>
-</tr>
-<tr id="question-21c-result">
-<th>21c</th>
-<td>
-<span class="hidden criteria-1-score question-21c-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-21c-no">0</span>
-<span class="hidden criteria-1-score question-21c-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-21c-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-21c-no">0</span>
-<span class="hidden criteria-2-score question-21c-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-21c-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-21c-no">0</span>
-<span class="hidden criteria-3-score question-21c-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-21c-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-21c-no">0</span>
-<span class="hidden criteria-4-score question-21c-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-21c-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-21c-no">0</span>
-<span class="hidden criteria-5-score question-21c-na">0</span>
-</td>
-</tr>
-<tr id="question-21d-result">
-<th>21d</th>
-<td>
-<span class="hidden criteria-1-score question-21d-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-21d-no">0</span>
-<span class="hidden criteria-1-score question-21d-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-21d-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-21d-no">0</span>
-<span class="hidden criteria-2-score question-21d-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-21d-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-21d-no">0</span>
-<span class="hidden criteria-3-score question-21d-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-21d-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-21d-no">0</span>
-<span class="hidden criteria-4-score question-21d-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-21d-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-21d-no">0</span>
-<span class="hidden criteria-5-score question-21d-na">0</span>
-</td>
-</tr>
-<tr id="question-21e-result">
-<th>21e</th>
-<td>
-<span class="hidden criteria-1-score question-21e-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-21e-no">0</span>
-<span class="hidden criteria-1-score question-21e-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-21e-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-21e-no">0</span>
-<span class="hidden criteria-2-score question-21e-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-21e-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-21e-no">0</span>
-<span class="hidden criteria-3-score question-21e-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-21e-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-21e-no">0</span>
-<span class="hidden criteria-4-score question-21e-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-21e-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-21e-no">0</span>
-<span class="hidden criteria-5-score question-21e-na">0</span>
-</td>
-</tr>
-<tr id="question-21f-result">
-<th>21f</th>
-<td>
-<span class="hidden criteria-1-score question-21f-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-21f-no">0</span>
-<span class="hidden criteria-1-score question-21f-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-21f-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-21f-no">0</span>
-<span class="hidden criteria-2-score question-21f-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-21f-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-21f-no">0</span>
-<span class="hidden criteria-3-score question-21f-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-21f-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-21f-no">0</span>
-<span class="hidden criteria-4-score question-21f-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-21f-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-21f-no">0</span>
-<span class="hidden criteria-5-score question-21f-na">0</span>
-</td>
-</tr>
-<tr id="question-22-result">
-<th>22</th>
-<td>
-<span class="hidden criteria-1-score question-22-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-22-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-22-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-22-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-22-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-22-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-22-yes">-1</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-22-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-22-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-22-no">0</span>
-</td>
-</tr>
-<tr id="question-22-1-result" class="hidden">
-<th>22.1</th>
-<td>
-<span class="hidden criteria-1-score question-22-1-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-22-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-22-1-yes">-1</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-22-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-22-1-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-22-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-22-1-yes">-1</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-22-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-22-1-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-22-1-no">0</span>
-</td>
-</tr>
-<tr id="question-22-2-result" class="hidden">
-<th>22.2</th>
-<td>
-<span class="hidden criteria-1-score question-22-2-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-22-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-22-2-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-22-2-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-22-2-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-22-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-22-2-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-22-2-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-22-2-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-22-2-no">0</span>
-</td>
-</tr>
-<tr id="question-23-result">
-<th>23</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-23-yes">0</span>
-<span class="hidden criteria-1-score question-23-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-23-yes">0</span>
-<span class="hidden criteria-2-score question-23-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-23-yes">0</span>
-<span class="hidden criteria-3-score question-23-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-23-yes">0</span>
-<span class="hidden criteria-4-score question-23-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-23-yes">1</span>
-<span class="hidden criteria-5-score question-23-no">0</span>
-</td>
-</tr>
-<tr id="question-23-1-result" class="hidden">
-<th>23.1</th>
-<td>
-<span class="hidden criteria-1-score question-23-1-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-23-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-23-1-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-23-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-23-1-yes">-1</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-23-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-23-1-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-23-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-23-1-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-23-1-no">0</span>
-</td>
-</tr>
-<tr id="question-24-result" class="hidden">
-<th>24</th>
-<td>
-<span class="hidden criteria-1-score question-24-protected">0</span>
-<span class="hidden criteria-1-score question-24-protected-a">0</span>
-<span class="hidden criteria-1-score question-24-protected-b">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-24-protected-c">0</span>
-<span class="hidden criteria-1-score question-24-classified">0</span>
-<span class="hidden criteria-1-score question-24-confidential">0</span>
-<span class="hidden criteria-1-score question-24-secret">0</span>
-<span class="hidden criteria-1-score question-24-top-secret">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-24-protected">0</span>
-<span class="hidden criteria-2-score question-24-protected-a">0</span>
-<span class="hidden criteria-2-score question-24-protected-b">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-24-protected-c">0</span>
-<span class="hidden criteria-2-score question-24-classified">0</span>
-<span class="hidden criteria-2-score question-24-confidential">0</span>
-<span class="hidden criteria-2-score question-24-secret">0</span>
-<span class="hidden criteria-2-score question-24-top-secret">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-24-protected">0</span>
-<span class="hidden criteria-3-score question-24-protected-a">0</span>
-<span class="hidden criteria-3-score question-24-protected-b">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-24-protected-c">0</span>
-<span class="hidden criteria-3-score question-24-classified">0</span>
-<span class="hidden criteria-3-score question-24-confidential">0</span>
-<span class="hidden criteria-3-score question-24-secret">0</span>
-<span class="hidden criteria-3-score question-24-top-secret">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-24-protected">0</span>
-<span class="hidden criteria-4-score question-24-protected-a">0</span>
-<span class="hidden criteria-4-score question-24-protected-b">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-24-protected-c">0</span>
-<span class="hidden criteria-4-score question-24-classified">0</span>
-<span class="hidden criteria-4-score question-24-confidential">0</span>
-<span class="hidden criteria-4-score question-24-secret">0</span>
-<span class="hidden criteria-4-score question-24-top-secret">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-24-protected">1</span>
-<span class="hidden criteria-5-score question-24-protected-a">3</span>
-<span class="hidden criteria-5-score question-24-protected-b">4</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-24-protected-c">5</span>
-<span class="hidden criteria-5-score question-24-classified">2</span>
-<span class="hidden criteria-5-score question-24-confidential">3</span>
-<span class="hidden criteria-5-score question-24-secret">4</span>
-<span class="hidden criteria-5-score question-24-top-secret">5</span>
-</td>
-</tr>
-<tr id="question-25-result">
-<th>25</th>
-<td>
-<span class="hidden criteria-1-score question-25-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-25-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-25-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-25-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-25-yes">-1</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-25-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-25-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-25-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-25-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-25-no">0</span>
-</td>
-</tr>
-<tr id="question-26-result">
-<th>26</th>
-<td>
-<span class="hidden criteria-1-score question-26-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-26-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-26-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-26-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-26-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-26-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-26-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-26-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-26-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-26-no">0</span>
-</td>
-</tr>
-<tr id="question-27-result">
-<th>27</th>
-<td>
-<span class="hidden criteria-1-score question-27-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-27-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-27-yes">-2</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-27-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-27-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-27-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-27-yes">-1</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-27-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-27-yes">1</span>
-<span class="hidden criteria-5-score question-27-no">0</span>
-</td>
-</tr>
-<tr id="question-28-result">
-<th>28</th>
-<td>
-<span class="hidden criteria-1-score question-28-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-28-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-28-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-28-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-28-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-28-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-28-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-28-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-28-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-28-no">0</span>
-</td>
-</tr>
-<tr id="question-29-result">
-<th>29</th>
-<td>
-<span class="hidden criteria-1-score question-29-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-29-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-29-yes">-1</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-29-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-29-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-29-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-29-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-29-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-29-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-29-no">0</span>
-</td>
-</tr>
-<tr id="question-30-result">
-<th>30</th>
-<td>
-<span class="hidden criteria-1-score question-30-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-30-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-30-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-30-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-30-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-30-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-30-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-30-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-30-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-30-no">0</span>
-</td>
-</tr>
-<tr id="question-31-result">
-<th>31</th>
-<td>
-<span class="hidden criteria-1-score question-31-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-31-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-31-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-31-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-31-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-31-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-31-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-31-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-31-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-31-no">0</span>
-</td>
-</tr>
-<tr id="question-32-result">
-<th>32</th>
-<td>
-<span class="hidden criteria-1-score question-32-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-32-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-32-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-32-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-32-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-32-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-32-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-32-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-32-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-32-no">0</span>
-</td>
-</tr>
-<tr id="question-33-result">
-<th>33</th>
-<td>
-<span class="hidden criteria-1-score criteria-1-score-max question-33-yes">0</span>
-<span class="hidden criteria-1-score question-33-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score criteria-2-score-max question-33-yes">0</span>
-<span class="hidden criteria-2-score question-33-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score criteria-3-score-max question-33-yes">0</span>
-<span class="hidden criteria-3-score question-33-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score criteria-4-score-max question-33-yes">0</span>
-<span class="hidden criteria-4-score question-33-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-33-yes">1</span>
-<span class="hidden criteria-5-score question-33-no">0</span>
-</td>
-</tr>
-<tr id="question-34-result">
-<th>34</th>
-<td>
-<span class="hidden criteria-1-score question-34-yes">-2</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-34-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-34-yes">-1</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-34-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-34-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-34-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-34-yes">-2</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-34-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-34-yes">1</span>
-<span class="hidden criteria-5-score question-34-no">0</span>
-</td>
-</tr>
-<tr id="question-34-1-result" class="hidden">
-<th>34.1</th>
-<td>
-<span class="hidden criteria-1-score question-34-1-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-34-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-34-1-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-34-1-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-34-1-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-34-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-34-1-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-34-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-34-1-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-34-1-no">0</span>
-</td>
-</tr>
-<tr id="question-35-result">
-<th>35</th>
-<td>
-<span class="hidden criteria-1-score question-35-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-35-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-35-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-35-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-35-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-35-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-35-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-35-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-35-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-35-no">1</span>
-</td>
-</tr>
-<tr id="question-35-1-result" class="hidden">
-<th>35.1</th>
-<td>
-<span class="hidden criteria-1-score question-35-1-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-35-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-35-1-yes">-1</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-35-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-35-1-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-35-1-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-35-1-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-35-1-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-35-1-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-35-1-no">1</span>
-</td>
-</tr>
-<tr id="question-35-2-result" class="hidden">
-<th>35.2</th>
-<td>
-<span class="hidden criteria-1-score question-35-2-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-35-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-35-2-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-35-2-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-35-2-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-35-2-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-35-2-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-35-2-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-35-2-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-35-2-no">1</span>
-</td>
-</tr>
-<tr id="question-35-3-result" class="hidden">
-<th>35.3</th>
-<td>
-<span class="hidden criteria-1-score question-35-3-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-35-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-35-3-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-35-3-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-35-3-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-35-3-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-35-3-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-35-3-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-35-3-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-35-3-no">0</span>
-</td>
-</tr>
-<tr id="question-36-result">
-<th>36</th>
-<td>
-<span class="hidden criteria-1-score question-36-yes">-2</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-36-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-36-yes">-1</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-36-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-36-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-36-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-36-yes">-2</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-36-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score criteria-5-score-max question-36-yes">1</span>
-<span class="hidden criteria-5-score question-36-no">0</span>
-</td>
-</tr>
-<tr id="question-37-result">
-<th>37</th>
-<td>
-<span class="hidden criteria-1-score question-37-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-37-no">0</span>
-<span class="hidden criteria-1-score question-37-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-37-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-37-no">1</span>
-<span class="hidden criteria-2-score question-37-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-37-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-37-no">0</span>
-<span class="hidden criteria-3-score question-37-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-37-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-37-no">0</span>
-<span class="hidden criteria-4-score question-37-na">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-37-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-37-no">0</span>
-<span class="hidden criteria-5-score question-37-na">0</span>
-</td>
-</tr>
-<tr id="question-38-result">
-<th>38</th>
-<td>
-<span class="hidden criteria-1-score question-38-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-38-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-38-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-38-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-38-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-38-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-38-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-38-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-38-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-38-no">0</span>
-</td>
-</tr>
-<tr id="question-39-result">
-<th>39</th>
-<td>
-<span class="hidden criteria-1-score question-39-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-39-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-39-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-39-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-39-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-39-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-39-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-39-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-39-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-39-no">0</span>
-</td>
-</tr>
-<tr id="question-40-result">
-<th>40</th>
-<td>
-<span class="hidden criteria-1-score question-40-yes">0</span>
-<span class="hidden criteria-1-score criteria-1-score-max question-40-no">2</span>
-</td>
-<td>
-<span class="hidden criteria-2-score question-40-yes">0</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-40-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-3-score question-40-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-40-no">0</span>
-</td>
-<td>
-<span class="hidden criteria-4-score question-40-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-40-no">1</span>
-</td>
-<td>
-<span class="hidden criteria-5-score question-40-yes">0</span>
-<span class="hidden criteria-5-score criteria-5-score-max question-40-no">0</span>
-</td>
-</tr>
-</tbody>
-</table>
-
-<button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
-</details>
+<!-- Question 1.1.2 -->
+<div id="question-1-1-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
+<p>1.1.2 {{ page.questions[ "1.1.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-1-1-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-1-1-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-1-1-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-1-1-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+</div>
 
 </section>
 
+<section>
+
+### {{ page.scopeSection }}
+
+<!-- Question 2 -->
+<div id="question-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>2. {{ page.questions[ "2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 3 -->
+<div id="question-3" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>3. {{ page.questions[ "3" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-3-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-3-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-3-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-3-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 4 -->
+<div id="question-4" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>4. {{ page.questions[ "4" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-4-yes, #question-4-1-wrapper, #question-4-1-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-4-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-4-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-4-yes, #question-4-1-wrapper, #question-4-1-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 4.1 -->
+<div id="question-4-1-wrapper" class="hidden">
+<div id="question-4-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-4-1-none, .question-4-1-protected, .question-4-1-protected-a, .question-4-1-protected-b, .question-4-1-protected-c, .question-4-1-classified, .question-4-1-confidential, .question-4-1-secret, .question-4-1-top-secret", "class": "hidden" } }'>
+<p>4.1 {{ page.questions[ "4.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-none", "class": "hidden" }'>{{ site.None[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-protected", "class": "hidden" }'>{{ site.Protected[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-protected-a", "class": "hidden" }'>{{ site.ProtectedA[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-protected-b", "class": "hidden" }'>{{ site.ProtectedB[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-protected-c", "class": "hidden" }'>{{ site.ProtectedC[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-classified", "class": "hidden" }'>{{ site.Classified[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-confidential", "class": "hidden" }'>{{ site.Confidential[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-secret", "class": "hidden" }'>{{ site.Secret[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-4-1-top-secret", "class": "hidden" }'>{{ site.TopSecret[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 5 -->
+<div id="question-5" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>5. {{ page.questions[ "5" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-yes, #question-5-1-5-2-wrapper, #question-5-1-result, #question-5-1-1-result.nested-active, #question-5-2-result, #question-5-2-1-result.nested-active", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-yes, #question-5-1-5-2-wrapper, #question-5-1-result, #question-5-1-1-result, #question-5-2-result, #question-5-2-1-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-5-1-5-2-wrapper" class="hidden">
+<!-- Question 5.1 -->
+<div id="question-5-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>5.1 {{ page.questions[ "5.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-1-yes, #question-5-1-1-wrapper, #question-5-1-1-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-1-no", "class": "hidden" },
+  { "action": "addClass", "source": "#question-5-1-1-result", "class": "nested-active" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-1-yes, #question-5-1-1-wrapper, #question-5-1-1-result", "class": "hidden" },
+  { "action": "removeClass", "source": "#question-5-1-1-result", "class": "nested-active" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 5.1.1 -->
+<div id="question-5-1-1-wrapper" class="hidden">
+<div id="question-5-1-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>5.1.1 {{ page.questions[ "5.1.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-1-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-1-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-1-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-1-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 5.2 -->
+<div id="question-5-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>5.2 {{ page.questions[ "5.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-2-yes, #question-5-2-1-wrapper, #question-5-2-1-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-2-no", "class": "hidden" },
+  { "action": "addClass", "source": "#question-5-2-1-result", "class": "nested-active" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-2-yes, #question-5-2-1-wrapper, #question-5-2-1-result", "class": "hidden" },
+  { "action": "removeClass", "source": "#question-5-2-1-result", "class": "nested-active" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 5.2.1 -->
+<div id="question-5-2-1-wrapper" class="hidden">
+<div id="question-5-2-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>5.2.1 {{ page.questions[ "5.2.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-2-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-2-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-5-2-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-5-2-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Question 6 -->
+<div id="question-6" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>6. {{ page.questions[ "6" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-6-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-6-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-6-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-6-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 7 -->
+<div id="question-7" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>7. {{ page.questions[ "7" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-yes, #question-7-1-7-2-7-3-wrapper, #question-7-1-result, #question-7-1-1-result.nested-active, #question-7-2-result, #question-7-3-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-yes, #question-7-1-7-2-7-3-wrapper, #question-7-1-result, #question-7-2-result, #question-7-1-1-result, #question-7-2-result, #question-7-3-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-7-1-7-2-7-3-wrapper" class="hidden">
+<!-- Question 7.1 -->
+<div id="question-7-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>7.1 {{ page.questions[ "7.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-1-yes, #question-7-1-1-wrapper, #question-7-1-1-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-1-no", "class": "hidden" },
+  { "action": "addClass", "source": "#question-7-1-1-result", "class": "nested-active" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-1-yes, #question-7-1-1-wrapper, #question-7-1-1-result", "class": "hidden" },
+  { "action": "removeClass", "source": "#question-7-1-1-result", "class": "nested-active" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 7.1.1 -->
+<div id="question-7-1-1-wrapper" class="hidden">
+<div id="question-7-1-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>7.1.1 {{ page.questions[ "7.1.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-1-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-1-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-1-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-1-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 7.2 -->
+<div id="question-7-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>7.2 {{ page.questions[ "7.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 7.3 -->
+<div id="question-7-3" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>7.3 {{ page.questions[ "7.3" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-3-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-3-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-7-3-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-7-3-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 8 -->
+<div id="question-8" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>8. {{ page.questions[ "8" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-8-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-8-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-8-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-8-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 9 -->
+<div id="question-9" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>9. {{ page.questions[ "9" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-9-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-9-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-9-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-9-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 10 -->
+<div id="question-10" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "isoptional": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-10", "ignoreInit": true, "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">",
+        "inputs": [
+          { "type": "count", "query": ".question-10-checkbox-score:not(.hidden)" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": ".question-10-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-10", "outputEvent": "score-updated" }
+    ]
+  }
+] }'>
+<p>10. {{ page.questions[ "10" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-10a-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-10a-yes", "type": "on" }, "clean": ".question-10a-yes" }
+]'>a. {{ page.questions[ "10a" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-10b-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-10b-yes", "type": "on" }, "clean": ".question-10b-yes" }
+]'>b. {{ page.questions[ "10b" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-10c-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-10c-yes", "type": "on" }, "clean": ".question-10c-yes" }
+]'>c. {{ page.questions[ "10c" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-10d-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-10d-yes", "type": "on" }, "clean": ".question-10d-yes" }
+]'>d. {{ page.questions[ "10d" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-10e-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-10e-yes", "type": "on" }, "clean": ".question-10e-yes" }
+]'>e. {{ page.questions[ "10e" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-10f-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-10f-yes", "type": "on" }, "clean": ".question-10f-yes" }
+]'>f. {{ page.questions[ "10f" ] }}</li>
+</ul>
+</div>
+
+<!-- Question 11 -->
+<div id="question-11" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>11. {{ page.questions[ "11" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-11-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-11-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-11-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-11-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 12 -->
+<fieldset>
+<legend class="mrgn-bttm-0 h5 required">12. {{ page.questions[ "12" ] }} <strong class="required">{{ site.required[ page.lang ] }}</strong></legend>
+<div class="clearfix"></div>
+
+<div id="question-12a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>a. {{ page.questions[ "12a" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12a-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12a-no, .question-12a-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12a-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12a-yes, .question-12a-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12a-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12a-yes, .question-12a-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-12b" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>b. {{ page.questions[ "12b" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12b-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12b-no, .question-12b-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12b-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12b-yes, .question-12b-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12b-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12b-yes, .question-12b-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-12c" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>c. {{ page.questions[ "12c" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12c-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12c-no, .question-12c-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12c-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12c-yes, .question-12c-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12c-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12c-yes, .question-12c-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-12d" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>d. {{ page.questions[ "12d" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12d-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12d-no, .question-12d-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12d-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12d-yes, .question-12d-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12d-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12d-yes, .question-12d-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-12e" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>e. {{ page.questions[ "12e" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12e-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12e-no, .question-12e-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12e-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12e-yes, .question-12e-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12e-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12e-yes, .question-12e-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-12f" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>f. {{ page.questions[ "12f" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12f-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12f-no, .question-12f-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12f-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12f-yes, .question-12f-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12f-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12f-yes, .question-12f-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-12g" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>g. {{ page.questions[ "12g" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12g-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12g-no, .question-12g-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12g-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12g-yes, .question-12g-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12g-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12g-yes, .question-12g-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-12h" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>h. {{ page.questions[ "12h" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12h-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12h-no, .question-12h-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12h-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12h-yes, .question-12h-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-12h-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-12h-yes, .question-12h-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+</fieldset>
+
+<!-- Question 13 -->
+<div id="question-13" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>13. {{ page.questions[ "13" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-13-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-13-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-13-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-13-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 14 -->
+<div id="question-14" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>14. {{ page.questions[ "14" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-14-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-14-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-14-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-14-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 15 -->
+<div id="question-15" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>15. {{ page.questions[ "15" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-15-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-15-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-15-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-15-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 16 -->
+<div id="question-16" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>16. {{ page.questions[ "16-part1" ] }}<a href="{{ page.questions[ "16-link-url" ] }}" target="_blank" rel="external">{{ page.questions[ "16-link-text" ] }}</a>{{ page.questions[ "16-part2" ] }}
+</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-16-yes, #question-16-1-wrapper, #question-16-1-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-16-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-16-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-16-yes, #question-16-1-wrapper, #question-16-1-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 16.1 -->
+<div id="question-16-1-wrapper" class="hidden">
+<div id="question-16-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>16.1 {{ page.questions[ "16.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-16-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-16-1-no, .question-16-1-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-16-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-16-1-yes, .question-16-1-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-16-1-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-16-1-yes, .question-16-1-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 17 -->
+<div id="question-17" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>17. {{ page.questions[ "17" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-17-yes, #question-17-1-wrapper, #question-17-1-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-17-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-17-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-17-yes, #question-17-1-wrapper, #question-17-1-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-17-1-wrapper" class="hidden">
+<!-- Question 17.1 -->
+<div id="question-17-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>17.1 {{ page.questions[ "17.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-17-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-17-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-17-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-17-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 18 -->
+<div id="question-18" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>18. {{ page.questions[ "18" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-18-yes, #question-18-1-18-2-wrapper, #question-18-1-result, #question-18-2-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-18-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-18-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-18-yes, #question-18-1-18-2-wrapper, #question-18-1-result, #question-18-2-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-18-1-18-2-wrapper" class="hidden">
+<!-- Question 18.1 -->
+<div id="question-18-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>18.1 {{ page.questions[ "18.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-18-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-18-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-18-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-18-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 18.2 -->
+<div id="question-18-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>18.2 {{ page.questions[ "18.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-18-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-18-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-18-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-18-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 19 -->
+<div id="question-19" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>19. {{ page.questions[ "19" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-19-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-19-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-19-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-19-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 20 -->
+<div id="question-20" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>20. {{ page.questions[ "20" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-20-yes, #question-20-1-20-2-wrapper, #question-20-1-result, #question-20-2-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-20-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-20-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-20-yes, #question-20-1-20-2-wrapper, #question-20-1-result, #question-20-2-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-20-1-20-2-wrapper" class="hidden">
+<!-- Question 20.1 -->
+<div id="question-20-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>20.1 {{ page.questions[ "20.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-20-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-20-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-20-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-20-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 20.2 -->
+<div id="question-20-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>20.2 {{ page.questions[ "20.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-20-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-20-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-20-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-20-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 21 -->
+<fieldset>
+<legend class="mrgn-bttm-0 h5 required">21. {{ page.questions[ "21" ] }} <strong class="required">({{ site.required[ page.lang ] }})</strong></legend>
+<div class="clearfix"></div>
+
+<div id="question-21a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>a. {{ page.questions[ "21a" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21a-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21a-no, .question-21a-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21a-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21a-yes, .question-21a-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21a-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21a-yes, .question-21a-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-21b" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>b. {{ page.questions[ "21b" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21b-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21b-no, .question-21b-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21b-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21b-yes, .question-21b-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21b-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21b-yes, .question-21b-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-21c" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>c. {{ page.questions[ "21c" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21c-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21c-no, .question-21c-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21c-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21c-yes, .question-21c-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21c-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21c-yes, .question-21c-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-21d" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>d. {{ page.questions[ "21d" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21d-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21d-no, .question-21d-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21d-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21d-yes, .question-21d-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21d-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21d-yes, .question-21d-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-21e" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>e. {{ page.questions[ "21e" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21e-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21e-no, .question-21e-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21e-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21e-yes, .question-21e-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21e-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21e-yes, .question-21e-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-21f" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>f. {{ page.questions[ "21f" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21f-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21f-no, .question-21f-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21f-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21f-yes, .question-21f-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-21f-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21f-yes, .question-21f-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+</fieldset>
+
+<!-- Question 22 -->
+<div id="question-22" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>22. {{ page.questions[ "22" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-22-yes, #question-22-1-22-2-wrapper, #question-22-1-result, #question-22-2-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-22-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-22-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-22-yes, #question-22-1-22-2-wrapper, #question-22-1-result, #question-22-2-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-22-1-22-2-wrapper" class="hidden">
+<!-- Question 22.1 -->
+<div id="question-22-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>22.1 {{ page.questions[ "22.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-22-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-22-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-22-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-22-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 22.2 -->
+<div id="question-22-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>22.2 {{ page.questions[ "22.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-22-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-22-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-22-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-22-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 23 -->
+<div id="question-23" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>23. {{ page.questions[ "23" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-23-yes, #question-23-1-wrapper, #question-23-1-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-23-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-23-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-23-yes, #question-23-1-wrapper, #question-23-1-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 23.1 -->
+<div id="question-23-1-wrapper" class="hidden">
+<div id="question-23-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>23.1 {{ page.questions[ "23.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-23-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-23-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-23-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-23-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 24 -->
+<div id="question-24" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-24-protected, .question-24-protected-a, .question-24-protected-b, .question-24-protected-c, .question-24-classified, .question-24-confidential, .question-24-secret, .question-24-top-secret", "class": "hidden" } }'>
+<p>24. {{ page.questions[ "24" ] }}</p>
+<ul>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-protected", "class": "hidden" }'>{{ site.Protected[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-protected-a", "class": "hidden" }'>{{ site.ProtectedA[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-protected-b", "class": "hidden" }'>{{ site.ProtectedB[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-protected-c", "class": "hidden" }'>{{ site.ProtectedC[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-classified", "class": "hidden" }'>{{ site.Classified[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-confidential", "class": "hidden" }'>{{ site.Confidential[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-secret", "class": "hidden" }'>{{ site.Secret[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-top-secret", "class": "hidden" }'>{{ site.TopSecret[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 25 -->
+<div id="question-25" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>25. {{ page.questions[ "25" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-25-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-25-no, .question-25-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-25-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-25-yes, .question-25-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-25-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-25-yes, .question-25-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 26 -->
+<div id="question-26" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>26. {{ page.questions[ "26" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-26-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-26-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-26-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-26-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 27 -->
+<div id="question-27" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>27. {{ page.questions[ "27" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-27-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-27-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-27-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-27-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 28 -->
+<div id="question-28" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>28. {{ page.questions[ "28" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-28-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-28-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-28-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-28-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 29 -->
+<div id="question-29" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>29. {{ page.questions[ "29" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-29-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-29-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-29-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-29-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 30 -->
+<div id="question-30" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>30. {{ page.questions[ "30" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-30-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-30-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-30-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-30-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 31 -->
+<div id="question-31" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>31. {{ page.questions[ "31" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-31-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-31-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-31-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-31-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 32 -->
+<div id="question-32" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>32. {{ page.questions[ "32" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-32-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-32-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-32-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-32-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 33 -->
+<div id="question-33" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>33. {{ page.questions[ "33" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-33-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-33-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-33-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-33-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 34 -->
+<div id="question-34" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>34. {{ page.questions[ "34" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34-yes, #question-34-1-wrapper, #question-34-1-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34-yes, #question-34-1-wrapper, #question-34-1-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 34.1 -->
+<div id="question-34-1-wrapper" class="hidden">
+<div id="question-34-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>34.1 {{ page.questions[ "34.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 35 -->
+<div id="question-35" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>35. {{ page.questions[ "35" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-35-yes, #question-35-1-35-2-35-3-wrapper, #question-35-1-result, #question-35-2-result, #question-35-3-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-35-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-35-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-35-yes, #question-35-1-35-2-35-3-wrapper, #question-35-1-result, #question-35-2-result, #question-35-3-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-35-1-35-2-35-3-wrapper" class="hidden">
+<!-- Question 35.1 -->
+<div id="question-35-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>35.1 {{ page.questions[ "35.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-35-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-35-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-35-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-35-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 35.2 -->
+<div id="question-35-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>35.2 {{ page.questions[ "35.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-35-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-35-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-35-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-35-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 35.3 -->
+<div id="question-35-3" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>35.3 {{ page.questions[ "35.3" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-35-3-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-35-3-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-35-3-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-35-3-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 36 -->
+<div id="question-36" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>36. {{ page.questions[ "36" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-36-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-36-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-36-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-36-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 37 -->
+<div id="question-37" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>37. {{ page.questions[ "37" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-37-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-37-no, .question-37-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-37-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-37-yes, .question-37-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-37-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-37-yes, .question-37-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 38 -->
+<div id="question-38" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>38. {{ page.questions[ "38" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-38-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-38-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-38-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-38-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 39 -->
+<div id="question-39" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>39. {{ page.questions[ "39" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-39-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-39-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-39-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-39-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 40 -->
+<div id="question-40" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>40. {{ page.questions[ "40" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-40-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-40-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-40-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-40-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+</section>
+
+</form>
+</div>
 </section>

@@ -1,0 +1,140 @@
+<section>
+
+## {{ site.Results[ page.lang ] }}
+
+<section>
+<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}{{ site.Colon[ page.lang ] }}</h3>
+
+<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
+    { "type": "count", "query": "#agile-use-when-questionnaire fieldset input:checked" },
+    { "type": "count", "query": "#agile-use-when-questionnaire fieldset" }
+  ] },
+  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
+    ],
+    "actionsTrue": [
+      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
+    ]
+  }
+] }'></progress> <span id="questionnaire-progress-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
+</section>
+
+<section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
+<header>
+<div class="h6 mrgn-tp-md mrgn-bttm-md">
+<h3 class="h6 mrgn-tp-0 mrgn-bttm-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}{{ site.Colon[ page.lang ] }}</h3>
+<p><progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
+</div>
+</header>
+</section>
+
+<section id="final-result" class="panel panel-default">
+<header class="panel-heading">
+<h3 class="panel-title">{{ site.Recommendation[ page.lang ] }}</h3>
+</header>
+<div class="panel-body">
+<p id="recommendation-not-complete">{{ site.CompleteQuestionnaireFirst[ page.lang ] }}</p>
+<p class="hidden" id="recommendation-agile-element">{{ page.recommendationAgileElement }}</p>
+<p class="hidden" id="recommendation-agile-managing-project">{{ page.recommendationAgileManagingProject }}</p>
+<p class="hidden" id="recommendation-agile-managing-project-and-scrum">{{ page.recommendationAgileManagingProjectAndScrum }}.</p>
+</div>
+</section>
+
+<section>
+
+### {{ site.DetailedResults[ page.lang ] }}
+
+<table class="table table-bordered table-condensed">
+<thead>
+<tr>
+<th>{{ site.Criteria[ page.lang ] }}</th>
+<th>{{ site.SelectedAnswer[ page.lang ] }}</th>
+<th>{{ page.isAgileRecommended }}</th>
+<th>{{ site.Points[ page.lang ] }}</th>
+</tr>
+</thead>
+<tbody>
+{% for index in (0..11) %}{%
+  assign questionNumber = index | plus: 1 %}{% 
+  assign questionNumberString = questionNumber | downcase
+%}<tr>
+<td>{{ page.questions[ questionNumberString ] }}</td>
+<td>
+<span class="hidden question-{{ questionNumber }}-agile">1</span>
+<span class="hidden question-{{ questionNumber }}-non-agile">2</span>
+</td>
+<td>
+<span class="hidden question-{{ questionNumber }}-agile"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> {{ site.Yes[ page.lang ] }}</span>
+<span class="hidden question-{{ questionNumber }}-non-agile"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> {{ site.No[ page.lang ] }}</span>
+</td>
+<td>
+<span class="hidden question-{{ questionNumber }}-agile agile-answer-points">{{ page.criteriaAgilePoints[ index ] }}</span>
+<span class="hidden question-{{ questionNumber }}-non-agile non-agile-answer-points">0</span>
+</td>
+</tr>{%
+endfor %}
+</tbody>
+<tfoot>
+<tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow", "operations": [
+  { "type": "count", "increment": 1, "query": ".agile-answer-points:not(.hidden)", "outputTarget": "#total-agile-answers" },
+  { "type": "percent", "decimalPlaces": 1, "query": "#total-agile-answers, #max-agile-answers", "outputTarget": "#total-agile-answers-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#total-agile-answers-percent", "outputTarget": "#total-agile-answers-progress", "outputAttribute": "value" },
+  { "type": "add", "query": ".agile-answer-points:not(.hidden)", "outputTarget": "#total-agile-points" },
+  { "type": "add", "query": ".agile-answer-points", "outputTarget": "#max-agile-points" },
+  { "type": "percent", "decimalPlaces": 1, "query": "#total-agile-points, #max-agile-points", "outputTarget": "#total-agile-points-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#total-agile-points-percent", "outputTarget": "#total-agile-points-progress", "outputAttribute": "value" },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
+    ],
+    "actionsTrue": [
+      { "type": "event", "outputTarget": "#total-agile-answers-progress, #total-agile-points-progress", "outputEvent": "wb-update-wb-progress" }
+    ]
+  },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">=", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 100 ] }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": "#final-result", "class": "panel-default"},
+      { "type": "addClass", "outputTarget": "#final-result", "class": "panel-primary"},
+      { "type": "conditional", "inputs": [ { "type": "<", "inputs": [ { "type": "number", "query": "#total-agile-points-percent" }, 50 ] } ],
+        "actionsTrue": [
+          { "type": "removeClass", "outputTarget": "#recommendation-agile-element", "class": "hidden" },
+          { "type": "addClass", "outputTarget": "#recommendation-not-complete, #recommendation-agile-managing-project, #recommendation-agile-managing-project-and-scrum", "class": "hidden" }
+        ],
+        "actionsFalse": [
+          { "type": "conditional",
+            "inputs": [
+              { "type": "<", "inputs": [ { "type": "number", "query": "#total-agile-points-percent" }, 75 ] }
+            ],
+            "actionsTrue": [
+              { "type": "removeClass", "outputTarget": "#recommendation-agile-managing-project", "class": "hidden" },
+              { "type": "addClass", "outputTarget": "#recommendation-not-complete, #recommendation-agile-element, #recommendation-agile-managing-project-and-scrum", "class": "hidden" }
+            ],
+            "actionsFalse": [
+              { "type": "removeClass", "outputTarget": "#recommendation-agile-managing-project-and-scrum", "class": "hidden" },
+              { "type": "addClass", "outputTarget": "#recommendation-not-complete, #recommendation-agile-element, #recommendation-agile-managing-project", "class": "hidden" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+] }'>
+<th>{{ site.Summary[ page.lang ] }}</th>
+<td>{{ site.NotApplicable[ page.lang ] }}</td>
+<td>{{ page.agileIsRecommendedFor }} <span id="total-agile-answers">0</span> {{ site.OutOf[ page.lang ] }} <span id="max-agile-answers">{{ page.criteriaAgilePoints | size }}</span> {{ site.Criteria[ page.lang ] | downcase }}<br />
+<progress id="total-agile-answers-progress" value="0" max="100"></progress> <span id="total-agile-answers-percent">0</span>{{ site.Percent[ page.lang ] }}</td>
+<td><span id="total-agile-points">0</span> {{ site.OutOf[ page.lang ] }} <span id="max-agile-points">0</span> {{ site.Points[ page.lang ] }}<br />
+<progress id="total-agile-points-progress" value="0" max="100"></progress> <span id="total-agile-points-percent">0</span>{{ site.Percent[ page.lang ] }}</td>
+</tr>
+</tfoot>
+</table>
+
+</section>
+
+</section>

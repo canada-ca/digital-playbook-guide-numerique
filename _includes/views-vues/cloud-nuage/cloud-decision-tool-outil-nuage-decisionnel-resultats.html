@@ -1,0 +1,215 @@
+<!--Results-->
+<section>
+
+## {{ site.Results[ page.lang ] }}
+
+<section>
+<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}</h3>
+
+<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
+    { "type": "count", "query": "#right-cloud-questionnaire fieldset input:checked" },
+    { "type": "count", "query": "#right-cloud-questionnaire fieldset" }
+  ] },
+  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
+    ],
+    "actionsTrue": [
+      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
+    ]
+  }
+] }'></progress> <span id="questionnaire-progress-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
+</section>
+
+<section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
+<header>
+<div class="h6 mrgn-tp-md mrgn-bttm-md">
+<h3 class="h6 mrgn-tp-0 mrgn-bttm-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}</h3>
+<p><progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
+</div>
+</header>
+</section>
+
+<table class="table table-bordered table-condensed">
+<thead>
+<tr>
+<th id="r1h1">{{ site.ImpactLevel[ page.lang ] }}</th>
+<th id="r1h2">{{ site.Criteria[ page.lang ] }}</th>
+<th id="r1h3">{{ page.public }}</th>
+<th id="r1h4">{{ page.private }}</th>
+<th id="r1h5">{{ page.nonCloud }}</th>
+</tr>
+</thead>
+<tbody>
+{% for index in (0..2) %}{%
+  assign headerNumber = index | plus: 2 %}{%
+  assign criteriaNumberString = index | plus: 1 | downcase %}{%
+  assign criteriaTitle = page.questions[ criteriaNumberString ] %}{%
+  assign criteriaTag = page.criteriaTags[ index ]
+%}<tr>{%
+if index == 0 %}
+<th headers="r1h1" id="r2h1" rowspan="3">{{ page.mandatorySection }}</th>{%
+endif %}
+<th headers="r1h2" id="r2h{{ headerNumber }}">{{ criteriaTitle }}</th>{%
+  for cloudIndex in (0..2) %}{%
+    assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
+    assign cloudType = page.cloudTypes[ cloudIndex ] %}
+<td headers="r1h{{ cloudHeaderNumber}} r2h1 r2h{{ headerNumber }}" class="{{ criteriaTag }}-result">
+<span id="{{ cloudType }}-{{ criteriaTag }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> {{ site.Pass[ page.lang ] }}</span>
+<span id="{{ cloudType }}-{{ criteriaTag }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</span>
+</td>{%
+  endfor %}
+</tr>{%
+endfor %}
+
+{% for index in (3..5) %}{%
+  assign headerNumber = index | minus: 1 %}{%
+  assign criteriaNumberString = index | plus: 1 | downcase %}{%
+  assign criteriaTitle = page.questions[ criteriaNumberString ] %}{%
+  assign criteriaTag = page.criteriaTags[ index ]
+%}<tr>{%
+if index == 3 %}
+<th headers="r1h1" id="r3h1" rowspan="3">{{ page.highlyRatedSection }}</th>{%
+endif %}
+<th headers="r1h2" id="r3h{{ headerNumber }}">{{ criteriaTitle }}</th>{%
+  for cloudIndex in (0..2) %}{%
+    assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
+    assign cloudType = page.cloudTypes[ cloudIndex ] %}
+<td headers="r1h{{ cloudHeaderNumber }} r3h1 r3h{{ headerNumber }}" class="{{ criteriaTag }}-result">
+<span id="{{ cloudType }}-{{ criteriaTag }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 20 {{ site.Points[ page.lang ] | downcase }}</span>
+<span id="{{ cloudType }}-{{ criteriaTag }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 {{ site.Points[ page.lang ] | downcase }}</span>
+</td>{%
+  endfor %}
+</tr>{%
+endfor %}
+
+{% for index in (6..10) %}{%
+  assign headerNumber = index | minus: 4 %}{%
+  assign criteriaNumberString = index | plus: 1 | downcase %}{%
+  assign criteriaTitle = page.questions[ criteriaNumberString ] %}{%
+  assign criteriaTag = page.criteriaTags[ index ]
+%}<tr>{%
+if index == 6 %}
+<th headers="r1h1" id="r4h1" rowspan="5">{{ page.ratedSection }}</th>{%
+endif %}
+<th headers="r1h2" id="r4h{{ headerNumber }}">{{ criteriaTitle }}</th>{%
+  for cloudIndex in (0..2) %}{%
+    assign cloudHeaderNumber = cloudIndex | plus: 3 %}{%
+    assign cloudType = page.cloudTypes[ cloudIndex ] %}
+<td headers="r1h{{ cloudHeaderNumber }} r4h1 r4h{{ headerNumber }}" class="{{ criteriaTag }}-result">
+<span id="{{ cloudType }}-{{ criteriaTag }}-passed" class="hidden"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 10 {{ site.Points[ page.lang ] | downcase }}</span>
+<span id="{{ cloudType }}-{{ criteriaTag }}-failed" class="hidden"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> 0 {{ site.Points[ page.lang ] | downcase }}</span>
+</td>{%
+  endfor %}
+</tr>{%
+endfor %}
+
+<tr>
+<th headers="r1h1" id="r5h1" rowspan="2">{{ site.Summary[ page.lang ] }}</th>
+<th headers="r1h2" id="r5h2">{{ page.mandatoryMet }}</th>{%
+for index in (0..2) %}{%
+  assign headerNumber = index | plus: 3 %}{%
+  assign cloudType = page.cloudTypes[ index ] %}
+<td headers="r1h{{ headerNumber }} r5h1 r5h2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+  { "type": "count", "increment": 1, "query": "#{{ cloudType }}-sensitivity-passed:not(.hidden), #{{ cloudType }}-financial-passed:not(.hidden), #{{ cloudType }}-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-{{ cloudType }}" },
+  { "type": "percent", "decimalPlaces": 1, "inputs": [ { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3 ], "outputTarget": "#percent-mandatory-{{ cloudType }}" },
+  { "type": "number", "decimalPlaces": 0, "query": "#percent-mandatory-{{ cloudType }}", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputAttribute": "value" },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">", "inputs": [ { "type": "number", "query": "#percent-mandatory-{{ criteriaNumber }}" }, 0 ] }
+    ],
+    "actionsTrue": [
+      { "type": "event", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" }
+    ]
+  },
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">=",
+        "inputs": [
+          { "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-1] input:checked" }, 1
+        ]
+      },
+      { "type": ">=",
+        "inputs": [
+          { "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-2 ] input:checked" }, 1
+        ]
+      },
+      { "type": ">=",
+        "inputs": [
+          { "type": "count", "query": "fieldset[data-wb-fieldflow-source=question-3 ] input:checked" }, 1
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "conditional",
+        "inputs": [
+          { "type": "==",
+            "inputs": [
+              { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"},
+          { "type":  "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"}
+        ]
+      },
+      { "type": "conditional",
+        "inputs": [
+          { "type": "!=",
+            "inputs": [
+              { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "addClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-passed"},
+          { "type": "removeClass", "class": "hidden", "outputTarget": "#mandatory-{{ cloudType }}-failed"}
+        ]
+      }
+    ]
+  }
+] }'>
+<span id="tally-mandatory-{{ cloudType }}">0</span> {{ site.OutOf[ page.lang ] }} 3 (<span id="percent-mandatory-{{ cloudType }}">0</span>{{ site.Percent[ page.lang ] }})
+<span id="mandatory-{{ cloudType }}-passed" class="hidden mrgn-lft-md"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> {{ site.Pass[ page.lang ] }}</span>
+<span id="mandatory-{{ cloudType }}-failed" class="hidden mrgn-lft-md"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</span>
+<div><progress id="progress-mandatory-{{ cloudType }}" value="0" max="100"></progress></div>
+</td>{%
+endfor %}
+</tr>
+
+<tr>
+<th headers="r1h2" id="r5h3">{{ page.ratedTotals }}</th>{%
+for index in (0..2) %}{%
+  assign headerNumber = index | plus: 3 %}{%
+  assign cloudType = page.cloudTypes[ index ] %}
+<td headers="r1h{{ headerNumber }} r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+  { "type": "add",
+    "inputs": [
+      { "type": "count", "increment": 20, "query": "#{{ cloudType }}-commoditized-passed:not(.hidden), #{{ cloudType }}-location-passed:not(.hidden), #{{ cloudType }}-connectivity-passed:not(.hidden)" },
+      { "type": "count", "increment": 10, "query": "#{{ cloudType }}-speed-passed:not(.hidden), #{{ cloudType }}-longevity-passed:not(.hidden), #{{ cloudType }}-elasticity-passed:not(.hidden), #{{ cloudType }}-innovation-passed:not(.hidden), #{{ cloudType }}-devops-passed:not(.hidden)" }
+    ],
+    "outputTarget": "#tally-rated-{{ cloudType }}"
+  },
+  { "type": "percent", "decimalPlaces": 1,
+    "inputs": [
+      { "type": "number", "query": "#tally-rated-{{ cloudType }}" }, 110
+    ],
+    "outputTarget": "#percent-rated-{{ cloudType }}"
+  },
+  { "type": "number", "decimalPlaces": 0, "query": "#percent-rated-{{ cloudType }}", "outputTarget": "#progress-rated-{{ cloudType }}", "outputAttribute": "value" },
+  { "type": "conditional", "inputs": [ { "type": ">", "inputs": [ { "type": "number", "query": "#percent-rated-{{ criteriaNumber }}" }, 0 ] } ],
+    "actionsTrue": [ { "type": "event", "outputTarget": "#progress-rated-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" } ]
+  }
+] }'>
+<span id="tally-rated-{{ cloudType }}">0</span> {{ site.OutOf[ page.lang ] }} 110 (<span id="percent-rated-{{ cloudType }}">0</span>{{ site.Percent[ page.lang ] }})
+<div><progress id="progress-rated-{{ cloudType }}" value="0" max="100"></progress></div>
+</td>{%
+endfor %}
+</tr>
+</tbody>
+</table>
+
+</section>
