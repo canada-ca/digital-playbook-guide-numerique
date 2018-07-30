@@ -2,7 +2,7 @@
 layout: default
 lang: en
 altLang: fr
-altLangPage: guide-numerique
+altLangPage: normes-numeriques
 collectionDirectory: views-vues/single-page-seule
 title: "Digital Standards (draft) - Single page view"
 ---
