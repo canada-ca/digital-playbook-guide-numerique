@@ -206,6 +206,23 @@ var componentName = "wb-format-gen",
     },
 
     /**
+     * @method csvToArray
+     * @param fileText {String} Text retrieved from the CSV file
+     * @return {Array} CSV as nested arrays
+     */
+    csvToArray = function( fileText ) {
+      var csvRows = fileText.split( "\n" ),
+          length = csvRows.length,
+          csvCells, outputArray, index;
+
+      for ( index = 0; index < length; index += 1 ) {
+        csvRows[ index ] = csvRows[ index ].split( "," );
+      }
+
+      return csvRows;
+    },
+
+    /**
      * @method outputFile
      * @param settings {Object} Settings object for the file to output
      */
@@ -252,6 +269,39 @@ var componentName = "wb-format-gen",
     },
 
     /**
+     * @method inputFile
+     * @param settings {Object} Settings object for the file to output
+     * @param elm {HTML node} Input type="file" element that is being used to input a file
+     * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
+     * @return {Array/Object/String} Returned data
+     */
+    inputFile = function( settings, elm, outputAsString ) {
+      if ( typeof ( FileReader ) !== "undefined" ) {
+        var fileReader = new FileReader();
+
+        fileReader.onload = function ( event ) {
+           var fileText = event.target.result,
+               fileData;
+
+           if ( !outputAsString ) {
+             if ( settings[ "type" ] === "csv" ) {
+               fileData = csvToArray( fileText );
+             } else if ( settings[ "type" ] === "json" ) {
+               fileData = JSON.parse( fileText );
+             }
+             return fileData;
+           } else {
+             return fileText;
+           }
+        }
+
+        fileReader.readAsText( elm.files[ 0 ] );
+      } else {
+        console.log( "Browser doesn't support the HTML5 FileReader API" );
+      }
+    },
+
+    /**
      * @method storeData
      * @param settings {Object} Settings object for the data to save
      */
@@ -289,7 +339,19 @@ var componentName = "wb-format-gen",
     }
 
 $document.on( "click", selector, function( event ) {
-  outputFile( wb.getData( $( event.target ), componentName ) );
+  var target = event.target;
+
+  if ( target.type !== "file" ) {
+    outputFile( wb.getData( $( event.target ), componentName ) );
+  }
+} );
+
+$document.on( "change", selector, function( event ) {
+  var target = event.target;
+
+  if ( target.type === "file" ) {
+    inputFile( wb.getData( $( event.target ), componentName ), event.target );
+  }
 } );
 
 // Bind the init event of the plugin
