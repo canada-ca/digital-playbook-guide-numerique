@@ -68,7 +68,7 @@ assign dataSource = site.data[dataVariable] %}
 
 <div class="wb-frmvld">
 <form action="#" method="post">
-<section id="business-domain">
+<section id="business-domain-section">
 
 <div class="wb-inview" data-inview="progress-overlay">
 
@@ -85,7 +85,7 @@ assign dataSource = site.data[dataVariable] %}
 
 </section>
 
-<section id="business-component">
+<section id="business-component-section">
 
 ## {{ page.businessComponent.title }}
 
@@ -105,7 +105,7 @@ assign dataSource = site.data[dataVariable] %}
 
 <div class="form-group">
 <label for="business-component-3" class="required"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<textarea name="business-component-3" id="business-component-3" required="required" pattern=".{2,}" data-rule-minlength="2"></textarea>
+<textarea name="business-component-3" id="business-component-3" required="required"></textarea>
 </div>
 
 <div class="form-group">
@@ -119,13 +119,13 @@ assign dataSource = site.data[dataVariable] %}
 
 <div class="form-group">
 <label for="business-component-5" class="required"><span class="field-name">{{ page.businessComponent.field5Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<textarea name="business-component-5" id="business-component-5" required="required" pattern=".{2,}" data-rule-minlength="2"></textarea>
+<textarea name="business-component-5" id="business-component-5" required="required"></textarea>
 </div>
 
 </section>
 
 {% for lossType in page.lossTypes %}
-<section id="loss-of-{{ lossType }}">
+<section id="loss-of-{{ lossType }}-section">
 
 ## {{ page[ lossType ].title }}
 
@@ -170,7 +170,7 @@ assign dataSource = site.data[dataVariable] %}
 
 <div class="form-group">
 <label for="loss-of-{{ lossType }}-4" class="required"><span class="field-name">{{ page.lossOfCommon.field4Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<textarea name="loss-of-{{ lossType }}-4" id="loss-of-{{ lossType }}-4" required="required" pattern=".{2,}" data-rule-minlength="2"></textarea>
+<textarea name="loss-of-{{ lossType }}-4" id="loss-of-{{ lossType }}-4" required="required"></textarea>
 </div>
 
 </section>
