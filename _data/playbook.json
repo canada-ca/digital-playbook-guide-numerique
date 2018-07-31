@@ -19,157 +19,7 @@
             "tags": [
               "dpgn-overview-start"
             ],
-            "content": "Provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused."
-          }
-        ]
-      },
-      {
-        "content_type": "section",
-        "source_element": "section",
-        "tags": [
-          "dpgn-overview-start"
-        ],
-        "title": "Structure of the Digital Playbook (draft)",
-        "source_attributes": {
-          "id": "structure-of-the-digital-playbook-draft"
-        },
-        "content": [
-          {
-            "content_type": "block",
-            "source_element": "p",
-            "tags": [
-              "dpgn-overview-start"
-            ],
-            "content": [
-              {
-                "content_type": "inline",
-                "tags": [
-                  "dpgn-overview-start"
-                ],
-                "content": "The Government of Canada Digital Playbook provides practical and measurable guidance to assist individual projects with becoming more agile, open and user-focused by applying the Digital Standards. For each standard the Playbook offers a set of guidelines. For each guideline, the Playbook provides a checklist for meeting the guideline, a list of guides and other content to assist with implementation."
-              }
-            ]
-          },
-          {
-            "content_type": "block",
-            "source_element": "ul",
-            "tags": [
-              "dpgn-overview-start"
-            ],
-            "content": [
-              {
-                "content_type": "block",
-                "source_element": "li",
-                "tags": [
-                  "dpgn-overview-start"
-                ],
-                "content": [
-                  {
-                    "content_type": "inline",
-                    "tags": [
-                      "dpgn-overview-start"
-                    ],
-                    "content": "<strong>Standards</strong> are strategic and describe the expected behaviour."
-                  }
-                ]
-              },
-              {
-                "content_type": "block",
-                "source_element": "li",
-                "tags": [
-                  "dpgn-overview-start"
-                ],
-                "content": [
-                  {
-                    "content_type": "inline",
-                    "tags": [
-                      "dpgn-overview-start"
-                    ],
-                    "content": "<strong>Guidelines</strong> are tactical and describe in general terms how to behave according to the standards."
-                  }
-                ]
-              },
-              {
-                "content_type": "block",
-                "source_element": "li",
-                "tags": [
-                  "dpgn-overview-start"
-                ],
-                "content": [
-                  {
-                    "content_type": "inline",
-                    "tags": [
-                      "dpgn-overview-start"
-                    ],
-                    "content": "<strong>Checklists</strong> include items that are operational and describe in specific terms how to meet the guideline."
-                  }
-                ]
-              },
-              {
-                "content_type": "block",
-                "source_element": "li",
-                "tags": [
-                  "dpgn-overview-start"
-                ],
-                "content": [
-                  {
-                    "content_type": "inline",
-                    "tags": [
-                      "dpgn-overview-start"
-                    ],
-                    "content": "<strong>Implementation guides</strong> provide additional, detailed information on specific sub-topics to assist with implementing the guideline."
-                  }
-                ]
-              },
-              {
-                "content_type": "block",
-                "source_element": "li",
-                "tags": [
-                  "dpgn-overview-start"
-                ],
-                "content": [
-                  {
-                    "content_type": "inline",
-                    "tags": [
-                      "dpgn-overview-start"
-                    ],
-                    "content": "<strong>Reusable solutions</strong> include templates, tools and other solutions to assist with implementing the guideline."
-                  }
-                ]
-              },
-              {
-                "content_type": "block",
-                "source_element": "li",
-                "tags": [
-                  "dpgn-overview-start"
-                ],
-                "content": [
-                  {
-                    "content_type": "inline",
-                    "tags": [
-                      "dpgn-overview-start"
-                    ],
-                    "content": "<strong>Similar resources</strong> are sources of information (e.g., standards from other jurisdictions) that are similar to the guideline."
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "content_type": "block",
-            "source_element": "p",
-            "tags": [
-              "dpgn-overview-start"
-            ],
-            "content": [
-              {
-                "content_type": "inline",
-                "tags": [
-                  "dpgn-overview-start"
-                ],
-                "content": "The Government of Canada Digital Playbook is available under the <a href=\"http://open.canada.ca/en/open-government-licence-canada\">Open Government Licence - Canada</a>, except where otherwise stated."
-              }
-            ]
+            "content": "Provides practical and detailed guidance to assist the Government of Canada in digital transformation and augmented service delivery, including becoming more agile, open and user-focused. Includes task-specific views and interactive features to make it easier to find relevant guidance and to apply it to day-to-day work."
           }
         ]
       },
@@ -195,22 +45,6 @@
               "id": "objective"
             },
             "content": [
-              {
-                "content_type": "block",
-                "source_element": "p",
-                "tags": [
-                  "dpgn-overview-end"
-                ],
-                "content": [
-                  {
-                    "content_type": "inline",
-                    "tags": [
-                      "dpgn-overview-end"
-                    ],
-                    "content": "The objective of the Digital Playbook is to provide detailed guidance for implementing the Digital Standards, whose purpose is to guide the Government of Canada in digital transformation and augmented service delivery. The Digital Playbook is intended to be flexible and adaptable, helping users to focus on the guidance that is most relevant to them."
-                  }
-                ]
-              },
               {
                 "content_type": "block",
                 "source_element": "p",
@@ -256,6 +90,156 @@
                       "dpgn-overview-end"
                     ],
                     "content": "<strong>Together we’ll make them better.</strong> This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone."
+                  }
+                ]
+              },
+              {
+                "content_type": "block",
+                "source_element": "p",
+                "tags": [
+                  "dpgn-overview-end"
+                ],
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "The Government of Canada Digital Playbook is available under the <a href=\"http://open.canada.ca/en/open-government-licence-canada\">Open Government Licence - Canada</a>, except where otherwise stated."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "content_type": "section",
+            "source_element": "section",
+            "tags": [
+              "dpgn-overview-end"
+            ],
+            "title": "Structure of the Digital Playbook (draft)",
+            "source_attributes": {
+              "id": "structure-of-the-digital-playbook-draft"
+            },
+            "content": [
+              {
+                "content_type": "block",
+                "source_element": "p",
+                "tags": [
+                  "dpgn-overview-end"
+                ],
+                "content": [
+                  {
+                    "content_type": "inline",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": "The Digital Playbook is composed of multiple different views which are designed for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user. Each of these views could be composed of one or more of the following:"
+                  }
+                ]
+              },
+              {
+                "content_type": "block",
+                "source_element": "ul",
+                "tags": [
+                  "dpgn-overview-end"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "li",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "tags": [
+                          "dpgn-overview-end"
+                        ],
+                        "content": "<strong>Standards</strong> are strategic and describe the expected behaviour."
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "li",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "tags": [
+                          "dpgn-overview-end"
+                        ],
+                        "content": "<strong>Guidelines</strong> are tactical and describe in general terms how to behave according to the standards."
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "li",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "tags": [
+                          "dpgn-overview-end"
+                        ],
+                        "content": "<strong>Checklists</strong> include items that are operational and describe in specific terms how to meet the guideline."
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "li",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "tags": [
+                          "dpgn-overview-end"
+                        ],
+                        "content": "<strong>Implementation guides</strong> provide additional, detailed information on specific sub-topics to assist with implementing the guideline."
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "li",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "tags": [
+                          "dpgn-overview-end"
+                        ],
+                        "content": "<strong>Reusable solutions</strong> include templates, tools and other solutions to assist with implementing the guideline."
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "li",
+                    "tags": [
+                      "dpgn-overview-end"
+                    ],
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "tags": [
+                          "dpgn-overview-end"
+                        ],
+                        "content": "<strong>Similar resources</strong> are sources of information (e.g., standards from other jurisdictions) that are similar to the guideline."
+                      }
+                    ]
                   }
                 ]
               }
@@ -9777,6 +9761,26 @@
                         "content": [
                           {
                             "content_type": "inline",
+                            "content": "<a href=\"https://www.gov.uk/guidance/be-open-and-use-open-source\">3. Be open and use open source (Technology Code of Practice (UK))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://disic.github.io/politique-de-contribution-open-source/en/\">DINSIC Open-source contribution policy (France)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
                             "content": "<a href=\"https://sourcecode.cio.gov/OSS/\">Open Source Software (Federal Source Code Policy (US))</a>"
                           }
                         ]
@@ -9788,6 +9792,16 @@
                           {
                             "content_type": "inline",
                             "content": "<a href=\"https://playbook.cio.gov/#play13\">13. Default to open (Digital Services Playbook (US))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://github.com/18F/open-source-policy/blob/master/policy.md\">18F Open Source Policy (US)</a>"
                           }
                         ]
                       },
@@ -11418,6 +11432,36 @@
                         "content": [
                           {
                             "content_type": "inline",
+                            "content": "<a href=\"http://www.finance.gov.au/sites/default/files/australian-government-open-source-software-policy-2013.pdf\">Australian Government Open Source Software Policy (AU)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"http://dodcio.defense.gov/Open-Source-Software-FAQ/\">DoD Open Source Software FAQ (US)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"http://dodcio.defense.gov/Portals/0/Documents/OSSFAQ/2009OSS.pdf\">DoD Memorandum on Guidance Regarding Open Source Software (US)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
                             "content": "<a href=\"https://www.w3.org/standards/\">W3C Standards (W3C)</a>"
                           },
                           {
@@ -11649,6 +11693,16 @@
                         "content": [
                           {
                             "content_type": "inline",
+                            "content": "<a href=\"http://ftp.maps.canada.ca/pub/nrcan_rncan/publications/ess_sst/295/295663/cgdi_ip_33_e.pdf\">Natural Resources Canada Free and Open Source Software Licensing Primer (GC)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
                             "content": "<a href=\"https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf\">Logiciels libres et ouverts - Guide de référence (Québec)</a>"
                           }
                         ]
@@ -11670,6 +11724,16 @@
                           {
                             "content_type": "inline",
                             "content": "<a href=\"https://playbook.cio.gov/#play8\">8. Choose a modern technology stack (Digital Services Playbook (US))</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://github.com/18F/open-source-policy/blob/master/policy.md\">18F Open Source Policy (US)</a>"
                           }
                         ]
                       },
