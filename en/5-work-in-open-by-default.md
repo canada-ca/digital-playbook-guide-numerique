@@ -153,8 +153,11 @@ This includes working in the open, sharing any and all data and information prod
 - [Logiciels libres et ouverts - Guide de référence (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf)
 - [Politique du libre (Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+- [3. Be open and use open source (Technology Code of Practice (UK))](https://www.gov.uk/guidance/be-open-and-use-open-source)
+- [DINSIC Open-source contribution policy (France)](https://disic.github.io/politique-de-contribution-open-source/en/)
 - [Open Source Software (Federal Source Code Policy (US))](https://sourcecode.cio.gov/OSS/)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
+- [18F Open Source Policy (US)](https://github.com/18F/open-source-policy/blob/master/policy.md)
 - [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
 
 </section>
