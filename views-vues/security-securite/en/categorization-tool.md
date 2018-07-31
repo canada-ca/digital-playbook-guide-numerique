@@ -166,7 +166,7 @@ assign dataSource = site.data[dataVariable] %}
 </select>
 </div>
 
-**{{ page[ lossType ].example1 }}** {{ page[ lossType ].example2 }} 
+**{{ page[ lossType ].example1 }}** {{ page[ lossType ].example2 }}
 
 <div class="form-group">
 <label for="loss-of-{{ lossType }}-4" class="required"><span class="field-name">{{ page.lossOfCommon.field4Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
