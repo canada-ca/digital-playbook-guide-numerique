@@ -135,6 +135,10 @@
 </div>
 </section>
 
+<details>
+
+<summary markdown="0">{{ site.DetailedResults[ page.lang ] }}</summary>
+
 <section>
 
 ### {{ site.AdjustedResults[ page.lang ] }}<span id="total-multiplier-wrapper" class="hidden"> ({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span id="total-multiplier">1</span>)</span>
@@ -402,9 +406,11 @@ endfor %}
 </tbody>
 </table>
 
-<details>
+</section>
 
-<summary markdown="0">{{ site.DetailedResults[ page.lang ] }}</summary>
+<section>
+
+### {{ site.DetailedScore[ page.lang ] }}
 
 <button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
 
@@ -2524,8 +2530,9 @@ endfor %}
 </table>
 
 <button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
-</details>
 
 </section>
+
+</details>
 
 </section>
