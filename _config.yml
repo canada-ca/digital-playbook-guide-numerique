@@ -608,3 +608,14 @@ Recommendation:
 Summary:
   en: Summary
   fr: Sommaire
+
+# Footnote strings
+Footnotes:
+  en: Footnotes
+  fr: Notes de bas de page
+Footnote:
+  en: Footnote
+  fr: Note de bas de page
+ReturnToFootnote:
+  en: Return to footnote
+  fr: Retour à la référence de la note de bas de page

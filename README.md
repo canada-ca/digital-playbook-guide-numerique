@@ -25,6 +25,10 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 - [Right Cloud Decision Tool (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/cloud-nuage/en/cloud-decision-tool.html)
 
+### Open Government views
+
+- [How do I add content to the Open Government Portal - open.canada.ca? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/en/add-content.html)
+
 ### Digital Architectural Standards views
 
 - [How should I ensure my project meets GC EARB requirements? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html)
@@ -108,6 +112,10 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 ### Vues basées sur l'informatique en nuage
 
 - [Outil décisionnel du nuage approprié (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/cloud-nuage/fr/nuage-outil-decisionnel.html)
+
+### Vues basées sur le gouvernement ouvert
+
+- [Comment puis-je ajouter du contenu au portail du gouvernement ouvert - ouvert.canada.ca? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/fr/ajouter-contenu.html)
 
 ### Vues basées sur les normes architecturales sur le numérique
 
