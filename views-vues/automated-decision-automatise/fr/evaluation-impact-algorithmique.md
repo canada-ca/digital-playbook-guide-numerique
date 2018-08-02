@@ -66,7 +66,7 @@ questions:
   "20": Does the system interface with other IT systems?
   "20.1": Where it interfaces with other systems, have you clearly identified the business processes that occur between systems?
   "20.2": Have you gone to the Enterprise Architecture Review Board with a concept case?
-  "21": Are you planning to make information about system functionality publicly available?
+  "21": Which of the following information about system functionality are you planning to make publicly available? (Check all that apply)
   "21a": Training data sources
   "21b": Decision trees
   "21c": Confidence thresholds
