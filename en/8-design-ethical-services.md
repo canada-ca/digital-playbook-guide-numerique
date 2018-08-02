@@ -68,12 +68,12 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
   1. A description of the training data, or a link to the anonymized training data if this data is publicly available, and
   1. A description of the criteria used for making the decision, including business rules.
 - {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.2.3, Standard on Automated Decision-Making (draft) (GC)"} Provide a meaningful explanation to affected individuals of how and why the decision was made:
-  - {: .dpgn-automated-decision-type-classify-cases .dpgn-automated-decision-type-identify-cases data-content-source-title="Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Explanation Requirement for Recommendation:
+  - {: .dpgn-automated-decision-type-file-triage-assignment .dpgn-automated-decision-type-risk-scoring-categorization data-content-source-title="Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Explanation Requirement for Recommendation:
     - {: .dpgn-automated-decision-level-i} **Level I:** None
     - {: .dpgn-automated-decision-level-ii} **Level II:** None
     - {: .dpgn-automated-decision-level-iii} **Level III:** Meaningful explanation provided upon request based on machine or human review.
     - {: .dpgn-automated-decision-level-iv} **Level IV:** Meaningful explanation, including the variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated.
-  - {: .dpgn-automated-decision-type-recommendation .dpgn-automated-decision-type-final-decision data-content-source-title="Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Explanation Requirement for Decisions:
+  - {: .dpgn-automated-decision-type-recommendation .dpgn-automated-decision-type-full-decision data-content-source-title="Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Explanation Requirement for Decisions:
     - {: .dpgn-automated-decision-level-i} **Level I:** An explanation provided upon request based on machine or human review. This could include a Frequently Asked Questions section of a website.
     - {: .dpgn-automated-decision-level-ii} **Level II:** Meaningful explanation provided upon request based on machine or human review.
     - {: .dpgn-automated-decision-level-iii} **Level III:** Meaningful explanation, including variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated.
