@@ -38,7 +38,7 @@ step2:
   q5Label: Could the dataset or information be subject to legal or contractual agreements that prevent if rom being released? (e.g., commercial licenses, non-disclosure agreements of vendor limitations)
   q6Label: Could the dataset or information asset potentially breach confidentiality if its release impairs the government's ability to make decisions? (e.g., court rulings or negotiations such as collective bargaining or international trade agreements)
   failTitle: Subject to restrictions
-  failBody: Based upon your last answer, the dataset or information asset is subject to restrictions so should not be released.
+  failBody: Based upon your last answer, the dataset or information asset is subject to restrictions so it is not ready for release.
 step3:
   title: "Step 3: Assess the dataset or information asset's readiness for release"
   q1Label: Is the dataset or information asset available in an accessible format, that meets the Standard on Web Accessibility (e.g., CSV, XML, HTML, PDF/UA)
@@ -49,6 +49,13 @@ step3:
   q6Label: Has the dataset or information asset been approved for release to the publiv by the CIO / IMSO?
   failTitle: Not ready for release
   failBody: Based upon your last answer, the dataset or information asset is not ready for release.
+fail:
+  help1: For more infomation on how to resolve this, and ensure that your content can be released, please consult the
+  help2: or contact
+guidebook:
+  linkText: Open Government Guidebook
+  url: "https://open.canada.ca/ckan/en/dataset/9eaa6d0e-4b8c-5241-acf7-c6885294b8c1"
+contactEmail: open-ouvert@tbs-scgt.gc.ca
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
@@ -68,6 +75,8 @@ The process entails the following steps:
 - Step 3: Assess the dataset or information asset's readiness for release
 - Step 4: Release the dataset or information asset on open.canada.ca
 
+For more detailed guidance on how to add your dataset or information asset on open.canada.ca, please review the [{{ page.guidebook.linkText }}]({{ page.guidebook.url }}), or contact <{{ page.contactEmail }}>.
+
 </section>
 
 {% include views-vues/open-gov-gouv-ouvert/add-content-ajouter-contenu-questionnaire.html %}
@@ -80,15 +89,15 @@ In order to add a dataset or information to the Open Government Portal, you will
 
 The [Open Government Registry Guide](https://open.canada.ca/ckan/en/dataset/c2529700-2728-5c39-9107-1102e9cfb7bb) provides details on the required steps to release a record on open.canada.ca.
 
-Once the record has been developed, you can email open-ouvert@tbs-sct.gc.ca to review your record, and have it released on open.canada.ca.
+Once the record has been developed, you can email <{{ page.contactEmail }}> to review your record, and have it released on open.canada.ca.
 
-For any questions, please reach out to the Open Government group at open-ouvert@tbs-sct.gc.ca.
+For any questions, please reach out to the Open Government group at <{{ page.contactEmail }}>.
 
 <section>
 
 ### Implementation guides
 
-- [Open Government Guidebook](https://open.canada.ca/ckan/en/dataset/9eaa6d0e-4b8c-5241-acf7-c6885294b8c1)
+- [{{ page.guidebook.linkText }}]({{ page.guidebook.url }})
 
 </section>
 
