@@ -509,6 +509,9 @@ InitialResults:
 DetailedResults:
   en: Detailed results
   fr: Résultats détaillés
+DetailedScore:
+  en: Detailed score
+  fr: Score détaillé
 Questionnaire:
   en: Questionnaire
   fr: Questionnaire

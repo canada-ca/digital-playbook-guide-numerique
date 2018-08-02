@@ -25,10 +25,10 @@ include /functions/output-content-array.html contentArray=currentStandard.introd
 <fieldset>
 <legend>Automated Decision System type</legend>
 <ul class="list-unstyled">
-<li><input type="checkbox" id="dpgn-automated-decision-type-classify" /> <label for="dpgn-automated-decision-type-classify">Classify cases in terms of risk and priority</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-identify" /> <label for="dpgn-automated-decision-type-identify">Identify cases for human review or investigation</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-recommendation" /> <label for="dpgn-automated-decision-type-recommendation">Provide overall recommendations about whether an application should be approved</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-final" /> <label for="dpgn-automated-decision-type-final">Render the complete administrative decision</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-file-triage-assignment" /> <label for="dpgn-automated-decision-type-file-triage-assignment">File triage or assignment</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-risk-scoring-categorization" /> <label for="dpgn-automated-decision-type-risk-scoring-categorization">Risk scoring or categorization</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-recommendation" /> <label for="dpgn-automated-decision-type-recommendation">Recommendation to take a certain course of action</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-full-decision" /> <label for="dpgn-automated-decision-type-full-decision">Full end-to-end decision</label></li>
 </ul>
 </fieldset>
 

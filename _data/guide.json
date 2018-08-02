@@ -16108,8 +16108,8 @@
                                 },
                                 "source_element": "li",
                                 "tags": [
-                                  "dpgn-automated-decision-type-classify-cases",
-                                  "dpgn-automated-decision-type-identify-cases",
+                                  "dpgn-automated-decision-type-file-triage-assignment",
+                                  "dpgn-automated-decision-type-risk-scoring-categorization",
                                   "dpgn-automated-decision-deployment-operation",
                                   "dpgn-automated-decision"
                                 ],
@@ -16117,8 +16117,8 @@
                                   {
                                     "content_type": "inline",
                                     "tags": [
-                                      "dpgn-automated-decision-type-classify-cases",
-                                      "dpgn-automated-decision-type-identify-cases",
+                                      "dpgn-automated-decision-type-file-triage-assignment",
+                                      "dpgn-automated-decision-type-risk-scoring-categorization",
                                       "dpgn-automated-decision-deployment-operation",
                                       "dpgn-automated-decision"
                                     ],
@@ -16132,8 +16132,8 @@
                                     },
                                     "source_element": "ul",
                                     "tags": [
-                                      "dpgn-automated-decision-type-classify-cases",
-                                      "dpgn-automated-decision-type-identify-cases",
+                                      "dpgn-automated-decision-type-file-triage-assignment",
+                                      "dpgn-automated-decision-type-risk-scoring-categorization",
                                       "dpgn-automated-decision-deployment-operation",
                                       "dpgn-automated-decision"
                                     ],
@@ -16147,8 +16147,8 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
-                                          "dpgn-automated-decision-type-classify-cases",
-                                          "dpgn-automated-decision-type-identify-cases",
+                                          "dpgn-automated-decision-type-file-triage-assignment",
+                                          "dpgn-automated-decision-type-risk-scoring-categorization",
                                           "dpgn-automated-decision-deployment-operation",
                                           "dpgn-automated-decision"
                                         ],
@@ -16157,8 +16157,8 @@
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-i",
-                                              "dpgn-automated-decision-type-classify-cases",
-                                              "dpgn-automated-decision-type-identify-cases",
+                                              "dpgn-automated-decision-type-file-triage-assignment",
+                                              "dpgn-automated-decision-type-risk-scoring-categorization",
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
@@ -16175,8 +16175,8 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
-                                          "dpgn-automated-decision-type-classify-cases",
-                                          "dpgn-automated-decision-type-identify-cases",
+                                          "dpgn-automated-decision-type-file-triage-assignment",
+                                          "dpgn-automated-decision-type-risk-scoring-categorization",
                                           "dpgn-automated-decision-deployment-operation",
                                           "dpgn-automated-decision"
                                         ],
@@ -16185,8 +16185,8 @@
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-ii",
-                                              "dpgn-automated-decision-type-classify-cases",
-                                              "dpgn-automated-decision-type-identify-cases",
+                                              "dpgn-automated-decision-type-file-triage-assignment",
+                                              "dpgn-automated-decision-type-risk-scoring-categorization",
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
@@ -16203,8 +16203,8 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
-                                          "dpgn-automated-decision-type-classify-cases",
-                                          "dpgn-automated-decision-type-identify-cases",
+                                          "dpgn-automated-decision-type-file-triage-assignment",
+                                          "dpgn-automated-decision-type-risk-scoring-categorization",
                                           "dpgn-automated-decision-deployment-operation",
                                           "dpgn-automated-decision"
                                         ],
@@ -16213,8 +16213,8 @@
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-iii",
-                                              "dpgn-automated-decision-type-classify-cases",
-                                              "dpgn-automated-decision-type-identify-cases",
+                                              "dpgn-automated-decision-type-file-triage-assignment",
+                                              "dpgn-automated-decision-type-risk-scoring-categorization",
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
@@ -16231,8 +16231,8 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
-                                          "dpgn-automated-decision-type-classify-cases",
-                                          "dpgn-automated-decision-type-identify-cases",
+                                          "dpgn-automated-decision-type-file-triage-assignment",
+                                          "dpgn-automated-decision-type-risk-scoring-categorization",
                                           "dpgn-automated-decision-deployment-operation",
                                           "dpgn-automated-decision"
                                         ],
@@ -16241,8 +16241,8 @@
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
-                                              "dpgn-automated-decision-type-classify-cases",
-                                              "dpgn-automated-decision-type-identify-cases",
+                                              "dpgn-automated-decision-type-file-triage-assignment",
+                                              "dpgn-automated-decision-type-risk-scoring-categorization",
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
@@ -16263,7 +16263,7 @@
                                 "source_element": "li",
                                 "tags": [
                                   "dpgn-automated-decision-type-recommendation",
-                                  "dpgn-automated-decision-type-final-decision",
+                                  "dpgn-automated-decision-type-full-decision",
                                   "dpgn-automated-decision-deployment-operation",
                                   "dpgn-automated-decision"
                                 ],
@@ -16272,7 +16272,7 @@
                                     "content_type": "inline",
                                     "tags": [
                                       "dpgn-automated-decision-type-recommendation",
-                                      "dpgn-automated-decision-type-final-decision",
+                                      "dpgn-automated-decision-type-full-decision",
                                       "dpgn-automated-decision-deployment-operation",
                                       "dpgn-automated-decision"
                                     ],
@@ -16287,7 +16287,7 @@
                                     "source_element": "ul",
                                     "tags": [
                                       "dpgn-automated-decision-type-recommendation",
-                                      "dpgn-automated-decision-type-final-decision",
+                                      "dpgn-automated-decision-type-full-decision",
                                       "dpgn-automated-decision-deployment-operation",
                                       "dpgn-automated-decision"
                                     ],
@@ -16302,7 +16302,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-final-decision",
+                                          "dpgn-automated-decision-type-full-decision",
                                           "dpgn-automated-decision-deployment-operation",
                                           "dpgn-automated-decision"
                                         ],
@@ -16312,7 +16312,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-i",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-final-decision",
+                                              "dpgn-automated-decision-type-full-decision",
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
@@ -16330,7 +16330,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-final-decision",
+                                          "dpgn-automated-decision-type-full-decision",
                                           "dpgn-automated-decision-deployment-operation",
                                           "dpgn-automated-decision"
                                         ],
@@ -16340,7 +16340,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-ii",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-final-decision",
+                                              "dpgn-automated-decision-type-full-decision",
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
@@ -16358,7 +16358,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-final-decision",
+                                          "dpgn-automated-decision-type-full-decision",
                                           "dpgn-automated-decision-deployment-operation",
                                           "dpgn-automated-decision"
                                         ],
@@ -16368,7 +16368,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iii",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-final-decision",
+                                              "dpgn-automated-decision-type-full-decision",
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
@@ -16386,7 +16386,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-final-decision",
+                                          "dpgn-automated-decision-type-full-decision",
                                           "dpgn-automated-decision-deployment-operation",
                                           "dpgn-automated-decision"
                                         ],
@@ -16396,7 +16396,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-final-decision",
+                                              "dpgn-automated-decision-type-full-decision",
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],

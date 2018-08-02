@@ -9,8 +9,48 @@
 <p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", 
     "inputs": [
-      { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)", "outputTarget": "#required-questions-answered, #required-questions-answered-overlay" },
-      { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)", "outputTarget": "#required-questions-total, #required-questions-total-overlay" }
+      { "type": "add",
+        "inputs": [
+          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score) td:first-of-type span:not(.hidden)" },
+          { "type": "conditional",
+            "inputs": [
+              { "type": ">",
+                "inputs": [
+                  { "type": "count", "query": "#detailed-results-table .question-1-yes:not(.hidden)" }, 0
+                ]
+              }
+            ],
+            "actionsTrue": [
+              { "type": "outputValue", "value": 1 }
+            ],
+            "actionsFalse": [
+              { "type": "outputValue", "value": 0 }
+            ]
+          },
+          { "type": "conditional",
+            "inputs": [
+              { "type": ">",
+                "inputs": [
+                  { "type": "count", "query": "#detailed-results-table .question-10-yes:not(.hidden)" }, 0
+                ]
+              }
+            ],
+            "actionsTrue": [
+              { "type": "outputValue", "value": 1 }
+            ],
+            "actionsFalse": [
+              { "type": "outputValue", "value": 0 }
+            ]
+          }
+        ],
+        "outputTarget": "#required-questions-answered, #required-questions-answered-overlay"
+      },
+      { "type": "add", 
+        "inputs": [
+          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score)" }, 2
+        ],
+        "outputTarget": "#required-questions-total, #required-questions-total-overlay"
+      }
     ]
   },
   { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
@@ -47,6 +87,55 @@
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": "#final-result-section", "class": "panel-default panel-success panel-info panel-warning panel-danger" },
       { "type": "addClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },
+      { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "value": "" },
+      { "type": "conditional",
+        "inputs": [
+          { "type": ">",
+            "inputs": [
+              { "type": "count", "query": "#detailed-results-table .question-1a-yes:not(.hidden)" }, 0
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "outputType": "append", "value": ",dpgn-automated-decision-type-file-triage-assignment" }
+        ]
+      },
+      { "type": "conditional",
+        "inputs": [
+          { "type": ">",
+            "inputs": [
+              { "type": "count", "query": "#detailed-results-table .question-1b-yes:not(.hidden)" }, 0
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "outputType": "append", "value": ",dpgn-automated-decision-type-risk-scoring-categorization" }
+        ]
+      },
+      { "type": "conditional",
+        "inputs": [
+          { "type": ">",
+            "inputs": [
+              { "type": "count", "query": "#detailed-results-table .question-1c-yes:not(.hidden)" }, 0
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "outputType": "append", "value": ",dpgn-automated-decision-type-recommendation" }
+        ]
+      },
+      { "type": "conditional",
+        "inputs": [
+          { "type": ">",
+            "inputs": [
+              { "type": "count", "query": "#detailed-results-table .question-1d-yes:not(.hidden)" }, 0
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "outputType": "append", "value": ",dpgn-automated-decision-type-full-decision" }
+        ]
+      },
       { "type": "conditional",
         "inputs": [
           { "type": ">",
@@ -127,13 +216,17 @@
 </header>
 <div class="panel-body">
 <p id="final-result-in-progress">{{ site.CompleteQuestionnaireFirst[ page.lang ] }}</p>
-<p id="final-result-level-1" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 1</p>
-<p id="final-result-level-2" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 2</p>
-<p id="final-result-level-3" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 3</p>
-<p id="final-result-level-4" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 4</p>
+<p id="final-result-level-1" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 1 <a href="automated-decision.html?contentfilter=dpgn-automated-decision-level-i"></a></p>
+<p id="final-result-level-2" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 2 <a href="automated-decision.html?contentfilter=dpgn-automated-decision-level-ii"></a></p>
+<p id="final-result-level-3" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 3 <a href="automated-decision.html?contentfilter=dpgn-automated-decision-level-iii"></a></p>
+<p id="final-result-level-4" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 4 <a href="automated-decision.html?contentfilter=dpgn-automated-decision-level-iv"></a></p>
 <p id="final-result-fail" class="hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</p>
 </div>
 </section>
+
+<details>
+
+<summary markdown="0">{{ site.DetailedResults[ page.lang ] }}</summary>
 
 <section>
 
@@ -402,9 +495,11 @@ endfor %}
 </tbody>
 </table>
 
-<details>
+</section>
 
-<summary markdown="0">{{ site.DetailedResults[ page.lang ] }}</summary>
+<section>
+
+### {{ site.DetailedScore[ page.lang ] }}
 
 <button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
 
@@ -423,92 +518,92 @@ endfor %}
 <tr id="question-1a-result" class="question-1-checkbox-score">
 <th>1a</th>
 <td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1a-yes">1</span>
+<span class="hidden criteria-1-score criteria-1-score-max question-1-yes question-1a-yes">1</span>
 <span class="criteria-1-score question-1a-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1a-yes">1</span>
+<span class="hidden criteria-2-score criteria-2-score-max question-1-yes question-1a-yes">1</span>
 <span class="criteria-2-score question-1a-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1a-yes">0</span>
+<span class="hidden criteria-3-score criteria-3-score-max question-1-yes question-1a-yes">0</span>
 <span class="criteria-3-score question-1a-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1a-yes">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-1-yes question-1a-yes">1</span>
 <span class="criteria-4-score question-1a-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1a-yes">0</span>
+<span class="hidden criteria-5-score criteria-5-score-max question-1-yes question-1a-yes">0</span>
 <span class="criteria-5-score question-1a-no">0</span>
 </td>
 </tr>
 <tr id="question-1b-result" class="question-1-checkbox-score">
 <th>1b</th>
 <td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1b-yes">3</span>
+<span class="hidden criteria-1-score criteria-1-score-max question-1-yes question-1b-yes">3</span>
 <span class="criteria-1-score question-1b-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1b-yes">2</span>
+<span class="hidden criteria-2-score criteria-2-score-max question-1-yes question-1b-yes">2</span>
 <span class="criteria-2-score question-1b-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1b-yes">0</span>
+<span class="hidden criteria-3-score criteria-3-score-max question-1-yes question-1b-yes">0</span>
 <span class="criteria-3-score question-1b-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1b-yes">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-1-yes question-1b-yes">2</span>
 <span class="criteria-4-score question-1b-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1b-yes">0</span>
+<span class="hidden criteria-5-score criteria-5-score-max question-1-yes question-1b-yes">0</span>
 <span class="criteria-5-score question-1b-no">0</span>
 </td>
 </tr>
 <tr id="question-1c-result" class="question-1-checkbox-score">
 <th>1c</th>
 <td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1c-yes">4</span>
+<span class="hidden criteria-1-score criteria-1-score-max question-1-yes question-1c-yes">4</span>
 <span class="criteria-1-score question-1c-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1c-yes">2</span>
+<span class="hidden criteria-2-score criteria-2-score-max question-1-yes question-1c-yes">2</span>
 <span class="criteria-2-score question-1c-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1c-yes">0</span>
+<span class="hidden criteria-3-score criteria-3-score-max question-1-yes question-1c-yes">0</span>
 <span class="criteria-3-score question-1c-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1c-yes">2</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-1-yes question-1c-yes">3</span>
 <span class="criteria-4-score question-1c-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1c-yes">1</span>
+<span class="hidden criteria-5-score criteria-5-score-max question-1-yes question-1c-yes">1</span>
 <span class="criteria-5-score question-1c-no">0</span>
 </td>
 </tr>
 <tr id="question-1d-result" class="question-1-checkbox-score">
 <th>1d</th>
 <td>
-<span class="hidden criteria-1-score criteria-1-score-max question-1d-yes">5</span>
+<span class="hidden criteria-1-score criteria-1-score-max question-1-yes question-1d-yes">5</span>
 <span class="criteria-1-score question-1d-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score criteria-2-score-max question-1d-yes">3</span>
+<span class="hidden criteria-2-score criteria-2-score-max question-1-yes question-1d-yes">3</span>
 <span class="criteria-2-score question-1d-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score criteria-3-score-max question-1d-yes">0</span>
+<span class="hidden criteria-3-score criteria-3-score-max question-1-yes question-1d-yes">0</span>
 <span class="criteria-3-score question-1d-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1d-yes">3</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-1-yes question-1d-yes">4</span>
 <span class="criteria-4-score question-1d-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score criteria-5-score-max question-1d-yes">2</span>
+<span class="hidden criteria-5-score criteria-5-score-max question-1-yes question-1d-yes">2</span>
 <span class="criteria-5-score question-1d-no">0</span>
 </td>
 </tr>
@@ -527,7 +622,7 @@ endfor %}
 <span class="hidden criteria-3-score question-1-1-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score criteria-4-score-max question-1-1-yes">2</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-1-1-yes">3</span>
 <span class="hidden criteria-4-score question-1-1-no">0</span>
 </td>
 <td>
@@ -757,7 +852,7 @@ endfor %}
 <tr id="question-5-1-1-result" class="hidden">
 <th>5.1.1</th>
 <td>
-<span class="hidden criteria-1-score criteria-1-score-max question-5-1-1-yes">3</span>
+<span class="hidden criteria-1-score criteria-1-score-max question-5-1-1-yes">5</span>
 <span class="hidden criteria-1-score question-5-1-1-no">0</span>
 </td>
 <td>
@@ -769,7 +864,7 @@ endfor %}
 <span class="hidden criteria-3-score question-5-1-1-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score criteria-4-score-max question-5-1-1-yes">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-5-1-1-yes">2</span>
 <span class="hidden criteria-4-score question-5-1-1-no">0</span>
 </td>
 <td>
@@ -1003,146 +1098,169 @@ endfor %}
 <span class="hidden criteria-4-score question-9-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score criteria-5-score-max question-9-yes">0</span>
+<span class="hidden criteria-5-score criteria-5-score-max question-9-yes">1</span>
 <span class="hidden criteria-5-score question-9-no">0</span>
 </td>
 </tr>
 <tr id="question-10a-result" class="question-10-checkbox-score">
 <th>10a</th>
 <td>
-<span class="hidden criteria-1-score question-10a-yes">-1</span>
+<span class="hidden criteria-1-score question-10-yes question-10a-yes">-1</span>
 <span class="criteria-1-score criteria-1-score-max question-10a-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-10a-yes">0</span>
+<span class="hidden criteria-2-score question-10-yes question-10a-yes">0</span>
 <span class="criteria-2-score criteria-2-score-max question-10a-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-10a-yes">0</span>
+<span class="hidden criteria-3-score question-10-yes question-10a-yes">0</span>
 <span class="criteria-3-score criteria-3-score-max question-10a-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-10a-yes">0</span>
+<span class="hidden criteria-4-score question-10-yes question-10a-yes">0</span>
 <span class="criteria-4-score criteria-4-score-max question-10a-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-10a-yes">0</span>
+<span class="hidden criteria-5-score question-10-yes question-10a-yes">0</span>
 <span class="criteria-5-score criteria-5-score-max question-10a-no">0</span>
 </td>
 </tr>
 <tr id="question-10b-result" class="question-10-checkbox-score">
 <th>10b</th>
 <td>
-<span class="hidden criteria-1-score question-10b-yes">-1</span>
+<span class="hidden criteria-1-score question-10-yes question-10b-yes">-1</span>
 <span class="criteria-1-score criteria-1-score-max question-10b-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-10b-yes">0</span>
+<span class="hidden criteria-2-score question-10-yes question-10b-yes">0</span>
 <span class="criteria-2-score criteria-2-score-max question-10b-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-10b-yes">0</span>
+<span class="hidden criteria-3-score question-10-yes question-10b-yes">0</span>
 <span class="criteria-3-score criteria-3-score-max question-10b-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-10b-yes">0</span>
+<span class="hidden criteria-4-score question-10-yes question-10b-yes">0</span>
 <span class="criteria-4-score criteria-4-score-max question-10b-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-10b-yes">0</span>
+<span class="hidden criteria-5-score question-10-yes question-10b-yes">0</span>
 <span class="criteria-5-score criteria-5-score-max question-10b-no">0</span>
 </td>
 </tr>
 <tr id="question-10c-result" class="question-10-checkbox-score">
 <th>10c</th>
 <td>
-<span class="hidden criteria-1-score question-10c-yes">0</span>
+<span class="hidden criteria-1-score question-10-yes question-10c-yes">0</span>
 <span class="criteria-1-score criteria-1-score-max question-10c-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-10c-yes">-1</span>
+<span class="hidden criteria-2-score question-10-yes question-10c-yes">-1</span>
 <span class="criteria-2-score criteria-2-score-max question-10c-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-10c-yes">0</span>
+<span class="hidden criteria-3-score question-10-yes question-10c-yes">0</span>
 <span class="criteria-3-score criteria-3-score-max question-10c-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-10c-yes">0</span>
+<span class="hidden criteria-4-score question-10-yes question-10c-yes">0</span>
 <span class="criteria-4-score criteria-4-score-max question-10c-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-10c-yes">0</span>
+<span class="hidden criteria-5-score question-10-yes question-10c-yes">0</span>
 <span class="criteria-5-score criteria-5-score-max question-10c-no">0</span>
 </td>
 </tr>
 <tr id="question-10d-result" class="question-10-checkbox-score">
 <th>10d</th>
 <td>
-<span class="hidden criteria-1-score question-10d-yes">0</span>
+<span class="hidden criteria-1-score question-10-yes question-10d-yes">0</span>
 <span class="criteria-1-score criteria-1-score-max question-10d-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-10d-yes">-1</span>
+<span class="hidden criteria-2-score question-10-yes question-10d-yes">-1</span>
 <span class="criteria-2-score criteria-2-score-max question-10d-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-10d-yes">0</span>
+<span class="hidden criteria-3-score question-10-yes question-10d-yes">0</span>
 <span class="criteria-3-score criteria-3-score-max question-10d-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-10d-yes">0</span>
+<span class="hidden criteria-4-score question-10-yesquestion-10d-yes">0</span>
 <span class="criteria-4-score criteria-4-score-max question-10d-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-10d-yes">0</span>
+<span class="hidden criteria-5-score question-10-yes question-10d-yes">0</span>
 <span class="criteria-5-score criteria-5-score-max question-10d-no">0</span>
 </td>
 </tr>
 <tr id="question-10e-result" class="question-10-checkbox-score">
 <th>10e</th>
 <td>
-<span class="hidden criteria-1-score question-10e-yes">-2</span>
+<span class="hidden criteria-1-score question-10-yes question-10e-yes">-2</span>
 <span class="criteria-1-score criteria-1-score-max question-10e-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-10e-yes">0</span>
+<span class="hidden criteria-2-score question-10-yes question-10e-yes">0</span>
 <span class="criteria-2-score criteria-2-score-max question-10e-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-10e-yes">0</span>
+<span class="hidden criteria-3-score question-10-yes question-10e-yes">0</span>
 <span class="criteria-3-score criteria-3-score-max question-10e-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-10e-yes">0</span>
+<span class="hidden criteria-4-score question-10-yes question-10e-yes">0</span>
 <span class="criteria-4-score criteria-4-score-max question-10e-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-10e-yes">0</span>
+<span class="hidden criteria-5-score question-10-yes question-10e-yes">0</span>
 <span class="criteria-5-score criteria-5-score-max question-10e-no">0</span>
 </td>
 </tr>
 <tr id="question-10f-result" class="question-10-checkbox-score">
 <th>10f</th>
 <td>
-<span class="hidden criteria-1-score question-10f-yes">0</span>
+<span class="hidden criteria-1-score question-10-yes question-10f-yes">0</span>
 <span class="criteria-1-score criteria-1-score-max question-10f-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-10f-yes">-1</span>
+<span class="hidden criteria-2-score question-10-yes question-10f-yes">-1</span>
 <span class="criteria-2-score criteria-2-score-max question-10f-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-10f-yes">0</span>
+<span class="hidden criteria-3-score question-10-yes question-10f-yes">0</span>
 <span class="criteria-3-score criteria-3-score-max question-10f-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-10f-yes">0</span>
+<span class="hidden criteria-4-score question-10-yes question-10f-yes">0</span>
 <span class="criteria-4-score criteria-4-score-max question-10f-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-10f-yes">0</span>
+<span class="hidden criteria-5-score question-10-yes question-10f-yes">0</span>
 <span class="criteria-5-score criteria-5-score-max question-10f-no">0</span>
+</td>
+</tr>
+<tr id="question-10g-result" class="question-10-checkbox-score">
+<th>10g</th>
+<td>
+<span class="hidden criteria-1-score question-10-yes question-10g-yes">0</span>
+<span class="criteria-1-score criteria-1-score-max question-10g-no">0</span>
+</td>
+<td>
+<span class="hidden criteria-2-score question-10-yes question-10g-yes">-1</span>
+<span class="criteria-2-score criteria-2-score-max question-10g-no">0</span>
+</td>
+<td>
+<span class="hidden criteria-3-score question-10-yes question-10g-yes">0</span>
+<span class="criteria-3-score criteria-3-score-max question-10g-no">0</span>
+</td>
+<td>
+<span class="hidden criteria-4-score question-10-yes question-10g-yes">0</span>
+<span class="criteria-4-score criteria-4-score-max question-10g-no">0</span>
+</td>
+<td>
+<span class="hidden criteria-5-score question-10-yes question-10g-yes">0</span>
+<span class="criteria-5-score criteria-5-score-max question-10g-no">0</span>
 </td>
 </tr>
 <tr id="question-11-result">
@@ -1161,7 +1279,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-11-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-11-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-11-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-11-yes">0</span>
@@ -1173,27 +1291,22 @@ endfor %}
 <td>
 <span class="hidden criteria-1-score question-12a-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-12a-no">0</span>
-<span class="hidden criteria-1-score question-12a-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-2-score question-12a-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-12a-no">1</span>
-<span class="hidden criteria-2-score question-12a-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-12a-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-12a-no">0</span>
-<span class="hidden criteria-3-score question-12a-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-4-score question-12a-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-12a-no">0</span>
-<span class="hidden criteria-4-score question-12a-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-12a-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-12a-no">0</span>
-<span class="hidden criteria-5-score question-12a-na">0</span>
 </td>
 </tr>
 <tr id="question-12b-result">
@@ -1201,27 +1314,22 @@ endfor %}
 <td>
 <span class="hidden criteria-1-score question-12b-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-12b-no">0</span>
-<span class="hidden criteria-1-score question-12b-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-2-score question-12b-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-12b-no">1</span>
-<span class="hidden criteria-2-score question-12b-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-12b-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-12b-no">2</span>
-<span class="hidden criteria-3-score question-12b-na">2</span>
 </td>
 <td>
 <span class="hidden criteria-4-score question-12b-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-12b-no">0</span>
-<span class="hidden criteria-4-score question-12b-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-12b-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-12b-no">0</span>
-<span class="hidden criteria-5-score question-12b-na">0</span>
 </td>
 </tr>
 <tr id="question-12c-result">
@@ -1229,27 +1337,22 @@ endfor %}
 <td>
 <span class="hidden criteria-1-score question-12c-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-12c-no">0</span>
-<span class="hidden criteria-1-score question-12c-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-2-score question-12c-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-12c-no">1</span>
-<span class="hidden criteria-2-score question-12c-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-12c-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-12c-no">0</span>
-<span class="hidden criteria-3-score question-12c-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-4-score question-12c-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-12c-no">0</span>
-<span class="hidden criteria-4-score question-12c-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-12c-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-12c-no">0</span>
-<span class="hidden criteria-5-score question-12c-na">0</span>
 </td>
 </tr>
 <tr id="question-12d-result">
@@ -1257,27 +1360,22 @@ endfor %}
 <td>
 <span class="hidden criteria-1-score question-12d-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-12d-no">0</span>
-<span class="hidden criteria-1-score question-12d-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-2-score question-12d-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-12d-no">1</span>
-<span class="hidden criteria-2-score question-12d-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-12d-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-12d-no">0</span>
-<span class="hidden criteria-3-score question-12d-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-4-score question-12d-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-12d-no">0</span>
-<span class="hidden criteria-4-score question-12d-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-12d-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-12d-no">0</span>
-<span class="hidden criteria-5-score question-12d-na">0</span>
 </td>
 </tr>
 <tr id="question-12e-result">
@@ -1285,27 +1383,22 @@ endfor %}
 <td>
 <span class="hidden criteria-1-score question-12e-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-12e-no">0</span>
-<span class="hidden criteria-1-score question-12e-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-2-score question-12e-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-12e-no">2</span>
-<span class="hidden criteria-2-score question-12e-na">2</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-12e-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-12e-no">0</span>
-<span class="hidden criteria-3-score question-12e-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-4-score question-12e-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-12e-no">0</span>
-<span class="hidden criteria-4-score question-12e-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-12e-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-12e-no">0</span>
-<span class="hidden criteria-5-score question-12e-na">0</span>
 </td>
 </tr>
 <tr id="question-12f-result">
@@ -1313,27 +1406,22 @@ endfor %}
 <td>
 <span class="hidden criteria-1-score question-12f-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-12f-no">0</span>
-<span class="hidden criteria-1-score question-12f-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-2-score question-12f-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-12f-no">1</span>
-<span class="hidden criteria-2-score question-12f-na">1</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-12f-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-12f-no">0</span>
-<span class="hidden criteria-3-score question-12f-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-12f-yes">0</span>
+<span class="hidden criteria-4-score question-12f-yes">-2</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-12f-no">2</span>
-<span class="hidden criteria-4-score question-12f-na">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-12f-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-12f-no">0</span>
-<span class="hidden criteria-5-score question-12f-na">0</span>
 </td>
 </tr>
 <tr id="question-12g-result">
@@ -1341,27 +1429,22 @@ endfor %}
 <td>
 <span class="hidden criteria-1-score question-12g-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-12g-no">0</span>
-<span class="hidden criteria-1-score question-12g-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-2-score question-12g-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-12g-no">1</span>
-<span class="hidden criteria-2-score question-12g-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-12g-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-12g-no">0</span>
-<span class="hidden criteria-3-score question-12g-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-4-score question-12g-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-12g-no">0</span>
-<span class="hidden criteria-4-score question-12g-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-12g-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-12g-no">0</span>
-<span class="hidden criteria-5-score question-12g-na">0</span>
 </td>
 </tr>
 <tr id="question-12h-result">
@@ -1369,27 +1452,22 @@ endfor %}
 <td>
 <span class="hidden criteria-1-score question-12h-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-12h-no">0</span>
-<span class="hidden criteria-1-score question-12h-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-2-score question-12h-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-12h-no">1</span>
-<span class="hidden criteria-2-score question-12h-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-12h-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-12h-no">0</span>
-<span class="hidden criteria-3-score question-12h-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-4-score question-12h-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-12h-no">0</span>
-<span class="hidden criteria-4-score question-12h-na">0</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-12h-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-12h-no">0</span>
-<span class="hidden criteria-5-score question-12h-na">0</span>
 </td>
 </tr>
 <tr id="question-13-result">
@@ -1426,12 +1504,12 @@ endfor %}
 <span class="hidden criteria-2-score criteria-2-score-max question-14-no">1</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-14-yes">0</span>
+<span class="hidden criteria-3-score question-14-yes">-3</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-14-no">3</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-14-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-14-no">1</span>
+<span class="hidden criteria-4-score question-14-yes">-2</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-14-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-14-yes">0</span>
@@ -1449,12 +1527,12 @@ endfor %}
 <span class="hidden criteria-2-score criteria-2-score-max question-15-no">1</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-15-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-15-no">3</span>
+<span class="hidden criteria-3-score question-15-yes">-4</span>
+<span class="hidden criteria-3-score criteria-3-score-max question-15-no">4</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-15-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-15-no">1</span>
+<span class="hidden criteria-4-score question-15-yes">-3</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-15-no">3</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-15-yes">0</span>
@@ -1472,7 +1550,7 @@ endfor %}
 <span class="hidden criteria-2-score criteria-2-score-max question-16-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-16-yes">0</span>
+<span class="hidden criteria-3-score question-16-yes">-1</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-16-no">1</span>
 </td>
 <td>
@@ -1498,7 +1576,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-3-score question-16-1-yes">0</span>
-<span class="hidden criteria-3-score criteria-3-score-max question-16-1-no">1</span>
+<span class="hidden criteria-3-score criteria-3-score-max question-16-1-no">0</span>
 <span class="hidden criteria-3-score question-16-1-na">0</span>
 </td>
 <td>
@@ -1643,7 +1721,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-19-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-19-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-19-no">3</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-19-yes">0</span>
@@ -1719,172 +1797,142 @@ endfor %}
 <span class="hidden criteria-5-score criteria-5-score-max question-20-2-no">0</span>
 </td>
 </tr>
-<tr id="question-21a-result">
+<tr id="question-21a-result" class="question-21-checkbox-score">
 <th>21a</th>
 <td>
-<span class="hidden criteria-1-score question-21a-yes">0</span>
+<span class="hidden criteria-1-score question-21-yes question-21a-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-21a-no">0</span>
-<span class="hidden criteria-1-score question-21a-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-21a-yes">0</span>
+<span class="hidden criteria-2-score question-21-yes question-21a-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-21a-no">0</span>
-<span class="hidden criteria-2-score question-21a-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-21a-yes">0</span>
+<span class="hidden criteria-3-score question-21-yes question-21a-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-21a-no">0</span>
-<span class="hidden criteria-3-score question-21a-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-21a-yes">0</span>
+<span class="hidden criteria-4-score question-21-yes question-21a-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-21a-no">0</span>
-<span class="hidden criteria-4-score question-21a-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-21a-yes">0</span>
+<span class="hidden criteria-5-score question-21-yes question-21a-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-21a-no">0</span>
-<span class="hidden criteria-5-score question-21a-na">0</span>
 </td>
 </tr>
-<tr id="question-21b-result">
+<tr id="question-21b-result" class="question-21-checkbox-score">
 <th>21b</th>
 <td>
-<span class="hidden criteria-1-score question-21b-yes">0</span>
+<span class="hidden criteria-1-score question-21-yes question-21b-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-21b-no">0</span>
-<span class="hidden criteria-1-score question-21b-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-21b-yes">0</span>
+<span class="hidden criteria-2-score question-21-yes question-21b-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-21b-no">0</span>
-<span class="hidden criteria-2-score question-21b-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-21b-yes">0</span>
+<span class="hidden criteria-3-score question-21-yes question-21b-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-21b-no">0</span>
-<span class="hidden criteria-3-score question-21b-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-21b-yes">0</span>
+<span class="hidden criteria-4-score question-21-yes question-21b-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-21b-no">0</span>
-<span class="hidden criteria-4-score question-21b-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-21b-yes">0</span>
+<span class="hidden criteria-5-score question-21-yes question-21b-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-21b-no">0</span>
-<span class="hidden criteria-5-score question-21b-na">0</span>
 </td>
 </tr>
-<tr id="question-21c-result">
+<tr id="question-21c-result" class="question-21-checkbox-score">
 <th>21c</th>
 <td>
-<span class="hidden criteria-1-score question-21c-yes">0</span>
+<span class="hidden criteria-1-score question-21-yes question-21c-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-21c-no">0</span>
-<span class="hidden criteria-1-score question-21c-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-21c-yes">0</span>
+<span class="hidden criteria-2-score question-21-yes question-21c-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-21c-no">0</span>
-<span class="hidden criteria-2-score question-21c-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-21c-yes">0</span>
+<span class="hidden criteria-3-score question-21-yes question-21c-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-21c-no">0</span>
-<span class="hidden criteria-3-score question-21c-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-21c-yes">0</span>
+<span class="hidden criteria-4-score question-21-yes question-21c-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-21c-no">0</span>
-<span class="hidden criteria-4-score question-21c-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-21c-yes">0</span>
+<span class="hidden criteria-5-score question-21-yes question-21c-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-21c-no">0</span>
-<span class="hidden criteria-5-score question-21c-na">0</span>
 </td>
 </tr>
-<tr id="question-21d-result">
+<tr id="question-21d-result" class="question-21-checkbox-score">
 <th>21d</th>
 <td>
-<span class="hidden criteria-1-score question-21d-yes">0</span>
+<span class="hidden criteria-1-score question-21-yes question-21d-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-21d-no">0</span>
-<span class="hidden criteria-1-score question-21d-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-21d-yes">0</span>
+<span class="hidden criteria-2-score question-21-yes question-21d-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-21d-no">0</span>
-<span class="hidden criteria-2-score question-21d-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-21d-yes">0</span>
+<span class="hidden criteria-3-score question-21-yes question-21d-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-21d-no">0</span>
-<span class="hidden criteria-3-score question-21d-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-21d-yes">0</span>
+<span class="hidden criteria-4-score question-21-yes question-21d-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-21d-no">0</span>
-<span class="hidden criteria-4-score question-21d-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-21d-yes">0</span>
+<span class="hidden criteria-5-score question-21-yes question-21d-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-21d-no">0</span>
-<span class="hidden criteria-5-score question-21d-na">0</span>
 </td>
 </tr>
-<tr id="question-21e-result">
+<tr id="question-21e-result" class="question-21-checkbox-score">
 <th>21e</th>
 <td>
-<span class="hidden criteria-1-score question-21e-yes">0</span>
+<span class="hidden criteria-1-score question-21-yes question-21e-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-21e-no">0</span>
-<span class="hidden criteria-1-score question-21e-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-21e-yes">0</span>
+<span class="hidden criteria-2-score question-21-yes question-21e-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-21e-no">0</span>
-<span class="hidden criteria-2-score question-21e-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-21e-yes">0</span>
+<span class="hidden criteria-3-score question-21-yes question-21e-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-21e-no">0</span>
-<span class="hidden criteria-3-score question-21e-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-21e-yes">0</span>
+<span class="hidden criteria-4-score question-21-yes question-21e-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-21e-no">0</span>
-<span class="hidden criteria-4-score question-21e-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-21e-yes">0</span>
+<span class="hidden criteria-5-score question-21-yes question-21e-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-21e-no">0</span>
-<span class="hidden criteria-5-score question-21e-na">0</span>
 </td>
 </tr>
-<tr id="question-21f-result">
+<tr id="question-21f-result" class="question-21-checkbox-score">
 <th>21f</th>
 <td>
-<span class="hidden criteria-1-score question-21f-yes">0</span>
+<span class="hidden criteria-1-score question-21-yes question-21f-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-21f-no">0</span>
-<span class="hidden criteria-1-score question-21f-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-21f-yes">0</span>
+<span class="hidden criteria-2-score question-21-yes question-21f-yes">0</span>
 <span class="hidden criteria-2-score criteria-2-score-max question-21f-no">0</span>
-<span class="hidden criteria-2-score question-21f-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-3-score question-21f-yes">0</span>
+<span class="hidden criteria-3-score question-21-yes question-21f-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-21f-no">0</span>
-<span class="hidden criteria-3-score question-21f-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-21f-yes">0</span>
+<span class="hidden criteria-4-score question-21-yes question-21f-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-21f-no">0</span>
-<span class="hidden criteria-4-score question-21f-na">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-21f-yes">0</span>
+<span class="hidden criteria-5-score question-21-yes question-21f-yes">0</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-21f-no">0</span>
-<span class="hidden criteria-5-score question-21f-na">0</span>
 </td>
 </tr>
 <tr id="question-22-result">
@@ -1903,7 +1951,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-22-yes">-1</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-22-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-22-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-22-yes">0</span>
@@ -1949,7 +1997,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-22-2-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-22-2-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-22-2-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-22-2-yes">0</span>
@@ -2045,7 +2093,7 @@ endfor %}
 <span class="hidden criteria-4-score question-24-top-secret">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score question-24-protected">1</span>
+<span class="hidden criteria-5-score question-24-protected">0</span>
 <span class="hidden criteria-5-score question-24-protected-a">3</span>
 <span class="hidden criteria-5-score question-24-protected-b">4</span>
 <span class="hidden criteria-5-score criteria-5-score-max question-24-protected-c">5</span>
@@ -2186,7 +2234,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-30-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-30-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-30-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-30-yes">0</span>
@@ -2209,7 +2257,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-31-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-31-no">0</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-31-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-31-yes">0</span>
@@ -2232,7 +2280,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-32-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-32-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-32-no">4</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-32-yes">0</span>
@@ -2265,24 +2313,24 @@ endfor %}
 <tr id="question-34-result">
 <th>34</th>
 <td>
-<span class="hidden criteria-1-score question-34-yes">-2</span>
+<span class="hidden criteria-1-score question-34-yes">0</span>
 <span class="hidden criteria-1-score criteria-1-score-max question-34-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-2-score question-34-yes">-1</span>
-<span class="hidden criteria-2-score criteria-2-score-max question-34-no">0</span>
+<span class="hidden criteria-2-score question-34-yes">0</span>
+<span class="hidden criteria-2-score criteria-2-score-max question-34-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-3-score question-34-yes">0</span>
 <span class="hidden criteria-3-score criteria-3-score-max question-34-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-4-score question-34-yes">-2</span>
+<span class="hidden criteria-4-score question-34-yes">0</span>
 <span class="hidden criteria-4-score criteria-4-score-max question-34-no">0</span>
 </td>
 <td>
-<span class="hidden criteria-5-score criteria-5-score-max question-34-yes">1</span>
-<span class="hidden criteria-5-score question-34-no">0</span>
+<span class="hidden criteria-5-score question-34-yes">0</span>
+<span class="hidden criteria-5-score criteria-5-score-max question-34-no">0</span>
 </td>
 </tr>
 <tr id="question-34-1-result" class="hidden">
@@ -2324,7 +2372,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-35-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-35-no">2</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-35-no">3</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-35-yes">0</span>
@@ -2347,7 +2395,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-35-1-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-35-1-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-35-1-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-35-1-yes">0</span>
@@ -2370,7 +2418,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-35-2-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-35-2-no">2</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-35-2-no">3</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-35-2-yes">0</span>
@@ -2393,7 +2441,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-35-3-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-35-3-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-35-3-no">2</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-35-3-yes">0</span>
@@ -2416,7 +2464,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-36-yes">-2</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-36-no">0</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-36-no">4</span>
 </td>
 <td>
 <span class="hidden criteria-5-score criteria-5-score-max question-36-yes">1</span>
@@ -2513,7 +2561,7 @@ endfor %}
 </td>
 <td>
 <span class="hidden criteria-4-score question-40-yes">0</span>
-<span class="hidden criteria-4-score criteria-4-score-max question-40-no">1</span>
+<span class="hidden criteria-4-score criteria-4-score-max question-40-no">5</span>
 </td>
 <td>
 <span class="hidden criteria-5-score question-40-yes">0</span>
@@ -2524,8 +2572,9 @@ endfor %}
 </table>
 
 <button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
-</details>
 
 </section>
+
+</details>
 
 </section>
