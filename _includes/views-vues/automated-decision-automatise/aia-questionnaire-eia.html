@@ -10,7 +10,7 @@
 ### {{ page.discretionSection }}
 
 <!-- Question 1 -->
-<div id="question-1" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "isoptional": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-1", "ignoreInit": true, "operations": [
+<div id="question-1" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-1", "ignoreInit": true, "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": ">",
@@ -393,7 +393,7 @@
 </div>
 
 <!-- Question 10 -->
-<div id="question-10" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "isoptional": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-10", "ignoreInit": true, "operations": [
+<div id="question-10" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-10", "ignoreInit": true, "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": ">",
@@ -434,6 +434,10 @@
   { "action": "toggle", "toggle": { "selector": ".question-10f-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-10f-yes", "type": "on" }, "clean": ".question-10f-yes" }
 ]'>f. {{ page.questions[ "10f" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-10g-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-10g-yes", "type": "on" }, "clean": ".question-10g-yes" }
+]'>g. {{ page.questions[ "10g" ] }}</li>
 </ul>
 </div>
 
@@ -454,7 +458,7 @@
 
 <!-- Question 12 -->
 <fieldset>
-<legend class="mrgn-bttm-0 h5 required">12. {{ page.questions[ "12" ] }} <strong class="required">{{ site.required[ page.lang ] }}</strong></legend>
+<legend class="mrgn-bttm-0 h5 required">12. {{ page.questions[ "12" ] }} <strong class="required">({{ site.required[ page.lang ] }})</strong></legend>
 <div class="clearfix"></div>
 
 <div id="question-12a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>

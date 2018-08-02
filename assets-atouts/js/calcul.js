@@ -57,23 +57,30 @@ var componentName = "wb-calculate",
     /**
      * @method iterate
      * @param operations {Array} Operation objects to iterate through, process and output
+     * @return {Number} Result of the last operation
      */
     iterate = function( operations ) {
 
       var operationsLength = operations.length,
-          operationsIndex, operation, $target, result, outputAttribute;
+          operationsIndex, operation, outputTarget, $target, result, outputAttribute;
       for ( operationsIndex = 0; operationsIndex < operationsLength; operationsIndex += 1 ) {
         operation = operations[ operationsIndex ];
-        $target = $( operation[ "outputTarget" ] );
+        outputTarget = operation[ "outputTarget" ];
         outputAttribute = operation[ "outputAttribute" ];
         result = calculate( operation );
 
-        if ( outputAttribute ) {
-          $target.attr( outputAttribute, result ); 
-        } else {
-          $target.html( result );
+
+        if ( outputTarget ) {
+          $target = $( outputTarget );
+          if ( outputAttribute ) {
+            $target.attr( outputAttribute, result ); 
+          } else {
+            $target.html( result );
+          }
         }
-      } 
+      }
+
+      return result;
     },
 
     /**
@@ -270,7 +277,7 @@ var componentName = "wb-calculate",
             if ( actionType === "event" ) {
               $( action[ "outputTarget" ] ).trigger( action[ "outputEvent" ], action[ "outputEventParameters" ] );
             } else if ( actionType === "operations" ) {
-              iterate( action[ "operations" ] );
+              value = iterate( action[ "operations" ] );
             } else if ( actionType === "addClass" ) {
               $( action[ "outputTarget" ] ).addClass( action[ "class" ] );
             } else if ( actionType === "removeClass" ) {

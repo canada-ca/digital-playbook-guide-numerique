@@ -38,6 +38,7 @@ questions:
   "10d": The system is performing tasks that humans could not accomplish in a reasonable period of time
   "10e": Improve client service delivery
   "10f": Using innovative approaches
+  "10g": None of the above
   "11": Is the scope of the system clearly reflected in project documentation?
   "12": Has the design team consulted the following experts within their organization?
   "12a": Communications
