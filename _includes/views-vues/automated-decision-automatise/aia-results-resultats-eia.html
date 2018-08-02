@@ -391,10 +391,9 @@ endfor %}
 <th>{{ site.Result[ page.lang ] }}</th>
 </tr>
 </thead>
-<tbody>{%
+<tbody class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [{%
 for index in (0..4) %}{%
   assign criteriaNumber = index | plus: 1 %}
-<tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "add", "query": ".criteria-{{ criteriaNumber }}-score-max", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total" },
   { "type": "max", "inputs": [ { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-{{ criteriaNumber }}-score:not(.hidden)" }, 0 ], "outputTarget": "#criteria-{{ criteriaNumber }}-score-total" },
   { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total, #criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-percent" },
@@ -458,7 +457,8 @@ for index in (0..4) %}{%
         ]
       }
     ]
-  },
+  },{%
+endfor %}
   { "type": "conditional",
     "inputs": [ { "type": "==", "inputs": [ 0, 0 ] }
     ],
@@ -466,7 +466,10 @@ for index in (0..4) %}{%
       { "type": "event", "outputEvent": "initial-results-updated", "outputTarget": "#adjusted-results-table" }
     ]
   }
- ] }'>
+] }'>{%
+for index in (0..4) %}{%
+  assign criteriaNumber = index | plus: 1 %}
+<tr>
 <td>{{ page.aiaCriteria[ index ] }}</td>
 <td>
 <span id="criteria-{{ criteriaNumber }}-score-total">0</span> {{ site.OutOf[ page.lang ] }} <span id="criteria-{{ criteriaNumber }}-max-total">0</span><br />
