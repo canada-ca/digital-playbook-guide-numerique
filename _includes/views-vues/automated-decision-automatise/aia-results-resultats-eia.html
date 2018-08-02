@@ -86,8 +86,14 @@
     ],
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": "#final-result-section", "class": "panel-default panel-success panel-info panel-warning panel-danger" },
-      { "type": "addClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },
-      { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "value": "" },
+      { "type": "addClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },{%
+for level in (1..4) %}
+      { "type": "outputValue", "outputTarget": "#level-{{ level }}-filtered-guidance-link", "outputAttribute": "href",
+        "operations": [
+          { "type": "string", "query": "#level-{{ level }}-filtered-guidance-link", "sourceAttribute": "data-url-fragment" }
+        ]
+      },{%
+endfor %}
       { "type": "conditional",
         "inputs": [
           { "type": ">",
@@ -97,7 +103,7 @@
           }
         ],
         "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "outputType": "append", "value": ",dpgn-automated-decision-type-file-triage-assignment" }
+          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-file-triage-assignment" }
         ]
       },
       { "type": "conditional",
@@ -109,7 +115,7 @@
           }
         ],
         "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "outputType": "append", "value": ",dpgn-automated-decision-type-risk-scoring-categorization" }
+          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-risk-scoring-categorization" }
         ]
       },
       { "type": "conditional",
@@ -121,7 +127,7 @@
           }
         ],
         "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "outputType": "append", "value": ",dpgn-automated-decision-type-recommendation" }
+          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-recommendation" }
         ]
       },
       { "type": "conditional",
@@ -133,7 +139,7 @@
           }
         ],
         "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#final-result-section", "outputAttribute": "data-decision-system-type-filters", "outputType": "append", "value": ",dpgn-automated-decision-type-full-decision" }
+          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-full-decision" }
         ]
       },
       { "type": "conditional",
@@ -216,10 +222,10 @@
 </header>
 <div class="panel-body">
 <p id="final-result-in-progress">{{ site.CompleteQuestionnaireFirst[ page.lang ] }}</p>
-<p id="final-result-level-1" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 1 <a href="automated-decision.html?contentfilter=dpgn-automated-decision-level-i"></a></p>
-<p id="final-result-level-2" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 2 <a href="automated-decision.html?contentfilter=dpgn-automated-decision-level-ii"></a></p>
-<p id="final-result-level-3" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 3 <a href="automated-decision.html?contentfilter=dpgn-automated-decision-level-iii"></a></p>
-<p id="final-result-level-4" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 4 <a href="automated-decision.html?contentfilter=dpgn-automated-decision-level-iv"></a></p>
+<p id="final-result-level-1" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 1 (<a id="level-1-filtered-guidance-link" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-i" href="#">{{ page.automatedDecisionViewTitle }}</a>)</p>
+<p id="final-result-level-2" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 2 (<a id="level-2-filtered-guidance-link" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-ii" href="#">{{ page.automatedDecisionViewTitle }}</a>)</p>
+<p id="final-result-level-3" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 3 (<a id="level-3-filtered-guidance-link" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-iii" href="#">{{ page.automatedDecisionViewTitle }}</a>)</p>
+<p id="final-result-level-4" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 4 (<a id="level-4-filtered-guidance-link" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-iv" href="#">{{ page.automatedDecisionViewTitle }}</a>)</p>
 <p id="final-result-fail" class="hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</p>
 </div>
 </section>

@@ -101,6 +101,8 @@ questions:
   "40": Do you have a recourse process planned or established for clients that wish to challenge the decision?
 discretionSection: Discrétion
 scopeSection: Portée
+automatedDecisionViewTitle: Comment dois-je mettre en place un système de décision automatisé? (ébauche)
+automatedDecisionViewFilename: decision-automatise
 aiaCriteria: 
  - "Impact sur les individus et les entités"
  - "Impact sur les institutions gouvernementales"

@@ -101,6 +101,8 @@ questions:
   "40": Do you have a recourse process planned or established for clients that wish to challenge the decision?
 discretionSection: Discretion
 scopeSection: Scope
+automatedDecisionViewTitle: How should I implement an Automated Decision System? (draft)
+automatedDecisionViewFilename: automated-decision
 aiaCriteria: 
   - "Impact on Individuals and Entities"
   - "Impact on Government Institutions"
