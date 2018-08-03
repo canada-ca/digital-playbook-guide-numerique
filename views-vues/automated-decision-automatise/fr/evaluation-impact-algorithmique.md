@@ -122,23 +122,23 @@ organizationalReadinessSection: Organizational Readiness
 automatedDecisionViewTitle: Comment dois-je mettre en place un système de décision automatisé? (ébauche)
 automatedDecisionViewFilename: decision-automatise
 aiaCriteria: 
- - "Impact sur les individus et les entités"
- - "Impact sur les institutions gouvernementales"
- - "Gestion de données"
- - "Équité procédurale"
- - "Complexité"
+  - "Impact sur les individus et les entités"
+  - "Impact sur les institutions gouvernementales"
+  - "Gestion de données"
+  - "Équité procédurale"
+  - "Complexité"
 criteriaThresholds:
- - [15, 40, 70]
- - [25, 50, 75]
- - [30, 60, 80]
- - [30, 60, 80]
- - [25, 50, 75]
+  - [15, 40, 70]
+  - [25, 50, 75]
+  - [30, 60, 80]
+  - [30, 60, 80]
+  - [25, 50, 75]
 multipliers:
- - []
- - []
- - [1, 1.15, 1.25, 1.5]
- - [0.5, 1, 2]
- - [0.5, 1, 2]
+  - []
+  - []
+  - [0.9, 1, 2]
+  - [0.9, 1, 2]
+  - [1, 1.15, 1.25, 1.5]
 progressPercentThreshold: 1
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
