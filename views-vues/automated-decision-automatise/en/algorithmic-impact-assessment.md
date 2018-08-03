@@ -129,7 +129,7 @@ aiaCriteria:
   - "Complexity"
 criteriaThresholds:
   - [15, 40, 70]
-  - [25, 50, 75] 
+  - [25, 50, 75]
   - [30, 60, 80]
   - [30, 60, 80]
   - [25, 50, 75]
