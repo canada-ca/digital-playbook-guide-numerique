@@ -7,7 +7,7 @@
 
 <section>
 
-### {{ page.discretionSection }}
+### {{ page.aboutDecisionSection }}
 
 <!-- Question 1 -->
 <div id="question-1" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-1", "ignoreInit": true, "operations": [
@@ -111,12 +111,6 @@
 </div>
 </div>
 </div>
-
-</section>
-
-<section>
-
-### {{ page.scopeSection }}
 
 <!-- Question 2 -->
 <div id="question-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
@@ -446,151 +440,118 @@
 <p>11. {{ page.questions[ "11" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-11-yes", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-11-yes, #question-11-1-wrapper, #question-11-1-result", "class": "hidden" },
   { "action": "addClass", "source": ".question-11-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-11-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-11-yes", "class": "hidden" }
+  { "action": "addClass", "source": ".question-11-yes, #question-11-1-wrapper, #question-11-1-result", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
+
+<div id="question-11-1-wrapper" class="hidden">
+<!-- Question 11.1 -->
+<div id="question-11-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>11.1 {{ page.questions[ "11.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-11-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-11-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-11-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-11-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<section>
+
+### {{ page.dataBusinessProcessSection }}
 
 <!-- Question 12 -->
-<fieldset>
-<legend class="mrgn-bttm-0 h5 required">12. {{ page.questions[ "12" ] }} <strong class="required">({{ site.required[ page.lang ] }})</strong></legend>
-<div class="clearfix"></div>
-
-<div id="question-12a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>a. {{ page.questions[ "12a" ] }}</p>
+<div id="question-12" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-12", "ignoreInit": true, "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">",
+        "inputs": [
+          { "type": "count", "query": ".question-12-checkbox-score:not(.hidden)" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": ".question-12-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-12", "outputEvent": "score-updated" }
+    ]
+  }
+] }'>
+<p>12. {{ page.questions[ "12" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12a-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12a-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
+  { "action": "toggle", "toggle": { "selector": ".question-12a-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-12a-yes", "type": "on" }, "clean": ".question-12a-yes" }
+]'>a. {{ page.questions[ "12a" ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12a-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12a-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
+  { "action": "toggle", "toggle": { "selector": ".question-12b-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-12b-yes", "type": "on" }, "clean": ".question-12b-yes" }
+]'>b. {{ page.questions[ "12b" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-12c-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-12c-yes", "type": "on" }, "clean": ".question-12c-yes" }
+]'>c. {{ page.questions[ "12c" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-12d-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-12d-yes", "type": "on" }, "clean": ".question-12d-yes" }
+]'>d. {{ page.questions[ "12d" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-12e-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-12e-yes", "type": "on" }, "clean": ".question-12e-yes" }
+]'>e. {{ page.questions[ "12e" ] }}</li>
 </ul>
 </div>
-
-<div id="question-12b" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>b. {{ page.questions[ "12b" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12b-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12b-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12b-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12b-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-12c" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>c. {{ page.questions[ "12c" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12c-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12c-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12c-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12c-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-12d" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>d. {{ page.questions[ "12d" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12d-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12d-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12d-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12d-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-12e" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>e. {{ page.questions[ "12e" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12e-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12e-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12e-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12e-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-12f" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>f. {{ page.questions[ "12f" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12f-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12f-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12f-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12f-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-12g" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>g. {{ page.questions[ "12g" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12g-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12g-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12g-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12g-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-12h" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>h. {{ page.questions[ "12h" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12h-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12h-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12h-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12h-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-12h-na", "class": "hidden" },
-  { "action": "addClass", "source": ".question-12h-yes, .question-12h-no", "class": "hidden" }
-]'>{{ site.NotApplicable[ page.lang ] }}</li>
-</ul>
-</div>
-
-</fieldset>
 
 <!-- Question 13 -->
-<div id="question-13" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<div id="question-13" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-13", "ignoreInit": true, "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">",
+        "inputs": [
+          { "type": "count", "query": ".question-13-checkbox-score:not(.hidden)" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": ".question-13-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-13", "outputEvent": "score-updated" }
+    ]
+  }
+] }'>
 <p>13. {{ page.questions[ "13" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-13-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-13-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
+  { "action": "toggle", "toggle": { "selector": ".question-13a-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-13a-yes", "type": "on" }, "clean": ".question-13a-yes" }
+]'>a. {{ page.questions[ "13a" ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-13-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-13-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
+  { "action": "toggle", "toggle": { "selector": ".question-13b-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-13b-yes", "type": "on" }, "clean": ".question-13b-yes" }
+]'>b. {{ page.questions[ "13b" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-13c-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-13c-yes", "type": "on" }, "clean": ".question-13c-yes" }
+]'>c. {{ page.questions[ "13c" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-13d-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-13d-yes", "type": "on" }, "clean": ".question-13d-yes" }
+]'>d. {{ page.questions[ "13d" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-13e-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-13e-yes", "type": "on" }, "clean": ".question-13e-yes" }
+]'>e. {{ page.questions[ "13e" ] }}</li>
 </ul>
 </div>
 
@@ -676,8 +637,8 @@
 </ul>
 </div>
 
-<div id="question-17-1-wrapper" class="hidden">
 <!-- Question 17.1 -->
+<div id="question-17-1-wrapper" class="hidden">
 <div id="question-17-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
 <p>17.1 {{ page.questions[ "17.1" ] }}</p>
 <ul>
@@ -698,60 +659,28 @@
 <p>18. {{ page.questions[ "18" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-18-yes, #question-18-1-18-2-wrapper, #question-18-1-result, #question-18-2-result", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-18-yes", "class": "hidden" },
   { "action": "addClass", "source": ".question-18-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-18-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-18-yes, #question-18-1-18-2-wrapper, #question-18-1-result, #question-18-2-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-18-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
-</div>
-
-<div id="question-18-1-18-2-wrapper" class="hidden">
-<!-- Question 18.1 -->
-<div id="question-18-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>18.1 {{ page.questions[ "18.1" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-18-1-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-18-1-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-18-1-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-18-1-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<!-- Question 18.2 -->
-<div id="question-18-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>18.2 {{ page.questions[ "18.2" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-18-2-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-18-2-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-18-2-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-18-2-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
 </div>
 
 <!-- Question 19 -->
-<div id="question-19" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<div id="question-19" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-19-protected, .question-19-protected-a, .question-19-protected-b, .question-19-protected-c, .question-19-classified, .question-19-confidential, .question-19-secret, .question-19-top-secret", "class": "hidden" } }'>
 <p>19. {{ page.questions[ "19" ] }}</p>
 <ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-19-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-19-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-19-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-19-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-protected", "class": "hidden" }'>{{ site.Protected[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-protected-a", "class": "hidden" }'>{{ site.ProtectedA[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-protected-b", "class": "hidden" }'>{{ site.ProtectedB[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-protected-c", "class": "hidden" }'>{{ site.ProtectedC[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-classified", "class": "hidden" }'>{{ site.Classified[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-confidential", "class": "hidden" }'>{{ site.Confidential[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-secret", "class": "hidden" }'>{{ site.Secret[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-19-top-secret", "class": "hidden" }'>{{ site.TopSecret[ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -760,90 +689,28 @@
 <p>20. {{ page.questions[ "20" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-20-yes, #question-20-1-20-2-wrapper, #question-20-1-result, #question-20-2-result", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-20-yes", "class": "hidden" },
   { "action": "addClass", "source": ".question-20-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-20-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-20-yes, #question-20-1-20-2-wrapper, #question-20-1-result, #question-20-2-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-20-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
-</div>
-
-<div id="question-20-1-20-2-wrapper" class="hidden">
-<!-- Question 20.1 -->
-<div id="question-20-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>20.1 {{ page.questions[ "20.1" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-20-1-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-20-1-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-20-1-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-20-1-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<!-- Question 20.2 -->
-<div id="question-20-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>20.2 {{ page.questions[ "20.2" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-20-2-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-20-2-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-20-2-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-20-2-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
 </div>
 
 <!-- Question 21 -->
-<div id="question-21" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-21", "ignoreInit": true, "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "count", "query": ".question-21-checkbox-score:not(.hidden)" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": ".question-21-checkbox-score span.hidden + span.hidden", "class": "hidden" },
-      { "type": "event", "outputTarget": "#question-21", "outputEvent": "score-updated" }
-    ]
-  }
-] }'>
+<div id="question-21" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
 <p>21. {{ page.questions[ "21" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-21a-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-21a-yes", "type": "on" }, "clean": ".question-21a-yes" }
-]'>a. {{ page.questions[ "21a" ] }}</li>
+  { "action": "removeClass", "source": ".question-21-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-21b-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-21b-yes", "type": "on" }, "clean": ".question-21b-yes" }
-]'>b. {{ page.questions[ "21b" ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-21c-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-21c-yes", "type": "on" }, "clean": ".question-21c-yes" }
-]'>c. {{ page.questions[ "21c" ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-21d-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-21d-yes", "type": "on" }, "clean": ".question-21d-yes" }
-]'>d. {{ page.questions[ "21d" ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-21e-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-21e-yes", "type": "on" }, "clean": ".question-21e-yes" }
-]'>e. {{ page.questions[ "21e" ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-21f-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-21f-yes", "type": "on" }, "clean": ".question-21f-yes" }
-]'>f. {{ page.questions[ "21f" ] }}</li>
+  { "action": "removeClass", "source": ".question-21-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-21-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -852,46 +719,14 @@
 <p>22. {{ page.questions[ "22" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-22-yes, #question-22-1-22-2-wrapper, #question-22-1-result, #question-22-2-result", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-22-yes", "class": "hidden" },
   { "action": "addClass", "source": ".question-22-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-22-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-22-yes, #question-22-1-22-2-wrapper, #question-22-1-result, #question-22-2-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-22-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
-</div>
-
-<div id="question-22-1-22-2-wrapper" class="hidden">
-<!-- Question 22.1 -->
-<div id="question-22-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>22.1 {{ page.questions[ "22.1" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-22-1-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-22-1-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-22-1-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-22-1-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<!-- Question 22.2 -->
-<div id="question-22-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>22.2 {{ page.questions[ "22.2" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-22-2-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-22-2-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-22-2-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-22-2-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
 </div>
 
 <!-- Question 23 -->
@@ -899,46 +734,67 @@
 <p>23. {{ page.questions[ "23" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-23-yes, #question-23-1-wrapper, #question-23-1-result", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-23-yes", "class": "hidden" },
   { "action": "addClass", "source": ".question-23-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-23-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-23-yes, #question-23-1-wrapper, #question-23-1-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-23-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
 
-<!-- Question 23.1 -->
-<div id="question-23-1-wrapper" class="hidden">
-<div id="question-23-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>23.1 {{ page.questions[ "23.1" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-23-1-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-23-1-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-23-1-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-23-1-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-</div>
+</section>
+
+<section>
+
+### {{ page.systemFunctionalitySection }}
 
 <!-- Question 24 -->
-<div id="question-24" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-24-protected, .question-24-protected-a, .question-24-protected-b, .question-24-protected-c, .question-24-classified, .question-24-confidential, .question-24-secret, .question-24-top-secret", "class": "hidden" } }'>
+<div id="question-24" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
 <p>24. {{ page.questions[ "24" ] }}</p>
 <ul>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-protected", "class": "hidden" }'>{{ site.Protected[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-protected-a", "class": "hidden" }'>{{ site.ProtectedA[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-protected-b", "class": "hidden" }'>{{ site.ProtectedB[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-protected-c", "class": "hidden" }'>{{ site.ProtectedC[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-classified", "class": "hidden" }'>{{ site.Classified[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-confidential", "class": "hidden" }'>{{ site.Confidential[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-secret", "class": "hidden" }'>{{ site.Secret[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-24-top-secret", "class": "hidden" }'>{{ site.TopSecret[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-24-yes, #question-24-1-24-2-wrapper, #question-24-1-result, #question-24-2-result, "class": "hidden" },
+  { "action": "addClass", "source": ".question-24-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-24-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-24-yes, #question-24-1-24-2-wrapper, #question-24-1-result", #question-24-2-result, "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
 </ul>
+</div>
+
+<div id="question-24-1-24-2-wrapper" class="hidden">
+<!-- Question 24.1 -->
+<div id="question-24-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>24.1 {{ page.questions[ "24.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-24-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-24-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-24-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-24-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 24.2 -->
+<div id="question-24-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>24.2 {{ page.questions[ "24.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-24-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-24-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-24-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-24-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
 </div>
 
 <!-- Question 25 -->
@@ -946,32 +802,75 @@
 <p>25. {{ page.questions[ "25" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-25-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-25-no, .question-25-na", "class": "hidden" }
+  { "action": "removeClass", "source": ".question-25-yes, #question-25-1-wrapper, #question-25-1-result, "class": "hidden" },
+  { "action": "addClass", "source": ".question-25-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-25-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-25-yes, .question-25-na", "class": "hidden" }
+  { "action": "addClass", "source": ".question-25-yes, #question-25-1-wrapper, #question-25-1-result, "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-25-na", "class": "hidden" },
-  { "action": "addClass", "source": ".question-25-yes, .question-25-no", "class": "hidden" }
-]'>{{ site.NotApplicable[ page.lang ] }}</li>
 </ul>
 </div>
 
+<div id="question-25-1-wrapper" class="hidden">
+<!-- Question 25.1 -->
+<div id="question-25-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>25.1 {{ page.questions[ "25.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-25-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-25-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-25-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-25-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
 <!-- Question 26 -->
-<div id="question-26" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<div id="question-26" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-26", "ignoreInit": true, "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">",
+        "inputs": [
+          { "type": "count", "query": ".question-26-checkbox-score:not(.hidden)" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": ".question-26-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-26", "outputEvent": "score-updated" }
+    ]
+  }
+] }'>
 <p>26. {{ page.questions[ "26" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-26-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-26-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
+  { "action": "toggle", "toggle": { "selector": ".question-26a-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-26a-yes", "type": "on" }, "clean": ".question-26a-yes" }
+]'>a. {{ page.questions[ "26a" ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-26-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-26-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
+  { "action": "toggle", "toggle": { "selector": ".question-26b-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-26b-yes", "type": "on" }, "clean": ".question-26b-yes" }
+]'>b. {{ page.questions[ "26b" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-26c-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-26c-yes", "type": "on" }, "clean": ".question-26c-yes" }
+]'>c. {{ page.questions[ "26c" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-26d-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-26d-yes", "type": "on" }, "clean": ".question-26d-yes" }
+]'>d. {{ page.questions[ "26d" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-26e-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-26e-yes", "type": "on" }, "clean": ".question-26e-yes" }
+]'>e. {{ page.questions[ "26e" ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-26f-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-26f-yes", "type": "on" }, "clean": ".question-26f-yes" }
+]'>f. {{ page.questions[ "26f" ] }}</li>
 </ul>
 </div>
 
@@ -1055,14 +954,61 @@
 <p>32. {{ page.questions[ "32" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-32-yes", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-32-yes, #question-32-1-32-2-32-3-wrapper, #question-32-1-result, #question-32-2-result, #question-32-3-result", "class": "hidden" },
   { "action": "addClass", "source": ".question-32-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-32-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-32-yes", "class": "hidden" }
+  { "action": "addClass", "source": ".question-32-yes, #question-32-1-32-2-32-3-wrapper, #question-32-1-result, #question-32-2-result, #question-32-3-result", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
+</div>
+
+<div id="question-32-1-32-2-32-3-wrapper" class="hidden">
+<!-- Question 32.1 -->
+<div id="question-32-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>32.1 {{ page.questions[ "32.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-32-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-32-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-32-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-32-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 32.2 -->
+<div id="question-32-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>32.2 {{ page.questions[ "32.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-32-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-32-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-32-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-32-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 32.3 -->
+<div id="question-32-3" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>32.3 {{ page.questions[ "32.3" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-32-3-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-32-3-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-32-3-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-32-3-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
 </div>
 
 <!-- Question 33 -->
@@ -1080,23 +1026,133 @@
 </ul>
 </div>
 
+</section>
+
+<section>
+
+### {{ page.organizationalReadinessSection }}
+
 <!-- Question 34 -->
-<div id="question-34" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>34. {{ page.questions[ "34" ] }}</p>
+<fieldset>
+<legend class="mrgn-bttm-0 h5 required">34. {{ page.questions[ "34" ] }} <strong class="required">({{ site.required[ page.lang ] }})</strong></legend>
+<div class="clearfix"></div>
+
+<div id="question-34a" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>a. {{ page.questions[ "34a" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-34-yes, #question-34-1-wrapper, #question-34-1-result", "class": "hidden" },
-  { "action": "addClass", "source": ".question-34-no", "class": "hidden" }
+  { "action": "removeClass", "source": ".question-34a-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34a-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-34-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-34-yes, #question-34-1-wrapper, #question-34-1-result", "class": "hidden" }
+  { "action": "removeClass", "source": ".question-34a-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34a-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
 
+<div id="question-34b" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>b. {{ page.questions[ "34b" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34b-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34b-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34b-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34b-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-34c" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>c. {{ page.questions[ "34c" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34c-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34c-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34c-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34c-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-34d" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>d. {{ page.questions[ "34d" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34d-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34d-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34d-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34d-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-34e" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>e. {{ page.questions[ "34e" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34e-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34e-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34e-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34e-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-34f" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>f. {{ page.questions[ "34f" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34f-yes, #question-34-1-34-2-wrapper, #question-34-1-result, #question-34-2-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34f-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34f-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34f-yes, #question-34-1-34-2-wrapper, #question-34-1-result, #question-34-2-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-34g" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>g. {{ page.questions[ "34g" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34g-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34g-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34g-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34g-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-34h" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>h. {{ page.questions[ "34h" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34h-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34h-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34h-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34h-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+</fieldset>
+
+<div id="question-34-1-34-2-wrapper" class="hidden">
 <!-- Question 34.1 -->
-<div id="question-34-1-wrapper" class="hidden">
 <div id="question-34-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
 <p>34.1 {{ page.questions[ "34.1" ] }}</p>
 <ul>
@@ -1110,6 +1166,21 @@
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
+
+<!-- Question 34.2 -->
+<div id="question-34-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>34.2 {{ page.questions[ "34.2" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34-2-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34-2-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-34-2-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-34-2-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
 </div>
 
 <!-- Question 35 -->
@@ -1117,66 +1188,19 @@
 <p>35. {{ page.questions[ "35" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-35-yes, #question-35-1-35-2-35-3-wrapper, #question-35-1-result, #question-35-2-result, #question-35-3-result", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-35-yes", "class": "hidden" },
   { "action": "addClass", "source": ".question-35-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-35-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-35-yes, #question-35-1-35-2-35-3-wrapper, #question-35-1-result, #question-35-2-result, #question-35-3-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-35-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
-</div>
-
-<div id="question-35-1-35-2-35-3-wrapper" class="hidden">
-<!-- Question 35.1 -->
-<div id="question-35-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>35.1 {{ page.questions[ "35.1" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-35-1-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-35-1-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-35-1-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-35-1-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<!-- Question 35.2 -->
-<div id="question-35-2" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>35.2 {{ page.questions[ "35.2" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-35-2-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-35-2-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-35-2-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-35-2-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<!-- Question 35.3 -->
-<div id="question-35-3" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>35.3 {{ page.questions[ "35.3" ] }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-35-3-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-35-3-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-35-3-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-35-3-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
 </div>
 
 <!-- Question 36 -->
 <div id="question-36" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>36. {{ page.questions[ "36" ] }}</p>
+<p>36 {{ page.questions[ "36" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-36-yes", "class": "hidden" },
@@ -1195,22 +1219,18 @@
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-37-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-37-no, .question-37-na", "class": "hidden" }
+  { "action": "addClass", "source": ".question-37-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-37-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-37-yes, .question-37-na", "class": "hidden" }
+  { "action": "addClass", "source": ".question-37-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-37-na", "class": "hidden" },
-  { "action": "addClass", "source": ".question-37-yes, .question-37-no", "class": "hidden" }
-]'>{{ site.NotApplicable[ page.lang ] }}</li>
 </ul>
 </div>
 
 <!-- Question 38 -->
 <div id="question-38" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>38. {{ page.questions[ "38" ] }}</p>
+<p>26. {{ page.questions[ "38" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-38-yes", "class": "hidden" },
@@ -1243,12 +1263,108 @@
 <p>40. {{ page.questions[ "40" ] }}</p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-40-yes", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-40-yes, #question-40-1-wrapper, #question-40-1-result", "class": "hidden" },
   { "action": "addClass", "source": ".question-40-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-40-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-40-yes", "class": "hidden" }
+  { "action": "addClass", "source": ".question-40-yes, #question-40-1-wrapper, #question-40-1-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 40.1 -->
+<div id="question-40-1-wrapper" class="hidden">
+<div id="question-40-1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>40.1 {{ page.questions[ "40.1" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-40-1-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-40-1-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-40-1-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-40-1-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+</div>
+
+<!-- Question 41 -->
+<div id="question-41" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>41. {{ page.questions[ "41" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-41-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-41-no, .question-41-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-41-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-41-yes, .question-41-na", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-41-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-41-yes, .question-41-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 42 -->
+<div id="question-42" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>42. {{ page.questions[ "42" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-42-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-42-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-42-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-42-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 43 -->
+<div id="question-43" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>43. {{ page.questions[ "43" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-43-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-43-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-43-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-43-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 44 -->
+<div id="question-44" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>44. {{ page.questions[ "44" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-44-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-44-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-44-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-44-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 45 -->
+<div id="question-45" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>45. {{ page.questions[ "45" ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-45-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-45-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-45-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-45-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>

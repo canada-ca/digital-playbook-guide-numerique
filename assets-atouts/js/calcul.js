@@ -76,7 +76,7 @@ var componentName = "wb-calculate",
           } else if ( operation[ "outputData" ] ) {
             $target.data( operation[ "outputData" ], result ); 
           } else {
-            $target.html( result );
+            $target.text( result );
           }
         }
       }
@@ -91,6 +91,7 @@ var componentName = "wb-calculate",
      * Operation object has the following constraints:
      * type {String} Operation to perform. Following types are supported:
      * - number: Retrieve a number as is
+     * - string: Retrieve a string as is
      * - count: Retrieve a count of items
      * - percent: Calculate the percentage using two numbers (i.e., (a / b) * 100)
      * - add: Calculate the result of adding two or more numbers in sequence (e.g., a + b + c)
@@ -109,26 +110,25 @@ var componentName = "wb-calculate",
      * - random: Generate a random number between 0 and 1 (e.g., Math.random)
      * - conditional: Perform an action of "actionType" if all conditions in "inputs" are met. 
      * decimalPlaces {Integer} Optional (defaults to unlimited). Number of decimal plays to allow for the result.
-     * value {Number/String} Optional (can be used instead of "query", only permitted for "number" type; can also be used for "outputValue" action). The value of the number to use for the calculation. Alternatively can use a number directly (instead of an object of type "number"). For action type "outputValue", can use a number or a string.
+     * value {Number/String/Boolean} Optional (can be used instead of "query", only permitted for "number" and "string" types; can also be used for "outputValue" action). The value of the number to use for the calculation or the string to use for a non-mathematical operation. Alternatively can use a number or string directly (instead of an object of type "number" or "string"). For action type "outputValue", can use a number or a string.
      * query {String} Optional (required for "count" type, "number" type when "value" is not specified and other types when "inputs" is not specified) The CSS query for where to retrieve the numbers (uses first result for "number") or for the items to count.
      * inputs {Array} Optional (used for "conditional" type, including condition objects, and can also be used for other operations such as"add", "subtract", "multiply", "divide", "power" and "modulus" types in place of query). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
      * sourceAttribute {String} (optional, can be used with the "number" type). Attribute from which to retrieve the number.
      * increment {Integer} Optional (can only be used with "count" type). The size of the increment to use for each item counted.
      * actionsTrue {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
-     * actionsFalse {Array} Optional (can only be used for "conditional" type). Actions to process with if one of the conditions is not met (e.g., "event", "operations", "addClass", "removeClass", "outputValue", "outputHTML", "conditional").
+     * actionsFalse {Array} Optional (can only be used for "conditional" type). Actions to process with if one of the conditions is not met (e.g., "event", "operations", "addClass", "removeClass", "outputValue", "conditional").
      * outputEvent {String} Optional (required for action type of "event" for "conditional" type). Event type 
      * outputEventParameter {Array/Plain object} Optional (only used for action type of "event" for "conditional" type).
      * operations {Array} Optional (required for action type of "operations" for "conditional" type). Operations to execute.
      * class {String} Optional (required for action type of "addClass" or "removeClass" for "conditional" type). Class to add or remove.  
-     * outputTarget {String} Optional (required for operations that output the result and for the action type of "event", "addClass", "removeClass", "outputValue" and "outputHTML" and for the "conditional" type). CSS selector for where to output the result of the operation or for where to trigger the event.
+     * outputTarget {String} Optional (required for operations that output the result and for the action type of "event", "addClass", "removeClass" and "outputValue" and for the "conditional" type). CSS selector for where to output the result of the operation or for where to trigger the event.
      * outputAttribute {String} Optional (can be used for operations that output the result and the outputValue action). Attribute on the outputTarget to update.
      * outputType {String} (required for outputValue action type) Only "append", "prepend" or "replace" as possible types.
-     * html {String} Optional (only used with "outputValue" action). HTML to output.
      */
     calculate = function( operation ) {
 
-      // Return right away if operation is a number (nothing to process)
-      if ( typeof operation === "number" ) {
+      // Return right away if operation is a number or a string (nothing to process)
+      if ( typeof operation === "number" || typeof operation === "string" || typeof operation === "boolean" ) {
         return operation;
       }
 
@@ -139,9 +139,9 @@ var componentName = "wb-calculate",
           queryResultsSize = !$query ? null : $query.length, 
           decimalPlaces = operation[ "decimalPlaces" ],
           inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType,
-          outputTarget, outputType, currentValue, outputTargetIndex, outputTargetLength;
+          outputTargets, outputTarget, outputAttribute, outputType, currentValue, outputTargetIndex, outputTargetsLength;
 
-      if ( type === "number" ) {
+      if ( type === "number" || type === "string" ) {
         if ( $query ) {
           if ( operation[ "sourceAttribute" ] ) {
             value = $query.attr( operation[ "sourceAttribute" ] );
@@ -149,10 +149,12 @@ var componentName = "wb-calculate",
             value = $query.eq( 0 ).text();
           }
 
-          if ( value.indexOf( "." ) > -1 ) {
-            value = parseFloat( value );
-          } else {
-            value = parseInt( value );
+          if ( type === "number" ) {
+            if ( value.indexOf( "." ) > -1 ) {
+              value = parseFloat( value );
+            } else {
+              value = parseInt( value );
+            }
           }
         }
       } else if ( type === "count" ) {
@@ -287,46 +289,38 @@ var componentName = "wb-calculate",
             } else if ( actionType === "removeClass" ) {
               $( action[ "outputTarget" ] ).removeClass( action[ "class" ] );
             } else if ( actionType === "outputValue" ) {
-              if ( action[ "html" ] ) {
-                value = action[ "html" ];
+              if ( action[ "operations" ] ) {
+                value = iterate( action[ "operations" ] );
               } else {
                 value = action[ "value" ];
               }
+
               if ( action[ "outputTarget"] ) {
-                outputTarget = document.querySelectorAll( action[ "outputTarget" ] );
-                outputTargetLength = outputTarget.length;
+                outputTargets = document.querySelectorAll( action[ "outputTarget" ] );
+                outputTargetsLength = outputTargets.length;
                 outputType = action[ "outputType" ];
 
-                for ( outputTargetIndex = 0; outputTargetIndex < outputTargetLength; outputTargetIndex += 1 ) {
-                  if ( action[ "outputAttribute" ] ) {
-                    currentValue = outputTarget[ outputTargetIndex ].getAttribute( action[ "outputAttribute" ] );
-                    if ( currentValue ) {
-                      if ( outputType === "append" ) {
-                        value = currentValue + value;
-                      } else if ( outputType === "prepend" ) {
-                        value += currentValue;
-                      }
-                    }
-                    outputTarget[ outputTargetIndex ].setAttribute( action[ "outputAttribute" ], value );
-                  } else if ( action[ "html" ] ) {
-                    currentValue = outputTarget[ outputTargetIndex ].innerHTML;
-                    if ( currentValue ) {
-                      if ( outputType === "append" ) {
-                        value = currentValue + value;
-                      } else if ( outputType === "prepend" ) {
-                        value += currentValue;
-                      }
-                    }
-                    outputTarget[ outputTargetIndex ].innerHTML = value;
+                for ( outputTargetIndex = 0; outputTargetIndex < outputTargetsLength; outputTargetIndex += 1 ) {
+                  outputTarget = outputTargets[ outputTargetIndex ];
+                  outputAttribute = action[ "outputAttribute" ];
+
+                  if ( outputAttribute ) {
+                    currentValue = outputTarget.getAttribute( outputAttribute );
                   } else {
-                    currentValue = outputTarget[ outputTargetIndex ].textContent;
-                    if ( currentValue ) {
-                      if ( outputType === "append" ) {
-                        value = currentValue + value;
-                      } else if ( outputType === "prepend" ) {
-                        value += currentValue;
-                      }
+                    currentValue = outputTarget.textContent;
+                  }
+
+                  if ( currentValue ) {
+                    if ( outputType === "append" ) {
+                      value = currentValue + value;
+                    } else if ( outputType === "prepend" ) {
+                      value = value + currentValue;
                     }
+                  }
+
+                  if ( outputAttribute ) {
+                    outputTarget.setAttribute( outputAttribute, value );
+                  } else {
                     outputTarget[ outputTargetIndex ].textContent = value;
                   }
                 }
