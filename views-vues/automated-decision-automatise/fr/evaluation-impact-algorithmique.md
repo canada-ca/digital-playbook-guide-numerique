@@ -103,6 +103,7 @@ questions:
   "34.1": Has a formal opinion been issued?
   "34.2": Have the relevant areas of legislation been identified during the scoping phase?
   "35": Have you developed Key Performance Indicators and benchmarks to measure and improve the system’s performance?
+  "35.1": Are you specifically measuring impacts (e.g., social, economic, environmental) that may result from the system?
   "36": Have you presented a concept case to the Government of Canada Enterprise Architecture Review Board?
   "37": Have you conducted a Security Assessment and Authorization?
   "38": Is there a process in place to monitor and grant access permission?
@@ -121,23 +122,23 @@ organizationalReadinessSection: Organizational Readiness
 automatedDecisionViewTitle: Comment dois-je mettre en place un système de décision automatisé? (ébauche)
 automatedDecisionViewFilename: decision-automatise
 aiaCriteria: 
- - "Impact sur les individus et les entités"
- - "Impact sur les institutions gouvernementales"
- - "Gestion de données"
- - "Équité procédurale"
- - "Complexité"
+  - "Impact sur les individus et les entités"
+  - "Impact sur les institutions gouvernementales"
+  - "Gestion de données"
+  - "Équité procédurale"
+  - "Complexité"
 criteriaThresholds:
- - [15, 40, 70]
- - [25, 50, 75]
- - [30, 60, 80]
- - [30, 60, 80]
- - [25, 50, 75]
+  - [15, 40, 70]
+  - [25, 50, 75]
+  - [30, 60, 80]
+  - [30, 60, 80]
+  - [25, 50, 75]
 multipliers:
- - []
- - []
- - [1, 1.15, 1.25, 1.5]
- - [0.5, 1, 2]
- - [0.5, 1, 2]
+  - []
+  - []
+  - [0.9, 1, 2]
+  - [0.9, 1, 2]
+  - [1, 1.15, 1.25, 1.5]
 progressPercentThreshold: 1
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%

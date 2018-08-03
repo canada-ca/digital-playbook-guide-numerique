@@ -103,6 +103,7 @@ questions:
   "34.1": Has a formal opinion been issued?
   "34.2": Have the relevant areas of legislation been identified during the scoping phase?
   "35": Have you developed Key Performance Indicators and benchmarks to measure and improve the system’s performance?
+  "35.1": Are you specifically measuring impacts (e.g., social, economic, environmental) that may result from the system?
   "36": Have you presented a concept case to the Government of Canada Enterprise Architecture Review Board?
   "37": Have you conducted a Security Assessment and Authorization?
   "38": Is there a process in place to monitor and grant access permission?
@@ -135,9 +136,9 @@ criteriaThresholds:
 multipliers:
   - []
   - []
+  - [0.9, 1, 2]
+  - [0.9, 1, 2]
   - [1, 1.15, 1.25, 1.5]
-  - [0.5, 1, 2]
-  - [0.5, 1, 2]
 progressPercentThreshold: 1
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
