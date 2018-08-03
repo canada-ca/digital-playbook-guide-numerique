@@ -128,16 +128,16 @@ aiaCriteria:
   - "Complexity"
 criteriaThresholds:
   - [15, 40, 70]
-  - [25, 50, 75]
+  - [25, 50, 75] 
   - [30, 60, 80]
   - [30, 60, 80]
   - [25, 50, 75]
 multipliers:
   - []
   - []
+  - [0.9, 1, 2]
+  - [0.9, 1, 2]
   - [1, 1.15, 1.25, 1.5]
-  - [0.5, 1, 2]
-  - [0.5, 1, 2]
 progressPercentThreshold: 1
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
