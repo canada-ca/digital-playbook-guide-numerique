@@ -80,6 +80,7 @@ questions:
   "26d": Pre-defined models
   "26e": Criteria
   "26f": Classification structures
+  "26g": None of the above
   "27": Does the system enable human override of system decisions?
   "28": Does the system enable override of human decisions?
   "29": Does the system enable the override of other automated decision systems?
