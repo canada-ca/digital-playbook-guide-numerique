@@ -6,119 +6,119 @@ altLang: en
 altLangPage: algorithmic-impact-assessment
 collectionDirectory: views-vues/automated-decision-automatise
 questions:
-  "1": What parts of the decision-making process will be automated by this system? (Check all that apply)
-  "1a": File triage or assignment
-  "1b": Risk scoring or categorization
-  "1c": Recommendation to take a certain course of action
-  "1d": Full end-to-end decision
-  "1.1": Does the recommendation or decision made by the system involve discretion?
-  "1.1.1": Is the decision purely discretionary? (e.g., a review on compassionate grounds)
-  "1.1.2": Have all the decision points that involve the exercise of human discretion or judgement been clearly idenified?
-  "2": Can this automated system result in the restriction of movement into, out of, or within Canada?
-  "3": Can this system infer or predict potential criminal activity?
-  "4": Can this system result in granting or restricting access to a premises or network?
-  "4.1": What is the classfication of the premises? (Select one)
-  "5": Does this system provide funds to an individual, business, or community?
-  "5.1": Is this funding for a social or economic support program?
-  "5.1.1": If funding were to be denied, could it leave the client in a precarious economic positions? (e.g., could render an individual homeless or a business to close)
-  "5.2": Does the system issue transfer payments?
-  "5.2.1": Is this grant, contribution, or transfer payment in excess of $5,000,000?
-  "6": Does this system, result in the issuance of a fine, administrative monetary penalty, or a debt collection notice?
-  "7": Does this system result in the issuance of a permit, license, patent, or trademark?
-  "7.1": Does this involve the collection, transportation, storage, purchase or sale of a regulated good or substance?
-  "7.1.1": Is this regulated good or substance dangerous, such as a firearm, toxin, or hazardous material?
-  "7.2": Is this a construction or environmental permit?
-  "7.3": Is this a patent or trademark?
-  "8": Does this system confer a legal status that is otherwise required to receive a benefit or service (e.g., Indian status, veteran status)?
-  "9": Does this system involve the distribution of human resources or material in the management of emergencies?
-  "10": What are the key business drivers for automating the administrative decision-making process? (Check all that apply)
-  "10a": Existing backlog of work or cases
-  "10b": Improve overall quality of decisions
-  "10c": Lower transaction costs of an existing program
-  "10d": The system is performing tasks that humans could not accomplish in a reasonable period of time
-  "10e": Improve client service delivery
-  "10f": Using innovative approaches
-  "10g": None of the above
-  "11": Will your system make decisions specifically about Indigenous peoples or territory?
-  "11.1": Have you engaged relevant Indigenous organizations in meaningful consultation in the design of the system?
-  "12": Who collected the data used for training the system? (Check all that apply)
-  "12a": Your institution
-  "12b": Another federal institution
-  "12c": Another level of government
-  "12d": A foreign government
-  "12e": A non-government third party
-  "13": Who collects the input data used by the system? (Check all that apply)
-  "13a": Your institution
-  "13b": Another federal institution
-  "13c": Another level of government
-  "13d": A foreign government
-  "13e": A non-government third party
-  "14": Have you consulted with relevant stakeholder groups representing those likely to be affected by the decision?
-  "15": Is there a process in place to document how data quality issues were resolved during the design process?
-  "16-part1": "Have you undertaken "
-  "16-link-url": "https://www.swc-cfc.gc.ca/gba-acs/approach-approche-en.html"
-  "16-link-text": "Gender Based Analysis Plus"
-  "16-part2": " of the training data?"
-  "16.1": Based on the GBA+ results, have you documented mitigation strategies?
-  "17": Does the Automated Decision System use personal information as input data?
-  "17.1": Does the program have an existing Privacy Impact Assessment?
-  "18": Have you assigned accountability for the design, development, maintenance, and improvement of the system?
-  "19": What is the security classfication of the input data used by the system? (Select one)
-  "20": Do you have a process in place to test and verify business rules?
-  "21": Does the system require the analysis of unstructured data to render a recommendation or a decision?
-  "22": Is the scope of the system clearly reflected in project documentation?
-  "23": Have appropriate strategies been developed to manage the risk that outdated or unreliable data is used to make an automated decision?
-  "24": Does your system use contactless machine vision for biometric recognition (e.g. facial, full-body person, gait)?
-  "24.1": Does your system perform within acceptable parameters for all skin colours as defined by the Fitzpatrick Skin Type scale or similar measurement?
-  "24.2": Where applicable, have you tested to ensure that the system performs within acceptable parameters with persons who have a disability that may cause them to be unduly disadvantaged by the machine vision component? (e.g., ensuring that a gait analysis tool does not unduly disadvantage an individual that uses a wheelchair)
-  "25": Does the system interface with other IT systems?
-  "25.1": Where it interfaces with other systems, have you clearly identified the business processes that occur between systems?
-  "26": Which of the following information about system functionality are you planning to make publicly available? (Check all that apply)
-  "26a": Training data sources
-  "26b": Decision trees
-  "26c": Confidence thresholds
-  "26d": Pre-defined models
-  "26e": Criteria
-  "26f": Classification structures
-  "26g": None of the above
-  "27": Does the system enable human override of system decisions?
-  "28": Does the system enable override of human decisions?
-  "29": Does the system enable the override of other automated decision systems?
-  "30": Do you have processes in place to log the instances where overrides were performed?
-  "31": Did you develop verification processes to test for unintentional outcomes?
-  "32": Can the system provide an audit trail that records recommendations or decisions?
-  "32.1": Does the audit trail clearly set out all decision points made by the system?
-  "32.2": Have you included change control processes in the audit trail to record modifications to the system's operation or performance?
-  "32.3": Does the audit trail show who an authorized decision-maker is?
-  "33": Is the system capable of incorporating recommendations or decisions into a statement, reasons or other written notification, where required?
-  "34": Has the design team consulted the following experts within their organization?
+  "1": Quelles parties du processus décisionnel seront automatisées par ce système? (Cochez toutes les cases qui s'appliquent)
+  "1a": Classer les cas en fontion du rique et de la priorité
+  "1b": Déterminer les cas pour l'enquête ou l'examen humain
+  "1c": Fournir des recommandations concernant l'approbation d'une demande
+  "1d": Rendre la décision administrative exhaustive
+  "1.1": La recommandation ou la décision prise par le système implique-t-elle un pouvoir discrétionnaire?
+  "1.1.1": La décision est-elle purement discrétionnaire? (par exemple, une révision pour motifs de compassion)
+  "1.1.2": Tous les points de décision impliquant l'exercice du pouvoir discrétionnaire ou du jugement ont-ils été clairement identifiés?
+  "2": Ce système automatisé peut-il entraîner la restriction du déplacement d'une personne vers, hors du Canada ou à l'intérieur du Canada?
+  "3": Ce système peut-il inférer ou prévoir une activité criminelle potentielle?
+  "4": Ce système peut-il permettre d'accorder ou de restreindre l'accès à un local ou à un réseau?
+  "4.1": Quelle est la classification de la prémisse? (Choisissez-en un)
+  "5": Ce système fournit-il des fonds à un individu, une entreprise ou une communauté?
+  "5.1": Ce financement est-il destiné à un programme de soutien social ou économique?
+  "5.1.1": Si le financement devait être refusé, pourrait-il laisser le client dans une situation économique précaire? (par exemple, pourrait rendre une personne sans abri ou une entreprise à fermer)
+  "5.2": Le système émet-il des paiements de transfert?
+  "5.2.1": Est-ce que cette subvention, contribution ou paiement de transfert dépasse 5 000 000 $?
+  "6": Ce système entraîne-t-il la délivrance d'une amende, d'une sanction administrative pécuniaire ou d'un avis de recouvrement de créances?
+  "7": Ce système entraîne-t-il la délivrance d'un permis, d'une licence, d'un brevet ou d'une marque?
+  "7.1": Cela implique-t-il la collecte, le transport, le stockage, l’achat ou la vente d’un bien ou d’une substance réglementé?
+  "7.1.1": Est-ce que ce produit ou cette substance réglementée est dangereux, comme une arme à feu, une toxine ou un produit dangereux?
+  "7.2": Est-ce un permis de construction ou d'environnement?
+  "7.3": Est-ce un brevet ou une marque?
+  "8": Ce système confère-t-il un statut juridique qui est par ailleurs requis pour recevoir un avantage ou un service (par exemple, le statut d'Indien, le statut d'ancien combattant)?
+  "9": Ce système implique-t-il la distribution de ressources humaines ou de matériel dans la gestion des urgences?
+  "10": Quels sont les principaux motifs pour l'automatisation du processus décisionnel administratif? (Cochez toutes les cases)
+  "10a": Addresser d travail arrièré
+  "10b": Améliorer la qualité globale des décisions
+  "10c": Réduction des coûts de transaction d'un programme existant
+  "10d": Le système exécute des tâches que les humains ne pourraient accomplir dans un délai raisonnable
+  "10e": Améliorer la prestation de service à la clientèle
+  "10f": Utiliser des approches innovantes
+  "10g": Aucune de ces réponses
+  "11": Votre système prendra-t-il des décisions concernant spécifiquement les peuples ou territoires autochtones?
+  "11.1": Avez-vous engagé des consultations avec des organisations autochtones pertinentes dans la conception du système?
+  "12": Qui a collecté les données utilisées pour la formation du système? (Cochez toutes les cases qui s’appliquent)
+  "12a": Votre institution
+  "12b": Une autre institution fédérale
+  "12c": Un autre niveau de gouvernement
+  "12d": Un gouvernement étranger
+  "12e": Une tierce partie non gouvernementale
+  "13": Qui recueille les données d'entrée utilisées par le système? (Cochez toutes les cases qui s’appliquent)
+  "13a": Votre institution
+  "13b": Une autre institution fédérale
+  "13c": Un autre niveau de gouvernement
+  "13d": Un gouvernement étranger
+  "13e": Une tierce partie non gouvernementale
+  "14": Avez-vous consulté des groupes de parties prenantes pertinents représentant les personnes susceptibles d’être touchées par la décision?
+  "15": Existe-t-il un processus pour documenter comment les problèmes de qualité des données ont été résolus lors du processus de conception?
+  "16-part1": Avez-vous entrepris une
+  "16-link-url": "https://www.swc-cfc.gc.ca/gba-acs/approach-approche-fr.html"
+  "16-link-text": analyse comparative entre les sexes en plus
+  "16-part2": des données de formation?
+  "16.1": Sur la base des résultats de l’ACS+, les stratégies d’atténuation ont-elles été prises?
+  "17": Le système de décision automatisé utilise-t-il les informations personnelles comme données d'entrée?
+  "17.1": Le programme comporte-t-il une évaluation des facteurs relatifs à la vie privée?
+  "18": Avez-vous attribué des responsabilités pour la conception, le développement, la maintenance et l'amélioration du système?
+  "19": Quelle est la classification de sécurité des données d'entrée utilisées par le système? (Sélectionnez-en un)
+  "20": Avez-vous un processus en place pour tester et vérifier les règles?
+  "21": Le système nécessite-t-il l'analyse de données non structurées pour rendre une recommandation ou une décision?
+  "22": La portée du système est-elle clairement reflétée dans la documentation du projet?
+  "23": Des stratégies appropriées ont-elles été élaborées pour gérer le risque que des données obsolètes ou non fiables soient utilisées pour prendre une décision automatisée?
+  "24": Votre système utilise-t-il la vision artificielle sans contact pour la reconnaissance biométrique (par exemple, visage, démarche, etc)?
+  "24.1": Votre système fonctionne-t-il avec des paramètres acceptables pour toutes les couleurs de peau définies par l'échelle de type de peau Fitzpatrick ou une mesure similaire?
+  "24.2": Le cas échéant, avez-vous testé pour vous assurer que le système fonctionne avec des paramètres acceptables pour les personnes ayant un handicap qui peuvent être indûment désavantagées par le composant de vision industrielle? (Par exemple, s'assurer qu'un outil d'analyse de la démarche ne désavantage pas indûment une personne qui utilise un fauteuil roulant)
+  "25": Le système est-il en interface avec d'autres systèmes informatiques?
+  "25.1": Lorsque vous êtes en interface avec d'autres systèmes, avez-vous clairement identifié les processus qui se produisent entre les systèmes?
+  "26": Laquelle des informations suivantes sur la fonctionnalité du système prévoyez-vous de rendre accessible au public? (Cochez toutes les cases qui s’appliquent).
+  "26a": Formation des sources de données
+  "26b": Arbres de décision
+  "26c": Les seuils de confiance
+  "26d": Modèles prédéfinis
+  "26e": Critères
+  "26f": Structures de classification
+  "26g": Aucune de ces réponses
+  "27": Le système permet-il à un humain d’outrepasser les décisions du système?
+  "28": Le système peut-il outrepasser des décisions humaines?
+  "29": Le système peut-il outrepasser d'autres systèmes de décision automatisés?
+  "30": Avez-vous des processus en place pour enregistrer les instances ou un outrepassage à eu lieu?
+  "31": Avez-vous développé des processus de vérification pour tester les résultats non intentionnels?
+  "32": Le système peut-il fournir une piste d'audit qui enregistre des recommandations ou des décisions?
+  "32.1": La piste d'audit indique-t-elle clairement tous les points de décision pris par le système?
+  "32.2": Avez-vous inclus des processus de contrôle des modifications dans la piste d'audit pour enregistrer les modifications apportées au fonctionnement ou aux performances du système?
+  "32.3": La piste de vérification montre-t-elle qui est un décideur autorisé?
+  "33": Le système est-il capable d'incorporer des recommandations ou des décisions dans une déclaration, des raisons ou d'autres avis écrits, le cas échéant?
+  "34": L'équipe de conception a-t-elle consulté les experts suivants au sein de leur organisation
   "34a": Communications
-  "34b": Data and Information Management
-  "34c": Enterprise Architecture
-  "34d": Human Resources
-  "34e": IT/Cybersecurity
-  "34f": Legal
-  "34g": Service Delivery
-  "34h": Privacy
-  "34.1": Has a formal opinion been issued?
-  "34.2": Have the relevant areas of legislation been identified during the scoping phase?
-  "35": Have you developed Key Performance Indicators and benchmarks to measure and improve the system’s performance?
-  "35.1": Are you specifically measuring impacts (e.g., social, economic, environmental) that may result from the system?
-  "36": Have you presented a concept case to the Government of Canada Enterprise Architecture Review Board?
-  "37": Have you conducted a Security Assessment and Authorization?
-  "38": Is there a process in place to monitor and grant access permission?
-  "39": Is the system used by a different part of the organization than the ones who developed it?
-  "40": Did you develop training programs or documentation to ensure that the system is used effectively and properly?
-  "40.1": Do you have the means to ensure that training requirements are being met?
-  "41": If the system is intended to undertake tasks currently undertaken by human staff, have you engaged with your departmental human resources?
-  "42": Have you developed an external communications plan?
-  "43": Have you developed an internal communications plan to address any potential changes to work practices for officers?
-  "44": Do you have a mechanism to capture feedback by users of the system?
-  "45": Do you have a recourse process planned or established for clients that wish to challenge the decision?
-aboutDecisionSection: About the Decision
-dataBusinessProcessSection: Data and Business Proecess
-systemFunctionalitySection: System Functionality
-organizationalReadinessSection: Organizational Readiness
+  "34b": Gestion des données et des informations
+  "34c": Architecture d'entreprise
+  "34d": Ressources humaines
+  "34e": Informatique / Cybersécurité
+  "34f": Légal
+  "34g": Service de livraison
+  "34h": Protection des renseignements personnels
+  "34.1": Un avis formel a-t-il été émis? 
+  "34.2": Les domaines pertinents de la législation ont-ils été identifiés pendant la phase de cadrage?
+  "35": Avez-vous développé des indicateurs de performance clés et des benchmarks pour mesurer et améliorer la performance du système?
+  "35.1": Mesurez-vous spécifiquement les impacts (par exemple, sociaux, économiques, environnementaux) qui peuvent résulter du système?
+  "36": Avez-vous présenté un cas conceptuel à le Comité d’examen de l’architecture intégrée du gouvernement du Canada?
+  "37": Avez-vous effectué une évaluation et une autorisation de sécurité? 
+  "38": Y a-t-il un processus en place pour surveiller et accorder l'autorisation d'accès?
+  "39": Le système est-il utilisé par une partie différente de l'organisation que ceux qui l'ont développé?
+  "40": Avez-vous élaboré des programmes de formation ou de la documentation pour vous assurer que le système est utilisé efficacement et correctement?
+  "40.1": Avez-vous les moyens de vous assurer que les exigences en matière de formation sont respectées?
+  "41": Si le système est destiné à entreprendre des tâches actuellement effectuées par du personnel humain, avez-vous engagé les ressources humaines de votre département?
+  "42": Avez-vous développé un plan de communication externe?
+  "43": Avez-vous élaboré un plan de communication interne pour aborder les changements potentiels aux pratiques de travail des agents?
+  "44": Avez-vous un mécanisme pour capturer les commentaires des utilisateurs du système?
+  "45": Avez-vous un processus de recours prévu ou établi pour les clients qui souhaitent contester la décision?
+aboutDecisionSection: A propos de la décision
+dataBusinessProcessSection: Processus de données et d'affaires
+systemFunctionalitySection: Fonctionnalité du système
+organizationalReadinessSection: Préparation organisationnelle
 automatedDecisionViewTitle: Comment dois-je mettre en place un système de décision automatisé? (ébauche)
 automatedDecisionViewFilename: decision-automatise
 aiaCriteria: 
@@ -151,13 +151,13 @@ assign dataSource = site.data[dataVariable] %}
 
 </div>
 
-Governments are increasingly looking to utilize Automated Decision Systems to make, or assist in making administrative decisions. However, questions are being raised as to how to adequately assess the impacts that these systems may have on Canadians and federal institutions. The aim of the proposed Algorithmic Impact Assessment is to develop a framework to help institutions better understand and mitigate the risks associated with Automated Decision Systems and to provide the appropriate governance, oversight and reporting/audit requirements that best match the type of application being designed. The AIA supports the TBS Standard on Automated Decision-Making.
+L'objectif de l'évaluation d'impact algorithmique (ÉIA) est de développer un cadre qui aidera les institutions à mieux comprendre et atténuer les risques associés aux systèmes décisionnels automatisés.
 
-In developing this proposed AIA Framework, the following three key goals have been identified:
+En élaborant l'ÉIA, nous avons souligné trois objectifs clés&#160;:
 
-- Increase capacity to evaluate the impact of Automated Decision Systems including legal and ethical issues, such as disparate impacts and due process violations;
-- Recommend the appropriate governance, oversight and/or design recommendations to institutions based on their existing or proposed automated decision systems; and
-- Provide a mechanism for greater openness and transparency for public consultation and external review of the design and deployment of Automated Decision Systems in the public sector.
+- Accroître la capacité d'évaluer l'impact des systèmes de décision automatisés, y compris les enjeux juridiques et éthiques;
+- Atténuer les risques asociés aux systèmes décisionnels automatisés en fournissant des exigences de governance, de suveillance et exigences en matière de rapports; et
+- Fournir un mécanisme qui encourage l'ouverture, la transparence et la consultation publique en ce qui concerne le déploiement de systèmes de décision automatisés dans le secteur publique.
 
 </section>
 
