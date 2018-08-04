@@ -116,7 +116,7 @@ questions:
   "44": Avez-vous un mécanisme pour capturer les commentaires des utilisateurs du système?
   "45": Avez-vous un processus de recours prévu ou établi pour les clients qui souhaitent contester la décision?
 aboutDecisionSection: A propos de la décision
-dataBusinessProcessSection: Processus de données et d'affaires
+dataBusinessProcessSection: Données et processus métier
 systemFunctionalitySection: Fonctionnalité du système
 organizationalReadinessSection: Préparation organisationnelle
 automatedDecisionViewTitle: Comment dois-je mettre en place un système de décision automatisé? (ébauche)
