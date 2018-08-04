@@ -13,7 +13,7 @@ questions:
   "1d": Full end-to-end decision
   "1.1": Does the recommendation or decision made by the system involve discretion?
   "1.1.1": Is the decision purely discretionary? (e.g., a review on compassionate grounds)
-  "1.1.2": Have all the decision points that involve the exercise of human discretion or judgement been clearly idenified?
+  "1.1.2": Have all the decision points that involve the exercise of human discretion or judgement been clearly identified?
   "2": Can this automated system result in the restriction of movement into, out of, or within Canada?
   "3": Can this system infer or predict potential criminal activity?
   "4": Can this system result in granting or restricting access to a premises or network?
@@ -55,10 +55,10 @@ questions:
   "13e": A non-government third party
   "14": Have you consulted with relevant stakeholder groups representing those likely to be affected by the decision?
   "15": Is there a process in place to document how data quality issues were resolved during the design process?
-  "16-part1": "Have you undertaken "
+  "16-part1": Have you undertaken
   "16-link-url": "https://www.swc-cfc.gc.ca/gba-acs/approach-approche-en.html"
-  "16-link-text": "Gender Based Analysis Plus"
-  "16-part2": " of the training data?"
+  "16-link-text": Gender Based Analysis Plus
+  "16-part2": of the training data?
   "16.1": Based on the GBA+ results, have you documented mitigation strategies?
   "17": Does the Automated Decision System use personal information as input data?
   "17.1": Does the program have an existing Privacy Impact Assessment?
@@ -116,7 +116,7 @@ questions:
   "44": Do you have a mechanism to capture feedback by users of the system?
   "45": Do you have a recourse process planned or established for clients that wish to challenge the decision?
 aboutDecisionSection: About the Decision
-dataBusinessProcessSection: Data and Business Proecess
+dataBusinessProcessSection: Data and Business Process
 systemFunctionalitySection: System Functionality
 organizationalReadinessSection: Organizational Readiness
 automatedDecisionViewTitle: How should I implement an Automated Decision System? (draft)
@@ -151,9 +151,9 @@ assign dataSource = site.data[dataVariable] %}
 
 </div>
 
-Governments are increasingly looking to utilize Automated Decision Systems to make, or assist in making administrative decisions. However, questions are being raised as to how to adequately assess the impacts that these systems may have on Canadians and federal institutions. The aim of the proposed Algorithmic Impact Assessment is to develop a framework to help institutions better understand and mitigate the risks associated with Automated Decision Systems and to provide the appropriate governance, oversight and reporting/audit requirements that best match the type of application being designed. The AIA supports the TBS Standard on Automated Decision-Making.
+The aim of the Algorithmic Impact Assessment (AIA) is to develop a framework to help institutions better understand and mitigate the risks associated with Automated Decision Systems.
 
-In developing this proposed AIA Framework, the following three key goals have been identified:
+In developing the AIA, the following three key goals have been identified:
 
 - Increase capacity to evaluate the impact of Automated Decision Systems including legal and ethical issues, such as disparate impacts and due process violations;
 - Recommend the appropriate governance, oversight and/or design recommendations to institutions based on their existing or proposed automated decision systems; and
