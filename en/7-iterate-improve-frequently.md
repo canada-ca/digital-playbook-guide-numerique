@@ -338,7 +338,7 @@ You need to build a service which you can iterate and keep improving so that you
 - Use different types of tests to assess the service **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
   - Identify the best testing method based on your needs. Examples of tests include:
     - Tree Testing - A test in which participants are asked to find a resource based on a series of menus.
-    - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
+    - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchical manner.
     - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
 
 **Alpha, beta and live stages:**
