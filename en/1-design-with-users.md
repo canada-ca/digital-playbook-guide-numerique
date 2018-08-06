@@ -40,7 +40,7 @@ Focus on the needs of your users, using agile, iterative and user-centred method
 
 Users should be involved throughout the lifecycle of the service, with user research and testing informing the earliest design phases through to continuous improvements after the service has launched. **(GC)**
 
-**Make services simple, intutive and consistent (formerly guideline 1.6):**
+**Make services simple, intuitive and consistent (formerly guideline 1.6):**
 {: .dpgn-data-ignore}
 
 Create a service which is simple to use and intuitive enough that users succeed the first time.
@@ -78,7 +78,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 - use research, testing and analytics to improve the service **(7. Make it accessible, Digital Service Standard (Ontario))**
 - explain all end-to-end user experiences, show they work and how they were tested **(7. Make it accessible, Digital Service Standard (Ontario))**
 
-**Make services simple, intutive and consistent (formerly guideline 1.6):**
+**Make services simple, intuitive and consistent (formerly guideline 1.6):**
 {: .dpgn-data-ignore}
 
 - Make services simple, intuitive and consistent
@@ -105,7 +105,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 **[TODO: Add/revise implementation guide items]**
 
-**Make services simple, intutive and consistent (formerly guideline 1.6):**
+**Make services simple, intuitive and consistent (formerly guideline 1.6):**
 {: .dpgn-data-ignore}
 
 - [How user research improves service design (Service Manual (UK))](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design)
@@ -127,7 +127,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 **[TODO: Add/revise reusable solutions]**
 
-**Make services simple, intutive and consistent (formerly guideline 1.6):**
+**Make services simple, intuitive and consistent (formerly guideline 1.6):**
 {: .dpgn-data-ignore}
 
 - [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
@@ -140,7 +140,7 @@ Writing and designing content so it is consistent, plain and in the language of 
 
 - [2. Let client data lead: act on and adapt to feedback (Think - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#2._Let_client_data_lead:_act_on_and_adapt_to_feedback)
 
-**Make services simple, intutive and consistent (formerly guideline 1.6):**
+**Make services simple, intuitive and consistent (formerly guideline 1.6):**
 {: .dpgn-data-ignore}
 
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)
@@ -466,7 +466,7 @@ Encouraging people to use digital service will:
 
 **[TODO: Add/revise implementation guide items]**
 
-**Make services simple, intutive and consistent (formerly guideline 1.6):**
+**Make services simple, intuitive and consistent (formerly guideline 1.6):**
 {: .dpgn-data-ignore}
 
 - [How to measure digital take-up (Service Manual (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
@@ -489,7 +489,7 @@ Encouraging people to use digital service will:
 
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 
-**Make services simple, intutive and consistent (formerly guideline 1.6):**
+**Make services simple, intuitive and consistent (formerly guideline 1.6):**
 {: .dpgn-data-ignore}
 
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)
