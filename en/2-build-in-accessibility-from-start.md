@@ -33,7 +33,7 @@ When inclusive and accessible design is in place, it is a benefit for all and se
 
 Sometimes people are in situations that limit their ability to hear, see, use their hands, concentrate, understand instructions, etc. Sometimes they are using devices that have limitations in size, input interface, etc. For example:
 
-- Watching TV in a noisy environment (limits one's ability to hear, but closed captionning helps by conveying audio messages through text)
+- Watching TV in a noisy environment (limits one's ability to hear, but closed captioning helps by conveying audio messages through text)
 - Driving limits one's ability to concentrate on multiple things and limits the use of their hands. When drivers are lost, they often rely upon their smartphone for directions. To avoid getting tickets for distracting driving, taking one's eyes off the road or taking one's hands off the wheel, drivers can use voice recognition to ask the smartphone directions and have the directions read aloud.
 - Walking around with small children (e.g., curb cuts for stollers, hands full, concentrate, understand instructions)
 - Having one's hands full may require relying on smart speakers for instructions (e.g., getting recipe details while cooking, getting step-by-step instructions while fixing things around the home)
