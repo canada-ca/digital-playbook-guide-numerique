@@ -196,7 +196,7 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
   - [Excellently Executed (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-excellently-executed/)
   - [Leadership Driven (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-leadership-driven/)
   - [Engaging for Participants (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-engaging-for-participants/)
-  - [Misson Focused (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/)
+  - [Mission Focused (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/)
   - [Ethically Oriented (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-ethically-oriented/)
   - [Nurtured Continuously (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-nurtured-continuously/)
   - [Time Well Spent (The Good Project)](http://thegoodproject.org/collaborationtoolkit/elements-time-well-spent/)
