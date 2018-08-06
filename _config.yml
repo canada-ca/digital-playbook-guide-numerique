@@ -518,6 +518,9 @@ Questionnaire:
 QuestionnaireCompleted:
   en: Questionnaire completed
   fr: Questionnaire complété
+Question:
+  en: Question
+  fr: Question
 Percent:
   en: "%"
   fr: "&#160;%"

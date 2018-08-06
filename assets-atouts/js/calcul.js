@@ -34,7 +34,8 @@ var componentName = "wb-calculate",
 
         var $elm = $( elm ),
             settings = {
-              ignoreInit: false
+              ignoreInit: false,
+              returnFalse: false,
             }, $eventElement;
 
         // Extend the settings with window[ "wb-calculate" ] then data-wb-calculate
@@ -47,6 +48,10 @@ var componentName = "wb-calculate",
 
         $document.on( settings[ "eventTrigger" ], settings[ "eventElement" ], function( event) {
           iterate( settings[ "operations" ], $eventElement );
+
+          if ( settings[ "returnFalse" ] === true ) {
+            return false;
+          }
         } );
 
         if ( !settings[ "ignoreInit" ] ) {
