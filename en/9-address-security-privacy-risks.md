@@ -326,7 +326,7 @@ Canadians want to have confidence that government digital services are designed 
 **Digital Architectural Standards (GC):**
 {: .dpgn-data-ignore}
 
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Provacy by Design (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
+* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Privacy by Design (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
 
 </section>
 </section>
