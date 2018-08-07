@@ -192,7 +192,7 @@ Every service must have a person that will hold the designate authority to make 
 - Build the digital platform when the potential for improvements and relevant considerations are accounted for.
 - A product owner is identified and all stakeholders agree that the owner has the authority necessary to assign tasks and make critical decisions regarding product features and technical implementation.
 - The product owner has the necessary qualities to fill the role, including apt knowledge and seniority.
-- The product owner has technical experience and a project management background, with strong knowledge of the procurment/development process.
+- The product owner has technical experience and a project management background, with strong knowledge of the procurement/development process.
 - The product owner has a work plan complete with budget estimates and identified funding sources.
 - The product owner's relationship with the contracting officer/development team is strong and able to endure potential challenges throughout the process.
 - There is a plan to conduct regular user testing to deduce the success of the service's ability to meet the users' needs.

@@ -7644,7 +7644,7 @@
                                 "content": [
                                   {
                                     "content_type": "inline",
-                                    "content": "<a href=\"http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/\">Misson Focused (The Good Project)</a>"
+                                    "content": "<a href=\"http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/\">Mission Focused (The Good Project)</a>"
                                   }
                                 ]
                               },
@@ -8715,7 +8715,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "The product owner has technical experience and a project management background, with strong knowledge of the procurment/development process."
+                            "content": "The product owner has technical experience and a project management background, with strong knowledge of the procurement/development process."
                           }
                         ]
                       },
@@ -15342,7 +15342,7 @@
                                         "content": [
                                           {
                                             "content_type": "inline",
-                                            "content": "Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner."
+                                            "content": "Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchical manner."
                                           }
                                         ]
                                       },

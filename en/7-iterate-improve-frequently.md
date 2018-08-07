@@ -169,7 +169,7 @@ Start with a representation or prototype of the solution that will be tested and
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
 - [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
 - [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
-- [Kanban (développement) (Wikipédia)](https://fr.wikipedia.org/wiki/Kanban_(d%C3%A9veloppement))
+- [Kanban (development) (Wikipedia)](https://en.wikipedia.org/wiki/Kanban_(development))
 - [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
 - [CRA Agile Framework (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework))
 - [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)
@@ -338,7 +338,7 @@ You need to build a service which you can iterate and keep improving so that you
 - Use different types of tests to assess the service **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
   - Identify the best testing method based on your needs. Examples of tests include:
     - Tree Testing - A test in which participants are asked to find a resource based on a series of menus.
-    - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner.
+    - Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchical manner.
     - First Click Testing - A test that observes the first item that a participant clicks on and uses the selection as an indication as to whether users are directed as intended.
 
 **Alpha, beta and live stages:**

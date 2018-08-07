@@ -184,7 +184,7 @@ There are many potential benefits from the greater use of digital services, incl
 {: .dpgn-data-ignore}
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#use-open-standards-and-solutions-by-default)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Design for Performance, Availability, and Scalibility (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Design for Performance, Availability, and Scalability (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability)
 
 **Design, build and test end-to-end digital services (formerly guideline 6.5):**
 {: .dpgn-data-ignore}

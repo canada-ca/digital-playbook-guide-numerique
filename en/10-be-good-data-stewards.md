@@ -235,7 +235,7 @@ Measuring performance means continuously improving a service by:
 - base your service review frequency on the volume of users ( e.g. 10,000 or less unique users per year = 2 year review cycle; 10,000-100,000 = annual; 100,000-1 million = every 6 months) **(Digital Service Standard (Ontario))**
 - demonstrate how service performance compares to other similar government and private sector services **(Digital Service Standard (Ontario))**
 {: .dpgn-stage-live}
-<!-- markdownlint-enaable MD032 -->
+<!-- markdownlint-enable MD032 -->
 
 </section>
 

@@ -537,7 +537,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Use a range of qualitative and quantitative research methods to determine people’s goals, needs, and behaviors"
+                            "content": "Use a range of qualitative and quantitative research methods to determine people’s goals, needs, and behaviours"
                           }
                         ]
                       },
@@ -7618,7 +7618,7 @@
                                 "content": [
                                   {
                                     "content_type": "inline",
-                                    "content": "<a href=\"http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/\">Misson Focused (The Good Project)</a>"
+                                    "content": "<a href=\"http://thegoodproject.org/collaborationtoolkit/elements-mission-focused/\">Mission Focused (The Good Project)</a>"
                                   }
                                 ]
                               },
@@ -8641,7 +8641,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "The product owner has technical experience and a project management background, with strong knowledge of the procurment/development process."
+                            "content": "The product owner has technical experience and a project management background, with strong knowledge of the procurement/development process."
                           }
                         ]
                       },
@@ -11819,7 +11819,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-performance-availability-scalability"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability\">5. Design for Performance, Availability, and Scalibility (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability\">5. Design for Performance, Availability, and Scalability (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       },
@@ -15265,7 +15265,7 @@
                                         "content": [
                                           {
                                             "content_type": "inline",
-                                            "content": "Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchal manner."
+                                            "content": "Card Sorting Testing - A reverse tree test where participants sort through items and group them together in a hierarchical manner."
                                           }
                                         ]
                                       },
@@ -17368,7 +17368,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Provacy by Design (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Privacy by Design (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
@@ -18431,7 +18431,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Provacy by Design (Digital Architectural Standards (GC))</a>"
+                            "content": "<a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design\">10. Security and Privacy by Design (Digital Architectural Standards (GC))</a>"
                           }
                         ]
                       }
