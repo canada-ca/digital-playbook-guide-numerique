@@ -86,27 +86,27 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Retain the appropriate expert to review the Automated Decision system, based on the Impact Assessment Level:
-  - {: .dpgn-automated-decision-level-i} **Level I:** None
-  - {: .dpgn-automated-decision-level-ii} **Level II:** At least one of:
-    - Qualified expert from a federal, provincial, territorial or municipal government institution
-    - Qualified members of faculty of a post-secondary institution
-    - Qualified researchers from a relevant non- governmental organization
-    - Contracted third-party vendor with a related specialization
-    - Publishing specifications of the Automated Decision System in a peer-reviewed journal
-  - {: .dpgn-automated-decision-level-iii} **Level III:** At least one of:
-    - Qualified expert from a federal, provincial, territorial or municipal government institution
-    - Qualified members of faculty of a post-secondary institution
-    - Qualified researchers from a relevant non- governmental organization
-    - Contracted third-party vendor with a related specialization
-    - Publishing specifications of the Automated Decision System in a peer-reviewed journal
-  - {: .dpgn-automated-decision-level-iv} **Level IV:** At least two of:
-    - Qualified experts from the National Research Council of Canada or Statistics Canada
-    - Qualified members of faculty of a post-secondary institution
-    - Qualified researchers from a relevant non- governmental organization
-    - Contracted third-party vendor with a related specialization
-    - **OR:** Publishing specifications of the Automated Decision System in a peer-reviewed journal
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+- {: .dpgn-automated-decision-design-build data-content-source-title="Section 6.3.4 et Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Conserver les experts suivants pour examiner le système décisionnel automatisé, en fonction du niveau d'évaluation de l'impact&#160;:
+  - {: .dpgn-automated-decision-level-i} **Niveau I :** Aucune
+  - {: .dpgn-automated-decision-level-ii} **Niveau II :** Au moins l'une des suivantes&#160;:
+    - Expert qualifié d'une institution gouvernementale fédérale, provinciale, territoriale ou municipale
+    - Membres qualifiés d'une faculté d'un établissement postsecondaire
+    - Chercheurs qualifiés d'une organisation non gouvernementale pertinente
+    - Tiers fournisseur à forfait avec une spécialisation connexe
+    - Publication des spécifications du système décisionnel automatisé dans une revue à comité de lecture
+  - {: .dpgn-automated-decision-level-iii} **Niveau III :** Au moins l'une des suivantes&#160;:
+    - Expert qualifié d'une institution gouvernementale fédérale, provinciale, territoriale ou municipale
+    - Membres qualifiés d'une faculté d'un établissement postsecondaire
+    - Chercheurs qualifiés d'une organisation non gouvernementale pertinente
+    - Tiers fournisseur à forfait avec une spécialisation connexe
+    - Publication des spécifications du système décisionnel automatisé dans une revue à comité de lecture
+  - {: .dpgn-automated-decision-level-iv} **Niveau IV :** Au moins deux des suivantes&#160;:
+    - Experts qualifiés du Conseil national de recherches du Canada ou de Statistique Canada
+    - Membres qualifiés d'une faculté d'un établissement postsecondaire
+    - Chercheurs qualifiés d'une organisation non gouvernementale pertinente
+    - Tiers fournisseur à forfait avec une spécialisation connexe
+    - **OU :** Publication des spécifications du système décisionnel automatisé dans une revue à comité de lecture
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 

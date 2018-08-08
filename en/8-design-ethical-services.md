@@ -13,11 +13,8 @@ altLangPage: 8-concevoir-services-ethiques
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD034 -->
-The Government of Canada is increasingly looking to utilise technology and automated systems to make, or assist in making, administrative decisions to improve service delivery.
-{: .dpgn-automated-decision-introduction data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" data-content-source-title="Section 3.1, Standard on Automated Decision-Making (draft) (GC)"}
-
-The Government of Canada is committed to ensure that the use of Automated Decision Systems are compatible with core administrative law principles such as transparency, accountability, legality and procedural fairness.
-{: .dpgn-automated-decision-introduction data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" data-content-source-title="Section 3.2, Standard on Automated Decision-Making (draft) (GC)"}
+The Government of Canada is increasingly looking to utilise technology and automated systems to make, or assist in making, administrative decisions to improve service delivery. It is committed to doing so in a manner that is compatible with core administrative law principles such as transparency, accountability, legality and procedural fairness.
+{: .dpgn-automated-decision-introduction data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" data-content-source-title="Introduction, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"}
 <!-- markdownlint-enable MD034 -->
 
 </div>
@@ -62,23 +59,41 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.2.1, Standard on Automated Decision-Making (draft) (GC)"} Provide notice to affected individuals at the earliest stages of administrative process that the decision rendered will be undertaken in whole or in part by a Automated Decision System, unless stated otherwise in legislation or regulation.
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.2.2, Standard on Automated Decision-Making (draft) (GC)"} Ensure that any affected individuals can have access to information about the Automated Decision System’s functionality. This includes, at minimum:
-  1. The role that the Automated Decision System has within the decision-making process,
-  1. A description of the training data, or a link to the anonymized training data if this data is publicly available, and
-  1. A description of the criteria used for making the decision, including business rules.
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.2.3, Standard on Automated Decision-Making (draft) (GC)"} Provide a meaningful explanation to affected individuals of how and why the decision was made:
-  - {: .dpgn-automated-decision-type-file-triage-assignment .dpgn-automated-decision-type-risk-scoring-categorization data-content-source-title="Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Explanation Requirement for Recommendation:
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.2.1 and Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Notify affected individuals that the decision rendered will be undertaken in whole or in part by a Automated Decisions Systems as prescribed in the following:
+  - {: .dpgn-automated-decision-level-i} **Level I:** None
+  - {: .dpgn-automated-decision-level-ii} **Level II:** Plain language notification listed on the program or service website.
+  - {: .dpgn-automated-decision-level-iii} **Level III:**
+    - Plain language notification listed on the program or service website.
+    - If the service involves an online application, the notice must be made at the time of the application.
+    - Website must link to additional information where information about the system is provided, including:
+      - The role that the Automated Decisions System, has within the decision process,
+      - A description of the training data, or a link to the anonymized training data if this data is publicly available, and
+      - A description of the criteria used for making the decision, including relevant business rules.
+  - {: .dpgn-automated-decision-level-iv} **Level IV:**
+    - Plain language notification listed on the program or service website.
+    - If the service involves an online application, the notice must be made at the time of the application.
+    - Website must link to additional information where information about the system is provided, including:
+      - The role that the Automated Decisions Syste, has within the decision process,
+      - A description of the training data, or a link to the anonymized training data if this data is publicly available, and
+      - A description of the criteria used for making the decision, including relevant business rules.
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.2.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Provide a meaningful explanation to affected individuals of how and why the decision was made as prescribed in the following:
+  - {: .dpgn-automated-decision-type-file-triage-assignment .dpgn-automated-decision-type-risk-scoring-categorization data-content-source-title="Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explanation Requirement for Recommendation:
     - {: .dpgn-automated-decision-level-i} **Level I:** None
     - {: .dpgn-automated-decision-level-ii} **Level II:** None
     - {: .dpgn-automated-decision-level-iii} **Level III:** Meaningful explanation provided upon request based on machine or human review.
-    - {: .dpgn-automated-decision-level-iv} **Level IV:** Meaningful explanation, including the variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated.
-  - {: .dpgn-automated-decision-type-recommendation .dpgn-automated-decision-type-full-decision data-content-source-title="Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Explanation Requirement for Decisions:
+    - {: .dpgn-automated-decision-level-iv} **Level IV:**
+      - Meaningful explanation, including the variables in the decision, provided with the decision rendered.
+      - Explanation can be human or machine generated.
+  - {: .dpgn-automated-decision-type-recommendation .dpgn-automated-decision-type-full-decision data-content-source-title="Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explanation Requirement for Decisions:
     - {: .dpgn-automated-decision-level-i} **Level I:** An explanation provided upon request based on machine or human review. This could include a Frequently Asked Questions section of a website.
     - {: .dpgn-automated-decision-level-ii} **Level II:** Meaningful explanation provided upon request based on machine or human review.
-    - {: .dpgn-automated-decision-level-iii} **Level III:** Meaningful explanation, including variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated.
-    - {: .dpgn-automated-decision-level-iv} **Level IV:** Meaningful explanation, including variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated.
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+    - {: .dpgn-automated-decision-level-iii} **Level III:**
+      - Meaningful explanation, including variables used in the decision, provided with the decision rendered.
+      - Explanation can be human or machine generated.
+    - {: .dpgn-automated-decision-level-iv} **Level IV:**
+      - Meaningful explanation, including variables used in the decision, provided with the decision rendered.
+      - Explanation can be human or machine generated.
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -122,9 +137,9 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-initiation-1 data-content-source-title="Section 7.1.1, Standard on Automated Decision-Making (draft) (GC)"} Complete an [Algorithmic Impact Assessment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html), prior to the production of any Automated Decision System.
-- {: .dpgn-automated-decision-initiation-3 data-content-source-title="Section 7.1.3, Standard on Automated Decision-Making (draft) (GC)"} Ensure that the [Algorithmic Impact Assessment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html) remains up to date and accurately reflects the functionality of the Automated Decision System.
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+- {: .dpgn-automated-decision-initiation-1 data-content-source-title="Section 6.1.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Complete an [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}), prior to the production of any Automated Decision System.
+- {: .dpgn-automated-decision-initiation-3 data-content-source-title="Section 6.1.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that the [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}) remains up to date and accurately reflects the functionality of the Automated Decision System.
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -136,8 +151,11 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 
 **[TODO: Add/revise implementation guide items]**
 
+**Automated Decision Systems:**
+{: .dpgn-data-ignore}
+
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-automated-decision-initiation} [Algorithmic Impact Assessment (GC)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html)
+- {: .dpgn-automated-decision-initiation} [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] }} (GC)]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }})
 {: .dpgn-automated-decision}
 <!-- markdownlint-enable MD032 -->
 
@@ -173,15 +191,17 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-initiation-2 data-content-source-title="Section 7.1.2, Standard on Automated Decision-Making (draft) (GC)"} Apply the following relevant requirements as recommended by the [Algorithmic Impact Assessment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html):
-  - {: data-content-source-title="Appendix C, Standard on Automated Decision-Making (draft) (GC)"} Approval:
+- {: .dpgn-automated-decision-initiation-2 data-content-source-title="Section 6.1.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Apply the following relevant requirements as determined by the [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}):
+  - {: data-content-source-title="Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Approval Requirement:
     - {: .dpgn-automated-decision-level-i} **Level I:** None
-    - {: .dpgn-automated-decision-level-ii} **Level II:** Enterprise Architecture Review Board
-    - {: .dpgn-automated-decision-level-iii} **Level III:** Enterprise Architecture Review Board AND GC CIO
-    - {: .dpgn-automated-decision-level-iv} **Level IV:** Requires specific authority from Cabinet
-- {: .dpgn-automated-decision-analysis-approach data-content-source-title="Section 7.3.8, Standard on Automated Decision-Making (draft) (GC)"} Consult with the institution’s legal services unit, to ensure that the use of the Automated Decision System System is compliant with applicable legal requirements.
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.4.1, Standard on Automated Decision-Making (draft) (GC)"} Affected individuals must be provided with information with regards to the options that are available to them for recourse to challenge the automated decision.
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+    - {: .dpgn-automated-decision-level-ii} **Level II:** Government of Canada Enterprise Architecture Review Board
+    - {: .dpgn-automated-decision-level-iii} **Level III:** Government of Canada Enterprise Architecture Review Board
+    - {: .dpgn-automated-decision-level-iv} **Level IV:**
+      - Government of Canada Enterprise Architecture Review Board
+      - Requires specific authority from Treasury Board
+- {: .dpgn-automated-decision-analysis-approach data-content-source-title="Section 6.3.8, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Consult with the institution’s legal services unit, to ensure that the use of the Automated Decision System System is compliant with applicable legal requirements.
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.4.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Provide affected individuals with information regarding options that are available to them for recourse to challenge the automated decision or recommendation.
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -225,8 +245,12 @@ The Government of Canada is committed to ensure that the use of Automated Decisi
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.3.6, Standard on Automated Decision-Making (draft) (GC)"} Ensure that a contingency systems and/or processes are available should the Automated Decision System be unavailable for an extended period of time.
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.3.6 and Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Subject to requirements prescribed in the following, ensure that a contingency systems and/or processes are available should the Automated Decision System be unavailable for an extended period of time:
+  - {: .dpgn-automated-decision-level-i} **Level I:** None
+  - {: .dpgn-automated-decision-level-ii} **Level II:** None
+  - {: .dpgn-automated-decision-level-iii} **Level III:** Ensure that a contingency plans and/or backup systems are available should the Automated Decision System be unavailable.
+  - {: .dpgn-automated-decision-level-iv} **Level IV:** Ensure that a contingency plans and/or backup systems are available should the Automated Decision System be unavailable.
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 

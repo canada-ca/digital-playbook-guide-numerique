@@ -180,6 +180,21 @@ Colon:
   en: ":"
   fr: "&#160;:"
 
+# Automated Decision Systems
+AutomatedDecisionSystems:
+  Directive:
+    en: Directive on Automated Decision-Making (draft) (GC)
+    fr: Directive sur les processus décisionnels automatisés (ébauche) (GC)
+  DirectiveURL:
+    en: "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+    fr: "https://docs.google.com/document/d/18Tq0piuD03wVr27ZPdQbkq-huZxkIzv7r4IZHt0nezI"
+  ImpactAssessment:
+    en: Algorithmic Impact Assessment
+    fr: Évaluation de l'impact algorithmique
+  ImpactAssessmentURL:
+    en: "https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html"
+    fr: "https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html"
+
 # Canada.ca theme translations
 home:
   en: Home

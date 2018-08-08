@@ -57,8 +57,17 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-design-build data-content-source-title="Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)"} Ensure that some employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required.
-{: .dpgn-standards-hide data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+- {: .dpgn-automated-decision-design-build data-content-source-title="Section 6.3.5 and Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that the relevant employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as prescribed in the following:
+  - {: .dpgn-automated-decision-level-i} **Level I:** None
+  - {: .dpgn-automated-decision-level-ii} **Level II:** Documentation on the design and functionality of the system
+  - {: .dpgn-automated-decision-level-iii} **Level III:**
+    - Documentation on the design and functionality of the system
+    - Training courses muse be completed.
+  - {: .dpgn-automated-decision-level-iv} **Level IV:**
+    - Documentation on the design and functionality of the system
+    - Reocurring training courses.
+    - A means to verify that training has been completed.
+{: .dpgn-standards-hide data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
