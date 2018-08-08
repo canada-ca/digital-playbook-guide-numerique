@@ -95,11 +95,13 @@ This includes working in the open, sharing any and all data and information prod
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-initiation-4 data-content-source-title="Section 7.1.4, Standard on Automated Decision-Making (draft) (GC)"} Release the final results of Algorithmic Impact Assessments in an accessible format via Government of Canada websites and services designated by the Treasury Board of Canada Secretariat pursuant to the [Directive on Open Government](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108).
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.2.4, Standard on Automated Decision-Making (draft) (GC)"} Make available to the public all of the source code used for the Automated Decision Systems on a website or service designated by the Treasury Board Secretariat.
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.2.5, Standard on Automated Decision-Making (draft) (GC)"} In cases where it is deemed that source code should not be disclosed, seek the approval of the Enterprise Architecture Review Board to exempt the disclosure. In these cases, the justification as to why code was not disclosed shall be published according to the process specified in the [Directive on Open Government](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108).
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 7.2.5, Standard on Automated Decision-Making (draft) (GC)"} Ensure that all licenses required for the Automated Decision Systems are open licenses as listed in the [Open Source Software Registry](https://drive.google.com/open?id=1xISkyXdlFVw5cZv91SKQSVJ88R5OtmPLp33NeH28PQY). In all cases, Canada must maintains the right to have access to foreground intellectual property to respond to any legal challenges.
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+- {: .dpgn-automated-decision-initiation-4 data-content-source-title="Section 6.1.4, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Release the final results of Algorithmic Impact Assessments in an accessible format via Government of Canada websites and services designated by the Treasury Board of Canada Secretariat pursuant to the [Directive on Open Government](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108).
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.2.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Make available to the public all of the source code used for the Automated Decision Systems on the [Open Resource Exchange](https://canada-ca.github.io/ore-ero/home.html).
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.2.4, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} In cases where it is deemed that source code should not be disclosed, seek the approval of the Enterprise Architecture Review Board to exempt the disclosure. In these cases, the justification as to why code was not disclosed shall be published according to the process specified in the [Directive on Open Government](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108).
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.2.5, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Source code for systems that are classified SECRET or TOP SECRET are exempt from making it available to the public on the Open Resource Exchange.
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.2.6, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that all licenses required for the Automated Decision Systems are open licenses as listed in the [Open Source Software Registry](https://drive.google.com/open?id=1xISkyXdlFVw5cZv91SKQSVJ88R5OtmPLp33NeH28PQY).
+- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.2.7, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that Canada maintains the right to have access to foreground intellectual property to respond to any legal challenges.
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -257,9 +259,9 @@ Setting performance indicators allows you to continuously improve your service b
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 7.3.2, Standard on Automated Decision-Making (draft) (GC)"} Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the [Standard on Automated Decision-Making](https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok).
-- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 7.5.1, Standard on Automated Decision-Making (draft) (GC)"} Information on the effectiveness and efficiency of the Automated Decision Systems will be published annually on websites and services designated by the Treasury Board of Canada.
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.3.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}).
+- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.5.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Publish information on the effectiveness and efficiency of Automated Decision Systems annually on a website or service designated by the Treasury Board of Canada.
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -307,7 +309,7 @@ Setting performance indicators allows you to continuously improve your service b
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-automated-decision-evaluation} [Standard on Automated Decision-Making](https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok)
+- {: .dpgn-automated-decision-evaluation} [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }})
 {: .dpgn-automated-decision}
 <!-- markdownlint-enable MD032 -->
 

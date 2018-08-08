@@ -2950,7 +2950,7 @@
                       "content": [
                         {
                           "content_type": "inline",
-                          "content": "Watching TV in a noisy environment (limits one’s ability to hear, but closed captionning helps by conveying audio messages through text)"
+                          "content": "Watching TV in a noisy environment (limits one’s ability to hear, but closed captioning helps by conveying audio messages through text)"
                         }
                       ]
                     },
@@ -6609,7 +6609,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -6624,12 +6624,12 @@
                               "dpgn-automated-decision-design-build",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Retain the appropriate expert to review the Automated Decision system, based on the Impact Assessment Level:\n        "
+                            "content": "Retain the following appropriate expert to review the Automated Decision System, based on the Impact Assessment Level:\n        "
                           },
                           {
                             "content_type": "block",
                             "content_source": {
-                              "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                              "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                               "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                             },
                             "source_element": "ul",
@@ -6641,7 +6641,7 @@
                               {
                                 "content_type": "block",
                                 "content_source": {
-                                  "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                  "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
@@ -6665,7 +6665,7 @@
                               {
                                 "content_type": "block",
                                 "content_source": {
-                                  "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                  "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
@@ -6687,7 +6687,7 @@
                                   {
                                     "content_type": "block",
                                     "content_source": {
-                                      "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                      "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                       "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                     },
                                     "source_element": "ul",
@@ -6700,7 +6700,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6724,7 +6724,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6748,7 +6748,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6765,14 +6765,14 @@
                                               "dpgn-automated-decision-design-build",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "Qualified researchers from a relevant non- governmental organization"
+                                            "content": "Qualified researchers from a relevant non-governmental organization"
                                           }
                                         ]
                                       },
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6796,7 +6796,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6824,7 +6824,7 @@
                               {
                                 "content_type": "block",
                                 "content_source": {
-                                  "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                  "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
@@ -6846,7 +6846,7 @@
                                   {
                                     "content_type": "block",
                                     "content_source": {
-                                      "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                      "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                       "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                     },
                                     "source_element": "ul",
@@ -6859,7 +6859,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6883,7 +6883,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6907,7 +6907,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6924,14 +6924,14 @@
                                               "dpgn-automated-decision-design-build",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "Qualified researchers from a relevant non- governmental organization"
+                                            "content": "Qualified researchers from a relevant non-governmental organization"
                                           }
                                         ]
                                       },
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6955,7 +6955,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -6983,7 +6983,7 @@
                               {
                                 "content_type": "block",
                                 "content_source": {
-                                  "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                  "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
@@ -7005,7 +7005,7 @@
                                   {
                                     "content_type": "block",
                                     "content_source": {
-                                      "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                      "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                       "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                     },
                                     "source_element": "ul",
@@ -7018,7 +7018,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -7042,7 +7042,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -7066,7 +7066,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -7083,14 +7083,14 @@
                                               "dpgn-automated-decision-design-build",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "Qualified researchers from a relevant non- governmental organization"
+                                            "content": "Qualified researchers from a relevant non-governmental organization"
                                           }
                                         ]
                                       },
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -7114,7 +7114,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Section 7.3.4 and Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -8136,7 +8136,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.3.5, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -8153,7 +8153,288 @@
                               "dpgn-standards-hide",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that some employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as required."
+                            "content": "Ensure that the relevant employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as prescribed in the following:\n        "
+                          },
+                          {
+                            "content_type": "block",
+                            "content_source": {
+                              "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                            },
+                            "source_element": "ul",
+                            "tags": [
+                              "dpgn-automated-decision-design-build",
+                              "dpgn-standards-hide",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-i",
+                                  "dpgn-automated-decision-design-build",
+                                  "dpgn-standards-hide",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-i",
+                                      "dpgn-automated-decision-design-build",
+                                      "dpgn-standards-hide",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level I:</strong> None"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-ii",
+                                  "dpgn-automated-decision-design-build",
+                                  "dpgn-standards-hide",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-ii",
+                                      "dpgn-automated-decision-design-build",
+                                      "dpgn-standards-hide",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level II:</strong> Documentation on the design and functionality of the system"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-iii",
+                                  "dpgn-automated-decision-design-build",
+                                  "dpgn-standards-hide",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iii",
+                                      "dpgn-automated-decision-design-build",
+                                      "dpgn-standards-hide",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level III:</strong>"
+                                  },
+                                  {
+                                    "content_type": "block",
+                                    "content_source": {
+                                      "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                      "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                    },
+                                    "source_element": "ul",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iii",
+                                      "dpgn-automated-decision-design-build",
+                                      "dpgn-standards-hide",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": [
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iii",
+                                          "dpgn-automated-decision-design-build",
+                                          "dpgn-standards-hide",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-automated-decision-design-build",
+                                              "dpgn-standards-hide",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "Documentation on the design and functionality of the system"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iii",
+                                          "dpgn-automated-decision-design-build",
+                                          "dpgn-standards-hide",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-automated-decision-design-build",
+                                              "dpgn-standards-hide",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "Training courses muse be completed."
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-iv",
+                                  "dpgn-automated-decision-design-build",
+                                  "dpgn-standards-hide",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iv",
+                                      "dpgn-automated-decision-design-build",
+                                      "dpgn-standards-hide",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level IV:</strong>"
+                                  },
+                                  {
+                                    "content_type": "block",
+                                    "content_source": {
+                                      "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                      "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                    },
+                                    "source_element": "ul",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iv",
+                                      "dpgn-automated-decision-design-build",
+                                      "dpgn-standards-hide",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": [
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-automated-decision-design-build",
+                                          "dpgn-standards-hide",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-design-build",
+                                              "dpgn-standards-hide",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "Documentation on the design and functionality of the system"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-automated-decision-design-build",
+                                          "dpgn-standards-hide",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-design-build",
+                                              "dpgn-standards-hide",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "Reocurring training courses."
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-automated-decision-design-build",
+                                          "dpgn-standards-hide",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-design-build",
+                                              "dpgn-standards-hide",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "A means to verify that training has been completed."
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       }
@@ -9430,7 +9711,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.1.4, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.1.4, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -9452,7 +9733,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.2.4, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.2.3, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -9467,14 +9748,14 @@
                               "dpgn-automated-decision-deployment-operation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Make available to the public all of the source code used for the Automated Decision Systems on a website or service designated by the Treasury Board Secretariat."
+                            "content": "Make available to the public all of the source code used for the Automated Decision Systems on the <a href=\"https://canada-ca.github.io/ore-ero/home.html\">Open Resource Exchange</a>."
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.2.5, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.2.4, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -9496,7 +9777,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.2.5, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.2.5, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -9511,7 +9792,51 @@
                               "dpgn-automated-decision-deployment-operation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that all licenses required for the Automated Decision Systems are open licenses as listed in the <a href=\"https://drive.google.com/open?id=1xISkyXdlFVw5cZv91SKQSVJ88R5OtmPLp33NeH28PQY\">Open Source Software Registry</a>. In all cases, Canada must maintains the right to have access to foreground intellectual property to respond to any legal challenges."
+                            "content": "Source code for systems that are classified SECRET or TOP SECRET are exempt from making it available to the public on the Open Resource Exchange."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.2.6, Directive on Automated Decision-Making (draft) (GC)",
+                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                        },
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-automated-decision-deployment-operation",
+                          "dpgn-automated-decision"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-automated-decision-deployment-operation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": "Ensure that all licenses required for the Automated Decision Systems are open licenses as listed in the <a href=\"https://drive.google.com/open?id=1xISkyXdlFVw5cZv91SKQSVJ88R5OtmPLp33NeH28PQY\">Open Source Software Registry</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.2.7, Directive on Automated Decision-Making (draft) (GC)",
+                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                        },
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-automated-decision-deployment-operation",
+                          "dpgn-automated-decision"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-automated-decision-deployment-operation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": "Ensure that Canada maintains the right to have access to foreground intellectual property to respond to any legal challenges."
                           }
                         ]
                       }
@@ -10113,7 +10438,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.3.2, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.3.2, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -10128,14 +10453,14 @@
                               "dpgn-automated-decision-evaluation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the <a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Standard on Automated Decision-Making</a>."
+                            "content": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the <a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Directive on Automated Decision-Making (draft) (GC)</a>."
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.5.1, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.5.1, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -10150,7 +10475,7 @@
                               "dpgn-automated-decision-evaluation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Information on the effectiveness and efficiency of the Automated Decision Systems will be published annually on websites and services designated by the Treasury Board of Canada."
+                            "content": "Publish information on the effectiveness and efficiency of Automated Decision Systems annually on a website or service designated by the Treasury Board of Canada."
                           }
                         ]
                       },
@@ -11306,7 +11631,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.3.1, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.3.1, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -14467,7 +14792,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://fr.wikipedia.org/wiki/Kanban_(d%C3%A9veloppement)\">Kanban (développement) (Wikipédia)</a>"
+                            "content": "<a href=\"https://en.wikipedia.org/wiki/Kanban_(development)\">Kanban (development) (Wikipedia)</a>"
                           }
                         ]
                       },
@@ -15739,7 +16064,7 @@
             {
               "content_type": "block",
               "content_source": {
-                "title": "Section 3.1, Standard on Automated Decision-Making (draft) (GC)",
+                "title": "Introduction, Directive on Automated Decision-Making (draft) (GC)",
                 "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
               },
               "source_element": "p",
@@ -15752,27 +16077,7 @@
                   "tags": [
                     "dpgn-automated-decision-introduction"
                   ],
-                  "content": "The Government of Canada is increasingly looking to utilise technology and automated systems to make, or assist in making, administrative decisions to improve service delivery."
-                }
-              ]
-            },
-            {
-              "content_type": "block",
-              "content_source": {
-                "title": "Section 3.2, Standard on Automated Decision-Making (draft) (GC)",
-                "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-              },
-              "source_element": "p",
-              "tags": [
-                "dpgn-automated-decision-introduction"
-              ],
-              "content": [
-                {
-                  "content_type": "inline",
-                  "tags": [
-                    "dpgn-automated-decision-introduction"
-                  ],
-                  "content": "The Government of Canada is committed to ensure that the use of Automated Decision Systems are compatible with core administrative law principles such as transparency, accountability, legality and procedural fairness."
+                  "content": "The Government of Canada is increasingly looking to utilise technology and automated systems to make, or assist in making, administrative decisions to improve service delivery. It is committed to doing so in a manner that is compatible with core administrative law principles such as transparency, accountability, legality and procedural fairness."
                 }
               ]
             }
@@ -15854,7 +16159,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.2.1, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -15869,136 +16174,12 @@
                               "dpgn-automated-decision-deployment-operation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Provide notice to affected individuals at the earliest stages of administrative process that the decision rendered will be undertaken in whole or in part by a Automated Decision System, unless stated otherwise in legislation or regulation."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 7.2.2, Standard on Automated Decision-Making (draft) (GC)",
-                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                        },
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-automated-decision-deployment-operation",
-                          "dpgn-automated-decision"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-automated-decision-deployment-operation",
-                              "dpgn-automated-decision"
-                            ],
-                            "content": "Ensure that any affected individuals can have access to information about the Automated Decision System’s functionality. This includes, at minimum:\n        "
+                            "content": "Notify affected individuals that the decision rendered will be undertaken in whole or in part by a Automated Decisions Systems as prescribed in the following:\n        "
                           },
                           {
                             "content_type": "block",
                             "content_source": {
-                              "title": "Section 7.2.2, Standard on Automated Decision-Making (draft) (GC)",
-                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                            },
-                            "source_element": "ol",
-                            "tags": [
-                              "dpgn-automated-decision-deployment-operation",
-                              "dpgn-automated-decision"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "content_source": {
-                                  "title": "Section 7.2.2, Standard on Automated Decision-Making (draft) (GC)",
-                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                                },
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-automated-decision-deployment-operation",
-                                  "dpgn-automated-decision"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-automated-decision-deployment-operation",
-                                      "dpgn-automated-decision"
-                                    ],
-                                    "content": "The role that the Automated Decision System has within the decision-making process,"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "content_source": {
-                                  "title": "Section 7.2.2, Standard on Automated Decision-Making (draft) (GC)",
-                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                                },
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-automated-decision-deployment-operation",
-                                  "dpgn-automated-decision"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-automated-decision-deployment-operation",
-                                      "dpgn-automated-decision"
-                                    ],
-                                    "content": "A description of the training data, or a link to the anonymized training data if this data is publicly available, and"
-                                  }
-                                ]
-                              },
-                              {
-                                "content_type": "block",
-                                "content_source": {
-                                  "title": "Section 7.2.2, Standard on Automated Decision-Making (draft) (GC)",
-                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                                },
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-automated-decision-deployment-operation",
-                                  "dpgn-automated-decision"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-automated-decision-deployment-operation",
-                                      "dpgn-automated-decision"
-                                    ],
-                                    "content": "A description of the criteria used for making the decision, including business rules."
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 7.2.3, Standard on Automated Decision-Making (draft) (GC)",
-                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                        },
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-automated-decision-deployment-operation",
-                          "dpgn-automated-decision"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-automated-decision-deployment-operation",
-                              "dpgn-automated-decision"
-                            ],
-                            "content": "Provide a meaningful explanation to affected individuals of how and why the decision was made:\n        "
-                          },
-                          {
-                            "content_type": "block",
-                            "content_source": {
-                              "title": "Section 7.2.3, Standard on Automated Decision-Making (draft) (GC)",
+                              "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                               "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                             },
                             "source_element": "ul",
@@ -16010,7 +16191,487 @@
                               {
                                 "content_type": "block",
                                 "content_source": {
-                                  "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-i",
+                                  "dpgn-automated-decision-deployment-operation",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-i",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level I:</strong> None"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-ii",
+                                  "dpgn-automated-decision-deployment-operation",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-ii",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level II:</strong> Plain language notification listed on the program or service website."
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-iii",
+                                  "dpgn-automated-decision-deployment-operation",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iii",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level III:</strong>"
+                                  },
+                                  {
+                                    "content_type": "block",
+                                    "content_source": {
+                                      "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                      "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                    },
+                                    "source_element": "ul",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iii",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": [
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iii",
+                                          "dpgn-automated-decision-deployment-operation",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "Plain language notification listed on the program or service website."
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iii",
+                                          "dpgn-automated-decision-deployment-operation",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "If the service involves an online application, the notice must be made at the time of the application."
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iii",
+                                          "dpgn-automated-decision-deployment-operation",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "Website must link to additional information where information about the system is provided, including:\n                "
+                                          },
+                                          {
+                                            "content_type": "block",
+                                            "content_source": {
+                                              "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                            },
+                                            "source_element": "ul",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": [
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iii",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iii",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "The role that the Automated Decisions System, has within the decision process,"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iii",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iii",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "A description of the training data, or a link to the anonymized training data if this data is publicly available, and"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iii",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iii",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "A description of the criteria used for making the decision, including relevant business rules."
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-iv",
+                                  "dpgn-automated-decision-deployment-operation",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iv",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level IV:</strong>"
+                                  },
+                                  {
+                                    "content_type": "block",
+                                    "content_source": {
+                                      "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                      "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                    },
+                                    "source_element": "ul",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iv",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": [
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-automated-decision-deployment-operation",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "Plain language notification listed on the program or service website."
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-automated-decision-deployment-operation",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "If the service involves an online application, the notice must be made at the time of the application."
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "content_type": "block",
+                                        "content_source": {
+                                          "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                        },
+                                        "source_element": "li",
+                                        "tags": [
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-automated-decision-deployment-operation",
+                                          "dpgn-automated-decision"
+                                        ],
+                                        "content": [
+                                          {
+                                            "content_type": "inline",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": "Website must link to additional information where information about the system is provided, including:\n                "
+                                          },
+                                          {
+                                            "content_type": "block",
+                                            "content_source": {
+                                              "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                            },
+                                            "source_element": "ul",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": [
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "The role that the Automated Decisions Syste, has within the decision process,"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "A description of the training data, or a link to the anonymized training data if this data is publicly available, and"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Section 6.2.1 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "A description of the criteria used for making the decision, including relevant business rules."
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.2.2, Directive on Automated Decision-Making (draft) (GC)",
+                          "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                        },
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-automated-decision-deployment-operation",
+                          "dpgn-automated-decision"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-automated-decision-deployment-operation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": "Provide a meaningful explanation to affected individuals of how and why the decision was made as prescribed in the following:\n        "
+                          },
+                          {
+                            "content_type": "block",
+                            "content_source": {
+                              "title": "Section 6.2.2, Directive on Automated Decision-Making (draft) (GC)",
+                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                            },
+                            "source_element": "ul",
+                            "tags": [
+                              "dpgn-automated-decision-deployment-operation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
@@ -16034,7 +16695,7 @@
                                   {
                                     "content_type": "block",
                                     "content_source": {
-                                      "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                      "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                       "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                     },
                                     "source_element": "ul",
@@ -16048,7 +16709,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16076,7 +16737,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16104,7 +16765,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16132,7 +16793,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16153,7 +16814,80 @@
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "<strong>Level IV:</strong> Meaningful explanation, including the variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated."
+                                            "content": "<strong>Level IV:</strong>"
+                                          },
+                                          {
+                                            "content_type": "block",
+                                            "content_source": {
+                                              "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                            },
+                                            "source_element": "ul",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-type-file-triage-assignment",
+                                              "dpgn-automated-decision-type-risk-scoring-categorization",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": [
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-type-file-triage-assignment",
+                                                  "dpgn-automated-decision-type-risk-scoring-categorization",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-type-file-triage-assignment",
+                                                      "dpgn-automated-decision-type-risk-scoring-categorization",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "Meaningful explanation, including the variables in the decision, provided with the decision rendered."
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-type-file-triage-assignment",
+                                                  "dpgn-automated-decision-type-risk-scoring-categorization",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-type-file-triage-assignment",
+                                                      "dpgn-automated-decision-type-risk-scoring-categorization",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "Explanation can be human or machine generated."
+                                                  }
+                                                ]
+                                              }
+                                            ]
                                           }
                                         ]
                                       }
@@ -16164,7 +16898,7 @@
                               {
                                 "content_type": "block",
                                 "content_source": {
-                                  "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
@@ -16188,7 +16922,7 @@
                                   {
                                     "content_type": "block",
                                     "content_source": {
-                                      "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                      "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                       "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                     },
                                     "source_element": "ul",
@@ -16202,7 +16936,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16230,7 +16964,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16258,7 +16992,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16279,14 +17013,87 @@
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "<strong>Level III:</strong> Meaningful explanation, including variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated."
+                                            "content": "<strong>Level III:</strong>"
+                                          },
+                                          {
+                                            "content_type": "block",
+                                            "content_source": {
+                                              "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                            },
+                                            "source_element": "ul",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-automated-decision-type-recommendation",
+                                              "dpgn-automated-decision-type-full-decision",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": [
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iii",
+                                                  "dpgn-automated-decision-type-recommendation",
+                                                  "dpgn-automated-decision-type-full-decision",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iii",
+                                                      "dpgn-automated-decision-type-recommendation",
+                                                      "dpgn-automated-decision-type-full-decision",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "Meaningful explanation, including variables used in the decision, provided with the decision rendered."
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iii",
+                                                  "dpgn-automated-decision-type-recommendation",
+                                                  "dpgn-automated-decision-type-full-decision",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iii",
+                                                      "dpgn-automated-decision-type-recommendation",
+                                                      "dpgn-automated-decision-type-full-decision",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "Explanation can be human or machine generated."
+                                                  }
+                                                ]
+                                              }
+                                            ]
                                           }
                                         ]
                                       },
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16307,7 +17114,80 @@
                                               "dpgn-automated-decision-deployment-operation",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "<strong>Level IV:</strong> Meaningful explanation, including variables that contributed to the decision, provided with the decision rendered. Explanation can be human or machine generated."
+                                            "content": "<strong>Level IV:</strong>"
+                                          },
+                                          {
+                                            "content_type": "block",
+                                            "content_source": {
+                                              "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                            },
+                                            "source_element": "ul",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-type-recommendation",
+                                              "dpgn-automated-decision-type-full-decision",
+                                              "dpgn-automated-decision-deployment-operation",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": [
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-type-recommendation",
+                                                  "dpgn-automated-decision-type-full-decision",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-type-recommendation",
+                                                      "dpgn-automated-decision-type-full-decision",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "Meaningful explanation, including variables used in the decision, provided with the decision rendered."
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-type-recommendation",
+                                                  "dpgn-automated-decision-type-full-decision",
+                                                  "dpgn-automated-decision-deployment-operation",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-type-recommendation",
+                                                      "dpgn-automated-decision-type-full-decision",
+                                                      "dpgn-automated-decision-deployment-operation",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "Explanation can be human or machine generated."
+                                                  }
+                                                ]
+                                              }
+                                            ]
                                           }
                                         ]
                                       }
@@ -16417,7 +17297,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.1.1, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.1.1, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -16432,14 +17312,14 @@
                               "dpgn-automated-decision-initiation-1",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Complete an <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">Algorithmic Impact Assessment</a>, prior to the production of any Automated Decision System."
+                            "content": "Complete an <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">algorithmic impact assessment</a>, prior to the production of any Automated Decision System."
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.1.3, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.1.3, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -16454,7 +17334,7 @@
                               "dpgn-automated-decision-initiation-3",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that the <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">Algorithmic Impact Assessment</a> remains up to date and accurately reflects the functionality of the Automated Decision System."
+                            "content": "Ensure that the <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">algorithmic impact assessment</a> remains up to date and accurately reflects the functionality of the Automated Decision System."
                           }
                         ]
                       }
@@ -16583,7 +17463,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.1.2, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.1.2, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -16598,12 +17478,12 @@
                               "dpgn-automated-decision-initiation-2",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Apply the following relevant requirements as recommended by the <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">Algorithmic Impact Assessment</a>:\n        "
+                            "content": "Apply the following relevant requirements as determined by the <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">algorithmic impact assessment</a>:\n        "
                           },
                           {
                             "content_type": "block",
                             "content_source": {
-                              "title": "Section 7.1.2, Standard on Automated Decision-Making (draft) (GC)",
+                              "title": "Section 6.1.2, Directive on Automated Decision-Making (draft) (GC)",
                               "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                             },
                             "source_element": "ul",
@@ -16615,7 +17495,7 @@
                               {
                                 "content_type": "block",
                                 "content_source": {
-                                  "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                   "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                 },
                                 "source_element": "li",
@@ -16630,12 +17510,12 @@
                                       "dpgn-automated-decision-initiation-2",
                                       "dpgn-automated-decision"
                                     ],
-                                    "content": "Approval:\n            "
+                                    "content": "Approval Requirement:\n            "
                                   },
                                   {
                                     "content_type": "block",
                                     "content_source": {
-                                      "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                      "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                       "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                     },
                                     "source_element": "ul",
@@ -16647,7 +17527,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16671,7 +17551,7 @@
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16688,14 +17568,14 @@
                                               "dpgn-automated-decision-initiation-2",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "<strong>Level II:</strong> Enterprise Architecture Review Board"
+                                            "content": "<strong>Level II:</strong> Government of Canada Enterprise Architecture Review Board"
                                           }
                                         ]
                                       },
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16712,14 +17592,14 @@
                                               "dpgn-automated-decision-initiation-2",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "<strong>Level III:</strong> Enterprise Architecture Review Board AND GC CIO"
+                                            "content": "<strong>Level III:</strong> Government of Canada Enterprise Architecture Review Board"
                                           }
                                         ]
                                       },
                                       {
                                         "content_type": "block",
                                         "content_source": {
-                                          "title": "Appendix C, Standard on Automated Decision-Making (draft) (GC)",
+                                          "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                                         },
                                         "source_element": "li",
@@ -16736,7 +17616,70 @@
                                               "dpgn-automated-decision-initiation-2",
                                               "dpgn-automated-decision"
                                             ],
-                                            "content": "<strong>Level IV:</strong> Requires specific authority from Cabinet"
+                                            "content": "<strong>Level IV:</strong>"
+                                          },
+                                          {
+                                            "content_type": "block",
+                                            "content_source": {
+                                              "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                            },
+                                            "source_element": "ul",
+                                            "tags": [
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-automated-decision-initiation-2",
+                                              "dpgn-automated-decision"
+                                            ],
+                                            "content": [
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-initiation-2",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-initiation-2",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "Government of Canada Enterprise Architecture Review Board"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "content_type": "block",
+                                                "content_source": {
+                                                  "title": "Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                                },
+                                                "source_element": "li",
+                                                "tags": [
+                                                  "dpgn-automated-decision-level-iv",
+                                                  "dpgn-automated-decision-initiation-2",
+                                                  "dpgn-automated-decision"
+                                                ],
+                                                "content": [
+                                                  {
+                                                    "content_type": "inline",
+                                                    "tags": [
+                                                      "dpgn-automated-decision-level-iv",
+                                                      "dpgn-automated-decision-initiation-2",
+                                                      "dpgn-automated-decision"
+                                                    ],
+                                                    "content": "Requires specific authority from Treasury Board"
+                                                  }
+                                                ]
+                                              }
+                                            ]
                                           }
                                         ]
                                       }
@@ -16751,7 +17694,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.3.8, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.3.8, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -16773,7 +17716,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.4.1, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.4.1, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -16788,7 +17731,7 @@
                               "dpgn-automated-decision-deployment-operation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Affected individuals must be provided with information with regards to the options that are available to them for recourse to challenge the automated decision."
+                            "content": "Provide affected individuals with information regarding options that are available to them for recourse to challenge the automated decision or recommendation."
                           }
                         ]
                       }
@@ -16890,7 +17833,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.3.6, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.3.6 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -16905,7 +17848,117 @@
                               "dpgn-automated-decision-deployment-operation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that a contingency systems and/or processes are available should the Automated Decision System be unavailable for an extended period of time."
+                            "content": "Subject to requirements prescribed in the following, ensure that a contingency systems and/or processes are available should the Automated Decision System be unavailable for an extended period of time:\n        "
+                          },
+                          {
+                            "content_type": "block",
+                            "content_source": {
+                              "title": "Section 6.3.6 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                              "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                            },
+                            "source_element": "ul",
+                            "tags": [
+                              "dpgn-automated-decision-deployment-operation",
+                              "dpgn-automated-decision"
+                            ],
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.3.6 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-i",
+                                  "dpgn-automated-decision-deployment-operation",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-i",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level I:</strong> None"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.3.6 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-ii",
+                                  "dpgn-automated-decision-deployment-operation",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-ii",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level II:</strong> None"
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.3.6 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-iii",
+                                  "dpgn-automated-decision-deployment-operation",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iii",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level III:</strong> Ensure that a contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
+                                  }
+                                ]
+                              },
+                              {
+                                "content_type": "block",
+                                "content_source": {
+                                  "title": "Section 6.3.6 and Appendix C, Directive on Automated Decision-Making (draft) (GC)",
+                                  "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+                                },
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-automated-decision-level-iv",
+                                  "dpgn-automated-decision-deployment-operation",
+                                  "dpgn-automated-decision"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-automated-decision-level-iv",
+                                      "dpgn-automated-decision-deployment-operation",
+                                      "dpgn-automated-decision"
+                                    ],
+                                    "content": "<strong>Level IV:</strong> Ensure that a contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       }
@@ -18247,7 +19300,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.3.7, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.3.7, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -18782,7 +19835,7 @@
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.3.3, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.3.3, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -18797,14 +19850,14 @@
                               "dpgn-automated-decision-evaluation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices."
+                            "content": "Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices in accordance with the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742\">Policy on Information Management</a>."
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "content_source": {
-                          "title": "Section 7.5.2, Standard on Automated Decision-Making (draft) (GC)",
+                          "title": "Section 6.5.2, Directive on Automated Decision-Making (draft) (GC)",
                           "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
                         },
                         "source_element": "li",
@@ -18819,7 +19872,7 @@
                               "dpgn-automated-decision-evaluation",
                               "dpgn-automated-decision"
                             ],
-                            "content": "When requested, information on the achievement of the expected results of the Automated Decision System and compliance with this Standard will be provided to the Treasury Board of Canada Secretariat."
+                            "content": "When requested, provide information on the achievement of the expected results of the Automated Decision System and compliance with the <a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Directive on Automated Decision-Making (draft) (GC)</a> will be provided to the Treasury Board of Canada Secretariat."
                           }
                         ]
                       }

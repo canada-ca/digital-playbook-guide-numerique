@@ -109,9 +109,9 @@ At every stage of a project, we should measure how well our service is working f
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 7.3.3, Standard on Automated Decision-Making (draft) (GC)"} Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices.
-- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 7.5.2, Standard on Automated Decision-Making (draft) (GC)"} When requested, information on the achievement of the expected results of the Automated Decision System and compliance with this Standard will be provided to the Treasury Board of Canada Secretariat.
-{: data-content-source-uri="https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok" .dpgn-automated-decision}
+- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.3.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Veiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l'essai pour s'assurer qu'elles sont toujours pertinentes, exactes et à jour, et respectent toute politique ou directive liée aux pratiques de gestion des données conformément à la [Politique sur la gestion de l'information](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=12742).
+- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.5.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Sur demande, fournir des renseignements sur l'atteinte des résultats escomptés du système décisionnel automatisé et la conformité à la [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) au SCT.
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
