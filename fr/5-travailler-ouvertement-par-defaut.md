@@ -261,7 +261,7 @@ Setting performance indicators allows you to continuously improve your service b
 <!-- markdownlint-disable MD034 -->
 - {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.3.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Surveiller les résultats des systèmes décisionnels automatisés de façon continue afin de prévenir les résultats non intentionnels et assurer la conformité aux lois liées aux institutions et aux programmes, ainsi qu'à la [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}).
 - {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.5.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Publier des renseignements sur le'efficacité et l'efficience des systèmes décisionnels automatisés chaqu année dans un site Web ou un service désigné par le Conseil du Trésor du Canada.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}" .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
