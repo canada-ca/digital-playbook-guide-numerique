@@ -5,6 +5,18 @@ lang: en
 altLang: fr
 altLangPage: evaluation-impact-algorithmique
 collectionDirectory: views-vues/automated-decision-automatise
+aboutDecisionSection: About the Decision
+dataBusinessProcessSection: Data and Business Process
+systemFunctionalitySection: System Functionality
+organizationalReadinessSection: Organizational Readiness
+automatedDecisionViewTitle: How should I implement an Automated Decision System? (draft)
+automatedDecisionViewFilename: automated-decision
+aiaCriteria: 
+  - "Impact on Individuals and Entities"
+  - "Impact on Government Institutions"
+  - "Data Management"
+  - "Procedural Fairness"
+  - "Complexity"
 questions:
   "1": What parts of the decision-making process will be automated by this system? (Check all that apply)
   "1a": File triage or assignment
@@ -431,19 +443,6 @@ points:
   "45":
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 2, 0, 0, 5, 0 ]
-
-aboutDecisionSection: About the Decision
-dataBusinessProcessSection: Data and Business Process
-systemFunctionalitySection: System Functionality
-organizationalReadinessSection: Organizational Readiness
-automatedDecisionViewTitle: How should I implement an Automated Decision System? (draft)
-automatedDecisionViewFilename: automated-decision
-aiaCriteria: 
-  - "Impact on Individuals and Entities"
-  - "Impact on Government Institutions"
-  - "Data Management"
-  - "Procedural Fairness"
-  - "Complexity"
 criteriaThresholds:
   - [15, 40, 70]
   - [25, 50, 75]
