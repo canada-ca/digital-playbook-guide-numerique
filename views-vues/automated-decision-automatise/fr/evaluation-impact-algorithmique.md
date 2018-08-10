@@ -5,6 +5,18 @@ lang: fr
 altLang: en
 altLangPage: algorithmic-impact-assessment
 collectionDirectory: views-vues/automated-decision-automatise
+aboutDecisionSection: A propos de la décision
+dataBusinessProcessSection: Données et processus métier
+systemFunctionalitySection: Fonctionnalité du système
+organizationalReadinessSection: Préparation organisationnelle
+automatedDecisionViewTitle: Comment dois-je mettre en place un système de décision automatisé? (ébauche)
+automatedDecisionViewFilename: decision-automatise
+aiaCriteria: 
+  - "Impact sur les individus et les entités"
+  - "Impact sur les institutions gouvernementales"
+  - "Gestion de données"
+  - "Équité procédurale"
+  - "Complexité"
 questions:
   "1": Quelles parties du processus décisionnel seront automatisées par ce système? (Cochez toutes les cases qui s'appliquent)
   "1a": Classer les cas en fontion du rique et de la priorité
@@ -115,18 +127,322 @@ questions:
   "43": Avez-vous élaboré un plan de communication interne pour aborder les changements potentiels aux pratiques de travail des agents?
   "44": Avez-vous un mécanisme pour capturer les commentaires des utilisateurs du système?
   "45": Avez-vous un processus de recours prévu ou établi pour les clients qui souhaitent contester la décision?
-aboutDecisionSection: A propos de la décision
-dataBusinessProcessSection: Données et processus métier
-systemFunctionalitySection: Fonctionnalité du système
-organizationalReadinessSection: Préparation organisationnelle
-automatedDecisionViewTitle: Comment dois-je mettre en place un système de décision automatisé? (ébauche)
-automatedDecisionViewFilename: decision-automatise
-aiaCriteria: 
-  - "Impact sur les individus et les entités"
-  - "Impact sur les institutions gouvernementales"
-  - "Gestion de données"
-  - "Équité procédurale"
-  - "Complexité"
+points:
+  "1a":
+    "yes": [ 1, 1, 0, 1, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "1b":
+    "yes": [ 3, 2, 0, 2, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "1c":
+    "yes": [ 4, 2, 0, 3, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "1d":
+    "yes": [ 5, 3, 0, 4, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "1.1":
+    "yes": [ 2, 0, 0, 3, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "1.1.1":
+    "yes": [ 5, 0, 0, 5, 4 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "1.1.2":
+    "yes": [ -2, 0, 0, -2, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "2":
+    "yes": [ 4, 3, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "3":
+    "yes": [ 5, 5, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "4":
+    "yes": [ 1, 1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "4.1":
+    "none": [ 0, 0, 0, 0, 0 ]
+    "protected": [ 0, 1, 0, 0, 0 ]
+    "protected-a": [ 0, 3, 0, 0, 0 ]
+    "protected-b": [ 0, 4, 0, 0, 0 ]
+    "protected-c": [ 0, 5, 0, 0, 0 ]
+    "classified": [ 0, 2, 0, 0, 0 ]
+    "confidential": [ 0, 3, 0, 0, 0 ]
+    "secret": [ 0, 4, 0, 0, 0 ]
+    "top-secret": [ 0, 5, 0, 0, 0 ]
+  "5":
+    "yes": [ 3, 2, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "5.1":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "5.1.1":
+    "yes": [ 5, 0, 0, 2, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "5.2":
+    "yes": [ 0, 1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "5.2.1":
+    "yes": [ 2, 2, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "6":
+    "yes": [ 4, 2, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "7":
+    "yes": [ 1, 1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "7.1":
+    "yes": [ 2, 2, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "7.1.1":
+    "yes": [ 1, 3, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "7.2":
+    "yes": [ 2, 2, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "7.3":
+    "yes": [ 3, 2, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "8":
+    "yes": [ 3, 2, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "9":
+    "yes": [ 1, 4, 0, 0, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "10a":
+    "yes": [ -1, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "10b":
+    "yes": [ -1, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "10c":
+    "yes": [ 0, -1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "10d":
+    "yes": [ 0, -1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "10e":
+    "yes": [ -2, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "10f":
+    "yes": [ 0, -1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "10g":
+    "yes": [ 0, -1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "11":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "11.1":
+    "yes": [ -1, 0, 0, 0, 0 ]
+    "no": [ 3, 1, 0, 0, 0 ]
+  "12a":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "12b":
+    "yes": [ 0, 0, 1, 0, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "12c":
+    "yes": [ 0, 0, 2, 1, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "12d":
+    "yes": [ 0, 0, 2, 2, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "12e":
+    "yes": [ 0, 0, 3, 2, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "13a":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "13b":
+    "yes": [ 0, 0, 1, 0, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "13c":
+    "yes": [ 0, 0, 2, 1, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "13d":
+    "yes": [ 0, 0, 2, 2, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "13e":
+    "yes": [ 0, 0, 3, 2, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "14":
+    "yes": [ -2, 0, 0, 0, 0 ]
+    "no": [ 2, 0, 0, 2, 0 ]
+  "15":
+    "yes": [ 0, 0, -3, -2, 0 ]
+    "no": [ 1, 1, 3, 2, 0 ]
+  "16":
+    "yes": [ -1, 0, -1, 0, 0 ]
+    "no": [ 1, 0, 1, 0, 0 ]
+  "16.1":
+    "yes": [ -1, 0, 0, 0, 0 ]
+    "no": [ 1, 0, 0, 0, 0 ]
+    "na": [ 0, 0, 0, 0, 0 ]
+  "17":
+    "yes": [ 0, 0, 0, 0, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "17.1":
+    "yes": [ 0, 0, -1, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "18":
+    "yes": [ 0, 2, 0, 3, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "19":
+    "protected": [ 0, 0, 0, 0, 0 ]
+    "protected-a": [ 0, 0, 0, 0, 3 ]
+    "protected-b": [ 0, 0, 0, 0, 4 ]
+    "protected-c": [ 0, 0, 0, 0, 5 ]
+    "classified": [ 0, 0, 0, 0, 2 ]
+    "confidential": [ 0, 0, 0, 0, 3 ]
+    "secret": [ 0, 0, 0, 0, 4 ]
+    "top-secret": [ 0, 0, 0, 0, 5 ]
+  "20":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 1, 2, 0 ]
+  "21":
+    "yes": [ 0, 0, 2, 0, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "22":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 1, 2, 1 ]
+  "23":
+    "yes": [ 0, 0, -4, -3, 0 ]
+    "no": [ 1, 1, 4, 3, 0 ]
+  "24":
+    "yes": [ 0, 0, 0, 0, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "24.1":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 2, 0, 0, 0, 0 ]
+  "24.2":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 2, 0, 0, 0, 0 ]
+  "25":
+    "yes": [ 0, 0, 0, 0, 2 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "25.1":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 1, 0, 0 ]
+  "26a":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "26b":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "26c":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "26d":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "26e":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "26f":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "26g":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "27":
+    "yes": [ 0, -2, 0, -1, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "28":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "29":
+    "yes": [ 0, -1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "30":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 1, 2, 0 ]
+  "31":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 2, 0, 1, 4, 0 ]
+  "32":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 3, 1 ]
+  "32.1":
+    "yes": [ 0, -1, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 2, 1 ]
+  "32.2":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 1, 3, 1 ]
+  "32.3":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 2, 0 ]
+  "33":
+    "yes": [ -2, -1, 0, -2, 1 ]
+    "no": [ 0, 0, 0, 4, 0 ]
+  "34a":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+  "34b":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 2, 0, 0 ]
+  "34c":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+  "34d":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+  "34e":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 2, 0, 0, 0 ]
+  "34f":
+    "yes": [ 0, 0, 0, -2, 0 ]
+    "no": [ 0, 1, 0, 2, 0 ]
+  "34g":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+  "34h":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+  "34.1":
+    "yes": [ 0, -1, 0, -1, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "34.2":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 2, 0 ]
+  "35":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 2, 1, 0, 0 ]
+  "35.1":
+    "yes": [ -3, 0, -1, -1, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "36":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 1, 0, 0 ]
+  "37":
+    "yes": [ 0, 0, -1, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "38":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 2, 0, 0 ]
+  "39":
+    "yes": [ 0, 0, 0, 0, 1 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "40":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 2, 0, 0, 0 ]
+  "40.1":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+  "41":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+    "na": [ 0, 0, 0, 0, 0 ]
+  "42":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+  "43":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 1, 0, 0, 0 ]
+  "44":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 0, 0, 0, 0, 0 ]
+  "45":
+    "yes": [ 0, 0, 0, 0, 0 ]
+    "no": [ 2, 0, 0, 5, 0 ]
 criteriaThresholds:
   - [15, 40, 70]
   - [25, 50, 75]

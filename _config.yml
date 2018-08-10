@@ -536,6 +536,12 @@ QuestionnaireCompleted:
 Question:
   en: Question
   fr: Question
+Answer:
+  en: Answer
+  fr: Réponse
+SelectedAnswer:
+  en: Selected answer
+  fr: Réponse sélectionnée
 Percent:
   en: "%"
   fr: "&#160;%"
@@ -617,9 +623,6 @@ TopSecret:
 required:
   en: required
   fr: obligatoire
-SelectedAnswer:
-  en: Selected answer
-  fr: 
 Points:
   en: Points
   fr: Points
