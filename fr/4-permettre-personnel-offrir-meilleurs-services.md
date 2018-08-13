@@ -52,25 +52,6 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 - Identify and maintain effective methods for engaging users, stakeholders, and advisors/experts.
 - Be prepared to adapt to a frequently changing digital environment that is consistently evolving (e.g., emerging tech, emerging threats/security concerns, increased use of artificial intelligence, etc.), and act accordingly.
 
-**Automated Decision Systems:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-<!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-design-build data-content-source-title="Section 6.3.5 et Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} S'assurer que les employés pertinents sont suffisament formés lors de la conception, de la fonction et de la mise en œuvre du système décisionnel automatisé pour être en mesure d'examiner, d'expliquer et de superviser le processus décisionnel automatisé, comme il est prescrit dans ce qui suit&#160;:
-  - {: .dpgn-automated-decision-level-i} **Niveau I :** Aucune
-  - {: .dpgn-automated-decision-level-ii} **Niveau II :** Documents sur la conception et la fonctionnalité du système
-  - {: .dpgn-automated-decision-level-iii} **Niveau III :**
-    - Documents sur la conception et la fonctionnalité du système
-    - Il faut suive des cours de formation.
-  - {: .dpgn-automated-decision-level-iv} **Niveau IV :**
-    - Documents sur la conception et la fonctionnalité du système
-    - Cours de formation récurrents.
-    - Un moyen de vérifier que la formation a été suivie.
-{: .dpgn-standards-hide data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
-<!-- markdownlint-enable MD034 -->
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
