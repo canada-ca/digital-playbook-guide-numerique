@@ -80,8 +80,8 @@ This page provides personalized guidance for how projects can meet the Governmen
 <!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-guideline-10-2 .dpgn-checklist} Decouple Master Data from applications and host within the appropriate system of record 
-- {: .dpgn-guideline-10-2 .dpgn-checklist} Make systems of record authoritative central sources 
+- {: .dpgn-guideline-10-2 .dpgn-checklist} Decouple Master Data from applications and host within the appropriate system of record
+- {: .dpgn-guideline-10-2 .dpgn-checklist} Make systems of record authoritative central sources
 - {: .dpgn-guideline-10-3 .dpgn-checklist} Assign data custodians to ensuring data is correct, consistent, and complete
 - {: .dpgn-guideline-10-2 .dpgn-checklist} Design data resiliency in accordance with GC policies and standards
 - {: .dpgn-guideline-10-2 .dpgn-checklist} Use Master Data Management to provide a single point of reference for appropriate stakeholders
@@ -220,8 +220,8 @@ This page provides personalized guidance for how projects can meet the Governmen
 <!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
-- {: .dpgn-guideline-9-4 .dpgn-checklist} Implement security across all architectural layers 
-- {: .dpgn-guideline-9-4 .dpgn-checklist} Categorize data properly to determine appropriate safeguards 
+- {: .dpgn-guideline-9-4 .dpgn-checklist} Implement security across all architectural layers
+- {: .dpgn-guideline-9-4 .dpgn-checklist} Categorize data properly to determine appropriate safeguards
 - {: .dpgn-guideline-9-4 .dpgn-checklist} Perform a privacy impact assessment (PIA) when personal information is involved
 - {: .dpgn-guideline-9-1 .dpgn-checklist} Balance user and business needs with proportionate security measures
 {: .dpgn-digital-architectural-security-privacy .dpgn-security-architecture-privacy .dpgn-digital-architectural}
