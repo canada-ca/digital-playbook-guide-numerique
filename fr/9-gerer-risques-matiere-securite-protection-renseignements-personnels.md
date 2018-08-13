@@ -66,14 +66,6 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * Document the process for identifying, understanding new or ongoing security and privacy threats and the process for managing them
 * Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned.
 
-**Normes architecturales sur le numérique (GC)&#160;:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-* {: .dpgn-digital-architectural-security-privacy-4} Équilibrer les besoins des utilisateurs aux besoins organisationnels en se dotant de mesures de sécurité proportionnelles.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
@@ -101,11 +93,6 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
 * [Privacy (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/privacy/)
 * [Secure services (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
-
-**Normes architecturales sur le numérique (GC)&#160;:**
-{: .dpgn-data-ignore}
-
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Concevoir en vue de la sécurité et de la protection des renseignements personnels (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#concevoir-en-vue-de-la-scurit-et-de-la-protection-des-renseignements-personnels)
 
 </section>
 </section>
@@ -322,11 +309,6 @@ Canadians want to have confidence that government digital services are designed 
 * [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 * [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
-
-**Normes architecturales sur le numérique (GC)&#160;:**
-{: .dpgn-data-ignore}
-
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Concevoir en vue de la sécurité et de la protection des renseignements personnels (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#concevoir-en-vue-de-la-scurit-et-de-la-protection-des-renseignements-personnels)
 
 </section>
 </section>
