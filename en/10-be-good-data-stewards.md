@@ -100,7 +100,7 @@ At every stage of a project, we should measure how well our service is working f
 
 **[TODO: Add/revise implementation guide items]**
 
-- [Data on the Web Best Practices (W3C)](https://www.w3.org/TR/dwbp/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [Data on the Web Best Practices (W3C)](https://www.w3.org/TR/dwbp/)
   - [Machine-Readable Standardized Data Format (Data on the Web Best Practices (W3C))](https://www.w3.org/TR/dwbp/#MachineReadableStandardizedFormat)
   - {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [Local Neutral Data Representation (Data on the Web Best Practices (W3C))](https://www.w3.org/TR/dwbp/#LocaleParametersMetadata)
   - {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [Real Time Access (Data on the Web Best Practices (W3C))](https://www.w3.org/TR/dwbp/#AccessRealTime)
