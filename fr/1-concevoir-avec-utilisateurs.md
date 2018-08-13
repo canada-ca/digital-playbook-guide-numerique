@@ -171,15 +171,6 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
-**Normes architecturales sur le numérique (GC)&#160;:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-1} Miser sur les besoins des utilisateurs; se servir de méthodes agiles, itératives et axées sur l’utilisateur.
-- {: .dpgn-digital-architectural-design-for-users-first-2} Mener des recherches sur les utilisateurs à partir des toutes premières conceptions, jusqu’aux améliorations ayant été apportées après le lancement.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 **Stage alpha :**
 {: .dpgn-data-ignore}
 
@@ -231,11 +222,6 @@ Les besoins des utilisateurs évoluent constamment, c'est pourquoi il est import
 ### Ressources similaires
 
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
-
-**Normes architecturales sur le numérique (GC)&#160;:**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Concevoir pour les utilisateurs d’abord (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#concevoir-pour-les-utilisateurs-dabord)
 
 </section>
 </section>
