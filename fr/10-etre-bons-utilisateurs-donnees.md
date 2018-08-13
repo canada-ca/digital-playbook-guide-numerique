@@ -92,17 +92,6 @@ At every stage of a project, we should measure how well our service is working f
 - Publish metrics externally **(Digital Services Playbook (US))**
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
-**Automated Decision Systems:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-<!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.3.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Veiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l'essai pour s'assurer qu'elles sont toujours pertinentes, exactes et à jour, et respectent toute politique ou directive liée aux pratiques de gestion des données conformément à la [Politique sur la gestion de l'information](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=12742).
-- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.5.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Sur demande, fournir des renseignements sur l'atteinte des résultats escomptés du système décisionnel automatisé et la conformité à la [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) au SCT.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
-<!-- markdownlint-enable MD034 -->
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
@@ -111,7 +100,7 @@ At every stage of a project, we should measure how well our service is working f
 
 **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
 
-- [Data on the Web Best Practices (W3C)](https://www.w3.org/TR/dwbp/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [Data on the Web Best Practices (W3C)](https://www.w3.org/TR/dwbp/)
   - [Machine-Readable Standardized Data Format (Data on the Web Best Practices (W3C))](https://www.w3.org/TR/dwbp/#MachineReadableStandardizedFormat)
   - {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [Local Neutral Data Representation (Data on the Web Best Practices (W3C))](https://www.w3.org/TR/dwbp/#LocaleParametersMetadata)
   - {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [Real Time Access (Data on the Web Best Practices (W3C))](https://www.w3.org/TR/dwbp/#AccessRealTime)
