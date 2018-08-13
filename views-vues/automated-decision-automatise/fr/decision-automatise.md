@@ -88,7 +88,7 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
       - Exige une autorisaton particulière du Conseil du Trésor
 - {: data-dpgn-data-include='&#123; "guideline": "8.2", "section": "checklist" &#125;' data-content-source-title="Section 6.1.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} S'assurer que l'[{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}) demeure à jour et tient compte de manière exacte des fonctionnalités du système décisionnel automatisé.
 - {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;' data-content-source-title="Section 6.1.4, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Diffuser les résultats finaux des évaluations d'impact algorithmique dans un format accessible au moyen des sites Web et des services du gouvernement du Canada et des services désignés par le Sécretariat du Conseil du Trésor du Canada (SCT) conformément à la [Directive sur le gouvernement ouvert](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=28108).
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-initiation .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-initiation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -104,7 +104,7 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <!-- markdownlint-disable MD034 -->
 - {: data-dpgn-data-include='&#123; "guideline": "8.3", "section": "checklist" &#125;' data-content-source-title="Section 6.3.8, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Consulter l'unité des services jurisdiques de l'institution, pour veiller à ce que l'utilisation du système décisionnel automatisé soit conforme aux exigences juridiques applicables.
 - {: data-dpgn-data-include='&#123; "guideline": "9.4", "section": "checklist" &#125;' data-content-source-title="Section 6.3.7, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Effectuer des évaluations des risques tout au long de l'élaboration du système et s'assurer des mesures de protection appropriées à appliquer, conformément à la [Politique sur la sécurité du gouvernement](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=16578).
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-analysis-approach .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-analysis-approach .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -148,7 +148,7 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
     - Documents sur la conception et la fonctionnalité du système
     - Cours de formation récurrents.
     - Un moyen de vérifier que la formation a été suivie.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-design-build .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-design-build .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -208,7 +208,7 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
   - {: .dpgn-automated-decision-level-ii} **Niveau II :** Aucune
   - {: .dpgn-automated-decision-level-iii} **Niveau III :** Veiller à ce que des plans d'urgence ou des systèmes de secours soient disponibles si le système décisionnel automatisé est indisponible.
   - {: .dpgn-automated-decision-level-iv} **Niveau IV :** Veiller à ce que des plans d'urgence ou des systèmes de secours soient disponibles si le système décisionnel automatisé est indisponible.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-deployment-operation .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-deployment-operation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -225,7 +225,7 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 - {: data-dpgn-data-include='&#123; "guideline": "5.3", "section": "checklist" &#125;' data-content-source-title="Section 6.5.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Publier des renseignements sur le'efficacité et l'efficience des systèmes décisionnels automatisés chaqu année dans un site Web ou un service désigné par le Conseil du Trésor du Canada.
 - {: data-dpgn-data-include='&#123; "guideline": "10.2", "section": "checklist" &#125;' data-content-source-title="Section 6.3.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Veiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l'essai pour s'assurer qu'elles sont toujours pertinentes, exactes et à jour, et respectent toute politique ou directive liée aux pratiques de gestion des données conformément à la [Politique sur la gestion de l'information](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=12742).
 - {: data-dpgn-data-include='&#123; "guideline": "10.2", "section": "checklist" &#125;' data-content-source-title="Section 6.5.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Sur demande, fournir des renseignements sur l'atteinte des résultats escomptés du système décisionnel automatisé et la conformité à la [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) au SCT.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-evaluation .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-evaluation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
