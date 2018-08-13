@@ -76,19 +76,6 @@ There are many potential benefits from the greater use of digital services, incl
 - Avoiding lock-in to any proprietary solutions where open source software and/or open standards are available
 - Ensure that software can be deployed on a variety of commodity hardware types
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-open-standards-solutions-1} Use open source standards, solutions, components, and leading practices.
-- {: .dpgn-digital-architectural-open-standards-solutions-2} Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built.
-- {: .dpgn-digital-architectural-performance-availability-scalability-1} Design for resiliency.
-- {: .dpgn-digital-architectural-performance-availability-scalability-2} Ensure response times meet user needs, and critical services are highly available.
-- {: .dpgn-digital-architectural-performance-availability-scalability-3} Support zero-downtime deployments for planned and unplanned maintenance.
-- {: .dpgn-digital-architectural-performance-availability-scalability-4} Use distributed architectures, assume failure will happen, handle errors gracefully, and monitor actively.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 **Design, build and test end-to-end digital services (formerly guideline 6.5):**
 {: .dpgn-data-ignore}
 
@@ -180,12 +167,6 @@ There are many potential benefits from the greater use of digital services, incl
 - [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
 - [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#use-open-standards-and-solutions-by-default)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [5. Design for Performance, Availability, and Scalability (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-performance-availability-and-scalability)
-
 **Design, build and test end-to-end digital services (formerly guideline 6.5):**
 {: .dpgn-data-ignore}
 
@@ -229,33 +210,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - Follow the [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp)
 - Static assets are served through a content delivery network **(Digital Services Playbook (US))**
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-maximize-reuse-1} Leverage and reuse existing solutions, components, and processes.
-- {: .dpgn-digital-architectural-maximize-reuse-2} Select enterprise and cluster solutions over department-specific solutions.
-- {: .dpgn-digital-architectural-maximize-reuse-3} Achieve simplification by minimizing duplication of components and adhering to relevant standards.
-- {: .dpgn-digital-architectural-maximize-reuse-4} Inform the GC EARB about departmental investments and innovations.
-- {: .dpgn-digital-architectural-enable-interoperability-4} Run applications in containers.
-- {: .dpgn-digital-architectural-enable-interoperability-5} Leverage enterprise digital exchange components such as the GC Service Bus, Digital Exchange Platform, and the API Store, based on fit-for-use.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
-<section>
-  
-#### Cloud services
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-cloud-first-1} Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS).
-- {: .dpgn-digital-architectural-cloud-first-2} Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions.
-- {: .dpgn-digital-architectural-cloud-first-3} Design for cloud mobility and develop an exit strategy to avoid vendor lock-in.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 **Government of Canada Cloud Adoption Strategy:**
 {: .dpgn-data-ignore}
 
@@ -265,8 +219,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - To ensure, to the greatest extent possible, the GC’s continuous access to sensitive data, departments and agencies must comply with the [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html).
 - To ensure business continuity and to manage risks, departments and agencies will develop an appropriate exit strategy before using cloud services.
 - Departments and agencies should consider portability and interoperability of services when designing cloud-based solutions.
-
-</section>
 
 </section>
 
@@ -316,13 +268,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [2. Maximize Reuse (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#maximize-reuse)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-enable-interoperability} [6. Enable Interoperability (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#enable-interoperability)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [9. Use Cloud First (Digital Architectural Standards Principles (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-cloud-first)
-
 **Cloud first (formerly guideline 6.6):**
 {: .dpgn-data-ignore}
 
@@ -351,16 +296,6 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 **[TODO: Add/revise checklist items]**
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-enable-interoperability-1} Expose all functionality as services.
-- {: .dpgn-digital-architectural-enable-interoperability-2} Use microservices built around business capabilities. Scope each service to a single purpose.
-- {: .dpgn-digital-architectural-enable-interoperability-3} Run each service in its own process and have it communicate with other services through a well-defined interface, such as an HTTPS-based application programming interface (API).
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 - Build services that are API-centric services, which execute most, if not all, functionality through API calls (e.g., connecting frontend to backend through an API)
 - Plan out API access from the beginning, designing services to be able to safely and securely expose functionality to other systems and the public.
 - Design APIs to be compete but also minimal, ensuring the expected functionality is provided but with as few public members per class and as few classes as possible. This makes it easier to understand, remember, debug and change the API.
@@ -387,17 +322,6 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-enable-interoperability} [6. Enable Interoperability (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#enable-interoperability)
 
 </section>
 </section>
