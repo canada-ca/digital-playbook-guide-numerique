@@ -37,10 +37,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Design for Users First and Deliver with Multidisciplinary Teams
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "1.2", "section": "checklist" }'} Focus on the needs of users, using agile, iterative, and user-centred methods
@@ -59,17 +56,11 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ## 2. Information Architecture
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Keep Data Organized
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "10.2", "section": "checklist" }'} Decouple Master Data from applications and host within the appropriate system of record
@@ -86,10 +77,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Enable Interoperability
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "6.3", "section": "checklist" }'} Expose all functionality as services
@@ -107,17 +95,11 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ## 3. Application Architecture
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Use Open Standards and Solutions by Default
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "6.1", "section": "checklist" }'} Use open source standards, solutions, components, and leading practices
@@ -133,10 +115,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Maximize Reuse
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "6.2", "section": "checklist" }'} Leverage and reuse existing solutions, components, and processes
@@ -154,17 +133,11 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ## 4. Technology Architecture
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Use Cloud first
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "6.2", "section": "checklist" }'} Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)
@@ -179,10 +152,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Design for Performance, Availability, and Scalability
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "6.1", "section": "checklist" }'} Design for resiliency
@@ -199,17 +169,11 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ## 5. Security Architecture and Privacy
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Design for Security and Privacy
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "9.4", "section": "checklist" }'} Implement security across all architectural layers
@@ -225,10 +189,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-<!-- markdownlint-disable MD022 -->
 ### Design Systems to be Measurable and Accountable
-{: .dpgn-data-ignore}
-<!-- markdownlint-enable MD022 -->
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='{ "guideline": "5.2", "section": "checklist" }'} Publish a Service Level Agreement for each service
