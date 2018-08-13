@@ -12,7 +12,7 @@ assign dataSource = site.data[dataVariable] %}
 Cette page fournit des conseils personnalisés sur la façon dont les projets peuvent mettre en œuvre un système de décision automatisé.
 
 Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie et les systèmes automatisés afin de prendre, ou aider à prendre, des décisions administratives, pour améliorer la prestation des services. Il s’engage à le faire d’une manière qui est compatible avec les principes de base du droit administratif comme la transparence, la responsabilisation, la légalité et l’équité procédurale.
-{: data-dpgn-data-include='&#123; "standard": "8", "section": "introduction" }' data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" data-content-source-title="Introduction, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}" .dpgn-automated-decision}
+{: data-dpgn-data-include='&#123; "standard": "8", "section": "introduction" &#125;' data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" data-content-source-title="Introduction, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}" .dpgn-automated-decision}
 
 <!-- markdownlint-disable MD032 -->
 - TOC
