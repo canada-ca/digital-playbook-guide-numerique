@@ -73,35 +73,6 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 - Make sure the team fully understands the service after it's gone live **(Digital Service Standard (UK))**
 - faites participer l’équipe de maintenance du service aux premières étapes du projet **(Normes des services numériques (Ontario))**
 
-**Automated Decision Systems:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-<!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-design-build data-content-source-title="Section 6.3.4 et Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Conserver les experts suivants pour examiner le système décisionnel automatisé, en fonction du niveau d'évaluation de l'impact&#160;:
-  - {: .dpgn-automated-decision-level-i} **Niveau I :** Aucune
-  - {: .dpgn-automated-decision-level-ii} **Niveau II :** Au moins l'une des suivantes&#160;:
-    - Expert qualifié d'une institution gouvernementale fédérale, provinciale, territoriale ou municipale
-    - Membres qualifiés d'une faculté d'un établissement postsecondaire
-    - Chercheurs qualifiés d'une organisation non gouvernementale pertinente
-    - Tiers fournisseur à forfait avec une spécialisation connexe
-    - Publication des spécifications du système décisionnel automatisé dans une revue à comité de lecture
-  - {: .dpgn-automated-decision-level-iii} **Niveau III :** Au moins l'une des suivantes&#160;:
-    - Expert qualifié d'une institution gouvernementale fédérale, provinciale, territoriale ou municipale
-    - Membres qualifiés d'une faculté d'un établissement postsecondaire
-    - Chercheurs qualifiés d'une organisation non gouvernementale pertinente
-    - Tiers fournisseur à forfait avec une spécialisation connexe
-    - Publication des spécifications du système décisionnel automatisé dans une revue à comité de lecture
-  - {: .dpgn-automated-decision-level-iv} **Niveau IV :** Au moins deux des suivantes&#160;:
-    - Experts qualifiés du Conseil national de recherches du Canada ou de Statistique Canada
-    - Membres qualifiés d'une faculté d'un établissement postsecondaire
-    - Chercheurs qualifiés d'une organisation non gouvernementale pertinente
-    - Tiers fournisseur à forfait avec une spécialisation connexe
-    - **OU :** Publication des spécifications du système décisionnel automatisé dans une revue à comité de lecture
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
-<!-- markdownlint-enable MD034 -->
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
