@@ -173,14 +173,6 @@ If users find it difficult to complete the task the first time, they may avoid u
 - provide an accessible method for all users to provide feedback on the service or request additional support at any time **(Digital Service Standard (Ontario))**
 - make sure your staff will be equipped with knowledge of barriers to accessibility and will be trained to assist users with disabilities in completing tasks and accessing information **(Digital Service Standard (Ontario))**
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-3} Conform to both accessibility and official languages requirements.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 **Alpha stage:**
 {: .dpgn-data-ignore}
 
@@ -265,11 +257,6 @@ If users find it difficult to complete the task the first time, they may avoid u
 
 - [7. Make it accessible (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
 - [9. Make it accessible (Digital Service Standard (AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first)
 
 </section>
 </section>
