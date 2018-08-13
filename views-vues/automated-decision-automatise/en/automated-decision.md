@@ -75,8 +75,6 @@ The Government of Canada is increasingly looking to utilise technology and autom
 
 ## 1. Initiation
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-initiation-1,dpgn-automated-decision-initiation-2,dpgn-automated-decision-initiation-3,dpgn-automated-decision-initiation-4" groupListsSeparately=true groupByTagsTags="dpgn-automated-decision-initiation-1,dpgn-automated-decision-initiation-2,dpgn-automated-decision-initiation-3,dpgn-automated-decision-initiation-4" guidelineSectionsOrder="checklist" %}
-
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
 - {: data-dpgn-data-include='{ "guideline": "8.2", "section": "checklist" }' data-content-source-title="Section 6.1.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Complete an [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}), prior to the production of any Automated Decision System.
