@@ -18,6 +18,7 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
   toc_levels: "2..2"
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
 # Collections settings (for the alternate views)
 collections_dir: views-vues
