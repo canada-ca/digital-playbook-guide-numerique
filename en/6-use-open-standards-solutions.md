@@ -94,16 +94,6 @@ There are many potential benefits from the greater use of digital services, incl
 - Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
 - Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
 
-**Automated Decision Systems:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-<!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-deployment-operation data-content-source-title="Section 6.3.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Before going into production, develop the appropriate processes to ensure that training data is tested for unintended biases and other factors that may unfairly impact outcomes.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
-<!-- markdownlint-enable MD034 -->
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
