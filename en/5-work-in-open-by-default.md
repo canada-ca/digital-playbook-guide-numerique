@@ -71,16 +71,6 @@ This includes working in the open, sharing any and all data and information prod
 - Ensure that we maintain the rights to all data developed by third parties in a manner that is releasable and reusable at no cost to the public **(Digital Services Playbook (US))**
 - Data and code is shared so that clients can extract/create value. **(General design principles - Digital Design Playbook (ISED))**
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-open-standards-solutions-3} Make source code open and reusable under an appropriate open source software license.
-- {: .dpgn-digital-architectural-open-standards-solutions-4} Expose public data to implement Open Data and Open Information initiatives.
-{: .dpgn-digital-architectural}
-- {: .dpgn-digital-architectural-maximize-reuse-5} Share code publicly when appropriate, and when not, share within the Government of Canada.
-<!-- markdownlint-enable MD032 -->
-
 **Work in the open and make source code open and reusable (formerly guideline 5.5):**
 {: .dpgn-data-ignore}
 
@@ -141,12 +131,6 @@ This includes working in the open, sharing any and all data and information prod
 
 - [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [1. Use Open Standards and Solutions by Default (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#use-open-standards-and-solutions-by-default)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [2. Maximize Reuse (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#maximize-reuse)
-
 **Work in the open and make source code open and reusable (formerly guideline 5.5):**
 {: .dpgn-data-ignore}
 
@@ -181,14 +165,6 @@ This includes working in the open, sharing any and all data and information prod
 
 **[TODO: Add/revise checklist items]**
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-measurable-accountable-1} Publish a Service Level Agreement for each service.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
@@ -204,17 +180,6 @@ This includes working in the open, sharing any and all data and information prod
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable)
 
 </section>
 </section>
@@ -243,16 +208,6 @@ Setting performance indicators allows you to continuously improve your service b
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-measurable-accountable-2} Make an audit trail available for all transactions to ensure accountability and non-repudiation.
-- {: .dpgn-digital-architectural-measurable-accountable-3} Establish business and IT metrics to enable business outcomes.
-- {: .dpgn-digital-architectural-measurable-accountable-4} Apply oversight and lifecycle management to digital investments through governance.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
 
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
@@ -328,11 +283,6 @@ Setting performance indicators allows you to continuously improve your service b
 ### Similar resources
 
 - [16. Identify performance indicators (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/identify-performance-indicators)
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [7. Design Systems to be Measurable and Accountable (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-systems-to-be-measurable-and-accountable)
 
 </section>
 </section>
