@@ -56,12 +56,12 @@ The Government of Canada is increasingly looking to utilise technology and autom
 </dd>
 <dt>Level III</dt>
 <dd>
-<p><strong>The decision has a high impact on the rights or interests of an individual, community, organization, sociey, or the environment.</p>
+<p><strong>The decision has a high impact on the rights or interests of an individual, community, organization, sociey, or the environment.</strong></p>
 <p>Compromise could reasonably be expected to cause moderate to serious harm.</p>
 </dd>
 <dt>Level IV</dt>
 <dd>
-<p><strong>The decision has a very high impact on the rights or interests of an individual, community, organization, sociey, or the environment.</p>
+<p><strong>The decision has a very high impact on the rights or interests of an individual, community, organization, sociey, or the environment.</strong></p>
 <p>Compromise could reasonably be expected to cause serious to catastrophic harm.</p>
 </dd>
 </dl>
