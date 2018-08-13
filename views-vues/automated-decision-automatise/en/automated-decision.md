@@ -12,7 +12,7 @@ assign dataSource = site.data[dataVariable] %}
 This page provides personalized guidance for how projects can implement an Automated Decision System.
 
 The Government of Canada is increasingly looking to utilise technology and automated systems to make, or assist in making, administrative decisions to improve service delivery. It is committed to doing so in a manner that is compatible with core administrative law principles such as transparency, accountability, legality and procedural fairness.
-{: .dpgn-automated-decision data-dpgn-data-include='{ "standard": "8", "section": "introduction" }'}
+{: data-dpgn-data-include='{ "standard": "8", "section": "introduction" }' data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" data-content-source-title="Introduction, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}" .dpgn-automated-decision}
 
 <!-- markdownlint-disable MD032 -->
 - TOC
