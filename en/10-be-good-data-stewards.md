@@ -92,18 +92,6 @@ At every stage of a project, we should measure how well our service is working f
 - Publish metrics externally **(Digital Services Playbook (US))**
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-1} Decouple Master Data from applications and host within the appropriate system of record.
-- {: .dpgn-digital-architectural-keep-data-organized-2} Make systems of record authoritative central sources.
-{: .dpgn-digital-architectural}
-- {: .dpgn-digital-architectural-keep-data-organized-4} Design data resiliency in accordance with GC policies and standards.
-- {: .dpgn-digital-architectural-keep-data-organized-5} Use Master Data Management to provide a single point of reference for appropriate stakeholders.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
 
@@ -159,11 +147,6 @@ At every stage of a project, we should measure how well our service is working f
 
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep Data Organized (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized)
-
 </section>
 </section>
 
@@ -191,14 +174,6 @@ Measuring performance means continuously improving a service by:
 ### Checklist
 
 **[TODO: Add/revise checklist items]**
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-keep-data-organized-3} Assign data custodians to ensuring data is correct, consistent, and complete.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
 
 **Ensure data is well-structured, intuitive and in a format that is easy to integrate and reuse by others (formerly guideline 10.6):**
 {: .dpgn-data-ignore}
@@ -277,11 +252,6 @@ Measuring performance means continuously improving a service by:
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 - [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
 - [11. Measure performance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/11-measure-performance/)
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-keep-data-organized} [8. Keep Data Organized (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#keep-data-organized)
 
 </section>
 </section>
