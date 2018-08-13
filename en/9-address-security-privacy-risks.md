@@ -66,14 +66,6 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * Document the process for identifying, understanding new or ongoing security and privacy threats and the process for managing them
 * Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned.
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-* {: .dpgn-digital-architectural-security-privacy-4} Balance user and business needs with proportionate security measures.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
@@ -101,11 +93,6 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 * [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
 * [Privacy (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/privacy/)
 * [Secure services (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Privacy by Design (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
 
 </section>
 </section>
@@ -271,16 +258,6 @@ Canadians want to have confidence that government digital services are designed 
 * Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
 * Establish terms of services to ensure users understand how their data will be used and how it will be accessed
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-* {: .dpgn-digital-architectural-security-privacy-1} Implement security across all architectural layers.
-* {: .dpgn-digital-architectural-security-privacy-2} Categorize data properly to determine appropriate safeguards.
-* {: .dpgn-digital-architectural-security-privacy-3} Perform a privacy impact assessment (PIA) when personal information is involved.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
 
@@ -322,11 +299,6 @@ Canadians want to have confidence that government digital services are designed 
 * [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
 * [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [10. Security and Privacy by Design (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#security-and-privacy-by-design)
 
 </section>
 </section>
