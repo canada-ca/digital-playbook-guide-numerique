@@ -88,7 +88,7 @@ The Government of Canada is increasingly looking to utilise technology and autom
       - Requires specific authority from Treasury Board
 - {: data-dpgn-data-include='&#123; "guideline": "8.2", "section": "checklist" &#125;' data-content-source-title="Section 6.1.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that the [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}) remains up to date and accurately reflects the functionality of the Automated Decision System.
 - {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;' data-content-source-title="Section 6.1.4, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Release the final results of Algorithmic Impact Assessments in an accessible format via Government of Canada websites and services designated by the Treasury Board of Canada Secretariat pursuant to the [Directive on Open Government](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108).
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-initiation .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-initiation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -104,7 +104,7 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <!-- markdownlint-disable MD034 -->
 - {: data-dpgn-data-include='&#123; "guideline": "8.3", "section": "checklist" &#125;' {: data-content-source-title="Section 6.3.8, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Consult with the institution’s legal services unit, to ensure that the use of the Automated Decision System System is compliant with applicable legal requirements.
 - {: data-dpgn-data-include='&#123; "guideline": "9.4", "section": "checklist" &#125;' data-content-source-title="Section 6.3.7, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Conduct risk assessments throughout the development of the system and ensure appropriate safeguards to be applied, as per the [Policy on Government Security](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578).
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-analysis-approach .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-analysis-approach .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -148,7 +148,7 @@ The Government of Canada is increasingly looking to utilise technology and autom
     - Documentation on the design and functionality of the system
     - Reocurring training courses.
     - A means to verify that training has been completed.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-design-build .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-design-build .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -208,7 +208,7 @@ The Government of Canada is increasingly looking to utilise technology and autom
   - {: .dpgn-automated-decision-level-ii} **Level II:** None
   - {: .dpgn-automated-decision-level-iii} **Level III:** Ensure that a contingency plans and/or backup systems are available should the Automated Decision System be unavailable.
   - {: .dpgn-automated-decision-level-iv} **Level IV:** Ensure that a contingency plans and/or backup systems are available should the Automated Decision System be unavailable.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-deployment-operation .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-deployment-operation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
@@ -226,7 +226,7 @@ The Government of Canada is increasingly looking to utilise technology and autom
 - {: data-dpgn-data-include='&#123; "guideline": "5.3", "section": "checklist" &#125;' data-content-source-title="Section 6.5.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Publish information on the effectiveness and efficiency of Automated Decision Systems annually on a website or service designated by the Treasury Board of Canada.
 - {: data-dpgn-data-include='&#123; "guideline": "10.2", "section": "checklist" &#125;' data-content-source-title="Section 6.3.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices in accordance with the [Policy on Information Management](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742).
 - {: data-dpgn-data-include='&#123; "guideline": "10.2", "section": "checklist" &#125;' data-content-source-title="Section 6.5.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} When requested, provide information on the achievement of the expected results of the Automated Decision System and compliance with the [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) will be provided to the Treasury Board of Canada Secretariat.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-evaluation .dpgn-automated-decision}
+{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-evaluation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
