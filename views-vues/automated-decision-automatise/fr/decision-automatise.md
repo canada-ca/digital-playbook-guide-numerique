@@ -56,12 +56,12 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 </dd>
 <dt>Niveau III</dt>
 <dd>
-<p><strong>La décision a une incidence élevée sur les droits ou les intérêts d’une personne, d’une entité ou d’un organisme gouvernemental. </p>
+<p><strong>La décision a une incidence élevée sur les droits ou les intérêts d’une personne, d’une entité ou d’un organisme gouvernemental.</strong></p>
 <p>On peut raisonnablement considérer que la compromission entraînerait des dommages modérés à graves.</p>
 </dd>
 <dt>Niveau IV</dt>
 <dd>
-<p><strong>La décision a une incidence très élevée sur les droits ou les intérêts d’une personne, d’une entité ou d’un organisme gouvernemental.</p>
+<p><strong>La décision a une incidence très élevée sur les droits ou les intérêts d’une personne, d’une entité ou d’un organisme gouvernemental.</strong></p>
 <p>On peut raisonnablement considérer que la compromission entraînerait des dommages graves à catastrophiques.</p>
 </dd>
 </dl>
@@ -223,8 +223,8 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <!-- markdownlint-disable MD034 -->
 - {: data-dpgn-data-include='{ "guideline": "5.3", "section": "checklist" } data-content-source-title="Section 6.3.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Surveiller les résultats des systèmes décisionnels automatisés de façon continue afin de prévenir les résultats non intentionnels et assurer la conformité aux lois liées aux institutions et aux programmes, ainsi qu'à la [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}).
 - {: data-dpgn-data-include='{ "guideline": "5.3", "section": "checklist" } data-content-source-title="Section 6.5.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Publier des renseignements sur le'efficacité et l'efficience des systèmes décisionnels automatisés chaqu année dans un site Web ou un service désigné par le Conseil du Trésor du Canada.
--  {: data-dpgn-data-include='{ "guideline": "10.2", "section": "checklist" } data-content-source-title="Section 6.3.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Veiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l'essai pour s'assurer qu'elles sont toujours pertinentes, exactes et à jour, et respectent toute politique ou directive liée aux pratiques de gestion des données conformément à la [Politique sur la gestion de l'information](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=12742).
--  {: data-dpgn-data-include='{ "guideline": "10.2", "section": "checklist" } data-content-source-title="Section 6.5.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Sur demande, fournir des renseignements sur l'atteinte des résultats escomptés du système décisionnel automatisé et la conformité à la [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) au SCT.
+- {: data-dpgn-data-include='{ "guideline": "10.2", "section": "checklist" } data-content-source-title="Section 6.3.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Veiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l'essai pour s'assurer qu'elles sont toujours pertinentes, exactes et à jour, et respectent toute politique ou directive liée aux pratiques de gestion des données conformément à la [Politique sur la gestion de l'information](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=12742).
+- {: data-dpgn-data-include='{ "guideline": "10.2", "section": "checklist" } data-content-source-title="Section 6.5.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Sur demande, fournir des renseignements sur l'atteinte des résultats escomptés du système décisionnel automatisé et la conformité à la [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) au SCT.
 {: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-evaluation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
