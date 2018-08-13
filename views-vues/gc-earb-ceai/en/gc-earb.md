@@ -31,7 +31,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-align-gc-business-capability-model .dpgn-business-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-align-gc-business-capability-model" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-align-gc-business-capability-model" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 
@@ -49,7 +49,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-design-for-users-first .dpgn-digital-architectural-multidisciplinary-teams .dpgn-business-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-design-for-users-first,dpgn-digital-architectural-multidisciplinary-teams" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-design-for-users-first,dpgn-digital-architectural-multidisciplinary-teams" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 </section>
@@ -71,7 +71,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-keep-data-organized .dpgn-information-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-keep-data-organized" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-keep-data-organized" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 
@@ -88,7 +88,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-enable-interoperability .dpgn-information-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-enable-interoperability" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-enable-interoperability" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 </section>
@@ -109,7 +109,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-open-standards-solutions .dpgn-application-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-open-standards-solutions" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-open-standards-solutions" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 
@@ -126,7 +126,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-maximize-reuse .dpgn-application-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-maximize-reuse" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-maximize-reuse" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 </section>
@@ -146,7 +146,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-cloud-first .dpgn-technology-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-cloud-first" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-cloud-first" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 
@@ -162,7 +162,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-performance-availability-scalability .dpgn-technology-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-performance-availability-scalability" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-performance-availability-scalability" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 </section>
@@ -183,7 +183,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-security-privacy .dpgn-security-architecture-privacy .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-security-privacy" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-security-privacy" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 
@@ -199,7 +199,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 {: .dpgn-digital-architectural-measurable-accountable .dpgn-security-architecture-privacy .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
-{% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-digital-architectural-measurable-accountable" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
+{% include /functions/output-sections.html parentHeadingLevel="3" relevantTags="dpgn-digital-architectural-measurable-accountable" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
 </section>
