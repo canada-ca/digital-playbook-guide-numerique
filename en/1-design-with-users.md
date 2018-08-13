@@ -171,15 +171,6 @@ User needs are constantly evolving which it is why it is important to plan for o
 
 **[TODO: Add/revise checklist items]**
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-design-for-users-first-1} Focus on the needs of users, using agile, iterative and user-centred methods.
-- {: .dpgn-digital-architectural-design-for-users-first-2} Perform user research from the earliest design through to continuous improvements post-launch.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 **Alpha stage:**
 {: .dpgn-data-ignore}
 
@@ -231,11 +222,6 @@ User needs are constantly evolving which it is why it is important to plan for o
 ### Similar resources
 
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
-
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [3. Design for Users First (Digital Architectural Standards (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html#design-for-users-first)
 
 </section>
 </section>
