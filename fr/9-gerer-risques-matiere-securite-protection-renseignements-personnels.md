@@ -258,26 +258,6 @@ Canadians want to have confidence that government digital services are designed 
 * Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
 * Establish terms of services to ensure users understand how their data will be used and how it will be accessed
 
-**Digital Architectural Standards (GC):**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-* {: .dpgn-digital-architectural-security-privacy-1} Procéder à la mise en œuvre de la sécurité à l’échelle de tous les niveaux de l’architecture.
-* {: .dpgn-digital-architectural-security-privacy-2} Catégoriser les données correctement afin de déterminer les mécanismes de protection qui s’imposent.
-* {: .dpgn-digital-architectural-security-privacy-3} Mener une Évaluation des facteurs relatifs à la vie privée (ÉFVP) lorsque des renseignements personnels sont en jeu.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
-**Automated Decision Systems:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-<!-- markdownlint-disable MD034 -->
-* {: .dpgn-automated-decision-analysis-approach data-content-source-title="Section 6.3.7, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Effectuer des évaluations des risques tout au long de l'élaboration du système et s'assurer des mesures de protection appropriées à appliquer, conformément à la [Politique sur la sécurité du gouvernement](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=16578).
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
-<!-- markdownlint-enable MD034 -->
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
