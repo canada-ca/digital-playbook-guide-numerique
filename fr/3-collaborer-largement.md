@@ -73,14 +73,6 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 - Make sure the team fully understands the service after it's gone live **(Digital Service Standard (UK))**
 - faites participer l’équipe de maintenance du service aux premières étapes du projet **(Normes des services numériques (Ontario))**
 
-**Normes architecturales sur le numérique (GC)&#160;:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-digital-architectural-multidisciplinary-teams-1} Tenir compte de toutes les compétences nécessaires à la prestation, y compris celles qui ont trait aux exigences, à la conception, à l’élaboration et aux opérations.
-{: .dpgn-digital-architectural}
-<!-- markdownlint-enable MD032 -->
-
 **Automated Decision Systems:**
 {: .dpgn-data-ignore}
 
@@ -142,11 +134,6 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 - [2. Former une équipe adaptée (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-2)
 - [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
 - [2. Have a multidisciplinary team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/2-multidisciplinary-team/)
-
-**Normes architecturales sur le numérique (GC)&#160;:**
-{: .dpgn-data-ignore}
-
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [4. Assurer la prestation à l’aide d’équipes multidisciplinaires (Normes architecturales sur le numérique (GC))](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/fr/ceai-gc.html#assurer-la-prestation--laide-déquipes-multidisciplinaires)
 
 </section>
 </section>
