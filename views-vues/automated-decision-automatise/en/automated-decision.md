@@ -160,6 +160,8 @@ The Government of Canada is increasingly looking to utilise technology and autom
 
 ## 4. Deployment/Operation
 
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD034 -->
 - {: data-dpgn-data-include='{ "guideline": "5.1", "section": "checklist" } data-content-source-title="Section 6.2.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Make available to the public all of the source code used for the Automated Decision Systems on the [Open Resource Exchange](https://canada-ca.github.io/ore-ero/home.html).
 - {: data-dpgn-data-include='{ "guideline": "5.1", "section": "checklist" } data-content-source-title="Section 6.2.4, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} In cases where it is deemed that source code should not be disclosed, seek the approval of the Enterprise Architecture Review Board to exempt the disclosure. In these cases, the justification as to why code was not disclosed shall be published according to the process specified in the [Directive on Open Government](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108).
 - {: data-dpgn-data-include='{ "guideline": "5.1", "section": "checklist" } data-content-source-title="Section 6.2.5, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Source code for systems that are classified SECRET or TOP SECRET are exempt from making it available to the public on the Open Resource Exchange.
@@ -207,6 +209,8 @@ The Government of Canada is increasingly looking to utilise technology and autom
   - {: .dpgn-automated-decision-level-iii} **Level III:** Ensure that a contingency plans and/or backup systems are available should the Automated Decision System be unavailable.
   - {: .dpgn-automated-decision-level-iv} **Level IV:** Ensure that a contingency plans and/or backup systems are available should the Automated Decision System be unavailable.
 {: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-deployment-operation .dpgn-automated-decision}
+<!-- markdownlint-enable MD034 -->
+<!-- markdownlint-enable MD032 -->
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-deployment-operation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
@@ -216,11 +220,15 @@ The Government of Canada is increasingly looking to utilise technology and autom
 
 ## 5. Evaluation
 
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD034 -->
 - {: data-dpgn-data-include='{ "guideline": "5.3", "section": "checklist" } data-content-source-title="Section 6.3.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}).
 - {: data-dpgn-data-include='{ "guideline": "5.3", "section": "checklist" } data-content-source-title="Section 6.5.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Publish information on the effectiveness and efficiency of Automated Decision Systems annually on a website or service designated by the Treasury Board of Canada.
 - {: data-dpgn-data-include='{ "guideline": "10.2", "section": "checklist" } data-content-source-title="Section 6.3.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices in accordance with the [Policy on Information Management](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742).
 - {: data-dpgn-data-include='{ "guideline": "10.2", "section": "checklist" } data-content-source-title="Section 6.5.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} When requested, provide information on the achievement of the expected results of the Automated Decision System and compliance with the [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) will be provided to the Treasury Board of Canada Secretariat.
 {: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision-evaluation .dpgn-automated-decision}
+<!-- markdownlint-enable MD034 -->
+<!-- markdownlint-enable MD032 -->
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-evaluation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
