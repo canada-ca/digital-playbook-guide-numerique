@@ -92,17 +92,6 @@ At every stage of a project, we should measure how well our service is working f
 - Publish metrics externally **(Digital Services Playbook (US))**
 - Use an experimentation tool that supports multivariate testing in production **(Digital Services Playbook (US))**
 
-**Automated Decision Systems:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-<!-- markdownlint-disable MD034 -->
-- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.3.3, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices in accordance with the [Policy on Information Management](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742).
-- {: .dpgn-automated-decision-evaluation data-content-source-title="Section 6.5.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} When requested, provide information on the achievement of the expected results of the Automated Decision System and compliance with the [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) will be provided to the Treasury Board of Canada Secretariat.
-{: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .dpgn-automated-decision}
-<!-- markdownlint-enable MD034 -->
-<!-- markdownlint-enable MD032 -->
-
 </section>
 
 <section class="dpgn-section-guides">
