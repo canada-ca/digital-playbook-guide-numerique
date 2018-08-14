@@ -7,7 +7,7 @@ altLangPage: ajouter-contenu
 collectionDirectory: views-vues/open-gov-gouv-ouvert
 step1:
   title: "Step 1: Determine if the dataset or information asset should be released"
-  q1Label: Does the content help explain who you are? (e.g., Departmental/agency information, location(s) and contacts, constitutional and legal governance)
+  q1Label: Does the content help explain who you are? (e.g., Departmental / agency information, location(s) and contacts, constitutional and legal governance)
   q2Label: Is the content about the programs or services you offer? (e.g., description of services offered, including advice and guidance, publications, administrative data, transactions, grants and contributions and media releases)
   q3Label: Is the content about your finances, what you spend and how you spend it? (e.g., projected and actual income and expenditures, tendering, procurement and contracts, travel and hospitality, position reclassifications, annual report of Minister's office expenses)
   q4Label: Is the content about your priorities, and how you're doing? (e.g., strategy and performance information, assessments and reviews, Ministerial mandate letters, reports tabled in Parliament)
@@ -19,7 +19,7 @@ step1:
   q10Label: Will the asset provide value to other GC institutions and provide more effective services?
   q11Label: Does the asset provide information valuable to researchers, students, academics, or interested citizens?
   failTitle: Should not be released
-  failBody: Based upon your previous answers, the dataset or information asset should not be released.
+  failBody: Based upon your previous answers, the dataset or information asset should not be released as is.
 step2:
   title: "Step 2: Determine if the dataset or information asset is subject to restrictions"
   q1Label: Does the dataset or information contain classified or protected information?
@@ -33,10 +33,8 @@ step2:
   q2Sub6Label: f. Medical, criminal or employment history status?
   q2Footnote: Personal information, as defined by the Privacy Act, is 
   q2FootnoteQuote: \"information about an identifiable individual that is recorded in any form\"
-  q3Label: Does the dataset or information asset contain information about vulnerable or targeted individuals? (e.g., information related to policing activities or prison guards)
-  q4Label: Is the dataset or information asset subject to legal or contractual agreements that prevent it from being released? (e.g., commercial licenses, non-disclosure agreements of vendor limitations)
-  q5Label: Could the dataset or information be subject to legal or contractual agreements that prevent if rom being released? (e.g., commercial licenses, non-disclosure agreements of vendor limitations)
-  q6Label: Could the dataset or information asset potentially breach confidentiality if its release impairs the government's ability to make decisions? (e.g., court rulings or negotiations such as collective bargaining or international trade agreements)
+  q3Label: Does the dataset or information asset contain information about vulnerable or targeted individuals? (i.e., information related to policing activities or prison guards)
+  q4Label: Is the dataset or information asset subject to legal or contractual agreements that prevent it from being released?
   failTitle: Subject to restrictions
   failBody: Based upon your last answer, the dataset or information asset is subject to restrictions so it is not ready for release.
 step3:
@@ -46,11 +44,11 @@ step3:
   q3Label: Can the dataset or information asset be released under the Open Government Licence?
   q4Label: Has the asset been assessed and verified for quality? (e.g., completeness, accuracy, timeliness, consistency)
   q5Label: Has a data dictionary been developed to describe elements within the dataset?
-  q6Label: Has the dataset or information asset been approved for release to the publiv by the CIO / IMSO?
+  q6Label: Has the dataset or information asset been approved for release to the public by the CIO / IMSO?
   failTitle: Not ready for release
   failBody: Based upon your last answer, the dataset or information asset is not ready for release.
 fail:
-  help1: For more infomation on how to resolve this, and ensure that your content can be released, please consult the
+  help1: For more information on how to resolve this, and ensure that your content can be released, please consult the
   help2: or contact
 guidebook:
   linkText: Open Government Guidebook
@@ -85,9 +83,9 @@ For more detailed guidance on how to add your dataset or information asset on op
 
 ## Step 4. Release the dataset or information asset on open.canada.ca
 
-In order to add a dataset or information to the Open Government Portal, you will need to create a metadata record to describe the dataset or information asset using the Open Government Registry.
+Great news! Your dataset or information asset is ready to be released on [open.canada.ca](https://open.canada.ca)! In order to do this, you will need to create a metadata record to describe the dataset or information asset using the Open Government Registry.
 
-The [Open Government Registry Guide](https://open.canada.ca/ckan/en/dataset/c2529700-2728-5c39-9107-1102e9cfb7bb) provides details on the required steps to release a record on open.canada.ca.
+The [Open Government Registry Guide](https://open.canada.ca/ckan/en/dataset/c2529700-2728-5c39-9107-1102e9cfb7bb) provides details on the required steps to release a record on [open.canada.ca](https://open.canada.ca).
 
 Once the record has been developed, you can email <{{ page.contactEmail }}> to review your record, and have it released on open.canada.ca.
 

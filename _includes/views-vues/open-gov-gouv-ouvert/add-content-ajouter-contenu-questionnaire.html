@@ -47,7 +47,7 @@
 <h3 class="panel-title">{{ page.step1.failTitle }}</h3>
 </header>
 <div class="panel-body">
-<p>{{ page.step1.failBody }}</p>
+<p>{{ page.step1.failBody }} {{ page.fail.help1 }} [{{ page.guidebook.linkText }}]({{ page.guidebook.url }}), {{ page.fail.help2 }} <{{ page.contactEmail }}></p>
 </div>
 </div>
 
@@ -102,12 +102,12 @@
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
-  { "action": "addClass", "source": "#step2-q3-4-5-6-wrapper, #step3-4-wrapper", "class": "hidden" }
+  { "action": "addClass", "source": "#step2-q3-4-wrapper, #step3-4-wrapper", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "addClass", "source": "#step2-fail", "class": "hidden" },{%
   if qNumber == 6 %}
-  { "action": "removeClass", "source": "#step2-q3-4-5-6-wrapper", "class": "hidden" }{%
+  { "action": "removeClass", "source": "#step2-q3-4-wrapper", "class": "hidden" }{%
   else %}
   { "action": "append", "source": "#step2-q2Sub{{ qNumberNext }}" }{%
   endif %}
@@ -118,10 +118,10 @@
 
 </fieldset>
 
-<div id="step2-q3-4-5-6-wrapper" class="hidden">
+<div id="step2-q3-4-wrapper" class="hidden">
 <!-- Question 3 -->
 <div id="step2-q3" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>3. {{ page.step1.q3Label }}</p>
+<p>3. {{ page.step2.q3Label }}</p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
@@ -134,28 +134,20 @@
 </ul>
 </div>
 
-{% for qNumber in (4..6) %}{%
-  assign qNumberNext = qNumber | plus: 1 %}{%
-  assign labelKey = "q" | append: qNumber | append: "Label" %}
-<!-- Question {{ qNumber }} -->
-<div id="step2-q{{ qNumber }}" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas":"radio", "inline": true }'>
-<p>{{ qNumber }}. {{ page.step1[ labelKey ] }}</p>
+<!-- Question 4 -->
+<div id="step2-q4" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas":"radio", "inline": true }'>
+<p>4. {{ page.step2.q4Label }}</p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
   { "action": "addClass", "source": "#step3-4-wrapper", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "addClass", "source": "#step2-fail", "class": "hidden" },{%
-  if qNumber == 6 %}
-  { "action": "removeClass", "source": "#step3-4-wrapper", "class": "hidden" }{%
-  else %}
-  { "action": "append", "source": "#step2-q{{ qNumberNext }}" }{%
-  endif %}
+  { "action": "addClass", "source": "#step2-fail", "class": "hidden" },
+  { "action": "removeClass", "source": "#step3-4-wrapper", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
-{% endfor %}
 
 </div>
 
@@ -178,7 +170,7 @@
 
 <!-- Question 1 -->
 <div id="step3-q1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>1. {{ page.step1.q1Label }}</p>
+<p>1. {{ page.step3.q1Label }}</p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "addClass", "source": "#step3-fail", "class": "hidden" },
