@@ -11,22 +11,6 @@ comment %}@param contentStandardIndex {Number} Optional (required if guideline i
 comment %}@param contentGuidelineIndex {Number} Optional (defaults to none) Index of the guideline that is an ancestor of the content being processed.{% endcomment %}{% 
 comment %}@return {String} Returns the processed output from the content array.{% endcomment %}{% 
 comment %}Retrieve the title of the standard that is the ancestor of the content being processed{% endcomment %}{% 
-if include.contentStandardIndex %}{% 
-  if include.contentStandardIndex != lastContentStandardIndex %}{% 
-    assign lastContentStandardIndex = include.contentStandardIndex %}{% 
-    assign contentStandardTitle = dataSource.standards.content[include.contentStandardIndex].title %}{% 
-    assign contentStandardFilePath = site.baseurl | append: site.defaultView | append: "/" | append: page.lang | append: "/" | append: site.standardFile[include.contentStandardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
-  endif %}{% 
-  comment %}Retrieve the title of the guideline that is the ancestor of the content being processed{% endcomment %}{% 
-  if include.contentGuidelineIndex and include.contentGuidelineIndex != lastContentGuidelineIndex %}{% 
-    assign lastContentGuidelineIndex = include.contentGuidelineIndex %}{% 
-    assign contentGuidelineTitle = dataSource.standards.content[include.contentStandardIndex].guidelines.content[include.contentGuidelineIndex].title %}{% 
-    capture guidelineId %}{% 
-      include /functions/generate-id.html string=contentGuidelineTitle %}{% 
-    endcapture %}{% 
-    assign contentGuidelineId = guidelineId | strip %}{% 
-  endif %}{% 
-endif %}{% 
 comment %}Ensure the relevant tags are in an array{% endcomment %}{% 
 if include.relevantTags.size > 0 %}{% 
   if include.relevantTags.first %}{% 
@@ -181,20 +165,13 @@ for item in include.contentArray %}{%
           include /functions/class-from-tags.html tags=allClasses %}{% 
         endcapture %}{% 
         if include.contentStandardIndex and item.source_element == "li" or item.source_element == "p" or item.source_element == "td" or item.source_element == "div" %}{% 
-          capture contentDetailsBlock %}
-<details class="dpgn-content-details hide">
-<summary markdown="0">{{ site.ContentDetails[page.lang] }}</summary>
-<ul>
-<li><strong>{{ site.DigitalStandardNbsp[page.lang] }}{{ site.Colon[page.lang] }}</strong> <a href="{{ contentStandardFilePath }}">{{ contentStandardTitle }}</a></li>{% 
-            if include.contentGuidelineIndex %}
-<li><strong>{{ site.Guideline[page.lang] }}{{ site.Colon[page.lang] }}</strong> <a href="{{ contentStandardFilePath }}#{{ contentGuidelineId }}">{{ contentGuidelineTitle }}</a></li>{% 
-            endif %}
-<li><strong>{{ site.Tags[page.lang] }}{{ site.Colon[page.lang] }}</strong> <code>{{ item.tags | join: ", " }}</code></li>{% 
-            if item.content_source %}
-<li><strong>{{ site.ContentSource[page.lang] }}{{ site.Colon[page.lang] }}</strong> {% if item.content_source.uri.size > 0 %}<a href="{{ item.content_source.uri }}">{% endif %}{{ item.content_source.title }}{% if item.content_source.uri.size > 0 %}</a>{% endif %}</li>{% 
-            endif %}
-</ul>
-</details>
+          capture contentDetailsBlock %}{%
+          assign tagsString = item.tags | join: " " %}{% 
+          if item.content_source %}
+{%          include /functions/output-content-details.html contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex tags=tagsString contentSourceTitle=item.content_source.title contentSourceURI=item.content_source.uri %}{%
+          else %}
+{%          include /functions/output-content-details.html contentStandardIndex=include.contentStandardIndex contentGuidelineIndex=include.contentGuidelineIndex tags=tagsString %}{%
+          endif %}
 {%        endcapture %}{% 
         else %}{% 
           assign contentDetailsBlock = "" %}{% 

@@ -75,6 +75,9 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 
 ## 1. Initiation
 
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
+
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
 - {: data-dpgn-data-include='&#123; "guideline": "8.2", "section": "checklist" &#125;' data-content-source-title="Section 6.1.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Mener une [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}) avant la production tout système décisionnel automatisé.
@@ -92,6 +95,8 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-initiation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
@@ -99,6 +104,9 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <section>
 
 ## 2. Analyse / approche
+
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
@@ -108,6 +116,8 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-analysis-approach" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
@@ -115,6 +125,9 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <section>
 
 ## 3. Conception / construction
+
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
@@ -152,6 +165,8 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-design-build" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
@@ -159,6 +174,9 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <section>
 
 ## 4. Déploiement / opération
+
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
@@ -212,12 +230,17 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-deployment-operation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 </section>
 
 <section>
 
 ## 5. Évaluation
+
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
@@ -228,6 +251,8 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 {: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-evaluation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
+
+</section>
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-evaluation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
