@@ -1,0 +1,38 @@
+{% comment %}@overview Outputs the details for a block of content.{% endcomment %}{% 
+comment %}@param contentStandardIndex {Number} Index of the standard that is an ancestor of the content for which details are being provided.{% endcomment %}{% 
+comment %}@param contentGuidelineIndex {Number} Optional (defaults to none) Index of the guideline that is an ancestor of the content for which details are being provided.{% endcomment %}{% 
+comment %}@param tags {String} Optional (defaults to none) Space separated tags associated with the content block.{% endcomment %}{% 
+comment %}@param contentSourceTitle {String} Optional (defaults to none) Title of the source of the content.{% endcomment %}{% 
+comment %}@param contentSourceURI {String} Optional (defaults to none) URI of the source of the content.{% endcomment %}{% 
+comment %}@return {String} Returns the content details.{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}{% 
+if include.contentStandardIndex %}{% 
+  if include.contentStandardIndex != lastContentStandardIndex %}{% 
+    assign lastContentStandardIndex = include.contentStandardIndex %}{% 
+    assign contentStandardTitle = dataSource.standards.content[include.contentStandardIndex].title %}{% 
+    assign contentStandardFilePath = site.baseurl | append: site.defaultView | append: "/" | append: page.lang | append: "/" | append: site.standardFile[include.contentStandardIndex][page.lang] | append: site.RenderedFileExtension %}{% 
+  endif %}{% 
+  comment %}Retrieve the title of the guideline that is the ancestor of the content being processed{% endcomment %}{% 
+  if include.contentGuidelineIndex and include.contentGuidelineIndex != lastContentGuidelineIndex %}{% 
+    assign lastContentGuidelineIndex = include.contentGuidelineIndex %}{% 
+    assign contentGuidelineTitle = dataSource.standards.content[include.contentStandardIndex].guidelines.content[include.contentGuidelineIndex].title %}{% 
+    capture guidelineId %}{% 
+      include /functions/generate-id.html string=contentGuidelineTitle %}{% 
+    endcapture %}{% 
+    assign contentGuidelineId = guidelineId | strip %}{% 
+  endif %}{% 
+endif %}
+<details class="dpgn-content-details hide dpgn-data-ignore">
+<summary markdown="0">{{ site.ContentDetails[page.lang] }}</summary>
+<ul>
+<li><strong>{{ site.DigitalStandardNbsp[page.lang] }}{{ site.Colon[page.lang] }}</strong> <a href="{{ contentStandardFilePath }}">{{ contentStandardTitle }}</a></li>{% 
+if include.contentGuidelineIndex %}
+<li><strong>{{ site.Guideline[page.lang] }}{{ site.Colon[page.lang] }}</strong> <a href="{{ contentStandardFilePath }}#{{ contentGuidelineId }}">{{ contentGuidelineTitle }}</a></li>{% 
+endif %}
+<li><strong>{{ site.Tags[page.lang] }}{{ site.Colon[page.lang] }}</strong> <code>{{ include.tags }}</code></li>{% 
+if include.contentSourceTitle %}
+<li><strong>{{ site.ContentSource[page.lang] }}{{ site.Colon[page.lang] }}</strong> {% if include.contentSourceURI.size > 0 %}<a href="{{ include.contentSourceURI }}">{% endif %}{{ include.contentSourceTitle }}{% if include.contentSourceURI.size > 0 %}</a>{% endif %}</li>{% 
+endif %}
+</ul>
+</details>

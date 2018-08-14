@@ -272,17 +272,6 @@ for sectionKey in guidelineSectionsOrderArray %}{%
         endif %}{% 
         include /functions/class-from-tags.html tags=allTags %}{% 
       endcapture %}{% 
-      if sectionKey == "checklist" %}{% 
-        assign glyphicon = "check text-success" %}{% 
-      elsif sectionKey == "guides" %}{% 
-        assign glyphicon = "book text-info" %}{% 
-      elsif sectionKey == "solutions" %}{% 
-        assign glyphicon = "refresh text-success" %}{% 
-      elsif sectionKey == "similar" %}{% 
-        assign glyphicon = "bookmark text-muted" %}{% 
-      else %}{% 
-        assign glyphicon = "" %}{% 
-      endif %}{% 
       if sectionKey == "introduction" %}
 <div{{ classOutput | rstrip }}>
 
@@ -291,12 +280,8 @@ for sectionKey in guidelineSectionsOrderArray %}{%
 </div>
 {%    else %}
 <section{{ classOutput | rstrip }}>
-
-<h{{ subsectionHeadingLevel }}>{% if glyphicon.size > 0 %}<span class="glyphicon glyphicon-{{ glyphicon }}" aria-hidden="true"></span>
-{% endif %}{{ guideline[sectionKey].title }}</h{{ subsectionHeadingLevel }}>
-
+{% include /functions/output-section-heading.html parentHeadingLevel=include.parentHeadingLevel sectionType=sectionKey %}
 {{ sectionContentStrip }}
-
 </section>
 {%    endif %}{% 
     endif %}{% 

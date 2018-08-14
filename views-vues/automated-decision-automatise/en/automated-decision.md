@@ -75,9 +75,12 @@ The Government of Canada is increasingly looking to utilise technology and autom
 
 ## 1. Initiation
 
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
+
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
-- {: data-dpgn-data-include='&#123; "guideline": "8.2", "section": "checklist" &#125;' data-content-source-title="Section 6.1.1, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Complete an [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}), prior to the production of any Automated Decision System.
+- {: data-dpgn-data-include='&#123; "guideline": "8.2", "section": "checklist" &#125;' data-content-source-title="{{ contentSourceTitle611 }}"} Complete an [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}), prior to the production of any Automated Decision System.
 - {: data-dpgn-data-include='&#123; "guideline": "8.3", "section": "checklist" &#125;' data-content-source-title="Section 6.1.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Apply the following relevant requirements as determined by the [{{ site.AutomatedDecisionSystems.ImpactAssessment[ page.lang ] | downcase }}]({{ site.AutomatedDecisionSystems.ImpactAssessmentURL[ page.lang ] }}):
   - {: data-content-source-title="Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Approval Requirement:
     - {: .dpgn-automated-decision-level-i} **Level I:** None
@@ -92,6 +95,8 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-initiation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
@@ -99,6 +104,9 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <section>
 
 ## 2. Analysis/Approach
+
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
@@ -108,6 +116,8 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-analysis-approach" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
@@ -115,6 +125,9 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <section>
 
 ## 3. Design/Build
+
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
@@ -152,6 +165,8 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-design-build" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
@@ -159,6 +174,9 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <section>
 
 ## 4. Deployment/Operation
+
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
@@ -212,6 +230,8 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
 
+</section>
+
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-deployment-operation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 
 </section>
@@ -219,6 +239,9 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <section>
 
 ## 5. Evaluation
+
+<section>
+{% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD034 -->
@@ -229,6 +252,8 @@ The Government of Canada is increasingly looking to utilise technology and autom
 {: data-content-source-uri="{{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}" .lst-spcd .dpgn-automated-decision-evaluation .dpgn-automated-decision}
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD032 -->
+
+</section>
 
 {% include /functions/output-sections.html parentHeadingLevel="2" relevantTags="dpgn-automated-decision-evaluation" groupListsSeparately=true guidelineSectionsOrder="guides,solutions" %}
 

@@ -1,0 +1,20 @@
+{% comment %}@overview Outputs the heading for standard sections.{% endcomment %}{% 
+comment %}@param parentHeadingLevel {Number} Heading level for the current section.{% endcomment %}{% 
+comment %}@param sectionType {String} Type of section for which to display a heading (e.g., "checklist", "guides", "solutions", "similar"){% endcomment %}{% 
+comment %}@return {String} Outputs the section heading.{% endcomment %}{% 
+assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}{% 
+assign sectionHeadingLevel = include.parentHeadingLevel | plus: 1 %}{% 
+if include.sectionType == "checklist" %}{% 
+  assign glyphicon = "check text-success" %}{% 
+elsif include.sectionType == "guides" %}{% 
+  assign glyphicon = "book text-info" %}{% 
+elsif include.sectionType == "solutions" %}{% 
+  assign glyphicon = "refresh text-success" %}{% 
+elsif include.sectionType == "similar" %}{% 
+  assign glyphicon = "bookmark text-muted" %}{% 
+else %}{% 
+  assign glyphicon = "" %}{% 
+endif %}
+<h{{ sectionHeadingLevel }}>{% if glyphicon.size > 0 %}<span class="glyphicon glyphicon-{{ glyphicon }}" aria-hidden="true"></span>
+{% endif %}{{ dataSource.standards.content[ 0 ].guidelines.content[ 0 ][ include.sectionType ].title}}</h{{ sectionHeadingLevel }}>
