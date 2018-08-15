@@ -68,7 +68,7 @@ Each piece of content can be tagged through the use of CSS classes, where each p
 Tags can be applied directly to content in the source .md files, using either the HTML class attribute (for blocks of HTML content) or through the Kramdown approach for applying CSS classes (for blocks of Markdown content). Tags applied to a parent container (e.g., list) will also apply to the child items.
 
 <!-- markdownlint-disable MD032 -->
-<table>
+<table class="table table-bordered" markdown="0">
   <thead>
     <tr>
       <th>Content type</th>
@@ -79,12 +79,12 @@ Tags can be applied directly to content in the source .md files, using either th
   <tbody>
     <tr>
       <td>Section / container</td>
-      <td>``&lt;section class="dpgn-stage-alpha dpgn-stage-live"&gt;...&lt;/section&gt;``</td>
+      <td><pre>&lt;section class="dpgn-stage-alpha dpgn-stage-live"&gt;...&lt;/section&gt;</pre></td>
       <td>n/a</td>
     </tr>
     <tr>
       <td>List</td>
-      <td>``&lt;ul class="dpgn-stage-alpha dpgn-stage-live"&gt;...&lt;/ul&gt;``</td>
+      <td><pre>&lt;ul class="dpgn-stage-alpha dpgn-stage-live"&gt;...&lt;/ul&gt;</pre></td>
       <td><pre>&lt;!-- markdownlint-disable MD032 --&gt;
 - List item 1
 - List item 2
@@ -94,12 +94,12 @@ Tags can be applied directly to content in the source .md files, using either th
     </tr>
     <tr>
       <td>List item</td>
-      <td>``&lt;li class="dpgn-stage-alpha dpgn-stage-live"&gt;List item&lt;/li&gt;``</td>
+      <td><pre>&lt;li class="dpgn-stage-alpha dpgn-stage-live"&gt;List item&lt;/li&gt;</pre></td>
       <td><pre>- {: .dpgn-stage-alpha .dpgn-stage-live} List item</pre></td>
     </tr>
     <tr>
       <td>Table</td>
-      <td>``&lt;table class="dpgn-stage-alpha dpgn-stage-live"&gt;``</td>
+      <td><pre>&lt;table class="dpgn-stage-alpha dpgn-stage-live"&gt;</pre></td>
       <td><pre>
 | Header 1 | Header 2 |
 |----------|----------|
@@ -108,17 +108,17 @@ Tags can be applied directly to content in the source .md files, using either th
     </tr>
     <tr>
       <td>Table row</td>
-      <td>``&lt;tr class="dpgn-stage-alpha dpgn-stage-live"&gt;``</td>
+      <td><pre>&lt;tr class="dpgn-stage-alpha dpgn-stage-live"&gt;</pre></td>
       <td>n/a</td>
     </tr>
     <tr>
       <td>Table cell</td>
-      <td>``&lt;td class="dpgn-stage-alpha dpgn-stage-live"&gt;Table cell&lt;/td&gt;``</td>
+      <td><pre>&lt;td class="dpgn-stage-alpha dpgn-stage-live"&gt;Table cell&lt;/td&gt;</pre></td>
       <td>n/a</td>
     </tr>
     <tr>
       <td>Paragraph</td>
-      <td>``&lt;p class="dpgn-stage-alpha dpgn-stage-live"&gt;Paragraph content&lt;/p&gt;``</td>
+      <td><pre>&lt;p class="dpgn-stage-alpha dpgn-stage-live"&gt;Paragraph content&lt;/p&gt;</pre></td>
       <td><pre>Paragraph content
 {: .dpgn-stage-alpha .dpgn-stage-live}</pre></td>
     </tr>
@@ -290,6 +290,21 @@ The following are three of the more commonly used helper functions. For the rest
 - **Returns:** {String} Returns the processed output from the content array.
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
+
+## Including content from the view in the Playbook dataset
+
+Normally the source of content for the Playbook dataset are the .md files in the /en and /fr directories. It is also possible to include content from the /views-vues directory. To do that, add the ``data-dpgn-data-include`` attribute to the content in question.
+
+- ``data-dpgn-data-include='{ "guideline": "8.2", "section": "checklist" }'``
+  - Adds the content to the checklist section of guideline 8.2
+- ``data-dpgn-data-include='{ "standard": "8", "section": "introduction" }'``
+  - Adds the content to the introduction of standard 8
+
+The content can only be added to a sub-section of a guideline or standard within the dataset. The supported sections are the named sections with the standard or guideline (``introduction`` in the case of a standard and ``introduction``, ``checklist``, ``guides`` or ``solutions`` in the case of a guideline).
+
+**Note:** When applying the attribute in Markdown files, the curly brackets need to be escaped:
+
+``- {: data-dpgn-data-include='&#123; "guideline": "8.2", "section": "checklist" &#125;'} List item content``
 
 ## Testing the view
 

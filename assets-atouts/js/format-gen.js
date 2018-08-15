@@ -230,7 +230,7 @@ var componentName = "wb-format-gen",
       var outputLink = document.createElement( "a" ),
           isDownloadAttrSupported = outputLink.download !== undefined,
           type = settings[ "type" ].toLowerCase(),
-          source = settings[ "source" ] ? setting[ "source" ].toLowerCase() : null,
+          source = settings[ "source" ] ? settings[ "source" ].toLowerCase() : null,
           filename = settings[ "filename" ],
           fileData, mimeType, blobOutput, urlOutput;
 
