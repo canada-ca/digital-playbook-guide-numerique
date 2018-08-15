@@ -633,6 +633,12 @@ Recommendation:
 Summary:
   en: Summary
   fr: Sommaire
+SaveToFile:
+  en: Save progress to a file
+  fr: Enregistrer la progression dans un fichier
+RestoreFromFile:
+  en: Restore progress from a file
+  fr: Restaurer la progression à partir d'un fichier
 
 # Footnote strings
 Footnotes:

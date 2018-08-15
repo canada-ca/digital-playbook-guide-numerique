@@ -1,4 +1,4 @@
-<section>
+<section id="questionnaire-section">
 
 ## {{ site.Questionnaire[ page.lang ] }}
 
@@ -1532,5 +1532,14 @@
 </div>
 </form>
 </section>
+
+<div markdown="0" class="btn-group mrgn-tp-md">
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "source": "form-state", "container": "#questionnaire-section", "filename": "aia-form-state" }'>{{ site.SaveToFile[ page.lang ] }}</button>
+
+<button type="button" class="btn btn-default" onclick="document.getElementById( 'restore-from-file' ).click();">{{ site.RestoreFromFile[ page.lang ] }}</button>
+<div class="hidden">
+<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": ".json", "action": "restore-form-state", "container": "#questionnaire-section" }' />
+</div>
+</div>
 
 </section>
