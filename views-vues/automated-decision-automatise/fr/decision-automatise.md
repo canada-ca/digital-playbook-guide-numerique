@@ -151,7 +151,7 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
     - Chercheurs qualifiés d'une organisation non gouvernementale pertinente
     - Tiers fournisseur à forfait avec une spécialisation connexe
     - **OU :** Publication des spécifications du système décisionnel automatisé dans une revue à comité de lecture
-- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;' data-content-source-title="Section 6.3.5 et Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} S'assurer que les employés pertinents sont suffisament formés lors de la conception, de la fonction et de la mise en œuvre du système décisionnel automatisé pour être en mesure d'examiner, d'expliquer et de superviser le processus décisionnel automatisé, comme il est prescrit dans ce qui suit&#160;:
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;' data-content-source-title="Section 6.3.5 et Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} S'assurer que les employés pertinents sont suffisament formés lors de la conception, de la fonction et de la mise en œuvre du système décisionnel automatisé pour être en mesure d'examiner, d'expliquer et de superviser le processus décisionnel automatisé, comme il est prescrit dans ce qui suit&#160;:
   - {: .dpgn-automated-decision-level-i} **Niveau I :** Aucune
   - {: .dpgn-automated-decision-level-ii} **Niveau II :** Documents sur la conception et la fonctionnalité du système
   - {: .dpgn-automated-decision-level-iii} **Niveau III :**

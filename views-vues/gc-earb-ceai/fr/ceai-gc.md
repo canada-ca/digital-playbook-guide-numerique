@@ -51,9 +51,9 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 - {: data-dpgn-data-include='&#123; "guideline": "1.2", "section": "checklist" &#125;'} Miser sur les besoins des utilisateurs; se servir de méthodes agiles, itératives et axées sur l’utilisateur
 - {: data-dpgn-data-include='&#123; "guideline": "2.2", "section": "checklist" &#125;'} Se conformer aux exigences en matière d’accessibilité et de langues officielles
 - {: data-dpgn-data-include='&#123; "guideline": "3.1", "section": "checklist" &#125;'} Tenir compte de toutes les compétences nécessaires à la prestation, y compris celles qui ont trait aux exigences, à la conception, à l’élaboration et aux opérations
-- {: data-dpgn-data-include='&#123; "guideline": "4.4", "section": "checklist" &#125;'} Travailler de façon à couvrir le cycle de vie tout entier de l’application, de son élaboration à sa mise à l’essai, et du déploiement aux opérations
-- {: data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Veiller à ce que l’on tienne compte de la qualité tout au long du cycle de vie d’élaboration du logiciel
-- {: data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Encourager et adopter le développement piloté par les tests (DPT) pour améliorer la confiance qui règne entre les entreprises et la TI
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.4", "section": "checklist" &#125;'} Travailler de façon à couvrir le cycle de vie tout entier de l’application, de son élaboration à sa mise à l’essai, et du déploiement aux opérations
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Veiller à ce que l’on tienne compte de la qualité tout au long du cycle de vie d’élaboration du logiciel
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Encourager et adopter le développement piloté par les tests (DPT) pour améliorer la confiance qui règne entre les entreprises et la TI
 {: .lst-spcd .dpgn-digital-architectural-design-for-users-first .dpgn-digital-architectural-multidisciplinary-teams .dpgn-business-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
