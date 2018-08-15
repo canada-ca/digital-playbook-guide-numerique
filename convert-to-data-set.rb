@@ -165,7 +165,7 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					last_item_index = content_array.length - 1
 					if last_item_index >= 0 && (node.name === "ol" || node.name == "ul") && content_array[last_item_index]["source_element"] === node.name
 						# Clear the tags on the ol/ul since they may not be representative (will be on the individual items anyway)
-						content_array[last_item_index]["tags"] = nil
+						content_array[last_item_index].delete("tags")
 
 						# Combine the class and source attributes
 						if !content_array[last_item_index]["source_attributes"].nil?
@@ -269,7 +269,10 @@ lang.each do |lang|
 		else
 			tags = elem_intro["class"].split(" ")
 		end
-		introduction["tags"] = tags
+
+		if !tags.nil? && tags.size > 0
+			introduction["tags"] = tags
+		end
 		introduction["content"] = build_content_array(elem_intro, true, 2, logger, tags)
 		data["introduction"] = introduction
 	else
@@ -328,7 +331,10 @@ lang.each do |lang|
 			else
 				tags = elem_standard_intro["class"].split(" ")
 			end
-			standard_intro["tags"] = tags
+
+			if !tags.nil? && tags.size > 0
+				standard_intro["tags"] = tags
+			end
 			standard_intro["content"] = build_content_array(elem_standard_intro, true, 1, logger, tags)
 		else
 			# Handling for standard intro not being found
@@ -389,7 +395,11 @@ lang.each do |lang|
 					else
 						tags = elem_guideline_section["class"].split(" ")
 					end
-					guideline_section["tags"] = tags
+
+					if !tags.nil? && tags.size > 0
+						guideline_section["tags"] = tags
+					end
+
 					guideline_section["content"] = build_content_array(elem_guideline_section, true, guideline_section_name == "introduction" ? 2 : 3, logger, tags)
 				else
 					# Handling for guideline section not being found
@@ -430,6 +440,7 @@ lang.each do |lang|
 			data_include = JSON.parse(content_block["data-dpgn-data-include"])
 			section = data_include["section"]
 
+			# Figure out which standard and optionally guideline to inject the content into
 			if data_include["guideline"].nil?
 				standard_index = data_include["standard"].to_i - 1
 				guideline_index = nil
@@ -441,20 +452,46 @@ lang.each do |lang|
 				parent_heading_level = section == "introduction" ? 3 : 4
 			end
 
-			content_block_object = Hash.new
-
-			if content_block["class"].nil? || content_block["class"].length == 0
-				tags = Array.new
+			if section != "introduction" && ( content_block.name == "ul" || content_block.name == "ol" )
+				# Strip off the parent ul/ol while processing
+				content_array = build_content_array(content_block, true, parent_heading_level, logger, tags)
 			else
-				tags = content_block["class"].split(" ")
+				content_array = build_content_array(content_block_nodeset, false, parent_heading_level, logger, tags)
 			end
-			content_block_object["tags"] = tags
 
-			content_block_object["content"] = build_content_array(content_block_nodeset, false, parent_heading_level, logger, tags)
+			# Find the section to inject the content into
 			if guideline_index.nil?
-				data["standards"]["content"][standard_index][section]["content"].push(content_block_object)
+				section_content_array = data["standards"]["content"][standard_index][section]["content"]
 			else
-				data["standards"]["content"][standard_index]["guidelines"]["content"][guideline_index][section]["content"].push(content_block_object)
+				section_content_array = data["standards"]["content"][standard_index]["guidelines"]["content"][guideline_index][section]["content"]
+			end
+
+			if section != "introduction" && ( content_block.name == "li" || content_block.name == "ul" || content_block.name == "ol" )
+				# Find a list to insert the content into (starting at the end of the section)
+				target_content_array = nil
+				section_content_array.reverse.each do |content_object|
+					source_element = content_object["source_element"]
+					if source_element == "ul"
+						target_content_array = content_object["content"]
+						break
+					end
+
+					if target_content_array.nil?
+						new_list_object = Hash.new
+						new_list_object["content_type"] = "block"
+						new_list_object["source_element"] = "ul"
+						new_list_object["content"] = Array.new
+						section_content_array.push(new_list_object)
+						target_content_array = section_content_array.last["content"]
+					end
+				end
+			else
+				target_content_array = section_content_array
+			end
+
+			# Push each content object into the target object
+			content_array.each do |content_object|
+				target_content_array.push(content_object)
 			end
                 end
 	end

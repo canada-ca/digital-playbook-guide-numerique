@@ -51,9 +51,9 @@ This page provides personalized guidance for how projects can meet the Governmen
 - {: data-dpgn-data-include='&#123; "guideline": "1.2", "section": "checklist" &#125;'} Focus on the needs of users, using agile, iterative, and user-centred methods
 - {: data-dpgn-data-include='&#123; "guideline": "2.2", "section": "checklist" &#125;'} Conform to both accessibility and official languages requirements
 - {: data-dpgn-data-include='&#123; "guideline": "3.1", "section": "checklist" &#125;'} Include all skillsets required for delivery, including for requirements, design, development, and operations
-- {: data-dpgn-data-include='&#123; "guideline": "4.4", "section": "checklist" &#125;'} Work across the entire application lifecycle, from development and testing to deployment and operations
-- {: data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Ensure quality is considered throughout the Software Development Lifecycle
-- {: data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.4", "section": "checklist" &#125;'} Work across the entire application lifecycle, from development and testing to deployment and operations
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Ensure quality is considered throughout the Software Development Lifecycle
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT
 {: .lst-spcd .dpgn-digital-architectural-design-for-users-first .dpgn-digital-architectural-multidisciplinary-teams .dpgn-business-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 

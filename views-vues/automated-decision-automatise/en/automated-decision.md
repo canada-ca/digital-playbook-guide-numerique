@@ -151,7 +151,7 @@ The Government of Canada is increasingly looking to utilise technology and autom
     - Qualified researchers from a relevant non-governmental organization
     - Contracted third-party vendor with a related specialization
     - **OR:** Publishing specifications of the Automated Decision System in a peer-reviewed journal
-- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;' data-content-source-title="Section 6.3.5 and Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that the relevant employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as prescribed in the following:
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;' data-content-source-title="Section 6.3.5 and Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Ensure that the relevant employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as prescribed in the following:
   - {: .dpgn-automated-decision-level-i} **Level I:** None
   - {: .dpgn-automated-decision-level-ii} **Level II:** Documentation on the design and functionality of the system
   - {: .dpgn-automated-decision-level-iii} **Level III:**

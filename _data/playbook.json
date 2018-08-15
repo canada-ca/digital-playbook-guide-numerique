@@ -767,8 +767,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -1030,8 +1029,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               }
@@ -1077,7 +1075,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "tags": null,
                     "content": [
                       {
                         "content_type": "block",
@@ -1286,14 +1283,7 @@
                             "content": "document any problems you haven't been able to solve in beta and how you'll handle them in public beta <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -1833,8 +1823,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -2188,8 +2177,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               }
@@ -2622,8 +2610,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -2759,8 +2746,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               }
@@ -3915,15 +3901,7 @@
                             "content": "show ongoing testing plans for accessibility so that your users can continue to access the service. <strong>(Digital Service Standard (AU))</strong>"
                           }
                         ]
-                      }
-                    ],
-                    "tags": null
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -6529,14 +6507,7 @@
                             "content": "Involve the maintenance team for the service early on in the project <strong>(Digital Service Standard (Ontario))</strong>"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -6546,14 +6517,7 @@
                             "content": "Include all skillsets required for delivery, including for requirements, design, development, and operations"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -7942,23 +7906,22 @@
                             "content": "Be prepared to adapt to a frequently changing digital environment that is consistently evolving (e.g., emerging tech, emerging threats/security concerns, increased use of artificial intelligence, etc.), and act accordingly."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
                           "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)"
                         },
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-standards-hide"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-standards-hide"
+                            ],
                             "content": "Ensure that the relevant employees are sufficiently trained in the design, function, and implementation of the Automated Decision System to be able to review, explain and oversee automated decision-making, as prescribed in the following:\n        "
                           },
                           {
@@ -7967,6 +7930,9 @@
                               "title": "Section 6.3.5 and Appendix C, Directive on Automated Decision-Making (draft) (GC)"
                             },
                             "source_element": "ul",
+                            "tags": [
+                              "dpgn-standards-hide"
+                            ],
                             "content": [
                               {
                                 "content_type": "block",
@@ -7975,13 +7941,15 @@
                                 },
                                 "source_element": "li",
                                 "tags": [
-                                  "dpgn-automated-decision-level-i"
+                                  "dpgn-automated-decision-level-i",
+                                  "dpgn-standards-hide"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-                                      "dpgn-automated-decision-level-i"
+                                      "dpgn-automated-decision-level-i",
+                                      "dpgn-standards-hide"
                                     ],
                                     "content": "<strong>Level I:</strong> None"
                                   }
@@ -7994,13 +7962,15 @@
                                 },
                                 "source_element": "li",
                                 "tags": [
-                                  "dpgn-automated-decision-level-ii"
+                                  "dpgn-automated-decision-level-ii",
+                                  "dpgn-standards-hide"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-                                      "dpgn-automated-decision-level-ii"
+                                      "dpgn-automated-decision-level-ii",
+                                      "dpgn-standards-hide"
                                     ],
                                     "content": "<strong>Level II:</strong> Documentation on the design and functionality of the system"
                                   }
@@ -8013,13 +7983,15 @@
                                 },
                                 "source_element": "li",
                                 "tags": [
-                                  "dpgn-automated-decision-level-iii"
+                                  "dpgn-automated-decision-level-iii",
+                                  "dpgn-standards-hide"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-                                      "dpgn-automated-decision-level-iii"
+                                      "dpgn-automated-decision-level-iii",
+                                      "dpgn-standards-hide"
                                     ],
                                     "content": "<strong>Level III:</strong>"
                                   },
@@ -8030,7 +8002,8 @@
                                     },
                                     "source_element": "ul",
                                     "tags": [
-                                      "dpgn-automated-decision-level-iii"
+                                      "dpgn-automated-decision-level-iii",
+                                      "dpgn-standards-hide"
                                     ],
                                     "content": [
                                       {
@@ -8040,13 +8013,15 @@
                                         },
                                         "source_element": "li",
                                         "tags": [
-                                          "dpgn-automated-decision-level-iii"
+                                          "dpgn-automated-decision-level-iii",
+                                          "dpgn-standards-hide"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
-                                              "dpgn-automated-decision-level-iii"
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-standards-hide"
                                             ],
                                             "content": "Documentation on the design and functionality of the system"
                                           }
@@ -8059,13 +8034,15 @@
                                         },
                                         "source_element": "li",
                                         "tags": [
-                                          "dpgn-automated-decision-level-iii"
+                                          "dpgn-automated-decision-level-iii",
+                                          "dpgn-standards-hide"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
-                                              "dpgn-automated-decision-level-iii"
+                                              "dpgn-automated-decision-level-iii",
+                                              "dpgn-standards-hide"
                                             ],
                                             "content": "Training courses muse be completed."
                                           }
@@ -8082,13 +8059,15 @@
                                 },
                                 "source_element": "li",
                                 "tags": [
-                                  "dpgn-automated-decision-level-iv"
+                                  "dpgn-automated-decision-level-iv",
+                                  "dpgn-standards-hide"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-                                      "dpgn-automated-decision-level-iv"
+                                      "dpgn-automated-decision-level-iv",
+                                      "dpgn-standards-hide"
                                     ],
                                     "content": "<strong>Level IV:</strong>"
                                   },
@@ -8099,7 +8078,8 @@
                                     },
                                     "source_element": "ul",
                                     "tags": [
-                                      "dpgn-automated-decision-level-iv"
+                                      "dpgn-automated-decision-level-iv",
+                                      "dpgn-standards-hide"
                                     ],
                                     "content": [
                                       {
@@ -8109,13 +8089,15 @@
                                         },
                                         "source_element": "li",
                                         "tags": [
-                                          "dpgn-automated-decision-level-iv"
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-standards-hide"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
-                                              "dpgn-automated-decision-level-iv"
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-standards-hide"
                                             ],
                                             "content": "Documentation on the design and functionality of the system"
                                           }
@@ -8128,13 +8110,15 @@
                                         },
                                         "source_element": "li",
                                         "tags": [
-                                          "dpgn-automated-decision-level-iv"
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-standards-hide"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
-                                              "dpgn-automated-decision-level-iv"
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-standards-hide"
                                             ],
                                             "content": "Reocurring training courses."
                                           }
@@ -8147,13 +8131,15 @@
                                         },
                                         "source_element": "li",
                                         "tags": [
-                                          "dpgn-automated-decision-level-iv"
+                                          "dpgn-automated-decision-level-iv",
+                                          "dpgn-standards-hide"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
-                                              "dpgn-automated-decision-level-iv"
+                                              "dpgn-automated-decision-level-iv",
+                                              "dpgn-standards-hide"
                                             ],
                                             "content": "A means to verify that training has been completed."
                                           }
@@ -8390,8 +8376,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -8703,37 +8688,35 @@
                             "content": "The service can be improved through iteration with the necessary resources and flexibility."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-standards-hide"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-standards-hide"
+                            ],
                             "content": "Ensure quality is considered throughout the Software Development Lifecycle"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-standards-hide"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-standards-hide"
+                            ],
                             "content": "Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT"
                           }
                         ]
@@ -8924,20 +8907,19 @@
                             "content": "Allow employees to grow into personal roles, and avoid the limits of hierarchy within team member/manager dynamics."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-standards-hide"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-standards-hide"
+                            ],
                             "content": "Work across the entire application lifecycle, from development and testing to deployment and operations"
                           }
                         ]
@@ -9324,15 +9306,7 @@
                             "content": "Keep track of changes to it using version control"
                           }
                         ]
-                      }
-                    ],
-                    "tags": null
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -9342,14 +9316,7 @@
                             "content": "Make source code open and reusable under an appropriate open source software license"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -9359,14 +9326,7 @@
                             "content": "Expose public data to implement Open Data and Open Information initiatives"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -9376,14 +9336,7 @@
                             "content": "Share code publicly when appropriate, and when not, share within the Government of Canada"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -9396,14 +9349,7 @@
                             "content": "Release the final results of Algorithmic Impact Assessments in an accessible format via Government of Canada websites and services designated by the Treasury Board of Canada Secretariat pursuant to the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108\">Directive on Open Government</a>."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -9416,14 +9362,7 @@
                             "content": "Make available to the public all of the source code used for the Automated Decision Systems on the <a href=\"https://canada-ca.github.io/ore-ero/home.html\">Open Resource Exchange</a>."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -9436,14 +9375,7 @@
                             "content": "In cases where it is deemed that source code should not be disclosed, seek the approval of the Enterprise Architecture Review Board to exempt the disclosure. In these cases, the justification as to why code was not disclosed shall be published according to the process specified in the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108\">Directive on Open Government</a>."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -9456,14 +9388,7 @@
                             "content": "Source code for systems that are classified SECRET or TOP SECRET are exempt from making it available to the public on the Open Resource Exchange."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -9476,14 +9401,7 @@
                             "content": "Ensure that all licenses required for the Automated Decision Systems are open licenses as listed in the <a href=\"https://drive.google.com/open?id=1xISkyXdlFVw5cZv91SKQSVJ88R5OtmPLp33NeH28PQY\">Open Source Software Registry</a>."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -9607,8 +9525,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -9760,8 +9677,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               }
@@ -9805,9 +9721,8 @@
                     ]
                   },
                   {
-                    "tags": [
-
-                    ],
+                    "content_type": "block",
+                    "source_element": "ul",
                     "content": [
                       {
                         "content_type": "block",
@@ -9966,7 +9881,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "tags": null,
                     "content": [
                       {
                         "content_type": "block",
@@ -10183,14 +10097,7 @@
                             "content": "track people moving from using the offline service to the online one <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -10200,14 +10107,7 @@
                             "content": "Make an audit trail available for all transactions to ensure accountability and non repudiation"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -10217,14 +10117,7 @@
                             "content": "Establish business and IT metrics to enable business outcomes"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -10234,14 +10127,7 @@
                             "content": "Apply oversight and lifecycle management to digital investments through governance"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -10254,14 +10140,7 @@
                             "content": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as the <a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Directive on Automated Decision-Making (draft) (GC)</a>."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -11061,15 +10940,7 @@
                             "content": "Determine your strategy for dealing with outages, including who's responsible and the decisions they can make <strong>(Digital Service Standard (UK))</strong>"
                           }
                         ]
-                      }
-                    ],
-                    "tags": null
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11079,14 +10950,7 @@
                             "content": "Model business processes using Unified Modelling language to identify common enterprise processes"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11096,14 +10960,7 @@
                             "content": "Use open source standards, solutions, components, and leading practices"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11113,14 +10970,7 @@
                             "content": "Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11130,14 +10980,7 @@
                             "content": "Design for resiliency"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11147,14 +10990,7 @@
                             "content": "Ensure response times meet user needs, and critical services are highly available"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11164,14 +11000,7 @@
                             "content": "Support zero-downtime deployments for planned and unplanned maintenance"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11181,14 +11010,7 @@
                             "content": "Use distributed architectures, assume failure will happen, handle errors gracefully, and monitor actively"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -11510,8 +11332,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -11723,8 +11544,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               }
@@ -11942,15 +11762,7 @@
                             "content": "Departments and agencies should consider portability and interoperability of services when designing cloud-based solutions."
                           }
                         ]
-                      }
-                    ],
-                    "tags": null
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11960,14 +11772,7 @@
                             "content": "Define program services as business capabilities to establish a common vocabulary between business, development, and operation"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11977,14 +11782,7 @@
                             "content": "Identify capabilities that are common to the GC enterprise and can be shared and reused"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -11994,14 +11792,7 @@
                             "content": "Run applications in containers"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12011,14 +11802,7 @@
                             "content": "Leverage enterprise digital exchange components such as the GC Service Bus, Digital Exchange Platform, and the API Store based on fit-for-use"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12028,14 +11812,7 @@
                             "content": "Leverage and reuse existing solutions, components, and processes"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12045,14 +11822,7 @@
                             "content": "Select enterprise and cluster solutions over department-specific solutions"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12062,14 +11832,7 @@
                             "content": "Achieve simplification by minimizing duplication of components and adhering to relevant standards"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12079,14 +11842,7 @@
                             "content": "Inform the GC EARB about departmental investments and innovations"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12096,14 +11852,7 @@
                             "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12113,14 +11862,7 @@
                             "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12429,8 +12171,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               }
@@ -12556,14 +12297,7 @@
                             "content": "Design APIs to be easy to memorize by implementing a consistent and precise naming convention. Use plain language and recognizable patterns and concepts, avoiding abbreviations where possible."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12573,14 +12307,7 @@
                             "content": "Expose all functionality as services"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -12590,14 +12317,7 @@
                             "content": "Use microservices built around business capabilities. Scope each service to a single purpose"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -13209,7 +12929,6 @@
                   {
                     "content_type": "block",
                     "source_element": "ul",
-                    "tags": null,
                     "content": [
                       {
                         "content_type": "block",
@@ -15298,8 +15017,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -15504,29 +15222,22 @@
               ]
             },
             {
+              "content_type": "block",
+              "content_source": {
+                "title": "Introduction, Directive on Automated Decision-Making (draft) (GC)",
+                "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
+              },
+              "source_element": "p",
               "tags": [
                 "dpgn-automated-decision"
               ],
               "content": [
                 {
-                  "content_type": "block",
-                  "content_source": {
-                    "title": "Introduction, Directive on Automated Decision-Making (draft) (GC)",
-                    "uri": "https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok"
-                  },
-                  "source_element": "p",
+                  "content_type": "inline",
                   "tags": [
                     "dpgn-automated-decision"
                   ],
-                  "content": [
-                    {
-                      "content_type": "inline",
-                      "tags": [
-                        "dpgn-automated-decision"
-                      ],
-                      "content": "The Government of Canada is increasingly looking to utilise technology and automated systems to make, or assist in making, administrative decisions to improve service delivery. It is committed to doing so in a manner that is compatible with core administrative law principles such as transparency, accountability, legality and procedural fairness."
-                    }
-                  ]
+                  "content": "The Government of Canada is increasingly looking to utilise technology and automated systems to make, or assist in making, administrative decisions to improve service delivery. It is committed to doing so in a manner that is compatible with core administrative law principles such as transparency, accountability, legality and procedural fairness."
                 }
               ]
             }
@@ -15599,9 +15310,8 @@
                     ]
                   },
                   {
-                    "tags": [
-
-                    ],
+                    "content_type": "block",
+                    "source_element": "ul",
                     "content": [
                       {
                         "content_type": "block",
@@ -15976,14 +15686,7 @@
                             ]
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -16527,9 +16230,8 @@
                     ]
                   },
                   {
-                    "tags": [
-
-                    ],
+                    "content_type": "block",
+                    "source_element": "ul",
                     "content": [
                       {
                         "content_type": "block",
@@ -16543,14 +16245,7 @@
                             "content": "Complete an <a href=\"https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html\">algorithmic impact assessment</a>, prior to the production of any Automated Decision System."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -16653,9 +16348,8 @@
                     ]
                   },
                   {
-                    "tags": [
-
-                    ],
+                    "content_type": "block",
+                    "source_element": "ul",
                     "content": [
                       {
                         "content_type": "block",
@@ -16826,14 +16520,7 @@
                             ]
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -16846,14 +16533,7 @@
                             "content": "Consult with the institution’s legal services unit, to ensure that the use of the Automated Decision System System is compliant with applicable legal requirements."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -16956,9 +16636,8 @@
                     ]
                   },
                   {
-                    "tags": [
-
-                    ],
+                    "content_type": "block",
+                    "source_element": "ul",
                     "content": [
                       {
                         "content_type": "block",
@@ -18300,14 +17979,7 @@
                             "content": "Establish terms of services to ensure users understand how their data will be used and how it will be accessed"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18317,14 +17989,7 @@
                             "content": "Implement security across all architectural layers"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18334,14 +17999,7 @@
                             "content": "Categorize data properly to determine appropriate safeguards"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18351,14 +18009,7 @@
                             "content": "Perform a privacy impact assessment (PIA) when personal information is involved"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18368,14 +18019,7 @@
                             "content": "Balance user and business needs with proportionate security measures"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -18809,14 +18453,7 @@
                             "content": "Use an experimentation tool that supports multivariate testing in production <strong>(Digital Services Playbook (US))</strong>"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18826,14 +18463,7 @@
                             "content": "Decouple Master Data from applications and host within the appropriate system of record"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18843,14 +18473,7 @@
                             "content": "Make systems of record authoritative central sources"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18860,14 +18483,7 @@
                             "content": "Assign data custodians to ensuring data is correct, consistent, and complete"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18877,14 +18493,7 @@
                             "content": "Design data resiliency in accordance with GC policies and standards"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "source_element": "li",
@@ -18894,14 +18503,7 @@
                             "content": "Use Master Data Management to provide a single point of reference for appropriate stakeholders"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -18914,14 +18516,7 @@
                             "content": "Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices in accordance with the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742\">Policy on Information Management</a>."
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "tags": [
-
-                    ],
-                    "content": [
+                      },
                       {
                         "content_type": "block",
                         "content_source": {
@@ -19113,8 +18708,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
@@ -19583,8 +19177,7 @@
                           }
                         ]
                       }
-                    ],
-                    "tags": null
+                    ]
                   }
                 ]
               },
