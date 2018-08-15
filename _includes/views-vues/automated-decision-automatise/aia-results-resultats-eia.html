@@ -11,12 +11,12 @@
     "inputs": [
       { "type": "add",
         "inputs": [
-          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score, .question-12-checkbox-score, .question-13-checkbox-score, .question-26-checkbox-score) td:first-of-type span:not(.hidden)" },
+          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, [class*=-checkbox-score]) td:first-of-type span:not(.hidden)" },
           { "type": "conditional",
             "inputs": [
               { "type": ">",
                 "inputs": [
-                  { "type": "count", "query": "#detailed-results-table .question-1-yes:not(.hidden)" }, 0
+                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-1-yes:not(.hidden)" }, 0
                 ]
               }
             ],
@@ -31,7 +31,7 @@
             "inputs": [
               { "type": ">",
                 "inputs": [
-                  { "type": "count", "query": "#detailed-results-table .question-10-yes:not(.hidden)" }, 0
+                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-11-yes:not(.hidden)" }, 0
                 ]
               }
             ],
@@ -46,7 +46,7 @@
             "inputs": [
               { "type": ">",
                 "inputs": [
-                  { "type": "count", "query": "#detailed-results-table .question-12-yes:not(.hidden)" }, 0
+                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-13-yes:not(.hidden)" }, 0
                 ]
               }
             ],
@@ -61,7 +61,7 @@
             "inputs": [
               { "type": ">",
                 "inputs": [
-                  { "type": "count", "query": "#detailed-results-table .question-13-yes:not(.hidden)" }, 0
+                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-14-yes:not(.hidden)" }, 0
                 ]
               }
             ],
@@ -76,7 +76,7 @@
             "inputs": [
               { "type": ">",
                 "inputs": [
-                  { "type": "count", "query": "#detailed-results-table .question-26-yes:not(.hidden)" }, 0
+                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-27-yes:not(.hidden)" }, 0
                 ]
               }
             ],
@@ -87,14 +87,11 @@
               { "type": "outputValue", "value": 0 }
             ]
           }
-        ],
-        "outputTarget": "#required-questions-answered, #required-questions-answered-overlay"
+        ]
       },
-      { "type": "add", 
-        "inputs": [
-          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .question-1-checkbox-score, .question-10-checkbox-score, .question-12-checkbox-score, .question-13-checkbox-score, .question-26-checkbox-score)" }, 5
-        ],
-        "outputTarget": "#required-questions-total, #required-questions-total-overlay"
+      {
+        "type": "count",
+        "query": "#detailed-results-table tbody tr:not(.hidden, [class*=-checkbox-score]), #detailed-results-table tbody tr[class*=-checkbox-score][id*=a-result]:not(.hidden)"
       }
     ]
   },
@@ -107,7 +104,7 @@
       { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
-] }'></progress> <span id="questionnaire-progress-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
+] }'></progress> <span id="questionnaire-progress-percent">0</span>{{ site.Percent[ page.lang ] }}</p><p id="tester"></p><p id="tester2"></p>
 </section>
 
 <section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
@@ -595,25 +592,25 @@ endfor %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="8.3" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="9" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="10" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11a" parentQuestionNumber="10" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11b" parentQuestionNumber="10" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11c" parentQuestionNumber="10" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11d" parentQuestionNumber="10" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11e" parentQuestionNumber="10" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11f" parentQuestionNumber="10" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11g" parentQuestionNumber="10" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11a" parentQuestionNumber="11" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11b" parentQuestionNumber="11" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11c" parentQuestionNumber="11" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11d" parentQuestionNumber="11" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11e" parentQuestionNumber="11" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11f" parentQuestionNumber="11" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11g" parentQuestionNumber="11" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="12" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="12.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13a" parentQuestionNumber="12" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13b" parentQuestionNumber="12" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13c" parentQuestionNumber="12" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13d" parentQuestionNumber="12" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13e" parentQuestionNumber="12" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14a" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14b" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14c" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14d" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14e" parentQuestionNumber="13" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13a" parentQuestionNumber="13" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13b" parentQuestionNumber="13" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13c" parentQuestionNumber="13" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13d" parentQuestionNumber="13" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13e" parentQuestionNumber="13" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14a" parentQuestionNumber="14" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14b" parentQuestionNumber="14" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14c" parentQuestionNumber="14" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14d" parentQuestionNumber="14" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14e" parentQuestionNumber="14" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="15" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="16" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="17" %}
@@ -631,13 +628,13 @@ endfor %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="25.2" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="26" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="26.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27a" parentQuestionNumber="26" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27b" parentQuestionNumber="26" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27c" parentQuestionNumber="26" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27d" parentQuestionNumber="26" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27e" parentQuestionNumber="26" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27f" parentQuestionNumber="26" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27g" parentQuestionNumber="26" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27a" parentQuestionNumber="27" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27b" parentQuestionNumber="27" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27c" parentQuestionNumber="27" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27d" parentQuestionNumber="27" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27e" parentQuestionNumber="27" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27f" parentQuestionNumber="27" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27g" parentQuestionNumber="27" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="28" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="29" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="30" %}

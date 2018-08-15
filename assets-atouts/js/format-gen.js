@@ -230,6 +230,7 @@ var componentName = "wb-format-gen",
       var outputLink = document.createElement( "a" ),
           isDownloadAttrSupported = outputLink.download !== undefined,
           type = settings[ "type" ].toLowerCase(),
+          source = settings[ "source" ] ? setting[ "source" ].toLowerCase() : null,
           filename = settings[ "filename" ],
           fileData, mimeType, blobOutput, urlOutput;
 
@@ -237,7 +238,11 @@ var componentName = "wb-format-gen",
         fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
         mimeType = "text/csv;charset=utf-8;";
       } else if ( type === "json" ) {
-        fileData = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
+        if ( source === "form-state" ) {
+          fileData = JSON.stringify( getFormFieldStatus( settings[ "container" ] ) );
+        } else {
+          fileData = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
+        }
         mimeType = "application/json;charset=utf-8;";
       } else {
         return;
@@ -289,6 +294,11 @@ var componentName = "wb-format-gen",
              } else if ( settings[ "type" ] === "json" ) {
                fileData = JSON.parse( fileText );
              }
+
+             if ( settings[ "action" ] === "restore-form-state" ) {
+               setFormFieldStatus( settings[ "container" ], fileData );
+             }
+
              return fileData;
            } else {
              return fileText;
@@ -329,12 +339,131 @@ var componentName = "wb-format-gen",
      * @method retrieveData
      * @param dataKey {String} Key for retrieving the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to retrieve the data from localStorage
+     * @return {String} Returns the stored data.
      */
     retrieveData = function( dataKey, useLocalStorage ) {
       if ( useLocalStorage ) {
         return localStorage( dataKey );
       } else {
         return sessionStorage (dataKey );
+      }
+    },
+
+    /**
+     * @method getFormFieldStatus
+     * @param formsSelector {String} Selector for the form(s) for which to retrieve the statuses of the contained fields.
+     * @return {Array} Returns an array of objects with each containing a selector for a form field ("selector") and the current status ("status").
+     */
+    getFormFieldStatus = function( formsSelector ) {
+      var forms = document.querySelectorAll( formsSelector ),
+          numForms = forms.length,
+          fieldObjects = [],
+          form, formIndex, fields, numFields, index, field, nodeName, type, radioButtons, name, hasChecked;
+
+      for ( formIndex = 0; formIndex < numForms; formIndex += 1 ) {
+        form = forms[ formIndex ];
+        fields = form.querySelectorAll( "input, select, textarea" );
+        numFields = fields.length;
+
+        for ( index = 0; index < numFields; index += 1 ) {
+          field = fields[ index ];
+          nodeName = field.nodeName.toLowerCase();
+          if ( nodeName === "input" ) {
+            type = field.type.toLowerCase();
+            if ( type === "radio" ) {
+              name = field.name;
+              hasChecked = false;
+
+              while ( index < numFields ) {
+                if (field.type === "radio" && field.name === name ) {
+                  if ( field.checked === true ) {
+                    fieldObjects.push( { selector: "#" + field.id, state: true } );
+                    hasChecked = true;
+                  }
+                  index += 1;
+                  field = fields[ index ];
+                } else {
+                  index -= 1;
+                  break;
+                }
+              }
+
+              if ( !hasChecked ) {
+                fieldObjects.push( { selector: "input[name=" + name + "]", state: false } );
+              }
+            } else if ( type === "checkbox" ) {
+              fieldObjects.push( { selector: "#" + field.id, state: field.checked } );
+            } else if ( type !== "button" && type !== "reset" && type !== "submit" && type !== "image" ) {
+              fieldObjects.push( { selector: "#" + field.id, state: field.value } );
+            } 
+          } else if ( nodeName === "select" ) {
+            if ( field.selectedIndex !== -1 ) {
+              fieldObjects.push( { selector: "#" + field.id + " option:nth-child(" + ( field.selectedIndex + 1 ) + ")", state: true } );
+            } else {
+              fieldObjects.push( { selector: "#" + field.id + " option", state: false } );
+            }
+            subField.selected = fieldObject.state;
+          } else if ( nodeName === "textarea" ) {
+            fieldObjects.push( { selector: "#" + field.id, state: field.value } );
+          }
+        }
+      }
+
+      return fieldObjects;
+    },
+
+    /**
+     * @method setFormFieldStatus
+     * @param formsSelector {String} Selector for the form(s) for which to set the statuses of the contained fields.
+     * @param fields {Array} Array of objects with each containing a selector for a form field ("selector") and that status to set ("status").
+     */
+    setFormFieldStatus = function( formsSelector, fields ) {
+      var forms = document.querySelectorAll( formsSelector ),
+          numForms = forms.length,
+          numFields = fields.length,
+          form, formIndex, index, fieldObject, index2, subFields, numSubFields, subField, nodeName, type;
+
+      for ( formIndex = 0; formIndex < numForms; formIndex += 1 ) {
+        form = forms[ formIndex ];
+        for ( index = 0; index < numFields; index += 1 ) {
+          fieldObject = fields[ index ];
+          subFields = form.querySelectorAll( fieldObject.selector );
+          numSubFields = subFields.length;
+          for ( index2 = 0; index2 < numSubFields; index2 += 1 ) {
+            subField = subFields[ index2 ];
+            nodeName = subField.nodeName.toLowerCase();
+            if ( nodeName === "input" ) {
+              type = subField.type.toLowerCase();
+              if ( type === "radio" ) {
+                if ( subField.checked !== fieldObject.state ) {
+                  if ( subField.checked === true ) {
+                    subField.checked = false;
+                    subField.change();
+                  } else {
+                    subField.click();
+                  }
+                }
+              } else if ( type === "checkbox" ) {
+                if ( subField.checked !== fieldObject.state ) {
+                  subField.click();
+                }
+              } else if ( type !== "file" && type !== "button" && type !== "reset" && type !== "submit" && type !== "image" ) {
+                subField.value = fieldObject.state;
+              } 
+            } else if ( nodeName === "option" ) {
+              if ( subField.selected !== fieldObject.state ) {
+                if ( subField.selected === true ) {
+                  subField.selected = false;
+                  subField.parentNode.change();
+                } else {
+                  subField.click();
+                }
+              }
+            } else if ( nodeName === "textarea" ) {
+              subField.value = fieldObject.state;
+            }
+          }
+        }
       }
     }
 
