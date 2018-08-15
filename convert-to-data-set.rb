@@ -19,7 +19,7 @@ if site_data == nil
 end
 common_data = site_data["common"]
 jekyll_output_dir = "rendered_site/"
-jekyll_exclude = ["views-vues", "docs"]
+jekyll_exclude = ["views-vues/single-page-seule", "views-vues/standard-normes", "views-vues/view-template-modele-vue", "views-vues/comparison-comparatif", "views-vues/dev-stages", "docs"]
 
 def build_content_array(html_block, is_parent, parent_heading_level, logger, parent_tags, parent_content_source = nil)
 	content_array = Array.new
@@ -45,6 +45,10 @@ def build_content_array(html_block, is_parent, parent_heading_level, logger, par
 					node.delete("class")
 				else
 					tags = Array.new
+				end
+
+				if node.attribute("data-dpgn-data-include")
+					node.delete("data-dpgn-data-include")
 				end
 
 				content_source_title = node.get_attribute("data-content-source-title")
@@ -404,6 +408,56 @@ lang.each do |lang|
 	end
 	standards["content"] = standards_content
 	data["standards"] = standards
+
+	# Process the view files, looking for data-dpgn-data-include
+	Dir["#{jekyll_output_dir}views-vues/**/#{lang}/*.html"].each do |file_html|
+		next if File.directory? file_html
+
+		logger.info("Processing '#{file_html}'")
+		html_dom = File.open(file_html) { |f| Nokogiri::HTML(f) }
+		if html_dom == nil
+			logger.fatal("Could not process '#{file_html}'")
+			abort
+		end
+
+		include_content_blocks = html_dom.css("[data-dpgn-data-include]")
+		content_blocks_max_index = include_content_blocks.size - 1
+
+                for index in 0..content_blocks_max_index
+                        content_block_nodeset = include_content_blocks[index,1]
+			content_block = content_block_nodeset[0]
+
+			data_include = JSON.parse(content_block["data-dpgn-data-include"])
+			section = data_include["section"]
+
+			if data_include["guideline"].nil?
+				standard_index = data_include["standard"].to_i - 1
+				guideline_index = nil
+				parent_heading_level = section == "introduction" ? 2 : 3
+			else
+				destination = data_include["guideline"].split(".")
+				standard_index = destination[0].to_i - 1
+				guideline_index = destination[1].to_i - 1
+				parent_heading_level = section == "introduction" ? 3 : 4
+			end
+
+			content_block_object = Hash.new
+
+			if content_block["class"].nil? || content_block["class"].length == 0
+				tags = Array.new
+			else
+				tags = content_block["class"].split(" ")
+			end
+			content_block_object["tags"] = tags
+
+			content_block_object["content"] = build_content_array(content_block_nodeset, false, parent_heading_level, logger, tags)
+			if guideline_index.nil?
+				data["standards"]["content"][standard_index][section]["content"].push(content_block_object)
+			else
+				data["standards"]["content"][standard_index]["guidelines"]["content"][guideline_index][section]["content"].push(content_block_object)
+			end
+                end
+	end
 
 	output_dataset = "_data/#{site_data["playbookData"]["#{lang}"]}.json"
 	logger.info("Generating '#{output_dataset}'")
