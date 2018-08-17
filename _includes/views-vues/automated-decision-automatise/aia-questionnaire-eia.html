@@ -6,10 +6,10 @@
 <section id="aia-about-respondant-section" class="wb-frmvld">
 <form id="aia-about-respondant-form" method="post">
 
-### About the Respondant (Optional)
+### {{ page.aboutRespondantSection }}
 
 <div class="form-group" markdown="0">
-<label for="name">Name</label>
+<label for="name">{{ page.fieldName }}</label>
 <input id="name" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#name", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -22,7 +22,7 @@
 </div>
 
 <div class="form-group" markdown="0">
-<label for="dept-name">Department name</label>
+<label for="dept-name">{{ page.fieldDepartment }}</label>
 <select id="dept-name" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#dept-name", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -32,7 +32,7 @@
     ]
   }
 ] }'>
-<option></option>{%
+<option>{{ page.selectDepartment }}</option>{%
 assign departmentNames = site.data.departments | sort: page.lang %}{%
 for department in departmentNames %}
 <option value="{{ department.number }}">{{ department[ page.lang ] }}</option>{%
@@ -41,7 +41,7 @@ endfor %}
 </div>
 
 <div class="form-group" markdown="0">
-<label for="branch">Branch</label>
+<label for="branch">{{ page.fieldBranch }}</label>
 <input id="branch" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#branch", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [

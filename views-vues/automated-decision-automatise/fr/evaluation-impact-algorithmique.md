@@ -5,6 +5,11 @@ lang: fr
 altLang: en
 altLangPage: algorithmic-impact-assessment
 collectionDirectory: views-vues/automated-decision-automatise
+aboutRespondantSection: À propos du répondant (facultatif)
+fieldName: Nom
+fieldDepartment: Ministère
+selectDepartment: Sélectionnez une ministère
+fieldBranch: Direction générale
 aboutDecisionSection: A propos de la décision
 dataBusinessProcessSection: Données et processus métier
 systemFunctionalitySection: Fonctionnalité du système
