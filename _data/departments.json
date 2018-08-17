@@ -1,0 +1,507 @@
+[
+  {
+    "number": "001",
+    "en": "Agriculture and Agri-Food (Department of)",
+    "fr": "Agriculture et de l'Agroalimentaire (Ministère de l')"
+  },
+  {
+    "number": "002",
+    "en": "Office of the Auditor General",
+    "fr": "Bureau du vérificateur général"
+  },
+  {
+    "number": "004",
+    "en": "Public Service Commission",
+    "fr": "Commission de la fonction publique"
+  },
+  {
+    "number": "005",
+    "en": "Foreign Affairs, Trade and Development (Department of)",
+    "fr": "Affaires étrangères, du Commerce et du Développement (Ministère des)"
+  },
+  {
+    "number": "006",
+    "en": "Finance (Department of)",
+    "fr": "Finances (Ministère des)"
+  },
+  {
+    "number": "007",
+    "en": "Environment (Department of the)",
+    "fr": "Environnement (Ministère de l')"
+  },
+  {
+    "number": "008",
+    "en": "Office of the Governor General's Secretary",
+    "fr": "Bureau du secrétaire du gouverneur général"
+  },
+  {
+    "number": "009",
+    "en": "Senate",
+    "fr": "Sénat"
+  },
+  {
+    "number": "011",
+    "en": "Office of the Superintendent of Financial Institutions",
+    "fr": "Bureau du surintendant des institutions financières"
+  },
+  {
+    "number": "012",
+    "en": "Economic Development Agency of Canada for the Regions of Quebec",
+    "fr": "Agence de développement économique du Canada pour les régions du Québec"
+  },
+  {
+    "number": "013",
+    "en": "Justice (Department of)",
+    "fr": "Justice (Ministère de la)"
+  },
+  {
+    "number": "014",
+    "en": "Employment and Social Development (Department of)",
+    "fr": "Emploi et du Développement social (Ministère de l')"
+  },
+  {
+    "number": "015",
+    "en": "Office of the Chief Electoral Officer",
+    "fr": "Bureau du directeur général des élections"
+  },
+  {
+    "number": "016",
+    "en": "Canadian Radio-television and Telecommunications Commission",
+    "fr": "Conseil de la radiodiffusion et des télécommunications canadiennes"
+  },
+  {
+    "number": "017",
+    "en": "Library of Parliament",
+    "fr": "Bibliothèque du Parlement"
+  },
+  {
+    "number": "018",
+    "en": "National Defence (Department of)",
+    "fr": "Défense nationale (Ministère de la)"
+  },
+  {
+    "number": "019",
+    "en": "Office of the Director of Public Prosecutions",
+    "fr": "Bureau du directeur des poursuites pénales"
+  },
+  {
+    "number": "021",
+    "en": "Veterans Affairs (Department of)",
+    "fr": "Anciens Combattants (Ministère des)"
+  },
+  {
+    "number": "022",
+    "en": "Health (Department of)",
+    "fr": "Santé (Ministère de la)"
+  },
+  {
+    "number": "023",
+    "en": "Atlantic Canada Opportunities Agency",
+    "fr": "Agence de promotion économique du Canada atlantique"
+  },
+  {
+    "number": "024",
+    "en": "International Joint Commission (Canadian Section)",
+    "fr": "Commission mixte internationale (section canadienne)"
+  },
+  {
+    "number": "025",
+    "en": "Privy Council Office",
+    "fr": "Bureau du Conseil privé"
+  },
+  {
+    "number": "027",
+    "en": "Natural Sciences and Engineering Research Council",
+    "fr": "Conseil de recherches en sciences naturelles et en génie"
+  },
+  {
+    "number": "030",
+    "en": "Royal Canadian Mounted Police",
+    "fr": "Gendarmerie royale du Canada"
+  },
+  {
+    "number": "032",
+    "en": "Immigration and Refugee Board",
+    "fr": "Commission de l'immigration et du statut de réfugié"
+  },
+  {
+    "number": "033",
+    "en": "Industry (Department of)",
+    "fr": "Industrie (Ministère de l')"
+  },
+  {
+    "number": "034",
+    "en": "Transport (Department of)",
+    "fr": "Transports (Ministère des)"
+  },
+  {
+    "number": "035",
+    "en": "National Research Council of Canada",
+    "fr": "Conseil national de recherches du Canada"
+  },
+  {
+    "number": "037",
+    "en": "Telefilm Canada",
+    "fr": "Téléfilm Canada"
+  },
+  {
+    "number": "038",
+    "en": "Canada Border Services Agency - (Administered Activities)",
+    "fr": "Agence des services frontaliers du Canada - (activités administrées)"
+  },
+  {
+    "number": "039",
+    "en": "National Film Board",
+    "fr": "Office national du film"
+  },
+  {
+    "number": "040",
+    "en": "Canadian Transportation Agency",
+    "fr": "Office des transports du Canada"
+  },
+  {
+    "number": "041",
+    "en": "Natural Resources (Department of)",
+    "fr": "Ressources naturelles (Ministère des)"
+  },
+  {
+    "number": "042",
+    "en": "Indian Affairs and Northern Development (Department of)",
+    "fr": "Affaires indiennes et du Nord canadien (Ministère des)"
+  },
+  {
+    "number": "043",
+    "en": "Canadian Intergovernmental Conference Secretariat",
+    "fr": "Secrétariat des conférences intergouvernementales canadiennes"
+  },
+  {
+    "number": "044",
+    "en": "Western Economic Diversification (Department of)",
+    "fr": "Diversification de l'économie de l'Ouest canadien (Ministère de la)"
+  },
+  {
+    "number": "046",
+    "en": "Office of the Public Sector Integrity Commissioner",
+    "fr": "Commissariat à l'intégrité du secteur public"
+  },
+  {
+    "number": "047",
+    "en": "Canadian Nuclear Safety Commission",
+    "fr": "Commission canadienne de sûreté nucléaire"
+  },
+  {
+    "number": "050",
+    "en": "Citizenship and Immigration (Department of)",
+    "fr": "Citoyenneté et de l'Immigration (Ministère de la)"
+  },
+  {
+    "number": "051",
+    "en": "Office of the Commissioner for Federal Judicial Affairs",
+    "fr": "Bureau du commissaire à la magistrature fédérale"
+  },
+  {
+    "number": "052",
+    "en": "Canada School of Public Service",
+    "fr": "École de la fonction publique du Canada"
+  },
+  {
+    "number": "053",
+    "en": "Correctional Service of Canada",
+    "fr": "Service correctionnel du Canada"
+  },
+  {
+    "number": "054",
+    "en": "Statistics Canada",
+    "fr": "Statistique Canada"
+  },
+  {
+    "number": "055",
+    "en": "Office of the Communications Security Establishment Commissioner",
+    "fr": "Bureau du commissaire du Centre de la sécurité des télécommunications"
+  },
+  {
+    "number": "056",
+    "en": "Treasury Board Secretariat",
+    "fr": "Secrétariat du Conseil du Trésor"
+  },
+  {
+    "number": "057",
+    "en": "Parole Board of Canada",
+    "fr": "Commission des libérations conditionnelles du Canada"
+  },
+  {
+    "number": "061",
+    "en": "Canadian Institutes of Health Research",
+    "fr": "Instituts de recherche en santé du Canada"
+  },
+  {
+    "number": "062",
+    "en": "Federal Economic Development Agency for Southern Ontario",
+    "fr": "Agence fédérale de développement économique pour le Sud de l'Ontario"
+  },
+  {
+    "number": "063",
+    "en": "Social Sciences and Humanities Research Council",
+    "fr": "Conseil de recherches en sciences humaines"
+  },
+  {
+    "number": "066",
+    "en": "Northern Pipeline Agency",
+    "fr": "Administration du pipe-line du Nord"
+  },
+  {
+    "number": "067",
+    "en": "House of Commons",
+    "fr": "Chambre des communes"
+  },
+  {
+    "number": "074",
+    "en": "National Energy Board",
+    "fr": "Office national de l'énergie"
+  },
+  {
+    "number": "075",
+    "en": "Canadian Human Rights Commission",
+    "fr": "Commission canadienne des droits de la personne"
+  },
+  {
+    "number": "076",
+    "en": "Office of the Commissioner of Official Languages",
+    "fr": "Commissariat aux langues officielles"
+  },
+  {
+    "number": "078",
+    "en": "Canadian Northern Economic Development Agency",
+    "fr": "Agence canadienne de développement économique du Nord"
+  },
+  {
+    "number": "079",
+    "en": "Payroll System General Ledger",
+    "fr": "Grand livre général du système de la paye"
+  },
+  {
+    "number": "080",
+    "en": "Registrar of the Supreme Court of Canada",
+    "fr": "Registraire de la Cour suprême du Canada"
+  },
+  {
+    "number": "083",
+    "en": "Office of the Co-ordinator, Status of Women",
+    "fr": "Bureau de la coordonnatrice de la situation de la femme"
+  },
+  {
+    "number": "085",
+    "en": "Canada Border Services Agency",
+    "fr": "Agence des services frontaliers du Canada"
+  },
+  {
+    "number": "086",
+    "en": "Fisheries and Oceans (Department of)",
+    "fr": "Pêches et des Océans (Ministère des)"
+  },
+  {
+    "number": "087",
+    "en": "Public Service Superannuation",
+    "fr": "Pension de retraite de la fonction publique"
+  },
+  {
+    "number": "088",
+    "en": "Public Safety and Emergency Preparedness (Department of)",
+    "fr": "Sécurité publique et de la Protection civile (Ministère de la)"
+  },
+  {
+    "number": "091",
+    "en": "Canada Mortgage and Housing Corporation (Crown Corporation)",
+    "fr": "Société canadienne d'hypothèques et de logement (Société d'État)"
+  },
+  {
+    "number": "095",
+    "en": "Canadian Security Intelligence Service",
+    "fr": "Service canadien du renseignement de sécurité"
+  },
+  {
+    "number": "096",
+    "en": "Offices of the Information and Privacy Commissioners of Canada",
+    "fr": "Commissariats à l'information et à la protection de la vie privée au Canada"
+  },
+  {
+    "number": "097",
+    "en": "Receiver General",
+    "fr": "Receveur général"
+  },
+  {
+    "number": "100",
+    "en": "Canadian Centre for Occupational Health and Safety",
+    "fr": "Centre canadien d'hygiène et de sécurité au travail"
+  },
+  {
+    "number": "101",
+    "en": "Canadian Transportation Accident Investigation and Safety Board",
+    "fr": "Bureau canadien d'enquête sur les accidents de transport et de la sécurité des transports"
+  },
+  {
+    "number": "102",
+    "en": "The National Battlefields Commission",
+    "fr": "Commission des champs de bataille nationaux"
+  },
+  {
+    "number": "103",
+    "en": "Security Intelligence Review Committee",
+    "fr": "Comité de surveillance des activités de renseignement de sécurité"
+  },
+  {
+    "number": "109",
+    "en": "Patented Medicine Prices Review Board",
+    "fr": "Conseil d'examen du prix des médicaments brevetés"
+  },
+  {
+    "number": "116",
+    "en": "Copyright Board",
+    "fr": "Commission du droit d'auteur"
+  },
+  {
+    "number": "119",
+    "en": "Canadian Space Agency",
+    "fr": "Agence spatiale canadienne"
+  },
+  {
+    "number": "122",
+    "en": "Canada Revenue Agency - (Administered Activities)",
+    "fr": "Agence du revenu du Canada - (activités administrées)"
+  },
+  {
+    "number": "123",
+    "en": "Export Development Canada (Crown Corporation)",
+    "fr": "Exportation et développement Canada (Société d'État)"
+  },
+  {
+    "number": "124",
+    "en": "Parks Canada Agency",
+    "fr": "Agence Parcs Canada"
+  },
+  {
+    "number": "127",
+    "en": "Public Works and Government Services (Department of)",
+    "fr": "Travaux publics et des Services gouvernementaux (Ministère des)"
+  },
+  {
+    "number": "130",
+    "en": "Canada Revenue Agency",
+    "fr": "Agence du revenu du Canada"
+  },
+  {
+    "number": "133",
+    "en": "Canadian Grain Commission",
+    "fr": "Commission canadienne des grains"
+  },
+  {
+    "number": "134",
+    "en": "Canadian Dairy Commission",
+    "fr": "Commission canadienne du lait"
+  },
+  {
+    "number": "135",
+    "en": "Canadian Heritage (Department of)",
+    "fr": "Patrimoine canadien (Ministère du)"
+  },
+  {
+    "number": "136",
+    "en": "Canadian Food Inspection Agency",
+    "fr": "Agence canadienne d'inspection des aliments"
+  },
+  {
+    "number": "137",
+    "en": "Military Police Complaints Commission",
+    "fr": "Commission d'examen des plaintes concernant la police militaire"
+  },
+  {
+    "number": "138",
+    "en": "Military Grievances External Review Committee",
+    "fr": "Comité externe d'examen des griefs militaires"
+  },
+  {
+    "number": "139",
+    "en": "Financial Transactions and Reports Analysis Centre of Canada",
+    "fr": "Centre d'analyse des opérations et déclarations financières du Canada"
+  },
+  {
+    "number": "141",
+    "en": "Financial Consumer Agency of Canada",
+    "fr": "Agence de la consommation en matière financière du Canada"
+  },
+  {
+    "number": "142",
+    "en": "Office of Infrastructure of Canada",
+    "fr": "Bureau de l'infrastructure du Canada"
+  },
+  {
+    "number": "144",
+    "en": "Courts Administration Service",
+    "fr": "Service administratif des tribunaux judiciaires"
+  },
+  {
+    "number": "145",
+    "en": "Library and Archives of Canada",
+    "fr": "Bibliothèque et Archives du Canada"
+  },
+  {
+    "number": "147",
+    "en": "Office of the Conflict of Interest and Ethics Commissioner",
+    "fr": "Commissariat aux conflits d'intérêts et à l'éthique"
+  },
+  {
+    "number": "148",
+    "en": "Public Health Agency of Canada",
+    "fr": "Agence de la santé publique du Canada"
+  },
+  {
+    "number": "151",
+    "en": "Office of the Senate Ethics Officer",
+    "fr": "Bureau du conseiller sénatorial en éthique"
+  },
+  {
+    "number": "154",
+    "en": "Office of the Commissioner of Lobbying",
+    "fr": "Commissariat au lobbying"
+  },
+  {
+    "number": "163",
+    "en": "Shared Services Canada",
+    "fr": "Services partagés Canada"
+  },
+  {
+    "number": "165",
+    "en": "Communications Security Establishment",
+    "fr": "Centre de la sécurité des télécommunications"
+  },
+  {
+    "number": "170",
+    "en": "Administrative Tribunals Support Service of Canada",
+    "fr": "Service canadien d'appui aux tribunaux administratifs"
+  },
+  {
+    "number": "171",
+    "en": "Canadian High Arctic Research Station",
+    "fr": "Station canadienne de recherche dans l'Extrême-Arctique"
+  },
+  {
+    "number": "176",
+    "en": "Parliamentary Protective Service",
+    "fr": "Service de protection parlementaire"
+  },
+  {
+    "number": "180",
+    "en": "Invest in Canada Hub",
+    "fr": "Investir au Canada"
+  },
+  {
+    "number": "183",
+    "en": "Office of the Parliamentary Budget Officer",
+    "fr": "Bureau du directeur parlementaire du budget"
+  },
+  {
+    "number": "192",
+    "en": "Secretariat of the National Security and Intelligence Committee of Parliamentarians",
+    "fr": "Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement"
+  }
+]

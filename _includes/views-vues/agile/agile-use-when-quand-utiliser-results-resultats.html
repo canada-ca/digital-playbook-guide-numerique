@@ -11,11 +11,8 @@
     { "type": "count", "query": "#agile-use-when-questionnaire fieldset" }
   ] },
   { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
-  { "type": "conditional",
+  { "type": "action",
     "inputs": [
-      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
-    ],
-    "actionsTrue": [
       { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
@@ -86,11 +83,8 @@ endfor %}
   { "type": "add", "query": ".agile-answer-points", "outputTarget": "#max-agile-points" },
   { "type": "percent", "decimalPlaces": 1, "query": "#total-agile-points, #max-agile-points", "outputTarget": "#total-agile-points-percent" },
   { "type": "number", "decimalPlaces": 0, "query": "#total-agile-points-percent", "outputTarget": "#total-agile-points-progress", "outputAttribute": "value" },
-  { "type": "conditional",
+  { "type": "action",
     "inputs": [
-      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
-    ],
-    "actionsTrue": [
       { "type": "event", "outputTarget": "#total-agile-answers-progress, #total-agile-points-progress", "outputEvent": "wb-update-wb-progress" }
     ]
   },

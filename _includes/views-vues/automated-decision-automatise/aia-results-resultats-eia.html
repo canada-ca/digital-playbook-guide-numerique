@@ -11,100 +11,29 @@
     "inputs": [
       { "type": "add",
         "inputs": [
-          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, [class*=-checkbox-score]) td:first-of-type span:not(.hidden)" },
-          { "type": "conditional",
-            "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-1-yes:not(.hidden)" }, 0
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "outputValue", "value": 1 }
-            ],
-            "actionsFalse": [
-              { "type": "outputValue", "value": 0 }
+          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, [class*=-checkbox-score]) td:first-of-type span:not(.hidden)" }{%
+comment %}checkboxQuestionIdsArray is defined in aia-questionnaire-eia.html{% endcomment %}{%
+for checkboxQuestionId in checkboxQuestionIdsArray %},
+          { "type": "subtract", "inputs": [
+              1, { "type": "pow", "inputs": [ 0, { "type": "count", "query": ".question-{{ checkboxQuestionId }}-yes:not(.hidden)" } ] }
             ]
-          },
-          { "type": "conditional",
-            "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-11-yes:not(.hidden)" }, 0
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "outputValue", "value": 1 }
-            ],
-            "actionsFalse": [
-              { "type": "outputValue", "value": 0 }
-            ]
-          },
-          { "type": "conditional",
-            "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-13-yes:not(.hidden)" }, 0
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "outputValue", "value": 1 }
-            ],
-            "actionsFalse": [
-              { "type": "outputValue", "value": 0 }
-            ]
-          },
-          { "type": "conditional",
-            "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-14-yes:not(.hidden)" }, 0
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "outputValue", "value": 1 }
-            ],
-            "actionsFalse": [
-              { "type": "outputValue", "value": 0 }
-            ]
-          },
-          { "type": "conditional",
-            "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "count", "query": "#detailed-results-table tr[class*=-checkbox-score]:not(.hidden) .question-27-yes:not(.hidden)" }, 0
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "outputValue", "value": 1 }
-            ],
-            "actionsFalse": [
-              { "type": "outputValue", "value": 0 }
-            ]
-          }
+          }{%
+endfor %}
         ]
       },
       {
         "type": "count",
-        "query": "#detailed-results-table tbody tr:not(.hidden, [class*=-checkbox-score]), #detailed-results-table tbody tr[class*=-checkbox-score][id*=a-result]:not(.hidden)"
+        "query": "#detailed-results-table tbody tr:not(.hidden, .non-scoring-result, [class*=-checkbox-score]), #detailed-results-table tbody tr[class*=-checkbox-score][id*=a-result]:not(.hidden)"
       }
     ]
   },
   { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
-  { "type": "conditional",
+  { "type": "action",
     "inputs": [
-      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
-    ],
-    "actionsTrue": [
       { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
-] }'></progress> <span id="questionnaire-progress-percent">0</span>{{ site.Percent[ page.lang ] }}</p><p id="tester"></p><p id="tester2"></p>
+] }'></progress> <span id="questionnaire-progress-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
 </section>
 
 <section markdown="0" id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
@@ -135,55 +64,25 @@ for level in (1..4) %}
           { "type": "string", "query": "#level-{{ level }}-filtered-guidance-link", "sourceAttribute": "data-url-fragment" }
         ]
       },{%
+endfor %}{%
+assign maxIndex = decisionSystemTypeCheckboxIdsArray | size | minus: 1 %}{%
+for index in (0..maxIndex) %}{%
+  comment %}Both arrays are defined in aia-questionnaire-eia.html{% endcomment %}{%
+  assign checkboxId = decisionSystemTypeCheckboxIdsArray[ index ] %}{%
+  assign urlFragment = decisionSystemTypeURLFragmentsArray[ index ] %}
+      { "type": "conditional",
+        "inputs": [
+          { "type": ">",
+            "inputs": [
+              { "type": "count", "query": "#detailed-results-table .question-{{ checkboxId }}-yes:not(.hidden)" }, 0
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-{{ urlFragment }}" }
+        ]
+      },{%
 endfor %}
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "count", "query": "#detailed-results-table .question-1a-yes:not(.hidden)" }, 0
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-file-triage-assignment" }
-        ]
-      },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "count", "query": "#detailed-results-table .question-1b-yes:not(.hidden)" }, 0
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-risk-scoring-categorization" }
-        ]
-      },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "count", "query": "#detailed-results-table .question-1c-yes:not(.hidden)" }, 0
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-recommendation" }
-        ]
-      },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "count", "query": "#detailed-results-table .question-1d-yes:not(.hidden)" }, 0
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-full-decision" }
-        ]
-      },
       { "type": "conditional",
         "inputs": [
           { "type": ">",
@@ -294,15 +193,8 @@ for index in (0..1) %}{%
   { "type": "number", "query": "#criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total-adjusted" },
   { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total-adjusted, #criteria-{{ criteriaNumber }}-max-total-adjusted", "outputTarget": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
   { "type": "number", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-percent-adjusted", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputAttribute": "value" },
-  { "type": "conditional",
+  { "type": "action",
     "inputs": [
-      { "type": ">=",
-        "inputs": [
-          { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
       { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputEvent": "wb-update-wb-progress" }
     ]
   },
@@ -446,13 +338,8 @@ for index in (0..4) %}{%
   { "type": "max", "inputs": [ { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-{{ criteriaNumber }}-score:not(.hidden)" }, 0 ], "outputTarget": "#criteria-{{ criteriaNumber }}-score-total" },
   { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total, #criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-percent" },
   { "type": "number", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-percent", "outputTarget": "#progress-criteria-{{ criteriaNumber }}", "outputAttribute": "value" },
-  { "type": "conditional",
+  { "type": "action",
     "inputs": [
-      { "type": ">=",
-        "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, 0 ]
-      }
-    ],
-    "actionsTrue": [
       { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}", "outputEvent": "wb-update-wb-progress" },
       { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "" }
     ]
@@ -507,10 +394,8 @@ for index in (0..4) %}{%
     ]
   },{%
 endfor %}
-  { "type": "conditional",
-    "inputs": [ { "type": "==", "inputs": [ 0, 0 ] }
-    ],
-    "actionsTrue": [
+  { "type": "action",
+    "inputs": [
       { "type": "event", "outputEvent": "initial-results-updated", "outputTarget": "#adjusted-results-table" }
     ]
   }
@@ -552,7 +437,7 @@ endfor %}
 
 ### {{ site.DetailedScore[ page.lang ] }}
 
-<button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
+<button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden), .non-scoring-result td", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
 
 <table id="detailed-results-table" class="table table-bordered table-condensed">
 <thead>
@@ -567,6 +452,9 @@ endfor %}
 </tr>
 </thead>
 <tbody>
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="i" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="ii" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="iii" nonScoringResult=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="1a" parentQuestionNumber="1" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="1b" parentQuestionNumber="1" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="1c" parentQuestionNumber="1" %}
@@ -670,7 +558,7 @@ endfor %}
 </tbody>
 </table>
 
-<button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden)", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
+<button type="button" class="wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden), .non-scoring-result td", "container": "#detailed-results-table", "filename": "aia-detailed-results" }'>{{ site.DownloadCSV[ page.lang ] }}</button>
 
 </section>
 

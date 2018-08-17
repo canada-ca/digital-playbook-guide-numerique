@@ -5,6 +5,11 @@ lang: en
 altLang: fr
 altLangPage: evaluation-impact-algorithmique
 collectionDirectory: views-vues/automated-decision-automatise
+aboutRespondantSection: About the Respondant (Optional)
+fieldName: Name
+fieldDepartment: Department
+selectDepartment: Select a department
+fieldBranch: Branch
 aboutDecisionSection: About the Decision
 dataBusinessProcessSection: Data and Business Process
 systemFunctionalitySection: System Functionality

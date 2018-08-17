@@ -1,0 +1,25 @@
+{% comment %}@overview Generates a simple yes/no question with optional na{% endcomment %}{% 
+comment %}@param questionNumber {String} Number of the question or sub-question (e.g., "4.1").{% endcomment %}{%
+comment %}@param includeNotApplicable {Boolean} (Optional, defaults to false) Whether or not to include a Not applicable option.{% endcomment %}{%
+comment %}@return {String} Generated question.{% endcomment %}{% 
+assign questionId = include.questionNumber | replace: ".", "-"
+%}<!-- Question {{ include.questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ include.questionNumber }}{% unless include.questionNumber contains "." %}.{% endunless %} {{ page.questions[ include.questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ include.questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>{%
+if include.includeNotApplicable == true %}
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>{%
+endif %}
+</ul>
+</div>

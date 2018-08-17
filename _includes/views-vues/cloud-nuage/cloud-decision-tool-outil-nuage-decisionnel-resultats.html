@@ -12,11 +12,8 @@
     { "type": "count", "query": "#right-cloud-questionnaire fieldset" }
   ] },
   { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
-  { "type": "conditional",
+  { "type": "action",
     "inputs": [
-      { "type": ">", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 0 ] }
-    ],
-    "actionsTrue": [
       { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
     ]
   }
@@ -116,11 +113,8 @@ for index in (0..2) %}{%
   { "type": "count", "increment": 1, "query": "#{{ cloudType }}-sensitivity-passed:not(.hidden), #{{ cloudType }}-financial-passed:not(.hidden), #{{ cloudType }}-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-{{ cloudType }}" },
   { "type": "percent", "decimalPlaces": 1, "inputs": [ { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3 ], "outputTarget": "#percent-mandatory-{{ cloudType }}" },
   { "type": "number", "decimalPlaces": 0, "query": "#percent-mandatory-{{ cloudType }}", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputAttribute": "value" },
-  { "type": "conditional",
+  { "type": "action",
     "inputs": [
-      { "type": ">", "inputs": [ { "type": "number", "query": "#percent-mandatory-{{ criteriaNumber }}" }, 0 ] }
-    ],
-    "actionsTrue": [
       { "type": "event", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" }
     ]
   },
@@ -200,8 +194,10 @@ for index in (0..2) %}{%
     "outputTarget": "#percent-rated-{{ cloudType }}"
   },
   { "type": "number", "decimalPlaces": 0, "query": "#percent-rated-{{ cloudType }}", "outputTarget": "#progress-rated-{{ cloudType }}", "outputAttribute": "value" },
-  { "type": "conditional", "inputs": [ { "type": ">", "inputs": [ { "type": "number", "query": "#percent-rated-{{ criteriaNumber }}" }, 0 ] } ],
-    "actionsTrue": [ { "type": "event", "outputTarget": "#progress-rated-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" } ]
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#progress-rated-{{ cloudType }}", "outputEvent": "wb-update-wb-progress" }
+    ]
   }
 ] }'>
 <span id="tally-rated-{{ cloudType }}">0</span> {{ site.OutOf[ page.lang ] }} 110 (<span id="percent-rated-{{ cloudType }}">0</span>{{ site.Percent[ page.lang ] }})
