@@ -1,6 +1,6 @@
 {% comment %}@overview Generates a simple yes/no question with optional na{% endcomment %}{% 
 comment %}@param questionNumber {String} Number of the question or sub-question (e.g., "4.1").{% endcomment %}{%
-comment %}@param includeNotApplicable {Boolean} (defaults to false) Whether or not to include a Not applicable option.{% endcomment %}{%
+comment %}@param includeNotApplicable {Boolean} (Optional, defaults to false) Whether or not to include a Not applicable option.{% endcomment %}{%
 comment %}@return {String} Generated question.{% endcomment %}{% 
 assign questionId = include.questionNumber | replace: ".", "-"
 %}<!-- Question {{ include.questionNumber }} -->

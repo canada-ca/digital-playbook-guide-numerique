@@ -3,11 +3,14 @@ comment %}@param answerType {String} Form field used for the answer (e.g., "chec
 comment %}@param parentQuestionNumber {String} (Optional. Required for type = "checkbox"). Number of the parent question (e.g., "1" when "1a" and "1b" are checkboxes).{% endcomment %}{% 
 comment %}@param questionNumber {String} Number of the question or sub-question (e.g., "4.1").{% endcomment %}{% 
 comment %}@param hidden (Boolean} (Defaults to false) Whether the row should be hidden initially.{% endcomment %}{% 
+comment %}@param nonScoringResult (Boolean} (Defaults to false) Whether the row is excluded from scoring.{% endcomment %}{% 
 comment %}@return {String} Results row for the question or sub-question.{% endcomment %}{% 
 assign questionId = include.questionNumber | replace: ".", "-"
 %}<!-- Question {{ include.questionNumber }} -->
 <tr id="question-{{ questionId }}-result"{%
-if include.answerType == "checkbox"
+if include.nonScoringResult == true
+%} class="non-scoring-result{% if include.hidden == true %}  hidden{% endif %}"{%
+elsif include.answerType == "checkbox"
 %} class="question-{{ include.parentQuestionNumber }}-checkbox-score{% if include.hidden == true %}  hidden{% endif %}"{%
 elsif include.hidden == true
 %} class="hidden"{%
@@ -25,33 +28,35 @@ elsif include.answerType == "checkbox" %}
 <span class="question-{{ questionId }}-no"></span>{%
 endif %}
 </td>{%
-for criteriaNumber in (1..5) %}{%
-  assign criteriaIndex = criteriaNumber | minus: 1 %}
+for criteriaNumber in (1..5) %}
 <td>{%
-  assign maxPoints = -1000 %}{%
-  assign maxAnswerId = "" %}{%
-  for answer in page.points[ include.questionNumber ] %}{%
-    if answer[ 1 ][ criteriaIndex ] > maxPoints %}{%
-      assign maxPoints = answer[ 1 ][ criteriaIndex ] %}{%
-      assign maxAnswerId = answer[ 0 ] %}{% 
-    endif %}{%
-  endfor %}{%
-  for answer in page.points[ include.questionNumber ] %}{%
-    assign answerId = answer[ 0 ] %}{%
-    assign answerPoints = answer[ 1 ] %}
-<span class="criteria-{{ criteriaNumber }}-score{%
-    if answerId == maxAnswerId
-%} criteria-{{ criteriaNumber }}-score-max{%
-    endif %}{%
-    if include.answerType == 'checkbox' %}{%
-      if answerId == 'yes'
-%} question-{{ include.parentQuestionNumber }}-yes hidden{%
+  unless include.nonScoringResult == true %}{%
+    assign criteriaIndex = criteriaNumber | minus: 1 %}{%
+    assign maxPoints = -1000 %}{%
+    assign maxAnswerId = "" %}{%
+    for answer in page.points[ include.questionNumber ] %}{%
+      if answer[ 1 ][ criteriaIndex ] > maxPoints %}{%
+        assign maxPoints = answer[ 1 ][ criteriaIndex ] %}{%
+        assign maxAnswerId = answer[ 0 ] %}{% 
       endif %}{%
-    else
+    endfor %}{%
+    for answer in page.points[ include.questionNumber ] %}{%
+      assign answerId = answer[ 0 ] %}{%
+      assign answerPoints = answer[ 1 ] %}
+<span class="criteria-{{ criteriaNumber }}-score{%
+      if answerId == maxAnswerId
+%} criteria-{{ criteriaNumber }}-score-max{%
+      endif %}{%
+      if include.answerType == 'checkbox' %}{%
+        if answerId == 'yes'
+%} question-{{ include.parentQuestionNumber }}-yes hidden{%
+        endif %}{%
+      else
 %} hidden{%
-    endif
+      endif
 %} question-{{ questionId }}-{{ answerId }}">{{ answerPoints[ criteriaIndex ] }}</span>{%
-  endfor %}
+    endfor %}{%
+  endunless %}
 </td>{%
 endfor %}
 </tr>

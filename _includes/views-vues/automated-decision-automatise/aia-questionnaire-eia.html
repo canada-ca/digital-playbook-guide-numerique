@@ -1,14 +1,70 @@
+{%- assign checkboxQuestionIds = "" -%}
 <section id="questionnaire-section">
 
 ## {{ site.Questionnaire[ page.lang ] }}
 
-<section id="aia-about-decision-section" class="wb-frmvld">
+<section id="aia-about-respondant-section" class="wb-frmvld">
+<form id="aia-about-respondant-form" method="post">
+
+### About the Respondant (Optional)
+
+<div class="form-group" markdown="0">
+<label for="name">Name</label>
+<input id="name" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#name", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-i-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#name", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }' />
+</div>
+
+<div class="form-group" markdown="0">
+<label for="dept-name">Department name</label>
+<select id="dept-name" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#dept-name", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-ii-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#dept-name option:selected" }
+      ] }
+    ]
+  }
+] }'>
+<option></option>{%
+assign departmentNames = site.data.departments | sort: page.lang %}{%
+for department in departmentNames %}
+<option value="{{ department.number }}">{{ department[ page.lang ] }}</option>{%
+endfor %}
+</select>
+</div>
+
+<div class="form-group" markdown="0">
+<label for="branch">Branch</label>
+<input id="branch" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#branch", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-iii-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#branch", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }' />
+</div>
+
+{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-about-respondant" nextId="aia-about-decision" %}
+</form>
+</section>
+
+<section id="aia-about-decision-section" class="hidden wb-frmvld">
 <form id="aia-about-decision-form" method="post">
 
 ### {{ page.aboutDecisionSection }}
 
 {% assign questionNumber = "1" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
+assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
 assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
 assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
@@ -21,6 +77,8 @@ assign checkbox3Id = checkbox3Number | replace: ".", "-" %}{%
 assign checkbox4Suffix = "d" %}{%
 assign checkbox4Number = questionNumber | append: checkbox4Suffix %}{%
 assign checkbox4Id = checkbox4Number | replace: ".", "-" %}{%
+assign decisionSystemTypeCheckboxIdsArray = checkbox1Id | append: "," | append: checkbox2Id | append: "," | append: checkbox3Id | append: "," | append: checkbox4Id | split: "," %}{%
+assign decisionSystemTypeURLFragmentsArray = "file-triage-assignment" | append: "," | append: "risk-scoring-categorization" | append: "," | append: "recommendation" | append: "," | append: "full-decision" | split: "," %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
 assign subQuestion1Sub1Number = subQuestion1Number | append: ".1" %}{%
@@ -334,6 +392,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 
 {% assign questionNumber = "11" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
+assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
 assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
 assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
@@ -427,24 +486,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
 </div>
 
-<div class="btn-group" markdown="0">
-<button type="submit" class="btn btn-primary wb-calculate" data-wb-calculate='{ "eventTrigger": "submit", "eventElement": "#aia-about-decision-form", "returnFalse": true, "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#aia-business-process-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#aia-about-decision-section", "class": "hidden" },
-      { "type": "event", "outputTarget": "#aia-business-process-section h3", "outputEvent": "setfocus.wb" }
-    ]
-  }
-] }'>{{ site.Next[ page.lang ] }}</button>
-</div>
+{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-about-decision" nextId="aia-business-process" previousId="aia-about-respondant" %}
 </form>
 </section>
 
@@ -455,6 +497,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 
 {% assign questionNumber = "13" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
+assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
 assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
 assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
@@ -513,6 +556,7 @@ assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
 
 {% assign questionNumber = "14" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
+assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
 assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
 assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
@@ -650,40 +694,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="24" %}
 
-<div class="btn-group" markdown="0">
-<button type="submit" class="btn btn-primary wb-calculate" data-wb-calculate='{ "eventTrigger": "submit", "eventElement": "#aia-business-process-form", "returnFalse": true, "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#aia-system-functionality-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#aia-business-process-section", "class": "hidden" },
-      { "type": "event", "outputTarget": "#aia-system-functionality-section h3", "outputEvent": "setfocus.wb" }
-    ]
-  }
-] }'>{{ site.Next[ page.lang ] }}</button>
-<button id="aia-business-process-previous" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#aia-business-process-previous", "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#aia-about-decision-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#aia-business-process-section", "class": "hidden" },
-      { "type": "event", "outputTarget": "#aia-about-decision-section h3", "outputEvent": "setfocus.wb" }
-    ]
-  }
-] }'>{{ site.Previous[ page.lang ] }}</button>
-</div>
+{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-business-process" nextId="aia-system-functionality" previousId="aia-about-decision" %}
 </form>
 </section>
 
@@ -708,7 +719,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result", #question-{{ subQuestion2Id }}-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion2Id }}-result", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
@@ -744,6 +755,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 
 {% assign questionNumber = "27" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
+assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
 assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
 assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
@@ -857,44 +869,11 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="34" %}
 
-<div class="btn-group" markdown="0">
-<button type="submit" class="btn btn-primary wb-calculate" data-wb-calculate='{ "eventTrigger": "submit", "eventElement": "#aia-system-functionality-form", "returnFalse": true, "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#aia-organizational-readiness-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#aia-system-functionality-section", "class": "hidden" },
-      { "type": "event", "outputTarget": "#aia-organizational-readiness-section h3", "outputEvent": "setfocus.wb" }
-    ]
-  }
-] }'>{{ site.Next[ page.lang ] }}</button>
-<button id="aia-system-functionality-previous" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#aia-system-functionality-previous", "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#aia-business-process-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#aia-system-functionality-section", "class": "hidden" },
-      { "type": "event", "outputTarget": "#aia-business-process-section h3", "outputEvent": "setfocus.wb" }
-    ]
-  }
-] }'>{{ site.Previous[ page.lang ] }}</button>
-</div>
+{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-system-functionality" nextId="aia-organizational-readiness" previousId="aia-business-process" %}
 </form>
 </section>
 
-<section id="aia-organizational-readiness-section" class="hidden wb-frm-vld">
+<section id="aia-organizational-readiness-section" class="hidden wb-frmvld">
 <form id="aia-organizational-readiness-form" method="post">
 
 ### {{ page.organizationalReadinessSection }}
@@ -1118,48 +1097,23 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="46" %}
 
-<div class="btn-group" markdown="0">
-<button type="submit" class="btn btn-primary wb-calculate" data-wb-calculate='{ "eventTrigger": "submit", "eventElement": "#aia-organizational-readiness-form", "returnFalse": true, "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "event", "outputTarget": "#final-result-section h3", "outputEvent": "setfocus.wb" }
-    ]
-  }
-] }'>{{ site.Next[ page.lang ] }}</button>
-<button id="aia-organizational-readiness-previous" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#aia-organizational-readiness-previous", "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#aia-system-functionality-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#aia-organizational-readiness-section", "class": "hidden" },
-      { "type": "event", "outputTarget": "#aia-system-functionality-section h3", "outputEvent": "setfocus.wb" }
-    ]
-  }
-] }'>{{ site.Previous[ page.lang ] }}</button>
-</div>
+{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-organizational-readiness" nextId="final-result" previousId="aia-system-functionality" %}
 </form>
 </section>
 
 <div markdown="0" class="btn-group mrgn-tp-md">
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "source": "form-state", "container": "#questionnaire-section", "filename": "aia-form-state" }'>{{ site.SaveToFile[ page.lang ] }}</button>
-
-<button type="button" class="btn btn-default" onclick="document.getElementById( 'restore-from-file' ).click();">{{ site.RestoreFromFile[ page.lang ] }}</button>
+<button id="restore-from-file-button" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
+    ]
+  }
+] }'>{{ site.RestoreFromFile[ page.lang ] }}</button>
+</div>
 <div class="hidden">
 <input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": ".json", "action": "restore-form-state", "container": "#questionnaire-section" }' />
 </div>
-</div>
 
 </section>
+{%- assign checkboxQuestionIdsArray = checkboxQuestionIds | remove_first: "," | split: "," -%}
