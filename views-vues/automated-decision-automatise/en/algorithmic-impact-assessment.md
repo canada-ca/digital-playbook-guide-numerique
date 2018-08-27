@@ -526,6 +526,7 @@ The AIA is structured to be an electronic survey comprised of approximately 46 t
 - The complexity of the system,
 - Data management practices, and
 - Procedural fairness considerations.
+{: .lst-spcd}
 
 Once you fill in your questionnaire, you’ll be provided with an **Risk Impact Level** that scales from 1 to 4 which will determine which requirements under the [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) will apply to your initiative.  
 
