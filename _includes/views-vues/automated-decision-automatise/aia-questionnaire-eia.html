@@ -3,6 +3,7 @@
 
 ## {{ site.Questionnaire[ page.lang ] }}
 
+<!--- About the Respondant section -->
 <section id="aia-about-respondant-section" class="wb-frmvld">
 <form id="aia-about-respondant-form" method="post">
 
@@ -57,6 +58,7 @@ endfor %}
 </form>
 </section>
 
+<!--- About the Decision section -->
 <section id="aia-about-decision-section" class="hidden wb-frmvld">
 <form id="aia-about-decision-form" method="post">
 
@@ -486,10 +488,12 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
 </div>
 
+<!-- Button for revealing the next section and hiding the current one -->
 {% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-about-decision" nextId="aia-business-process" previousId="aia-about-respondant" %}
 </form>
 </section>
 
+<!--- Data and Business Process section -->
 <section id="aia-business-process-section" class="hidden wb-frmvld">
 <form id="aia-business-process-form" method="post">
 
@@ -694,10 +698,12 @@ assign questionId = questionNumber | replace: ".", "-" %}
 
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="24" %}
 
+<!-- Buttons for revealing the next/previous section and hiding the current one -->
 {% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-business-process" nextId="aia-system-functionality" previousId="aia-about-decision" %}
 </form>
 </section>
 
+<!--- System Functionality section -->
 <section id="aia-system-functionality-section" class="hidden wb-frmvld">
 <form id="aia-system-functionality-form" method="post">
 
@@ -869,10 +875,12 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="34" %}
 
+<!-- Buttons for revealing the next/previous section and hiding the current one -->
 {% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-system-functionality" nextId="aia-organizational-readiness" previousId="aia-business-process" %}
 </form>
 </section>
 
+<!--- Organizational Readiness section -->
 <section id="aia-organizational-readiness-section" class="hidden wb-frmvld">
 <form id="aia-organizational-readiness-form" method="post">
 
@@ -1097,12 +1105,15 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="46" %}
 
+<!-- Buttons for focusing on the final results section (next) and revealing the previous section and hiding the current one (previous) -->
 {% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-organizational-readiness" nextId="final-result" previousId="aia-system-functionality" %}
 </form>
 </section>
 
 <div markdown="0" class="btn-group mrgn-tp-md">
+<!-- Button for saving progress to a JSON file -->
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "source": "form-state", "container": "#questionnaire-section", "filename": "aia-form-state" }'>{{ site.SaveToFile[ page.lang ] }}</button>
+<!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. this is done to give more visual control over the appearance than what the input type="file" field allows. -->
 <button id="restore-from-file-button" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
   { "type": "action",
     "inputs": [
