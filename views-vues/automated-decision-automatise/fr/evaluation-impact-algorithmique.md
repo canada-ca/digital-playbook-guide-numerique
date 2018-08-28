@@ -489,7 +489,7 @@ The AIA helps identify the impact level of your automated decision system under 
 We don’t store your answers, so feel free to use this tool as many times as you need along the development of your system.  
 
 <details>
-  <summary>Want to know more? Click here.</summary>
+  <summary markdown="0">Want to know more? Click here.</summary>
 
 The aim of our Algorithmic Impact Assessment is to develop a framework that will help institutions better understand and mitigate the risks associated with Automated Decision Systems by providing the appropriate governance, oversight and reporting, and audit requirements. The AIA is designed to support the proposed [Treasury Board Directive on Automated Decision-Making](https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok/edit?usp=sharing).
 
@@ -524,7 +524,7 @@ Finding the questionnaire a bit long? Need to do some more research? You can sav
 We don’t save any of your information.
 
 <details>
-  <summary>Want to know more? Click here.</summary>
+  <summary markdown="0">Want to know more? Click here.</summary>
 
 The AIA is structured to be an electronic survey comprised of approximately 46 to 65 questions. Each answer is coded according to five separate scoring categories that add or remove risk depending on the answers:
 
