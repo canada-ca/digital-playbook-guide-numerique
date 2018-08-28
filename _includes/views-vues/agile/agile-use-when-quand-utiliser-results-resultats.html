@@ -34,9 +34,11 @@
 </header>
 <div class="panel-body">
 <p id="recommendation-not-complete">{{ site.CompleteQuestionnaireFirst[ page.lang ] }}</p>
-<p class="hidden" id="recommendation-agile-element">{{ page.recommendationAgileElement }}</p>
-<p class="hidden" id="recommendation-agile-managing-project">{{ page.recommendationAgileManagingProject }}</p>
-<p class="hidden" id="recommendation-agile-managing-project-and-scrum">{{ page.recommendationAgileManagingProjectAndScrum }}.</p>
+<p id="recommendation-complete" class="hidden"><strong>{%
+assign types = "agile,hybrid,non" | split: "," %}{%
+for type in types %}
+<span id="{{ type }}-recommended" class="hidden">{{ page[ type ] }}</span>{%
+endfor %}</strong> {{ page.recommendedApproach }}</p>
 </div>
 </section>
 
@@ -49,45 +51,86 @@
 <tr>
 <th>{{ site.Criteria[ page.lang ] }}</th>
 <th>{{ site.SelectedAnswer[ page.lang ] }}</th>
-<th>{{ page.isAgileRecommended }}</th>
-<th>{{ site.Points[ page.lang ] }}</th>
+<th>{{ page.agileScore }}</th>
+<th>{{ page.hybridScore }}</th>
+<th>{{ page.nonScore }}</th>
 </tr>
 </thead>
-<tbody>
-{% for index in (0..11) %}{%
-  assign questionNumber = index | plus: 1 %}{% 
-  assign questionNumberString = questionNumber | downcase
-%}<tr>
+<tbody>{%
+assign numQuestions = page.points | size %}{%
+for questionNumber in (1..7) %}{%
+  assign questionNumberString = questionNumber | downcase %}
+<tr>
 <td>{{ page.questions[ questionNumberString ] }}</td>
 <td>
-<span class="hidden question-{{ questionNumber }}-agile">1</span>
-<span class="hidden question-{{ questionNumber }}-non-agile">2</span>
-</td>
+<span class="hidden q{{ questionNumber }}-a1">1</span>
+<span class="hidden q{{ questionNumber }}-a2">2</span>
+</td>{%
+  for type in types %}{%
+    assign a1Score = page.points[ questionNumberString ][ type ][ 0 ] %}{%
+    assign a2Score = page.points[ questionNumberString ][ type ][ 1 ] %}
 <td>
-<span class="hidden question-{{ questionNumber }}-agile"><span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> {{ site.Yes[ page.lang ] }}</span>
-<span class="hidden question-{{ questionNumber }}-non-agile"><span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span> {{ site.No[ page.lang ] }}</span>
-</td>
+<span class="hidden {{ type }}-score{% if a1Score >= a2Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a1">{{ a1Score }}</span>
+<span class="hidden {{ type }}-score{% if a1Score < a2Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a2">{{ a2Score }}</span>
+</td>{%
+  endfor %}
+</tr>{%
+endfor %}{%
+assign questionNumber = 8 %}{%
+assign questionNumberString = questionNumber | downcase %}
+<tr>
+<td>{{ page.questions[ questionNumberString ] }}</td>
 <td>
-<span class="hidden question-{{ questionNumber }}-agile agile-answer-points">{{ page.criteriaAgilePoints[ index ] }}</span>
-<span class="hidden question-{{ questionNumber }}-non-agile non-agile-answer-points">0</span>
-</td>
+<span class="hidden q{{ questionNumber }}-a1">1</span>
+<span class="hidden q{{ questionNumber }}-a2">2</span>
+<span class="hidden q{{ questionNumber }}-a3">3</span>
+<span class="hidden q{{ questionNumber }}-a4">4</span>
+</td>{%
+  for type in types %}{%
+    assign a1Score = page.points[ questionNumberString ][ type ][ 0 ] %}{%
+    assign a2Score = page.points[ questionNumberString ][ type ][ 1 ] %}{%
+    assign a3Score = page.points[ questionNumberString ][ type ][ 2 ] %}{%
+    assign a4Score = page.points[ questionNumberString ][ type ][ 3 ] %}
+<td>
+<span class="hidden {{ type }}-score{% if a1Score >= a2Score and a1Score >= a3Score and a1Score >= a4Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a1">{{ a1Score }}</span>
+<span class="hidden {{ type }}-score{% if a2Score > a1Score and a2Score >= a3Score and a2Score >= a4Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a2">{{ a2Score }}</span>
+<span class="hidden {{ type }}-score{% if a3Score > a1Score and a3Score > a2Score and a3Score >= a4Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a3">{{ a3Score }}</span>
+<span class="hidden {{ type }}-score{% if a4Score > a1Score and a4Score > a2Score and a4Score > a3Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a4">{{ a4Score }}</span>
+</td>{%
+  endfor %}
+</tr>{%
+for questionNumber in (9..numQuestions) %}{%
+  assign questionNumberString = questionNumber | downcase %}
+<tr>
+<td>{{ page.questions[ questionNumberString ] }}</td>
+<td>
+<span class="hidden q{{ questionNumber }}-a1">1</span>
+<span class="hidden q{{ questionNumber }}-a2">2</span>
+</td>{%
+  for type in types %}{%
+    assign a1Score = page.points[ questionNumberString ][ type ][ 0 ] %}{%
+    assign a2Score = page.points[ questionNumberString ][ type ][ 1 ] %}
+<td>
+<span class="hidden {{ type }}-score{% if a1Score >= a2Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a1">{{ a1Score }}</span>
+<span class="hidden {{ type }}-score{% if a1Score < a2Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a2">{{ a2Score }}</span>
+</td>{%
+  endfor %}
 </tr>{%
 endfor %}
 </tbody>
 <tfoot>
-<tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow", "operations": [
-  { "type": "count", "increment": 1, "query": ".agile-answer-points:not(.hidden)", "outputTarget": "#total-agile-answers" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#total-agile-answers, #max-agile-answers", "outputTarget": "#total-agile-answers-percent" },
-  { "type": "number", "decimalPlaces": 0, "query": "#total-agile-answers-percent", "outputTarget": "#total-agile-answers-progress", "outputAttribute": "value" },
-  { "type": "add", "query": ".agile-answer-points:not(.hidden)", "outputTarget": "#total-agile-points" },
-  { "type": "add", "query": ".agile-answer-points", "outputTarget": "#max-agile-points" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#total-agile-points, #max-agile-points", "outputTarget": "#total-agile-points-percent" },
-  { "type": "number", "decimalPlaces": 0, "query": "#total-agile-points-percent", "outputTarget": "#total-agile-points-progress", "outputAttribute": "value" },
+<tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow", "operations": [{%
+for type in types %}
+  { "type": "add", "query": ".{{ type }}-score:not(.hidden)", "outputTarget": "#{{ type }}-score-total" },
+  { "type": "add", "query": ".{{ type }}-score-max", "outputTarget": "#{{ type }}-max-total" },
+  { "type": "percent", "decimalPlaces": 1, "query": "#{{ type }}-score-total, #{{ type }}-max-total", "outputTarget": "#{{ type }}-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#{{ type }}-percent", "outputTarget": "#progress-{{ type }}", "outputAttribute": "value" },
   { "type": "action",
     "inputs": [
-      { "type": "event", "outputTarget": "#total-agile-answers-progress, #total-agile-points-progress", "outputEvent": "wb-update-wb-progress" }
+      { "type": "event", "outputTarget": "#progress-{{ type }}", "outputEvent": "wb-update-wb-progress" }
     ]
-  },
+  },{%
+endfor %}
   { "type": "conditional",
     "inputs": [
       { "type": ">=", "inputs": [ { "type": "number", "query": "#questionnaire-progress-percent" }, 100 ] }
@@ -95,23 +138,29 @@ endfor %}
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": "#final-result", "class": "panel-default"},
       { "type": "addClass", "outputTarget": "#final-result", "class": "panel-primary"},
-      { "type": "conditional", "inputs": [ { "type": "<", "inputs": [ { "type": "number", "query": "#total-agile-points-percent" }, 50 ] } ],
+      { "type": "removeClass", "outputTarget": "#recommendation-complete", "class": "hidden"},
+      { "type": "addClass", "outputTarget": "#recommendation-not-complete", "class": "hidden"},
+      { "type": "conditional", 
+        "inputs": [
+          { "type": ">=", "inputs": [ { "type": "number", "query": "#agile-percent" }, { "type": "number", "query": "#hybrid-percent" } ] },
+          { "type": ">=", "inputs": [ { "type": "number", "query": "#agile-percent" }, { "type": "number", "query": "#non-percent" } ] } 
+        ],
         "actionsTrue": [
-          { "type": "removeClass", "outputTarget": "#recommendation-agile-element", "class": "hidden" },
-          { "type": "addClass", "outputTarget": "#recommendation-not-complete, #recommendation-agile-managing-project, #recommendation-agile-managing-project-and-scrum", "class": "hidden" }
+          { "type": "removeClass", "outputTarget": "#agile-recommended", "class": "hidden"},
+          { "type": "addClass", "outputTarget": "#hybrid-recommended, #non-recommended", "class": "hidden"}
         ],
         "actionsFalse": [
           { "type": "conditional",
             "inputs": [
-              { "type": "<", "inputs": [ { "type": "number", "query": "#total-agile-points-percent" }, 75 ] }
+              { "type": ">=", "inputs": [ { "type": "number", "query": "#hybrid-percent" }, { "type": "number", "query": "#non-percent" } ] } 
             ],
             "actionsTrue": [
-              { "type": "removeClass", "outputTarget": "#recommendation-agile-managing-project", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#recommendation-not-complete, #recommendation-agile-element, #recommendation-agile-managing-project-and-scrum", "class": "hidden" }
+              { "type": "removeClass", "outputTarget": "#hybrid-recommended", "class": "hidden"},
+              { "type": "addClass", "outputTarget": "#agile-recommended, #non-recommended", "class": "hidden"}
             ],
             "actionsFalse": [
-              { "type": "removeClass", "outputTarget": "#recommendation-agile-managing-project-and-scrum", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#recommendation-not-complete, #recommendation-agile-element, #recommendation-agile-managing-project", "class": "hidden" }
+              { "type": "removeClass", "outputTarget": "#non-recommended", "class": "hidden"},
+              { "type": "addClass", "outputTarget": "#agile-recommended, #hybrid-recommended", "class": "hidden"}
             ]
           }
         ]
@@ -120,11 +169,12 @@ endfor %}
   }
 ] }'>
 <th>{{ site.Summary[ page.lang ] }}</th>
-<td>{{ site.NotApplicable[ page.lang ] }}</td>
-<td>{{ page.agileIsRecommendedFor }} <span id="total-agile-answers">0</span> {{ site.OutOf[ page.lang ] }} <span id="max-agile-answers">{{ page.criteriaAgilePoints | size }}</span> {{ site.Criteria[ page.lang ] | downcase }}<br />
-<progress id="total-agile-answers-progress" value="0" max="100"></progress> <span id="total-agile-answers-percent">0</span>{{ site.Percent[ page.lang ] }}</td>
-<td><span id="total-agile-points">0</span> {{ site.OutOf[ page.lang ] }} <span id="max-agile-points">0</span> {{ site.Points[ page.lang ] }}<br />
-<progress id="total-agile-points-progress" value="0" max="100"></progress> <span id="total-agile-points-percent">0</span>{{ site.Percent[ page.lang ] }}</td>
+<td>{{ site.NotApplicable[ page.lang ] }}</td>{%
+for type in types %}
+<td><span id="{{ type }}-score-total">0</span> {{ site.OutOf[ page.lang ] }} <span id="{{ type }}-max-total">0</span><br />
+<progress id="progress-{{ type }}" value="0" max="100"></progress> <span id="{{ type }}-percent">0</span>{{ site.Percent[ page.lang ] }}
+</td>{%
+endfor %}
 </tr>
 </tfoot>
 </table>

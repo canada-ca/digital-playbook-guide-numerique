@@ -27,9 +27,11 @@ questions:
   "7": Track Record of Success
   "7-a1": Project failure rate for previous projects managed using a waterfall approach is unacceptably high.
   "7-a2": Projects have been delivering successfully with a waterfall approach.
-  "8": Software Development Project
-  "8-a1": My project is a software development project.
-  "8-a2": My project is not a software development project.
+  "8": Product
+  "8-a1": The product is a piece of software with primarily front-end technology.
+  "8-a2": The product is a piece of software which has back-end and front-end technology. 
+  "8-a3": The product consists of (equally important) hardware and software components.
+  "8-a4": The product is not software-based.
   "9": Co-location
   "9-a1": My team is co-located (and would benefit from daily scrums to discuss status, roadblocks and input from the product owner).
   "9-a2": My team is not co-located.
@@ -42,12 +44,26 @@ questions:
   "12": Willingness to Fail and Learn
   "12-a1": My organization (supporting management, client, etc.) are amenable to failing fast and learning faster.
   "12-a2": My organization (supporting management, client, etc.) sees failure as a negative thing.
-criteriaAgilePoints: [ 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 ]
-recommendationAgileElement: Agile may be an element you want to incorporate in your project.
-recommendationAgileManagingProject: You will likely want to take an agile approach in managing your project.
-recommendationAgileManagingProjectAndScrum: You will likely want to take an agile approach in managing your project and consider scrum as a useful tool.
-isAgileRecommended: Is Agile recommended?
-agileIsRecommendedFor: Agile is recommended for
+points:
+  "1": { "agile": [ 10, 0 ], "hybrid": [ 10, 0 ], "non": [ 0, 10 ] }
+  "2": { "agile": [ 10, 0 ], "hybrid": [ 0, 10 ], "non": [ 0, 10 ] }
+  "3": { "agile": [ 10, 0 ], "hybrid": [ 0, 10 ], "non": [ 0, 10 ] }
+  "4": { "agile": [ 10, 0 ], "hybrid": [ 10, 0 ], "non": [ 0, 10 ] }
+  "5": { "agile": [ 10, 0 ], "hybrid": [ 10, 0 ], "non": [ 0, 10 ] }
+  "6": { "agile": [ 10, 0 ], "hybrid": [ 10, 0 ], "non": [ 0, 10 ] }
+  "7": { "agile": [ 10, 0 ], "hybrid": [ 10, 0 ], "non": [ 0, 10 ] }
+  "8": { "agile": [ 10, 5, 5, 0 ], "hybrid": [ 5, 10, 10, 0 ], "non": [ 0, 5, 5, 10 ] }
+  "9": { "agile": [ 10, 0 ], "hybrid": [ 10, 0 ], "non": [ 0, 10 ] }
+  "10": { "agile": [ 10, 0 ], "hybrid": [ 10, 0 ], "non": [ 0, 10 ] }
+  "11": { "agile": [ 10, 0 ], "hybrid": [ 10, 0 ], "non": [ 0, 10 ] }
+  "12": { "agile": [ 10, 0 ], "hybrid": [ 0, 10 ], "non": [ 0, 10 ] }
+agile: Agile
+agileScore: Agile score
+hybrid: Hybrid
+hybridScore: Hybrid score
+non: Non-agile
+nonScore: Non-agile score
+recommendedApproach: "is the recommended approach for your project."
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
@@ -66,6 +82,7 @@ The questions in this questionnaire are inspired by the following ressources:
 <!-- markdownlint-disable MD032 -->
 - [Waterfall vs. Agile: Which is the Right Development Methodology for Your Project? (Segue Technologies)](https://www.seguetech.com/waterfall-vs-agile-methodology/)
 - [How to Know If Agile Is Right for You (ProjectManager.com)](https://www.projectmanager.com/blog/know-agile-right)
+- [When, Why, and How to use the Agile-Waterfall Hybrid Model](https://content.intland.com/blog/agile/when-why-how-to-use-the-hybrid-model)
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
