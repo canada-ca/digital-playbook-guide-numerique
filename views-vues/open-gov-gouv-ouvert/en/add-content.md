@@ -79,6 +79,7 @@ For more detailed guidance on how to add your dataset or information asset on op
 
 {% include views-vues/open-gov-gouv-ouvert/add-content-ajouter-contenu-questionnaire.html %}
 
+<!-- Step 4. No questions to answer, just instructions for releasing the dataset or information asset on open.canada.ca. -->
 <section id="step4-section" class="hidden">
 
 ## Step 4. Release the dataset or information asset on open.canada.ca
