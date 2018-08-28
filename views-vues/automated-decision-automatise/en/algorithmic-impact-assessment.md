@@ -475,18 +475,104 @@ assign dataSource = site.data[dataVariable] %}
 <section>
 
 <div class="wb-inview" data-inview="progress-overlay">
+<!-- markdownlint-disable MD026 -->
 
-## Introduction
+## What is this?
 
+<!-- markdownlint-enable MD026 -->
 </div>
 
-The aim of the Algorithmic Impact Assessment (AIA) is to develop a framework to help institutions better understand and mitigate the risks associated with Automated Decision Systems.
+The algorithmic impact assessment (AIA) tool is a questionnaire designed to help you understand and mitigate any risks associated with deploying automated decision systems. The questions are focused on your business processes, your data, and your system design decisions.
 
-In developing the AIA, the following three key goals have been identified:
+The AIA helps identify the impact level of your automated decision system under the proposed Directive on Automated Decision-Making.
 
-- Increase capacity to evaluate the impact of Automated Decision Systems including legal and ethical issues, such as disparate impacts and due process violations;
+We don’t store your answers, so feel free to use this tool as many times as you need along the development of your system.  
+
+<details>
+  <summary markdown="0">Want to know more? Click here.</summary>
+
+The aim of our Algorithmic Impact Assessment is to develop a framework that will help institutions better understand and mitigate the risks associated with Automated Decision Systems by providing the appropriate governance, oversight and reporting, and audit requirements. The AIA is designed to support the proposed [Treasury Board Directive on Automated Decision-Making](https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok/edit?usp=sharing).
+
+In developing our proposed AIA Framework, we’ve underlined three key goals:
+
+<!-- markdownlint-disable MD032 -->
+- Increase capacity to evaluate the impact of automated decision systems including legal and ethical issues, such a failure to monitor for unintended outcomes, or potential procedural fairness violations;
 - Recommend the appropriate governance, oversight and/or design recommendations to institutions based on their existing or proposed automated decision systems; and
-- Provide a mechanism for greater openness and transparency for public consultation and external review of the design and deployment of Automated Decision Systems in the public sector.
+- Provide a mechanism for greater openness and transparency for public consultation and external review of the design and deployment of automated decision systems in the public sector, because we intend for the final results to be public
+{: .lst-spcd}
+<!-- markdownlint-enable MD032 -->
+
+All results of the AIA will be exportable and available to the public. This will let researchers and civil society have a standardized means to monitor and compare which decisions are being automated and what are some of these systems’ core attributes.
+
+</details>
+
+</section>
+
+<section>
+<!-- markdownlint-disable MD026 -->
+
+## How does it work?
+
+<!-- markdownlint-enable MD026 -->
+
+We’re going to ask you 46 questions, plus a few more for clarification depending on your answers. At the end, you’ll be provided with an impact level, as well as a link to find out what your requirements are under the *Directive*.
+
+Want to know why your system was rated a certain level? Click “Detailed Results” below and you’ll see a detailed scoresheet showing exactly where you gathered risk. You can download your results as well.
+
+Finding the questionnaire a bit long? Need to do some more research? You can save your spot at any time by clicking “Save progress to a file.” It will download a tiny JSON file, which you can use to reload your results when you’re ready to proceed.
+
+We don’t save any of your information.
+
+<details>
+  <summary markdown="0">Want to know more? Click here.</summary>
+
+The AIA is structured to be an electronic survey comprised of approximately 46 to 65 questions. Each answer is coded according to five separate scoring categories that add or remove risk depending on the answers:
+
+<!-- markdownlint-disable MD032 -->
+- The impact on individuals, businesses, and communities (“socioeconomic impact”),
+- The impact on government operations,
+- The complexity of the system,
+- Data management practices, and
+- Procedural fairness considerations.
+{: .lst-spcd}
+<!-- markdownlint-enable MD032 -->
+
+Once you fill in your questionnaire, you’ll be provided with an **Risk Impact Level** that scales from 1 to 4 which will determine which requirements under the [{{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}]({{ site.AutomatedDecisionSystems.DirectiveURL[ page.lang ] }}) will apply to your initiative.
+
+There are 4 Risk Impact Levels:
+
+**Level 1:** The decision has a little to no impact on the rights or interests of an individual, entity or Government organization. Erroneous decision could reasonably be expected to cause nil to minimal harm.
+
+**Level 2:** The decision has a moderate impact on the rights or interests of an individual, entity or Government organization. Compromise could reasonably be expected to cause minimal to moderate harm.
+
+**Level 3:** The decision has a high impact on the rights or interests of an individual, entity or Government organization. Compromise could reasonably be expected to cause moderate to serious harm.
+
+**Level 4:** The decision has a very high impact on the rights or interests of an individual, entity or Government organization. Compromise could reasonably be expected to cause serious to catastrophic harm.
+
+<section>
+
+### Determining Risk Impact Levels
+
+Each question provides different scores in all five categories. As you add impact points, you start moving up in the risk levels.
+
+Risk Levels for **Socioeconomic impact** and **Government impact** are based on the percentage of total score while scores for **Data management**, **System complexity** and **Procedural fairness** function as modifiers to either increase or decrease total risk scores.
+
+Getting to the final Risk Impact Level is a three step calculation:
+
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD037 -->
+1. Socioeconomic impact * complexity multiplier * data management multiplier * procedural fairness multiplier = impact level
+1. Government operations score * complexity multiplier * data management multiplier * procedural fairness multiplier = Impact Level
+1. Whichever is higher between #1 and #2 determines the **final Risk Impact Level**.
+{: .lst-spcd}
+<!-- markdownlint-enable MD037 -->
+<!-- markdownlint-enable MD032 -->
+
+More detailed information on the scoring methodology can be found here: [Medium post](https://medium.com/@supergovernance/the-government-of-canadas-algorithmic-impact-assessment-take-two-8a22a87acf6f)
+
+</section>
+
+</details>
 
 </section>
 
