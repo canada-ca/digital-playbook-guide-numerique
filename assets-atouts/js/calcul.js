@@ -98,6 +98,7 @@ var componentName = "wb-calculate",
      * - number: Retrieve a number as is
      * - string: Retrieve a string as is
      * - count: Retrieve a count of items
+     * - length: Calculate the length of a retrieved string
      * - percent: Calculate the percentage using two numbers (i.e., (a / b) * 100)
      * - add: Calculate the result of adding two or more numbers in sequence (e.g., a + b + c)
      * - subtract: Calculate the result of subtracting two or more numbers in sequence (e.g., a - b - c) 
@@ -147,7 +148,7 @@ var componentName = "wb-calculate",
           inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
           outputTargets, outputTarget, outputAttribute, outputType, currentValue, outputTargetIndex, outputTargetsLength;
 
-      if ( type === "number" || type === "string" ) {
+      if ( type === "number" || type === "string" || type === "length" ) {
         if ( $query ) {
           sourceAttribute = operation[ "sourceAttribute" ];
           if ( sourceAttribute ) {
@@ -167,6 +168,8 @@ var componentName = "wb-calculate",
             } else {
               value = parseInt( value );
             }
+          } else if ( type === "length" ) {
+            value = value.length;
           }
         }
       } else if ( type === "count" ) {
