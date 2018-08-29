@@ -85,6 +85,8 @@ Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
 
 </section>
 
+</section>
+
 <section class="dpgn-section-guides">
 
 ### Guides d'implémentation
