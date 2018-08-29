@@ -27,7 +27,7 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 ### Open Government views
 
-- [How do I add content to the Open Government Portal - open.canada.ca? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/en/add-content.html)
+- [How do I decide whether to release content on the Open Government Portal? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/en/release-content.html)
 
 ### Digital Architectural Standards views
 
@@ -115,7 +115,7 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 
 ### Vues basées sur le gouvernement ouvert
 
-- [Comment puis-je ajouter du contenu au portail du gouvernement ouvert - ouvert.canada.ca? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/fr/ajouter-contenu.html)
+- [Comment puis-je décider de publier du contenu dans le Portail du gouvernement ouvert? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/fr/publier-contenu.html)
 
 ### Vues basées sur les normes architecturales sur le numérique
 
