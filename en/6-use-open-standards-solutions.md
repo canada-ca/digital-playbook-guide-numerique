@@ -8,6 +8,7 @@ altLangPage: 6-utiliser-normes-solutions-ouvertes
 <div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
+{: .dpgn-data-ignore}
 
 </div>
 
@@ -36,8 +37,6 @@ altLangPage: 6-utiliser-normes-solutions-ouvertes
 
 <div class="dpgn-section-intro-guideline">
 
-**[TODO: Add/revise introductory text]**
-
 Build technology that uses open standards to ensure your system works and communicates with other products or systems, and can easily be upgraded and expanded.
 
 Adopting and using open standards means you can:
@@ -58,11 +57,6 @@ Using open source software means you can benefit from:
 - more time and resource for customised solutions to solve the rare or unique problems
 - lower implementation and running costs
 
-**Design, build and test end-to-end digital services (formerly guideline 6.5):**
-{: .dpgn-data-ignore}
-
-There are many potential benefits from the greater use of digital services, including greater convenience for users, quicker and more responsive service delivery, increased security and reliability and reduced costs. To maximize these potential benefits and avoid user reliance on less convenient ways of interacting with government, services should be designed to be digital from end-to-end.
-
 </div>
 
 <section class="dpgn-section-checklist">
@@ -76,31 +70,26 @@ There are many potential benefits from the greater use of digital services, incl
 - Avoiding lock-in to any proprietary solutions where open source software and/or open standards are available
 - Ensure that software can be deployed on a variety of commodity hardware types
 
-**Design, build and test end-to-end digital services (formerly guideline 6.5):**
-{: .dpgn-data-ignore}
+<section>
+
+#### Testing
 
 - Design, build and test end-to-end digital services
-- ensure prototypes incorporate the end-to-end user experience **(4. Design the service from start to finish, Digital Service Standard (Ontario))**
-- design and test your service to work with the devices and browsers your users use - find out the browsers you must test with **(Digital Service Standard (UK))**
 - test the service in an environment that is as similar to the live environment as possible **(Digital Service Standard (Ontario))**
 - have a process for testing changes made to the service **(Digital Service Standard (Ontario))**
 - have a process for monitoring and testing the service frequently even when changes are not being made **(Digital Service Standard (Ontario))**
 - Create automated tests that verify all user-facing functionality **(Digital Services Playbook (US))**
 - Create unit and integration tests to verify modules and components **(Digital Services Playbook (US))**
 - Run tests automatically as part of the build process **(Digital Services Playbook (US))**
-- Perform deployments automatically with deployment scripts, continuous delivery services, or similar techniques **(Digital Services Playbook (US))**
 - Conduct load and performance tests at regular intervals, including before public launch **(Digital Services Playbook (US))**
-- Determine how users would be affected if your service was unavailable for any length of time and how that's changed since beta **(Digital Service Standard (UK))**
-- Determine the most likely ways the service could go offline and how you plan to stop them **(Digital Service Standard (UK))**
-- Determine your strategy for dealing with outages, including who's responsible and the decisions they can make **(Digital Service Standard (UK))**
+
+</section>
 
 </section>
 
 <section class="dpgn-section-guides">
 
 ### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
 
 - [Socle Logiciels Libres (France)](https://references.modernisation.gouv.fr/socle-logiciels-libres)
 - [Logiciels libres et ouverts - Guide d'analyse de maturité (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/pollo.pdf)
@@ -116,27 +105,20 @@ There are many potential benefits from the greater use of digital services, incl
   - [Web of Devices (W3C)](https://www.w3.org/standards/webofdevices/)
 - [OASIS Standards (oasis-open.org)](https://www.oasis-open.org/standards)
 
-**Design, build and test end-to-end digital services (formerly guideline 6.5):**
-{: .dpgn-data-ignore}
+<section>
+
+#### Testing
 
 - [Quality assurance: testing your service regularly (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Designing for different browsers and devices (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Test your service's performance (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/test-your-services-performance)
-- [Exploratory testing (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/exploratory-testing)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Deployment environments (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/deployment.html)
 - [Vulnerability and penetration testing (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/vulnerability-and-penetration-testing)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Performance testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 - [Testing your service (Service Manual (UK)](https://www.gov.uk/service-manual/technology#testing-your-service)
 - [Testing Cookbook (18F (US))](https://testing-cookbook.18f.gov/)
-- [Keeping your service online (Service Manual (UK))](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)
 
 </section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
 
 </section>
 
@@ -149,23 +131,21 @@ There are many potential benefits from the greater use of digital services, incl
 - [Natural Resources Canada Free and Open Source Software Licensing Primer (GC)](http://ftp.maps.canada.ca/pub/nrcan_rncan/publications/ess_sst/295/295663/cgdi_ip_33_e.pdf)
 - [Logiciels libres et ouverts - Guide de référence (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf)
 - [Politique du libre (Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
-- [8. Choose a modern technology stack (Digital Services Playbook (US))](https://playbook.cio.gov/#play8)
 - [18F Open Source Policy (US)](https://github.com/18F/open-source-policy/blob/master/policy.md)
 - [3. Be open and use open source (Technology Code of Practice (UK))](https://www.gov.uk/guidance/be-open-and-use-open-source)
 - [4. Make use of open standards (Technology Code of Practice (UK))](https://www.gov.uk/guidance/make-use-of-open-standards)
-- [9. Use open standards and common platforms (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/use-open-standards-and-common-platforms)
 - [9. Use open standards and common platforms (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-9)
-- [7. Use open standards and common platforms (Digital Service Standard (AU))](https://www.dta.gov.au/standard/7-open-standards-and-common-platforms/)
 
-**Design, build and test end-to-end digital services (formerly guideline 6.5):**
-{: .dpgn-data-ignore}
+<section>
+
+#### Testing
 
 - [10. Test the end-to-end service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/test-the-end-to-end-service)
 - [4. Design the service from start to finish (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
 - [6. Test the end-to-end service (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-6)
 - [10. Automate testing and deployments (Digital Services Playbook (US))](https://playbook.cio.gov/#play10)
-- [10. Test the service (Digital Service Standard (AU))](https://www.dta.gov.au/standard/10-test-the-service/)
-- [11. Make a plan for being offline (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-a-plan-for-being-offline)
+
+</section>
 
 </section>
 </section>
@@ -175,8 +155,6 @@ There are many potential benefits from the greater use of digital services, incl
 ## 6.2 Use and reuse common, proven government solutions, approaches, and platforms
 
 <div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
 
 In order to limit costs, avoid duplication of effort and provide a consistent client experience when using various services, the reuse and adaptation of existing technological solutions is encouraged. If the development of new solutions is required, consider the ability of others to reuse and adapt your work as this will provide additional value on an organizational level.
 
@@ -191,14 +169,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 <section class="dpgn-section-checklist">
 
 ### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Use device-agnostic and modular technology. **(2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)))**
-  - Use technology that allows your service to function regardless of the device or operating system. Make sure mobile apps can function on all devices.
-  - Modular technology can be reused, in part or in whole to innovate new solutions and uses for it. It also allows you to add new capabilities and capacities to your technology in response to changing operational environments.
-- Follow the [Canada.ca Content Style Guide](https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp)
-- Static assets are served through a content delivery network **(Digital Services Playbook (US))**
 
 **Government of Canada Cloud Adoption Strategy:**
 {: .dpgn-data-ignore}
@@ -216,18 +186,8 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
-
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse}[Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html)
-
-<section>
-
-#### Cloud services
-
-**Cloud first (formerly guideline 6.6):**
-{: .dpgn-data-ignore}
-
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Government of Canada Right Cloud Selection Guidance](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-right-cloud-selection-guidance.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Government of Canada Security Control Profile for Cloud-Based GC IT Services](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Government of Canada Cloud Adoption Strategy](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-cloud-adoption-strategy.html)
@@ -238,13 +198,9 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 </section>
 
-</section>
-
 <section class="dpgn-section-solutions">
 
 ### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-maximize-reuse} [Web Experience Toolkit (WET)](http://wet-boew.github.io/wet-boew/index-en.html)
 
@@ -257,10 +213,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 - [Three-Step Software Solutions Analysis (Federal Source Code Policy (US))](https://sourcecode.cio.gov/Three-Step-Software-Solutions-Analysis/)
 - [1. Comply with Government of Canada acts, policies, standards and directives (Plan - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#1._Comply_with_Government_of_Canada_acts.2C_policies.2C_standards_and_directives)
 - [2. Reuse, improve and share technological solutions where appropriate (Do - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#2._Reuse.2C_improve_and_share_technological_solutions_where_appropriate)
-
-**Cloud first (formerly guideline 6.6):**
-{: .dpgn-data-ignore}
-
 - [9. Deploy in a flexible hosting environment (Digital Services Playbook (US))](https://playbook.cio.gov/#play9)
 
 </section>
@@ -272,8 +224,6 @@ Using common, proven government solutions, approaches, and platforms will help t
 
 <div class="dpgn-section-intro-guideline">
 
-**[TODO: Add/revise introductory text]**
-
 Interoperability is a characteristic of a product or system, whose interfaces are completely understood, to work with other products or systems, present or future, in either implementation or access, without any restrictions. Interoperability should be ensured, via the use of open standards.
 
 Application Program Interfaces (APIs) are a means by which business functionality is exposed digitally. They are building blocks that are critical to the successful delivery of government online digital services and expanding service delivery to third party providers. They can also enable greater interoperability between services, optimized experiences across devices and can even lead to innovative new services by enabling third party products to work seamlessly with Government of Canada systems.
@@ -283,8 +233,6 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 <section class="dpgn-section-checklist">
 
 ### Checklist
-
-**[TODO: Add/revise checklist items]**
 
 - Build services that are API-centric services, which execute most, if not all, functionality through API calls (e.g., connecting frontend to backend through an API)
 - Plan out API access from the beginning, designing services to be able to safely and securely expose functionality to other systems and the public.
@@ -299,21 +247,12 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
-
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions .dpgn-digital-architectural-enable-interoperability} [API technical and data standards (Government Digital Service (UK))](https://www.gov.uk/guidance/gds-api-technical-and-data-standards)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-enable-interoperability} [Developing cross-government API data and technical standards (Government Digital Service blog (UK))](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions .dpgn-architectural-enable-interoperability} [Application Programming Interfaces (APIs) (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
 
 </section>
 
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
 </section>
 
 <section class="dpgn-section-guideline">
