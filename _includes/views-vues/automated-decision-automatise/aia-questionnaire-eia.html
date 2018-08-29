@@ -54,7 +54,8 @@ endfor %}
 ] }' />
 </div>
 
-{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-about-respondant" nextId="aia-about-decision" %}
+<!-- Button for revealing the next section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="aia-about-respondant" nextId="aia-about-decision" %}
 </form>
 </section>
 
@@ -488,8 +489,8 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
 </div>
 
-<!-- Button for revealing the next section and hiding the current one -->
-{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-about-decision" nextId="aia-business-process" previousId="aia-about-respondant" %}
+<!-- Buttons for revealing the next/previous section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="aia-about-decision" nextId="aia-business-process" previousId="aia-about-respondant" %}
 </form>
 </section>
 
@@ -699,7 +700,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="24" %}
 
 <!-- Buttons for revealing the next/previous section and hiding the current one -->
-{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-business-process" nextId="aia-system-functionality" previousId="aia-about-decision" %}
+{% include views-vues/questionnaire-next-previous.html currentId="aia-business-process" nextId="aia-system-functionality" previousId="aia-about-decision" %}
 </form>
 </section>
 
@@ -876,7 +877,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="34" %}
 
 <!-- Buttons for revealing the next/previous section and hiding the current one -->
-{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-system-functionality" nextId="aia-organizational-readiness" previousId="aia-business-process" %}
+{% include views-vues/questionnaire-next-previous.html currentId="aia-system-functionality" nextId="aia-organizational-readiness" previousId="aia-business-process" %}
 </form>
 </section>
 
@@ -1106,7 +1107,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="46" %}
 
 <!-- Buttons for focusing on the final results section (next) and revealing the previous section and hiding the current one (previous) -->
-{% include views-vues/automated-decision-automatise/aia-questionnaire-next-previous.html currentId="aia-organizational-readiness" nextId="final-result" previousId="aia-system-functionality" %}
+{% include views-vues/questionnaire-next-previous.html currentId="aia-organizational-readiness" nextId="final-result" previousId="aia-system-functionality" %}
 </form>
 </section>
 
@@ -1123,7 +1124,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 ] }'>{{ site.RestoreFromFile[ page.lang ] }}</button>
 </div>
 <div class="hidden">
-<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": ".json", "action": "restore-form-state", "container": "#questionnaire-section" }' />
+<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": "json", "action": "restore-form-state", "container": "#questionnaire-section" }' />
 </div>
 
 </section>

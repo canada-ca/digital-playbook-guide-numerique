@@ -1,7 +1,9 @@
 {% comment %}@overview Generates the next/previous buttons of the questionnaire{% endcomment %}{% 
 comment %}@param currentId {String} Id of the current section (excluding "-section").{% endcomment %}{%
 comment %}@param nextId {String} (Optional, defaults to none) Id of the next section (excluding "-section").{% endcomment %}{%
+comment %}@param nextHeading {Number} (Optional, defaults to 3) Level of the heading of the next section.{% endcomment %}{%
 comment %}@param previousId {String} (Optional, defaults to none) Id of the previous section (excluding "-section").{% endcomment %}{%
+comment %}@param previousHeading {Number} (Optional, defaults to 3) Level of the heading of the previous section.{% endcomment %}{%
 comment %}@return {String} Generated buttons.{% endcomment %}
 <div class="btn-group" markdown="0">{%
 if include.nextId %}
@@ -12,7 +14,7 @@ unless include.nextId == "final-result" %}
       { "type": "removeClass", "outputTarget": "#{{ include.nextId }}-section", "class": "hidden" },
       { "type": "addClass", "outputTarget": "#{{ include.currentId }}-section", "class": "hidden" },{%
 endunless %}
-      { "type": "event", "outputTarget": "#{{ include.nextId }}-section h3", "outputEvent": "setfocus.wb" }
+      { "type": "event", "outputTarget": "#{{ include.nextId }}-section h{% if include.nextHeading %}{{ include.nextHeading }}{% else %}3{% endif %}", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>{{ site.Next[ page.lang ] }}</button>{%
@@ -23,7 +25,7 @@ if include.previousId %}
     "inputs": [
       { "type": "removeClass", "outputTarget": "#{{ include.previousId }}-section", "class": "hidden" },
       { "type": "addClass", "outputTarget": "#{{ include.currentId }}-section", "class": "hidden" },
-      { "type": "event", "outputTarget": "#{{ include.previousId }}-section h3", "outputEvent": "setfocus.wb" }
+      { "type": "event", "outputTarget": "#{{ include.previousId }}-section h{% if include.previousHeading %}{{ include.previousHeading }}{% else %}3{% endif %}", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>{{ site.Previous[ page.lang ] }}</button>{%

@@ -9,9 +9,9 @@ assign questionId = include.questionNumber | replace: ".", "-"
 %}<!-- Question {{ include.questionNumber }} -->
 <tr id="question-{{ questionId }}-result"{%
 if include.nonScoringResult == true
-%} class="non-scoring-result{% if include.hidden == true %}  hidden{% endif %}"{%
+%} class="non-scoring-result{% if include.hidden == true %} hidden{% endif %}"{%
 elsif include.answerType == "checkbox"
-%} class="question-{{ include.parentQuestionNumber }}-checkbox-score{% if include.hidden == true %}  hidden{% endif %}"{%
+%} class="question-{{ include.parentQuestionNumber }}-checkbox-score{% if include.hidden == true %} hidden{% endif %}"{%
 elsif include.hidden == true
 %} class="hidden"{%
 endif %}>
