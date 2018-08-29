@@ -8,6 +8,7 @@ altLangPage: 4-permettre-personnel-offrir-meilleurs-services
 <div class="dpgn-section-intro-standard">
 
 **[TODO: Add/revise introductory text]**
+{: .dpgn-data-ignore}
 
 </div>
 
