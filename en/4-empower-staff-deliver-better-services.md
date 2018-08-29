@@ -54,22 +54,6 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 
 </section>
 
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -130,17 +114,7 @@ We need to evaluate and determine the tools and systems that we will use to buil
 
 ### Implementation guides
 
-**[TODO: Add/revise implementation guide items]**
-
 - [Australian Government ICT Policies, guide and procurement (AU)](http://www.finance.gov.au/policy-guides-procurement/whole-of-government-ict-policies/)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
 
 </section>
 
@@ -191,22 +165,6 @@ Every service must have a person that will hold the designate authority to make 
 
 </section>
 
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
 <section class="dpgn-section-similar">
 
 ### Similar resources
@@ -239,22 +197,6 @@ We must empower staff to share power and control over projects. This can involve
 - Promote information-sharing to build better decision-making capacity.
 - Have clear objectives, milestones, and defined roles to assist employees as they navigate interactions with users.
 - Allow employees to grow into personal roles, and avoid the limits of hierarchy within team member/manager dynamics.
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
 
 </section>
 
