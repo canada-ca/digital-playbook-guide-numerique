@@ -38,49 +38,11 @@ altLangPage: 7-effectuer-iterations-ameliorations-constamment
 
 **[TODO: Add/revise introductory text]**
 
-**Introduction examples:**
-
-**Digital Service Standard (UK):** Build your service using the agile, iterative and user-centred methods set out in the manual.
-
-Using agile methods helps you to build services that:
-
-- meet the needs of your users
-- are easy and convenient for people to use
-- you can change easily, eg if government policy or technology policy changes
-- you can keep improving, eg based on user feedback
-- cost less and are more accountable
-
 **Digital Service Standard (Ontario):** Design and build the service using an agile and user-centred approach. Agile is an approach to building services that breaks the work into smaller chunks known as iterations. Build one feature of the service at a time until the entire service is complete.
 
 It is a much lower risk approach than traditional build-it-all-at-once approach known as waterfall because frequent iterations expose any flaws in the original plan much faster (e.g. not getting approvals, not enough resources, not the right people on the team, etc.)
 
 User-centred methods such as user research and usability testing put the focus on making services that are easy-to-use. Traditional government services focus on meeting business needs and aligning with policy goals. A user-centred approach ensures business needs are also balanced against user needs. This helps to increase digital service uptake.
-
-### Why it matters
-
-Agile methods build services that:
-
-- can be prototyped quickly (and shown to users for regular feedback)
-- meet the needs of users
-- can change easily if, for example, government policy or technology changes
-- can keep improving based on user feedback
-- can be built quickly with a minimum set of features, and enhanced with more features after the service goes live
-
-**Digital Service Playbook (US):** We should use an incremental, fast-paced style of software development to reduce the risk of failure. We want to get working software into users' hands as early as possible to give the design and development team opportunities to adjust based on user feedback about the service. A critical capability is being able to automatically test and deploy the service so that new features can be added often and be put into production easily.
-
-**Digital Service Standard (AU):** Design and build the service using the service design and delivery process, taking an agile and user-centred approach.
-
-Designing services in a user-centred way means that the services you deliver will be easy to use and convenient for the people who need to use them, helping them to stay in the digital channel.
-
-Designing using agile methods allows you to be more proactive and respond easily to change, both in technology and government policy. Services should be improved frequently; they will be cheaper and more accountable to users.
-
-**3. Review and improve services continually (Think - Digital Design Playbook (ISED)):** The [TBS Policy on Service](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27916) and the [TBS Management Accountability Framework (MAF)](http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/maf-crg/index-eng.asp) require regular reviews of priority services in order to identify opportunities for service redesign." By reviewing services regularly, service providers can ensure that services continue to be relevant, effective and efficient, and deliver best value to clients.
-
-Use quantitative and qualitative data to help with regular reviews of your service. User needs and technology evolve. There will always be room for improvement.
-
-**3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)):** Applying agile involves continuous improvement by analyzing data, making adjustments and iterating to identify and test improvements. Core principles of agile include defining a measurable goal; sharing ownership of the problem; taking small steps with visible impact; validating ideas/solutions with the target audience (e.g., the client); measuring success; reflecting, adjusting and iterating.
-
-Start with a representation or prototype of the solution that will be tested and revised based on feedback and insights. Each iteration improves on the previous version. Your understanding of a problem and how to address it evolves each time you refine an idea and re-craft potential solutions. Taking an iterative approach also helps you reduce risks. It makes big failures less likely and turns mistakes into learning opportunities.
 
 </div>
 
@@ -90,70 +52,22 @@ Start with a representation or prototype of the solution that will be tested and
 
 **[TODO: Add/revise checklist items]**
 
-**Alpha stage:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- test hypotheses and underlying assumptions with several prototypes **(Digital Service Standard (AU))**
-- follow a user-centred approach; include the user in all areas of the prototyping (design, iterations and so on) **(Digital Service Standard (AU))**
-- work out incrementally what is the “right thing to build” **(Digital Service Standard (AU))**
-- determine the minimum viable product (MVP). **(Digital Service Standard (AU))**
-{: .dpgn-stage-alpha}
-<!-- markdownlint-enable MD032 -->
-
-**Beta and live stages:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- show how the service has responded to user research and usability testing **(Digital Service Standard (AU))**
-- clearly describe the lifecycle of a user story, from user research to production **(Digital Service Standard (AU))**
-- explain the deployment process and how you are able to support frequent deployments with minimal impact to users. **(Digital Service Standard (AU))**
-{: .dpgn-stage-beta .dpgn-stage-live}
-<!-- markdownlint-enable MD032 -->
-
 **Alpha, beta and live stages:**
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
 - work in an agile way, using agile tools and techniques, and continue to do so when the service is live **(Digital Service Standard (Ontario / UK / AU))**
 - ensure the team reviews and iterates the ways problems are fixed **(Digital Service Standard (Ontario / UK / AU))**
-- use agile tools and techniques to communicate with each other **(Digital Service Standard (UK / AU))**
-- ensure the team responds to user research and usability testing **(Digital Service Standard (Ontario / UK))**
 - show that your service governance is agile, based on clear and measurable goals **(Digital Service Standard (Ontario / UK / AU))**
 - explore design options for your prototype and explain why some are discarded **(Digital Service Standard (Ontario / UK))**
-- show how the design of the service has changed over time because of user research findings **(Digital Service Standard (Ontario / UK))**
-- document the design options you're considering for your assisted digital support **(Digital Service Standard (UK))**
-- identify any problems found in research and solutions to improve the service **(Digital Service Standard (Ontario / UK))**
 - have a quality assurance testing and rollback plan that supports frequent iterations to the service **(Digital Service Standard (Ontario))**
 - use a phased approach to test changes to part of service, when feature-based changes are not feasible **(Digital Service Standard (Ontario))**
-- Ship a functioning "minimum viable product" (MVP) that solves a core user need as soon as possible, no longer than three months from the beginning of the project, using a "beta" or "test" period if needed **(Digital Service Playbook (US))**
-- Run usability tests frequently to see how well the service works and identify improvements that should be made **(Digital Service Playbook (US))**
-- Ensure the individuals building the service communicate closely using techniques such as launch meetings, war rooms, daily standups, and team chat tools **(Digital Service Playbook (US))**
-- Keep delivery teams small and focused; limit organizational layers that separate these teams from the business owners **(Digital Service Playbook (US))**
-- Release features and improvements multiple times each month **(Digital Service Playbook (US))**
-- Create a prioritized list of features and bugs, also known as the "feature backlog" and "bug backlog" **(Digital Service Playbook (US))**
-- Use a source code version control system **(Digital Service Playbook (US))**
-- Give the entire project team access to the issue tracker and version control system **(Digital Service Playbook (US))**
-- Use code reviews to ensure quality **(Digital Service Playbook (US))**
-- Explore opportunities for improved usability of service. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Review how other departments and governments approach service delivery and adapt/incorporate best practices where appropriate. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Explore interdepartmental and/or interjurisdictional partnership arrangements to identify opportunities for joined-up services. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Design the website or web application iteratively; the process should start with low-fidelity methods, such as quick sketches, and progressively moves to higher-fidelity methods, such as prototypes. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Evaluate the design of the website or web application regularly and improve it throughout its life cycle through various methods such as observing users completing tasks during **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Consider other service channels, such as telephone and in-person, used to obtain information and services from the Government of Canada. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Explore opportunities for channel integration and mobile optimization. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Consult the TBS Technical Specifications for the Web and Mobile Presence. **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-- Websites and web applications are optimized for mobile devices by: **(3. Review and improve services continually (Think - Digital Design Playbook (ISED)))**
-  - Using the Web Experience Toolkit (WET) for adapting the layout and design of websites and web applications for small, medium and large screen sizes, and for different input methods, such as touch input, and keyboard and mouse input.
-  - Designing the content and interface of websites and web applications for small, medium and large screen sizes and for different input methods, such as touch input and keyboard and mouse input.
 - Start with a prototype **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs.
 - When iterating, focus on workable solutions over comprehensive documentation. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Having a workable solution that can be tested and validated will give you useful information for improving your service. Whenever possible, focus on results rather than unnecessary documentation and reporting (while staying within policy and regulatory limits).
 - When you can, use [agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques). **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Techniques can include: daily stand ups, issue trackers, code reviews, rapid prototyping, design sprints, usability testing, user stories, retrospective meetings.
-- Build and release a core-function oriented product that meets user needs. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - Focus on developing a product that takes care of the client’s task(s). Additional capacities and new features to service can be added later as long as these add-ons do not result in the service/product losing effectiveness at core functions.
 {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
 
@@ -162,8 +76,6 @@ Start with a representation or prototype of the solution that will be tested and
 <section class="dpgn-section-guides">
 
 ### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
 
 - [247 different checklists for usability testing (userfocus.co.uk)](http://www.userfocus.co.uk/resources/guidelines.html)
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
@@ -186,8 +98,6 @@ Start with a representation or prototype of the solution that will be tested and
 <section class="dpgn-section-solutions">
 
 ### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
 
 - [Method Cards (18F (US))](https://methods.18f.gov/)
 - [Agile tools and techniques (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques)
@@ -345,25 +255,9 @@ You need to build a service which you can iterate and keep improving so that you
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- document what you've built in each phase and why you built it **(Digital Service Standard (UK))**
-- document the lifecycle of a user story from user research to production **(Digital Service Standard (UK))**
-- make sure your service is built to meet user needs **(Digital Service Standard (UK))**
-- identify and prioritize insights from user research **(Digital Service Standard (UK))**
-- move user stories quickly and smoothly between user research and production **(Digital Service Standard (UK))**
-- make sure there is minimal risk associated with the technology you chose **(Digital Service Standard (UK))**
 - make sure you have the ability to deploy software frequently with minimal disruption to users **(Digital Service Standard (UK))**
 - analyze user research and use it to improve your service **(Digital Service Standard (UK))**
-- solve any technical problems you've found **(Digital Service Standard (UK))**
 {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
-<!-- markdownlint-enable MD032 -->
-
-**Beta stage:**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- determine how long you expect your service to be in beta and why **(Digital Service Standard (UK))**
-- document your way of [deploying software](https://www.gov.uk/service-manual/making-software/deployment.html), ie how you can deploy frequently with minimum impact on users **(Digital Service Standard (UK))**
-{: .dpgn-stage-beta}
 <!-- markdownlint-enable MD032 -->
 
 **Live stage:**
