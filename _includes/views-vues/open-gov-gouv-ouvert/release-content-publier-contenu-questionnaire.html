@@ -48,7 +48,12 @@
 <h3 class="panel-title">{{ page.step1.failTitle }}</h3>
 </header>
 <div class="panel-body">
-<p>{{ page.step1.failBody }} {{ page.fail.help1 }} [{{ page.guidebook.linkText }}]({{ page.guidebook.url }}), {{ page.fail.help2 }} <{{ page.contactEmail }}></p>
+<p>{{ page.step1.failBody }}</p>
+<p>{{ page.fail.help1 }}{{ site.Colon[ page.lang ] }}</p>
+<ul>
+<li>{{ page.fail.helpConsult }} <a href="{{ page.guidebook.url }}">{{ page.guidebook.linkText }}</a><br />{{ page.fail.helpOr }}</li>
+<li>{{ page.fail.helpContact }} <a href="mailto:{{ page.contactEmail }}">{{ page.contactEmail }}</a></li>
+</ul>
 </div>
 </div>
 
@@ -86,7 +91,7 @@
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
-  { "action": "addClass", "source": "#step2-q3-4-5-6-wrapper, #step3-4-wrapper", "class": "hidden" }
+  { "action": "addClass", "source": "#step3-4-wrapper", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "addClass", "source": "#step2-fail", "class": "hidden" },
@@ -104,12 +109,12 @@
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
-  { "action": "addClass", "source": "#step2-q3-4-wrapper, #step3-4-wrapper", "class": "hidden" }
+  { "action": "addClass", "source": "#step3-4-wrapper", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "addClass", "source": "#step2-fail", "class": "hidden" },{%
   if qNumber == 6 %}
-  { "action": "removeClass", "source": "#step2-q3-4-wrapper", "class": "hidden" }{%
+  { "action": "removeClass", "source": "#step3-4-wrapper", "class": "hidden" }{%
   else %}
   { "action": "append", "source": "#step2-q2Sub{{ qNumberNext }}" }{%
   endif %}
@@ -120,45 +125,17 @@
 
 </fieldset>
 
-<div id="step2-q3-4-wrapper" class="hidden">
-<!-- Question 3 -->
-<div id="step2-q3" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>3. {{ page.step2.q3Label }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
-  { "action": "addClass", "source": "#step3-4-wrapper", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "addClass", "source": "#step2-fail", "class": "hidden" },
-  { "action": "append", "source": "#step2-q4" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<!-- Question 4 -->
-<div id="step2-q4" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas":"radio", "inline": true }'>
-<p>4. {{ page.step2.q4Label }}</p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
-  { "action": "addClass", "source": "#step3-4-wrapper", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "addClass", "source": "#step2-fail", "class": "hidden" },
-  { "action": "removeClass", "source": "#step3-4-wrapper", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-</div>
-
 <div id="step2-fail" class="panel panel-danger hidden">
 <header class="panel-heading">
 <h3 class="panel-title">{{ page.step2.failTitle }}</h3>
 </header>
 <div class="panel-body">
-<p>{{ page.step2.failBody }} {{ page.fail.help1 }} [{{ page.guidebook.linkText }}]({{ page.guidebook.url }}), {{ page.fail.help2 }} <{{ page.contactEmail }}></p>
+<p>{{ page.step2.failBody }}</p>
+<p>{{ page.fail.help1 }}{{ site.Colon[ page.lang ] }}</p>
+<ul>
+<li>{{ page.fail.helpConsult }} <a href="{{ page.guidebook.url }}">{{ page.guidebook.linkText }}</a><br />{{ page.fail.helpOr }}</li>
+<li>{{ page.fail.helpContact }} <a href="mailto:{{ page.contactEmail }}">{{ page.contactEmail }}</a></li>
+</ul>
 </div>
 </div>
 
@@ -173,7 +150,7 @@
 
 <!-- Question 1 -->
 <div id="step3-q1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>1. {{ page.step3.q1Label }}</p>
+<p>1. {{ page.step3.q1Label1 }} <a href="{{ page.step3.q1LabelLinkURL }}">{{ page.step3.q1LabelLinkText }}</a>? {{ page.step3.q1Label2 }}</p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "addClass", "source": "#step3-fail", "class": "hidden" },
@@ -190,8 +167,12 @@
   assign qNumberNext = qNumber | plus: 1 %}{%
   assign labelKey = "q" | append: qNumber | append: "Label" %}
 <!-- Question {{ qNumber }} -->
-<div id="step3-q{{ qNumber }}" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas":"radio", "inline": true }'>
-<p>{{ qNumber }}. {{ page.step3[ labelKey ] }}</p>
+<div id="step3-q{{ qNumber }}" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas":"radio", "inline": true }'>{%
+if qNumber == 3 %}
+<p>{{ qNumber }}. {{ page.step3.q3Label }} <a href="{{ page.step3.q3LabelLinkURL }}">{{ page.step3.q3LabelLinkText }}</a>?</p>{%
+else %}
+<p>{{ qNumber }}. {{ page.step3[ labelKey ] }}</p>{%
+endif %}
 <ul>
 <li data-wb-fieldflow='[
   { "action": "addClass", "source": "#step3-fail", "class": "hidden" },{%
@@ -214,7 +195,12 @@
 <h3 class="panel-title">{{ page.step3.failTitle }}</h3>
 </header>
 <div class="panel-body">
-<p>{{ page.step3.failBody }} {{ page.fail.help1 }} [{{ page.guidebook.linkText }}]({{ page.guidebook.url }}), {{ page.fail.help2 }} <{{ page.contactEmail }}></p>
+<p>{{ page.step3.failBody }}</p>
+<p>{{ page.fail.help1 }}{{ site.Colon[ page.lang ] }}</p>
+<ul>
+<li>{{ page.fail.helpConsult }} <a href="{{ page.guidebook.url }}">{{ page.guidebook.linkText }}</a><br />{{ page.fail.helpOr }}</li>
+<li>{{ page.fail.helpContact }} <a href="mailto:{{ page.contactEmail }}">{{ page.contactEmail }}</a></li>
+</ul>
 </div>
 </div>
 
