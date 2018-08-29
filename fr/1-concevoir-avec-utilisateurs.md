@@ -154,7 +154,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 ### Liste de contrôle
 
-- Ensure content and functionality is optimized for a wide range of devices, including mobile devices and voice assistants, enabling users to be successful with their device of choice 
+- Ensure content and functionality is optimized for a wide range of devices, including mobile devices and voice assistants, enabling users to be successful with their device of choice
 - Use plain language that is appropriate and easy to understand for the audience
 - {: .dpgn-stage-alpha} Understand how will users interact with the service, optimizing the experience for online and offline interactions
 - {: .dpgn-stage-beta .dpgn-stage-live} Regularly assess the service, indentifying and fixing problem areas that are degrading the user experience
