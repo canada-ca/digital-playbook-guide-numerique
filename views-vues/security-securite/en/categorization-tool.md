@@ -62,13 +62,14 @@ lossOfCommon:
   field3Option5: Very high
   field3Option6: NA
   field4Label: Analysis
+labelGridClass: col-sm-4
+fieldGridClass: col-sm-8
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
-<div class="wb-frmvld">
-<form action="#" method="post">
-<section id="business-domain-section">
+<section id="business-domain-section" class="wb-frmvld">
+<form id="business-domain-form" class="form-horizontal" method="post">
 
 <div class="wb-inview" data-inview="progress-overlay">
 
@@ -78,14 +79,20 @@ assign dataSource = site.data[dataVariable] %}
 
 {{ page.businessDomain.intro }}
 
-<div class="form-group">
-<label for="business-domain-1" class="required"><span class="field-name">{{ page.businessDomain.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="form-group" markdown="0">
+<label for="business-domain-1" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessDomain.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
 <input name="business-domain-1" id="business-domain-1" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
+</div>
 
+<!-- Button for revealing the next section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="business-domain" nextId="business-component" nextHeading="2" %}
+</form>
 </section>
 
-<section id="business-component-section">
+<section id="business-component-section" class="hidden wb-frmvld">
+<form id="business-component-form" class="form-horizontal" method="post">
 
 ## {{ page.businessComponent.title }}
 
@@ -93,51 +100,71 @@ assign dataSource = site.data[dataVariable] %}
 
 {{ page.businessComponent.intro2 }}
 
-<div class="form-group">
-<label for="business-component-1" class="required"><span class="field-name">{{ page.businessComponent.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="form-group" markdown="0">
+<label for="business-component-1" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
 <input name="business-component-1" id="business-component-1" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
+</div>
 
-<div class="form-group">
-<label for="business-component-2" class="required"><span class="field-name">{{ page.businessComponent.field2Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="form-group" markdown="0">
+<label for="business-component-2" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field2Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
 <input name="business-component-2" id="business-component-2" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
-
-<div class="form-group">
-<label for="business-component-3" class="required"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<textarea name="business-component-3" id="business-component-3" required="required"></textarea>
 </div>
 
-<div class="form-group">
-<label for="business-component-4" class="required"><span class="field-name">{{ page.businessComponent.field4Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="form-group" markdown="0">
+<label for="business-component-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
+<textarea name="business-component-3" id="business-component-3" required="required"></textarea>
+</div>
+</div>
+
+<div class="form-group" markdown="0">
+<label for="business-component-4" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field4Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
 <select class="form-control" id="business-component-4" name="business-component-4" required="required">
 <option label="{{ page.businessComponent.field4Sublabel }}"></option>
 <option value="1">{{ page.businessComponent.field4Option1 }}</option>
 <option value="2">{{ page.businessComponent.field4Option2 }}</option>
 </select>
 </div>
-
-<div class="form-group">
-<label for="business-component-5" class="required"><span class="field-name">{{ page.businessComponent.field5Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<textarea name="business-component-5" id="business-component-5" required="required"></textarea>
 </div>
 
+<div class="form-group" markdown="0">
+<label for="business-component-5" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field5Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
+<textarea name="business-component-5" id="business-component-5" required="required"></textarea>
+</div>
+</div>
+
+<!-- Buttons for revealing the next/previous section and hiding the current one -->{%
+assign nextId = "loss-of-" | append: page.lossTypes[ 0 ] %}{%
+include views-vues/questionnaire-next-previous.html currentId="business-component" nextId=nextId nextHeading="2" previousId="business-domain" previousHeading="2" %}
+</form>
 </section>
 
-{% for lossType in page.lossTypes %}
-<section id="loss-of-{{ lossType }}-section">
+{% assign lossTypeIndex = 0 %}{%
+for lossType in page.lossTypes %}{%
+  assign previousLossTypeIndex = lossTypeIndex | minus: 1 %}
+<section id="loss-of-{{ lossType }}-section" class="hidden wb-frmvld">
+<form id="loss-of-{{ lossType }}-form" class="form-horizontal" method="post">
 
 ## {{ page[ lossType ].title }}
 
 {{ page[ lossType ].intro }}
 
-<div class="form-group">
-<label for="loss-of-{{ lossType }}-1" class="required"><span class="field-name">{{ page.lossOfCommon.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="form-group" markdown="0">
+<label for="loss-of-{{ lossType }}-1" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
 <input name="loss-of-{{ lossType }}-1" id="loss-of-{{ lossType }}-1" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
+</div>
 
-<div class="form-group">
-<label for="loss-of-{{ lossType }}-2" class="required"><span class="field-name">{{ page[ lossType ].field2Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="form-group" markdown="0">
+<label for="loss-of-{{ lossType }}-2" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page[ lossType ].field2Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
 <select class="form-control" id="loss-of-{{ lossType }}-2" name="loss-of-{{ lossType }}-2" required="required">
 <option label="{{ page.lossOfCommon.field2Sublabel }}"></option>
 <option value="1">{{ page.lossOfCommon.field2Option1 }}</option>
@@ -152,9 +179,11 @@ assign dataSource = site.data[dataVariable] %}
 <option value="10">{{ page.lossOfCommon.field2Option10 }}</option>
 </select>
 </div>
+</div>
 
-<div class="form-group">
-<label for="loss-of-{{ lossType }}-3" class="required"><span class="field-name">{{ page.lossOfCommon.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="form-group" markdown="0">
+<label for="loss-of-{{ lossType }}-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
 <select class="form-control" id="loss-of-{{ lossType }}-3" name="loss-of-{{ lossType }}-3" required="required">
 <option label="{{ page.lossOfCommon.field3Sublabel }}"></option>
 <option value="1">{{ page.lossOfCommon.field3Option1 }}</option>
@@ -165,16 +194,31 @@ assign dataSource = site.data[dataVariable] %}
 <option value="6">{{ page.lossOfCommon.field3Option6 }}</option>
 </select>
 </div>
+</div>
 
 **{{ page[ lossType ].example1 }}** {{ page[ lossType ].example2 }}
 
-<div class="form-group">
-<label for="loss-of-{{ lossType }}-4" class="required"><span class="field-name">{{ page.lossOfCommon.field4Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="form-group" markdown="0">
+<label for="loss-of-{{ lossType }}-4" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon.field4Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
 <textarea name="loss-of-{{ lossType }}-4" id="loss-of-{{ lossType }}-4" required="required"></textarea>
 </div>
-
-</section>
-{% endfor %}
-
-</form>
 </div>
+
+<!-- Buttons for revealing the next/previous section and hiding the current one (except for the last section which doesn't have a next button) -->{%
+  assign currentId = "loss-of-" | append: lossType %}{%
+  if lossTypeIndex == 0 %}{%
+    assign previousId = "business-component" %}{%
+  else %}{%
+    assign previousId = "loss-of-" | append: page.lossTypes[ previousLossTypeIndex ] %}{%
+  endif %}{%
+  if lossTypeIndex == 2 %}{%
+    assign nextId = "final-result" %}{%
+  else %}{%
+    assign nextId = "loss-of-" | append: page.lossTypes[ lossTypeIndex ] %}{%
+  endif %}{%
+  include views-vues/questionnaire-next-previous.html currentId=currentId nextId=nextId nextHeading="2" previousId=previousId previousHeading="2" %}
+</form>
+</section>{%
+  assign lossTypeIndex = lossTypeIndex | plus: 1 %}{%
+endfor %}

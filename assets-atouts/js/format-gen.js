@@ -52,6 +52,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method htmlToCSV
+     * @overview Generates CSV data from specific content in the current page
      * @param rowSelector {String} CSS selector for the rows (e.g., "tr:not(.hidden)")
      * @param colSelector {String} CSS selector for the cells within the row (e.g., "td:not(.hidden)")
      * @param container {String} CSS selector for the container to look in (e.g., "#table-id")
@@ -70,7 +71,7 @@ var componentName = "wb-format-gen",
         cols = rows[ rowIndex ].querySelectorAll( colSelector );
         numCols = cols.length;
         for ( colIndex = 0; colIndex < numCols; colIndex += 1 ) {
-          colContent = cols[ colIndex ].textContent.replace( /"/g, '""' );
+          colContent = cols[ colIndex ].textContent.replace( /"/g, '""' ).trim();
           if ( colContent.indexOf( "," ) != -1 ) {
             colContent = '"' + colContent + '"';
           }
@@ -84,6 +85,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method htmlToJSON
+     * @overview Generates JSON data from specific content in the current page
      * @param container {HTML node} Container of the data to output to JSON
      * @param structure {String} Defines the structure of the JSON to output. The following is an example: 
      * {
@@ -128,7 +130,7 @@ var componentName = "wb-format-gen",
             node = nodes[ index ];           
 
             if ( !valueSource ) {
-              value = node.textContent;
+              value = node.textContent.trim();
             } else if ( valueSource in node ) {
               value = node[ valueSource ];
             } else {
@@ -207,6 +209,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method csvToArray
+     * @overview Converts a CSV string to nested arrays
      * @param fileText {String} Text retrieved from the CSV file
      * @return {Array} CSV as nested arrays
      */
@@ -224,15 +227,16 @@ var componentName = "wb-format-gen",
 
     /**
      * @method outputFile
+     * @overview Output data to a file and trigger the interface to download it
      * @param settings {Object} Settings object for the file to output
      */
     outputFile = function( settings ) {
       var outputLink = document.createElement( "a" ),
           isDownloadAttrSupported = outputLink.download !== undefined,
-          type = settings[ "type" ].toLowerCase(),
-          source = settings[ "source" ] ? settings[ "source" ].toLowerCase() : null,
+          type = settings[ "type" ],
+          source = settings[ "source" ],
           filename = settings[ "filename" ],
-          fileData, mimeType, blobOutput, urlOutput;
+          fileData, mimeType, blobOutput, urlOutput, action;
 
       if ( type === "csv" ) {
         fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
@@ -275,6 +279,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method inputFile
+     * @overview Read in content from a file (using input type="file") and return the contained data
      * @param settings {Object} Settings object for the file to output
      * @param elm {HTML node} Input type="file" element that is being used to input a file
      * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
@@ -285,14 +290,17 @@ var componentName = "wb-format-gen",
         var fileReader = new FileReader();
 
         fileReader.onload = function ( event ) {
-           var fileText = event.target.result,
+           var type = settings[ "type" ],
+               fileText = event.target.result,
                fileData;
 
            if ( !outputAsString ) {
-             if ( settings[ "type" ] === "csv" ) {
+             if ( type === "csv" ) {
                fileData = csvToArray( fileText );
-             } else if ( settings[ "type" ] === "json" ) {
+             } else if ( type === "json" ) {
                fileData = JSON.parse( fileText );
+             } else {
+               return fileText;
              }
 
              if ( settings[ "action" ] === "restore-form-state" ) {
@@ -312,23 +320,107 @@ var componentName = "wb-format-gen",
     },
 
     /**
-     * @method storeData
-     * @param settings {Object} Settings object for the data to save
+     * @method outputStorage
+     * @param Manipulate data in storage (e.g., append data, delete data, use the data to restore the state of a form or table)
+     * @param settings {Object} Settings object for the data to put in storage
      */
-    storeData = function( settings ) {
-      var type = settings[ "type" ].toLowerCase(),
-          dataKey = settings[ "dataKey" ],
-          data;
+    outputStorage = function( settings ) {
+      var type = settings[ "type" ],
+          action = settings[ "action" ],
+          key = settings[ "key" ],
+          useLocalStorage = type === "local-storage";
 
-      if ( type === "csv" ) {
-        data = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
-      } else if ( type === "json" ) {
-        data = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
-      } else {
-        return;
+      if ( action === "append-element" ) {
+        // Add data to the end of a stored array
+
+        source = settings[ "source" ];
+        storedData = retrieveData( key, useLocalStorage );
+
+        // Ensure the stored data is in an array (or an empty array if no data is stored)
+        if ( storedData && storedData.length > 0 ) {
+          storedData = JSON.parse( storedData );
+
+          if ( ( typeof storedData ).toLowerCase() !== "array" ) {
+            storedData = [ storedData ];
+          }
+        } else {
+          storedData = [];
+        }
+
+        if ( source === "html" ) {
+          // HTML is the source of the data
+
+          if ( settings[ "rowSelector" ] ) {
+            // Store the data as CSV
+            data = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
+          } else if ( settings[ "structure" ] ) {
+            // Store the data as JSON
+            data = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
+          } else {
+            // Store the data as text
+            data = document.querySelector( settings[ "container" ] ).textContent;
+          }
+        } else if ( source === "form-state" ) {
+          // Store the form state as JSON
+          data = JSON.stringify( getFormFieldStatus( settings[ "container" ] ) );
+        } else {
+          return;
+        }
+
+        storeData( storedData.push( data ), key, useLocalStorage );
+      } else if ( action === "restore-form-state" ) {
+        // Restore the form state from the stored data
+
+        storedData = JSON.parse( retrieveData( key, useLocalStorage ) );
+
+        if ( settings[ "index" ] ) {
+          // Retrieved the form state from an element in a stored array
+          storedData = storedData[ settings[ "index" ] ];
+        }
+
+        setFormFieldStatus( settings[ "container" ], storedData );
+      } else if ( action === "restore-table" ) {
+        // Restore table data rows (normally with tbody as the container) using the stored data (in CSV format)
+
+        storedData = retrieveData( key, useLocalStorage );
+
+        if ( settings[ "index" ] ) {
+          // Retrieved the form state from an element in a stored array
+          storedData = storedData[ settings[ "index" ] ];
+        }
+
+        setTableRows( storedData, settings[ "container" ] );
+      } else if ( action === "delete" ) {
+        // Delete all data referenced by the key
+
+        if ( useLocalStorage ) {
+          localStorage.removeItem( key );
+        } else {
+          sessionStorage.removeItem( key );
+        }
+      } else if ( action === "delete-element" ) {
+        // Delete an element in a stored array
+
+        storedData = JSON.parse( retrieveData( key, useLocalStorage ) );
+        storeData( storedData.splice( settings[ "index" ], 1 ), key, useLocalStorage );
+      }
+    },
+
+    /**
+     * @method storeData
+     * @overview Store data in sessionStorage or localStorage, converting it to an appropriate storage format as necessary
+     * @param data {String/Array/Object} Data to store
+     * @param datakey {String} Key to use for storing the data
+     * @param useLocalStorage {Boolean} (defaults to false) Whether or not to store the data in localStorage
+     */
+    storeData = function( data, dataKey, useLocalStorage ) {
+      var dataType = ( typeof data ).toLowerCase();
+
+      if ( dataType === "array" || dataType === "object" ) {
+        data = JSON.stringify( data );
       }
 
-      if ( settings[ "useLocalStorage" ] === true ) {
+      if ( useLocalStorage ) {
         localStorage( dataKey, data );
       } else {
         sessionStorage( dataKey, data );
@@ -337,6 +429,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method retrieveData
+     * @overview Retrieve data from sessionStorage or localStorage
      * @param dataKey {String} Key for retrieving the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to retrieve the data from localStorage
      * @return {String} Returns the stored data.
@@ -351,6 +444,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method getFormFieldStatus
+     * @overview Get the current status of all the form fields in the specified form (normally for storage or output)
      * @param formsSelector {String} Selector for the form(s) for which to retrieve the statuses of the contained fields.
      * @return {Array} Returns an array of objects with each containing a selector for a form field ("selector") and the current status ("status").
      */
@@ -402,7 +496,6 @@ var componentName = "wb-format-gen",
             } else {
               fieldObjects.push( { selector: "#" + field.id + " option", state: false } );
             }
-            subField.selected = fieldObject.state;
           } else if ( nodeName === "textarea" ) {
             fieldObjects.push( { selector: "#" + field.id, state: field.value } );
           }
@@ -414,6 +507,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method setFormFieldStatus
+     * @overview Update the status of the fields in the specified form using the passed data
      * @param formsSelector {String} Selector for the form(s) for which to set the statuses of the contained fields.
      * @param fields {Array} Array of objects with each containing a selector for a form field ("selector") and that status to set ("status").
      */
@@ -421,7 +515,7 @@ var componentName = "wb-format-gen",
       var forms = document.querySelectorAll( formsSelector ),
           numForms = forms.length,
           numFields = fields.length,
-          form, formIndex, index, fieldObject, index2, subFields, numSubFields, subField, nodeName, type;
+          form, formIndex, index, fieldObject, index2, subFields, numSubFields, subField, nodeName, type, event;
 
       for ( formIndex = 0; formIndex < numForms; formIndex += 1 ) {
         form = forms[ formIndex ];
@@ -437,9 +531,17 @@ var componentName = "wb-format-gen",
               if ( type === "radio" ) {
                 if ( subField.checked !== fieldObject.state ) {
                   if ( subField.checked === true ) {
+                    // Set the checked to false and trigger the change event
                     subField.checked = false;
-                    subField.change();
+                    if ( "createEvent" in document ) {
+                      event = document.createEvent( "HTMLEvents" );
+                      event.initEvent( "change", false, true );
+                      subField.dispatchEvent( event );
+                    } else {
+                      subField.fireEvent( "onchange" );
+                    }
                   } else {
+                    // Trigger a click event
                     subField.click();
                   }
                 }
@@ -452,11 +554,13 @@ var componentName = "wb-format-gen",
               } 
             } else if ( nodeName === "option" ) {
               if ( subField.selected !== fieldObject.state ) {
-                if ( subField.selected === true ) {
-                  subField.selected = false;
-                  subField.parentNode.change();
+                subField.selected = fieldObject.state;
+                if ( "createEvent" in document ) {
+                  event = document.createEvent( "HTMLEvents" );
+                  event.initEvent( "change", false, true );
+                  subField.parentNode.dispatchEvent( event );
                 } else {
-                  subField.click();
+                  subField.parentNode.fireEvent( "onchange" );
                 }
               }
             } else if ( nodeName === "textarea" ) {
@@ -465,21 +569,63 @@ var componentName = "wb-format-gen",
           }
         }
       }
-    }
+    },
+
+    /**
+     * @method setTableRows
+     * @overview Replaces the rows in the container with rows creating using the passed data (in CSV format)
+     * @param data {String / Array} Data in CSV format to create the table rows with
+     * @param container {String} Selector for the container in which to replace all nodes with table rows.
+     * @param ignoreFirstDataRow {Boolean} (defaults to false) Whether or not to ignore the first row in the CSV data (e.g., ignore the header row)
+     */
+    setTableRows = function( data, container, ignoreFirstDataRow ) {
+      var tableRows = "",
+          rowIndex, numRows, columns, columnIndex, numColumns;
+
+      // Ensure the CSV data is converted to array format to make it easier to create table rows
+      if ( ( typeof data ).toLowerCase() === "string" ) {
+        data = csvToArray( data );
+      }
+
+      // Generate the table rows string
+      numRows = data.length;
+      for ( rowIndex = 0; rowIndex < numRows; rowIndex += 1 ) {
+        cols = data[ rowIndex ];
+        numCols = cols.length;
+        tableRows += "<tr>";
+
+        for ( colIndex = 0; colIndex < numCols; colIndex += 1 ) {
+          tableRows += "<td>" + cols[ colIndex ] + "</td>";
+        }
+
+        tableRows += "</tr>";
+      }
+
+       // Replace the contents of the container with the new table rows
+      document.querySelector( container ).innerHTML = tableRows;
+    };
 
 $document.on( "click", selector, function( event ) {
-  var target = event.target;
+  var target = event.target,
+      settings = wb.getData( $( target ), componentName ),
+      type = settings[ "type" ],
+      action, data, storedData, key, source, useLocalStorage;
 
   if ( target.type !== "file" ) {
-    outputFile( wb.getData( $( event.target ), componentName ) );
+    if ( type === "session-storage" || type === "local-storage" ) {
+      outputStorage( settings );
+    } else {
+      outputFile( settings );
+    }
   }
 } );
 
 $document.on( "change", selector, function( event ) {
-  var target = event.target;
+  var target = event.target,
+      settings = wb.getData( $( target ), componentName );
 
   if ( target.type === "file" ) {
-    inputFile( wb.getData( $( event.target ), componentName ), event.target );
+    inputFile( settings, target );
   }
 } );
 
