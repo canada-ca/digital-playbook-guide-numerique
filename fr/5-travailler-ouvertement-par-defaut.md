@@ -8,6 +8,7 @@ altLangPage: 5-work-in-open-by-default
 <div class="dpgn-section-intro-standard">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+{: .dpgn-data-ignore}
 
 </div>
 
@@ -36,11 +37,6 @@ altLangPage: 5-work-in-open-by-default
 
 <div class="dpgn-section-intro-guideline">
 
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-**Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5) :**
-{: .dpgn-data-ignore}
-
 Rendre tout le code source ouvert et réutilisable sous une licence logicielle libre appropriée, afin que les autres développeurs puissent:
 
 - profitez de votre travail et en tirer parti
@@ -62,19 +58,7 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 ### Liste de contrôle
 
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Work in the open - Share and collaborate in the open, plan to make data open from the start.
-- Provide datasets to the public, in their entirety, through bulk downloads and APIs (application programming interfaces) **(Digital Services Playbook (US))**
-- Ensure that data from the service is explicitly in the public domain, and that rights are waived globally via an international public domain dedication, such as the "Creative Commons Zero" waiver **(Digital Services Playbook (US))**
-- Catalog data in the agency's enterprise data inventory and add any public datasets to the agency's public data listing **(Digital Services Playbook (US))**
-- Ensure that we maintain the rights to all data developed by third parties in a manner that is releasable and reusable at no cost to the public **(Digital Services Playbook (US))**
-- Data and code is shared so that clients can extract/create value. **(General design principles - Digital Design Playbook (ISED))**
-
-**Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5) :**
-{: .dpgn-data-ignore}
-
-- Travailler ouvertement et rendre le code source ouvert et réutilisable
+- Travailler ouvertement et rendre les données et le code source ouvertes et réutilisables
 - Héberger le code source dans un référentiel de code source internet ouvert
 - Utiliser une licence approuvée par l'Open Source Initiative
 - Proposer aux utilisateurs un mécanisme de signalement des bogues et des problèmes, et être réactif à ces rapports
@@ -86,14 +70,8 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 ### Guides d'implémentation
 
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [Open Data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
 - [Statistical Data Integration (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/)
-
-**Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5) :**
-{: .dpgn-data-ignore}
-
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [Making source code open and reusable (Service Manual (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
 - [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
 - [Choose an open source licence(choosealicense.com)](https://choosealicense.com/)
@@ -102,22 +80,9 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 
 </section>
 
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
 <section class="dpgn-section-similar">
 
 ### Similar resources
-
-- [Data and code is default to open (General design principles - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Digital_Design_Playbook)
-
-**Travailler ouvertement et rendre le code source ouvert et réutilisable (anciennement ligne directrice 5.5)&#160;:**
-{: .dpgn-data-ignore}
 
 - [Logiciel libre - Contribution (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Logiciel_libre_Contribution.md)
 - [Culture ouverte (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/6_Culture_ouverte.md)
@@ -198,13 +163,6 @@ Setting performance indicators allows you to continuously improve your service b
 {: .dpgn-data-ignore}
 
 <!-- markdownlint-disable MD032 -->
-- set a performance baseline for the old service, if there was one **(Digital Service Standard (UK))**
-- plan to lower [cost per transaction](https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction) or equivalent, for non-transactional user journeys **(Digital Service Standard (UK))**
-- plan to [improve user satisfaction](https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction) **(Digital Service Standard (UK))**
-- plan to [increase completion rate](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate) or equivalent, for non-transactional user journeys **(Digital Service Standard (UK))**
-- plan to [increase digital take-up](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service) and reduce reliance on assisted digital **(Digital Service Standard (UK))**
-- assess the potential for channel shift and the level of assisted digital your service needs **(Digital Service Standard (UK))**
-- document other metrics that you'll measure, when you'll start, and how you'll use them to improve your service **(Digital Service Standard (UK))**
 - document where you're getting the data for your metrics **(Digital Service Standard (UK))**
 - set up your analytics package to collect user journey data **(Digital Service Standard (UK))**
 - make sure all stakeholders are actively involved in promoting or supporting digital delivery of the new service **(Digital Service Standard (UK))**
@@ -225,22 +183,12 @@ Setting performance indicators allows you to continuously improve your service b
 
 ### Guides d'implémentation
 
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Using data to improve your service: an introduction (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Choosing digital analytics tools (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)
 - [Measuring digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
 - [Sharing data on the Performance Platform (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Measuring success (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
@@ -275,10 +223,6 @@ Share your experiences with colleagues across the Government of Canada, other le
 - When appropriate, share your development process and progress publicly **(Digital Services Playbook (US))**
 - Document and show your work. **(Plan - Digital Design Playbook (ISED))**
 - If you are redesigning a service document the changes and show how these changes will enhance the client experience when using the service. **(Plan - Digital Design Playbook (ISED))**
-- Embrace sharing platforms (e.g., GCconnex, GCpedia, Twitter, etc.) to get inspiration and feedback on your ideas. **(Plan - Digital Design Playbook (ISED))**
-- Before you start your own project, do an environmental scan to see how other programs and services are embracing digital service delivery. **(Plan - Digital Design Playbook (ISED))**
-- Identify lessons learned throughout the project and not just at the end. **(Plan - Digital Design Playbook (ISED))**
-- Make it easier to share data across ISED by collecting service and client information in a consistent manner and following best practices (e.g., the business number as a common identifier and practices related to Identity Management (IDM)). **(Plan - Digital Design Playbook (ISED))**
 
 </section>
 

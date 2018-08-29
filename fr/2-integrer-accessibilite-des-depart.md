@@ -90,8 +90,6 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 ### Liste de contrôle
 
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
 - Familiarize yourself with the standards
 - Design the service to be as easy to use as possible. Usability is critical to making a service accessible for people with disabilities and limitations.
 - S'assurer que les ressources de conception et de développement possèdent les connaissances et l'expertise nécessaires pour créer des services accessibles et résoudre les problèmes d'accessibilité.
@@ -108,33 +106,20 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 ### Guides d'implémentation
 
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
 - [Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
-- [Règles pour l'accessibilité des contenus Web (WCAG) 2.0 (W3C)](https://www.w3.org/Translations/WCAG20-fr/)
-  - [How to Meet WCAG 2.0 (W3C)](https://www.w3.org/WAI/WCAG20/quickref/)
-  - [Understanding WCAG 2.0 (W3C)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
-  - [Techniques for WCAG 2.0 (W3C)](https://www.w3.org/TR/WCAG20-TECHS/)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)](https://www.w3.org/TR/WCAG21/)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.1 (W3C)](https://www.w3.org/TR/wai-aria-1.1/)
-  - [Digital Publishing WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/dpub-aria-1.0/)
-  - [Graphics WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/graphics-aria-1.0/)
-  - [WAI-ARIA Authoring Practices 1.1 (W3C)](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Diversity of Web Users (W3C)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Designing for Inclusion (W3C)](https://www.w3.org/WAI/users/)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile (W3C)](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)](https://www.w3.org/TR/wcag2ict/)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Norme sur l'accessibilité des sites Web](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601)
-  - [Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp)
-- [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 
 </section>
 
 <section class="dpgn-section-solutions">
 
 ### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-design-for-users-first} [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
@@ -166,51 +151,12 @@ Si les utilisateurs ont des difficultés à atteindre leur objectif du premier c
 **\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
 
 - {: .dpgn-accessibility} meet the [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
-- formaliser une approche intégrant des outils de test automatisés au processus de développement et de maintien des technologies de l'information et de la communication (TIC) du gouvernement **(Normes des services numériques (Ontario))**
 - former le personnel développeur sur la navigation par clavier seulement et veiller à la mise à l’essai régulière des nouvelles fonctions **(Normes des services numériques (Ontario))**
 - faire en sorte qu’il soit facile pour les personnes handicapées de joindre l’équipe responsable de l’accessibilité en cas de problème **(Normes des services numériques (Ontario))**
 - s’assurer, lorsque des plateformes technologiques sont prises en considération, qu’il existe une transparence au sujet des problèmes connus liés aux Règles pour l'accessibilité des contenus Web (WCAG 2.0) AA et que l’on s’efforce de mettre en oeuvre les Règles d'accessibilité pour les outils d'édition (ATAG) 2.0 - parties A et B **(Normes des services numériques (Ontario))**
 - {: .dpgn-accessibility-usability} effectuez des recherches et des tests pour vous assurer que le service est accessible à tous les utilisateurs, quelles que soient leurs capacités et la manière dont ils ont accédé au service **(Normes des services numériques (Ontario))**
 - fournir une méthode accessible permettant à tous les utilisateurs de faire des commentaires sur le service ou de demander du soutien supplémentaire à tout moment **(Normes des services numériques (Ontario))**
 - démontrer de quelle manière votre personnel connaîtra les obstacles à l’accessibilité et sera formé pour aider les utilisateurs handicapés à faire ce qu’ils veulent faire et à accéder à l’information **(Normes des services numériques (Ontario))**
-
-**Stage alpha :**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-accessibility-usability} show the type of environments users may access the service in, including with different browsers and desktop and mobile devices, and when connections are slower and there may be limited data; for example, through user stories **(Digital Service Standard (AU))**
-- {: .dpgn-accessibility-usability} show diversity in research recruitment and targeted users, including people from different cultural backgrounds and people with disability **(Digital Service Standard (AU))**
-- show consideration of situational and environmental limitations that affect a user’s ability to access the product **(Digital Service Standard (AU))**
-- show the plan to meet accessibility requirements in the design of the product, for example how it will meet WCAG 2.0 AA **(Digital Service Standard (AU))**
-- show what digital assistance might be needed to support users; for example web chat, telephone assistance, face-to-face, clear instructions, checklists, and so on. **(Digital Service Standard (AU))**
-- show your prototypes can accommodate users from different backgrounds and users with disability **(Digital Service Standard (AU))**
-- {: .dpgn-accessibility-usability} show you have access to facilities to perform testing on various devices or platforms, for example a plan for testing. **(Digital Service Standard (AU))**
-{: .dpgn-stage-alpha}
-<!-- markdownlint-enable MD032 -->
-
-**Stage bêta :**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- {: .dpgn-accessibility-usability} show iteration in the design and content of your service to meet accessibility requirements and improve usability for people with disability **(Digital Service Standard (AU))**
-- show non-digital access and support for people unable to use, or struggling with, the digital service
-- show any barriers to the digital service and its content on mobile devices, and plans to address them **(Digital Service Standard (AU))**
-{: .dpgn-stage-beta}
-<!-- markdownlint-enable MD032 -->
-
-**Stage en direct :**
-{: .dpgn-data-ignore}
-
-<!-- markdownlint-disable MD032 -->
-- show your service is accessible **(Digital Service Standard (AU))**
-- {: .dpgn-accessibility-usability} show evidence of usability testing, including **(Digital Service Standard (AU))**
-  - users with low level digital skills
-  - people with disability
-  - people from different cultural and linguistic backgrounds
-- a run through of how you’ve designed and tested for users of assistive technologies based on user research, usability testing and analytics **(Digital Service Standard (AU))**
-- show ongoing testing plans for accessibility so that your users can continue to access the service. **(Digital Service Standard (AU))**
-{: .dpgn-stage-live}
-<!-- markdownlint-enable MD032 -->
 
 </section>
 
@@ -219,22 +165,13 @@ Si les utilisateurs ont des difficultés à atteindre leur objectif du premier c
 ### Guides d'implémentation
 
 - [Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
-- [Règles pour l'accessibilité des contenus Web (WCAG) 2.0 (W3C)](https://www.w3.org/Translations/WCAG20-fr/)
-  - [How to Meet WCAG 2.0 (W3C)](https://www.w3.org/WAI/WCAG20/quickref/)
-  - [Understanding WCAG 2.0 (W3C)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
-  - [Techniques for WCAG 2.0 (W3C)](https://www.w3.org/TR/WCAG20-TECHS/)
 - [Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)](https://www.w3.org/TR/WCAG21/)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.1 (W3C)](https://www.w3.org/TR/wai-aria-1.1/)
-  - [Digital Publishing WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/dpub-aria-1.0/)
-  - [Graphics WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/graphics-aria-1.0/)
-  - [WAI-ARIA Authoring Practices 1.1 (W3C)](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Diversity of Web Users (W3C)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Designing for Inclusion (W3C)](https://www.w3.org/WAI/users/)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile (W3C)](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)](https://www.w3.org/TR/wcag2ict/)
 - [Norme sur l'accessibilité des sites Web](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601)
-  - [Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp)
-- [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 - [Inclusive services (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/inclusive-services/)
 - [18F Accessibility Guide (18F (US))](https://accessibility.18f.gov/index.html)
 - [The A11y Project (a11yproject.com/)](https://a11yproject.com/)
@@ -245,8 +182,6 @@ Si les utilisateurs ont des difficultés à atteindre leur objectif du premier c
 <section class="dpgn-section-solutions">
 
 ### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 - [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
@@ -326,16 +261,10 @@ This applies when designing and developing:
 
 ### Guides d'implémentation
 
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
 - [Involving Users in Web Projects for Better, Easier Accessibility (W3C)](https://www.w3.org/WAI/users/involving)
 - [Diversity of Web Users (W3C)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Designing for Inclusion (W3C)](https://www.w3.org/WAI/users/)
 - [Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/Overview.html)
-  - [Initiate - Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/initiate.html)
-  - [Plan - Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/plan.html)
-  - [Implement - Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/implement.html)
-  - [Sustain - Planning and Managing Web Accessibility (W3C)](https://www.w3.org/WAI/impl/sustain.html)
 - [Determining participant characteristics (uiaccess.com)](http://www.uiaccess.com/accessucd/ut_plan.html#characteristics)
 - [Finding participants with disabilities (uiaccess.com)](http://www.uiaccess.com/accessucd/ut_plan.html#recruiting)
 - [Involving Users in Evaluating Web Accessibility (W3C)](https://www.w3.org/WAI/users/involving)
@@ -353,8 +282,6 @@ This applies when designing and developing:
 <section class="dpgn-section-solutions">
 
 ### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 - [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 
@@ -471,33 +398,20 @@ Until you consider the needs of the range of people that will be using your serv
 
 ### Guides d'implémentation
 
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
 - [Dos and don'ts on designing for accessibility (Government Digital Service blog (UK))](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
-- [Règles pour l'accessibilité des contenus Web (WCAG) 2.0 (W3C)](https://www.w3.org/Translations/WCAG20-fr/)
-  - [How to Meet WCAG 2.0 (W3C)](https://www.w3.org/WAI/WCAG20/quickref/)
-  - [Understanding WCAG 2.0 (W3C)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/)
-  - [Techniques for WCAG 2.0 (W3C)](https://www.w3.org/TR/WCAG20-TECHS/)
 - [Web Content Accessibility Guidelines (WCAG) 2.1 (W3C)](https://www.w3.org/TR/WCAG21/)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.1 (W3C)](https://www.w3.org/TR/wai-aria-1.1/)
-  - [Digital Publishing WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/dpub-aria-1.0/)
-  - [Graphics WAI-ARIA Module 1.0 (W3C)](https://www.w3.org/TR/graphics-aria-1.0/)
-  - [WAI-ARIA Authoring Practices 1.1 (W3C)](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Diversity of Web Users (W3C)](https://www.w3.org/WAI/intro/people-use-web/diversity)
 - [Designing for Inclusion (W3C)](https://www.w3.org/WAI/users/)
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile (W3C)](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)](https://www.w3.org/TR/wcag2ict/)
 - [Norme sur l'accessibilité des sites Web](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=23601)
-  - [Orientation sur la mise en œuvre de la Norme sur l’accessibilité des sites Web](http://tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-guid-fra.asp)
-- [A checklist for digital inclusion - if we do these things, we’re doing digital inclusion (Government Digital Service Blog (UK))](https://gds.blog.gov.uk/2014/01/13/a-checklist-for-digital-inclusion-if-we-do-these-things-were-doing-digital-inclusion/)
 
 </section>
 
 <section class="dpgn-section-solutions">
 
 ### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 - [Boîte à outils de l’expérience Web (BOEW)](http://wet-boew.github.io/wet-boew/index-fr.html)
 

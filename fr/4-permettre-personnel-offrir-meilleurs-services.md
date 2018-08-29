@@ -8,6 +8,7 @@ altLangPage: 4-empower-staff-deliver-better-services
 <div class="dpgn-section-intro-standard">
 
 **\[TODO: Ajouter / réviser le texte d'introduction\]**
+{: .dpgn-data-ignore}
 
 </div>
 
@@ -51,22 +52,6 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 - Determine how the team will apply modern methods for project management and design (Agile, co-design, service design).
 - Identify and maintain effective methods for engaging users, stakeholders, and advisors/experts.
 - Be prepared to adapt to a frequently changing digital environment that is consistently evolving (e.g., emerging tech, emerging threats/security concerns, increased use of artificial intelligence, etc.), and act accordingly.
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'implémentation
-
-- **\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 
@@ -126,24 +111,6 @@ We need to evaluate and determine the tools and systems that we will use to buil
 
 </section>
 
-<section class="dpgn-section-guides">
-
-### Guides d'implémentation
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-- [Australian Government ICT Policies, guide and procurement (AU)](http://www.finance.gov.au/policy-guides-procurement/whole-of-government-ict-policies/)
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -191,22 +158,6 @@ Every service must have a person that will hold the designate authority to make 
 
 </section>
 
-<section class="dpgn-section-guides">
-
-### Guides d'implémentation
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-
 <section class="dpgn-section-similar">
 
 ### Ressources similaires
@@ -244,19 +195,4 @@ We must empower staff to share power and control over projects. This can involve
 
 </section>
 
-<section class="dpgn-section-guides">
-
-### Guides d'implémentation
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
 </section>
