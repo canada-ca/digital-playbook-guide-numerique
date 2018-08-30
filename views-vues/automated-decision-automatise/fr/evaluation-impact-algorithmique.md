@@ -24,10 +24,10 @@ aiaCriteria:
   - "Complexité"
 questions:
   "1": Quelles parties du processus décisionnel seront automatisées par ce système? (Cochez toutes les cases qui s'appliquent)
-  "1a": Classer les cas en fonction du risque et de la priorité
-  "1b": Déterminer les cas pour l'enquête ou l'examen humain
-  "1c": Fournir des recommandations concernant l'approbation d'une demande
-  "1d": Rendre la décision administrative exhaustive
+  "1a": Triage ou affectation de fichier
+  "1b": Notation du risque, profilage ou catégorisation
+  "1c": Recommandation de prendre certaines mesures
+  "1d": Décision complète de bout en bout
   "1.1": La recommandation ou la décision prise par le système implique-t-elle un pouvoir discrétionnaire?
   "1.1.1": La décision est-elle purement discrétionnaire? (par exemple, une révision pour motifs de compassion)
   "1.2": Tous les points de décision impliquant l'exercice du pouvoir discrétionnaire ou du jugement ont-ils été clairement identifiés?
