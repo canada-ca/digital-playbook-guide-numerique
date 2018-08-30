@@ -25,7 +25,7 @@ aiaCriteria:
 questions:
   "1": What parts of the decision-making process will be automated by this system? (Check all that apply)
   "1a": File triage or assignment
-  "1b": Risk scoring or categorization
+  "1b": Risk scoring, profiling, or categorization
   "1c": Recommendation to take a certain course of action
   "1d": Full end-to-end decision
   "1.1": Does the recommendation or decision made by the system involve discretion?
@@ -35,7 +35,7 @@ questions:
   "2-one-time": One time only
   "2-duration-project": For the duration of a project
   "2-indefinitely": Indefinitely
-  "3": Can this automated system result in the restriction of movement into, out of, or within Canada?
+  "3": Can this decision result in the restriction of movement into, out of, or within Canada?
   "4": Can this system infer or predict potential criminal activity?
   "5": Can this system result in granting or restricting access to a premises or network?
   "5.1": What is the classfication of the premises? (Select one)
@@ -45,11 +45,11 @@ questions:
   "6.2": Does the system issue transfer payments?
   "6.2.1": Is this grant, contribution, or transfer payment in excess of $5,000,000?
   "7": Does this system, result in the issuance of a fine, administrative monetary penalty, or a debt collection notice?
-  "8": Does this system result in the issuance of a permit, license, patent, or trademark?
+  "8": Does this system result in the issuance of a permit, license, or an intellectual property right?
   "8.1": Does this involve the collection, transportation, storage, purchase or sale of a regulated good or substance?
   "8.1.1": Is this regulated good or substance dangerous, such as a firearm, toxin, or hazardous material?
   "8.2": Is this a construction or environmental permit?
-  "8.3": Is this a patent or trademark?
+  "8.3": Is this a patent, trademark, or copyright?
   "9": Does this system confer a legal status that is otherwise required to receive a benefit or service (e.g., Indian status, veteran status)?
   "10": Does this system involve the distribution of human resources or material in the management of emergencies?
   "11": What are the key business drivers for automating the administrative decision-making process? (Check all that apply)
@@ -156,17 +156,17 @@ points:
     "yes": [ 33, 0, 0, 7, 4 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "1.2":
-    "yes": [ -2, 0, 0, -2, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "2":
     "one-time": [ 0, -5, 0, 0, 0 ]
     "duration-project": [ 0, 0, 0, 0, 0 ]
-    "indefinitely": [ 5, 0, 0, 0, 0 ]
+    "indefinitely": [ 3, 5, 0, 0, 0 ]
   "3":
-    "yes": [ 25, 3, 0, 0, 0 ]
+    "yes": [ 30, 3, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "4":
-    "yes": [ 30, 5, 0, 0, 0 ]
+    "yes": [ 35, 5, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "5":
     "yes": [ 1, 1, 0, 0, 0 ]
@@ -206,13 +206,13 @@ points:
     "yes": [ 8, 2, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "8.1.1":
-    "yes": [ 15, 9, 0, 0, 0 ]
+    "yes": [ 17, 9, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "8.2":
     "yes": [ 4, 2, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "8.3":
-    "yes": [ 15, 2, 0, 0, 0 ]
+    "yes": [ 17, 2, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "9":
     "yes": [ 3, 2, 0, 0, 0 ]
@@ -221,31 +221,31 @@ points:
     "yes": [ 1, 6, 0, 0, 1 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11a":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11b":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11c":
-    "yes": [ 0, -1, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11d":
-    "yes": [ 0, -1, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11e":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11f":
-    "yes": [ 0, -1, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11g":
-    "yes": [ 0, 1, 0, 0, 0 ]
+    "yes": [ 0, 4, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "12":
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "12.1":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 3, 1, 0, 0, 0 ]
   "13a":
     "yes": [ 0, 0, 0, 0, 0 ]
@@ -278,23 +278,23 @@ points:
     "yes": [ 0, 0, 3, 2, 2 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "15":
-    "yes": [ -2, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 5, 0, 0, 3, 0 ]
   "16":
     "yes": [ 0, 0, -1, -1, 0 ]
     "no": [ 0, 2, 7, 6, 0 ]
   "17":
-    "yes": [ -1, 0, -1, 0, 0 ]
+    "yes": [ 0, 0, -1, 0, 0 ]
     "no": [ 2, 0, 4, 0, 0 ]
   "17.1":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 1, 0, 0, 0, 0 ]
     "na": [ 0, 0, 0, 0, 0 ]
   "18":
     "yes": [ 0, 0, 4, 0, 1 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "18.1":
-    "yes": [ 0, 0, -1, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "19":
     "yes": [ 0, 0, 0, 0, 0 ]
@@ -369,7 +369,7 @@ points:
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 1, 2, 0 ]
   "32":
-    "yes": [ 0, 0, 0, 2, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 6, 0, 1, 12, 0 ]
   "33":
     "yes": [ 0, 0, 0, 0, 0 ]
@@ -384,8 +384,8 @@ points:
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 1, 0, 2, 0 ]
   "34":
-    "yes": [ -2, -1, 0, -2, 1 ]
-    "no": [ 0, 0, 0, 4, 0 ]
+    "yes": [ 0, 0, 0, 0, 1 ]
+    "no": [ 0, 0, 0, 10, 0 ]
   "35a":
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 1, 0, 0, 0 ]
@@ -420,13 +420,13 @@ points:
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 1, 4, 1, 0, 0 ]
   "36.1":
-    "yes": [ -3, 0, -1, -1, 1 ]
-    "no": [ 0, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 1 ]
+    "no": [ 10, 0, 0, 0, 0 ]
   "37":
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 1, 1, 0, 0 ]
   "38":
-    "yes": [ 0, 0, -1, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "39":
     "yes": [ 0, 0, 0, 0, 0 ]
@@ -455,7 +455,7 @@ points:
     "no": [ 0, 2, 0, 0, 0 ]
   "46":
     "yes": [ 0, 0, 0, 0, 0 ]
-    "no": [ 5, 0, 0, 6, 0 ]
+    "no": [ 5, 0, 0, 25, 0 ]
 criteriaThresholds:
   - [15, 40, 70]
   - [25, 50, 75]

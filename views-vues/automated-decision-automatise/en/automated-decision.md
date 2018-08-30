@@ -26,7 +26,7 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <legend>Automated Decision System type</legend>
 <ul class="list-unstyled">
 <li><input type="checkbox" id="dpgn-automated-decision-type-file-triage-assignment" /> <label for="dpgn-automated-decision-type-file-triage-assignment">File triage or assignment</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-risk-scoring-categorization" /> <label for="dpgn-automated-decision-type-risk-scoring-categorization">Risk scoring or categorization</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-risk-scoring-categorization" /> <label for="dpgn-automated-decision-type-risk-scoring-categorization">Risk scoring, profiling, or categorization</label></li>
 <li><input type="checkbox" id="dpgn-automated-decision-type-recommendation" /> <label for="dpgn-automated-decision-type-recommendation">Recommendation to take a certain course of action</label></li>
 <li><input type="checkbox" id="dpgn-automated-decision-type-full-decision" /> <label for="dpgn-automated-decision-type-full-decision">Full end-to-end decision</label></li>
 </ul>

@@ -25,10 +25,10 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <fieldset>
 <legend>Type de système de décision automatisé</legend>
 <ul class="list-unstyled">
-<li><input type="checkbox" id="dpgn-automated-decision-type-file-triage-assignment" /> <label for="dpgn-automated-decision-type-file-triage-assignment">Classer les cas en fonction du risque et de la priorité</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-risk-scoring-categorization" /> <label for="dpgn-automated-decision-type-risk-scoring-categorization">Déterminer les cas pour l’enquête ou l’examen humain</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-recommendation" /> <label for="dpgn-automated-decision-type-recommendation">Fournir des recommandations concernant l’approbation d’une demande</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-full-decision" /> <label for="dpgn-automated-decision-type-full-decision">Rendre la décision administrative exhaustive</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-file-triage-assignment" /> <label for="dpgn-automated-decision-type-file-triage-assignment">Triage ou affectation de fichier</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-risk-scoring-categorization" /> <label for="dpgn-automated-decision-type-risk-scoring-categorization">Notation du risque, profilage ou catégorisation</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-recommendation" /> <label for="dpgn-automated-decision-type-recommendation">Recommandation de prendre certaines mesures</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-full-decision" /> <label for="dpgn-automated-decision-type-full-decision">Décision complète de bout en bout</label></li>
 </ul>
 </fieldset>
 
