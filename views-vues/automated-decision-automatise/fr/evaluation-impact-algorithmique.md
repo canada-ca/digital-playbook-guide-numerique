@@ -24,7 +24,7 @@ aiaCriteria:
   - "Complexité"
 questions:
   "1": Quelles parties du processus décisionnel seront automatisées par ce système? (Cochez toutes les cases qui s'appliquent)
-  "1a": Classer les cas en fontion du rique et de la priorité
+  "1a": Classer les cas en fonction du risque et de la priorité
   "1b": Déterminer les cas pour l'enquête ou l'examen humain
   "1c": Fournir des recommandations concernant l'approbation d'une demande
   "1d": Rendre la décision administrative exhaustive
@@ -35,7 +35,7 @@ questions:
   "2-one-time": Une fois seulement
   "2-duration-project": Pour la durée d'un projet
   "2-indefinitely": Indéfiniment
-  "3": Ce système automatisé peut-il entraîner la restriction du déplacement d'une personne vers, hors du Canada ou à l'intérieur du Canada?
+  "3": Cette décision peut-elle entraîner la restriction du déplacement d'une personne vers, hors du Canada ou à l'intérieur du Canada?
   "4": Ce système peut-il inférer ou prévoir une activité criminelle potentielle?
   "5": Ce système peut-il permettre d'accorder ou de restreindre l'accès à un local ou à un réseau?
   "5.1": Quelle est la classification de la prémisse? (Choisissez-en un)
@@ -45,11 +45,11 @@ questions:
   "6.2": Le système émet-il des paiements de transfert?
   "6.2.1": Est-ce que cette subvention, contribution ou paiement de transfert dépasse 5 000 000 $?
   "7": Ce système entraîne-t-il la délivrance d'une amende, d'une sanction administrative pécuniaire ou d'un avis de recouvrement de créances?
-  "8": Ce système entraîne-t-il la délivrance d'un permis, d'une licence, d'un brevet ou d'une marque?
+  "8": Ce système entraîne-t-il la délivrance d'un permis, d'une licence ou un droit de propriété intellectuelle?
   "8.1": Cela implique-t-il la collecte, le transport, le stockage, l’achat ou la vente d’un bien ou d’une substance réglementé?
   "8.1.1": Est-ce que ce produit ou cette substance réglementée est dangereux, comme une arme à feu, une toxine ou un produit dangereux?
   "8.2": Est-ce un permis de construction ou d'environnement?
-  "8.3": Est-ce un brevet ou une marque?
+  "8.3": Est-ce un brevet, une marque ou un droit d'auteur?
   "9": Ce système confère-t-il un statut juridique qui est par ailleurs requis pour recevoir un avantage ou un service (par exemple, le statut d'Indien, le statut d'ancien combattant)?
   "10": Ce système implique-t-il la distribution de ressources humaines ou de matériel dans la gestion des urgences?
   "11": Quels sont les principaux motifs pour l'automatisation du processus décisionnel administratif? (Cochez toutes les cases)
@@ -80,7 +80,7 @@ questions:
   "17-link-url": "https://www.swc-cfc.gc.ca/gba-acs/approach-approche-fr.html"
   "17-link-text": analyse comparative entre les sexes en plus
   "17-part2": des données de formation?
-  "17.1": Sur la base des résultats de l’ACS+, les stratégies d’atténuation ont-elles été prises?
+  "17.1": Sur la base des résultats de l’ACS+, avez-vous documenté des stratégies d’atténuation?
   "18": Le système de décision automatisé utilise-t-il les informations personnelles comme données d'entrée?
   "18.1": Le programme comporte-t-il une évaluation des facteurs relatifs à la vie privée?
   "19": Avez-vous attribué des responsabilités pour la conception, le développement, la maintenance et l'amélioration du système?
@@ -156,17 +156,17 @@ points:
     "yes": [ 33, 0, 0, 7, 4 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "1.2":
-    "yes": [ -2, 0, 0, -2, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "2":
     "one-time": [ 0, -5, 0, 0, 0 ]
     "duration-project": [ 0, 0, 0, 0, 0 ]
-    "indefinitely": [ 5, 0, 0, 0, 0 ]
+    "indefinitely": [ 3, 5, 0, 0, 0 ]
   "3":
-    "yes": [ 25, 3, 0, 0, 0 ]
+    "yes": [ 30, 3, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "4":
-    "yes": [ 30, 5, 0, 0, 0 ]
+    "yes": [ 35, 5, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "5":
     "yes": [ 1, 1, 0, 0, 0 ]
@@ -206,13 +206,13 @@ points:
     "yes": [ 8, 2, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "8.1.1":
-    "yes": [ 15, 9, 0, 0, 0 ]
+    "yes": [ 17, 9, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "8.2":
     "yes": [ 4, 2, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "8.3":
-    "yes": [ 15, 2, 0, 0, 0 ]
+    "yes": [ 17, 2, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "9":
     "yes": [ 3, 2, 0, 0, 0 ]
@@ -221,31 +221,31 @@ points:
     "yes": [ 1, 6, 0, 0, 1 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11a":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11b":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11c":
-    "yes": [ 0, -1, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11d":
-    "yes": [ 0, -1, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11e":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11f":
-    "yes": [ 0, -1, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "11g":
-    "yes": [ 0, 1, 0, 0, 0 ]
+    "yes": [ 0, 4, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "12":
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "12.1":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 3, 1, 0, 0, 0 ]
   "13a":
     "yes": [ 0, 0, 0, 0, 0 ]
@@ -278,23 +278,23 @@ points:
     "yes": [ 0, 0, 3, 2, 2 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "15":
-    "yes": [ -2, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 5, 0, 0, 3, 0 ]
   "16":
     "yes": [ 0, 0, -1, -1, 0 ]
     "no": [ 0, 2, 7, 6, 0 ]
   "17":
-    "yes": [ -1, 0, -1, 0, 0 ]
+    "yes": [ 0, 0, -1, 0, 0 ]
     "no": [ 2, 0, 4, 0, 0 ]
   "17.1":
-    "yes": [ -1, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 1, 0, 0, 0, 0 ]
     "na": [ 0, 0, 0, 0, 0 ]
   "18":
     "yes": [ 0, 0, 4, 0, 1 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "18.1":
-    "yes": [ 0, 0, -1, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "19":
     "yes": [ 0, 0, 0, 0, 0 ]
@@ -369,7 +369,7 @@ points:
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 1, 2, 0 ]
   "32":
-    "yes": [ 0, 0, 0, 2, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 6, 0, 1, 12, 0 ]
   "33":
     "yes": [ 0, 0, 0, 0, 0 ]
@@ -384,8 +384,8 @@ points:
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 1, 0, 2, 0 ]
   "34":
-    "yes": [ -2, -1, 0, -2, 1 ]
-    "no": [ 0, 0, 0, 4, 0 ]
+    "yes": [ 0, 0, 0, 0, 1 ]
+    "no": [ 0, 0, 0, 10, 0 ]
   "35a":
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 1, 0, 0, 0 ]
@@ -420,13 +420,13 @@ points:
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 1, 4, 1, 0, 0 ]
   "36.1":
-    "yes": [ -3, 0, -1, -1, 1 ]
-    "no": [ 0, 0, 0, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 1 ]
+    "no": [ 10, 0, 0, 0, 0 ]
   "37":
     "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 1, 1, 0, 0 ]
   "38":
-    "yes": [ 0, 0, -1, 0, 0 ]
+    "yes": [ 0, 0, 0, 0, 0 ]
     "no": [ 0, 0, 0, 0, 0 ]
   "39":
     "yes": [ 0, 0, 0, 0, 0 ]
@@ -455,7 +455,7 @@ points:
     "no": [ 0, 2, 0, 0, 0 ]
   "46":
     "yes": [ 0, 0, 0, 0, 0 ]
-    "no": [ 5, 0, 0, 6, 0 ]
+    "no": [ 5, 0, 0, 25, 0 ]
 criteriaThresholds:
   - [15, 40, 70]
   - [25, 50, 75]
