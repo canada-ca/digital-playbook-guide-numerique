@@ -1,17 +1,21 @@
-<section>
+<section id="agile-use-when-questionnaire">
 
 ## {{ site.Questionnaire[ page.lang ] }}
 
-<div id="agile-use-when-questionnaire" class="wb-frmvld">
-<form action="#" method="post">{%
-assign numQuestions = page.points | size %}{%
-for questionNumber in (1..7) %}{%
+<!--- Project section -->
+<section id="project-section" class="wb-frmvld">
+<form id="project-form" method="post">
+
+### {{ page.projectSection }}
+
+{% assign numQuestions = page.points | size %}{%
+for questionNumber in (1..2) %}{%
   assign questionNumberString = questionNumber | downcase %}{%
   assign answer1String = questionNumberString | append: "-a1" %}{%
   assign answer2String = questionNumberString | append: "-a2" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumberString ] }}</p>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
@@ -24,15 +28,15 @@ for questionNumber in (1..7) %}{%
 </ul>
 </div>{%
 endfor %}{%
-assign questionNumber = 8 %}{%
-assign questionNumberString = questionNumber | downcase %}{%
-assign answer1String = questionNumberString | append: "-a1" %}{%
-assign answer2String = questionNumberString | append: "-a2" %}{%
-assign answer3String = questionNumberString | append: "-a3" %}{%
-assign answer4String = questionNumberString | append: "-a4" %}
+for questionNumber in (3..4) %}{%
+  assign questionNumberString = questionNumber | downcase %}{%
+  assign answer1String = questionNumberString | append: "-a1" %}{%
+  assign answer2String = questionNumberString | append: "-a2" %}{%
+  assign answer3String = questionNumberString | append: "-a3" %}{%
+  assign answer4String = questionNumberString | append: "-a4" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumberString ] }}</p>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
@@ -52,13 +56,14 @@ assign answer4String = questionNumberString | append: "-a4" %}
 ]'>{{ page.questions[ answer4String ] }}</li>
 </ul>
 </div>{%
-for questionNumber in (9..numQuestions) %}{%
+endfor %}{%
+for questionNumber in (5..8) %}{%
   assign questionNumberString = questionNumber | downcase %}{%
   assign answer1String = questionNumberString | append: "-a1" %}{%
   assign answer2String = questionNumberString | append: "-a2" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumberString ] }}</p>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
@@ -71,7 +76,116 @@ for questionNumber in (9..numQuestions) %}{%
 </ul>
 </div>{%
 endfor %}
+
+<!-- Button for revealing the next section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="project" nextId="stakeholders" %}
+
 </form>
-</div>
+</section>
+
+<!--- Stakeholders section -->
+<section id="stakeholders-section" class="wb-frmvld hidden">
+<form id="stakeholders-form" method="post">
+
+### {{ page.projectSection }}
+
+{% for questionNumber in (9..11) %}{%
+  assign questionNumberString = questionNumber | downcase %}{%
+  assign answer1String = questionNumberString | append: "-a1" %}{%
+  assign answer2String = questionNumberString | append: "-a2" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" }
+]'>{{ page.questions[ answer1String ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" }
+]'>{{ page.questions[ answer2String ] }}</li>
+</ul>
+</div>{%
+endfor %}{%
+assign questionNumber = 12 %}{%
+assign questionNumberString = questionNumber | downcase %}{%
+assign answer1String = questionNumberString | append: "-a1" %}{%
+assign answer2String = questionNumberString | append: "-a2" %}{%
+assign answer3String = questionNumberString | append: "-a3" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a2, .q{{ questionNumber }}-a3", "class": "hidden" }
+]'>{{ page.questions[ answer1String ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a1, .q{{ questionNumber }}-a3", "class": "hidden" }
+]'>{{ page.questions[ answer2String ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a3", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a1, .q{{ questionNumber }}-a2", "class": "hidden" }
+]'>{{ page.questions[ answer3String ] }}</li>
+</ul>
+</div>{% for questionNumber in (13..14) %}{%
+  assign questionNumberString = questionNumber | downcase %}{%
+  assign answer1String = questionNumberString | append: "-a1" %}{%
+  assign answer2String = questionNumberString | append: "-a2" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" }
+]'>{{ page.questions[ answer1String ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" }
+]'>{{ page.questions[ answer2String ] }}</li>
+</ul>
+</div>{%
+endfor %}
+
+<!-- Buttons for revealing the next/previous section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="stakeholders" nextId="governance-oversight" previousId="project" %}
+
+</form>
+</section>
+
+<!--- Governance and Oversight section -->
+<section id="governance-oversight-section" class="wb-frmvld hidden">
+<form id="governance-oversight-form" method="post">
+
+### {{ page.governanceOversightSection }}
+
+{% for questionNumber in (15..numQuestions) %}{%
+  assign questionNumberString = questionNumber | downcase %}{%
+  assign answer1String = questionNumberString | append: "-a1" %}{%
+  assign answer2String = questionNumberString | append: "-a2" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" }
+]'>{{ page.questions[ answer1String ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" }
+]'>{{ page.questions[ answer2String ] }}</li>
+</ul>
+</div>{%
+endfor %}
+
+<!-- Buttons for focusing on the final results section (next) and revealing the previous section and hiding the current one (previous) -->
+{% include views-vues/questionnaire-next-previous.html currentId="governance-oversight" nextId="final-result" previousId="stakeholders" %}
+
+</form>
+</section>
 
 </section>
