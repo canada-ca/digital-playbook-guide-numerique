@@ -17,7 +17,6 @@ var componentName = "wb-calculate",
     selector = "." + componentName,
     initEvent = "wb-init" + selector,
     $document = wb.doc,
-    $body = $document.find( "body" ),
 
     /**
      * @method init
