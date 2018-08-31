@@ -7,7 +7,7 @@ comment %}@param previousHeading {Number} (Optional, defaults to 3) Level of the
 comment %}@return {String} Generated buttons.{% endcomment %}
 <div class="btn-group" markdown="0">{%
 if include.nextId %}
-<button type="submit" class="btn btn-primary wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#{{ include.currentId }}-form", "returnFalse": true, "operations": [
+<button type="submit" class="btn btn-primary wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#{{ include.currentId }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [{%
 unless include.nextId == "final-result" %}
