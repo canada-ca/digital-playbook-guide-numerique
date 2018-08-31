@@ -36,7 +36,8 @@ var componentName = "wb-calculate",
             settings = {
               ignoreInit: false,
               returnFalse: false
-            };
+            },
+            $listenerElement;
 
         // Extend the settings with window[ "wb-calculate" ] then data-wb-calculate
         settings = $.extend(
@@ -46,7 +47,15 @@ var componentName = "wb-calculate",
           wb.getData( $elm, componentName )
         );
 
-        $document.on( settings[ "eventTrigger" ], settings[ "eventElement" ], function( event ) {
+        // Workaround for WET FieldFlow stripping the name attribute on form submit
+        // (so can return false before FieldFlow receives the event on document)
+        if ( settings[ "listenerElement" ] ) {
+          $listenerElement = $( settings[ "listenerElement" ] );
+        } else {
+          $listenerElement = $document;
+        }
+
+        $listenerElement.on( settings[ "eventTrigger" ], settings[ "eventElement" ], function( event ) {
           iterate( settings[ "operations" ] );
 
           if ( settings[ "returnFalse" ] === true ) {
