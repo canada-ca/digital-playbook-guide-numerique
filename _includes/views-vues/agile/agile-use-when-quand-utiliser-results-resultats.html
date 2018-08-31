@@ -45,6 +45,10 @@ endfor %}</strong> {{ page.recommendedApproach }}</p>
 </div>
 </section>
 
+
+<details>
+<summary markdown="0">{{ site.DetailedResults[ page.lang ] }}</summary>
+
 <!-- Detailed Results section. Contains all the possible score outcomes for each answer, but only the visible score is counted (questionnaire shows/hides the scores by adding/removing the hidden class). The maximum score for each answer for each approach type is identified by the x-score-max class where x is the approach type. -->
 <section>
 
@@ -62,8 +66,9 @@ endfor %}</strong> {{ page.recommendedApproach }}</p>
 </thead>
 <tbody>{%
 assign numQuestions = page.points | size %}{%
-for questionNumber in (1..7) %}{%
+for questionNumber in (1..2) %}{%
   assign questionNumberString = questionNumber | downcase %}
+
 <tr>
 <td>{{ page.questions[ questionNumberString ] }}</td>
 <td>
@@ -80,8 +85,9 @@ for questionNumber in (1..7) %}{%
   endfor %}
 </tr>{%
 endfor %}{%
-assign questionNumber = 8 %}{%
+for questionNumber in (3..4) %}{%
 assign questionNumberString = questionNumber | downcase %}
+
 <tr>
 <td>{{ page.questions[ questionNumberString ] }}</td>
 <td>
@@ -103,8 +109,50 @@ assign questionNumberString = questionNumber | downcase %}
 </td>{%
   endfor %}
 </tr>{%
-for questionNumber in (9..numQuestions) %}{%
+endfor %}{%
+for questionNumber in (5..11) %}{%
   assign questionNumberString = questionNumber | downcase %}
+
+<tr>
+<td>{{ page.questions[ questionNumberString ] }}</td>
+<td>
+<span class="hidden q{{ questionNumber }}-a1">1</span>
+<span class="hidden q{{ questionNumber }}-a2">2</span>
+</td>{%
+  for type in types %}{%
+    assign a1Score = page.points[ questionNumberString ][ type ][ 0 ] %}{%
+    assign a2Score = page.points[ questionNumberString ][ type ][ 1 ] %}
+<td>
+<span class="hidden {{ type }}-score{% if a1Score >= a2Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a1">{{ a1Score }}</span>
+<span class="hidden {{ type }}-score{% if a1Score < a2Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a2">{{ a2Score }}</span>
+</td>{%
+  endfor %}
+</tr>{%
+endfor %}{%
+assign questionNumber = 12 %}{%
+assign questionNumberString = questionNumber | downcase %}
+
+<tr>
+<td>{{ page.questions[ questionNumberString ] }}</td>
+<td>
+<span class="hidden q{{ questionNumber }}-a1">1</span>
+<span class="hidden q{{ questionNumber }}-a2">2</span>
+<span class="hidden q{{ questionNumber }}-a3">3</span>
+</td>{%
+for type in types %}{%
+  assign a1Score = page.points[ questionNumberString ][ type ][ 0 ] %}{%
+  assign a2Score = page.points[ questionNumberString ][ type ][ 1 ] %}{%
+  assign a3Score = page.points[ questionNumberString ][ type ][ 2 ] %}
+<td>
+<span class="hidden {{ type }}-score{% if a1Score >= a2Score and a1Score >= a3Score and a1Score >= a4Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a1">{{ a1Score }}</span>
+<span class="hidden {{ type }}-score{% if a2Score > a1Score and a2Score >= a3Score and a2Score >= a4Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a2">{{ a2Score }}</span>
+<span class="hidden {{ type }}-score{% if a3Score > a1Score and a3Score > a2Score and a3Score >= a4Score %} {{ type }}-score-max{% endif %} q{{ questionNumber }}-a3">{{ a3Score }}</span>
+</td>{%
+endfor %}
+</tr>{%
+for questionNumber in (13..numQuestions) %}{%
+  assign questionNumberString = questionNumber | downcase %}
+
 <tr>
 <td>{{ page.questions[ questionNumberString ] }}</td>
 <td>
@@ -185,5 +233,7 @@ endfor %}
 </table>
 
 </section>
+
+</details>
 
 </section>
