@@ -86,6 +86,10 @@ assign dataSource = site.data[dataVariable] %}
 </div>
 </div>
 
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "source": "form-state", "container": "#business-domain-form", "action": "append" }'>Append business domain to assessment in session storage</button>
+
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "check-session-storage", "source": "session-storage", "key": "assessment" }'>Download business domains from session storage</button>
+
 <!-- Button for revealing the next section and hiding the current one -->
 {% include views-vues/questionnaire-next-previous.html currentId="business-domain" nextId="business-component" nextHeading="2" %}
 </form>

@@ -244,6 +244,8 @@ var componentName = "wb-format-gen",
       } else if ( type === "json" ) {
         if ( source === "form-state" ) {
           fileData = JSON.stringify( getFormFieldStatus( settings[ "container" ] ) );
+        } else if ( source === "session-storage" || source === "local-storage" ) {
+          fileData = retrieveData( settings[ "key" ], settings[ "indexesKeys" ] , source === "local-storage", true );
         } else {
           fileData = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
         }
@@ -321,125 +323,207 @@ var componentName = "wb-format-gen",
 
     /**
      * @method outputStorage
-     * @param Manipulate data in storage (e.g., append data, delete data, use the data to restore the state of a form or table)
-     * @param settings {Object} Settings object for the data to put in storage
+     * @overview Perform actions on data in sessionStorage or localStorage (including storing and deleting)
+     * @param Store or remove data in storage (e.g., append data, delete data)
+     * @param settings {Object} Settings object for the data to store in or remove from storage
      */
     outputStorage = function( settings ) {
       var type = settings[ "type" ],
+          source = settings[ "source" ],
           action = settings[ "action" ],
           key = settings[ "key" ],
-          useLocalStorage = type === "local-storage";
+          useLocalStorage = type === "local-storage",
+          indexesKeys = settings[ "indexesKeys" ],
+          data;
 
-      if ( action === "append-element" ) {
-        // Add data to the end of a stored array
+      // Ensure indexesKeys is an array
+      if ( indexesKeys && typeof indexesKeys === "string" ) {
+        indexesKeys = JSON.parse( indexesKeys );
+      }
 
-        source = settings[ "source" ];
-        storedData = retrieveData( key, useLocalStorage );
+      // Retrieve the data to store
+      if ( source === "html" ) {
+        // HTML is the source of the data
 
-        // Ensure the stored data is in an array (or an empty array if no data is stored)
-        if ( storedData && storedData.length > 0 ) {
-          storedData = JSON.parse( storedData );
-
-          if ( ( typeof storedData ).toLowerCase() !== "array" ) {
-            storedData = [ storedData ];
-          }
+        if ( settings[ "rowSelector" ] ) {
+          // Store the data as CSV
+          data = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ] );
+        } else if ( settings[ "structure" ] ) {
+          // Store the data as JSON
+          data = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ] );
         } else {
-          storedData = [];
+          // Store the data as text
+          data = document.querySelector( settings[ "container" ] ).textContent;
         }
+      } else if ( source === "form-state" ) {
+        // Store the form state as JSON
+        data = getFormFieldStatus( settings[ "container" ] );
+      }
 
-        if ( source === "html" ) {
-          // HTML is the source of the data
+      // Store the data
+      storeData( action, key, indexesKeys, useLocalStorage = false, data );
+    },
 
-          if ( settings[ "rowSelector" ] ) {
-            // Store the data as CSV
-            data = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
-          } else if ( settings[ "structure" ] ) {
-            // Store the data as JSON
-            data = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
-          } else {
-            // Store the data as text
-            data = document.querySelector( settings[ "container" ] ).textContent;
-          }
-        } else if ( source === "form-state" ) {
-          // Store the form state as JSON
-          data = JSON.stringify( getFormFieldStatus( settings[ "container" ] ) );
-        } else {
-          return;
-        }
+    /**
+     * @method inputStorage
+     * @overview Perform actions using data in sessionStorage or localStorage
+     * @param Use data in storage (e.g., data to restore the state of a form or table)
+     * @param settings {Object} Settings object for what to do with data in storage
+     */
+    inputStorage = function( settings ) {
+      var type = settings[ "type" ],
+          action = settings[ "action" ],
+          key = settings[ "key" ],
+          useLocalStorage = type === "local-storage",
+          indexesKeys = settings[ "indexesKeys" ],
+          storedData;
 
-        storeData( storedData.push( data ), key, useLocalStorage );
-      } else if ( action === "restore-form-state" ) {
+      // Ensure indexesKeys is an array
+      if ( indexesKeys && typeof indexesKeys === "string" ) {
+        indexesKeys = JSON.parse( indexesKeys );
+      }
+
+      storedData = retrieveData( key, indexesKeys, useLocalStorage );
+
+      if ( action === "restore-form-state" ) {
         // Restore the form state from the stored data
-
-        storedData = JSON.parse( retrieveData( key, useLocalStorage ) );
-
-        if ( settings[ "index" ] ) {
-          // Retrieved the form state from an element in a stored array
-          storedData = storedData[ settings[ "index" ] ];
-        }
-
         setFormFieldStatus( settings[ "container" ], storedData );
       } else if ( action === "restore-table" ) {
         // Restore table data rows (normally with tbody as the container) using the stored data (in CSV format)
-
-        storedData = retrieveData( key, useLocalStorage );
-
-        if ( settings[ "index" ] ) {
-          // Retrieved the form state from an element in a stored array
-          storedData = storedData[ settings[ "index" ] ];
-        }
-
-        setTableRows( storedData, settings[ "container" ] );
-      } else if ( action === "delete" ) {
-        // Delete all data referenced by the key
-
-        if ( useLocalStorage ) {
-          localStorage.removeItem( key );
-        } else {
-          sessionStorage.removeItem( key );
-        }
-      } else if ( action === "delete-element" ) {
-        // Delete an element in a stored array
-
-        storedData = JSON.parse( retrieveData( key, useLocalStorage ) );
-        storeData( storedData.splice( settings[ "index" ], 1 ), key, useLocalStorage );
+        setTableRows( settings[ "container" ], storedData );
       }
     },
 
     /**
      * @method storeData
-     * @overview Store data in sessionStorage or localStorage, converting it to an appropriate storage format as necessary
-     * @param data {String/Array/Object} Data to store
-     * @param datakey {String} Key to use for storing the data
+     * @overview Stores data in sessionStorage or localStorage using a key and optionally in nested arrays/objects
+     * @param action {String} Action to take on the stored data (options: replace, append, prepend, delete)
+     * @param key {String} Key for storing the data
+     * @param indexesKeys {Array} (defaults to to empty array) Indexes and/or keys used to store data in nested arrays/objects in the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to store the data in localStorage
+     * @param data {String/Array/Object/Other} (not used for "delete" action) Data to store
      */
-    storeData = function( data, dataKey, useLocalStorage ) {
-      var dataType = ( typeof data ).toLowerCase();
+    storeData = function( action = "replace", key, indexesKeys = [], useLocalStorage = false, data ) {
+      var indexesKeysLength = indexesKeys.length,
+          data, storedData, storedDataFragment, parentStoredDataFragment, index, typeofResult, indexKey;
 
-      if ( dataType === "array" || dataType === "object" ) {
+      // Retrieve and parse any stored data
+      storedData = useLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key );
+      if ( storedData && storedData.length > 0 ) {
+        storedData = JSON.parse( storedData );
+        storedDataFragment = storedData;
+
+        if ( indexesKeysLength > 0 ) {
+          // Find the nested data to manipulate or delete
+          for ( index = 0; index < indexesKeysLength; index += 1 ) {
+            indexKey = indexesKeys[ index ];
+
+            if ( index === indexesKeyLength - 1 && action === "delete" ) {
+              // Delete only specified data
+              if ( Array.isArray( storedDataFragment ) ) {
+                storedDataFragment.splice( indexKey, 1 );
+              } else {
+                delete storedDataFragment[ indexKey ];
+              }
+            } else {
+              // Retrieve the nested data
+              parentStoreDataFragment = storedDataFragment;
+              storedDataFragment = storedDataFragment[ indexKey ];
+            }
+          }
+        } else if ( action === "delete" ) {
+          // Not working with nested data so delete all the stored data referenced by the key
+          if ( useLocalStorage ) {
+            localStorage.removeItem( key );
+          } else {
+            sessionStorage.removeItem( key );
+          }
+          return;
+        }
+
+        if ( action !== "delete" ) {
+          if ( Array.isArray( storedDataFragment ) ) {
+            if ( action === "append" ) {
+              storedDataFragment.push( data );
+            } else if ( action === "prepend" ) {
+              storedDataFragment.unshift( data );
+            } else {
+              parentStoredDataFragment[ indexesKeys[ index - 1 ] ] = data;
+            }
+            data = storedData;
+          } else {
+            // Make sure everything is a string
+            if ( action !== "replace" && typeof storedDataFragment !== "string" ) {
+              storedDataFragment = storedDataFragment.toString();
+            }
+            if ( typeof data !== "string" ) {
+              data = data.toString();
+            }
+
+            if ( action === "append" ) {
+              data = storedDataFragment + data;
+            } else if ( action === "prepend" ) {
+              // Update the parent with the prepended data
+              data += storedDataFragment;
+            }
+
+            // If parent exists, update it with the new data
+            if ( parentStoredDataFragment ) {
+              parentStoredDataFragment[ indexesKeys[ index - 1 ] ] = data;
+              data = storedData;
+            }
+          }
+        }
+      } else if ( action === "delete" ) {
+        // Delete all the stored data referenced by the key
+        if ( useLocalStorage ) {
+          localStorage.removeItem( key );
+        } else {
+          sessionStorage.removeItem( key );
+        }
+        return;  
+      } else if ( action === "append" || action === "prepend" ) {
+        data = [ data ];
+      }
+
+      if ( typeof data !== "string" ) {
         data = JSON.stringify( data );
       }
 
       if ( useLocalStorage ) {
-        localStorage( dataKey, data );
+        localStorage.setItem( key, data );
       } else {
-        sessionStorage( dataKey, data );
+        sessionStorage.setItem( key, data );
       }
     },
 
     /**
      * @method retrieveData
-     * @overview Retrieve data from sessionStorage or localStorage
-     * @param dataKey {String} Key for retrieving the data
+     * @overview Retrieves data from sessionStorage or localStorage using a key and optionally from nested arrays/objects
+     * @param key {String} Key for retrieving the data
+     * @param indexesKeys {Array} (defaults to to empty array) Indexes and/or keys used to retrieve data from nested arrays/objects in the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to retrieve the data from localStorage
+     * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
      * @return {String} Returns the stored data.
      */
-    retrieveData = function( dataKey, useLocalStorage ) {
-      if ( useLocalStorage ) {
-        return localStorage( dataKey );
-      } else {
-        return sessionStorage (dataKey );
+    retrieveData = function( key, indexesKeys = [], useLocalStorage = false, returnAsString ) {
+      var data = useLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key ),
+          indexesKeysLength = indexesKeys.length,
+          index;
+
+      if ( data && data.length > 0 ) {
+        data = JSON.parse( data );
+
+        for ( index = 0; index < indexesKeysLength; index += 1 ) {
+          data = data[ indexesKeys[ index ] ];
+        }
       }
+
+      if ( returnAsString ) {
+        data = JSON.stringify( data );
+      }
+
+      return data;
     },
 
     /**
@@ -572,18 +656,48 @@ var componentName = "wb-format-gen",
     },
 
     /**
+     * @method clearFormFieldStatus
+     * @overview Clears all the form fields in the form
+     * @param formSelector {String} Selector for the form for which to retrieve the statuses of the contained fields.
+     */
+    clearFormFieldStatus = function( formSelector ) {
+      var formElm = document.querySelector( formSelector ),
+          fields = formElm.querySelectorAll( "input, option, textarea" ),
+          numFields = fields.length,
+          fieldObjects = [],
+          index, field, nodeName, type, radioButtons, name, hasChecked;
+
+      for ( index = 0; index < numFields; index += 1 ) {
+        field = fields[ index ];
+        nodeName = field.nodeName.toLowerCase();
+        if ( nodeName === "input" ) {
+          type = subField.type.toLowerCase();
+          if ( type === "radio" || type === "checkbox" ) {
+            field.checked = false;
+          } else {
+            field.value = "";
+          }
+        } else if ( type === "option" ) {
+          option.selected = false;
+        } else {
+          field.value = "";
+        }
+      }
+    },
+
+    /**
      * @method setTableRows
      * @overview Replaces the rows in the container with rows creating using the passed data (in CSV format)
-     * @param data {String / Array} Data in CSV format to create the table rows with
      * @param container {String} Selector for the container in which to replace all nodes with table rows.
+     * @param data {String / Array} Data in CSV format to create the table rows with
      * @param ignoreFirstDataRow {Boolean} (defaults to false) Whether or not to ignore the first row in the CSV data (e.g., ignore the header row)
      */
-    setTableRows = function( data, container, ignoreFirstDataRow ) {
+    setTableRows = function( container, data, ignoreFirstDataRow ) {
       var tableRows = "",
           rowIndex, numRows, columns, columnIndex, numColumns;
 
       // Ensure the CSV data is converted to array format to make it easier to create table rows
-      if ( ( typeof data ).toLowerCase() === "string" ) {
+      if ( typeof data === "string" ) {
         data = csvToArray( data );
       }
 
@@ -601,7 +715,7 @@ var componentName = "wb-format-gen",
         tableRows += "</tr>";
       }
 
-       // Replace the contents of the container with the new table rows
+      // Replace the contents of the container with the new table rows
       document.querySelector( container ).innerHTML = tableRows;
     };
 
