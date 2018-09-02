@@ -405,7 +405,7 @@ var componentName = "wb-format-gen",
      */
     storeData = function( action = "replace", key, indexesKeys = [], useLocalStorage = false, data ) {
       var indexesKeysLength = indexesKeys.length,
-          data, storedData, storedDataFragment, parentStoredDataFragment, index, typeofResult, indexKey;
+          data, storedData, storedDataFragment, parentStoredDataFragment, index, typeofResult, indexKey, nextIndexKey;
 
       // Retrieve and parse any stored data
       storedData = useLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key );
@@ -418,7 +418,7 @@ var componentName = "wb-format-gen",
           for ( index = 0; index < indexesKeysLength; index += 1 ) {
             indexKey = indexesKeys[ index ];
 
-            if ( index === indexesKeyLength - 1 && action === "delete" ) {
+            if ( index === indexesKeysLength - 1 && action === "delete" ) {
               // Delete only specified data
               if ( Array.isArray( storedDataFragment ) ) {
                 storedDataFragment.splice( indexKey, 1 );
@@ -426,9 +426,22 @@ var componentName = "wb-format-gen",
                 delete storedDataFragment[ indexKey ];
               }
             } else {
-              // Retrieve the nested data
-              parentStoreDataFragment = storedDataFragment;
+              // Retrieve the nested data or create it if it doesn't already exist and is needed
+              parentStoredDataFragment = storedDataFragment;
               storedDataFragment = storedDataFragment[ indexKey ];
+
+              if ( !storedDataFragment ) {
+                nextIndexKey = indexesKeys[ index + 1 ];
+
+                if ( nextIndexKey ) {
+                  storedDataFragment = typeof nextIndexKey === "string" ? {} : [];
+                } else if ( action === "append" || action === "prepend" ) {
+                  storedDataFragment = [];
+                } else {
+                  break;
+                }
+                parentStoredDataFragment[ indexKey ] = storedDataFragment;
+              }
             }
           }
         } else if ( action === "delete" ) {
@@ -481,7 +494,7 @@ var componentName = "wb-format-gen",
         } else {
           sessionStorage.removeItem( key );
         }
-        return;  
+        return;
       } else if ( action === "append" || action === "prepend" ) {
         data = [ data ];
       }

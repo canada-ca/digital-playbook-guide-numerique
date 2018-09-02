@@ -88,8 +88,6 @@ assign dataSource = site.data[dataVariable] %}
 
 <button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "source": "form-state", "container": "#business-domain-form", "action": "append" }'>Append business domain to assessment in session storage</button>
 
-<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "check-session-storage", "source": "session-storage", "key": "assessment" }'>Download business domains from session storage</button>
-
 <!-- Button for revealing the next section and hiding the current one -->
 {% include views-vues/questionnaire-next-previous.html currentId="business-domain" nextId="business-component" nextHeading="2" %}
 </form>
@@ -104,6 +102,9 @@ assign dataSource = site.data[dataVariable] %}
 
 {{ page.businessComponent.intro2 }}
 
+<!-- Temporary div for purpose of creating container for the button. Remove when testing is done -->
+<div id="business-activity-container">
+
 <div class="form-group" markdown="0">
 <label for="business-component-1" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
@@ -111,12 +112,26 @@ assign dataSource = site.data[dataVariable] %}
 </div>
 </div>
 
+</div>
+
+<!-- TODO Figure out how to create this button on the fly for different business domains. So have one button for creating business acitivities for each business domain -->
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities" ], "source": "form-state", "container": "#business-activity-container", "action": "append" }'>Append business activity to business domain 2 in session storage (need at least 2 business domains for this to work)</button>
+
+<!-- Temporary div for purpose of creating container for the button. Remove when testing is done -->
+<div id="business-activity-component-container">
+
 <div class="form-group" markdown="0">
 <label for="business-component-2" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field2Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="business-component-2" id="business-component-2" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
+
+</div>
+
+<!-- TODO Figure out how to create this button on the fly for different business activities. So have one button for creating business acitivity components for each business activity -->
+
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities", 1, 0, "components" ], "source": "form-state", "container": "#business-activity-component-container", "action": "append" }'>Append business activity component to business activity 2 of business domain 2 in session storage (need at least 2 business activities in business domain 2 for this to work)</button>
 
 <div class="form-group" markdown="0">
 <label for="business-component-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
@@ -226,3 +241,5 @@ for lossType in page.lossTypes %}{%
 </section>{%
   assign lossTypeIndex = lossTypeIndex | plus: 1 %}{%
 endfor %}
+
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "check-session-storage", "source": "session-storage", "key": "assessment" }'>Download assessment from session storage</button>
