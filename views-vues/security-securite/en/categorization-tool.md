@@ -43,6 +43,7 @@ availability:
 lossOfCommon:
   field1Label: Failure Scenario (in context)
   field2Sublabel: Select a type of injury
+  field3TableHeading: Type of injury
   field2Option1: Civil disorder or unrest
   field2Option2: Physical harm to people
   field2Option3: Psychological harm to people
@@ -55,6 +56,7 @@ lossOfCommon:
   field2Option10: No expected injury
   field3Label: How significant is the expected injury?
   field3Sublabel: Select the significance of injury
+  field3TableHeading: Significance of injury
   field3Option1: Very low
   field3Option2: Low
   field3Option3: Medium
@@ -132,6 +134,13 @@ assign dataSource = site.data[dataVariable] %}
 <!-- TODO Figure out how to create this button on the fly for different business activities. So have one button for creating business acitivity components for each business activity -->
 
 <button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities", 1, 0, "components" ], "source": "form-state", "container": "#business-activity-component-container", "action": "append" }'>Append business activity component to business activity 2 of business domain 2 in session storage (need at least 2 business activities in business domain 2 for this to work)</button>
+
+<!-- TODO Build better mechanism for displaying table -->
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "table", "source": "session-storage", "key": "assessment", "tableColSpecs": [
+  { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 0, "dataContainerSource": [ 0, "activities" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
+], "action": "test-table" }'>Generate table array and output to log</button>
 
 <div class="form-group" markdown="0">
 <label for="business-component-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
@@ -242,4 +251,52 @@ for lossType in page.lossTypes %}{%
   assign lossTypeIndex = lossTypeIndex | plus: 1 %}{%
 endfor %}
 
+<section id="detailed-assessment-section">
+
+## Detailed Assessment
+
+<table>
+<thead>
+<tr>
+<th rowspan="2">{{ page.businessDomain.title }}</th>
+<th colspan="5">{{ page.businessComponent.title }}</th>
+<th colspan="4">{{ page.confidentiality.title }}</th>
+<th colspan="4">{{ page.integrity.title }}</th>
+<th colspan="4">{{ page.availability.title }}</th>
+</tr>
+<tr>
+<th>{{ page.businessDomain.title }}</th>
+<th>{{ page.businessComponent.field1Label }}</th>
+<th>{{ page.businessComponent.field2Label }}</th>
+<th>{{ page.businessComponent.field3Label }}</th>
+<th>{{ page.businessComponent.field4Label }}</th>
+<th>{{ page.businessComponent.field5Label }}</th>
+<!-- {{ page.confidentiality.title }} -->
+<th>{{ page.lossOfCommon.field1Label }}</th>
+<th>{{ page.lossOfCommon.field2TableHeading }}</th>
+<th>{{ page.lossOfCommon.field3TableHeading }}</th>
+<th>{{ page.lossOfCommon.field4Label }}</th>
+<!-- {{ page.integrity.title }} -->
+<th>{{ page.lossOfCommon.field1Label }}</th>
+<th>{{ page.lossOfCommon.field2TableHeading }}</th>
+<th>{{ page.lossOfCommon.field3TableHeading }}</th>
+<th>{{ page.lossOfCommon.field4Label }}</th>
+<!-- {{ page.availability.title }} -->
+<th>{{ page.lossOfCommon.field1Label }}</th>
+<th>{{ page.lossOfCommon.field2TableHeading }}</th>
+<th>{{ page.lossOfCommon.field3TableHeading }}</th>
+<th>{{ page.lossOfCommon.field4Label }}</th>
+</tr>
+</thead>
+<tbody>
+<tr>{%
+for index in (1..18) %}
+<td></td>{%
+endfor %}
+</tr>
+</tbody>
+</table>
+
 <button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "check-session-storage", "source": "session-storage", "key": "assessment" }'>Download assessment from session storage</button>
+
+</section>

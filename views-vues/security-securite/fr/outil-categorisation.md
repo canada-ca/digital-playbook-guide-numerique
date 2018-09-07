@@ -43,6 +43,7 @@ availability:
 lossOfCommon:
   field1Label: Failure Scenario (in context)
   field2Sublabel: Select a type of injury
+  field3TableHeading: Type of injury
   field2Option1: Civil disorder or unrest
   field2Option2: Physical harm to people
   field2Option3: Psychological harm to people
@@ -55,6 +56,7 @@ lossOfCommon:
   field2Option10: No expected injury
   field3Label: How significant is the expected injury?
   field3Sublabel: Select the significance of injury
+  field3TableHeading: Significance of injury
   field3Option1: Very low
   field3Option2: Low
   field3Option3: Medium

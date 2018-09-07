@@ -226,6 +226,293 @@ var componentName = "wb-format-gen",
     },
 
     /**
+     * @method dataToTableArray
+     * @overview Converts data in an object or array to a table array
+     * @param data {Object/Array} Object/array containing all of the data for the table.
+     * @param tableColSpecs {Array} Specification objects for each column, where each object includes the following information:
+     *    relativeToColumn {Integer} (defaults to -1) Index of column that this column is relative to. A 0 or higher index means it has 
+     *      a 1 to many relationship with the specified column (and as a result each row as well) while -1 means it is relative to the row 
+     *      (so has a 1 to 1 relationship with each row).
+     *    dataContainerSource {Array} Source of the column data array within the passed data object/array in the form of a series of
+     *      indexes/keys applied sequentially. If relativeToColumn is not -1, then the indexes/keys are relative to the data source of     
+     *      the specified column, otherwise they are relative to the passed data object/array. 
+     *    dataElementSource {Array} (optional, defaults to empty array) Source of the data within each column data array element if 
+     *      the data is not the column data array element itself. Indexes/keys are relative to the column data array element.
+     * @param repeatValues {Boolean} (defaults to false) Whether or not to repeat values in one to many relationships (i.e., repeat value on each row rather than having the value span multiple rows)
+     * @return {Array} Table array which is an array of rows containing the following object for each of the columns:
+     *    data {Primitive/Array} Data as a primitive (e.g., number, string, boolean) or as an array of primitives 
+     *      or arrays (multiple-levels of nesting is supported)
+     *    rowspan {Integer} Number of rows the column data spans (defaults to 1)
+     */
+    dataToTableArray = function( data, tableColSpecs, repeatValues ) {
+      var tableArray = [],
+          sourceArray = [],
+          tableColSpecsLength = tableColSpecs.length,
+          rowIndex, numOuterRows, numInnerRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
+          index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
+          columnSourceArray, relativeToArray, columnDataArray, rowspan, result, resultTotalCount, resultElementCounts,
+          elementArray, element, countArray, count, mostColsIndex;
+
+      // Create an array of source arrays for generating the table array 
+      // (only for relativeToColumn = -1 columns since other columns will need to be retrieved dynamically)
+      for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
+        tableColSpec = tableColSpecs[ tableColSpecIndex ];
+        if ( tableColSpec.relativeToColumn === -1 ) {
+          indexesKeys = tableColSpec.dataContainerSource;
+          indexesKeysLength = indexesKeys.length;
+          dataNode = data;
+
+          // Find the column data array and push into the source Array
+          for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
+            dataNode = dataNode[ indexKey ];
+          }
+          sourceArray.push( dataNode );
+
+          // Determine the number of top-level table rows (exluding sub-rows in 1 to many relationships) if not already determined
+          // Needed to determine how many iterations through column data arrays are needed when generating the table
+          if ( !numOuterRows ) {
+            numOuterRows = dataNode.length;
+          }
+        } else {
+          // Push empty array into sourceArray so elements of sourceArray line up with elements of tableColSpecs (same indexes)
+          sourceArray.push( [] );
+        }
+      }
+
+      // Generate the table array
+      for ( rowIndex = 0; rowIndex < numOuterRows; rowIndex += 1 ) {
+        rowArray = [];
+        countArray = [];
+        resultTotalCount = 1;
+        mostColsIndex = 0;
+        numInnerRows = 1;
+
+        for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
+          tableColSpec = tableColSpecs[ tableColSpecIndex ];
+          relativeToColumn = tableColSpec.relativeToColumn;
+
+          if ( relativeToColumn === -1 ) {
+            // Get element to push into the row array
+            dataNode = sourceArray[ tableColSpecIndex ][ rowIndex ];
+console.log( "sourceArray dataNode: " + JSON.stringify( dataNode ) );
+            indexesKeys = tableColSpec.dataElementSource;
+console.log( "indexesKeys: " + JSON.stringify( indexesKeys ) );
+            indexesKeysLength = indexesKeys.length;
+
+            for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
+              dataNode = dataNode[ indexesKeys[ indexKeyIndex ] ];
+            }
+
+            rowArray.push( dataNode );
+          } else {
+            // Need to find the column data array first since it is relative to another column
+            relativeToArray = [];
+            indexesKeysArray = [ tableColSpec.dataContainerSource, tableColSpec.dataElementSource ];
+console.log( "relativeToColumn: " + relativeToColumn );
+
+            while ( typeof relativeToColumn !== "undefined" && relativeToColumn !== -1 ) {
+              relativeToArray.unshift( relativeToColumn )
+console.log( "dataContainerSource: " + JSON.stringify( tableColSpecs[ relativeToColumn ].dataContainerSource ) );
+              indexesKeysArray.unshift( tableColSpecs[ relativeToColumn ].dataContainerSource );
+              relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
+            }
+
+console.log( "indexesKeysArray: " + JSON.stringify( indexesKeysArray ) );
+            dataNode = findData( data, indexesKeysArray );
+            result = getNestedArrayElementCounts( dataNode );
+console.log( "getNestedArrayElementCounts result: " + JSON.stringify( result ) );
+            rowArray.push( dataNode );
+            countArray.push( result );
+
+            // Determine which column has the most cells in the current row
+            if ( result[ 0 ] > resultTotalCount ) {
+              resultTotalCount = result [ 0 ];
+              resultElementCounts = result[ 1 ];
+              mostColsIndex = tableColSpecIndex;
+            }
+          }
+        }
+console.log( "rowArray: " + JSON.stringify( rowArray ) );
+        // Set rowspans for each of the columns
+        for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
+          tableColSpec = tableColSpecs[ tableColSpecIndex ];
+          relativeToColumn = tableColSpec.relativeToColumn;
+          dataNode = rowArray[ tableColSpecIndex ];
+
+          if ( resultTotalCount === 1 || relativeToColumn === -1 ) {
+            rowArray[ tableColSpecIndex ] = { data: dataNode, rowspan: resultTotalCount };
+          } else {
+            // Determine the array depth on which to apply rowspans
+            count = 0;
+            while ( relativeToColumn !== -1 ) {
+              relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
+              count += 1;
+            }
+
+            if ( count === 1 ) {
+              length = dataNode.length;
+
+              for ( index = 0; index < length; index += 1 ) {
+console.log( "resultElementCounts: " + JSON.stringify( resultElementCounts ) );
+                dataNode[ index ] = { data: dataNode[ index ], rowspan: resultElementCounts[ count ][ index ] };
+              }
+            } else {
+              // Retrieve the arrays that need rowspan applied
+              elementArray = getElementsAtSpecificArrayDepth( dataNode, count - 1 );
+              countArray = getElementsAtSpecificArrayDepth( resultElementCounts, count );
+              length = elementArray.length;
+
+              for ( index = 0; index < length; index += 1 ) {
+                element = elementArray[ index ];
+                length2 = element.length;
+
+                for ( index2 = 0; index2 < length2; index2 += 1 ) {
+                  element[ index2 ] = { data: element[ index2 ], rowspan: resultElementCounts[ count ][ index ] };
+                }
+              }
+            }
+          }
+        }        
+
+        tableArray.push( rowArray );
+      }
+
+      return tableArray;
+    },
+
+    /**
+     * @method findData
+     * @overview Retrieve data from an array or object using a series of keys/indexes
+     * @param data {Object/Array} Object/array on which to apply a series of keys/indexes to retrieve specific data
+     * @param indexesKeysArray {Array} Either an array of indexes/keys or nested arrays of indexes keys (could be multiple levels deep)
+     * @return {Primitive/Array} Either a data primitive, an array of primitives or an array of array (could be multiple levels deep)
+     */
+    findData = function( data, indexesKeysArray ) {
+      var typeofResults = typeof indexesKeysArray[ 0 ] === "object",
+          currentIndexesKeys = typeofResults ? indexesKeysArray[ 0 ] : indexesKeysArray,
+          indexesKeysLength = currentIndexesKeys.length,
+          dataNode = data,
+          indexKeyIndex, index, length, dataResults, result;
+console.log( "findData: indexesKeysArray: " + JSON.stringify( indexesKeysArray ) );
+console.log( "findData: indexesKeysArray[ 0 ]: " + JSON.stringify( indexesKeysArray[ 0 ] ) );
+console.log( "findData: typeofResults: " + typeofResults + ", currentIndexesKeys: length: " + currentIndexesKeys.length + ", 1st element: " + currentIndexesKeys[ 0 ] + ", 2nd element: "  + currentIndexesKeys[ 1 ] );
+
+      // Apply the keys/indexes to the current data node
+      for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
+console.log( "findData: dataNode indexKey: " + currentIndexesKeys[ indexKeyIndex ] );
+        dataNode = dataNode[ currentIndexesKeys[ indexKeyIndex ] ];
+console.log( "findData: dataNode result: " + ( typeof dataNode ) );
+console.log( "findData: dataNode data: " + JSON.stringify( dataNode ) );
+        if ( typeof dataNode === "undefined" ) {
+          return [];
+        }
+      }
+console.log( "indexesKeysArray.length: " + indexesKeysArray.length );
+      // If there are more keys/indexes to process, then call this function recursively for each element in the dataNode array
+      if ( indexesKeysArray.length > 1 ) {
+        length = dataNode.length;
+        dataResults = [];
+     
+        for ( index = 0; index < length; index += 1 ) {
+console.log( "indexesKeysArray.slice( 1 ): " + JSON.stringify( indexesKeysArray.slice( 1 ) ) );
+          result = findData( dataNode[ index ], indexesKeysArray.slice( 1 ) );
+console.log( "findData result: " + JSON.stringify( result ) );
+          dataResults.push( result );
+        }
+
+        return dataResults;
+      }
+
+      return dataNode;
+    },
+
+    /**
+     * @method getNestedArrayElementCounts
+     * @overview Determines the element count in nested arrays and the sum of element counts for the parent array
+     * @param data {Array} Array for determining the node count (could have multiple nested arrays)
+     * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
+     * @return {Array/String} Array or comma/semi-colon separated string of node counts (for each parent node)
+     */
+    getNestedArrayElementCounts = function( data ) {
+      var arrayLength = data.length,
+          elementCountArray = [],
+          totalElementCount = 0,
+          result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
+
+      for ( index = 0; index < arrayLength; index += 1) {
+        dataNode = data[ index ];
+        if ( Array.isArray( dataNode ) && dataNode.length > 0 ) {
+          result = getNestedArrayElementCounts( dataNode );
+
+          if ( typeof result === "object" ) {
+            // Array element is an array with descendant arrays so tally up the total number of elements and have an array of element counts
+            resultTotalCount = result[ 0 ];
+            resultElementCounts = result[ 1 ];
+            totalElementCount += resultTotalCount;
+            elementCountArray.push( resultTotalCount );
+
+            if ( index === 0 ) {
+              descendantElementCountArray = resultElementCounts;
+            } else {
+              // Concatenate the descendant element count arrays
+              length = descendantElementCountArray.length;
+              for ( index = 0; index < length; index += 1 ) {
+                descendantElementCountArray[ index ].concat( resultElementCounts[ index ] );
+              }
+            }
+          } else {
+            // Array element is an array with no descendant arrays so just tally up the number of elements in that array
+            totalElementCount += result;
+            elementCountArray.push( result );
+          }
+        } else {
+          // Array has no descendant arrays so just return the number of elements
+          return data.length;
+        }
+      }
+
+      if ( descendantElementCountArray ) {
+        // Group the counts for each generation into separate array elements with the current generation as the first array element
+        elementCountArray = [ elementCountArray ].concat( descendantElementCountArray );
+      }
+
+      return [ totalElementCount, elementCountArray ];
+    },
+
+    /**
+     * @method getElementsAtSpecificArrayDepth
+     * @overview Returns an array of all the elements at a specific depth within a multi-dimensional array
+     * @param data {Array} Multi-dimensional array from which the elements will be retrievedArray
+     * @param depth {Number} Number of levels deep to retrieve the elements (e.g., 2 = two levels deep (e.g., grandchildren of top-level array))
+     * @return {Array} Array containing all the array elements at the specific depth
+     */
+    getElementsAtSpecificArrayDepth = function( data, depth ) {
+      var elements, length, index, dataNode, result;
+
+      if ( depth === 0 ) {
+        return data;
+      } else {
+        elements = [];
+        length = data.length;
+
+        if ( depth === 1 ) {
+          for ( index = 0; index < length; index += 1 ) {
+            elements.push( data[ index ] );
+          }
+        } else {
+          for ( index = 0; index < length; index += 1 ) {
+            dataNode = data[ index ];
+            if ( Array.isArray( dataNode ) ) {
+              elements.concat( getElementsAtSpecificArrayDepth( dataNode, depth - 1 ) );
+            }
+          }
+        }
+      }
+
+      return elements;
+    },
+
+    /**
      * @method outputFile
      * @overview Output data to a file and trigger the interface to download it
      * @param settings {Object} Settings object for the file to output
@@ -391,6 +678,8 @@ var componentName = "wb-format-gen",
       } else if ( action === "restore-table" ) {
         // Restore table data rows (normally with tbody as the container) using the stored data (in CSV format)
         setTableRows( settings[ "container" ], storedData );
+      } else if ( action === "test-table" )  {
+        console.log( JSON.stringify( dataToTableArray( storedData, settings[ "tableColSpecs" ], true ) ) );
       }
     },
 
@@ -399,7 +688,7 @@ var componentName = "wb-format-gen",
      * @overview Stores data in sessionStorage or localStorage using a key and optionally in nested arrays/objects
      * @param action {String} Action to take on the stored data (options: replace, append, prepend, delete)
      * @param key {String} Key for storing the data
-     * @param indexesKeys {Array} (defaults to to empty array) Indexes and/or keys used to store data in nested arrays/objects in the data
+     * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to store data in nested arrays/objects in the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to store the data in localStorage
      * @param data {String/Array/Object/Other} (not used for "delete" action) Data to store
      */
@@ -514,7 +803,7 @@ var componentName = "wb-format-gen",
      * @method retrieveData
      * @overview Retrieves data from sessionStorage or localStorage using a key and optionally from nested arrays/objects
      * @param key {String} Key for retrieving the data
-     * @param indexesKeys {Array} (defaults to to empty array) Indexes and/or keys used to retrieve data from nested arrays/objects in the data
+     * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to retrieve data from nested arrays/objects in the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to retrieve the data from localStorage
      * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
      * @return {String} Returns the stored data.
@@ -700,7 +989,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method setTableRows
-     * @overview Replaces the rows in the container with rows creating using the passed data (in CSV format)
+     * @overview Replaces the rows in the container with rows created using the passed data (in CSV format)
      * @param container {String} Selector for the container in which to replace all nodes with table rows.
      * @param data {String / Array} Data in CSV format to create the table rows with
      * @param ignoreFirstDataRow {Boolean} (defaults to false) Whether or not to ignore the first row in the CSV data (e.g., ignore the header row)
@@ -736,11 +1025,18 @@ $document.on( "click", selector, function( event ) {
   var target = event.target,
       settings = wb.getData( $( target ), componentName ),
       type = settings[ "type" ],
-      action, data, storedData, key, source, useLocalStorage;
+      source = settings[ "source" ],
+      action, data, storedData, key, useLocalStorage;
 
   if ( target.type !== "file" ) {
     if ( type === "session-storage" || type === "local-storage" ) {
       outputStorage( settings );
+    } else if ( source === "session-storage" || source === "local-storage" ) {
+      if ( type === "csv" || type === "json" ) {
+        outputFile( settings );
+      } else {
+        inputStorage( settings );
+      }
     } else {
       outputFile( settings );
     }
