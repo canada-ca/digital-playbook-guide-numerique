@@ -319,13 +319,16 @@ console.log( "dataContainerSource: " + JSON.stringify( tableColSpecs[ relativeTo
 console.log( "indexesKeysArray: " + JSON.stringify( indexesKeysArray ) );
             dataNode = findData( data, indexesKeysArray );
 console.log( "findData dataNode: " + JSON.stringify( dataNode ) );
-            result = getNestedArrayElementCounts( dataNode );
+
+            if ( typeof dataNode === "object" ) {
+              result = getNestedArrayElementCounts( dataNode );
 console.log( "getNestedArrayElementCounts result: " + JSON.stringify( result ) );
 
-            // Determine which column has the most cells in the current row
-            if ( result[ 0 ] > resultTotalCount ) {
-              resultTotalCount = result [ 0 ];
-              resultElementCounts = result[ 1 ];
+              // Determine which column has the most cells in the current row
+              if ( result[ 0 ] > resultTotalCount ) {
+                resultTotalCount = result [ 0 ];
+                resultElementCounts = result[ 1 ];
+              }
             }
 
             rowArray.push( dataNode );
