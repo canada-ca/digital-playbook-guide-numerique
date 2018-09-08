@@ -138,7 +138,7 @@ assign dataSource = site.data[dataVariable] %}
 <!-- TODO Build better mechanism for displaying table -->
 <button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "table", "source": "session-storage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
-  { "relativeToColumn": 0, "dataContainerSource": [ 0, "activities" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
 ], "action": "test-table" }'>Generate table array and output to log</button>
 

@@ -246,12 +246,11 @@ var componentName = "wb-format-gen",
      */
     dataToTableArray = function( data, tableColSpecs, repeatValues ) {
       var tableArray = [],
-          sourceArray = [],
           tableColSpecsLength = tableColSpecs.length,
           rowIndex, numOuterRows, numInnerRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
           index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
           columnSourceArray, relativeToArray, columnDataArray, rowspan, result, resultTotalCount, resultElementCounts,
-          elementArray, element, countArray, count, mostColsIndex;
+          elementArray, element, countArray, count;
 
       // Create an array of source arrays for generating the table array 
       // (only for relativeToColumn = -1 columns since other columns will need to be retrieved dynamically)
@@ -262,47 +261,42 @@ var componentName = "wb-format-gen",
           indexesKeysLength = indexesKeys.length;
           dataNode = data;
 
-          // Find the column data array and push into the source Array
+          // Find the column data array
           for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
             dataNode = dataNode[ indexKey ];
           }
-          sourceArray.push( dataNode );
 
-          // Determine the number of top-level table rows (exluding sub-rows in 1 to many relationships) if not already determined
-          // Needed to determine how many iterations through column data arrays are needed when generating the table
-          if ( !numOuterRows ) {
-            numOuterRows = dataNode.length;
-          }
-        } else {
-          // Push empty array into sourceArray so elements of sourceArray line up with elements of tableColSpecs (same indexes)
-          sourceArray.push( [] );
+          numOuterRows = dataNode.length;
+          break;
         }
       }
 
       // Generate the table array
       for ( rowIndex = 0; rowIndex < numOuterRows; rowIndex += 1 ) {
         rowArray = [];
-        countArray = [];
         resultTotalCount = 1;
-        mostColsIndex = 0;
+        resultElementCounts = null;
         numInnerRows = 1;
-
+console.log( "Process row" );
         for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
           tableColSpec = tableColSpecs[ tableColSpecIndex ];
           relativeToColumn = tableColSpec.relativeToColumn;
 
           if ( relativeToColumn === -1 ) {
             // Get element to push into the row array
-            dataNode = sourceArray[ tableColSpecIndex ][ rowIndex ];
-console.log( "sourceArray dataNode: " + JSON.stringify( dataNode ) );
-            indexesKeys = tableColSpec.dataElementSource;
-console.log( "indexesKeys: " + JSON.stringify( indexesKeys ) );
+            indexesKeys = tableColSpec.dataContainerSource.concat( [ rowIndex ], tableColSpec.dataElementSource );
             indexesKeysLength = indexesKeys.length;
+            dataNode = data;
 
+            // Find the column data array and push into the source Array
             for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
+console.log( "dataNode[ indexesKeys[ indexKeyIndex ] ]: " + dataNode[ indexesKeys[ indexKeyIndex ] ] );
               dataNode = dataNode[ indexesKeys[ indexKeyIndex ] ];
+console.log( "typeof dataNode: " + typeof dataNode );
             }
 
+console.log( "relativeToColumn === -1 dataNode: " + JSON.stringify( dataNode ) );
+console.log( "indexesKeys: " + JSON.stringify( indexesKeys ) );
             rowArray.push( dataNode );
           } else {
             // Need to find the column data array first since it is relative to another column
@@ -313,26 +307,33 @@ console.log( "relativeToColumn: " + relativeToColumn );
             while ( typeof relativeToColumn !== "undefined" && relativeToColumn !== -1 ) {
               relativeToArray.unshift( relativeToColumn )
 console.log( "dataContainerSource: " + JSON.stringify( tableColSpecs[ relativeToColumn ].dataContainerSource ) );
-              indexesKeysArray.unshift( tableColSpecs[ relativeToColumn ].dataContainerSource );
+
+              indexesKeysArray.unshift( tableColSpecs[ relativeToColumn ].relativeToColumn === -1 ?
+                tableColSpecs[ relativeToColumn ].dataContainerSource.concat( [ rowIndex ] ) : 
+                tableColSpecs[ relativeToColumn ].dataContainerSource
+              );
+
               relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
             }
 
 console.log( "indexesKeysArray: " + JSON.stringify( indexesKeysArray ) );
             dataNode = findData( data, indexesKeysArray );
+console.log( "findData dataNode: " + JSON.stringify( dataNode ) );
             result = getNestedArrayElementCounts( dataNode );
 console.log( "getNestedArrayElementCounts result: " + JSON.stringify( result ) );
-            rowArray.push( dataNode );
-            countArray.push( result );
 
             // Determine which column has the most cells in the current row
             if ( result[ 0 ] > resultTotalCount ) {
               resultTotalCount = result [ 0 ];
               resultElementCounts = result[ 1 ];
-              mostColsIndex = tableColSpecIndex;
             }
+
+            rowArray.push( dataNode );
           }
         }
 console.log( "rowArray: " + JSON.stringify( rowArray ) );
+console.log( "resultTotalCount: " + resultTotalCount + ", resultElementCounts: " + JSON.stringify( resultElementCounts ) );
+/*
         // Set rowspans for each of the columns
         for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
           tableColSpec = tableColSpecs[ tableColSpecIndex ];
@@ -352,8 +353,9 @@ console.log( "rowArray: " + JSON.stringify( rowArray ) );
             if ( count === 1 ) {
               length = dataNode.length;
 
-              for ( index = 0; index < length; index += 1 ) {
 console.log( "resultElementCounts: " + JSON.stringify( resultElementCounts ) );
+console.log( "count: " + count );
+              for ( index = 0; index < length; index += 1 ) {
                 dataNode[ index ] = { data: dataNode[ index ], rowspan: resultElementCounts[ count ][ index ] };
               }
             } else {
@@ -373,7 +375,7 @@ console.log( "resultElementCounts: " + JSON.stringify( resultElementCounts ) );
             }
           }
         }        
-
+*/
         tableArray.push( rowArray );
       }
 
@@ -392,6 +394,7 @@ console.log( "resultElementCounts: " + JSON.stringify( resultElementCounts ) );
           currentIndexesKeys = typeofResults ? indexesKeysArray[ 0 ] : indexesKeysArray,
           indexesKeysLength = currentIndexesKeys.length,
           dataNode = data,
+          emptyResult = "",
           indexKeyIndex, index, length, dataResults, result;
 console.log( "findData: indexesKeysArray: " + JSON.stringify( indexesKeysArray ) );
 console.log( "findData: indexesKeysArray[ 0 ]: " + JSON.stringify( indexesKeysArray[ 0 ] ) );
@@ -404,23 +407,29 @@ console.log( "findData: dataNode indexKey: " + currentIndexesKeys[ indexKeyIndex
 console.log( "findData: dataNode result: " + ( typeof dataNode ) );
 console.log( "findData: dataNode data: " + JSON.stringify( dataNode ) );
         if ( typeof dataNode === "undefined" ) {
-          return [];
+          return emptyResult;
         }
       }
 console.log( "indexesKeysArray.length: " + indexesKeysArray.length );
       // If there are more keys/indexes to process, then call this function recursively for each element in the dataNode array
       if ( indexesKeysArray.length > 1 ) {
         length = dataNode.length;
-        dataResults = [];
+
+        if ( length > 0 ) {
+          dataResults = [];
      
-        for ( index = 0; index < length; index += 1 ) {
+          for ( index = 0; index < length; index += 1 ) {
 console.log( "indexesKeysArray.slice( 1 ): " + JSON.stringify( indexesKeysArray.slice( 1 ) ) );
-          result = findData( dataNode[ index ], indexesKeysArray.slice( 1 ) );
+            result = findData( dataNode[ index ], indexesKeysArray.slice( 1 ) );
 console.log( "findData result: " + JSON.stringify( result ) );
-          dataResults.push( result );
+            dataResults.push( result );
+          }
+        } else {
+          return emptyResult;
         }
 
-        return dataResults;
+        // Return the element instead of the array for single element arrays
+        return dataResults.length > 1 ? dataResults : dataResults[ 0 ];
       }
 
       return dataNode;
@@ -428,7 +437,7 @@ console.log( "findData result: " + JSON.stringify( result ) );
 
     /**
      * @method getNestedArrayElementCounts
-     * @overview Determines the element count in nested arrays and the sum of element counts for the parent array
+     * @overview Determines the non-array element count in nested arrays and the sum of element counts for the parent array
      * @param data {Array} Array for determining the node count (could have multiple nested arrays)
      * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
      * @return {Array/String} Array or comma/semi-colon separated string of node counts (for each parent node)
@@ -443,7 +452,7 @@ console.log( "findData result: " + JSON.stringify( result ) );
         dataNode = data[ index ];
         if ( Array.isArray( dataNode ) && dataNode.length > 0 ) {
           result = getNestedArrayElementCounts( dataNode );
-
+console.log( "count result: " + JSON.stringify( result ) );
           if ( typeof result === "object" ) {
             // Array element is an array with descendant arrays so tally up the total number of elements and have an array of element counts
             resultTotalCount = result[ 0 ];
@@ -451,7 +460,7 @@ console.log( "findData result: " + JSON.stringify( result ) );
             totalElementCount += resultTotalCount;
             elementCountArray.push( resultTotalCount );
 
-            if ( index === 0 ) {
+            if ( !descendantElementCountArray ) {
               descendantElementCountArray = resultElementCounts;
             } else {
               // Concatenate the descendant element count arrays
@@ -466,8 +475,8 @@ console.log( "findData result: " + JSON.stringify( result ) );
             elementCountArray.push( result );
           }
         } else {
-          // Array has no descendant arrays so just return the number of elements
-          return data.length;
+          totalElementCount += 1;
+          elementCountArray.push( 1 );
         }
       }
 
