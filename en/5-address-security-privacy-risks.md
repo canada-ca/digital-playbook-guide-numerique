@@ -142,7 +142,6 @@ Canadians want to have confidence that government digital services are designed 
 * [Canadian Criminal Code, Unauthorized use of computer (Sect 342.1/342.2)](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97)
 * [Canadian Criminal Code, Mischief in relation to computer data (Sect 430(1.1))](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117)
 
-
 </section>
 
 <section class="dpgn-section-solutions">

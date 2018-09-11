@@ -105,7 +105,6 @@ Share your experiences with colleagues across the Government of Canada, other le
 - [Marchés ouverts (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/5_March%C3%A9s_ouverts.md)
 - [2. Share best practices (Plan - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Plan#2._Share_best_practices)
 
-
 </section>
 </section>
 
