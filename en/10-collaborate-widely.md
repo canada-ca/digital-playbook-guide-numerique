@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "3. Collaborate widely (draft)"
+title:  "10. Collaborate widely (draft)"
 lang: en
 altLang: fr
-altLangPage: 3-collaborer-largement
+altLangPage: 10-collaborer-largement
 ---
 <div class="dpgn-section-intro-standard">
 
@@ -26,13 +26,13 @@ altLangPage: 3-collaborer-largement
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.3, 5.1" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 3.1, 3.2, 6.2" samePage=false includeStandardTitle=true %}
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 3.1 Empower multidisciplinary teams with diverse perspectives and skills
+## 10.1 Create multidisciplinary teams with the range of skills needed to deliver a common goal
 
 <div class="dpgn-section-intro-guideline">
 
@@ -111,7 +111,60 @@ To be successful, build a team with:
 
 <section class="dpgn-section-guideline">
 
-## 3.2 Recognize that an organization can't have all the best ideas, create partnerships and collaborate with a diverse range of partners
+## 10.2 Share and collaborate in the open
+
+<div class="dpgn-section-intro-guideline">
+
+**[TODO: Add/revise introductory text]**
+
+</div>
+
+<section class="dpgn-section-checklist">
+
+### Checklist
+
+**[TODO: Add/revise checklist items]**
+
+- Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
+- Link to the work of others
+- Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
+- Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
+- Document the code you've not made open and why **(Digital Service Standard (UK))**
+- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
+
+</section>
+
+<section class="dpgn-section-guides">
+
+### Implementation guides
+
+**[TODO: Add/revise implementation guide items]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
+
+</section>
+
+<section class="dpgn-section-similar">
+
+### Similar resources
+
+- [Open Source Software Contribution (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/4_Open_Source_Software_Contribution.md)
+- [Open Culture (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/6_Open_Culture.md)
+- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
+
+</section>
+</section>
+
+<section class="dpgn-section-guideline">
+
+## 10.3 Identify and create partnerships which help deliver value to users
 
 <div class="dpgn-section-intro-guideline">
 
@@ -167,94 +220,6 @@ To be successful, build a team with:
 ### Reusable solutions
 
 **[TODO: Add/revise reusable solutions]**
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 3.3 Build the capacity to dynamically pull in new partners for co-innovation
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 3.4 Share and collaborate in the open, link to the work of others, and provide resources that others can reuse
-
-<div class="dpgn-section-intro-guideline">
-
-**[TODO: Add/revise introductory text]**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Checklist
-
-**[TODO: Add/revise checklist items]**
-
-- Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
-- Link to the work of others
-- Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
-- Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
-- Document the code you've not made open and why **(Digital Service Standard (UK))**
-- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Implementation guides
-
-**[TODO: Add/revise implementation guide items]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Reusable solutions
-
-**[TODO: Add/revise reusable solutions]**
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Similar resources
-
-- [Open Source Software Contribution (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/4_Open_Source_Software_Contribution.md)
-- [Open Culture (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/6_Open_Culture.md)
-- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
-- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 
 </section>
 </section>

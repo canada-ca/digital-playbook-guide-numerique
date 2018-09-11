@@ -36,15 +36,15 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 ### Digital Standards views
 
 - [1. Design with users](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/1-design-with-users.html)
-- [2. Build in accessibility from the start](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/2-build-in-accessibility-from-start.html)
-- [3. Collaborate widely](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/3-collaborate-widely.html)
-- [4. Empower staff to deliver better services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/4-empower-staff-deliver-better-services.html)
-- [5. Work in the open by default](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/5-work-in-open-by-default.html)
-- [6. Use open standards and solutions](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/6-use-open-standards-solutions.html)
-- [7. Iterate and improve frequently](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/7-iterate-improve-frequently.html)
-- [8. Design ethical services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/8-design-ethical-services.html)
-- [9. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/9-address-security-privacy-risks.html)
-- [10. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/10-be-good-data-stewards.html)
+- [2. Iterate and improve frequently](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/2-iterate-improve-frequently.html)
+- [3. Work in the open by default](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/3-work-in-open-by-default.html)
+- [4. Use open standards and solutions](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/4-use-open-standards-solutions.html)
+- [5. Address security and privacy risks](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/5-address-security-privacy-risks.html)
+- [6. Build in accessibility from the start](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/6-build-in-accessibility-from-start.html)
+- [7. Empower staff to deliver better services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/7-empower-staff-deliver-better-services.html)
+- [8. Be good data stewards](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/8-be-good-data-stewards.html)
+- [9. Design ethical services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/9-design-ethical-services.html)
+- [10. Collaborate widely](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/en/10-collaborate-widely.html)
 - [Digital Standards (draft) - Single page view](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/en/digital-standards.html)
 
 ### Development stage views
@@ -61,13 +61,11 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 ## About the Digital Playbook
 
-### Objective
+### Improving government services in the digital age
 
-**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. This Digital Playbook, and the Digital Standards it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey.
+Our goal is to provide public services to Canadians which are simple to use and trustworthy. This Digital Playbook, and the Digital Standards it is built upon, form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. While overall accountability for delivery of digital services rests with deputy heads, these standards and the Digital Playbook will guide teams in designing digital services in a way that best serves Canadians.
 
-**It takes a village.** The goal is to co-create this Digital Playbook with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. We believe it will take a community of individuals, with varying backgrounds and perspectives, to come together and help define and share guidance, direction, approaches, tools and stories. We hope to make the playbook as collaborative as possible. And of course the foundation will be built upon the Government Canada Digital Standards and the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you.
-
-**Together we’ll make them better.** This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone.
+The goal is to co-create this Digital Playbook with the public and key stakeholder groups. This is a living playbook and will continue to evolve over time as we better understand the complexities involved in putting it into practice.
 
 The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
 
@@ -127,15 +125,15 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 ### Vues basées sur les normes numériques
 
 - [1. Concevoir avec les utilisateurs](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/1-concevoir-avec-utilisateurs.html)
-- [2. Intégrer l’accessibilité dès le départ](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/2-integrer-accessibilite-des-depart.html)
-- [3. Collaborer largement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/3-collaborer-largement.html)
-- [4. Permettre au personnel d’offrir de meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/4-permettre-personnel-offrir-meilleurs-services.html)
-- [5. Travailler ouvertement par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/5-travailler-ouvertement-par-defaut.html)
-- [6. Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/6-utiliser-normes-solutions-ouvertes.html)
-- [7. Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/7-effectuer-iterations-ameliorations-constamment.html)
-- [8. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/8-concevoir-services-ethiques.html)
-- [9. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/9-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
-- [10. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/10-etre-bons-utilisateurs-donnees.html)
+- [2. Effectuer des itérations et des améliorations constamment](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/2-effectuer-iterations-ameliorations-constamment.html)
+- [3. Travailler ouvertement par défaut](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/3-travailler-ouvertement-par-defaut.html)
+- [4. Utiliser des normes et des solutions ouvertes](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/4-utiliser-normes-solutions-ouvertes.html)
+- [5. Gérer les risques en matière de sécurité et de protection des renseignements personnels](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/5-gerer-risques-matiere-securite-protection-renseignements-personnels.html)
+- [6. Intégrer l’accessibilité dès le départ](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/6-integrer-accessibilite-des-depart.html)
+- [7. Permettre au personnel d’offrir de meilleurs services](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/7-permettre-personnel-offrir-meilleurs-services.html)
+- [8. Être de bons utilisateurs de données](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/8-etre-bons-utilisateurs-donnees.html)
+- [9. Concevoir des services éthiques](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/9-concevoir-services-ethiques.html)
+- [10. Collaborer largement](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/standards-normes/fr/10-collaborer-largement.html)
 - [Normes numériques (ébauche) - Affichage d'une seule page](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/single-page-seule/fr/normes-numeriques.html)
 
 ### Vues basées sur les stages de développement
@@ -152,13 +150,11 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 
 ## À propos du guide numérique
 
-### Objectif
+### Améliorer les services gouvernementaux à l’ère numérique
 
-**Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
+Notre objectif est de fournir aux Canadiens des services publics simples à utiliser et fiables. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. Bien que la responsabilité globale de la prestation des services numériques incombe aux administrateurs généraux, ces normes et le guide de lecture numérique guideront les équipes dans la conception des services numériques de manière à mieux servir les Canadiens.
 
-**Il faut tout un village.** Le but est de créer ce guide numérique conjointement avec le public et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Nous avons la conviction qu’il sera nécessaire qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour définir et contribuer à des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.
-
-**Ensemble nous le ferons mieux.** Ceci est un guide vivant, et nous continuerons de le mettre à jour et de le faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à l'amélioration du guide. Ce guide reflètera la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
+Le but est de créer ce guide numérique conjointement avec le public et des groupes d’intervenants clés. Ceci est un guide vivant qui continuera d’évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique.
 
 Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
 

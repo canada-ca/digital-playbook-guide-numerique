@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "3. Collaborer largement (ébauche)"
+title:  "10. Collaborer largement (ébauche)"
 lang: fr
 altLang: en
-altLangPage: 3-collaborate-widely
+altLangPage: 10-collaborate-widely
 ---
 <div class="dpgn-section-intro-standard">
 
@@ -26,13 +26,13 @@ altLangPage: 3-collaborate-widely
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.3, 5.1" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 3.1, 3.2, 6.2" samePage=false includeStandardTitle=true %}
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 3.1 Autonomiser des équipes multidisciplinaires ayant des perspectives et des compétences variées
+## 10.1 Créer des équipes multidisciplinaires dotées des compétences nécessaires pour atteindre un objectif commun
 
 <div class="dpgn-section-intro-guideline">
 
@@ -111,7 +111,62 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 
 <section class="dpgn-section-guideline">
 
-## 3.2 Reconnaître qu’une organisation ne peut pas avoir toutes les meilleures idées, créer des partenariats et collaborer avec un éventail diversifié de partenaires
+## 10.2 Partager et collaborer ouvertement
+
+<div class="dpgn-section-intro-guideline">
+
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section class="dpgn-section-checklist">
+
+### Liste de contrôle
+
+**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+- Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
+- Link to the work of others
+- Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
+- Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
+- Document the code you've not made open and why **(Digital Service Standard (UK))**
+- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
+
+</section>
+
+<section class="dpgn-section-guides">
+
+### Guides d'implémentation
+
+**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
+
+- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
+
+</section>
+
+<section class="dpgn-section-similar">
+
+### Ressources similaires
+
+- [Logiciel libre - Contribution (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Logiciel_libre_Contribution.md)
+- [Culture ouverte (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/6_Culture_ouverte.md)
+- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
+- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
+
+</section>
+</section>
+
+<section class="dpgn-section-guideline">
+
+## 10.3 Identifier et créer des partenariats qui apportent de la valeur aux utilisateurs
 
 <div class="dpgn-section-intro-guideline">
 
@@ -169,98 +224,6 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 **[TODO: Ajouter / réviser les solutions réutilisables]**
 
 - [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 3.3 Renforcer la capacité d’attirer dynamiquement de nouveaux partenaires pour la co-innovation
-
-<div class="dpgn-section-intro-guideline">
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-**Very similar to guideline 5.5 (guideline 5.5 is more specific about open source)**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'implémentation
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-</section>
-</section>
-
-<section class="dpgn-section-guideline">
-
-## 3.4 Partager et collaborer ouvertement, tisser des liens avec le travail des autres et fournir des ressources que les autres pourront réutiliser
-
-<div class="dpgn-section-intro-guideline">
-
-**\[TODO: Ajouter / réviser le texte d'introduction\]**
-
-</div>
-
-<section class="dpgn-section-checklist">
-
-### Liste de contrôle
-
-**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
-
-- Offer users a mechanism to report bugs and issues, and be responsive to these reports **(Digital Services Playbook (US))**
-- Link to the work of others
-- Document how you accept contributions and comments on the code **(Digital Service Standard (UK))**
-- Document how you're handling updates and bug fixes to the code **(Digital Service Standard (UK))**
-- Document the code you've not made open and why **(Digital Service Standard (UK))**
-- Determine how a team in another department can reuse your code **(Digital Service Standard (UK))**
-
-</section>
-
-<section class="dpgn-section-guides">
-
-### Guides d'implémentation
-
-**\[TODO: Ajouter / réviser les éléments du guide de mise en œuvre\]**
-
-</section>
-
-<section class="dpgn-section-solutions">
-
-### Solutions réutilisables
-
-**[TODO: Ajouter / réviser les solutions réutilisables]**
-
-- [Boîte à outils de l’expérience Web (BOEW)](https://wet-boew.github.io/v4.0-ci/index-fr.html)
-
-</section>
-
-<section class="dpgn-section-similar">
-
-### Ressources similaires
-
-- [Logiciel libre - Contribution (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/4_Logiciel_libre_Contribution.md)
-- [Culture ouverte (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/6_Culture_ouverte.md)
-- [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
-- [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 
 </section>
 </section>
