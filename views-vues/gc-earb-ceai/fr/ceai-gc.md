@@ -119,7 +119,7 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 
 <section>
 
-### Se servir de normes et de solutions ouvertes par défaut
+### Utilisez des normes ouvertes et des logiciels libres par défaut
 
 <section>
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
