@@ -119,7 +119,7 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-### Use Open Standards and Solutions by Default
+### Use Open Standards and Open Source Software by Default
 
 <section>
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
