@@ -28,9 +28,9 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Définir les services de programme en tant que fonctionnalités métier permettant d'établir un vocabulaire commun entre les activités, le développement et les opérations
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Identifier les fonctionnalités communes à l'entreprise GC et pouvant être partagées et réutilisées
-- {: data-dpgn-data-include='&#123; "guideline": "6.1", "section": "checklist" &#125;'} Modélisation des processus métier à l'aide du langage de modélisation unifiée pour identifier les processus d'entreprise communs
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Définir les services de programme en tant que fonctionnalités métier permettant d'établir un vocabulaire commun entre les activités, le développement et les opérations
+- {: data-dpgn-data-include='&#123; "guideline": "10.2", "section": "checklist" &#125;'} Identifier les fonctionnalités communes à l'entreprise GC et pouvant être partagées et réutilisées
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Modélisation des processus métier à l'aide du langage de modélisation unifiée pour identifier les processus d'entreprise communs
 {: .lst-spcd .dpgn-digital-architectural-align-gc-business-capability-model .dpgn-business-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -49,11 +49,11 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 
 <!-- markdownlint-disable MD032 -->
 - {: data-dpgn-data-include='&#123; "guideline": "1.2", "section": "checklist" &#125;'} Miser sur les besoins des utilisateurs; se servir de méthodes agiles, itératives et axées sur l’utilisateur
-- {: data-dpgn-data-include='&#123; "guideline": "2.2", "section": "checklist" &#125;'} Se conformer aux exigences en matière d’accessibilité et de langues officielles
-- {: data-dpgn-data-include='&#123; "guideline": "3.1", "section": "checklist" &#125;'} Tenir compte de toutes les compétences nécessaires à la prestation, y compris celles qui ont trait aux exigences, à la conception, à l’élaboration et aux opérations
-- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.4", "section": "checklist" &#125;'} Travailler de façon à couvrir le cycle de vie tout entier de l’application, de son élaboration à sa mise à l’essai, et du déploiement aux opérations
-- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Veiller à ce que l’on tienne compte de la qualité tout au long du cycle de vie d’élaboration du logiciel
-- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.3", "section": "checklist" &#125;'} Encourager et adopter le développement piloté par les tests (DPT) pour améliorer la confiance qui règne entre les entreprises et la TI
+- {: data-dpgn-data-include='&#123; "guideline": "6.1", "section": "checklist" &#125;'} Se conformer aux exigences en matière d’accessibilité et de langues officielles
+- {: data-dpgn-data-include='&#123; "guideline": "10.1", "section": "checklist" &#125;'} Tenir compte de toutes les compétences nécessaires à la prestation, y compris celles qui ont trait aux exigences, à la conception, à l’élaboration et aux opérations
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Travailler de façon à couvrir le cycle de vie tout entier de l’application, de son élaboration à sa mise à l’essai, et du déploiement aux opérations
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "2.2", "section": "checklist" &#125;'} Veiller à ce que l’on tienne compte de la qualité tout au long du cycle de vie d’élaboration du logiciel
+- {: .dpgn-standards-hide data-dpgn-data-include='&#123; "guideline": "2.2", "section": "checklist" &#125;'} Encourager et adopter le développement piloté par les tests (DPT) pour améliorer la confiance qui règne entre les entreprises et la TI
 {: .lst-spcd .dpgn-digital-architectural-design-for-users-first .dpgn-digital-architectural-multidisciplinary-teams .dpgn-business-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -98,11 +98,11 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "6.3", "section": "checklist" &#125;'} Exposer toutes les fonctionnalités en tant que services
-- {: data-dpgn-data-include='&#123; "guideline": "6.3", "section": "checklist" &#125;'} Se servir de microservices ayant été conçus autour des capacités opérationnelles. Concevoir chaque servir à une fin particulière
-- {: data-dpgn-data-include='&#123; "guideline": "6.3", "section": "checklist" &#125;'} Exploiter chaque service selon son propre processus, et veiller à ce qu’il communique avec les autres services par l’entremise d’une interface bien définie, comme une Interface de programmation d’applications (IPA) axée sur un protocole HTTPS
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Faire rouler les applications en conteneurs
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Tirer parti des composantes intégrées d’échange numérique comme le Bus de service du GC, la plateforme d’échange numérique, et le magasin IPA, conçu à des fins d’utilisation sur mesure
+- {: data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Exposer toutes les fonctionnalités en tant que services
+- {: data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Se servir de microservices ayant été conçus autour des capacités opérationnelles. Concevoir chaque servir à une fin particulière
+- {: data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Exploiter chaque service selon son propre processus, et veiller à ce qu’il communique avec les autres services par l’entremise d’une interface bien définie, comme une Interface de programmation d’applications (IPA) axée sur un protocole HTTPS
+- {: data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Faire rouler les applications en conteneurs
+- {: data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Tirer parti des composantes intégrées d’échange numérique comme le Bus de service du GC, la plateforme d’échange numérique, et le magasin IPA, conçu à des fins d’utilisation sur mesure
 {: .lst-spcd .dpgn-digital-architectural-enable-interoperability .dpgn-information-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -125,10 +125,10 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "6.1", "section": "checklist" &#125;'} Se servir de normes, solutions, composantes et pratiques de pointe en matière de source ouverte
-- {: data-dpgn-data-include='&#123; "guideline": "6.1", "section": "checklist" &#125;'} Préconiser cet ordre de préférences : source ouverte d’abord, puis les logiciels disponibles sur le marché qui sont indifférents à la plateforme, puis les logiciels disponibles sur le marché exclusifs, puis en dernier lieu, les logiciels conçus sur mesure
-- {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;'} Rendre le code source ouvert et réutilisable en vertu d’une licence de logiciel à source ouverte
-- {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;'} Exposer les données publiques afin de procéder à la mise en œuvre d’initiatives sur les données ouvertes et l’information ouverte
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Se servir de normes, solutions, composantes et pratiques de pointe en matière de source ouverte
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Préconiser cet ordre de préférences : source ouverte d’abord, puis les logiciels disponibles sur le marché qui sont indifférents à la plateforme, puis les logiciels disponibles sur le marché exclusifs, puis en dernier lieu, les logiciels conçus sur mesure
+- {: data-dpgn-data-include='&#123; "guideline": "3.2", "section": "checklist" &#125;'} Rendre le code source ouvert et réutilisable en vertu d’une licence de logiciel à source ouverte
+- {: data-dpgn-data-include='&#123; "guideline": "3.2", "section": "checklist" &#125;'} Exposer les données publiques afin de procéder à la mise en œuvre d’initiatives sur les données ouvertes et l’information ouverte
 {: .lst-spcd .dpgn-digital-architectural-open-standards-solutions .dpgn-application-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -146,11 +146,11 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Tirer parti et réutiliser les solutions, composantes et processus qui existent déjà
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Sélectionner des solutions intégrées et regroupées avant d’opter pour des solutions spécifiques à un ministère
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Réaliser la simplification en minimisant le dédoublement des composantes et en s’en tenant aux normes pertinentes
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Informer le CEAI GC des investissements et des innovations ministériels
-- {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;'} Partager le code publiquement lorsqu’il est approprié de le faire et, lorsqu’il n’est pas pratique de le faire, le partager au sein du gouvernement du Canada
+- {: data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Tirer parti et réutiliser les solutions, composantes et processus qui existent déjà
+- {: data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Sélectionner des solutions intégrées et regroupées avant d’opter pour des solutions spécifiques à un ministère
+- {: data-dpgn-data-include='&#123; "guideline": "4.2", "section": "checklist" &#125;'} Réaliser la simplification en minimisant le dédoublement des composantes et en s’en tenant aux normes pertinentes
+- {: data-dpgn-data-include='&#123; "guideline": "10.2", "section": "checklist" &#125;'} Informer le CEAI GC des investissements et des innovations ministériels
+- {: data-dpgn-data-include='&#123; "guideline": "3.2", "section": "checklist" &#125;'} Partager le code publiquement lorsqu’il est approprié de le faire et, lorsqu’il n’est pas pratique de le faire, le partager au sein du gouvernement du Canada
 {: .lst-spcd .dpgn-digital-architectural-maximize-reuse .dpgn-application-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -173,9 +173,9 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Préconiser cet ordre de préférences : Logiciel comme service (SaaS) d’abord, puis Plateforme comme service (PaaS), et en dernier lieu, l’Infrastructure comme service (IaaS)
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Préconiser cet ordre de préférences : Le nuage public d’abord, ensuite, le nuage hybride, puis le nuage privé et, en dernier lieu, les solutions non nuagiques (sur site)
-- {: data-dpgn-data-include='&#123; "guideline": "6.2", "section": "checklist" &#125;'} Concevoir en vue d’une mobilité nuagique, et élaborer une stratégie de sortie afin d’éviter l’enfermement propriétaire
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Préconiser cet ordre de préférences : Logiciel comme service (SaaS) d’abord, puis Plateforme comme service (PaaS), et en dernier lieu, l’Infrastructure comme service (IaaS)
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Préconiser cet ordre de préférences : Le nuage public d’abord, ensuite, le nuage hybride, puis le nuage privé et, en dernier lieu, les solutions non nuagiques (sur site)
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Concevoir en vue d’une mobilité nuagique, et élaborer une stratégie de sortie afin d’éviter l’enfermement propriétaire
 {: .lst-spcd .dpgn-digital-architectural-cloud-first .dpgn-technology-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -193,10 +193,10 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "6.1", "section": "checklist" &#125;'} Concevoir à des fins de résilience
-- {: data-dpgn-data-include='&#123; "guideline": "6.1", "section": "checklist" &#125;'} Veiller à ce que les temps de réponse répondent aux besoins des utilisateurs, et que les services critiques soient grandement disponibles
-- {: data-dpgn-data-include='&#123; "guideline": "6.1", "section": "checklist" &#125;'} Appuyer les déploiements sans temps morts, dans les cas de maintenance planifiée et non planifiée
-- {: data-dpgn-data-include='&#123; "guideline": "6.1", "section": "checklist" &#125;'} Se servir d’architectures distribuées, en présumant que des échecs se produiront, traiter des erreurs avec dignité, et surveiller activement
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Concevoir à des fins de résilience
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Veiller à ce que les temps de réponse répondent aux besoins des utilisateurs, et que les services critiques soient grandement disponibles
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Appuyer les déploiements sans temps morts, dans les cas de maintenance planifiée et non planifiée
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Se servir d’architectures distribuées, en présumant que des échecs se produiront, traiter des erreurs avec dignité, et surveiller activement
 {: .lst-spcd .dpgn-digital-architectural-performance-availability-scalability .dpgn-technology-architecture .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -219,10 +219,10 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "9.4", "section": "checklist" &#125;'} Procéder à la mise en œuvre de la sécurité à l’échelle de tous les niveaux de l’architecture
-- {: data-dpgn-data-include='&#123; "guideline": "9.4", "section": "checklist" &#125;'} Catégoriser les données correctement afin de déterminer les mécanismes de protection qui s’imposent
-- {: data-dpgn-data-include='&#123; "guideline": "9.4", "section": "checklist" &#125;'} Mener une Évaluation des facteurs relatifs à la vie privée (ÉFVP) lorsque des renseignements personnels sont en jeu
-- {: data-dpgn-data-include='&#123; "guideline": "9.4", "section": "checklist" &#125;'} Équilibrer les besoins des utilisateurs aux besoins organisationnels en se dotant de mesures de sécurité proportionnelles
+- {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;'} Procéder à la mise en œuvre de la sécurité à l’échelle de tous les niveaux de l’architecture
+- {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;'} Catégoriser les données correctement afin de déterminer les mécanismes de protection qui s’imposent
+- {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;'} Mener une Évaluation des facteurs relatifs à la vie privée (ÉFVP) lorsque des renseignements personnels sont en jeu
+- {: data-dpgn-data-include='&#123; "guideline": "5.1", "section": "checklist" &#125;'} Équilibrer les besoins des utilisateurs aux besoins organisationnels en se dotant de mesures de sécurité proportionnelles
 {: .lst-spcd .dpgn-digital-architectural-security-privacy .dpgn-security-architecture-privacy .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
@@ -240,10 +240,10 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "5.2", "section": "checklist" &#125;'} Publier un accord sur les niveaux de service pour chaque service
-- {: data-dpgn-data-include='&#123; "guideline": "5.3", "section": "checklist" &#125;'} Veiller à ce qu’une piste d’audit soit disponible pour toutes les transactions, afin d’assurer la responsabilisation et la non-répudiation
-- {: data-dpgn-data-include='&#123; "guideline": "5.3", "section": "checklist" &#125;'} Établir des paramètres opérationnels et de la TI afin de faciliter l’atteinte de résultats opérationnels
-- {: data-dpgn-data-include='&#123; "guideline": "5.3", "section": "checklist" &#125;'} Appliquer des principes de surveillance et de gestion du cycle de vie aux investissements numériques par l’entremise de la gouvernance
+- {: data-dpgn-data-include='&#123; "guideline": "3.1", "section": "checklist" &#125;'} Publier un accord sur les niveaux de service pour chaque service
+- {: data-dpgn-data-include='&#123; "guideline": "3.1", "section": "checklist" &#125;'} Veiller à ce qu’une piste d’audit soit disponible pour toutes les transactions, afin d’assurer la responsabilisation et la non-répudiation
+- {: data-dpgn-data-include='&#123; "guideline": "3.1", "section": "checklist" &#125;'} Établir des paramètres opérationnels et de la TI afin de faciliter l’atteinte de résultats opérationnels
+- {: data-dpgn-data-include='&#123; "guideline": "3.1", "section": "checklist" &#125;'} Appliquer des principes de surveillance et de gestion du cycle de vie aux investissements numériques par l’entremise de la gouvernance
 {: .lst-spcd .dpgn-digital-architectural-measurable-accountable .dpgn-security-architecture-privacy .dpgn-digital-architectural}
 <!-- markdownlint-enable MD032 -->
 
