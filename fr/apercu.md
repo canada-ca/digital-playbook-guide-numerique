@@ -22,15 +22,11 @@ Fournit des conseils pratiques et détaillés pour aider le gouvernement du Cana
 
 <section class="dpgn-overview-end">
   
-#### Objectif
+#### Améliorer les services gouvernementaux à l’ère numérique
 
-L'objectif du guide numérique est de fournir des conseils détaillés sur la mise en œuvre des normes numériques, dont le but est de guider le gouvernement du Canada dans la transformation numérique et la prestation accrue de services. Le guide numérique est conçu pour être flexible et adaptable, aidant les utilisateurs à se concentrer sur les conseils les plus pertinents pour eux.
+Notre objectif est de fournir aux Canadiens des services publics simples à utiliser et fiables. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. Bien que la responsabilité globale de la prestation des services numériques incombe aux administrateurs généraux, ces normes et le guide de lecture numérique guideront les équipes dans la conception des services numériques de manière à mieux servir les Canadiens.
 
-**Améliorer les services gouvernementaux à l’ère numérique.** Notre objectif est de fournir aux Canadiens des services publics facilement accessibles, intégrés et dignes de confiance. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. C’est un cheminement.
-
-**Il faut tout un village.** Le but est de créer ce guide numérique conjointement avec le public et des groupes d’intervenants clés afin d’aider le gouvernement à concevoir et à offrir d’excellents services à ses citoyens. Nous avons la conviction qu’il sera nécessaire qu’une communauté d’individus ayant des antécédents et des points de vue différents se rassemble pour définir et contribuer à des conseils, des lignes directrices, des approches, des outils, et des histoires. Nous espérons faire de ce guide une œuvre aussi collaborative que possible. Et bien sûr, nous avons établi nos fondations en nous inspirant du travail de pionnier réalisé au Royaume-Uni, aux États-Unis, en Australie et dans la province de l’Ontario. Merci.
-
-**Ensemble nous le ferons mieux.** Ceci est un guide vivant, et nous continuerons de le mettre à jour et de le faire évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique. Nous nous attendons à ce que la communauté participe à l'amélioration du guide. Ce guide reflètera la façon dont nous ferons des conceptions pour nous-mêmes et pour les autres. Nous n’y arriverons pas seuls.
+Le but est de créer ce guide numérique conjointement avec le public et des groupes d’intervenants clés. Ceci est un guide vivant qui continuera d’évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique.
 
 Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
 

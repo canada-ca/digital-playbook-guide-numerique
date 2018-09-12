@@ -22,13 +22,11 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 <section class="dpgn-overview-end">
   
-#### Objective
+#### Improving government services in the digital age
 
-**Improving government services in the digital age.** Our goal is to provide easily accessible, integrated, and trusted public services to Canadians. As a government, we need to move away from monolithic projects with rigid designs that are built in silos with minimal input from the user community. This Digital Playbook, and the Digital Standards it is built upon, will form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. It’s a journey.
+Our goal is to provide public services to Canadians which are simple to use and trustworthy. This Digital Playbook, and the Digital Standards it is built upon, form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. While overall accountability for delivery of digital services rests with deputy heads, these standards and the Digital Playbook will guide teams in designing digital services in a way that best serves Canadians.
 
-**It takes a village.** The goal is to co-create this Digital Playbook with the public and key stakeholder groups to help government build and deliver excellent services for its citizens. We believe it will take a community of individuals, with varying backgrounds and perspectives, to come together and help define and share guidance, direction, approaches, tools and stories. We hope to make the playbook as collaborative as possible. And of course the foundation will be built upon the Government Canada Digital Standards and the pioneering work of the UK, the United States, Australia, and the province of Ontario. Thank you.
-
-**Together we’ll make them better.** This will be a living playbook and we will continue to update and evolve it over time as we better understand the complexities involved in putting it into practice. We expect the community to provide input to help refine it. This playbook will reflect how we will design for ourselves as well as how we will design for others, diving into the details and providing guidance and direction. We can’t do this alone.
+The goal is to co-create this Digital Playbook with the public and key stakeholder groups. This is a living playbook and will continue to evolve over time as we better understand the complexities involved in putting it into practice.
 
 The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
 

@@ -49,32 +49,32 @@ standardFile:
     en:  1-design-with-users
     fr:  1-concevoir-avec-utilisateurs
   -
-    en:  2-build-in-accessibility-from-start
-    fr:  2-integrer-accessibilite-des-depart
+    en:  2-iterate-improve-frequently
+    fr:  2-effectuer-iterations-ameliorations-constamment
   -
-    en:  3-collaborate-widely
-    fr:  3-collaborer-largement
+    en:  3-work-in-open-by-default
+    fr:  3-travailler-ouvertement-par-defaut
   -
-    en:  4-empower-staff-deliver-better-services
-    fr:  4-permettre-personnel-offrir-meilleurs-services
+    en:  4-use-open-standards-solutions
+    fr:  4-utiliser-normes-solutions-ouvertes
   -
-    en:  5-work-in-open-by-default
-    fr:  5-travailler-ouvertement-par-defaut
+    en:  5-address-security-privacy-risks
+    fr:  5-gerer-risques-matiere-securite-protection-renseignements-personnels
   -
-    en:  6-use-open-standards-solutions
-    fr:  6-utiliser-normes-solutions-ouvertes
+    en:  6-build-in-accessibility-from-start
+    fr:  6-integrer-accessibilite-des-depart
   -
-    en:  7-iterate-improve-frequently
-    fr:  7-effectuer-iterations-ameliorations-constamment
+    en:  7-empower-staff-deliver-better-services
+    fr:  7-permettre-personnel-offrir-meilleurs-services
   -
-    en:  8-design-ethical-services
-    fr:  8-concevoir-services-ethiques
+    en:  8-be-good-data-stewards
+    fr:  8-etre-bons-utilisateurs-donnees
   -
-    en:  9-address-security-privacy-risks
-    fr:  9-gerer-risques-matiere-securite-protection-renseignements-personnels
+    en:  9-design-ethical-services
+    fr:  9-concevoir-services-ethiques
   -
-    en:  10-be-good-data-stewards
-    fr:  10-etre-bons-utilisateurs-donnees
+    en:  10-collaborate-widely
+    fr:  10-collaborer-largement
 RenderedFileExtension: ".html"
 
 # Default order of the guideline sections
