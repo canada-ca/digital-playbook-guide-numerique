@@ -1,10 +1,10 @@
 ---
 layout: default
 titleSource: standard
-standard: 4
+standard: 5
 lang: en
 altLang: fr
-altLangPage: 4-permettre-personnel-offrir-meilleurs-services
+altLangPage: 5-gerer-risques-matiere-securite-protection-renseignements-personnels
 collectionDirectory: views-vues/standards-normes
 ---
 {% include views-vues/standard-normes/content-contenu.html %}

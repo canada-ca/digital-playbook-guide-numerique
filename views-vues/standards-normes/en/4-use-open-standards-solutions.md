@@ -1,10 +1,10 @@
 ---
 layout: default
 titleSource: standard
-standard: 5
+standard: 4
 lang: en
 altLang: fr
-altLangPage: 5-travailler-ouvertement-par-defaut
+altLangPage: 4-utiliser-normes-solutions-ouvertes
 collectionDirectory: views-vues/standards-normes
 ---
 {% include views-vues/standard-normes/content-contenu.html %}

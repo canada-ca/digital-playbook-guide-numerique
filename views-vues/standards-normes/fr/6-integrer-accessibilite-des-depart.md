@@ -1,10 +1,10 @@
 ---
 layout: default
 titleSource: standard
-standard: 10
+standard: 6
 lang: fr
 altLang: en
-altLangPage: 10-be-good-data-stewards
+altLangPage: 6-build-in-accessibility-from-start
 collectionDirectory: views-vues/standards-normes
 ---
 {% include views-vues/standard-normes/content-contenu.html %}

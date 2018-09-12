@@ -1,10 +1,10 @@
 ---
 layout: default
 titleSource: standard
-standard: 3
+standard: 6
 lang: en
 altLang: fr
-altLangPage: 3-collaborer-largement
+altLangPage: 6-integrer-accessibilite-des-depart
 collectionDirectory: views-vues/standards-normes
 ---
 {% include views-vues/standard-normes/content-contenu.html %}

@@ -1,10 +1,10 @@
 ---
 layout: default
 titleSource: standard
-standard: 8
+standard: 9
 lang: en
 altLang: fr
-altLangPage: 8-concevoir-services-ethiques
+altLangPage: 9-concevoir-services-ethiques
 collectionDirectory: views-vues/standards-normes
 ---
 {% include views-vues/standard-normes/content-contenu.html %}
