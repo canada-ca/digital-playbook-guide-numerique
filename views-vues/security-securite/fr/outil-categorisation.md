@@ -84,7 +84,9 @@ This web-based version of the tool is meant to make the process of organizing th
 <section>
 
 <!-- markdownlint-disable MD026 -->
+
 ### What Would You Like to Do?
+
 <!-- markdownlint-enable MD026 -->
 
 <!-- Button for revealing the next section and hiding the current one -->
