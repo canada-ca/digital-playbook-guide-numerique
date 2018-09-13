@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Categorization Tool (draft)
+title: Security Categorization Tool (draft)
 lang: en
 altLang: fr
 altLangPage: outil-categorisation

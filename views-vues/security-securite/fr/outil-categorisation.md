@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Outil de categorisation (ébauche)
+title: Outil de categorisation de sécurité (ébauche)
 lang: fr
 altLang: en
 altLangPage: categorization-tool
