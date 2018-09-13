@@ -70,14 +70,29 @@ fieldGridClass: col-sm-8
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
-<section id="business-domain-section" class="wb-frmvld">
+<section id="welcome-section">
+
+## Welcome to the Security Categorization Tool
+
+Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
+
+The Security Categorization Tool is an instrument meant to be used by security practitioners to help organize business processes and information for the purposes of injury assessment. It should help the practitioner develop a business injury view of the department for the purposes of designing secure systems.
+
+This web-based version of the tool is meant to make the process of organizing this information quicker and easier for security practitioners and it is compatible with Microsoft Excel. Assessments created on the Excel spreadsheet version of the Security Categorization tool can be imported to this web-based tool.
+
+<section>
+
+### What Would You Like to Do?
+
+<!-- Button for revealing the next section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="welcome" nextId="business-domain" nextHeading="2" %}
+
+</section>
+
+<section id="business-domain-section" class="hidden wb-frmvld">
 <form id="business-domain-form" class="form-horizontal" method="post">
 
-<div class="wb-inview" data-inview="progress-overlay">
-
 ## {{ page.businessDomain.title }}
-
-</div>
 
 {{ page.businessDomain.intro }}
 
@@ -88,8 +103,10 @@ assign dataSource = site.data[dataVariable] %}
 </div>
 </div>
 
-<!-- Button for revealing the next section and hiding the current one -->
-{% include views-vues/questionnaire-next-previous.html currentId="business-domain" nextId="business-component" nextHeading="2" %}
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "source": "form-state", "container": "#business-domain-form", "action": "append" }'>Append business domain to assessment in session storage</button>
+
+<!-- Buttons for revealing the next/previous section and hiding the current one -->{%
+include views-vues/questionnaire-next-previous.html currentId="business-domain" nextId="business-component" nextHeading="2" previousId="welcome" previousHeading="2" %}
 </form>
 </section>
 
@@ -102,6 +119,9 @@ assign dataSource = site.data[dataVariable] %}
 
 {{ page.businessComponent.intro2 }}
 
+<!-- Temporary div for purpose of creating container for the button. Remove when testing is done -->
+<div id="business-activity-container">
+
 <div class="form-group" markdown="0">
 <label for="business-component-1" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
@@ -109,12 +129,33 @@ assign dataSource = site.data[dataVariable] %}
 </div>
 </div>
 
+</div>
+
+<!-- TODO Figure out how to create this button on the fly for different business domains. So have one button for creating business acitivities for each business domain -->
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities" ], "source": "form-state", "container": "#business-activity-container", "action": "append" }'>Append business activity to business domain 2 in session storage (need at least 2 business domains for this to work)</button>
+
+<!-- Temporary div for purpose of creating container for the button. Remove when testing is done -->
+<div id="business-activity-component-container">
+
 <div class="form-group" markdown="0">
 <label for="business-component-2" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field2Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="business-component-2" id="business-component-2" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
+
+</div>
+
+<!-- TODO Figure out how to create this button on the fly for different business activities. So have one button for creating business acitivity components for each business activity -->
+
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities", 1, 0, "components" ], "source": "form-state", "container": "#business-activity-component-container", "action": "append" }'>Append business activity component to business activity 2 of business domain 2 in session storage (need at least 2 business activities in business domain 2 for this to work)</button>
+
+<!-- TODO Build better mechanism for displaying table -->
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "action": "set-table-rows", "source": "session-storage", "key": "assessment", "tableColSpecs": [
+  { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
+], "container": "#detailed-assessment-section tbody" }'>Generate table array and output to log</button>
 
 <div class="form-group" markdown="0">
 <label for="business-component-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
@@ -215,12 +256,131 @@ for lossType in page.lossTypes %}{%
     assign previousId = "loss-of-" | append: page.lossTypes[ previousLossTypeIndex ] %}{%
   endif %}{%
   if lossTypeIndex == 2 %}{%
-    assign nextId = "final-result" %}{%
+    assign nextId = "summary-report" %}{%
+    assign nextHeading = "3" %}{%
   else %}{%
     assign nextId = "loss-of-" | append: page.lossTypes[ lossTypeIndex ] %}{%
+    assign nextHeading = "2" %}{%
   endif %}{%
-  include views-vues/questionnaire-next-previous.html currentId=currentId nextId=nextId nextHeading="2" previousId=previousId previousHeading="2" %}
+  include views-vues/questionnaire-next-previous.html currentId=currentId nextId=nextId nextHeading=nextHeading previousId=previousId previousHeading="2" %}
 </form>
 </section>{%
   assign lossTypeIndex = lossTypeIndex | plus: 1 %}{%
 endfor %}
+
+<section id="results-section">
+
+## Results
+
+<section id="summary-report-section">
+
+### Summary Report
+
+The summary report expresses the highest level of expected injuries from threat comporomise with respect to the security objectives of confidentiality, integrity, and availability.
+
+<table class="table table-bordered">
+<caption>Breakdown by Business Domain</caption>
+<thead>
+<tr>
+<th rowspan="2">Business Domain</th>
+<th colspan="3" class="text-center">Security Category</th>
+</tr>
+<tr>
+<th class="text-center">Confidentiality</th>
+<th class="text-center">Integrity</th>
+<th class="text-center">Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+</tr>
+</tbody>
+</table>
+
+<table class="table table-bordered">
+<caption>Breakdown by Component</caption>
+<thead>
+<tr>
+<th rowspan="2">Business Domain</th>
+<th rowspan="2">Component</th>
+<th rowspan="2" class="text-center">Type</th>
+<th colspan="3" class="text-center">Security Category</th>
+</tr>
+<tr>
+<th class="text-center">Confidentiality</th>
+<th class="text-center">Integrity</th>
+<th class="text-center">Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="detailed-report-section">
+
+### Detailed Report
+
+Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
+
+The following report provides the detailed injury assessment performed for each process or information component with respect to confidentiality, integrity and availability.
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th rowspan="2">{{ page.businessDomain.title }}</th>
+<th colspan="5" class="text-center">{{ page.businessComponent.title }}</th>
+<th colspan="4" class="text-center">{{ page.confidentiality.title }}</th>
+<th colspan="4" class="text-center">{{ page.integrity.title }}</th>
+<th colspan="4" class="text-center">{{ page.availability.title }}</th>
+</tr>
+<tr>
+<th>{{ page.businessComponent.field1Label }}</th>
+<th>{{ page.businessComponent.field2Label }}</th>
+<th>{{ page.businessComponent.field3Label }}</th>
+<th>{{ page.businessComponent.field4Label }}</th>
+<th>{{ page.businessComponent.field5Label }}</th>
+<!-- {{ page.confidentiality.title }} -->
+<th>{{ page.lossOfCommon.field1Label }}</th>
+<th>{{ page.lossOfCommon.field2TableHeading }}</th>
+<th>{{ page.lossOfCommon.field3TableHeading }}</th>
+<th>{{ page.lossOfCommon.field4Label }}</th>
+<!-- {{ page.integrity.title }} -->
+<th>{{ page.lossOfCommon.field1Label }}</th>
+<th>{{ page.lossOfCommon.field2TableHeading }}</th>
+<th>{{ page.lossOfCommon.field3TableHeading }}</th>
+<th>{{ page.lossOfCommon.field4Label }}</th>
+<!-- {{ page.availability.title }} -->
+<th>{{ page.lossOfCommon.field1Label }}</th>
+<th>{{ page.lossOfCommon.field2TableHeading }}</th>
+<th>{{ page.lossOfCommon.field3TableHeading }}</th>
+<th>{{ page.lossOfCommon.field4Label }}</th>
+</tr>
+</thead>
+<tbody>
+<tr>{%
+for index in (1..18) %}
+<td></td>{%
+endfor %}
+</tr>
+</tbody>
+</table>
+
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "check-session-storage", "source": "session-storage", "key": "assessment" }'>Download assessment from session storage</button>
+
+</section>
+
+</section>

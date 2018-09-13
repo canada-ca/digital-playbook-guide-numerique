@@ -70,14 +70,29 @@ fieldGridClass: col-sm-8
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
-<section id="business-domain-section" class="wb-frmvld">
+<section id="welcome-section">
+
+## Welcome to the Security Categorization Tool
+
+Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
+
+The Security Categorization Tool is an instrument meant to be used by security practitioners to help organize business processes and information for the purposes of injury assessment. It should help the practitioner develop a business injury view of the department for the purposes of designing secure systems.
+
+This web-based version of the tool is meant to make the process of organizing this information quicker and easier for security practitioners and it is compatible with Microsoft Excel. Assessments created on the Excel spreadsheet version of the Security Categorization tool can be imported to this web-based tool.
+
+<section>
+
+### What Would You Like to Do?
+
+<!-- Button for revealing the next section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="welcome" nextId="business-domain" nextHeading="2" %}
+
+</section>
+
+<section id="business-domain-section" class="hidden wb-frmvld">
 <form id="business-domain-form" class="form-horizontal" method="post">
 
-<div class="wb-inview" data-inview="progress-overlay">
-
 ## {{ page.businessDomain.title }}
-
-</div>
 
 {{ page.businessDomain.intro }}
 
@@ -90,8 +105,8 @@ assign dataSource = site.data[dataVariable] %}
 
 <button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "source": "form-state", "container": "#business-domain-form", "action": "append" }'>Append business domain to assessment in session storage</button>
 
-<!-- Button for revealing the next section and hiding the current one -->
-{% include views-vues/questionnaire-next-previous.html currentId="business-domain" nextId="business-component" nextHeading="2" %}
+<!-- Buttons for revealing the next/previous section and hiding the current one -->{%
+include views-vues/questionnaire-next-previous.html currentId="business-domain" nextId="business-component" nextHeading="2" previousId="welcome" previousHeading="2" %}
 </form>
 </section>
 
@@ -241,28 +256,96 @@ for lossType in page.lossTypes %}{%
     assign previousId = "loss-of-" | append: page.lossTypes[ previousLossTypeIndex ] %}{%
   endif %}{%
   if lossTypeIndex == 2 %}{%
-    assign nextId = "final-result" %}{%
+    assign nextId = "summary-report" %}{%
+    assign nextHeading = "3" %}{%
   else %}{%
     assign nextId = "loss-of-" | append: page.lossTypes[ lossTypeIndex ] %}{%
+    assign nextHeading = "2" %}{%
   endif %}{%
-  include views-vues/questionnaire-next-previous.html currentId=currentId nextId=nextId nextHeading="2" previousId=previousId previousHeading="2" %}
+  include views-vues/questionnaire-next-previous.html currentId=currentId nextId=nextId nextHeading=nextHeading previousId=previousId previousHeading="2" %}
 </form>
 </section>{%
   assign lossTypeIndex = lossTypeIndex | plus: 1 %}{%
 endfor %}
 
-<section id="detailed-assessment-section">
+<section id="results-section">
 
-## Detailed Assessment
+## Results
+
+<section id="summary-report-section">
+
+### Summary Report
+
+The summary report expresses the highest level of expected injuries from threat comporomise with respect to the security objectives of confidentiality, integrity, and availability.
+
+<table class="table table-bordered">
+<caption>Breakdown by Business Domain</caption>
+<thead>
+<tr>
+<th rowspan="2">Business Domain</th>
+<th colspan="3" class="text-center">Security Category</th>
+</tr>
+<tr>
+<th class="text-center">Confidentiality</th>
+<th class="text-center">Integrity</th>
+<th class="text-center">Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+</tr>
+</tbody>
+</table>
+
+<table class="table table-bordered">
+<caption>Breakdown by Component</caption>
+<thead>
+<tr>
+<th rowspan="2">Business Domain</th>
+<th rowspan="2">Component</th>
+<th rowspan="2" class="text-center">Type</th>
+<th colspan="3" class="text-center">Security Category</th>
+</tr>
+<tr>
+<th class="text-center">Confidentiality</th>
+<th class="text-center">Integrity</th>
+<th class="text-center">Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="detailed-report-section">
+
+### Detailed Report
+
+Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
+
+The following report provides the detailed injury assessment performed for each process or information component with respect to confidentiality, integrity and availability.
 
 <table class="table table-bordered">
 <thead>
 <tr>
 <th rowspan="2">{{ page.businessDomain.title }}</th>
-<th colspan="5">{{ page.businessComponent.title }}</th>
-<th colspan="4">{{ page.confidentiality.title }}</th>
-<th colspan="4">{{ page.integrity.title }}</th>
-<th colspan="4">{{ page.availability.title }}</th>
+<th colspan="5" class="text-center">{{ page.businessComponent.title }}</th>
+<th colspan="4" class="text-center">{{ page.confidentiality.title }}</th>
+<th colspan="4" class="text-center">{{ page.integrity.title }}</th>
+<th colspan="4" class="text-center">{{ page.availability.title }}</th>
 </tr>
 <tr>
 <th>{{ page.businessComponent.field1Label }}</th>
@@ -297,5 +380,7 @@ endfor %}
 </table>
 
 <button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "check-session-storage", "source": "session-storage", "key": "assessment" }'>Download assessment from session storage</button>
+
+</section>
 
 </section>
