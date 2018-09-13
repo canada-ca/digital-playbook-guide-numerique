@@ -70,7 +70,8 @@ fieldGridClass: col-sm-8
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
-<section id="welcome-section">
+<section id="welcome-section" class="wb-frmvld">
+<form id="welcome-form" class="form-horizontal" method="post">
 
 ## Welcome to the Security Categorization Tool
 
@@ -87,6 +88,9 @@ This web-based version of the tool is meant to make the process of organizing th
 <!-- Button for revealing the next section and hiding the current one -->
 {% include views-vues/questionnaire-next-previous.html currentId="welcome" nextId="business-domain" nextHeading="2" %}
 
+</section>
+
+</form>
 </section>
 
 <section id="business-domain-section" class="hidden wb-frmvld">
