@@ -226,6 +226,275 @@ var componentName = "wb-format-gen",
     },
 
     /**
+     * @method dataToTableArray
+     * @overview Converts data in an object or array to a table array
+     * @param data {Object/Array} Object/array containing all of the data for the table.
+     * @param tableColSpecs {Array} Specification objects for each column, where each object includes the following information:
+     *    relativeToColumn {Integer} (defaults to -1) Index of column that this column is relative to. A 0 or higher index means it has 
+     *      a 1 to many relationship with the specified column (and as a result each row as well) while -1 means it is relative to the row 
+     *      (so has a 1 to 1 relationship with each row).
+     *    dataContainerSource {Array} Source of the column data array within the passed data object/array in the form of a series of
+     *      indexes/keys applied sequentially. If relativeToColumn is not -1, then the indexes/keys are relative to the data source of     
+     *      the specified column, otherwise they are relative to the passed data object/array. 
+     *    dataElementSource {Array} (optional, defaults to empty array) Source of the data within each column data array element if 
+     *      the data is not the column data array element itself. Indexes/keys are relative to the column data array element.
+     * @param repeatValues {Boolean} (defaults to false) Whether or not to repeat values in one to many relationships (i.e., repeat value on each row rather than having the value span multiple rows)
+     * @return {Object} Object containing the following properties:
+     *    tableArray {Array} Table array which is an array of rows containing an array of columns with each column containing a primitive value (e.g., number, string, boolean), an array of primitive values, or nested arrays of primitive values. Nesting denotes 1 to many relationships between a parent and child cells (where rowspan would be used).
+     *    tableCountArray {Array} Array with the same structure as tableArray except it has rowspans instead of values for each of the cells
+     */
+    dataToTableArray = function( data, tableColSpecs, repeatValues ) {
+      var tableArray = [],
+          tableCountArray = [],
+          tableColSpecsLength = tableColSpecs.length,
+          rowIndex, numOuterRows, numInnerRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
+          index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
+          columnSourceArray, relativeToArray, columnDataArray, rowspan, elementCounts, elementArray, element, countArray, count;
+
+      // Determine the number of outer rows (i.e., number of rows in the first column after rowspans are applied)
+      for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
+        tableColSpec = tableColSpecs[ tableColSpecIndex ];
+        if ( tableColSpec.relativeToColumn === -1 ) {
+          indexesKeys = tableColSpec.dataContainerSource;
+          indexesKeysLength = indexesKeys.length;
+          dataNode = data;
+
+          // Find the column data array
+          for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
+            dataNode = dataNode[ indexKey ];
+          }
+
+          numOuterRows = dataNode.length;
+          break;
+        }
+      }
+
+      // Generate the table array
+      for ( rowIndex = 0; rowIndex < numOuterRows; rowIndex += 1 ) {
+        rowArray = [];
+        numInnerRows = 1;
+
+        for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
+          tableColSpec = tableColSpecs[ tableColSpecIndex ];
+          relativeToColumn = tableColSpec.relativeToColumn;
+
+          if ( relativeToColumn === -1 ) {
+            // Get element to push into the row array
+            indexesKeys = tableColSpec.dataContainerSource.concat( [ rowIndex ], tableColSpec.dataElementSource );
+            indexesKeysLength = indexesKeys.length;
+            dataNode = data;
+
+            // Find the column data array and push into the source Array
+            for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
+              dataNode = dataNode[ indexesKeys[ indexKeyIndex ] ];
+            }
+          } else {
+            // Need to find the column data array first since it is relative to another column
+            relativeToArray = [];
+            indexesKeysArray = [ tableColSpec.dataContainerSource, tableColSpec.dataElementSource ];
+
+            while ( typeof relativeToColumn !== "undefined" && relativeToColumn !== -1 ) {
+              relativeToArray.unshift( relativeToColumn )
+              indexesKeysArray.unshift( tableColSpecs[ relativeToColumn ].relativeToColumn === -1 ?
+                tableColSpecs[ relativeToColumn ].dataContainerSource.concat( [ rowIndex ] ) : 
+                tableColSpecs[ relativeToColumn ].dataContainerSource
+              );
+
+              relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
+            }
+
+            dataNode = findData( data, indexesKeysArray );
+          }
+
+          rowArray.push( dataNode );
+        }
+
+        // Determine rowspans for each column
+        countArray = new Array( tableColSpecsLength );
+        for ( tableColSpecIndex = tableColSpecsLength - 1; tableColSpecIndex > -1; tableColSpecIndex -= 1 ) {
+          tableColSpec = tableColSpecs[ tableColSpecIndex ];
+          relativeToColumn = tableColSpec.relativeToColumn;
+          count = countArray[ tableColSpecIndex ];
+
+          if ( !count && relativeToColumn !== -1 ) {
+            dataNode = rowArray[ tableColSpecIndex ];
+            countArray[ tableColSpecIndex ] = getNestedArrayElementCounts( dataNode ).subElementCount;
+
+            // Determine the array depth on which to apply rowspans
+            relativeToArray = [];
+            while ( relativeToColumn !== -1 ) {
+              relativeToArray.push( relativeToColumn );
+              relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
+            }
+
+            for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
+              relativeToColumn = relativeToArray[ index ];
+              countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, length - index - 1 ).subElementCount;              
+            }
+          } else if ( !count ) {
+            countArray[ tableColSpecIndex ] = 1;
+          }
+        }
+
+        // Flatten column arrays
+        length = rowArray.length;
+        for ( index = 0; index < length; index += 1 ) {
+          element = rowArray[ index ];
+          if ( Array.isArray( element ) ) {
+            rowArray[ index ] = flattenArray( element );
+            countArray[ index ] = flattenArray( countArray[ index ] );
+          }
+        }
+
+        tableArray.push( rowArray );
+        tableCountArray.push( countArray );
+      }
+
+      return { tableArray: tableArray, tableCountArray: tableCountArray };
+    },
+
+    /**
+     * @method flattenArray
+     * @overview Flattens a multi-dimensional array
+     * @param array {Array} Array to flatten
+     * @return {Array} Flattened array
+     */
+    flattenArray = function( array ) {
+      var length = array.length,
+          flattenedArray = [],
+          index, element;
+
+      for ( index = 0; index < length; index += 1 ) {
+        element = array[ index ];
+        if ( Array.isArray( element ) ) {
+          flattenedArray = flattenedArray.concat( flattenArray( element ) );
+        } else {
+          flattenedArray.push( element );
+        }
+      }
+      return flattenedArray;
+    },
+
+    /**
+     * @method findData
+     * @overview Retrieve data from an array or object using a series of keys/indexes
+     * @param data {Object/Array} Object/array on which to apply a series of keys/indexes to retrieve specific data
+     * @param indexesKeysArray {Array} Either an array of indexes/keys or nested arrays of indexes keys (could be multiple levels deep)
+     * @return {Primitive/Array} Either a data primitive, an array of primitives or an array of array (could be multiple levels deep)
+     */
+    findData = function( data, indexesKeysArray ) {
+      var typeofResults = typeof indexesKeysArray[ 0 ] === "object",
+          currentIndexesKeys = typeofResults ? indexesKeysArray[ 0 ] : indexesKeysArray,
+          indexesKeysLength = currentIndexesKeys.length,
+          dataNode = data,
+          emptyResult = "",
+          indexKeyIndex, index, length, dataResults, result;
+
+      // Apply the keys/indexes to the current data node
+      for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
+        dataNode = dataNode[ currentIndexesKeys[ indexKeyIndex ] ];
+
+        if ( typeof dataNode === "undefined" ) {
+          return emptyResult;
+        }
+      }
+
+      // If there are more keys/indexes to process, then call this function recursively for each element in the dataNode array
+      if ( indexesKeysArray.length > 1 ) {
+        length = dataNode.length;
+
+        if ( length > 0 ) {
+          dataResults = [];
+     
+          for ( index = 0; index < length; index += 1 ) {
+            result = findData( dataNode[ index ], indexesKeysArray.slice( 1 ) );
+            dataResults.push( result );
+          }
+        } else {
+          return emptyResult;
+        }
+
+        // Return the element instead of the array for single element arrays
+        return dataResults.length > 1 ? dataResults : dataResults[ 0 ];
+      }
+
+      return dataNode;
+    },
+
+    /**
+     * @method getNestedArrayElementCounts
+     * @overview Determines the non-array element count in nested arrays and the sum of element counts for the parent array
+     * @param data {Array} Array for determining the node count (could have multiple nested arrays)
+     * @param maxCountArrayLevels {Number} (Optional, defaults to 1000 which is no maximum) Maximum number of count array levels allowed (any beyond are summed together)
+     * @return {Object} Object containing the following properties:
+     *    totalElementCount {Number} Total number of primitive elements within data
+     *    subElementCount {Array/Number} Count of number of primitive elements within each array element
+     */
+    getNestedArrayElementCounts = function( data, maxCountArrayLevels = 1000, returnAsString = false ) {
+      var totalElementCount = 0,
+          arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
+
+      if ( !Array.isArray( data ) ) {
+        totalElementCount = 1;
+        elementCount = 1;
+      } else {
+        arrayLength = data.length;
+        elementCount = [];
+
+        for ( index = 0; index < arrayLength; index += 1) {
+          dataNode = data[ index ];
+          if ( Array.isArray( dataNode ) && dataNode.length > 0 ) {
+            result = getNestedArrayElementCounts( dataNode, ( maxCountArrayLevels !== 1000 ? maxCountArrayLevels - 1 : 1000 ) );
+            totalElementCount += result.totalElementCount;
+            elementCount.push( result.subElementCount );
+          } else {
+            totalElementCount += 1;
+            elementCount.push( 1 );
+          }
+        }
+      }
+
+      if ( maxCountArrayLevels < 1 ) {
+        elementCount = totalElementCount;
+      }
+
+      return { totalElementCount: totalElementCount, subElementCount: elementCount };
+    },
+
+    /**
+     * @method getElementsAtSpecificArrayDepth
+     * @overview Returns an array of all the elements at a specific depth within a multi-dimensional array
+     * @param data {Array} Multi-dimensional array from which the elements will be retrievedArray
+     * @param depth {Number} Number of levels deep to retrieve the elements (e.g., 2 = two levels deep (e.g., grandchildren of top-level array))
+     * @return {Array} Array containing all the array elements at the specific depth
+     */
+    getElementsAtSpecificArrayDepth = function( data, depth ) {
+      var elements, length, index, dataNode, result;
+
+      if ( depth === 0 ) {
+        return data;
+      } else {
+        elements = [];
+        length = data.length;
+
+        if ( depth === 1 ) {
+          for ( index = 0; index < length; index += 1 ) {
+            elements.push( data[ index ] );
+          }
+        } else {
+          for ( index = 0; index < length; index += 1 ) {
+            dataNode = data[ index ];
+            if ( Array.isArray( dataNode ) ) {
+              elements.concat( getElementsAtSpecificArrayDepth( dataNode, depth - 1 ) );
+            }
+          }
+        }
+      }
+
+      return elements;
+    },
+
+    /**
      * @method outputFile
      * @overview Output data to a file and trigger the interface to download it
      * @param settings {Object} Settings object for the file to output
@@ -244,6 +513,8 @@ var componentName = "wb-format-gen",
       } else if ( type === "json" ) {
         if ( source === "form-state" ) {
           fileData = JSON.stringify( getFormFieldStatus( settings[ "container" ] ) );
+        } else if ( source === "session-storage" || source === "local-storage" ) {
+          fileData = retrieveData( settings[ "key" ], settings[ "indexesKeys" ] , source === "local-storage", true );
         } else {
           fileData = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
         }
@@ -321,125 +592,226 @@ var componentName = "wb-format-gen",
 
     /**
      * @method outputStorage
-     * @param Manipulate data in storage (e.g., append data, delete data, use the data to restore the state of a form or table)
-     * @param settings {Object} Settings object for the data to put in storage
+     * @overview Perform actions on data in sessionStorage or localStorage (including storing and deleting)
+     * @param Store or remove data in storage (e.g., append data, delete data)
+     * @param settings {Object} Settings object for the data to store in or remove from storage
      */
     outputStorage = function( settings ) {
       var type = settings[ "type" ],
+          source = settings[ "source" ],
           action = settings[ "action" ],
           key = settings[ "key" ],
-          useLocalStorage = type === "local-storage";
+          useLocalStorage = type === "local-storage",
+          indexesKeys = settings[ "indexesKeys" ],
+          data;
 
-      if ( action === "append-element" ) {
-        // Add data to the end of a stored array
+      // Ensure indexesKeys is an array
+      if ( indexesKeys && typeof indexesKeys === "string" ) {
+        indexesKeys = JSON.parse( indexesKeys );
+      }
 
-        source = settings[ "source" ];
-        storedData = retrieveData( key, useLocalStorage );
+      // Retrieve the data to store
+      if ( source === "html" ) {
+        // HTML is the source of the data
 
-        // Ensure the stored data is in an array (or an empty array if no data is stored)
-        if ( storedData && storedData.length > 0 ) {
-          storedData = JSON.parse( storedData );
-
-          if ( ( typeof storedData ).toLowerCase() !== "array" ) {
-            storedData = [ storedData ];
-          }
+        if ( settings[ "rowSelector" ] ) {
+          // Store the data as CSV
+          data = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ] );
+        } else if ( settings[ "structure" ] ) {
+          // Store the data as JSON
+          data = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ] );
         } else {
-          storedData = [];
+          // Store the data as text
+          data = document.querySelector( settings[ "container" ] ).textContent;
         }
+      } else if ( source === "form-state" ) {
+        // Store the form state as JSON
+        data = getFormFieldStatus( settings[ "container" ] );
+      }
 
-        if ( source === "html" ) {
-          // HTML is the source of the data
+      // Store the data
+      storeData( action, key, indexesKeys, useLocalStorage = false, data );
+    },
 
-          if ( settings[ "rowSelector" ] ) {
-            // Store the data as CSV
-            data = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
-          } else if ( settings[ "structure" ] ) {
-            // Store the data as JSON
-            data = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
-          } else {
-            // Store the data as text
-            data = document.querySelector( settings[ "container" ] ).textContent;
-          }
-        } else if ( source === "form-state" ) {
-          // Store the form state as JSON
-          data = JSON.stringify( getFormFieldStatus( settings[ "container" ] ) );
-        } else {
-          return;
-        }
+    /**
+     * @method inputStorage
+     * @overview Perform actions using data in sessionStorage or localStorage
+     * @param Use data in storage (e.g., data to restore the state of a form or table)
+     * @param settings {Object} Settings object for what to do with data in storage
+     */
+    inputStorage = function( settings ) {
+      var type = settings[ "type" ],
+          action = settings[ "action" ],
+          key = settings[ "key" ],
+          useLocalStorage = type === "local-storage",
+          indexesKeys = settings[ "indexesKeys" ],
+          storedData, format;
 
-        storeData( storedData.push( data ), key, useLocalStorage );
-      } else if ( action === "restore-form-state" ) {
+      // Ensure indexesKeys is an array
+      if ( indexesKeys && typeof indexesKeys === "string" ) {
+        indexesKeys = JSON.parse( indexesKeys );
+      }
+
+      storedData = retrieveData( key, indexesKeys, useLocalStorage );
+
+      if ( action === "restore-form-state" ) {
         // Restore the form state from the stored data
-
-        storedData = JSON.parse( retrieveData( key, useLocalStorage ) );
-
-        if ( settings[ "index" ] ) {
-          // Retrieved the form state from an element in a stored array
-          storedData = storedData[ settings[ "index" ] ];
-        }
-
         setFormFieldStatus( settings[ "container" ], storedData );
-      } else if ( action === "restore-table" ) {
-        // Restore table data rows (normally with tbody as the container) using the stored data (in CSV format)
-
-        storedData = retrieveData( key, useLocalStorage );
-
-        if ( settings[ "index" ] ) {
-          // Retrieved the form state from an element in a stored array
-          storedData = storedData[ settings[ "index" ] ];
-        }
-
-        setTableRows( storedData, settings[ "container" ] );
-      } else if ( action === "delete" ) {
-        // Delete all data referenced by the key
-
-        if ( useLocalStorage ) {
-          localStorage.removeItem( key );
+      } else if ( action === "set-table-rows" ) {
+        // Set table data rows (normally with tbody as the container) using the stored data
+        format = settings[ "format" ];
+        if ( !settings[ "tableColSpecs" ] ) {
+          setTableRows( settings[ "container" ], storedData );
         } else {
-          sessionStorage.removeItem( key );
+          let result = dataToTableArray( storedData, settings[ "tableColSpecs" ], true );
+          setTableRows( settings[ "container" ], result.tableArray, result.tableCountArray );
         }
-      } else if ( action === "delete-element" ) {
-        // Delete an element in a stored array
-
-        storedData = JSON.parse( retrieveData( key, useLocalStorage ) );
-        storeData( storedData.splice( settings[ "index" ], 1 ), key, useLocalStorage );
       }
     },
 
     /**
      * @method storeData
-     * @overview Store data in sessionStorage or localStorage, converting it to an appropriate storage format as necessary
-     * @param data {String/Array/Object} Data to store
-     * @param datakey {String} Key to use for storing the data
+     * @overview Stores data in sessionStorage or localStorage using a key and optionally in nested arrays/objects
+     * @param action {String} Action to take on the stored data (options: replace, append, prepend, delete)
+     * @param key {String} Key for storing the data
+     * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to store data in nested arrays/objects in the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to store the data in localStorage
+     * @param data {String/Array/Object/Other} (not used for "delete" action) Data to store
      */
-    storeData = function( data, dataKey, useLocalStorage ) {
-      var dataType = ( typeof data ).toLowerCase();
+    storeData = function( action = "replace", key, indexesKeys = [], useLocalStorage = false, data ) {
+      var indexesKeysLength = indexesKeys.length,
+          data, storedData, storedDataFragment, parentStoredDataFragment, index, typeofResult, indexKey, nextIndexKey;
 
-      if ( dataType === "array" || dataType === "object" ) {
+      // Retrieve and parse any stored data
+      storedData = useLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key );
+      if ( storedData && storedData.length > 0 ) {
+        storedData = JSON.parse( storedData );
+        storedDataFragment = storedData;
+
+        if ( indexesKeysLength > 0 ) {
+          // Find the nested data to manipulate or delete
+          for ( index = 0; index < indexesKeysLength; index += 1 ) {
+            indexKey = indexesKeys[ index ];
+
+            if ( index === indexesKeysLength - 1 && action === "delete" ) {
+              // Delete only specified data
+              if ( Array.isArray( storedDataFragment ) ) {
+                storedDataFragment.splice( indexKey, 1 );
+              } else {
+                delete storedDataFragment[ indexKey ];
+              }
+            } else {
+              // Retrieve the nested data or create it if it doesn't already exist and is needed
+              parentStoredDataFragment = storedDataFragment;
+              storedDataFragment = storedDataFragment[ indexKey ];
+
+              if ( !storedDataFragment ) {
+                nextIndexKey = indexesKeys[ index + 1 ];
+
+                if ( nextIndexKey ) {
+                  storedDataFragment = typeof nextIndexKey === "string" ? {} : [];
+                } else if ( action === "append" || action === "prepend" ) {
+                  storedDataFragment = [];
+                } else {
+                  break;
+                }
+                parentStoredDataFragment[ indexKey ] = storedDataFragment;
+              }
+            }
+          }
+        } else if ( action === "delete" ) {
+          // Not working with nested data so delete all the stored data referenced by the key
+          if ( useLocalStorage ) {
+            localStorage.removeItem( key );
+          } else {
+            sessionStorage.removeItem( key );
+          }
+          return;
+        }
+
+        if ( action !== "delete" ) {
+          if ( Array.isArray( storedDataFragment ) ) {
+            if ( action === "append" ) {
+              storedDataFragment.push( data );
+            } else if ( action === "prepend" ) {
+              storedDataFragment.unshift( data );
+            } else {
+              parentStoredDataFragment[ indexesKeys[ index - 1 ] ] = data;
+            }
+            data = storedData;
+          } else {
+            // Make sure everything is a string
+            if ( action !== "replace" && typeof storedDataFragment !== "string" ) {
+              storedDataFragment = storedDataFragment.toString();
+            }
+            if ( typeof data !== "string" ) {
+              data = data.toString();
+            }
+
+            if ( action === "append" ) {
+              data = storedDataFragment + data;
+            } else if ( action === "prepend" ) {
+              // Update the parent with the prepended data
+              data += storedDataFragment;
+            }
+
+            // If parent exists, update it with the new data
+            if ( parentStoredDataFragment ) {
+              parentStoredDataFragment[ indexesKeys[ index - 1 ] ] = data;
+              data = storedData;
+            }
+          }
+        }
+      } else if ( action === "delete" ) {
+        // Delete all the stored data referenced by the key
+        if ( useLocalStorage ) {
+          localStorage.removeItem( key );
+        } else {
+          sessionStorage.removeItem( key );
+        }
+        return;
+      } else if ( action === "append" || action === "prepend" ) {
+        data = [ data ];
+      }
+
+      if ( typeof data !== "string" ) {
         data = JSON.stringify( data );
       }
 
       if ( useLocalStorage ) {
-        localStorage( dataKey, data );
+        localStorage.setItem( key, data );
       } else {
-        sessionStorage( dataKey, data );
+        sessionStorage.setItem( key, data );
       }
     },
 
     /**
      * @method retrieveData
-     * @overview Retrieve data from sessionStorage or localStorage
-     * @param dataKey {String} Key for retrieving the data
+     * @overview Retrieves data from sessionStorage or localStorage using a key and optionally from nested arrays/objects
+     * @param key {String} Key for retrieving the data
+     * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to retrieve data from nested arrays/objects in the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to retrieve the data from localStorage
+     * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
      * @return {String} Returns the stored data.
      */
-    retrieveData = function( dataKey, useLocalStorage ) {
-      if ( useLocalStorage ) {
-        return localStorage( dataKey );
-      } else {
-        return sessionStorage (dataKey );
+    retrieveData = function( key, indexesKeys = [], useLocalStorage = false, returnAsString ) {
+      var data = useLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key ),
+          indexesKeysLength = indexesKeys.length,
+          index;
+
+      if ( data && data.length > 0 ) {
+        data = JSON.parse( data );
+
+        for ( index = 0; index < indexesKeysLength; index += 1 ) {
+          data = data[ indexesKeys[ index ] ];
+        }
       }
+
+      if ( returnAsString ) {
+        data = JSON.stringify( data );
+      }
+
+      return data;
     },
 
     /**
@@ -572,36 +944,139 @@ var componentName = "wb-format-gen",
     },
 
     /**
-     * @method setTableRows
-     * @overview Replaces the rows in the container with rows creating using the passed data (in CSV format)
-     * @param data {String / Array} Data in CSV format to create the table rows with
-     * @param container {String} Selector for the container in which to replace all nodes with table rows.
-     * @param ignoreFirstDataRow {Boolean} (defaults to false) Whether or not to ignore the first row in the CSV data (e.g., ignore the header row)
+     * @method clearFormFieldStatus
+     * @overview Clears all the form fields in the form
+     * @param formSelector {String} Selector for the form for which to retrieve the statuses of the contained fields.
      */
-    setTableRows = function( data, container, ignoreFirstDataRow ) {
+    clearFormFieldStatus = function( formSelector ) {
+      var formElm = document.querySelector( formSelector ),
+          fields = formElm.querySelectorAll( "input, option, textarea" ),
+          numFields = fields.length,
+          fieldObjects = [],
+          index, field, nodeName, type, radioButtons, name, hasChecked;
+
+      for ( index = 0; index < numFields; index += 1 ) {
+        field = fields[ index ];
+        nodeName = field.nodeName.toLowerCase();
+        if ( nodeName === "input" ) {
+          type = subField.type.toLowerCase();
+          if ( type === "radio" || type === "checkbox" ) {
+            field.checked = false;
+          } else {
+            field.value = "";
+          }
+        } else if ( type === "option" ) {
+          option.selected = false;
+        } else {
+          field.value = "";
+        }
+      }
+    },
+
+    /**
+     * @method setTableRows
+     * @overview Replaces the rows in the container with rows created using the passed data (in CSV format)
+     * @param container {String} Selector for the container in which to replace all nodes with table rows.
+     * @param data {String / Array} Data in CSV format to create the table rows with
+     * @param rowspans {Array} (Optional, defaults to rowspan of 1 for each table cell) Array of rowspans for each cell in data
+     */
+    setTableRows = function( container, data, rowspans ) {
       var tableRows = "",
-          rowIndex, numRows, columns, columnIndex, numColumns;
+          rowIndex, numRows, columns, column, columnIndex, numColumns, columnRowspans, rowspan, rowspanTracker,
+          index, length, index2, length2, outputRow, cell;
 
       // Ensure the CSV data is converted to array format to make it easier to create table rows
-      if ( ( typeof data ).toLowerCase() === "string" ) {
+      if ( typeof data === "string" ) {
         data = csvToArray( data );
       }
 
       // Generate the table rows string
       numRows = data.length;
       for ( rowIndex = 0; rowIndex < numRows; rowIndex += 1 ) {
-        cols = data[ rowIndex ];
-        numCols = cols.length;
-        tableRows += "<tr>";
+        columns = data[ rowIndex ];
+        numColumns = columns.length;
 
-        for ( colIndex = 0; colIndex < numCols; colIndex += 1 ) {
-          tableRows += "<td>" + cols[ colIndex ] + "</td>";
+        if ( rowspans ) {
+          columnRowspans = rowspans[ rowIndex ];
+
+          // Create the rowspanTracker if it doesn't exist
+          if ( !rowspanTracker ) {
+            rowspanTracker = new Array( numColumns );
+          }
+
+          // Set rowspanTracker to 1 for each column
+          for ( index = 0; index < numColumns; index += 1 ) {
+            rowspanTracker[ index ] = 1;
+          }
         }
 
-        tableRows += "</tr>";
+        if ( !columnRowspans ) {
+          // Row has no cells with rowspans so just output each cell of the row
+          tableRows += "<tr>\n";
+          for ( columnIndex = 0; columnIndex < numColumns; columnIndex += 1 ) {
+            tableRows += "<td>" + columns[ columnIndex ] + "</td>\n";
+          }
+          tableRows += "</tr>\n";
+        } else {
+          // Row has at least one cell with a rowspan
+          outputRow = true;
+
+          // Output all cells for the current row (including all cells from sub-rows)
+          while ( outputRow ) {
+            outputRow = false;
+
+            // Process each of the columns for the current row
+            for ( columnIndex = 0; columnIndex < numColumns; columnIndex += 1 ) {
+              if ( rowspanTracker[ columnIndex ] > 1 ) {
+                // Don't output a cell if still in scope of the most recent rowspan
+                rowspanTracker[ columnIndex ] -= 1;
+              } else {
+                column = columns[ columnIndex ];
+
+                // If column is not null, then output the opening row tag once
+                if ( column !== null ) {
+                  if ( !outputRow ) {
+                    tableRows += "<tr>\n";
+                    outputRow = true;
+                  }
+
+                  if ( typeof column !== "object" ) {
+                    // Column does not contain an array so retrieve the cell value and rowspan and then set the column to null
+                    cell = column;
+                    rowspan = columnRowspans[ columnIndex ];
+                    columns[ columnIndex ] = null;
+                  } else {
+                    // Column contains an array so remove the first cell value and rowspan
+                    cell = column.shift();
+                    rowspan = columnRowspans[ columnIndex ].shift();
+
+                    // If there are no more cell values then set the column to null
+                    if ( column.length === 0 ) {
+                      columns[ columnIndex ] = null;
+                    }
+                  }
+
+                  if ( rowspan > 1 ) {
+                    // Cell spans more than one row, so output the rowspan attribute and set the rowspanTracker for this column
+                    tableRows += '<td rowspan="' + rowspan.toString() + '">';
+                    rowspanTracker[ columnIndex ] = rowspan;
+                  } else {
+                    tableRows += "<td>";
+                  }
+
+                  tableRows += cell + "</td>\n";
+                }
+              }
+            }
+
+            if ( outputRow ) {
+              tableRows += "</tr>\n";
+            }
+          }
+        }
       }
 
-       // Replace the contents of the container with the new table rows
+      // Replace the contents of the container with the new table rows
       document.querySelector( container ).innerHTML = tableRows;
     };
 
@@ -609,11 +1084,18 @@ $document.on( "click", selector, function( event ) {
   var target = event.target,
       settings = wb.getData( $( target ), componentName ),
       type = settings[ "type" ],
-      action, data, storedData, key, source, useLocalStorage;
+      source = settings[ "source" ],
+      action, data, storedData, key, useLocalStorage;
 
   if ( target.type !== "file" ) {
     if ( type === "session-storage" || type === "local-storage" ) {
       outputStorage( settings );
+    } else if ( source === "session-storage" || source === "local-storage" ) {
+      if ( type === "csv" || type === "json" ) {
+        outputFile( settings );
+      } else {
+        inputStorage( settings );
+      }
     } else {
       outputFile( settings );
     }
