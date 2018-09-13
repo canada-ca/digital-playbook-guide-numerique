@@ -43,7 +43,7 @@ availability:
 lossOfCommon:
   field1Label: Failure Scenario (in context)
   field2Sublabel: Select a type of injury
-  field3TableHeading: Type of injury
+  field2TableHeading: Type of injury
   field2Option1: Civil disorder or unrest
   field2Option2: Physical harm to people
   field2Option3: Psychological harm to people
@@ -136,11 +136,11 @@ assign dataSource = site.data[dataVariable] %}
 <button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities", 1, 0, "components" ], "source": "form-state", "container": "#business-activity-component-container", "action": "append" }'>Append business activity component to business activity 2 of business domain 2 in session storage (need at least 2 business activities in business domain 2 for this to work)</button>
 
 <!-- TODO Build better mechanism for displaying table -->
-<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "table", "source": "session-storage", "key": "assessment", "tableColSpecs": [
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "action": "set-table-rows", "source": "session-storage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
-], "action": "test-table" }'>Generate table array and output to log</button>
+], "container": "#detailed-assessment-section tbody" }'>Generate table array and output to log</button>
 
 <div class="form-group" markdown="0">
 <label for="business-component-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
@@ -255,7 +255,7 @@ endfor %}
 
 ## Detailed Assessment
 
-<table>
+<table class="table table-bordered">
 <thead>
 <tr>
 <th rowspan="2">{{ page.businessDomain.title }}</th>
@@ -265,7 +265,6 @@ endfor %}
 <th colspan="4">{{ page.availability.title }}</th>
 </tr>
 <tr>
-<th>{{ page.businessDomain.title }}</th>
 <th>{{ page.businessComponent.field1Label }}</th>
 <th>{{ page.businessComponent.field2Label }}</th>
 <th>{{ page.businessComponent.field3Label }}</th>

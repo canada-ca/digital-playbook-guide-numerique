@@ -336,11 +336,43 @@ var componentName = "wb-format-gen",
           }
         }
 
+        // Flatten column arrays
+        length = rowArray.length;
+        for ( index = 0; index < length; index += 1 ) {
+          element = rowArray[ index ];
+          if ( Array.isArray( element ) ) {
+            rowArray[ index ] = flattenArray( element );
+            countArray[ index ] = flattenArray( countArray[ index ] );
+          }
+        }
+
         tableArray.push( rowArray );
         tableCountArray.push( countArray );
       }
 
       return { tableArray: tableArray, tableCountArray: tableCountArray };
+    },
+
+    /**
+     * @method flattenArray
+     * @overview Flattens a multi-dimensional array
+     * @param array {Array} Array to flatten
+     * @return {Array} Flattened array
+     */
+    flattenArray = function( array ) {
+      var length = array.length,
+          flattenedArray = [],
+          index, element;
+
+      for ( index = 0; index < length; index += 1 ) {
+        element = array[ index ];
+        if ( Array.isArray( element ) ) {
+          flattenedArray = flattenedArray.concat( flattenArray( element ) );
+        } else {
+          flattenedArray.push( element );
+        }
+      }
+      return flattenedArray;
     },
 
     /**
@@ -613,7 +645,7 @@ var componentName = "wb-format-gen",
           key = settings[ "key" ],
           useLocalStorage = type === "local-storage",
           indexesKeys = settings[ "indexesKeys" ],
-          storedData;
+          storedData, format;
 
       // Ensure indexesKeys is an array
       if ( indexesKeys && typeof indexesKeys === "string" ) {
@@ -625,11 +657,15 @@ var componentName = "wb-format-gen",
       if ( action === "restore-form-state" ) {
         // Restore the form state from the stored data
         setFormFieldStatus( settings[ "container" ], storedData );
-      } else if ( action === "restore-table" ) {
-        // Restore table data rows (normally with tbody as the container) using the stored data (in CSV format)
-        setTableRows( settings[ "container" ], storedData );
-      } else if ( action === "test-table" )  {
-        console.log( JSON.stringify( dataToTableArray( storedData, settings[ "tableColSpecs" ], true ) ) );
+      } else if ( action === "set-table-rows" ) {
+        // Set table data rows (normally with tbody as the container) using the stored data
+        format = settings[ "format" ];
+        if ( !settings[ "tableColSpecs" ] ) {
+          setTableRows( settings[ "container" ], storedData );
+        } else {
+          let result = dataToTableArray( storedData, settings[ "tableColSpecs" ], true );
+          setTableRows( settings[ "container" ], result.tableArray, result.tableCountArray );
+        }
       }
     },
 
@@ -942,11 +978,12 @@ var componentName = "wb-format-gen",
      * @overview Replaces the rows in the container with rows created using the passed data (in CSV format)
      * @param container {String} Selector for the container in which to replace all nodes with table rows.
      * @param data {String / Array} Data in CSV format to create the table rows with
-     * @param ignoreFirstDataRow {Boolean} (defaults to false) Whether or not to ignore the first row in the CSV data (e.g., ignore the header row)
+     * @param rowspans {Array} (Optional, defaults to rowspan of 1 for each table cell) Array of rowspans for each cell in data
      */
-    setTableRows = function( container, data, ignoreFirstDataRow ) {
+    setTableRows = function( container, data, rowspans ) {
       var tableRows = "",
-          rowIndex, numRows, columns, columnIndex, numColumns;
+          rowIndex, numRows, columns, column, columnIndex, numColumns, columnRowspans, rowspan, rowspanTracker,
+          index, length, index2, length2, outputRow, cell;
 
       // Ensure the CSV data is converted to array format to make it easier to create table rows
       if ( typeof data === "string" ) {
@@ -956,15 +993,87 @@ var componentName = "wb-format-gen",
       // Generate the table rows string
       numRows = data.length;
       for ( rowIndex = 0; rowIndex < numRows; rowIndex += 1 ) {
-        cols = data[ rowIndex ];
-        numCols = cols.length;
-        tableRows += "<tr>";
+        columns = data[ rowIndex ];
+        numColumns = columns.length;
 
-        for ( colIndex = 0; colIndex < numCols; colIndex += 1 ) {
-          tableRows += "<td>" + cols[ colIndex ] + "</td>";
+        if ( rowspans ) {
+          columnRowspans = rowspans[ rowIndex ];
+
+          // Create the rowspanTracker if it doesn't exist
+          if ( !rowspanTracker ) {
+            rowspanTracker = new Array( numColumns );
+          }
+
+          // Set rowspanTracker to 1 for each column
+          for ( index = 0; index < numColumns; index += 1 ) {
+            rowspanTracker[ index ] = 1;
+          }
         }
 
-        tableRows += "</tr>";
+        if ( !columnRowspans ) {
+          // Row has no cells with rowspans so just output each cell of the row
+          tableRows += "<tr>\n";
+          for ( columnIndex = 0; columnIndex < numColumns; columnIndex += 1 ) {
+            tableRows += "<td>" + columns[ columnIndex ] + "</td>\n";
+          }
+          tableRows += "</tr>\n";
+        } else {
+          // Row has at least one cell with a rowspan
+          outputRow = true;
+
+          // Output all cells for the current row (including all cells from sub-rows)
+          while ( outputRow ) {
+            outputRow = false;
+
+            // Process each of the columns for the current row
+            for ( columnIndex = 0; columnIndex < numColumns; columnIndex += 1 ) {
+              if ( rowspanTracker[ columnIndex ] > 1 ) {
+                // Don't output a cell if still in scope of the most recent rowspan
+                rowspanTracker[ columnIndex ] -= 1;
+              } else {
+                column = columns[ columnIndex ];
+
+                // If column is not null, then output the opening row tag once
+                if ( column !== null ) {
+                  if ( !outputRow ) {
+                    tableRows += "<tr>\n";
+                    outputRow = true;
+                  }
+
+                  if ( typeof column !== "object" ) {
+                    // Column does not contain an array so retrieve the cell value and rowspan and then set the column to null
+                    cell = column;
+                    rowspan = columnRowspans[ columnIndex ];
+                    columns[ columnIndex ] = null;
+                  } else {
+                    // Column contains an array so remove the first cell value and rowspan
+                    cell = column.shift();
+                    rowspan = columnRowspans[ columnIndex ].shift();
+
+                    // If there are no more cell values then set the column to null
+                    if ( column.length === 0 ) {
+                      columns[ columnIndex ] = null;
+                    }
+                  }
+
+                  if ( rowspan > 1 ) {
+                    // Cell spans more than one row, so output the rowspan attribute and set the rowspanTracker for this column
+                    tableRows += '<td rowspan="' + rowspan.toString() + '">';
+                    rowspanTracker[ columnIndex ] = rowspan;
+                  } else {
+                    tableRows += "<td>";
+                  }
+
+                  tableRows += cell + "</td>\n";
+                }
+              }
+            }
+
+            if ( outputRow ) {
+              tableRows += "</tr>\n";
+            }
+          }
+        }
       }
 
       // Replace the contents of the container with the new table rows
