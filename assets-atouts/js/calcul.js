@@ -41,7 +41,7 @@ var componentName = "wb-calculate",
 
         // Extend the settings with window[ "wb-calculate" ] then data-wb-calculate
         settings = $.extend(
-          true,
+          true, {},
           settings,
           window[ componentName ],
           wb.getData( $elm, componentName )
