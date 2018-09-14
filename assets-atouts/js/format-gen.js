@@ -661,10 +661,10 @@ var componentName = "wb-format-gen",
         // Set table data rows (normally with tbody as the container) using the stored data
         format = settings[ "format" ];
         if ( !settings[ "tableColSpecs" ] ) {
-          setTableRows( settings[ "container" ], storedData );
+          setTableRows( settings[ "container" ], storedData, "html" );
         } else {
           let result = dataToTableArray( storedData, settings[ "tableColSpecs" ], true );
-          setTableRows( settings[ "container" ], result.tableArray, result.tableCountArray );
+          setTableRows( settings[ "container" ], result.tableArray, "html", result.tableCountArray );
         }
       }
     },
@@ -977,13 +977,33 @@ var componentName = "wb-format-gen",
      * @method setTableRows
      * @overview Replaces the rows in the container with rows created using the passed data (in CSV format)
      * @param container {String} Selector for the container in which to replace all nodes with table rows.
-     * @param data {String / Array} Data in CSV format to create the table rows with
+     * @param data {String / Array} Data to create the table rows with
+     * @param outputFormat {String} Output format of the table (i.e., "html", "csv")
      * @param rowspans {Array} (Optional, defaults to rowspan of 1 for each table cell) Array of rowspans for each cell in data
+     * @param splitRowspans {Boolean} (Optional, defaults to false, unless output type is CSV) Whether to implement rowspans as a single cell or multiple individual cells (e.g., for CSV rowspans have to be split up since CSV does not support rowspans)
      */
-    setTableRows = function( container, data, rowspans ) {
+    setTableRows = function( container, data, outputFormat, rowspans, splitRowspans ) {
       var tableRows = "",
           rowIndex, numRows, columns, column, columnIndex, numColumns, columnRowspans, rowspan, rowspanTracker,
-          index, length, index2, length2, outputRow, cell;
+          index, length, index2, length2, outputRow, cell, rowspanCells, rowOpen, rowClose, columnOpenStart, columnOpenEnd, columnClose;
+
+      // Set up format for rows/cols based on output format type
+      if ( outputFormat === "html" ) {
+        // HTML
+        rowOpen = "<tr>\n";
+        rowClose = "</tr>\n";
+        columnOpenStart = "<td";
+        columnOpenEnd = ">"
+        columnClose = "</td>\n";
+      } else {
+        // CSV
+        rowOpen = "";
+        rowClose = "\n";
+        columnOpenStart = "";
+        columnOpenEnd = "";
+        columnClose = ",";
+        splitRowspans = true;
+      }
 
       // Ensure the CSV data is converted to array format to make it easier to create table rows
       if ( typeof data === "string" ) {
@@ -999,9 +1019,10 @@ var componentName = "wb-format-gen",
         if ( rowspans ) {
           columnRowspans = rowspans[ rowIndex ];
 
-          // Create the rowspanTracker if it doesn't exist
+          // Create the rowspanTracker and rowspanCells if they don't exist
           if ( !rowspanTracker ) {
             rowspanTracker = new Array( numColumns );
+            rowspanCells = new Array( columns.length );
           }
 
           // Set rowspanTracker to 1 for each column
@@ -1012,11 +1033,11 @@ var componentName = "wb-format-gen",
 
         if ( !columnRowspans ) {
           // Row has no cells with rowspans so just output each cell of the row
-          tableRows += "<tr>\n";
+          tableRows += rowOpen;
           for ( columnIndex = 0; columnIndex < numColumns; columnIndex += 1 ) {
-            tableRows += "<td>" + columns[ columnIndex ] + "</td>\n";
+            tableRows += columnOpenStart + columnOpenEnd + columns[ columnIndex ] + columnClose;
           }
-          tableRows += "</tr>\n";
+          tableRows += rowClose;
         } else {
           // Row has at least one cell with a rowspan
           outputRow = true;
@@ -1028,15 +1049,25 @@ var componentName = "wb-format-gen",
             // Process each of the columns for the current row
             for ( columnIndex = 0; columnIndex < numColumns; columnIndex += 1 ) {
               if ( rowspanTracker[ columnIndex ] > 1 ) {
-                // Don't output a cell if still in scope of the most recent rowspan
+                // Output the opening table row if it hasn't already been output
+                if ( !outputRow ) {
+                  tableRows += rowClose;
+                  outputRow = true;
+                }
+
+                // Don't output a cell if still in scope of the most recent rowspan and splitRowspans is not true
+                if ( splitRowspans ) {
+                  tableRows += columnOpenStart + columnOpenEnd + rowspanCells[ columnIndex ] + columnClose;
+                }
                 rowspanTracker[ columnIndex ] -= 1;
               } else {
                 column = columns[ columnIndex ];
 
                 // If column is not null, then output the opening row tag once
                 if ( column !== null ) {
+                  // Output the opening table row if it hasn't already been output
                   if ( !outputRow ) {
-                    tableRows += "<tr>\n";
+                    tableRows += rowClose;
                     outputRow = true;
                   }
 
@@ -1057,20 +1088,26 @@ var componentName = "wb-format-gen",
                   }
 
                   if ( rowspan > 1 ) {
-                    // Cell spans more than one row, so output the rowspan attribute and set the rowspanTracker for this column
-                    tableRows += '<td rowspan="' + rowspan.toString() + '">';
+                    // Cell spans more than one row, so output the rowspan attribute (unless splitRowspans is true) and set the rowspanTracker for this column
+                    tableRows += columnOpenStart;
+                    if ( splitRowspans ) {
+                      rowspanCells[ columnIndex ] = cell;
+                    } else {
+                      tableRows += ' rowspan="' + rowspan.toString() + '"';
+                    }
+                    tableRows += columnOpenEnd;
                     rowspanTracker[ columnIndex ] = rowspan;
                   } else {
-                    tableRows += "<td>";
+                    tableRows += columnOpenStart + columnOpenEnd;
                   }
 
-                  tableRows += cell + "</td>\n";
+                  tableRows += cell + columnClose;
                 }
               }
             }
 
             if ( outputRow ) {
-              tableRows += "</tr>\n";
+              tableRows += rowClose;
             }
           }
         }

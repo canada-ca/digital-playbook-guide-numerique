@@ -163,7 +163,7 @@ include views-vues/questionnaire-next-previous.html currentId="business-domain" 
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
-], "container": "#detailed-assessment-section tbody" }'>Generate table array and output to log</button>
+], "container": "#detailed-report-section tbody" }'>Generate table array and output to log</button>
 
 <div class="form-group" markdown="0">
 <label for="business-component-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
