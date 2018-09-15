@@ -32,14 +32,14 @@ var componentName = "wb-format-gen",
       // returns DOM object = proceed with init
       // returns undefined = do not proceed with init (e.g., already initialized)
       var elm = wb.init( event, componentName, selector ),
-          settings, $elm;
+          settings, $elm, $listenerElement, eventElement;
 
       if ( elm ) {
         $elm = $( elm );
 
         // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
         settings = $.extend(
-          true,
+          true, {},
           defaults,
           window[ componentName ],
           wb.getData( $elm, componentName )
@@ -47,6 +47,26 @@ var componentName = "wb-format-gen",
 
         // Apply the extended settings to the element(s)
         $elm.data( componentName, settings );
+
+        if ( settings[ "listenerElement" ] ) {
+          $listenerElement = $( settings[ "listenerElement" ] );
+        } else {
+          $listenerElement = $document;
+        }
+        eventElement = settings[ "eventElement" ];
+        if ( eventElement ) {
+          $listenerElement.on( settings[ "eventTrigger" ], settings[ "eventElement" ], function( event ) {
+            handleEvent( event, settings );
+          } );
+        } else {
+          $listenerElement.on( settings[ "eventTrigger" ], function( event ) {
+            handleEvent( event, settings );
+          } );
+        }
+
+        if ( settings[ "onInit" ] === true ) {
+          handleEvent( event, settings );
+        }
       }
     },
 
@@ -505,10 +525,30 @@ var componentName = "wb-format-gen",
           type = settings[ "type" ],
           source = settings[ "source" ],
           filename = settings[ "filename" ],
-          fileData, mimeType, blobOutput, urlOutput, action;
+          fileData, mimeType, blobOutput, urlOutput, action, key, indexesKeys, storedData;
 
       if ( type === "csv" ) {
-        fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
+        if ( source === "session-storage" || source === "local-storage" ) {
+          key = settings[ "key" ];
+          indexesKeys = settings[ "indexesKeys" ];
+
+          // Ensure indexesKeys is an array
+          if ( indexesKeys && typeof indexesKeys === "string" ) {
+            indexesKeys = JSON.parse( indexesKeys );
+          }
+
+          storedData = retrieveData( key, indexesKeys, source === "local-storage" );
+
+          if ( !settings[ "tableColSpecs" ] ) {
+            fileData = generateTableRows( storedData, "csv" );
+          } else {
+            let result = dataToTableArray( storedData, settings[ "tableColSpecs" ], true );
+            fileData = generateTableRows( result.tableArray, "csv", result.tableCountArray );
+          }
+        } else {
+          fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
+        }
+
         mimeType = "text/csv;charset=utf-8;";
       } else if ( type === "json" ) {
         if ( source === "form-state" ) {
@@ -556,16 +596,17 @@ var componentName = "wb-format-gen",
      * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
      * @return {Array/Object/String} Returned data
      */
-    inputFile = function( settings, elm, outputAsString ) {
+    inputFile = function( settings, elm, returnAsString ) {
       if ( typeof ( FileReader ) !== "undefined" ) {
         var fileReader = new FileReader();
 
         fileReader.onload = function ( event ) {
            var type = settings[ "type" ],
+               action = settings[ "action" ],
                fileText = event.target.result,
                fileData;
 
-           if ( !outputAsString ) {
+           if ( !returnAsString ) {
              if ( type === "csv" ) {
                fileData = csvToArray( fileText );
              } else if ( type === "json" ) {
@@ -574,8 +615,10 @@ var componentName = "wb-format-gen",
                return fileText;
              }
 
-             if ( settings[ "action" ] === "restore-form-state" ) {
+             if ( action === "restore-form-state" ) {
                setFormFieldStatus( settings[ "container" ], fileData );
+             } else if ( action === "restore-storage" ) {
+               storeData( "replace", settings[ "key" ], settings[ "indexesKeys" ], settings[ "target" ] === "local-storage", fileData );
              }
 
              return fileData;
@@ -630,7 +673,7 @@ var componentName = "wb-format-gen",
       }
 
       // Store the data
-      storeData( action, key, indexesKeys, useLocalStorage = false, data );
+      storeData( action, key, indexesKeys, useLocalStorage, data );
     },
 
     /**
@@ -645,7 +688,7 @@ var componentName = "wb-format-gen",
           key = settings[ "key" ],
           useLocalStorage = type === "local-storage",
           indexesKeys = settings[ "indexesKeys" ],
-          storedData, format;
+          storedData, tableRows;
 
       // Ensure indexesKeys is an array
       if ( indexesKeys && typeof indexesKeys === "string" ) {
@@ -659,13 +702,15 @@ var componentName = "wb-format-gen",
         setFormFieldStatus( settings[ "container" ], storedData );
       } else if ( action === "set-table-rows" ) {
         // Set table data rows (normally with tbody as the container) using the stored data
-        format = settings[ "format" ];
         if ( !settings[ "tableColSpecs" ] ) {
-          setTableRows( settings[ "container" ], storedData, "html" );
+          tableRows = generateTableRows( storedData, "html" );
         } else {
           let result = dataToTableArray( storedData, settings[ "tableColSpecs" ], true );
-          setTableRows( settings[ "container" ], result.tableArray, "html", result.tableCountArray );
+          tableRows = generateTableRows( result.tableArray, "html", result.tableCountArray );
         }
+
+        // Replace the contents of the container with the new table rows
+        document.querySelector( settings[ "container" ] ).innerHTML = tableRows;
       }
     },
 
@@ -677,6 +722,7 @@ var componentName = "wb-format-gen",
      * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to store data in nested arrays/objects in the data
      * @param useLocalStorage {Boolean} (defaults to false) Whether or not to store the data in localStorage
      * @param data {String/Array/Object/Other} (not used for "delete" action) Data to store
+     * @fires Fires the storage-updated.wb-format-gen event on the document node once complete
      */
     storeData = function( action = "replace", key, indexesKeys = [], useLocalStorage = false, data ) {
       var indexesKeysLength = indexesKeys.length,
@@ -736,7 +782,11 @@ var componentName = "wb-format-gen",
             } else if ( action === "prepend" ) {
               storedDataFragment.unshift( data );
             } else {
-              parentStoredDataFragment[ indexesKeys[ index - 1 ] ] = data;
+              if ( indexesKeysLength > 0 ) {
+                parentStoredDataFragment[ indexesKeys[ index - 1 ] ] = data;
+              } else {
+                storedData = data;
+              }
             }
             data = storedData;
           } else {
@@ -783,6 +833,9 @@ var componentName = "wb-format-gen",
       } else {
         sessionStorage.setItem( key, data );
       }
+
+      // Trigger an event indicating that the storage has been updated
+      $document.trigger( "storage-updated" + selector );
     },
 
     /**
@@ -974,15 +1027,15 @@ var componentName = "wb-format-gen",
     },
 
     /**
-     * @method setTableRows
-     * @overview Replaces the rows in the container with rows created using the passed data (in CSV format)
-     * @param container {String} Selector for the container in which to replace all nodes with table rows.
+     * @method generateTableRows
+     * @overview Generates table rows in the form of a string using the passed data
      * @param data {String / Array} Data to create the table rows with
      * @param outputFormat {String} Output format of the table (i.e., "html", "csv")
      * @param rowspans {Array} (Optional, defaults to rowspan of 1 for each table cell) Array of rowspans for each cell in data
      * @param splitRowspans {Boolean} (Optional, defaults to false, unless output type is CSV) Whether to implement rowspans as a single cell or multiple individual cells (e.g., for CSV rowspans have to be split up since CSV does not support rowspans)
+     * @return {String} Generated table rows
      */
-    setTableRows = function( container, data, outputFormat, rowspans, splitRowspans ) {
+    generateTableRows = function( data, outputFormat, rowspans, splitRowspans ) {
       var tableRows = "",
           rowIndex, numRows, columns, column, columnIndex, numColumns, columnRowspans, rowspan, rowspanTracker,
           index, length, index2, length2, outputRow, cell, rowspanCells, rowOpen, rowClose, columnOpenStart, columnOpenEnd, columnClose;
@@ -1113,40 +1166,50 @@ var componentName = "wb-format-gen",
         }
       }
 
-      // Replace the contents of the container with the new table rows
-      document.querySelector( container ).innerHTML = tableRows;
+      return tableRows;
+    },
+
+    /**
+     * @method handleEvent
+     * @overview Handles most plugin events
+     * @param event {Object} Event object
+     * @param settingsParam {Object} (Optional, default is to get the settings from the event object) Settings to be used by the handler
+     */
+    handleEvent = function( event, settingsParam ) {
+      var type = event.type,
+          target = event.target,
+          settings = settingsParam ? settingsParam : wb.getData( $( target ), componentName ),
+          type, source, action, data, storedData, key, useLocalStorage;
+
+      if ( type !== "change" ) {
+        type = settings[ "type" ];
+        source = settings[ "source" ];
+
+        if ( target.type !== "file" ) {
+          if ( type === "session-storage" || type === "local-storage" ) {
+            outputStorage( settings );
+          } else if ( source === "session-storage" || source === "local-storage" ) {
+            if ( type === "csv" || type === "json" ) {
+              outputFile( settings );
+            } else {
+              inputStorage( settings );
+            }
+          } else {
+            outputFile( settings );
+          }
+        }
+      } else {
+        if ( target.type === "file" ) {
+          inputFile( settings, target );
+        }
+      }
+
+      if ( settings[ "returnFalse" ] === true ) {
+        return false;
+      }
     };
 
-$document.on( "click", selector, function( event ) {
-  var target = event.target,
-      settings = wb.getData( $( target ), componentName ),
-      type = settings[ "type" ],
-      source = settings[ "source" ],
-      action, data, storedData, key, useLocalStorage;
-
-  if ( target.type !== "file" ) {
-    if ( type === "session-storage" || type === "local-storage" ) {
-      outputStorage( settings );
-    } else if ( source === "session-storage" || source === "local-storage" ) {
-      if ( type === "csv" || type === "json" ) {
-        outputFile( settings );
-      } else {
-        inputStorage( settings );
-      }
-    } else {
-      outputFile( settings );
-    }
-  }
-} );
-
-$document.on( "change", selector, function( event ) {
-  var target = event.target,
-      settings = wb.getData( $( target ), componentName );
-
-  if ( target.type === "file" ) {
-    inputFile( settings, target );
-  }
-} );
+$document.on( "click change", selector, handleEvent );
 
 // Bind the init event of the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );

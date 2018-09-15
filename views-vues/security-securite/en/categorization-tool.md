@@ -158,13 +158,6 @@ include views-vues/questionnaire-next-previous.html currentId="business-domain" 
 
 <button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities", 1, 0, "components" ], "source": "form-state", "container": "#business-activity-component-container", "action": "append" }'>Append business activity component to business activity 2 of business domain 2 in session storage (need at least 2 business activities in business domain 2 for this to work)</button>
 
-<!-- TODO Build better mechanism for displaying table -->
-<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "action": "set-table-rows", "source": "session-storage", "key": "assessment", "tableColSpecs": [
-  { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
-  { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
-  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
-], "container": "#detailed-report-section tbody" }'>Generate table array and output to log</button>
-
 <div class="form-group" markdown="0">
 <label for="business-component-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
@@ -378,7 +371,12 @@ The following report provides the detailed injury assessment performed for each 
 <th>{{ page.lossOfCommon.field4Label }}</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="wb-format-gen" data-wb-format-gen='{ "onInit": true, "eventTrigger": "storage-updated.wb-format-gen", "action": "set-table-rows", "source": "session-storage", "key": "assessment", "tableColSpecs": [
+  { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
+], "container": "#detailed-report-section tbody"
+}'>
 <tr>{%
 for index in (1..18) %}
 <td></td>{%
@@ -387,7 +385,26 @@ endfor %}
 </tbody>
 </table>
 
-<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "check-session-storage", "source": "session-storage", "key": "assessment" }'>Download assessment from session storage</button>
+<div markdown="0" class="btn-group mrgn-tp-md">
+<!-- Button for saving progress to a JSON file -->
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment-json", "source": "session-storage", "key": "assessment" }'>Save progress to a file</button>
+<!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. this is done to give more visual control over the appearance than what the input type="file" field allows. -->
+<button id="restore-from-file-button" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
+    ]
+  }
+] }'>Restore progress from a file</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "filename": "assessment-csv", "source": "session-storage", "key": "assessment", "tableColSpecs": [
+  { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
+] }'>Download assessment in CSV format</button>
+</div>
+<div class="hidden">
+<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": "json", "action": "restore-storage", "target": "session-storage", "key": "assessment" }' />
+</div>
 
 </section>
 
