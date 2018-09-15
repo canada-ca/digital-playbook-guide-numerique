@@ -273,7 +273,7 @@ var componentName = "wb-format-gen",
 
       // Handle no data being passed
       if ( !data || data.length === 0 ) {
-        return "";
+        return {};
       }
 
       // Determine the number of outer rows (i.e., number of rows in the first column after rowspans are applied)
