@@ -271,6 +271,11 @@ var componentName = "wb-format-gen",
           index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
           columnSourceArray, relativeToArray, columnDataArray, rowspan, elementCounts, elementArray, element, countArray, count;
 
+      // Handle no data being passed
+      if ( !data || data.length === 0 ) {
+        return "";
+      }
+
       // Determine the number of outer rows (i.e., number of rows in the first column after rowspans are applied)
       for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
         tableColSpec = tableColSpecs[ tableColSpecIndex ];
@@ -1039,6 +1044,11 @@ var componentName = "wb-format-gen",
       var tableRows = "",
           rowIndex, numRows, columns, column, columnIndex, numColumns, columnRowspans, rowspan, rowspanTracker,
           index, length, index2, length2, outputRow, cell, rowspanCells, rowOpen, rowClose, columnOpenStart, columnOpenEnd, columnClose;
+
+      // Handle no data being passed
+      if ( !data || data.length === 0 ) {
+        return "";
+      }
 
       // Set up format for rows/cols based on output format type
       if ( outputFormat === "html" ) {
