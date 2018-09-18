@@ -8,62 +8,62 @@ collectionDirectory: views-vues/security-securite
 businessDomain:
   title: Business Domain
   intro: A business domain is an operational environment where a department performs business activities supporting common organizational objectives.
-  field1Label: What is your business domain?
+  "business-domain-field-label": What is your business domain?
 businessComponent:
   title: Business Component
   intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
   intro2: Business activities will be categorized by determining the expected injuries from IT-related threat compromise to the national and non-national interests that the business activities serve, and then determining the lveral of these expected injuries.
-  field1Label: Business Activity
-  field2Label: Business Activity Component
-  field3Label: Component Description
-  field4Label: Type
-  field4Sublabel: Select a type
-  field4Option1: Process
-  field4Option2: Information
-  field5Label: Authoritative Source
+  "business-activity-label": Business Activity
+  "business-activity-component-label": Business Activity Component
+  "component-description-label": Component Description
+  "component-type-label": Type
+  "component-type-sub-label": Select a type
+  "component-type-option-1": Process
+  "component-type-option-2": Information
+  "authoritative-source-label": Authoritative Source
 lossTypes: [ "confidentiality", "integrity", "availability" ]
 confidentiality:
   title: Loss of Confidentiality
   intro: To ensure the confidentiality of business activites and IT assets against a specified set of theats in order to prevent injury to national interests or non-national interests.
-  field2Label: What is the type of injury that is most likely to result from a loss of confidentiality?
+  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of confidentiality?
   example1: Example of such injury
   example2: ie. Riot
 integrity:
   title: Loss of Integrity
   intro: To ensure the integrity of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
-  field2Label: What is the type of injury that is most likely to result from a loss of integrity?
+  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of integrity?
   example1: Example of such injury
   example2: ie. Distress, psychological trauma
 availability:
   title: Loss of Availability
   intro: To ensure the availability of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
-  field2Label: What is the type of injury that is most likely to result from a loss of availability?
+  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of availability?
   example1: Example of such injury
   example2: ie. Affecting program performance
 lossOfCommon:
-  field1Label: Failure Scenario (in context)
-  field2Sublabel: Select a type of injury
-  field2TableHeading: Type of injury
-  field2Option1: Civil disorder or unrest
-  field2Option2: Physical harm to people
-  field2Option3: Psychological harm to people
-  field2Option4: Financial loss to individuals
-  field2Option5: Financial loss to Canadian companies
-  field2Option6: Financial loss to Canadian governement
-  field2Option7: Harm to Canadian economy
-  field2Option8: Harm to Canada's reputation
-  field2Option9: Harm to National Interest
-  field2Option10: No expected injury
-  field3Label: How significant is the expected injury?
-  field3Sublabel: Select the significance of injury
-  field3TableHeading: Significance of injury
-  field3Option1: Very low
-  field3Option2: Low
-  field3Option3: Medium
-  field3Option4: High
-  field3Option5: Very high
-  field3Option6: NA
-  field4Label: Analysis
+  "failure-scenario-label": Failure Scenario (in context)
+  "failure-scenario-sub-label": Select a type of injury
+  "failure-scenario-table-heading": Type of injury
+  "failure-scenario-option-1": Civil disorder or unrest
+  "failure-scenario-option-2": Physical harm to people
+  "failure-scenario-option-3": Psychological harm to people
+  "failure-scenario-option-4": Financial loss to individuals
+  "failure-scenario-option-5": Financial loss to Canadian companies
+  "failure-scenario-option-6": Financial loss to Canadian governement
+  "failure-scenario-option-7": Harm to Canadian economy
+  "failure-scenario-option-8": Harm to Canada's reputation
+  "failure-scenario-option-9": Harm to National Interest
+  "failure-scenario-option-0": No expected injury
+  "injury-significance": How significant is the expected injury?
+  "injury-significance-sub-label": Select the significance of injury
+  "injury-significance-table-heading": Significance of injury
+  "injury-significance-option-1": Very low
+  "injury-significance-option-2": Low
+  "injury-significance-option-3": Medium
+  "injury-significance-option-4": High
+  "injury-significance-option-5": Very high
+  "injury-significance-option-0": NA
+  "analysis-label": Analysis
 labelGridClass: col-sm-4
 fieldGridClass: col-sm-8
 ---
@@ -105,9 +105,9 @@ This web-based version of the tool is meant to make the process of organizing th
 {{ page.businessDomain.intro }}
 
 <div class="form-group" markdown="0">
-<label for="business-domain-1" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessDomain.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="business-domain-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessDomain[ "business-domain-field-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<input name="business-domain-1" id="business-domain-1" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+<input name="business-domain-field" id="business-domain-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
@@ -131,9 +131,9 @@ include views-vues/questionnaire-next-previous.html currentId="business-domain" 
 <div id="business-activity-container">
 
 <div class="form-group" markdown="0">
-<label for="business-component-1" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="business-activity" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<input name="business-component-1" id="business-component-1" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+<input name="business-activity" id="business-activity" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
@@ -146,9 +146,34 @@ include views-vues/questionnaire-next-previous.html currentId="business-domain" 
 <div id="business-activity-component-container">
 
 <div class="form-group" markdown="0">
-<label for="business-component-2" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field2Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="business-activity-component" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-component-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<input name="business-component-2" id="business-component-2" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+<input name="business-activity-component" id="business-activity-component" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+</div>
+</div>
+
+<div class="form-group" markdown="0">
+<label for="component-description" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "component-description-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
+<textarea name="component-description" id="component-description" required="required"></textarea>
+</div>
+</div>
+
+<div class="form-group" markdown="0">
+<label for="component-type" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "component-type-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
+<select class="form-control" id="component-type" name="component-type" required="required">
+<option label="{{ page.businessComponent[ "component-type-sub-label" ] }}"></option>
+<option value="1">{{ page.businessComponent[ "component-type-option-1" ] }}</option>
+<option value="2">{{ page.businessComponent[ "component-type-option-2" ] }}</option>
+</select>
+</div>
+</div>
+
+<div class="form-group" markdown="0">
+<label for="authoritative-source" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "authoritative-source-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
+<textarea name="authoritative-source" id="authoritative-source" required="required"></textarea>
 </div>
 </div>
 
@@ -156,32 +181,7 @@ include views-vues/questionnaire-next-previous.html currentId="business-domain" 
 
 <!-- TODO Figure out how to create this button on the fly for different business activities. So have one button for creating business acitivity components for each business activity -->
 
-<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities", 1, 0, "components" ], "source": "form-state", "container": "#business-activity-component-container", "action": "append" }'>Append business activity component to business activity 2 of business domain 2 in session storage (need at least 2 business activities in business domain 2 for this to work)</button>
-
-<div class="form-group" markdown="0">
-<label for="business-component-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<div class="{{ page.fieldGridClass }}">
-<textarea name="business-component-3" id="business-component-3" required="required"></textarea>
-</div>
-</div>
-
-<div class="form-group" markdown="0">
-<label for="business-component-4" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field4Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<div class="{{ page.fieldGridClass }}">
-<select class="form-control" id="business-component-4" name="business-component-4" required="required">
-<option label="{{ page.businessComponent.field4Sublabel }}"></option>
-<option value="1">{{ page.businessComponent.field4Option1 }}</option>
-<option value="2">{{ page.businessComponent.field4Option2 }}</option>
-</select>
-</div>
-</div>
-
-<div class="form-group" markdown="0">
-<label for="business-component-5" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent.field5Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<div class="{{ page.fieldGridClass }}">
-<textarea name="business-component-5" id="business-component-5" required="required"></textarea>
-</div>
-</div>
+<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities", 1, 0, "components" ], "source": "form-state", "container": "#business-activity-component-container", "action": "append" }'>Append business activity component, component description and type, and authoratative source to business activity 2 of business domain 2 in session storage (need at least 2 business activities in business domain 2 for this to work)</button>
 
 <!-- Buttons for revealing the next/previous section and hiding the current one -->{%
 assign nextId = "loss-of-" | append: page.lossTypes[ 0 ] %}{%
@@ -200,42 +200,42 @@ for lossType in page.lossTypes %}{%
 {{ page[ lossType ].intro }}
 
 <div class="form-group" markdown="0">
-<label for="loss-of-{{ lossType }}-1" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon.field1Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="failure-scenario-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon[ "failure-scenario-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<input name="loss-of-{{ lossType }}-1" id="loss-of-{{ lossType }}-1" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+<input name="failure-scenario-{{ lossType }}" id="failure-scenario-{{ lossType }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
 <div class="form-group" markdown="0">
-<label for="loss-of-{{ lossType }}-2" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page[ lossType ].field2Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="type-of-injury-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page[ lossType ][ "type-of-injury-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<select class="form-control" id="loss-of-{{ lossType }}-2" name="loss-of-{{ lossType }}-2" required="required">
-<option label="{{ page.lossOfCommon.field2Sublabel }}"></option>
-<option value="1">{{ page.lossOfCommon.field2Option1 }}</option>
-<option value="2">{{ page.lossOfCommon.field2Option2 }}</option>
-<option value="3">{{ page.lossOfCommon.field2Option3 }}</option>
-<option value="4">{{ page.lossOfCommon.field2Option4 }}</option>
-<option value="5">{{ page.lossOfCommon.field2Option5 }}</option>
-<option value="6">{{ page.lossOfCommon.field2Option6 }}</option>
-<option value="7">{{ page.lossOfCommon.field2Option7 }}</option>
-<option value="8">{{ page.lossOfCommon.field2Option8 }}</option>
-<option value="9">{{ page.lossOfCommon.field2Option9 }}</option>
-<option value="10">{{ page.lossOfCommon.field2Option10 }}</option>
+<select class="form-control" id="type-of-injury-{{ lossType }}" name="type-of-injury-{{ lossType }}" required="required">
+<option label="{{ page.lossOfCommon[ "failure-scenario-sub-label" ] }}"></option>
+<option value="1">{{ page.lossOfCommon[ "failure-scenario-option-1" ] }}</option>
+<option value="2">{{ page.lossOfCommon[ "failure-scenario-option-2" ] }}</option>
+<option value="3">{{ page.lossOfCommon[ "failure-scenario-option-3" ] }}</option>
+<option value="4">{{ page.lossOfCommon[ "failure-scenario-option-4" ] }}</option>
+<option value="5">{{ page.lossOfCommon[ "failure-scenario-option-5" ] }}</option>
+<option value="6">{{ page.lossOfCommon[ "failure-scenario-option-6" ] }}</option>
+<option value="7">{{ page.lossOfCommon[ "failure-scenario-option-7" ] }}</option>
+<option value="8">{{ page.lossOfCommon[ "failure-scenario-option-8" ] }}</option>
+<option value="9">{{ page.lossOfCommon[ "failure-scenario-option-9" ] }}</option>
+<option value="0">{{ page.lossOfCommon[ "failure-scenario-option-0" ] }}</option>
 </select>
 </div>
 </div>
 
 <div class="form-group" markdown="0">
-<label for="loss-of-{{ lossType }}-3" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon.field3Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="injury-significance-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon[ "injury-significance" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<select class="form-control" id="loss-of-{{ lossType }}-3" name="loss-of-{{ lossType }}-3" required="required">
-<option label="{{ page.lossOfCommon.field3Sublabel }}"></option>
-<option value="1">{{ page.lossOfCommon.field3Option1 }}</option>
-<option value="2">{{ page.lossOfCommon.field3Option2 }}</option>
-<option value="3">{{ page.lossOfCommon.field3Option3 }}</option>
-<option value="4">{{ page.lossOfCommon.field3Option4 }}</option>
-<option value="5">{{ page.lossOfCommon.field3Option5 }}</option>
-<option value="6">{{ page.lossOfCommon.field3Option6 }}</option>
+<select class="form-control" id="injury-significance-{{ lossType }}" name="injury-significance-{{ lossType }}" required="required">
+<option label="{{ page.lossOfCommon[ "injury-significance-sub-label" ] }}"></option>
+<option value="1">{{ page.lossOfCommon[ "injury-significance-option-1" ] }}</option>
+<option value="2">{{ page.lossOfCommon[ "injury-significance-option-2" ] }}</option>
+<option value="3">{{ page.lossOfCommon[ "injury-significance-option-3" ] }}</option>
+<option value="4">{{ page.lossOfCommon[ "injury-significance-option-4" ] }}</option>
+<option value="5">{{ page.lossOfCommon[ "injury-significance-option-5" ] }}</option>
+<option value="0">{{ page.lossOfCommon[ "injury-significance-option-0" ] }}</option>
 </select>
 </div>
 </div>
@@ -243,9 +243,9 @@ for lossType in page.lossTypes %}{%
 **{{ page[ lossType ].example1 }}** {{ page[ lossType ].example2 }}
 
 <div class="form-group" markdown="0">
-<label for="loss-of-{{ lossType }}-4" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon.field4Label }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="analysis-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon[ "analysis-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<textarea name="loss-of-{{ lossType }}-4" id="loss-of-{{ lossType }}-4" required="required"></textarea>
+<textarea name="analysis-{{ lossType }}" id="analysis-{{ lossType }}" required="required"></textarea>
 </div>
 </div>
 
@@ -349,32 +349,35 @@ The following report provides the detailed injury assessment performed for each 
 <th colspan="4" class="text-center">{{ page.availability.title }}</th>
 </tr>
 <tr>
-<th>{{ page.businessComponent.field1Label }}</th>
-<th>{{ page.businessComponent.field2Label }}</th>
-<th>{{ page.businessComponent.field3Label }}</th>
-<th>{{ page.businessComponent.field4Label }}</th>
-<th>{{ page.businessComponent.field5Label }}</th>
+<th>{{ page.businessComponent[ "business-activity-label" ] }}</th>
+<th>{{ page.businessComponent[ "business-activity-component-label" ] }}</th>
+<th>{{ page.businessComponent[ "component-description-label" ] }}</th>
+<th>{{ page.businessComponent[ "component-type-label" ] }}</th>
+<th>{{ page.businessComponent[ "authoritative-source-label" ] }}</th>
 <!-- {{ page.confidentiality.title }} -->
-<th>{{ page.lossOfCommon.field1Label }}</th>
-<th>{{ page.lossOfCommon.field2TableHeading }}</th>
-<th>{{ page.lossOfCommon.field3TableHeading }}</th>
-<th>{{ page.lossOfCommon.field4Label }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-label" ] }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "injury-significance-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "analysis-label" ] }}</th>
 <!-- {{ page.integrity.title }} -->
-<th>{{ page.lossOfCommon.field1Label }}</th>
-<th>{{ page.lossOfCommon.field2TableHeading }}</th>
-<th>{{ page.lossOfCommon.field3TableHeading }}</th>
-<th>{{ page.lossOfCommon.field4Label }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-label" ] }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "injury-significance-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "analysis-label" ] }}</th>
 <!-- {{ page.availability.title }} -->
-<th>{{ page.lossOfCommon.field1Label }}</th>
-<th>{{ page.lossOfCommon.field2TableHeading }}</th>
-<th>{{ page.lossOfCommon.field3TableHeading }}</th>
-<th>{{ page.lossOfCommon.field4Label }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-label" ] }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "injury-significance-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "analysis-label" ] }}</th>
 </tr>
 </thead>
 <tbody class="wb-format-gen" data-wb-format-gen='{ "onInit": true, "eventTrigger": "storage-updated.wb-format-gen", "action": "set-table-rows", "source": "session-storage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
-  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 1, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
 ], "container": "#detailed-report-section tbody"
 }'>
 <tr>{%
@@ -399,7 +402,10 @@ endfor %}
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "filename": "assessment-csv", "source": "session-storage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
-  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] }
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 1, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
 ] }'>Download assessment in CSV format</button>
 </div>
 <div class="hidden">
