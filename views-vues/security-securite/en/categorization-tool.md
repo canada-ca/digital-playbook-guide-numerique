@@ -8,7 +8,7 @@ collectionDirectory: views-vues/security-securite
 businessDomain:
   title: Business Domain
   intro: A business domain is an operational environment where a department performs business activities supporting common organizational objectives.
-  "business-domain-label": What is your business domain?
+  "business-domain-field-label": What is your business domain?
 businessComponent:
   title: Business Component
   intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
@@ -105,9 +105,9 @@ This web-based version of the tool is meant to make the process of organizing th
 {{ page.businessDomain.intro }}
 
 <div class="form-group" markdown="0">
-<label for="business-domain" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessDomain[ "business-domain-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="business-domain-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessDomain[ "business-domain-field-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<input name="business-domain" id="business-domain" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+<input name="business-domain-field" id="business-domain-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
