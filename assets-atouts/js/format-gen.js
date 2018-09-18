@@ -251,11 +251,11 @@ var componentName = "wb-format-gen",
      * @param data {Object/Array} Object/array containing all of the data for the table.
      * @param tableColSpecs {Array} Specification objects for each column, where each object includes the following information:
      *    relativeToColumn {Integer} (defaults to -1) Index of column that this column is relative to. A 0 or higher index means it has 
-     *      a 1 to many relationship with the specified column (and as a result each row as well) while -1 means it is relative to the row 
-     *      (so has a 1 to 1 relationship with each row).
+     *      either a sibling relationship (1 to 1) or a parent/child relationship (1 to many) with the specified columnwhile -1 means it 
+     *      is relative to the row (so has a 1 to 1 relationship with each row).
      *    dataContainerSource {Array} Source of the column data array within the passed data object/array in the form of a series of
      *      indexes/keys applied sequentially. If relativeToColumn is not -1, then the indexes/keys are relative to the data source of     
-     *      the specified column, otherwise they are relative to the passed data object/array. 
+     *      the specified column (an empty array means a sibling relationship), otherwise they are relative to the passed data object/array.
      *    dataElementSource {Array} (optional, defaults to empty array) Source of the data within each column data array element if 
      *      the data is not the column data array element itself. Indexes/keys are relative to the column data array element.
      * @param repeatValues {Boolean} (defaults to false) Whether or not to repeat values in one to many relationships (i.e., repeat value on each row rather than having the value span multiple rows)
@@ -316,14 +316,24 @@ var componentName = "wb-format-gen",
           } else {
             // Need to find the column data array first since it is relative to another column
             relativeToArray = [];
-            indexesKeysArray = [ tableColSpec.dataContainerSource, tableColSpec.dataElementSource ];
+
+            indexesKeysArray =  [];
+            if ( tableColSpec.dataContainerSource.length > 0 ) {
+              indexesKeysArray.push( tableColSpec.dataContainerSource );
+            }
+            if ( tableColSpec.dataElementSource.length > 0 ) {
+              indexesKeysArray.push( tableColSpec.dataElementSource );
+            }
 
             while ( typeof relativeToColumn !== "undefined" && relativeToColumn !== -1 ) {
-              relativeToArray.unshift( relativeToColumn )
-              indexesKeysArray.unshift( tableColSpecs[ relativeToColumn ].relativeToColumn === -1 ?
+              relativeToArray.unshift( relativeToColumn );
+              columnDataArray = tableColSpecs[ relativeToColumn ].relativeToColumn === -1 ?
                 tableColSpecs[ relativeToColumn ].dataContainerSource.concat( [ rowIndex ] ) : 
-                tableColSpecs[ relativeToColumn ].dataContainerSource
-              );
+                tableColSpecs[ relativeToColumn ].dataContainerSource;
+
+              if ( columnDataArray && columnDataArray.length > 0 ) {
+                indexesKeysArray.unshift( columnDataArray );
+              }
 
               relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
             }
@@ -342,19 +352,25 @@ var componentName = "wb-format-gen",
           count = countArray[ tableColSpecIndex ];
 
           if ( !count && relativeToColumn !== -1 ) {
-            dataNode = rowArray[ tableColSpecIndex ];
-            countArray[ tableColSpecIndex ] = getNestedArrayElementCounts( dataNode ).subElementCount;
+            if ( tableColSpec.dataContainerSource.length === 0 && countArray[ relativeToColumn ] ) {
+              // Sibling relationship so will have the same rowspan
+              countArray[ tableColSpecIndex ] = countArray[ relativeToColumn ];
+            } else {
+              // Parent/child relationship
+              dataNode = rowArray[ tableColSpecIndex ];
+              countArray[ tableColSpecIndex ] = getNestedArrayElementCounts( dataNode ).subElementCount;
 
-            // Determine the array depth on which to apply rowspans
-            relativeToArray = [];
-            while ( relativeToColumn !== -1 ) {
-              relativeToArray.push( relativeToColumn );
-              relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
-            }
+              // Determine the array depth on which to apply rowspans
+              relativeToArray = [];
+              while ( relativeToColumn !== -1 ) {
+                relativeToArray.push( relativeToColumn );
+                relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
+              }
 
-            for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
-              relativeToColumn = relativeToArray[ index ];
-              countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, length - index - 1 ).subElementCount;              
+              for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
+                relativeToColumn = relativeToArray[ index ];
+                countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, length - index - 1 ).subElementCount;              
+              }
             }
           } else if ( !count ) {
             countArray[ tableColSpecIndex ] = 1;
@@ -405,7 +421,7 @@ var componentName = "wb-format-gen",
      * @overview Retrieve data from an array or object using a series of keys/indexes
      * @param data {Object/Array} Object/array on which to apply a series of keys/indexes to retrieve specific data
      * @param indexesKeysArray {Array} Either an array of indexes/keys or nested arrays of indexes keys (could be multiple levels deep)
-     * @return {Primitive/Array} Either a data primitive, an array of primitives or an array of array (could be multiple levels deep)
+     * @return {Primitive/Array} Either a data primitive, an array of primitives or an array of arrays (could be multiple levels deep)
      */
     findData = function( data, indexesKeysArray ) {
       var typeofResults = typeof indexesKeysArray[ 0 ] === "object",
@@ -901,7 +917,7 @@ var componentName = "wb-format-gen",
               while ( index < numFields ) {
                 if (field.type === "radio" && field.name === name ) {
                   if ( field.checked === true ) {
-                    fieldObjects.push( { selector: "#" + field.id, state: true } );
+                    fieldObjects.push( { selector: "#" + field.id, state: true, value: field.value } );
                     hasChecked = true;
                   }
                   index += 1;
@@ -916,13 +932,13 @@ var componentName = "wb-format-gen",
                 fieldObjects.push( { selector: "input[name=" + name + "]", state: false } );
               }
             } else if ( type === "checkbox" ) {
-              fieldObjects.push( { selector: "#" + field.id, state: field.checked } );
+              fieldObjects.push( { selector: "#" + field.id, state: field.checked, value: field.value } );
             } else if ( type !== "button" && type !== "reset" && type !== "submit" && type !== "image" ) {
               fieldObjects.push( { selector: "#" + field.id, state: field.value } );
             } 
           } else if ( nodeName === "select" ) {
             if ( field.selectedIndex !== -1 ) {
-              fieldObjects.push( { selector: "#" + field.id + " option:nth-child(" + ( field.selectedIndex + 1 ) + ")", state: true } );
+              fieldObjects.push( { selector: "#" + field.id + " option:nth-child(" + ( field.selectedIndex + 1 ) + ")", state: true, value: field.selectedValue, text: field.options[ field.selectedIndex ].text } );
             } else {
               fieldObjects.push( { selector: "#" + field.id + " option", state: false } );
             }
@@ -1114,7 +1130,7 @@ var componentName = "wb-format-gen",
               if ( rowspanTracker[ columnIndex ] > 1 ) {
                 // Output the opening table row if it hasn't already been output
                 if ( !outputRow ) {
-                  tableRows += rowClose;
+                  tableRows += rowOpen;
                   outputRow = true;
                 }
 
@@ -1130,7 +1146,7 @@ var componentName = "wb-format-gen",
                 if ( column !== null ) {
                   // Output the opening table row if it hasn't already been output
                   if ( !outputRow ) {
-                    tableRows += rowClose;
+                    tableRows += rowOpen;
                     outputRow = true;
                   }
 
