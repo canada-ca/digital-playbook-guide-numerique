@@ -155,7 +155,7 @@ var componentName = "wb-calculate",
           queryResultsSize = !$query ? null : $query.length, 
           decimalPlaces = operation[ "decimalPlaces" ],
           inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
-          outputTargets, outputTarget, outputAttribute, outputType, currentValue, outputTargetIndex, outputTargetsLength;
+          outputTargets, outputTarget, outputAttribute, outputType, currentValue, outputValue, outputTargetIndex, outputTargetsLength;
 
       if ( type === "number" || type === "string" || type === "length" ) {
         if ( $query ) {
@@ -337,6 +337,7 @@ var componentName = "wb-calculate",
                   outputType = action[ "outputType" ];
 
                   for ( outputTargetIndex = 0; outputTargetIndex < outputTargetsLength; outputTargetIndex += 1 ) {
+                    outputValue = value;
                     outputTarget = outputTargets[ outputTargetIndex ];
                     outputAttribute = action[ "outputAttribute" ];
 
@@ -348,16 +349,16 @@ var componentName = "wb-calculate",
 
                     if ( currentValue ) {
                       if ( outputType === "append" ) {
-                        value = currentValue + value;
+                        outputValue = currentValue + outputValue;
                       } else if ( outputType === "prepend" ) {
-                        value = value + currentValue;
+                        outputValue = outputValue + currentValue;
                       }
                     }
 
                     if ( outputAttribute ) {
-                      outputTarget.setAttribute( outputAttribute, value );
+                      outputTarget.setAttribute( outputAttribute, outputValue );
                     } else {
-                      outputTarget.textContent = value;
+                      outputTarget.textContent = outputValue;
                     }
                   }
                 }

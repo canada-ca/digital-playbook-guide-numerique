@@ -25,10 +25,9 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
 <fieldset>
 <legend>Type de système de décision automatisé</legend>
 <ul class="list-unstyled">
-<li><input type="checkbox" id="dpgn-automated-decision-type-file-triage-assignment" /> <label for="dpgn-automated-decision-type-file-triage-assignment">Triage ou affectation de fichier</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-risk-scoring-categorization" /> <label for="dpgn-automated-decision-type-risk-scoring-categorization">Notation du risque, profilage ou catégorisation</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-risk" /> <label for="dpgn-automated-decision-type-risk">La cote de risque, le profilage ou la catégorisation d'un client en termes de risque</label></li>
 <li><input type="checkbox" id="dpgn-automated-decision-type-recommendation" /> <label for="dpgn-automated-decision-type-recommendation">Recommandation de prendre certaines mesures</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-full-decision" /> <label for="dpgn-automated-decision-type-full-decision">Décision complète de bout en bout</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-decision" /> <label for="dpgn-automated-decision-type-decision">Rendre une décision administrative complète</label></li>
 </ul>
 </fieldset>
 
@@ -204,14 +203,14 @@ Le gouvernement du Canada envisage de plus en plus d’utiliser la technologie e
       - une description des données d'apprentissage ou un lien vers les données d'apprentissage anonymisées si ces données sont publiquement disponibles;
       - une description des critères utilisés pour rendre la décision, y compris les règles administratives pertinentes.
 - {: data-dpgn-data-include='&#123; "guideline": "9.2", "section": "checklist" &#125;' data-content-source-title="Section 6.2.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Fournir une explication significative aux personnes touchées de la façon dont la décision a été prise et de la raison pour laquelle elle a été prise, comme le prescrit ce qui suit&#160;:
-  - {: .dpgn-automated-decision-type-file-triage-assignment .dpgn-automated-decision-type-risk-scoring-categorization data-content-source-title="Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explication de l'exigence pour la recommendation&#160;:
+  - {: .dpgn-automated-decision-type-risk data-content-source-title="Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explication de l'exigence pour la recommendation&#160;:
     - {: .dpgn-automated-decision-level-i} **Niveau I :** Aucune
     - {: .dpgn-automated-decision-level-ii} **Niveau II :** Aucune
     - {: .dpgn-automated-decision-level-iii} **Niveau III :** Explication significative fournie sur demande fondée sur l'examen mené par une machine ou un humain.
     - {: .dpgn-automated-decision-level-iv} **Niveau IV :**
       - Explication significative, y compris les variables utilisées dans la décision, fournie avec la décision prise.
       - L'explication peut être générée par un humain ou une machine.
-  - {: .dpgn-automated-decision-type-recommendation .dpgn-automated-decision-type-full-decision data-content-source-title="Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explication de l'exigence pour les décisions&#160;:
+  - {: .dpgn-automated-decision-type-recommendation .dpgn-automated-decision-type-decision data-content-source-title="Annexe C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explication de l'exigence pour les décisions&#160;:
     - {: .dpgn-automated-decision-level-i} **Niveau I :** Une explication fournie sur demande fondée sur l'examen mené par une machine ou un humain. Cela peut inclure la section de la foire aux questions d'un site Web.
     - {: .dpgn-automated-decision-level-ii} **Niveau II :** Explication significative fournie sur demande fondée sur l'examen mené par une machine ou un humain.
     - {: .dpgn-automated-decision-level-iii} **Niveau III :**

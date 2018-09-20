@@ -64,6 +64,10 @@ var componentName = "wb-format-gen",
           } );
         }
 
+        if ( settings[ "resetForm" ] ) {
+          clearFormFieldStatus( settings[ "resetForm" ] );
+        }
+
         if ( settings[ "onInit" ] === true ) {
           handleEvent( event, settings );
         }
@@ -961,6 +965,7 @@ var componentName = "wb-format-gen",
       var forms = document.querySelectorAll( formsSelector ),
           numForms = forms.length,
           numFields = fields.length,
+          fireChangeEvent = false,
           form, formIndex, index, fieldObject, index2, subFields, numSubFields, subField, nodeName, type, event;
 
       for ( formIndex = 0; formIndex < numForms; formIndex += 1 ) {
@@ -979,13 +984,7 @@ var componentName = "wb-format-gen",
                   if ( subField.checked === true ) {
                     // Set the checked to false and trigger the change event
                     subField.checked = false;
-                    if ( "createEvent" in document ) {
-                      event = document.createEvent( "HTMLEvents" );
-                      event.initEvent( "change", false, true );
-                      subField.dispatchEvent( event );
-                    } else {
-                      subField.fireEvent( "onchange" );
-                    }
+                    fireChangeEvent = true;
                   } else {
                     // Trigger a click event
                     subField.click();
@@ -997,20 +996,23 @@ var componentName = "wb-format-gen",
                 }
               } else if ( type !== "file" && type !== "button" && type !== "reset" && type !== "submit" && type !== "image" ) {
                 subField.value = fieldObject.state;
+                fireChangeEvent = true;
               } 
             } else if ( nodeName === "option" ) {
               if ( subField.selected !== fieldObject.state ) {
                 subField.selected = fieldObject.state;
-                if ( "createEvent" in document ) {
-                  event = document.createEvent( "HTMLEvents" );
-                  event.initEvent( "change", false, true );
-                  subField.parentNode.dispatchEvent( event );
-                } else {
-                  subField.parentNode.fireEvent( "onchange" );
-                }
               }
+              subField = subField.parentNode;
+              fireChangeEvent = true;
             } else if ( nodeName === "textarea" ) {
               subField.value = fieldObject.state;
+              fireChangeEvent = true;
+            }
+
+            if ( fireChangeEvent ) {
+              event = new Event('change', { bubbles: true });
+              subField.dispatchEvent( event );
+              fireChangeEvent = false;
             }
           }
         }
@@ -1019,31 +1021,17 @@ var componentName = "wb-format-gen",
 
     /**
      * @method clearFormFieldStatus
-     * @overview Clears all the form fields in the form
+     * @overview Clears all the form fields in the form(s). Can be triggered on init with:
+     *   class="wb-format-gen" data-wb-format-gen='{ "resetForm": "#form-selector" }'
      * @param formSelector {String} Selector for the form for which to retrieve the statuses of the contained fields.
      */
     clearFormFieldStatus = function( formSelector ) {
-      var formElm = document.querySelector( formSelector ),
-          fields = formElm.querySelectorAll( "input, option, textarea" ),
-          numFields = fields.length,
-          fieldObjects = [],
-          index, field, nodeName, type, radioButtons, name, hasChecked;
+      var forms = document.querySelectorAll( formSelector ),
+          length = forms.length,
+          index;
 
-      for ( index = 0; index < numFields; index += 1 ) {
-        field = fields[ index ];
-        nodeName = field.nodeName.toLowerCase();
-        if ( nodeName === "input" ) {
-          type = subField.type.toLowerCase();
-          if ( type === "radio" || type === "checkbox" ) {
-            field.checked = false;
-          } else {
-            field.value = "";
-          }
-        } else if ( type === "option" ) {
-          option.selected = false;
-        } else {
-          field.value = "";
-        }
+      for ( index = 0; index < length; index += 1 ) {
+        forms[ index ].reset();
       }
     },
 
@@ -1207,7 +1195,7 @@ var componentName = "wb-format-gen",
           settings = settingsParam ? settingsParam : wb.getData( $( target ), componentName ),
           type, source, action, data, storedData, key, useLocalStorage;
 
-      if ( type !== "change" ) {
+      if ( settings && type !== "change" ) {
         type = settings[ "type" ];
         source = settings[ "source" ];
 
@@ -1230,7 +1218,7 @@ var componentName = "wb-format-gen",
         }
       }
 
-      if ( settings[ "returnFalse" ] === true ) {
+      if ( settings && settings[ "returnFalse" ] === true ) {
         return false;
       }
     };
