@@ -25,8 +25,8 @@ endif %}{%
 if include.includeUnsure == true %}
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-unsure", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-n{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}o", "class": "hidden" }
-]'>{{ site.NotApplicable[ page.lang ] }}</li>{%
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}", "class": "hidden" }
+]'>{{ site.Unsure[ page.lang ] }}</li>{%
 endif %}
 </ul>
 </div>

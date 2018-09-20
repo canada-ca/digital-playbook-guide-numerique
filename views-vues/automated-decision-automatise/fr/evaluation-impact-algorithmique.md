@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Évaluation d'impact algorithmique (draft)
+title: Évaluation d'impact algorithmique (v0.2)
 lang: fr
 altLang: en
 altLangPage: algorithmic-impact-assessment

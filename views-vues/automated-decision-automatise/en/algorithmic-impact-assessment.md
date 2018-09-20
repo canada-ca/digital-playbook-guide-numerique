@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Algorithmic Impact Assessment (draft)
+title: Algorithmic Impact Assessment (v0.2)
 lang: en
 altLang: fr
 altLangPage: evaluation-impact-algorithmique
