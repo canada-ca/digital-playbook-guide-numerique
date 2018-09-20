@@ -112,6 +112,7 @@ questions:
   "29.1f": Texte
   "29.1g": Vidéo
   "29.1h": Autre
+  "29.1.1": Quels sont les autres types de données non structurées?
   "30": Votre système a besoin de données d'entrée d'un Internet- ou périphérique connecté téléphonie? (Par exemple un capteur, drone)
   "31": Votre système utilise-t-il la vision artificielle sans contact pour la reconnaissance biométrique (par exemple, visage, démarche, etc)?
   "31.1": Votre système fonctionne-t-il avec des paramètres acceptables pour toutes les couleurs de peau définies par l'échelle de type de peau Fitzpatrick ou une mesure similaire?

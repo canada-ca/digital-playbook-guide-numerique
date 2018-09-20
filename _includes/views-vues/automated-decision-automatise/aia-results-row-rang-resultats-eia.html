@@ -4,7 +4,6 @@ comment %}@param parentQuestionNumber {String} (Optional. Required for type = "c
 comment %}@param questionNumber {String} Number of the question or sub-question (e.g., "4.1").{% endcomment %}{% 
 comment %}@param hidden {Boolean} (Defaults to false) Whether the row should be hidden initially.{% endcomment %}{% 
 comment %}@param nonScoringResult {Boolean} (Defaults to false) Whether the row is excluded from scoring.{% endcomment %}{% 
-comment %}@param includeOtherAnswer {Boolean} (Defaults to false) Whether to include span for a textual other answer (in addition to the primary answer).{% endcomment %}{% 
 comment %}@return {String} Results row for the question or sub-question.{% endcomment %}{% 
 assign questionId = include.questionNumber | replace: ".", "-"
 %}<!-- Question {{ include.questionNumber }} -->
@@ -27,9 +26,6 @@ if include.answerType == "radio" %}{%
 elsif include.answerType == "checkbox" %}
 <span class="hidden question-{{ questionId }}-yes">1</span>
 <span class="question-{{ questionId }}-no"></span>{%
-endif %}{%
-if include.includeOtherAnswer %}
-&#160;<span class="question-{{ questionId }}-other-answer"></span>{%
 endif %}
 </td>{%
 for criteriaNumber in (1..5) %}

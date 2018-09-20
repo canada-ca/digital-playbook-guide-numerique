@@ -14,7 +14,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<div markdown="0">
+<div>
 <input id="question-{{ questionId }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -32,7 +32,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
-<div markdown="0">
+<div>
 <input id="question-{{ questionId }}" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -51,7 +51,7 @@ assign subLabel = questionId | append: "-sub" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<div markdown="0">
+<div>
 <select id="question-{{ questionId }}" required="required" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -75,7 +75,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
-<div markdown="0">
+<div>
 <input id="question-{{ questionId }}" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -93,7 +93,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<div markdown="0">
+<div>
 <input id="question-{{ questionId }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -111,7 +111,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
-<div markdown="0">
+<div>
 <textarea id="question-{{ questionId }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -229,7 +229,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 <!-- Question {{ subQuestion1Sub1Number }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
-<div markdown="0">
+<div>
 <textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -787,7 +787,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
-<div markdown="0">
+<div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -952,22 +952,24 @@ assign checkbox7Number = subQuestion1Number | append: checkbox7Suffix %}{%
 assign checkbox7Id = checkbox7Number | replace: ".", "-" %}{%
 assign checkbox8Suffix = "h" %}{%
 assign checkbox8Number = subQuestion1Number | append: checkbox8Suffix %}{%
-assign checkbox8Id = checkbox8Number | replace: ".", "-" %}
+assign checkbox8Id = checkbox8Number | replace: ".", "-" %}{%
+assign subQuestion1Sub1Number = subQuestion1Number | append: ".1" %}{%
+assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
 <p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active", "class": "hidden" },
   { "action": "addClass", "source": ".question-{{ questionId }}-no, .question-{{ questionId }}-unsure", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-unsure, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-unsure, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-unsure", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" }
 ]'>{{ site.Unsure[ page.lang ] }}</li>
 </ul>
 </div>
@@ -985,6 +987,20 @@ assign checkbox8Id = checkbox8Number | replace: ".", "-" %}
     ],
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": ".question-{{ subQuestion1Id }}-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-{{ subQuestion1Id }}", "outputEvent": "score-updated" }
+    ]
+  },
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "count", "query": "[data-wb-fieldflow-source=question-{{ subQuestion1Id }}] > div:nth-of-type(8) input:checked" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "addClass", "outputTarget": "#question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
+      { "action": "removeClass", "source": "#question-{{ subQuestion1Sub1Id }}-result", "class": "nested-active" },
       { "type": "event", "outputTarget": "#question-{{ subQuestion1Id }}", "outputEvent": "score-updated" }
     ]
   }
@@ -1020,20 +1036,34 @@ assign checkbox8Id = checkbox8Number | replace: ".", "-" %}
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox7Id }}-yes" }
 ]'>{{ checkbox7Suffix }}. {{ page.questions[ checkbox7Number ] }}</li>
 <li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": "#question-{{ subQuestion1Sub1Id }}-result", "class": "nested-active" },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox8Id }}-yes" }
-]'>{{ checkbox8Suffix }}. {{ page.questions[ checkbox8Number ] }} <input id="question-{{ questionId }}-other" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
+]'>{{ checkbox8Suffix }}. {{ page.questions[ checkbox8Number ] }}</li>
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Sub1Id }}-wrapper" class="hidden">
+
+<!-- Question {{ subQuestion1Sub1Number }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
+<div>
+<textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
-      { "type": "outputValue", "outputTarget": ".question-{{ checkbox8Id }}-other-answer", "operations": [
-        { "type": "string", "query": "#question-{{ questionId }}-other", "sourceAttribute": "value" }
+      { "type": "outputValue", "outputTarget": "#question-{{ subQuestion1Sub1Id }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ subQuestion1Sub1Id }}", "sourceAttribute": "value" }
       ] }
     ]
   }
-] }' />
-</li>
-</ul>
+] }'></textarea>
 </div>
+</div>
+
+</div>
+
 </div>
 
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="30" %}
@@ -1088,7 +1118,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
-<div markdown="0">
+<div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -1190,7 +1220,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
-<div markdown="0">
+<div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
@@ -1428,7 +1458,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
-<div markdown="0">
+<div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [

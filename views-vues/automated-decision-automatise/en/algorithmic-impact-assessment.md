@@ -112,6 +112,7 @@ questions:
   "29.1f": Text
   "29.1g": Video
   "29.1h": Other
+  "29.1.1": What are the other types of unstructured data?
   "30": Does your system require input data from an Internet- or telephony-connected device? (e.g., a sensor, drone)
   "31": Does your system use contactless machine vision for biometric recognition (e.g. facial, full-body person, gait)?
   "31.1": Does your system perform within acceptable parameters for all skin colours as defined by the Fitzpatrick Skin Type scale or similar measurement?
