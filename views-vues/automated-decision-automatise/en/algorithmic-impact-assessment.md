@@ -34,8 +34,10 @@ questions:
   "7b": Recommendation to take a certain course of action
   "7c": Render a complete administrative decision
   "7.1": Does the recommendation or decision made by the system involve discretion?
+  "7.1-details": Some decisions are based on clear facts, such as postal code or annual income. Others require that a case officer exercise some discretion as to whether an applicant meets a criterion. For example, determining whether a person is too disabled to work requires that a case officer weigh different factors, and ultimately make a judgement.
   "7.1.1": Describe what is discretionary about the decision
   "7.1.2": Is the decision purely discretionary? (e.g., a review on compassionate grounds)
+  "7.1.2-details": Some decisions in government are purely discretionary, meaning that the primary determining factor as to whether the decision is positive or negative is one that can't be easily measured. For example, whether to grant compassionate review of an application.
   "7.1.3": Have all the decision points that involve the exercise of human discretion been clearly identified?
   "8": How long is the system expected to function? (Select one)
   "8-one-time": One time only
