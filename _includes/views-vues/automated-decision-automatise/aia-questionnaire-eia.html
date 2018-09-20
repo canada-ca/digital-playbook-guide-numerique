@@ -1,61 +1,131 @@
 {%- assign checkboxQuestionIds = "" -%}
-<section id="questionnaire-section">
+<section id="questionnaire-section" class="wb-format-gen" data-wb-format-gen='{ "resetForm": "#questionnaire-section form" }'>
 
 ## {{ site.Questionnaire[ page.lang ] }}
 
-<!--- About the Respondant section -->
-<section id="aia-about-respondant-section" class="wb-frmvld">
-<form id="aia-about-respondant-form" method="post">
+<!--- About the Respondent section -->
+<section id="aia-about-respondent-section" class="wb-frmvld">
+<form id="aia-about-respondent-form" method="post">
 
-### {{ page.aboutRespondantSection }}
+### {{ page.aboutRespondentSection }}
 
+{% assign questionNumber = "1" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
-<label for="name">{{ page.fieldName }}</label>
-<input id="name" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#name", "ignoreInit": true, "operations": [
+<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div>
+<input id="question-{{ questionId }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
-      { "type": "outputValue", "outputTarget": "#question-i-result td:nth-of-type(1)", "operations": [
-        { "type": "string", "query": "#name", "sourceAttribute": "value" }
+      { "type": "outputValue", "outputTarget": "#question-{{ questionId }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ questionId }}", "sourceAttribute": "value" }
       ] }
     ]
   }
 ] }' />
 </div>
+</div>
 
+{% assign questionNumber = "2" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
-<label for="dept-name">{{ page.fieldDepartment }}</label>
-<select id="dept-name" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#dept-name", "ignoreInit": true, "operations": [
+<label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
+<div>
+<input id="question-{{ questionId }}" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
-      { "type": "outputValue", "outputTarget": "#question-ii-result td:nth-of-type(1)", "operations": [
-        { "type": "string", "query": "#dept-name option:selected" }
+      { "type": "outputValue", "outputTarget": "#question-{{ questionId }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ questionId }}", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }' />
+</div>
+</div>
+
+{% assign questionNumber = "3" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subLabel = questionId | append: "-sub" %}
+<!-- Question {{ questionNumber }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div>
+<select id="question-{{ questionId }}" required="required" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-{{ questionId }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ questionId }} option:selected" }
       ] }
     ]
   }
 ] }'>
-<option>{{ page.selectDepartment }}</option>{%
+<option value="">{{ page.questions[ subLabel ] }}</option>{%
 assign departmentNames = site.data.departments | sort: page.lang %}{%
 for department in departmentNames %}
 <option value="{{ department.number }}">{{ department[ page.lang ] }}</option>{%
 endfor %}
 </select>
 </div>
+</div>
 
+{% assign questionNumber = "4" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
-<label for="branch">{{ page.fieldBranch }}</label>
-<input id="branch" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#branch", "ignoreInit": true, "operations": [
+<label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
+<div>
+<input id="question-{{ questionId }}" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "action",
     "inputs": [
-      { "type": "outputValue", "outputTarget": "#question-iii-result td:nth-of-type(1)", "operations": [
-        { "type": "string", "query": "#branch", "sourceAttribute": "value" }
+      { "type": "outputValue", "outputTarget": "#question-{{ questionId }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ questionId }}", "sourceAttribute": "value" }
       ] }
     ]
   }
 ] }' />
 </div>
+</div>
+
+{% assign questionNumber = "5" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div>
+<input id="question-{{ questionId }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-{{ questionId }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ questionId }}", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }' />
+</div>
+</div>
+
+{% assign questionNumber = "6" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
+<div>
+<textarea id="question-{{ questionId }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-{{ questionId }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ questionId }}", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }'></textarea>
+</div>
+</div>
 
 <!-- Button for revealing the next section and hiding the current one -->
-{% include views-vues/questionnaire-next-previous.html currentId="aia-about-respondant" nextId="aia-about-decision" %}
+{% include views-vues/questionnaire-next-previous.html currentId="aia-about-respondent" nextId="aia-about-decision" %}
 </form>
 </section>
 
@@ -65,7 +135,7 @@ endfor %}
 
 ### {{ page.aboutDecisionSection }}
 
-{% assign questionNumber = "1" %}{%
+{% assign questionNumber = "7" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
@@ -77,17 +147,16 @@ assign checkbox2Id = checkbox2Number | replace: ".", "-" %}{%
 assign checkbox3Suffix = "c" %}{%
 assign checkbox3Number = questionNumber | append: checkbox3Suffix %}{%
 assign checkbox3Id = checkbox3Number | replace: ".", "-" %}{%
-assign checkbox4Suffix = "d" %}{%
-assign checkbox4Number = questionNumber | append: checkbox4Suffix %}{%
-assign checkbox4Id = checkbox4Number | replace: ".", "-" %}{%
-assign decisionSystemTypeCheckboxIdsArray = checkbox1Id | append: "," | append: checkbox2Id | append: "," | append: checkbox3Id | append: "," | append: checkbox4Id | split: "," %}{%
-assign decisionSystemTypeURLFragmentsArray = "file-triage-assignment" | append: "," | append: "risk-scoring-categorization" | append: "," | append: "recommendation" | append: "," | append: "full-decision" | split: "," %}{%
+assign decisionSystemTypeCheckboxIdsArray = checkbox1Id | append: "," | append: checkbox2Id | append: "," | append: checkbox3Id | split: "," %}{%
+assign decisionSystemTypeURLFragmentsArray = "risk" | append: "," | append: "recommendation" | append: "," | append: "decision" | split: "," %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
 assign subQuestion1Sub1Number = subQuestion1Number | append: ".1" %}{%
 assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}{%
-assign subQuestion2Number = questionNumber | append: ".2" %}{%
-assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
+assign subQuestion1Sub2Number = subQuestion1Number | append: ".2" %}{%
+assign subQuestion1Sub2Id = subQuestion1Sub2Number | replace: ".", "-" %}{%
+assign subQuestion1Sub3Number = subQuestion1Number | append: ".3" %}{%
+assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "conditional",
@@ -107,12 +176,12 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
     "inputs": [
       { "type": "==",
         "inputs": [
-          { "type": "count", "query": "[data-wb-fieldflow-source=question-{{ questionId }}] > div:nth-of-type(n+3) input:checked" }, 0
+          { "type": "count", "query": "[data-wb-fieldflow-source=question-{{ questionId }}] > div:nth-of-type(n+2) input:checked" }, 0
         ]
       }
     ],
     "actionsTrue": [
-      { "type": "addClass", "outputTarget": "#question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion2Id }}-result", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion1Sub2Id }}-result, #question-{{ subQuestion1Sub3Id }}-result", "class": "hidden" },
       { "type": "event", "outputTarget": "#question-{{ questionId }}", "outputEvent": "score-updated" }
     ]
   }
@@ -124,83 +193,95 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
 ]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
 <li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion1Sub2Id }}-result.nested-active, #question-{{ subQuestion1Sub3Id }}-result.nested-active", "class": "hidden" },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
 ]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": "#question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion2Id }}-result", "class": "hidden" },
+  { "action": "removeClass", "source": "#question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion1Sub2Id }}-result.nested-active, #question-{{ subQuestion1Sub3Id }}-result.nested-active", "class": "hidden" },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
 ]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": "#question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion2Id }}-result", "class": "hidden" },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
-]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
 </ul>
 </div>
 
-<div id="question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper" class="hidden">
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 
 <!-- Question {{ subQuestion1Number }} -->
 <div id="question-{{ subQuestion1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
 <p>{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-yes, #question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-yes, #question-{{ subQuestion1Sub1Id }}-{{ subQuestion1Sub2Id }}-{{ subQuestion1Sub3Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion1Sub2Id }}-result, #question-{{ subQuestion1Sub3Id }}-result", "class": "hidden" },
   { "action": "addClass", "source": ".question-{{ subQuestion1Id }}-no", "class": "hidden" },
-  { "action": "addClass", "source": "#question-{{ subQuestion1Sub1Id }}-result", "class": "nested-active" }
+  { "action": "addClass", "source": "#question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion1Sub2Id }}-result, #question-{{ subQuestion1Sub3Id }}-result", "class": "nested-active" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ subQuestion1Id }}-yes, #question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
-  { "action": "removeClass", "source": "#question-{{ subQuestion1Sub1Id }}-result", "class": "nested-active" }
+  { "action": "addClass", "source": ".question-{{ subQuestion1Id }}-yes, #question-{{ subQuestion1Sub1Id }}-{{ subQuestion1Sub2Id }}-{{ subQuestion1Sub3Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion1Sub2Id }}-result, #question-{{ subQuestion1Sub3Id }}-result", "class": "hidden" },
+  { "action": "removeClass", "source": "#question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion1Sub2Id }}-result, #question-{{ subQuestion1Sub3Id }}-result", "class": "nested-active" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
 
-<div id="question-{{ subQuestion1Sub1Id }}-wrapper" class="hidden">
+<div id="question-{{ subQuestion1Sub1Id }}-{{ subQuestion1Sub2Id }}-{{ subQuestion1Sub3Id }}-wrapper" class="hidden">
 
 <!-- Question {{ subQuestion1Sub1Number }} -->
-<div id="question-{{ subQuestion1Sub1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
-<p>{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></p>
+<div class="form-group" markdown="0">
+<label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
+<div>
+<textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-{{ subQuestion1Sub1Id }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ subQuestion1Sub1Id }}", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }'></textarea>
+</div>
+</div>
+
+<!-- Question {{ subQuestion1Sub2Number }} -->
+<div id="question-{{ subQuestion1Sub2Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
+<p>{{ subQuestion1Sub2Number }} {{ page.questions[ subQuestion1Sub2Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub2Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ subQuestion1Sub1Id }}-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ subQuestion1Sub1Id }}-no", "class": "hidden" }
+  { "action": "removeClass", "source": ".question-{{ subQuestion1Sub2Id }}-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ subQuestion1Sub2Id }}-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ subQuestion1Sub1Id }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ subQuestion1Sub1Id }}-yes", "class": "hidden" }
+  { "action": "removeClass", "source": ".question-{{ subQuestion1Sub2Id }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ subQuestion1Sub2Id }}-yes", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question {{ subQuestion1Sub3Number }} -->
+<div id="question-{{ subQuestion1Sub3Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
+<p>{{ subQuestion1Sub3Number }} {{ page.questions[ subQuestion1Sub3Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub3Number }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ subQuestion1Sub3Id }}-yes", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ subQuestion1Sub3Id }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ subQuestion1Sub3Id }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ subQuestion1Sub3Id }}-yes", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
 
 </div>
 
-<!-- Question {{ subQuestion2Number }} -->
-<div id="question-{{ subQuestion2Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
-<p>{{ subQuestion2Number }} {{ page.questions[ subQuestion2Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion2Number }}</span></p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ subQuestion2Id }}-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ subQuestion2Id }}-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ subQuestion2Id }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ subQuestion2Id }}-yes", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
 </div>
 
-</div>
-
-{% assign questionNumber = "2" %}{%
+{% assign questionNumber = "8" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign questionAnswer1Suffix = "-one-time" %}{%
 assign questionAnswer1Number = questionNumber | append: questionAnswer1Suffix %}{%
 assign questionAnswer1Id = questionAnswer1Number | replace: ".", "-" %}{%
-assign questionAnswer2Suffix = "-duration-project" %}{%
+assign questionAnswer2Suffix = "-limited-duration" %}{%
 assign questionAnswer2Number = questionNumber | append: questionAnswer2Suffix %}{%
 assign questionAnswer2Id = questionAnswer2Number | replace: ".", "-" %}{%
 assign questionAnswer3Suffix = "-indefinitely" %}{%
@@ -225,11 +306,34 @@ assign questionAnswer3Id = questionAnswer3Number | replace: ".", "-" %}
 </ul>
 </div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="3" %}
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="9" %}
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="4" %}
+{% assign questionNumber = "10" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
 
-{% assign questionNumber = "5" %}{%
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
+</div>
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="11" %}
+
+{% assign questionNumber = "12" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
@@ -266,7 +370,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </div>
 </div>
 
-{% assign questionNumber = "6" %}{%
+{% assign questionNumber = "13" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
@@ -275,23 +379,25 @@ assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}{%
 assign subQuestion2Number = questionNumber | append: ".2" %}{%
 assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}{%
 assign subQuestion2Sub1Number = subQuestion2Number | append: ".1" %}{%
-assign subQuestion2Sub1Id = subQuestion2Sub1Number | replace: ".", "-" %}
+assign subQuestion2Sub1Id = subQuestion2Sub1Number | replace: ".", "-" %}{%
+assign subQuestion3Number = questionNumber | append: ".3" %}{%
+assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
 <p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion2Id }}-result, #question-{{ subQuestion2Sub1Id }}-result.nested-active", "class": "hidden" },
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-{{ subQuestion3Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion2Id }}-result, #question-{{ subQuestion2Sub1Id }}-result.nested-active, #question-{{ subQuestion3Id }}-result", "class": "hidden" },
   { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion2Id }}-result, #question-{{ subQuestion2Sub1Id }}-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-{{ subQuestion3Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion2Id }}-result, #question-{{ subQuestion2Sub1Id }}-result, #question-{{ subQuestion3Id }}-result", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
 
-<div id="question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper" class="hidden">
+<div id="question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-{{ subQuestion3Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div id="question-{{ subQuestion1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
 <p>{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
@@ -333,11 +439,12 @@ assign subQuestion2Sub1Id = subQuestion2Sub1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion2Sub1Id }}-wrapper" class="hidden">
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion2Sub1Number %}
 </div>
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion3Number %}
+
 </div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="7" %}
-
-{% assign questionNumber = "8" %}{%
+{% assign questionNumber = "14" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
@@ -389,11 +496,15 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion3Number %}
 </div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="9" %}
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="15" %}
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="10" %}
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="16" %}
 
-{% assign questionNumber = "11" %}{%
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="17" %}
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="18" %}
+
+{% assign questionNumber = "19" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
@@ -416,7 +527,10 @@ assign checkbox6Number = questionNumber | append: checkbox6Suffix %}{%
 assign checkbox6Id = checkbox6Number | replace: ".", "-" %}{%
 assign checkbox7Suffix = "g" %}{%
 assign checkbox7Number = questionNumber | append: checkbox7Suffix %}{%
-assign checkbox7Id = checkbox7Number | replace: ".", "-" %}
+assign checkbox7Id = checkbox7Number | replace: ".", "-" %}{%
+assign checkbox8Suffix = "h" %}{%
+assign checkbox8Number = questionNumber | append: checkbox8Suffix %}{%
+assign checkbox8Id = checkbox8Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "conditional",
@@ -463,10 +577,171 @@ assign checkbox7Id = checkbox7Number | replace: ".", "-" %}
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox7Id }}-yes" }
 ]'>{{ checkbox7Suffix }}. {{ page.questions[ checkbox7Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox8Id }}-yes" }
+]'>{{ checkbox8Suffix }}. {{ page.questions[ checkbox8Number ] }}</li>
 </ul>
 </div>
 
-{% assign questionNumber = "12" %}{%
+{% assign questionNumber = "20" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no, .question-{{ questionId }}-unsure", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-unsure, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-unsure", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.Unsure[ page.lang ] }}</li>
+
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
+</div>
+
+<!-- Buttons for revealing the next/previous section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="aia-about-decision" nextId="aia-business-process" previousId="aia-about-respondent" %}
+</form>
+</section>
+
+<!--- Data and Business Process section -->
+<section id="aia-business-process-section" class="hidden wb-frmvld">
+<form id="aia-business-process-form" method="post">
+
+### {{ page.dataBusinessProcessSection }}
+
+{% assign questionNumber = "21" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
+assign checkbox1Suffix = "a" %}{%
+assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
+assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
+assign checkbox2Suffix = "b" %}{%
+assign checkbox2Number = questionNumber | append: checkbox2Suffix %}{%
+assign checkbox2Id = checkbox2Number | replace: ".", "-" %}{%
+assign checkbox3Suffix = "c" %}{%
+assign checkbox3Number = questionNumber | append: checkbox3Suffix %}{%
+assign checkbox3Id = checkbox3Number | replace: ".", "-" %}{%
+assign checkbox4Suffix = "d" %}{%
+assign checkbox4Number = questionNumber | append: checkbox4Suffix %}{%
+assign checkbox4Id = checkbox4Number | replace: ".", "-" %}{%
+assign checkbox5Suffix = "e" %}{%
+assign checkbox5Number = questionNumber | append: checkbox5Suffix %}{%
+assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">",
+        "inputs": [
+          { "type": "count", "query": ".question-{{ questionId }}-checkbox-score:not(.hidden)" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": ".question-{{ questionId }}-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-{{ questionId }}", "outputEvent": "score-updated" }
+    ]
+  }
+] }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
+]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
+]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
+]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
+]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
+]'>{{ checkbox5Suffix }}. {{ page.questions[ checkbox5Number ] }}</li>
+</ul>
+</div>
+
+{% assign questionNumber = "22" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
+assign checkbox1Suffix = "a" %}{%
+assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
+assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
+assign checkbox2Suffix = "b" %}{%
+assign checkbox2Number = questionNumber | append: checkbox2Suffix %}{%
+assign checkbox2Id = checkbox2Number | replace: ".", "-" %}{%
+assign checkbox3Suffix = "c" %}{%
+assign checkbox3Number = questionNumber | append: checkbox3Suffix %}{%
+assign checkbox3Id = checkbox3Number | replace: ".", "-" %}{%
+assign checkbox4Suffix = "d" %}{%
+assign checkbox4Number = questionNumber | append: checkbox4Suffix %}{%
+assign checkbox4Id = checkbox4Number | replace: ".", "-" %}{%
+assign checkbox5Suffix = "e" %}{%
+assign checkbox5Number = questionNumber | append: checkbox5Suffix %}{%
+assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">",
+        "inputs": [
+          { "type": "count", "query": ".question-{{ questionId }}-checkbox-score:not(.hidden)" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": ".question-{{ questionId }}-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-{{ questionId }}", "outputEvent": "score-updated" }
+    ]
+  }
+] }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
+]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
+]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
+]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
+]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
+]'>{{ checkbox5Suffix }}. {{ page.questions[ checkbox5Number ] }}</li>
+</ul>
+</div>
+
+{% assign questionNumber = "23" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
@@ -486,143 +761,47 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </div>
 
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number includeUnsure=true %}
 </div>
 
-<!-- Buttons for revealing the next/previous section and hiding the current one -->
-{% include views-vues/questionnaire-next-previous.html currentId="aia-about-decision" nextId="aia-business-process" previousId="aia-about-respondant" %}
-</form>
-</section>
-
-<!--- Data and Business Process section -->
-<section id="aia-business-process-section" class="hidden wb-frmvld">
-<form id="aia-business-process-form" method="post">
-
-### {{ page.dataBusinessProcessSection }}
-
-{% assign questionNumber = "13" %}{%
+{% assign questionNumber = "24" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
-assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
-assign checkbox1Suffix = "a" %}{%
-assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
-assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
-assign checkbox2Suffix = "b" %}{%
-assign checkbox2Number = questionNumber | append: checkbox2Suffix %}{%
-assign checkbox2Id = checkbox2Number | replace: ".", "-" %}{%
-assign checkbox3Suffix = "c" %}{%
-assign checkbox3Number = questionNumber | append: checkbox3Suffix %}{%
-assign checkbox3Id = checkbox3Number | replace: ".", "-" %}{%
-assign checkbox4Suffix = "d" %}{%
-assign checkbox4Number = questionNumber | append: checkbox4Suffix %}{%
-assign checkbox4Id = checkbox4Number | replace: ".", "-" %}{%
-assign checkbox5Suffix = "e" %}{%
-assign checkbox5Number = questionNumber | append: checkbox5Suffix %}{%
-assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
-<div id="question-{{ questionId }}" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "count", "query": ".question-{{ questionId }}-checkbox-score:not(.hidden)" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": ".question-{{ questionId }}-checkbox-score span.hidden + span.hidden", "class": "hidden" },
-      { "type": "event", "outputTarget": "#question-{{ questionId }}", "outputEvent": "score-updated" }
-    ]
-  }
-] }'>
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
 <p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
-]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
-]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
-]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
-]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
-]'>{{ checkbox5Suffix }}. {{ page.questions[ checkbox5Number ] }}</li>
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
 
-{% assign questionNumber = "14" %}{%
-assign questionId = questionNumber | replace: ".", "-" %}{%
-assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
-assign checkbox1Suffix = "a" %}{%
-assign checkbox1Number = questionNumber | append: checkbox1Suffix %}{%
-assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
-assign checkbox2Suffix = "b" %}{%
-assign checkbox2Number = questionNumber | append: checkbox2Suffix %}{%
-assign checkbox2Id = checkbox2Number | replace: ".", "-" %}{%
-assign checkbox3Suffix = "c" %}{%
-assign checkbox3Number = questionNumber | append: checkbox3Suffix %}{%
-assign checkbox3Id = checkbox3Number | replace: ".", "-" %}{%
-assign checkbox4Suffix = "d" %}{%
-assign checkbox4Number = questionNumber | append: checkbox4Suffix %}{%
-assign checkbox4Id = checkbox4Number | replace: ".", "-" %}{%
-assign checkbox5Suffix = "e" %}{%
-assign checkbox5Number = questionNumber | append: checkbox5Suffix %}{%
-assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
-<!-- Question {{ questionNumber }} -->
-<div id="question-{{ questionId }}" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
-  { "type": "conditional",
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+<!-- Question {{ subQuestion1Number }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<div>
+<textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
+  { "type": "action",
     "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "count", "query": ".question-{{ questionId }}-checkbox-score:not(.hidden)" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": ".question-{{ questionId }}-checkbox-score span.hidden + span.hidden", "class": "hidden" },
-      { "type": "event", "outputTarget": "#question-{{ questionId }}", "outputEvent": "score-updated" }
+      { "type": "outputValue", "outputTarget": "#question-{{ subQuestion1Id }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ subQuestion1Id }}", "sourceAttribute": "value" }
+      ] }
     ]
   }
-] }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
-]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
-]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
-]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
-]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
-  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
-]'>{{ checkbox5Suffix }}. {{ page.questions[ checkbox5Number ] }}</li>
-</ul>
+] }'></textarea>
+</div>
+</div>
 </div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="15" %}
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="16" %}
-
-{% assign questionNumber = "17" %}{%
+{% assign questionNumber = "25" %}{%
 assign questionNumberPart1 = questionNumber | append: "-part1" %}{%
 assign questionNumberLinkURL = questionNumber | append: "-link-url" %}{%
 assign questionNumberLinkText = questionNumber | append: "-link-text" %}{%
@@ -636,105 +815,21 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-no, .question-{{ questionId }}-na", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-na, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
 </ul>
 </div>
 
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number includeNotApplicable=true %}
-</div>
-
-{% assign questionNumber = "18" %}{%
-assign questionId = questionNumber | replace: ".", "-" %}{%
-assign subQuestion1Number = questionNumber | append: ".1" %}{%
-assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
-<!-- Question {{ questionNumber }} -->
-<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
-</div>
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="19" %}
-
-{% assign questionNumber = "20" %}{%
-assign questionId = questionNumber | replace: ".", "-" %}
-<!-- Question {{ questionNumber }} -->
-<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-{{ questionId }}-protected, .question-{{ questionId }}-protected-a, .question-{{ questionId }}-protected-b, .question-{{ questionId }}-protected-c, .question-{{ questionId }}-classified, .question-{{ questionId }}-confidential, .question-{{ questionId }}-secret, .question-{{ questionId }}-top-secret", "class": "hidden" } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
-<ul>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected", "class": "hidden" }'>{{ site.Protected[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected-a", "class": "hidden" }'>{{ site.ProtectedA[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected-b", "class": "hidden" }'>{{ site.ProtectedB[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected-c", "class": "hidden" }'>{{ site.ProtectedC[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-classified", "class": "hidden" }'>{{ site.Classified[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-confidential", "class": "hidden" }'>{{ site.Confidential[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-secret", "class": "hidden" }'>{{ site.Secret[ page.lang ] }}</li>
-<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-top-secret", "class": "hidden" }'>{{ site.TopSecret[ page.lang ] }}</li>
-</ul>
-</div>
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="21" %}
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="22" %}
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="23" %}
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="24" %}
-
-<!-- Buttons for revealing the next/previous section and hiding the current one -->
-{% include views-vues/questionnaire-next-previous.html currentId="aia-business-process" nextId="aia-system-functionality" previousId="aia-about-decision" %}
-</form>
-</section>
-
-<!--- System Functionality section -->
-<section id="aia-system-functionality-section" class="hidden wb-frmvld">
-<form id="aia-system-functionality-form" method="post">
-
-### {{ page.systemFunctionalitySection }}
-
-{% assign questionNumber = "25" %}{%
-assign questionId = questionNumber | replace: ".", "-" %}{%
-assign subQuestion1Number = questionNumber | append: ".1" %}{%
-assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
-assign subQuestion2Number = questionNumber | append: ".2" %}{%
-assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
-<!-- Question {{ questionNumber }} -->
-<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion2Id }}-result", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion2Id }}-result", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper" class="hidden">
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion2Number %}
 </div>
 
 {% assign questionNumber = "26" %}{%
@@ -774,16 +869,7 @@ assign checkbox3Number = questionNumber | append: checkbox3Suffix %}{%
 assign checkbox3Id = checkbox3Number | replace: ".", "-" %}{%
 assign checkbox4Suffix = "d" %}{%
 assign checkbox4Number = questionNumber | append: checkbox4Suffix %}{%
-assign checkbox4Id = checkbox4Number | replace: ".", "-" %}{%
-assign checkbox5Suffix = "e" %}{%
-assign checkbox5Number = questionNumber | append: checkbox5Suffix %}{%
-assign checkbox5Id = checkbox5Number | replace: ".", "-" %}{%
-assign checkbox6Suffix = "f" %}{%
-assign checkbox6Number = questionNumber | append: checkbox6Suffix %}{%
-assign checkbox6Id = checkbox6Number | replace: ".", "-" %}{%
-assign checkbox7Suffix = "g" %}{%
-assign checkbox7Number = questionNumber | append: checkbox7Suffix %}{%
-assign checkbox7Id = checkbox7Number | replace: ".", "-" %}
+assign checkbox4Id = checkbox4Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-{{ questionId }}", "ignoreInit": true, "operations": [
   { "type": "conditional",
@@ -818,6 +904,125 @@ assign checkbox7Id = checkbox7Number | replace: ".", "-" %}
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
 ]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
+</ul>
+</div>
+
+{% assign questionNumber = "28" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-{{ questionId }}-protected, .question-{{ questionId }}-protected-a, .question-{{ questionId }}-protected-b, .question-{{ questionId }}-protected-c, .question-{{ questionId }}-classified, .question-{{ questionId }}-confidential, .question-{{ questionId }}-secret, .question-{{ questionId }}-top-secret", "class": "hidden" } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected", "class": "hidden" }'>{{ site.Protected[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected-a", "class": "hidden" }'>{{ site.ProtectedA[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected-b", "class": "hidden" }'>{{ site.ProtectedB[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected-c", "class": "hidden" }'>{{ site.ProtectedC[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-classified", "class": "hidden" }'>{{ site.Classified[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-confidential", "class": "hidden" }'>{{ site.Confidential[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-secret", "class": "hidden" }'>{{ site.Secret[ page.lang ] }}</li>
+<li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-top-secret", "class": "hidden" }'>{{ site.TopSecret[ page.lang ] }}</li>
+</ul>
+</div>
+
+{% assign questionNumber = "29" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
+assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: subQuestion1Id %}{%
+assign checkbox1Suffix = "a" %}{%
+assign checkbox1Number = subQuestion1Number | append: checkbox1Suffix %}{%
+assign checkbox1Id = checkbox1Number | replace: ".", "-" %}{%
+assign checkbox2Suffix = "b" %}{%
+assign checkbox2Number = subQuestion1Number | append: checkbox2Suffix %}{%
+assign checkbox2Id = checkbox2Number | replace: ".", "-" %}{%
+assign checkbox3Suffix = "c" %}{%
+assign checkbox3Number = subQuestion1Number | append: checkbox3Suffix %}{%
+assign checkbox3Id = checkbox3Number | replace: ".", "-" %}{%
+assign checkbox4Suffix = "d" %}{%
+assign checkbox4Number = subQuestion1Number | append: checkbox4Suffix %}{%
+assign checkbox4Id = checkbox4Number | replace: ".", "-" %}{%
+assign checkbox5Suffix = "e" %}{%
+assign checkbox5Number = subQuestion1Number | append: checkbox5Suffix %}{%
+assign checkbox5Id = checkbox5Number | replace: ".", "-" %}{%
+assign checkbox6Suffix = "f" %}{%
+assign checkbox6Number = subQuestion1Number | append: checkbox6Suffix %}{%
+assign checkbox6Id = checkbox6Number | replace: ".", "-" %}{%
+assign checkbox7Suffix = "g" %}{%
+assign checkbox7Number = subQuestion1Number | append: checkbox7Suffix %}{%
+assign checkbox7Id = checkbox7Number | replace: ".", "-" %}{%
+assign checkbox8Suffix = "h" %}{%
+assign checkbox8Number = subQuestion1Number | append: checkbox8Suffix %}{%
+assign checkbox8Id = checkbox8Number | replace: ".", "-" %}{%
+assign subQuestion1Sub1Number = subQuestion1Number | append: ".1" %}{%
+assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no, .question-{{ questionId }}-unsure", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-unsure, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-unsure", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" }
+]'>{{ site.Unsure[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+<!-- Question {{ subQuestion1Number }} -->
+<div id="question-{{ subQuestion1Id }}" class="wb-fieldflow wb-calculate" data-wb-fieldflow='{ "renderas": "checkbox", "noForm": true, "base": { "live": true } }' data-wb-calculate='{ "eventTrigger": "clean.wb-fieldflow", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": ">",
+        "inputs": [
+          { "type": "count", "query": ".question-{{ subQuestion1Id }}-checkbox-score:not(.hidden)" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": ".question-{{ subQuestion1Id }}-checkbox-score span.hidden + span.hidden", "class": "hidden" },
+      { "type": "event", "outputTarget": "#question-{{ subQuestion1Id }}", "outputEvent": "score-updated" }
+    ]
+  },
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "count", "query": "[data-wb-fieldflow-source=question-{{ subQuestion1Id }}] > div:nth-of-type(8) input:checked" }, 0
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "addClass", "outputTarget": "#question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
+      { "action": "removeClass", "source": "#question-{{ subQuestion1Sub1Id }}-result", "class": "nested-active" },
+      { "type": "event", "outputTarget": "#question-{{ subQuestion1Id }}", "outputEvent": "score-updated" }
+    ]
+  }
+] }'>
+<p>{{ subQuestion1Number }}. {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
+]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
+]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
+]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
+]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
@@ -830,20 +1035,206 @@ assign checkbox7Id = checkbox7Number | replace: ".", "-" %}
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox7Id }}-yes" }
 ]'>{{ checkbox7Suffix }}. {{ page.questions[ checkbox7Number ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": "#question-{{ subQuestion1Sub1Id }}-result", "class": "nested-active" },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-no", "type": "off" } },
+  { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox8Id }}-yes" }
+]'>{{ checkbox8Suffix }}. {{ page.questions[ checkbox8Number ] }}</li>
 </ul>
 </div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="28" %}
+<div id="question-{{ subQuestion1Sub1Id }}-wrapper" class="hidden">
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="29" %}
+<!-- Question {{ subQuestion1Sub1Number }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
+<div>
+<textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-{{ subQuestion1Sub1Id }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ subQuestion1Sub1Id }}", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }'></textarea>
+</div>
+</div>
+
+</div>
+
+</div>
 
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="30" %}
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="31" %}
+{% assign questionNumber = "31" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
+assign subQuestion2Number = questionNumber | append: ".2" %}{%
+assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion2Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion2Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="32" %}
+<div id="question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper" class="hidden">
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number includeNotApplicable=true %}
 
-{% assign questionNumber = "33" %}{%
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion2Number includeNotApplicable=true %}
+</div>
+
+{% assign questionNumber = "32" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+<!-- Question {{ subQuestion1Number }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<div>
+<textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-{{ subQuestion1Id }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ subQuestion1Id }}", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }'></textarea>
+</div>
+</div>
+</div>
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="33" %}
+
+<!-- Buttons for revealing the next/previous section and hiding the current one -->
+{% include views-vues/questionnaire-next-previous.html currentId="aia-business-process" nextId="aia-system-functionality" previousId="aia-about-decision" %}
+</form>
+</section>
+
+<!--- System Functionality section -->
+<section id="aia-system-functionality-section" class="hidden wb-frmvld">
+<form id="aia-system-functionality-form" method="post">
+
+### {{ page.systemFunctionalitySection }}
+
+{% assign questionNumber = "34" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
+</div>
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="35" %}
+
+{% assign questionNumber = "36" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
+</div>
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="37" %}
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="38" %}
+
+{% assign questionNumber = "39" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+<!-- Question {{ subQuestion1Number }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<div>
+<textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-{{ subQuestion1Id }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ subQuestion1Id }}", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }'></textarea>
+</div>
+</div>
+</div>
+
+{% assign questionNumber = "40" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
@@ -874,7 +1265,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion3Number %}
 </div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="34" %}
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="41" %}
 
 <!-- Buttons for revealing the next/previous section and hiding the current one -->
 {% include views-vues/questionnaire-next-previous.html currentId="aia-system-functionality" nextId="aia-organizational-readiness" previousId="aia-business-process" %}
@@ -887,7 +1278,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 
 ### {{ page.organizationalReadinessSection }}
 
-{% assign questionNumber = "35" %}{%
+{% assign questionNumber = "42" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign radioGroup1Suffix = "a" %}{%
 assign radioGroup1Number = questionNumber | append: radioGroup1Suffix %}{%
@@ -1042,69 +1433,108 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion2Number %}
 </div>
 
-{% assign questionNumber = "36" %}{%
-assign questionId = questionNumber | replace: ".", "-" %}{%
-assign subQuestion1Number = questionNumber | append: ".1" %}{%
-assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
-<!-- Question {{ questionNumber }} -->
-<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
-</div>
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="37" %}
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="38" %}
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="39" %}
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="40" %}
-
-{% assign questionNumber = "41" %}{%
-assign questionId = questionNumber | replace: ".", "-" %}{%
-assign subQuestion1Number = questionNumber | append: ".1" %}{%
-assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
-<!-- Question {{ questionNumber }} -->
-<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
-<ul>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
-]'>{{ site.Yes[ page.lang ] }}</li>
-<li data-wb-fieldflow='[
-  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
-]'>{{ site.No[ page.lang ] }}</li>
-</ul>
-</div>
-
-<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
-</div>
-
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="42" includeNotApplicable=true %}
-
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="43" %}
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="44" %}
+{% assign questionNumber = "44" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="45" %}
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+<!-- Question {{ subQuestion1Number }} -->
+<div class="form-group" markdown="0">
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<div>
+<textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#question-{{ subQuestion1Id }}-result td:nth-of-type(1)", "operations": [
+        { "type": "string", "query": "#question-{{ subQuestion1Id }}", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }'></textarea>
+</div>
+</div>
+</div>
 
-{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="46" %}
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="45" includeNotApplicable=true %}
+
+{% assign questionNumber = "46" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no, .question-{{ questionId }}-na", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-na, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-na", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number includeNotApplicable=true %}
+</div>
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="47" %}
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="48" %}
+
+{% assign questionNumber = "49" %}{%
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subQuestion1Number = questionNumber | append: ".1" %}{%
+assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-no", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber=subQuestion1Number %}
+</div>
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="50" %}
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="51" %}
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="52" %}
+
+{% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="53" %}
 
 <!-- Buttons for focusing on the final results section (next) and revealing the previous section and hiding the current one (previous) -->
 {% include views-vues/questionnaire-next-previous.html currentId="aia-organizational-readiness" nextId="final-result" previousId="aia-system-functionality" %}

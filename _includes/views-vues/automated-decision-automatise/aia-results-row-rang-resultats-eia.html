@@ -2,8 +2,8 @@
 comment %}@param answerType {String} Form field used for the answer (e.g., "checkbox", "radio").
 comment %}@param parentQuestionNumber {String} (Optional. Required for type = "checkbox"). Number of the parent question (e.g., "1" when "1a" and "1b" are checkboxes).{% endcomment %}{% 
 comment %}@param questionNumber {String} Number of the question or sub-question (e.g., "4.1").{% endcomment %}{% 
-comment %}@param hidden (Boolean} (Defaults to false) Whether the row should be hidden initially.{% endcomment %}{% 
-comment %}@param nonScoringResult (Boolean} (Defaults to false) Whether the row is excluded from scoring.{% endcomment %}{% 
+comment %}@param hidden {Boolean} (Defaults to false) Whether the row should be hidden initially.{% endcomment %}{% 
+comment %}@param nonScoringResult {Boolean} (Defaults to false) Whether the row is excluded from scoring.{% endcomment %}{% 
 comment %}@return {String} Results row for the question or sub-question.{% endcomment %}{% 
 assign questionId = include.questionNumber | replace: ".", "-"
 %}<!-- Question {{ include.questionNumber }} -->
@@ -49,7 +49,7 @@ for criteriaNumber in (1..5) %}
       endif %}{%
       if include.answerType == 'checkbox' %}{%
         if answerId == 'yes'
-%} question-{{ include.parentQuestionNumber }}-yes hidden{%
+%} question-{{ include.parentQuestionNumber | replace: '.', '-' }}-yes hidden{%
         endif %}{%
       else
 %} hidden{%

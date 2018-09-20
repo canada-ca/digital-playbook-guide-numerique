@@ -594,6 +594,9 @@ DownloadCSV:
 NotApplicable:
   en: Not applicable
   fr: Sans objet
+Unsure:
+  en: Unsure
+  fr: Incertain
 None:
   en: None
   fr: Aucun

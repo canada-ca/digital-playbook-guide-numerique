@@ -25,10 +25,9 @@ The Government of Canada is increasingly looking to utilise technology and autom
 <fieldset>
 <legend>Automated Decision System type</legend>
 <ul class="list-unstyled">
-<li><input type="checkbox" id="dpgn-automated-decision-type-file-triage-assignment" /> <label for="dpgn-automated-decision-type-file-triage-assignment">File triage or assignment</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-risk-scoring-categorization" /> <label for="dpgn-automated-decision-type-risk-scoring-categorization">Risk scoring, profiling, or categorization</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-risk" /> <label for="dpgn-automated-decision-type-risk">Risk scoring, profiling, or categorization of a client in terms of risk</label></li>
 <li><input type="checkbox" id="dpgn-automated-decision-type-recommendation" /> <label for="dpgn-automated-decision-type-recommendation">Recommendation to take a certain course of action</label></li>
-<li><input type="checkbox" id="dpgn-automated-decision-type-full-decision" /> <label for="dpgn-automated-decision-type-full-decision">Full end-to-end decision</label></li>
+<li><input type="checkbox" id="dpgn-automated-decision-type-decision" /> <label for="dpgn-automated-decision-type-decision">Render a complete administrative decision</label></li>
 </ul>
 </fieldset>
 
@@ -204,14 +203,14 @@ The Government of Canada is increasingly looking to utilise technology and autom
       - A description of the training data, or a link to the anonymized training data if this data is publicly available, and
       - A description of the criteria used for making the decision, including relevant business rules.
 - {: data-dpgn-data-include='&#123; "guideline": "9.2", "section": "checklist" &#125;' data-content-source-title="Section 6.2.2, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Provide a meaningful explanation to affected individuals of how and why the decision was made as prescribed in the following:
-  - {: .dpgn-automated-decision-type-file-triage-assignment .dpgn-automated-decision-type-risk-scoring-categorization data-content-source-title="Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explanation Requirement for Recommendation:
+  - {: .dpgn-automated-decision-type-risk data-content-source-title="Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explanation Requirement for Recommendation:
     - {: .dpgn-automated-decision-level-i} **Level I:** None
     - {: .dpgn-automated-decision-level-ii} **Level II:** None
     - {: .dpgn-automated-decision-level-iii} **Level III:** Meaningful explanation provided upon request based on machine or human review.
     - {: .dpgn-automated-decision-level-iv} **Level IV:**
       - Meaningful explanation, including the variables in the decision, provided with the decision rendered.
       - Explanation can be human or machine generated.
-  - {: .dpgn-automated-decision-type-recommendation .dpgn-automated-decision-type-full-decision data-content-source-title="Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explanation Requirement for Decisions:
+  - {: .dpgn-automated-decision-type-recommendation .dpgn-automated-decision-type-decision data-content-source-title="Appendix C, {{ site.AutomatedDecisionSystems.Directive[ page.lang ] }}"} Explanation Requirement for Decisions:
     - {: .dpgn-automated-decision-level-i} **Level I:** An explanation provided upon request based on machine or human review. This could include a Frequently Asked Questions section of a website.
     - {: .dpgn-automated-decision-level-ii} **Level II:** Meaningful explanation provided upon request based on machine or human review.
     - {: .dpgn-automated-decision-level-iii} **Level III:**

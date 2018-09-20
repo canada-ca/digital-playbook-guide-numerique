@@ -1,6 +1,7 @@
 {% comment %}@overview Generates a simple yes/no question with optional na{% endcomment %}{% 
 comment %}@param questionNumber {String} Number of the question or sub-question (e.g., "4.1").{% endcomment %}{%
 comment %}@param includeNotApplicable {Boolean} (Optional, defaults to false) Whether or not to include a Not applicable option.{% endcomment %}{%
+comment %}@param includeUnsure {Boolean} (Optional, defaults to false) Whether or not to include an Unsure option.{% endcomment %}{%
 comment %}@return {String} Generated question.{% endcomment %}{% 
 assign questionId = include.questionNumber | replace: ".", "-"
 %}<!-- Question {{ include.questionNumber }} -->
@@ -9,16 +10,22 @@ assign questionId = include.questionNumber | replace: ".", "-"
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-no{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-no{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}{% if include.includeUnsure == true %}, .question-{{ questionId }}-unsure{% endif %}", "class": "hidden" }
 ]'>{{ site.Yes[ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-no", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}{% if include.includeUnsure == true %}, .question-{{ questionId }}-unsure{% endif %}", "class": "hidden" }
 ]'>{{ site.No[ page.lang ] }}</li>{%
 if include.includeNotApplicable == true %}
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-na", "class": "hidden" },
-  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no", "class": "hidden" }
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-no{% if include.includeUnsure == true %}, .question-{{ questionId }}-unsure{% endif %}", "class": "hidden" }
+]'>{{ site.NotApplicable[ page.lang ] }}</li>{%
+endif %}{%
+if include.includeUnsure == true %}
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".question-{{ questionId }}-unsure", "class": "hidden" },
+  { "action": "addClass", "source": ".question-{{ questionId }}-yes, .question-{{ questionId }}-n{% if include.includeNotApplicable == true %}, .question-{{ questionId }}-na{% endif %}o", "class": "hidden" }
 ]'>{{ site.NotApplicable[ page.lang ] }}</li>{%
 endif %}
 </ul>

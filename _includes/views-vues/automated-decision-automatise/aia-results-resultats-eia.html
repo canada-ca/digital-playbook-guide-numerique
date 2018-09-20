@@ -12,7 +12,7 @@
     "inputs": [
       { "type": "add",
         "inputs": [
-          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, [class*=-checkbox-score]) td:first-of-type span:not(.hidden)" }{%
+          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .non-scoring-result, [class*=-checkbox-score]) td:first-of-type span:not(.hidden)" }{%
 comment %}checkboxQuestionIdsArray is defined in aia-questionnaire-eia.html{% endcomment %}{%
 for checkboxQuestionId in checkboxQuestionIdsArray %},
           { "type": "subtract", "inputs": [
@@ -47,8 +47,8 @@ endfor %}
 </header>
 </section>
 
-<!-- Final results section. Determines a result based upon the Adjusted results section. The resulting Impact level will the highest impact level of the two criterias, unless one of the criteria has a failed result, which instead results in an overall fail. -->
-<section id="final-result-section" class="panel panel-default wb-calculate" data-wb-calculate='{ "eventTrigger": "adjusted-results-updated", "eventElement": "#final-result-section", "operations": [
+<!-- Final results section. Determines a result based upon the Initial results section (Criteria 1 + Criteria 2) * (Criteria 3 + Criteria 4 + Criteria 5). The resulting Impact level will be the highest impact level of the two criterias, unless one of the criteria has a failed result, which instead results in an overall fail. -->
+<section id="final-result-section" class="panel panel-default wb-calculate" data-wb-calculate='{ "eventTrigger": "initial-results-updated", "eventElement": "#final-result-section", "operations": [
   { "type": "conditional",
       "inputs": [
         { "type": ">=",
@@ -60,6 +60,7 @@ endfor %}
     ],
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": "#final-result-section", "class": "panel-default panel-success panel-info panel-warning panel-danger" },
+      { "type": "removeClass", "outputTarget": "#final-result-complete", "class": "hidden" },
       { "type": "addClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },{%
 for level in (1..4) %}
       { "type": "outputValue", "outputTarget": "#level-{{ level }}-filtered-guidance-link", "outputAttribute": "href",
@@ -86,67 +87,61 @@ for index in (0..maxIndex) %}{%
         ]
       },{%
 endfor %}
+      { "type": "outputValue", "outputTarget": "#final-result-impact-score",
+        "operations": [
+          { "type": "multiply",
+            "inputs": [
+              { "type": "add", "query": "#criteria-1-score-total, #criteria-2-score-total" },
+              { "type": "add", "query": "#criteria-3-score-total, #criteria-4-score-total, #criteria-5-score-total" }
+            ], "decimalPlaces": 2
+          }
+        ]
+      },
       { "type": "conditional",
         "inputs": [
-          { "type": ">",
+          { "type": "<",
             "inputs": [
-              { "type": "count", "query": "#criteria-1-fail-adjusted:not(.hidden), #criteria-2-fail-adjusted:not(.hidden)" }, 0
+              { "type": "number", "query": "#final-result-impact-score" }, {{ page.impactLevelThresholds[ 0 ] }}
             ] 
           }
         ],
         "actionsTrue": [
-          { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-danger" },
-          { "type": "removeClass", "outputTarget": "#final-result-fail", "class": "hidden" },
-          { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-level-4", "class": "hidden" }
+          { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-success" },
+          { "type": "removeClass", "outputTarget": ".final-result-level-1", "class": "hidden" },
+          { "type": "addClass", "outputTarget": ".final-result-level-2, .final-result-level-3, .final-result-level-4", "class": "hidden" }
         ],
         "actionsFalse": [
           { "type": "conditional",
             "inputs": [
-              { "type": ">",
+              { "type": "<",
                 "inputs": [
-                  { "type": "count", "query": "#criteria-1-level-4-adjusted:not(.hidden), #criteria-2-level-4-adjusted:not(.hidden)" }, 0
+                  { "type": "number", "query": "#final-result-impact-score" }, {{ page.impactLevelThresholds[ 1 ] }}
                 ] 
               }
             ],
             "actionsTrue": [
-              { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-danger" },
-              { "type": "removeClass", "outputTarget": "#final-result-level-4", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-fail", "class": "hidden" }
+              { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-info" },
+              { "type": "removeClass", "outputTarget": ".final-result-level-2", "class": "hidden" },
+              { "type": "addClass", "outputTarget": ".final-result-level-1, .final-result-level-3, .final-result-level-4", "class": "hidden" }
             ],
             "actionsFalse":[
               { "type": "conditional",
                 "inputs": [
-                  { "type": ">",
+                  { "type": "<",
                     "inputs": [
-                      { "type": "count", "query": "#criteria-1-level-3-adjusted:not(.hidden), #criteria-2-level-3-adjusted:not(.hidden)" }, 0
+                      { "type": "number", "query": "#final-result-impact-score" }, {{ page.impactLevelThresholds[ 2 ] }}
                     ] 
                   }
                 ],
                 "actionsTrue": [
                   { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-warning" },
-                  { "type": "removeClass", "outputTarget": "#final-result-level-3", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-4, #final-result-fail", "class": "hidden" }
+                  { "type": "removeClass", "outputTarget": ".final-result-level-3", "class": "hidden" },
+                  { "type": "addClass", "outputTarget": ".final-result-level-1, .final-result-level-2, .final-result-level-4", "class": "hidden" }
                 ],
                 "actionsFalse":[
-                  { "type": "conditional",
-                    "inputs": [
-                      { "type": ">",
-                        "inputs": [
-                          { "type": "count", "query": "#criteria-1-level-2-adjusted:not(.hidden), #criteria-2-level-2-adjusted:not(.hidden)" }, 0
-                        ] 
-                      }
-                    ],
-                    "actionsTrue": [
-                      { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-info" },
-                      { "type": "removeClass", "outputTarget": "#final-result-level-2", "class": "hidden" },
-                      { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
-                    ],
-                    "actionsFalse":[
-                      { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-success" },
-                      { "type": "removeClass", "outputTarget": "#final-result-level-1", "class": "hidden" },
-                      { "type": "addClass", "outputTarget": "#final-result-level-2, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
-                    ]
-                  }
+                  { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-danger" },
+                  { "type": "removeClass", "outputTarget": ".final-result-level-4", "class": "hidden" },
+                  { "type": "addClass", "outputTarget": ".final-result-level-1, .final-result-level-2, .final-result-level-3", "class": "hidden" }
                 ]
               }
             ]
@@ -157,7 +152,7 @@ endfor %}
     "actionsFalse": [
       { "type": "removeClass", "outputTarget": "#final-result-section", "class": "" },
       { "type": "removeClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#final-result-level-1, #final-result-level-2, #final-result-level-3, #final-result-level-4, #final-result-fail", "class": "hidden" }
+      { "type": "addClass", "outputTarget": "#final-result-complete, .final-result-level-1, .final-result-level-2, .final-result-level-3, .final-result-level-4", "class": "hidden" }
     ]
   }
 ] }'>
@@ -166,11 +161,23 @@ endfor %}
 </header>
 <div class="panel-body">
 <p id="final-result-in-progress">{{ site.CompleteQuestionnaireFirst[ page.lang ] }}</p>
-<p id="final-result-level-1" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 1 (<a id="level-1-filtered-guidance-link" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-i" href="#">{{ page.automatedDecisionViewTitle }}</a>)</p>
-<p id="final-result-level-2" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 2 (<a id="level-2-filtered-guidance-link" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-ii" href="#">{{ page.automatedDecisionViewTitle }}</a>)</p>
-<p id="final-result-level-3" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 3 (<a id="level-3-filtered-guidance-link" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-iii" href="#">{{ page.automatedDecisionViewTitle }}</a>)</p>
-<p id="final-result-level-4" class="hidden">{{ site.ImpactLevel[ page.lang ] }} 4 (<a id="level-4-filtered-guidance-link" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-iv" href="#">{{ page.automatedDecisionViewTitle }}</a>)</p>
-<p id="final-result-fail" class="hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</p>
+<div id="final-result-complete" class="hidden">
+<ul>
+<li>{{ page.impactScore }}{{ site.Colon[ page.lang ] }} <span id="final-result-impact-score"></span></li>
+<li>{{ page.impactLevel }}{{ site.Colon[ page.lang ] }} 
+<span class="hidden final-result-level-1">1</span>
+<span class="hidden final-result-level-2">2</span>
+<span class="hidden final-result-level-3">3</span>
+<span class="hidden final-result-level-4">4</span>
+</li>
+<li>{{ page.relevantRequirements }}{{ site.Colon[ page.lang ] }}  
+<a id="level-1-filtered-guidance-link" class="hidden final-result-level-1" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-i" href="#">{{ page.automatedDecisionViewTitle }}</a>
+<a id="level-2-filtered-guidance-link" class="hidden final-result-level-2" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-ii" href="#">{{ page.automatedDecisionViewTitle }}</a>
+<a id="level-3-filtered-guidance-link" class="hidden final-result-level-3" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-iii" href="#">{{ page.automatedDecisionViewTitle }}</a>
+<a id="level-4-filtered-guidance-link" class="hidden final-result-level-4" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-iv" href="#">{{ page.automatedDecisionViewTitle }}</a>
+</li>
+</ul>
+</div>
 </div>
 </section>
 
@@ -178,152 +185,7 @@ endfor %}
 
 <summary markdown="0">{{ site.DetailedResults[ page.lang ] }}</summary>
 
-<!-- Adjusted results section. Provides ajusted scores for Impact on Individual and Entities and Impact on Government Institutions using the scores from the Initial Results section and adjusting them by the total multiplier (result of multiplying the Data Management, Procedural Fairness and Complexity multipliers together). Only the tallied score is adjusted and not the maximum score (which will cause the resulting score to either increase or decrease). If either Data Management or Procedural Fairness are level 4 in the Initial Results section, then both criteria in the Adjusted results section will result in a fail. -->
-<section>
-
-### {{ site.AdjustedResults[ page.lang ] }}<span id="total-multiplier-wrapper" class="hidden"> ({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span id="total-multiplier">1</span>)</span>
-
-<table id="adjusted-results-table" class="table table-bordered table-condensed wb-calculate" data-wb-calculate='{ "eventTrigger": "initial-results-updated", "eventElement": "#adjusted-results-table", "operations": [
-  { "type": "multiply", "decimalPlaces": 2, "query": "#initial-results-table .criteria-result span:not(.hidden) .score-multiplier", "outputTarget": "#total-multiplier" },{%
-for index in (0..1) %}{%
-  assign criteriaNumber = index | plus: 1 %}
-  { "type": "min",
-    "inputs": [
-      { "type": "multiply", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-score-total, #total-multiplier" },
-      { "type": "number", "query": "#criteria-{{ criteriaNumber }}-max-total" }
-    ],
-    "outputTarget": "#criteria-{{ criteriaNumber }}-score-total-adjusted"
-  },
-  { "type": "number", "query": "#criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total-adjusted" },
-  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total-adjusted, #criteria-{{ criteriaNumber }}-max-total-adjusted", "outputTarget": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-  { "type": "number", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-percent-adjusted", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputAttribute": "value" },
-  { "type": "action",
-    "inputs": [
-      { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}-adjusted", "outputEvent": "wb-update-wb-progress" }
-    ]
-  },
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">=",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" },
-          {{ page.progressPercentThreshold }}
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "" },
-      { "type": "conditional", "inputs": [
-          { "type": "==", "inputs": [ { "type": "count", "query": "#criteria-3-level-4:not(.hidden), #criteria-4-level-4:not(.hidden)" }, 0 ] }
-        ],
-        "actionsTrue": [
-          { "type": "conditional", 
-            "inputs": [
-              { "type": "<",
-                "inputs": [
-                  { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-                  {{ page.criteriaThresholds[ index ][ 0 ] }}
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-success" },
-              { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-            ],
-            "actionsFalse": [
-              { "type": "conditional",
-                "inputs": [
-                  { "type": "<",
-                    "inputs": [
-                      { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-                      {{ page.criteriaThresholds[ index ][ 1 ] }}
-                    ]
-                  }
-                ],
-                "actionsTrue": [
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-info" },
-                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2-adjusted", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-                ],
-                "actionsFalse": [
-                  { "type": "conditional", 
-                    "inputs": [
-                      { "type": "<", "inputs": [
-                        { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent-adjusted" },
-                        {{ page.criteriaThresholds[ index ][ 2 ] }} ]
-                      }
-                    ],
-                    "actionsTrue": [
-                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-warning" },
-                      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-3-adjusted", "class": "hidden" },
-                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-                    ],
-                    "actionsFalse": [
-                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-danger" },
-                      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-4-adjusted", "class": "hidden" },
-                      { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "actionsFalse": [
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result-adjusted", "class": "bg-danger" },
-          { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-fail-adjusted", "class": "hidden" },
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1-adjusted, #criteria-{{ criteriaNumber }}-level-2-adjusted, #criteria-{{ criteriaNumber }}-level-3-adjusted, #criteria-{{ criteriaNumber }}-level-4-adjusted", "class": "hidden" }
-        ]
-      }
-    ]
-  },{%
-endfor %}
-  { "type": "conditional",
-    "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "removeClass", "outputTarget": "#total-multiplier-wrapper", "class": "hidden" },
-      { "type": "event", "outputEvent": "adjusted-results-updated", "outputTarget": "#final-result-section" }
-    ]
-  }
-] }'>
-<thead>
-<tr>
-<th>{{ site.Criteria[ page.lang ] }}</th>
-<th>{{ site.Score[ page.lang ] }}</th>
-<th>{{ site.Result[ page.lang ] }}</th>
-</tr>
-</thead>
-<tbody>{%
-for index in (0..1) %}{%
-  assign criteriaNumber = index | plus: 1 %}
-<tr>
-<td>{{ page.aiaCriteria[ index ] }}</td>
-<td>
-<span id="criteria-{{ criteriaNumber }}-score-total-adjusted">0</span> {{ site.OutOf[ page.lang ] }} <span id="criteria-{{ criteriaNumber }}-max-total-adjusted">0</span><br />
-<progress id="progress-criteria-{{ criteriaNumber }}-adjusted" value="0" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent-adjusted">0</span>{{ site.Percent[ page.lang ] }}
-</td>
-<td id="criteria-{{ criteriaNumber }}-result-adjusted">
-<span id="criteria-{{ criteriaNumber }}-level-1-adjusted" class="hidden">{{ site.Level[ page.lang ] }} 1</span>
-<span id="criteria-{{ criteriaNumber }}-level-2-adjusted" class="hidden">{{ site.Level[ page.lang ] }} 2</span>
-<span id="criteria-{{ criteriaNumber }}-level-3-adjusted" class="hidden">{{ site.Level[ page.lang ] }} 3</span>
-<span id="criteria-{{ criteriaNumber }}-level-4-adjusted" class="hidden">{{ site.Level[ page.lang ] }} 4</span>
-<span id="criteria-{{ criteriaNumber }}-fail-adjusted" class="hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</span>
-</td>
-</tr>{%
-endfor %}
-</tbody>
-</table>
-
-</section>
-
-<!-- Initial Results section. Determines the tallied score and maximum score for each criteria. Tallied score is determined by adding together all the non-hidden scores for the criteria (in non-hidden rows). Maximum score is determined by adding together the points with the criteria-n-score-max class in non-hidden rows for each criteria. The percentage is then calculated for each criteria which is then used to determine the level for each criteria (from 1 to 4), which for Data Management, Procedural Fairness and Complexity also involves multipliers that will be applied in the Adjusted results section. --> 
+<!-- Initial Results section. Determines the tallied score and maximum score for each criteria. Tallied score is determined by adding together all the non-hidden scores for the criteria (in non-hidden rows). Maximum score is determined by adding together the points with the criteria-n-score-max class in non-hidden rows for each criteria. The percentage is then calculated for each criteria. The tallied scores are used to calculate the final score (Criteria 1 + Criteria 2) * (Criteria 3 + Criteria 4 + Criteria 5). --> 
 <section>
 
 ### {{ site.InitialResults[ page.lang ] }}
@@ -333,14 +195,13 @@ endfor %}
 <tr>
 <th>{{ site.Criteria[ page.lang ] }}</th>
 <th>{{ site.Score[ page.lang ] }}</th>
-<th>{{ site.Result[ page.lang ] }}</th>
 </tr>
 </thead>
 <tbody class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [{%
 for index in (0..4) %}{%
   assign criteriaNumber = index | plus: 1 %}
-  { "type": "add", "query": ".criteria-{{ criteriaNumber }}-score-max", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total" },
-  { "type": "max", "inputs": [ { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-{{ criteriaNumber }}-score:not(.hidden)" }, 0 ], "outputTarget": "#criteria-{{ criteriaNumber }}-score-total" },
+  { "type": "add", "query": ".criteria-{{ criteriaNumber }}-score-max", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total", "decimalPlaces": 2 },
+  { "type": "max", "inputs": [ { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-{{ criteriaNumber }}-score:not(.hidden)" }, 0 ], "outputTarget": "#criteria-{{ criteriaNumber }}-score-total", "decimalPlaces": 2 },
   { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total, #criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-percent" },
   { "type": "number", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-percent", "outputTarget": "#progress-criteria-{{ criteriaNumber }}", "outputAttribute": "value" },
   { "type": "action",
@@ -348,60 +209,11 @@ for index in (0..4) %}{%
       { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}", "outputEvent": "wb-update-wb-progress" },
       { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "" }
     ]
-  },
-  { "type": "conditional", "inputs": [
-      { "type": ">",
-        "inputs": [
-          { "type": "number", "query": "#questionnaire-progress-percent" }, 0
-        ]
-      }
-    ],
-    "actionsTrue": [
-      { "type": "conditional",
-        "inputs": [
-          { "type": "<", "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, {{ page.criteriaThresholds[ index ][ 0 ] }} ] }
-        ],
-        "actionsTrue": [
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "bg-success" },
-          { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1", "class": "hidden" },
-          { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2, #criteria-{{ criteriaNumber }}-level-3, #criteria-{{ criteriaNumber }}-level-4", "class": "hidden" }
-        ],
-        "actionsFalse": [
-          { "type": "conditional",
-            "inputs": [
-              { "type": "<", "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, {{ page.criteriaThresholds[ index ][ 1 ] }} ] }
-            ],
-            "actionsTrue": [
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "bg-info" },
-              { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-2", "class": "hidden" },
-              { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1, #criteria-{{ criteriaNumber }}-level-3, #criteria-{{ criteriaNumber }}-level-4", "class": "hidden" }
-            ],
-            "actionsFalse": [
-              { "type": "conditional",
-                "inputs": [
-                  { "type": "<", "inputs": [ { "type": "number", "query": "#criteria-{{ criteriaNumber }}-percent" }, {{ page.criteriaThresholds[ index ][ 2 ] }} ] }
-                ],
-                "actionsTrue": [
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "bg-warning" },
-                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-3", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1, #criteria-{{ criteriaNumber }}-level-2, #criteria-{{ criteriaNumber }}-level-4", "class": "hidden" }
-                ],
-                "actionsFalse": [
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "bg-danger" },
-                  { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-4", "class": "hidden" },
-                  { "type": "addClass", "outputTarget": "#criteria-{{ criteriaNumber }}-level-1, #criteria-{{ criteriaNumber }}-level-2, #criteria-{{ criteriaNumber }}-level-3", "class": "hidden" }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
   },{%
 endfor %}
   { "type": "action",
     "inputs": [
-      { "type": "event", "outputEvent": "initial-results-updated", "outputTarget": "#adjusted-results-table" }
+      { "type": "event", "outputEvent": "initial-results-updated", "outputTarget": "#final-result-section" }
     ]
   }
 ] }'>{%
@@ -412,24 +224,6 @@ for index in (0..4) %}{%
 <td>
 <span id="criteria-{{ criteriaNumber }}-score-total">0</span> {{ site.OutOf[ page.lang ] }} <span id="criteria-{{ criteriaNumber }}-max-total">0</span><br />
 <progress id="progress-criteria-{{ criteriaNumber }}" value="0" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent">0</span>{{ site.Percent[ page.lang ] }}
-</td>
-<td id="criteria-{{ criteriaNumber }}-result" class="criteria-result">{%
-if index == 0 or index == 1 %}
-<span id="criteria-{{ criteriaNumber }}-level-1" class="hidden">{{ site.Level[ page.lang ] }} 1</span>
-<span id="criteria-{{ criteriaNumber }}-level-2" class="hidden">{{ site.Level[ page.lang ] }} 2</span>
-<span id="criteria-{{ criteriaNumber }}-level-3" class="hidden">{{ site.Level[ page.lang ] }} 3</span>
-<span id="criteria-{{ criteriaNumber }}-level-4" class="hidden">{{ site.Level[ page.lang ] }} 4</span>{%
-elsif index == 2 or index == 3 %}
-<span id="criteria-{{ criteriaNumber }}-level-1" class="hidden"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> {{ site.Preferred[ page.lang ] }}<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 0 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-2" class="hidden"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ site.Acceptable[ page.lang ] }}<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 1 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-3" class="hidden"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> {{ site.Critical[ page.lang ] }}<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 2 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-4" class="hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{ site.Fail[ page.lang ] }}</span>{%
-else %}
-<span id="criteria-{{ criteriaNumber }}-level-1" class="hidden">{{ site.Level[ page.lang ] }} 1<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 0 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-2" class="hidden">{{ site.Level[ page.lang ] }} 2<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 1 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-3" class="hidden">{{ site.Level[ page.lang ] }} 3<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 2 ] }}</span>)</span>
-<span id="criteria-{{ criteriaNumber }}-level-4" class="hidden">{{ site.Level[ page.lang ] }} 4<br />({{ site.Multiplier[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span class="score-multiplier">{{ page.multipliers[ index ][ 3 ] }}</span>)</span>{%
-endif %}
 </td>
 </tr>{%
 endfor %}
@@ -460,109 +254,129 @@ endfor %}
 </tr>
 </thead>
 <tbody>
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="i" nonScoringResult=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="ii" nonScoringResult=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="iii" nonScoringResult=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="1a" parentQuestionNumber="1" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="1b" parentQuestionNumber="1" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="1c" parentQuestionNumber="1" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="1d" parentQuestionNumber="1" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="1.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="1.1.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="1.2" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="2" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="3" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="4" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="5" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="5.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="6" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="6.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="6.1.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="6.2" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="6.2.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="7" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="1" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="2" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="3" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="4" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="5" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="6" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="7a" parentQuestionNumber="7" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="7b" parentQuestionNumber="7" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="7c" parentQuestionNumber="7" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="7.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="7.1.1" nonScoringResult=true hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="7.1.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="7.1.3" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="8" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="8.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="8.1.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="8.2" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="8.3" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="9" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="10" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11a" parentQuestionNumber="11" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11b" parentQuestionNumber="11" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11c" parentQuestionNumber="11" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11d" parentQuestionNumber="11" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11e" parentQuestionNumber="11" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11f" parentQuestionNumber="11" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="11g" parentQuestionNumber="11" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="10.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="11" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="12" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="12.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13a" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13b" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13c" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13d" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="13e" parentQuestionNumber="13" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14a" parentQuestionNumber="14" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14b" parentQuestionNumber="14" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14c" parentQuestionNumber="14" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14d" parentQuestionNumber="14" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="14e" parentQuestionNumber="14" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.1.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.2.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.3" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14.1.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14.3" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="15" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="16" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="17" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="17.1" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="18" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="18.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="19" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19a" parentQuestionNumber="19" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19b" parentQuestionNumber="19" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19c" parentQuestionNumber="19" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19d" parentQuestionNumber="19" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19e" parentQuestionNumber="19" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19f" parentQuestionNumber="19" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19g" parentQuestionNumber="19" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19h" parentQuestionNumber="19" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="20" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="21" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="22" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="20.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21a" parentQuestionNumber="21" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21b" parentQuestionNumber="21" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21c" parentQuestionNumber="21" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21d" parentQuestionNumber="21" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21e" parentQuestionNumber="21" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22a" parentQuestionNumber="22" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22b" parentQuestionNumber="22" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22c" parentQuestionNumber="22" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22d" parentQuestionNumber="22" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22e" parentQuestionNumber="22" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="23" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="23.1" hidden="true" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="24" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="24.1" nonScoringResult=true hidden="true" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="25" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="25.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="25.2" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="26" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="26.1" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27a" parentQuestionNumber="27" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27b" parentQuestionNumber="27" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27c" parentQuestionNumber="27" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27d" parentQuestionNumber="27" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27e" parentQuestionNumber="27" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27f" parentQuestionNumber="27" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27g" parentQuestionNumber="27" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="28" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="29" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1a" parentQuestionNumber="29.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1b" parentQuestionNumber="29.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1c" parentQuestionNumber="29.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1d" parentQuestionNumber="29.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1e" parentQuestionNumber="29.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1f" parentQuestionNumber="29.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1g" parentQuestionNumber="29.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1h" parentQuestionNumber="29.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="29.1.1" nonScoringResult=true hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="30" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="31" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="31.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="31.2" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="32" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="32.1" nonScoringResult=true hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="33" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="33.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="33.2" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="33.3" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="34" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35a" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35b" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35c" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35d" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35e" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35f" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35h" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="34.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="36" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="36.1" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="37" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="38" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="39" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="39.1" nonScoringResult=true hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="40" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="40.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="40.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="40.3" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="41" %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="41.1" hidden=true %}
-{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42a" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42b" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42c" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42d" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42e" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42f" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42g" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42h" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42.2" hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="43" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="44" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="44.1" nonScoringResult=true hidden=true %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="45" %}
 {% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="46" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="46.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="47" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="48" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="49" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="49.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="50" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="51" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="52" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="53" %}
 </tbody>
 </table>
 
