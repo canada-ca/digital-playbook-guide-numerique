@@ -8,13 +8,16 @@ collectionDirectory: views-vues/agile
 projectSection: About the Project
 stakeholdersSection: About the Stakeholders
 governanceOversightSection: Governance and Oversight
+productOwnerDefinition: Works with the team to create the vision for the service, and sets the day-to-day priorities to fulfil that vision and ensure the team delivers.
+productOwnerSource: Service design playbook (Ontario)
+productOwnerSourceURL: "https://www.ontario.ca/page/service-design-playbook#ProductManager"
 questions:
   "1": Impact
   "1-a1": Small-scale transformation with minimal change management
   "1-a2": Large-scale transformation with a lot of change management
   "2": Requirements
-  "2-a1": Not well-defined from the beginning, and can be changed along the way
-  "2-a2": Well-defined from the beginning and there is little or no likelihood of change
+  "2-a1": Not well-defined from the beginning
+  "2-a2": Well-defined from the beginning
   "3": Product
   "3-a1": Software with primarily front-end technology
   "3-a2": Software which has back-end and front-end technology 

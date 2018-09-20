@@ -89,10 +89,10 @@ endfor %}
 
 ### {{ page.projectSection }}
 
-{% for questionNumber in (9..11) %}{%
-  assign questionNumberString = questionNumber | downcase %}{%
-  assign answer1String = questionNumberString | append: "-a1" %}{%
-  assign answer2String = questionNumberString | append: "-a2" %}
+{% assign questionNumber = 9 %}{%
+assign questionNumberString = questionNumber | downcase %}{%
+assign answer1String = questionNumberString | append: "-a1" %}{%
+assign answer2String = questionNumberString | append: "-a2" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
 <p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
@@ -106,9 +106,58 @@ endfor %}
   { "action": "addClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" }
 ]'>{{ page.questions[ answer2String ] }}</li>
 </ul>
-</div>{%
-endfor %}{%
-assign questionNumber = 12 %}{%
+</div>
+
+{% assign questionNumber = 10 %}{%
+assign questionNumberString = questionNumber | downcase %}{%
+assign answer1String = questionNumberString | append: "-a1" %}{%
+assign answer2String = questionNumberString | append: "-a2" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span><sup id="fn1-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">{{ site.Footnote[ page.lang ] }} </span>1</a></sup></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" }
+]'>{{ page.questions[ answer1String ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" }
+]'>{{ page.questions[ answer2String ] }}</li>
+</ul>
+</div>
+
+<aside class="wb-fnote" role="note" markdown="0">
+<h4 id="fn" class="wb-inv">{{ site.Footnotes[ page.lang ] }}</h4>
+<dl>
+<dt>{{ site.Footnote[ page.lang ] }} 1</dt>
+<dd id="fn1">
+<p><strong>{{ page.questions[ questionNumberString ] }}{{ site.Colon[ page.lang ] }}</strong> {{ page.productOwnerDefinition }} (<a href="{{ page.productOwnerSourceURL }}">{{ page.productOwnerSource }}</a>)</p>
+<p class="fn-rtn"><a href="#fn1-rf"><span class="wb-inv">{{ site.ReturnToFootnote[ page.lang ] }} </span>1<span class="wb-inv">{% if page.lang == en %} referrer{% endif %}</span></a></p>
+</dd>
+</dl>
+</aside>
+
+{% assign questionNumber = 11 %}{%
+assign questionNumberString = questionNumber | downcase %}{%
+assign answer1String = questionNumberString | append: "-a1" %}{%
+assign answer2String = questionNumberString | append: "-a2" %}
+<!-- Question {{ questionNumber }} -->
+<div id="question-{{ questionNumber }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true } }'>
+<p>{{ questionNumber }}. <span class="field-name">{{ page.questions[ questionNumberString ] }}</span></p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" }
+]'>{{ page.questions[ answer1String ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": ".q{{ questionNumber }}-a2", "class": "hidden" },
+  { "action": "addClass", "source": ".q{{ questionNumber }}-a1", "class": "hidden" }
+]'>{{ page.questions[ answer2String ] }}</li>
+</ul>
+</div>
+
+{% assign questionNumber = 12 %}{%
 assign questionNumberString = questionNumber | downcase %}{%
 assign answer1String = questionNumberString | append: "-a1" %}{%
 assign answer2String = questionNumberString | append: "-a2" %}{%
