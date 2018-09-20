@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "3. Work in the open by default (draft)"
+title:  "3. Work in the open by default"
 lang: en
 altLang: fr
 altLangPage: 3-travailler-ouvertement-par-defaut

@@ -24,9 +24,9 @@ Fournit des conseils pratiques et détaillés pour aider le gouvernement du Cana
   
 #### Améliorer les services gouvernementaux à l’ère numérique
 
-Notre objectif est de fournir aux Canadiens des services publics simples à utiliser et fiables. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. Bien que la responsabilité globale de la prestation des services numériques incombe aux administrateurs généraux, ces normes et le guide de lecture numérique guideront les équipes dans la conception des services numériques de manière à mieux servir les Canadiens.
+Notre objectif est de fournir aux Canadiens des services publics faciles à utiliser et dignes de confiance. Ce guide numérique, ainsi que les normes numériques du gouvernement du Canada sur lequels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. Elles guideront les équipes dans la conception de services numériques, d’une façon qui servira le mieux les Canadiens.
 
-Le but est de créer ce guide numérique conjointement avec le public et des groupes d’intervenants clés. Ceci est un guide vivant qui continuera d’évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique.
+Ces normes numériques ont été créées conjointement avec le public et des groupes d’intervenants clés l'objectif est de co-créer ce guide numérique avec les mêmes groupes. Ce sont là des normes et conseils vivantes, et elles continueront d’évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique.
 
 Le Guide numérique du gouvernement du Canada est disponible sous la [licence du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada), sauf indication contraire.
 

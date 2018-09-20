@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "10. Collaborer largement (ébauche)"
+title:  "10. Collaborer largement"
 lang: fr
 altLang: en
 altLangPage: 10-collaborate-widely
@@ -32,7 +32,7 @@ altLangPage: 10-collaborate-widely
 
 <section class="dpgn-section-guideline">
 
-## 10.1 Créer des équipes multidisciplinaires dotées des compétences nécessaires pour atteindre un objectif commun
+## 10.1 Créer des équipes multidisciplinaires ayant des compétences variées qui sont nécessaires à l’atteinte d’un objectif commun
 
 <div class="dpgn-section-intro-guideline">
 
@@ -111,7 +111,7 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 
 <section class="dpgn-section-guideline">
 
-## 10.2 Partager et collaborer ouvertement
+## 10.2 Échanger et collaborer ouvertement
 
 <div class="dpgn-section-intro-guideline">
 
@@ -166,7 +166,7 @@ Pour assurer une réussite optimale, constituez une équipe dotée :
 
 <section class="dpgn-section-guideline">
 
-## 10.3 Identifier et créer des partenariats qui apportent de la valeur aux utilisateurs
+## 10.3 Déterminer et créer des partenariats qui aident à offrir de la valeur aux utilisateurs
 
 <div class="dpgn-section-intro-guideline">
 

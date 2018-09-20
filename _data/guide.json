@@ -57,7 +57,7 @@
                     "tags": [
                       "dpgn-overview-end"
                     ],
-                    "content": "Notre objectif est de fournir aux Canadiens des services publics simples à utiliser et fiables. Ce guide numérique, ainsi que les normes numériques sur lesquels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. Bien que la responsabilité globale de la prestation des services numériques incombe aux administrateurs généraux, ces normes et le guide de lecture numérique guideront les équipes dans la conception des services numériques de manière à mieux servir les Canadiens."
+                    "content": "Notre objectif est de fournir aux Canadiens des services publics faciles à utiliser et dignes de confiance. Ce guide numérique, ainsi que les normes numériques du gouvernement du Canada sur lequels ce guide est fondé, constituent le fondement du virage du gouvernement du Canada vers une plus grande souplesse, une plus grande ouverture et une plus grande attention sur l’utilisateur. Elles guideront les équipes dans la conception de services numériques, d’une façon qui servira le mieux les Canadiens."
                   }
                 ]
               },
@@ -73,7 +73,7 @@
                     "tags": [
                       "dpgn-overview-end"
                     ],
-                    "content": "Le but est de créer ce guide numérique conjointement avec le public et des groupes d’intervenants clés. Ceci est un guide vivant qui continuera d’évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique."
+                    "content": "Ces normes numériques ont été créées conjointement avec le public et des groupes d’intervenants clés l'objectif est de co-créer ce guide numérique avec les mêmes groupes. Ce sont là des normes et conseils vivantes, et elles continueront d’évoluer au fil du temps à mesure que nous comprendrons mieux les complexités de leur mise en pratique."
                   }
                 ]
               },
@@ -301,7 +301,7 @@
     ],
     "content": [
       {
-        "title": "1. Concevoir avec les utilisateurs (ébauche)",
+        "title": "1. Concevoir avec les utilisateurs",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -346,7 +346,7 @@
           ],
           "content": [
             {
-              "title": "1.1 Recherche avec les utilisateurs pour comprendre leurs besoins et les problèmes que nous voulons qu'ils résolvent",
+              "title": "1.1 Faire des recherches en collaboration avec les utilisateurs pour bien comprendre leurs besoins, ainsi que les problèmes que nous voulons régler",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -764,7 +764,7 @@
               }
             },
             {
-              "title": "1.2 Effectuer des tests continus avec les utilisateurs pour guider la conception et le développement",
+              "title": "1.2 Effectuer des tests continus avec les utilisateurs pour éclairer la conception et la mise en œuvre",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -1304,7 +1304,7 @@
         }
       },
       {
-        "title": "2. Effectuer des itérations et des améliorations constamment (ébauche)",
+        "title": "2. Effectuer régulièrement des itérations et des améliorations",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -1344,7 +1344,7 @@
           ],
           "content": [
             {
-              "title": "2.1 Développer des services à l'aide de méthodes agiles, itératives et centrées sur l'utilisateur",
+              "title": "2.1 Élaborer des services au moyen de méthodes souples et itératives, axées sur l’utilisateur",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -2034,7 +2034,7 @@
               }
             },
             {
-              "title": "2.2 Améliorer continuellement en réponse aux besoins des utilisateurs",
+              "title": "2.2 Effectuer constamment des améliorations en réponse aux besoins des utilisateurs",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -2844,12 +2844,191 @@
                   }
                 ]
               }
+            },
+            {
+              "title": "2.3 Essayer de nouvelles approches, commencer petit et passer à l'échelon supérieur",
+              "tags": [
+                "dpgn-section-guideline"
+              ],
+              "introduction": {
+                "tags": [
+                  "dpgn-section-intro-guideline"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Ajouter / réviser le texte d'introduction]</strong>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "checklist": {
+                "title": "Liste de contrôle",
+                "tags": [
+                  "dpgn-section-checklist"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Ajouter / modifier les éléments de la liste de contrôle]</strong>"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Start with a prototype <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>"
+                          },
+                          {
+                            "content_type": "block",
+                            "source_element": "ul",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-stage-alpha",
+                                  "dpgn-stage-beta",
+                                  "dpgn-stage-live"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-stage-alpha",
+                                      "dpgn-stage-beta",
+                                      "dpgn-stage-live"
+                                    ],
+                                    "content": "Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Start small and build upon successes. <strong>(General design principles - Digital Design Playbook (ISED))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Don’t wait for a fully developed service to start testing. <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>"
+                          },
+                          {
+                            "content_type": "block",
+                            "source_element": "ul",
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "guides": {
+                "title": "Guides d’application",
+                "tags": [
+                  "dpgn-section-guides"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Ajouter / réviser les guides d'implémentation]</strong>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Solutions réutilisables",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Ajouter / réviser les solutions réutilisables]</strong>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "similar": {
+                "title": "Ressources similaires",
+                "tags": [
+                  "dpgn-section-similar"
+                ],
+                "content": [
+
+                ]
+              }
             }
           ]
         }
       },
       {
-        "title": "3. Travailler ouvertement par défaut (ébauche)",
+        "title": "3. Travailler ouvertement par défaut",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -2886,7 +3065,7 @@
           ],
           "content": [
             {
-              "title": "3.1 Partager ouvertement les preuves, la recherche et la prise de décision",
+              "title": "3.1 Diffuser ouvertement des données probantes, des travaux de recherche et des éléments de la prise de décisions",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -3347,7 +3526,7 @@
               }
             },
             {
-              "title": "3.2 Ouvrir au monde extérieur toutes les données, tous les renseignements et tout nouveau code non sensibles lors de la fourniture de services ouverts pour le partage et la réutilisation sous licence ouverte",
+              "title": "3.2 Rendre accessibles toutes les données de nature non sensible, les renseignements et les nouveaux codes source conçus dans le cadre de la prestation de services, afin que le monde extérieur puisse se les échanger et les réutiliser sous une licence ouverte",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -3903,7 +4082,7 @@
         }
       },
       {
-        "title": "4. Utiliser des normes et des solutions ouvertes (ébauche)",
+        "title": "4. Utiliser des normes et des solutions ouvertes",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -3936,7 +4115,7 @@
           ],
           "content": [
             {
-              "title": "4.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires, y compris l'utilisation de logiciels libres, le cas échéant",
+              "title": "4.1 Profiter des normes ouvertes et adopter des pratiques exemplaires, y compris l’utilisation de logiciels libres, s’il y a lieu",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -5041,7 +5220,7 @@
               }
             },
             {
-              "title": "4.2 Concevoir des services et des plates-formes transparents pour les Canadiens, quel que soit l'appareil ou le canal qu'ils utilisent",
+              "title": "4.2 Concevoir des services et des plateformes que les Canadiens peuvent utiliser de façon intégrée au moyen de n’importe appareil ou réseau",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -5549,7 +5728,7 @@
         }
       },
       {
-        "title": "5. Gérer les risques en matière de sécurité et de protection des renseignements personnels (ébauche)",
+        "title": "5. Gérer les risques en matière de sécurité et de protection des renseignements personnels",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -6461,7 +6640,7 @@
               }
             },
             {
-              "title": "5.2 Faire en sorte que les mesures de sécurité ne gênent pas les utilisateurs et ne les imposent pas",
+              "title": "5.2 Veiller à ce que les mesures de sécurité ne causent pas de friction, afin qu’elles ne deviennent pas un fardeau pour les utilisateurs",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -6793,7 +6972,7 @@
         }
       },
       {
-        "title": "6. Intégrer l’accessibilité dès le départ (ébauche)",
+        "title": "6. Intégrer l’accessibilité dès le départ",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -7051,6 +7230,7 @@
             "1.1",
             "1.2",
             "2.1",
+            "2.2",
             "9.1",
             "10.2",
             "10.3"
@@ -7063,7 +7243,7 @@
           ],
           "content": [
             {
-              "title": "2.1 Les services devraient respecter ou dépasser les normes d’accessibilité",
+              "title": "2.1 Permettre aux services de respecter ou dépasser les normes d’accessibilité",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -8378,7 +8558,7 @@
               }
             },
             {
-              "title": "6.2 Les utilisateurs ayant des besoins distincts doivent être engagés dès le départ pour s’assurer que tout ce qui est livré fonctionnera pour tout le monde",
+              "title": "6.2 Communiquer dès le départ avec les utilisateurs ayant des besoins particuliers, pour s’assurer que le résultat conviendra à tout le monde",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -9061,7 +9241,7 @@
         }
       },
       {
-        "title": "7. Permettre au personnel d’offrir de meilleurs services (ébauche)",
+        "title": "7. Permettre au personnel d’offrir de meilleurs services",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -9081,6 +9261,7 @@
           "content": [
             "2.1",
             "2.2",
+            "2.3",
             "3.1",
             "3.2",
             "4.1",
@@ -9096,7 +9277,7 @@
           ],
           "content": [
             {
-              "title": "7.1 Veiller à ce que le personnel ait accès aux outils, à la formation et aux technologies dont il a besoin",
+              "title": "7.1 Veiller à ce que les employés aient accès aux outils, à la formation et aux technologies dont ils ont besoin",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -9416,7 +9597,7 @@
               }
             },
             {
-              "title": "7.2 Permettre à l'équipe de prendre des décisions tout au long de la conception, de la construction et de l’exploitation du service",
+              "title": "7.2 Permettre aux équipes de prendre des décisions tout au long de la conception, de l’élaboration et de l’exploitation du service",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -9808,7 +9989,7 @@
         }
       },
       {
-        "title": "8. Être de bons utilisateurs de données (ébauche)",
+        "title": "8. Être de bons utilisateurs de données",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -9871,7 +10052,7 @@
           ],
           "content": [
             {
-              "title": "8.1 Recueillir des données une seule fois auprès des utilisateurs et les réutiliser dans la mesure du possible",
+              "title": "8.1 Recueillir les données des utilisateurs une seule fois et les réutiliser autant que possible",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -9957,7 +10138,7 @@
               }
             },
             {
-              "title": "8.2 Veiller à ce que les données soient recueillies et conservées de façon sécurisée pour qu’elles soient facilement réutilisables par les autres pour fournir des services",
+              "title": "8.2 Veiller à ce que les données soient recueillies et gardées de manière sécuritaire afin que les autres puissent facilement les réutiliser pour offrir des services",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -10281,7 +10462,7 @@
         }
       },
       {
-        "title": "9. Concevoir des services éthiques (ébauche)",
+        "title": "9. Concevoir des services éthiques",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -10326,7 +10507,7 @@
           ],
           "content": [
             {
-              "title": "9.1 Évaluer l’impact total du service et de sa conception sur sur les utilisateurs et les collectivités",
+              "title": "9.1 S’assurer que tous reçoivent un traitement équitable",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -10444,7 +10625,7 @@
               }
             },
             {
-              "title": "9.2 Respecter les lignes directrices éthiques dans la conception et l'utilisation des systèmes automatisés (tels que l'utilisation de l'intelligence artificielle) pour s'assurer que tout le monde reçoit un traitement égal",
+              "title": "9.2 Respecter les lignes directrices éthiques relatives à la conception et à l’utilisation des systèmes automatisés sur lesquels repose la prise de décision (tels que l’utilisation de l’intelligence artificielle)",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -11080,15 +11261,13 @@
                                 },
                                 "source_element": "li",
                                 "tags": [
-                                  "dpgn-automated-decision-type-file-triage-assignment",
-                                  "dpgn-automated-decision-type-risk-scoring-categorization"
+                                  "dpgn-automated-decision-type-risk"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-                                      "dpgn-automated-decision-type-file-triage-assignment",
-                                      "dpgn-automated-decision-type-risk-scoring-categorization"
+                                      "dpgn-automated-decision-type-risk"
                                     ],
                                     "content": "Explication de l'exigence pour la recommendation :\n            "
                                   },
@@ -11099,8 +11278,7 @@
                                     },
                                     "source_element": "ul",
                                     "tags": [
-                                      "dpgn-automated-decision-type-file-triage-assignment",
-                                      "dpgn-automated-decision-type-risk-scoring-categorization"
+                                      "dpgn-automated-decision-type-risk"
                                     ],
                                     "content": [
                                       {
@@ -11111,16 +11289,14 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
-                                          "dpgn-automated-decision-type-file-triage-assignment",
-                                          "dpgn-automated-decision-type-risk-scoring-categorization"
+                                          "dpgn-automated-decision-type-risk"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-i",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": "<strong>Niveau I :</strong> Aucune"
                                           }
@@ -11134,16 +11310,14 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
-                                          "dpgn-automated-decision-type-file-triage-assignment",
-                                          "dpgn-automated-decision-type-risk-scoring-categorization"
+                                          "dpgn-automated-decision-type-risk"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-ii",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": "<strong>Niveau II :</strong> Aucune"
                                           }
@@ -11157,16 +11331,14 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
-                                          "dpgn-automated-decision-type-file-triage-assignment",
-                                          "dpgn-automated-decision-type-risk-scoring-categorization"
+                                          "dpgn-automated-decision-type-risk"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-iii",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": "<strong>Niveau III :</strong> Explication significative fournie sur demande fondée sur l'examen mené par une machine ou un humain."
                                           }
@@ -11180,16 +11352,14 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
-                                          "dpgn-automated-decision-type-file-triage-assignment",
-                                          "dpgn-automated-decision-type-risk-scoring-categorization"
+                                          "dpgn-automated-decision-type-risk"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": "<strong>Niveau IV :</strong>"
                                           },
@@ -11201,8 +11371,7 @@
                                             "source_element": "ul",
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": [
                                               {
@@ -11213,16 +11382,14 @@
                                                 "source_element": "li",
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iv",
-                                                  "dpgn-automated-decision-type-file-triage-assignment",
-                                                  "dpgn-automated-decision-type-risk-scoring-categorization"
+                                                  "dpgn-automated-decision-type-risk"
                                                 ],
                                                 "content": [
                                                   {
                                                     "content_type": "inline",
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iv",
-                                                      "dpgn-automated-decision-type-file-triage-assignment",
-                                                      "dpgn-automated-decision-type-risk-scoring-categorization"
+                                                      "dpgn-automated-decision-type-risk"
                                                     ],
                                                     "content": "Explication significative, y compris les variables utilisées dans la décision, fournie avec la décision prise."
                                                   }
@@ -11236,16 +11403,14 @@
                                                 "source_element": "li",
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iv",
-                                                  "dpgn-automated-decision-type-file-triage-assignment",
-                                                  "dpgn-automated-decision-type-risk-scoring-categorization"
+                                                  "dpgn-automated-decision-type-risk"
                                                 ],
                                                 "content": [
                                                   {
                                                     "content_type": "inline",
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iv",
-                                                      "dpgn-automated-decision-type-file-triage-assignment",
-                                                      "dpgn-automated-decision-type-risk-scoring-categorization"
+                                                      "dpgn-automated-decision-type-risk"
                                                     ],
                                                     "content": "L'explication peut être générée par un humain ou une machine."
                                                   }
@@ -11267,14 +11432,14 @@
                                 "source_element": "li",
                                 "tags": [
                                   "dpgn-automated-decision-type-recommendation",
-                                  "dpgn-automated-decision-type-full-decision"
+                                  "dpgn-automated-decision-type-decision"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
                                       "dpgn-automated-decision-type-recommendation",
-                                      "dpgn-automated-decision-type-full-decision"
+                                      "dpgn-automated-decision-type-decision"
                                     ],
                                     "content": "Explication de l'exigence pour les décisions :\n            "
                                   },
@@ -11286,7 +11451,7 @@
                                     "source_element": "ul",
                                     "tags": [
                                       "dpgn-automated-decision-type-recommendation",
-                                      "dpgn-automated-decision-type-full-decision"
+                                      "dpgn-automated-decision-type-decision"
                                     ],
                                     "content": [
                                       {
@@ -11298,7 +11463,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-full-decision"
+                                          "dpgn-automated-decision-type-decision"
                                         ],
                                         "content": [
                                           {
@@ -11306,7 +11471,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-i",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": "<strong>Niveau I :</strong> Une explication fournie sur demande fondée sur l'examen mené par une machine ou un humain. Cela peut inclure la section de la foire aux questions d'un site Web."
                                           }
@@ -11321,7 +11486,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-full-decision"
+                                          "dpgn-automated-decision-type-decision"
                                         ],
                                         "content": [
                                           {
@@ -11329,7 +11494,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-ii",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": "<strong>Niveau II :</strong> Explication significative fournie sur demande fondée sur l'examen mené par une machine ou un humain."
                                           }
@@ -11344,7 +11509,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-full-decision"
+                                          "dpgn-automated-decision-type-decision"
                                         ],
                                         "content": [
                                           {
@@ -11352,7 +11517,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iii",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": "<strong>Niveau III :</strong>"
                                           },
@@ -11365,7 +11530,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iii",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": [
                                               {
@@ -11377,7 +11542,7 @@
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iii",
                                                   "dpgn-automated-decision-type-recommendation",
-                                                  "dpgn-automated-decision-type-full-decision"
+                                                  "dpgn-automated-decision-type-decision"
                                                 ],
                                                 "content": [
                                                   {
@@ -11385,7 +11550,7 @@
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iii",
                                                       "dpgn-automated-decision-type-recommendation",
-                                                      "dpgn-automated-decision-type-full-decision"
+                                                      "dpgn-automated-decision-type-decision"
                                                     ],
                                                     "content": "Explication significative, y compris les variables utilisées dans la décision, fournie avec la décision prise."
                                                   }
@@ -11400,7 +11565,7 @@
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iii",
                                                   "dpgn-automated-decision-type-recommendation",
-                                                  "dpgn-automated-decision-type-full-decision"
+                                                  "dpgn-automated-decision-type-decision"
                                                 ],
                                                 "content": [
                                                   {
@@ -11408,7 +11573,7 @@
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iii",
                                                       "dpgn-automated-decision-type-recommendation",
-                                                      "dpgn-automated-decision-type-full-decision"
+                                                      "dpgn-automated-decision-type-decision"
                                                     ],
                                                     "content": "L'explication peut être générée par un humain ou une machine."
                                                   }
@@ -11427,7 +11592,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-full-decision"
+                                          "dpgn-automated-decision-type-decision"
                                         ],
                                         "content": [
                                           {
@@ -11435,7 +11600,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": "<strong>Niveau IV :</strong>"
                                           },
@@ -11448,7 +11613,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": [
                                               {
@@ -11460,7 +11625,7 @@
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iv",
                                                   "dpgn-automated-decision-type-recommendation",
-                                                  "dpgn-automated-decision-type-full-decision"
+                                                  "dpgn-automated-decision-type-decision"
                                                 ],
                                                 "content": [
                                                   {
@@ -11468,7 +11633,7 @@
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iv",
                                                       "dpgn-automated-decision-type-recommendation",
-                                                      "dpgn-automated-decision-type-full-decision"
+                                                      "dpgn-automated-decision-type-decision"
                                                     ],
                                                     "content": "Explication significative, y compris les variables utilisées dans la décision, fournie avec la décision prise."
                                                   }
@@ -11483,7 +11648,7 @@
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iv",
                                                   "dpgn-automated-decision-type-recommendation",
-                                                  "dpgn-automated-decision-type-full-decision"
+                                                  "dpgn-automated-decision-type-decision"
                                                 ],
                                                 "content": [
                                                   {
@@ -11491,7 +11656,7 @@
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iv",
                                                       "dpgn-automated-decision-type-recommendation",
-                                                      "dpgn-automated-decision-type-full-decision"
+                                                      "dpgn-automated-decision-type-decision"
                                                     ],
                                                     "content": "L'explication peut être générée par un humain ou une machine."
                                                   }
@@ -11674,7 +11839,7 @@
         }
       },
       {
-        "title": "10. Collaborer largement (ébauche)",
+        "title": "10. Collaborer largement",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -11715,7 +11880,7 @@
           ],
           "content": [
             {
-              "title": "10.1 Créer des équipes multidisciplinaires dotées des compétences nécessaires pour atteindre un objectif commun",
+              "title": "10.1 Créer des équipes multidisciplinaires ayant des compétences variées qui sont nécessaires à l’atteinte d’un objectif commun",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -12577,7 +12742,7 @@
               }
             },
             {
-              "title": "10.2 Partager et collaborer ouvertement",
+              "title": "10.2 Échanger et collaborer ouvertement",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -12860,7 +13025,7 @@
               }
             },
             {
-              "title": "10.3 Identifier et créer des partenariats qui apportent de la valeur aux utilisateurs",
+              "title": "10.3 Déterminer et créer des partenariats qui aident à offrir de la valeur aux utilisateurs",
               "tags": [
                 "dpgn-section-guideline"
               ],

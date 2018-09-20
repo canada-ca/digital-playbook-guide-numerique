@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "5. Address security and privacy risks (draft)"
+title: "5. Address security and privacy risks"
 lang: en
 altLang: fr
 altLangPage: 5-gerer-risques-matiere-securite-protection-renseignements-personnels

@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "1. Design with users (draft)"
+title:  "1. Design with users"
 lang: en
 altLang: fr
 altLangPage: 1-concevoir-avec-utilisateurs

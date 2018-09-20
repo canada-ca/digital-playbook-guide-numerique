@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "1. Concevoir avec les utilisateurs (ébauche)"
+title:  "1. Concevoir avec les utilisateurs"
 lang: fr
 altLang: en
 altLangPage: 1-design-with-users
@@ -32,7 +32,7 @@ altLangPage: 1-design-with-users
 
 <section class="dpgn-section-guideline">
 
-## 1.1 Recherche avec les utilisateurs pour comprendre leurs besoins et les problèmes que nous voulons qu'ils résolvent
+## 1.1 Faire des recherches en collaboration avec les utilisateurs pour bien comprendre leurs besoins, ainsi que les problèmes que nous voulons régler
 
 <div class="dpgn-section-intro-guideline">
 
@@ -103,7 +103,7 @@ Un élément clé du développement de services numériques qui fonctionnent pou
 
 <section class="dpgn-section-guideline">
 
-## 1.2 Effectuer des tests continus avec les utilisateurs pour guider la conception et le développement
+## 1.2 Effectuer des tests continus avec les utilisateurs pour éclairer la conception et la mise en œuvre
 
 <div class="dpgn-section-intro-guideline">
 

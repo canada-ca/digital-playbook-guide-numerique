@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "7. Permettre au personnel d’offrir de meilleurs services (ébauche)"
+title:  "7. Permettre au personnel d’offrir de meilleurs services"
 lang: fr
 altLang: en
 altLangPage: 7-empower-staff-deliver-better-services
@@ -27,13 +27,13 @@ altLangPage: 7-empower-staff-deliver-better-services
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="2.1, 2.2, 3.1, 3.2, 4.1, 4.2, 10.1, 10.2" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="2.1, 2.2, 2.3, 3.1, 3.2, 4.1, 4.2, 10.1, 10.2" samePage=false includeStandardTitle=true %}
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 7.1 Veiller à ce que le personnel ait accès aux outils, à la formation et aux technologies dont il a besoin
+## 7.1 Veiller à ce que les employés aient accès aux outils, à la formation et aux technologies dont ils ont besoin
 
 <div class="dpgn-section-intro-guideline">
 
@@ -108,7 +108,7 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 
 <section class="dpgn-section-guideline">
 
-## 7.2 Permettre à l'équipe de prendre des décisions tout au long de la conception, de la construction et de l’exploitation du service
+## 7.2 Permettre aux équipes de prendre des décisions tout au long de la conception, de l’élaboration et de l’exploitation du service
 
 <div class="dpgn-section-intro-guideline">
 

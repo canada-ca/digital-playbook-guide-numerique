@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "5. Gérer les risques en matière de sécurité et de protection des renseignements personnels (ébauche)"
+title: "5. Gérer les risques en matière de sécurité et de protection des renseignements personnels"
 lang: fr
 altLang: en
 altLangPage: 5-address-security-privacy-risks
@@ -172,7 +172,7 @@ Canadians want to have confidence that government digital services are designed 
 
 <section class="dpgn-section-guideline">
 
-## 5.2 Faire en sorte que les mesures de sécurité ne gênent pas les utilisateurs et ne les imposent pas
+## 5.2 Veiller à ce que les mesures de sécurité ne causent pas de friction, afin qu’elles ne deviennent pas un fardeau pour les utilisateurs
 
 <div class="dpgn-section-intro-guideline">
 

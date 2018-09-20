@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "7. Empower staff to deliver better services (draft)"
+title:  "7. Empower staff to deliver better services"
 lang: en
 altLang: fr
 altLangPage: 7-permettre-personnel-offrir-meilleurs-services
@@ -27,7 +27,7 @@ altLangPage: 7-permettre-personnel-offrir-meilleurs-services
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="2.1, 2.2, 3.1, 3.2, 4.1, 4.2, 10.1, 10.2" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="2.1, 2.2, 2.3, 3.1, 3.2, 4.1, 4.2, 10.1, 10.2" samePage=false includeStandardTitle=true %}
 
 </div>
 

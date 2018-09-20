@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "2. Effectuer des itérations et des améliorations constamment (ébauche)"
+title:  "2. Effectuer régulièrement des itérations et des améliorations"
 lang: fr
 altLang: en
 altLangPage: 2-iterate-improve-frequently
@@ -32,7 +32,7 @@ altLangPage: 2-iterate-improve-frequently
 
 <section class="dpgn-section-guideline">
 
-## 2.1 Développer des services à l'aide de méthodes agiles, itératives et centrées sur l'utilisateur
+## 2.1 Élaborer des services au moyen de méthodes souples et itératives, axées sur l’utilisateur
 
 <div class="dpgn-section-intro-guideline">
 
@@ -134,7 +134,7 @@ Les méthodes centrées sur l'utilisateur, telles que la recherche par les utili
 
 <section class="dpgn-section-guideline">
 
-## 2.2 Améliorer continuellement en réponse aux besoins des utilisateurs
+## 2.2 Effectuer constamment des améliorations en réponse aux besoins des utilisateurs
 
 <div class="dpgn-section-intro-guideline">
 
@@ -237,6 +237,47 @@ La mesure du rendement permet d’améliorer en continu un service en :
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 - [13. Mesurer le rendement (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-13)
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
+
+</section>
+</section>
+
+<section class="dpgn-section-guideline">
+
+## 2.3 Essayer de nouvelles approches, commencer petit et passer à l'échelon supérieur
+
+<div class="dpgn-section-intro-guideline">
+
+**\[TODO: Ajouter / réviser le texte d'introduction\]**
+
+</div>
+
+<section class="dpgn-section-checklist">
+
+### Liste de contrôle
+
+**\[TODO: Ajouter / modifier les éléments de la liste de contrôle\]**
+
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Start with a prototype **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+  - Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs.
+- Start small and build upon successes. **(General design principles - Digital Design Playbook (ISED))**
+- Don’t wait for a fully developed service to start testing. **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+  - Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.
+
+</section>
+
+<section class="dpgn-section-guides">
+
+### Guides d'implémentation
+
+**[TODO: Ajouter / réviser les guides d'implémentation]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Solutions réutilisables
+
+**[TODO: Ajouter / réviser les solutions réutilisables]**
 
 </section>
 </section>

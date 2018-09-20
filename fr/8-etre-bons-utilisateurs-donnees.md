@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "8. Être de bons utilisateurs de données (ébauche)"
+title:  "8. Être de bons utilisateurs de données"
 lang: fr
 altLang: en
 altLangPage: 8-be-good-data-stewards
@@ -32,7 +32,7 @@ altLangPage: 8-be-good-data-stewards
 
 <section class="dpgn-section-guideline">
 
-## 8.1 Recueillir des données une seule fois auprès des utilisateurs et les réutiliser dans la mesure du possible
+## 8.1 Recueillir les données des utilisateurs une seule fois et les réutiliser autant que possible
 
 <div class="dpgn-section-intro-guideline">
 
@@ -67,7 +67,7 @@ altLangPage: 8-be-good-data-stewards
 
 <section class="dpgn-section-guideline">
 
-## 8.2 Veiller à ce que les données soient recueillies et conservées de façon sécurisée pour qu’elles soient facilement réutilisables par les autres pour fournir des services
+## 8.2 Veiller à ce que les données soient recueillies et gardées de manière sécuritaire afin que les autres puissent facilement les réutiliser pour offrir des services
 
 <div class="dpgn-section-intro-guideline">
 

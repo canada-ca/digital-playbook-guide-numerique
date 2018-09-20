@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "10. Collaborate widely (draft)"
+title:  "10. Collaborate widely"
 lang: en
 altLang: fr
 altLangPage: 10-collaborer-largement
