@@ -46,7 +46,8 @@ assign questionId = questionNumber | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "3" %}{%
-assign questionId = questionNumber | replace: ".", "-" %}
+assign questionId = questionNumber | replace: ".", "-" %}{%
+assign subLabel = questionId | "-sub" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
@@ -60,7 +61,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
     ]
   }
 ] }'>
-<option>{{ page.selectDepartment }}</option>{%
+<option>{{ page.questions[ subLabel ] }}</option>{%
 assign departmentNames = site.data.departments | sort: page.lang %}{%
 for department in departmentNames %}
 <option value="{{ department.number }}">{{ department[ page.lang ] }}</option>{%
@@ -227,7 +228,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 
 <!-- Question {{ subQuestion1Sub1Number }} -->
 <div class="form-group" markdown="0">
-<label for="question-{{ questionId }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
+<label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
 <div markdown="0">
 <textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
@@ -785,7 +786,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group" markdown="0">
-<label for="question-{{ questionId }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div markdown="0">
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
@@ -1086,7 +1087,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group" markdown="0">
-<label for="question-{{ questionId }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div markdown="0">
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
@@ -1188,7 +1189,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group" markdown="0">
-<label for="question-{{ questionId }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div markdown="0">
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
@@ -1426,7 +1427,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group" markdown="0">
-<label for="question-{{ questionId }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div markdown="0">
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "ignoreInit": true, "operations": [
   { "type": "action",
