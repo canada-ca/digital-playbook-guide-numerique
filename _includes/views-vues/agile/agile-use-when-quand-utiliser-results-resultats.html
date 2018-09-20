@@ -31,7 +31,8 @@
 </section>
 
 <!-- Final result section. Displays the recommended approach based upon which has the highest percent score in the detailed results section. -->
-<section id="final-result" class="panel panel-default">
+<section id="final-result-section">
+<div id="final-result" class="panel panel-default">
 <header class="panel-heading">
 <h3 class="panel-title">{{ site.Recommendation[ page.lang ] }}</h3>
 </header>
@@ -42,6 +43,7 @@ assign types = "agile,hybrid,non" | split: "," %}{%
 for type in types %}
 <span id="{{ type }}-recommended" class="hidden">{{ page[ type ] }}</span>{%
 endfor %}</strong> {{ page.recommendedApproach }}</p>
+</div>
 </div>
 </section>
 
