@@ -61,7 +61,7 @@ assign subLabel = questionId | append: "-sub" %}
     ]
   }
 ] }'>
-<option>{{ page.questions[ subLabel ] }}</option>{%
+<option value="">{{ page.questions[ subLabel ] }}</option>{%
 assign departmentNames = site.data.departments | sort: page.lang %}{%
 for department in departmentNames %}
 <option value="{{ department.number }}">{{ department[ page.lang ] }}</option>{%
