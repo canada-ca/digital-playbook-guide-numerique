@@ -642,6 +642,9 @@ SaveToFile:
 RestoreFromFile:
   en: Restore progress from a file
   fr: Restaurer la progression à partir d'un fichier
+QuestionDetails:
+  en: Details for question
+  fr: Détails pour la question
 
 # Footnote strings
 Footnotes:

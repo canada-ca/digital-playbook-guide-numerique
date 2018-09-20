@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Évaluation d'impact algorithmique (draft)
+title: Évaluation d'impact algorithmique (v0.2)
 lang: fr
 altLang: en
 altLangPage: algorithmic-impact-assessment
@@ -34,8 +34,10 @@ questions:
   "7b": Recommandation de prendre un certain plan d'action
   "7c": Rendre une décision administrative complète
   "7.1": Est-ce que la recommandation ou une décision rendue par le système d'une latitude?
+  "7.1-details": Certaines décisions sont fondées sur des faits clairs, tels que le code postal ou le revenu annuel. D'autres exigent qu'un responsable de cas exerce un certain pouvoir discrétionnaire pour déterminer si un demandeur remplit un critère. Par exemple, pour déterminer si une personne est trop handicapée pour travailler, il faut que l’agent responsable du dossier prenne en compte différents facteurs et qu’en fin de compte, le jugement soit rendu.
   "7.1.1": Décrire ce qui est de la décision discétionnaire
   "7.1.2": La décision est purement discrétionnaire? (par exemple, un examen pour des raison humanitaires)
+  "7.1.2-details": Certaines décisions du gouvernement sont purement discrétionnaires, ce qui signifie que le principal facteur déterminant pour déterminer si la décision est positive ou négative est celui qui ne peut être facilement mesuré. Par exemple, faut-il accorder un examen compassionnel d'une demande?
   "7.1.3": Ont tous les points de décision qui impliquent l'exercice du pouvoir discrétionnaire humain été clairement identifiés?
   "8": "Combien de temps le système est-il censé fonctionner? (Choisissez-en un)"
   "8-one-time": Une fois seulement

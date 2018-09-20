@@ -151,10 +151,12 @@ assign decisionSystemTypeCheckboxIdsArray = checkbox1Id | append: "," | append: 
 assign decisionSystemTypeURLFragmentsArray = "risk" | append: "," | append: "recommendation" | append: "," | append: "decision" | split: "," %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}{%
+assign subQuestion1Details = subQuestion1Number | append: "-details" %}{%
 assign subQuestion1Sub1Number = subQuestion1Number | append: ".1" %}{%
 assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}{%
 assign subQuestion1Sub2Number = subQuestion1Number | append: ".2" %}{%
 assign subQuestion1Sub2Id = subQuestion1Sub2Number | replace: ".", "-" %}{%
+assign subQuestion1Sub2Details = subQuestion1Sub2Number | append: "-details" %}{%
 assign subQuestion1Sub3Number = subQuestion1Number | append: ".3" %}{%
 assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
@@ -209,7 +211,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 
 <!-- Question {{ subQuestion1Number }} -->
 <div id="question-{{ subQuestion1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
-<p>{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
+<p>{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span> <a class="wb-lbx" href="#question-{{ subQuestion1Id }}-details"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><span class="wb-inv">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Number }}</span></a></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-yes, #question-{{ subQuestion1Sub1Id }}-{{ subQuestion1Sub2Id }}-{{ subQuestion1Sub3Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion1Sub2Id }}-result, #question-{{ subQuestion1Sub3Id }}-result", "class": "hidden" },
@@ -223,6 +225,15 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
+
+<section id="question-{{ subQuestion1Id }}-details" class="mfp-hide modal-dialog modal-content overlay-def">
+<header class="modal-header">
+<h4 class="modal-title">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Number }}</h4>
+</header>
+<div class="modal-body">
+<p>{{ page.questions[ subQuestion1Details ] }}</p>
+</div>
+</section>
 
 <div id="question-{{ subQuestion1Sub1Id }}-{{ subQuestion1Sub2Id }}-{{ subQuestion1Sub3Id }}-wrapper" class="hidden">
 
@@ -244,7 +255,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 
 <!-- Question {{ subQuestion1Sub2Number }} -->
 <div id="question-{{ subQuestion1Sub2Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
-<p>{{ subQuestion1Sub2Number }} {{ page.questions[ subQuestion1Sub2Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub2Number }}</span></p>
+<p>{{ subQuestion1Sub2Number }} {{ page.questions[ subQuestion1Sub2Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub2Number }}</span> <a class="wb-lbx" href="#question-{{ subQuestion1Sub2Id }}-details"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><span class="wb-inv">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Sub2Number }}</span></a></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion1Sub2Id }}-yes", "class": "hidden" },
@@ -256,6 +267,15 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 ]'>{{ site.No[ page.lang ] }}</li>
 </ul>
 </div>
+
+<section id="question-{{ subQuestion1Sub2Id }}-details" class="mfp-hide modal-dialog modal-content overlay-def">
+<header class="modal-header">
+<h4 class="modal-title">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Sub2Number }}</h4>
+</header>
+<div class="modal-body">
+<p>{{ page.questions[ subQuestion1Sub2Details ] }}</p>
+</div>
+</section>
 
 <!-- Question {{ subQuestion1Sub3Number }} -->
 <div id="question-{{ subQuestion1Sub3Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>

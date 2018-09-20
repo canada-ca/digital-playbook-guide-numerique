@@ -18,7 +18,7 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 ### Artificial Intelligence (AI) views
 
-- [Algorithmic Impact Assessment (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html)
+- [Algorithmic Impact Assessment (v0.2)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html)
 - [How should I implement an Automated Decision System? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/automated-decision.html)
 
 ### Cloud views
@@ -104,7 +104,7 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 
 ### Vues basées sur l'intelligence artificielle (IA)
 
-- [Évaluation d'impact algorithmique (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html)
+- [Évaluation d'impact algorithmique (v0.2)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html)
 - [Comment dois-je mettre en place un système de décision automatisé? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/fr/decision-automatise.html)
 
 ### Vues basées sur l'informatique en nuage
