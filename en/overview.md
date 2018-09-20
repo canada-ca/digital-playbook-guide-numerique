@@ -22,11 +22,11 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 <section class="dpgn-overview-end">
   
-#### Improving government services in the digital age
+#### Improving government services in the Digital Age
 
-Our goal is to provide public services to Canadians which are simple to use and trustworthy. This Digital Playbook, and the Digital Standards it is built upon, form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. While overall accountability for delivery of digital services rests with deputy heads, these standards and the Digital Playbook will guide teams in designing digital services in a way that best serves Canadians.
+Our goal is to provide public services to Canadians which are simple to use and trustworthy. This Digital Playbook, and the Government of Canada's Digital Standards it is built upon, form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. They will guide teams in designing digital services in a way that best serves Canadians.
 
-The goal is to co-create this Digital Playbook with the public and key stakeholder groups. This is a living playbook and will continue to evolve over time as we better understand the complexities involved in putting it into practice.
+The digital standards were co-created with the public and key stakeholder groups and the goal is to co-create this Digital Playbook with the same groups. They are living standards and guidance and they will continue to evolve over time as we better understand the complexities involved in putting them into practice.
 
 The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
 

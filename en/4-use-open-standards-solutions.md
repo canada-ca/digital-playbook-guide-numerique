@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "4. Use open standards and solutions (draft)"
+title:  "4. Use open standards and solutions"
 lang: en
 altLang: fr
 altLangPage: 4-utiliser-normes-solutions-ouvertes

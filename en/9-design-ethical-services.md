@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "9. Design ethical services (draft)"
+title:  "9. Design ethical services"
 lang: en
 altLang: fr
 altLangPage: 9-concevoir-services-ethiques
@@ -32,7 +32,7 @@ altLangPage: 9-concevoir-services-ethiques
 
 <section class="dpgn-section-guideline">
 
-## 9.1 Assess the full impact of the service and its design on users and communities
+## 9.1 Make sure that everyone receives fair treatment
 
 <div class="dpgn-section-intro-guideline">
 
@@ -67,7 +67,7 @@ altLangPage: 9-concevoir-services-ethiques
 
 <section class="dpgn-section-guideline">
 
-## 9.2 Comply with ethical guidelines in the design and use of automated systems (such as the use of artificial intelligence) to make sure everyone receives equal treatment
+## 9.2 Comply with ethical guidelines in the design and use of systems which automate decision making (such as the use of artificial intelligence)
 
 <div class="dpgn-section-intro-guideline">
 

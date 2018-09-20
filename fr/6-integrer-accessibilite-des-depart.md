@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "6. Intégrer l’accessibilité dès le départ (ébauche)"
+title:  "6. Intégrer l’accessibilité dès le départ"
 lang: fr
 altLang: en
 altLangPage: 6-build-in-accessibility-from-start
@@ -69,13 +69,13 @@ These limitations are sometimes mentioned as an example of how accessible design
 
 **Lignes directrices connexes :**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.1, 9.1, 10.2, 10.3" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.1, 2.2, 9.1, 10.2, 10.3" samePage=false includeStandardTitle=true %}
 
 </div>
 
 <section class="dpgn-section-guideline">
 
-## 2.1 Les services devraient respecter ou dépasser les normes d’accessibilité
+## 2.1 Permettre aux services de respecter ou dépasser les normes d’accessibilité
 
 <div class="dpgn-section-intro-guideline">
 
@@ -226,7 +226,7 @@ Le développement de services numériques accessibles (indépendamment de la cap
 
 <section class="dpgn-section-guideline">
 
-## 6.2 Les utilisateurs ayant des besoins distincts doivent être engagés dès le départ pour s’assurer que tout ce qui est livré fonctionnera pour tout le monde
+## 6.2 Communiquer dès le départ avec les utilisateurs ayant des besoins particuliers, pour s’assurer que le résultat conviendra à tout le monde
 
 <div class="dpgn-section-intro-guideline">
 

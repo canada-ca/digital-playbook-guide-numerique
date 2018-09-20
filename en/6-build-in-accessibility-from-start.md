@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "6. Build in accessibility from the start (draft)"
+title:  "6. Build in accessibility from the start"
 lang: en
 altLang: fr
 altLangPage: 6-integrer-accessibilite-des-depart
@@ -69,7 +69,7 @@ These limitations are sometimes mentioned as an example of how accessible design
 
 **Related guidelines:**
 
-{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.1, 9.1, 10.2, 10.3" samePage=false includeStandardTitle=true %}
+{% include functions/guideline-links.html guidelines="1.1, 1.2, 2.1, 2.2, 9.1, 10.2, 10.3" samePage=false includeStandardTitle=true %}
 
 </div>
 

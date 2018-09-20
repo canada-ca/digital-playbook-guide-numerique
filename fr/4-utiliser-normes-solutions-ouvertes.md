@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "4. Utiliser des normes et des solutions ouvertes (ébauche)"
+title: "4. Utiliser des normes et des solutions ouvertes"
 lang: fr
 altLang: en
 altLangPage: 4-use-open-standards-solutions
@@ -33,7 +33,7 @@ altLangPage: 4-use-open-standards-solutions
 
 <section class="dpgn-section-guideline">
 
-## 4.1 Tirer parti des normes ouvertes et adopter les pratiques exemplaires, y compris l'utilisation de logiciels libres, le cas échéant
+## 4.1 Profiter des normes ouvertes et adopter des pratiques exemplaires, y compris l’utilisation de logiciels libres, s’il y a lieu
 
 <div class="dpgn-section-intro-guideline">
 
@@ -141,7 +141,7 @@ Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
 
 <section class="dpgn-section-guideline">
 
-## 4.2 Concevoir des services et des plates-formes transparents pour les Canadiens, quel que soit l'appareil ou le canal qu'ils utilisent
+## 4.2 Concevoir des services et des plateformes que les Canadiens peuvent utiliser de façon intégrée au moyen de n’importe appareil ou réseau
 
 <div class="dpgn-section-intro-guideline">
 

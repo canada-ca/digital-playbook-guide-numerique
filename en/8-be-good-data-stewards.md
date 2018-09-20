@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "8. Be good data stewards (draft)"
+title:  "8. Be good data stewards"
 lang: en
 altLang: fr
 altLangPage: 8-etre-bons-utilisateurs-donnees

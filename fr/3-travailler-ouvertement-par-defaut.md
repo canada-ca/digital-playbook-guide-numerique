@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "3. Travailler ouvertement par défaut (ébauche)"
+title:  "3. Travailler ouvertement par défaut"
 lang: fr
 altLang: en
 altLangPage: 3-work-in-open-by-default
@@ -33,7 +33,7 @@ altLangPage: 3-work-in-open-by-default
 
 <section class="dpgn-section-guideline">
 
-## 3.1 Partager ouvertement les preuves, la recherche et la prise de décision
+## 3.1 Diffuser ouvertement des données probantes, des travaux de recherche et des éléments de la prise de décisions
 
 <div class="dpgn-section-intro-guideline">
 
@@ -110,7 +110,7 @@ Share your experiences with colleagues across the Government of Canada, other le
 
 <section class="dpgn-section-guideline">
 
-## 3.2 Ouvrir au monde extérieur toutes les données, tous les renseignements et tout nouveau code non sensibles lors de la fourniture de services ouverts pour le partage et la réutilisation sous licence ouverte
+## 3.2 Rendre accessibles toutes les données de nature non sensible, les renseignements et les nouveaux codes source conçus dans le cadre de la prestation de services, afin que le monde extérieur puisse se les échanger et les réutiliser sous une licence ouverte
 
 <div class="dpgn-section-intro-guideline">
 

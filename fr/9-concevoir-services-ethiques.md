@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "9. Concevoir des services éthiques (ébauche)"
+title:  "9. Concevoir des services éthiques"
 lang: fr
 altLang: en
 altLangPage: 9-design-ethical-services
@@ -32,7 +32,7 @@ altLangPage: 9-design-ethical-services
 
 <section class="dpgn-section-guideline">
 
-## 9.1 Évaluer l’impact total du service et de sa conception sur sur les utilisateurs et les collectivités
+## 9.1 S’assurer que tous reçoivent un traitement équitable
 
 <div class="dpgn-section-intro-guideline">
 
@@ -67,7 +67,7 @@ altLangPage: 9-design-ethical-services
 
 <section class="dpgn-section-guideline">
 
-## 9.2 Respecter les lignes directrices éthiques dans la conception et l'utilisation des systèmes automatisés (tels que l'utilisation de l'intelligence artificielle) pour s'assurer que tout le monde reçoit un traitement égal
+## 9.2 Respecter les lignes directrices éthiques relatives à la conception et à l’utilisation des systèmes automatisés sur lesquels repose la prise de décision (tels que l’utilisation de l’intelligence artificielle)
 
 <div class="dpgn-section-intro-guideline">
 

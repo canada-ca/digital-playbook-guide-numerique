@@ -40,7 +40,7 @@
             "tags": [
               "dpgn-overview-end"
             ],
-            "title": "Improving government services in the digital age",
+            "title": "Improving government services in the Digital Age",
             "source_attributes": {
               "id": "improving-government-services-in-the-digital-age"
             },
@@ -57,7 +57,7 @@
                     "tags": [
                       "dpgn-overview-end"
                     ],
-                    "content": "Our goal is to provide public services to Canadians which are simple to use and trustworthy. This Digital Playbook, and the Digital Standards it is built upon, form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. While overall accountability for delivery of digital services rests with deputy heads, these standards and the Digital Playbook will guide teams in designing digital services in a way that best serves Canadians."
+                    "content": "Our goal is to provide public services to Canadians which are simple to use and trustworthy. This Digital Playbook, and the Government of Canada's Digital Standards it is built upon, form the foundation of the Government of Canada’s shift to becoming more agile, open, and user-focused. They will guide teams in designing digital services in a way that best serves Canadians."
                   }
                 ]
               },
@@ -73,7 +73,7 @@
                     "tags": [
                       "dpgn-overview-end"
                     ],
-                    "content": "The goal is to co-create this Digital Playbook with the public and key stakeholder groups. This is a living playbook and will continue to evolve over time as we better understand the complexities involved in putting it into practice."
+                    "content": "The digital standards were co-created with the public and key stakeholder groups and the goal is to co-create this Digital Playbook with the same groups. They are living standards and guidance and they will continue to evolve over time as we better understand the complexities involved in putting them into practice."
                   }
                 ]
               },
@@ -301,7 +301,7 @@
     ],
     "content": [
       {
-        "title": "1. Design with users (draft)",
+        "title": "1. Design with users",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -1324,7 +1324,7 @@
         }
       },
       {
-        "title": "2. Iterate and improve frequently (draft)",
+        "title": "2. Iterate and improve frequently",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -1531,57 +1531,6 @@
                               "dpgn-stage-beta",
                               "dpgn-stage-live"
                             ],
-                            "content": "Start with a prototype <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "tags": [
-                                  "dpgn-stage-alpha",
-                                  "dpgn-stage-beta",
-                                  "dpgn-stage-live"
-                                ],
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "tags": [
-                                      "dpgn-stage-alpha",
-                                      "dpgn-stage-beta",
-                                      "dpgn-stage-live"
-                                    ],
-                                    "content": "Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs."
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
                             "content": "When iterating, focus on workable solutions over comprehensive documentation. <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>"
                           },
                           {
@@ -1685,42 +1634,6 @@
                               "dpgn-stage-live"
                             ],
                             "content": "make sure you have the ability to deploy software frequently with minimal disruption to users <strong>(Digital Service Standard (UK))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Start small and build upon successes. <strong>(General design principles - Digital Design Playbook (ISED))</strong>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Don’t wait for a fully developed service to start testing. <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>"
-                          },
-                          {
-                            "content_type": "block",
-                            "source_element": "ul",
-                            "content": [
-                              {
-                                "content_type": "block",
-                                "source_element": "li",
-                                "content": [
-                                  {
-                                    "content_type": "inline",
-                                    "content": "Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement."
-                                  }
-                                ]
-                              }
-                            ]
                           }
                         ]
                       },
@@ -2864,12 +2777,191 @@
                   }
                 ]
               }
+            },
+            {
+              "title": "2.3 Try new things, start small and scale up",
+              "tags": [
+                "dpgn-section-guideline"
+              ],
+              "introduction": {
+                "tags": [
+                  "dpgn-section-intro-guideline"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Add/revise introductory text]</strong>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "checklist": {
+                "title": "Checklist",
+                "tags": [
+                  "dpgn-section-checklist"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Add/revise checklist items]</strong>"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Start with a prototype <strong>(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))</strong>"
+                          },
+                          {
+                            "content_type": "block",
+                            "source_element": "ul",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "tags": [
+                                  "dpgn-stage-alpha",
+                                  "dpgn-stage-beta",
+                                  "dpgn-stage-live"
+                                ],
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "tags": [
+                                      "dpgn-stage-alpha",
+                                      "dpgn-stage-beta",
+                                      "dpgn-stage-live"
+                                    ],
+                                    "content": "Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Start small and build upon successes. <strong>(General design principles - Digital Design Playbook (ISED))</strong>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Don’t wait for a fully developed service to start testing. <strong>(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))</strong>"
+                          },
+                          {
+                            "content_type": "block",
+                            "source_element": "ul",
+                            "content": [
+                              {
+                                "content_type": "block",
+                                "source_element": "li",
+                                "content": [
+                                  {
+                                    "content_type": "inline",
+                                    "content": "Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "guides": {
+                "title": "Implementation guides",
+                "tags": [
+                  "dpgn-section-guides"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Add/revise implementation guides]</strong>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "solutions": {
+                "title": "Reusable solutions",
+                "tags": [
+                  "dpgn-section-solutions"
+                ],
+                "content": [
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "<strong>[TODO: Add/revise reusable solutions]</strong>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "similar": {
+                "title": "Similar resources",
+                "tags": [
+                  "dpgn-section-similar"
+                ],
+                "content": [
+
+                ]
+              }
             }
           ]
         }
       },
       {
-        "title": "3. Work in the open by default (draft)",
+        "title": "3. Work in the open by default",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -3923,7 +4015,7 @@
         }
       },
       {
-        "title": "4. Use open standards and solutions (draft)",
+        "title": "4. Use open standards and solutions",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -5569,7 +5661,7 @@
         }
       },
       {
-        "title": "5. Address security and privacy risks (draft)",
+        "title": "5. Address security and privacy risks",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -6814,7 +6906,7 @@
         }
       },
       {
-        "title": "6. Build in accessibility from the start (draft)",
+        "title": "6. Build in accessibility from the start",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -7072,6 +7164,7 @@
             "1.1",
             "1.2",
             "2.1",
+            "2.2",
             "9.1",
             "10.2",
             "10.3"
@@ -9066,7 +9159,7 @@
         }
       },
       {
-        "title": "7. Empower staff to deliver better services (draft)",
+        "title": "7. Empower staff to deliver better services",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -9086,6 +9179,7 @@
           "content": [
             "2.1",
             "2.2",
+            "2.3",
             "3.1",
             "3.2",
             "4.1",
@@ -9803,7 +9897,7 @@
         }
       },
       {
-        "title": "8. Be good data stewards (draft)",
+        "title": "8. Be good data stewards",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -10276,7 +10370,7 @@
         }
       },
       {
-        "title": "9. Design ethical services (draft)",
+        "title": "9. Design ethical services",
         "tags": [
           "dpgn-section-standard"
         ],
@@ -10321,7 +10415,7 @@
           ],
           "content": [
             {
-              "title": "9.1 Assess the full impact of the service and its design on users and communities",
+              "title": "9.1 Make sure that everyone receives fair treatment",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -10439,7 +10533,7 @@
               }
             },
             {
-              "title": "9.2 Comply with ethical guidelines in the design and use of automated systems (such as the use of artificial intelligence) to make sure everyone receives equal treatment",
+              "title": "9.2 Comply with ethical guidelines in the design and use of systems which automate decision making (such as the use of artificial intelligence)",
               "tags": [
                 "dpgn-section-guideline"
               ],
@@ -11075,15 +11169,13 @@
                                 },
                                 "source_element": "li",
                                 "tags": [
-                                  "dpgn-automated-decision-type-file-triage-assignment",
-                                  "dpgn-automated-decision-type-risk-scoring-categorization"
+                                  "dpgn-automated-decision-type-risk"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
-                                      "dpgn-automated-decision-type-file-triage-assignment",
-                                      "dpgn-automated-decision-type-risk-scoring-categorization"
+                                      "dpgn-automated-decision-type-risk"
                                     ],
                                     "content": "Explanation Requirement for Recommendation:\n            "
                                   },
@@ -11094,8 +11186,7 @@
                                     },
                                     "source_element": "ul",
                                     "tags": [
-                                      "dpgn-automated-decision-type-file-triage-assignment",
-                                      "dpgn-automated-decision-type-risk-scoring-categorization"
+                                      "dpgn-automated-decision-type-risk"
                                     ],
                                     "content": [
                                       {
@@ -11106,16 +11197,14 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
-                                          "dpgn-automated-decision-type-file-triage-assignment",
-                                          "dpgn-automated-decision-type-risk-scoring-categorization"
+                                          "dpgn-automated-decision-type-risk"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-i",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": "<strong>Level I:</strong> None"
                                           }
@@ -11129,16 +11218,14 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
-                                          "dpgn-automated-decision-type-file-triage-assignment",
-                                          "dpgn-automated-decision-type-risk-scoring-categorization"
+                                          "dpgn-automated-decision-type-risk"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-ii",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": "<strong>Level II:</strong> None"
                                           }
@@ -11152,16 +11239,14 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
-                                          "dpgn-automated-decision-type-file-triage-assignment",
-                                          "dpgn-automated-decision-type-risk-scoring-categorization"
+                                          "dpgn-automated-decision-type-risk"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-iii",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": "<strong>Level III:</strong> Meaningful explanation provided upon request based on machine or human review."
                                           }
@@ -11175,16 +11260,14 @@
                                         "source_element": "li",
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
-                                          "dpgn-automated-decision-type-file-triage-assignment",
-                                          "dpgn-automated-decision-type-risk-scoring-categorization"
+                                          "dpgn-automated-decision-type-risk"
                                         ],
                                         "content": [
                                           {
                                             "content_type": "inline",
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": "<strong>Level IV:</strong>"
                                           },
@@ -11196,8 +11279,7 @@
                                             "source_element": "ul",
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
-                                              "dpgn-automated-decision-type-file-triage-assignment",
-                                              "dpgn-automated-decision-type-risk-scoring-categorization"
+                                              "dpgn-automated-decision-type-risk"
                                             ],
                                             "content": [
                                               {
@@ -11208,16 +11290,14 @@
                                                 "source_element": "li",
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iv",
-                                                  "dpgn-automated-decision-type-file-triage-assignment",
-                                                  "dpgn-automated-decision-type-risk-scoring-categorization"
+                                                  "dpgn-automated-decision-type-risk"
                                                 ],
                                                 "content": [
                                                   {
                                                     "content_type": "inline",
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iv",
-                                                      "dpgn-automated-decision-type-file-triage-assignment",
-                                                      "dpgn-automated-decision-type-risk-scoring-categorization"
+                                                      "dpgn-automated-decision-type-risk"
                                                     ],
                                                     "content": "Meaningful explanation, including the variables in the decision, provided with the decision rendered."
                                                   }
@@ -11231,16 +11311,14 @@
                                                 "source_element": "li",
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iv",
-                                                  "dpgn-automated-decision-type-file-triage-assignment",
-                                                  "dpgn-automated-decision-type-risk-scoring-categorization"
+                                                  "dpgn-automated-decision-type-risk"
                                                 ],
                                                 "content": [
                                                   {
                                                     "content_type": "inline",
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iv",
-                                                      "dpgn-automated-decision-type-file-triage-assignment",
-                                                      "dpgn-automated-decision-type-risk-scoring-categorization"
+                                                      "dpgn-automated-decision-type-risk"
                                                     ],
                                                     "content": "Explanation can be human or machine generated."
                                                   }
@@ -11262,14 +11340,14 @@
                                 "source_element": "li",
                                 "tags": [
                                   "dpgn-automated-decision-type-recommendation",
-                                  "dpgn-automated-decision-type-full-decision"
+                                  "dpgn-automated-decision-type-decision"
                                 ],
                                 "content": [
                                   {
                                     "content_type": "inline",
                                     "tags": [
                                       "dpgn-automated-decision-type-recommendation",
-                                      "dpgn-automated-decision-type-full-decision"
+                                      "dpgn-automated-decision-type-decision"
                                     ],
                                     "content": "Explanation Requirement for Decisions:\n            "
                                   },
@@ -11281,7 +11359,7 @@
                                     "source_element": "ul",
                                     "tags": [
                                       "dpgn-automated-decision-type-recommendation",
-                                      "dpgn-automated-decision-type-full-decision"
+                                      "dpgn-automated-decision-type-decision"
                                     ],
                                     "content": [
                                       {
@@ -11293,7 +11371,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-i",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-full-decision"
+                                          "dpgn-automated-decision-type-decision"
                                         ],
                                         "content": [
                                           {
@@ -11301,7 +11379,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-i",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": "<strong>Level I:</strong> An explanation provided upon request based on machine or human review. This could include a Frequently Asked Questions section of a website."
                                           }
@@ -11316,7 +11394,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-ii",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-full-decision"
+                                          "dpgn-automated-decision-type-decision"
                                         ],
                                         "content": [
                                           {
@@ -11324,7 +11402,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-ii",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": "<strong>Level II:</strong> Meaningful explanation provided upon request based on machine or human review."
                                           }
@@ -11339,7 +11417,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-iii",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-full-decision"
+                                          "dpgn-automated-decision-type-decision"
                                         ],
                                         "content": [
                                           {
@@ -11347,7 +11425,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iii",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": "<strong>Level III:</strong>"
                                           },
@@ -11360,7 +11438,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iii",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": [
                                               {
@@ -11372,7 +11450,7 @@
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iii",
                                                   "dpgn-automated-decision-type-recommendation",
-                                                  "dpgn-automated-decision-type-full-decision"
+                                                  "dpgn-automated-decision-type-decision"
                                                 ],
                                                 "content": [
                                                   {
@@ -11380,7 +11458,7 @@
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iii",
                                                       "dpgn-automated-decision-type-recommendation",
-                                                      "dpgn-automated-decision-type-full-decision"
+                                                      "dpgn-automated-decision-type-decision"
                                                     ],
                                                     "content": "Meaningful explanation, including variables used in the decision, provided with the decision rendered."
                                                   }
@@ -11395,7 +11473,7 @@
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iii",
                                                   "dpgn-automated-decision-type-recommendation",
-                                                  "dpgn-automated-decision-type-full-decision"
+                                                  "dpgn-automated-decision-type-decision"
                                                 ],
                                                 "content": [
                                                   {
@@ -11403,7 +11481,7 @@
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iii",
                                                       "dpgn-automated-decision-type-recommendation",
-                                                      "dpgn-automated-decision-type-full-decision"
+                                                      "dpgn-automated-decision-type-decision"
                                                     ],
                                                     "content": "Explanation can be human or machine generated."
                                                   }
@@ -11422,7 +11500,7 @@
                                         "tags": [
                                           "dpgn-automated-decision-level-iv",
                                           "dpgn-automated-decision-type-recommendation",
-                                          "dpgn-automated-decision-type-full-decision"
+                                          "dpgn-automated-decision-type-decision"
                                         ],
                                         "content": [
                                           {
@@ -11430,7 +11508,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": "<strong>Level IV:</strong>"
                                           },
@@ -11443,7 +11521,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iv",
                                               "dpgn-automated-decision-type-recommendation",
-                                              "dpgn-automated-decision-type-full-decision"
+                                              "dpgn-automated-decision-type-decision"
                                             ],
                                             "content": [
                                               {
@@ -11455,7 +11533,7 @@
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iv",
                                                   "dpgn-automated-decision-type-recommendation",
-                                                  "dpgn-automated-decision-type-full-decision"
+                                                  "dpgn-automated-decision-type-decision"
                                                 ],
                                                 "content": [
                                                   {
@@ -11463,7 +11541,7 @@
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iv",
                                                       "dpgn-automated-decision-type-recommendation",
-                                                      "dpgn-automated-decision-type-full-decision"
+                                                      "dpgn-automated-decision-type-decision"
                                                     ],
                                                     "content": "Meaningful explanation, including variables used in the decision, provided with the decision rendered."
                                                   }
@@ -11478,7 +11556,7 @@
                                                 "tags": [
                                                   "dpgn-automated-decision-level-iv",
                                                   "dpgn-automated-decision-type-recommendation",
-                                                  "dpgn-automated-decision-type-full-decision"
+                                                  "dpgn-automated-decision-type-decision"
                                                 ],
                                                 "content": [
                                                   {
@@ -11486,7 +11564,7 @@
                                                     "tags": [
                                                       "dpgn-automated-decision-level-iv",
                                                       "dpgn-automated-decision-type-recommendation",
-                                                      "dpgn-automated-decision-type-full-decision"
+                                                      "dpgn-automated-decision-type-decision"
                                                     ],
                                                     "content": "Explanation can be human or machine generated."
                                                   }
@@ -11669,7 +11747,7 @@
         }
       },
       {
-        "title": "10. Collaborate widely (draft)",
+        "title": "10. Collaborate widely",
         "tags": [
           "dpgn-section-standard"
         ],

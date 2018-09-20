@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "2. Iterate and improve frequently (draft)"
+title:  "2. Iterate and improve frequently"
 lang: en
 altLang: fr
-altLangPage: 2-effectuer-iterations-ameliorations-constamment
+altLangPage: 2-effectuer-regulierement-iterations-ameliorations
 ---
 <div class="dpgn-section-intro-standard">
 
@@ -60,8 +60,6 @@ User-centred methods such as user research and usability testing put the focus o
 - ensure the team reviews and iterates the ways problems are fixed **(Digital Service Standard (Ontario / UK / AU))**
 - show that your service governance is agile, based on clear and measurable goals **(Digital Service Standard (Ontario / UK / AU))**
 - explore design options for your prototype and explain why some are discarded **(Digital Service Standard (Ontario / UK))**
-- Start with a prototype **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
-  - Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs.
 - When iterating, focus on workable solutions over comprehensive documentation. **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
   - Having a workable solution that can be tested and validated will give you useful information for improving your service. Whenever possible, focus on results rather than unnecessary documentation and reporting (while staying within policy and regulatory limits).
 - When you can, use [agile tools and techniques](https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques). **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
@@ -69,10 +67,6 @@ User-centred methods such as user research and usability testing put the focus o
 - make sure you have the ability to deploy software frequently with minimal disruption to users **(Digital Service Standard (UK))**
 {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}
 <!-- markdownlint-enable MD032 -->
-
-- Start small and build upon successes. **(General design principles - Digital Design Playbook (ISED))**
-- Don’t wait for a fully developed service to start testing. **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
-  - Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.
 
 **Live stage:**
 {: .dpgn-data-ignore}
@@ -237,6 +231,47 @@ Measuring performance means continuously improving a service by:
 - [15. Collect performance data (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/collect-performance-data)
 - [13. Measure performance (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-13)
 - [12. Use data to drive decisions (Digital Services Playbook (US))](https://playbook.cio.gov/#play12)
+
+</section>
+</section>
+
+<section class="dpgn-section-guideline">
+
+## 2.3 Try new things, start small and scale up
+
+<div class="dpgn-section-intro-guideline">
+
+**[TODO: Add/revise introductory text]**
+
+</div>
+
+<section class="dpgn-section-checklist">
+
+### Checklist
+
+**[TODO: Add/revise checklist items]**
+
+- {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Start with a prototype **(3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)))**
+  - Create a minimum viable product, that is, a version of the service with just enough features to gather insights, test assumptions and inform future improvements. Use the prototype to capture client feedback and then make improvements until you have a version that really meets client needs.
+- Start small and build upon successes. **(General design principles - Digital Design Playbook (ISED))**
+- Don’t wait for a fully developed service to start testing. **(1. Test the service before launching the service. (Assess - Digital Design Playbook (ISED)))**
+  - Develop a prototype of the service and test it to validate ideas, to challenge assumptions and to identify opportunities for improvement.
+
+</section>
+
+<section class="dpgn-section-guides">
+
+### Implementation guides
+
+**[TODO: Add/revise implementation guides]**
+
+</section>
+
+<section class="dpgn-section-solutions">
+
+### Reusable solutions
+
+**[TODO: Add/revise reusable solutions]**
 
 </section>
 </section>
