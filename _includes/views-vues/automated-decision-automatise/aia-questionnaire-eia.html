@@ -47,7 +47,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 
 {% assign questionNumber = "3" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
-assign subLabel = questionId | "-sub" %}
+assign subLabel = questionId | append: "-sub" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group" markdown="0">
 <label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
