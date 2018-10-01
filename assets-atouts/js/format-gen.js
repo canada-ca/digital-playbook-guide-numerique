@@ -1023,6 +1023,7 @@ var componentName = "wb-format-gen",
                 // Special handling for IE
                 event = document.createEvent( "Event" );
                 event.initEvent( "change", true, true );
+                subField.dispatchEvent( event );
               }
               fireChangeEvent = false;
             }
