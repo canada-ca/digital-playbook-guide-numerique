@@ -475,7 +475,7 @@ var componentName = "wb-format-gen",
      *    totalElementCount {Number} Total number of primitive elements within data
      *    subElementCount {Array/Number} Count of number of primitive elements within each array element
      */
-    getNestedArrayElementCounts = function( data, maxCountArrayLevels = 1000 ) {
+    getNestedArrayElementCounts = function( data, maxCountArrayLevels ) {
       var totalElementCount = 0,
           currMaxCountArrayLevels = maxCountArrayLevels !== null ? : maxCountArrayLevels : 1000,
           arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
@@ -490,7 +490,7 @@ var componentName = "wb-format-gen",
         for ( index = 0; index < arrayLength; index += 1) {
           dataNode = data[ index ];
           if ( Array.isArray( dataNode ) && dataNode.length > 0 ) {
-            result = getNestedArrayElementCounts( dataNode, ( maxCountArrayLevels !== 1000 ? maxCountArrayLevels - 1 : 1000 ) );
+            result = getNestedArrayElementCounts( dataNode, ( currMaxCountArrayLevels !== 1000 ? currMaxCountArrayLevels - 1 : 1000 ) );
             totalElementCount += result.totalElementCount;
             elementCount.push( result.subElementCount );
           } else {
@@ -500,7 +500,7 @@ var componentName = "wb-format-gen",
         }
       }
 
-      if ( maxCountArrayLevels < 1 ) {
+      if ( currMaxCountArrayLevels < 1 ) {
         elementCount = totalElementCount;
       }
 
