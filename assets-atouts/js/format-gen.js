@@ -475,8 +475,9 @@ var componentName = "wb-format-gen",
      *    totalElementCount {Number} Total number of primitive elements within data
      *    subElementCount {Array/Number} Count of number of primitive elements within each array element
      */
-    getNestedArrayElementCounts = function( data, maxCountArrayLevels = 1000, returnAsString = false ) {
+    getNestedArrayElementCounts = function( data, maxCountArrayLevels ) {
       var totalElementCount = 0,
+          currMaxCountArrayLevels = maxCountArrayLevels !== null ? maxCountArrayLevels : 1000,
           arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
 
       if ( !Array.isArray( data ) ) {
@@ -489,7 +490,7 @@ var componentName = "wb-format-gen",
         for ( index = 0; index < arrayLength; index += 1) {
           dataNode = data[ index ];
           if ( Array.isArray( dataNode ) && dataNode.length > 0 ) {
-            result = getNestedArrayElementCounts( dataNode, ( maxCountArrayLevels !== 1000 ? maxCountArrayLevels - 1 : 1000 ) );
+            result = getNestedArrayElementCounts( dataNode, ( currMaxCountArrayLevels !== 1000 ? currMaxCountArrayLevels - 1 : 1000 ) );
             totalElementCount += result.totalElementCount;
             elementCount.push( result.subElementCount );
           } else {
@@ -499,7 +500,7 @@ var componentName = "wb-format-gen",
         }
       }
 
-      if ( maxCountArrayLevels < 1 ) {
+      if ( currMaxCountArrayLevels < 1 ) {
         elementCount = totalElementCount;
       }
 
@@ -749,12 +750,15 @@ var componentName = "wb-format-gen",
      * @param data {String/Array/Object/Other} (not used for "delete" action) Data to store
      * @fires Fires the storage-updated.wb-format-gen event on the document node once complete
      */
-    storeData = function( action = "replace", key, indexesKeys = [], useLocalStorage = false, data ) {
-      var indexesKeysLength = indexesKeys.length,
+    storeData = function( action, key, indexesKeys, useLocalStorage, data ) {
+      var currAction = action !== null ? action : "replace",
+          currIndexesKeys = indexesKeys !== null ? indexesKeys : [],
+          currUseLocalStorage = useLocalStorage !== null ? useLocalStorage : false,
+          indexesKeysLength = currIndexesKeys.length,
           data, storedData, storedDataFragment, parentStoredDataFragment, index, typeofResult, indexKey, nextIndexKey;
 
       // Retrieve and parse any stored data
-      storedData = useLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key );
+      storedData = currUseLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key );
       if ( storedData && storedData.length > 0 ) {
         storedData = JSON.parse( storedData );
         storedDataFragment = storedData;
@@ -762,9 +766,9 @@ var componentName = "wb-format-gen",
         if ( indexesKeysLength > 0 ) {
           // Find the nested data to manipulate or delete
           for ( index = 0; index < indexesKeysLength; index += 1 ) {
-            indexKey = indexesKeys[ index ];
+            indexKey = currIndexesKeys[ index ];
 
-            if ( index === indexesKeysLength - 1 && action === "delete" ) {
+            if ( index === indexesKeysLength - 1 && currAction === "delete" ) {
               // Delete only specified data
               if ( Array.isArray( storedDataFragment ) ) {
                 storedDataFragment.splice( indexKey, 1 );
@@ -777,11 +781,11 @@ var componentName = "wb-format-gen",
               storedDataFragment = storedDataFragment[ indexKey ];
 
               if ( !storedDataFragment ) {
-                nextIndexKey = indexesKeys[ index + 1 ];
+                nextIndexKey = currIndexesKeys[ index + 1 ];
 
                 if ( nextIndexKey ) {
                   storedDataFragment = typeof nextIndexKey === "string" ? {} : [];
-                } else if ( action === "append" || action === "prepend" ) {
+                } else if ( currAction === "append" || currAction === "prepend" ) {
                   storedDataFragment = [];
                 } else {
                   break;
@@ -790,9 +794,9 @@ var componentName = "wb-format-gen",
               }
             }
           }
-        } else if ( action === "delete" ) {
+        } else if ( currAction === "delete" ) {
           // Not working with nested data so delete all the stored data referenced by the key
-          if ( useLocalStorage ) {
+          if ( currUseLocalStorage ) {
             localStorage.removeItem( key );
           } else {
             sessionStorage.removeItem( key );
@@ -800,15 +804,15 @@ var componentName = "wb-format-gen",
           return;
         }
 
-        if ( action !== "delete" ) {
+        if ( currAction !== "delete" ) {
           if ( Array.isArray( storedDataFragment ) ) {
-            if ( action === "append" ) {
+            if ( currAction === "append" ) {
               storedDataFragment.push( data );
-            } else if ( action === "prepend" ) {
+            } else if ( currAction === "prepend" ) {
               storedDataFragment.unshift( data );
             } else {
               if ( indexesKeysLength > 0 ) {
-                parentStoredDataFragment[ indexesKeys[ index - 1 ] ] = data;
+                parentStoredDataFragment[ currIndexesKeys[ index - 1 ] ] = data;
               } else {
                 storedData = data;
               }
@@ -816,36 +820,36 @@ var componentName = "wb-format-gen",
             data = storedData;
           } else {
             // Make sure everything is a string
-            if ( action !== "replace" && typeof storedDataFragment !== "string" ) {
+            if ( currAction !== "replace" && typeof storedDataFragment !== "string" ) {
               storedDataFragment = storedDataFragment.toString();
             }
             if ( typeof data !== "string" ) {
               data = data.toString();
             }
 
-            if ( action === "append" ) {
+            if ( currAction === "append" ) {
               data = storedDataFragment + data;
-            } else if ( action === "prepend" ) {
+            } else if ( currAction === "prepend" ) {
               // Update the parent with the prepended data
               data += storedDataFragment;
             }
 
             // If parent exists, update it with the new data
             if ( parentStoredDataFragment ) {
-              parentStoredDataFragment[ indexesKeys[ index - 1 ] ] = data;
+              parentStoredDataFragment[ currIndexesKeys[ index - 1 ] ] = data;
               data = storedData;
             }
           }
         }
-      } else if ( action === "delete" ) {
+      } else if ( currAction === "delete" ) {
         // Delete all the stored data referenced by the key
-        if ( useLocalStorage ) {
+        if ( currUseLocalStorage ) {
           localStorage.removeItem( key );
         } else {
           sessionStorage.removeItem( key );
         }
         return;
-      } else if ( action === "append" || action === "prepend" ) {
+      } else if ( currAction === "append" || currAction === "prepend" ) {
         data = [ data ];
       }
 
@@ -853,7 +857,7 @@ var componentName = "wb-format-gen",
         data = JSON.stringify( data );
       }
 
-      if ( useLocalStorage ) {
+      if ( currUseLocalStorage ) {
         localStorage.setItem( key, data );
       } else {
         sessionStorage.setItem( key, data );
@@ -872,16 +876,18 @@ var componentName = "wb-format-gen",
      * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
      * @return {String} Returns the stored data.
      */
-    retrieveData = function( key, indexesKeys = [], useLocalStorage = false, returnAsString ) {
-      var data = useLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key ),
-          indexesKeysLength = indexesKeys.length,
+    retrieveData = function( key, indexesKeys, useLocalStorage, returnAsString ) {
+      var currIndexesKeys = indexesKeys !== null ? indexesKeys : [],
+          currLocalStorage = useLocalStorage !== null ? useLocalStorage : false,
+          data = currLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key ),
+          indexesKeysLength = currIndexesKeys.length,
           index;
 
       if ( data && data.length > 0 ) {
         data = JSON.parse( data );
 
         for ( index = 0; index < indexesKeysLength; index += 1 ) {
-          data = data[ indexesKeys[ index ] ];
+          data = data[ currIndexesKeys[ index ] ];
         }
       }
 
@@ -1010,8 +1016,15 @@ var componentName = "wb-format-gen",
             }
 
             if ( fireChangeEvent ) {
-              event = new Event('change', { bubbles: true });
-              subField.dispatchEvent( event );
+              if( typeof( Event ) === "function") {
+                event = new Event( "change", { bubbles: true });
+                subField.dispatchEvent( event );
+              } else {
+                // Special handling for IE
+                event = document.createEvent( "Event" );
+                event.initEvent( "change", true, true );
+                subField.dispatchEvent( event );
+              }
               fireChangeEvent = false;
             }
           }
