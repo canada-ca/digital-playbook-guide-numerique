@@ -477,7 +477,7 @@ var componentName = "wb-format-gen",
      */
     getNestedArrayElementCounts = function( data, maxCountArrayLevels ) {
       var totalElementCount = 0,
-          currMaxCountArrayLevels = maxCountArrayLevels !== null ? : maxCountArrayLevels : 1000,
+          currMaxCountArrayLevels = maxCountArrayLevels !== null ? maxCountArrayLevels : 1000,
           arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
 
       if ( !Array.isArray( data ) ) {
