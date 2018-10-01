@@ -1016,8 +1016,14 @@ var componentName = "wb-format-gen",
             }
 
             if ( fireChangeEvent ) {
-              event = new Event('change', { bubbles: true });
-              subField.dispatchEvent( event );
+              if( typeof( Event ) === "function") {
+                event = new Event( "change", { bubbles: true });
+                subField.dispatchEvent( event );
+              } else {
+                // Special handling for IE
+                event = document.createEvent( "Event" );
+                event.initEvent( "change", true, true );
+              }
               fireChangeEvent = false;
             }
           }
