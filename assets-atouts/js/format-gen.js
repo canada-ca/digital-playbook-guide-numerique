@@ -751,8 +751,8 @@ var componentName = "wb-format-gen",
      * @fires Fires the storage-updated.wb-format-gen event on the document node once complete
      */
     storeData = function( action, key, indexesKeys, useLocalStorage, data ) {
-      var currAction = action !== null ? : action : "replace",
-          currIndexesKeys = indexesKeys !== null ? : indexesKeys : [],
+      var currAction = action !== null ? action : "replace",
+          currIndexesKeys = indexesKeys !== null ? indexesKeys : [],
           currUseLocalStorage = useLocalStorage !== null ? useLocalStorage : false,
           indexesKeysLength = currIndexesKeys.length,
           data, storedData, storedDataFragment, parentStoredDataFragment, index, typeofResult, indexKey, nextIndexKey;
