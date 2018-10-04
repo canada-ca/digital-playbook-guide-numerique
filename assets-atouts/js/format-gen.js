@@ -677,7 +677,7 @@ var componentName = "wb-format-gen",
           action = settings[ "action" ],
           key = settings[ "key" ],
           indexesKeys = settings[ "indexesKeys" ],
-          data;
+          data = settings[ "data" ];
 
       // Ensure indexesKeys is an array
       if ( indexesKeys && typeof indexesKeys === "string" ) {

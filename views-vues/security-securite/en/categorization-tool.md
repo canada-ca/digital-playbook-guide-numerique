@@ -108,7 +108,7 @@ This web-based version of the tool is meant to make the process of organizing th
 
 {{ page.businessDomain.intro }}
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="business-domain-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessDomain[ "business-domain-field-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="business-domain-field" id="business-domain-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />

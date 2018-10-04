@@ -134,7 +134,8 @@ var componentName = "wb-calculate",
      * value {Number/String/Boolean} Optional (can be used instead of "query", only permitted for "number" and "string" types; can also be used for "outputValue" action). The value of the number to use for the calculation or the string to use for a non-mathematical operation. Alternatively can use a number or string directly (instead of an object of type "number" or "string"). For action type "outputValue", can use a number or a string.
      * query {String} Optional (required for "count" type, "number" type when "value" is not specified and other types when "inputs" is not specified) The CSS query for where to retrieve the numbers (uses first result for "number") or for the items to count.
      * inputs {Array} Optional (used for "conditional" type, including condition objects, and can also be used for used for actions for "action" type and other operations such as "add", "subtract", "multiply", "divide", "power" and "modulus" types in place of query). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
-     * sourceAttribute {String} (optional, can be used with the "number" type). Attribute from which to retrieve the number.
+     * sourceAttribute {String} (optional, can be used with the "number", "string", "boolean" or "length" type). Attribute from which to retrieve the number or string.
+     * sourceProperty {String} (optional, can be used with the "number", "string", "boolean" or "length" type). Property from which to retrieve the number or string.
      * increment {Integer} Optional (can only be used with "count" type). The size of the increment to use for each item counted.
      * actionsTrue {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
      * actionsFalse {Array} Optional (can only be used for "conditional" type). Actions to process with if one of the conditions is not met (e.g., "event", "operations", "addClass", "removeClass", "outputValue", "conditional").
@@ -156,33 +157,44 @@ var componentName = "wb-calculate",
 
       var type = operation[ "type" ],
           value = operation[ "value" ],
-          query = operation[ "query" ],
-          $query = value || !query ? null : $( query ),
-          queryResultsSize = !$query ? null : $query.length, 
+          queryParam = operation[ "query" ],
+          query = value || !queryParam ? null : document.querySelectorAll( queryParam ),
+          queryResultsSize = !query ? null : query.length, 
           decimalPlaces = operation[ "decimalPlaces" ],
-          inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute, outputTargets,
-          outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue, outputTargetIndex, outputTargetsLength;
+          inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
+          sourceProperty, outputTargets, outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue,
+          outputTargetIndex, outputTargetsLength;
 
-      if ( type === "number" || type === "string" || type === "length" ) {
-        if ( $query ) {
+      if ( type === "number" || type === "string" || type === "boolean" || type === "length" ) {
+        if ( query ) {
           sourceAttribute = operation[ "sourceAttribute" ];
+          sourceProperty = operation[ "sourceProperty" ];
           if ( sourceAttribute ) {
             if ( sourceAttribute === "value" ) {
-              value = $query.val();
+              value = query[ 0 ].value;
             } else {
-              value = $query.attr( sourceAttribute );
+              value = query[ 0 ].getAttribute( sourceAttribute );
             }
             value = value ? value : "";
+          } else if ( sourceProperty ) {
+            if ( sourceProperty === "value" ) {
+              value = query[ 0 ].value;
+            } else {
+              value = query[ 0 ][ sourceProperty ];
+            }
+            value = value ? value : "";            
           } else {
-            value = $query.eq( 0 ).text();
+            value = query[ 0 ].textContent;
           }
 
-          if ( type === "number" ) {
+          if ( type === "number" && typeof value === "string" ) {
             if ( value.indexOf( "." ) > -1 ) {
               value = parseFloat( value );
             } else {
               value = parseInt( value );
             }
+          } else if ( type === "boolean" && typeof value === "string" ) {
+              value = value === "true";
           } else if ( type === "length" ) {
             value = value.length;
           }
@@ -198,7 +210,7 @@ var componentName = "wb-calculate",
         if ( !inputs ) {
           inputs = [];
           for ( index = 0; index < queryResultsSize; index += 1 ) {
-            item = $query.eq( index ).text();
+            item = query[ index ].textContent;
             if ( item.indexOf( "." ) > -1 ) {
               inputs.push( parseFloat( item ) );
             } else {
