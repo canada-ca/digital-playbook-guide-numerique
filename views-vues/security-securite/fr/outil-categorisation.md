@@ -190,9 +190,9 @@ This web-based version of the tool is meant to make the process of organizing th
 ## {{ page.businessActivity.title }}
 
 <div class="form-group" markdown="0">
-<label for="business-activity" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="business-activity-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<input name="business-activity" id="business-activity" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+<input name="business-activity-field" id="business-activity-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
@@ -278,9 +278,9 @@ This web-based version of the tool is meant to make the process of organizing th
 <div id="business-activity-component-container">
 
 <div class="form-group" markdown="0">
-<label for="business-activity-component" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-component-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="business-activity-component-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-component-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<input name="business-activity-component" id="business-activity-component" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+<input name="business-activity-component-field" id="business-activity-component-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
