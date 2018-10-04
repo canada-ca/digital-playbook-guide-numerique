@@ -15,8 +15,13 @@
  */
 var componentName = "wb-calculate",
     selector = "." + componentName,
+    dataAttribute = "data-" + componentName,
     initEvent = "wb-init" + selector,
     $document = wb.doc,
+    defaults = {
+      ignoreInit: false,
+      returnFalse: false
+    },
 
     /**
      * @method init
@@ -28,43 +33,63 @@ var componentName = "wb-calculate",
       // Start initialization
       // returns DOM object = proceed with init
       // returns undefined = do not proceed with init (e.g., already initialized)
-      var elm = wb.init( event, componentName, selector );
+      var elm = wb.init( event, componentName, selector ),
+          settings, eventTrigger, $listenerElement, eventElement, dataAttributeValue, currDataAttributeValue, index, length;
 
       if ( elm ) {
+        dataAttributeValue = elm.getAttribute( dataAttribute );
 
-        var $elm = $( elm ),
-            settings = {
-              ignoreInit: false,
-              returnFalse: false
-            },
-            $listenerElement;
-
-        // Extend the settings with window[ "wb-calculate" ] then data-wb-calculate
-        settings = $.extend(
-          true, {},
-          settings,
-          window[ componentName ],
-          wb.getData( $elm, componentName )
-        );
-
-        // Workaround for WET FieldFlow stripping the name attribute on form submit
-        // (so can return false before FieldFlow receives the event on document)
-        if ( settings[ "listenerElement" ] ) {
-          $listenerElement = $( settings[ "listenerElement" ] );
-        } else {
-          $listenerElement = $document;
+        if ( !dataAttributeValue || !Array.isArray( dataAttributeValue ) ) {
+          dataAttributeValue = dataAttributeValue ? [ dataAttributeValue ] : [ "" ];
         }
 
-        $listenerElement.on( settings[ "eventTrigger" ], settings[ "eventElement" ], function( event ) {
-          iterate( settings[ "operations" ] );
+        length = dataAttributeValue.length;
+        for ( index = 0; index < length; index += 1 ) {
+          currDataAttributeValue = dataAttributeValue[ index ];
 
-          if ( settings[ "returnFalse" ] === true ) {
-            return false;
+          // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
+          settings = $.extend(
+            true, {},
+            defaults,
+            window[ componentName ],
+            JSON.parse( currDataAttributeValue )
+          );
+
+          // Apply the extended settings to the element
+          elm.setAttribute( dataAttribute, JSON.stringify( settings ) );
+
+          // Set up event handler if specified in settings
+          eventTrigger = settings[ "eventTrigger" ];
+          if ( eventTrigger ) {
+            if ( settings[ "listenerElement" ] ) {
+              $listenerElement = $( settings[ "listenerElement" ] );
+            } else {
+              $listenerElement = $document;
+            }
+
+            eventElement = settings[ "eventElement" ];
+            if ( eventElement ) {
+              $listenerElement.on( eventTrigger, eventElement, function( event ) {
+                iterate( settings[ "operations" ] );
+
+                if ( settings[ "returnFalse" ] === true ) {
+                  return false;
+                }              
+              } );
+            } else {
+              $listenerElement.on( eventTrigger, function( event ) {
+                iterate( settings[ "operations" ] );
+
+                if ( settings[ "returnFalse" ] === true ) {
+                  return false;
+                }              
+              } );
+            }
           }
-        } );
 
-        if ( !settings[ "ignoreInit" ] ) {
-          iterate( settings[ "operations" ] );
+          if ( !settings[ "ignoreInit" ] ) {
+            iterate( settings[ "operations" ] );
+          }
         }
       }
     },

@@ -33,48 +33,58 @@ var componentName = "wb-format-gen",
       // returns DOM object = proceed with init
       // returns undefined = do not proceed with init (e.g., already initialized)
       var elm = wb.init( event, componentName, selector ),
-          settings, eventTrigger, $listenerElement, eventElement;
+          settings, eventTrigger, $listenerElement, eventElement, dataAttributeValue, currDataAttributeValue, index, length;
 
       if ( elm ) {
+        dataAttributeValue = elm.getAttribute( dataAttribute );
 
-        // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
-        settings = $.extend(
-          true, {},
-          defaults,
-          window[ componentName ],
-          JSON.parse( elm.getAttribute( dataAttribute ) )
-        );
-
-        // Apply the extended settings to the element
-        elm.setAttribute( dataAttribute, JSON.stringify( settings ) );
-
-        // Set up event handler if specified in settings
-        eventTrigger = settings[ "eventTrigger" ];
-        if ( eventTrigger ) {
-          if ( settings[ "listenerElement" ] ) {
-            $listenerElement = $( settings[ "listenerElement" ] );
-          } else {
-            $listenerElement = $document;
-          }
-
-          eventElement = settings[ "eventElement" ];
-          if ( eventElement ) {
-            $listenerElement.on( eventTrigger, eventElement, function( event ) {
-              handleEvent( event );
-            } );
-          } else {
-            $listenerElement.on( eventTrigger, function( event ) {
-              handleEvent( event, settings );
-            } );
-          }
+        if ( !dataAttributeValue || !Array.isArray( dataAttributeValue ) ) {
+          dataAttributeValue = dataAttributeValue ? [ dataAttributeValue ] : [ "" ];
         }
 
-        if ( settings[ "resetForm" ] ) {
-          clearFormFieldStatus( settings[ "resetForm" ] );
-        }
+        length = dataAttributeValue.length;
+        for ( index = 0; index < length; index += 1 ) {
+          currDataAttributeValue = dataAttributeValue[ index ];
 
-        if ( settings[ "onInit" ] === true ) {
-          handleEvent( event, settings );
+          // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
+          settings = $.extend(
+            true, {},
+            defaults,
+            window[ componentName ],
+            JSON.parse( currDataAttributeValue )
+          );
+
+          // Apply the extended settings to the element
+          elm.setAttribute( dataAttribute, JSON.stringify( settings ) );
+
+          // Set up event handler if specified in settings
+          eventTrigger = settings[ "eventTrigger" ];
+          if ( eventTrigger ) {
+            if ( settings[ "listenerElement" ] ) {
+              $listenerElement = $( settings[ "listenerElement" ] );
+            } else {
+              $listenerElement = $document;
+            }
+
+            eventElement = settings[ "eventElement" ];
+            if ( eventElement ) {
+              $listenerElement.on( eventTrigger, eventElement, function( event ) {
+                handleEvent( event );
+              } );
+            } else {
+              $listenerElement.on( eventTrigger, function( event ) {
+                handleEvent( event, settings );
+              } );
+            }
+          }
+
+          if ( settings[ "resetForm" ] ) {
+            clearFormFieldStatus( settings[ "resetForm" ] );
+          }
+
+          if ( settings[ "onInit" ] === true ) {
+            handleEvent( event, settings );
+          }
         }
       }
     },
