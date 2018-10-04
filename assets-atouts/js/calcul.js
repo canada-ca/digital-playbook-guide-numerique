@@ -76,21 +76,26 @@ var componentName = "wb-calculate",
     iterate = function( operations ) {
 
       var operationsLength = operations.length,
-          operationsIndex, operation, outputTarget, $target, result;
+          operationsIndex, operation, outputTarget, targets, target, result, index, length, outputAttribute, outputProperty;
       for ( operationsIndex = 0; operationsIndex < operationsLength; operationsIndex += 1 ) {
         operation = operations[ operationsIndex ];
         outputTarget = operation[ "outputTarget" ];
+        outputAttribute = operation[ "outputAttribute" ];
+        outputProperty = operation[ "outputProperty" ];
         result = calculate( operation );
 
-
         if ( outputTarget ) {
-          $target = $( outputTarget );
-          if ( operation[ "outputAttribute" ] ) {
-            $target.attr( operation[ "outputAttribute" ], result );
-          } else if ( operation[ "outputData" ] ) {
-            $target.data( operation[ "outputData" ], result ); 
-          } else {
-            $target.text( result );
+          targets = document.querySelectorAll( outputTarget );
+          length = targets.length;
+          for ( index = 0; index < length; index += 1 ) {
+            target = targets[ index ];
+            if ( outputAttribute ) {
+              target.setAttribute( outputAttribute, result );
+            } else if ( outputProperty ) {
+              target[ outputProperty ] = result; 
+            } else {
+              target.textContent = result ;
+            }
           }
         }
       }
@@ -138,7 +143,8 @@ var componentName = "wb-calculate",
      * operations {Array} Optional (required for action type of "operations" for "conditional" type). Operations to execute.
      * class {String} Optional (required for action type of "addClass" or "removeClass" for "conditional" type). Class to add or remove.  
      * outputTarget {String} Optional (required for operations that output the result and for the action type of "event", "addClass", "removeClass" and "outputValue" and for the "conditional" type). CSS selector for where to output the result of the operation or for where to trigger the event.
-     * outputAttribute {String} Optional (can be used for operations that output the result and the outputValue action). Attribute on the outputTarget to update.
+     * outputAttribute {String} Optional (can be used for operations that output the result and the outputValue action). Attribute on the outputTarget to update (e.g., class, tabindex, data-*).
+     * outputProperty {String} Optional (can be used for operations that output the result and the outputValue action). Property on the outputTarget to update (e.g., disabled, selected, checked).
      * outputType {String} (required for outputValue action type) Only "append", "prepend" or "replace" as possible types.
      */
     calculate = function( operation ) {
@@ -154,8 +160,8 @@ var componentName = "wb-calculate",
           $query = value || !query ? null : $( query ),
           queryResultsSize = !$query ? null : $query.length, 
           decimalPlaces = operation[ "decimalPlaces" ],
-          inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
-          outputTargets, outputTarget, outputAttribute, outputType, currentValue, outputValue, outputTargetIndex, outputTargetsLength;
+          inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute, outputTargets,
+          outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue, outputTargetIndex, outputTargetsLength;
 
       if ( type === "number" || type === "string" || type === "length" ) {
         if ( $query ) {
@@ -344,7 +350,12 @@ var componentName = "wb-calculate",
                     if ( outputAttribute ) {
                       currentValue = outputTarget.getAttribute( outputAttribute );
                     } else {
-                      currentValue = outputTarget.textContent;
+                      outputProperty = action[ "outputProperty" ];
+                      if ( outputProperty ) {
+                        currentValue = outputTarget[ outputProperty ];
+                      } else {
+                        currentValue = outputTarget.textContent;
+                      }
                     }
 
                     if ( currentValue ) {
@@ -357,6 +368,8 @@ var componentName = "wb-calculate",
 
                     if ( outputAttribute ) {
                       outputTarget.setAttribute( outputAttribute, outputValue );
+                    } else if ( outputProperty ) {
+                      outputTarget[ outputProperty ] = outputValue;
                     } else {
                       outputTarget.textContent = outputValue;
                     }

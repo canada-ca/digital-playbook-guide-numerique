@@ -15,6 +15,7 @@
  */
 var componentName = "wb-format-gen",
     selector = "." + componentName,
+    dataAttribute = "data-" + componentName,
     initEvent = "wb-init" + selector,
     $document = wb.doc,
     defaults = {
@@ -32,36 +33,40 @@ var componentName = "wb-format-gen",
       // returns DOM object = proceed with init
       // returns undefined = do not proceed with init (e.g., already initialized)
       var elm = wb.init( event, componentName, selector ),
-          settings, $elm, $listenerElement, eventElement;
+          settings, eventTrigger, $listenerElement, eventElement;
 
       if ( elm ) {
-        $elm = $( elm );
 
         // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
         settings = $.extend(
           true, {},
           defaults,
           window[ componentName ],
-          wb.getData( $elm, componentName )
+          JSON.parse( elm.getAttribute( dataAttribute ) )
         );
 
-        // Apply the extended settings to the element(s)
-        $elm.data( componentName, settings );
+        // Apply the extended settings to the element
+        elm.setAttribute( dataAttribute, JSON.stringify( settings ) );
 
-        if ( settings[ "listenerElement" ] ) {
-          $listenerElement = $( settings[ "listenerElement" ] );
-        } else {
-          $listenerElement = $document;
-        }
-        eventElement = settings[ "eventElement" ];
-        if ( eventElement ) {
-          $listenerElement.on( settings[ "eventTrigger" ], settings[ "eventElement" ], function( event ) {
-            handleEvent( event, settings );
-          } );
-        } else {
-          $listenerElement.on( settings[ "eventTrigger" ], function( event ) {
-            handleEvent( event, settings );
-          } );
+        // Set up event handler if specified in settings
+        eventTrigger = settings[ "eventTrigger" ];
+        if ( eventTrigger ) {
+          if ( settings[ "listenerElement" ] ) {
+            $listenerElement = $( settings[ "listenerElement" ] );
+          } else {
+            $listenerElement = $document;
+          }
+
+          eventElement = settings[ "eventElement" ];
+          if ( eventElement ) {
+            $listenerElement.on( eventTrigger, eventElement, function( event ) {
+              handleEvent( event );
+            } );
+          } else {
+            $listenerElement.on( eventTrigger, function( event ) {
+              handleEvent( event, settings );
+            } );
+          }
         }
 
         if ( settings[ "resetForm" ] ) {
@@ -477,7 +482,7 @@ var componentName = "wb-format-gen",
      */
     getNestedArrayElementCounts = function( data, maxCountArrayLevels ) {
       var totalElementCount = 0,
-          currMaxCountArrayLevels = maxCountArrayLevels !== null ? maxCountArrayLevels : 1000,
+          currMaxCountArrayLevels = maxCountArrayLevels ? maxCountArrayLevels : 1000,
           arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
 
       if ( !Array.isArray( data ) ) {
@@ -551,10 +556,11 @@ var componentName = "wb-format-gen",
           type = settings[ "type" ],
           source = settings[ "source" ],
           filename = settings[ "filename" ],
+          element = settings[ "element" ],
           fileData, mimeType, blobOutput, urlOutput, action, key, indexesKeys, storedData;
 
       if ( type === "csv" ) {
-        if ( source === "session-storage" || source === "local-storage" ) {
+        if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
           key = settings[ "key" ];
           indexesKeys = settings[ "indexesKeys" ];
 
@@ -563,7 +569,7 @@ var componentName = "wb-format-gen",
             indexesKeys = JSON.parse( indexesKeys );
           }
 
-          storedData = retrieveData( key, indexesKeys, source === "local-storage" );
+          storedData = retrieveData( key, indexesKeys, source, false, element );
 
           if ( !settings[ "tableColSpecs" ] ) {
             fileData = generateTableRows( storedData, "csv" );
@@ -579,8 +585,8 @@ var componentName = "wb-format-gen",
       } else if ( type === "json" ) {
         if ( source === "form-state" ) {
           fileData = JSON.stringify( getFormFieldStatus( settings[ "container" ] ) );
-        } else if ( source === "session-storage" || source === "local-storage" ) {
-          fileData = retrieveData( settings[ "key" ], settings[ "indexesKeys" ] , source === "local-storage", true );
+        } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
+          fileData = retrieveData( settings[ "key" ], settings[ "indexesKeys" ] , source, true, element );
         } else {
           fileData = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
         }
@@ -644,7 +650,7 @@ var componentName = "wb-format-gen",
              if ( action === "restore-form-state" ) {
                setFormFieldStatus( settings[ "container" ], fileData );
              } else if ( action === "restore-storage" ) {
-               storeData( "replace", settings[ "key" ], settings[ "indexesKeys" ], settings[ "target" ] === "local-storage", fileData );
+               storeData( "replace", settings[ "key" ], settings[ "indexesKeys" ], settings[ "target" ], fileData, settings[ "element" ] );
              }
 
              return fileData;
@@ -661,7 +667,7 @@ var componentName = "wb-format-gen",
 
     /**
      * @method outputStorage
-     * @overview Perform actions on data in sessionStorage or localStorage (including storing and deleting)
+     * @overview Perform actions on data in sessionStorage, localStorage or a data attribute (including storing and deleting)
      * @param Store or remove data in storage (e.g., append data, delete data)
      * @param settings {Object} Settings object for the data to store in or remove from storage
      */
@@ -670,7 +676,6 @@ var componentName = "wb-format-gen",
           source = settings[ "source" ],
           action = settings[ "action" ],
           key = settings[ "key" ],
-          useLocalStorage = type === "local-storage",
           indexesKeys = settings[ "indexesKeys" ],
           data;
 
@@ -699,20 +704,20 @@ var componentName = "wb-format-gen",
       }
 
       // Store the data
-      storeData( action, key, indexesKeys, useLocalStorage, data );
+      storeData( action, key, indexesKeys, type, data, settings[ "element" ] );
     },
 
     /**
      * @method inputStorage
-     * @overview Perform actions using data in sessionStorage or localStorage
+     * @overview Perform actions using data in sessionStorage, localStorage or a data attribute
      * @param Use data in storage (e.g., data to restore the state of a form or table)
      * @param settings {Object} Settings object for what to do with data in storage
      */
     inputStorage = function( settings ) {
       var type = settings[ "type" ],
+          source = settings[ "source" ],
           action = settings[ "action" ],
           key = settings[ "key" ],
-          useLocalStorage = type === "local-storage",
           indexesKeys = settings[ "indexesKeys" ],
           storedData, tableRows;
 
@@ -721,11 +726,15 @@ var componentName = "wb-format-gen",
         indexesKeys = JSON.parse( indexesKeys );
       }
 
-      storedData = retrieveData( key, indexesKeys, useLocalStorage );
+      storedData = retrieveData( key, indexesKeys, source ? source : type, false, settings[ "element" ] );
 
       if ( action === "restore-form-state" ) {
-        // Restore the form state from the stored data
-        setFormFieldStatus( settings[ "container" ], storedData );
+        // Restore the form state from the stored data, or clear it if no data was found
+        if ( storedData && storedData.length > 0 ) {
+          setFormFieldStatus( settings[ "container" ], storedData );
+        } else {
+          clearFormFieldStatus( settings[ "container" ] );
+        }
       } else if ( action === "set-table-rows" ) {
         // Set table data rows (normally with tbody as the container) using the stored data
         if ( !settings[ "tableColSpecs" ] ) {
@@ -742,146 +751,218 @@ var componentName = "wb-format-gen",
 
     /**
      * @method storeData
-     * @overview Stores data in sessionStorage or localStorage using a key and optionally in nested arrays/objects
-     * @param action {String} Action to take on the stored data (options: replace, append, prepend, delete)
+     * @overview Stores data in sessionStorage, localStorage or a data attribute using a key and optionally in nested arrays/objects
+     * @param action {String} Action to take on the stored data (options: replace, append, prepend, delete, increment, decrement)
      * @param key {String} Key for storing the data
      * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to store data in nested arrays/objects in the data
-     * @param useLocalStorage {Boolean} (defaults to false) Whether or not to store the data in localStorage
+     * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute")
      * @param data {String/Array/Object/Other} (not used for "delete" action) Data to store
-     * @fires Fires the storage-updated.wb-format-gen event on the document node once complete
+     * @param elements {String/DOM node/jQuery object} (optional, required for dataAttribute storage type) Elements containing the data attribute (only used for dataAttribute storage type)
+     * @fires Fires either the storage-updated.wb-format-gen or data-attribute-updated.wb-format-gen event on the document node once complete
      */
-    storeData = function( action, key, indexesKeys, useLocalStorage, data ) {
-      var currAction = action !== null ? action : "replace",
-          currIndexesKeys = indexesKeys !== null ? indexesKeys : [],
-          currUseLocalStorage = useLocalStorage !== null ? useLocalStorage : false,
+    storeData = function( action, key, indexesKeys, storageType, data, elements ) {
+      var currAction = action ? action : "replace",
+          currIndexesKeys = indexesKeys ? indexesKeys : [],
+          currStorageType = storageType ? storageType : "sessionStorage",
           indexesKeysLength = currIndexesKeys.length,
-          data, storedData, storedDataFragment, parentStoredDataFragment, index, typeofResult, indexKey, nextIndexKey;
+          data, storedData, storedDataFragment, parentStoredDataFragment, index, length, typeofResult, indexKey, nextIndexKey,
+          currElement, currElements, elementsIndex, elementsLength;
 
       // Retrieve and parse any stored data
-      storedData = currUseLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key );
-      if ( storedData && storedData.length > 0 ) {
-        storedData = JSON.parse( storedData );
-        storedDataFragment = storedData;
+      if ( currStorageType === "sessionStorage" ) {
+        currElements = [ sessionStorage.getItem( key ) ];
+      } else if ( currStorageType === "localStorage" ) {
+        currElements = [ localStorage.getItem( key ) ];
+      } else {
+        // Convert to DOM nodes and then retrieve the data attribute
+        if ( elements instanceof jQuery ) {
+          currElements = elements.get();
+        } else if ( typeof elements === "string" ) {
+          currElements = document.querySelectorAll( elements );
+        } else {
+          currElements = elements;
+        }
+      }
 
-        if ( indexesKeysLength > 0 ) {
-          // Find the nested data to manipulate or delete
-          for ( index = 0; index < indexesKeysLength; index += 1 ) {
-            indexKey = currIndexesKeys[ index ];
+      elementsLength = currElements.length;
+      for ( elementsIndex = 0; elementsIndex < elementsLength; elementsIndex += 1 ) {
+        currElement = currElements[ elementsIndex ];
+        storedData = currStorageType === "dataAttribute" ? currElement.getAttribute( key ) : currElement;
 
-            if ( index === indexesKeysLength - 1 && currAction === "delete" ) {
-              // Delete only specified data
-              if ( Array.isArray( storedDataFragment ) ) {
-                storedDataFragment.splice( indexKey, 1 );
-              } else {
-                delete storedDataFragment[ indexKey ];
-              }
-            } else {
-              // Retrieve the nested data or create it if it doesn't already exist and is needed
-              parentStoredDataFragment = storedDataFragment;
-              storedDataFragment = storedDataFragment[ indexKey ];
+        if ( storedData && storedData.length > 0 ) {
+          storedData = JSON.parse( storedData );
+          storedDataFragment = storedData;
 
-              if ( !storedDataFragment ) {
-                nextIndexKey = currIndexesKeys[ index + 1 ];
+          if ( indexesKeysLength > 0 ) {
+            // Find the nested data to manipulate or delete
+            for ( index = 0; index < indexesKeysLength; index += 1 ) {
+              indexKey = currIndexesKeys[ index ];
 
-                if ( nextIndexKey ) {
-                  storedDataFragment = typeof nextIndexKey === "string" ? {} : [];
-                } else if ( currAction === "append" || currAction === "prepend" ) {
-                  storedDataFragment = [];
+              if ( index === indexesKeysLength - 1 && currAction === "delete" ) {
+                // Delete only specified data
+                if ( Array.isArray( storedDataFragment ) ) {
+                  storedDataFragment.splice( indexKey, 1 );
                 } else {
-                  break;
+                  delete storedDataFragment[ indexKey ];
                 }
-                parentStoredDataFragment[ indexKey ] = storedDataFragment;
+                break;
+              } else {
+                // Retrieve the nested data or create it if it doesn't already exist and is needed
+                parentStoredDataFragment = storedDataFragment;
+                storedDataFragment = storedDataFragment[ indexKey ];
+
+                if ( !storedDataFragment ) {
+                  nextIndexKey = currIndexesKeys[ index + 1 ];
+
+                  if ( nextIndexKey ) {
+                    storedDataFragment = typeof nextIndexKey === "string" ? {} : [];
+                  } else if ( currAction === "append" || currAction === "prepend" ) {
+                    storedDataFragment = [];
+                  } else {
+                    break;
+                  }
+                  parentStoredDataFragment[ indexKey ] = storedDataFragment;
+                }
               }
             }
+          } else if ( currAction === "delete" ) {
+            // Not working with nested data so delete all the stored data referenced by the key
+            if ( currStorageType === "sessionStorage" ) {
+              sessionStorage.removeItem( key );
+            } else if ( currStorageType === "localStorage" ) {
+              localStorage.removeItem( key );
+            } else {
+              currElement.setAttribute( key, "" );
+            }
+            return;
+          }
+
+          if ( currAction !== "delete" ) {
+            if ( Array.isArray( storedDataFragment ) ) {
+              if ( currAction === "append" ) {
+                storedDataFragment.push( data );
+              } else if ( currAction === "prepend" ) {
+                storedDataFragment.unshift( data );
+              } else {
+                if ( indexesKeysLength > 0 ) {
+                  parentStoredDataFragment[ currIndexesKeys[ index - 1 ] ] = data;
+                } else {
+                  storedData = data;
+                }
+              }
+              data = storedData;
+            } else {
+              if ( currAction === "increment" ) {
+                data = storedDataFragment + 1;
+              } else if ( currAction === "decrement" ) {
+                data = storedDataFragment - 1;
+              } else {
+                // Make sure everything is a string
+                if ( currAction !== "replace" && typeof storedDataFragment !== "string" ) {
+                  storedDataFragment = storedDataFragment.toString();
+                }
+                if ( typeof data !== "string" ) {
+                  data = data.toString();
+                }
+
+                if ( currAction === "append" ) {
+                  data = storedDataFragment + data;
+                } else if ( currAction === "prepend" ) {
+                  // Update the parent with the prepended data
+                  data += storedDataFragment;
+                }
+              }
+
+              // If parent exists, update it with the new data
+              if ( parentStoredDataFragment ) {
+                parentStoredDataFragment[ currIndexesKeys[ currIndexesKeys.length - 1 ] ] = data;
+                data = storedData;
+              }
+            }
+          } else {
+            data = storedDataFragment;
           }
         } else if ( currAction === "delete" ) {
-          // Not working with nested data so delete all the stored data referenced by the key
-          if ( currUseLocalStorage ) {
+          // Delete all the stored data referenced by the key
+          if ( currStorageType === "sessionStorage" ) {
+            sessionStorage.removeItem( key );
+          } else if ( currStorageType === "localStorage" ) {
             localStorage.removeItem( key );
           } else {
-            sessionStorage.removeItem( key );
+            currElement.setAttribute( key, "" );
           }
           return;
+        } else if ( currAction === "append" || currAction === "prepend" ) {
+          data = [ data ];
         }
 
-        if ( currAction !== "delete" ) {
-          if ( Array.isArray( storedDataFragment ) ) {
-            if ( currAction === "append" ) {
-              storedDataFragment.push( data );
-            } else if ( currAction === "prepend" ) {
-              storedDataFragment.unshift( data );
-            } else {
-              if ( indexesKeysLength > 0 ) {
-                parentStoredDataFragment[ currIndexesKeys[ index - 1 ] ] = data;
+        // Ensure the resulting data is a string
+        if ( typeof data !== "string" ) {
+          if ( data ) {
+            if ( typeof data === "object" ) {
+              if ( Array.isArray( data ) ) {
+                length = data.length;
               } else {
-                storedData = data;
+                length = Object.keys( data ).length;
               }
-            }
-            data = storedData;
-          } else {
-            // Make sure everything is a string
-            if ( currAction !== "replace" && typeof storedDataFragment !== "string" ) {
-              storedDataFragment = storedDataFragment.toString();
-            }
-            if ( typeof data !== "string" ) {
+
+              if ( length > 0 ) {
+                data = JSON.stringify( data );
+              } else {
+                data = "";
+              }
+            } else {
               data = data.toString();
             }
-
-            if ( currAction === "append" ) {
-              data = storedDataFragment + data;
-            } else if ( currAction === "prepend" ) {
-              // Update the parent with the prepended data
-              data += storedDataFragment;
-            }
-
-            // If parent exists, update it with the new data
-            if ( parentStoredDataFragment ) {
-              parentStoredDataFragment[ currIndexesKeys[ index - 1 ] ] = data;
-              data = storedData;
-            }
+          } else {
+            data = "";
           }
         }
-      } else if ( currAction === "delete" ) {
-        // Delete all the stored data referenced by the key
-        if ( currUseLocalStorage ) {
-          localStorage.removeItem( key );
+
+        if ( currStorageType === "sessionStorage" ) {
+          sessionStorage.setItem( key, data );
+        } else if ( currStorageType === "localStorage" ) {
+          localStorage.setItem( key, data );
         } else {
-          sessionStorage.removeItem( key );
+          currElement.setAttribute( key, data );
         }
-        return;
-      } else if ( currAction === "append" || currAction === "prepend" ) {
-        data = [ data ];
-      }
-
-      if ( typeof data !== "string" ) {
-        data = JSON.stringify( data );
-      }
-
-      if ( currUseLocalStorage ) {
-        localStorage.setItem( key, data );
-      } else {
-        sessionStorage.setItem( key, data );
       }
 
       // Trigger an event indicating that the storage has been updated
-      $document.trigger( "storage-updated" + selector );
+      $document.trigger( ( currStorageType === "dataAttribute" ? "data-attribute" : "storage" ) + "-updated" + selector );
     },
 
     /**
      * @method retrieveData
-     * @overview Retrieves data from sessionStorage or localStorage using a key and optionally from nested arrays/objects
+     * @overview Retrieves data from sessionStorage, localStorage or a data attribute using a key and optionally from nested arrays/objects
      * @param key {String} Key for retrieving the data
      * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to retrieve data from nested arrays/objects in the data
-     * @param useLocalStorage {Boolean} (defaults to false) Whether or not to retrieve the data from localStorage
+     * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute")
      * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
+     * @param element {String/DOM node/jQuery object} (optional, required for dataAttribute storage type) Element containing the data attribute (only uses for dataAttribute storage type)
      * @return {String} Returns the stored data.
      */
-    retrieveData = function( key, indexesKeys, useLocalStorage, returnAsString ) {
-      var currIndexesKeys = indexesKeys !== null ? indexesKeys : [],
-          currLocalStorage = useLocalStorage !== null ? useLocalStorage : false,
-          data = currLocalStorage ? localStorage.getItem( key ) : sessionStorage.getItem( key ),
+    retrieveData = function( key, indexesKeys, storageType, returnAsString, element ) {
+      var currIndexesKeys = indexesKeys ? indexesKeys : [],
+          currStorageType = storageType ? storageType : "sessionStorage",
           indexesKeysLength = currIndexesKeys.length,
-          index;
+          data, index;
+
+      // Retrieve and parse any stored data
+      if ( currStorageType === "sessionStorage" ) {
+        data = sessionStorage.getItem( key );
+      } else if ( currStorageType === "localStorage" ) {
+        data = localStorage.getItem( key );
+      } else {
+        // Convert to a DOM node and then retrieve the data attribute (assumption is retrieving from only one node)
+        if ( element instanceof jQuery ) {
+          data = element.get( 0 ).getAttribute( key );
+        } else if ( typeof element === "string" ) {
+          data = document.querySelector( element ).getAttribute( key );
+        } else {
+          data = element.getAttribute( key );
+        }
+      }
 
       if ( data && data.length > 0 ) {
         data = JSON.parse( data );
@@ -889,10 +970,10 @@ var componentName = "wb-format-gen",
         for ( index = 0; index < indexesKeysLength; index += 1 ) {
           data = data[ currIndexesKeys[ index ] ];
         }
-      }
 
-      if ( returnAsString ) {
-        data = JSON.stringify( data );
+        if ( returnAsString ) {
+          data = JSON.stringify( data );
+        }
       }
 
       return data;
@@ -1205,38 +1286,76 @@ var componentName = "wb-format-gen",
     handleEvent = function( event, settingsParam ) {
       var type = event.type,
           target = event.target,
-          settings = settingsParam ? settingsParam : wb.getData( $( target ), componentName ),
-          type, source, action, data, storedData, key, useLocalStorage;
+          settings = settingsParam ? settingsParam : JSON.parse( target.getAttribute( dataAttribute ) ),
+          operations = settings[ "operations" ],
+          eventTrigger = settings[ "eventTrigger" ],
+          returnFalse = false,
+          type, source, action, data, storedData, key, index, length, result, resetForm;
 
-      if ( settings && type !== "change" ) {
-        type = settings[ "type" ];
-        source = settings[ "source" ];
-
-        if ( target.type !== "file" ) {
-          if ( type === "session-storage" || type === "local-storage" ) {
-            outputStorage( settings );
-          } else if ( source === "session-storage" || source === "local-storage" ) {
-            if ( type === "csv" || type === "json" ) {
-              outputFile( settings );
-            } else {
-              inputStorage( settings );
-            }
-          } else {
-            outputFile( settings );
-          }
-        }
-      } else {
-        if ( target.type === "file" ) {
-          inputFile( settings, target );
-        }
+      // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
+      if ( eventTrigger && eventTrigger !== type && eventTrigger !== ( type + "." + event.namespace ) ) {
+        return;
       }
 
-      if ( settings && settings[ "returnFalse" ] === true ) {
-        return false;
+      if ( operations ) {
+        // Iterate through each settings array item
+        length = operations.length;
+        for ( index = 0; index < length; index += 1 ) {
+          result = handleEvent( event, operations[ index ] );
+          if ( result === false ) {
+            returnFalse = true;
+          }
+        }
+ 
+        if ( returnFalse ) {
+          return false;
+        }
+      } else {
+        if ( settings && type !== "change" ) {
+          type = settings[ "type" ];
+          source = settings[ "source" ];
+          resetForm = settings[ "resetForm" ];
+
+          if ( resetForm ) {
+            clearFormFieldStatus( resetForm );
+          } else if ( target.type !== "file" ) {
+            if ( type === "sessionStorage" || type === "localStorage" || type === "dataAttribute" ) {
+              outputStorage( settings );
+            } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
+              if ( type === "csv" || type === "json" ) {
+                outputFile( settings );
+              } else {
+                inputStorage( settings );
+              }
+            } else {
+              outputFile( settings );
+            }
+          }
+        } else {
+          if ( target.type === "file" ) {
+            inputFile( settings, target );
+          }
+        }
+
+        if ( settings && settings[ "returnFalse" ] === true ) {
+          return false;
+        }
       }
     };
 
-$document.on( "click change", selector, handleEvent );
+$document.on( "click change", selector, function( event ) {
+  var data = event.target.getAttribute( dataAttribute ),
+      settings, eventTrigger;
+
+  // Ignore non-wb-format-gen nodes and ones where eventTrigger of "click" or "change" is specified
+  if ( data ) {
+    settings = JSON.parse( data );
+    eventTrigger = settings[ "eventTrigger" ];
+    if ( !eventTrigger || ( eventTrigger !== "click" && eventTrigger !== "change" ) ) {
+      handleEvent( event, settings );
+    }
+  }
+} );
 
 // Bind the init event of the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );
