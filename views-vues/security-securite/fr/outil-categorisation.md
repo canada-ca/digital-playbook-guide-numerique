@@ -9,6 +9,8 @@ businessDomain:
   title: Business Domain
   intro: A business domain is an operational environment where a department performs business activities supporting common organizational objectives.
   "business-domain-field-label": What is your business domain?
+businessActivity:
+  title: Business Activity
 businessComponent:
   title: Business Component
   intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
@@ -70,6 +72,8 @@ fieldGridClass: col-sm-8
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
+<span data-wb-format-gen='{ "resetForm": "#business-domain-form, #business-activity-form, #business-component-form, #loss-of-confidentiality-form, #loss-of-integrity-form, #loss-of-availability-form" }'></span>
+
 <section id="welcome-section" class="wb-frmvld">
 <form id="welcome-form" class="form-horizontal" method="post">
 
@@ -111,10 +115,153 @@ This web-based version of the tool is meant to make the process of organizing th
 </div>
 </div>
 
-<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "source": "form-state", "container": "#business-domain-form", "action": "append" }'>Append business domain to assessment in session storage</button>
+<div class="btn-group" markdown="0">
+<!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
+<button id="save-domain" type="submit" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-domain-form", "listenerElement": "body", "returnFalse": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#save-domain", "outputEvent": "save-domain-proceed" }
+    ]
+  }
+] }' data-wb-format-gen='{ "eventTrigger": "save-domain-proceed", "eventElement": "#save-domain", "operations": [
+  { "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#business-domain-form", "action": "append" },
+  { "type": "dataAttribute", "element": "#save-activity, #save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-add-domain, #cancel-add-activity, #cancel-add-component, #cancel-add-loss-of-confidentiality, #cancel-add-loss-of-integrity, #cancel-add-loss-of-availability, #delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "increment" },
+  { "type": "dataAttribute", "element": "#delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 0 ], "action": "increment" }
+] }'>Save</button>
+<!-- Loads the previous domain in the current form or clear the forms where a previous domain does not exist. Also enables/disables buttons in the current form. -->
+<button id="cancel-add-domain" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-add-domain", "operations": [
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "restore-form-state", "container": "#business-domain-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-add-domain", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Cancel</button>
+<!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current domain from memory, loads the previous domain in the current form, or resets the form if no previous domain exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
+<button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "delete" },
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -2 ], "action": "restore-form-state", "container": "#business-domain-form" },
+  { "type": "dataAttribute", "element": "#save-activity, #save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-add-domain, #cancel-add-activity, #cancel-add-component, #cancel-add-loss-of-confidentiality, #cancel-add-loss-of-integrity, #cancel-add-loss-of-availability, #delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "decrement" },
+  { "type": "dataAttribute", "element": "#delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 0 ], "action": "decrement" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Delete</button>
+<!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
+<button id="add-another-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-domain", "operations": [
+  { "resetForm": "#business-domain-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-another-domain", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Add another business domain</button>
+<!-- Disabled by default. Resets the activity form, enables/disables buttons in the activity form, shows the activity form, hides this form. -->
+<button id="add-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-activity", "operations": [
+  { "resetForm": "#business-activity-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-activity", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": false },
+      { "type": "removeClass", "outputTarget": "#business-activity-section", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#business-domain-section", "class": "hidden" }
+    ]
+  }
+] }'>Add business activity</button>
+</div>
 
-<!-- Buttons for revealing the next/previous section and hiding the current one -->{%
-include views-vues/questionnaire-next-previous.html currentId="business-domain" nextId="business-component" nextHeading="2" previousId="welcome" previousHeading="2" %}
+</form>
+</section>
+
+<section id="business-activity-section" class="hidden wb-frmvld">
+<form id="business-activity-form" class="form-horizontal" method="post">
+
+## {{ page.businessActivity.title }}
+
+<div class="form-group" markdown="0">
+<label for="business-activity" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<div class="{{ page.fieldGridClass }}">
+<input name="business-activity" id="business-activity" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+</div>
+</div>
+
+<div class="btn-group" markdown="0">
+<!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
+<button id="save-activity" type="submit" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-activity-form", "listenerElement": "body", "returnFalse": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#save-activity", "outputEvent": "save-activity-proceed" }
+    ]
+  }
+] }' data-wb-format-gen='{ "eventTrigger": "save-activity-proceed", "eventElement": "#save-activity", "operations": [
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities" ], "source": "form-state", "container": "#business-activity-form", "action": "append" },
+  { "type": "dataAttribute", "element": "#save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-add-activity, #cancel-add-component, #cancel-add-loss-of-confidentiality, #cancel-add-loss-of-integrity, #cancel-add-loss-of-availability, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "increment" },
+  { "type": "dataAttribute", "element": "#delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 3 ], "action": "increment" }
+] }'>Save</button>
+<!-- Loads the previous activity in the current form or clear the forms where a previous activity does not exist. Also enables/disables buttons in the current form. -->
+<button id="cancel-add-activity" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-add-activity", "operations": [
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1 ], "action": "restore-form-state", "container": "#business-activity-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-add-activity", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Cancel</button>
+<!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current activity from memory, loads the previous activity in the current form, or resets the form if no previous activity exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
+<button id="delete-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#delete-activity", "operations": [
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1 ], "action": "delete" },
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -2 ], "action": "restore-form-state", "container": "#business-activity-form" },
+  { "type": "dataAttribute", "element": "#save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-add-activity, #cancel-add-component, #cancel-add-loss-of-confidentiality, #cancel-add-loss-of-integrity, #cancel-add-loss-of-availability, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "decrement" },
+  { "type": "dataAttribute", "element": "#delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 3 ], "action": "decrement" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-activity", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Delete</button>
+<!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
+<button id="add-another-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-activity", "operations": [
+  { "resetForm": "#business-activity-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-another-activity", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Add another business activity</button>
+<!-- Disabled by default. Resets the component form, enables/disables buttons in the component form, shows the component form, hides this form. -->
+<button id="add-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-component", "operations": [
+  { "resetForm": "#business-component-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-component", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-component, #cancel-add-component", "outputProperty": "disabled", "value": false },
+      { "type": "removeClass", "outputTarget": "#business-component-section", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#business-activity-section", "class": "hidden" }
+    ]
+  }
+] }'>Add business activity component</button>
+</div>
+
 </form>
 </section>
 
@@ -126,21 +273,6 @@ include views-vues/questionnaire-next-previous.html currentId="business-domain" 
 {{ page.businessComponent.intro1 }}
 
 {{ page.businessComponent.intro2 }}
-
-<!-- Temporary div for purpose of creating container for the button. Remove when testing is done -->
-<div id="business-activity-container">
-
-<div class="form-group" markdown="0">
-<label for="business-activity" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
-<div class="{{ page.fieldGridClass }}">
-<input name="business-activity" id="business-activity" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
-</div>
-</div>
-
-</div>
-
-<!-- TODO Figure out how to create this button on the fly for different business domains. So have one button for creating business acitivities for each business domain -->
-<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities" ], "source": "form-state", "container": "#business-activity-container", "action": "append" }'>Append business activity to business domain 2 in session storage (need at least 2 business domains for this to work)</button>
 
 <!-- Temporary div for purpose of creating container for the button. Remove when testing is done -->
 <div id="business-activity-component-container">
@@ -179,13 +311,98 @@ include views-vues/questionnaire-next-previous.html currentId="business-domain" 
 
 </div>
 
-<!-- TODO Figure out how to create this button on the fly for different business activities. So have one button for creating business acitivity components for each business activity -->
+<div class="btn-group" markdown="0">
+<!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
+<button id="save-component" type="submit" class="btn btn-primary wb-calculate wb-format-gen" data-wb-format-gen='{ "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#business-component-form", "indexesKeys": [ -1, 0, "activities", -1, 0, "components" ], "action": "append" }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-component-form", "listenerElement": "body", "returnFalse": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-component, #cancel-add-component", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#save-component", "outputEvent": "save-component-proceed" }
+    ]
+  }
+] }' data-wb-format-gen='{ "eventTrigger": "save-component-proceed", "eventElement": "#save-component", "operations": [
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components" ], "source": "form-state", "container": "#business-component-form", "action": "append" },
+  { "type": "dataAttribute", "element": "#save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-add-component, #cancel-add-loss-of-confidentiality, #cancel-add-loss-of-integrity, #cancel-add-loss-of-availability, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "increment" },
+  { "type": "dataAttribute", "element": "#delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 6 ], "action": "increment" }
+] }'>Save</button>
+<!-- Loads the previous component in the current form or clear the forms where a previous component does not exist. Also enables/disables buttons in the current form. -->
+<button id="cancel-add-component" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-add-component", "operations": [
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1 ], "action": "restore-form-state", "container": "#business-component-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-add-component", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-component, #cancel-add-component", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Cancel</button>
+<!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current component from memory, loads the previous component in the current form, or resets the form if no previous component exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
+<button id="delete-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#delete-component", "operations": [
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1 ], "action": "delete" },
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -2 ], "action": "restore-form-state", "container": "#business-component-form" },
+  { "type": "dataAttribute", "element": "#save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-add-component, #cancel-add-loss-of-confidentiality, #cancel-add-loss-of-integrity, #cancel-add-loss-of-availability, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "decrement" },
+  { "type": "dataAttribute", "element": "#delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 6 ], "action": "decrement" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-component", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-component, #cancel-add-component", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Delete</button>
+<!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
+<button id="add-another-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-component", "operations": [
+  { "resetForm": "#business-component-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-another-component", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-component, #cancel-add-component", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Add another business activity component</button>
+<!-- Disabled by default. Resets the loss of confidentiality form, enables/disables buttons in the loss of confidentiality form, shows the loss of confidentiality form, hides this form. -->
+<button id="add-loss-of-confidentiality" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-confidentiality", "operations": [
+  { "resetForm": "#loss-of-confidentiality-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-loss-of-confidentiality", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-confidentiality, #add-another-loss-of-confidentiality, #add-loss-of-integrity-confidentiality-form, #add-loss-of-availability-confidentiality-form", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-loss-of-confidentiality, #cancel-add-loss-of-confidentiality", "outputProperty": "disabled", "value": false },
+      { "type": "removeClass", "outputTarget": "#loss-of-confidentiality-section", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" }
+    ]
+  }
+] }'>Add loss of confidentiality failure scenario</button>
+<!-- Disabled by default. Resets the loss of integrity form, enables/disables buttons in the loss of integrity form, shows the loss of integrity form, hides this form. -->
+<button id="add-loss-of-integrity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-integrity", "operations": [
+  { "resetForm": "#loss-of-integrity-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-loss-of-integrity", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-integrity, #add-loss-of-confidentiality-integrity-form, #add-another-loss-of-integrity, #add-loss-of-availability-integrity-form", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-loss-of-integrity, #cancel-add-loss-of-integrity", "outputProperty": "disabled", "value": false },
+      { "type": "removeClass", "outputTarget": "#loss-of-integrity-section", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" }
+    ]
+  }
+] }'>Add loss of integrity failure scenario</button>
+<!-- Disabled by default. Resets the loss of availability form, enables/disables buttons in the loss of availability form, shows the loss of availability form, hides this form. -->
+<button id="add-loss-of-availability" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-availability", "operations": [
+  { "resetForm": "#loss-of-availability-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-loss-of-availability", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-availability, #add-loss-of-confidentiality-availability-form, #add-loss-of-integrity-availability-form, #add-another-loss-of-availability", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-loss-of-availability, #cancel-add-loss-of-availability", "outputProperty": "disabled", "value": false },
+      { "type": "removeClass", "outputTarget": "#loss-of-availability-section", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" }
+    ]
+  }
+] }'>Add loss of availability failure scenario</button>
+</div>
 
-<button type="button" class="btn btn-primary wb-format-gen" data-wb-format-gen='{ "type": "session-storage", "key": "assessment", "indexesKeys": [ 1, 0, "activities", 1, 0, "components" ], "source": "form-state", "container": "#business-activity-component-container", "action": "append" }'>Append business activity component, component description and type, and authoratative source to business activity 2 of business domain 2 in session storage (need at least 2 business activities in business domain 2 for this to work)</button>
-
-<!-- Buttons for revealing the next/previous section and hiding the current one -->{%
-assign nextId = "loss-of-" | append: page.lossTypes[ 0 ] %}{%
-include views-vues/questionnaire-next-previous.html currentId="business-component" nextId=nextId nextHeading="2" previousId="business-domain" previousHeading="2" %}
 </form>
 </section>
 
@@ -249,21 +466,79 @@ for lossType in page.lossTypes %}{%
 </div>
 </div>
 
-<!-- Buttons for revealing the next/previous section and hiding the current one (except for the last section which doesn't have a next button) -->{%
-  assign currentId = "loss-of-" | append: lossType %}{%
-  if lossTypeIndex == 0 %}{%
-    assign previousId = "business-component" %}{%
-  else %}{%
-    assign previousId = "loss-of-" | append: page.lossTypes[ previousLossTypeIndex ] %}{%
+<div class="btn-group" markdown="0">
+<!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
+<button id="save-loss-of-{{ lossType }}" type="submit" class="btn btn-primary wb-format-gen wb-calculate" data-wb-format-gen='{ "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#loss-of-{{ lossType }}-form", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}" ], "action": "append" }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#loss-of-{{ lossType }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-add-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#save-loss-of-{{ lossType }}", "outputEvent": "save-loss-of-{{ lossType }}-proceed" }
+    ]
+  }
+] }' data-wb-format-gen='{ "eventTrigger": "save-loss-of-{{ lossType }}-proceed", "eventElement": "#save-loss-of-{{ lossType }}", "operations": [
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}" ], "source": "form-state", "container": "#loss-of-{{ lossType }}-form", "action": "append" },
+  { "type": "dataAttribute", "element": "#cancel-add-loss-of-{{ lossType }}, #delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "increment" },
+  { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 9 ], "action": "increment" }
+] }'>Save</button>
+<!-- Loads the previous loss of {{ lossType }} in the current form or clear the forms where a previous loss of {{ lossType }} does not exist. Also enables/disables buttons in the current form. -->
+<button id="cancel-add-loss-of-{{ lossType }}" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -1 ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-add-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Cancel</button>
+<!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current loss of {{ lossType }} from memory, loads the previous loss of {{ lossType }} in the current form, or resets the form if no previous loss of {{ lossType }} exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
+<button id="delete-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -1 ], "action": "delete" },
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -2 ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form" },
+  { "type": "dataAttribute", "element": "#cancel-add-loss-of-{{ lossType }}, #delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "decrement" },
+  { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 9 ], "action": "decrement" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-add-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Delete</button>{%
+assign lossTypeIndexInner = 0 %}{%
+for lossTypeInner in page.lossTypes %}{%
+  if lossTypeIndexInner == lossTypeIndex %}
+<!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
+<button id="add-another-loss-of-{{ lossTypeInner }}" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-loss-of-{{ lossTypeInner }}", "operations": [
+  { "resetForm": "#loss-of-{{ lossTypeInner }}-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-another-loss-of-{{ lossTypeInner }}", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossTypeInner }}, #cancel-add-loss-of-{{ lossTypeInner }}", "outputProperty": "disabled", "value": false }
+    ]
+  }
+] }'>Add another loss of {{ lossTypeInner }} failure scenario</button>{%
+  else %}
+<!-- Disabled by default. Resets the loss of {{ lossTypeInner }} form, enables/disables buttons in the loss of {{ lossTypeInner }} form, shows the loss of {{ lossTypeInner }} form, hides this form. -->
+<button id="add-loss-of-{{ lossTypeInner }}-{{ lossType }}-form" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-{{ lossTypeInner }}-{{ lossType }}-form", "operations": [
+  { "resetForm": "#loss-of-{{ lossTypeInner }}-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-loss-of-{{ lossTypeInner }}-{{ lossType }}-form", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossTypeInner }}, #cancel-add-loss-of-{{ lossTypeInner }}", "outputProperty": "disabled", "value": false },
+      { "type": "removeClass", "outputTarget": "#loss-of-{{ lossTypeInner }}-section", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#loss-of-{{ lossType }}-section", "class": "hidden" }
+    ]
+  }
+] }'>Add loss of {{ lossTypeInner }} failure scenario</button>{%
   endif %}{%
-  if lossTypeIndex == 2 %}{%
-    assign nextId = "summary-report" %}{%
-    assign nextHeading = "3" %}{%
-  else %}{%
-    assign nextId = "loss-of-" | append: page.lossTypes[ lossTypeIndex ] %}{%
-    assign nextHeading = "2" %}{%
-  endif %}{%
-  include views-vues/questionnaire-next-previous.html currentId=currentId nextId=nextId nextHeading=nextHeading previousId=previousId previousHeading="2" %}
+  assign lossTypeIndexInner = lossTypeIndexInner | plus: 1 %}{%
+endfor %}
+</div>
+
 </form>
 </section>{%
   assign lossTypeIndex = lossTypeIndex | plus: 1 %}{%
@@ -371,13 +646,25 @@ The following report provides the detailed injury assessment performed for each 
 <th>{{ page.lossOfCommon[ "analysis-label" ] }}</th>
 </tr>
 </thead>
-<tbody class="wb-format-gen" data-wb-format-gen='{ "onInit": true, "eventTrigger": "storage-updated.wb-format-gen", "action": "set-table-rows", "source": "session-storage", "key": "assessment", "tableColSpecs": [
+<tbody class="wb-format-gen" data-wb-format-gen='{ "onInit": true, "eventTrigger": "storage-updated.wb-format-gen", "action": "set-table-rows", "source": "sessionStorage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 1, "state" ] },
   { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
-  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "confidentiality" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "integrity" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "availability" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
 ], "container": "#detailed-report-section tbody"
 }'>
 <tr>{%
@@ -390,7 +677,7 @@ endfor %}
 
 <div markdown="0" class="btn-group mrgn-tp-md">
 <!-- Button for saving progress to a JSON file -->
-<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment-json", "source": "session-storage", "key": "assessment" }'>Save progress to a file</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment-json", "source": "sessionStorage", "key": "assessment" }'>Save progress to a file</button>
 <!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. this is done to give more visual control over the appearance than what the input type="file" field allows. -->
 <button id="restore-from-file-button" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
   { "type": "action",
@@ -399,17 +686,29 @@ endfor %}
     ]
   }
 ] }'>Restore progress from a file</button>
-<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "filename": "assessment-csv", "source": "session-storage", "key": "assessment", "tableColSpecs": [
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "filename": "assessment-csv", "source": "sessionStorage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 1, "state" ] },
   { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
-  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "confidentiality" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "integrity" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "availability" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
 ] }'>Download assessment in CSV format</button>
 </div>
 <div class="hidden">
-<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": "json", "action": "restore-storage", "target": "session-storage", "key": "assessment" }' />
+<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }' />
 </div>
 
 </section>
