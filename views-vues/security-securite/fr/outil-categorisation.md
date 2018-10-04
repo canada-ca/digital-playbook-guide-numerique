@@ -548,9 +548,12 @@ endfor %}
 
 ## Results
 
-<section id="summary-report-section">
+<div class="wb-tabs">
+<div class="tabpanels">
 
-### Summary Report
+<details id="summary-report-section">
+
+<summary markdown="0">Summary Report</summary>
 
 The summary report expresses the highest level of expected injuries from threat comporomise with respect to the security objectives of confidentiality, integrity, and availability.
 
@@ -604,11 +607,11 @@ The summary report expresses the highest level of expected injuries from threat 
 </tbody>
 </table>
 
-</section>
+</details>
 
-<section id="detailed-report-section">
+<details id="detailed-report-section" open="open">
 
-### Detailed Report
+<summary markdown="0">Detailed Report</summary>
 
 Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
 
@@ -675,6 +678,11 @@ endfor %}
 </tbody>
 </table>
 
+</details>
+
+</div>
+</div>
+
 <div markdown="0" class="btn-group mrgn-tp-md">
 <!-- Button for saving progress to a JSON file -->
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment-json", "source": "sessionStorage", "key": "assessment" }'>Save progress to a file</button>
@@ -710,7 +718,5 @@ endfor %}
 <div class="hidden">
 <input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }' />
 </div>
-
-</section>
 
 </section>

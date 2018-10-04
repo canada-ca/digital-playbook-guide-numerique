@@ -12,7 +12,7 @@
     "inputs": [
       { "type": "add",
         "inputs": [
-          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden, .non-scoring-result, [class*=-checkbox-score]) td:first-of-type span:not(.hidden)" }{%
+          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden):not(.non-scoring-result):not([class*=-checkbox-score]) td:first-of-type span:not(.hidden)" }{%
 comment %}checkboxQuestionIdsArray is defined in aia-questionnaire-eia.html{% endcomment %}{%
 for checkboxQuestionId in checkboxQuestionIdsArray %},
           { "type": "subtract", "inputs": [
@@ -24,7 +24,7 @@ endfor %}
       },
       {
         "type": "count",
-        "query": "#detailed-results-table tbody tr:not(.hidden, .non-scoring-result, [class*=-checkbox-score]), #detailed-results-table tbody tr[class*=-checkbox-score][id*=a-result]:not(.hidden)"
+        "query": "#detailed-results-table tbody tr:not(.hidden):not(.non-scoring-result):not([class*=-checkbox-score]), #detailed-results-table tbody tr[class*=-checkbox-score][id*=a-result]:not(.hidden)"
       }
     ]
   },
