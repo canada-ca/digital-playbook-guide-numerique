@@ -76,10 +76,12 @@ var componentName = "wb-calculate",
     iterate = function( operations ) {
 
       var operationsLength = operations.length,
-          operationsIndex, operation, outputTarget, targets, target, result, index, length;
+          operationsIndex, operation, outputTarget, targets, target, result, index, length, outputAttribute, outputProperty;
       for ( operationsIndex = 0; operationsIndex < operationsLength; operationsIndex += 1 ) {
         operation = operations[ operationsIndex ];
         outputTarget = operation[ "outputTarget" ];
+        outputAttribute = operation[ "outputAttribute" ];
+        outputProperty = operation[ "outputProperty" ];
         result = calculate( operation );
 
         if ( outputTarget ) {
@@ -87,10 +89,10 @@ var componentName = "wb-calculate",
           length = targets.length;
           for ( index = 0; index < length; index += 1 ) {
             target = targets[ index ];
-            if ( operation[ "outputAttribute" ] ) {
-              target.setAttribute( operation[ "outputAttribute" ], result );
-            } else if ( operation[ "outputProperty" ] ) {
-              target[ operation[ "outputProperty" ] ] = result; 
+            if ( outputAttribute ) {
+              target.setAttribute( outputAttribute, result );
+            } else if ( outputProperty ) {
+              target[ outputProperty ] = result; 
             } else {
               target.textContent = result ;
             }
