@@ -108,7 +108,7 @@ This web-based version of the tool is meant to make the process of organizing th
 
 {{ page.businessDomain.intro }}
 
-<div id="business-domain-field-container" class="form-group wb-calculate wb-format-gen" markdown="0" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "change", "eventElement": "#business-domain-field-container", "operations": [
+<div id="business-domain-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "change", "eventElement": "#business-domain-fields-container", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -127,23 +127,27 @@ This web-based version of the tool is meant to make the process of organizing th
     "actionsTrue": [
       { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": false },
-      { "type": "event", "outputTarget": "#business-domain-field-container", "outputEvent": "edit-domain" }
+      { "type": "event", "outputTarget": "#business-domain-fields-container", "outputEvent": "edit-domain" }
     ]
   }
 ] }' data-wb-format-gen='[
-  { "eventTrigger": "edit-domain", "eventElement": "#business-domain-field-container", "operations": [
+  { "eventTrigger": "edit-domain", "eventElement": "#business-domain-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
     { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ] } }
   ] },
-  { "eventTrigger": "append-domain", "eventElement": "#business-domain-field-container", "operations": [
+  { "eventTrigger": "append-domain", "eventElement": "#business-domain-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
     { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys" ], "action": "delete" }
   ] }
 ]'>
+
+<div class="form-group" markdown="0">
 <label for="business-domain-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessDomain[ "business-domain-field-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="business-domain-field" id="business-domain-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
+</div>
+
 </div>
 
 <div class="btn-group" markdown="0">
@@ -175,7 +179,7 @@ This web-based version of the tool is meant to make the process of organizing th
         }
       ],
       "actionsTrue": [
-        { "type": "event", "outputTarget": "#business-domain-field-container", "outputEvent": "append-domain" }
+        { "type": "event", "outputTarget": "#business-domain-fields-container", "outputEvent": "append-domain" }
       ]
     },
     { "type": "action",
@@ -233,11 +237,46 @@ This web-based version of the tool is meant to make the process of organizing th
 
 ## {{ page.businessActivity.title }}
 
+<div id="business-activity-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "change", "eventElement": "#business-activity-fields-container", "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "boolean", "query": "#save-activity", "sourceProperty": "disabled" },
+          true
+        ]
+      },
+      { "type": "==",
+        "inputs": [
+          { "type": "string", "query": "#save-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          "append"
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#business-activity-fields-container", "outputEvent": "edit-activity" }
+    ]
+  }
+] }' data-wb-format-gen='[
+  { "eventTrigger": "edit-activity", "eventElement": "#business-activity-fields-container", "operations": [
+    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
+    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ] } }
+  ] },
+  { "eventTrigger": "append-activity", "eventElement": "#business-activity-fields-container", "operations": [
+    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
+    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "delete" }
+  ] }
+]'>
+
 <div class="form-group" markdown="0">
 <label for="business-activity-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="business-activity-field" id="business-activity-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
+</div>
+
 </div>
 
 <div class="btn-group" markdown="0">
@@ -259,6 +298,19 @@ This web-based version of the tool is meant to make the process of organizing th
 <button id="cancel-add-activity" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-add-activity", "operations": [
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1 ], "action": "restore-form-state", "container": "#business-activity-form" }
 ] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-add-activity", "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "string", "query": "#save-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          "replace"
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "event", "outputTarget": "#business-activity-fields-container", "outputEvent": "append-activity" }
+    ]
+  },
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": true },
@@ -318,8 +370,38 @@ This web-based version of the tool is meant to make the process of organizing th
 
 {{ page.businessComponent.intro2 }}
 
-<!-- Temporary div for purpose of creating container for the button. Remove when testing is done -->
-<div id="business-activity-component-container">
+<div id="business-activity-component-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "change", "eventElement": "#business-activity-component-fields-container", "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "boolean", "query": "#save-component", "sourceProperty": "disabled" },
+          true
+        ]
+      },
+      { "type": "==",
+        "inputs": [
+          { "type": "string", "query": "#save-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          "append"
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-component, #cancel-add-component", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#business-activity-component-fields-container", "outputEvent": "edit-activity" }
+    ]
+  }
+] }' data-wb-format-gen='[
+  { "eventTrigger": "edit-component", "eventElement": "#business-activity-component-fields-container", "operations": [
+    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
+    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ] } }
+  ] },
+  { "eventTrigger": "append-component", "eventElement": "#business-activity-component-fields-container", "operations": [
+    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
+    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "delete" }
+  ] }
+]'>
 
 <div class="form-group" markdown="0">
 <label for="business-activity-component-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-component-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
@@ -374,6 +456,19 @@ This web-based version of the tool is meant to make the process of organizing th
 <button id="cancel-add-component" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-add-component", "operations": [
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1 ], "action": "restore-form-state", "container": "#business-component-form" }
 ] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-add-component", "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "string", "query": "#save-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          "replace"
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "event", "outputTarget": "#business-activity-component-fields-container", "outputEvent": "append-component" }
+    ]
+  },
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-component, #cancel-add-component", "outputProperty": "disabled", "value": true },
@@ -460,6 +555,39 @@ for lossType in page.lossTypes %}{%
 
 {{ page[ lossType ].intro }}
 
+<div id="loss-of-{{ lossType }}-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "change", "eventElement": "#loss-of-{{ lossType }}-fields-container", "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "boolean", "query": "#save-loss-of-{{ lossType }}", "sourceProperty": "disabled" },
+          true
+        ]
+      },
+      { "type": "==",
+        "inputs": [
+          { "type": "string", "query": "#save-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          "append"
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-add-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#loss-of-{{ lossType }}-fields-container", "outputEvent": "edit-loss-of-{{ lossType }}" }
+    ]
+  }
+] }' data-wb-format-gen='[
+  { "eventTrigger": "edit-loss-of-{{ lossType }}", "eventElement": "#loss-of-{{ lossType }}-fields-container", "operations": [
+    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
+    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ] } }
+  ] },
+  { "eventTrigger": "append-loss-of-{{ lossType }}", "eventElement": "#loss-of-{{ lossType }}-fields-container", "operations": [
+    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
+    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "delete" }
+  ] }
+]'>
+
 <div class="form-group" markdown="0">
 <label for="failure-scenario-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon[ "failure-scenario-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
@@ -510,6 +638,8 @@ for lossType in page.lossTypes %}{%
 </div>
 </div>
 
+</div>
+
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-loss-of-{{ lossType }}" type="submit" class="btn btn-primary wb-format-gen wb-calculate" data-wb-format-gen='{ "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#loss-of-{{ lossType }}-form", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}" ], "action": "append" }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#loss-of-{{ lossType }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
@@ -529,6 +659,19 @@ for lossType in page.lossTypes %}{%
 <button id="cancel-add-loss-of-{{ lossType }}" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -1 ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form" }
 ] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "string", "query": "#save-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          "replace"
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "event", "outputTarget": "#loss-of-{{ lossType }}-fields-container", "outputEvent": "append-loss-of-{{ lossType }}" }
+    ]
+  },
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-add-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },

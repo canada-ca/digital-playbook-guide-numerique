@@ -829,9 +829,10 @@ var componentName = "wb-format-gen",
               } else {
                 // Retrieve the nested data or create it if it doesn't already exist and is needed
                 parentStoredDataFragment = storedDataFragment;
+
                 storedDataFragment = storedDataFragment[ indexKey ];
 
-                if ( !storedDataFragment ) {
+                if ( !storedDataFragment && storedDataFragment !== 0 ) {
                   nextIndexKey = currIndexesKeys[ index + 1 ];
 
                   if ( nextIndexKey !== null ) {
@@ -881,9 +882,8 @@ var componentName = "wb-format-gen",
                 if ( currAction !== "replace" && typeof storedDataFragment !== "string" ) {
                   storedDataFragment = storedDataFragment.toString();
                 }
-                if ( typeof data !== "string" ) {
-                  resultData = data.toString();
-                }
+
+                resultData = typeof data !== "string" ? data.toString() : data;
 
                 if ( currAction === "append" ) {
                   resultData = storedDataFragment + resultData;
