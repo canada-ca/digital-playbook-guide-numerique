@@ -396,7 +396,8 @@ var componentName = "wb-format-gen",
 
               for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
                 relativeToColumn = relativeToArray[ index ];
-                countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, length - index - 1 ).subElementCount;              
+
+                countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, length - index - 1 ).subElementCount;
               }
             }
           } else if ( !count ) {
@@ -500,7 +501,7 @@ var componentName = "wb-format-gen",
      */
     getNestedArrayElementCounts = function( data, maxCountArrayLevels ) {
       var totalElementCount = 0,
-          currMaxCountArrayLevels = maxCountArrayLevels ? maxCountArrayLevels : 1000,
+          currMaxCountArrayLevels = maxCountArrayLevels !== null ? maxCountArrayLevels : 1000,
           arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
 
       if ( !Array.isArray( data ) ) {
