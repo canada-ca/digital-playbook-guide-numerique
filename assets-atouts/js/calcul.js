@@ -34,29 +34,34 @@ var componentName = "wb-calculate",
       // returns DOM object = proceed with init
       // returns undefined = do not proceed with init (e.g., already initialized)
       var elm = wb.init( event, componentName, selector ),
-          settings, eventTrigger, $listenerElement, eventElement, dataAttributeValue, currDataAttributeValue, index, length;
+          isArray = false,
+          settings, eventTrigger, $listenerElement, eventElement, dataAttributeValue, index, length;
 
       if ( elm ) {
         dataAttributeValue = elm.getAttribute( dataAttribute );
 
-        if ( !dataAttributeValue || !Array.isArray( dataAttributeValue ) ) {
-          dataAttributeValue = dataAttributeValue ? [ dataAttributeValue ] : [ "" ];
+        if ( dataAttributeValue && dataAttributeValue.length > 0 ) {
+          dataAttributeValue = JSON.parse( dataAttributeValue );
+          isArray = Array.isArray( dataAttributeValue );
+
+          if ( !isArray ) {
+            dataAttributeValue = [ dataAttributeValue ];
+          }
+        } else {
+          dataAttributeValue = [ {} ];
         }
 
         length = dataAttributeValue.length;
         for ( index = 0; index < length; index += 1 ) {
-          currDataAttributeValue = dataAttributeValue[ index ];
-
           // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
           settings = $.extend(
             true, {},
             defaults,
             window[ componentName ],
-            JSON.parse( currDataAttributeValue )
+            dataAttributeValue[ index ]
           );
 
-          // Apply the extended settings to the element
-          elm.setAttribute( dataAttribute, JSON.stringify( settings ) );
+          dataAttributeValue[ index ] = settings;
 
           // Set up event handler if specified in settings
           eventTrigger = settings[ "eventTrigger" ];
@@ -91,6 +96,9 @@ var componentName = "wb-calculate",
             iterate( settings[ "operations" ] );
           }
         }
+
+        // Apply the extended settings to the element
+        elm.setAttribute( dataAttribute, JSON.stringify( isArray ? dataAttributeValue : dataAttributeValue[ 0 ] ) );
       }
     },
     /**
@@ -188,7 +196,7 @@ var componentName = "wb-calculate",
           decimalPlaces = operation[ "decimalPlaces" ],
           inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
           sourceProperty, outputTargets, outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue,
-          outputTargetIndex, outputTargetsLength;
+          outputTargetIndex, outputTargetsLength, indexesKeys;
 
       if ( type === "number" || type === "string" || type === "boolean" || type === "length" ) {
         if ( query ) {
@@ -210,6 +218,17 @@ var componentName = "wb-calculate",
             value = value ? value : "";            
           } else {
             value = query[ 0 ].textContent;
+          }
+
+          // If value is nested in JSON, then retrieve it
+          indexesKeys = operation[ "indexesKeys" ];
+          if ( indexesKeys ) {
+            value = JSON.parse( value );
+            length = indexesKeys.length;
+
+            for ( index = 0; index < length; index += 1 ) {
+              value = value[ indexesKeys[ index ] ];
+            }
           }
 
           if ( type === "number" && typeof value === "string" ) {
@@ -337,6 +356,8 @@ var componentName = "wb-calculate",
               } else if ( conditionType === "!=" ) {
                 // Not equal to
                 conditionMet = calculate( values[ 0 ] ) != calculate( values[ 1 ] );
+              } else if ( conditionType === "contains" ) {
+                conditionMet = calculate( values[ 0 ] ).indexOf( calculate( values[ 1 ] ) ) !== -1;
               }
 
               if ( !conditionMet ) {

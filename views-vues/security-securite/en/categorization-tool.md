@@ -108,7 +108,38 @@ This web-based version of the tool is meant to make the process of organizing th
 
 {{ page.businessDomain.intro }}
 
-<div class="form-group" markdown="0">
+<div id="business-domain-field-container" class="form-group wb-calculate wb-format-gen" markdown="0" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "change", "eventElement": "#business-domain-field-container", "operations": [
+  { "type": "conditional",
+    "inputs": [
+      { "type": "==",
+        "inputs": [
+          { "type": "boolean", "query": "#save-domain", "sourceProperty": "disabled" },
+          true
+        ]
+      },
+      { "type": "==",
+        "inputs": [
+          { "type": "string", "query": "#save-domain", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          "append"
+        ]
+      }
+    ],
+    "actionsTrue": [
+      { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#business-domain-field-container", "outputEvent": "edit-domain" }
+    ]
+  }
+] }' data-wb-format-gen='[
+  { "eventTrigger": "edit-domain", "eventElement": "#business-domain-field-container", "operations": [
+    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
+    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ] } }
+  ] },
+  { "eventTrigger": "append-domain", "eventElement": "#business-domain-field-container", "operations": [
+    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
+    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys" ], "action": "delete" }
+  ] }
+]'>
 <label for="business-domain-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessDomain[ "business-domain-field-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="business-domain-field" id="business-domain-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
@@ -132,14 +163,27 @@ This web-based version of the tool is meant to make the process of organizing th
 ] }'>Save</button>
 <!-- Loads the previous domain in the current form or clear the forms where a previous domain does not exist. Also enables/disables buttons in the current form. -->
 <button id="cancel-add-domain" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-add-domain", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "restore-form-state", "container": "#business-domain-form" }
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
 ] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-add-domain", "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
-    ]
-  }
+    { "type": "conditional",
+      "inputs": [
+        { "type": "==",
+          "inputs": [
+            { "type": "string", "query": "#save-domain", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+            "replace"
+          ]
+        }
+      ],
+      "actionsTrue": [
+        { "type": "event", "outputTarget": "#business-domain-field-container", "outputEvent": "append-domain" }
+      ]
+    },
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": true },
+        { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
+      ]
+    }
 ] }'>Cancel</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current domain from memory, loads the previous domain in the current form, or resets the form if no previous domain exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
