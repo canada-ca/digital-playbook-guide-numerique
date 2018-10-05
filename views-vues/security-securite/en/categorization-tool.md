@@ -11,10 +11,10 @@ businessDomain:
   "business-domain-field-label": What is your business domain?
 businessActivity:
   title: Business Activity
-businessComponent:
-  title: Business Component
   intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
   intro2: Business activities will be categorized by determining the expected injuries from IT-related threat compromise to the national and non-national interests that the business activities serve, and then determining the lveral of these expected injuries.
+businessComponent:
+  title: Business Component
   "business-activity-label": Business Activity
   "business-activity-component-label": Business Activity Component
   "component-description-label": Component Description
@@ -210,7 +210,8 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": false }
+      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-add-domain", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#business-domain-field", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add another business domain</button>
@@ -223,7 +224,8 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": false },
       { "type": "removeClass", "outputTarget": "#business-activity-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#business-domain-section", "class": "hidden" }
+      { "type": "addClass", "outputTarget": "#business-domain-section", "class": "hidden" },
+      { "type": "event", "outputTarget": "#business-activity-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add business activity</button>
@@ -236,6 +238,10 @@ This web-based version of the tool is meant to make the process of organizing th
 <form id="business-activity-form" class="form-horizontal" method="post">
 
 ## {{ page.businessActivity.title }}
+
+{{ page.businessActivity.intro1 }}
+
+{{ page.businessActivity.intro2 }}
 
 <div id="business-activity-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "change", "eventElement": "#business-activity-fields-container", "operations": [
   { "type": "conditional",
@@ -339,7 +345,8 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": false }
+      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-add-activity", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#business-activity-field", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add another business activity</button>
@@ -352,7 +359,8 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#save-component, #cancel-add-component", "outputProperty": "disabled", "value": false },
       { "type": "removeClass", "outputTarget": "#business-component-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#business-activity-section", "class": "hidden" }
+      { "type": "addClass", "outputTarget": "#business-activity-section", "class": "hidden" },
+      { "type": "event", "outputTarget": "#business-component-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add business activity component</button>
@@ -365,10 +373,6 @@ This web-based version of the tool is meant to make the process of organizing th
 <form id="business-component-form" class="form-horizontal" method="post">
 
 ## {{ page.businessComponent.title }}
-
-{{ page.businessComponent.intro1 }}
-
-{{ page.businessComponent.intro2 }}
 
 <div id="business-activity-component-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "change", "eventElement": "#business-activity-component-fields-container", "operations": [
   { "type": "conditional",
@@ -510,7 +514,8 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "outputValue", "outputTarget": "#delete-loss-of-confidentiality, #add-another-loss-of-confidentiality, #add-loss-of-integrity-confidentiality-form, #add-loss-of-availability-confidentiality-form", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#save-loss-of-confidentiality, #cancel-add-loss-of-confidentiality", "outputProperty": "disabled", "value": false },
       { "type": "removeClass", "outputTarget": "#loss-of-confidentiality-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" }
+      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" },
+      { "type": "event", "outputTarget": "#loss-of-confidentiality-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add loss of confidentiality failure scenario</button>
@@ -523,7 +528,9 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "outputValue", "outputTarget": "#delete-loss-of-integrity, #add-loss-of-confidentiality-integrity-form, #add-another-loss-of-integrity, #add-loss-of-availability-integrity-form", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#save-loss-of-integrity, #cancel-add-loss-of-integrity", "outputProperty": "disabled", "value": false },
       { "type": "removeClass", "outputTarget": "#loss-of-integrity-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" }
+      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" },
+      { "type": "event", "outputTarget": "#business-activity-component-field", "outputEvent": "setfocus.wb" },
+      { "type": "event", "outputTarget": "#loss-of-integrity-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add loss of integrity failure scenario</button>
@@ -536,7 +543,8 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "outputValue", "outputTarget": "#delete-loss-of-availability, #add-loss-of-confidentiality-availability-form, #add-loss-of-integrity-availability-form, #add-another-loss-of-availability", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#save-loss-of-availability, #cancel-add-loss-of-availability", "outputProperty": "disabled", "value": false },
       { "type": "removeClass", "outputTarget": "#loss-of-availability-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" }
+      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" },
+      { "type": "event", "outputTarget": "#loss-of-availability-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add loss of availability failure scenario</button>
@@ -703,7 +711,8 @@ for lossTypeInner in page.lossTypes %}{%
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossTypeInner }}, #cancel-add-loss-of-{{ lossTypeInner }}", "outputProperty": "disabled", "value": false }
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossTypeInner }}, #cancel-add-loss-of-{{ lossTypeInner }}", "outputProperty": "disabled", "value": false },
+      { "type": "event", "outputTarget": "#failure-scenario-{{ lossTypeInner }}", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add another loss of {{ lossTypeInner }} failure scenario</button>{%
@@ -717,7 +726,8 @@ for lossTypeInner in page.lossTypes %}{%
       { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossTypeInner }}, #cancel-add-loss-of-{{ lossTypeInner }}", "outputProperty": "disabled", "value": false },
       { "type": "removeClass", "outputTarget": "#loss-of-{{ lossTypeInner }}-section", "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#loss-of-{{ lossType }}-section", "class": "hidden" }
+      { "type": "addClass", "outputTarget": "#loss-of-{{ lossType }}-section", "class": "hidden" },
+      { "type": "event", "outputTarget": "#loss-of-{{ lossTypeInner }}-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
 ] }'>Add loss of {{ lossTypeInner }} failure scenario</button>{%
