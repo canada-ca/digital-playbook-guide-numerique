@@ -343,6 +343,7 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false },
+      { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-add-source", "value": "#business-activity-section" },
       { "type": "event", "outputTarget": "#save-activity", "outputEvent": "save-activity-proceed" }
     ]
   }
@@ -352,7 +353,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "dataAttribute", "element": "#delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 3 ], "action": "increment" }
 ] }'>Save</button>
 <!-- Loads the previous activity in the current form or clear the forms where a previous activity does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-activity" type="button" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-activity", "operations": [
+<button id="cancel-activity" type="button" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#business-activity-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-activity", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -390,25 +391,21 @@ This web-based version of the tool is meant to make the process of organizing th
           { "type": "event", "outputTarget": "#business-activity-fields-container", "outputEvent": "append-activity" }
         ]
       },
-      { "type": "action",
+      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
+      { "type": "conditional",
         "inputs": [
-          { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
-          { "type": "conditional",
+          { "type": ">",
             "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "number", "query": "#delete-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ] },
-                  -1
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false }
+              { "type": "number", "query": "#delete-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ] },
+              -1
             ]
-          },
-          { "type": "event", "outputTarget": "#cancel-activity", "outputEvent": "cancel-activity-restore-proceed" }
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false }
         ]
-      }
+      },
+      { "type": "event", "outputTarget": "#cancel-activity", "outputEvent": "cancel-activity-restore-proceed" }
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-activity-restore-proceed", "eventElement": "#cancel-activity", "operations": [
@@ -565,6 +562,7 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false },
+      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "#business-activity-component-section" },
       { "type": "event", "outputTarget": "#save-component", "outputEvent": "save-component-proceed" }
     ]
   }
@@ -574,7 +572,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "dataAttribute", "element": "#delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 6 ], "action": "increment" }
 ] }'>Save</button>
 <!-- Loads the previous component in the current form or clear the forms where a previous component does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-component" type="button" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
+<button id="cancel-component" type="button" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#business-activity-component-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -612,25 +610,21 @@ This web-based version of the tool is meant to make the process of organizing th
           { "type": "event", "outputTarget": "#business-activity-component-fields-container", "outputEvent": "append-component" }
         ]
       },
-      { "type": "action",
+      { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
+      { "type": "conditional",
         "inputs": [
-          { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
-          { "type": "conditional",
+          { "type": ">",
             "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "number", "query": "#delete-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ] },
-                  -1
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false }
+              { "type": "number", "query": "#delete-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ] },
+              -1
             ]
-          },
-          { "type": "event", "outputTarget": "#cancel-component", "outputEvent": "cancel-component-restore-proceed" }
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false }
         ]
-      }
+      },
+      { "type": "event", "outputTarget": "#cancel-component", "outputEvent": "cancel-component-restore-proceed" }
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-component-restore-proceed", "eventElement": "#cancel-component", "operations": [
@@ -841,6 +835,7 @@ for lossType in page.lossTypes %}{%
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false },
+      { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputAttribute": "data-add-source", "value": "loss-of-{{ lossType }}-section" },
       { "type": "event", "outputTarget": "#save-loss-of-{{ lossType }}", "outputEvent": "save-loss-of-{{ lossType }}-proceed" }
     ]
   }
@@ -850,7 +845,7 @@ for lossType in page.lossTypes %}{%
   { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 9 ], "action": "increment" }
 ] }'>Save</button>
 <!-- Loads the previous loss of {{ lossType }} in the current form or clear the forms where a previous loss of {{ lossType }} does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
+<button id="cancel-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#loss-of-{{ lossType }}-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -888,25 +883,21 @@ for lossType in page.lossTypes %}{%
           { "type": "event", "outputTarget": "#loss-of-{{ lossType }}-fields-container", "outputEvent": "append-loss-of-{{ lossType }}" }
         ]
       },
-      { "type": "action",
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
+      { "type": "conditional",
         "inputs": [
-          { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
-          { "type": "conditional",
+          { "type": ">",
             "inputs": [
-              { "type": ">",
-                "inputs": [
-                  { "type": "number", "query": "#delete-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ] },
-                  -1
-                ]
-              }
-            ],
-            "actionsTrue": [
-              { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false }
+              { "type": "number", "query": "#delete-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ] },
+              -1
             ]
-          },
-          { "type": "event", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputEvent": "cancel-loss-of-{{ lossType }}-restore-proceed" }
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false }
         ]
-      }
+      },
+      { "type": "event", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputEvent": "cancel-loss-of-{{ lossType }}-restore-proceed" }
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-loss-of-{{ lossType }}-restore-proceed", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
