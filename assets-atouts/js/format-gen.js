@@ -33,49 +33,67 @@ var componentName = "wb-format-gen",
       // returns DOM object = proceed with init
       // returns undefined = do not proceed with init (e.g., already initialized)
       var elm = wb.init( event, componentName, selector ),
-          settings, eventTrigger, $listenerElement, eventElement;
+          isArray = false,
+          settings, eventTrigger, $listenerElement, eventElement, dataAttributeValue, index, length;
 
       if ( elm ) {
+        dataAttributeValue = elm.getAttribute( dataAttribute );
 
-        // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
-        settings = $.extend(
-          true, {},
-          defaults,
-          window[ componentName ],
-          JSON.parse( elm.getAttribute( dataAttribute ) )
-        );
+        if ( dataAttributeValue && dataAttributeValue.length > 0 ) {
+          dataAttributeValue = JSON.parse( dataAttributeValue );
+          isArray = Array.isArray( dataAttributeValue );
+
+          if ( !isArray ) {
+            dataAttributeValue = [ dataAttributeValue ];
+          }
+        } else {
+          dataAttributeValue = [ {} ];
+        }
+
+        length = dataAttributeValue.length;
+        for ( index = 0; index < length; index += 1 ) {
+          // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
+          settings = $.extend(
+            true, {},
+            defaults,
+            window[ componentName ],
+            dataAttributeValue[ index ]
+          );
+
+          dataAttributeValue[ index ] = settings;
+
+          // Set up event handler if specified in settings
+          eventTrigger = settings[ "eventTrigger" ];
+          if ( eventTrigger ) {
+            if ( settings[ "listenerElement" ] ) {
+              $listenerElement = $( settings[ "listenerElement" ] );
+            } else {
+              $listenerElement = $document;
+            }
+
+            eventElement = settings[ "eventElement" ];
+            if ( eventElement ) {
+              $listenerElement.on( eventTrigger, eventElement, function( event ) {
+                handleEvent( event );
+              } );
+            } else {
+              $listenerElement.on( eventTrigger, function( event ) {
+                handleEvent( event, settings );
+              } );
+            }
+          }
+
+          if ( settings[ "resetForm" ] ) {
+            clearFormFieldStatus( settings[ "resetForm" ] );
+          }
+
+          if ( settings[ "onInit" ] === true ) {
+            handleEvent( event, settings );
+          }
+        }
 
         // Apply the extended settings to the element
-        elm.setAttribute( dataAttribute, JSON.stringify( settings ) );
-
-        // Set up event handler if specified in settings
-        eventTrigger = settings[ "eventTrigger" ];
-        if ( eventTrigger ) {
-          if ( settings[ "listenerElement" ] ) {
-            $listenerElement = $( settings[ "listenerElement" ] );
-          } else {
-            $listenerElement = $document;
-          }
-
-          eventElement = settings[ "eventElement" ];
-          if ( eventElement ) {
-            $listenerElement.on( eventTrigger, eventElement, function( event ) {
-              handleEvent( event );
-            } );
-          } else {
-            $listenerElement.on( eventTrigger, function( event ) {
-              handleEvent( event, settings );
-            } );
-          }
-        }
-
-        if ( settings[ "resetForm" ] ) {
-          clearFormFieldStatus( settings[ "resetForm" ] );
-        }
-
-        if ( settings[ "onInit" ] === true ) {
-          handleEvent( event, settings );
-        }
+        elm.setAttribute( dataAttribute, JSON.stringify( isArray ? dataAttributeValue : dataAttributeValue[ 0 ] ) );
       }
     },
 
@@ -378,7 +396,8 @@ var componentName = "wb-format-gen",
 
               for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
                 relativeToColumn = relativeToArray[ index ];
-                countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, length - index - 1 ).subElementCount;              
+
+                countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, length - index - 1 ).subElementCount;
               }
             }
           } else if ( !count ) {
@@ -482,7 +501,7 @@ var componentName = "wb-format-gen",
      */
     getNestedArrayElementCounts = function( data, maxCountArrayLevels ) {
       var totalElementCount = 0,
-          currMaxCountArrayLevels = maxCountArrayLevels ? maxCountArrayLevels : 1000,
+          currMaxCountArrayLevels = maxCountArrayLevels !== null ? maxCountArrayLevels : 1000,
           arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
 
       if ( !Array.isArray( data ) ) {
@@ -648,7 +667,7 @@ var componentName = "wb-format-gen",
              }
 
              if ( action === "restore-form-state" ) {
-               setFormFieldStatus( settings[ "container" ], fileData );
+               setFormFieldStatus( settings[ "container" ], fileData, settings[ "noEvent" ] );
              } else if ( action === "restore-storage" ) {
                storeData( "replace", settings[ "key" ], settings[ "indexesKeys" ], settings[ "target" ], fileData, settings[ "element" ] );
              }
@@ -701,6 +720,8 @@ var componentName = "wb-format-gen",
       } else if ( source === "form-state" ) {
         // Store the form state as JSON
         data = getFormFieldStatus( settings[ "container" ] );
+      } else if ( typeof source === "object" ) {
+        data = retrieveData( source[ "key" ], source[ "indexesKeys" ], source[ "type" ], false, source[ "element" ] );
       }
 
       // Store the data
@@ -731,7 +752,7 @@ var componentName = "wb-format-gen",
       if ( action === "restore-form-state" ) {
         // Restore the form state from the stored data, or clear it if no data was found
         if ( storedData && storedData.length > 0 ) {
-          setFormFieldStatus( settings[ "container" ], storedData );
+          setFormFieldStatus( settings[ "container" ], storedData, settings[ "noEvents" ] );
         } else {
           clearFormFieldStatus( settings[ "container" ] );
         }
@@ -765,8 +786,8 @@ var componentName = "wb-format-gen",
           currIndexesKeys = indexesKeys ? indexesKeys : [],
           currStorageType = storageType ? storageType : "sessionStorage",
           indexesKeysLength = currIndexesKeys.length,
-          data, storedData, storedDataFragment, parentStoredDataFragment, index, length, typeofResult, indexKey, nextIndexKey,
-          currElement, currElements, elementsIndex, elementsLength;
+          storedData, storedDataFragment, parentStoredDataFragment, index, length, typeofResult, indexKey, nextIndexKey,
+          currElement, currElements, elementsIndex, elementsLength, resultData;
 
       // Retrieve and parse any stored data
       if ( currStorageType === "sessionStorage" ) {
@@ -809,12 +830,13 @@ var componentName = "wb-format-gen",
               } else {
                 // Retrieve the nested data or create it if it doesn't already exist and is needed
                 parentStoredDataFragment = storedDataFragment;
+
                 storedDataFragment = storedDataFragment[ indexKey ];
 
-                if ( !storedDataFragment ) {
+                if ( !storedDataFragment && storedDataFragment !== 0 ) {
                   nextIndexKey = currIndexesKeys[ index + 1 ];
 
-                  if ( nextIndexKey ) {
+                  if ( nextIndexKey !== null ) {
                     storedDataFragment = typeof nextIndexKey === "string" ? {} : [];
                   } else if ( currAction === "append" || currAction === "prepend" ) {
                     storedDataFragment = [];
@@ -850,37 +872,36 @@ var componentName = "wb-format-gen",
                   storedData = data;
                 }
               }
-              data = storedData;
+              resultData = storedData;
             } else {
               if ( currAction === "increment" ) {
-                data = storedDataFragment + 1;
+                resultData = storedDataFragment + 1;
               } else if ( currAction === "decrement" ) {
-                data = storedDataFragment - 1;
+                resultData = storedDataFragment - 1;
               } else {
                 // Make sure everything is a string
                 if ( currAction !== "replace" && typeof storedDataFragment !== "string" ) {
                   storedDataFragment = storedDataFragment.toString();
                 }
-                if ( typeof data !== "string" ) {
-                  data = data.toString();
-                }
+
+                resultData = typeof data !== "string" ? data.toString() : data;
 
                 if ( currAction === "append" ) {
-                  data = storedDataFragment + data;
+                  resultData = storedDataFragment + resultData;
                 } else if ( currAction === "prepend" ) {
                   // Update the parent with the prepended data
-                  data += storedDataFragment;
+                  resultData += storedDataFragment;
                 }
               }
 
               // If parent exists, update it with the new data
               if ( parentStoredDataFragment ) {
-                parentStoredDataFragment[ currIndexesKeys[ currIndexesKeys.length - 1 ] ] = data;
-                data = storedData;
+                parentStoredDataFragment[ currIndexesKeys[ currIndexesKeys.length - 1 ] ] = resultData;
+                resultData = storedData;
               }
             }
           } else {
-            data = storedDataFragment;
+            resultData = storedData;
           }
         } else if ( currAction === "delete" ) {
           // Delete all the stored data referenced by the key
@@ -893,38 +914,38 @@ var componentName = "wb-format-gen",
           }
           return;
         } else if ( currAction === "append" || currAction === "prepend" ) {
-          data = [ data ];
+          resultData = [ data ];
         }
 
         // Ensure the resulting data is a string
-        if ( typeof data !== "string" ) {
-          if ( data ) {
-            if ( typeof data === "object" ) {
-              if ( Array.isArray( data ) ) {
-                length = data.length;
+        if ( typeof resultData !== "string" ) {
+          if ( resultData ) {
+            if ( typeof resultData === "object" ) {
+              if ( Array.isArray( resultData ) ) {
+                length = resultData.length;
               } else {
-                length = Object.keys( data ).length;
+                length = Object.keys( resultData ).length;
               }
 
               if ( length > 0 ) {
-                data = JSON.stringify( data );
+                resultData = JSON.stringify( resultData );
               } else {
-                data = "";
+                resultData = "";
               }
             } else {
-              data = data.toString();
+              resultData = resultData.toString();
             }
           } else {
-            data = "";
+            resultData = "";
           }
         }
 
         if ( currStorageType === "sessionStorage" ) {
-          sessionStorage.setItem( key, data );
+          sessionStorage.setItem( key, resultData );
         } else if ( currStorageType === "localStorage" ) {
-          localStorage.setItem( key, data );
+          localStorage.setItem( key, resultData );
         } else {
-          currElement.setAttribute( key, data );
+          currElement.setAttribute( key, resultData );
         }
       }
 
@@ -1047,8 +1068,9 @@ var componentName = "wb-format-gen",
      * @overview Update the status of the fields in the specified form using the passed data
      * @param formsSelector {String} Selector for the form(s) for which to set the statuses of the contained fields.
      * @param fields {Array} Array of objects with each containing a selector for a form field ("selector") and that status to set ("status").
+     * @param noEvents {Boolean} true = don't generate events when setting form fields
      */
-    setFormFieldStatus = function( formsSelector, fields ) {
+    setFormFieldStatus = function( formsSelector, fields, noEvents ) {
       var forms = document.querySelectorAll( formsSelector ),
           numForms = forms.length,
           numFields = fields.length,
@@ -1074,12 +1096,18 @@ var componentName = "wb-format-gen",
                     fireChangeEvent = true;
                   } else {
                     // Trigger a click event
-                    subField.click();
+                    if ( !noEvents ) {
+                      subField.click();
+                    } else {
+                      subField.checked = false;
+                    }
                   }
                 }
               } else if ( type === "checkbox" ) {
-                if ( subField.checked !== fieldObject.state ) {
+                if ( !noEvents && subField.checked !== fieldObject.state ) {
                   subField.click();
+                } else {
+                  subField.checked = fieldObject.state;
                 }
               } else if ( type !== "file" && type !== "button" && type !== "reset" && type !== "submit" && type !== "image" ) {
                 subField.value = fieldObject.state;
@@ -1096,7 +1124,7 @@ var componentName = "wb-format-gen",
               fireChangeEvent = true;
             }
 
-            if ( fireChangeEvent ) {
+            if ( fireChangeEvent && !noEvents ) {
               if( typeof( Event ) === "function") {
                 event = new Event( "change", { bubbles: true });
                 subField.dispatchEvent( event );
@@ -1284,56 +1312,67 @@ var componentName = "wb-format-gen",
      * @param settingsParam {Object} (Optional, default is to get the settings from the event object) Settings to be used by the handler
      */
     handleEvent = function( event, settingsParam ) {
-      var type = event.type,
+      var eventType = event.type,
           target = event.target,
-          settings = settingsParam ? settingsParam : JSON.parse( target.getAttribute( dataAttribute ) ),
-          operations = settings[ "operations" ],
-          eventTrigger = settings[ "eventTrigger" ],
+          dataAttributeValue = settingsParam ? settingsParam : JSON.parse( target.getAttribute( dataAttribute ) ),
           returnFalse = false,
-          type, source, action, data, storedData, key, index, length, result, resetForm;
+          settings, operations, eventTrigger, type, source, action, data, storedData, key, index, length, result,
+          resetForm, settingsIndex, settingsLength;
 
-      // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
-      if ( eventTrigger && eventTrigger !== type && eventTrigger !== ( type + "." + event.namespace ) ) {
-        return;
+      if ( !Array.isArray( dataAttributeValue ) ) {
+        dataAttributeValue = [ dataAttributeValue ];
       }
 
-      if ( operations ) {
-        // Iterate through each settings array item
-        length = operations.length;
-        for ( index = 0; index < length; index += 1 ) {
-          result = handleEvent( event, operations[ index ] );
-          if ( result === false ) {
-            returnFalse = true;
-          }
-        }
- 
-        if ( returnFalse ) {
-          return false;
-        }
-      } else {
-        if ( settings && type !== "change" ) {
-          type = settings[ "type" ];
-          source = settings[ "source" ];
-          resetForm = settings[ "resetForm" ];
+      // Iterate through each of the settings objects
+      settingsLength = dataAttributeValue.length;
+      for ( settingsIndex = 0; settingsIndex < settingsLength; settingsIndex += 1 ) {
+        settings = dataAttributeValue[ settingsIndex ];
+        operations = settings[ "operations" ];
+        eventTrigger = settings[ "eventTrigger" ];
 
-          if ( resetForm ) {
-            clearFormFieldStatus( resetForm );
-          } else if ( target.type !== "file" ) {
-            if ( type === "sessionStorage" || type === "localStorage" || type === "dataAttribute" ) {
-              outputStorage( settings );
-            } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
-              if ( type === "csv" || type === "json" ) {
-                outputFile( settings );
-              } else {
-                inputStorage( settings );
-              }
-            } else {
-              outputFile( settings );
+        // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
+        if ( eventTrigger && eventTrigger !== eventType && eventTrigger !== ( eventType + "." + event.namespace ) ) {
+          continue;
+        }
+
+        if ( operations ) {
+          // Iterate through each settings array item
+          length = operations.length;
+          for ( index = 0; index < length; index += 1 ) {
+            result = handleEvent( event, operations[ index ] );
+            if ( result === false ) {
+              returnFalse = true;
             }
           }
+ 
+          if ( returnFalse ) {
+            return false;
+          }
         } else {
-          if ( target.type === "file" ) {
-            inputFile( settings, target );
+          if ( settings && type !== "change" ) {
+            type = settings[ "type" ];
+            source = settings[ "source" ];
+            resetForm = settings[ "resetForm" ];
+
+            if ( resetForm ) {
+              clearFormFieldStatus( resetForm );
+            } else if ( target.type !== "file" ) {
+              if ( type === "sessionStorage" || type === "localStorage" || type === "dataAttribute" ) {
+                outputStorage( settings );
+              } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
+                if ( type === "csv" || type === "json" ) {
+                  outputFile( settings );
+                } else {
+                  inputStorage( settings );
+                }
+              } else {
+                outputFile( settings );
+              }
+            }
+          } else {
+            if ( target.type === "file" ) {
+              inputFile( settings, target );
+            }
           }
         }
 

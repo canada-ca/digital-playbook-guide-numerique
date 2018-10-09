@@ -15,8 +15,13 @@
  */
 var componentName = "wb-calculate",
     selector = "." + componentName,
+    dataAttribute = "data-" + componentName,
     initEvent = "wb-init" + selector,
     $document = wb.doc,
+    defaults = {
+      ignoreInit: false,
+      returnFalse: false
+    },
 
     /**
      * @method init
@@ -28,44 +33,72 @@ var componentName = "wb-calculate",
       // Start initialization
       // returns DOM object = proceed with init
       // returns undefined = do not proceed with init (e.g., already initialized)
-      var elm = wb.init( event, componentName, selector );
+      var elm = wb.init( event, componentName, selector ),
+          isArray = false,
+          settings, eventTrigger, $listenerElement, eventElement, dataAttributeValue, index, length;
 
       if ( elm ) {
+        dataAttributeValue = elm.getAttribute( dataAttribute );
 
-        var $elm = $( elm ),
-            settings = {
-              ignoreInit: false,
-              returnFalse: false
-            },
-            $listenerElement;
+        if ( dataAttributeValue && dataAttributeValue.length > 0 ) {
+          dataAttributeValue = JSON.parse( dataAttributeValue );
+          isArray = Array.isArray( dataAttributeValue );
 
-        // Extend the settings with window[ "wb-calculate" ] then data-wb-calculate
-        settings = $.extend(
-          true, {},
-          settings,
-          window[ componentName ],
-          wb.getData( $elm, componentName )
-        );
-
-        // Workaround for WET FieldFlow stripping the name attribute on form submit
-        // (so can return false before FieldFlow receives the event on document)
-        if ( settings[ "listenerElement" ] ) {
-          $listenerElement = $( settings[ "listenerElement" ] );
-        } else {
-          $listenerElement = $document;
-        }
-
-        $listenerElement.on( settings[ "eventTrigger" ], settings[ "eventElement" ], function( event ) {
-          iterate( settings[ "operations" ] );
-
-          if ( settings[ "returnFalse" ] === true ) {
-            return false;
+          if ( !isArray ) {
+            dataAttributeValue = [ dataAttributeValue ];
           }
-        } );
-
-        if ( !settings[ "ignoreInit" ] ) {
-          iterate( settings[ "operations" ] );
+        } else {
+          dataAttributeValue = [ {} ];
         }
+
+        length = dataAttributeValue.length;
+        for ( index = 0; index < length; index += 1 ) {
+          // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
+          settings = $.extend(
+            true, {},
+            defaults,
+            window[ componentName ],
+            dataAttributeValue[ index ]
+          );
+
+          dataAttributeValue[ index ] = settings;
+
+          // Set up event handler if specified in settings
+          eventTrigger = settings[ "eventTrigger" ];
+          if ( eventTrigger ) {
+            if ( settings[ "listenerElement" ] ) {
+              $listenerElement = $( settings[ "listenerElement" ] );
+            } else {
+              $listenerElement = $document;
+            }
+
+            eventElement = settings[ "eventElement" ];
+            if ( eventElement ) {
+              $listenerElement.on( eventTrigger, eventElement, function( event ) {
+                iterate( settings[ "operations" ] );
+
+                if ( settings[ "returnFalse" ] === true ) {
+                  return false;
+                }              
+              } );
+            } else {
+              $listenerElement.on( eventTrigger, function( event ) {
+                iterate( settings[ "operations" ] );
+
+                if ( settings[ "returnFalse" ] === true ) {
+                  return false;
+                }              
+              } );
+            }
+          }
+
+          if ( !settings[ "ignoreInit" ] ) {
+            iterate( settings[ "operations" ] );
+          }
+        }
+
+        // Apply the extended settings to the element
+        elm.setAttribute( dataAttribute, JSON.stringify( isArray ? dataAttributeValue : dataAttributeValue[ 0 ] ) );
       }
     },
     /**
@@ -79,9 +112,22 @@ var componentName = "wb-calculate",
           operationsIndex, operation, outputTarget, targets, target, result, index, length, outputAttribute, outputProperty;
       for ( operationsIndex = 0; operationsIndex < operationsLength; operationsIndex += 1 ) {
         operation = operations[ operationsIndex ];
+
         outputTarget = operation[ "outputTarget" ];
+        if ( typeof outputTarget === "object" ) {
+          outputTarget = calculate( outputTarget );
+        }
+
         outputAttribute = operation[ "outputAttribute" ];
+        if ( typeof outputAttribute === "object" ) {
+          outputAttribute = calculate( outputAttribute );
+        }
+
         outputProperty = operation[ "outputProperty" ];
+        if ( typeof outputProperty === "object" ) {
+          outputProperty = calculate( outputProperty );
+        }
+
         result = calculate( operation );
 
         if ( outputTarget ) {
@@ -108,7 +154,7 @@ var componentName = "wb-calculate",
      * @param operation {Object or Number} Operation object or number to process
      * @return {Number} Calculated value
      * Operation object has the following constraints:
-     * type {String} Operation to perform. Following types are supported:
+     * type {String/Operation object} Operation to perform. Following types are supported:
      * - number: Retrieve a number as is
      * - string: Retrieve a string as is
      * - count: Retrieve a count of items
@@ -128,25 +174,26 @@ var componentName = "wb-calculate",
      * - min: Calculate the value of the lowest number in a set of numbers (e.g., Math.min( a, b, c, d ))
      * - max: Calculate the value of the highest number in a set of numbers (e.g., Math.max( a, b, c, d ))
      * - random: Generate a random number between 0 and 1 (e.g., Math.random)
-     * - conditional: Perform an action of "actionType" if all conditions in "inputs" are met. 
+     * - concat: Concatenate a set of values (e.g., a + b + c + d = abcd)
+     * - conditional: Perform an action of "actionType" if all conditions in "inputs" are met.
      * - action: Perform an action of "actionType". Actions are passed as "inputs".
-     * decimalPlaces {Integer} Optional (defaults to unlimited). Number of decimal plays to allow for the result.
-     * value {Number/String/Boolean} Optional (can be used instead of "query", only permitted for "number" and "string" types; can also be used for "outputValue" action). The value of the number to use for the calculation or the string to use for a non-mathematical operation. Alternatively can use a number or string directly (instead of an object of type "number" or "string"). For action type "outputValue", can use a number or a string.
-     * query {String} Optional (required for "count" type, "number" type when "value" is not specified and other types when "inputs" is not specified) The CSS query for where to retrieve the numbers (uses first result for "number") or for the items to count.
+     * decimalPlaces {Integer/Operation object} Optional (defaults to unlimited). Number of decimal plays to allow for the result.
+     * value {Number/String/Boolean/Operation object} Optional (can be used instead of "query", only permitted for "number" and "string" types; can also be used for "outputValue" action). The value of the number to use for the calculation or the string to use for a non-mathematical operation. Alternatively can use a number or string directly (instead of an object of type "number" or "string"). For action type "outputValue", can use a number or a string.
+     * query {String/Operation object} Optional (required for "count" type, "number" type when "value" is not specified and other types when "inputs" is not specified) The CSS query for where to retrieve the numbers (uses first result for "number") or for the items to count.
      * inputs {Array} Optional (used for "conditional" type, including condition objects, and can also be used for used for actions for "action" type and other operations such as "add", "subtract", "multiply", "divide", "power" and "modulus" types in place of query). Array of operations that provide the values to use in the current operation, or in the case of "conditional", an array of conditions that need to be met.
-     * sourceAttribute {String} (optional, can be used with the "number", "string", "boolean" or "length" type). Attribute from which to retrieve the number or string.
-     * sourceProperty {String} (optional, can be used with the "number", "string", "boolean" or "length" type). Property from which to retrieve the number or string.
+     * sourceAttribute {String/Operation object} (optional, can be used with the "number", "string", "boolean" or "length" type). Attribute from which to retrieve the number or string.
+     * sourceProperty {String/Operation object} (optional, can be used with the "number", "string", "boolean" or "length" type). Property from which to retrieve the number or string.
      * increment {Integer} Optional (can only be used with "count" type). The size of the increment to use for each item counted.
      * actionsTrue {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
      * actionsFalse {Array} Optional (can only be used for "conditional" type). Actions to process with if one of the conditions is not met (e.g., "event", "operations", "addClass", "removeClass", "outputValue", "conditional").
-     * outputEvent {String} Optional (required for action type of "event" for "conditional" type). Event type 
+     * outputEvent {String/Operation object} Optional (required for action type of "event" for "conditional" type). Event type 
      * outputEventParameter {Array/Plain object} Optional (only used for action type of "event" for "conditional" type).
      * operations {Array} Optional (required for action type of "operations" for "conditional" type). Operations to execute.
-     * class {String} Optional (required for action type of "addClass" or "removeClass" for "conditional" type). Class to add or remove.  
-     * outputTarget {String} Optional (required for operations that output the result and for the action type of "event", "addClass", "removeClass" and "outputValue" and for the "conditional" type). CSS selector for where to output the result of the operation or for where to trigger the event.
-     * outputAttribute {String} Optional (can be used for operations that output the result and the outputValue action). Attribute on the outputTarget to update (e.g., class, tabindex, data-*).
-     * outputProperty {String} Optional (can be used for operations that output the result and the outputValue action). Property on the outputTarget to update (e.g., disabled, selected, checked).
-     * outputType {String} (required for outputValue action type) Only "append", "prepend" or "replace" as possible types.
+     * class {String/Operation object} Optional (required for action type of "addClass" or "removeClass" for "conditional" type). Class to add or remove.  
+     * outputTarget {String/Operation object} Optional (required for operations that output the result and for the action type of "event", "addClass", "removeClass" and "outputValue" and for the "conditional" type). CSS selector for where to output the result of the operation or for where to trigger the event.
+     * outputAttribute {String/Operation object} Optional (can be used for operations that output the result and the outputValue action). Attribute on the outputTarget to update (e.g., class, tabindex, data-*).
+     * outputProperty {String/Operation object} Optional (can be used for operations that output the result and the outputValue action). Property on the outputTarget to update (e.g., disabled, selected, checked).
+     * outputType {String/Operation object} (required for outputValue action type) Only "append", "prepend" or "replace" as possible types.
      */
     calculate = function( operation ) {
 
@@ -155,21 +202,25 @@ var componentName = "wb-calculate",
         return operation;
       }
 
-      var type = operation[ "type" ],
-          value = operation[ "value" ],
-          queryParam = operation[ "query" ],
+      var type = typeof operation[ "type" ] === "object" ? calculate( operation[ "type" ] ) : operation[ "type" ],
+          value = typeof operation[ "value" ] === "object" ? calculate( operation[ "value" ] ) : operation[ "value" ],
+          queryParam = typeof operation[ "query" ] === "object" ? calculate( operation[ "query" ] ) : operation[ "query" ],
           query = value || !queryParam ? null : document.querySelectorAll( queryParam ),
           queryResultsSize = !query ? null : query.length, 
-          decimalPlaces = operation[ "decimalPlaces" ],
+          decimalPlaces = typeof operation[ "decimalPlaces" ] === "object" ? calculate( operation[ "decimalPlaces" ] ) : operation[ "decimalPlaces" ],
           inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
           sourceProperty, outputTargets, outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue,
-          outputTargetIndex, outputTargetsLength;
+          outputTargetIndex, outputTargetsLength, indexesKeys;
 
       if ( type === "number" || type === "string" || type === "boolean" || type === "length" ) {
         if ( query ) {
           sourceAttribute = operation[ "sourceAttribute" ];
           sourceProperty = operation[ "sourceProperty" ];
           if ( sourceAttribute ) {
+            if ( typeof sourceAttribute === "object" ) {
+              sourceAttribute = calculate( sourceAttribute );
+            }
+
             if ( sourceAttribute === "value" ) {
               value = query[ 0 ].value;
             } else {
@@ -177,6 +228,10 @@ var componentName = "wb-calculate",
             }
             value = value ? value : "";
           } else if ( sourceProperty ) {
+            if ( typeof sourceProperty === "object" ) {
+              sourceProperty = calculate( sourceProperty );
+            }
+
             if ( sourceProperty === "value" ) {
               value = query[ 0 ].value;
             } else {
@@ -185,6 +240,17 @@ var componentName = "wb-calculate",
             value = value ? value : "";            
           } else {
             value = query[ 0 ].textContent;
+          }
+
+          // If value is nested in JSON, then retrieve it
+          indexesKeys = operation[ "indexesKeys" ];
+          if ( indexesKeys ) {
+            value = JSON.parse( value );
+            length = indexesKeys.length;
+
+            for ( index = 0; index < length; index += 1 ) {
+              value = value[ indexesKeys[ index ] ];
+            }
           }
 
           if ( type === "number" && typeof value === "string" ) {
@@ -284,6 +350,14 @@ var componentName = "wb-calculate",
           value = Math.max.apply( Math, values );
         } else if ( type === "random" ) {
           value = Math.random();
+        } else if ( type === "concat" ) {
+          value = calculate( inputs[ 0 ] );
+          value = ( typeof value === "string" ? value : value.toString() );
+
+          for ( index = 1; index < inputsLength; index += 1 ) {
+            currentValue = calculate( inputs[ index ] );
+            value += ( typeof currentValue === "string" ? currentValue : currentValue.toString() );
+          }
         } else if ( type === "conditional" || type === "action" ) {
           if ( type === "action" ) {
             actions = inputs;
@@ -312,6 +386,8 @@ var componentName = "wb-calculate",
               } else if ( conditionType === "!=" ) {
                 // Not equal to
                 conditionMet = calculate( values[ 0 ] ) != calculate( values[ 1 ] );
+              } else if ( conditionType === "contains" ) {
+                conditionMet = calculate( values[ 0 ] ).indexOf( calculate( values[ 1 ] ) ) !== -1;
               }
 
               if ( !conditionMet ) {
@@ -336,12 +412,17 @@ var componentName = "wb-calculate",
             } else if ( actionType === "operations" ) {
               value = iterate( action[ "operations" ] );
             } else {
+              outputTargets = action[ "outputTarget" ];
+              if ( typeof outputTargets === "object" ) {
+                outputTargets = calculate( outputTargets );
+              }
+
               if ( actionType === "event" ) {
-                $( action[ "outputTarget" ] ).trigger( action[ "outputEvent" ], action[ "outputEventParameters" ] );
+                $( outputTargets ).trigger( ( typeof action[ "outputEvent" ] === "object" ? calculate( action[ "outputEvent" ] ) : action[ "outputEvent" ] ), action[ "outputEventParameters" ] );
               } else if ( actionType === "addClass" ) {
-                $( action[ "outputTarget" ] ).addClass( action[ "class" ] );
+                $( outputTargets ).addClass( ( typeof action[ "class" ] === "object" ? calculate( action[ "class" ] ) : action[ "class" ] ) );
               } else if ( actionType === "removeClass" ) {
-                $( action[ "outputTarget" ] ).removeClass( action[ "class" ] );
+                $( outputTargets ).removeClass( ( typeof action[ "class" ] === "object" ? calculate( action[ "class" ] ) : action[ "class" ] ) );
               } else if ( actionType === "outputValue" ) {
                 if ( action[ "operations" ] ) {
                   value = iterate( action[ "operations" ] );
@@ -349,21 +430,33 @@ var componentName = "wb-calculate",
                   value = action[ "value" ];
                 }
 
-                if ( action[ "outputTarget"] ) {
-                  outputTargets = document.querySelectorAll( action[ "outputTarget" ] );
+                if ( outputTargets ) {
+                  outputTargets = document.querySelectorAll( outputTargets );
                   outputTargetsLength = outputTargets.length;
+
                   outputType = action[ "outputType" ];
+                  if ( typeof outputType === "object" ) {
+                    outputType = calculate( outputType );
+                  }
 
                   for ( outputTargetIndex = 0; outputTargetIndex < outputTargetsLength; outputTargetIndex += 1 ) {
                     outputValue = value;
                     outputTarget = outputTargets[ outputTargetIndex ];
+
                     outputAttribute = action[ "outputAttribute" ];
 
                     if ( outputAttribute ) {
+                      if ( typeof outputAttribute === "object" ) {
+                        outputAttribute = calculate( outputAttribute );
+                      }
                       currentValue = outputTarget.getAttribute( outputAttribute );
                     } else {
                       outputProperty = action[ "outputProperty" ];
+
                       if ( outputProperty ) {
+                        if ( typeof outputProperty === "object" ) {
+                          outputProperty = calculate( outputProperty );
+                        }
                         currentValue = outputTarget[ outputProperty ];
                       } else {
                         currentValue = outputTarget.textContent;
