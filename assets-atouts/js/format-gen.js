@@ -296,7 +296,8 @@ var componentName = "wb-format-gen",
           tableColSpecsLength = tableColSpecs.length,
           rowIndex, numOuterRows, numInnerRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
           index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
-          columnSourceArray, relativeToArray, columnDataArray, rowspan, elementCounts, elementArray, element, countArray, count;
+          columnSourceArray, relativeToArray, columnDataArray, rowspan, elementCounts, elementArray, element, countArray, count,
+          relativeCount;
 
       // Handle no data being passed
       if ( !data || data.length === 0 ) {
@@ -378,30 +379,32 @@ var componentName = "wb-format-gen",
           relativeToColumn = tableColSpec.relativeToColumn;
           count = countArray[ tableColSpecIndex ];
 
-          if ( !count && relativeToColumn !== -1 ) {
-            if ( tableColSpec.dataContainerSource.length === 0 && countArray[ relativeToColumn ] ) {
-              // Sibling relationship so will have the same rowspan
-              countArray[ tableColSpecIndex ] = countArray[ relativeToColumn ];
+          if ( count === null || typeof count === "undefined" ) {
+            if ( relativeToColumn !== -1 ) {
+              relativeCount = countArray[ relativeToColumn ];
+              if ( tableColSpec.dataContainerSource.length === 0 && ( relativeCount !== null && typeof relativeCount !== "undefined" ) ) {
+                // Sibling relationship so will have the same rowspan
+                countArray[ tableColSpecIndex ] = relativeCount;
+              } else {
+                // Parent/child relationship
+                dataNode = rowArray[ tableColSpecIndex ];
+                countArray[ tableColSpecIndex ] = getNestedArrayElementCounts( dataNode ).subElementCount;
+
+                // Determine the array depth on which to apply rowspans
+                relativeToArray = [];
+                while ( relativeToColumn !== -1 ) {
+                  relativeToArray.push( relativeToColumn );
+                  relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
+                }
+
+                for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
+                  relativeToColumn = relativeToArray[ index ];
+                  countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, ( Array.isArray( rowArray[ relativeToColumn ] ) ? ( length - index - 1 ) : 0 ) ).subElementCount;
+                }
+              }
             } else {
-              // Parent/child relationship
-              dataNode = rowArray[ tableColSpecIndex ];
-              countArray[ tableColSpecIndex ] = getNestedArrayElementCounts( dataNode ).subElementCount;
-
-              // Determine the array depth on which to apply rowspans
-              relativeToArray = [];
-              while ( relativeToColumn !== -1 ) {
-                relativeToArray.push( relativeToColumn );
-                relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
-              }
-
-              for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
-                relativeToColumn = relativeToArray[ index ];
-
-                countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, length - index - 1 ).subElementCount;
-              }
+              countArray[ tableColSpecIndex ] = 1;
             }
-          } else if ( !count ) {
-            countArray[ tableColSpecIndex ] = 1;
           }
         }
 
