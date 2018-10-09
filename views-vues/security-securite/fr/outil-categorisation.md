@@ -5,24 +5,33 @@ lang: fr
 altLang: en
 altLangPage: categorization-tool
 collectionDirectory: views-vues/security-securite
+common:
+  save: Save
+  cancel: Cancel
+  delete: Delete
 businessDomain:
   title: Business Domain
   intro: A business domain is an operational environment where a department performs business activities supporting common organizational objectives.
   "business-domain-field-label": What is your business domain?
+  "add-domain-button": Add another business domain
+  "add-activity-button": Add business activity
 businessActivity:
   title: Business Activity
   intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
   intro2: Business activities will be categorized by determining the expected injuries from IT-related threat compromise to the national and non-national interests that the business activities serve, and then determining the lveral of these expected injuries.
+  "add-activity-button": Add another business activity
+  "add-component-button": Add business activity component
 businessComponent:
   title: Business Component
   "business-activity-label": Business Activity
-  "business-activity-component-label": Business Activity Component
+  "business-component-label": Business Activity Component
   "component-description-label": Component Description
   "component-type-label": Type
   "component-type-sub-label": Select a type
   "component-type-option-1": Process
   "component-type-option-2": Information
   "authoritative-source-label": Authoritative Source
+  "add-component-button": Add another business activity component
 lossTypes: [ "confidentiality", "integrity", "availability" ]
 confidentiality:
   title: Loss of Confidentiality
@@ -30,18 +39,24 @@ confidentiality:
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of confidentiality?
   example1: Example of such injury
   example2: ie. Riot
+  "add-confidentiality-button": Add loss of confidentiality failure scenario
+  "add-another-confidentiality-button": Add another loss of confidentiality failure scenario
 integrity:
   title: Loss of Integrity
   intro: To ensure the integrity of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of integrity?
   example1: Example of such injury
   example2: ie. Distress, psychological trauma
+  "add-integrity-button": Add loss of integrity failure scenario
+  "add-another-integrity-button": Add another loss of integrity failure scenario
 availability:
   title: Loss of Availability
   intro: To ensure the availability of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of availability?
   example1: Example of such injury
   example2: ie. Affecting program performance
+  "add-another-availability-button": Add another loss of availability failure scenario
+  "add-availability-button": Add loss of availability failure scenario
 lossOfCommon:
   "failure-scenario-label": Failure Scenario (in context)
   "failure-scenario-sub-label": Select a type of injury
@@ -66,6 +81,30 @@ lossOfCommon:
   "injury-significance-option-5": Very high
   "injury-significance-option-0": NA
   "analysis-label": Analysis
+summaryReport:
+  title: Summary Report
+  intro: The summary report expresses the highest level of expected injuries from threat compromise with respect to the security objectives of confidentiality, integrity, and availability.
+  domainTable:
+    caption: Breakdown by Business Domain
+    col1Header: Business Domain
+    col2Header: Security Category
+    col2aHeader: Confidentiality
+    col2bHeader: Integrity
+    col2cHeader: Availability
+  componentTable:
+    caption: Breakdown by Component
+    col1Header: Business Domain
+    col2Header: Component
+    col3Header: Type
+    col4Header: Security Category
+    col4aHeader: Confidentiality
+    col4bHeader: Integrity
+    col4cHeader: Availability
+detailedReport:
+  title: Detailed Report
+  intro1: Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
+  intro2: The following report provides the detailed injury assessment performed for each process or information component with respect to confidentiality, integrity and availability.
+downloadAssessment: Download assessment in CSV format
 labelGridClass: col-sm-4
 fieldGridClass: col-sm-8
 ---
@@ -176,7 +215,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#business-domain-form", "action": "append" },
   { "type": "dataAttribute", "element": "#save-activity, #save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-domain, #cancel-activity, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "increment" },
   { "type": "dataAttribute", "element": "#delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 0 ], "action": "increment" }
-] }'>Save</button>
+] }'>{{ page.common.save }}</button>
 <!-- Loads the previous domain in the current form or clear the forms where a previous domain does not exist. Also enables/disables buttons in the current form. -->
 <button id="cancel-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
@@ -212,7 +251,7 @@ This web-based version of the tool is meant to make the process of organizing th
       }
     ]
   }
-] }'>Cancel</button>
+] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current domain from memory, loads the previous domain in the current form, or resets the form if no previous domain exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
   { "type": "action",
@@ -239,7 +278,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -2 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true },
   { "type": "dataAttribute", "element": "#save-activity, #save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-domain, #cancel-activity, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "decrement" },
   { "type": "dataAttribute", "element": "#delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 0 ], "action": "decrement" }
-] }'>Delete</button>
+] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-domain", "operations": [
   { "resetForm": "#business-domain-form" }
@@ -252,7 +291,7 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "event", "outputTarget": "#business-domain-field", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add another business domain</button>
+] }'>{{ page.businessDomain[ "add-domain-button" ] }}</button>
 <!-- Disabled by default. Resets the activity form, enables/disables buttons in the activity form, shows the activity form, hides this form. -->
 <button id="add-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-activity", "operations": [
   { "resetForm": "#business-activity-form" }
@@ -267,7 +306,7 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "event", "outputTarget": "#business-activity-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add business activity</button>
+] }'>{{ page.businessDomain[ "add-activity-button" ] }}</button>
 </div>
 
 </form>
@@ -351,7 +390,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities" ], "source": "form-state", "container": "#business-activity-form", "action": "append" },
   { "type": "dataAttribute", "element": "#save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-activity, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "increment" },
   { "type": "dataAttribute", "element": "#delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 3 ], "action": "increment" }
-] }'>Save</button>
+] }'>{{ page.common.save }}</button>
 <!-- Loads the previous activity in the current form or clear the forms where a previous activity does not exist. Also enables/disables buttons in the current form. -->
 <button id="cancel-activity" type="button" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#business-activity-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-activity", "operations": [
   { "type": "conditional",
@@ -410,7 +449,7 @@ This web-based version of the tool is meant to make the process of organizing th
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-activity-restore-proceed", "eventElement": "#cancel-activity", "operations": [
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1 ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true }
-] }'>Cancel</button>
+] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current activity from memory, loads the previous activity in the current form, or resets the form if no previous activity exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-activity" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-activity", "operations": [
   { "type": "action",
@@ -437,7 +476,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -2 ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true },
   { "type": "dataAttribute", "element": "#save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-activity, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "decrement" },
   { "type": "dataAttribute", "element": "#delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 3 ], "action": "decrement" }
-] }'>Delete</button>
+] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-activity", "operations": [
   { "resetForm": "#business-activity-form" }
@@ -450,7 +489,7 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "event", "outputTarget": "#business-activity-field", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add another business activity</button>
+] }'>{{ page.businessActivity[ "add-activity-button" ] }}</button>
 <!-- Disabled by default. Resets the component form, enables/disables buttons in the component form, shows the component form, hides this form. -->
 <button id="add-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-component", "operations": [
   { "resetForm": "#business-component-form" }
@@ -465,7 +504,7 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "event", "outputTarget": "#business-component-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add business activity component</button>
+] }'>{{ page.businessActivity[ "add-component-button" ] }}</button>
 </div>
 
 </form>
@@ -476,7 +515,7 @@ This web-based version of the tool is meant to make the process of organizing th
 
 ## {{ page.businessComponent.title }}
 
-<div id="business-activity-component-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "input", "eventElement": "#business-activity-component-fields-container", "operations": [
+<div id="business-component-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "input", "eventElement": "#business-component-fields-container", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -504,27 +543,27 @@ This web-based version of the tool is meant to make the process of organizing th
           }
         ],
         "actionsTrue": [
-          { "type": "event", "outputTarget": "#business-activity-component-fields-container", "outputEvent": "edit-component" }
+          { "type": "event", "outputTarget": "#business-component-fields-container", "outputEvent": "edit-component" }
         ]
       },
       { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true }
     ]
   }
 ] }' data-wb-format-gen='[
-  { "eventTrigger": "edit-component", "eventElement": "#business-activity-component-fields-container", "operations": [
+  { "eventTrigger": "edit-component", "eventElement": "#business-component-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
     { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ] } }
   ] },
-  { "eventTrigger": "append-component", "eventElement": "#business-activity-component-fields-container", "operations": [
+  { "eventTrigger": "append-component", "eventElement": "#business-component-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
     { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "delete" }
   ] }
 ]'>
 
 <div class="form-group" markdown="0">
-<label for="business-activity-component-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-component-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="business-component-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-component-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
-<input name="business-activity-component-field" id="business-activity-component-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+<input name="business-component-field" id="business-component-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
@@ -562,7 +601,7 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "#business-activity-component-section" },
+      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "#business-component-section" },
       { "type": "event", "outputTarget": "#save-component", "outputEvent": "save-component-proceed" }
     ]
   }
@@ -570,9 +609,9 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components" ], "source": "form-state", "container": "#business-component-form", "action": "append" },
   { "type": "dataAttribute", "element": "#save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "increment" },
   { "type": "dataAttribute", "element": "#delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 6 ], "action": "increment" }
-] }'>Save</button>
+] }'>{{ page.common.save }}</button>
 <!-- Loads the previous component in the current form or clear the forms where a previous component does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-component" type="button" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#business-activity-component-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
+<button id="cancel-component" type="button" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#business-component-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -584,13 +623,13 @@ This web-based version of the tool is meant to make the process of organizing th
       { "type": "!=",
         "inputs": [
           { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-add-source" },
-          "#business-activity-component-section"
+          "#business-component-section"
         ]
       }
     ],
     "actionsTrue": [
       { "type": "removeClass", "outputTarget": { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-add-source" }, "class": "hidden" },
-      { "type": "addClass", "outputTarget": "#business-activity-component-section", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" },
       { "type": "event", "outputTarget": { "type": "concat", "inputs": [
           { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-add-source" },
           " h2"
@@ -607,7 +646,7 @@ This web-based version of the tool is meant to make the process of organizing th
           }
         ],
         "actionsTrue": [
-          { "type": "event", "outputTarget": "#business-activity-component-fields-container", "outputEvent": "append-component" }
+          { "type": "event", "outputTarget": "#business-component-fields-container", "outputEvent": "append-component" }
         ]
       },
       { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
@@ -629,7 +668,7 @@ This web-based version of the tool is meant to make the process of organizing th
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-component-restore-proceed", "eventElement": "#cancel-component", "operations": [
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1 ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true }
-] }'>Cancel</button>
+] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current component from memory, loads the previous component in the current form, or resets the form if no previous component exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-component" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-component", "operations": [
   { "type": "action",
@@ -656,7 +695,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -2 ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true },
   { "type": "dataAttribute", "element": "#save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "decrement" },
   { "type": "dataAttribute", "element": "#delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 6 ], "action": "decrement" }
-] }'>Delete</button>
+] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-component", "operations": [
   { "resetForm": "#business-component-form" }
@@ -665,11 +704,11 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-component, #delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-component", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "#business-activity-component-section" },
-      { "type": "event", "outputTarget": "#business-activity-component-field", "outputEvent": "setfocus.wb" }
+      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "#business-component-section" },
+      { "type": "event", "outputTarget": "#business-component-field", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add another business activity component</button>
+] }'>{{ page.businessComponent[ "add-component-button" ] }}</button>
 <!-- Disabled by default. Resets the loss of confidentiality form, enables/disables buttons in the loss of confidentiality form, shows the loss of confidentiality form, hides this form. -->
 <button id="add-loss-of-confidentiality" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-confidentiality", "operations": [
   { "resetForm": "#loss-of-confidentiality-form" }
@@ -678,13 +717,13 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-loss-of-confidentiality, #delete-loss-of-confidentiality, #add-another-loss-of-confidentiality, #add-loss-of-integrity-confidentiality-form, #add-loss-of-availability-confidentiality-form", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-loss-of-confidentiality", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-confidentiality", "outputAttribute": "data-add-source", "value": "#business-activity-component-section" },
+      { "type": "outputValue", "outputTarget": "#cancel-loss-of-confidentiality", "outputAttribute": "data-add-source", "value": "#business-component-section" },
       { "type": "removeClass", "outputTarget": "#loss-of-confidentiality-section", "class": "hidden" },
       { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" },
       { "type": "event", "outputTarget": "#loss-of-confidentiality-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add loss of confidentiality failure scenario</button>
+] }'>{{ page.confidentiality[ "add-confidentiality-button" ] }}</button>
 <!-- Disabled by default. Resets the loss of integrity form, enables/disables buttons in the loss of integrity form, shows the loss of integrity form, hides this form. -->
 <button id="add-loss-of-integrity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-integrity", "operations": [
   { "resetForm": "#loss-of-integrity-form" }
@@ -693,14 +732,14 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-loss-of-integrity, #delete-loss-of-integrity, #add-loss-of-confidentiality-integrity-form, #add-another-loss-of-integrity, #add-loss-of-availability-integrity-form", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-loss-of-integrity", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-integrity", "outputAttribute": "data-add-source", "value": "#business-activity-component-section" },
+      { "type": "outputValue", "outputTarget": "#cancel-loss-of-integrity", "outputAttribute": "data-add-source", "value": "#business-component-section" },
       { "type": "removeClass", "outputTarget": "#loss-of-integrity-section", "class": "hidden" },
       { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" },
-      { "type": "event", "outputTarget": "#business-activity-component-field", "outputEvent": "setfocus.wb" },
+      { "type": "event", "outputTarget": "#business-component-field", "outputEvent": "setfocus.wb" },
       { "type": "event", "outputTarget": "#loss-of-integrity-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add loss of integrity failure scenario</button>
+] }'>{{ page.integrity[ "add-integrity-button" ] }}o</button>
 <!-- Disabled by default. Resets the loss of availability form, enables/disables buttons in the loss of availability form, shows the loss of availability form, hides this form. -->
 <button id="add-loss-of-availability" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-availability", "operations": [
   { "resetForm": "#loss-of-availability-form" }
@@ -709,13 +748,13 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-loss-of-availability, #delete-loss-of-availability, #add-loss-of-confidentiality-availability-form, #add-loss-of-integrity-availability-form, #add-another-loss-of-availability", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-loss-of-availability", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-availability", "outputAttribute": "data-add-source", "value": "#business-activity-component-section" },
+      { "type": "outputValue", "outputTarget": "#cancel-loss-of-availability", "outputAttribute": "data-add-source", "value": "#business-component-section" },
       { "type": "removeClass", "outputTarget": "#loss-of-availability-section", "class": "hidden" },
       { "type": "addClass", "outputTarget": "#business-component-section", "class": "hidden" },
       { "type": "event", "outputTarget": "#loss-of-availability-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add loss of availability failure scenario</button>
+] }'>{{ page.availability[ "add-availability-button" ] }}</button>
 </div>
 
 </form>
@@ -843,7 +882,7 @@ for lossType in page.lossTypes %}{%
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}" ], "source": "form-state", "container": "#loss-of-{{ lossType }}-form", "action": "append" },
   { "type": "dataAttribute", "element": "#cancel-loss-of-{{ lossType }}, #delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "increment" },
   { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 9 ], "action": "increment" }
-] }'>Save</button>
+] }'>{{ page.common.save }}</button>
 <!-- Loads the previous loss of {{ lossType }} in the current form or clear the forms where a previous loss of {{ lossType }} does not exist. Also enables/disables buttons in the current form. -->
 <button id="cancel-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#loss-of-{{ lossType }}-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
   { "type": "conditional",
@@ -902,7 +941,7 @@ for lossType in page.lossTypes %}{%
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-loss-of-{{ lossType }}-restore-proceed", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -1 ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true }
-] }'>Cancel</button>
+] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current loss of {{ lossType }} from memory, loads the previous loss of {{ lossType }} in the current form, or resets the form if no previous loss of {{ lossType }} exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
   { "type": "action",
@@ -929,10 +968,11 @@ for lossType in page.lossTypes %}{%
   { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -2 ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true },
   { "type": "dataAttribute", "element": "#cancel-loss-of-{{ lossType }}, #delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "decrement" },
   { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 9 ], "action": "decrement" }
-] }'>Delete</button>{%
+] }'>{{ page.common.delete }}</button>{%
 assign lossTypeIndexInner = 0 %}{%
 for lossTypeInner in page.lossTypes %}{%
-  if lossTypeIndexInner == lossTypeIndex %}
+  if lossTypeIndexInner == lossTypeIndex %}{%
+    assign lossButton = "add-another-" | append: lossTypeInner | append: "-button" %}
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-loss-of-{{ lossTypeInner }}" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-loss-of-{{ lossTypeInner }}", "operations": [
   { "resetForm": "#loss-of-{{ lossTypeInner }}-form" }
@@ -945,8 +985,9 @@ for lossTypeInner in page.lossTypes %}{%
       { "type": "event", "outputTarget": "#failure-scenario-{{ lossTypeInner }}", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add another loss of {{ lossTypeInner }} failure scenario</button>{%
-  else %}
+] }'>{{ page[ lossTypeInner ][ lossButton ] }}</button>{%
+  else %}{%
+    assign lossButton = "add-" | append: lossTypeInner | append: "-button" %}
 <!-- Disabled by default. Resets the loss of {{ lossTypeInner }} form, enables/disables buttons in the loss of {{ lossTypeInner }} form, shows the loss of {{ lossTypeInner }} form, hides this form. -->
 <button id="add-loss-of-{{ lossTypeInner }}-{{ lossType }}-form" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-{{ lossTypeInner }}-{{ lossType }}-form", "operations": [
   { "resetForm": "#loss-of-{{ lossTypeInner }}-form" }
@@ -961,7 +1002,7 @@ for lossTypeInner in page.lossTypes %}{%
       { "type": "event", "outputTarget": "#loss-of-{{ lossTypeInner }}-section h2", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>Add loss of {{ lossTypeInner }} failure scenario</button>{%
+] }'>{{ page[ lossTypeInner ][ lossButton ] }}</button>{%
   endif %}{%
   assign lossTypeIndexInner = lossTypeIndexInner | plus: 1 %}{%
 endfor %}
@@ -981,21 +1022,21 @@ endfor %}
 
 <details id="summary-report-section">
 
-<summary markdown="0">Summary Report</summary>
+<summary markdown="0">{{ page.summaryReport.title }}</summary>
 
-The summary report expresses the highest level of expected injuries from threat comporomise with respect to the security objectives of confidentiality, integrity, and availability.
+{{ page.summaryReport.intro }}
 
 <table class="table table-bordered">
-<caption>Breakdown by Business Domain</caption>
+<caption>{{ page.summaryReport.domainTable.caption }}</caption>
 <thead>
 <tr>
-<th rowspan="2">Business Domain</th>
-<th colspan="3" class="text-center">Security Category</th>
+<th rowspan="2">{{ page.summaryReport.domainTable.col1Header }}</th>
+<th colspan="3" class="text-center">{{ page.summaryReport.domainTable.col2Header }}</th>
 </tr>
 <tr>
-<th class="text-center">Confidentiality</th>
-<th class="text-center">Integrity</th>
-<th class="text-center">Availability</th>
+<th class="text-center">{{ page.summaryReport.domainTable.col2aHeader }}</th>
+<th class="text-center">{{ page.summaryReport.domainTable.col2bHeader }}</th>
+<th class="text-center">{{ page.summaryReport.domainTable.col2cHeader }}</th>
 </tr>
 </thead>
 <tbody>
@@ -1009,18 +1050,18 @@ The summary report expresses the highest level of expected injuries from threat 
 </table>
 
 <table class="table table-bordered">
-<caption>Breakdown by Component</caption>
+<caption>{{ page.summaryReport.componentTable.caption }}</caption>
 <thead>
 <tr>
-<th rowspan="2">Business Domain</th>
-<th rowspan="2">Component</th>
-<th rowspan="2" class="text-center">Type</th>
-<th colspan="3" class="text-center">Security Category</th>
+<th rowspan="2">{{ page.summaryReport.componentTable.col1Header }}</th>
+<th rowspan="2">{{ page.summaryReport.componentTable.col2Header }}</th>
+<th rowspan="2" class="text-center">{{ page.summaryReport.componentTable.col3Header }}</th>
+<th colspan="3" class="text-center">{{ page.summaryReport.componentTable.col4Header }}</th>
 </tr>
 <tr>
-<th class="text-center">Confidentiality</th>
-<th class="text-center">Integrity</th>
-<th class="text-center">Availability</th>
+<th class="text-center">{{ page.summaryReport.componentTable.col4aHeader }}</th>
+<th class="text-center">{{ page.summaryReport.componentTable.col4bHeader }}</th>
+<th class="text-center">{{ page.summaryReport.componentTable.col4cHeader }}</th>
 </tr>
 </thead>
 <tbody>
@@ -1039,11 +1080,11 @@ The summary report expresses the highest level of expected injuries from threat 
 
 <details id="detailed-report-section" open="open">
 
-<summary markdown="0">Detailed Report</summary>
+<summary markdown="0">{{ page.detailedReport.title }}</summary>
 
-Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
+{{ page.detailedReport.intro1 }}
 
-The following report provides the detailed injury assessment performed for each process or information component with respect to confidentiality, integrity and availability.
+{{ page.detailedReport.intro2 }}
 
 <table class="table table-bordered">
 <thead>
@@ -1056,7 +1097,7 @@ The following report provides the detailed injury assessment performed for each 
 </tr>
 <tr>
 <th>{{ page.businessComponent[ "business-activity-label" ] }}</th>
-<th>{{ page.businessComponent[ "business-activity-component-label" ] }}</th>
+<th>{{ page.businessComponent[ "business-component-label" ] }}</th>
 <th>{{ page.businessComponent[ "component-description-label" ] }}</th>
 <th>{{ page.businessComponent[ "component-type-label" ] }}</th>
 <th>{{ page.businessComponent[ "authoritative-source-label" ] }}</th>
@@ -1113,7 +1154,7 @@ endfor %}
 
 <div markdown="0" class="btn-group mrgn-tp-md">
 <!-- Button for saving progress to a JSON file -->
-<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment-json", "source": "sessionStorage", "key": "assessment" }'>Save progress to a file</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment-json", "source": "sessionStorage", "key": "assessment" }'>{{ site.SaveToFile[ page.lang ] }}</button>
 <!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. this is done to give more visual control over the appearance than what the input type="file" field allows. -->
 <button id="restore-from-file-button" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
   { "type": "action",
@@ -1121,7 +1162,7 @@ endfor %}
       { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
     ]
   }
-] }'>Restore progress from a file</button>
+] }'>{{ site.RestoreFromFile[ page.lang ] }}</button>
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "filename": "assessment-csv", "source": "sessionStorage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
@@ -1141,7 +1182,7 @@ endfor %}
   { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
   { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
   { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
-] }'>Download assessment in CSV format</button>
+] }'>{{ page.downloadAssessment }}</button>
 </div>
 <div class="hidden">
 <input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }' />
