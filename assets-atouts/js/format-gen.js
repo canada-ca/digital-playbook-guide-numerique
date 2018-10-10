@@ -83,12 +83,8 @@ var componentName = "wb-format-gen",
             }
           }
 
-          if ( settings[ "resetForm" ] ) {
-            clearFormFieldStatus( settings[ "resetForm" ] );
-          }
-
           if ( settings[ "onInit" ] === true ) {
-            handleEvent( event, settings );
+            handleEvent( event, settings, true );
           }
         }
 
@@ -918,6 +914,8 @@ var componentName = "wb-format-gen",
           return;
         } else if ( currAction === "append" || currAction === "prepend" ) {
           resultData = [ data ];
+        } else if ( currAction === "replace" ) {
+          resultData = data;
         }
 
         // Ensure the resulting data is a string
@@ -1313,8 +1311,9 @@ var componentName = "wb-format-gen",
      * @overview Handles most plugin events
      * @param event {Object} Event object
      * @param settingsParam {Object} (Optional, default is to get the settings from the event object) Settings to be used by the handler
+     * @param ignoreTriggerCheck {Boolean} (Optional, defaults to false) Whether to ignore the check that attempts to filter out unnecessary/duplicate events (set to true for onInit event handling since will fail check otherwise).
      */
-    handleEvent = function( event, settingsParam ) {
+    handleEvent = function( event, settingsParam, ignoreTriggerCheck ) {
       var eventType = event.type,
           target = event.target,
           dataAttributeValue = settingsParam ? settingsParam : JSON.parse( target.getAttribute( dataAttribute ) ),
@@ -1334,7 +1333,7 @@ var componentName = "wb-format-gen",
         eventTrigger = settings[ "eventTrigger" ];
 
         // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
-        if ( eventTrigger && eventTrigger !== eventType && eventTrigger !== ( eventType + "." + event.namespace ) ) {
+        if ( !ignoreTriggerCheck &&  eventTrigger && eventTrigger !== eventType && eventTrigger !== ( eventType + "." + event.namespace )  ) {
           continue;
         }
 
@@ -1351,30 +1350,26 @@ var componentName = "wb-format-gen",
           if ( returnFalse ) {
             return false;
           }
-        } else {
-          if ( settings && type !== "change" ) {
+        } else if ( settings && type !== "change") {
+          if ( target.type === "file" ) {
+            inputFile( settings, target );
+          } else {
             type = settings[ "type" ];
             source = settings[ "source" ];
             resetForm = settings[ "resetForm" ];
 
             if ( resetForm ) {
               clearFormFieldStatus( resetForm );
-            } else if ( target.type !== "file" ) {
-              if ( type === "sessionStorage" || type === "localStorage" || type === "dataAttribute" ) {
-                outputStorage( settings );
-              } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
-                if ( type === "csv" || type === "json" ) {
-                  outputFile( settings );
-                } else {
-                  inputStorage( settings );
-                }
-              } else {
+            } else if ( type === "sessionStorage" || type === "localStorage" || type === "dataAttribute" ) {
+              outputStorage( settings );
+            } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
+              if ( type === "csv" || type === "json" ) {
                 outputFile( settings );
+              } else {
+                inputStorage( settings );
               }
-            }
-          } else {
-            if ( target.type === "file" ) {
-              inputFile( settings, target );
+            } else {
+              outputFile( settings );
             }
           }
         }
@@ -1393,7 +1388,7 @@ $document.on( "click change", selector, function( event ) {
   if ( data ) {
     settings = JSON.parse( data );
     eventTrigger = settings[ "eventTrigger" ];
-    if ( !eventTrigger || ( eventTrigger !== "click" && eventTrigger !== "change" ) ) {
+    if ( event.target === event.currentTarget && ( !eventTrigger || ( eventTrigger !== "click" && eventTrigger !== "change" ) ) ) {
       handleEvent( event, settings );
     }
   }
