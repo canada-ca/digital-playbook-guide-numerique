@@ -111,7 +111,10 @@ fieldGridClass: col-sm-8
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
-<span data-wb-format-gen='{ "resetForm": "#business-domain-form, #business-activity-form, #business-component-form, #loss-of-confidentiality-form, #loss-of-integrity-form, #loss-of-availability-form" }'></span>
+<span class="wb-format-gen" data-wb-format-gen='[
+  { "onInit": true, "resetForm": "#business-domain-form, #business-activity-form, #business-component-form, #loss-of-confidentiality-form, #loss-of-integrity-form, #loss-of-availability-form" },
+  { "onInit": true, "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ 0 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
+]'></span>
 
 <section id="welcome-section" class="wb-frmvld">
 <form id="welcome-form" class="form-horizontal" method="post">
@@ -217,9 +220,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "type": "dataAttribute", "element": "#delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 0 ], "action": "increment" }
 ] }'>{{ page.common.save }}</button>
 <!-- Loads the previous domain in the current form or clear the forms where a previous domain does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
+<button id="cancel-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -251,6 +252,8 @@ This web-based version of the tool is meant to make the process of organizing th
       }
     ]
   }
+] }' data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current domain from memory, loads the previous domain in the current form, or resets the form if no previous domain exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
@@ -1185,7 +1188,9 @@ endfor %}
 ] }'>{{ page.downloadAssessment }}</button>
 </div>
 <div class="hidden">
-<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }' />
+<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "change", "eventElement": "#restore-from-file", "operations": [
+  { "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }
+] }' />
 </div>
 
 </section>
