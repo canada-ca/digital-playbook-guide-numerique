@@ -75,30 +75,22 @@ var componentName = "wb-calculate",
             eventElement = settings[ "eventElement" ];
             if ( eventElement ) {
               $listenerElement.on( eventTrigger, eventElement, function( event ) {
-                iterate( settings[ "operations" ] );
-
-                if ( settings[ "returnFalse" ] === true ) {
-                  return false;
-                }              
+                return handleEvent( event, dataAttributeValue );
               } );
             } else {
               $listenerElement.on( eventTrigger, function( event ) {
-                iterate( settings[ "operations" ] );
-
-                if ( settings[ "returnFalse" ] === true ) {
-                  return false;
-                }              
+                return handleEvent( event, dataAttributeValue );
               } );
             }
           }
 
           if ( !settings[ "ignoreInit" ] ) {
-            iterate( settings[ "operations" ] );
+            handleEvent( event, settings );
           }
         }
 
         // Apply the extended settings to the element
-        elm.setAttribute( dataAttribute, JSON.stringify( isArray ? dataAttributeValue : dataAttributeValue[ 0 ] ) );
+        elm.setAttribute( dataAttribute, JSON.stringify( settings ) );
       }
     },
     /**
@@ -496,6 +488,45 @@ var componentName = "wb-calculate",
       }
 
       return value;
+    },
+
+    /**
+     * @method handleEvent
+     * @overview Handles most plugin events
+     * @param event {Object} Event object
+     * @param settingsParam {Object} Settings to be used by the handler
+     */
+    handleEvent = function( event, settingsParam ) {
+      var eventType = event.type,
+          returnFalse = false,
+          allSettings = Array.isArray( settingsParam ) ? settingsParam : [ settingsParam ],
+          settings, operations, eventTrigger, type, source, action, data, storedData, key, index, length, result,
+          resetForm, settingsIndex, settingsLength, processedValues;
+
+      // Iterate through each of the settings objects
+      settingsLength = allSettings.length;
+      for ( settingsIndex = 0; settingsIndex < settingsLength; settingsIndex += 1 ) {
+        settings = allSettings[ settingsIndex ];
+        eventTrigger = ( typeof settings[ "eventTrigger" ] === "object" ? calculate( settings[ "eventTrigger" ] ) : settings[ "eventTrigger" ] );
+
+        // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
+        if ( eventTrigger && eventTrigger.indexOf( eventType ) === -1 ) {
+          continue;
+        }
+
+        operations = settings[ "operations" ];
+        if ( operations ) {
+          iterate( settings[ "operations" ] );
+        }
+
+        if ( settings[ "returnFalse" ] === true ) {
+          returnFalse = true;
+        }
+      }
+
+      if ( returnFalse ) {
+        return false;
+      }
     };
 
 // Bind the init event of the plugin
@@ -503,5 +534,5 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
-  
+
 } )( jQuery, window, document, wb );

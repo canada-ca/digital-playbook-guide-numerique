@@ -34,7 +34,7 @@ var componentName = "wb-format-gen",
       // returns undefined = do not proceed with init (e.g., already initialized)
       var elm = wb.init( event, componentName, selector ),
           isArray = false,
-          settings, eventTrigger, $listenerElement, eventElement, dataAttributeValue, index, length;
+          settings, eventTrigger, $listenerElement, eventElement, dataAttributeValue, index, length, processedValues;
 
       if ( elm ) {
         dataAttributeValue = elm.getAttribute( dataAttribute );
@@ -62,23 +62,26 @@ var componentName = "wb-format-gen",
 
           dataAttributeValue[ index ] = settings;
 
+          // Retrieve the values from any referring objects
+          processedValues = retrieveValue( [ settings[ "eventTrigger" ], settings[ "listenerElement" ], settings[ "eventElement" ] ] );
+
           // Set up event handler if specified in settings
-          eventTrigger = settings[ "eventTrigger" ];
+          eventTrigger = processedValues[ 0 ];
           if ( eventTrigger ) {
             if ( settings[ "listenerElement" ] ) {
-              $listenerElement = $( settings[ "listenerElement" ] );
+              $listenerElement = $( processedValues[ 1 ] );
             } else {
               $listenerElement = $document;
             }
 
-            eventElement = settings[ "eventElement" ];
+            eventElement = processedValues[ 2 ];
             if ( eventElement ) {
               $listenerElement.on( eventTrigger, eventElement, function( event ) {
-                handleEvent( event );
+                return handleEvent( event );
               } );
             } else {
               $listenerElement.on( eventTrigger, function( event ) {
-                handleEvent( event, settings );
+                return handleEvent( event, settings );
               } );
             }
           }
@@ -269,6 +272,87 @@ var componentName = "wb-format-gen",
     },
 
     /**
+     * @method retrieveValue
+     * @overview Retrieves the value for an object that references a value
+     * @param referrer {Array/Object/Other} Object or Array of objects each referring to a value (or a non-object or an Array of non-objects which will be returned as is)
+     *  Has the following structure
+     *  - type: {String} The source of the data (i.e., "sessionStorage", "localStorage", "dataAttribute")
+     *  - key: {String} Where to find the data. In the case of sessionStorage and localStorage, it is the key for the item to retrieve. In the case of dataAttribute, it is the dataAttribute name (e.g., data-wb-format-gen).
+     *  - indexesKeys: {Array} Indexes and/or keys used to retrieve nested data
+     *  - element: {String} (only used for dataAttribute) Selector for the element(s) containing the dataAttribute
+     *  - action: {String} (Optional, defaults to returning the referened value) Action to performed on the retrieved values (e.g., "length", "firstIndex", "lastIndex", "closestIndex", "first", "last")
+     *  - source: {Number/Object} (only used for closestIndex) Current index or object referencing the current index
+     * @return {Number/String/Boolean} Referenced value
+     */
+    retrieveValue = function( referrer ) {
+      var isArray = Array.isArray( referrer ),
+          toProcess = isArray ? referrer : [ referrer ],
+          length = toProcess.length,
+          value, valueLength, action, index, current, source;
+      for ( index = 0; index < length; index += 1 ) {
+        current = toProcess[ index ];
+
+        if ( typeof current === "object" ) {
+          value = retrieveData( current.key, current.indexesKeys, current.type, true, current.element );
+          action = current.action;
+        } else {
+          value = current;
+          action = null;
+        }
+
+        if ( action ) {
+          // Convert to an object if it is a string representation of an array
+          if ( typeof value === "string" && value.indexOf( "[" ) === 0 ) {
+            value = JSON.parse( value );
+          }
+
+          // Ensure there is a valid length to work with
+          if ( value === null || typeof value === "undefined" ) {
+            valueLength = 0;
+          } else {
+            valueLength = value.length;
+          }
+
+          if ( action === "length" ) {
+            // Get the length of the value (must be a string or array)
+            value = valueLength;
+          } else if ( action === "firstIndex" ) {
+            // Get the first index of the value if it exists (must be a string or array)
+            value = valueLength > 0 ? 0 : -1;
+          } else if ( action === "lastIndex" ) {
+            // Get the last index of the value if it exists (must be a string or array)
+            value = valueLength - 1;
+          } else if ( action === "closestIndex" ) {
+            // Get the closest index to the currentIndex (use when the currentIndex has been deleted)
+            source = current.source;
+            if ( typeof source === "object" ) {
+              source = retrieveData( source.key, source.indexesKeys, source.type, true, source.element );
+            }
+            if ( typeof source === "string" ) {
+              source = parseInt( source );
+            }
+
+            if ( source < 0 || source > ( valueLength - 1 ) ) {
+              value = valueLength - 1;
+            } else {
+              value = source;
+            }
+          } else if ( action === "first" ) {
+            // Get the value at the last index of the value (must be an array)
+            value = value[ 0 ];
+          } else if ( action === "last" ) {
+            // Get the value at the first index of the value (must be an array)
+            value = value[ valueLength - 1 ];
+          }
+        }
+
+        toProcess[ index ] = value;
+      }
+
+      return ( isArray ? toProcess : toProcess[ 0 ] );
+    },
+
+    /**
      * @method dataToTableArray
      * @overview Converts data in an object or array to a table array
      * @param data {Object/Array} Object/array containing all of the data for the table.
@@ -290,10 +374,10 @@ var componentName = "wb-format-gen",
       var tableArray = [],
           tableCountArray = [],
           tableColSpecsLength = tableColSpecs.length,
-          rowIndex, numOuterRows, numInnerRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
+          rowIndex, numOuterRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
           index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
           columnSourceArray, relativeToArray, columnDataArray, rowspan, elementCounts, elementArray, element, countArray, count,
-          relativeCount;
+          relativeCount, indexesArray, maxRows, result, totalCountArray;
 
       // Handle no data being passed
       if ( !data || data.length === 0 ) {
@@ -303,8 +387,11 @@ var componentName = "wb-format-gen",
       // Determine the number of outer rows (i.e., number of rows in the first column after rowspans are applied)
       for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
         tableColSpec = tableColSpecs[ tableColSpecIndex ];
+
+        // Pre-process the indexesKeys (convert objects to values)
+        indexesKeys = retrieveValue( tableColSpec.dataContainerSource );
+
         if ( tableColSpec.relativeToColumn === -1 ) {
-          indexesKeys = tableColSpec.dataContainerSource;
           indexesKeysLength = indexesKeys.length;
           dataNode = data;
 
@@ -321,7 +408,6 @@ var componentName = "wb-format-gen",
       // Generate the table array
       for ( rowIndex = 0; rowIndex < numOuterRows; rowIndex += 1 ) {
         rowArray = [];
-        numInnerRows = 1;
 
         for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
           tableColSpec = tableColSpecs[ tableColSpecIndex ];
@@ -370,6 +456,8 @@ var componentName = "wb-format-gen",
 
         // Determine rowspans for each column
         countArray = new Array( tableColSpecsLength );
+        totalCountArray = new Array( tableColSpecsLength );
+        maxRows = 0;
         for ( tableColSpecIndex = tableColSpecsLength - 1; tableColSpecIndex > -1; tableColSpecIndex -= 1 ) {
           tableColSpec = tableColSpecs[ tableColSpecIndex ];
           relativeToColumn = tableColSpec.relativeToColumn;
@@ -381,10 +469,16 @@ var componentName = "wb-format-gen",
               if ( tableColSpec.dataContainerSource.length === 0 && ( relativeCount !== null && typeof relativeCount !== "undefined" ) ) {
                 // Sibling relationship so will have the same rowspan
                 countArray[ tableColSpecIndex ] = relativeCount;
+                totalCountArray[ tableColSpecIndex ] = totalCountArray[ relativeToColumn ];
               } else {
                 // Parent/child relationship
                 dataNode = rowArray[ tableColSpecIndex ];
-                countArray[ tableColSpecIndex ] = getNestedArrayElementCounts( dataNode ).subElementCount;
+                result = getNestedArrayElementCounts( dataNode );
+                countArray[ tableColSpecIndex ] = result.subElementCount;
+                totalCountArray[ tableColSpecIndex ] = result.totalElementCount;
+                if ( result.totalElementCount > maxRows ) {
+                  maxRows = result.totalElementCount;
+                }
 
                 // Determine the array depth on which to apply rowspans
                 relativeToArray = [];
@@ -395,11 +489,19 @@ var componentName = "wb-format-gen",
 
                 for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
                   relativeToColumn = relativeToArray[ index ];
-                  countArray[ relativeToColumn ] = getNestedArrayElementCounts( dataNode, ( Array.isArray( rowArray[ relativeToColumn ] ) ? ( length - index - 1 ) : 0 ) ).subElementCount;
+                  result = getNestedArrayElementCounts( dataNode, ( Array.isArray( rowArray[ relativeToColumn ] ) ? ( length - index - 1 ) : 0 ) );
+
+                  // Only update the counts of relative columns if they are null, undefined or less than new total row count
+                  count = countArray[ relativeToColumn ];
+                  if ( count === null || typeof count === "undefined" || result.totalElementCount > totalCountArray[ relativeToColumn ] ) {
+                    countArray[ relativeToColumn ] = result.subElementCount;
+                    totalCountArray[ relativeToColumn ] = result.totalElementCount;
+                  }
                 }
               }
             } else {
               countArray[ tableColSpecIndex ] = 1;
+              totalCountArray[ tableColSpecIndex ] = 1;
             }
           }
         }
@@ -411,6 +513,25 @@ var componentName = "wb-format-gen",
           if ( Array.isArray( element ) ) {
             rowArray[ index ] = flattenArray( element );
             countArray[ index ] = flattenArray( countArray[ index ] );
+
+            // Check each column count against maxRows (sum up numbers in arrays).
+            // If less than maxRows, then push "" and 1 into each array until the column count equals maxRows
+            if ( totalCountArray[ index ] < maxRows ) {
+              count = countArray[ index ];
+              if ( Array.isArray( count ) ) {
+                count = totalCountArray[ index ];
+                while ( count < maxRows ) {
+                  rowArray[ index ].push( "" );
+                  countArray[ index ].push( 1 );
+                  count += 1;
+                }
+                totalCountArray[ index ] = count;
+              } else {
+                if ( count < maxRows ) {
+                  countArray[ index ] = maxRows;
+                }
+              }
+            }
           }
         }
 
@@ -571,15 +692,17 @@ var componentName = "wb-format-gen",
     outputFile = function( settings ) {
       var outputLink = document.createElement( "a" ),
           isDownloadAttrSupported = outputLink.download !== undefined,
-          type = settings[ "type" ],
-          source = settings[ "source" ],
-          filename = settings[ "filename" ],
-          element = settings[ "element" ],
-          fileData, mimeType, blobOutput, urlOutput, action, key, indexesKeys, storedData;
+          processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "filename" ], settings[ "element" ], settings[ "key" ], settings[ "container" ] ] ),
+          type = processedValues[ 0 ],
+          source = processedValues[ 1 ],
+          filename = processedValues[ 2 ],
+          element = processedValues[ 3 ],
+          key = processedValues[ 4 ],
+          container = processedValues[ 5 ],
+          fileData, mimeType, blobOutput, urlOutput, action, indexesKeys, storedData;
 
       if ( type === "csv" ) {
         if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
-          key = settings[ "key" ];
           indexesKeys = settings[ "indexesKeys" ];
 
           // Ensure indexesKeys is an array
@@ -596,17 +719,17 @@ var componentName = "wb-format-gen",
             fileData = generateTableRows( result.tableArray, "csv", result.tableCountArray );
           }
         } else {
-          fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ], true );
+          fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], container, true );
         }
 
         mimeType = "text/csv;charset=utf-8;";
       } else if ( type === "json" ) {
         if ( source === "form-state" ) {
-          fileData = JSON.stringify( getFormFieldStatus( settings[ "container" ] ) );
+          fileData = JSON.stringify( getFormFieldStatus( container ) );
         } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
-          fileData = retrieveData( settings[ "key" ], settings[ "indexesKeys" ] , source, true, element );
+          fileData = retrieveData( key, settings[ "indexesKeys" ] , source, true, element );
         } else {
-          fileData = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ], true );
+          fileData = htmlToJSON( document.querySelector( container ), settings[ "structure" ], true );
         }
         mimeType = "application/json;charset=utf-8;";
       } else {
@@ -651,8 +774,9 @@ var componentName = "wb-format-gen",
         var fileReader = new FileReader();
 
         fileReader.onload = function ( event ) {
-           var type = settings[ "type" ],
-               action = settings[ "action" ],
+           var processedValues = retrieveValue( [ settings[ "type" ], settings[ "action" ] ] ),
+               type = processedValues[ 0 ],
+               action = processedValues[ 1 ],
                fileText = event.target.result,
                fileData;
 
@@ -666,9 +790,11 @@ var componentName = "wb-format-gen",
              }
 
              if ( action === "restore-form-state" ) {
+               container = retrieveValue( settings[ "container" ] );
                setFormFieldStatus( settings[ "container" ], fileData, settings[ "noEvent" ] );
              } else if ( action === "restore-storage" ) {
-               storeData( "replace", settings[ "key" ], settings[ "indexesKeys" ], settings[ "target" ], fileData, settings[ "element" ] );
+               processedValues = retrieveValue( [ settings[ "key" ], settings[ "target" ], settings[ "element" ] ] );
+               storeData( "replace", processedValues[ 0 ], settings[ "indexesKeys" ], processedValues[ 1 ], fileData, processedValues[ 2 ] );
              }
 
              return fileData;
@@ -690,10 +816,13 @@ var componentName = "wb-format-gen",
      * @param settings {Object} Settings object for the data to store in or remove from storage
      */
     outputStorage = function( settings ) {
-      var type = settings[ "type" ],
-          source = settings[ "source" ],
-          action = settings[ "action" ],
-          key = settings[ "key" ],
+      var processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "action" ], settings[ "key" ], settings[ "container" ], settings[ "element" ] ] ),
+          type = processedValues[ 0 ],
+          source = processedValues[ 1 ],
+          action = processedValues[ 2 ],
+          key = processedValues[ 3 ],
+          container = processedValues[ 4 ],
+          element = processedValues[ 5 ],
           indexesKeys = settings[ "indexesKeys" ],
           data = settings[ "data" ];
 
@@ -708,23 +837,24 @@ var componentName = "wb-format-gen",
 
         if ( settings[ "rowSelector" ] ) {
           // Store the data as CSV
-          data = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], settings[ "container" ] );
+          data = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], container );
         } else if ( settings[ "structure" ] ) {
           // Store the data as JSON
-          data = htmlToJSON( document.querySelector( settings[ "container" ] ), settings[ "structure" ] );
+          data = htmlToJSON( document.querySelector( container ), settings[ "structure" ] );
         } else {
           // Store the data as text
-          data = document.querySelector( settings[ "container" ] ).textContent;
+          data = document.querySelector( container ).textContent;
         }
       } else if ( source === "form-state" ) {
         // Store the form state as JSON
-        data = getFormFieldStatus( settings[ "container" ] );
-      } else if ( typeof source === "object" ) {
-        data = retrieveData( source[ "key" ], source[ "indexesKeys" ], source[ "type" ], false, source[ "element" ] );
+        data = getFormFieldStatus( container );
+      } else if ( ( data === null || typeof data === "undefined" ) && source !== null && typeof source !== "undefined" ) {
+        // If source is the source of the data
+        data = source;
       }
 
       // Store the data
-      storeData( action, key, indexesKeys, type, data, settings[ "element" ] );
+      storeData( action, key, indexesKeys, type, data, element );
     },
 
     /**
@@ -734,10 +864,13 @@ var componentName = "wb-format-gen",
      * @param settings {Object} Settings object for what to do with data in storage
      */
     inputStorage = function( settings ) {
-      var type = settings[ "type" ],
-          source = settings[ "source" ],
-          action = settings[ "action" ],
-          key = settings[ "key" ],
+      var processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "action" ], settings[ "key" ], settings[ "container" ], settings[ "element" ] ] ),
+          type = processedValues[ 0 ],
+          source = processedValues[ 1 ],
+          action = processedValues[ 2 ],
+          key = processedValues[ 3 ],
+          container = processedValues[ 4 ],
+          element = processedValues[ 5 ],
           indexesKeys = settings[ "indexesKeys" ],
           storedData, tableRows;
 
@@ -746,14 +879,14 @@ var componentName = "wb-format-gen",
         indexesKeys = JSON.parse( indexesKeys );
       }
 
-      storedData = retrieveData( key, indexesKeys, source ? source : type, false, settings[ "element" ] );
+      storedData = retrieveData( key, indexesKeys, source ? source : type, false, element );
 
       if ( action === "restore-form-state" ) {
         // Restore the form state from the stored data, or clear it if no data was found
         if ( storedData && storedData.length > 0 ) {
-          setFormFieldStatus( settings[ "container" ], storedData, settings[ "noEvents" ] );
+          setFormFieldStatus( container, storedData, settings[ "noEvents" ] );
         } else {
-          clearFormFieldStatus( settings[ "container" ] );
+          clearFormFieldStatus( container );
         }
       } else if ( action === "set-table-rows" ) {
         // Set table data rows (normally with tbody as the container) using the stored data
@@ -765,7 +898,7 @@ var componentName = "wb-format-gen",
         }
 
         // Replace the contents of the container with the new table rows
-        document.querySelector( settings[ "container" ] ).innerHTML = tableRows;
+        document.querySelector( container ).innerHTML = tableRows;
       }
     },
 
@@ -787,6 +920,9 @@ var componentName = "wb-format-gen",
           indexesKeysLength = currIndexesKeys.length,
           storedData, storedDataFragment, parentStoredDataFragment, index, length, typeofResult, indexKey, nextIndexKey,
           currElement, currElements, elementsIndex, elementsLength, resultData;
+
+      // Pre-process the indexesKeys (convert objects to values)
+      currIndexesKeys = retrieveValue( currIndexesKeys );
 
       // Retrieve and parse any stored data
       if ( currStorageType === "sessionStorage" ) {
@@ -970,6 +1106,9 @@ var componentName = "wb-format-gen",
           indexesKeysLength = currIndexesKeys.length,
           data, index;
 
+      // Pre-process the indexesKeys (convert objects to values)
+      currIndexesKeys = retrieveValue( currIndexesKeys );
+
       // Retrieve and parse any stored data
       if ( currStorageType === "sessionStorage" ) {
         data = sessionStorage.getItem( key );
@@ -993,7 +1132,7 @@ var componentName = "wb-format-gen",
           data = data[ currIndexesKeys[ index ] ];
         }
 
-        if ( returnAsString ) {
+        if ( returnAsString && typeof data === "object" ) {
           data = JSON.stringify( data );
         }
       }
@@ -1319,7 +1458,7 @@ var componentName = "wb-format-gen",
           dataAttributeValue = settingsParam ? settingsParam : JSON.parse( target.getAttribute( dataAttribute ) ),
           returnFalse = false,
           settings, operations, eventTrigger, type, source, action, data, storedData, key, index, length, result,
-          resetForm, settingsIndex, settingsLength;
+          resetForm, settingsIndex, settingsLength, processedValues;
 
       if ( !Array.isArray( dataAttributeValue ) ) {
         dataAttributeValue = [ dataAttributeValue ];
@@ -1330,10 +1469,10 @@ var componentName = "wb-format-gen",
       for ( settingsIndex = 0; settingsIndex < settingsLength; settingsIndex += 1 ) {
         settings = dataAttributeValue[ settingsIndex ];
         operations = settings[ "operations" ];
-        eventTrigger = settings[ "eventTrigger" ];
+        eventTrigger = retrieveValue( settings[ "eventTrigger" ] );
 
         // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
-        if ( !ignoreTriggerCheck &&  eventTrigger && eventTrigger !== eventType && eventTrigger !== ( eventType + "." + event.namespace )  ) {
+        if ( !ignoreTriggerCheck && eventTrigger && eventTrigger.indexOf( eventType ) === -1 ) {
           continue;
         }
 
@@ -1354,12 +1493,16 @@ var componentName = "wb-format-gen",
           if ( target.type === "file" ) {
             inputFile( settings, target );
           } else {
-            type = settings[ "type" ];
-            source = settings[ "source" ];
-            resetForm = settings[ "resetForm" ];
+            processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "resetForm" ] ] );
+            type = processedValues[ 0 ];
+            source = processedValues[ 1 ];
+            resetForm = processedValues[ 2 ];
 
             if ( resetForm ) {
               clearFormFieldStatus( resetForm );
+            } else if ( type === "event" ) {
+              processedValues = retrieveValue( [ settings[ "outputTarget" ], settings[ "outputEvent" ] ] );
+              $( processedValues[ 0 ] ).trigger( processedValues[ 1 ], settings[ "outputEventParameters" ] );
             } else if ( type === "sessionStorage" || type === "localStorage" || type === "dataAttribute" ) {
               outputStorage( settings );
             } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
@@ -1387,7 +1530,8 @@ $document.on( "click change", selector, function( event ) {
   // Ignore non-wb-format-gen nodes and ones where eventTrigger of "click" or "change" is specified
   if ( data ) {
     settings = JSON.parse( data );
-    eventTrigger = settings[ "eventTrigger" ];
+    eventTrigger = retrieveValue( settings[ "eventTrigger" ] );
+
     if ( event.target === event.currentTarget && ( !eventTrigger || ( eventTrigger !== "click" && eventTrigger !== "change" ) ) ) {
       handleEvent( event, settings );
     }
