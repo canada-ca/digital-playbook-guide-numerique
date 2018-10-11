@@ -119,13 +119,13 @@ Cette page fournit des conseils personnalisés sur la façon dont les projets pe
 
 <section>
 
-### Utilisez des normes ouvertes et des logiciels libres par défaut
+### Utilisez des normes ouvertes et des logiciels libres
 
 <section>
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Se servir de normes, solutions, composantes et pratiques de pointe en matière de source ouverte
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Éviter l'enfermement et rechercher l'indépendance et la substituabilité lorsque des logiciels libres ou des normes ouvertes sont disponibles
 - {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Préconiser cet ordre de préférences : source ouverte d’abord, puis les logiciels disponibles sur le marché qui sont indifférents à la plateforme, puis les logiciels disponibles sur le marché exclusifs, puis en dernier lieu, les logiciels conçus sur mesure
 - {: data-dpgn-data-include='&#123; "guideline": "3.2", "section": "checklist" &#125;'} Rendre le code source ouvert et réutilisable en vertu d’une licence de logiciel à source ouverte
 - {: data-dpgn-data-include='&#123; "guideline": "3.2", "section": "checklist" &#125;'} Exposer les données publiques afin de procéder à la mise en œuvre d’initiatives sur les données ouvertes et l’information ouverte

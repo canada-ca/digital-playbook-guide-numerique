@@ -119,13 +119,13 @@ This page provides personalized guidance for how projects can meet the Governmen
 
 <section>
 
-### Use Open Standards and Open Source Software by Default
+### Use Open Standards and Open Source Software
 
 <section>
 {% include /functions/output-section-heading.html parentHeadingLevel=2 sectionType="checklist" %}
 
 <!-- markdownlint-disable MD032 -->
-- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Use open source standards, solutions, components, and leading practices
+- {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Avoid lock-in and seek independence and substitutability where open source software or open standards are available
 - {: data-dpgn-data-include='&#123; "guideline": "4.1", "section": "checklist" &#125;'} Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built
 - {: data-dpgn-data-include='&#123; "guideline": "3.2", "section": "checklist" &#125;'} Make source code open and reusable under an appropriate open source software license
 - {: data-dpgn-data-include='&#123; "guideline": "3.2", "section": "checklist" &#125;'} Expose public data to implement Open Data and Open Information initiatives
