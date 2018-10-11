@@ -510,7 +510,7 @@ var componentName = "wb-calculate",
         eventTrigger = ( typeof settings[ "eventTrigger" ] === "object" ? calculate( settings[ "eventTrigger" ] ) : settings[ "eventTrigger" ] );
 
         // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
-        if ( eventTrigger && eventTrigger !== eventType && eventTrigger !== ( eventType + "." + event.namespace )  ) {
+        if ( eventTrigger && eventTrigger.indexOf( eventType ) === -1 ) {
           continue;
         }
 

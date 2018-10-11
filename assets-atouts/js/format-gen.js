@@ -1418,7 +1418,7 @@ var componentName = "wb-format-gen",
         eventTrigger = retrieveValue( settings[ "eventTrigger" ] );
 
         // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
-        if ( !ignoreTriggerCheck && eventTrigger && eventTrigger !== eventType && eventTrigger !== ( eventType + "." + event.namespace )  ) {
+        if ( !ignoreTriggerCheck && eventTrigger && eventTrigger.indexOf( eventType ) === -1 ) {
           continue;
         }
 
