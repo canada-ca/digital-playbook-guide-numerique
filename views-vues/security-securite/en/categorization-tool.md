@@ -111,10 +111,10 @@ fieldGridClass: col-sm-8
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
-<span class="wb-format-gen" data-wb-format-gen='[
+<span id="sec-cat-form-properties" class="hidden wb-format-gen" data-wb-format-gen='[
   { "onInit": true, "resetForm": "#business-domain-form, #business-activity-form, #business-component-form, #loss-of-confidentiality-form, #loss-of-integrity-form, #loss-of-availability-form" },
   { "onInit": true, "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ 0 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
-]'></span>
+]' data-sec-cat-form-state='{ "currentAction": "append", "current-domain": -1, "current-activity": -1, "current-component": -1, "current-loss-of-confidentiality": -1, "current-loss-of-integrity": -1, "current-loss-of-availability": -1 }'></span>
 
 <section id="welcome-section" class="wb-frmvld">
 <form id="welcome-form" class="form-horizontal" method="post">
@@ -172,7 +172,7 @@ This web-based version of the tool is meant to make the process of organizing th
           },
           { "type": "==",
             "inputs": [
-              { "type": "string", "query": "#save-domain", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
               "append"
             ]
           }
@@ -186,12 +186,12 @@ This web-based version of the tool is meant to make the process of organizing th
   }
 ] }' data-wb-format-gen='[
   { "eventTrigger": "edit-domain", "eventElement": "#business-domain-fields-container", "operations": [
-    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
-    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ] } }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ], "action": "replace", "data": "replace" },
+    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 0 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] } }
   ] },
   { "eventTrigger": "append-domain", "eventElement": "#business-domain-fields-container", "operations": [
-    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
-    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys" ], "action": "delete" }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ], "action": "replace", "data": "append" },
+    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys" ], "action": "delete" }
   ] }
 ]'>
 
@@ -206,26 +206,52 @@ This web-based version of the tool is meant to make the process of organizing th
 
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
-<button id="save-domain" type="submit" disabled="disabled" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-domain-form", "listenerElement": "body", "returnFalse": true, "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false },
-      { "type": "event", "outputTarget": "#save-domain", "outputEvent": "save-domain-proceed" }
-    ]
-  }
-] }' data-wb-format-gen='{ "eventTrigger": "save-domain-proceed", "eventElement": "#save-domain", "operations": [
-  { "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#business-domain-form", "action": "append" },
-  { "type": "dataAttribute", "element": "#save-activity, #save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-domain, #cancel-activity, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "increment" },
-  { "type": "dataAttribute", "element": "#delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 0 ], "action": "increment" }
-] }'>{{ page.common.save }}</button>
+<button id="save-domain" type="submit" disabled="disabled" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
+  { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-domain-form", "listenerElement": "body", "returnFalse": true, "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
+        { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false },
+        { "type": "event", "outputTarget": "#save-domain", "outputEvent": "save-domain-proceed" }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "save-domain-complete", "eventElement": "#save-domain", "operations": [
+      { "type": "conditional",
+        "inputs": [
+          { "type": "==",
+            "inputs": [
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
+              "append"
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "event", "outputTarget": "#save-domain", "outputEvent": "increment-domain" }
+        ],
+        "actionsFalse": [
+          { "type": "event", "outputTarget": "#business-domain-fields-container", "outputEvent": "append-domain" }
+        ]
+      }
+  ] }
+]' data-wb-format-gen='[
+  { "eventTrigger": "save-domain-proceed", "eventElement": "#save-domain", "operations": [
+    { "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#business-domain-form",
+      "action": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] }
+    },
+    { "type": "event", "outputTarget": "#save-domain", "outputEvent": "save-domain-complete" }
+  ] },
+  { "eventTrigger": "increment-domain", "eventElement": "#save-domain", "operations": [
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "increment" }
+  ] }
+]'>{{ page.common.save }}</button>
 <!-- Loads the previous domain in the current form or clear the forms where a previous domain does not exist. Also enables/disables buttons in the current form. -->
 <button id="cancel-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
         "inputs": [
-          { "type": "string", "query": "#save-domain", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
           "replace"
         ]
       }
@@ -241,7 +267,7 @@ This web-based version of the tool is meant to make the process of organizing th
         "inputs": [
           { "type": ">",
             "inputs": [
-              { "type": "number", "query": "#delete-domain", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ] },
+              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
               -1
             ]
           }
@@ -253,7 +279,10 @@ This web-based version of the tool is meant to make the process of organizing th
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] }
+    ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true
+  }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current domain from memory, loads the previous domain in the current form, or resets the form if no previous domain exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
@@ -264,7 +293,7 @@ This web-based version of the tool is meant to make the process of organizing th
         "inputs": [
           { "type": "<",
             "inputs": [
-              { "type": "number", "query": "#delete-domain", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ] },
+              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
               1
             ]
           }
@@ -277,10 +306,12 @@ This web-based version of the tool is meant to make the process of organizing th
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "delete-domain-proceed", "eventElement": "#delete-domain", "operations": [
-  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1 ], "action": "delete" },
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -2 ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true },
-  { "type": "dataAttribute", "element": "#save-activity, #save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-domain, #cancel-activity, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 0 ], "action": "decrement" },
-  { "type": "dataAttribute", "element": "#delete-domain, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 0 ], "action": "decrement" }
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] }
+    ], "action": "delete"
+  },
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "decrement" },
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] } ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
 ] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-domain", "operations": [
@@ -346,7 +377,7 @@ This web-based version of the tool is meant to make the process of organizing th
           },
           { "type": "==",
             "inputs": [
-              { "type": "string", "query": "#save-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
               "append"
             ]
           }
@@ -360,12 +391,12 @@ This web-based version of the tool is meant to make the process of organizing th
   }
 ] }' data-wb-format-gen='[
   { "eventTrigger": "edit-activity", "eventElement": "#business-activity-fields-container", "operations": [
-    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
-    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ] } }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ], "action": "replace", "data": "replace" },
+    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 3 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] } }
   ] },
   { "eventTrigger": "append-activity", "eventElement": "#business-activity-fields-container", "operations": [
-    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
-    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "delete" }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ], "action": "replace", "data": "append" },
+    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 3 ], "action": "delete" }
   ] }
 ]'>
 
@@ -380,27 +411,56 @@ This web-based version of the tool is meant to make the process of organizing th
 
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
-<button id="save-activity" type="submit" disabled="disabled" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-activity-form", "listenerElement": "body", "returnFalse": true, "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-add-source", "value": "#business-activity-section" },
-      { "type": "event", "outputTarget": "#save-activity", "outputEvent": "save-activity-proceed" }
-    ]
-  }
-] }' data-wb-format-gen='{ "eventTrigger": "save-activity-proceed", "eventElement": "#save-activity", "operations": [
-  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities" ], "source": "form-state", "container": "#business-activity-form", "action": "append" },
-  { "type": "dataAttribute", "element": "#save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-activity, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "increment" },
-  { "type": "dataAttribute", "element": "#delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 3 ], "action": "increment" }
-] }'>{{ page.common.save }}</button>
+<button id="save-activity" type="submit" disabled="disabled" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
+  { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-activity-form", "listenerElement": "body", "returnFalse": true, "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
+        { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false },
+        { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-add-source", "value": "#business-activity-section" },
+        { "type": "event", "outputTarget": "#save-activity", "outputEvent": "save-activity-proceed" }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "save-activity-complete", "eventElement": "#save-activity", "operations": [
+      { "type": "conditional",
+        "inputs": [
+          { "type": "==",
+            "inputs": [
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
+              "append"
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "event", "outputTarget": "#save-activity", "outputEvent": "increment-activity" }
+        ],
+        "actionsFalse": [
+          { "type": "event", "outputTarget": "#business-activity-fields-container", "outputEvent": "append-activity" }
+        ]
+      }
+  ] }
+]' data-wb-format-gen='[
+  { "eventTrigger": "save-activity-proceed", "eventElement": "#save-activity", "operations": [
+    { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+        0, "activities"
+      ], "source": "form-state", "container": "#business-activity-form",
+      "action": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] }
+    },
+    { "type": "event", "outputTarget": "#save-activity", "outputEvent": "save-activity-complete" }
+  ] },
+  { "eventTrigger": "increment-activity", "eventElement": "#save-activity", "operations": [
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "action": "increment" }
+  ] }
+]'>{{ page.common.save }}</button>
 <!-- Loads the previous activity in the current form or clear the forms where a previous activity does not exist. Also enables/disables buttons in the current form. -->
 <button id="cancel-activity" type="button" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#business-activity-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-activity", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
         "inputs": [
-          { "type": "string", "query": "#save-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
           "append"
         ]
       },
@@ -424,7 +484,7 @@ This web-based version of the tool is meant to make the process of organizing th
         "inputs": [
           { "type": "==",
             "inputs": [
-              { "type": "string", "query": "#save-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
               "replace"
             ]
           }
@@ -438,7 +498,7 @@ This web-based version of the tool is meant to make the process of organizing th
         "inputs": [
           { "type": ">",
             "inputs": [
-              { "type": "number", "query": "#delete-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ] },
+              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
               -1
             ]
           }
@@ -451,7 +511,12 @@ This web-based version of the tool is meant to make the process of organizing th
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-activity-restore-proceed", "eventElement": "#cancel-activity", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1 ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true }
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] }
+    ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true
+  }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current activity from memory, loads the previous activity in the current form, or resets the form if no previous activity exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-activity" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-activity", "operations": [
@@ -462,7 +527,7 @@ This web-based version of the tool is meant to make the process of organizing th
         "inputs": [
           { "type": "<",
             "inputs": [
-              { "type": "number", "query": "#delete-activity", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ] },
+              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
               1
             ]
           }
@@ -475,10 +540,19 @@ This web-based version of the tool is meant to make the process of organizing th
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "delete-activity-proceed", "eventElement": "#delete-activity", "operations": [
-  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1 ], "action": "delete" },
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -2 ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true },
-  { "type": "dataAttribute", "element": "#save-component, #save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-activity, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 3 ], "action": "decrement" },
-  { "type": "dataAttribute", "element": "#delete-activity, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 3 ], "action": "decrement" }
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] }
+    ], "action": "delete"
+  },
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "action": "decrement" },
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] }
+    ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true
+  }
 ] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-activity", "operations": [
@@ -540,7 +614,7 @@ This web-based version of the tool is meant to make the process of organizing th
           },
           { "type": "==",
             "inputs": [
-              { "type": "string", "query": "#save-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
               "append"
             ]
           }
@@ -554,12 +628,12 @@ This web-based version of the tool is meant to make the process of organizing th
   }
 ] }' data-wb-format-gen='[
   { "eventTrigger": "edit-component", "eventElement": "#business-component-fields-container", "operations": [
-    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
-    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-activity", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ] } }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ], "action": "replace", "data": "replace" },
+    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 6 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] } }
   ] },
   { "eventTrigger": "append-component", "eventElement": "#business-component-fields-container", "operations": [
-    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
-    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "delete" }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ], "action": "replace", "data": "append" },
+    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 6 ], "action": "delete" }
   ] }
 ]'>
 
@@ -599,27 +673,58 @@ This web-based version of the tool is meant to make the process of organizing th
 
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
-<button id="save-component" type="submit" class="btn btn-primary wb-calculate wb-format-gen" data-wb-format-gen='{ "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#business-component-form", "indexesKeys": [ -1, 0, "activities", -1, 0, "components" ], "action": "append" }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-component-form", "listenerElement": "body", "returnFalse": true, "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "#business-component-section" },
-      { "type": "event", "outputTarget": "#save-component", "outputEvent": "save-component-proceed" }
-    ]
-  }
-] }' data-wb-format-gen='{ "eventTrigger": "save-component-proceed", "eventElement": "#save-component", "operations": [
-  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components" ], "source": "form-state", "container": "#business-component-form", "action": "append" },
-  { "type": "dataAttribute", "element": "#save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "increment" },
-  { "type": "dataAttribute", "element": "#delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 6 ], "action": "increment" }
-] }'>{{ page.common.save }}</button>
+<button id="save-component" type="submit" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
+  { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-component-form", "listenerElement": "body", "returnFalse": true, "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
+        { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false },
+        { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "#business-component-section" },
+        { "type": "event", "outputTarget": "#save-component", "outputEvent": "save-component-proceed" }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "save-component-complete", "eventElement": "#save-component", "operations": [
+      { "type": "conditional",
+        "inputs": [
+          { "type": "==",
+            "inputs": [
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
+              "append"
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "event", "outputTarget": "#save-component", "outputEvent": "increment-component" }
+        ],
+        "actionsFalse": [
+          { "type": "event", "outputTarget": "#business-component-fields-container", "outputEvent": "append-component" }
+        ]
+      }
+  ] }
+]' data-wb-format-gen='[
+  { "eventTrigger": "save-component-proceed", "eventElement": "#save-component", "operations": [
+    { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+        0, "activities",
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+        0, "components"
+      ], "source": "form-state", "container": "#business-component-form",
+      "action": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] }
+    },
+    { "type": "event", "outputTarget": "#save-component", "outputEvent": "save-component-complete" }
+  ] },
+  { "eventTrigger": "increment-component", "eventElement": "#save-component", "operations": [
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "action": "increment" }
+  ] }
+]'>{{ page.common.save }}</button>
 <!-- Loads the previous component in the current form or clear the forms where a previous component does not exist. Also enables/disables buttons in the current form. -->
 <button id="cancel-component" type="button" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#business-component-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
         "inputs": [
-          { "type": "string", "query": "#save-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
           "append"
         ]
       },
@@ -643,7 +748,7 @@ This web-based version of the tool is meant to make the process of organizing th
         "inputs": [
           { "type": "==",
             "inputs": [
-              { "type": "string", "query": "#save-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
               "replace"
             ]
           }
@@ -657,7 +762,7 @@ This web-based version of the tool is meant to make the process of organizing th
         "inputs": [
           { "type": ">",
             "inputs": [
-              { "type": "number", "query": "#delete-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ] },
+              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
               -1
             ]
           }
@@ -670,7 +775,14 @@ This web-based version of the tool is meant to make the process of organizing th
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-component-restore-proceed", "eventElement": "#cancel-component", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1 ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true }
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] }
+    ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true
+  }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current component from memory, loads the previous component in the current form, or resets the form if no previous component exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-component" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-component", "operations": [
@@ -681,7 +793,7 @@ This web-based version of the tool is meant to make the process of organizing th
         "inputs": [
           { "type": "<",
             "inputs": [
-              { "type": "number", "query": "#delete-component", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ] },
+              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
               1
             ]
           }
@@ -694,10 +806,23 @@ This web-based version of the tool is meant to make the process of organizing th
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "delete-component-proceed", "eventElement": "#delete-component", "operations": [
-  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1 ], "action": "delete" },
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -2 ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true },
-  { "type": "dataAttribute", "element": "#save-loss-of-confidentiality, #save-loss-of-integrity, #save-loss-of-availability, #cancel-component, #cancel-loss-of-confidentiality, #cancel-loss-of-integrity, #cancel-loss-of-availability, #delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 6 ], "action": "decrement" },
-  { "type": "dataAttribute", "element": "#delete-component, #delete-loss-of-confidentiality, #delete-loss-of-integrity, #delete-loss-of-availability", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 6 ], "action": "decrement" }
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] }
+    ], "action": "delete" 
+  },
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "action": "decrement" },
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] }
+    ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true
+  }
 ] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-component", "operations": [
@@ -795,7 +920,7 @@ for lossType in page.lossTypes %}{%
           },
           { "type": "==",
             "inputs": [
-              { "type": "string", "query": "#save-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
               "append"
             ]
           }
@@ -809,12 +934,12 @@ for lossType in page.lossTypes %}{%
   }
 ] }' data-wb-format-gen='[
   { "eventTrigger": "edit-loss-of-{{ lossType }}", "eventElement": "#loss-of-{{ lossType }}-fields-container", "operations": [
-    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "replace" },
-    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "replace", "source": { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ] } }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ], "action": "replace", "data": "replace" },
+    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 9 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] } }
   ] },
   { "eventTrigger": "append-loss-of-{{ lossType }}", "eventElement": "#loss-of-{{ lossType }}-fields-container", "operations": [
-    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ], "action": "replace", "data": "append" },
-    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "delete" }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ], "action": "replace", "data": "append" },
+    { "type": "dataAttribute", "element": "#save-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 9 ], "action": "delete" }
   ] }
 ]'>
 
@@ -872,27 +997,61 @@ for lossType in page.lossTypes %}{%
 
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
-<button id="save-loss-of-{{ lossType }}" type="submit" disabled="disabled" class="btn btn-primary wb-format-gen wb-calculate" data-wb-format-gen='{ "type": "sessionStorage", "key": "assessment", "source": "form-state", "container": "#loss-of-{{ lossType }}-form", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}" ], "action": "append" }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#loss-of-{{ lossType }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputAttribute": "data-add-source", "value": "loss-of-{{ lossType }}-section" },
-      { "type": "event", "outputTarget": "#save-loss-of-{{ lossType }}", "outputEvent": "save-loss-of-{{ lossType }}-proceed" }
+<button id="save-loss-of-{{ lossType }}" type="submit" disabled="disabled" class="btn btn-primary wb-format-gen wb-calculate" data-wb-calculate='[
+  { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#loss-of-{{ lossType }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
+      { "type": "action",
+        "inputs": [
+          { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
+          { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false },
+          { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputAttribute": "data-add-source", "value": "loss-of-{{ lossType }}-section" },
+          { "type": "event", "outputTarget": "#save-loss-of-{{ lossType }}", "outputEvent": "save-loss-of-{{ lossType }}-proceed" }
+        ]
+      }
     ]
-  }
-] }' data-wb-format-gen='{ "eventTrigger": "save-loss-of-{{ lossType }}-proceed", "eventElement": "#save-loss-of-{{ lossType }}", "operations": [
-  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}" ], "source": "form-state", "container": "#loss-of-{{ lossType }}-form", "action": "append" },
-  { "type": "dataAttribute", "element": "#cancel-loss-of-{{ lossType }}, #delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "increment" },
-  { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 9 ], "action": "increment" }
-] }'>{{ page.common.save }}</button>
+  },
+  { "ignoreInit": true, "eventTrigger": "save-loss-of-{{ lossType }}-complete", "eventElement": "#save-loss-of-{{ lossType }}", "operations": [
+      { "type": "conditional",
+        "inputs": [
+          { "type": "==",
+            "inputs": [
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
+              "append"
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "event", "outputTarget": "#save-loss-of-{{ lossType }}", "outputEvent": "increment-loss-of-{{ lossType }}" }
+        ],
+        "actionsFalse": [
+          { "type": "event", "outputTarget": "#loss-of-{{ lossType }}-fields-container", "outputEvent": "append-loss-of-{{ lossType }}" }
+        ]
+      }
+  ] }
+]' data-wb-format-gen='[
+  { "eventTrigger": "save-loss-of-{{ lossType }}-proceed", "eventElement": "#save-loss-of-{{ lossType }}", "operations": [
+    { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+      0, "{{ lossType }}"
+    ], "source": "form-state", "container": "#loss-of-{{ lossType }}-form",
+    "action": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] }
+    },
+    { "type": "event", "outputTarget": "#save-loss-of-{{ lossType }}", "outputEvent": "save-loss-of-{{ lossType }}-complete" }
+  ] },
+  { "eventTrigger": "increment-loss-of-{{ lossType }}", "eventElement": "#save-loss-of-{{ lossType }}", "operations": [
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ], "action": "increment" }
+  ] }
+]'>{{ page.common.save }}</button>
 <!-- Loads the previous loss of {{ lossType }} in the current form or clear the forms where a previous loss of {{ lossType }} does not exist. Also enables/disables buttons in the current form. -->
 <button id="cancel-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-add-source="#loss-of-{{ lossType }}-section" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
         "inputs": [
-          { "type": "string", "query": "#save-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+          { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
           "append"
         ]
       },
@@ -916,7 +1075,7 @@ for lossType in page.lossTypes %}{%
         "inputs": [
           { "type": "==",
             "inputs": [
-              { "type": "string", "query": "#save-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "action" ] },
+              { "type": "string", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "currentAction" ] },
               "replace"
             ]
           }
@@ -930,7 +1089,7 @@ for lossType in page.lossTypes %}{%
         "inputs": [
           { "type": ">",
             "inputs": [
-              { "type": "number", "query": "#delete-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ] },
+              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] },
               -1
             ]
           }
@@ -943,7 +1102,16 @@ for lossType in page.lossTypes %}{%
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "cancel-loss-of-{{ lossType }}-restore-proceed", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -1 ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true }
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+      0, "{{ lossType }}",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] }
+    ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true
+  }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current loss of {{ lossType }} from memory, loads the previous loss of {{ lossType }} in the current form, or resets the form if no previous loss of {{ lossType }} exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
 <button id="delete-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
@@ -954,7 +1122,7 @@ for lossType in page.lossTypes %}{%
         "inputs": [
           { "type": "<",
             "inputs": [
-              { "type": "number", "query": "#delete-loss-of-{{ lossType }}", "sourceAttribute": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ] },
+              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] },
               1
             ]
           }
@@ -967,10 +1135,27 @@ for lossType in page.lossTypes %}{%
     ]
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "delete-loss-of-{{ lossType }}-proceed", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
-  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -1 ], "action": "delete" },
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ -1, 0, "activities", -1, 0, "components", -1, 0, "{{ lossType }}", -2 ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true },
-  { "type": "dataAttribute", "element": "#cancel-loss-of-{{ lossType }}, #delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 0, "indexesKeys", 9 ], "action": "decrement" },
-  { "type": "dataAttribute", "element": "#delete-loss-of-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ "operations", 1, "indexesKeys", 9 ], "action": "decrement" }
+  { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+      0, "{{ lossType }}",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] }
+    ], "action": "delete"
+  },
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ], "action": "decrement" },
+  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+      0, "{{ lossType }}",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] }
+    ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true
+  }
 ] }'>{{ page.common.delete }}</button>{%
 assign lossTypeIndexInner = 0 %}{%
 for lossTypeInner in page.lossTypes %}{%
