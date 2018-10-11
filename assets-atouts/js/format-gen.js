@@ -280,20 +280,73 @@ var componentName = "wb-format-gen",
      *  - key: {String} Where to find the data. In the case of sessionStorage and localStorage, it is the key for the item to retrieve. In the case of dataAttribute, it is the dataAttribute name (e.g., data-wb-format-gen).
      *  - indexesKeys: {Array} Indexes and/or keys used to retrieve nested data
      *  - element: {String} (only used for dataAttribute) Selector for the element(s) containing the dataAttribute
+     *  - action: {String} (Optional, defaults to returning the referened value) Action to performed on the retrieved values (e.g., "length", "firstIndex", "lastIndex", "closestIndex", "first", "last")
+     *  - source: {Number/Object} (only used for closestIndex) Current index or object referencing the current index
      * @return {Number/String/Boolean} Referenced value
      */
     retrieveValue = function( referrer ) {
       var isArray = Array.isArray( referrer ),
           toProcess = isArray ? referrer : [ referrer ],
           length = toProcess.length,
-          index, current;
-
+          value, valueLength, action, index, current, source;
       for ( index = 0; index < length; index += 1 ) {
         current = toProcess[ index ];
 
         if ( typeof current === "object" ) {
-          toProcess[ index ] = retrieveData( current.key, current.indexesKeys, current.type, true, current.element );
+          value = retrieveData( current.key, current.indexesKeys, current.type, true, current.element );
+          action = current.action;
+        } else {
+          value = current;
+          action = null;
         }
+
+        if ( action ) {
+          // Convert to an object if it is a string representation of an array
+          if ( typeof value === "string" && value.indexOf( "[" ) === 0 ) {
+            value = JSON.parse( value );
+          }
+
+          // Ensure there is a valid length to work with
+          if ( value === null || typeof value === "undefined" ) {
+            valueLength = 0;
+          } else {
+            valueLength = value.length;
+          }
+
+          if ( action === "length" ) {
+            // Get the length of the value (must be a string or array)
+            value = valueLength;
+          } else if ( action === "firstIndex" ) {
+            // Get the first index of the value if it exists (must be a string or array)
+            value = valueLength > 0 ? 0 : -1;
+          } else if ( action === "lastIndex" ) {
+            // Get the last index of the value if it exists (must be a string or array)
+            value = valueLength - 1;
+          } else if ( action === "closestIndex" ) {
+            // Get the closest index to the currentIndex (use when the currentIndex has been deleted)
+            source = current.source;
+            if ( typeof source === "object" ) {
+              source = retrieveData( source.key, source.indexesKeys, source.type, true, source.element );
+            }
+            if ( typeof source === "string" ) {
+              source = parseInt( source );
+            }
+
+            if ( source < 0 || source > ( valueLength - 1 ) ) {
+              value = valueLength - 1;
+            } else {
+              value = source;
+            }
+          } else if ( action === "first" ) {
+            // Get the value at the last index of the value (must be an array)
+            value = value[ 0 ];
+          } else if ( action === "last" ) {
+            // Get the value at the first index of the value (must be an array)
+            value = value[ valueLength - 1 ];
+          }
+        }
+
+        toProcess[ index ] = value;
       }
 
       return ( isArray ? toProcess : toProcess[ 0 ] );
@@ -795,8 +848,9 @@ var componentName = "wb-format-gen",
       } else if ( source === "form-state" ) {
         // Store the form state as JSON
         data = getFormFieldStatus( container );
-      } else if ( typeof source === "object" ) {
-        data = retrieveValue( source );
+      } else if ( ( data === null || typeof data === "undefined" ) && source !== null && typeof source !== "undefined" ) {
+        // If source is the source of the data
+        data = source;
       }
 
       // Store the data
