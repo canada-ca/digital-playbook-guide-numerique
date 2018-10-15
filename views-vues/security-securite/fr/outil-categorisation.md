@@ -19,11 +19,11 @@ businessActivity:
   title: Business Activity
   intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
   intro2: Business activities will be categorized by determining the expected injuries from IT-related threat compromise to the national and non-national interests that the business activities serve, and then determining the lveral of these expected injuries.
+  "business-activity-label": Business Activity
   "add-activity-button": Add another business activity
-  "add-component-button": Add business activity component
+  "add-component-button": Add business component
 businessComponent:
   title: Business Component
-  "business-activity-label": Business Activity
   "business-component-label": Business Activity Component
   "component-description-label": Component Description
   "component-type-label": Type
@@ -31,7 +31,7 @@ businessComponent:
   "component-type-option-1": Process
   "component-type-option-2": Information
   "authoritative-source-label": Authoritative Source
-  "add-component-button": Add another business activity component
+  "add-component-button": Add another business component
 lossTypes: [ "confidentiality", "integrity", "availability" ]
 confidentiality:
   title: Loss of Confidentiality
@@ -39,24 +39,24 @@ confidentiality:
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of confidentiality?
   example1: Example of such injury
   example2: ie. Riot
-  "add-confidentiality-button": Add loss of confidentiality failure scenario
-  "add-another-confidentiality-button": Add another loss of confidentiality failure scenario
+  "add-confidentiality-button": Add loss of confidentiality
+  "add-another-confidentiality-button": Add another loss of confidentiality
 integrity:
   title: Loss of Integrity
   intro: To ensure the integrity of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of integrity?
   example1: Example of such injury
   example2: ie. Distress, psychological trauma
-  "add-integrity-button": Add loss of integrity failure scenario
-  "add-another-integrity-button": Add another loss of integrity failure scenario
+  "add-integrity-button": Add loss of integrity
+  "add-another-integrity-button": Add another loss of integrity
 availability:
   title: Loss of Availability
   intro: To ensure the availability of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of availability?
   example1: Example of such injury
   example2: ie. Affecting program performance
-  "add-another-availability-button": Add another loss of availability failure scenario
-  "add-availability-button": Add loss of availability failure scenario
+  "add-another-availability-button": Add another loss of availability
+  "add-availability-button": Add loss of availability
 lossOfCommon:
   "failure-scenario-label": Failure Scenario (in context)
   "failure-scenario-sub-label": Select a type of injury
@@ -436,7 +436,7 @@ This web-based version of the tool is meant to make the process of organizing th
 ]'>
 
 <div class="form-group" markdown="0">
-<label for="business-activity-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessComponent[ "business-activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="business-activity-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.businessActivity[ "business-activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="business-activity-field" id="business-activity-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
@@ -1364,13 +1364,13 @@ endfor %}
 <thead>
 <tr>
 <th rowspan="2">{{ page.businessDomain.title }}</th>
-<th colspan="5" class="text-center">{{ page.businessComponent.title }}</th>
+<th rowspan="2">{{ page.businessActivity[ "business-activity-label" ] }}</th>
+<th colspan="4" class="text-center">{{ page.businessComponent.title }}</th>
 <th colspan="4" class="text-center">{{ page.confidentiality.title }}</th>
 <th colspan="4" class="text-center">{{ page.integrity.title }}</th>
 <th colspan="4" class="text-center">{{ page.availability.title }}</th>
 </tr>
 <tr>
-<th>{{ page.businessComponent[ "business-activity-label" ] }}</th>
 <th>{{ page.businessComponent[ "business-component-label" ] }}</th>
 <th>{{ page.businessComponent[ "component-description-label" ] }}</th>
 <th>{{ page.businessComponent[ "component-type-label" ] }}</th>

@@ -202,10 +202,13 @@ var componentName = "wb-calculate",
           decimalPlaces = typeof operation[ "decimalPlaces" ] === "object" ? calculate( operation[ "decimalPlaces" ] ) : operation[ "decimalPlaces" ],
           inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
           sourceProperty, outputTargets, outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue,
-          outputTargetIndex, outputTargetsLength, indexesKeys;
+          outputTargetIndex, outputTargetsLength, indexesKeys, sourceStorage;
 
       if ( type === "number" || type === "string" || type === "boolean" || type === "length" ) {
-        if ( query ) {
+        sourceStorage = operation[ "sourceStorage" ];
+        indexesKeys = operation[ "indexesKeys" ];
+
+        if ( query || sourceStorage ) {
           sourceAttribute = operation[ "sourceAttribute" ];
           sourceProperty = operation[ "sourceProperty" ];
           if ( sourceAttribute ) {
@@ -229,13 +232,18 @@ var componentName = "wb-calculate",
             } else {
               value = query[ 0 ][ sourceProperty ];
             }
-            value = value ? value : "";            
+            value = value ? value : "";
+          } else if ( sourceStorage ) {
+            // Use the wb-format-gen plugin retrieveData function to retrieve the data
+            value = wb[ "wb-format-gen" ].retrieveData( operation[ "key" ], indexesKeys, sourceStorage, operation[ "returnAs" ], query );
+
+            // Clear indexesKeys since already used
+            indexesKeys = null;
           } else {
             value = query[ 0 ].textContent;
           }
 
           // If value is nested in JSON, then retrieve it
-          indexesKeys = operation[ "indexesKeys" ];
           if ( indexesKeys ) {
             value = JSON.parse( value );
             length = indexesKeys.length;
@@ -420,6 +428,9 @@ var componentName = "wb-calculate",
                   value = iterate( action[ "operations" ] );
                 } else {
                   value = action[ "value" ];
+                  if ( typeof value === "object" ) {
+                    value = calculate( value );
+                  }
                 }
 
                 if ( outputTargets ) {
