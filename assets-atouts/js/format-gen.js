@@ -293,7 +293,7 @@ var componentName = "wb-format-gen",
         current = toProcess[ index ];
 
         if ( typeof current === "object" ) {
-          value = retrieveData( current.key, current.indexesKeys, current.type, true, current.element );
+          value = retrieveData( current.key, current.indexesKeys, current.type, current.returnAs ? current.returnAs : "string", current.element );
           action = current.action;
         } else {
           value = current;
@@ -326,7 +326,7 @@ var componentName = "wb-format-gen",
             // Get the closest index to the currentIndex (use when the currentIndex has been deleted)
             source = current.source;
             if ( typeof source === "object" ) {
-              source = retrieveData( source.key, source.indexesKeys, source.type, true, source.element );
+              source = retrieveData( source.key, source.indexesKeys, source.type, source.returnAs ? source.returnAs : "string", source.element );
             }
             if ( typeof source === "string" ) {
               source = parseInt( source );
@@ -692,13 +692,14 @@ var componentName = "wb-format-gen",
     outputFile = function( settings ) {
       var outputLink = document.createElement( "a" ),
           isDownloadAttrSupported = outputLink.download !== undefined,
-          processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "filename" ], settings[ "element" ], settings[ "key" ], settings[ "container" ] ] ),
+          processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "filename" ], settings[ "element" ], settings[ "key" ], settings[ "container" ], settings[ "returnAs" ] ] ),
           type = processedValues[ 0 ],
           source = processedValues[ 1 ],
           filename = processedValues[ 2 ],
           element = processedValues[ 3 ],
           key = processedValues[ 4 ],
           container = processedValues[ 5 ],
+          returnAs = processedvalues[ 6 ],
           fileData, mimeType, blobOutput, urlOutput, action, indexesKeys, storedData;
 
       if ( type === "csv" ) {
@@ -710,7 +711,7 @@ var componentName = "wb-format-gen",
             indexesKeys = JSON.parse( indexesKeys );
           }
 
-          storedData = retrieveData( key, indexesKeys, source, false, element );
+          storedData = retrieveData( key, indexesKeys, source, returnAs, element );
 
           if ( !settings[ "tableColSpecs" ] ) {
             fileData = generateTableRows( storedData, "csv" );
@@ -727,7 +728,7 @@ var componentName = "wb-format-gen",
         if ( source === "form-state" ) {
           fileData = JSON.stringify( getFormFieldStatus( container ) );
         } else if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
-          fileData = retrieveData( key, settings[ "indexesKeys" ] , source, true, element );
+          fileData = retrieveData( key, settings[ "indexesKeys" ], source, returnAs ? returnAs : "string", element );
         } else {
           fileData = htmlToJSON( document.querySelector( container ), settings[ "structure" ], true );
         }
@@ -864,13 +865,14 @@ var componentName = "wb-format-gen",
      * @param settings {Object} Settings object for what to do with data in storage
      */
     inputStorage = function( settings ) {
-      var processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "action" ], settings[ "key" ], settings[ "container" ], settings[ "element" ] ] ),
+      var processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "action" ], settings[ "key" ], settings[ "container" ], settings[ "element" ], settings[ "returnAs" ] ] ),
           type = processedValues[ 0 ],
           source = processedValues[ 1 ],
           action = processedValues[ 2 ],
           key = processedValues[ 3 ],
           container = processedValues[ 4 ],
           element = processedValues[ 5 ],
+          returnAs = processedValues[ 6 ],
           indexesKeys = settings[ "indexesKeys" ],
           storedData, tableRows;
 
@@ -879,7 +881,7 @@ var componentName = "wb-format-gen",
         indexesKeys = JSON.parse( indexesKeys );
       }
 
-      storedData = retrieveData( key, indexesKeys, source ? source : type, false, element );
+      storedData = retrieveData( key, indexesKeys, source ? source : type, returnAs, element );
 
       if ( action === "restore-form-state" ) {
         // Restore the form state from the stored data, or clear it if no data was found
@@ -1096,15 +1098,15 @@ var componentName = "wb-format-gen",
      * @param key {String} Key for retrieving the data
      * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to retrieve data from nested arrays/objects in the data
      * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute")
-     * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
+     * @param returnAs {String} (Optional, defaults to the source type) What to return the data as (i.e., "string", "number", "boolean", "object" )
      * @param element {String/DOM node/jQuery object} (optional, required for dataAttribute storage type) Element containing the data attribute (only uses for dataAttribute storage type)
-     * @return {String} Returns the stored data.
+     * @return {String/Other} Returns the stored data.
      */
-    retrieveData = function( key, indexesKeys, storageType, returnAsString, element ) {
+    retrieveData = function( key, indexesKeys, storageType, returnAs, element ) {
       var currIndexesKeys = indexesKeys ? indexesKeys : [],
           currStorageType = storageType ? storageType : "sessionStorage",
           indexesKeysLength = currIndexesKeys.length,
-          data, index;
+          data, index, dataType;
 
       // Pre-process the indexesKeys (convert objects to values)
       currIndexesKeys = retrieveValue( currIndexesKeys );
@@ -1132,8 +1134,17 @@ var componentName = "wb-format-gen",
           data = data[ currIndexesKeys[ index ] ];
         }
 
-        if ( returnAsString && typeof data === "object" ) {
-          data = JSON.stringify( data );
+        dataType = typeof data;
+        if ( returnAs && returnAs !== dataType ) {
+          if ( returnAs === "string" ) {
+            data = dataType === "object" ? JSON.stringify( data ) : data.toString();
+          } else if ( returnAs === "number" ) {
+            data = data.indexOf( "." ) === -1 ?  parseInt ( data ) : parseFloat( data );
+          } else if ( returnAs === "boolean" ) {
+            data = dataType === "string" ? data === "true" : data === 0;
+          } else if ( returnAs === "object" ) {
+            data = JSON.parse( data );
+          }
         }
       }
 
@@ -1540,6 +1551,9 @@ $document.on( "click change", selector, function( event ) {
 
 // Bind the init event of the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );
+
+// Make the retrieveData and storeData functions available to other plugins
+wb[ "wb-format-gen" ] = { retrieveData: retrieveData, storeData: storeData };
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
