@@ -234,8 +234,16 @@ var componentName = "wb-calculate",
             }
             value = value ? value : "";
           } else if ( sourceStorage ) {
-            // Use the wb-format-gen plugin retrieveData function to retrieve the data
-            value = wb[ "wb-format-gen" ].retrieveData( operation[ "key" ], indexesKeys, sourceStorage, operation[ "returnAs" ], query );
+            // Use the wb-format-gen plugin retrieveValue function to retrieve the data
+            value = wb[ "wb-format-gen" ].retrieveValue( {
+              type: sourceStorage,
+              key: operation[ "key" ],
+              indexesKeys: indexesKeys,
+              element: query,
+              action: operation[ "action" ],
+              source: operation[ "source" ],
+              returnAs: operation[ "returnAs" ]
+            } );
 
             // Clear indexesKeys since already used
             indexesKeys = null;
