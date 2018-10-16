@@ -1219,7 +1219,7 @@ var componentName = "wb-format-gen",
      * @overview Update the status of the fields in the specified form using the passed data
      * @param formsSelector {String} Selector for the form(s) for which to set the statuses of the contained fields.
      * @param fields {Array} Array of objects with each containing a selector for a form field ("selector") and that status to set ("status").
-     * @param noEvents {Boolean} true = don't generate events when setting form fields
+     * @param noEvents {Boolean} (Optional, defaults to false) true = don't generate events when setting form fields
      */
     setFormFieldStatus = function( formsSelector, fields, noEvents ) {
       var forms = document.querySelectorAll( formsSelector ),

@@ -114,42 +114,72 @@ fieldGridClass: col-sm-8
 assign dataSource = site.data[dataVariable] %}
 
 <div id="sec-cat-form-properties" class="hidden wb-format-gen wb-calculate" data-wb-format-gen='[
-  { "onInit": true, "resetForm": "#business-domain-form, #business-activity-form, #business-component-form, #loss-of-confidentiality-form, #loss-of-integrity-form, #loss-of-availability-form" },
-  { "onInit": true, "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "source": { "type": "sessionStorage", "key": "assessment", "action": "firstIndex" } },
-  { "onInit": true, "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] }
-  ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true },
-  { "onInit": true, "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "form-init-complete" }
-]' data-wb-calculate='{ "eventTrigger": "form-init-complete", "eventElement": "#sec-cat-form-properties", "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-              -1
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
-        ],
-        "actionsFalse": [
-          { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true }
-        ]
-      }
-    ]
-  }
-] }' data-sec-cat-form-state='{ "current-action": "append", "current-domain": -1, "current-activity": -1, "current-component": -1, "current-loss-of-confidentiality": -1, "current-loss-of-integrity": -1, "current-loss-of-availability": -1 }'></div>
-
-<section id="you-are-here-section" class="hidden panel panel-info">
-<header class="panel-heading">
-<h2 class="panel-title">{{ page.youAreHere }}</h2>
-</header>
-<div class="panel-body">
-<dl class="dl-horizontal mrgn-bttm-0 wb-calculate wb-format-gen" data-wb-calculate='[
+  { "onInit": true, "eventTrigger": "form-init", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "resetForm": "#business-domain-form, #business-activity-form, #business-component-form, #loss-of-confidentiality-form, #loss-of-integrity-form, #loss-of-availability-form" },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "source": { "type": "sessionStorage", "key": "assessment", "action": "firstIndex" } },
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true },
+    { "onInit": true, "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "form-init-complete" }
+  ] },
+  { "eventTrigger": "restore-domain", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true }
+  ] },
+  { "eventTrigger": "restore-activity", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true }
+  ] },
+  { "eventTrigger": "restore-component", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true }
+  ] }{%
+for lossType in page.lossTypes %},
+  { "eventTrigger": "restore-{{ lossType }}", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
+      0, "{{ lossType }}",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true }
+  ] }{%
+endfor %}
+]' data-wb-calculate='[
+  { "eventTrigger": "form-init-complete", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true }
+          ]
+        }
+      ]
+    }
+  ] },
   { "eventTrigger": "show-welcome", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
@@ -168,6 +198,29 @@ assign dataSource = site.data[dataVariable] %}
       ]
     }
   ] },
+  { "eventTrigger": "default-domain-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true }
+          ]
+        }
+      ]
+    }
+  ] },
   { "eventTrigger": "show-activity", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
@@ -175,6 +228,29 @@ assign dataSource = site.data[dataVariable] %}
         { "type": "removeClass", "outputTarget": "#business-activity-section, #you-are-here-section, .domain-you-are-here", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #business-domain-section, #business-component-section, #loss-of-confidentiality-section, #loss-of-integrity-section, #loss-of-availability-section, .activity-you-are-here, .component-you-are-here", "class": "hidden" },
         { "type": "event", "outputTarget": "#business-activity-section h2", "outputEvent": "setfocus.wb" }
+      ]
+    }
+  ] },
+  { "eventTrigger": "default-activity-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true }
+          ]
+        }
       ]
     }
   ] },
@@ -189,42 +265,74 @@ assign dataSource = site.data[dataVariable] %}
       ]
     }
   ] },
-  { "eventTrigger": "show-confidentiality", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "default-component-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true }
+          ]
+        }
+      ]
+    }
+  ] }{%
+for lossType in page.lossTypes %},
+  { "eventTrigger": "show-{{ lossType }}", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-domain-you-are-here" },
         { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-activity-you-are-here" },
         { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-component-you-are-here" },
-        { "type": "removeClass", "outputTarget": "#loss-of-confidentiality-section, #you-are-here-section, .domain-you-are-here, .activity-you-are-here, .component-you-are-here", "class": "hidden" },
-        { "type": "addClass", "outputTarget": "#welcome-section, #business-domain-section, #business-activity-section, #business-component-section, #loss-of-integrity-section, #loss-of-availability-section", "class": "hidden" },
-        { "type": "event", "outputTarget": "#loss-of-confidentiality-section h2", "outputEvent": "setfocus.wb" }
+        { "type": "removeClass", "outputTarget": "#loss-of-{{ lossType }}-section, #you-are-here-section, .domain-you-are-here, .activity-you-are-here, .component-you-are-here", "class": "hidden" },
+        { "type": "addClass", "outputTarget": "#welcome-section, #business-domain-section, #business-activity-section, #business-component-section{% if lossType != "confidentiality" %}, #loss-of-confidentiality-section{% endif %}{% if lossType != "integrity" %}, #loss-of-integrity-section{% endif %}{% if lossType != "availability" %}, #loss-of-availability-section{% endif %}", "class": "hidden" },
+        { "type": "event", "outputTarget": "#loss-of-{{ lossType }}-section h2", "outputEvent": "setfocus.wb" }
       ]
     }
   ] },
-  { "eventTrigger": "show-integrity", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "default-{{ lossType }}-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-domain-you-are-here" },
-        { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-activity-you-are-here" },
-        { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-component-you-are-here" },
-        { "type": "removeClass", "outputTarget": "#loss-of-integrity-section, #you-are-here-section, .domain-you-are-here, .activity-you-are-here, .component-you-are-here", "class": "hidden" },
-        { "type": "addClass", "outputTarget": "#welcome-section, #business-domain-section, #business-activity-section, #business-component-section, #loss-of-confidentiality-section, #loss-of-availability-section", "class": "hidden" },
-        { "type": "event", "outputTarget": "#loss-of-integrity-section h2", "outputEvent": "setfocus.wb" }
+        { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add-another-loss-of-{{ lossType }}{% if lossType != "confidentiality" %}, #add-loss-of-confidentiality-{{ lossType }}-form{% endif %}{% if lossType != "integrity" %}, #add-loss-of-integrity-{{ lossType }}-form{% endif %}{% if lossType != "availability" %}, #add-loss-of-availability-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add-another-loss-of-{{ lossType }}{% if lossType != "confidentiality" %}, #add-loss-of-confidentiality-{{ lossType }}-form{% endif %}{% if lossType != "integrity" %}, #add-loss-of-integrity-{{ lossType }}-form{% endif %}{% if lossType != "availability" %}, #add-loss-of-availability-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true }
+          ]
+        }
       ]
     }
-  ] },
-  { "eventTrigger": "show-availability", "eventElement": "#sec-cat-form-properties", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-domain-you-are-here" },
-        { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-activity-you-are-here" },
-        { "type": "event", "outputTarget": "#you-are-here-section", "outputEvent": "update-component-you-are-here" },
-        { "type": "removeClass", "outputTarget": "#loss-of-availability-section, #you-are-here-section, .domain-you-are-here, .activity-you-are-here, .component-you-are-here", "class": "hidden" },
-        { "type": "addClass", "outputTarget": "#welcome-section, #business-domain-section, #business-activity-section, #business-component-section, #loss-of-confidentiality-section, #loss-of-integrity-section", "class": "hidden" },
-        { "type": "event", "outputTarget": "#loss-of-availability-section h2", "outputEvent": "setfocus.wb" }
-      ]
-    }
-  ] },
+  ] }{%
+endfor %}
+]' data-sec-cat-form-state='{ "current-action": "append", "current-domain": -1, "current-activity": -1, "current-component": -1, "current-loss-of-confidentiality": -1, "current-loss-of-integrity": -1, "current-loss-of-availability": -1 }'></div>
+
+<section id="you-are-here-section" class="hidden panel panel-info">
+<header class="panel-heading">
+<h2 class="panel-title">{{ page.youAreHere }}</h2>
+</header>
+<div class="panel-body">
+<dl class="dl-horizontal mrgn-bttm-0 wb-calculate wb-format-gen" data-wb-calculate='[
   { "eventTrigger": "update-domain-you-are-here", "eventElement": "#you-are-here-section", "operations": [
     { "type": "action",
       "inputs": [
@@ -273,6 +381,8 @@ assign dataSource = site.data[dataVariable] %}
 <a id="domain-you-are-here-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#domain-you-are-here-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
     ]
   }
@@ -283,6 +393,8 @@ assign dataSource = site.data[dataVariable] %}
 <a id="activity-you-are-here-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#activity-you-are-here-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-activity" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-activity-buttons" },
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-activity" }
     ]
   }
@@ -293,6 +405,8 @@ assign dataSource = site.data[dataVariable] %}
 <a id="component-you-are-here-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#component-you-are-here-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-component" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-component-buttons" },
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-component" }
     ]
   }
@@ -404,8 +518,6 @@ This web-based version of the tool is meant to make the process of organizing th
   { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-domain-form", "listenerElement": "body", "returnFalse": true, "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
-        { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false },
         { "type": "event", "outputTarget": "#save-domain", "outputEvent": "save-domain-proceed" }
       ]
     }
@@ -426,6 +538,12 @@ This web-based version of the tool is meant to make the process of organizing th
         "actionsFalse": [
           { "type": "event", "outputTarget": "#business-domain-fields-container", "outputEvent": "append-domain" }
         ]
+      },
+      {
+        "type": "action",
+        "inputs": [
+          { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" }
+        ]
       }
   ] }
 ]' data-wb-format-gen='[
@@ -440,7 +558,7 @@ This web-based version of the tool is meant to make the process of organizing th
   ] }
 ]'>{{ page.common.save }}</button>
 <!-- Loads the previous domain in the current form or clear the forms where a previous domain does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
+<button id="cancel-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -456,65 +574,26 @@ This web-based version of the tool is meant to make the process of organizing th
   },
   { "type": "action",
     "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-              -1
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
-        ]
-      }
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" }
     ]
-  }
-] }' data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] }
-    ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true
   }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current domain from memory, loads the previous domain in the current form, or resets the form if no previous domain exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
-<button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "event", "outputTarget": "#delete-domain", "outputEvent": "delete-domain-proceed" }
-      ]
-    }
-  ] },
-  { "ignoreInit": true, "eventTrigger": "delete-domain-complete", "eventElement": "#delete-domain", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
-        { "type": "conditional",
-          "inputs": [
-            { "type": "<",
-              "inputs": [
-                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-                0
-              ]
-            }
-          ],
-          "actionsTrue": [
-            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true }
-          ]
-        }
-      ]
-    }
-  ] }
-]' data-wb-format-gen='{ "eventTrigger": "delete-domain-proceed", "eventElement": "#delete-domain", "operations": [
+<button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#delete-domain", "outputEvent": "delete-domain-proceed" }
+    ]
+  }
+] }' data-wb-format-gen='{ "eventTrigger": "delete-domain-proceed", "eventElement": "#delete-domain", "operations": [
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
       { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] }
     ], "action": "delete"
   },
   { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "source": { "type": "sessionStorage", "key": "assessment", "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] } }, "action": "replace" },
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [ { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] } ], "action": "restore-form-state", "container": "#business-domain-form", "noEvents": true },
-  { "type": "event", "outputTarget": "#delete-domain", "outputEvent": "delete-domain-complete" }
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" }
 ] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-domain", "operations": [
@@ -524,7 +603,7 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-domain, #delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-domain", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-domain", "outputAttribute": "data-show-previous-event", "value": "show-domain" },
+      { "type": "outputValue", "outputTarget": "#cancel-domain", "outputAttribute": "data-add-source", "value": "domain" },
       { "type": "event", "outputTarget": "#business-domain-field", "outputEvent": "setfocus.wb" }
     ]
   }
@@ -537,7 +616,7 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-activity, #delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-activity", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-show-previous-event", "value": "show-domain" },
+      { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-add-source", "value": "domain" },
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-activity" }
     ]
   }
@@ -616,9 +695,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-activity-form", "listenerElement": "body", "returnFalse": true, "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
-        { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false },
-        { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-show-previous-event", "value": "show-activity" },
+        { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-add-source", "value": "activity" },
         { "type": "event", "outputTarget": "#save-activity", "outputEvent": "save-activity-proceed" }
       ]
     }
@@ -638,6 +715,11 @@ This web-based version of the tool is meant to make the process of organizing th
         ],
         "actionsFalse": [
           { "type": "event", "outputTarget": "#business-activity-fields-container", "outputEvent": "append-activity" }
+        ]
+      },
+      { "type": "action",
+        "inputs": [
+          { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-activity-buttons" }
         ]
       }
   ] }
@@ -659,7 +741,7 @@ This web-based version of the tool is meant to make the process of organizing th
   ] }
 ]'>{{ page.common.save }}</button>
 <!-- Loads the previous activity in the current form or clear the forms where a previous activity does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-activity" type="button" class="btn btn-default wb-calculate wb-format-gen" data-show-previous-event="show-activity" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-activity", "operations": [
+<button id="cancel-activity" type="button" class="btn btn-default wb-calculate" data-add-source="activity" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-activity", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -670,13 +752,24 @@ This web-based version of the tool is meant to make the process of organizing th
       },
       { "type": "!=",
         "inputs": [
-          { "type": "string", "query": "#cancel-activity", "sourceAttribute": "data-show-previous-event" },
-          "show-activity"
+          { "type": "string", "query": "#cancel-activity", "sourceAttribute": "data-add-source" },
+          "activity"
         ]
       }
     ],
     "actionsTrue": [
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "string", "query": "#cancel-activity", "sourceAttribute": "data-show-previous-event" } }
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "restore-", { "type": "string", "query": "#cancel-activity", "sourceAttribute": "data-add-source" }
+        ] }
+      },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "default-", { "type": "string", "query": "#cancel-activity", "sourceAttribute": "data-add-source" }, "-buttons"
+        ] }
+      },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "show-", { "type": "string", "query": "#cancel-activity", "sourceAttribute": "data-add-source" }
+        ] }
+      }
     ],
     "actionsFalse": [
       { "type": "conditional",
@@ -692,61 +785,19 @@ This web-based version of the tool is meant to make the process of organizing th
           { "type": "event", "outputTarget": "#business-activity-fields-container", "outputEvent": "append-activity" }
         ]
       },
-      { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
-              -1
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false }
-        ]
-      },
-      { "type": "event", "outputTarget": "#cancel-activity", "outputEvent": "cancel-activity-restore-proceed" }
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-activity-buttons" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-activity" }
     ]
-  }
-] }' data-wb-format-gen='{ "eventTrigger": "cancel-activity-restore-proceed", "eventElement": "#cancel-activity", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-      0, "activities",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] }
-    ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true
   }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current activity from memory, loads the previous activity in the current form, or resets the form if no previous activity exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
-<button id="delete-activity" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-activity", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "event", "outputTarget": "#delete-activity", "outputEvent": "delete-activity-proceed" }
-      ]
-    }
-  ] },
-  { "ignoreInit": true, "eventTrigger": "delete-activity-complete", "eventElement": "#delete-activity", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
-        { "type": "conditional",
-          "inputs": [
-            { "type": "<",
-              "inputs": [
-                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
-                0
-              ]
-            }
-          ],
-          "actionsTrue": [
-            { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true }
-          ]
-        }
-      ]
-    }
-  ] }
-]' data-wb-format-gen='{ "eventTrigger": "delete-activity-proceed", "eventElement": "#delete-activity", "operations": [
+<button id="delete-activity" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-activity", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#delete-activity", "outputEvent": "delete-activity-proceed" }
+    ]
+  }
+] }' data-wb-format-gen='{ "eventTrigger": "delete-activity-proceed", "eventElement": "#delete-activity", "operations": [
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
     0, "activities",
@@ -756,12 +807,8 @@ This web-based version of the tool is meant to make the process of organizing th
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
     0, "activities"
   ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] } }, "action": "replace" },
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-    0, "activities",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] }
-  ], "action": "restore-form-state", "container": "#business-activity-form", "noEvents": true },
-  { "type": "event", "outputTarget": "#delete-activity", "outputEvent": "delete-activity-complete" }
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-activity" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-activity-buttons" }
 ] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-activity", "operations": [
@@ -771,7 +818,7 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-activity, #delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-activity", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-show-previous-event", "value": "show-activity" },
+      { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-add-source", "value": "activity" },
       { "type": "event", "outputTarget": "#business-activity-field", "outputEvent": "setfocus.wb" }
     ]
   }
@@ -784,7 +831,7 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-component, #delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-component", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-show-previous-event", "value": "show-activity" },
+      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "activity" },
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-component" }
     ]
   }
@@ -884,9 +931,7 @@ This web-based version of the tool is meant to make the process of organizing th
   { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#business-component-form", "listenerElement": "body", "returnFalse": true, "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
-        { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false },
-        { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-show-previous-event", "value": "show-component" },
+        { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "component" },
         { "type": "event", "outputTarget": "#save-component", "outputEvent": "save-component-proceed" }
       ]
     }
@@ -906,6 +951,12 @@ This web-based version of the tool is meant to make the process of organizing th
         ],
         "actionsFalse": [
           { "type": "event", "outputTarget": "#business-component-fields-container", "outputEvent": "append-component" }
+        ]
+      },
+      {
+        "type": "action",
+        "inputs": [
+          { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-component-buttons" }
         ]
       }
   ] }
@@ -931,7 +982,7 @@ This web-based version of the tool is meant to make the process of organizing th
   ] }
 ]'>{{ page.common.save }}</button>
 <!-- Loads the previous component in the current form or clear the forms where a previous component does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-component" type="button" class="btn btn-default wb-calculate wb-format-gen" data-show-previous-event="show-component" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
+<button id="cancel-component" type="button" class="btn btn-default wb-calculate" data-add-source="component" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -942,13 +993,24 @@ This web-based version of the tool is meant to make the process of organizing th
       },
       { "type": "!=",
         "inputs": [
-          { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-show-previous-event" },
-          "show-component"
+          { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-add-source" },
+          "component"
         ]
       }
     ],
     "actionsTrue": [
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-show-previous-event" } }
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "restore-", { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-add-source" }
+        ] }
+      },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "default-", { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-add-source" }, "-buttons"
+        ] }
+      },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "show-", { "type": "string", "query": "#cancel-component", "sourceAttribute": "data-add-source" }
+        ] }
+      }
     ],
     "actionsFalse": [
       { "type": "conditional",
@@ -964,63 +1026,19 @@ This web-based version of the tool is meant to make the process of organizing th
           { "type": "event", "outputTarget": "#business-component-fields-container", "outputEvent": "append-component" }
         ]
       },
-      { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
-              -1
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": false }
-        ]
-      },
-      { "type": "event", "outputTarget": "#cancel-component", "outputEvent": "cancel-component-restore-proceed" }
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-component-buttons" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-component" }
     ]
-  }
-] }' data-wb-format-gen='{ "eventTrigger": "cancel-component-restore-proceed", "eventElement": "#cancel-component", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-      0, "activities",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
-      0, "components",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] }
-    ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true
   }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current component from memory, loads the previous component in the current form, or resets the form if no previous component exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
-<button id="delete-component" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-component", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "event", "outputTarget": "#delete-component", "outputEvent": "delete-component-proceed" }
-      ]
-    }
-  ] },
-  { "ignoreInit": true, "eventTrigger": "delete-component-complete", "eventElement": "#delete-component", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
-        { "type": "conditional",
-          "inputs": [
-            { "type": "<",
-              "inputs": [
-                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
-                0
-              ]
-            }
-          ],
-          "actionsTrue": [
-            { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true }
-          ]
-        }
-      ]
-    }
-  ] }
-]' data-wb-format-gen='{ "eventTrigger": "delete-component-proceed", "eventElement": "#delete-component", "operations": [
+<button id="delete-component" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-component", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#delete-component", "outputEvent": "delete-component-proceed" }
+    ]
+  }
+] }' data-wb-format-gen='{ "eventTrigger": "delete-component-proceed", "eventElement": "#delete-component", "operations": [
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
     0, "activities",
@@ -1034,14 +1052,8 @@ This web-based version of the tool is meant to make the process of organizing th
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
     0, "components"
   ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] } }, "action": "replace" },
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-    0, "activities",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
-    0, "components",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] }
-  ], "action": "restore-form-state", "container": "#business-component-form", "noEvents": true },
-  { "type": "event", "outputTarget": "#delete-component", "outputEvent": "delete-component-complete" }
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-component" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-component-buttons" }
 ] }'>{{ page.common.delete }}</button>
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-component", "operations": [
@@ -1051,50 +1063,27 @@ This web-based version of the tool is meant to make the process of organizing th
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-component, #delete-component, #add-another-component, #add-loss-of-confidentiality, #add-loss-of-integrity, #add-loss-of-availability", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-component", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-show-previous-event", "value": "show-component" },
+      { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "component" },
       { "type": "event", "outputTarget": "#business-component-field", "outputEvent": "setfocus.wb" }
     ]
   }
-] }'>{{ page.businessComponent[ "add-component-button" ] }}</button>
-<!-- Disabled by default. Resets the loss of confidentiality form, enables/disables buttons in the loss of confidentiality form, shows the loss of confidentiality form, hides this form. -->
-<button id="add-loss-of-confidentiality" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-confidentiality", "operations": [
-  { "resetForm": "#loss-of-confidentiality-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-loss-of-confidentiality", "operations": [
+] }'>{{ page.businessComponent[ "add-component-button" ] }}</button>{%
+for lossType in page.lossTypes %}{%
+  assign addButton = "add-" | append: lossType | append: "-button" %}
+<!-- Disabled by default. Resets the loss of {{ lossType }} form, enables/disables buttons in the loss of {{ lossType }} form, shows the loss of {{ lossType }} form, hides this form. -->
+<button id="add-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-{{ lossType }}", "operations": [
+  { "resetForm": "#loss-of-{{ lossType }}-form" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-loss-of-{{ lossType }}", "operations": [
   { "type": "action",
     "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-loss-of-confidentiality, #delete-loss-of-confidentiality, #add-another-loss-of-confidentiality, #add-loss-of-integrity-confidentiality-form, #add-loss-of-availability-confidentiality-form", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-confidentiality", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-confidentiality", "outputAttribute": "data-show-previous-event", "value": "show-component" },
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-confidentiality" }
+      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #delete-loss-of-{{ lossType }}, #add-another-loss-of-{{ lossType }}{% if lossType != "confidentiality" %}, #add-loss-of-confidentiality-{{ lossType }}-form{% endif %}{% if lossType != "integrity" %}, #add-loss-of-integrity-{{ lossType }}-form{% endif %}{% if lossType != "availability" %}, #add-loss-of-availability-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
+      { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": false },
+      { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputAttribute": "data-add-source", "value": "component" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-{{ lossType }}" }
     ]
   }
-] }'>{{ page.confidentiality[ "add-confidentiality-button" ] }}</button>
-<!-- Disabled by default. Resets the loss of integrity form, enables/disables buttons in the loss of integrity form, shows the loss of integrity form, hides this form. -->
-<button id="add-loss-of-integrity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-integrity", "operations": [
-  { "resetForm": "#loss-of-integrity-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-loss-of-integrity", "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-loss-of-integrity, #delete-loss-of-integrity, #add-loss-of-confidentiality-integrity-form, #add-another-loss-of-integrity, #add-loss-of-availability-integrity-form", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-integrity", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-integrity", "outputAttribute": "data-show-previous-event", "value": "show-component" },
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-integrity" }
-    ]
-  }
-] }'>{{ page.integrity[ "add-integrity-button" ] }}</button>
-<!-- Disabled by default. Resets the loss of availability form, enables/disables buttons in the loss of availability form, shows the loss of availability form, hides this form. -->
-<button id="add-loss-of-availability" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-loss-of-availability", "operations": [
-  { "resetForm": "#loss-of-availability-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-loss-of-availability", "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "outputValue", "outputTarget": "#save-loss-of-availability, #delete-loss-of-availability, #add-loss-of-confidentiality-availability-form, #add-loss-of-integrity-availability-form, #add-another-loss-of-availability", "outputProperty": "disabled", "value": true },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-availability", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-availability", "outputAttribute": "data-show-previous-event", "value": "show-component" },
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-availability" }
-    ]
-  }
-] }'>{{ page.availability[ "add-availability-button" ] }}</button>
+] }'>{{ page[ lossType ][ addButton ] }}</button>{%
+endfor %}
 </div>
 
 </form>
@@ -1213,9 +1202,7 @@ for lossType in page.lossTypes %}{%
   { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#loss-of-{{ lossType }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
       { "type": "action",
         "inputs": [
-          { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
-          { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false },
-          { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputAttribute": "data-show-previous-event", "value": "show-{{ lossType }}" },
+          { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputAttribute": "data-add-source", "value": "{{ lossType }}" },
           { "type": "event", "outputTarget": "#save-loss-of-{{ lossType }}", "outputEvent": "save-loss-of-{{ lossType }}-proceed" }
         ]
       }
@@ -1236,6 +1223,12 @@ for lossType in page.lossTypes %}{%
         ],
         "actionsFalse": [
           { "type": "event", "outputTarget": "#loss-of-{{ lossType }}-fields-container", "outputEvent": "append-loss-of-{{ lossType }}" }
+        ]
+      },
+      {
+        "type": "action",
+        "inputs": [
+          { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ lossType }}-buttons" }
         ]
       }
   ] }
@@ -1265,7 +1258,7 @@ for lossType in page.lossTypes %}{%
   ] }
 ]'>{{ page.common.save }}</button>
 <!-- Loads the previous loss of {{ lossType }} in the current form or clear the forms where a previous loss of {{ lossType }} does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-show-previous-event="show-{{ lossType }}" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
+<button id="cancel-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate" data-add-source="{{ lossType }}" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -1276,13 +1269,24 @@ for lossType in page.lossTypes %}{%
       },
       { "type": "!=",
         "inputs": [
-          { "type": "string", "query": "#cancel-loss-of-{{ lossType }}", "sourceAttribute": "data-show-previous-event" },
-          "show-{{ lossType }}"
+          { "type": "string", "query": "#cancel-loss-of-{{ lossType }}", "sourceAttribute": "data-add-source" },
+          "{{ lossType }}"
         ]
       }
     ],
     "actionsTrue": [
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "string", "query": "#cancel-loss-of-{{ lossType }}", "sourceAttribute": "data-show-previous-event" } }
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "restore-", { "type": "string", "query": "#cancel-loss-of-{{ lossType }}", "sourceAttribute": "data-add-source" }
+        ] }
+      },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "default-", { "type": "string", "query": "#cancel-loss-of-{{ lossType }}", "sourceAttribute": "data-add-source" }, "-buttons"
+        ] }
+      },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": { "type": "concat", "inputs": [
+          "show-", { "type": "string", "query": "#cancel-loss-of-{{ lossType }}", "sourceAttribute": "data-add-source" }
+        ] }
+      }
     ],
     "actionsFalse": [
       { "type": "conditional",
@@ -1298,65 +1302,19 @@ for lossType in page.lossTypes %}{%
           { "type": "event", "outputTarget": "#loss-of-{{ lossType }}-fields-container", "outputEvent": "append-loss-of-{{ lossType }}" }
         ]
       },
-      { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
-      { "type": "conditional",
-        "inputs": [
-          { "type": ">",
-            "inputs": [
-              { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] },
-              -1
-            ]
-          }
-        ],
-        "actionsTrue": [
-          { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false }
-        ]
-      },
-      { "type": "event", "outputTarget": "#cancel-loss-of-{{ lossType }}", "outputEvent": "cancel-loss-of-{{ lossType }}-restore-proceed" }
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ lossType }}-buttons" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ lossType }}" }
     ]
-  }
-] }' data-wb-format-gen='{ "eventTrigger": "cancel-loss-of-{{ lossType }}-restore-proceed", "eventElement": "#cancel-loss-of-{{ lossType }}", "operations": [
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-      0, "activities",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
-      0, "components",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
-      0, "{{ lossType }}",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] }
-    ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true
   }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current loss of {{ lossType }} from memory, loads the previous loss of {{ lossType }} in the current form, or resets the form if no previous loss of {{ lossType }} exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
-<button id="delete-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "event", "outputTarget": "#delete-loss-of-{{ lossType }}", "outputEvent": "delete-loss-of-{{ lossType }}-proceed" }
-      ]
-    }
-  ] },
-  { "ignoreInit": true, "eventTrigger": "delete-loss-of-{{ lossType }}-complete", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
-    { "type": "action",
-      "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossType }}, #cancel-loss-of-{{ lossType }}", "outputProperty": "disabled", "value": true },
-        { "type": "conditional",
-          "inputs": [
-            { "type": "<",
-              "inputs": [
-                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] },
-                0
-              ]
-            }
-          ],
-          "actionsTrue": [
-            { "type": "outputValue", "outputTarget": "#delete-loss-of-{{ lossType }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true }
-          ]
-        }
-      ]
-    }
-  ] }
-]' data-wb-format-gen='{ "eventTrigger": "delete-loss-of-{{ lossType }}-proceed", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
+<button id="delete-loss-of-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#delete-loss-of-{{ lossType }}", "outputEvent": "delete-loss-of-{{ lossType }}-proceed" }
+    ]
+  }
+] }' data-wb-format-gen='{ "eventTrigger": "delete-loss-of-{{ lossType }}-proceed", "eventElement": "#delete-loss-of-{{ lossType }}", "operations": [
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
     0, "activities",
@@ -1374,16 +1332,8 @@ for lossType in page.lossTypes %}{%
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
     0, "{{ lossType }}"
   ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] } }, "action": "replace" },
-  { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-    0, "activities",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
-    0, "components",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
-    0, "{{ lossType }}",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-loss-of-{{ lossType }}" ] }
-  ], "action": "restore-form-state", "container": "#loss-of-{{ lossType }}-form", "noEvents": true },
-  { "type": "event", "outputTarget": "#delete-loss-of-{{ lossType }}", "outputEvent": "delete-loss-of-{{ lossType }}-complete" }
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ lossType }}" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ lossType }}-buttons" }
 ] }'>{{ page.common.delete }}</button>{%
 assign lossTypeIndexInner = 0 %}{%
 for lossTypeInner in page.lossTypes %}{%
@@ -1397,7 +1347,7 @@ for lossTypeInner in page.lossTypes %}{%
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossTypeInner }}, #delete-loss-of-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossTypeInner }}", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossTypeInner }}", "outputAttribute": "data-show-previous-event", "value": "show-{{ lossType }}" },
+      { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossTypeInner }}", "outputAttribute": "data-add-source", "value": "{{ lossType }}" },
       { "type": "event", "outputTarget": "#failure-scenario-{{ lossTypeInner }}", "outputEvent": "setfocus.wb" }
     ]
   }
@@ -1412,7 +1362,7 @@ for lossTypeInner in page.lossTypes %}{%
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-loss-of-{{ lossTypeInner }}, #delete-loss-of-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-loss-of-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-loss-of-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-loss-of-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossTypeInner }}", "outputProperty": "disabled", "value": false },
-      { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossTypeInner }}", "outputAttribute": "data-show-previous-event", "value": "show-{{ lossType }}" },
+      { "type": "outputValue", "outputTarget": "#cancel-loss-of-{{ lossTypeInner }}", "outputAttribute": "data-add-source", "value": "{{ lossType }}" },
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-{{ lossTypeInner }}" }
     ]
   }
