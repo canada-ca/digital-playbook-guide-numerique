@@ -1,0 +1,26 @@
+{% comment %}@overview Generates the pagination menu for moving between items{% endcomment %}{% 
+comment %}@param itemType {String} What type of item this pagination menu is for (e.g., "domain", "activity", "component", "confidentiality", "integrity", or "availability").{% endcomment %}
+<!-- Pagination menu for: {{ include.itemType }} -->
+<div class="clearfix"></div>
+<ul class="pagination">
+<li id="previous-{{ include.itemType }}" class="disabled"><a href="javascript:void(0)" rel="prev" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#previous-{{ include.itemType }} a", "operations": [
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ], "action": "replace", "source": {
+      "type": "sessionStorage", "key": "assessment", "action": "previousIndex", "source": {
+        "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ]
+      }
+    }
+  },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ include.itemType }}" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ include.itemType }}-buttons" }
+] }'>{{ page[ include.itemType ].previous }}</a></li>
+<li id="next-{{ include.itemType }}" class="disabled"><a href="javascript:void(0)" rel="next" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#next-{{ include.itemType }} a", "operations": [
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ], "action": "replace", "source": {
+      "type": "sessionStorage", "key": "assessment", "action": "nextIndex", "source": {
+        "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ]
+      }
+    }
+  },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ include.itemType }}" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ include.itemType }}-buttons" }
+] }'>{{ page[ include.itemType ].next }}</a></li>
+</ul>

@@ -282,6 +282,7 @@ var componentName = "wb-format-gen",
      *  - element: {String} (only used for dataAttribute) Selector for the element(s) containing the dataAttribute
      *  - action: {String} (Optional, defaults to returning the referened value) Action to performed on the retrieved values (e.g., "length", "firstIndex", "lastIndex", "closestIndex", "first", "last")
      *  - source: {Number/Object} (only used for closestIndex) Current index or object referencing the current index
+     *  - returnAs: {String} (Optional, defaults to string) What to return the data as
      * @return {Number/String/Boolean} Referenced value
      */
     retrieveValue = function( referrer ) {
@@ -322,20 +323,30 @@ var componentName = "wb-format-gen",
           } else if ( action === "lastIndex" ) {
             // Get the last index of the value if it exists (must be a string or array)
             value = valueLength - 1;
-          } else if ( action === "closestIndex" ) {
-            // Get the closest index to the currentIndex (use when the currentIndex has been deleted)
+          } else if ( action === "closestIndex" || action === "previousIndex" || action === "nextIndex" ) {
             source = current.source;
             if ( typeof source === "object" ) {
-              source = retrieveData( source.key, source.indexesKeys, source.type, source.returnAs ? source.returnAs : "string", source.element );
+              source = retrieveData( source.key, source.indexesKeys, source.type, source.returnAs ? source.returnAs : "number", source.element );
             }
             if ( typeof source === "string" ) {
               source = parseInt( source );
             }
 
-            if ( source < 0 || source > ( valueLength - 1 ) ) {
-              value = valueLength - 1;
-            } else {
-              value = source;
+            // Get the closest index to the currentIndex (use when the currentIndex has been deleted)
+            if ( action === "closestIndex" ) {
+              if ( source < 0 || source > ( valueLength - 1 ) ) {
+                value = valueLength - 1;
+              } else {
+                value = source;
+              }
+            } else if ( action === "previousIndex" || action === "nextIndex" ) {
+              // Get the index of the previous or next value if it exists, otherwise return -1 (must be a string or array)
+              source += ( action === "previousIndex" ? -1 : 1 );
+              if ( source < 0 || source > ( valueLength - 1 ) ) {
+                value = -1;
+              } else {
+                value = source;
+              }
             }
           } else if ( action === "first" ) {
             // Get the value at the last index of the value (must be an array)
@@ -1552,8 +1563,8 @@ $document.on( "click change", selector, function( event ) {
 // Bind the init event of the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );
 
-// Make the retrieveData and storeData functions available to other plugins
-wb[ "wb-format-gen" ] = { retrieveData: retrieveData, storeData: storeData };
+// Make the retrieveValue, retrieveData and storeData functions available to other plugins
+wb[ "wb-format-gen" ] = { retrieveValue: retrieveValue, retrieveData: retrieveData, storeData: storeData };
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
