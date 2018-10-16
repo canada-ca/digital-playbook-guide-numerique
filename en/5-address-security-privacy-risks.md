@@ -85,7 +85,7 @@ Canadians want to have confidence that government digital services are designed 
 * Ensure your service complies with Canadian security and privacy legislation, government policy instruments, and departmental security policies at all stages.
 * Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
 * Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
-* Develop and maintain cyber security training material as required, to establish service specific behaviours and culture for employees and contractors
+* Develop, publish and maintain training and awareness material as required, to establish secure service-user behaviours
 
 **Alpha Stage**
 {: .dpgn-data-ignore}
