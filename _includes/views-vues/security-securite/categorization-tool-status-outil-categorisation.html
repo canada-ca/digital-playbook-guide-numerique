@@ -1,0 +1,510 @@
+<div id="sec-cat-form-properties" class="hidden wb-format-gen wb-calculate" data-wb-format-gen='[
+  { "onInit": true, "eventTrigger": "form-init", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "resetForm": "#domain-form, #activity-form, #component-form, #confidentiality-form, #integrity-form, #availability-form" },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "source": { "type": "sessionStorage", "key": "assessment", "action": "firstIndex" } },
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#domain-form", "noEvents": true },
+    { "onInit": true, "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "form-init-complete" }
+  ] },
+  { "eventTrigger": "restore-domain", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#domain-form", "noEvents": true }
+  ] },
+  { "eventTrigger": "restore-activity", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#activity-form", "noEvents": true }
+  ] },
+  { "eventTrigger": "restore-component", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#component-form", "noEvents": true }
+  ] }{%
+for lossType in page.lossTypes %},
+  { "eventTrigger": "restore-{{ lossType }}", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+      0, "activities",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+      0, "components",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
+      0, "{{ lossType }}",
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ], "returnAs": "number" }
+    ], "action": "restore-form-state", "container": "#{{ lossType }}-form", "noEvents": true }
+  ] }{%
+endfor %}
+]' data-wb-calculate='[
+  { "ignoreInit": true, "eventTrigger": "form-init-complete", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true }
+          ]
+        }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "show-welcome", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "removeClass", "outputTarget": "#welcome-section", "class": "hidden" },
+        { "type": "addClass", "outputTarget": "#domain-section, #activity-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
+        { "type": "event", "outputTarget": "#welcome-section h2", "outputEvent": "setfocus.wb" }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "show-domain", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "removeClass", "outputTarget": "#domain-section", "class": "hidden" },
+        { "type": "addClass", "outputTarget": "#welcome-section, #activity-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
+        { "type": "event", "outputTarget": "#domain-section h2", "outputEvent": "setfocus.wb" }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "default-domain-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+                0
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#previous-domain", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#previous-domain", "class": "disabled" }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": "<",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+                { "type": "number", "sourceStorage": "sessionStorage", "key": "assessment", "action": "lastIndex" }
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#next-domain", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#next-domain", "class": "disabled" }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+                  0, "activities"
+                ], "action": "length" },
+                0
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#first-activity", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#first-activity", "class": "disabled" }
+          ]
+        }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "show-activity", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
+        { "type": "removeClass", "outputTarget": "#activity-section, #current-location-section, .domain-current-location", "class": "hidden" },
+        { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, .activity-current-location, .component-current-location", "class": "hidden" },
+        { "type": "event", "outputTarget": "#activity-section h2", "outputEvent": "setfocus.wb" }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "default-activity-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+                0
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#previous-activity", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#previous-activity", "class": "disabled" }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": "<",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+                { "type": "number", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+                  0, "activities"
+                ], "action": "lastIndex" }
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#next-activity", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#next-activity", "class": "disabled" }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+                  0, "activities",
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+                  0, "components"
+                ], "action": "length" },
+                0
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#first-component", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#first-component", "class": "disabled" }
+          ]
+        }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "show-component", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
+        { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-activity-current-location" },
+        { "type": "removeClass", "outputTarget": "#component-section, #current-location-section, .domain-current-location, .activity-current-location", "class": "hidden" },
+        { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #activity-section, #confidentiality-section, #integrity-section, #availability-section, .component-current-location", "class": "hidden" },
+        { "type": "event", "outputTarget": "#component-section h2", "outputEvent": "setfocus.wb" }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "default-component-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-confidentiality, #add-integrity, #add-availability", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-component, #add-another-component, #add-confidentiality, #add-integrity, #add-availability", "outputProperty": "disabled", "value": true }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+                0
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#previous-component", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#previous-component", "class": "disabled" }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": "<",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+                { "type": "number", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+                  0, "activities",
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+                  0, "components"
+                ], "action": "lastIndex" }
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#next-component", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#next-component", "class": "disabled" }
+          ]
+        }{%
+for lossType in page.lossTypes %},
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+                  0, "activities",
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+                  0, "components",
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
+                  0, "{{ lossType }}"
+                ], "action": "length" },
+                0
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#first-{{ lossType }}", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#first-{{ lossType }}", "class": "disabled" }
+          ]
+        }{%
+endfor %}
+      ]
+    }
+  ] }{%
+for lossType in page.lossTypes %},
+  { "ignoreInit": true, "eventTrigger": "show-{{ lossType }}", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
+        { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-activity-current-location" },
+        { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-component-current-location" },
+        { "type": "removeClass", "outputTarget": "#{{ lossType }}-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
+        { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #activity-section, #component-section{% if lossType != "confidentiality" %}, #confidentiality-section{% endif %}{% if lossType != "integrity" %}, #integrity-section{% endif %}{% if lossType != "availability" %}, #availability-section{% endif %}", "class": "hidden" },
+        { "type": "event", "outputTarget": "#{{ lossType }}-section h2", "outputEvent": "setfocus.wb" }
+      ]
+    }
+  ] },
+  { "ignoreInit": true, "eventTrigger": "default-{{ lossType }}-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#save-{{ lossType }}, #cancel-{{ lossType }}", "outputProperty": "disabled", "value": true },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ] },
+                -1
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "outputValue", "outputTarget": "#delete-{{ lossType }}, #add-another-{{ lossType }}{% if lossType != "confidentiality" %}, #add-confidentiality-{{ lossType }}-form{% endif %}{% if lossType != "integrity" %}, #add-integrity-{{ lossType }}-form{% endif %}{% if lossType != "availability" %}, #add-availability-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": false }
+          ],
+          "actionsFalse": [
+            { "type": "outputValue", "outputTarget": "#delete-{{ lossType }}, #add-another-{{ lossType }}{% if lossType != "confidentiality" %}, #add-confidentiality-{{ lossType }}-form{% endif %}{% if lossType != "integrity" %}, #add-integrity-{{ lossType }}-form{% endif %}{% if lossType != "availability" %}, #add-availability-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": ">",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ] },
+                0
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#previous-{{ lossType }}", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#previous-{{ lossType }}", "class": "disabled" }
+          ]
+        },
+        { "type": "conditional",
+          "inputs": [
+            { "type": "<",
+              "inputs": [
+                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ] },
+                { "type": "number", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+                  0, "activities",
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+                  0, "components",
+                  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
+                  0, "{{ lossType }}"
+                ], "action": "lastIndex" }
+              ]
+            }
+          ],
+          "actionsTrue": [
+            { "type": "removeClass", "outputTarget": "#next-{{ lossType }}", "class": "disabled" }
+          ],
+          "actionsFalse": [
+            { "type": "addClass", "outputTarget": "#next-{{ lossType }}", "class": "disabled" }
+          ]
+        }
+      ]
+    }
+  ] }{%
+endfor %}
+]' data-sec-cat-form-state='{ "current-action": "append", "current-domain": -1, "current-activity": -1, "current-component": -1, "current-confidentiality": -1, "current-integrity": -1, "current-availability": -1 }'></div>
+
+<section id="current-location-section" class="hidden panel panel-info wb-calculate wb-format-gen" data-wb-calculate='[
+  { "eventTrigger": "update-domain-current-location", "eventElement": "#current-location-section", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#domain-current-location-value",
+          "value": { "type": "string", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+            0, "state"
+          ] }
+        }
+      ]
+    }
+  ] },
+  { "eventTrigger": "update-activity-current-location", "eventElement": "#current-location-section", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#activity-current-location-value",
+          "value": { "type": "string", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+            0, "activities",
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+            0, "state"
+          ] }
+        }
+      ]
+    }
+  ] },
+  { "eventTrigger": "update-component-current-location", "eventElement": "#current-location-section", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#component-current-location-value",
+          "value": { "type": "string", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+            0, "activities",
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+            0, "components",
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+            0, "state"
+          ] }
+        }
+      ]
+    }
+  ] }
+]'>
+<header class="panel-heading">
+<h2 class="panel-title">{{ page.currentLocation }}</h2>
+</header>
+<div class="panel-body">
+<dl class="dl-horizontal mrgn-bttm-0">
+<dt class="hidden domain-current-location">{{ page.domain.title }}</dt>
+<dd class="hidden domain-current-location" markdown="0">
+<a id="domain-current-location-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#domain-current-location-value", "returnFalse": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
+    ]
+  }
+] }'></a>
+</dd>
+<dt class="hidden activity-current-location">{{ page.activity.title }}</dt>
+<dd class="hidden activity-current-location" markdown="0">
+<a id="activity-current-location-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#activity-current-location-value", "returnFalse": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-activity" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-activity-buttons" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-activity" }
+    ]
+  }
+] }'></a>
+</dd>
+<dt class="hidden component-current-location">{{ page.component.title }}</dt>
+<dd class="hidden component-current-location" markdown="0">
+<a id="component-current-location-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#component-current-location-value", "returnFalse": true, "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-component" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-component-buttons" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-component" }
+    ]
+  }
+] }'></a>
+</dd>
+</dl>
+</div>
+</section>

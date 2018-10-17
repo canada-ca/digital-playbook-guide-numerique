@@ -1,0 +1,37 @@
+<div markdown="0" class="btn-group mrgn-tp-md">
+<!-- Button for saving progress to a JSON file -->
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment-json", "source": "sessionStorage", "key": "assessment" }'>{{ site.SaveToFile[ page.lang ] }}</button>
+<!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. this is done to give more visual control over the appearance than what the input type="file" field allows. -->
+<button id="restore-from-file-button" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
+    ]
+  }
+] }'>{{ site.RestoreFromFile[ page.lang ] }}</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "filename": "assessment-csv", "source": "sessionStorage", "key": "assessment", "tableColSpecs": [
+  { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 1, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "confidentiality" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "integrity" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "availability" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
+] }'>{{ page.downloadAssessment }}</button>
+</div>
+<div class="hidden">
+<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "change", "eventElement": "#restore-from-file", "operations": [
+  { "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }
+] }' />
+</div>
