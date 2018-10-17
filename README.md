@@ -29,6 +29,10 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 
 - [How do I decide whether to release content on the Open Government Portal? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/en/release-content.html)
 
+### Security views
+
+- [Security Categorization Tool (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/security-securite/en/categorization-tool.html)
+
 ### Digital Architectural Standards views
 
 - [How should I ensure my project meets GC EARB requirements? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/gc-earb-ceai/en/gc-earb.html)
@@ -114,6 +118,10 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 ### Vues basées sur le gouvernement ouvert
 
 - [Comment puis-je décider de publier du contenu dans le Portail du gouvernement ouvert? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/fr/publier-contenu.html)
+
+### Vues basées sur le sécurité
+
+- [Outil de categorisation de sécurité (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/security-securite/fr/outil-categorisation.html)
 
 ### Vues basées sur les normes architecturales sur le numérique
 
