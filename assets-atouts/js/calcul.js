@@ -75,22 +75,22 @@ var componentName = "wb-calculate",
             eventElement = settings[ "eventElement" ];
             if ( eventElement ) {
               $listenerElement.on( eventTrigger, eventElement, function( event ) {
-                return handleEvent( event, dataAttributeValue );
+                return handleEvent( event, JSON.parse( elm.getAttribute( dataAttribute ) ) );
               } );
             } else {
               $listenerElement.on( eventTrigger, function( event ) {
-                return handleEvent( event, dataAttributeValue );
+                return handleEvent( event, JSON.parse( elm.getAttribute( dataAttribute ) ) );
               } );
             }
           }
 
           if ( !settings[ "ignoreInit" ] ) {
-            handleEvent( event, settings );
+            handleEvent( event, settings, true );
           }
         }
 
         // Apply the extended settings to the element
-        elm.setAttribute( dataAttribute, JSON.stringify( settings ) );
+        elm.setAttribute( dataAttribute, JSON.stringify( isArray ? dataAttributeValue : dataAttributeValue[ 0 ] ) );
       }
     },
     /**
@@ -200,6 +200,7 @@ var componentName = "wb-calculate",
           query = value || !queryParam ? null : document.querySelectorAll( queryParam ),
           queryResultsSize = !query ? null : query.length, 
           decimalPlaces = typeof operation[ "decimalPlaces" ] === "object" ? calculate( operation[ "decimalPlaces" ] ) : operation[ "decimalPlaces" ],
+          indexesKeysUsed = false,
           inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
           sourceProperty, outputTargets, outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue,
           outputTargetIndex, outputTargetsLength, indexesKeys, sourceStorage;
@@ -245,20 +246,21 @@ var componentName = "wb-calculate",
               returnAs: operation[ "returnAs" ]
             } );
 
-            // Clear indexesKeys since already used
-            indexesKeys = null;
+            indexesKeysUsed = true;
           } else {
             value = query[ 0 ].textContent;
           }
 
           // If value is nested in JSON, then retrieve it
-          if ( indexesKeys ) {
+          if ( indexesKeys && !indexesKeysUsed ) {
             value = JSON.parse( value );
             length = indexesKeys.length;
 
             for ( index = 0; index < length; index += 1 ) {
               value = value[ indexesKeys[ index ] ];
             }
+
+            indexesKeysUsed = true;
           }
 
           if ( type === "number" && typeof value === "string" ) {
@@ -375,7 +377,6 @@ var componentName = "wb-calculate",
               let condition = inputs[ index ],
                   conditionType = condition[ "type" ],
                   values = condition[ "inputs" ];
-
               if ( conditionType === "=" || conditionType === "==" ) {
                 // Equal to
                 conditionMet = calculate( values[ 0 ] ) == calculate( values[ 1 ] );
@@ -514,28 +515,39 @@ var componentName = "wb-calculate",
      * @overview Handles most plugin events
      * @param event {Object} Event object
      * @param settingsParam {Object} Settings to be used by the handler
+     * @param ignoreTriggerCheck {Boolean} (Optional, defaults to false) Whether to ignore the check that attempts to filter out unnecessary/duplicate events (set to true for onInit event handling since will fail check otherwise).
      */
-    handleEvent = function( event, settingsParam ) {
+    handleEvent = function( event, settingsParam, ignoreTriggerCheck ) {
       var eventType = event.type,
+          target = event.target,
+          dataAttributeValue = settingsParam ? settingsParam : JSON.parse( target.getAttribute( dataAttribute ) ),
           returnFalse = false,
           allSettings = Array.isArray( settingsParam ) ? settingsParam : [ settingsParam ],
           settings, operations, eventTrigger, type, source, action, data, storedData, key, index, length, result,
           resetForm, settingsIndex, settingsLength, processedValues;
 
+      if ( !Array.isArray( dataAttributeValue ) ) {
+        dataAttributeValue = [ dataAttributeValue ];
+      }
+
       // Iterate through each of the settings objects
-      settingsLength = allSettings.length;
+      settingsLength = dataAttributeValue.length;
+
       for ( settingsIndex = 0; settingsIndex < settingsLength; settingsIndex += 1 ) {
-        settings = allSettings[ settingsIndex ];
+        settings = dataAttributeValue[ settingsIndex ];
+        operations = settings[ "operations" ];
         eventTrigger = ( typeof settings[ "eventTrigger" ] === "object" ? calculate( settings[ "eventTrigger" ] ) : settings[ "eventTrigger" ] );
 
         // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
-        if ( eventTrigger && eventTrigger.indexOf( eventType ) === -1 ) {
+        if ( !ignoreTriggerCheck && eventTrigger && eventTrigger.indexOf( eventType ) === -1 ) {
           continue;
         }
 
         operations = settings[ "operations" ];
         if ( operations ) {
-          iterate( settings[ "operations" ] );
+          iterate( operations );
+        } else {
+          calculate( settings );
         }
 
         if ( settings[ "returnFalse" ] === true ) {

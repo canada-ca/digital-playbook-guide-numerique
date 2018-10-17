@@ -77,11 +77,11 @@ var componentName = "wb-format-gen",
             eventElement = processedValues[ 2 ];
             if ( eventElement ) {
               $listenerElement.on( eventTrigger, eventElement, function( event ) {
-                return handleEvent( event );
+                return handleEvent( event, JSON.parse( elm.getAttribute( dataAttribute ) ) );
               } );
             } else {
               $listenerElement.on( eventTrigger, function( event ) {
-                return handleEvent( event, settings );
+                return handleEvent( event, JSON.parse( elm.getAttribute( dataAttribute ) ) );
               } );
             }
           }
@@ -1138,15 +1138,18 @@ var componentName = "wb-format-gen",
         }
       }
 
-      if ( data && data.length > 0 ) {
+      if ( data !== null && typeof data !== "undefined" && data.length > 0 ) {
         data = JSON.parse( data );
 
         for ( index = 0; index < indexesKeysLength; index += 1 ) {
+          if ( data === null || typeof data === "undefined" ) {
+            break;
+          }
           data = data[ currIndexesKeys[ index ] ];
         }
 
         dataType = typeof data;
-        if ( returnAs && returnAs !== dataType ) {
+        if ( data !== null && typeof data !== "undefined" && returnAs && returnAs !== dataType ) {
           if ( returnAs === "string" ) {
             data = dataType === "object" ? JSON.stringify( data ) : data.toString();
           } else if ( returnAs === "number" ) {

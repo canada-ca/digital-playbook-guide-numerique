@@ -1,0 +1,140 @@
+<section id="results-section">
+
+## Results
+
+<div class="wb-tabs">
+<div class="tabpanels">
+
+<details id="summary-report-section">
+
+<summary markdown="0">{{ page.summaryReport.title }}</summary>
+
+{{ page.summaryReport.intro }}
+
+<table class="table table-bordered">
+<caption>{{ page.summaryReport.domainTable.caption }}</caption>
+<thead>
+<tr>
+<th rowspan="2">{{ page.summaryReport.domainTable.col1Header }}</th>
+<th colspan="3" class="text-center">{{ page.summaryReport.domainTable.col2Header }}</th>
+</tr>
+<tr>
+<th class="text-center">{{ page.summaryReport.domainTable.col2aHeader }}</th>
+<th class="text-center">{{ page.summaryReport.domainTable.col2bHeader }}</th>
+<th class="text-center">{{ page.summaryReport.domainTable.col2cHeader }}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+</tr>
+</tbody>
+</table>
+
+<table class="table table-bordered">
+<caption>{{ page.summaryReport.componentTable.caption }}</caption>
+<thead>
+<tr>
+<th rowspan="2">{{ page.summaryReport.componentTable.col1Header }}</th>
+<th rowspan="2">{{ page.summaryReport.componentTable.col2Header }}</th>
+<th rowspan="2" class="text-center">{{ page.summaryReport.componentTable.col3Header }}</th>
+<th colspan="3" class="text-center">{{ page.summaryReport.componentTable.col4Header }}</th>
+</tr>
+<tr>
+<th class="text-center">{{ page.summaryReport.componentTable.col4aHeader }}</th>
+<th class="text-center">{{ page.summaryReport.componentTable.col4bHeader }}</th>
+<th class="text-center">{{ page.summaryReport.componentTable.col4cHeader }}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details id="detailed-report-section" open="open">
+
+<summary markdown="0">{{ page.detailedReport.title }}</summary>
+
+{{ page.detailedReport.intro1 }}
+
+{{ page.detailedReport.intro2 }}
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th rowspan="2">{{ page.domain.title }}</th>
+<th rowspan="2">{{ page.activity[ "activity-label" ] }}</th>
+<th colspan="4" class="text-center">{{ page.component.title }}</th>
+<th colspan="4" class="text-center">{{ page.confidentiality.title }}</th>
+<th colspan="4" class="text-center">{{ page.integrity.title }}</th>
+<th colspan="4" class="text-center">{{ page.availability.title }}</th>
+</tr>
+<tr>
+<th>{{ page.component[ "component-label" ] }}</th>
+<th>{{ page.component[ "component-description-label" ] }}</th>
+<th>{{ page.component[ "component-type-label" ] }}</th>
+<th>{{ page.component[ "authoritative-source-label" ] }}</th>
+<!-- {{ page.confidentiality.title }} -->
+<th>{{ page.lossOfCommon[ "failure-scenario-label" ] }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "injury-significance-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "analysis-label" ] }}</th>
+<!-- {{ page.integrity.title }} -->
+<th>{{ page.lossOfCommon[ "failure-scenario-label" ] }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "injury-significance-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "analysis-label" ] }}</th>
+<!-- {{ page.availability.title }} -->
+<th>{{ page.lossOfCommon[ "failure-scenario-label" ] }}</th>
+<th>{{ page.lossOfCommon[ "failure-scenario-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "injury-significance-table-heading" ] }}</th>
+<th>{{ page.lossOfCommon[ "analysis-label" ] }}</th>
+</tr>
+</thead>
+<tbody class="wb-format-gen" data-wb-format-gen='{ "onInit": true, "eventTrigger": "storage-updated.wb-format-gen", "action": "set-table-rows", "source": "sessionStorage", "key": "assessment", "tableColSpecs": [
+  { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 1, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "confidentiality" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "integrity" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "availability" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
+], "container": "#detailed-report-section tbody"
+}'>
+<tr>{%
+for index in (1..18) %}
+<td></td>{%
+endfor %}
+</tr>
+</tbody>
+</table>
+
+</details>
+
+</div>
+</div>
+
+</section>

@@ -12,7 +12,44 @@ comment %}@param itemType {String} What type of item this pagination menu is for
   },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ include.itemType }}" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ include.itemType }}-buttons" }
-] }'>{{ page[ include.itemType ].previous }}</a></li>
+] }'>{{ page[ include.itemType ].previous }}</a></li>{%
+unless include.itemType == "domain" %}{%
+  if include.itemType == "activity" %}{%
+    assign parent = "domain" %}{%
+  elsif include.itemType == "component" %}{%
+    assign parent = "activity" %}{%
+  else %}{%
+    assign parent = "component" %}{%
+  endif %}
+<li id="return-to-{{ parent }}-{{ include.itemType }}"><a href="javascript:void(0)" rel="prev" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#return-to-{{ parent }}-{{ include.itemType }} a", "operations": [
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ parent }}" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ parent }}-buttons" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-{{ parent }}" }
+] }'>{{ page[ include.itemType ].return }}</a></li>{%
+endunless %}{%
+if include.itemType == "domain" or include.itemType == "activity" %}{%
+  if include.itemType == "domain" %}{%
+    assign child = "activity" %}{%
+  else %}{%
+    assign child = "component" %}{%
+  endif %}
+<li id="first-{{ child }}" class="disabled"><a href="javascript:void(0)" rel="prev" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#first-{{ child }} a", "operations": [
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ child }}" ], "action": "replace", "data": 0 },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ child }}" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ child }}-buttons" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-{{ child }}" }
+] }'>{{ page[ include.itemType ][ "first-child" ] }}</a></li>{%
+elsif include.itemType == "component" %}{%
+  for lossType in page.lossTypes %}{%
+    assign firstChild = "first-child-" | append: lossType %}
+<li id="first-{{ lossType }}" class="disabled"><a href="javascript:void(0)" rel="prev" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#first-{{ lossType }} a", "operations": [
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ], "action": "replace", "data": 0 },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ lossType }}" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ lossType }}-buttons" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-{{ lossType }}" }
+] }'>{{ page[ include.itemType ][ firstChild ] }}</a></li>{%
+  endfor %}{%
+endif %}
 <li id="next-{{ include.itemType }}" class="disabled"><a href="javascript:void(0)" rel="next" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#next-{{ include.itemType }} a", "operations": [
   { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ], "action": "replace", "source": {
       "type": "sessionStorage", "key": "assessment", "action": "nextIndex", "source": {
