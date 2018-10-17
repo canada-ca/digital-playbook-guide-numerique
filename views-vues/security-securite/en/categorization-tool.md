@@ -10,20 +10,20 @@ common:
   cancel: Cancel
   delete: Delete
   startAssessment: Start assessment
-youAreHere: You Are Here
+currentLocation: Current Location
 welcome:
   heading: Welcome to the Security Categorization Tool
   intro1: Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
   intro2: The Security Categorization Tool is an instrument meant to be used by security practitioners to help organize business processes and information for the purposes of injury assessment. It should help the practitioner develop a business injury view of the department for the purposes of designing secure systems.
-  intro3: This web-based version of the tool is meant to make the process of organizing this information quicker and easier for security practitioners and it is compatible with Microsoft Excel. Assessments created on the Excel spreadsheet version of the Security Categorization tool can be imported to this web-based tool.
+  intro3: This web-based version of the tool is meant to make the process of organizing this information quicker and easier for security practitioners.
   menu:
     heading: What Would You Like to Do?
 domain:
   title: Business Domain
   intro: A business domain is an operational environment where a department performs business activities supporting common organizational objectives.
   "domain-field-label": What is your business domain?
-  "add-domain-button": Add another business domain
-  "add-activity-button": Add business activity
+  "add-domain-button": Add another domain
+  "add-activity-button": Add activity
   previous: Previous domain
   next: Next domain
   "first-child": First activity
@@ -32,8 +32,8 @@ activity:
   intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
   intro2: Business activities will be categorized by determining the expected injuries from IT-related threat compromise to the national and non-national interests that the business activities serve, and then determining the lveral of these expected injuries.
   "activity-label": Business Activity
-  "add-activity-button": Add another business activity
-  "add-component-button": Add business component
+  "add-activity-button": Add another activity
+  "add-component-button": Add component
   previous: Previous activity
   next: Next activity
   return: Return to domain
@@ -47,7 +47,7 @@ component:
   "component-type-option-1": Process
   "component-type-option-2": Information
   "authoritative-source-label": Authoritative Source
-  "add-component-button": Add another business component
+  "add-component-button": Add another component
   previous: Previous component
   next: Next component
   return: Return to activity
@@ -60,7 +60,7 @@ confidentiality:
   intro: To ensure the confidentiality of business activites and IT assets against a specified set of theats in order to prevent injury to national interests or non-national interests.
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of confidentiality?
   example1: Example of such injury
-  example2: ie. Riot
+  example2: e.g., Riot
   "add-confidentiality-button": Add loss of confidentiality
   "add-another-confidentiality-button": Add another loss of confidentiality
   previous: Previous loss of confidentiality
@@ -71,7 +71,7 @@ integrity:
   intro: To ensure the integrity of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of integrity?
   example1: Example of such injury
-  example2: ie. Distress, psychological trauma
+  example2: e.g., Distress, psychological trauma
   "add-integrity-button": Add loss of integrity
   "add-another-integrity-button": Add another loss of integrity
   previous: Previous loss of integrity
@@ -82,9 +82,9 @@ availability:
   intro: To ensure the availability of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
   "type-of-injury-label": What is the type of injury that is most likely to result from a loss of availability?
   example1: Example of such injury
-  example2: ie. Affecting program performance
-  "add-another-availability-button": Add another loss of availability
+  example2: e.g., Affecting program performance
   "add-availability-button": Add loss of availability
+  "add-another-availability-button": Add another loss of availability
   previous: Previous loss of availability
   next: Next loss of availability
   return: Return to component
@@ -110,7 +110,7 @@ lossOfCommon:
   "injury-significance-option-3": Medium
   "injury-significance-option-4": High
   "injury-significance-option-5": Very high
-  "injury-significance-option-0": NA
+  "injury-significance-option-0": n/a
   "analysis-label": Analysis
 summaryReport:
   title: Summary Report

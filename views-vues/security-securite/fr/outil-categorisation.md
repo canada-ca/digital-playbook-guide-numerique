@@ -6,136 +6,136 @@ altLang: en
 altLangPage: categorization-tool
 collectionDirectory: views-vues/security-securite
 common:
-  save: Save
-  cancel: Cancel
-  delete: Delete
-  startAssessment: Start assessment
-youAreHere: You Are Here
+  save: Sauvegarder
+  cancel: Annuler
+  delete: Supprimer
+  startAssessment: Commencer l'évaluation
+youAreHere: Localisation actuelle
 welcome:
-  heading: Welcome to the Security Categorization Tool
-  intro1: Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
-  intro2: The Security Categorization Tool is an instrument meant to be used by security practitioners to help organize business processes and information for the purposes of injury assessment. It should help the practitioner develop a business injury view of the department for the purposes of designing secure systems.
-  intro3: This web-based version of the tool is meant to make the process of organizing this information quicker and easier for security practitioners and it is compatible with Microsoft Excel. Assessments created on the Excel spreadsheet version of the Security Categorization tool can be imported to this web-based tool.
+  heading: Bienvenue dans l'outil de catégorisation de sécurité
+  intro1: La catégorisation de sécurité est le processus d'identification des blessures potentielles pouvant résulter de la compromission des processus métier et des informations associées.
+  intro2: L'outil de catégorisation de sécurité est un instrument destiné à être utilisé par les spécialistes de la sécurité pour aider à organiser les processus et les informations de l'entreprise aux fins de l'évaluation des blessures. Cela devrait aider le praticien à développer une vue du département concernant les dommages corporels aux fins de la conception de systèmes sécurisés.
+  intro3: Cette version Web de l'outil est conçue pour faciliter et accélérer le processus d'organisation de ces informations pour les praticiens de la sécurité.
   menu:
-    heading: What Would You Like to Do?
+    heading: Qu'est-ce que tu aimerais faire?
 domain:
-  title: Business Domain
-  intro: A business domain is an operational environment where a department performs business activities supporting common organizational objectives.
-  "domain-field-label": What is your business domain?
-  "add-domain-button": Add another business domain
-  "add-activity-button": Add business activity
-  previous: Previous domain
-  next: Next domain
-  "first-child": First activity
+  title: Domaine opérationnel
+  intro: Un domaine opérationnel est un environnement opérationnel dans lequel un service exerce des activités répondant à des objectifs organisationnels communs.
+  "domain-field-label": Quel est votre domaine opérationnel?
+  "add-domain-button": Ajouter un autre domaine
+  "add-activity-button": Ajouter une activité
+  previous: Domaine précédent
+  next: Domaine prochain
+  "first-child": Première activité
 activity:
-  title: Business Activity
-  intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
-  intro2: Business activities will be categorized by determining the expected injuries from IT-related threat compromise to the national and non-national interests that the business activities serve, and then determining the lveral of these expected injuries.
-  "activity-label": Business Activity
-  "add-activity-button": Add another business activity
-  "add-component-button": Add business component
-  previous: Previous activity
-  next: Next activity
-  return: Return to domain
-  "first-child": First component
+  title: Activité opérationnelle
+  intro1: Toute activité réalisée par un ministère dans le cadre de ses opérations pour fournir ou soutenir la prestation de ses programmes ou services. Une activité est composée d’un ou de plusieurs processus et actifs d’information associés.
+  intro2: Les activités opérationnelles seront classées par catégories en déterminant les dommages attendus résultant de l'atteinte à la menace liée aux technologies de l'information et aux intérêts nationaux et non nationaux que ces activités servent, puis en déterminant le montant de ces dommages attendus.
+  "activity-label": Activité opérationnelle
+  "add-activity-button": Ajouter une autre activité
+  "add-component-button": Ajouter un composant
+  previous: Activité précédente
+  next: Activité prochaine
+  return: Retour au domaine
+  "first-child": Composant premier
 component:
-  title: Business Component
-  "component-label": Business Activity Component
-  "component-description-label": Component Description
+  title: Composant opérationnel
+  "component-label": Composante de l'activité opérationnelle
+  "component-description-label": Description du composant
   "component-type-label": Type
-  "component-type-sub-label": Select a type
-  "component-type-option-1": Process
+  "component-type-sub-label": Sélectionnez un type
+  "component-type-option-1": Processus
   "component-type-option-2": Information
-  "authoritative-source-label": Authoritative Source
-  "add-component-button": Add another business component
-  previous: Previous component
-  next: Next component
-  return: Return to activity
-  "first-child-confidentiality": First loss of confidentiality
-  "first-child-integrity": First loss of integrity
-  "first-child-availability": First loss of availability
+  "authoritative-source-label": Source faisant autorité
+  "add-component-button": Ajouter un autre composant
+  previous: Composant précédent
+  next: Composant prochain
+  return: Retour à l'activité
+  "first-child-confidentiality": Première perte de confidentialité
+  "first-child-integrity": Première perte d'intégrité
+  "first-child-availability": Première perte de disponibilité
 lossTypes: [ "confidentiality", "integrity", "availability" ]
 confidentiality:
-  title: Loss of Confidentiality
-  intro: To ensure the confidentiality of business activites and IT assets against a specified set of theats in order to prevent injury to national interests or non-national interests.
-  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of confidentiality?
-  example1: Example of such injury
-  example2: ie. Riot
-  "add-confidentiality-button": Add loss of confidentiality
-  "add-another-confidentiality-button": Add another loss of confidentiality
-  previous: Previous loss of confidentiality
-  next: Next loss of confidentiality
-  return: Return to component
+  title: Perte de confidentialité
+  intro: Assurer la confidentialité des activités commerciales et des actifs informatiques contre un ensemble spécifique de menaces afin d'éviter de porter préjudice aux intérêts nationaux ou aux intérêts non nationaux.
+  "type-of-injury-label": Quel type de blessure est le plus susceptible de résulter d'une perte de confidentialité?
+  example1: Exemple d'une telle blessure
+  example2: par exemple, émeute
+  "add-confidentiality-button": Ajouter une perte de confidentialité
+  "add-another-confidentiality-button": Ajouter une autre perte de confidentialité
+  previous: Perte de confidentialité précédente
+  next: Perte de confidentialité prochaine
+  return: Retour au composant
 integrity:
-  title: Loss of Integrity
-  intro: To ensure the integrity of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
-  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of integrity?
-  example1: Example of such injury
-  example2: ie. Distress, psychological trauma
-  "add-integrity-button": Add loss of integrity
-  "add-another-integrity-button": Add another loss of integrity
-  previous: Previous loss of integrity
-  next: Next loss of integrity
-  return: Return to component
+  title: Perte d'intégrité
+  intro: Garantir l'intégrité d'une activité commerciale ou d'un actif informatique par rapport à un ensemble spécifié de menaces afin d'éviter tout préjudice causé à des intérêts nationaux ou à des intérêts non nationaux.
+  "type-of-injury-label": Quel type de blessure est le plus susceptible de résulter d'une perte d'intégrité?
+  example1: Exemple d'une telle blessure
+  example2: par exemple, détresse, traumatisme psychologiqueie
+  "add-integrity-button": Ajouter une perte d'intégrité
+  "add-another-integrity-button": Ajouter une autre perte d'intégrité
+  previous: Perte d'intégrité précédente
+  next: Perte d'intégrité prochaine
+  return: Retour au composant
 availability:
-  title: Loss of Availability
-  intro: To ensure the availability of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
-  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of availability?
-  example1: Example of such injury
-  example2: ie. Affecting program performance
-  "add-another-availability-button": Add another loss of availability
-  "add-availability-button": Add loss of availability
-  previous: Previous loss of availability
-  next: Next loss of availability
-  return: Return to component
+  title: Perte de disponibilité
+  intro: Garantir la disponibilité d'une activité commerciale ou d'un actif informatique contre un ensemble spécifié de menaces afin d'éviter toute atteinte aux intérêts nationaux ou aux intérêts non nationaux.
+  "type-of-injury-label": Quel type de blessure est le plus susceptible de résulter d'une perte de disponibilité?
+  example1: Exemple d'une telle blessure
+  example2: par exemple, affectant la performance du programme
+  "add-availability-button": Ajouter une perte de disponibilité
+  "add-another-availability-button": Ajouter une autre perte de disponibilité
+  previous: Perte de disponibilité précédente
+  next: Perte de disponibilité prochaine
+  return: Retour au composant
 lossOfCommon:
-  "failure-scenario-label": Failure Scenario (in context)
-  "failure-scenario-sub-label": Select a type of injury
-  "failure-scenario-table-heading": Type of injury
-  "failure-scenario-option-1": Civil disorder or unrest
-  "failure-scenario-option-2": Physical harm to people
-  "failure-scenario-option-3": Psychological harm to people
-  "failure-scenario-option-4": Financial loss to individuals
-  "failure-scenario-option-5": Financial loss to Canadian companies
-  "failure-scenario-option-6": Financial loss to Canadian governement
-  "failure-scenario-option-7": Harm to Canadian economy
-  "failure-scenario-option-8": Harm to Canada's reputation
-  "failure-scenario-option-9": Harm to National Interest
-  "failure-scenario-option-0": No expected injury
-  "injury-significance": How significant is the expected injury?
-  "injury-significance-sub-label": Select the significance of injury
-  "injury-significance-table-heading": Significance of injury
-  "injury-significance-option-1": Very low
-  "injury-significance-option-2": Low
-  "injury-significance-option-3": Medium
-  "injury-significance-option-4": High
-  "injury-significance-option-5": Very high
-  "injury-significance-option-0": NA
-  "analysis-label": Analysis
+  "failure-scenario-label": Scénario d'échec (dans le contexte)
+  "failure-scenario-sub-label": Sélectionnez un type de blessure
+  "failure-scenario-table-heading": Type de blessure
+  "failure-scenario-option-1": Désordre ou agitation civil
+  "failure-scenario-option-2": Dommage physique aux personnes
+  "failure-scenario-option-3": Dommage psychologique aux personnes
+  "failure-scenario-option-4": Perte financière pour les individus
+  "failure-scenario-option-5": Perte financière pour les entreprises canadiennes
+  "failure-scenario-option-6": Perte financière pour le gouvernement canadien
+  "failure-scenario-option-7": Atteinte à l'économie canadienne
+  "failure-scenario-option-8": Atteinte à la réputation du Canada
+  "failure-scenario-option-9": Atteinte à l'intérêt national
+  "failure-scenario-option-0": Aucune blessure attendue
+  "injury-significance": Quelle est l'importance de la blessure attendue?
+  "injury-significance-sub-label": Sélectionnez l'importance de la blessure
+  "injury-significance-table-heading": L'importance de la blessure
+  "injury-significance-option-1": Très faible
+  "injury-significance-option-2": Faible
+  "injury-significance-option-3": Moyenne
+  "injury-significance-option-4": Élevé
+  "injury-significance-option-5": Très élevé
+  "injury-significance-option-0": s.o.
+  "analysis-label": Analyse
 summaryReport:
-  title: Summary Report
-  intro: The summary report expresses the highest level of expected injuries from threat compromise with respect to the security objectives of confidentiality, integrity, and availability.
+  title: Rapport sommaire
+  intro: Le rapport de synthèse exprime le plus haut niveau attendu de blessures résultant d'une atteinte aux menaces par rapport aux objectifs de sécurité en matière de confidentialité, d'intégrité et de disponibilité.
   domainTable:
-    caption: Breakdown by Business Domain
-    col1Header: Business Domain
-    col2Header: Security Category
-    col2aHeader: Confidentiality
-    col2bHeader: Integrity
-    col2cHeader: Availability
+    caption: Ventilation par domaine opérationnel
+    col1Header: Domaine opérationnel
+    col2Header: Catégorie de sécurité
+    col2aHeader: Confidentialité
+    col2bHeader: Intégrité
+    col2cHeader: Disponibilité
   componentTable:
-    caption: Breakdown by Component
-    col1Header: Business Domain
-    col2Header: Component
+    caption: Ventilation par composant
+    col1Header: Domaine opérationnel
+    col2Header: Composant
     col3Header: Type
-    col4Header: Security Category
-    col4aHeader: Confidentiality
-    col4bHeader: Integrity
-    col4cHeader: Availability
+    col4Header: Catégorie de sécurité
+    col4aHeader: Confidentialité
+    col4bHeader: Intégrité
+    col4cHeader: Disponibilité
 detailedReport:
-  title: Detailed Report
-  intro1: Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
-  intro2: The following report provides the detailed injury assessment performed for each process or information component with respect to confidentiality, integrity and availability.
-downloadAssessment: Download assessment in CSV format
+  title: Rapport détaillé
+  intro1: La catégorisation de sécurité est le processus d'identification des blessures potentielles pouvant résulter de la compromission des processus métier et des informations associées.
+  intro2: Le rapport suivant fournit l’évaluation détaillée de la lésion réalisée pour chaque processus ou élément d’information en ce qui concerne la confidentialité, l’intégrité et la disponibilité.
+downloadAssessment: Téléchargez l'évaluation au format CSV
 labelGridClass: col-sm-4
 fieldGridClass: col-sm-8
 ---
