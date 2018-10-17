@@ -69,7 +69,7 @@ endfor %}
     { "type": "action",
       "inputs": [
         { "type": "removeClass", "outputTarget": "#welcome-section", "class": "hidden" },
-        { "type": "addClass", "outputTarget": "#domain-section, #activity-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
+        { "type": "addClass", "outputTarget": "#results-section, #domain-section, #activity-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
         { "type": "event", "outputTarget": "#welcome-section h2", "outputEvent": "setfocus.wb" }
       ]
     }
@@ -77,7 +77,7 @@ endfor %}
   { "ignoreInit": true, "eventTrigger": "show-domain", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "removeClass", "outputTarget": "#domain-section", "class": "hidden" },
+        { "type": "removeClass", "outputTarget": "#domain-section, #results-section", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #activity-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
         { "type": "event", "outputTarget": "#domain-section h2", "outputEvent": "setfocus.wb" }
       ]
@@ -161,7 +161,7 @@ endfor %}
     { "type": "action",
       "inputs": [
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
-        { "type": "removeClass", "outputTarget": "#activity-section, #current-location-section, .domain-current-location", "class": "hidden" },
+        { "type": "removeClass", "outputTarget": "#activity-section, #results-section, #current-location-section, .domain-current-location", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, .activity-current-location, .component-current-location", "class": "hidden" },
         { "type": "event", "outputTarget": "#activity-section h2", "outputEvent": "setfocus.wb" }
       ]
@@ -251,7 +251,7 @@ endfor %}
       "inputs": [
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-activity-current-location" },
-        { "type": "removeClass", "outputTarget": "#component-section, #current-location-section, .domain-current-location, .activity-current-location", "class": "hidden" },
+        { "type": "removeClass", "outputTarget": "#component-section, #results-section, #current-location-section, .domain-current-location, .activity-current-location", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #activity-section, #confidentiality-section, #integrity-section, #availability-section, .component-current-location", "class": "hidden" },
         { "type": "event", "outputTarget": "#component-section h2", "outputEvent": "setfocus.wb" }
       ]
@@ -349,7 +349,7 @@ for lossType in page.lossTypes %},
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-activity-current-location" },
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-component-current-location" },
-        { "type": "removeClass", "outputTarget": "#{{ lossType }}-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
+        { "type": "removeClass", "outputTarget": "#{{ lossType }}-section, #results-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #activity-section, #component-section{% if lossType != "confidentiality" %}, #confidentiality-section{% endif %}{% if lossType != "integrity" %}, #integrity-section{% endif %}{% if lossType != "availability" %}, #availability-section{% endif %}", "class": "hidden" },
         { "type": "event", "outputTarget": "#{{ lossType }}-section h2", "outputEvent": "setfocus.wb" }
       ]
