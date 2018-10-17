@@ -55,6 +55,8 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 **Formerly guideline 9.3**
 {: .dpgn-data-ignore}
 
+### Include security and privacy in innovation
+
 Canadians’ support for open data and digital services is enhanced when their privacy rights are protected: transparency and respect for privacy are complementary goals. The shift to digital government offers opportunities to strengthen privacy rights and safely share more data that can benefit society. Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data.
 
 Embedding privacy protection in the design of digital applications or open data increases political legitimacy and public confidence, and privacy safeguards are a necessary condition for a successful shift to a digital Government of Canada. Digital services also have the potential to enhance privacy rights, for example, by facilitating access to and correction of personal information.
@@ -63,6 +65,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 **Formerly guideline 9.4**
 {: .dpgn-data-ignore}
+### Address jurisdictional legal and regulatory requirements
 
 The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate.
 
