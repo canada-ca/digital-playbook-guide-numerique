@@ -201,7 +201,7 @@ var componentName = "wb-calculate",
           queryResultsSize = !query ? null : query.length, 
           decimalPlaces = typeof operation[ "decimalPlaces" ] === "object" ? calculate( operation[ "decimalPlaces" ] ) : operation[ "decimalPlaces" ],
           indexesKeysUsed = false,
-          inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
+          inputs, inputsLength, values, item, index, length, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
           sourceProperty, outputTargets, outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue,
           outputTargetIndex, outputTargetsLength, indexesKeys, sourceStorage;
 
