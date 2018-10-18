@@ -19,7 +19,7 @@
 
 <div class="btn-group" markdown="0">
 <!-- Resume a current assessment (only visible if assessment data is detected) -->
-<button id="resume-assessment" type="button" disabled="disable" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#resume-assessment", "operations": [
+<button id="resume-assessment" type="button" disabled="disabled" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#resume-assessment", "operations": [
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
@@ -39,7 +39,7 @@
   }
 ] }'>{{ page.common.startAssessment }}</button>
 <!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. This is done to give more visual control over the appearance than what the input type="file" field allows. Afterwards it showsthe business domain section. -->
-<button id="restore-from-file-button" type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
+<button id="restore-from-file-button-welcome" type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#restore-from-file-button-welcome", "operations": [
   { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
 ] }'>{{ site.RestoreFromFile[ page.lang ] }}</button>
 </div>
