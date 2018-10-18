@@ -9,7 +9,8 @@ common:
   save: Save
   cancel: Cancel
   delete: Delete
-  startAssessment: Start assessment
+  startAssessment: Start new assessment
+  resumeAssessment: Resume current assessment
 currentLocation: Current Location
 welcome:
   heading: Welcome to the Security Categorization Tool

@@ -235,7 +235,8 @@ var componentName = "wb-calculate",
             }
             value = value ? value : "";
           } else if ( sourceStorage ) {
-            // Use the wb-format-gen plugin retrieveValue function to retrieve the data
+            // Use the wb-format-gen plugin retrieveValue function to retrieve the data. Uses wb-calculate formatting
+            // for the operation and adapts it to the wb-format-gen retrieveValue function call parameters
             value = wb[ "wb-format-gen" ].retrieveValue( {
               type: sourceStorage,
               key: operation[ "key" ],
@@ -420,6 +421,9 @@ var componentName = "wb-calculate",
               calculate( action );
             } else if ( actionType === "operations" ) {
               value = iterate( action[ "operations" ] );
+            } else if ( actionType === "sessionStorage" || actionType === "localStorage" || actionType === "dataAttribute" ) {
+              // Hand this over to wb-format-gen for handling (uses wb-format-gen formatting for the action)
+              wb[ "wb-format-gen" ].outputStorage( action );
             } else {
               outputTargets = action[ "outputTarget" ];
               if ( typeof outputTargets === "object" ) {

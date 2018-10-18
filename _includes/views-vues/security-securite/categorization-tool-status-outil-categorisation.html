@@ -1,10 +1,6 @@
 <div id="sec-cat-form-properties" class="hidden wb-format-gen wb-calculate" data-wb-format-gen='[
   { "onInit": true, "eventTrigger": "form-init", "eventElement": "#sec-cat-form-properties", "operations": [
-    { "resetForm": "#domain-form, #activity-form, #component-form, #confidentiality-form, #integrity-form, #availability-form" },
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "source": { "type": "sessionStorage", "key": "assessment", "action": "firstIndex" } },
-    { "type": "form", "source": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" }
-    ], "action": "restore-form-state", "container": "#domain-form", "noEvents": true },
     { "onInit": true, "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "form-init-complete" }
   ] },
   { "eventTrigger": "restore-domain", "eventElement": "#sec-cat-form-properties", "operations": [
@@ -43,25 +39,20 @@ for lossType in page.lossTypes %},
 endfor %}
 ]' data-wb-calculate='[
   { "ignoreInit": true, "eventTrigger": "form-init-complete", "eventElement": "#sec-cat-form-properties", "operations": [
-    { "type": "action",
+    { "type": "conditional",
       "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
-        { "type": "conditional",
+        { "type": ">",
           "inputs": [
-            { "type": ">",
-              "inputs": [
-                { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
-                -1
-              ]
-            }
-          ],
-          "actionsTrue": [
-            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": false }
-          ],
-          "actionsFalse": [
-            { "type": "outputValue", "outputTarget": "#delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true }
+            { "type": "number", "query": "#sec-cat-form-properties", "sourceAttribute": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+            -1
           ]
         }
+      ],
+      "actionsTrue": [
+        { "type": "outputValue", "outputTarget": "#resume-assessment", "outputProperty": "disabled", "value": false }
+      ],
+      "actionsFalse": [
+        { "type": "outputValue", "outputTarget": "#resume-assessment", "outputProperty": "disabled", "value": true }
       ]
     }
   ] },
@@ -69,7 +60,7 @@ endfor %}
     { "type": "action",
       "inputs": [
         { "type": "removeClass", "outputTarget": "#welcome-section", "class": "hidden" },
-        { "type": "addClass", "outputTarget": "#results-section, #domain-section, #activity-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
+        { "type": "addClass", "outputTarget": "#save-restore-download-buttons, #results-section, #domain-section, #activity-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
         { "type": "event", "outputTarget": "#welcome-section h2", "outputEvent": "setfocus.wb" }
       ]
     }
@@ -77,7 +68,7 @@ endfor %}
   { "ignoreInit": true, "eventTrigger": "show-domain", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "removeClass", "outputTarget": "#domain-section, #results-section", "class": "hidden" },
+        { "type": "removeClass", "outputTarget": "#domain-section, #save-restore-download-buttons, #results-section", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #activity-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
         { "type": "event", "outputTarget": "#domain-section h2", "outputEvent": "setfocus.wb" }
       ]
@@ -161,7 +152,7 @@ endfor %}
     { "type": "action",
       "inputs": [
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
-        { "type": "removeClass", "outputTarget": "#activity-section, #results-section, #current-location-section, .domain-current-location", "class": "hidden" },
+        { "type": "removeClass", "outputTarget": "#activity-section, #save-restore-download-buttons, #results-section, #current-location-section, .domain-current-location", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #component-section, #confidentiality-section, #integrity-section, #availability-section, .activity-current-location, .component-current-location", "class": "hidden" },
         { "type": "event", "outputTarget": "#activity-section h2", "outputEvent": "setfocus.wb" }
       ]
@@ -251,7 +242,7 @@ endfor %}
       "inputs": [
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-activity-current-location" },
-        { "type": "removeClass", "outputTarget": "#component-section, #results-section, #current-location-section, .domain-current-location, .activity-current-location", "class": "hidden" },
+        { "type": "removeClass", "outputTarget": "#component-section, #save-restore-download-buttons, #results-section, #current-location-section, .domain-current-location, .activity-current-location", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #activity-section, #confidentiality-section, #integrity-section, #availability-section, .component-current-location", "class": "hidden" },
         { "type": "event", "outputTarget": "#component-section h2", "outputEvent": "setfocus.wb" }
       ]
@@ -349,7 +340,7 @@ for lossType in page.lossTypes %},
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-activity-current-location" },
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-component-current-location" },
-        { "type": "removeClass", "outputTarget": "#{{ lossType }}-section, #results-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
+        { "type": "removeClass", "outputTarget": "#{{ lossType }}-section, #save-restore-download-buttons, #results-section, #current-location-section, .domain-current-location, .activity-current-location, .component-current-location", "class": "hidden" },
         { "type": "addClass", "outputTarget": "#welcome-section, #domain-section, #activity-section, #component-section{% if lossType != "confidentiality" %}, #confidentiality-section{% endif %}{% if lossType != "integrity" %}, #integrity-section{% endif %}{% if lossType != "availability" %}, #availability-section{% endif %}", "class": "hidden" },
         { "type": "event", "outputTarget": "#{{ lossType }}-section h2", "outputEvent": "setfocus.wb" }
       ]
