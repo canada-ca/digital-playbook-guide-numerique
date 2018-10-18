@@ -412,7 +412,7 @@ endfor %}
 ]' data-sec-cat-form-state='{ "current-action": "append", "current-domain": -1, "current-activity": -1, "current-component": -1, "current-confidentiality": -1, "current-integrity": -1, "current-availability": -1 }'></div>
 
 <section id="current-location-section" class="hidden panel panel-info wb-calculate wb-format-gen" data-wb-calculate='[
-  { "eventTrigger": "update-domain-current-location", "eventElement": "#current-location-section", "operations": [
+  { "ignoreInit": true, "eventTrigger": "update-domain-current-location", "eventElement": "#current-location-section", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#domain-current-location-value",
@@ -424,7 +424,7 @@ endfor %}
       ]
     }
   ] },
-  { "eventTrigger": "update-activity-current-location", "eventElement": "#current-location-section", "operations": [
+  { "ignoreInit": true, "eventTrigger": "update-activity-current-location", "eventElement": "#current-location-section", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#activity-current-location-value",
@@ -438,7 +438,7 @@ endfor %}
       ]
     }
   ] },
-  { "eventTrigger": "update-component-current-location", "eventElement": "#current-location-section", "operations": [
+  { "ignoreInit": true, "eventTrigger": "update-component-current-location", "eventElement": "#current-location-section", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#component-current-location-value",
