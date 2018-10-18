@@ -735,6 +735,7 @@ var componentName = "wb-format-gen",
         }
 
         mimeType = "text/csv";
+        filename += ".csv";
       } else if ( type === "json" ) {
         if ( source === "form-state" ) {
           fileData = JSON.stringify( getFormFieldStatus( container ) );
@@ -744,6 +745,7 @@ var componentName = "wb-format-gen",
           fileData = htmlToJSON( document.querySelector( container ), settings[ "structure" ], true );
         }
         mimeType = "application/json";
+        filename += ".json";
       } else {
         return;
       }
@@ -753,7 +755,7 @@ var componentName = "wb-format-gen",
 
         // Backwards compatibility for IE10+
         if ( !isDownloadAttrSupported && navigator.msSaveBlob ) {
-            navigator.msSaveBlob( blobOutput, filename + "." + type );
+            navigator.msSaveBlob( blobOutput, filename );
             return;
         }
 
