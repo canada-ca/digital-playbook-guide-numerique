@@ -711,7 +711,7 @@ var componentName = "wb-format-gen",
           key = processedValues[ 4 ],
           container = processedValues[ 5 ],
           returnAs = processedValues[ 6 ],
-          fileData, mimeType, blobOutput, urlOutput, action, indexesKeys, storedData;
+          fileData, mimeType, blobOutput, urlOutput, action, indexesKeys, storedData, headerRow;
 
       if ( type === "csv" ) {
         if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
@@ -732,6 +732,11 @@ var componentName = "wb-format-gen",
           }
         } else {
           fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], container, true );
+        }
+
+        headerRow = settings[ "headerRow" ];
+        if ( headerRow ) {
+          fileData = generateTableRows( ( typeof headerRow === "object" ? [ headerRow ] : headerRow ), "csv" ) + fileData;
         }
 
         mimeType = "text/csv";
@@ -1472,6 +1477,11 @@ var componentName = "wb-format-gen",
             }
           }
         }
+      }
+
+      // Remove the extra comma at the end of each row if in CSV format
+      if ( outputFormat !== "html" ) {
+        tableRows = tableRows.replace( /,\n/g, "\n" );
       }
 
       return tableRows;
