@@ -749,7 +749,7 @@ var componentName = "wb-format-gen",
       }
 
       try {
-        blobOutput = new Blob( [ "\ufeff", fileData ], { type: mimeType } );
+        blobOutput = new Blob( [ fileData ], { type: mimeType } );
 
         // Backwards compatibility for IE10+
         if ( !isDownloadAttrSupported && navigator.msSaveBlob ) {
