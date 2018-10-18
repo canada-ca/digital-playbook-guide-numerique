@@ -734,7 +734,7 @@ var componentName = "wb-format-gen",
           fileData = htmlToCSV( settings[ "rowSelector" ], settings[ "colSelector" ], container, true );
         }
 
-        mimeType = "text/csv;charset=utf-8;";
+        mimeType = "text/csv";
       } else if ( type === "json" ) {
         if ( source === "form-state" ) {
           fileData = JSON.stringify( getFormFieldStatus( container ) );
@@ -743,13 +743,13 @@ var componentName = "wb-format-gen",
         } else {
           fileData = htmlToJSON( document.querySelector( container ), settings[ "structure" ], true );
         }
-        mimeType = "application/json;charset=utf-8;";
+        mimeType = "application/json";
       } else {
         return;
       }
 
       try {
-        blobOutput = new Blob( [ fileData ], { type: mimeType } );
+        blobOutput = new Blob( [ "\ufeff", fileData ], { type: mimeType } );
 
         // Backwards compatibility for IE10+
         if ( !isDownloadAttrSupported && navigator.msSaveBlob ) {
@@ -760,7 +760,7 @@ var componentName = "wb-format-gen",
         urlOutput = URL.createObjectURL( blobOutput );
       } catch ( e ) {
         // Fallback for where Blob URL support doesn't exist
-        urlOutput = encodeURI( "data:" + mimeType.slice( 0, -1 ) + "," + fileData );
+        urlOutput = encodeURI( "data:" + mimeType + ";charset=utf-8," + fileData );
       }
 
       outputLink.setAttribute( "href", urlOutput );
