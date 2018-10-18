@@ -459,10 +459,9 @@ endfor %}
 <h2 class="panel-title">{{ page.currentLocation }}</h2>
 </header>
 <div class="panel-body">
-<dl class="dl-horizontal mrgn-bttm-0">
-<dt class="hidden domain-current-location">{{ page.domain.title }}</dt>
-<dd class="hidden domain-current-location" markdown="0">
-<a id="domain-current-location-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#domain-current-location-value", "returnFalse": true, "operations": [
+<ol class="breadcrumb mrgn-bttm-0" markdown="0">
+<li class="hidden domain-current-location">
+<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#domain-current-location-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
@@ -470,11 +469,10 @@ endfor %}
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
     ]
   }
-] }'></a>
-</dd>
-<dt class="hidden activity-current-location">{{ page.activity.title }}</dt>
-<dd class="hidden activity-current-location" markdown="0">
-<a id="activity-current-location-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#activity-current-location-value", "returnFalse": true, "operations": [
+] }'>{{ page.domain.title }} (<span id="domain-current-location-value"></span>)</a>
+</li>
+<li class="hidden activity-current-location">
+<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#activity-current-location-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-activity" },
@@ -482,11 +480,10 @@ endfor %}
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-activity" }
     ]
   }
-] }'></a>
-</dd>
-<dt class="hidden component-current-location">{{ page.component.title }}</dt>
-<dd class="hidden component-current-location" markdown="0">
-<a id="component-current-location-value" href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#component-current-location-value", "returnFalse": true, "operations": [
+] }'>{{ page.activity.title }} (<span id="activity-current-location-value"></span>)</a>
+</li>
+<li class="hidden component-current-location">
+<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#component-current-location-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-component" },
@@ -494,8 +491,8 @@ endfor %}
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-component" }
     ]
   }
-] }'></a>
-</dd>
-</dl>
+] }'>{{ page.component.title }} (<span id="component-current-location-value"></span>)</a>
+</li>
+</ol>
 </div>
 </section>
