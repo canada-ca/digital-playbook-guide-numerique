@@ -71,7 +71,7 @@ Our goal is to provide public services to Canadians which are simple to use and 
 
 The digital standards were co-created with the public and key stakeholder groups and the goal is to co-create this Digital Playbook with the same groups. They are living standards and guidance and they will continue to evolve over time as we better understand the complexities involved in putting them into practice.
 
-The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
+The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
 
 ### Structure of the Digital Playbook (draft)
 
