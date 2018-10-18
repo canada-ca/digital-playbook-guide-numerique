@@ -25,7 +25,7 @@ unless include.itemType == "domain" %}{%
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ parent }}" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ parent }}-buttons" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-{{ parent }}" }
-] }'>{{ page[ include.itemType ].return }}</a></li>{%
+] }'><span aria-hidden="true" class="glyphicon glyphicon-arrow-up mrgn-rght-sm"></span>{{ page[ include.itemType ].return }}</a></li>{%
 endunless %}{%
 if include.itemType == "domain" or include.itemType == "activity" %}{%
   if include.itemType == "domain" %}{%
@@ -38,7 +38,7 @@ if include.itemType == "domain" or include.itemType == "activity" %}{%
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ child }}" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ child }}-buttons" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-{{ child }}" }
-] }'>{{ page[ include.itemType ][ "first-child" ] }}</a></li>{%
+] }'><span aria-hidden="true" class="glyphicon glyphicon-arrow-down mrgn-rght-sm"></span>{{ page[ include.itemType ][ "first-child" ] }}</a></li>{%
 elsif include.itemType == "component" %}{%
   for lossType in page.lossTypes %}{%
     assign firstChild = "first-child-" | append: lossType %}
@@ -47,7 +47,7 @@ elsif include.itemType == "component" %}{%
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ lossType }}" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ lossType }}-buttons" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-{{ lossType }}" }
-] }'>{{ page[ include.itemType ][ firstChild ] }}</a></li>{%
+] }'><span aria-hidden="true" class="glyphicon glyphicon-arrow-down mrgn-rght-sm"></span>{{ page[ include.itemType ][ firstChild ] }}</a></li>{%
   endfor %}{%
 endif %}
 <li id="next-{{ include.itemType }}" class="disabled"><a href="javascript:void(0)" rel="next" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#next-{{ include.itemType }} a", "operations": [

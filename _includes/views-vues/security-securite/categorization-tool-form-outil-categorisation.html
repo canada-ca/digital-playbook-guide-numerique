@@ -18,15 +18,30 @@
 <!-- markdownlint-enable MD026 -->
 
 <div class="btn-group" markdown="0">
-<!-- Starts the assessment -->
-<button id="start-assessment" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#start-assessment", "operations": [
+<!-- Resume a current assessment (only visible if assessment data is detected) -->
+<button id="resume-assessment" type="button" disabled="disabled" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#resume-assessment", "operations": [
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
+] }'>{{ page.common.resumeAssessment }}</button>
+<!-- Starts a new assessment -->
+<button id="start-assessment" type="button" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#start-assessment", "operations": [
+  { "resetForm": "#domain-form, #activity-form, #component-form, #confidentiality-form, #integrity-form, #availability-form" },
+  { "type": "sessionStorage", "key": "assessment", "action": "delete" },
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "source": -1 },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
+  { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#start-assessment", "operations": [
   { "type": "action",
     "inputs": [
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
+      { "type": "outputValue", "outputTarget": "#resume-assessment", "outputProperty": "disabled", "value": true }
     ]
   }
 ] }'>{{ page.common.startAssessment }}</button>
+<!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. This is done to give more visual control over the appearance than what the input type="file" field allows. Afterwards it showsthe business domain section. -->
+<button id="restore-from-file-button-welcome" type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#restore-from-file-button-welcome", "operations": [
+  { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
+] }'>{{ site.RestoreFromFile[ page.lang ] }}</button>
 </div>
 
 </section>

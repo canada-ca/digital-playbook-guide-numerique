@@ -710,7 +710,7 @@ var componentName = "wb-format-gen",
           element = processedValues[ 3 ],
           key = processedValues[ 4 ],
           container = processedValues[ 5 ],
-          returnAs = processedvalues[ 6 ],
+          returnAs = processedValues[ 6 ],
           fileData, mimeType, blobOutput, urlOutput, action, indexesKeys, storedData;
 
       if ( type === "csv" ) {
@@ -780,6 +780,7 @@ var componentName = "wb-format-gen",
      * @param elm {HTML node} Input type="file" element that is being used to input a file
      * @param returnAsString {Boolean} (Defaults to false) Whether or not to return the data as a string
      * @return {Array/Object/String} Returned data
+     * @fires Fires either the form-state-restored-from-file.wb-format-gen or storage-restored-from-file.wb-format-gen event on the document node once complete
      */
     inputFile = function( settings, elm, returnAsString ) {
       if ( typeof ( FileReader ) !== "undefined" ) {
@@ -804,9 +805,15 @@ var componentName = "wb-format-gen",
              if ( action === "restore-form-state" ) {
                container = retrieveValue( settings[ "container" ] );
                setFormFieldStatus( settings[ "container" ], fileData, settings[ "noEvent" ] );
+
+               // Trigger an event indicating that the form state has been restored
+               $document.trigger( "form-state-restored-from-file" + selector );
              } else if ( action === "restore-storage" ) {
                processedValues = retrieveValue( [ settings[ "key" ], settings[ "target" ], settings[ "element" ] ] );
                storeData( "replace", processedValues[ 0 ], settings[ "indexesKeys" ], processedValues[ 1 ], fileData, processedValues[ 2 ] );
+
+               // Trigger an event indicating that the storage has been restored
+               $document.trigger( "storage-restored-from-file" + selector );
              }
 
              return fileData;
@@ -931,6 +938,7 @@ var componentName = "wb-format-gen",
           currIndexesKeys = indexesKeys ? indexesKeys : [],
           currStorageType = storageType ? storageType : "sessionStorage",
           indexesKeysLength = currIndexesKeys.length,
+          deleteOnly = false,
           storedData, storedDataFragment, parentStoredDataFragment, index, length, typeofResult, indexKey, nextIndexKey,
           currElement, currElements, elementsIndex, elementsLength, resultData;
 
@@ -1004,7 +1012,7 @@ var componentName = "wb-format-gen",
             } else {
               currElement.setAttribute( key, "" );
             }
-            return;
+            deleteOnly = true;
           }
 
           if ( currAction !== "delete" ) {
@@ -1060,42 +1068,39 @@ var componentName = "wb-format-gen",
           } else {
             currElement.setAttribute( key, "" );
           }
-          return;
+          deleteOnly = true;
         } else if ( currAction === "append" || currAction === "prepend" ) {
           resultData = [ data ];
         } else if ( currAction === "replace" ) {
           resultData = data;
         }
 
-        // Ensure the resulting data is a string
-        if ( typeof resultData !== "string" ) {
-          if ( resultData ) {
+        if ( !deleteOnly ) {
+          // Ensure the resulting data is not an object
+          if ( resultData !== null && typeof resultData !== "undefined" ) {
             if ( typeof resultData === "object" ) {
               if ( Array.isArray( resultData ) ) {
                 length = resultData.length;
               } else {
                 length = Object.keys( resultData ).length;
               }
-
-              if ( length > 0 ) {
+               if ( length > 0 ) {
                 resultData = JSON.stringify( resultData );
               } else {
                 resultData = "";
               }
-            } else {
-              resultData = resultData.toString();
             }
           } else {
             resultData = "";
           }
-        }
 
-        if ( currStorageType === "sessionStorage" ) {
-          sessionStorage.setItem( key, resultData );
-        } else if ( currStorageType === "localStorage" ) {
-          localStorage.setItem( key, resultData );
-        } else {
-          currElement.setAttribute( key, resultData );
+          if ( currStorageType === "sessionStorage" ) {
+            sessionStorage.setItem( key, resultData );
+          } else if ( currStorageType === "localStorage" ) {
+            localStorage.setItem( key, resultData );
+          } else {
+            currElement.setAttribute( key, resultData );
+          }
         }
       }
 
@@ -1566,8 +1571,8 @@ $document.on( "click change", selector, function( event ) {
 // Bind the init event of the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );
 
-// Make the retrieveValue, retrieveData and storeData functions available to other plugins
-wb[ "wb-format-gen" ] = { retrieveValue: retrieveValue, retrieveData: retrieveData, storeData: storeData };
+// Make the retrieveValue, retrieveData, storeData and outputStorage functions available to other plugins
+wb[ "wb-format-gen" ] = { retrieveValue: retrieveValue, retrieveData: retrieveData, storeData: storeData, outputStorage: outputStorage };
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );

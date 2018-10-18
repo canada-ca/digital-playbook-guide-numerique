@@ -9,7 +9,8 @@ common:
   save: Sauvegarder
   cancel: Annuler
   delete: Supprimer
-  startAssessment: Commencer l'évaluation
+  startAssessment: Commencer une nouvelle évaluation
+  resumeAssessment: Reprendre l'évaluation en cours
 youAreHere: Localisation actuelle
 welcome:
   heading: Bienvenue dans l'outil de catégorisation de sécurité

@@ -1,13 +1,9 @@
-<div markdown="0" class="btn-group mrgn-tp-md">
+<div id="save-restore-download-buttons" markdown="0" class="hidden btn-group mrgn-tp-md">
 <!-- Button for saving progress to a JSON file -->
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment-json", "source": "sessionStorage", "key": "assessment" }'>{{ site.SaveToFile[ page.lang ] }}</button>
-<!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. this is done to give more visual control over the appearance than what the input type="file" field allows. -->
-<button id="restore-from-file-button" type="button" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
-    ]
-  }
+<!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. This is done to give more visual control over the appearance than what the input type="file" field allows. -->
+<button id="restore-from-file-button" type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
+  { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
 ] }'>{{ site.RestoreFromFile[ page.lang ] }}</button>
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "filename": "assessment-csv", "source": "sessionStorage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
@@ -31,7 +27,16 @@
 ] }'>{{ page.downloadAssessment }}</button>
 </div>
 <div class="hidden">
-<input id="restore-from-file" type="file" class="wb-format-gen" data-wb-format-gen='{ "eventTrigger": "change", "eventElement": "#restore-from-file", "operations": [
+<input id="restore-from-file" type="file" class="wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "change", "eventElement": "#restore-from-file", "operations": [
   { "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }
+] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "storage-restored-from-file.wb-format-gen", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "data": 0 },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
+    ]
+  }
 ] }' />
 </div>
