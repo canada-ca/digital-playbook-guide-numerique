@@ -6,7 +6,7 @@
 <h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}{{ site.Colon[ page.lang ] }}</h3>
 
 <!-- Progress bar: Uses the percent complete for the value (dividing the number of non-hidden rows with scores by the number of non-hidden rows) --> 
-<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
     { "type": "count", "query": "#agile-use-when-questionnaire fieldset input:checked" },
     { "type": "count", "query": "#agile-use-when-questionnaire fieldset" }
@@ -174,7 +174,7 @@ endfor %}
 </tbody>
 <!-- Summary row. Calculates the tallied score for each approach by adding together the associated non-hidden. Calculates the maximum score approach by adding together the x-score-max points where x is the approach type. Percent score is calculated for each approach using the tallied score and the maximum score. The percent score is then used for the value of the progress bar. -->
 <tfoot>
-<tr class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow", "operations": [{%
+<tr class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow", "operations": [{%
 for type in types %}
   { "type": "add", "query": ".{{ type }}-score:not(.hidden)", "outputTarget": "#{{ type }}-score-total" },
   { "type": "add", "query": ".{{ type }}-score-max", "outputTarget": "#{{ type }}-max-total" },

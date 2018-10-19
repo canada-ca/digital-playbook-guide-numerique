@@ -7,7 +7,7 @@
 <h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}</h3>
 
 <!-- Progress bar: Uses the percent complete for the value (dividing the number of non-hidden rows with scores by the number of non-hidden rows) --> 
-<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", "inputs": [
     { "type": "count", "query": "#right-cloud-questionnaire fieldset input:checked" },
     { "type": "count", "query": "#right-cloud-questionnaire fieldset" }
@@ -113,7 +113,7 @@ endfor %}
 for index in (0..2) %}{%
   assign headerNumber = index | plus: 3 %}{%
   assign cloudType = page.cloudTypes[ index ] %}
-<td headers="r1h{{ headerNumber }} r5h1 r5h2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+<td headers="r1h{{ headerNumber }} r5h1 r5h2" class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
   { "type": "count", "increment": 1, "query": "#{{ cloudType }}-sensitivity-passed:not(.hidden), #{{ cloudType }}-financial-passed:not(.hidden), #{{ cloudType }}-legacy-passed:not(.hidden)", "outputTarget": "#tally-mandatory-{{ cloudType }}" },
   { "type": "percent", "decimalPlaces": 1, "inputs": [ { "type": "number", "query": "#tally-mandatory-{{ cloudType }}" }, 3 ], "outputTarget": "#percent-mandatory-{{ cloudType }}" },
   { "type": "number", "decimalPlaces": 0, "query": "#percent-mandatory-{{ cloudType }}", "outputTarget": "#progress-mandatory-{{ cloudType }}", "outputAttribute": "value" },
@@ -184,7 +184,7 @@ endfor %}
 for index in (0..2) %}{%
   assign headerNumber = index | plus: 3 %}{%
   assign cloudType = page.cloudTypes[ index ] %}
-<td headers="r1h{{ headerNumber }} r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+<td headers="r1h{{ headerNumber }} r5h1 r5h3" class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
   { "type": "add",
     "inputs": [
       { "type": "count", "increment": 20, "query": "#{{ cloudType }}-commoditized-passed:not(.hidden), #{{ cloudType }}-location-passed:not(.hidden), #{{ cloudType }}-connectivity-passed:not(.hidden)" },

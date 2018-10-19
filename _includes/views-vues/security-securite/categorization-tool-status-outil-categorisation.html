@@ -38,7 +38,7 @@ for lossType in page.lossTypes %},
   ] }{%
 endfor %}
 ]' data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "form-init-complete", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "form-init-complete", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "conditional",
       "inputs": [
         { "type": ">",
@@ -56,7 +56,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "show-welcome", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "show-welcome", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "removeClass", "outputTarget": "#welcome-section", "class": "hidden" },
@@ -65,7 +65,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "show-domain", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "show-domain", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "removeClass", "outputTarget": "#domain-section, #save-restore-download-buttons, #results-section", "class": "hidden" },
@@ -74,7 +74,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "default-domain-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "default-domain-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#save-domain, #cancel-domain", "outputProperty": "disabled", "value": true },
@@ -148,7 +148,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "show-activity", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "show-activity", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
@@ -158,7 +158,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "default-activity-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "default-activity-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#save-activity, #cancel-activity", "outputProperty": "disabled", "value": true },
@@ -237,7 +237,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "show-component", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "show-component", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
@@ -248,7 +248,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "default-component-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "default-component-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#save-component, #cancel-component", "outputProperty": "disabled", "value": true },
@@ -334,7 +334,7 @@ endfor %}
     }
   ] }{%
 for lossType in page.lossTypes %},
-  { "ignoreInit": true, "eventTrigger": "show-{{ lossType }}", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "show-{{ lossType }}", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "event", "outputTarget": "#current-location-section", "outputEvent": "update-domain-current-location" },
@@ -346,7 +346,7 @@ for lossType in page.lossTypes %},
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "default-{{ lossType }}-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
+  { "eventTrigger": "default-{{ lossType }}-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#save-{{ lossType }}, #cancel-{{ lossType }}", "outputProperty": "disabled", "value": true },
@@ -412,7 +412,7 @@ endfor %}
 ]' data-sec-cat-form-state='{ "current-action": "append", "current-domain": -1, "current-activity": -1, "current-component": -1, "current-confidentiality": -1, "current-integrity": -1, "current-availability": -1 }'></div>
 
 <section id="current-location-section" class="hidden panel panel-info wb-calculate wb-format-gen" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "update-domain-current-location", "eventElement": "#current-location-section", "operations": [
+  { "eventTrigger": "update-domain-current-location", "eventElement": "#current-location-section", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#domain-current-location-value",
@@ -424,7 +424,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "update-activity-current-location", "eventElement": "#current-location-section", "operations": [
+  { "eventTrigger": "update-activity-current-location", "eventElement": "#current-location-section", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#activity-current-location-value",
@@ -438,7 +438,7 @@ endfor %}
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "update-component-current-location", "eventElement": "#current-location-section", "operations": [
+  { "eventTrigger": "update-component-current-location", "eventElement": "#current-location-section", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#component-current-location-value",
@@ -461,7 +461,7 @@ endfor %}
 <div class="panel-body">
 <ol class="breadcrumb mrgn-bttm-0" markdown="0">
 <li class="hidden domain-current-location">
-<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#domain-current-location-value", "returnFalse": true, "operations": [
+<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#domain-current-location-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
@@ -472,7 +472,7 @@ endfor %}
 ] }'>{{ page.domain.title }} (<span id="domain-current-location-value"></span>)</a>
 </li>
 <li class="hidden activity-current-location">
-<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#activity-current-location-value", "returnFalse": true, "operations": [
+<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#activity-current-location-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-activity" },
@@ -483,7 +483,7 @@ endfor %}
 ] }'>{{ page.activity.title }} (<span id="activity-current-location-value"></span>)</a>
 </li>
 <li class="hidden component-current-location">
-<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#component-current-location-value", "returnFalse": true, "operations": [
+<a href="javascript:void(0)" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#component-current-location-value", "returnFalse": true, "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-component" },
