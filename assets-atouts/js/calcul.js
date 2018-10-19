@@ -51,7 +51,7 @@ var componentName = "wb-calculate",
 
         length = dataAttributeValue.length;
         for ( index = 0; index < length; index += 1 ) {
-          // Extend the settings with window[ "wb-format-gen" ] then data-wb-format-gen
+          // Extend the settings with window[ "wb-calculate" ] then data-wb-calculate
           settings = $.extend(
             true, {},
             defaults,
@@ -419,9 +419,6 @@ var componentName = "wb-calculate",
               calculate( action );
             } else if ( actionType === "operations" ) {
               value = iterate( action[ "operations" ] );
-            } else if ( actionType === "sessionStorage" || actionType === "localStorage" || actionType === "dataAttribute" ) {
-              // Hand this over to wb-format-gen for handling (uses wb-format-gen formatting for the action)
-              wb[ "wb-format-gen" ].outputStorage( action );
             } else {
               outputTargets = action[ "outputTarget" ];
               if ( typeof outputTargets === "object" ) {

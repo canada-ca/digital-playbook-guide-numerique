@@ -46,16 +46,15 @@
 ] }'>{{ page.downloadAssessment }}</button>
 </div>
 <div class="hidden">
-<input id="restore-from-file" type="file" class="wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "change", "eventElement": "#restore-from-file", "operations": [
-  { "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }
-] }' data-wb-calculate='{ "eventTrigger": "storage-restored-from-file.wb-format-gen", "operations": [
-  { "type": "action",
-    "inputs": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "data": 0 },
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
-      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
-    ]
-  }
-] }' />
+<input id="restore-from-file" type="file" class="wb-format-gen wb-calculate" data-wb-format-gen='[
+  { "eventTrigger": "change", "eventElement": "#restore-from-file", "operations": [
+    { "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }
+  ] },
+  { "eventTrigger": "storage-restored-from-file.wb-format-gen", "operations": [
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "data": 0 },
+    { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
+    { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
+    { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
+  ] }
+]' />
 </div>
