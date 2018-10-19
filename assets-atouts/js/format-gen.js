@@ -1584,7 +1584,7 @@ $document.on( "click change", selector, function( event ) {
 $document.on( "timerpoke.wb " + initEvent, selector, init );
 
 // Make the retrieveValue, retrieveData, storeData and outputStorage functions available to other plugins
-wb[ "wb-format-gen" ] = { retrieveValue: retrieveValue, retrieveData: retrieveData, storeData: storeData, outputStorage: outputStorage };
+wb[ "wb-format-gen" ] = { retrieveValue: retrieveValue };
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
