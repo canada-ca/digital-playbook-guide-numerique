@@ -31,7 +31,7 @@
   { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "source": -1 },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#start-assessment", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#start-assessment", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#resume-assessment", "outputProperty": "disabled", "value": true }
@@ -56,7 +56,7 @@
 
 {{ page.domain.intro }}
 
-<div id="domain-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "input", "eventElement": "#domain-fields-container", "operations": [
+<div id="domain-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#domain-fields-container", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -113,14 +113,14 @@
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-domain" type="submit" disabled="disabled" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#domain-form", "listenerElement": "body", "returnFalse": true, "operations": [
+  { "eventTrigger": "submit", "eventElement": "#domain-form", "listenerElement": "body", "returnFalse": true, "operations": [
     { "type": "action",
       "inputs": [
         { "type": "event", "outputTarget": "#save-domain", "outputEvent": "save-domain-proceed" }
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "save-domain-complete", "eventElement": "#save-domain", "operations": [
+  { "eventTrigger": "save-domain-complete", "eventElement": "#save-domain", "operations": [
       { "type": "conditional",
         "inputs": [
           { "type": "==",
@@ -156,7 +156,7 @@
   ] }
 ]'>{{ page.common.save }}</button>
 <!-- Loads the previous domain in the current form or clear the forms where a previous domain does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
+<button id="cancel-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#cancel-domain", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -178,7 +178,7 @@
   }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current domain from memory, loads the previous domain in the current form, or resets the form if no previous domain exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
-<button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
+<button id="delete-domain" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#delete-domain", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#delete-domain", "outputEvent": "delete-domain-proceed" }
@@ -196,7 +196,7 @@
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-domain" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-domain", "operations": [
   { "resetForm": "#domain-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-another-domain", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-another-domain", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-domain, #delete-domain, #add-another-domain, #add-activity", "outputProperty": "disabled", "value": true },
@@ -209,7 +209,7 @@
 <!-- Disabled by default. Resets the activity form, enables/disables buttons in the activity form, shows the activity form, hides this form. -->
 <button id="add-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-activity", "operations": [
   { "resetForm": "#activity-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-activity", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-activity", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-activity, #delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
@@ -235,7 +235,7 @@
 
 {{ page.activity.intro2 }}
 
-<div id="activity-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "input", "eventElement": "#activity-fields-container", "operations": [
+<div id="activity-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#activity-fields-container", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -292,7 +292,7 @@
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-activity" type="submit" disabled="disabled" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#activity-form", "listenerElement": "body", "returnFalse": true, "operations": [
+  { "eventTrigger": "submit", "eventElement": "#activity-form", "listenerElement": "body", "returnFalse": true, "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#cancel-activity", "outputAttribute": "data-add-source", "value": "activity" },
@@ -300,7 +300,7 @@
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "save-activity-complete", "eventElement": "#save-activity", "operations": [
+  { "eventTrigger": "save-activity-complete", "eventElement": "#save-activity", "operations": [
       { "type": "conditional",
         "inputs": [
           { "type": "==",
@@ -341,7 +341,7 @@
   ] }
 ]'>{{ page.common.save }}</button>
 <!-- Loads the previous activity in the current form or clear the forms where a previous activity does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-activity" type="button" class="btn btn-default wb-calculate" data-add-source="activity" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-activity", "operations": [
+<button id="cancel-activity" type="button" class="btn btn-default wb-calculate" data-add-source="activity" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#cancel-activity", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -391,7 +391,7 @@
   }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current activity from memory, loads the previous activity in the current form, or resets the form if no previous activity exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
-<button id="delete-activity" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-activity", "operations": [
+<button id="delete-activity" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#delete-activity", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#delete-activity", "outputEvent": "delete-activity-proceed" }
@@ -413,7 +413,7 @@
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-activity" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-activity", "operations": [
   { "resetForm": "#activity-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-another-activity", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-another-activity", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-activity, #delete-activity, #add-another-activity, #add-component", "outputProperty": "disabled", "value": true },
@@ -426,7 +426,7 @@
 <!-- Disabled by default. Resets the component form, enables/disables buttons in the component form, shows the component form, hides this form. -->
 <button id="add-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-component", "operations": [
   { "resetForm": "#component-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-component", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-component", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-component, #delete-component, #add-another-component, #add-confidentiality, #add-integrity, #add-availability", "outputProperty": "disabled", "value": true },
@@ -448,7 +448,7 @@
 
 ## {{ page.component.title }}
 
-<div id="component-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "input", "eventElement": "#component-fields-container", "operations": [
+<div id="component-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#component-fields-container", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -530,7 +530,7 @@
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-component" type="submit" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#component-form", "listenerElement": "body", "returnFalse": true, "operations": [
+  { "eventTrigger": "submit", "eventElement": "#component-form", "listenerElement": "body", "returnFalse": true, "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#cancel-component", "outputAttribute": "data-add-source", "value": "component" },
@@ -538,7 +538,7 @@
       ]
     }
   ] },
-  { "ignoreInit": true, "eventTrigger": "save-component-complete", "eventElement": "#save-component", "operations": [
+  { "eventTrigger": "save-component-complete", "eventElement": "#save-component", "operations": [
       { "type": "conditional",
         "inputs": [
           { "type": "==",
@@ -584,7 +584,7 @@
   ] }
 ]'>{{ page.common.save }}</button>
 <!-- Loads the previous component in the current form or clear the forms where a previous component does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-component" type="button" class="btn btn-default wb-calculate" data-add-source="component" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
+<button id="cancel-component" type="button" class="btn btn-default wb-calculate" data-add-source="component" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#cancel-component", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -634,7 +634,7 @@
   }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current component from memory, loads the previous component in the current form, or resets the form if no previous component exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
-<button id="delete-component" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-component", "operations": [
+<button id="delete-component" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#delete-component", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#delete-component", "outputEvent": "delete-component-proceed" }
@@ -660,7 +660,7 @@
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-component" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-component", "operations": [
   { "resetForm": "#component-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-another-component", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-another-component", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-component, #delete-component, #add-another-component, #add-confidentiality, #add-integrity, #add-availability", "outputProperty": "disabled", "value": true },
@@ -675,7 +675,7 @@ for lossType in page.lossTypes %}{%
 <!-- Disabled by default. Resets the loss of {{ lossType }} form, enables/disables buttons in the loss of {{ lossType }} form, shows the loss of {{ lossType }} form, hides this form. -->
 <button id="add-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-{{ lossType }}", "operations": [
   { "resetForm": "#{{ lossType }}-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-{{ lossType }}", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-{{ lossType }}", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-{{ lossType }}, #delete-{{ lossType }}, #add-another-{{ lossType }}{% if lossType != "confidentiality" %}, #add-confidentiality-{{ lossType }}-form{% endif %}{% if lossType != "integrity" %}, #add-integrity-{{ lossType }}-form{% endif %}{% if lossType != "availability" %}, #add-availability-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
@@ -703,7 +703,7 @@ for lossType in page.lossTypes %}{%
 
 {{ page[ lossType ].intro }}
 
-<div id="{{ lossType }}-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "input", "eventElement": "#{{ lossType }}-fields-container", "operations": [
+<div id="{{ lossType }}-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#{{ lossType }}-fields-container", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -803,7 +803,7 @@ for lossType in page.lossTypes %}{%
 <div class="btn-group" markdown="0">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-{{ lossType }}" type="submit" disabled="disabled" class="btn btn-primary wb-format-gen wb-calculate" data-wb-calculate='[
-  { "ignoreInit": true, "eventTrigger": "submit", "eventElement": "#{{ lossType }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
+  { "eventTrigger": "submit", "eventElement": "#{{ lossType }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
       { "type": "action",
         "inputs": [
           { "type": "outputValue", "outputTarget": "#cancel-{{ lossType }}", "outputAttribute": "data-add-source", "value": "{{ lossType }}" },
@@ -812,7 +812,7 @@ for lossType in page.lossTypes %}{%
       }
     ]
   },
-  { "ignoreInit": true, "eventTrigger": "save-{{ lossType }}-complete", "eventElement": "#save-{{ lossType }}", "operations": [
+  { "eventTrigger": "save-{{ lossType }}-complete", "eventElement": "#save-{{ lossType }}", "operations": [
       { "type": "conditional",
         "inputs": [
           { "type": "==",
@@ -862,7 +862,7 @@ for lossType in page.lossTypes %}{%
   ] }
 ]'>{{ page.common.save }}</button>
 <!-- Loads the previous loss of {{ lossType }} in the current form or clear the forms where a previous loss of {{ lossType }} does not exist. Also enables/disables buttons in the current form. -->
-<button id="cancel-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate" data-add-source="{{ lossType }}" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#cancel-{{ lossType }}", "operations": [
+<button id="cancel-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate" data-add-source="{{ lossType }}" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#cancel-{{ lossType }}", "operations": [
   { "type": "conditional",
     "inputs": [
       { "type": "==",
@@ -912,7 +912,7 @@ for lossType in page.lossTypes %}{%
   }
 ] }'>{{ page.common.cancel }}</button>
 <!-- Disabled by default. (TODO) Brings up a delete confirmation dialog. If confirmed, deletes the current loss of {{ lossType }} from memory, loads the previous loss of {{ lossType }} in the current form, or resets the form if no previous loss of {{ lossType }} exists. Also updates buttons across forms and enables/disabled buttons in the current form. -->
-<button id="delete-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#delete-{{ lossType }}", "operations": [
+<button id="delete-{{ lossType }}" type="button" disabled="disabled" class="btn btn-default wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#delete-{{ lossType }}", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "event", "outputTarget": "#delete-{{ lossType }}", "outputEvent": "delete-{{ lossType }}-proceed" }
@@ -946,7 +946,7 @@ for lossTypeInner in page.lossTypes %}{%
 <!-- Disabled by default. Resets the current form and enables/disables buttons in the current form. -->
 <button id="add-another-{{ lossTypeInner }}" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-another-{{ lossTypeInner }}", "operations": [
   { "resetForm": "#{{ lossTypeInner }}-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-another-{{ lossTypeInner }}", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-another-{{ lossTypeInner }}", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-{{ lossTypeInner }}, #delete-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
@@ -961,7 +961,7 @@ for lossTypeInner in page.lossTypes %}{%
 <!-- Disabled by default. Resets the loss of {{ lossTypeInner }} form, enables/disables buttons in the loss of {{ lossTypeInner }} form, shows the loss of {{ lossTypeInner }} form, hides this form. -->
 <button id="add-{{ lossTypeInner }}-{{ lossType }}-form" type="button" disabled="disabled" class="btn btn-default wb-format-gen wb-calculate" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#add-{{ lossTypeInner }}-{{ lossType }}-form", "operations": [
   { "resetForm": "#{{ lossTypeInner }}-form" }
-] }' data-wb-calculate='{ "ignoreInit": true, "eventTrigger": "click", "eventElement": "#add-{{ lossTypeInner }}-{{ lossType }}-form", "operations": [
+] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-{{ lossTypeInner }}-{{ lossType }}-form", "operations": [
   { "type": "action",
     "inputs": [
       { "type": "outputValue", "outputTarget": "#save-{{ lossTypeInner }}, #delete-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },

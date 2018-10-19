@@ -7,7 +7,7 @@
 <h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}{{ site.Colon[ page.lang ] }}</h3>
 
 <!-- Progress bar: Uses the percent complete for the value (dividing the number of non-hidden rows with scores by the number of non-hidden rows) --> 
-<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
   { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", 
     "inputs": [
       { "type": "add",
@@ -48,7 +48,7 @@ endfor %}
 </section>
 
 <!-- Final results section. Determines a result based upon the Initial results section (Criteria 1 + Criteria 2) * (Criteria 3 + Criteria 4 + Criteria 5). The resulting Impact level will be the highest impact level of the two criterias, unless one of the criteria has a failed result, which instead results in an overall fail. -->
-<section id="final-result-section" class="panel panel-default wb-calculate" data-wb-calculate='{ "eventTrigger": "initial-results-updated", "eventElement": "#final-result-section", "operations": [
+<section id="final-result-section" class="panel panel-default wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "initial-results-updated", "eventElement": "#final-result-section", "operations": [
   { "type": "conditional",
       "inputs": [
         { "type": ">=",
@@ -197,7 +197,7 @@ endfor %}
 <th>{{ site.Score[ page.lang ] }}</th>
 </tr>
 </thead>
-<tbody class="wb-calculate" data-wb-calculate='{ "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [{%
+<tbody class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [{%
 for index in (0..4) %}{%
   assign criteriaNumber = index | plus: 1 %}
   { "type": "add", "query": ".criteria-{{ criteriaNumber }}-score-max", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total", "decimalPlaces": 2 },

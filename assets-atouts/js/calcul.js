@@ -19,8 +19,6 @@ var componentName = "wb-calculate",
     initEvent = "wb-init" + selector,
     $document = wb.doc,
     defaults = {
-      ignoreInit: false,
-      returnFalse: false
     },
 
     /**
@@ -84,7 +82,7 @@ var componentName = "wb-calculate",
             }
           }
 
-          if ( !settings[ "ignoreInit" ] ) {
+          if ( settings[ "onInit" ] === true ) {
             handleEvent( event, settings, true );
           }
         }
