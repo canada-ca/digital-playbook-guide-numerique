@@ -387,8 +387,8 @@ var componentName = "wb-format-gen",
           tableColSpecsLength = tableColSpecs.length,
           rowIndex, numOuterRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
           index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
-          columnSourceArray, relativeToArray, columnDataArray, rowspan, elementCounts, elementArray, element, countArray, count,
-          relativeCount, indexesArray, maxRows, result, totalCountArray;
+          columnSourceArray, relativeToArray, rowspan, elementCounts, elementArray, element, countArray, count, relativeCount,
+          indexesArray, maxRows, result, totalCountArray, dataContainerSource;
 
       // Handle no data being passed
       if ( !data || data.length === 0 ) {
@@ -399,17 +399,12 @@ var componentName = "wb-format-gen",
       for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
         tableColSpec = tableColSpecs[ tableColSpecIndex ];
 
-        // Pre-process the indexesKeys (convert objects to values)
-        indexesKeys = retrieveValue( tableColSpec.dataContainerSource );
-
         if ( tableColSpec.relativeToColumn === -1 ) {
-          indexesKeysLength = indexesKeys.length;
-          dataNode = data;
+          // Pre-process the indexesKeys (convert objects to values)
+          indexesKeys = retrieveValue( tableColSpec.dataContainerSource );
 
           // Find the column data array
-          for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
-            dataNode = dataNode[ indexKey ];
-          }
+          dataNode = findData( data, indexesKeys, null );
 
           numOuterRows = dataNode.length;
           break;
@@ -423,24 +418,23 @@ var componentName = "wb-format-gen",
         for ( tableColSpecIndex = 0; tableColSpecIndex < tableColSpecsLength; tableColSpecIndex += 1 ) {
           tableColSpec = tableColSpecs[ tableColSpecIndex ];
           relativeToColumn = tableColSpec.relativeToColumn;
+          dataContainerSource = tableColSpec.dataContainerSource;
 
           if ( relativeToColumn === -1 ) {
-            // Get element to push into the row array
-            indexesKeys = tableColSpec.dataContainerSource.concat( [ rowIndex ], tableColSpec.dataElementSource );
-            indexesKeysLength = indexesKeys.length;
-            dataNode = data;
-
-            // Find the column data array and push into the source Array
-            for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
-              dataNode = dataNode[ indexesKeys[ indexKeyIndex ] ];
-            }
+            // Find the column data array
+            indexesKeys = dataContainerSource.concat( [ rowIndex ], tableColSpec.dataElementSource );
+            dataNode = findData( data, indexesKeys, "" );
           } else {
             // Need to find the column data array first since it is relative to another column
             relativeToArray = [];
 
             indexesKeysArray =  [];
-            if ( tableColSpec.dataContainerSource.length > 0 ) {
-              indexesKeysArray.push( tableColSpec.dataContainerSource );
+            if ( dataContainerSource.length > 0 ) {
+              if ( Array.isArray( dataContainerSource[ 0 ] ) ) {
+                indexesKeysArray = indexesKeysArray.concat( dataContainerSource );
+              } else {
+                indexesKeysArray.push( dataContainerSource );
+              }
             }
             if ( tableColSpec.dataElementSource.length > 0 ) {
               indexesKeysArray.push( tableColSpec.dataElementSource );
@@ -448,18 +442,22 @@ var componentName = "wb-format-gen",
 
             while ( typeof relativeToColumn !== "undefined" && relativeToColumn !== -1 ) {
               relativeToArray.unshift( relativeToColumn );
-              columnDataArray = tableColSpecs[ relativeToColumn ].relativeToColumn === -1 ?
+              dataContainerSource = tableColSpecs[ relativeToColumn ].relativeToColumn === -1 ?
                 tableColSpecs[ relativeToColumn ].dataContainerSource.concat( [ rowIndex ] ) : 
                 tableColSpecs[ relativeToColumn ].dataContainerSource;
 
-              if ( columnDataArray && columnDataArray.length > 0 ) {
-                indexesKeysArray.unshift( columnDataArray );
+              if ( dataContainerSource && dataContainerSource.length > 0 ) {
+                if ( Array.isArray( dataContainerSource[ 0 ] ) ) {
+                  indexesKeysArray = dataContainerSource.concat( indexesKeysArray );
+                } else {
+                  indexesKeysArray.unshift( dataContainerSource );
+                }
               }
 
               relativeToColumn = tableColSpecs[ relativeToColumn ].relativeToColumn;
             }
 
-            dataNode = findData( data, indexesKeysArray );
+            dataNode = findData( data, indexesKeysArray, "" );
           }
 
           rowArray.push( dataNode );
@@ -500,7 +498,7 @@ var componentName = "wb-format-gen",
 
                 for ( index = 0, length = relativeToArray.length; index < length; index += 1 ) {
                   relativeToColumn = relativeToArray[ index ];
-                  result = getNestedArrayElementCounts( dataNode, ( Array.isArray( rowArray[ relativeToColumn ] ) ? ( length - index - 1 ) : 0 ) );
+                  result = getNestedArrayElementCounts( dataNode, rowArray[ relativeToColumn ] );
 
                   // Only update the counts of relative columns if they are null, undefined or less than new total row count
                   count = countArray[ relativeToColumn ];
@@ -524,23 +522,24 @@ var componentName = "wb-format-gen",
           if ( Array.isArray( element ) ) {
             rowArray[ index ] = flattenArray( element );
             countArray[ index ] = flattenArray( countArray[ index ] );
+          }
 
-            // Check each column count against maxRows (sum up numbers in arrays).
-            // If less than maxRows, then push "" and 1 into each array until the column count equals maxRows
-            if ( totalCountArray[ index ] < maxRows ) {
-              count = countArray[ index ];
-              if ( Array.isArray( count ) ) {
-                count = totalCountArray[ index ];
-                while ( count < maxRows ) {
-                  rowArray[ index ].push( "" );
-                  countArray[ index ].push( 1 );
-                  count += 1;
-                }
-                totalCountArray[ index ] = count;
-              } else {
-                if ( count < maxRows ) {
-                  countArray[ index ] = maxRows;
-                }
+          // Check each column count against maxRows (sum up numbers in arrays).
+          // If less than maxRows, then push "" and 1 into each array until the column count equals maxRows
+          // or increase the count to maxRows if it is not a nested array
+          if ( totalCountArray[ index ] < maxRows ) {
+            count = countArray[ index ];
+            if ( Array.isArray( count ) ) {
+              count = totalCountArray[ index ];
+              while ( count < maxRows ) {
+                rowArray[ index ].push( "" );
+                countArray[ index ].push( 1 );
+                count += 1;
+              }
+              totalCountArray[ index ] = count;
+            } else {
+              if ( count < maxRows ) {
+                countArray[ index ] = maxRows;
               }
             }
           }
@@ -580,38 +579,39 @@ var componentName = "wb-format-gen",
      * @overview Retrieve data from an array or object using a series of keys/indexes
      * @param data {Object/Array} Object/array on which to apply a series of keys/indexes to retrieve specific data
      * @param indexesKeysArray {Array} Either an array of indexes/keys or nested arrays of indexes keys (could be multiple levels deep)
+     * @param emptyResult {String/Other} (Optional, defaults to null) What to output in the case of no value being found.
      * @return {Primitive/Array} Either a data primitive, an array of primitives or an array of arrays (could be multiple levels deep)
      */
-    findData = function( data, indexesKeysArray ) {
-      var typeofResults = typeof indexesKeysArray[ 0 ] === "object",
-          currentIndexesKeys = typeofResults ? indexesKeysArray[ 0 ] : indexesKeysArray,
+    findData = function( data, indexesKeysArray, emptyResult ) {
+      var nestedArray = typeof indexesKeysArray[ 0 ] === "object",
+          currentIndexesKeys = nestedArray ? indexesKeysArray[ 0 ] : indexesKeysArray,
           indexesKeysLength = currentIndexesKeys.length,
           dataNode = data,
-          emptyResult = "",
+          currEmptyResult = emptyResult !== null && typeof emptyResult !== "undefined" ? emptyResult : null,
           indexKeyIndex, index, length, dataResults, result;
 
       // Apply the keys/indexes to the current data node
       for ( indexKeyIndex = 0; indexKeyIndex < indexesKeysLength; indexKeyIndex += 1 ) {
         dataNode = dataNode[ currentIndexesKeys[ indexKeyIndex ] ];
 
-        if ( typeof dataNode === "undefined" ) {
-          return emptyResult;
+        if ( dataNode === null || typeof dataNode === "undefined" ) {
+          return currEmptyResult;
         }
       }
 
       // If there are more keys/indexes to process, then call this function recursively for each element in the dataNode array
-      if ( indexesKeysArray.length > 1 ) {
+      if ( nestedArray && indexesKeysArray.length > 1 ) {
         length = dataNode.length;
 
         if ( length > 0 ) {
           dataResults = [];
      
           for ( index = 0; index < length; index += 1 ) {
-            result = findData( dataNode[ index ], indexesKeysArray.slice( 1 ) );
+            result = findData( dataNode[ index ], indexesKeysArray.slice( 1 ), currEmptyResult );
             dataResults.push( result );
           }
         } else {
-          return emptyResult;
+          return currEmptyResult;
         }
 
         // Return the element instead of the array for single element arrays
@@ -625,14 +625,15 @@ var componentName = "wb-format-gen",
      * @method getNestedArrayElementCounts
      * @overview Determines the non-array element count in nested arrays and the sum of element counts for the parent array
      * @param data {Array} Array for determining the node count (could have multiple nested arrays)
-     * @param maxCountArrayLevels {Number} (Optional, defaults to 1000 which is no maximum) Maximum number of count array levels allowed (any beyond are summed together)
+     * @param constraintData {Array/Other} (Optional) Array structure that the resulting subElementCount needs to match (same number of nested arrays)
      * @return {Object} Object containing the following properties:
      *    totalElementCount {Number} Total number of primitive elements within data
      *    subElementCount {Array/Number} Count of number of primitive elements within each array element
      */
-    getNestedArrayElementCounts = function( data, maxCountArrayLevels ) {
+    getNestedArrayElementCounts = function( data, constraintData ) {
       var totalElementCount = 0,
-          currMaxCountArrayLevels = maxCountArrayLevels !== null ? maxCountArrayLevels : 1000,
+          isConstraintDataArray = Array.isArray( constraintData ),
+          returnSubElementCount = ( isConstraintDataArray || constraintData === null || typeof constraintData === "undefined" ) ? true : false,
           arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
 
       if ( !Array.isArray( data ) ) {
@@ -645,7 +646,7 @@ var componentName = "wb-format-gen",
         for ( index = 0; index < arrayLength; index += 1) {
           dataNode = data[ index ];
           if ( Array.isArray( dataNode ) && dataNode.length > 0 ) {
-            result = getNestedArrayElementCounts( dataNode, ( currMaxCountArrayLevels !== 1000 ? currMaxCountArrayLevels - 1 : 1000 ) );
+            result = getNestedArrayElementCounts( dataNode, ( isConstraintDataArray ? constraintData[ index ] : constraintData ) );
             totalElementCount += result.totalElementCount;
             elementCount.push( result.subElementCount );
           } else {
@@ -655,7 +656,7 @@ var componentName = "wb-format-gen",
         }
       }
 
-      if ( currMaxCountArrayLevels < 1 ) {
+      if ( !returnSubElementCount ) {
         elementCount = totalElementCount;
       }
 
@@ -1128,8 +1129,7 @@ var componentName = "wb-format-gen",
     retrieveData = function( key, indexesKeys, storageType, returnAs, element ) {
       var currIndexesKeys = indexesKeys ? indexesKeys : [],
           currStorageType = storageType ? storageType : "sessionStorage",
-          indexesKeysLength = currIndexesKeys.length,
-          data, index, dataType;
+          data, dataType;
 
       // Pre-process the indexesKeys (convert objects to values)
       currIndexesKeys = retrieveValue( currIndexesKeys );
@@ -1151,14 +1151,7 @@ var componentName = "wb-format-gen",
       }
 
       if ( data !== null && typeof data !== "undefined" && data.length > 0 ) {
-        data = JSON.parse( data );
-
-        for ( index = 0; index < indexesKeysLength; index += 1 ) {
-          if ( data === null || typeof data === "undefined" ) {
-            break;
-          }
-          data = data[ currIndexesKeys[ index ] ];
-        }
+        data = findData( JSON.parse( data ), currIndexesKeys, null );
 
         dataType = typeof data;
         if ( data !== null && typeof data !== "undefined" && returnAs && returnAs !== dataType ) {
@@ -1583,8 +1576,8 @@ $document.on( "click change", selector, function( event ) {
 // Bind the init event of the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );
 
-// Make the retrieveValue, retrieveData, storeData and outputStorage functions available to other plugins
-wb[ "wb-format-gen" ] = { retrieveValue: retrieveValue };
+// Make the retrieveValue and findData functions available to other plugins
+wb[ "wb-format-gen" ] = { retrieveValue: retrieveValue, findData: findData };
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
