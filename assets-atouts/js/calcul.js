@@ -252,13 +252,7 @@ var componentName = "wb-calculate",
 
           // If value is nested in JSON, then retrieve it
           if ( indexesKeys && !indexesKeysUsed ) {
-            value = JSON.parse( value );
-            length = indexesKeys.length;
-
-            for ( index = 0; index < length; index += 1 ) {
-              value = value[ indexesKeys[ index ] ];
-            }
-
+            value = wb[ "wb-format-gen" ].findData( JSON.parse( value ), indexesKeys, null );
             indexesKeysUsed = true;
           }
 

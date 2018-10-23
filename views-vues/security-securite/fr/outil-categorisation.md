@@ -106,12 +106,13 @@ lossOfCommon:
   "injury-significance": Quelle est l'importance de la blessure attendue?
   "injury-significance-sub-label": Sélectionnez l'importance de la blessure
   "injury-significance-table-heading": L'importance de la blessure
-  "injury-significance-option-1": Très faible
-  "injury-significance-option-2": Faible
-  "injury-significance-option-3": Moyenne
-  "injury-significance-option-4": Élevé
-  "injury-significance-option-5": Très élevé
-  "injury-significance-option-0": s.o.
+  "injury-significance-options":
+    "1": Très faible
+    "2": Faible
+    "3": Moyenne
+    "4": Élevé
+    "5": Très élevé
+    "0": s.o.
   "analysis-label": Analyse
 summaryReport:
   title: Rapport sommaire
