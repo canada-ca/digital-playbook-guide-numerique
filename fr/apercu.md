@@ -14,6 +14,9 @@ altLangPage: overview
 Fournit des conseils pratiques et détaillés pour aider le gouvernement du Canada dans la transformation numérique et la prestation de services accrue, y compris en devenant plus agile, ouvert et axé sur l'utilisateur. Inclut des vues spécifiques aux tâches et des fonctions interactives pour faciliter la recherche des conseils pertinents et pour les appliquer au travail quotidien.
 {: .dpgn-overview-start}
 
+Le guide numérique est également l’occasion d’expérimenter avec de nouvelles approches tout en réutilisant le plus que possible et en fournissant des composants réutilisables pour que les autres puissent les utiliser (voir [Approches expérimentales et composants réutilisables]({{ site.baseurl }}/docs/fr/approches-experimentales-composants-reutilisables.html)).
+{: .dpgn-overview-start}
+
 {% include views-vues.html lang=page.lang %}
 
 <section class="dpgn-overview-end">

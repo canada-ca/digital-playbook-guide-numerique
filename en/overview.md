@@ -14,6 +14,9 @@ altLangPage: apercu
 Provides practical and detailed guidance to assist the Government of Canada in digital transformation and augmented service delivery, including becoming more agile, open and user-focused. Includes task-specific views and interactive features to make it easier to find relevant guidance and to apply it to day-to-day work.
 {: .dpgn-overview-start}
 
+The Digital Playbook is also an opportunity to experiment with new approaches while reusing as much as possible and contributing back reusable components for others to use (see [Experimental approaches and reusable components]({{ site.baseurl }}/docs/en/experimental-approches-reusable-components.html)).
+{: .dpgn-overview-start}
+
 {% include views-vues.html lang=page.lang %}
 
 <section class="dpgn-overview-end">
