@@ -23,12 +23,21 @@
 <th class="text-center">{{ page.summaryReport.domainTable.col2bHeader }}</th>
 <th class="text-center">{{ page.summaryReport.domainTable.col2cHeader }}</th>
 </tr>
-</thead>
+</thead>{%
+comment %}Building the ranking object in a JSON string for reuse in the filters{% endcomment %}{%
+assign rankingObject = "{ " %}{%
+for option in page.lossOfCommon[ "injury-significance-options" ] %}{%
+  unless forloop.first %}{%
+    assign rankingObject = rankingObject | append: ", " %}{%
+  endunless %}{%
+  assign rankingObject = rankingObject | append: '"' | append: option[ 1 ] | append: '": ' | append: option[ 0 ] %}{%
+endfor %}{%
+assign rankingObject = rankingObject | append: " }" %}
 <tbody class="wb-format-gen" data-wb-format-gen='{ "onInit": true, "eventTrigger": "storage-updated.wb-format-gen", "action": "set-table-rows", "source": "sessionStorage", "key": "assessment", "tableColSpecs": [
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
-  { "relativeToColumn": 0, "dataContainerSource": [ [ "activities" ], [ 0, "components" ], [ 0, "confidentiality" ] ], "dataElementSource": [ 2, "text" ] },
-  { "relativeToColumn": 0, "dataContainerSource": [ [ "activities" ], [ 0, "components" ], [ 0, "integrity" ] ], "dataElementSource": [ 2, "text" ] },
-  { "relativeToColumn": 0, "dataContainerSource": [ [ "activities" ], [ 0, "components" ], [ 0, "availability" ] ], "dataElementSource": [ 2, "text" ] }
+  { "relativeToColumn": 0, "dataContainerSource": [ [ "activities" ], [ 0, "components" ], [ 0, "confidentiality" ] ], "dataElementSource": [ 2, "text" ], "filterType": "max", "filterCriteria": "", "ranking": {{ rankingObject }} },
+  { "relativeToColumn": 0, "dataContainerSource": [ [ "activities" ], [ 0, "components" ], [ 0, "integrity" ] ], "dataElementSource": [ 2, "text" ], "filterType": "max", "filterCriteria": "", "ranking": {{ rankingObject }} },
+  { "relativeToColumn": 0, "dataContainerSource": [ [ "activities" ], [ 0, "components" ], [ 0, "availability" ] ], "dataElementSource": [ 2, "text" ], "filterType": "max", "filterCriteria": "", "ranking": {{ rankingObject }} }
 ], "container": "#summary-report-domain-table tbody" }'>
 <tr>
 <td></td>
@@ -58,9 +67,9 @@
   { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 0, "dataContainerSource": [ [ "activities" ], [ 0, "components" ] ], "dataElementSource": [ 0, "state" ] },
   { "relativeToColumn": 1, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
-  { "relativeToColumn": 1, "dataContainerSource": [ [ 0, "confidentiality" ] ], "dataElementSource": [ 2, "text" ] },
-  { "relativeToColumn": 1, "dataContainerSource": [ [ 0, "integrity" ] ], "dataElementSource": [ 2, "text" ] },
-  { "relativeToColumn": 1, "dataContainerSource": [ [ 0, "availability" ] ], "dataElementSource": [ 2, "text" ] }
+  { "relativeToColumn": 1, "dataContainerSource": [ [ 0, "confidentiality" ] ], "dataElementSource": [ 2, "text" ], "filterType": "max", "filterCriteria": "", "ranking": {{ rankingObject }} },
+  { "relativeToColumn": 1, "dataContainerSource": [ [ 0, "integrity" ] ], "dataElementSource": [ 2, "text" ], "filterType": "max", "filterCriteria": "", "ranking": {{ rankingObject }} },
+  { "relativeToColumn": 1, "dataContainerSource": [ [ 0, "availability" ] ], "dataElementSource": [ 2, "text" ], "filterType": "max", "filterCriteria": "", "ranking": {{ rankingObject }} }
 ], "container": "#summary-report-component-table tbody" }'>
 <tr>
 <td></td>

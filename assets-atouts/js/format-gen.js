@@ -374,8 +374,12 @@ var componentName = "wb-format-gen",
      *    dataContainerSource {Array} Source of the column data array within the passed data object/array in the form of a series of
      *      indexes/keys applied sequentially. If relativeToColumn is not -1, then the indexes/keys are relative to the data source of     
      *      the specified column (an empty array means a sibling relationship), otherwise they are relative to the passed data object/array.
-     *    dataElementSource {Array} (optional, defaults to empty array) Source of the data within each column data array element if 
-     *      the data is not the column data array element itself. Indexes/keys are relative to the column data array element.
+     *    dataElementSource {Array} Source of the data within each column data array element if the data is not the column data array
+     *      element itself (empty array is allowed). Indexes/keys are relative to the column data array element.
+     *    filterType {String} (optional, default is no filter). Filter type to apply to the rows in a parent/child relationship.
+            See filterArray for supported filter types.
+     *    filterCriteria {Number/String} (optional, required if filterType is specified). Filter criteria to apply for the filter type.
+     *    ranking {Object} (optional) Ranking of possible strings for the purposes of filtering (see filterArray for more details).
      * @param repeatValues {Boolean} (defaults to false) Whether or not to repeat values in one to many relationships (i.e., repeat value on each row rather than having the value span multiple rows)
      * @return {Object} Object containing the following properties:
      *    tableArray {Array} Table array which is an array of rows containing an array of columns with each column containing a primitive value (e.g., number, string, boolean), an array of primitive values, or nested arrays of primitive values. Nesting denotes 1 to many relationships between a parent and child cells (where rowspan would be used).
@@ -460,6 +464,27 @@ var componentName = "wb-format-gen",
             dataNode = findData( data, indexesKeysArray, "" );
           }
 
+          // If data filtering is specified, then apply the filtering
+          if ( typeof dataNode === "object" && tableColSpec.filterType ) {
+            // Flatten the array if the parent column has less rows than the current column
+            if ( !Array.isArray( rowArray[ tableColSpec.relativeToColumn ] ) || rowArray[ tableColSpec.relativeToColumn ].length < dataNode.length ) {
+              // Only flatten the deepest level
+              dataNode = flattenArray( dataNode, true );
+            } else if ( Array.isArray( rowArray[ tableColSpec.relativeToColumn ] ) ) {
+              // Don't want the number of outer rows to change so make sure every dataNode item is a nested array so that it is kept
+              let length = dataNode.length,
+                  index;
+
+              for ( index = 0; index < length; index += 1 ) {
+                if ( typeof dataNode[ index ] !== "object" ) {
+                  dataNode[ index ] = [ dataNode[ index ] ];
+                }
+              }
+            }
+
+            dataNode = filterArray( dataNode, tableColSpec.filterType, tableColSpec.filterCriteria, tableColSpec.ranking );
+          }
+
           rowArray.push( dataNode );
         }
 
@@ -525,22 +550,54 @@ var componentName = "wb-format-gen",
           }
 
           // Check each column count against maxRows (sum up numbers in arrays).
-          // If less than maxRows, then push "" and 1 into each array until the column count equals maxRows
-          // or increase the count to maxRows if it is not a nested array
+          // If less than maxRows, then make sure it adds up to maxRows.
           if ( totalCountArray[ index ] < maxRows ) {
             count = countArray[ index ];
             if ( Array.isArray( count ) ) {
-              count = totalCountArray[ index ];
-              while ( count < maxRows ) {
-                rowArray[ index ].push( "" );
-                countArray[ index ].push( 1 );
-                count += 1;
+              let relativeCount = countArray[ tableColSpecs[ index ].relativeToColumn ],
+                  relativeIsArray = Array.isArray( relativeCount );
+
+              if ( relativeIsArray ) {
+                // Parent column has more than one row so increase the number of current column rows to match the parent column rows
+                let relativeLength = relativeCount.length,
+                    relativeIndex, targetCount, currentCount;
+
+                for ( relativeIndex = 0; relativeIndex < relativeLength; relativeIndex += 1 ) {
+                  targetCount = relativeCount[ relativeIndex ];
+
+                  // If current column doesn't have a row for the current parent row, then add a row to the current column
+                  currentCount = count[ relativeIndex ];
+                  if ( currentCount === null || typeof currentCount === "undefined" ) {
+                    rowArray[ index ].push( "" );
+                    countArray[ index ].push( 1 );
+                    currentCount = 1;
+                  }
+
+                  if ( Array.isArray( currentCount ) ) {
+                    // Current column sub-row is an array so push in empty rows to match the parent number of rows
+                    while ( currentCount < targetCount ) {
+                      rowArray[ index ][ relativeIndex ].push( "" );
+                      countArray[ index ][ relativeIndex ].push( 1 );
+                      currentCount += 1;
+                    }
+                  } else {
+                    // Current column sub-row is not an array so increase the count to that of the parent
+                    count[ relativeIndex ] = targetCount;
+                  }
+                }
+              } else {
+                // Parent column only has a single row so push in empty rows into the current column to match maxRows
+                count = totalCountArray[ index ];
+                while ( count < maxRows ) {
+                  rowArray[ index ].push( "" );
+                  countArray[ index ].push( 1 );
+                  count += 1;
+                }
+                totalCountArray[ index ] = count;
               }
-              totalCountArray[ index ] = count;
             } else {
-              if ( count < maxRows ) {
-                countArray[ index ] = maxRows;
-              }
+              // Not an array so just sent the count to maxRows
+              countArray[ index ] = maxRows;
             }
           }
         }
@@ -556,21 +613,46 @@ var componentName = "wb-format-gen",
      * @method flattenArray
      * @overview Flattens a multi-dimensional array
      * @param array {Array} Array to flatten
+     * @param onlyDeepestLevel {Boolean} (Optional, defaults to false) Only flatten the deepest nested level
      * @return {Array} Flattened array
      */
-    flattenArray = function( array ) {
+    flattenArray = function( array, onlyDeepestLevel ) {
       var length = array.length,
           flattenedArray = [],
-          index, element;
+          hasNestedArray = false,
+          index, index2, length2, element;
+
+      // If only flattening the deepest nested level, then check for a nested array to see if it is not the deepest level
+      if ( onlyDeepestLevel ) {
+        for ( index = 0; index < length; index += 1 ) {
+          element = array[ index ];
+          if ( Array.isArray( element ) ) {
+            length2 = element.length;
+            for ( index2 = 0; index2 < length2; index2 += 1 ) {
+              if ( Array.isArray( element[ index2 ] ) ) {
+                hasNestedArray = true;
+                break;
+              }
+            }
+
+            if ( hasNestedArray ) {
+              break;
+            }
+          }
+        }
+      }
 
       for ( index = 0; index < length; index += 1 ) {
         element = array[ index ];
-        if ( Array.isArray( element ) ) {
+        if ( onlyDeepestLevel && hasNestedArray ) { 
+          flattenedArray.push( flattenArray( element, onlyDeepestLevel ) );
+        } else if ( Array.isArray( element ) ) {
           flattenedArray = flattenedArray.concat( flattenArray( element ) );
         } else {
           flattenedArray.push( element );
         }
       }
+
       return flattenedArray;
     },
 
@@ -619,6 +701,102 @@ var componentName = "wb-format-gen",
       }
 
       return dataNode;
+    },
+
+    /**
+     * @method filterArray
+     * @overview Filter an array of data, excluding any array items that don't meet the filter criteria, without affecting the original array.
+     * @param data {Array} Array to filter
+     * @param filterType {String} Filter to apply (e.g., "min", "max", "="/"==", ">", "<", ">=", "<=", "!=", "contains")
+     * @param filterCriteria {Number/String} Number or String to compare against the array item for the filter type. Ignored for "min"
+     *   and "max" filter types, although still need to specify something in this case if using the ranking parameter.
+     * @param ranking {Object} (Optional) Ranking of possible strings for the purposes of filtering. Each key is the string itself and the
+     *   value is its ranking. Can be used to filter out array items that are outside of the desired rank. When a ranking object is
+     *   provided, the included values will be used for filtering purposes instead of the data itself (data becomes the way of accessing
+     *   the ranking value).
+     * @return {Array} Filtered array
+     */
+    filterArray = function( data, filterType, filterCriteria, ranking ) {
+      var filteredData = [],
+          length = data.length,
+          rankingProvided = ( ranking !== null && typeof ranking === "object" ),
+          leadingValue = null,
+          nestedArray = false,
+          index, dataValue, comparisonValue, leadingComparisonValue;
+
+      // Check to see if there is at least one nested array
+      for ( index = 0; index < length; index += 1 ) {
+        if ( typeof data[ index ] === "object" ) {
+          nestedArray = true;
+          break;
+        }
+      }
+
+      if ( nestedArray ) {
+        // Apply the filters to just the nested arrays and then push all array items into filteredData
+        for ( index = 0; index < length; index += 1 ) {
+          dataValue = data[ index ];
+          if ( Array.isArray( dataValue ) ) {
+            // If the data is an array, then call filteredData recursively to filter the nested array instead
+            dataValue = filterArray( dataValue, filterType, filterCriteria, ranking );
+          }
+          filteredData.push( dataValue );
+        }
+      } else {
+        for ( index = 0; index < length; index += 1 ) {
+          dataValue = data[ index ];
+          comparisonValue = rankingProvided ? ranking[ dataValue ] : dataValue;
+
+          if ( filterType === "min" || filterType === "max" ) {
+            // min: Array item that is less than the other array items (or the first of the less)
+            // max: Array item that is more than the other array items (or the first of the more)
+            if ( leadingComparisonValue === null || typeof leadingComparisonValue === "undefined" || ( filterType === "min" && comparisonValue < leadingComparisonValue ) || ( filterType === "max" && comparisonValue > leadingComparisonValue ) ) {
+              leadingValue = dataValue;
+              leadingComparisonValue = comparisonValue;
+            }
+          } else if ( filterType === "=" || filterType === "==" ) {
+            // Equal to
+            if ( comparisonValue === filterCriteria ) {
+              filteredData.push( dataValue );
+            }
+          } else if ( filterType === ">" ) {
+            // Greater than
+            if ( comparisonValue > filterCriteria ) {
+              filteredData.push( dataValue );
+            }
+          } else if ( filterType === "<" ) {
+            // Less than
+            if ( comparisonValue < filterCriteria ) {
+              filteredData.push( dataValue );
+            }
+          } else if ( filterType === ">=" ) {
+            // Greater than or equal to
+            if ( comparisonValue >= filterCriteria ) {
+              filteredData.push( dataValue );
+            }
+          } else if ( filterType === "<=" ) {
+            // Less than or equal to
+            if ( comparisonValue <= filterCriteria ) {
+              filteredData.push( dataValue );
+            }
+          } else if ( filterType === "!=" ) {
+            // Not equal to
+            if ( comparisonValue != filterCriteria ) {
+              filteredData.push( dataValue );
+            }
+          } else if ( filterType === "contains" ) {
+            if ( comparisonValue.indexOf( filterCriteria ) !== -1 ) {
+              filteredData.push( dataValue );
+            }
+          }
+        }
+      }
+
+      if ( leadingValue !== null ) {
+        filteredData.push( leadingValue );
+      }
+
+      return filteredData;
     },
 
     /**

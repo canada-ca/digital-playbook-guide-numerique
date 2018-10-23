@@ -106,12 +106,14 @@ lossOfCommon:
   "injury-significance": How significant is the expected injury?
   "injury-significance-sub-label": Select the significance of injury
   "injury-significance-table-heading": Significance of injury
-  "injury-significance-option-1": Very low
-  "injury-significance-option-2": Low
-  "injury-significance-option-3": Medium
-  "injury-significance-option-4": High
-  "injury-significance-option-5": Very high
-  "injury-significance-option-0": n/a
+  "injury-significance-options":
+    "1": Very low
+    "2": Low
+    "3": Medium
+    "4": High
+    "5": Very high
+    "0": n/a
+  "significance-ranking": 
   "analysis-label": Analysis
 summaryReport:
   title: Summary Report
