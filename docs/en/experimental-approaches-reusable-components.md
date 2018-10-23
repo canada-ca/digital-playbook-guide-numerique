@@ -6,7 +6,7 @@ altLang: fr
 altLangPage: approches-experimentales-composants-reutilisables
 collectionDirectory: docs
 ---
-{{:options toc_levels=2..3 /}
+{::options toc_levels="2..3" /}
 
 One of the goals of the Digital Playbook was to experiment with new approaches while reusing as much as possible. The goal was to be platform agnostic, focusing on HTML, CSS and JavaScript while leveraging the [Web Experience Toolkit (WET)](https://wet-boew.github.io/wet-boew/index-en.html) as much as possible. Where requirements exceeded what was offered through WET, the goal was to develop reusable components that could be contributed back into WET for others to use.
 

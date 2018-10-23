@@ -6,7 +6,7 @@ altLang: en
 altLangPage: experimental-approches-reusable-components
 collectionDirectory: docs
 ---
-{{:options toc_levels=2..3 /}
+{::options toc_levels="2..3" /}
 
 L'un des objectifs du guide numérique était d'expérimenter avec de nouvelles approches tout en réutilisant le plus que possible. L'objectif était d'être agnostique sur les platformes, en se concentrant sur le HTML, le CSS et JavaScript tout en exploitant au maximum la [Boîte à outils de l'expérience Web (BOEW)](https://wet-boew.github.io/wet-boew/index-fr.html). Lorsque les exigences ont dépassé ce qui a été offert par la BOEW, l'objectif était de développer des composants réutilisables qui pourraient être contribués à la BOEW pour les autres à utiliser.
 
