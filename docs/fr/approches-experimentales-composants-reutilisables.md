@@ -162,8 +162,7 @@ Les composants d'interface de cette section utilisent des fonctions JavaScript r
 #### Exemple d'implémentation
 
 <!-- markdownlint-disable MD032 -->
-- [Évaluation d'impact algorithmique]({{ site.baseurl }}/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html) - 
-Gérer l'ordre des mises à jour des sections de résultats initiaux et des résultats finaux, mettre à jour le questionnaire rempli, naviguer entre les sections du formulaire, afficher / masquer les questions et gérer les autres modifications apportées au formulaire.
+- [Évaluation d'impact algorithmique]({{ site.baseurl }}/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html) - Gérer l'ordre des mises à jour des sections de résultats initiaux et des résultats finaux, mettre à jour le questionnaire rempli, naviguer entre les sections du formulaire, afficher / masquer les questions et gérer les autres modifications apportées au formulaire.
 - [Outil de categorisation de sécurité]({{ site.baseurl }}/views-vues/security-securite/fr/outil-categorisation.html) - Navigation entre les sections de formulaire, gestion des fonctionnalités d'ajout, de suppression, de modification et de suppression, mise à jour des rapports détaillés et de sommaire, ainsi que gestion des fonctionnalités d'enregistrement, de restauration et de téléchargement.
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
