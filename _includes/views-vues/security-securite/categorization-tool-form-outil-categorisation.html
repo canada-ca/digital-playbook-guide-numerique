@@ -1,23 +1,19 @@
 <section id="welcome-section" class="wb-frmvld">
 <form id="welcome-form" class="form-horizontal" method="post">
 
-## {{ page.welcome.heading }}
+<h2>{{ page.welcome.heading }}</h2>
 
-{{ page.welcome.intro1 }}
+<p>{{ page.welcome.intro1 }}</p>
 
-{{ page.welcome.intro2 }}
+<p>{{ page.welcome.intro2 }}</p>
 
-{{ page.welcome.intro3 }}
+<p>{{ page.welcome.intro3 }}</p>
 
 <section>
 
-<!-- markdownlint-disable MD026 -->
+<h3>{{ page.welcome.menu.heading }}</h3>
 
-### {{ page.welcome.menu.heading }}
-
-<!-- markdownlint-enable MD026 -->
-
-<div class="btn-group" markdown="0">
+<div class="btn-group">
 <!-- Resume a current assessment (only visible if assessment data is detected) -->
 <button id="resume-assessment" type="button" disabled="disabled" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#resume-assessment", "operations": [
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
@@ -52,9 +48,9 @@
 <section id="domain-section" class="hidden wb-frmvld">
 <form id="domain-form" class="form-horizontal" method="post">
 
-## {{ page.domain.title }}
+<h2>{{ page.domain.title }}</h2>
 
-{{ page.domain.intro }}
+<p>{{ page.domain.intro }}</p>
 
 <div id="domain-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#domain-fields-container", "operations": [
   { "type": "conditional",
@@ -101,7 +97,7 @@
   ] }
 ]'>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="domain-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.domain[ "domain-field-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="domain-field" id="domain-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
@@ -110,7 +106,7 @@
 
 </div>
 
-<div class="btn-group" markdown="0">
+<div class="btn-group">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-domain" type="submit" disabled="disabled" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
   { "eventTrigger": "submit", "eventElement": "#domain-form", "listenerElement": "body", "returnFalse": true, "operations": [
@@ -229,11 +225,11 @@
 <section id="activity-section" class="hidden wb-frmvld">
 <form id="activity-form" class="form-horizontal" method="post">
 
-## {{ page.activity.title }}
+<h2>{{ page.activity.title }}</h2>
 
-{{ page.activity.intro1 }}
+<p>{{ page.activity.intro1 }}</p>
 
-{{ page.activity.intro2 }}
+<p>{{ page.activity.intro2 }}</p>
 
 <div id="activity-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#activity-fields-container", "operations": [
   { "type": "conditional",
@@ -280,7 +276,7 @@
   ] }
 ]'>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="activity-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.activity[ "activity-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="activity-field" id="activity-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
@@ -289,7 +285,7 @@
 
 </div>
 
-<div class="btn-group" markdown="0">
+<div class="btn-group">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-activity" type="submit" disabled="disabled" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
   { "eventTrigger": "submit", "eventElement": "#activity-form", "listenerElement": "body", "returnFalse": true, "operations": [
@@ -446,7 +442,7 @@
 <section id="component-section" class="hidden wb-frmvld">
 <form id="component-form" class="form-horizontal" method="post">
 
-## {{ page.component.title }}
+<h2>{{ page.component.title }}</h2>
 
 <div id="component-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#component-fields-container", "operations": [
   { "type": "conditional",
@@ -493,21 +489,21 @@
   ] }
 ]'>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="component-field" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.component[ "component-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="component-field" id="component-field" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="component-description" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.component[ "component-description-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <textarea name="component-description" id="component-description" required="required"></textarea>
 </div>
 </div>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="component-type" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.component[ "component-type-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <select class="form-control" id="component-type" name="component-type" required="required">
@@ -518,7 +514,7 @@
 </div>
 </div>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="authoritative-source" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.component[ "authoritative-source-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <textarea name="authoritative-source" id="authoritative-source" required="required"></textarea>
@@ -527,7 +523,7 @@
 
 </div>
 
-<div class="btn-group" markdown="0">
+<div class="btn-group">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-component" type="submit" class="btn btn-primary wb-calculate wb-format-gen" data-wb-calculate='[
   { "eventTrigger": "submit", "eventElement": "#component-form", "listenerElement": "body", "returnFalse": true, "operations": [
@@ -699,9 +695,9 @@ for lossType in page.lossTypes %}{%
 <section id="{{ lossType }}-section" class="hidden wb-frmvld">
 <form id="{{ lossType }}-form" class="form-horizontal" method="post">
 
-## {{ page[ lossType ].title }}
+<h2>{{ page[ lossType ].title }}</h2>
 
-{{ page[ lossType ].intro }}
+<p>{{ page[ lossType ].intro }}</p>
 
 <div id="{{ lossType }}-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#{{ lossType }}-fields-container", "operations": [
   { "type": "conditional",
@@ -748,14 +744,14 @@ for lossType in page.lossTypes %}{%
   ] }
 ]'>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="failure-scenario-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon[ "failure-scenario-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <input name="failure-scenario-{{ lossType }}" id="failure-scenario-{{ lossType }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 </div>
 </div>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="type-of-injury-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page[ lossType ][ "type-of-injury-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <select class="form-control" id="type-of-injury-{{ lossType }}" name="type-of-injury-{{ lossType }}" required="required">
@@ -774,7 +770,7 @@ for lossType in page.lossTypes %}{%
 </div>
 </div>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="injury-significance-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon[ "injury-significance" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <select class="form-control" id="injury-significance-{{ lossType }}" name="injury-significance-{{ lossType }}" required="required">
@@ -789,9 +785,9 @@ for lossType in page.lossTypes %}{%
 </div>
 </div>
 
-**{{ page[ lossType ].example1 }}** {{ page[ lossType ].example2 }}
+<p><strong>{{ page[ lossType ].example1 }}</strong> {{ page[ lossType ].example2 }}</p>
 
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="analysis-{{ lossType }}" class="required {{ page.labelGridClass }}"><span class="field-name">{{ page.lossOfCommon[ "analysis-label" ] }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div class="{{ page.fieldGridClass }}">
 <textarea name="analysis-{{ lossType }}" id="analysis-{{ lossType }}" required="required"></textarea>
@@ -800,7 +796,7 @@ for lossType in page.lossTypes %}{%
 
 </div>
 
-<div class="btn-group" markdown="0">
+<div class="btn-group">
 <!-- Save to memory, update buttons across forms, enables/disables buttons in the current form, and (TODO) shows an indicator that the save was successful -->
 <button id="save-{{ lossType }}" type="submit" disabled="disabled" class="btn btn-primary wb-format-gen wb-calculate" data-wb-calculate='[
   { "eventTrigger": "submit", "eventElement": "#{{ lossType }}-form", "listenerElement": "body", "returnFalse": true, "operations": [

@@ -1,15 +1,15 @@
 <section id="results-section" class="hidden">
 
-## Results
+<h2>Results</h2>
 
 <div class="wb-tabs">
 <div class="tabpanels">
 
 <details id="summary-report-section">
 
-<summary markdown="0">{{ page.summaryReport.title }}</summary>
+<summary>{{ page.summaryReport.title }}</summary>
 
-{{ page.summaryReport.intro }}
+<p>{{ page.summaryReport.intro }}</p>
 
 <table id="summary-report-domain-table" class="table table-bordered">
 <caption>{{ page.summaryReport.domainTable.caption }}</caption>
@@ -86,11 +86,11 @@ assign rankingObject = rankingObject | append: " }" %}
 
 <details id="detailed-report-section" open="open">
 
-<summary markdown="0">{{ page.detailedReport.title }}</summary>
+<summary>{{ page.detailedReport.title }}</summary>
 
-{{ page.detailedReport.intro1 }}
+<p>{{ page.detailedReport.intro1 }}</p>
 
-{{ page.detailedReport.intro2 }}
+<p>{{ page.detailedReport.intro2 }}</p>
 
 <table id="detailed-report-table" class="table table-bordered">
 <thead>

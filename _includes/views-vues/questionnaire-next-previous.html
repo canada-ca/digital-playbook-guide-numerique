@@ -5,7 +5,7 @@ comment %}@param nextHeading {Number} (Optional, defaults to 3) Level of the hea
 comment %}@param previousId {String} (Optional, defaults to none) Id of the previous section (excluding "-section").{% endcomment %}{%
 comment %}@param previousHeading {Number} (Optional, defaults to 3) Level of the heading of the previous section.{% endcomment %}{%
 comment %}@return {String} Generated buttons.{% endcomment %}
-<div class="btn-group" markdown="0">{%
+<div class="btn-group">{%
 if include.nextId %}
 <button type="submit" class="btn btn-primary wb-calculate" data-wb-calculate='{ "eventTrigger": "submit", "eventElement": "#{{ include.currentId }}-form", "listenerElement": "body", "returnFalse": true, "operations": [
   { "type": "action",
