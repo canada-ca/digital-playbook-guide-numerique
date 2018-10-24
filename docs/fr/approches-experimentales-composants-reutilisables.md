@@ -3,7 +3,7 @@ layout: default
 title: Approches expérimentales et composants réutilisables
 lang: fr
 altLang: en
-altLangPage: experimental-approches-reusable-components
+altLangPage: experimental-approaches-reusable-components
 collectionDirectory: docs
 ---
 {::options toc_levels="2..3" /}

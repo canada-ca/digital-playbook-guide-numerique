@@ -8,7 +8,7 @@
 
 Provides practical and detailed guidance to assist the Government of Canada in digital transformation and augmented service delivery, including becoming more agile, open and user-focused. Includes task-specific views and interactive features to make it easier to find relevant guidance and to apply it to day-to-day work.
 
-The Digital Playbook is also an opportunity to experiment with new approaches while reusing as much as possible and contributing back reusable components for others to use (see [Experimental approaches and reusable components](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/experimental-approches-reusable-components.html)).
+The Digital Playbook is also an opportunity to experiment with new approaches while reusing as much as possible and contributing back reusable components for others to use (see [Experimental approaches and reusable components](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/experimental-approaches-reusable-components.html)).
 
 ## Digital Playbook views
 
