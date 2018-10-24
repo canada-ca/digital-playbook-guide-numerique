@@ -3,18 +3,18 @@
   { "onInit": true, "resetForm": "#questionnaire-section form" }
 ]'>
 
-## {{ site.Questionnaire[ page.lang ] }}
+<h2>{{ site.Questionnaire[ page.lang ] }}</h2>
 
 <!--- About the Respondent section -->
 <section id="aia-about-respondent-section" class="wb-frmvld">
 <form id="aia-about-respondent-form" method="post">
 
-### {{ page.aboutRespondentSection }}
+<h3>{{ page.aboutRespondentSection }}</h3>
 
 {% assign questionNumber = "1" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div>
 <input id="question-{{ questionId }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
@@ -32,7 +32,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 {% assign questionNumber = "2" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
 <div>
 <input id="question-{{ questionId }}" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
@@ -51,7 +51,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subLabel = questionId | append: "-sub" %}
 <!-- Question {{ questionNumber }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div>
 <select id="question-{{ questionId }}" required="required" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
@@ -75,7 +75,7 @@ endfor %}
 {% assign questionNumber = "4" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
 <div>
 <input id="question-{{ questionId }}" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
@@ -93,7 +93,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 {% assign questionNumber = "5" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div>
 <input id="question-{{ questionId }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
@@ -111,7 +111,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 {% assign questionNumber = "6" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
 <div>
 <textarea id="question-{{ questionId }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
@@ -135,7 +135,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 <section id="aia-about-decision-section" class="hidden wb-frmvld">
 <form id="aia-about-decision-form" method="post">
 
-### {{ page.aboutDecisionSection }}
+<h3>{{ page.aboutDecisionSection }}</h3>
 
 {% assign questionNumber = "7" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
@@ -240,7 +240,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Sub1Id }}-{{ subQuestion1Sub2Id }}-{{ subQuestion1Sub3Id }}-wrapper" class="hidden">
 
 <!-- Question {{ subQuestion1Sub1Number }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "operations": [
@@ -643,7 +643,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <section id="aia-business-process-section" class="hidden wb-frmvld">
 <form id="aia-business-process-form" method="post">
 
-### {{ page.dataBusinessProcessSection }}
+<h3>{{ page.dataBusinessProcessSection }}</h3>
 
 {% assign questionNumber = "21" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
@@ -807,7 +807,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "operations": [
@@ -1069,7 +1069,7 @@ assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Sub1Id }}-wrapper" class="hidden">
 
 <!-- Question {{ subQuestion1Sub1Number }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "operations": [
@@ -1138,7 +1138,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "operations": [
@@ -1165,7 +1165,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <section id="aia-system-functionality-section" class="hidden wb-frmvld">
 <form id="aia-system-functionality-form" method="post">
 
-### {{ page.systemFunctionalitySection }}
+<h3>{{ page.systemFunctionalitySection }}</h3>
 
 {% assign questionNumber = "34" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
@@ -1240,7 +1240,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "operations": [
@@ -1298,7 +1298,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <section id="aia-organizational-readiness-section" class="hidden wb-frmvld">
 <form id="aia-organizational-readiness-form" method="post">
 
-### {{ page.organizationalReadinessSection }}
+<h3>{{ page.organizationalReadinessSection }}</h3>
 
 {% assign questionNumber = "42" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
@@ -1478,7 +1478,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
-<div class="form-group" markdown="0">
+<div class="form-group">
 <label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "operations": [
@@ -1563,7 +1563,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </form>
 </section>
 
-<div markdown="0" class="btn-group mrgn-tp-md">
+<div class="btn-group mrgn-tp-md">
 <!-- Button for saving progress to a JSON file -->
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "source": "form-state", "container": "#questionnaire-section", "filename": "aia-form-state" }'>{{ site.SaveToFile[ page.lang ] }}</button>
 <!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. this is done to give more visual control over the appearance than what the input type="file" field allows. -->
