@@ -101,7 +101,7 @@ Les composants d'interface de cette section utilisent des fonctions JavaScript r
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
-### Exemple d'implémentation
+#### Exemple d'implémentation
 
 <!-- markdownlint-disable MD032 -->
 - [Outil de categorisation de sécurité]({{ site.baseurl }}/views-vues/security-securite/fr/outil-categorisation.html) - La section Rapport détaillé affiche la sortie de toutes les données tandis que la section Rapport sommaire affiche la sortie de parties spécifiques des données, y compris le filtrage.

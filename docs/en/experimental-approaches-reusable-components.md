@@ -101,7 +101,7 @@ The interface components in this section are built using reusable JavaScript fun
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
-### Example implementations
+#### Example implementations
 
 <!-- markdownlint-disable MD032 -->
 - [Security Categorization Tool]({{ site.baseurl }}/views-vues/security-securite/en/categorization-tool.html) - Detailed Report section shows output of all data while Summary Report section shows output of specific parts of the data, including filtering.
