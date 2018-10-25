@@ -11,7 +11,7 @@ altLangPage: 5-gerer-risques-matiere-securite-protection-renseignements-personne
 
 Canadians who use government services must have confidence that:
 
-* any information they provide is confidential and stored appropriately
+* any information they provide is handled and stored appropriately
 * they know how their information will be used by government
 * they can easily retrieve information they provide
 * that their privacy is protected while they use the service, and afterwards
