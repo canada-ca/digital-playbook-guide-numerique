@@ -24,6 +24,22 @@
         ]
       },
       {
+        "content_type": "block",
+        "source_element": "p",
+        "tags": [
+          "dpgn-overview-start"
+        ],
+        "content": [
+          {
+            "content_type": "inline",
+            "tags": [
+              "dpgn-overview-start"
+            ],
+            "content": "Le guide numérique est également l’occasion d’expérimenter avec de nouvelles approches tout en réutilisant le plus que possible et en fournissant des composants réutilisables pour que les autres puissent les utiliser (voir <a href=\"/digital-playbook-guide-numerique/docs/fr/approches-experimentales-composants-reutilisables.html\">Approches expérimentales et composants réutilisables</a>)."
+          }
+        ]
+      },
+      {
         "content_type": "section",
         "source_element": "section",
         "tags": [
@@ -1777,6 +1793,16 @@
                           {
                             "content_type": "inline",
                             "content": "<a href=\"https://www.scrumalliance.org/\">Scrum (Scrum Alliance)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://www.thinglink.com/scene/535528547733733377?buttonSource=viewLimits\">The Scrum Framework (Scrum Inc.)</a>"
                           }
                         ]
                       },

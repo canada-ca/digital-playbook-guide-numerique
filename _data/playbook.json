@@ -24,6 +24,22 @@
         ]
       },
       {
+        "content_type": "block",
+        "source_element": "p",
+        "tags": [
+          "dpgn-overview-start"
+        ],
+        "content": [
+          {
+            "content_type": "inline",
+            "tags": [
+              "dpgn-overview-start"
+            ],
+            "content": "The Digital Playbook is also an opportunity to experiment with new approaches while reusing as much as possible and contributing back reusable components for others to use (see <a href=\"/digital-playbook-guide-numerique/docs/en/experimental-approaches-reusable-components.html\">Experimental approaches and reusable components</a>)."
+          }
+        ]
+      },
+      {
         "content_type": "section",
         "source_element": "section",
         "tags": [
@@ -89,7 +105,7 @@
                     "tags": [
                       "dpgn-overview-end"
                     ],
-                    "content": "The Government of Canada Digital Playbook is available under the <a href=\"http://open.canada.ca/en/open-government-licence-canada\">Open Government Licence - Canada</a>, except where otherwise stated."
+                    "content": "The Government of Canada Digital Playbook is available under the <a href=\"https://open.canada.ca/en/open-government-licence-canada\">Open Government Licence - Canada</a>, except where otherwise stated."
                   }
                 ]
               }
@@ -1710,6 +1726,16 @@
                           {
                             "content_type": "inline",
                             "content": "<a href=\"https://www.scrumalliance.org/\">Scrum (Scrum Alliance)</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "<a href=\"https://www.thinglink.com/scene/535528547733733377?buttonSource=viewLimits\">The Scrum Framework (Scrum Inc.)</a>"
                           }
                         ]
                       },
