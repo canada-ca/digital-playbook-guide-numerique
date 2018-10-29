@@ -92,6 +92,7 @@ Les méthodes centrées sur l'utilisateur, telles que la recherche par les utili
 - [247 different checklists for usability testing (userfocus.co.uk)](http://www.userfocus.co.uk/resources/guidelines.html)
 - [Agile Principles & Practices (18F (US))](https://pages.18f.gov/agile/index.html)
 - [Scrum (Scrum Alliance)](https://www.scrumalliance.org/)
+- [The Scrum Framework (Scrum Inc.)](https://www.thinglink.com/scene/535528547733733377?buttonSource=viewLimits)
 - [Lean (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Category:Lean_process_improvement_community)
 - [Kanban (development) (Wikipedia)](https://en.wikipedia.org/wiki/Kanban_(development))
 - [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
