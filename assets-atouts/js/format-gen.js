@@ -710,11 +710,8 @@ var componentName = "wb-format-gen",
         } else {
           return currEmptyResult;
         }
-/*
-        // Return the element instead of the array for single element arrays
-        return dataResults.length > 1 ? dataResults : dataResults[ 0 ];
-*/
-return dataResults
+
+        return dataResults
       }
 
       return dataNode;
