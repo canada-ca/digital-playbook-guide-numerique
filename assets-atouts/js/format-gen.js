@@ -392,7 +392,7 @@ var componentName = "wb-format-gen",
           rowIndex, numOuterRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
           index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
           columnSourceArray, relativeToArray, rowspan, elementCounts, elementArray, element, countArray, count, relativeCount,
-          indexesArray, maxRows, result, totalCountArray, dataContainerSource;
+          indexesArray, maxRows, result, totalCountArray, dataContainerSource, nestedArrayCount;
 
       // Handle no data being passed
       if ( !data || data.length === 0 ) {
@@ -433,8 +433,17 @@ var componentName = "wb-format-gen",
             relativeToArray = [];
 
             indexesKeysArray =  [];
-            if ( dataContainerSource.length > 0 ) {
-              if ( Array.isArray( dataContainerSource[ 0 ] ) ) {
+            nestedArrayCount = 0;
+            length = dataContainerSource.length;
+            if ( length > 0 ) {
+              // Determine the number of nested arrays in dataContainerSource
+              for ( index = 0; index < length; index += 1 ) {
+                if ( Array.isArray( dataContainerSource[ index ] ) ) {
+                  nestedArrayCount += 1;
+                }
+              }
+
+              if ( nestedArrayCount > 0 ) {
                 indexesKeysArray = indexesKeysArray.concat( dataContainerSource );
               } else {
                 indexesKeysArray.push( dataContainerSource );
@@ -481,8 +490,7 @@ var componentName = "wb-format-gen",
                 }
               }
             }
-
-            dataNode = filterArray( dataNode, tableColSpec.filterType, tableColSpec.filterCriteria, tableColSpec.ranking );
+            dataNode = filterArray( dataNode, tableColSpec.filterType, tableColSpec.filterCriteria, nestedArrayCount, tableColSpec.ranking );
           }
 
           rowArray.push( dataNode );
@@ -644,10 +652,12 @@ var componentName = "wb-format-gen",
 
       for ( index = 0; index < length; index += 1 ) {
         element = array[ index ];
-        if ( onlyDeepestLevel && hasNestedArray ) { 
-          flattenedArray.push( flattenArray( element, onlyDeepestLevel ) );
-        } else if ( Array.isArray( element ) ) {
-          flattenedArray = flattenedArray.concat( flattenArray( element ) );
+        if ( Array.isArray( element ) ) {
+          if ( onlyDeepestLevel && hasNestedArray ) { 
+            flattenedArray.push( flattenArray( element, onlyDeepestLevel ) );
+          } else {
+            flattenedArray = flattenedArray.concat( flattenArray( element ) );
+          }
         } else {
           flattenedArray.push( element );
         }
@@ -677,7 +687,12 @@ var componentName = "wb-format-gen",
         dataNode = dataNode[ currentIndexesKeys[ indexKeyIndex ] ];
 
         if ( dataNode === null || typeof dataNode === "undefined" ) {
-          return currEmptyResult;
+          result = currEmptyResult;
+          length = indexesKeysLength - indexKeyIndex ;
+          for ( index = 0; index < length; index += 1 ) {
+            result = [ result ];
+          }
+          return result;
         }
       }
 
@@ -695,9 +710,11 @@ var componentName = "wb-format-gen",
         } else {
           return currEmptyResult;
         }
-
+/*
         // Return the element instead of the array for single element arrays
         return dataResults.length > 1 ? dataResults : dataResults[ 0 ];
+*/
+return dataResults
       }
 
       return dataNode;
@@ -710,19 +727,23 @@ var componentName = "wb-format-gen",
      * @param filterType {String} Filter to apply (e.g., "min", "max", "="/"==", ">", "<", ">=", "<=", "!=", "contains")
      * @param filterCriteria {Number/String} Number or String to compare against the array item for the filter type. Ignored for "min"
      *   and "max" filter types, although still need to specify something in this case if using the ranking parameter.
+     * @param maxDepthToConcatNonNestedSiblings {Number} What is the maximum array nesting depth to allow concatenating of non-nested
+     *   sibling arrays. For example, 0 means do not concat at all, 1 means don't concat past the first nested level, 2 means don't concat
+     *   past the first two nested levels, etc. This is used to enable filtering across nested arrays (e.g., get the max of two sibling
+     *   arrays).
      * @param ranking {Object} (Optional) Ranking of possible strings for the purposes of filtering. Each key is the string itself and the
      *   value is its ranking. Can be used to filter out array items that are outside of the desired rank. When a ranking object is
      *   provided, the included values will be used for filtering purposes instead of the data itself (data becomes the way of accessing
      *   the ranking value).
      * @return {Array} Filtered array
      */
-    filterArray = function( data, filterType, filterCriteria, ranking ) {
+    filterArray = function( data, filterType, filterCriteria, maxDepthToConcatNonNestedSiblings, ranking ) {
       var filteredData = [],
           length = data.length,
           rankingProvided = ( ranking !== null && typeof ranking === "object" ),
           leadingValue = null,
           nestedArray = false,
-          index, dataValue, comparisonValue, leadingComparisonValue;
+          index, index2, length2, dataValue, comparisonValue, leadingComparisonValue, deeperNesting;
 
       // Check to see if there is at least one nested array
       for ( index = 0; index < length; index += 1 ) {
@@ -733,14 +754,33 @@ var componentName = "wb-format-gen",
       }
 
       if ( nestedArray ) {
+        deeperNesting = false;
+
         // Apply the filters to just the nested arrays and then push all array items into filteredData
         for ( index = 0; index < length; index += 1 ) {
           dataValue = data[ index ];
           if ( Array.isArray( dataValue ) ) {
             // If the data is an array, then call filteredData recursively to filter the nested array instead
-            dataValue = filterArray( dataValue, filterType, filterCriteria, ranking );
+            dataValue = filterArray( dataValue, filterType, filterCriteria, ( maxDepthToConcatNonNestedSiblings !== null ? maxDepthToConcatNonNestedSiblings - 1 : 0 ), ranking );
+
+            // Check to see if there are any arrays nested in the filtered array
+            if ( !deeperNesting && Array.isArray( dataValue ) ) {
+              length2 = dataValue.length;
+              for ( index2 = 0; index2 < length2; index2 += 1 ) {
+                if ( Array.isArray( dataValue[ index2 ] ) ) {
+                  deeperNesting = true;
+                  break;
+                }
+              }
+            }
           }
           filteredData.push( dataValue );
+        }
+
+        // If there are no arrays nested in all of the filtered arrays and concatenating of non-nested siblings is allowed at this level,
+        // then filter again (sibling filtering)
+        if ( !deeperNesting && maxDepthToConcatNonNestedSiblings > 0 ) {
+            filteredData = filterArray( flattenArray( filteredData ), filterType, filterCriteria, ranking );
         }
       } else {
         for ( index = 0; index < length; index += 1 ) {
