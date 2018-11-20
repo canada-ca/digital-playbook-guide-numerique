@@ -98,8 +98,7 @@ Les méthodes centrées sur l'utilisateur, telles que la recherche par les utili
 - [GCpedia Community of Practice Agile Methods (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Ellen_Grove_-_Agile_Methods)
 - [CRA Agile Framework (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/Sprint_(CRA_Agile_Framework))
 - [Agile delivery (Digital Service Standard (UK))](https://www.gov.uk/service-manual/agile-delivery)
-- [Agile (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/agile/)
-- [Service design and delivery process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/service-design-and-delivery-process/)
+- [Service design and delivery process (Digital Service Standard (AU))](https://guides.service.gov.au/topics/service-design-delivery-process/)
 - [Manifesto for Agile Software Development (agilemanifesto.org)](http://agilemanifesto.org/)
 - [Is your project using ‘agilefall’? (18F (US))](https://18f.gsa.gov/2015/12/29/is-your-project-using-agilefall/)
 - [Agile methods: an introduction (Service Manual (UK))](https://www.gov.uk/service-manual/agile-delivery/agile-methodologies)
@@ -126,7 +125,7 @@ Les méthodes centrées sur l'utilisateur, telles que la recherche par les utili
 - [5. Iterate and improve frequently (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/iterate-and-improve-frequently)
 - [8. Souplesse et orientation sur l’utilisateur](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-8)
 - [4. Build the service using agile and iterative practices (Digital Services Playbook (US))](https://playbook.cio.gov/#play4)
-- [3. Agile and user-centred process (Digital Service Standard (AU))](https://www.dta.gov.au/standard/3-agile-and-user-centred/)
+- [3. Agile and user-centred process (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/3-agile-and-user-centred/)
 - [3. Apply agile principles and be iterative. (Do - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Do#3._Apply_agile_principles_and_be_iterative.)
 - [2. Product management, not just project management. (Assess - Digital Design Playbook (ISED)) (internal to Government of Canada)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Assess#2._Product_management.2C_not_just_project_management.)
 
@@ -198,7 +197,6 @@ La mesure du rendement permet d’améliorer en continu un service en :
 ### Guides d'implémentation
 
 - [Test your service's performance (Service Manual (UK))](https://www.gov.uk/service-manual/technology/test-your-services-performance)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Performance testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 - [Quality assurance: testing your service regularly (Service Manual (UK))](https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Test your service's performance (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/test-your-services-performance)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Deployment environments (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/deployment.html)
