@@ -160,15 +160,13 @@ Canadians want to have confidence that government digital services are designed 
 ### Ressources similaires
 
 * [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
-* [Privacy (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/privacy/)
-* [Secure services (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 * [10. Intégrer la sécurité et la protection de la vie privée au niveau de la conception (Normes des services numériques (Ontario))](https://www.ontario.ca/fr/page/norme-des-services-numeriques#section-10)s
 * [Loi sur la protection des renseignements personnels (Commissariat à la protection de la vie privée du Canada)](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-loi-sur-la-protection-des-renseignements-personnels/)
 * [Loi sur la protection des renseignements personnels et les documents électroniques (LPRPDE) (Commissariat à la protection de la vie privée du Canada)](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-loi-sur-la-protection-des-renseignements-personnels-et-les-documents-electroniques-lprpde/)
 * [Protection de la vie privée dès la conception (Wikipédia)](https://fr.wikipedia.org/wiki/Protection_de_la_vie_priv%C3%A9e_d%C3%A8s_la_conception)
 * [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
-* [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
+* [5. Make it secure (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/5-make-it-secure/)
 
 </section>
 </section>
@@ -234,8 +232,6 @@ Integrating security from the outset and “shifting security left” in the ser
 * [Information security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/information-security.html)
 * [Cloud security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/operations/cloud-security.html)
 * [User accounts and logins (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/user-accounts)
-* [Identity assurance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/identity-assurance/)
-* [Secure services (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 
 </section>
 </section>

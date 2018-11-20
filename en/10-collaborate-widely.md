@@ -82,7 +82,7 @@ To be successful, build a team with:
 **[TODO: Add/revise implementation guide items]**
 
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [Setting up the right team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/the-team)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [The digital delivery team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/the-team/)
+- {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [Starting a team (Digital Service Standard (AU))](https://guides.service.gov.au/topics/starting-team/)
 - [DTA Guide to Discovery (Service Handbook (AU))](https://ausdto.github.io/service-handbook/discovery/)
 - [DTA Guide to Alpha (Service Handbook (AU))](http://ausdto.github.io/service-handbook/alpha/)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-multidisciplinary-teams} [The teams, they are a changin’ (18F (US))](https://18f.gsa.gov/2016/04/18/the-teams-they-are-a-changin/)
@@ -104,7 +104,7 @@ To be successful, build a team with:
 - [3. Have a multidisciplinary team (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/have-a-multidisciplinary-team)
 - [2. Establish the right team (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-2)
 - [7. Bring in experienced teams (Digital Services Playbook (US))](https://playbook.cio.gov/#play7)
-- [2. Have a multidisciplinary team (Digital Service Standard (AU))](https://www.dta.gov.au/standard/2-multidisciplinary-team/)
+- [2. Have a multidisciplinary team (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/2-multidisciplinary-team/)
 
 </section>
 </section>

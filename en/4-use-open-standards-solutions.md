@@ -99,7 +99,6 @@ Using open source software means you can benefit from:
   - [Web Design and Applications - W3C Web design standards (W3C)](https://www.w3.org/standards/webdesign/)
   - [Web of Devices (W3C)](https://www.w3.org/standards/webofdevices/)
 - [OASIS Standards (oasis-open.org)](https://www.oasis-open.org/standards)
-- [Open data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Government of Canada Right Cloud Selection Guidance](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-right-cloud-selection-guidance.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Government of Canada Security Control Profile for Cloud-Based GC IT Services](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-cloud-first} [Government of Canada Cloud Adoption Strategy](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-cloud-adoption-strategy.html)
@@ -182,7 +181,6 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-performance-availability-scalability} [Designing for different browsers and devices (Digital Service Standard (UK))](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions .dpgn-digital-architectural-enable-interoperability} [API technical and data standards (Government Digital Service (UK))](https://www.gov.uk/guidance/gds-api-technical-and-data-standards)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-enable-interoperability} [Developing cross-government API data and technical standards (Government Digital Service blog (UK))](https://gdstechnology.blog.gov.uk/2018/02/13/developing-cross-government-api-data-and-technical-standards/)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions .dpgn-architectural-enable-interoperability} [Application Programming Interfaces (APIs) (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/api/)
 - [How to measure digital take-up (Service Manual (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
 - [Encouraging people to use your digital service (Service Manual (UK))](https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service)
 
@@ -201,7 +199,7 @@ Application Program Interfaces (APIs) are a means by which business functionalit
 ### Similar resources
 
 - [3. Be consistent (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-3)
-- [6. Consistent and responsive design (Digital Service Standard (AU))](https://www.dta.gov.au/standard/6-consistent-and-responsive/)
+- [6. Consistent and responsive design (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/6-consistent-and-responsive/)
 - [4. Design the service from start to finish (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-4)
 - [2. Address the whole experience, from start to finish (Digital Services Playbook (US))](https://playbook.cio.gov/#play2)
 - [14. Encourage everyone to use the digital service (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/encourage-everyone-to-use-the-digital-service)

@@ -740,7 +740,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/1-user-needs/\">1. Understand user needs (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/digital-service-standard/1-understand-user-needs/\">1. Understand user needs (Digital Service Standard (AU))</a>"
                           }
                         ]
                       },
@@ -1795,17 +1795,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/agile/\">Agile (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/service-design-and-delivery-process/\">Service design and delivery process (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/topics/service-design-delivery-process/\">Service design and delivery process (Digital Service Standard (AU))</a>"
                           }
                         ]
                       },
@@ -1963,7 +1953,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/3-agile-and-user-centred/\">3. Agile and user-centred process (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/digital-service-standard/3-agile-and-user-centred/\">3. Agile and user-centred process (Digital Service Standard (AU))</a>"
                           }
                         ]
                       },
@@ -2490,24 +2480,6 @@
                           {
                             "content_type": "inline",
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/test-your-services-performance\">Test your service's performance (Service Manual (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-performance-availability-scalability"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-performance-availability-scalability"
-                            ],
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/performance-testing/\">Performance testing (Digital Service Standard (AU))</a>"
                           }
                         ]
                       },
@@ -3420,24 +3392,6 @@
                             "content": "<a href=\"https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate\">Measuring success (Digital Service Standard (UK))</a>"
                           }
                         ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-measurable-accountable"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-measurable-accountable"
-                            ],
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/performance-testing/\">Performance Testing (Digital Service Standard (AU))</a>"
-                          }
-                        ]
                       }
                     ]
                   }
@@ -3818,34 +3772,6 @@
                         "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-standards-solutions"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-standards-solutions"
-                            ],
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/open-data/\">Open Data (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/statistical-data-integration/\">Statistical Data Integration (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
                           "dpgn-digital-architectural-open-standard-solutions"
                         ],
                         "content": [
@@ -3856,16 +3782,6 @@
                               "dpgn-digital-architectural-open-standard-solutions"
                             ],
                             "content": "<a href=\"https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable\">Making source code open and reusable (Service Manual (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/code-sharing/\">Code sharing (Digital Service Standard (AU))</a>"
                           }
                         ]
                       },
@@ -3895,7 +3811,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/blog/making-source-code-open/\">Making source code open (DTA Blog (AU))</a>"
+                            "content": "<a href=\"https://www.dta.gov.au/blogs/making-source-code-open\">Making source code open (DTA Blog (AU))</a>"
                           }
                         ]
                       }
@@ -4028,7 +3944,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/8-make-source-code-open/\">8. Make source code open (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/digital-service-standard/8-make-source-code-open/\">8. Make source code open (Digital Service Standard (AU))</a>"
                           }
                         ]
                       }
@@ -4872,16 +4788,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/open-data/\">Open data (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
                         "tags": [
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-cloud-first"
@@ -5535,26 +5441,6 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "tags": [
-                          "dpgn-digital-architectural",
-                          "dpgn-digital-architectural-open-standards-solutions",
-                          "dpgn-architectural-enable-interoperability"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-digital-architectural",
-                              "dpgn-digital-architectural-open-standards-solutions",
-                              "dpgn-architectural-enable-interoperability"
-                            ],
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/api/\">Application Programming Interfaces (APIs) (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
                         "content": [
                           {
                             "content_type": "inline",
@@ -5634,7 +5520,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/6-consistent-and-responsive/\">6. Consistent and responsive design (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/digital-service-standard/6-consistent-and-responsive/\">6. Consistent and responsive design (Digital Service Standard (AU))</a>"
                           }
                         ]
                       },
@@ -6724,26 +6610,6 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/privacy/\">Privacy (Digital Service Standards (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/secure-services/\">Secure services (Digital Service Standards (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
                             "content": "<a href=\"https://www.ontario.ca/page/digital-service-standard#section-10\">10. Embed privacy and security by design (Digital Service Standard (Ontario))</a>"
                           }
                         ]
@@ -6804,7 +6670,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/5-make-it-secure/\">5. Make it secure (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/digital-service-standard/5-make-it-secure/\">5. Make it secure (Digital Service Standard (AU))</a>"
                           }
                         ]
                       }
@@ -7114,26 +6980,6 @@
                           {
                             "content_type": "inline",
                             "content": "<a href=\"https://www.gov.uk/service-manual/design/user-accounts\">User accounts and logins (Digital Service Standard (UK))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/identity-assurance/\">Identity assurance (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/secure-services/\">Secure services (Digital Service Standard (AU))</a>"
                           }
                         ]
                       }
@@ -8616,16 +8462,6 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/inclusive-services/\">Inclusive services (Digital Service Standard (AU))</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
                             "content": "<a href=\"https://accessibility.18f.gov/index.html\">18F Accessibility Guide (18F (US))</a>"
                           }
                         ]
@@ -8712,7 +8548,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/9-make-it-accessible/\">9. Make it accessible (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/digital-service-standard/9-make-it-accessible/\">9. Make it accessible (Digital Service Standard (AU))</a>"
                           }
                         ]
                       }
@@ -9745,7 +9581,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/4-tools-and-systems/\">4. Understand tools and systems (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/digital-service-standard/4-tools-and-systems/\">4. Understand tools and systems (Digital Service Standard (AU))</a>"
                           }
                         ]
                       }
@@ -12770,7 +12606,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-multidisciplinary-teams"
                             ],
-                            "content": "<a href=\"https://www.dta.gov.au/standard/design-guides/the-team/\">The digital delivery team (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/topics/starting-team/\">Starting a team (Digital Service Standard (AU))</a>"
                           }
                         ]
                       },
@@ -12880,7 +12716,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.dta.gov.au/standard/2-multidisciplinary-team/\">2. Have a multidisciplinary team (Digital Service Standard (AU))</a>"
+                            "content": "<a href=\"https://guides.service.gov.au/digital-service-standard/2-multidisciplinary-team/\">2. Have a multidisciplinary team (Digital Service Standard (AU))</a>"
                           }
                         ]
                       }
