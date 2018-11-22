@@ -491,7 +491,7 @@ var componentName = "wb-format-gen",
               }
             }
 
-            dataNode = filterArray( dataNode, tableColSpec.filterType, tableColSpec.filterCriteria, ( nestedArrayCount > 0 ? nestedArrayCount - 1 : nestedArrayCount ), tableColSpec.ranking );
+            dataNode = filterArray( dataNode, tableColSpec.filterType, tableColSpec.filterCriteria, ( nestedArrayCount > 0 ? nestedArrayCount - 1 : nestedArrayCount ), tableColSpec.ranking ).filteredArray;
           }
 
           rowArray.push( dataNode );
@@ -757,7 +757,8 @@ var componentName = "wb-format-gen",
      *   value is its ranking. Can be used to filter out array items that are outside of the desired rank. When a ranking object is
      *   provided, the included values will be used for filtering purposes instead of the data itself (data becomes the way of accessing
      *   the ranking value).
-     * @return {Array} Filtered array
+     * @return {Object} Object containing the filtered array (filteredArray) and the number of unused sibling concats based on 
+     *   what was specified for numSiblingLevelsToConcat and the number of concats performed (numSiblingLevelsToConcat).
      */
     filterArray = function( data, filterType, filterCriteria, numSiblingLevelsToConcat, ranking ) {
       var filteredData = [],
@@ -765,7 +766,7 @@ var componentName = "wb-format-gen",
           rankingProvided = ( ranking !== null && typeof ranking === "object" ),
           leadingValue = null,
           nestedArray = false,
-          index, index2, length2, dataValue, comparisonValue, leadingComparisonValue, deeperNesting;
+          index, index2, length2, dataValue, comparisonValue, leadingComparisonValue, deeperNesting, result;
 
       // Check to see if there is at least one nested array
       for ( index = 0; index < length; index += 1 ) {
@@ -783,14 +784,9 @@ var componentName = "wb-format-gen",
           dataValue = data[ index ];
           if ( Array.isArray( dataValue ) ) {
             // If the data is an array, then call filteredData recursively to filter the nested array instead
-            dataValue = filterArray( dataValue, filterType, filterCriteria, numSiblingLevelsToConcat, ranking );
-
-            // Check to see if dataValue is an array or object. If an object, then sibling arrays were concatenated
-            // so need to pull both the updated numSiblingLevelsToConcat and the filtered array out of the returned object
-            if ( !Array.isArray( dataValue ) ) {
-              numSiblingLevelsToConcat = dataValue.numSiblingLevelsToConcat;
-              dataValue = dataValue.filteredArray;
-            }
+            result = filterArray( dataValue, filterType, filterCriteria, numSiblingLevelsToConcat, ranking );
+            dataValue = result.filteredArray;
+            numSiblingLevelsToConcat = result.numSiblingLevelsToConcat;
 
             // Check to see if there are any arrays nested in the filtered array
             if ( !deeperNesting && Array.isArray( dataValue ) ) {
@@ -809,11 +805,10 @@ var componentName = "wb-format-gen",
         // If there are no arrays nested in all of the filtered arrays and concatenating of non-nested siblings is allowed at this level,
         // then filter again (sibling filtering)
         if ( !deeperNesting && numSiblingLevelsToConcat > 0 ) {
-            // Since sibling arrays were concatenated, need to pass back both the filtered array and numSiblingLevelsToConcat - 1
-            filteredData = {
-             filteredArray: filterArray( flattenArray( filteredData ), filterType, filterCriteria, 0, ranking ),
-             numSiblingLevelsToConcat: numSiblingLevelsToConcat - 1
-            };
+          // Since sibling arrays were concatenated, need to pass back both the filtered array and numSiblingLevelsToConcat - 1
+          result = filterArray( flattenArray( filteredData ), filterType, filterCriteria, 0, ranking );
+          filteredData = result.filteredArray;
+          numSiblingLevelsToConcat = result.numSiblingLevelsToConcat - 1;
         }
       } else {
         for ( index = 0; index < length; index += 1 ) {
@@ -869,7 +864,7 @@ var componentName = "wb-format-gen",
         filteredData.push( leadingValue );
       }
 
-      return filteredData;
+      return { filteredArray: filteredData, numSiblingLevelsToConcat: numSiblingLevelsToConcat };
     },
 
     /**
