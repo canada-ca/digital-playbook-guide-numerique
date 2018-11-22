@@ -7,19 +7,19 @@ comment %}@param itemType {String} What type of item this pagination menu is for
   { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ], "action": "replace", "source": {
       "type": "sessionStorage", "key": "assessment"{%
 unless include.itemType == "domain" %}, "indexesKeys": [
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
         0, "activities"{%
   unless include.itemType == "activity" %},
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
         0, "components"{%
     unless include.itemType == "component" %},
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
         0, "{{ include.itemType }}"{%
     endunless %}{%
   endunless %}
       ]{%
 endunless %}, "action": "previousIndex", "source": {
-        "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ]
+        "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ], "returnAs": "number"
       }
     }
   },
@@ -67,19 +67,19 @@ endif %}
   { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ], "action": "replace", "source": {
       "type": "sessionStorage", "key": "assessment"{%
 unless include.itemType == "domain" %}, "indexesKeys": [
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
         0, "activities"{%
   unless include.itemType == "activity" %},
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
         0, "components"{%
     unless include.itemType == "component" %},
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
         0, "{{ include.itemType }}"{%
     endunless %}{%
   endunless %}
       ]{%
 endunless %}, "action": "nextIndex", "source": {
-        "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ]
+        "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ include.itemType }}" ], "returnAs": "number"
       }
     }
   },

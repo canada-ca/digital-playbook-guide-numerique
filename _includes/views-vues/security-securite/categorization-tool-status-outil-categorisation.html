@@ -332,6 +332,31 @@ for lossType in page.lossTypes %},
 endfor %}
       ]
     }
+  ] },
+  { "eventTrigger": "default-confidentiality-process-note", "eventElement": "#sec-cat-form-properties", "operations": [
+    { "type": "conditional",
+      "inputs": [
+        { "type": "==",
+          "inputs": [
+            { "type": "string", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
+              { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
+              0, "activities",
+              { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
+              0, "components",
+              { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
+              2, "text"
+            ] },
+            "{{ page.component[ 'component-type-option-1' ] }}"
+          ]
+        }
+      ],
+      "actionsTrue": [
+        { "type": "removeClass", "outputTarget": "#confidentiality-process-note", "class": "hidden" }
+      ],
+      "actionsFalse": [
+        { "type": "addClass", "outputTarget": "#confidentiality-process-note", "class": "hidden" }
+      ]
+    }
   ] }{%
 for lossType in page.lossTypes %},
   { "eventTrigger": "show-{{ lossType }}", "eventElement": "#sec-cat-form-properties", "operations": [
@@ -349,7 +374,10 @@ for lossType in page.lossTypes %},
   { "eventTrigger": "default-{{ lossType }}-buttons", "eventElement": "#sec-cat-form-properties", "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "outputValue", "outputTarget": "#save-{{ lossType }}, #cancel-{{ lossType }}", "outputProperty": "disabled", "value": true },
+        { "type": "outputValue", "outputTarget": "#save-{{ lossType }}, #cancel-{{ lossType }}", "outputProperty": "disabled", "value": true },{%
+  if lossType == "confidentiality" %}
+        { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-confidentiality-process-note" },{%
+  endif %}
         { "type": "conditional",
           "inputs": [
             { "type": ">",
@@ -429,9 +457,9 @@ endfor %}
       "inputs": [
         { "type": "outputValue", "outputTarget": "#activity-current-location-value",
           "value": { "type": "string", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
-            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
             0, "activities",
-            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
             0, "state"
           ] }
         }
@@ -443,11 +471,11 @@ endfor %}
       "inputs": [
         { "type": "outputValue", "outputTarget": "#component-current-location-value",
           "value": { "type": "string", "sourceStorage": "sessionStorage", "key": "assessment", "indexesKeys": [
-            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
             0, "activities",
-            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
             0, "components",
-            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+            { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
             0, "state"
           ] }
         }

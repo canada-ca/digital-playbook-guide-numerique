@@ -89,7 +89,7 @@
 ] }' data-wb-format-gen='[
   { "eventTrigger": "edit-domain", "eventElement": "#domain-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ], "action": "replace", "data": "replace" },
-    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 0 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] } }
+    { "type": "dataAttribute", "element": "#save-domain", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 0 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" } }
   ] },
   { "eventTrigger": "append-domain", "eventElement": "#domain-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ], "action": "replace", "data": "append" },
@@ -182,10 +182,10 @@
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "delete-domain-proceed", "eventElement": "#delete-domain", "operations": [
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] }
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" }
     ], "action": "delete"
   },
-  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "source": { "type": "sessionStorage", "key": "assessment", "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] } }, "action": "replace" },
+  { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "source": { "type": "sessionStorage", "key": "assessment", "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" } }, "action": "replace" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" }
 ] }'>{{ page.common.delete }}</button>
@@ -268,7 +268,7 @@
 ] }' data-wb-format-gen='[
   { "eventTrigger": "edit-activity", "eventElement": "#activity-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ], "action": "replace", "data": "replace" },
-    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 3 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] } }
+    { "type": "dataAttribute", "element": "#save-activity", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 3 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" } }
   ] },
   { "eventTrigger": "append-activity", "eventElement": "#activity-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ], "action": "replace", "data": "append" },
@@ -322,7 +322,7 @@
 ]' data-wb-format-gen='[
   { "eventTrigger": "save-activity-proceed", "eventElement": "#save-activity", "operations": [
     { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
         0, "activities"
       ], "source": "form-state", "container": "#activity-form",
       "action": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ] }
@@ -331,7 +331,7 @@
   ] },
   { "eventTrigger": "last-activity", "eventElement": "#save-activity", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "action": "replace", "source": { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
       0, "activities"
     ], "action": "lastIndex" } }
   ] }
@@ -395,14 +395,14 @@
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "delete-activity-proceed", "eventElement": "#delete-activity", "operations": [
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
     0, "activities",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" }
   ], "action": "delete" },
   { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "source": { "type": "sessionStorage", "key": "assessment", "indexesKeys":[
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
     0, "activities"
-  ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] } }, "action": "replace" },
+  ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" } }, "action": "replace" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-activity" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-activity-buttons" }
 ] }'>{{ page.common.delete }}</button>
@@ -481,7 +481,7 @@
 ] }' data-wb-format-gen='[
   { "eventTrigger": "edit-component", "eventElement": "#component-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ], "action": "replace", "data": "replace" },
-    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 6 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] } }
+    { "type": "dataAttribute", "element": "#save-component", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 6 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" } }
   ] },
   { "eventTrigger": "append-component", "eventElement": "#component-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ], "action": "replace", "data": "append" },
@@ -561,9 +561,9 @@
 ]' data-wb-format-gen='[
   { "eventTrigger": "save-component-proceed", "eventElement": "#save-component", "operations": [
     { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
         0, "activities",
-        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+        { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
         0, "components"
       ], "source": "form-state", "container": "#component-form",
       "action": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ] }
@@ -572,9 +572,9 @@
   ] },
   { "eventTrigger": "last-component", "eventElement": "#save-component", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "action": "replace", "source": { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
       0, "activities",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
       0, "components"
     ], "action": "lastIndex" } }
   ] }
@@ -638,18 +638,18 @@
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "delete-component-proceed", "eventElement": "#delete-component", "operations": [
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
     0, "activities",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
     0, "components",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" }
   ], "action": "delete" },
   { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "source": { "type": "sessionStorage", "key": "assessment", "indexesKeys":[
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
     0, "activities",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
     0, "components"
-  ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] } }, "action": "replace" },
+  ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" } }, "action": "replace" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-component" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-component-buttons" }
 ] }'>{{ page.common.delete }}</button>
@@ -673,7 +673,10 @@ for lossType in page.lossTypes %}{%
   { "resetForm": "#{{ lossType }}-form" }
 ] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-{{ lossType }}", "operations": [
   { "type": "action",
-    "inputs": [
+    "inputs": [{%
+  if lossType == "confidentiality" %}
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-confidentiality-process-note" },{%
+  endif %}
       { "type": "outputValue", "outputTarget": "#save-{{ lossType }}, #delete-{{ lossType }}, #add-another-{{ lossType }}{% if lossType != "confidentiality" %}, #add-confidentiality-{{ lossType }}-form{% endif %}{% if lossType != "integrity" %}, #add-integrity-{{ lossType }}-form{% endif %}{% if lossType != "availability" %}, #add-availability-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-{{ lossType }}", "outputProperty": "disabled", "value": false },
       { "type": "outputValue", "outputTarget": "#cancel-{{ lossType }}", "outputAttribute": "data-add-source", "value": "component" },
@@ -698,6 +701,13 @@ for lossType in page.lossTypes %}{%
 <h2>{{ page[ lossType ].title }}</h2>
 
 <p>{{ page[ lossType ].intro }}</p>
+
+{% if lossType == "confidentiality" %}
+<section id="confidentiality-process-note" class="hidden alert alert-info">
+<h3>{{ page.confidentiality.processNoteTitle }}</h3>
+<p>{{ page.confidentiality.processNote }}</p>
+</section>
+{% endif %}
 
 <div id="{{ lossType }}-fields-container" class="wb-calculate wb-format-gen" data-wb-calculate='{ "eventTrigger": "input", "eventElement": "#{{ lossType }}-fields-container", "operations": [
   { "type": "conditional",
@@ -736,7 +746,7 @@ for lossType in page.lossTypes %}{%
 ] }' data-wb-format-gen='[
   { "eventTrigger": "edit-{{ lossType }}", "eventElement": "#{{ lossType }}-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ], "action": "replace", "data": "replace" },
-    { "type": "dataAttribute", "element": "#save-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 9 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ] } }
+    { "type": "dataAttribute", "element": "#save-{{ lossType }}", "key": "data-wb-format-gen", "indexesKeys": [ 0, "operations", 0, "indexesKeys", 9 ], "action": "replace", "data": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ], "returnAs": "number" } }
   ] },
   { "eventTrigger": "append-{{ lossType }}", "eventElement": "#{{ lossType }}-fields-container", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ], "action": "replace", "data": "append" },
@@ -835,11 +845,11 @@ for lossType in page.lossTypes %}{%
 ]' data-wb-format-gen='[
   { "eventTrigger": "save-{{ lossType }}-proceed", "eventElement": "#save-{{ lossType }}", "operations": [
     { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
       0, "activities",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
       0, "components",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
       0, "{{ lossType }}"
     ], "source": "form-state", "container": "#{{ lossType }}-form",
     "action": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-action" ] }
@@ -848,11 +858,11 @@ for lossType in page.lossTypes %}{%
   ] },
   { "eventTrigger": "last-{{ lossType }}", "eventElement": "#save-{{ lossType }}", "operations": [
     { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ], "action": "replace", "source": { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
       0, "activities",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
       0, "components",
-      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+      { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
       0, "{{ lossType }}"
     ], "action": "lastIndex" } }
   ] }
@@ -916,22 +926,22 @@ for lossType in page.lossTypes %}{%
   }
 ] }' data-wb-format-gen='{ "eventTrigger": "delete-{{ lossType }}-proceed", "eventElement": "#delete-{{ lossType }}", "operations": [
   { "type": "sessionStorage", "key": "assessment", "indexesKeys": [
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
     0, "activities",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
     0, "components",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
     0, "{{ lossType }}",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ] }
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ], "returnAs": "number" }
   ], "action": "delete" },
   { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ], "source": { "type": "sessionStorage", "key": "assessment", "indexesKeys":[
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "returnAs": "number" },
     0, "activities",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-activity" ], "returnAs": "number" },
     0, "components",
-    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ] },
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-component" ], "returnAs": "number" },
     0, "{{ lossType }}"
-  ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ] } }, "action": "replace" },
+  ], "action": "closestIndex", "source": { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-{{ lossType }}" ], "returnAs": "number" } }, "action": "replace" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-{{ lossType }}" },
   { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-{{ lossType }}-buttons" }
 ] }'>{{ page.common.delete }}</button>{%
@@ -959,7 +969,10 @@ for lossTypeInner in page.lossTypes %}{%
   { "resetForm": "#{{ lossTypeInner }}-form" }
 ] }' data-wb-calculate='{ "eventTrigger": "click", "eventElement": "#add-{{ lossTypeInner }}-{{ lossType }}-form", "operations": [
   { "type": "action",
-    "inputs": [
+    "inputs": [{%
+  if lossTypeInner == "confidentiality" %}
+      { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-confidentiality-process-note" },{%
+  endif %}
       { "type": "outputValue", "outputTarget": "#save-{{ lossTypeInner }}, #delete-{{ lossTypeInner }}, #add{% if lossTypeIndex == 0 %}-another{% endif %}-confidentiality{% if lossTypeIndex != 0 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 1 %}-another{% endif %}-integrity{% if lossTypeIndex != 1 %}-{{ lossType }}-form{% endif %}, #add{% if lossTypeIndex == 2 %}-another{% endif %}-availability{% if lossTypeIndex != 2 %}-{{ lossType }}-form{% endif %}", "outputProperty": "disabled", "value": true },
       { "type": "outputValue", "outputTarget": "#cancel-{{ lossTypeInner }}", "outputProperty": "disabled", "value": false },
       { "type": "outputValue", "outputTarget": "#cancel-{{ lossTypeInner }}", "outputAttribute": "data-add-source", "value": "{{ lossType }}" },
