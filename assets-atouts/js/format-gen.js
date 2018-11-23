@@ -1179,49 +1179,64 @@ var componentName = "wb-format-gen",
     /**
      * @method storeData
      * @overview Stores data in sessionStorage, localStorage or a data attribute using a key and optionally in nested arrays/objects
-     * @param action {String} Action to take on the stored data (options: replace, append, prepend, delete, increment, decrement)
-     * @param key {String} Key for storing the data
+     * @param action {String} Action to take on the stored data (options: replace, replace-primitives (iterates through the passed data and 
+     *   only uses the primitives to update the target), append, prepend, delete, increment, decrement)
+     * @param key {String/Number} Key for storing the data. Must be a string for sessionStorage, localStorage and dataAttribute types.
+     *   Can be a string (for objects), number (for arrays) or null (to do nothing) for the object storage type.
      * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to store data in nested arrays/objects in the data
-     * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute")
+     * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute", "object")
      * @param data {String/Array/Object/Other} (not used for "delete" action) Data to store
-     * @param elements {String/DOM node/jQuery object} (optional, required for dataAttribute storage type) Elements containing the data attribute (only used for dataAttribute storage type)
-     * @fires Fires either the storage-updated.wb-format-gen or data-attribute-updated.wb-format-gen event on the document node once complete
+     * @param dataSources {String/DOM node/jQuery object/Other} (optional, required for dataAttribute and object storage types) 
+     *   For dataAttribute type, dataSource is the selector, DOM node or jQuery object for the element(s) containing the data attribute.
+     *   For object type, it is the data itself (actions affect the data that is passed directly if it is an array or object).
+     * @return {String/Array/Object/Other} Returns the updated data
+     * @fires Fires either the storage-updated.wb-format-gen or data-attribute-updated.wb-format-gen event on the document node once complete.
+     *   In the case of the data type, no event is fired.
      */
-    storeData = function( action, key, indexesKeys, storageType, data, elements ) {
+    storeData = function( action, key, indexesKeys, storageType, data, dataSources ) {
       var currAction = action ? action : "replace",
           currIndexesKeys = indexesKeys ? indexesKeys : [],
           currStorageType = storageType ? storageType : "sessionStorage",
           indexesKeysLength = currIndexesKeys.length,
           deleteOnly = false,
-          storedData, storedDataFragment, parentStoredDataFragment, index, length, typeofResult, indexKey, nextIndexKey,
-          currElement, currElements, elementsIndex, elementsLength, resultData;
+          storedData, storedDataFragment, parentStoredDataFragment, index, length, typeofResult, indexKey, nextIndexKey, isArray,
+          currDataSource, currDataSources, dataSourcesIndex, dataSourcesLength, resultData, dataFragment, keys;
 
       // Pre-process the indexesKeys (convert objects to values)
       currIndexesKeys = retrieveValue( currIndexesKeys );
 
       // Retrieve and parse any stored data
       if ( currStorageType === "sessionStorage" ) {
-        currElements = [ sessionStorage.getItem( key ) ];
+        currDataSources = [ sessionStorage.getItem( key ) ];
       } else if ( currStorageType === "localStorage" ) {
-        currElements = [ localStorage.getItem( key ) ];
-      } else {
+        currDataSources = [ localStorage.getItem( key ) ];
+      } else if ( currStorageType === "dataAttribute" ) {
         // Convert to DOM nodes and then retrieve the data attribute
-        if ( elements instanceof jQuery ) {
-          currElements = elements.get();
-        } else if ( typeof elements === "string" ) {
-          currElements = document.querySelectorAll( elements );
+        if ( dataSources instanceof jQuery ) {
+          currDataSources = dataSources.get();
+        } else if ( typeof dataSources === "string" ) {
+          currDataSources = document.querySelectorAll( dataSources );
         } else {
-          currElements = elements;
+          currDataSources = dataSources;
         }
+      } else {
+        currDataSources = ( key !== null ? dataSources[ key ] : dataSources );
       }
 
-      elementsLength = currElements.length;
-      for ( elementsIndex = 0; elementsIndex < elementsLength; elementsIndex += 1 ) {
-        currElement = currElements[ elementsIndex ];
-        storedData = currStorageType === "dataAttribute" ? currElement.getAttribute( key ) : currElement;
+      if ( currStorageType !== "dataAttribute" && !Array.isArray( currDataSources ) ) {
+        currDataSources = [ currDataSources ];
+      }
 
-        if ( storedData && storedData.length > 0 ) {
-          storedData = JSON.parse( storedData );
+      dataSourcesLength = currDataSources.length;
+      for ( dataSourcesIndex = 0; dataSourcesIndex < dataSourcesLength; dataSourcesIndex += 1 ) {
+        currDataSource = currDataSources[ dataSourcesIndex ];
+        storedData = currStorageType === "dataAttribute" ? currDataSource.getAttribute( key ) : currDataSource;
+        typeofResult = typeof storedData;
+
+        if ( storedData !== null && ( typeofResult === "string" && storedData.length > 0 ) || ( typeofResult === "object" ) ) {
+          if ( typeofResult === "string" ) {
+            storedData = JSON.parse( storedData );
+          }
           storedDataFragment = storedData;
 
           if ( indexesKeysLength > 0 ) {
@@ -1263,23 +1278,58 @@ var componentName = "wb-format-gen",
               sessionStorage.removeItem( key );
             } else if ( currStorageType === "localStorage" ) {
               localStorage.removeItem( key );
+            } else if (currStorageType === "dataAttribute" ) {
+              currDataSource.setAttribute( key, "" );
             } else {
-              currElement.setAttribute( key, "" );
+              if ( key !== null ) {
+                if ( typeof currDataSource === "object" ) {
+                  if ( Array.isArray( currDataSource ) ) {
+                    currDataSource.slice( key );
+                  } else {
+                    currDataSource.delete( key );
+                  }
+                } else if ( typeof currDataSource === "string" ) {
+                  currDataSource = currDataSource.slice( 0, key - 1 ) + str.slice( key + 1 );
+                }
+              } else {
+                currDataSource = null;
+              }
             }
             deleteOnly = true;
           }
 
           if ( currAction !== "delete" ) {
-            if ( Array.isArray( storedDataFragment ) ) {
+            if ( typeof storedDataFragment === "object" ) {
               if ( currAction === "append" ) {
                 storedDataFragment.push( data );
               } else if ( currAction === "prepend" ) {
                 storedDataFragment.unshift( data );
-              } else {
+              } else if (currAction === "replace" ) {
                 if ( indexesKeysLength > 0 ) {
                   parentStoredDataFragment[ currIndexesKeys[ index - 1 ] ] = data;
                 } else {
                   storedData = data;
+                }
+              } else if ( currAction === "replace-primitives" ) {
+                // Iterate through the primitives (including nested primitives) in data, adding/replacing them in interimData
+                isArray = Array.isArray( data );
+                if ( isArray ) {
+                  length = data.length;
+                } else {
+                  keys = Object.keys( data );
+                  length = keys.length;
+                }
+
+                for ( index = 0; index < length; index += 1 ) {
+                  dataFragment = isArray ? data[ index ] : data[ keys[ index ] ];
+
+                  if ( typeof dataFragment === "object" ) {
+                   storeData( currAction, null, [], "object", dataFragment, ( isArray ? storedDataFragment[ index ] : storedDataFragment[ keys[ index ] ] ) );
+                  } else if ( isArray ) {
+                    storedDataFragment[ index ] = dataFragment;
+                  } else {
+                    storedDataFragment[ keys[ index ] ] = dataFragment;
+                  }
                 }
               }
               resultData = storedData;
@@ -1290,7 +1340,7 @@ var componentName = "wb-format-gen",
                 resultData = storedDataFragment - 1;
               } else {
                 // Make sure everything is a string
-                if ( currAction !== "replace" && typeof storedDataFragment !== "string" ) {
+                if ( currAction !== "replace" && currAction !== "replace-primitives" && typeof storedDataFragment !== "string" ) {
                   storedDataFragment = storedDataFragment.toString();
                 }
 
@@ -1319,60 +1369,94 @@ var componentName = "wb-format-gen",
             sessionStorage.removeItem( key );
           } else if ( currStorageType === "localStorage" ) {
             localStorage.removeItem( key );
+          } else if ( currStorageType === "dataAttribute" ) {
+            currDataSource.setAttribute( key, "" );
           } else {
-            currElement.setAttribute( key, "" );
+            if ( key !== null ) {
+              if ( typeof currDataSource === "object" ) {
+                if ( Array.isArray( currDataSource ) ) {
+                  currDataSource.slice( key );
+                } else {
+                  currDataSource.delete( key );
+                }
+              } else if ( typeof currDataSource === "string" ) {
+                currDataSource = currDataSource.slice( 0, key - 1 ) + str.slice( key + 1 );
+              }
+            } else {
+              currDataSource = null;
+            }
           }
           deleteOnly = true;
         } else if ( currAction === "append" || currAction === "prepend" ) {
           resultData = [ data ];
-        } else if ( currAction === "replace" ) {
+        } else if ( currAction === "replace" || currAction === "replace-primitives" ) {
           resultData = data;
         }
 
         if ( !deleteOnly ) {
-          // Ensure the resulting data is not an object
-          if ( resultData !== null && typeof resultData !== "undefined" ) {
-            if ( typeof resultData === "object" ) {
-              if ( Array.isArray( resultData ) ) {
-                length = resultData.length;
-              } else {
-                length = Object.keys( resultData ).length;
+          // Ensure the resulting data is not an object (if the storage type is not an object)
+          if ( currStorageType !== "object" ) {
+            if ( resultData !== null && typeof resultData !== "undefined" ) {
+              if ( typeof resultData === "object" ) {
+                if ( Array.isArray( resultData ) ) {
+                  length = resultData.length;
+                } else {
+                  length = Object.keys( resultData ).length;
+                }
+                if ( length > 0 ) {
+                  resultData = JSON.stringify( resultData );
+                } else {
+                  resultData = "";
+                }
               }
-               if ( length > 0 ) {
-                resultData = JSON.stringify( resultData );
-              } else {
-                resultData = "";
-              }
+            } else {
+              resultData = "";
             }
-          } else {
-            resultData = "";
           }
 
           if ( currStorageType === "sessionStorage" ) {
             sessionStorage.setItem( key, resultData );
           } else if ( currStorageType === "localStorage" ) {
             localStorage.setItem( key, resultData );
+          } else if ( currStorageType === "dataAttribute" ) {
+            currDataSource.setAttribute( key, resultData );
           } else {
-            currElement.setAttribute( key, resultData );
+            if ( key !== null ) {
+              if ( typeof currDataSource === "object" ) {
+                currDataSource[ key ] = resultData;
+              } else if ( typeof currDataSource === "string" ) {
+                currDataSource = currDataSource.slice( 0, key - 1 ) + resultData + str.slice( key + 1 );
+              }
+            } else {
+              currDataSource = resultData;
+            }
           }
         }
       }
 
       // Trigger an event indicating that the storage has been updated
-      $document.trigger( ( currStorageType === "dataAttribute" ? "data-attribute" : "storage" ) + "-updated" + selector );
+      if ( currStorageType !== "data" ) {
+        $document.trigger( ( currStorageType === "dataAttribute" ? "data-attribute" : "storage" ) + "-updated" + selector );
+      }
+
+      return resultData;
     },
 
     /**
      * @method retrieveData
      * @overview Retrieves data from sessionStorage, localStorage or a data attribute using a key and optionally from nested arrays/objects
      * @param key {String} Key for retrieving the data
+     * @param key {String/Number} Key for retrieving the data. Must be a string for sessionStorage, localStorage and dataAttribute types.
+     *   Can be a string (for objects), number (for arrays) or null (to do nothing) for the object storage type.
      * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to retrieve data from nested arrays/objects in the data
-     * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute")
+     * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute", "object")
      * @param returnAs {String} (Optional, defaults to the source type) What to return the data as (i.e., "string", "number", "boolean", "object" )
-     * @param element {String/DOM node/jQuery object} (optional, required for dataAttribute storage type) Element containing the data attribute (only uses for dataAttribute storage type)
+     * @param dataSource {String/DOM node/jQuery object/Other} (optional, required for dataAttribute and object storage types) 
+     *   For dataAttribute type, dataSource is the selector, DOM node or jQuery object for the element containing the data attribute.
+     *   For object type, it is the data itself.
      * @return {String/Other} Returns the stored data.
      */
-    retrieveData = function( key, indexesKeys, storageType, returnAs, element ) {
+    retrieveData = function( key, indexesKeys, storageType, returnAs, dataSource ) {
       var currIndexesKeys = indexesKeys ? indexesKeys : [],
           currStorageType = storageType ? storageType : "sessionStorage",
           data, dataType;
@@ -1385,15 +1469,17 @@ var componentName = "wb-format-gen",
         data = sessionStorage.getItem( key );
       } else if ( currStorageType === "localStorage" ) {
         data = localStorage.getItem( key );
-      } else {
-        // Convert to a DOM node and then retrieve the data attribute (assumption is retrieving from only one node)
-        if ( element instanceof jQuery ) {
-          data = element.get( 0 ).getAttribute( key );
-        } else if ( typeof element === "string" ) {
-          data = document.querySelector( element ).getAttribute( key );
+      } else if ( currStorageType === "dataAttribute" ) {
+        // Convert to DOM nodes and then retrieve the data attribute (assumption is retrieving from only one node )
+        if ( dataSource instanceof jQuery ) {
+          data = dataSource.get( 0 ).getAttribute( key );
+        } else if ( typeof dataSource === "string" ) {
+          data = document.querySelector( dataSource ).getAttribute( key );
         } else {
-          data = element.getAttribute( key );
+          data = dataSource.getAttribute( key );
         }
+      } else {
+        data = ( key !== null ? dataSource[ key ] : dataSource ) ;
       }
 
       if ( data !== null && typeof data !== "undefined" && data.length > 0 ) {
