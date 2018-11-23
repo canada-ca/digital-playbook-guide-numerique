@@ -1233,7 +1233,7 @@ var componentName = "wb-format-gen",
         storedData = currStorageType === "dataAttribute" ? currDataSource.getAttribute( key ) : currDataSource;
         typeofResult = typeof storedData;
 
-        if ( storedData !== null && ( typeofResult === "string" && storedData.length > 0 ) || ( typeofResult === "object" ) ) {
+        if ( storedData !== null && ( ( typeofResult === "string" && storedData.length > 0 ) || ( typeofResult === "object" ) ) ) {
           if ( typeofResult === "string" ) {
             storedData = JSON.parse( storedData );
           }
