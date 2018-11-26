@@ -950,7 +950,7 @@ var componentName = "wb-format-gen",
     outputFile = function( settings ) {
       var outputLink = document.createElement( "a" ),
           isDownloadAttrSupported = outputLink.download !== undefined,
-          processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "filename" ], settings[ "element" ], settings[ "key" ], settings[ "container" ], settings[ "returnAs" ] ], settings[ "requestURL" ], settings[ "httpEventTarget" ], settings[ "httpEventOnSuccess" ], settings[ "httpEventOnError" ] ),
+          processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "filename" ], settings[ "element" ], settings[ "key" ], settings[ "container" ], settings[ "returnAs" ], settings[ "requestURL" ], settings[ "httpEventTarget" ], settings[ "httpEventOnSuccess" ], settings[ "httpEventOnError" ] ] ),
           type = processedValues[ 0 ],
           source = processedValues[ 1 ],
           filename = processedValues[ 2 ],
@@ -1006,7 +1006,7 @@ var componentName = "wb-format-gen",
         return;
       }
 
-      if ( requestURL !== null ) {
+      if ( typeof requestURL === "string" ) {
         // Send the file through an HTTP request
         xhttpRequest = new XMLHttpRequest();
         xhttpRequest.open( "POST", requestURL, true );
@@ -1025,13 +1025,9 @@ var componentName = "wb-format-gen",
               httpEvent = httpEventOnError;
             }
 
-            if ( httpEvent !== null ) {
+            if ( typeof httpEvent === "string" ) {
               // Trigger the specified event
-              if ( httpEventTarget !== null ) {
-                $( httpEventTarget ).trigger( httpEvent );
-              } else {
-                $document.trigger( httpEvent );
-              }
+              ( typeof httpEventTarget === "string" ? $( httpEventTarget ) : $document ).trigger( httpEvent, { "status": xhttpRequest.status, "statusText": xhttpRequest.statusText, "responseText": xhttpRequest.responseText } );
             }
           }
         }
