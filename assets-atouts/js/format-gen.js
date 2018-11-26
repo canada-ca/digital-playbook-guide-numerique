@@ -944,13 +944,13 @@ var componentName = "wb-format-gen",
 
     /**
      * @method outputFile
-     * @overview Output data to a file and trigger the interface to download it
+     * @overview Output data to a file and either send it through an HTTP request or trigger the interface to download it
      * @param settings {Object} Settings object for the file to output
      */
     outputFile = function( settings ) {
       var outputLink = document.createElement( "a" ),
           isDownloadAttrSupported = outputLink.download !== undefined,
-          processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "filename" ], settings[ "element" ], settings[ "key" ], settings[ "container" ], settings[ "returnAs" ] ] ),
+          processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "filename" ], settings[ "element" ], settings[ "key" ], settings[ "container" ], settings[ "returnAs" ] ], settings[ "requestURL" ], settings[ "httpEventTarget" ], settings[ "httpEventOnSuccess" ], settings[ "httpEventOnError" ] ),
           type = processedValues[ 0 ],
           source = processedValues[ 1 ],
           filename = processedValues[ 2 ],
@@ -958,7 +958,11 @@ var componentName = "wb-format-gen",
           key = processedValues[ 4 ],
           container = processedValues[ 5 ],
           returnAs = processedValues[ 6 ],
-          fileData, mimeType, blobOutput, urlOutput, action, indexesKeys, storedData, headerRow;
+          requestURL = processedValues[ 7 ],
+          httpEventTarget = processedValues[ 8 ],
+          httpEventOnSuccess = processedValues[ 9 ],
+          httpEventOnError = processedValues[ 10 ],
+          fileData, mimeType, blobOutput, urlOutput, action, indexesKeys, storedData, headerRow, xhttpRequest, httpEvent;
 
       if ( type === "csv" ) {
         if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
@@ -1002,29 +1006,61 @@ var componentName = "wb-format-gen",
         return;
       }
 
-      try {
-        blobOutput = new Blob( [ fileData ], { type: mimeType } );
+      if ( requestURL !== null ) {
+        // Send the file through an HTTP request
+        xhttpRequest = new XMLHttpRequest();
+        xhttpRequest.open( "POST", requestURL, true );
+        xhttpRequest.setRequestHeader( "Content-type", mimeType );
+        xhttpRequest.send( fileData );
 
-        // Backwards compatibility for IE10+
-        if ( !isDownloadAttrSupported && navigator.msSaveBlob ) {
-            navigator.msSaveBlob( blobOutput, filename );
-            return;
+        // Handle the response by triggering an event if one is specified for the result type
+        xhttpRequest.onreadystatechange = function() {
+          if ( xhttpRequest.readyState === 4 ) {
+            // Request processed completely
+            if ( xhttpRequest.state === 200 ) {
+              // Request processed successfully
+              httpEvent = httpEventOnSuccess;
+            } else {
+              // Request was not processed successfully
+              httpEvent = httpEventOnError;
+            }
+
+            if ( httpEvent !== null ) {
+              // Trigger the specified event
+              if ( httpEventTarget !== null ) {
+                $( httpEventTarget ).trigger( httpEvent );
+              } else {
+                $document.trigger( httpEvent );
+              }
+            }
+          }
+        }
+      } else {
+        // Trigger the interface to download the file
+        try {
+          blobOutput = new Blob( [ fileData ], { type: mimeType } );
+
+          // Backwards compatibility for IE10+
+          if ( !isDownloadAttrSupported && navigator.msSaveBlob ) {
+              navigator.msSaveBlob( blobOutput, filename );
+              return;
+          }
+
+          urlOutput = URL.createObjectURL( blobOutput );
+        } catch ( e ) {
+          // Fallback for where Blob URL support doesn't exist
+          urlOutput = encodeURI( "data:" + mimeType + ";charset=utf-8," + fileData );
         }
 
-        urlOutput = URL.createObjectURL( blobOutput );
-      } catch ( e ) {
-        // Fallback for where Blob URL support doesn't exist
-        urlOutput = encodeURI( "data:" + mimeType + ";charset=utf-8," + fileData );
+        outputLink.setAttribute( "href", urlOutput );
+        if ( isDownloadAttrSupported ) {
+          outputLink.setAttribute( "download", filename );
+        }
+        outputLink.style.visibility = "hidden";
+        document.body.appendChild( outputLink );
+        outputLink.click();
+        document.body.removeChild( outputLink );
       }
-
-      outputLink.setAttribute( "href", urlOutput );
-      if ( isDownloadAttrSupported ) {
-        outputLink.setAttribute( "download", filename );
-      }
-      outputLink.style.visibility = "hidden";
-      document.body.appendChild( outputLink );
-      outputLink.click();
-      document.body.removeChild( outputLink );
     },
 
     /**
