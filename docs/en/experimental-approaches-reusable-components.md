@@ -61,7 +61,7 @@ The interface components in this section are built using reusable JavaScript fun
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
-### Downloading data as a file
+### Downloading data as a file or sending it through an HTTP request
 
 #### Involved components
 
