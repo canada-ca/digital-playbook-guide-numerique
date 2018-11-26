@@ -61,7 +61,7 @@ Les composants d'interface de cette section utilisent des fonctions JavaScript r
 {: .lst-spcd}
 <!-- markdownlint-enable MD032 -->
 
-### Téléchargement de données sous forme de fichier
+### Téléchargement de données sous forme de fichier ou l'envoyer par une requête HTTP
 
 #### Composants impliqués
 
