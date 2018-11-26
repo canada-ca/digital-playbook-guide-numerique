@@ -293,7 +293,7 @@ var componentName = "wb-format-gen",
       for ( index = 0; index < length; index += 1 ) {
         current = toProcess[ index ];
 
-        if ( typeof current === "object" ) {
+        if ( current !== null && typeof current === "object" ) {
           value = retrieveData( current.key, current.indexesKeys, current.type, current.returnAs ? current.returnAs : "string", current.element );
           action = current.action;
         } else {
