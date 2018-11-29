@@ -121,7 +121,7 @@ Canadians want to have confidence that government digital services are designed 
 
 {: .dpgn-standards-hide .dpgn-stage-beta} **Note:** Live Stage includes all elements from the previous Alpha and Beta stages, plus the following:
 
- * {: .dpgn-stage-live}Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
+* {: .dpgn-stage-live}Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
 
 </section>
 
