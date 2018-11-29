@@ -11,7 +11,7 @@ altLangPage: 5-gerer-risques-matiere-securite-protection-renseignements-personne
 
 Canadians who use government services must have confidence that:
 
-* any information they provide is confidential and stored appropriately
+* any information they provide is handled and stored appropriately
 * they know how their information will be used by government
 * they can easily retrieve information they provide
 * that their privacy is protected while they use the service, and afterwards
@@ -46,7 +46,7 @@ If a service cannot guarantee confidentiality, integrity and availability of the
 
 <div class="dpgn-section-intro-guideline">
 
-Managing risk is critical for government. All organizations face risks, no matter the size; one size does not fit all when it comes to cyber risk management. Each organisation has to make difficult decisions around how much time and money to spend protecting their technology and services. An understanding of the users, data and threats that affect the service will help to inform this risk-based approach to support the delivery of a usable and secure system. Appropriate steps must be taken to identify, assess and understand security and privacy risks to GC sensitive and protected data and the systems that process this data.
+All organizations face risks, no matter the size, yet one size does not fit all when it comes to risk management. Each IT organisation has to make difficult decisions around how much time and money to spend protecting their technology and services. An understanding of the users, data and threats that affect the service will help to inform this risk-based approach to support the delivery of a usable and secure system. Appropriate steps must be taken to identify, assess and understand security and privacy risks to GC sensitive and protected data and the systems that process this data.
 
 A key goal of risk management is to inform and improve these decisions. Making it easy for those responsible for risk management decisions to have access to (and understand) the information they require is important for the effective communication of risks. The effective communication of risk management information helps organizations to direct and control risk management activities. Accepting that technology and security risks will be realised and understanding what the organisation will do to minimise damage, continue to operate, and make improvements based on lessons learned.
 
@@ -54,6 +54,8 @@ Assessing cyber risks cannot be done in isolation. It must be assessed while con
 
 **Formerly guideline 9.3**
 {: .dpgn-data-ignore}
+
+### Include security and privacy in innovation
 
 Canadians’ support for open data and digital services is enhanced when their privacy rights are protected: transparency and respect for privacy are complementary goals. The shift to digital government offers opportunities to strengthen privacy rights and safely share more data that can benefit society. Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data.
 
@@ -63,6 +65,8 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 **Formerly guideline 9.4**
 {: .dpgn-data-ignore}
+
+### Address jurisdictional legal and regulatory requirements
 
 The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate.
 
@@ -74,50 +78,52 @@ Canadians want to have confidence that government digital services are designed 
 
 ### Checklist
 
-**Alpha stage:**
+* Document the approach to security and risk management including the types of information and optimum level of documentation, necessary to make timely and effective decisions.
+* Ensure that you identify and categorize information based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability. Determine the type of information collected, how it should be secured, how long it is kept, and how it may be used and shared.
+* At the start of designing a new service or feature, the team lead should engage the appropriate privacy, information management, and legal officer(s) to ensure that solutions comply with all requirements for the collection, sharing and protection of personal information.
+* Determine what you absolutely need to protect through risk assessment and threat modeling – can you clearly identify what components are essential to the success of your service? Not all assets need the same level of protection. #pragmaticsecurity
+* Determine what you’re willing to pay for security – can you adequately protect your assets with the desired level of investment? Is the cost of protection in excess of the value of your assets? #pragmaticsecurity
+* Complete a preliminary privacy impact assessment (PPIA) or privacy impact assessment (PIA) if personal information is involved in the service.
+* Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned.
+* Develop your system with the [7 principles of Privacy by Design (Information and Privacy Commissioner of Ontario)](https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf) in mind.
+* Ensure your service complies with Canadian security and privacy legislation, government policy instruments, and departmental security policies at all stages.
+* Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
+* Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
+* Develop, publish and maintain training and awareness material as required, to establish secure service-user behaviours
+* Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access.
+* Maintain logs of user access and system interactions to fully trace a user as they traverse each part of the system
+* Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats
+
+**Alpha Stage**
 {: .dpgn-data-ignore}
 
-* Document the approach to security and risk management including the information and minimal documentation necessary to enable timely and effective decision making.
-* Ensure that you identify and categorize information based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability.
-* {: .dpgn-stage-alpha} At the start of designing a new service or feature, the team lead should engage the appropriate privacy, security, and legal officer(s) to discuss the type of information collected, how it should be secured, how long it is kept, and how it may be used and shared.
-* {: .dpgn-stage-alpha} Make sure there are ongoing interactions with the business and information risk teams.
-* {: .dpgn-stage-beta .dpgn-stage-live} Make sure to include an external security advisor as part of the delivery team to support IT security risk management throughout the delivery of the service to achieve the team’s common goal of delivering a usable and secure system.
-* {: .dpgn-stage-alpha} Determine what you absolutely need to protect – can you clearly identify what components are essential to the success of your service? Not all assets need the same level of protection.
-* {: .dpgn-stage-alpha} Determine what you’re willing to pay to protect it – can you protect your assets with the desired level of investment? Is the cost of full protection in excess of the value of your assets?
-* Document the process for identifying, understanding new or ongoing security and privacy threats and the process for managing them
-* {: .dpgn-stage-live} Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned.
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}Plan recurring interactions with the business and information risk teams to ensure ongoing alignment.
+* {: .dpgn-stage-alpha}Integrate a security advisor into the delivery team to support IT security risk management throughout the full delivery of the service.
+* {: .dpgn-stage-alpha}Document the protective measures implemented to enable the secure processing and sharing of data and information across government
+* {: .dpgn-stage-alpha}Document how the service manages information and records (data) in order to protect their confidentiality and integrity, and ensure their availability.
+* {: .dpgn-stage-alpha}Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default.
 
-**Formerly guideline 9.3**
+**Beta Stage**
 {: .dpgn-data-ignore}
 
-* {: .dpgn-stage-alpha} Ensure that a preliminary privacy impact assessment (PPIA) or privacy impact assessment (PIA) has been completed if personal information is involved in the service.
-* {: .dpgn-stage-alpha} Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Ensure that digital solutions and open data initiatives comply with requirements regarding the collection and protection of personal information.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Use appropriate de-identification strategies to minimize the risk of disclosing personal information.
-* {: .dpgn-stage-beta .dpgn-stage-live} Incorporate privacy safeguards into partnership and data sharing agreements.
-* {: .dpgn-stage-alpha .dpgn-stage-beta} Develop your system with the [7 principles of Privacy by Design (Information and Privacy Commissioner of Ontario)](https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf) in mind.
-* {: .dpgn-stage-live} Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default.
+{: .dpgn-standards-hide .dpgn-stage-beta} **Note:** Beta Stage includes all elements from the previous Alpha stage, plus the following:
 
-**Formerly guideline 9.4**
+* {: .dpgn-stage-beta .dpgn-stage-live}Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information.
+* {: .dpgn-stage-beta .dpgn-stage-live}Use appropriate de-identification strategies to minimize the risk of disclosing personal information.
+* {: .dpgn-stage-beta .dpgn-stage-live}Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
+* {: .dpgn-stage-beta .dpgn-stage-live}Incorporate privacy safeguards into partnership and data sharing agreements.
+* {: .dpgn-stage-beta .dpgn-stage-live}Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual.
+* {: .dpgn-stage-beta .dpgn-stage-live}Establish terms of services to ensure users understand how their data will be used and how it will be accessed
+* {: .dpgn-stage-beta .dpgn-stage-live}Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
+* {: .dpgn-stage-beta .dpgn-stage-live}Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
+* {: .dpgn-stage-beta .dpgn-stage-live}Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
+
+**Live Stage**
 {: .dpgn-data-ignore}
 
-* {: .dpgn-stage-beta .dpgn-stage-live} Make sure to address all legal and privacy issues associated with protecting and sharing user data
-* {: .dpgn-stage-alpha} Understand to what degree the solution has to comply with the Canadian legislation, TBS policy instruments, and departmental security policies, and create a plan on how to achieve this
-* {: .dpgn-stage-alpha} Engage the appropriate privacy, security, and legal officer(s) to discuss the legal aspects of managing cyber risks
-* {: .dpgn-stage-alpha} Consider the collection, security, and access obligations contained in the Privacy Act when designing digital applications; the need to de-identify personal data before release; and the need to address privacy when establishing partnerships.
-* {: .dpgn-stage-alpha} Document the protective measures implemented to enable the secure processing and sharing of data and information across government
-* {: .dpgn-stage-alpha} Document how the service manages information and records (data) in order to protect their confidentiality and integrity, and ensure their availability.
-* {: .dpgn-stage-alpha} Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live} Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
-* Develop and maintain cybersecurity training programs to develop appropriate behaviours and culture for employees and contractors
-* {: .dpgn-stage-beta .dpgn-stage-live} Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
-* Establish terms of services to ensure users understand how their data will be used and how it will be accessed
+{: .dpgn-standards-hide .dpgn-stage-beta} **Note:** Live Stage includes all elements from the previous Alpha and Beta stages, plus the following:
+
+* {: .dpgn-stage-live}Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
 
 </section>
 
@@ -125,25 +131,17 @@ Canadians want to have confidence that government digital services are designed 
 
 ### Implementation guides
 
-* [Information Technology Policy Implementation Notices (ITPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy}[Information Technology Policy Implementation Notices (ITPIN)](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy}[GC Security Policy Implementation Notices (internal to Government of Canada)](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[OPC guidance for federal institutions (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/for-federal-institutions/)
+* {: .dpgn-stage-beta .dpgn-stage-live}[Guidance on Preparing Information Sharing Agreements Involving Personal Information](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy}[Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
+* {: .dpgn-stage-beta .dpgn-stage-live}[Guidelines for obtaining meaningful consent (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gl_omc_201805/)
+* {: .dpgn-stage-beta .dpgn-stage-live}[Guidance on inappropriate data practices: Interpretation and application of subsection 5(3) (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gd_53_201805/)
 
-**Formerly guideline 9.4**
-{: .dpgn-data-ignore}
-
-* [For federal institutions (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/for-federal-institutions/)
-* [Guidance on Preparing Information Sharing Agreements Involving Personal Information](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html)
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
-* [Guidelines for obtaining meaningful consent (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gl_omc_201805/)
-* [Guidance on inappropriate data practices: Interpretation and application of subsection 5(3) (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gd_53_201805/)
-
-**Formerly guideline 9.4**
-{: .dpgn-data-ignore}
-
-* [GC Information Technology Policy Implementation Notices](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices.html)
-* [GC Security Policy Implementation Notices (internal to Government of Canada)](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
-* [Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
+* {: .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy}[Direction for Electronic Data Residency](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html)
 * [Canadian Criminal Code, Unauthorized use of computer (Sect 342.1/342.2)](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-97)
 * [Canadian Criminal Code, Mischief in relation to computer data (Sect 430(1.1))](http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html#h-117)
 
@@ -153,7 +151,7 @@ Canadians want to have confidence that government digital services are designed 
 
 ### Reusable solutions
 
-* {: .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 
@@ -171,6 +169,7 @@ Canadians want to have confidence that government digital services are designed 
 * [5. Make it secure (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/5-make-it-secure/)
 
 </section>
+
 </section>
 
 <section class="dpgn-section-guideline">
@@ -191,20 +190,16 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Checklist
 
-* Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
-* Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies.
-* Use deployment scripts to ensure configuration of production environment remains consistent and controllable.
-* Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
-* Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
-* Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
-* Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
-* Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access.
-* Maintain logs of user access and system interactions to fully trace a user as they traverse each part of the system
-* Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats
-* Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
-* Determine how long you need to protect your assets during and after their life / intended use.
-* Document the plan and process for maintaining up-to-date and supported software for services/system
-* Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
+* {: .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural-security-privacy}Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility.
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural-security-privacy}Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies.
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural-security-privacy}Use deployment scripts to ensure configuration of production environment remains consistent and controllable.
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural-security-privacy}Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services.
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural-security-privacy}Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only.
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural-security-privacy}Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default
+* {: .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural-security-privacy}Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations.
+* {: .dpgn-stage-beta .dpgn-stage-live}Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption.
+* {: .dpgn-stage-beta .dpgn-stage-live}Document the plan and process for technical updates and support for services/system software
+* {: .dpgn-stage-beta .dpgn-stage-live}Leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery.
 
 </section>
 
@@ -212,7 +207,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 ### Implementation guides
 
-* [Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[Password Guidance](https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/)
 
 </section>
 
@@ -222,7 +217,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 **[TODO: Add/revise reusable solutions]**
 
-* [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
 
 </section>
 
