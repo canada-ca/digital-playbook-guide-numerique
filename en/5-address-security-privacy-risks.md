@@ -65,6 +65,7 @@ Organizations have a responsibility to ensure that the data under their care rem
 
 **Formerly guideline 9.4**
 {: .dpgn-data-ignore}
+
 ### Address jurisdictional legal and regulatory requirements
 
 The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate.
@@ -105,13 +106,14 @@ Canadians want to have confidence that government digital services are designed 
 **Beta Stage**
 {: .dpgn-data-ignore}
 
-{: .dpgn-standards-hide .dpgn-stage-beta}**Note:** Beta Stage includes all elements from the previous Alpha stage, plus the following:
+{: .dpgn-standards-hide .dpgn-stage-beta} **Note:** Beta Stage includes all elements from the previous Alpha stage, plus the following:
+
 * {: .dpgn-stage-beta .dpgn-stage-live}Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information.
 * {: .dpgn-stage-beta .dpgn-stage-live}Use appropriate de-identification strategies to minimize the risk of disclosing personal information.
-*  {: .dpgn-stage-beta .dpgn-stage-live}Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
+* {: .dpgn-stage-beta .dpgn-stage-live}Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner.
 * {: .dpgn-stage-beta .dpgn-stage-live}Incorporate privacy safeguards into partnership and data sharing agreements.
 * {: .dpgn-stage-beta .dpgn-stage-live}Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual.
-*  {: .dpgn-stage-beta .dpgn-stage-live}Establish terms of services to ensure users understand how their data will be used and how it will be accessed
+* {: .dpgn-stage-beta .dpgn-stage-live}Establish terms of services to ensure users understand how their data will be used and how it will be accessed
 * {: .dpgn-stage-beta .dpgn-stage-live}Ensure your service has properly documented event management processes, in the event of a data breach or compromise of the integrity of your systems.
 * {: .dpgn-stage-beta .dpgn-stage-live}Provide users adequate information (*Terms and Conditions / Privacy Agreement*) to ensure they fully understand the authority they are providing to 3rd party services.
 * {: .dpgn-stage-beta .dpgn-stage-live}Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS.
@@ -119,7 +121,8 @@ Canadians want to have confidence that government digital services are designed 
 **Live Stage**
 {: .dpgn-data-ignore}
 
-{: .dpgn-standards-hide .dpgn-stage-beta}**Note:** Live Stage includes all elements from the previous Alpha and Beta stages, plus the following:
+{: .dpgn-standards-hide .dpgn-stage-beta} **Note:** Live Stage includes all elements from the previous Alpha and Beta stages, plus the following:
+
 * {: .dpgn-stage-live}Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care.
 
 </section>
