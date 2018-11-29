@@ -5669,7 +5669,7 @@
                   "content": [
                     {
                       "content_type": "inline",
-                      "content": "any information they provide is confidential and stored appropriately"
+                      "content": "any information they provide is handled and stored appropriately"
                     }
                   ]
                 },
@@ -5764,7 +5764,7 @@
                     "content": [
                       {
                         "content_type": "inline",
-                        "content": "Managing risk is critical for government. All organizations face risks, no matter the size; one size does not fit all when it comes to cyber risk management. Each organisation has to make difficult decisions around how much time and money to spend protecting their technology and services. An understanding of the users, data and threats that affect the service will help to inform this risk-based approach to support the delivery of a usable and secure system. Appropriate steps must be taken to identify, assess and understand security and privacy risks to GC sensitive and protected data and the systems that process this data."
+                        "content": "All organizations face risks, no matter the size, yet one size does not fit all when it comes to risk management. Each IT organisation has to make difficult decisions around how much time and money to spend protecting their technology and services. An understanding of the users, data and threats that affect the service will help to inform this risk-based approach to support the delivery of a usable and secure system. Appropriate steps must be taken to identify, assess and understand security and privacy risks to GC sensitive and protected data and the systems that process this data."
                       }
                     ]
                   },
@@ -5789,42 +5789,62 @@
                     ]
                   },
                   {
-                    "content_type": "block",
-                    "source_element": "p",
+                    "content_type": "section",
+                    "source_element": "section",
+                    "source_attributes": {
+                      "id": "include-security-and-privacy-in-innovation"
+                    },
+                    "title": "Include security and privacy in innovation",
                     "content": [
                       {
-                        "content_type": "inline",
-                        "content": "Canadians’ support for open data and digital services is enhanced when their privacy rights are protected: transparency and respect for privacy are complementary goals. The shift to digital government offers opportunities to strengthen privacy rights and safely share more data that can benefit society. Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
+                        "content_type": "block",
+                        "source_element": "p",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Canadians’ support for open data and digital services is enhanced when their privacy rights are protected: transparency and respect for privacy are complementary goals. The shift to digital government offers opportunities to strengthen privacy rights and safely share more data that can benefit society. Innovation must be matched by conscious responsibility regarding stewardship of users’ personal information and data."
+                          }
+                        ]
+                      },
                       {
-                        "content_type": "inline",
-                        "content": "Embedding privacy protection in the design of digital applications or open data increases political legitimacy and public confidence, and privacy safeguards are a necessary condition for a successful shift to a digital Government of Canada. Digital services also have the potential to enhance privacy rights, for example, by facilitating access to and correction of personal information."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
+                        "content_type": "block",
+                        "source_element": "p",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Embedding privacy protection in the design of digital applications or open data increases political legitimacy and public confidence, and privacy safeguards are a necessary condition for a successful shift to a digital Government of Canada. Digital services also have the potential to enhance privacy rights, for example, by facilitating access to and correction of personal information."
+                          }
+                        ]
+                      },
                       {
-                        "content_type": "inline",
-                        "content": "Organizations have a responsibility to ensure that the data under their care remains protected at all times, including in the process of sharing with external partners and within their own network. This requires an understanding what data is worth protecting, manage who and what can access it, and build effective defenses that both support innovation and protect the investment made in services and associated assets."
-                      }
-                    ]
-                  },
-                  {
-                    "content_type": "block",
-                    "source_element": "p",
-                    "content": [
+                        "content_type": "block",
+                        "source_element": "p",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Organizations have a responsibility to ensure that the data under their care remains protected at all times, including in the process of sharing with external partners and within their own network. This requires an understanding what data is worth protecting, manage who and what can access it, and build effective defenses that both support innovation and protect the investment made in services and associated assets."
+                          }
+                        ]
+                      },
                       {
-                        "content_type": "inline",
-                        "content": "The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate."
+                        "content_type": "block",
+                        "source_element": "p",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "The law and governance in cyberspace is not the sole responsibility nor under the authority of any one specific government, or group; boundary-less services require a fulsome understanding of any jurisdiction in which you operate."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "p",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Canadians want to have confidence that government digital services are designed to meet the laws and regulations stipulated in multiple acts protecting the confidentiality, integrity and accessibility of systems and information. Develop a legal and regulatory view of the department for the purposes of designing secure information systems through identifying the <em>business needs for security</em>. A business need for security is any protection or compliance requirement that ensures the confidentiality, integrity or availability of a business activity or information assets supporting a business activity. Business needs for security can also be derived from departmental missions, objectives, priorities, the need to preserve the organization's image and reputation, and various obligations that may have been contracted."
+                          }
+                        ]
                       }
                     ]
                   },
@@ -5856,7 +5876,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Document the approach to security and risk management including the information and minimal documentation necessary to enable timely and effective decision making."
+                            "content": "Document the approach to security and risk management including the types of information and optimum level of documentation, necessary to make timely and effective decisions."
                           }
                         ]
                       },
@@ -5866,89 +5886,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Ensure that you identify and categorize information based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "At the start of designing a new service or feature, the team lead should engage the appropriate privacy, security, and legal officer(s) to discuss the type of information collected, how it should be secured, how long it is kept, and how it may be used and shared."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Make sure there are ongoing interactions with the business and information risk teams."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Make sure to include an external security advisor as part of the delivery team to support IT security risk management throughout the delivery of the service to achieve the team’s common goal of delivering a usable and secure system."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Determine what you absolutely need to protect – can you clearly identify what components are essential to the success of your service? Not all assets need the same level of protection."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Determine what you’re willing to pay to protect it – can you protect your assets with the desired level of investment? Is the cost of full protection in excess of the value of your assets?"
+                            "content": "Ensure that you identify and categorize information based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability. Determine the type of information collected, how it should be secured, how long it is kept, and how it may be used and shared."
                           }
                         ]
                       },
@@ -5958,22 +5896,46 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Document the process for identifying, understanding new or ongoing security and privacy threats and the process for managing them"
+                            "content": "At the start of designing a new service or feature, the team lead should engage the appropriate privacy, information management, and legal officer(s) to ensure that solutions comply with all requirements for the collection, sharing and protection of personal information."
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
+                            "content": "Determine what you absolutely need to protect through risk assessment and threat modeling – can you clearly identify what components are essential to the success of your service? Not all assets need the same level of protection. #pragmaticsecurity"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Determine what you’re willing to pay for security – can you adequately protect your assets with the desired level of investment? Is the cost of protection in excess of the value of your assets? #pragmaticsecurity"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Complete a preliminary privacy impact assessment (PPIA) or privacy impact assessment (PIA) if personal information is involved in the service."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
                             "content": "Establish a cycle of re-evaluation to ensure what you’re protecting is actually what you need to protect and make improvements based on lessons learned."
                           }
                         ]
@@ -5981,127 +5943,9 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Ensure that a preliminary privacy impact assessment (PPIA) or privacy impact assessment (PIA) has been completed if personal information is involved in the service."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Determine, in consultation with a records officer, what data is collected and why, how it is used or shared, how it is stored and secured, and how long it is kept."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Ensure that digital solutions and open data initiatives comply with requirements regarding the collection and protection of personal information."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Use appropriate de-identification strategies to minimize the risk of disclosing personal information."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Incorporate privacy safeguards into partnership and data sharing agreements."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta"
-                            ],
                             "content": "Develop your system with the <a href=\"https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf\">7 principles of Privacy by Design (Information and Privacy Commissioner of Ontario)</a> in mind."
                           }
                         ]
@@ -6109,16 +5953,70 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-live"
-                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual."
+                            "content": "Ensure your service complies with Canadian security and privacy legislation, government policy instruments, and departmental security policies at all stages."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Develop, publish and maintain training and awareness material as required, to establish secure service-user behaviours"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Maintain logs of user access and system interactions to fully trace a user as they traverse each part of the system"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats"
                           }
                         ]
                       },
@@ -6138,105 +6036,7 @@
                               "dpgn-stage-beta",
                               "dpgn-stage-live"
                             ],
-                            "content": "Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Provide users adequate information (<em>Terms and Conditions / Privacy Agreement</em>) to ensure they fully understand the authority they are providing to 3rd party services."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha",
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha",
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-beta",
-                          "dpgn-stage-live"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-beta",
-                              "dpgn-stage-live"
-                            ],
-                            "content": "Make sure to address all legal and privacy issues associated with protecting and sharing user data"
+                            "content": "Plan recurring interactions with the business and information risk teams to ensure ongoing alignment."
                           }
                         ]
                       },
@@ -6252,39 +6052,7 @@
                             "tags": [
                               "dpgn-stage-alpha"
                             ],
-                            "content": "Understand to what degree the solution has to comply with the Canadian legislation, TBS policy instruments, and departmental security policies, and create a plan on how to achieve this"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Engage the appropriate privacy, security, and legal officer(s) to discuss the legal aspects of managing cyber risks"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "tags": [
-                          "dpgn-stage-alpha"
-                        ],
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "tags": [
-                              "dpgn-stage-alpha"
-                            ],
-                            "content": "Consider the collection, security, and access obligations contained in the Privacy Act when designing digital applications; the need to de-identify personal data before release; and the need to address privacy when establishing partnerships."
+                            "content": "Integrate a security advisor into the delivery team to support IT security risk management throughout the full delivery of the service."
                           }
                         ]
                       },
@@ -6332,15 +6100,30 @@
                             "tags": [
                               "dpgn-stage-alpha"
                             ],
-                            "content": "Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are."
+                            "content": "Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default."
                           }
                         ]
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "{: .dpgn-standards-hide .dpgn-stage-beta} <strong>Note:</strong> Beta Stage includes all elements from the previous Alpha stage, plus the following:"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "content": [
                       {
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
-                          "dpgn-stage-alpha",
                           "dpgn-stage-beta",
                           "dpgn-stage-live"
                         ],
@@ -6348,21 +6131,100 @@
                           {
                             "content_type": "inline",
                             "tags": [
-                              "dpgn-stage-alpha",
                               "dpgn-stage-beta",
                               "dpgn-stage-live"
                             ],
-                            "content": "Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management."
+                            "content": "Where collecting personal information, inform users about privacy rights and protections, and about their right to access and correct their own personal information."
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Develop and maintain cybersecurity training programs to develop appropriate behaviours and culture for employees and contractors"
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Use appropriate de-identification strategies to minimize the risk of disclosing personal information."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Establish a data access audit process to provide assurance to users that their data has not been accessed in an unauthorized manner."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Incorporate privacy safeguards into partnership and data sharing agreements."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Ensure that privacy breach protocol is implemented and understood. Federal institutions are required to notify the Office of the Privacy Commissioner of Canada (OPC) and the Treasury Board of Canada Secretariat (TBS) of all material privacy breaches and of the mitigation measures being implemented, if the breach involves sensitive personal information and could reasonably be expected to cause serious injury to the individual."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Establish terms of services to ensure users understand how their data will be used and how it will be accessed"
                           }
                         ]
                       },
@@ -6387,10 +6249,68 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Establish terms of services to ensure users understand how their data will be used and how it will be accessed"
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Provide users adequate information (<em>Terms and Conditions / Privacy Agreement</em>) to ensure they fully understand the authority they are providing to 3rd party services."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Ensure all APIs are developed in alignment with secure connection guidance; APIs should be accessed over HTTPS."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "p",
+                    "content": [
+                      {
+                        "content_type": "inline",
+                        "content": "{: .dpgn-standards-hide .dpgn-stage-beta} <strong>Note:</strong> Live Stage includes all elements from the previous Alpha and Beta stages, plus the following:"
+                      }
+                    ]
+                  },
+                  {
+                    "content_type": "block",
+                    "source_element": "ul",
+                    "content": [
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-live"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Establish agreements with 3rd parties who may benefit from receiving data from your service in accordance with guidance such as the TBS Guidance on Preparing Information Sharing Agreements Involving Personal Information, to ensure they will treat your data with appropriate care."
                           }
                         ]
                       },
@@ -6464,9 +6384,23 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique.html\">Avis de mise en œuvre de la Politique sur la technologie de l’information (AMPTI)</a>"
                           }
                         ]
@@ -6475,6 +6409,9 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
                         ],
@@ -6482,10 +6419,13 @@
                           {
                             "content_type": "inline",
                             "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ce-que-nous-faisons.html\">Instruments de politique de gestion de la sécurité et de l'identité</a>"
+                            "content": "<a href=\"http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-fra.asp\">Avis de mise en oeuvres de la politique sur la sécurité (interne au gouvernement du Canada)</a>"
                           }
                         ]
                       },
@@ -6493,6 +6433,9 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
                         ],
@@ -6500,6 +6443,33 @@
                           {
                             "content_type": "inline",
                             "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
+                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/ce-que-nous-faisons.html\">Instruments de politique de sécurité et de gestion des identités</a>"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
@@ -6510,19 +6480,37 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.priv.gc.ca/fr/pour-les-institutions-federales/\">Pour les institutions fédérales (Commissariat à la protection de la vie privée du Canada)</a>"
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "<a href=\"https://www.priv.gc.ca/fr/pour-les-institutions-federales/\">Directives du Commissariat à l'intention des institutions fédérales (Commissariat à la protection de la vie privée du Canada (CPVP))</a>"
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/protection-renseignement-personnels/document-orientation-aider-preparer-ententes-echange-renseignements-personnels.html\">Document d'orientation pour aider à préparer des Ententes d'échange de renseignements personnels</a>"
                           }
                         ]
@@ -6531,6 +6519,9 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
                         ],
@@ -6538,6 +6529,9 @@
                           {
                             "content_type": "inline",
                             "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
@@ -6548,49 +6542,57 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gl_omc_201805/\">Lignes directrices pour l’obtention d’un consentement valable (Commissariat à la protection de la vie privée du Canada)</a>"
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "<a href=\"https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gl_omc_201805/\">Lignes directrices pour l’obtention d’un consentement valable (Commissariat à la protection de la vie privée du Canada (CPVP))</a>"
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gd_53_201805/\">Document d’orientation sur les pratiques inacceptables du traitement des données : Interprétation et application du paragraphe 5(3) (Commissariat à la protection de la vie privée du Canada)</a>"
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "<a href=\"https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/collecte-de-renseignements-personnels/consentement/gd_53_201805/\">Document d’orientation sur les pratiques inacceptables du traitement des données : Interprétation et application du paragraphe 5(3) (Commissariat à la protection de la vie privée du Canada (CPVP))</a>"
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique.html\">Avis de mise en œuvre de la Politique sur la technologie de l’information (AMPTI)</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "<a href=\"http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-fra.asp\">Avis de mise en oeuvres de la politique sur la sécurité (interne au gouvernement du Canada)</a>"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/avis-mise-oeuvre-politique/orientation-relative-residence-donnees-electroniques.html\">Orientation relative à la résidence des données électroniques</a>"
                           }
                         ]
@@ -6633,6 +6635,9 @@
                         "content_type": "block",
                         "source_element": "li",
                         "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
                           "dpgn-digital-architectural",
                           "dpgn-digital-architectural-security-privacy"
                         ],
@@ -6640,6 +6645,9 @@
                           {
                             "content_type": "inline",
                             "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
@@ -6801,9 +6809,19 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "Implement an Identity and Access Management (IAM) solution that aligns with trusted digital identity frameworks, such as the Pan-Canadian Trust Framework, for security commensurate to service sensitivity, ID portability across platforms, and authentication and authorization agility."
                           }
                         ]
@@ -6811,9 +6829,21 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "Where possible, provide users easily-accessible means of authentication (e.g.: biometrics) to your service - take advantage of improvements in consumer technologies."
                           }
                         ]
@@ -6821,9 +6851,21 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "Use deployment scripts to ensure configuration of production environment remains consistent and controllable."
                           }
                         ]
@@ -6831,9 +6873,21 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "Test and certify components in each layer of the technology stack for security vulnerabilities, and then to re-use these same pre-certified components for multiple services."
                           }
                         ]
@@ -6841,9 +6895,21 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "Ensure all APIs are developed in alignment with secure connections requirements from TBS and CSE; all APIs should be accessed over HTTPS only."
                           }
                         ]
@@ -6851,9 +6917,21 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "Ensure all APIs have appropriate authentication and that only authorized users/services are able to access the information; “open data” APIs are explicitly configured to allow access by all by default"
                           }
                         ]
@@ -6861,9 +6939,19 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live",
+                          "dpgn-digital-architectural-security-privacy"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live",
+                              "dpgn-digital-architectural-security-privacy"
+                            ],
                             "content": "Ensure your digital service offers a quick and easy reporting mechanism, that enables the process of security vulnerability disclosures; alerts should be treated with care and consideration equal to internal evaluations."
                           }
                         ]
@@ -6871,39 +6959,17 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Maintain logs of user access and system interactions to fully trace a user as they traverse each part of the system"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
                             "content": "Develop robust IT Continuity plans, including infrastructure and data backups, to ensure that your digital service is able to return to operational status with minimal disruption."
                           }
                         ]
@@ -6911,30 +6977,36 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Determine how long you need to protect your assets during and after their life / intended use."
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Document the plan and process for technical updates and support for services/system software"
                           }
                         ]
                       },
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Document the plan and process for maintaining up-to-date and supported software for services/system"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Make sure to leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery."
+                            "tags": [
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
+                            "content": "Leverage existing services and frameworks such as the Pan-Canadian Trust Framework to foster multi-jurisdictional service delivery."
                           }
                         ]
                       }
@@ -6955,9 +7027,19 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
                             "content": "<a href=\"https://docs.google.com/document/d/1Vhg_B6nIIYMtEhO6SaMGatRHwabapz2HLAHMT9V4Ev0/\">Password Guidance</a>"
                           }
                         ]
@@ -6989,9 +7071,19 @@
                       {
                         "content_type": "block",
                         "source_element": "li",
+                        "tags": [
+                          "dpgn-stage-alpha",
+                          "dpgn-stage-beta",
+                          "dpgn-stage-live"
+                        ],
                         "content": [
                           {
                             "content_type": "inline",
+                            "tags": [
+                              "dpgn-stage-alpha",
+                              "dpgn-stage-beta",
+                              "dpgn-stage-live"
+                            ],
                             "content": "<a href=\"https://github.com/canada-ca/PCTF\">Pan-Canadian Trust Framework</a>"
                           }
                         ]
