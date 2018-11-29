@@ -8,6 +8,8 @@
 
 Provides practical and detailed guidance to assist the Government of Canada in digital transformation and augmented service delivery, including becoming more agile, open and user-focused. Includes task-specific views and interactive features to make it easier to find relevant guidance and to apply it to day-to-day work.
 
+The Digital Playbook is also an opportunity to experiment with new approaches while reusing as much as possible and contributing back reusable components for others to use (see [Experimental approaches and reusable components](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/experimental-approaches-reusable-components.html)).
+
 ## Digital Playbook views
 
 [Digital Playbook views](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/en/views.html) are generated from the [Digital Playbook dataset](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json) and can make the Digital Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.
@@ -28,6 +30,10 @@ Provides practical and detailed guidance to assist the Government of Canada in d
 ### Open Government views
 
 - [How do I decide whether to release content on the Open Government Portal? (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/en/release-content.html)
+
+### Security views
+
+- [Security Categorization Tool (draft)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/security-securite/en/categorization-tool.html)
 
 ### Digital Architectural Standards views
 
@@ -67,7 +73,7 @@ Our goal is to provide public services to Canadians which are simple to use and 
 
 The digital standards were co-created with the public and key stakeholder groups and the goal is to co-create this Digital Playbook with the same groups. They are living standards and guidance and they will continue to evolve over time as we better understand the complexities involved in putting them into practice.
 
-The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](http://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
+The Government of Canada Digital Playbook is available under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada), except where otherwise stated.
 
 ### Structure of the Digital Playbook (draft)
 
@@ -94,6 +100,8 @@ To ensure that the Digital Playbook is as easy to use as possible, contributors/
 
 Fournit des conseils pratiques et détaillés pour aider le gouvernement du Canada dans la transformation numérique et la prestation de services accrue, y compris en devenant plus agile, ouvert et axé sur l'utilisateur. Inclut des vues spécifiques aux tâches et des fonctions interactives pour faciliter la recherche des conseils pertinents et pour les appliquer au travail quotidien.
 
+Le guide numérique est également l’occasion d’expérimenter avec de nouvelles approches tout en réutilisant le plus que possible et en fournissant des composants réutilisables pour que les autres puissent les utiliser (voir [Approches expérimentales et composants réutilisables](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/approches-experimentales-composants-reutilisables.html)).
+
 ## Vues du guide numérique
 
 Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guide-numerique/docs/fr/vues.html) sont générés à partir du [jeu de données du guide numérique](https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json) et peuvent rendre le guide numérique plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.
@@ -114,6 +122,10 @@ Les [vues du guide numérique](https://canada-ca.github.io/digital-playbook-guid
 ### Vues basées sur le gouvernement ouvert
 
 - [Comment puis-je décider de publier du contenu dans le Portail du gouvernement ouvert? (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/open-gov-gouv-ouvert/fr/publier-contenu.html)
+
+### Vues basées sur le sécurité
+
+- [Outil de categorisation de sécurité (ébauche)](https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/security-securite/fr/outil-categorisation.html)
 
 ### Vues basées sur les normes architecturales sur le numérique
 

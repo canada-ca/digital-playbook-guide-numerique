@@ -93,7 +93,6 @@ Share your experiences with colleagues across the Government of Canada, other le
 - [Measuring digital take-up (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up)
 - [Sharing data on the Performance Platform (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Measuring success (Digital Service Standard (UK))](https://www.gov.uk/service-manual/measuring-success/measuring-completion-rate)
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-measurable-accountable} [Performance Testing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/performance-testing/)
 
 </section>
 
@@ -147,13 +146,10 @@ This includes working in the open, sharing any and all data and information prod
 
 ### Implementation guides
 
-- {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standards-solutions} [Open Data (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/open-data/)
-- [Statistical Data Integration (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/statistical-data-integration/)
 - {: .dpgn-digital-architectural .dpgn-digital-architectural-open-standard-solutions} [Making source code open and reusable (Service Manual (UK))](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
-- [Code sharing (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/code-sharing/)
 - [Choose an open source licence (choosealicense.com)](https://choosealicense.com/)
 - [Comparison of free and open-source software licences (Wikipedia)](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
-- [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blog/making-source-code-open/)
+- [Making source code open (DTA Blog (AU))](https://www.dta.gov.au/blogs/making-source-code-open)
 
 </section>
 
@@ -171,7 +167,7 @@ This includes working in the open, sharing any and all data and information prod
 - [Open Source Software (Federal Source Code Policy (US))](https://sourcecode.cio.gov/OSS/)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [18F Open Source Policy (US)](https://github.com/18F/open-source-policy/blob/master/policy.md)
-- [8. Make source code open (Digital Service Standard (AU))](https://www.dta.gov.au/standard/8-make-source-code-open/)
+- [8. Make source code open (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/8-make-source-code-open/)
 
 </section>
 </section>

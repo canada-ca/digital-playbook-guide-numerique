@@ -89,7 +89,6 @@ Canadians want to have confidence that government digital services are designed 
 * Identify and understand the jurisdictional requirements of where your digital service operates, and where your stakeholders are.
 * Develop, update, and maintain written cybersecurity policies and procedures, including on governance by both service and organizational management.
 * Develop, publish and maintain training and awareness material as required, to establish secure service-user behaviours
-
 * Make sure the service limits access to physical and logical assets and associated facilities to authorized users, processes, or devices consistent with the risk of unauthorized access.
 * Maintain logs of user access and system interactions to fully trace a user as they traverse each part of the system
 * Implement layered defenses to reduce exposure to cyber threats with increased awareness and understanding to proactively manage such threats
@@ -158,15 +157,13 @@ Canadians want to have confidence that government digital services are designed 
 ### Similar resources
 
 * [Managing Risk through Digital Trust (CSO)](https://www.csoonline.com/article/3200753/security/managing-risk-through-digital-trust.html)
-* [Privacy (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/privacy/)
-* [Secure services (Digital Service Standards (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 * [10. Embed privacy and security by design (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-10)
 * [Privacy Act (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-privacy-act/)
 * [Personal Information Protection & Electronic Documents Act (PIPEDA) (Office of the Privacy Commissioner of Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
 * [Privacy by Design (Wikipedia)](https://en.wikipedia.org/wiki/Privacy_by_design)
 * [7. Understand security and privacy issues (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-security-and-privacy-issues)
 * [11. Manage security and privacy through reusable processes (Digital Services Playbook (US))](https://playbook.cio.gov/#play11)
-* [5. Make it secure (Digital Service Standard (AU))](https://www.dta.gov.au/standard/5-make-it-secure/)
+* [5. Make it secure (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/5-make-it-secure/)
 
 </section>
 
@@ -229,8 +226,6 @@ Integrating security from the outset and “shifting security left” in the ser
 * [Information security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/making-software/information-security.html)
 * [Cloud security (Digital Service Standard (UK))](https://www.gov.uk/service-manual/operations/cloud-security.html)
 * [User accounts and logins (Digital Service Standard (UK))](https://www.gov.uk/service-manual/design/user-accounts)
-* [Identity assurance (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/identity-assurance/)
-* [Secure services (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/secure-services/)
 
 </section>
 </section>

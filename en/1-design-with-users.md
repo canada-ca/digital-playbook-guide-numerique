@@ -93,7 +93,7 @@ A key part of building digital services that work for users is developing a good
 - [1. Understand user needs (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/understand-user-needs)
 - [1. Understand users and their needs (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-1)
 - [1. Understand what people need (Digital Services Playbook (US))](https://playbook.cio.gov/#play1)
-- [1. Understand user needs (Digital Service Standard (AU))](https://www.dta.gov.au/standard/1-user-needs/)
+- [1. Understand user needs (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/1-understand-user-needs/)
 - [1. Understand client needs (Think - Digital Design Playbook (ISED)) (internal to GC only)](http://www.gcpedia.gc.ca/wiki/DDPlayBook_Think#1._Understand_client_needs)
 - [2. Do ongoing user research (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/do-ongoing-user-research)
 - [12. Make sure users succeed first time (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple)

@@ -199,7 +199,6 @@ Development of accessible (regardless of ability, device or environment) digital
 - [Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile (W3C)](https://www.w3.org/TR/mobile-accessibility-mapping/)
 - [Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) (W3C)](https://www.w3.org/TR/wcag2ict/)
 - [Standard on Web Accessibility](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601)
-- [Inclusive services (Digital Service Standard (AU))](https://www.dta.gov.au/standard/design-guides/inclusive-services/)
 - [18F Accessibility Guide (18F (US))](https://accessibility.18f.gov/index.html)
 - [The A11y Project (a11yproject.com)](https://a11yproject.com/)
 - [Making your service accessible (Service Manual (UK))](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction)
@@ -219,7 +218,7 @@ Development of accessible (regardless of ability, device or environment) digital
 ### Similar resources
 
 - [7. Make it accessible (Digital Service Standard (Ontario))](https://www.ontario.ca/page/digital-service-standard#section-7)
-- [9. Make it accessible (Digital Service Standard (AU))](https://www.dta.gov.au/standard/9-make-it-accessible/)
+- [9. Make it accessible (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/9-make-it-accessible/)
 
 </section>
 </section>

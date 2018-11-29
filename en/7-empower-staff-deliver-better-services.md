@@ -101,7 +101,7 @@ We must seek out and use modern methods such as Agile to ensure that the digital
 
 - [6. Create and empower an interdisciplinary team (Digital service design standard (NZ))](https://www.digital.govt.nz/standards-and-guidance/digital-service-design-standard/principles/create-and-empower-an-interdisciplinary-team/)
 - [6. Evaluate tools and systems (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/evaluate-tools-and-systems)
-- [4. Understand tools and systems (Digital Service Standard (AU))](https://www.dta.gov.au/standard/4-tools-and-systems/)
+- [4. Understand tools and systems (Digital Service Standard (AU))](https://guides.service.gov.au/digital-service-standard/4-tools-and-systems/)
 
 </section>
 </section>

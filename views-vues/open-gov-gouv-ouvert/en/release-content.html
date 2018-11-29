@@ -61,15 +61,17 @@ contactEmail: open-ouvert@tbs-scgt.gc.ca
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
-In accordance with the [Directive on Open Government](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108), the Government of Canada is committed to maximizing the release of government information and data of business value to support transparency, accountability, citizen engagement, and socio-economic benefits.
+<p>In accordance with the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108">Directive on Open Government</a>, the Government of Canada is committed to maximizing the release of government information and data of business value to support transparency, accountability, citizen engagement, and socio-economic benefits.</p>
 
-This page will help you decide whether to release content, either a dataset (structured information) or an information asset (unstructured information), on open.canada.ca.
+<p>This page will help you decide whether to release content, either a dataset (structured information) or an information asset (unstructured information), on open.canada.ca.</p>
 
-This process has 3 steps:
+<p>This process has 3 steps:</p>
 
-- Step 1: Determine whether the content is of business value
-- Step 2: Determine whether the content is subject to restrictions
-- Step 3: Determine whether the content is ready for release
+<ul>
+<li>Step 1: Determine whether the content is of business value</li>
+<li>Step 2: Determine whether the content is subject to restrictions</li>
+<li>Step 3: Determine whether the content is ready for release</li>
+</ul>
 
 {% include views-vues/open-gov-gouv-ouvert/release-content-publier-contenu-questionnaire.html %}
 
@@ -82,15 +84,17 @@ This process has 3 steps:
 </header>
 <div class="panel-body">
 
-Your content is ready to be released on [open.canada.ca](https://open.canada.ca), you will need to:
+<p>Your content is ready to be released on <a href="https://open.canada.ca">open.canada.ca</a>, you will need to:
 
-- Create a metadata record describing the content on the Open Government Registry: The [Open Government Registry Guide](https://open.canada.ca/ckan/en/dataset/c2529700-2728-5c39-9107-1102e9cfb7bb) explains how to create this record.
-- Send an email to <{{ page.contactEmail }}> to ask that the metadata record be reviewed and released on [open.canada.ca](https://open.canada.ca).
-- Release the content: The [{{ page.guidebook.linkText }}]({{ page.guidebook.url }}) explains how to release your content on [open.canada.ca](https://open.canada.ca).
+<ul>
+<li>Create a metadata record describing the content on the Open Government Registry: The <a href="https://open.canada.ca/ckan/en/dataset/c2529700-2728-5c39-9107-1102e9cfb7bb">Open Government Registry Guide</a> explains how to create this record.</li>
+<li>Send an email to <a href="mailto:{{ page.contactEmail }}">{{ page.contactEmail }}</a> to ask that the metadata record be reviewed and released on <a href="https://open.canada.ca">open.canada.ca</a>.</li>
+<li>Release the content: The <a href="{{ page.guidebook.url }}">{{ page.guidebook.linkText }}</a> explains how to release your content on <a href="https://open.canada.ca">open.canada.ca</a>.</li>
+</ul>
 
-For more information, please contact the Open Government group at <{{ page.contactEmail }}>.
+<p>For more information, please contact the Open Government group at <a href="mailto:{{ page.contactEmail }}">{{ page.contactEmail }}</a>.</p>
 
-Implementation guide: [{{ page.guidebook.linkText }}]({{ page.guidebook.url }})
+<p>Implementation guide: <a href="{{ page.guidebook.url }}">{{ page.guidebook.linkText }}</a></p>
 
 </div>
 </div>

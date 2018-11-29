@@ -1,12 +1,12 @@
 <section id="agile-use-when-questionnaire">
 
-## {{ site.Questionnaire[ page.lang ] }}
+<h2>{{ site.Questionnaire[ page.lang ] }}</h2>
 
 <!--- Project section -->
 <section id="project-section" class="wb-frmvld">
 <form id="project-form" method="post">
 
-### {{ page.projectSection }}
+<h3>{{ page.projectSection }}</h3>
 
 {% assign numQuestions = page.points | size %}{%
 for questionNumber in (1..2) %}{%
@@ -87,7 +87,7 @@ endfor %}
 <section id="stakeholders-section" class="wb-frmvld hidden">
 <form id="stakeholders-form" method="post">
 
-### {{ page.projectSection }}
+<h3>{{ page.projectSection }}</h3>
 
 {% assign questionNumber = 9 %}{%
 assign questionNumberString = questionNumber | downcase %}{%
@@ -127,7 +127,7 @@ assign answer2String = questionNumberString | append: "-a2" %}
 </ul>
 </div>
 
-<aside class="wb-fnote" role="note" markdown="0">
+<aside class="wb-fnote" role="note">
 <h4 id="fn" class="wb-inv">{{ site.Footnotes[ page.lang ] }}</h4>
 <dl>
 <dt>{{ site.Footnote[ page.lang ] }} 1</dt>
@@ -209,7 +209,7 @@ endfor %}
 <section id="governance-oversight-section" class="wb-frmvld hidden">
 <form id="governance-oversight-form" method="post">
 
-### {{ page.governanceOversightSection }}
+<h3>{{ page.governanceOversightSection }}</h3>
 
 {% for questionNumber in (15..numQuestions) %}{%
   assign questionNumberString = questionNumber | downcase %}{%
