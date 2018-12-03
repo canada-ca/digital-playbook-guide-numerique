@@ -135,7 +135,7 @@ Canadians want to have confidence that government digital services are designed 
 * {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy}[GC Security Policy Implementation Notices (internal to Government of Canada)](http://intranet.canada.ca/wg-tg/go-sg/sim-gsi/spin-amps/spin-amps-eng.asp)
 * {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Security and Identity Management Policy Instruments](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html)
 * {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Security Resource Centre](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/resources.html)
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[OPC guidance for federal institutions (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/for-federal-institutions/)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[OPC guidance for federal institutions (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/for-federal-ifnstitutions/)
 * {: .dpgn-stage-beta .dpgn-stage-live}[Guidance on Preparing Information Sharing Agreements Involving Personal Information](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-preparing-information-sharing-agreements-involving-personal-information.html)
 * {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy}[Guidance Document: Taking Privacy into Account Before Making Contracting Decisions](https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/guidance-document-taking-privacy-into-account-before-making-contracting-decisions.html)
 * {: .dpgn-stage-beta .dpgn-stage-live}[Guidelines for obtaining meaningful consent (Office of the Privacy Commissioner of Canada (OPC))](https://www.priv.gc.ca/en/privacy-topics/collecting-personal-information/consent/gl_omc_201805/)
@@ -150,7 +150,7 @@ Canadians want to have confidence that government digital services are designed 
 
 ### Reusable solutions
 
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF-CCP)
 
 </section>
 
@@ -216,7 +216,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 **[TODO: Add/revise reusable solutions]**
 
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF-CCP)
 
 </section>
 
