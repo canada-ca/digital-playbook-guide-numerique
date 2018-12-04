@@ -6651,7 +6651,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://github.com/canada-ca/PCTF\">Pan-Canadian Trust Framework</a>"
+                            "content": "<a href=\"https://github.com/canada-ca/PCTF-CCP\">Cadre de Confiance Pancanadien</a>"
                           }
                         ]
                       }
@@ -7084,7 +7084,7 @@
                               "dpgn-stage-beta",
                               "dpgn-stage-live"
                             ],
-                            "content": "<a href=\"https://github.com/canada-ca/PCTF\">Pan-Canadian Trust Framework</a>"
+                            "content": "<a href=\"https://github.com/canada-ca/PCTF-CCP\">Cadre de Confiance Pancanadien</a>"
                           }
                         ]
                       }

@@ -150,7 +150,7 @@ Canadians want to have confidence that government digital services are designed 
 
 ### Reusable solutions
 
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live .dpgn-digital-architectural .dpgn-digital-architectural-security-privacy} [Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF-CCP)
 
 </section>
 
@@ -216,7 +216,7 @@ Integrating security from the outset and “shifting security left” in the ser
 
 **[TODO: Add/revise reusable solutions]**
 
-* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF)
+* {: .dpgn-stage-alpha .dpgn-stage-beta .dpgn-stage-live}[Pan-Canadian Trust Framework](https://github.com/canada-ca/PCTF-CCP)
 
 </section>
 
