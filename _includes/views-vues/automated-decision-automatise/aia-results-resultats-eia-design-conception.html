@@ -54,7 +54,7 @@ endfor %}
         { "type": ">=",
           "inputs": [
             { "type": "number", "query": "#questionnaire-progress-percent" },
-            {{ page.progressPercentThreshold }}
+            {{ aiaDataSource.progressPercentThreshold }}
           ]
         }
     ],
@@ -101,7 +101,7 @@ endfor %}
         "inputs": [
           { "type": "<",
             "inputs": [
-              { "type": "number", "query": "#final-result-impact-score" }, {{ page.impactLevelThresholds[ 0 ] }}
+              { "type": "number", "query": "#final-result-impact-score" }, {{ aiaDataSource.impactLevelThresholds[ 0 ] }}
             ] 
           }
         ],
@@ -115,7 +115,7 @@ endfor %}
             "inputs": [
               { "type": "<",
                 "inputs": [
-                  { "type": "number", "query": "#final-result-impact-score" }, {{ page.impactLevelThresholds[ 1 ] }}
+                  { "type": "number", "query": "#final-result-impact-score" }, {{ aiaDataSource.impactLevelThresholds[ 1 ] }}
                 ] 
               }
             ],
@@ -129,7 +129,7 @@ endfor %}
                 "inputs": [
                   { "type": "<",
                     "inputs": [
-                      { "type": "number", "query": "#final-result-impact-score" }, {{ page.impactLevelThresholds[ 2 ] }}
+                      { "type": "number", "query": "#final-result-impact-score" }, {{ aiaDataSource.impactLevelThresholds[ 2 ] }}
                     ] 
                   }
                 ],
@@ -163,18 +163,18 @@ endfor %}
 <p id="final-result-in-progress">{{ site.CompleteQuestionnaireFirst[ page.lang ] }}</p>
 <div id="final-result-complete" class="hidden">
 <ul>
-<li>{{ page.impactScore }}{{ site.Colon[ page.lang ] }} <span id="final-result-impact-score"></span></li>
-<li>{{ page.impactLevel }}{{ site.Colon[ page.lang ] }} 
+<li>{{ aiaDataSource.impactScore[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span id="final-result-impact-score"></span></li>
+<li>{{ aiaDataSource.impactLevel[ page.lang ] }}{{ site.Colon[ page.lang ] }} 
 <span class="hidden final-result-level-1">1</span>
 <span class="hidden final-result-level-2">2</span>
 <span class="hidden final-result-level-3">3</span>
 <span class="hidden final-result-level-4">4</span>
 </li>
-<li>{{ page.relevantRequirements }}{{ site.Colon[ page.lang ] }}  
-<a id="level-1-filtered-guidance-link" class="hidden final-result-level-1" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-i" href="#">{{ page.automatedDecisionViewTitle }}</a>
-<a id="level-2-filtered-guidance-link" class="hidden final-result-level-2" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-ii" href="#">{{ page.automatedDecisionViewTitle }}</a>
-<a id="level-3-filtered-guidance-link" class="hidden final-result-level-3" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-iii" href="#">{{ page.automatedDecisionViewTitle }}</a>
-<a id="level-4-filtered-guidance-link" class="hidden final-result-level-4" data-url-fragment="{{ page.automatedDecisionViewFilename }}.html?contentfilter=dpgn-automated-decision-level-iv" href="#">{{ page.automatedDecisionViewTitle }}</a>
+<li>{{ aiaDataSource.relevantRequirements[ page.lang ] }}{{ site.Colon[ page.lang ] }}  
+<a id="level-1-filtered-guidance-link" class="hidden final-result-level-1" data-url-fragment="{{ aiaDataSource.automatedDecisionViewFilename[ page.lang ] }}.html?contentfilter=dpgn-automated-decision-level-i" href="#">{{ aiaDataSource.automatedDecisionViewTitle[ page.lang ] }}</a>
+<a id="level-2-filtered-guidance-link" class="hidden final-result-level-2" data-url-fragment="{{ aiaDataSource.automatedDecisionViewFilename[ page.lang ] }}.html?contentfilter=dpgn-automated-decision-level-ii" href="#">{{ aiaDataSource.automatedDecisionViewTitle[ page.lang ] }}</a>
+<a id="level-3-filtered-guidance-link" class="hidden final-result-level-3" data-url-fragment="{{ aiaDataSource.automatedDecisionViewFilename[ page.lang ] }}.html?contentfilter=dpgn-automated-decision-level-iii" href="#">{{ aiaDataSource.automatedDecisionViewTitle[ page.lang ] }}</a>
+<a id="level-4-filtered-guidance-link" class="hidden final-result-level-4" data-url-fragment="{{ aiaDataSource.automatedDecisionViewFilename[ page.lang ] }}.html?contentfilter=dpgn-automated-decision-level-iv" href="#">{{ aiaDataSource.automatedDecisionViewTitle[ page.lang ] }}</a>
 </li>
 </ul>
 </div>
@@ -220,7 +220,7 @@ endfor %}
 for index in (0..4) %}{%
   assign criteriaNumber = index | plus: 1 %}
 <tr>
-<td>{{ page.aiaCriteria[ index ] }}</td>
+<td>{{ aiaDataSource.aiaCriteria[ index ][ page.lang ] }}</td>
 <td>
 <span id="criteria-{{ criteriaNumber }}-score-total">0</span> {{ site.OutOf[ page.lang ] }} <span id="criteria-{{ criteriaNumber }}-max-total">0</span><br />
 <progress id="progress-criteria-{{ criteriaNumber }}" value="0" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent">0</span>{{ site.Percent[ page.lang ] }}
@@ -243,11 +243,11 @@ endfor %}
 <tr>
 <th>{{ site.Question[ page.lang ] }}</th>
 <th>{{ site.SelectedAnswer[ page.lang ] }}</th>
-<th>{{ page.aiaCriteria[ 0 ] }}</th>
-<th>{{ page.aiaCriteria[ 1 ] }}</th>
-<th>{{ page.aiaCriteria[ 2 ] }}</th>
-<th>{{ page.aiaCriteria[ 3 ] }}</th>
-<th>{{ page.aiaCriteria[ 4 ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 0 ][ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 1 ][ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 2 ][ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 3 ][ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 4 ][ page.lang ] }}</th>
 </tr>
 </thead>
 <tbody>

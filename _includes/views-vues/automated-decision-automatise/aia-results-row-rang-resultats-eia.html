@@ -19,7 +19,7 @@ endif %}>
 <td>{%
 if include.answerType == "radio" %}{%
   assign answerNumber = 1 %}{%
-  for answer in page.points[ include.questionNumber ] %}
+  for answer in aiaDataSource.points[ include.questionNumber ] %}
 <span class="hidden question-{{ questionId }}-{{ answer[ 0 ] }}">{{ answerNumber}}</span>{%
   assign answerNumber = answerNumber | plus: 1 %}{%
   endfor %}{%
@@ -34,13 +34,13 @@ for criteriaNumber in (1..5) %}
     assign criteriaIndex = criteriaNumber | minus: 1 %}{%
     assign maxPoints = -1000 %}{%
     assign maxAnswerId = "" %}{%
-    for answer in page.points[ include.questionNumber ] %}{%
+    for answer in aiaDataSource.points[ include.questionNumber ] %}{%
       if answer[ 1 ][ criteriaIndex ] > maxPoints %}{%
         assign maxPoints = answer[ 1 ][ criteriaIndex ] %}{%
         assign maxAnswerId = answer[ 0 ] %}{% 
       endif %}{%
     endfor %}{%
-    for answer in page.points[ include.questionNumber ] %}{%
+    for answer in aiaDataSource.points[ include.questionNumber ] %}{%
       assign answerId = answer[ 0 ] %}{%
       assign answerPoints = answer[ 1 ] %}
 <span class="criteria-{{ criteriaNumber }}-score{%

@@ -9,13 +9,13 @@
 <section id="aia-about-respondent-section" class="wb-frmvld">
 <form id="aia-about-respondent-form" method="post">
 
-<h3>{{ page.aboutRespondentSection }}</h3>
+<h3>{{ aiaDataSource.aboutRespondentSection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "1" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group">
-<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div>
 <input id="question-{{ questionId }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
   { "type": "action",
@@ -33,7 +33,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group">
-<label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
+<label for="question-{{ questionId }}">{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
 <div>
 <input id="question-{{ questionId }}" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
   { "type": "action",
@@ -52,7 +52,7 @@ assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subLabel = questionId | append: "-sub" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group">
-<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div>
 <select id="question-{{ questionId }}" required="required" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
   { "type": "action",
@@ -63,7 +63,7 @@ assign subLabel = questionId | append: "-sub" %}
     ]
   }
 ] }'>
-<option value="">{{ page.questions[ subLabel ] }}</option>{%
+<option value="">{{ aiaDataSource.questions[ subLabel ][ page.lang ] }}</option>{%
 assign departmentNames = site.data.departments | sort: page.lang %}{%
 for department in departmentNames %}
 <option value="{{ department.number }}">{{ department[ page.lang ] }}</option>{%
@@ -76,7 +76,7 @@ endfor %}
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group">
-<label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
+<label for="question-{{ questionId }}">{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
 <div>
 <input id="question-{{ questionId }}" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
   { "type": "action",
@@ -94,7 +94,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group">
-<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
+<label for="question-{{ questionId }}" class="required">{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span> <strong class="required">({{ site.required[ page.lang ] }})</strong></label>
 <div>
 <input id="question-{{ questionId }}" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
   { "type": "action",
@@ -112,7 +112,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div class="form-group">
-<label for="question-{{ questionId }}">{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
+<label for="question-{{ questionId }}">{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></label>
 <div>
 <textarea id="question-{{ questionId }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ questionId }}", "operations": [
   { "type": "action",
@@ -135,7 +135,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 <section id="aia-about-decision-section" class="hidden wb-frmvld">
 <form id="aia-about-decision-form" method="post">
 
-<h3>{{ page.aboutDecisionSection }}</h3>
+<h3>{{ aiaDataSource.aboutDecisionSection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "7" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
@@ -190,22 +190,22 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
     ]
   }
 ] }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
-]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+]'>{{ checkbox1Suffix }}. {{ aiaDataSource.questions[ checkbox1Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": "#question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion1Sub2Id }}-result.nested-active, #question-{{ subQuestion1Sub3Id }}-result.nested-active", "class": "hidden" },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
-]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+]'>{{ checkbox2Suffix }}. {{ aiaDataSource.questions[ checkbox2Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": "#question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion1Sub2Id }}-result.nested-active, #question-{{ subQuestion1Sub3Id }}-result.nested-active", "class": "hidden" },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
-]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+]'>{{ checkbox3Suffix }}. {{ aiaDataSource.questions[ checkbox3Number ][ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -213,7 +213,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 
 <!-- Question {{ subQuestion1Number }} -->
 <div id="question-{{ subQuestion1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
-<p>{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span> <a class="wb-lbx" href="#question-{{ subQuestion1Id }}-details"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><span class="wb-inv">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Number }}</span></a></p>
+<p>{{ subQuestion1Number }} {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span> <a class="wb-lbx" href="#question-{{ subQuestion1Id }}-details"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><span class="wb-inv">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Number }}</span></a></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-yes, #question-{{ subQuestion1Sub1Id }}-{{ subQuestion1Sub2Id }}-{{ subQuestion1Sub3Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result, #question-{{ subQuestion1Sub2Id }}-result, #question-{{ subQuestion1Sub3Id }}-result", "class": "hidden" },
@@ -233,7 +233,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 <h4 class="modal-title">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Number }}</h4>
 </header>
 <div class="modal-body">
-<p>{{ page.questions[ subQuestion1Details ] }}</p>
+<p>{{ aiaDataSource.questions[ subQuestion1Details ][ page.lang ] }}</p>
 </div>
 </section>
 
@@ -241,7 +241,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 
 <!-- Question {{ subQuestion1Sub1Number }} -->
 <div class="form-group">
-<label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
+<label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ aiaDataSource.questions[ subQuestion1Sub1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "operations": [
   { "type": "action",
@@ -257,7 +257,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 
 <!-- Question {{ subQuestion1Sub2Number }} -->
 <div id="question-{{ subQuestion1Sub2Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
-<p>{{ subQuestion1Sub2Number }} {{ page.questions[ subQuestion1Sub2Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub2Number }}</span> <a class="wb-lbx" href="#question-{{ subQuestion1Sub2Id }}-details"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><span class="wb-inv">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Sub2Number }}</span></a></p>
+<p>{{ subQuestion1Sub2Number }} {{ aiaDataSource.questions[ subQuestion1Sub2Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub2Number }}</span> <a class="wb-lbx" href="#question-{{ subQuestion1Sub2Id }}-details"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><span class="wb-inv">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Sub2Number }}</span></a></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion1Sub2Id }}-yes", "class": "hidden" },
@@ -275,13 +275,13 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 <h4 class="modal-title">{{ site.QuestionDetails[ page.lang ] }} {{ subQuestion1Sub2Number }}</h4>
 </header>
 <div class="modal-body">
-<p>{{ page.questions[ subQuestion1Sub2Details ] }}</p>
+<p>{{ aiaDataSource.questions[ subQuestion1Sub2Details ][ page.lang ] }}</p>
 </div>
 </section>
 
 <!-- Question {{ subQuestion1Sub3Number }} -->
 <div id="question-{{ subQuestion1Sub3Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "inline": true, "base": { "live": true } }'>
-<p>{{ subQuestion1Sub3Number }} {{ page.questions[ subQuestion1Sub3Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub3Number }}</span></p>
+<p>{{ subQuestion1Sub3Number }} {{ aiaDataSource.questions[ subQuestion1Sub3Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub3Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion1Sub3Id }}-yes", "class": "hidden" },
@@ -311,20 +311,20 @@ assign questionAnswer3Number = questionNumber | append: questionAnswer3Suffix %}
 assign questionAnswer3Id = questionAnswer3Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionAnswer1Id }}", "class": "hidden" },
   { "action": "addClass", "source": ".question-{{ questionAnswer2Id }}, .question-{{ questionAnswer3Id }}", "class": "hidden" }
-]'>{{ page.questions[ questionAnswer1Number ] }}</li>
+]'>{{ aiaDataSource.questions[ questionAnswer1Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionAnswer2Id }}", "class": "hidden" },
   { "action": "addClass", "source": ".question-{{ questionAnswer1Id }}, .question-{{ questionAnswer3Id }}", "class": "hidden" }
-]'>{{ page.questions[ questionAnswer2Number ] }}</li>
+]'>{{ aiaDataSource.questions[ questionAnswer2Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionAnswer3Id }}", "class": "hidden" },
   { "action": "addClass", "source": ".question-{{ questionAnswer1Id }}, .question-{{ questionAnswer2Id }}", "class": "hidden" }
-]'>{{ page.questions[ questionAnswer3Number ] }}</li>
+]'>{{ aiaDataSource.questions[ questionAnswer3Number ][ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -336,7 +336,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -361,7 +361,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -377,7 +377,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div id="question-{{ subQuestion1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-{{ subQuestion1Id }}-none, .question-{{ subQuestion1Id }}-protected, .question-{{ subQuestion1Id }}-protected-a, .question-{{ subQuestion1Id }}-protected-b, .question-{{ subQuestion1Id }}-protected-c, .question-{{ subQuestion1Id }}-classified, .question-{{ subQuestion1Id }}-confidential, .question-{{ subQuestion1Id }}-secret, .question-{{ subQuestion1Id }}-top-secret", "class": "hidden" } }'>
-<p>{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
+<p>{{ subQuestion1Number }} {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-none", "class": "hidden" }'>{{ site.None[ page.lang ] }}</li>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-protected", "class": "hidden" }'>{{ site.Protected[ page.lang ] }}</li>
@@ -406,7 +406,7 @@ assign subQuestion3Number = questionNumber | append: ".3" %}{%
 assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-{{ subQuestion3Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion2Id }}-result, #question-{{ subQuestion2Sub1Id }}-result.nested-active, #question-{{ subQuestion3Id }}-result", "class": "hidden" },
@@ -422,7 +422,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-{{ subQuestion3Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div id="question-{{ subQuestion1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
+<p>{{ subQuestion1Number }} {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-yes, #question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
@@ -443,7 +443,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 
 <!-- Question {{ subQuestion2Number }} -->
 <div id="question-{{ subQuestion2Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ subQuestion2Number }} {{ page.questions[ subQuestion2Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion2Number }}</span></p>
+<p>{{ subQuestion2Number }} {{ aiaDataSource.questions[ subQuestion2Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion2Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion2Id }}-yes, #question-{{ subQuestion2Sub1Id }}-wrapper, #question-{{ subQuestion2Sub1Id }}-result", "class": "hidden" },
@@ -478,7 +478,7 @@ assign subQuestion3Number = questionNumber | append: ".3" %}{%
 assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-{{ subQuestion3Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active, #question-{{ subQuestion2Id }}-result, #question-{{ subQuestion3Id }}-result", "class": "hidden" },
@@ -494,7 +494,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-{{ subQuestion3Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div id="question-{{ subQuestion1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
+<p>{{ subQuestion1Number }} {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ subQuestion1Id }}-yes, #question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
@@ -569,40 +569,40 @@ assign checkbox8Id = checkbox8Number | replace: ".", "-" %}
     ]
   }
 ] }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
-]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+]'>{{ checkbox1Suffix }}. {{ aiaDataSource.questions[ checkbox1Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
-]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+]'>{{ checkbox2Suffix }}. {{ aiaDataSource.questions[ checkbox2Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
-]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+]'>{{ checkbox3Suffix }}. {{ aiaDataSource.questions[ checkbox3Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
-]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
+]'>{{ checkbox4Suffix }}. {{ aiaDataSource.questions[ checkbox4Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
-]'>{{ checkbox5Suffix }}. {{ page.questions[ checkbox5Number ] }}</li>
+]'>{{ checkbox5Suffix }}. {{ aiaDataSource.questions[ checkbox5Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox6Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox6Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox6Id }}-yes" }
-]'>{{ checkbox6Suffix }}. {{ page.questions[ checkbox6Number ] }}</li>
+]'>{{ checkbox6Suffix }}. {{ aiaDataSource.questions[ checkbox6Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox7Id }}-yes" }
-]'>{{ checkbox7Suffix }}. {{ page.questions[ checkbox7Number ] }}</li>
+]'>{{ checkbox7Suffix }}. {{ aiaDataSource.questions[ checkbox7Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox8Id }}-yes" }
-]'>{{ checkbox8Suffix }}. {{ page.questions[ checkbox8Number ] }}</li>
+]'>{{ checkbox8Suffix }}. {{ aiaDataSource.questions[ checkbox8Number ][ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -612,7 +612,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -643,7 +643,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <section id="aia-business-process-section" class="hidden wb-frmvld">
 <form id="aia-business-process-form" method="post">
 
-<h3>{{ page.dataBusinessProcessSection }}</h3>
+<h3>{{ aiaDataSource.dataBusinessProcessSection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "21" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
@@ -679,28 +679,28 @@ assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
     ]
   }
 ] }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
-]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+]'>{{ checkbox1Suffix }}. {{ aiaDataSource.questions[ checkbox1Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
-]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+]'>{{ checkbox2Suffix }}. {{ aiaDataSource.questions[ checkbox2Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
-]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+]'>{{ checkbox3Suffix }}. {{ aiaDataSource.questions[ checkbox3Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
-]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
+]'>{{ checkbox4Suffix }}. {{ aiaDataSource.questions[ checkbox4Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
-]'>{{ checkbox5Suffix }}. {{ page.questions[ checkbox5Number ] }}</li>
+]'>{{ checkbox5Suffix }}. {{ aiaDataSource.questions[ checkbox5Number ][ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -738,28 +738,28 @@ assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
     ]
   }
 ] }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
-]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+]'>{{ checkbox1Suffix }}. {{ aiaDataSource.questions[ checkbox1Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
-]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+]'>{{ checkbox2Suffix }}. {{ aiaDataSource.questions[ checkbox2Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
-]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+]'>{{ checkbox3Suffix }}. {{ aiaDataSource.questions[ checkbox3Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
-]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
+]'>{{ checkbox4Suffix }}. {{ aiaDataSource.questions[ checkbox4Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
-]'>{{ checkbox5Suffix }}. {{ page.questions[ checkbox5Number ] }}</li>
+]'>{{ checkbox5Suffix }}. {{ aiaDataSource.questions[ checkbox5Number ][ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -769,7 +769,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -792,7 +792,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -808,7 +808,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group">
-<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "operations": [
   { "type": "action",
@@ -833,7 +833,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumberPart1 ] }} <a href="{{ page.questions[ questionNumberLinkURL ] }}" target="_blank" rel="external">{{ page.questions[ questionNumberLinkText ] }}</a> {{ page.questions[ questionNumberPart2 ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumberPart1 ][ page.lang ] }} <a href="{{ aiaDataSource.questions[ questionNumberLinkURL ][ page.lang ] }}" target="_blank" rel="external">{{ aiaDataSource.questions[ questionNumberLinkText ][ page.lang ] }}</a> {{ aiaDataSource.questions[ questionNumberPart2 ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -860,7 +860,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -908,24 +908,24 @@ assign checkbox4Id = checkbox4Number | replace: ".", "-" %}
     ]
   }
 ] }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
-]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+]'>{{ checkbox1Suffix }}. {{ aiaDataSource.questions[ checkbox1Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
-]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+]'>{{ checkbox2Suffix }}. {{ aiaDataSource.questions[ checkbox2Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
-]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+]'>{{ checkbox3Suffix }}. {{ aiaDataSource.questions[ checkbox3Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
-]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
+]'>{{ checkbox4Suffix }}. {{ aiaDataSource.questions[ checkbox4Number ][ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -933,7 +933,7 @@ assign checkbox4Id = checkbox4Number | replace: ".", "-" %}
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-{{ questionId }}-protected, .question-{{ questionId }}-protected-a, .question-{{ questionId }}-protected-b, .question-{{ questionId }}-protected-c, .question-{{ questionId }}-classified, .question-{{ questionId }}-confidential, .question-{{ questionId }}-secret, .question-{{ questionId }}-top-secret", "class": "hidden" } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected", "class": "hidden" }'>{{ site.Protected[ page.lang ] }}</li>
 <li data-wb-fieldflow='{ "action": "removeClass", "source": ".question-{{ questionId }}-protected-a", "class": "hidden" }'>{{ site.ProtectedA[ page.lang ] }}</li>
@@ -979,7 +979,7 @@ assign subQuestion1Sub1Number = subQuestion1Number | append: ".1" %}{%
 assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ checkbox1Id }}-result, #question-{{ checkbox2Id }}-result, #question-{{ checkbox3Id }}-result, #question-{{ checkbox4Id }}-result, #question-{{ checkbox5Id }}-result, #question-{{ checkbox6Id }}-result, #question-{{ checkbox7Id }}-result, #question-{{ checkbox8Id }}-result, #question-{{ subQuestion1Sub1Id }}-result.nested-active", "class": "hidden" },
@@ -1027,42 +1027,42 @@ assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}
     ]
   }
 ] }'>
-<p>{{ subQuestion1Number }}. {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
+<p>{{ subQuestion1Number }}. {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox1Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox1Id }}-yes" }
-]'>{{ checkbox1Suffix }}. {{ page.questions[ checkbox1Number ] }}</li>
+]'>{{ checkbox1Suffix }}. {{ aiaDataSource.questions[ checkbox1Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox2Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox2Id }}-yes" }
-]'>{{ checkbox2Suffix }}. {{ page.questions[ checkbox2Number ] }}</li>
+]'>{{ checkbox2Suffix }}. {{ aiaDataSource.questions[ checkbox2Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox3Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox3Id }}-yes" }
-]'>{{ checkbox3Suffix }}. {{ page.questions[ checkbox3Number ] }}</li>
+]'>{{ checkbox3Suffix }}. {{ aiaDataSource.questions[ checkbox3Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox4Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox4Id }}-yes" }
-]'>{{ checkbox4Suffix }}. {{ page.questions[ checkbox4Number ] }}</li>
+]'>{{ checkbox4Suffix }}. {{ aiaDataSource.questions[ checkbox4Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox5Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox5Id }}-yes" }
-]'>{{ checkbox5Suffix }}. {{ page.questions[ checkbox5Number ] }}</li>
+]'>{{ checkbox5Suffix }}. {{ aiaDataSource.questions[ checkbox5Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox6Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox6Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox6Id }}-yes" }
-]'>{{ checkbox6Suffix }}. {{ page.questions[ checkbox6Number ] }}</li>
+]'>{{ checkbox6Suffix }}. {{ aiaDataSource.questions[ checkbox6Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox7Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox7Id }}-yes" }
-]'>{{ checkbox7Suffix }}. {{ page.questions[ checkbox7Number ] }}</li>
+]'>{{ checkbox7Suffix }}. {{ aiaDataSource.questions[ checkbox7Number ][ page.lang ] }}</li>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": "#question-{{ subQuestion1Sub1Id }}-wrapper, #question-{{ subQuestion1Sub1Id }}-result", "class": "hidden" },
   { "action": "addClass", "source": "#question-{{ subQuestion1Sub1Id }}-result", "class": "nested-active" },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-no", "type": "off" } },
   { "action": "toggle", "toggle": { "selector": ".question-{{ checkbox8Id }}-yes", "type": "on" }, "clean": ".question-{{ checkbox8Id }}-yes" }
-]'>{{ checkbox8Suffix }}. {{ page.questions[ checkbox8Number ] }}</li>
+]'>{{ checkbox8Suffix }}. {{ aiaDataSource.questions[ checkbox8Number ][ page.lang ] }}</li>
 </ul>
 </div>
 
@@ -1070,7 +1070,7 @@ assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}
 
 <!-- Question {{ subQuestion1Sub1Number }} -->
 <div class="form-group">
-<label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ page.questions[ subQuestion1Sub1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
+<label for="question-{{ subQuestion1Sub1Id }}">{{ subQuestion1Sub1Number }} {{ aiaDataSource.questions[ subQuestion1Sub1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Sub1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Sub1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Sub1Id }}", "operations": [
   { "type": "action",
@@ -1098,7 +1098,7 @@ assign subQuestion2Number = questionNumber | append: ".2" %}{%
 assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion2Id }}-result", "class": "hidden" },
@@ -1123,7 +1123,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -1139,7 +1139,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group">
-<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "operations": [
   { "type": "action",
@@ -1165,7 +1165,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <section id="aia-system-functionality-section" class="hidden wb-frmvld">
 <form id="aia-system-functionality-form" method="post">
 
-<h3>{{ page.systemFunctionalitySection }}</h3>
+<h3>{{ aiaDataSource.systemFunctionalitySection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "34" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
@@ -1173,7 +1173,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -1198,7 +1198,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -1225,7 +1225,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -1241,7 +1241,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group">
-<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "operations": [
   { "type": "action",
@@ -1266,7 +1266,7 @@ assign subQuestion3Number = questionNumber | append: ".3" %}{%
 assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-{{ subQuestion3Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion2Id }}-result, #question-{{ subQuestion3Id }}-result", "class": "hidden" },
@@ -1298,7 +1298,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <section id="aia-organizational-readiness-section" class="hidden wb-frmvld">
 <form id="aia-organizational-readiness-form" method="post">
 
-<h3>{{ page.organizationalReadinessSection }}</h3>
+<h3>{{ aiaDataSource.organizationalReadinessSection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "42" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
@@ -1332,11 +1332,11 @@ assign subQuestion2Number = questionNumber | append: ".2" %}{%
 assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <fieldset>
-<legend class="mrgn-bttm-0 h5 required">{{ questionNumber }}. {{ page.questions[ questionNumber ] }} <strong class="required">({{ site.required[ page.lang ] }})</strong></legend>
+<legend class="mrgn-bttm-0 h5 required">{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }} <strong class="required">({{ site.required[ page.lang ] }})</strong></legend>
 <div class="clearfix"></div>
 
 <div id="question-{{ radioGroup1Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ radioGroup1Suffix }}. {{ page.questions[ radioGroup1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup1Number }}</span></p>
+<p>{{ radioGroup1Suffix }}. {{ aiaDataSource.questions[ radioGroup1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup1Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ radioGroup1Id }}-yes", "class": "hidden" },
@@ -1350,7 +1350,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 </div>
 
 <div id="question-{{ radioGroup2Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ radioGroup2Suffix }}. {{ page.questions[ radioGroup2Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup2Number }}</span></p>
+<p>{{ radioGroup2Suffix }}. {{ aiaDataSource.questions[ radioGroup2Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup2Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ radioGroup2Id }}-yes", "class": "hidden" },
@@ -1364,7 +1364,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 </div>
 
 <div id="question-{{ radioGroup3Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ radioGroup3Suffix }}. {{ page.questions[ radioGroup3Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup3Number }}</span></p>
+<p>{{ radioGroup3Suffix }}. {{ aiaDataSource.questions[ radioGroup3Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup3Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ radioGroup3Id }}-yes", "class": "hidden" },
@@ -1378,7 +1378,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 </div>
 
 <div id="question-{{ radioGroup4Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ radioGroup4Suffix }}. {{ page.questions[ radioGroup4Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup4Number }}</span></p>
+<p>{{ radioGroup4Suffix }}. {{ aiaDataSource.questions[ radioGroup4Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup4Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ radioGroup4Id }}-yes", "class": "hidden" },
@@ -1392,7 +1392,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 </div>
 
 <div id="question-{{ radioGroup5Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ radioGroup5Suffix }}. {{ page.questions[ radioGroup5Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup5Number }}</span></p>
+<p>{{ radioGroup5Suffix }}. {{ aiaDataSource.questions[ radioGroup5Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup5Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ radioGroup5Id }}-yes", "class": "hidden" },
@@ -1406,7 +1406,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 </div>
 
 <div id="question-{{ radioGroup6Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ radioGroup6Suffix }}. {{ page.questions[ radioGroup6Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup6Number }}</span></p>
+<p>{{ radioGroup6Suffix }}. {{ aiaDataSource.questions[ radioGroup6Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup6Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ radioGroup6Id }}-yes, #question-{{ subQuestion1Id }}-{{ subQuestion2Id }}-wrapper, #question-{{ subQuestion1Id }}-result, #question-{{ subQuestion2Id }}-result", "class": "hidden" },
@@ -1420,7 +1420,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 </div>
 
 <div id="question-{{ radioGroup7Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ radioGroup7Suffix }}. {{ page.questions[ radioGroup7Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup7Number }}</span></p>
+<p>{{ radioGroup7Suffix }}. {{ aiaDataSource.questions[ radioGroup7Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup7Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ radioGroup7Id }}-yes", "class": "hidden" },
@@ -1434,7 +1434,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 </div>
 
 <div id="question-{{ radioGroup8Id }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ radioGroup8Suffix }}. {{ page.questions[ radioGroup8Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup8Number }}</span></p>
+<p>{{ radioGroup8Suffix }}. {{ aiaDataSource.questions[ radioGroup8Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ radioGroup8Number }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ radioGroup8Id }}-yes", "class": "hidden" },
@@ -1463,7 +1463,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -1479,7 +1479,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <div id="question-{{ subQuestion1Id }}-wrapper" class="hidden">
 <!-- Question {{ subQuestion1Number }} -->
 <div class="form-group">
-<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ page.questions[ subQuestion1Number ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
+<label for="question-{{ subQuestion1Id }}">{{ subQuestion1Number }} {{ aiaDataSource.questions[ subQuestion1Number ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ subQuestion1Number }}</span></label>
 <div>
 <textarea id="question-{{ subQuestion1Id }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ subQuestion1Id }}", "operations": [
   { "type": "action",
@@ -1502,7 +1502,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
@@ -1533,7 +1533,7 @@ assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <!-- Question {{ questionNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
-<p>{{ questionNumber }}. {{ page.questions[ questionNumber ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
+<p>{{ questionNumber }}. {{ aiaDataSource.questions[ questionNumber ][ page.lang ] }}<span class="field-name hidden">{{ site.Question[ page.lang ] }} {{ questionNumber }}</span></p>
 <ul>
 <li data-wb-fieldflow='[
   { "action": "removeClass", "source": ".question-{{ questionId }}-yes, #question-{{ subQuestion1Id }}-wrapper, #question-{{ subQuestion1Id }}-result", "class": "hidden" },
