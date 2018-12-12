@@ -12,7 +12,7 @@
 <h3>{{ aiaDataSource.aboutRespondentSection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "1" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "1" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionDisplayNumber }} -->
 <div class="form-group">
@@ -31,7 +31,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "2" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "2" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionDisplayNumber }} -->
 <div class="form-group">
@@ -50,7 +50,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "3" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "3" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subLabel = questionId | append: "-sub" %}
 <!-- Question {{ questionDisplayNumber }} -->
@@ -76,7 +76,7 @@ endfor %}
 </div>
 
 {% assign questionNumber = "4" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "4" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionDisplayNumber }} -->
 <div class="form-group">
@@ -95,7 +95,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "5" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "5" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionDisplayNumber }} -->
 <div class="form-group">
@@ -114,7 +114,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "6" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "6" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionDisplayNumber }} -->
 <div class="form-group">
@@ -144,7 +144,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 <h3>{{ aiaDataSource.aboutDecisionSection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "7" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "7" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
@@ -310,7 +310,7 @@ assign subQuestion1Sub3Id = subQuestion1Sub3Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "8" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "8" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign questionAnswer1Suffix = "-one-time" %}{%
 assign questionAnswer1Number = questionNumber | append: questionAnswer1Suffix %}{%
@@ -343,7 +343,7 @@ assign questionAnswer3Id = questionAnswer3Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="9" questionDisplayNumber="9" %}
 
 {% assign questionNumber = "10" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "10" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -370,7 +370,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="11" questionDisplayNumber="11" %}
 
 {% assign questionNumber = "12" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "12" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -409,7 +409,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "13" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "13" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -489,7 +489,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "14" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "14" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -554,7 +554,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="18" questionDisplayNumber="18" %}
 
 {% assign questionNumber = "19" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "19" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
@@ -635,7 +635,7 @@ assign checkbox8Id = checkbox8Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "20" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "20" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -676,7 +676,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <h3>{{ aiaDataSource.dataBusinessProcessSection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "21" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "21" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
@@ -736,7 +736,7 @@ assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "22" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "22" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
@@ -796,7 +796,7 @@ assign checkbox5Id = checkbox5Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "23" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "23" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -821,7 +821,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "24" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "24" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -860,7 +860,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "25" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "25" %}{%
 assign questionNumberPart1 = questionNumber | append: "-part1" %}{%
 assign questionNumberLinkURL = questionNumber | append: "-link-url" %}{%
 assign questionNumberLinkText = questionNumber | append: "-link-text" %}{%
@@ -893,7 +893,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "26" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "26" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -918,7 +918,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "27" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "27" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign checkboxQuestionIds = checkboxQuestionIds | append: "," | append: questionId %}{%
 assign checkbox1Suffix = "a" %}{%
@@ -971,7 +971,7 @@ assign checkbox4Id = checkbox4Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "28" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "28" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}
 <!-- Question {{ questionDisplayNumber }} -->
 <div id="question-{{ questionId }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "noForm": true, "base": { "live": true }, "default": { "action": "addClass", "source": ".question-{{ questionId }}-protected, .question-{{ questionId }}-protected-a, .question-{{ questionId }}-protected-b, .question-{{ questionId }}-protected-c, .question-{{ questionId }}-classified, .question-{{ questionId }}-confidential, .question-{{ questionId }}-secret, .question-{{ questionId }}-top-secret", "class": "hidden" } }'>
@@ -989,7 +989,7 @@ assign questionId = questionNumber | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "29" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "29" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1136,7 +1136,7 @@ assign subQuestion1Sub1Id = subQuestion1Sub1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="30" questionDisplayNumber="30" %}
 
 {% assign questionNumber = "31" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "31" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1166,7 +1166,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "32" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "32" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1218,7 +1218,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 <h3>{{ aiaDataSource.systemFunctionalitySection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "34" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "34" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1245,7 +1245,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="35" questionDisplayNumber="35" %}
 
 {% assign questionNumber = "36" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "36" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1274,7 +1274,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="38" questionDisplayNumber="38" %}
 
 {% assign questionNumber = "39" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "39" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1313,7 +1313,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 </div>
 
 {% assign questionNumber = "40" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "40" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1361,7 +1361,7 @@ assign subQuestion3Id = subQuestion3Number | replace: ".", "-" %}
 <h3>{{ aiaDataSource.organizationalReadinessSection[ page.lang ] }}</h3>
 
 {% assign questionNumber = "42" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "42" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign radioGroup1Suffix = "a" %}{%
 assign radioGroup1Number = questionNumber | append: radioGroup1Suffix %}{%
@@ -1529,7 +1529,7 @@ assign subQuestion2Id = subQuestion2Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="43" questionDisplayNumber="43" %}
 
 {% assign questionNumber = "44" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "44" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1570,7 +1570,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="45" questionDisplayNumber="45" includeNotApplicable=true %}
 
 {% assign questionNumber = "46" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "46" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
@@ -1603,7 +1603,7 @@ assign subQuestion1Id = subQuestion1Number | replace: ".", "-" %}
 {% include views-vues/automated-decision-automatise/aia-simple-yes-no-question.html questionNumber="48" questionDisplayNumber="48" %}
 
 {% assign questionNumber = "49" %}{%
-assign questionDisplayNumber = questionNumber %}{%
+assign questionDisplayNumber = "49" %}{%
 assign questionId = questionNumber | replace: ".", "-" %}{%
 assign subQuestion1Number = questionNumber | append: ".1" %}{%
 assign subQuestion1DisplayNumber = questionDisplayNumber | append: ".1" %}{%
