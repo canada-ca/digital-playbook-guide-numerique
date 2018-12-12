@@ -2,11 +2,17 @@
 comment %}@param answerType {String} Form field used for the answer (e.g., "checkbox", "radio").
 comment %}@param parentQuestionNumber {String} (Optional. Required for type = "checkbox"). Number of the parent question (e.g., "1" when "1a" and "1b" are checkboxes).{% endcomment %}{% 
 comment %}@param questionNumber {String} Number of the question or sub-question (e.g., "4.1").{% endcomment %}{% 
+comment %}@param questionDisplayNumber {String} (Optional, defaults to the value for questionNumber) Number to display for the question or sub-question if it is different than questionNumber (in the case where the question points to retrieve are different than the question number to display).{% endcomment %}{%
 comment %}@param hidden {Boolean} (Defaults to false) Whether the row should be hidden initially.{% endcomment %}{% 
 comment %}@param nonScoringResult {Boolean} (Defaults to false) Whether the row is excluded from scoring.{% endcomment %}{% 
 comment %}@return {String} Results row for the question or sub-question.{% endcomment %}{% 
+if include.questionDisplayNumber %}{%
+  assign questionDisplayNumber = include.questionDisplayNumber %}{%
+else %}{%
+  assign questionDisplayNumber = include.questionNumber %}{%
+endif %}{%
 assign questionId = include.questionNumber | replace: ".", "-"
-%}<!-- Question {{ include.questionNumber }} -->
+%}<!-- Question {{ questionDisplayNumber }} -->
 <tr id="question-{{ questionId }}-result"{%
 if include.nonScoringResult == true
 %} class="non-scoring-result{% if include.hidden == true %} hidden{% endif %}"{%
@@ -15,7 +21,7 @@ elsif include.answerType == "checkbox"
 elsif include.hidden == true
 %} class="hidden"{%
 endif %}>
-<th>{{ include.questionNumber }}</th>
+<th>{{ questionDisplayNumber }}</th>
 <td>{%
 if include.answerType == "radio" %}{%
   assign answerNumber = 1 %}{%
