@@ -256,7 +256,9 @@ questions:
   "21e":
     en: A non-government third party
     fr: Une tierce partie non gouvernementale
-  "22": Who collects the input data used by the system? (Check all that apply)
+  "22":
+    en: Who collects the input data used by the system? (Check all that apply)
+    fr: Qui collecte les données d'entrée utilisées par le système? (Cochez toutes les cases qui s'appliquent)
   "22a":
     en: Your institution
     fr: Votre institution
