@@ -1,4 +1,7 @@
 intro:
+  notice:
+    en: "This is an archived version of the AIA. For the current version, please visit: https://canada-ca.github.io/aia-eia-js/"
+    fr: "Ceci est une version archivée de l'ÉIA. Pour la version courante, veuillez visiter le site suivant: https://canada-ca.github.io/aia-eia-js/"
   subSection1Heading:
     en: What is the Algorithmic Impact Assessment?
     fr: Qu'est-ce que l'évaluation d'impact algorithmique?
