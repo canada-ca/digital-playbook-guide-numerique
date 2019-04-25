@@ -1,0 +1,384 @@
+<!--Results-->
+<section id="results-section">
+
+<h2>{{ site.Results[ page.lang ] }}</h2>
+
+<section>
+<h3 class="h5 mrgn-bttm-0 mrgn-tp-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}{{ site.Colon[ page.lang ] }}</h3>
+
+<!-- Progress bar: Uses the percent complete for the value (dividing the number of non-hidden rows with scores by the number of non-hidden rows) --> 
+<p><progress id="questionnaire-progress" value="0" max="100" class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [
+  { "type": "percent", "decimalPlaces": 0, "outputTarget": "#questionnaire-progress-percent, #questionnaire-progress-overlay-percent", 
+    "inputs": [
+      { "type": "add",
+        "inputs": [
+          { "type": "count", "query": "#detailed-results-table tbody tr:not(.hidden):not(.non-scoring-result):not([class*=-checkbox-score]) td:first-of-type span:not(.hidden)" }{%
+comment %}checkboxQuestionIdsArray is defined in aia-questionnaire-eia.html{% endcomment %}{%
+for checkboxQuestionId in checkboxQuestionIdsArray %},
+          { "type": "subtract", "inputs": [
+              1, { "type": "pow", "inputs": [ 0, { "type": "count", "query": ".question-{{ checkboxQuestionId }}-yes:not(.hidden)" } ] }
+            ]
+          }{%
+endfor %}
+        ]
+      },
+      {
+        "type": "count",
+        "query": "#detailed-results-table tbody tr:not(.hidden):not(.non-scoring-result):not([class*=-checkbox-score]), #detailed-results-table tbody tr[class*=-checkbox-score][id*=a-result]:not(.hidden)"
+      }
+    ]
+  },
+  { "type": "number", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputAttribute": "value", "query": "#questionnaire-progress-percent" },
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#questionnaire-progress, #questionnaire-progress-overlay", "outputEvent": "wb-update-wb-progress" }
+    ]
+  }
+] }'></progress> <span id="questionnaire-progress-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
+</section>
+
+<!-- Progress bar top overlay (displays at the top of the page). Uses the result of the percent complete calculation from the other progress bar -->
+<section id="progress-overlay" class="wb-overlay modal-content overlay-def wb-bar-t">
+<header>
+<div class="h6 mrgn-tp-md mrgn-bttm-md">
+<h3 class="h6 mrgn-tp-0 mrgn-bttm-0 mrgn-rght-sm pull-left">{{ site.QuestionnaireCompleted[ page.lang ] }}{{ site.Colon[ page.lang ] }}</h3>
+<p><progress id="questionnaire-progress-overlay" value="0" max="100"></progress> <span id="questionnaire-progress-overlay-percent">0</span>{{ site.Percent[ page.lang ] }}</p>
+</div>
+</header>
+</section>
+
+<!-- Final results section. Determines a result based upon the Initial results section (Criteria 1 + Criteria 2) * (Criteria 3 + Criteria 4 + Criteria 5). The resulting Impact level will be the highest impact level of the two criterias, unless one of the criteria has a failed result, which instead results in an overall fail. -->
+<section id="final-result-section" class="panel panel-default wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "initial-results-updated", "eventElement": "#final-result-section", "operations": [
+  { "type": "conditional",
+      "inputs": [
+        { "type": ">=",
+          "inputs": [
+            { "type": "number", "query": "#questionnaire-progress-percent" },
+            {{ aiaDataSource.progressPercentThreshold }}
+          ]
+        }
+    ],
+    "actionsTrue": [
+      { "type": "removeClass", "outputTarget": "#final-result-section", "class": "panel-default panel-success panel-info panel-warning panel-danger" },
+      { "type": "removeClass", "outputTarget": "#final-result-complete", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },{%
+for level in (1..4) %}
+      { "type": "outputValue", "outputTarget": "#level-{{ level }}-filtered-guidance-link", "outputAttribute": "href",
+        "operations": [
+          { "type": "string", "query": "#level-{{ level }}-filtered-guidance-link", "sourceAttribute": "data-url-fragment" }
+        ]
+      },{%
+endfor %}{%
+assign maxIndex = decisionSystemTypeCheckboxIdsArray | size | minus: 1 %}{%
+for index in (0..maxIndex) %}{%
+  comment %}Both arrays are defined in aia-questionnaire-eia.html{% endcomment %}{%
+  assign checkboxId = decisionSystemTypeCheckboxIdsArray[ index ] %}{%
+  assign urlFragment = decisionSystemTypeURLFragmentsArray[ index ] %}
+      { "type": "conditional",
+        "inputs": [
+          { "type": ">",
+            "inputs": [
+              { "type": "count", "query": "#detailed-results-table .question-{{ checkboxId }}-yes:not(.hidden)" }, 0
+            ]
+          }
+        ],
+        "actionsTrue": [
+          { "type": "outputValue", "outputTarget": "#level-1-filtered-guidance-link, #level-2-filtered-guidance-link, #level-3-filtered-guidance-link, #level-4-filtered-guidance-link", "outputAttribute": "href", "outputType": "append", "value": ",dpgn-automated-decision-type-{{ urlFragment }}" }
+        ]
+      },{%
+endfor %}
+      { "type": "outputValue", "outputTarget": "#final-result-impact-score",
+        "operations": [
+          { "type": "multiply",
+            "inputs": [
+              { "type": "add", "query": "#criteria-1-score-total, #criteria-2-score-total" },
+              { "type": "add", "query": "#criteria-3-score-total, #criteria-4-score-total, #criteria-5-score-total" }
+            ], "decimalPlaces": 2
+          }
+        ]
+      },
+      { "type": "conditional",
+        "inputs": [
+          { "type": "<",
+            "inputs": [
+              { "type": "number", "query": "#final-result-impact-score" }, {{ aiaDataSource.impactLevelThresholds[ 0 ] }}
+            ] 
+          }
+        ],
+        "actionsTrue": [
+          { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-success" },
+          { "type": "removeClass", "outputTarget": ".final-result-level-1", "class": "hidden" },
+          { "type": "addClass", "outputTarget": ".final-result-level-2, .final-result-level-3, .final-result-level-4", "class": "hidden" }
+        ],
+        "actionsFalse": [
+          { "type": "conditional",
+            "inputs": [
+              { "type": "<",
+                "inputs": [
+                  { "type": "number", "query": "#final-result-impact-score" }, {{ aiaDataSource.impactLevelThresholds[ 1 ] }}
+                ] 
+              }
+            ],
+            "actionsTrue": [
+              { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-info" },
+              { "type": "removeClass", "outputTarget": ".final-result-level-2", "class": "hidden" },
+              { "type": "addClass", "outputTarget": ".final-result-level-1, .final-result-level-3, .final-result-level-4", "class": "hidden" }
+            ],
+            "actionsFalse":[
+              { "type": "conditional",
+                "inputs": [
+                  { "type": "<",
+                    "inputs": [
+                      { "type": "number", "query": "#final-result-impact-score" }, {{ aiaDataSource.impactLevelThresholds[ 2 ] }}
+                    ] 
+                  }
+                ],
+                "actionsTrue": [
+                  { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-warning" },
+                  { "type": "removeClass", "outputTarget": ".final-result-level-3", "class": "hidden" },
+                  { "type": "addClass", "outputTarget": ".final-result-level-1, .final-result-level-2, .final-result-level-4", "class": "hidden" }
+                ],
+                "actionsFalse":[
+                  { "type": "addClass", "outputTarget": "#final-result-section", "class": "panel-danger" },
+                  { "type": "removeClass", "outputTarget": ".final-result-level-4", "class": "hidden" },
+                  { "type": "addClass", "outputTarget": ".final-result-level-1, .final-result-level-2, .final-result-level-3", "class": "hidden" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "actionsFalse": [
+      { "type": "removeClass", "outputTarget": "#final-result-section", "class": "" },
+      { "type": "removeClass", "outputTarget": "#final-result-in-progress", "class": "hidden" },
+      { "type": "addClass", "outputTarget": "#final-result-complete, .final-result-level-1, .final-result-level-2, .final-result-level-3, .final-result-level-4", "class": "hidden" }
+    ]
+  }
+] }'>
+<header class="panel-heading">
+<h3 class="panel-title">{{ site.FinalResult[ page.lang ] }}</h3>
+</header>
+<div class="panel-body">
+<p id="final-result-in-progress">{{ site.CompleteQuestionnaireFirst[ page.lang ] }}</p>
+<div id="final-result-complete" class="hidden">
+<ul>
+<li>{{ aiaDataSource.impactScore[ page.lang ] }}{{ site.Colon[ page.lang ] }} <span id="final-result-impact-score"></span></li>
+<li>{{ aiaDataSource.impactLevel[ page.lang ] }}{{ site.Colon[ page.lang ] }} 
+<span class="hidden final-result-level-1">1</span>
+<span class="hidden final-result-level-2">2</span>
+<span class="hidden final-result-level-3">3</span>
+<span class="hidden final-result-level-4">4</span>
+</li>
+<li>{{ aiaDataSource.relevantRequirements[ page.lang ] }}{{ site.Colon[ page.lang ] }}  
+<a id="level-1-filtered-guidance-link" class="hidden final-result-level-1" data-url-fragment="{{ aiaDataSource.automatedDecisionViewFilename[ page.lang ] }}.html?contentfilter=dpgn-automated-decision-level-i" href="#">{{ aiaDataSource.automatedDecisionViewTitle[ page.lang ] }}</a>
+<a id="level-2-filtered-guidance-link" class="hidden final-result-level-2" data-url-fragment="{{ aiaDataSource.automatedDecisionViewFilename[ page.lang ] }}.html?contentfilter=dpgn-automated-decision-level-ii" href="#">{{ aiaDataSource.automatedDecisionViewTitle[ page.lang ] }}</a>
+<a id="level-3-filtered-guidance-link" class="hidden final-result-level-3" data-url-fragment="{{ aiaDataSource.automatedDecisionViewFilename[ page.lang ] }}.html?contentfilter=dpgn-automated-decision-level-iii" href="#">{{ aiaDataSource.automatedDecisionViewTitle[ page.lang ] }}</a>
+<a id="level-4-filtered-guidance-link" class="hidden final-result-level-4" data-url-fragment="{{ aiaDataSource.automatedDecisionViewFilename[ page.lang ] }}.html?contentfilter=dpgn-automated-decision-level-iv" href="#">{{ aiaDataSource.automatedDecisionViewTitle[ page.lang ] }}</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<details>
+
+<summary>{{ site.DetailedResults[ page.lang ] }}</summary>
+
+<!-- Initial Results section. Determines the tallied score and maximum score for each criteria. Tallied score is determined by adding together all the non-hidden scores for the criteria (in non-hidden rows). Maximum score is determined by adding together the points with the criteria-n-score-max class in non-hidden rows for each criteria. The percentage is then calculated for each criteria. The tallied scores are used to calculate the final score (Criteria 1 + Criteria 2) * (Criteria 3 + Criteria 4 + Criteria 5). --> 
+<section>
+
+<h3>{{ site.InitialResults[ page.lang ] }}</h3>
+
+<table id="initial-results-table" class="table table-bordered table-condensed">
+<thead>
+<tr>
+<th>{{ site.Criteria[ page.lang ] }}</th>
+<th>{{ site.Score[ page.lang ] }}</th>
+</tr>
+</thead>
+<tbody class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "addClass.action.wb-fieldflow removeClass.action.wb-fieldflow toggle.action.wb-fieldflow score-updated", "operations": [{%
+for index in (0..4) %}{%
+  assign criteriaNumber = index | plus: 1 %}
+  { "type": "add", "query": ".criteria-{{ criteriaNumber }}-score-max", "outputTarget": "#criteria-{{ criteriaNumber }}-max-total", "decimalPlaces": 2 },
+  { "type": "max", "inputs": [ { "type": "add", "query": "#detailed-results-table tr:not(.hidden) .criteria-{{ criteriaNumber }}-score:not(.hidden)" }, 0 ], "outputTarget": "#criteria-{{ criteriaNumber }}-score-total", "decimalPlaces": 2 },
+  { "type": "percent", "decimalPlaces": 1, "query": "#criteria-{{ criteriaNumber }}-score-total, #criteria-{{ criteriaNumber }}-max-total", "outputTarget": "#criteria-{{ criteriaNumber }}-percent" },
+  { "type": "number", "decimalPlaces": 0, "query": "#criteria-{{ criteriaNumber }}-percent", "outputTarget": "#progress-criteria-{{ criteriaNumber }}", "outputAttribute": "value" },
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputTarget": "#progress-criteria-{{ criteriaNumber }}", "outputEvent": "wb-update-wb-progress" },
+      { "type": "removeClass", "outputTarget": "#criteria-{{ criteriaNumber }}-result", "class": "" }
+    ]
+  },{%
+endfor %}
+  { "type": "action",
+    "inputs": [
+      { "type": "event", "outputEvent": "initial-results-updated", "outputTarget": "#final-result-section" }
+    ]
+  }
+] }'>{%
+for index in (0..4) %}{%
+  assign criteriaNumber = index | plus: 1 %}
+<tr>
+<td>{{ aiaDataSource.aiaCriteria[ index ][ page.lang ] }}</td>
+<td>
+<span id="criteria-{{ criteriaNumber }}-score-total">0</span> {{ site.OutOf[ page.lang ] }} <span id="criteria-{{ criteriaNumber }}-max-total">0</span><br />
+<progress id="progress-criteria-{{ criteriaNumber }}" value="0" max="100"></progress> <span id="criteria-{{ criteriaNumber }}-percent">0</span>{{ site.Percent[ page.lang ] }}
+</td>
+</tr>{%
+endfor %}
+</tbody>
+</table>
+
+</section>
+
+<!-- Detailed Score section. Contains all the possible score outcomes for each answer, but only the visible score is counted (questionnaire shows/hides the scores by adding/removing the hidden class). The maximum score for the answer for each criteria is identified by the criteria-n-score-max class. -->
+<section>
+
+<h3>{{ site.DetailedScore[ page.lang ] }}</h3>
+
+<!-- Detailed Score table -->
+<table id="detailed-results-table" class="table table-bordered table-condensed">
+<thead>
+<tr>
+<th>{{ site.Question[ page.lang ] }}</th>
+<th>{{ site.SelectedAnswer[ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 0 ][ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 1 ][ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 2 ][ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 3 ][ page.lang ] }}</th>
+<th>{{ aiaDataSource.aiaCriteria[ 4 ][ page.lang ] }}</th>
+</tr>
+</thead>
+<tbody>
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="1" questionDisplayNumber="1" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="2" questionDisplayNumber="2" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="3" questionDisplayNumber="3" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="4" questionDisplayNumber="4" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="5" questionDisplayNumber="5" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="6" questionDisplayNumber="6" nonScoringResult=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="7a" parentQuestionNumber="7" questionDisplayNumber="7a" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="7b" parentQuestionNumber="7" questionDisplayNumber="7b" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="7c" parentQuestionNumber="7" questionDisplayNumber="7c" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="7.1" questionDisplayNumber="7.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="7.1.1" questionDisplayNumber="7.1.1" nonScoringResult=true hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="7.1.2" questionDisplayNumber="7.1.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="7.1.3" questionDisplayNumber="7.1.3" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="8" questionDisplayNumber="8" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="9" questionDisplayNumber="9" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="10" questionDisplayNumber="10" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="10.1" questionDisplayNumber="10.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="11" questionDisplayNumber="11" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="12" questionDisplayNumber="12" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="12.1" questionDisplayNumber="12.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13" questionDisplayNumber="13" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.1" questionDisplayNumber="13.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.1.1" questionDisplayNumber="13.1.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.2" questionDisplayNumber="13.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.2.1" questionDisplayNumber="13.2.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="13.3" questionDisplayNumber="13.3" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14" questionDisplayNumber="14" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14.1" questionDisplayNumber="14.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14.1.1" questionDisplayNumber="14.1.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14.2" questionDisplayNumber="14.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="14.3" questionDisplayNumber="14.3" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="15" questionDisplayNumber="15" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="16" questionDisplayNumber="16" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="17" questionDisplayNumber="17" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="18" questionDisplayNumber="18" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19a" parentQuestionNumber="19" questionDisplayNumber="19a" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19b" parentQuestionNumber="19" questionDisplayNumber="19b" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19c" parentQuestionNumber="19" questionDisplayNumber="19c" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19d" parentQuestionNumber="19" questionDisplayNumber="19d" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19e" parentQuestionNumber="19" questionDisplayNumber="19e" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19f" parentQuestionNumber="19" questionDisplayNumber="19f" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19g" parentQuestionNumber="19" questionDisplayNumber="19g" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="19h" parentQuestionNumber="19" questionDisplayNumber="19h" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="20" questionDisplayNumber="20" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="20.1" questionDisplayNumber="20.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21a" parentQuestionNumber="21" questionDisplayNumber="21a" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21b" parentQuestionNumber="21" questionDisplayNumber="21b" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21c" parentQuestionNumber="21" questionDisplayNumber="21c" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21d" parentQuestionNumber="21" questionDisplayNumber="21d" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="21e" parentQuestionNumber="21" questionDisplayNumber="21e" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22a" parentQuestionNumber="22" questionDisplayNumber="22a" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22b" parentQuestionNumber="22" questionDisplayNumber="22b" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22c" parentQuestionNumber="22" questionDisplayNumber="22c" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22d" parentQuestionNumber="22" questionDisplayNumber="22d" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="22e" parentQuestionNumber="22" questionDisplayNumber="22e" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="23" questionDisplayNumber="23" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="23.1" questionDisplayNumber="23.1" hidden="true" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="24" questionDisplayNumber="24" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="24.1" questionDisplayNumber="24.1" nonScoringResult=true hidden="true" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="25" questionDisplayNumber="25" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="25.1" questionDisplayNumber="25.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="26" questionDisplayNumber="26" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="26.1" questionDisplayNumber="26.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27a" parentQuestionNumber="27" questionDisplayNumber="27a" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27b" parentQuestionNumber="27" questionDisplayNumber="27b" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27c" parentQuestionNumber="27" questionDisplayNumber="27c" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="27d" parentQuestionNumber="27" questionDisplayNumber="27d" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="28" questionDisplayNumber="28" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="29" questionDisplayNumber="29" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1a" parentQuestionNumber="29.1" questionDisplayNumber="29.1a" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1b" parentQuestionNumber="29.1" questionDisplayNumber="29.1b" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1c" parentQuestionNumber="29.1" questionDisplayNumber="29.1c" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1d" parentQuestionNumber="29.1" questionDisplayNumber="29.1d" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1e" parentQuestionNumber="29.1" questionDisplayNumber="29.1e" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1f" parentQuestionNumber="29.1" questionDisplayNumber="29.1f" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1g" parentQuestionNumber="29.1" questionDisplayNumber="29.1g" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="checkbox" questionNumber="29.1h" parentQuestionNumber="29.1" questionDisplayNumber="29.1h" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="29.1.1"  questionDisplayNumber="29.1.1" nonScoringResult=true hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="30" questionDisplayNumber="30" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="31" questionDisplayNumber="31" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="31.1" questionDisplayNumber="31.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="31.2" questionDisplayNumber="31.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="32" questionDisplayNumber="32" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="32.1" questionDisplayNumber="32.1" nonScoringResult=true hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="33" questionDisplayNumber="33" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="34" questionDisplayNumber="34" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="34.1" questionDisplayNumber="34.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="35" questionDisplayNumber="35" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="36" questionDisplayNumber="36" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="36.1" questionDisplayNumber="36.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="37" questionDisplayNumber="37" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="38" questionDisplayNumber="38" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="39" questionDisplayNumber="39" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="39.1" questionDisplayNumber="39.1" nonScoringResult=true hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="40" questionDisplayNumber="40" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="40.1" questionDisplayNumber="40.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="40.2" questionDisplayNumber="40.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="40.3" questionDisplayNumber="40.3" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="41" questionDisplayNumber="41" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42a" questionDisplayNumber="42a" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42b" questionDisplayNumber="42b" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42c" questionDisplayNumber="42c" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42d" questionDisplayNumber="42d" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42e" questionDisplayNumber="42e" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42f" questionDisplayNumber="42f" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42g" questionDisplayNumber="42g" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42h" questionDisplayNumber="42h" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42.1" questionDisplayNumber="42.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="42.2" questionDisplayNumber="42.2" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="43" questionDisplayNumber="42.3" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="44" questionDisplayNumber="44" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html questionNumber="44.1" questionDisplayNumber="44.1" nonScoringResult=true hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="45" questionDisplayNumber="45" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="46" questionDisplayNumber="46" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="46.1" questionDisplayNumber="46.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="47" questionDisplayNumber="47" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="48" questionDisplayNumber="48" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="49" questionDisplayNumber="49" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="49.1" questionDisplayNumber="49.1" hidden=true %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="50" questionDisplayNumber="50" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="51" questionDisplayNumber="51" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="52" questionDisplayNumber="52" %}
+{% include /views-vues/automated-decision-automatise/aia-results-row-rang-resultats-eia.html answerType="radio" questionNumber="53" questionDisplayNumber="53" %}
+</tbody>
+</table>
+
+</section>
+
+</details>
+
+</section>
