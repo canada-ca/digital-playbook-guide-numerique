@@ -163,7 +163,7 @@ Cela implique de travailler ouvertement, de partager toutes les données et info
 - [Politique du libre (Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
 - [8. Make all new source code open (Digital Service Standard (UK))](https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open)
 - [3. Be open and use open source (Technology Code of Practice (UK))](https://www.gov.uk/guidance/be-open-and-use-open-source)
-- [Politique de contribution open-source de la DINSIC (France)](https://disic.github.io/politique-de-contribution-open-source/)
+- [Politique de contribution open-source de la DINSIC (France)](https://disic.github.io/politique-de-contribution-open-source/introduction)
 - [Open Source Software (Federal Source Code Policy (US))](https://sourcecode.cio.gov/OSS/)
 - [13. Default to open (Digital Services Playbook (US))](https://playbook.cio.gov/#play13)
 - [18F Open Source Policy (US)](https://github.com/18F/open-source-policy/blob/master/policy.md)
