@@ -3904,7 +3904,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "<a href=\"https://disic.github.io/politique-de-contribution-open-source/en/\">DINSIC Open-source contribution policy (France)</a>"
+                            "content": "<a href=\"https://disic.github.io/politique-de-contribution-open-source/introduction.en\">DINSIC Open-source contribution policy (France)</a>"
                           }
                         ]
                       },
@@ -6382,7 +6382,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/what-we-are-doing.html\">Security and Identity Management Policy Instruments</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/\">Security and Identity Management Policy Instruments</a>"
                           }
                         ]
                       },
