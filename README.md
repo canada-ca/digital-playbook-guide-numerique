@@ -2,6 +2,16 @@
 [Français](#user-content-guide-numérique-du-gouvernement-du-canada-ébauche)
 <!-- markdownlint-enable MD041 -->
 
+
+# Assurance Level Tool (draft)
+
+This repo is for the development of the assurance level tool. Other functions from the Government of Canada Digital Playbook have been
+removed for quicker site building. The tool can be accessed at the following address:
+
+([Assurance Level Tool](https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html))
+
+The following is the original README
+
 # Government of Canada Digital Playbook (draft)
 
 ([Website version of the Digital Playbook overview](https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html))
