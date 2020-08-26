@@ -1,0 +1,26 @@
+<div id="assurance-level-details" class="wb-frmvld">
+<form method="post" action="#">
+
+  <h2>{{ page.detailTitle }}:</h2>
+  {% for detail in (1..4) %}{%
+    assign detailNumberString = detail | downcase %}
+    {% if detail == 4 %}
+    {% assign initialValue = "now" | date: "%Y-%m-%d" %}
+    {% endif %}
+  <div>
+  <label for="detail-{{ detail }}" style="display:block;">{{ page.detail[ detailNumberString ] }}:</label>
+  <input id="detail-{{ detail }}" type="text" class="wb-calculate" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#detail-{{ detail }}", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#D{{ detail }}", "operations": [
+          { "type": "string", "query": "#detail-{{ detail }}", "sourceAttribute": "value" }
+        ] }
+      ]
+    }
+  ] }'>
+</input>
+  </div>
+{% endfor %}
+
+</form>
+</div>

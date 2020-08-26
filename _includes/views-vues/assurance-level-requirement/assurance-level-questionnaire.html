@@ -1,4 +1,4 @@
-<div id="right-cloud-questionnaire" class="wb-frmvld">
+<div id="assurance-level-questionnaire" class="wb-frmvld">
 <form method="post" action="#">
 
 <section>
@@ -19,6 +19,8 @@
       <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-L{{ level }}, #Q{{ question }}-A{{ level }}", "class": "hidden" }'>{{ page.questions[ questionAnswerString ] }}</li>
     {% endif %}
   {% endfor %}
+  <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-NA", "class": "hidden" }'>{{ page.notApplicable }}</li>
+</ul>
 </div>
 <div>
 <label for="question-{{ question }}-rational" style="display:block;">{{ page.rational }}:</label>
