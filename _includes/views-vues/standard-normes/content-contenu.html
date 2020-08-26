@@ -1,3 +1,0 @@
-{% assign standardIndexStringArray = page.standard | minus: 1 | downcase | split: "," %}{% 
-assign defaultSubsectionTitles = site.defaultSubsectionTitles[page.lang] %}{% 
-include functions/filtered-standard-guideline-content.html standardIndexes=standardIndexStringArray irrelevantTags="dpgn-standard-hide" groupByTagsTags=site.defaultSubsectionTags groupByTagsTitles=defaultSubsectionTitles %}
