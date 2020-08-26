@@ -4,7 +4,7 @@ title: Assurance Level Requirement (draft)
 lang: en
 altLang: fr
 altLangPage: nuage-outil-decisionnel
-collectionDirectory: views-vues/cloud-nuage
+collectionDirectory: views-vues/assurance-level-requirement
 questions:
   "1": Inconvenience, distress, loss of standing or reputation
   "1-a0": No inconvenience, distress or damage to the standing or reputation of any party
@@ -51,37 +51,41 @@ questions:
   "8-a2": A disadvantage to the national interest
   "8-a3": An injury to the national interest
   "8-a4": A serious or exceptionally grave injury to the national interest
-demographic:
-  "1": Name of Assessor
-  "2": Name of program/service
-  "3": Name of department
+
+detail:
+  "1": Assessor
+  "2": Program Activity, Service or Transaction
+  "3": Department
   "4": Date
-rational: Rational
-relevant: Relevant
-unrelevant: Unrelevant
+
 level: Required Level
 assessment: Assessment
-relevenciesTitle: Unselect all unrelavent sections
-demographicTitle: Demographics
+rational: Rational
+overallAssesment: Overall Assesment
+
+detailTitle: Details
 assuranceTitle: Assurance Levels
+
 assuranceQuestion: To determine the level of assurance required, complete the following sentence using the statements in the cells below and check the appropriate boxes
 assuranceSentence: "If the program, activity, service or transaction above is compromised, it could result in…"
+notApplicable: Not Applicable
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
 
 <p>TODO elements
 <ul>
-  <li>Change assurance level on hide (is updated on new selection though)</li>
-  <li>Start with all sections selected as relevant</li>
+  <li>print the results</li>
   <li>save results to pdf</li>
+  <li>email the end report to someone (free form email)</li>
+  <li>submit the assessment to cyber for our records (we have the cyber mailbox that we can use to send to -- zztbscybers@tbs-sct.gc.ca) with subject Header “LOA Assessment from 'Department Name'”</li>
   <li>make table prettier</li>
 </ul>
 </p>
 
 <div class="wb-inview" data-inview="progress-overlay">
 </div>
-{% include views-vues/assurance-level-requirement/assurance-level-relevancies.html %}
+{% include views-vues/assurance-level-requirement/assurance-level-details.html %}
 
 {% include views-vues/assurance-level-requirement/assurance-level-questionnaire.html %}
 
