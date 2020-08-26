@@ -1,0 +1,41 @@
+<div id="right-cloud-questionnaire" class="wb-frmvld">
+<form method="post" action="#">
+
+<section>
+<h2>{{ page.assuranceTitle }}</h2>
+<p><b> {{ page.assuranceQuestion }} </b></p>
+<p> {{ page.assuranceSentence }}</p>
+
+{% for question in (1..8) %}{%
+  assign questionNumberString = question | downcase %}
+<!-- Question {{ question }} -->
+<div class="question-{{ question }}-ele">
+<div id="question-{{ question }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas":"radio", "noForm": true, "base": { "live": true }, "default": [{ "action": "addClass", "source": ".Q{{ question }}-level > span", "class": "hidden" }, {"action": "addClass", "source": ".Q{{ question }}-assessment > span", "class": "hidden"}], "noreqlabel": true }'>
+<p>{{ page.questions[ questionNumberString ] }}</p>
+<ul>
+  {% for level in (0..4) %}{%
+    assign questionAnswerString = question | append: "-a" | append: level %}
+    {% if page.questions[ questionAnswerString ] %}
+      <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-L{{ level }}, #Q{{ question }}-A{{ level }}", "class": "hidden" }'>{{ page.questions[ questionAnswerString ] }}</li>
+    {% endif %}
+  {% endfor %}
+</div>
+<div>
+<label for="question-{{ question }}-rational" style="display:block;">{{ page.rational }}:</label>
+<textarea id="question-{{ question }}-rational" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ question }}-rational", "operations": [
+  { "type": "action",
+    "inputs": [
+      { "type": "outputValue", "outputTarget": "#Q{{ question }}-rational", "operations": [
+        { "type": "string", "query": "#question-{{ question }}-rational", "sourceAttribute": "value" }
+      ] }
+    ]
+  }
+] }' cols="70" rows="3"></textarea>
+</div>
+</div>
+{% endfor %}
+
+</section>
+
+</form>
+</div>

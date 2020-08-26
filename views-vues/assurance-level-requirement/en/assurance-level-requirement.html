@@ -1,0 +1,88 @@
+---
+layout: default
+title: Assurance Level Requirement (draft)
+lang: en
+altLang: fr
+altLangPage: nuage-outil-decisionnel
+collectionDirectory: views-vues/cloud-nuage
+questions:
+  "1": Inconvenience, distress, loss of standing or reputation
+  "1-a0": No inconvenience, distress or damage to the standing or reputation of any party
+  "1-a1": An inconvenience, distress or damage to the standing or reputation of any party
+  "1-a2": A serious short-term or a limited long-term inconvenience, distress or damage to the standing or reputation of any party
+  "1-a3": A serious long-term inconvenience, distress or damage to the standing or reputation of any party
+  "1-a4": A severe and permanent inconvenience, distress or damageto the standing or reputation of any party
+  "2": Financial loss
+  "2-a0": No financial loss
+  "2-a1": A financial loss
+  "2-a2": A minor financial loss to any party (Note&#58; The severity of the loss depends on the impact of the loss on the affected party)
+  "2-a3": A major financial loss to any party (Note&#58; The severity of the loss depends on the impact of the loss on the affected party)
+  "2-a4": An extreme financial loss to any party (Note&#58; The severity of the loss depends on the impact of the loss on the affected party)
+  "3": Harm to program or to public interest
+  "3-a0": No adverse effect on any government organization, program, asset or the public interest
+  "3-a1": An adverse effect on any government organization, program, asset or the public interest
+  "3-a2": A limited adverse effect on a government organization (i.e., it can perform its primary function but with reduced effectiveness), program, organizational asset or the public interest
+  "3-a3": A serious adverse effect on a government organization (i.e., it can perform its primary function with significantly reduced effectiveness), program, organizational asset or the public interest
+  "3-a4": A catastrophic effect on a government organization (i.e., it is unable to perform its primary function), program, organizational asset or the public interest
+  "4": Unauthorized release of sensitive personal or commercial information
+  "4-a0": No loss of personal privacy or breach of personal or commercial information
+  "4-a1": A loss of personal privacy or breach of personal or commercial information
+  "4-a2": A limited adverse effect on an individual or institution due to the loss of confidentiality or breach of privacy resulting from unauthorized release or improper disclosure of sensitive personal or commercial information
+  "4-a3": A serious adverse effect on an individual or institution due to the loss of confidentiality or breach of privacy resulting from unauthorized release or improper disclosure of sensitive personal or commercial information
+  "4-a4": A catastrophic effect on an individual or institution due to the loss of confidentiality or breach of privacy resulting from unauthorized release or improper disclosure of sensitive personal or commercial information
+  "5": Unauthorized release of sensitive government information (non-personal information)
+  "5-a0": No loss of confidentiality
+  "5-a1": A loss of confidentiality
+  "5-a2": A limited adverse effect on organizational operations and assets due to a loss of confidentiality resulting from the release of sensitive government information to unauthorized parties
+  "5-a3": A serious adverse effect on organizational operations and assets due to a loss of confidentiality resulting from the release of sensitive government information to unauthorized parties
+  "5-a4": A catastrophic effect on organizational operations and assets due to a loss of confidentiality resulting from the release of sensitive government information to unauthorized parties
+  "6": Civil or criminal violations
+  "6-a0": No violation that may have any consequences
+  "6-a2": A violation that may have minor consequences
+  "6-a3": A violation that may have serious consequences
+  "6-a4": A violation that may have exceptionally grave consequences
+  "7": Personal health and safety
+  "7-a0": A No personal injury
+  "7-a2": A minor personal injury not requiring medical attention
+  "7-a3": A personal injury requiring medical attention
+  "7-a4": A serious personal injury or death
+  "8": National interest
+  "8-a0": No disadvantage to the national interest
+  "8-a2": A disadvantage to the national interest
+  "8-a3": An injury to the national interest
+  "8-a4": A serious or exceptionally grave injury to the national interest
+demographic:
+  "1": Name of Assessor
+  "2": Name of program/service
+  "3": Name of department
+  "4": Date
+rational: Rational
+relevant: Relevant
+unrelevant: Unrelevant
+level: Required Level
+assessment: Assessment
+relevenciesTitle: Unselect all unrelavent sections
+demographicTitle: Demographics
+assuranceTitle: Assurance Levels
+assuranceQuestion: To determine the level of assurance required, complete the following sentence using the statements in the cells below and check the appropriate boxes
+assuranceSentence: "If the program, activity, service or transaction above is compromised, it could result in…"
+---
+{% assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}
+
+<p>TODO elements
+<ul>
+  <li>Change assurance level on hide (is updated on new selection though)</li>
+  <li>Start with all sections selected as relevant</li>
+  <li>save results to pdf</li>
+  <li>make table prettier</li>
+</ul>
+</p>
+
+<div class="wb-inview" data-inview="progress-overlay">
+</div>
+{% include views-vues/assurance-level-requirement/assurance-level-relevancies.html %}
+
+{% include views-vues/assurance-level-requirement/assurance-level-questionnaire.html %}
+
+{% include views-vues/assurance-level-requirement/assurance-level-resultats.html %}
