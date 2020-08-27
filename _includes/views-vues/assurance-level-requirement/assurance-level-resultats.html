@@ -4,21 +4,21 @@
 <h2>{{ site.Results[ page.lang ] }}</h2>
 
 <!-- Results table -->
-<table class="table table-bordered table-condensed">
+<table id="results-table" class="table table-bordered table-condensed">
 <thead>
   <tr>
   {% assign rowNumber = 1 %}
   <th id="r{{ rowNumber }}h1">{{ page.detail["1"] }}</th>
-  <td id="D1"></td>
+  <td><span id="D1"></span></td>
   <th id="r{{ rowNumber }}h3">{{ page.detail["2"] }}</th>
-  <td id="D2"></td>
+  <td><span id="D2"></span></td>
   </tr>
   <tr>
   {% assign rowNumber = rowNumber | plus: 1 %}
   <th id="r{{ rowNumber }}h1">{{ page.detail["3"] }}</th>
-  <td id="D3"></td>
+  <td><span id="D3"></span></td>
   <th id="r{{ rowNumber }}h3">{{ page.detail["4"] }}</th>
-  <td id="D4">{{ "now" | date: "%Y-%m-%d" }}</td>
+  <td><span id="D4">{{ "now" | date: "%Y-%m-%d" }}</span></td>
   </tr>
 </thead>
 <tbody>
@@ -40,13 +40,14 @@
   {% for level in (0..4) %}
   <span id="Q{{ questionNumber }}-L{{ level }}" class="hidden assurance-level-element"> {{ level }}</span>
   {% endfor %}
-  <span id="Q{{ questionNumber }}-NA" class="hidden"> N/A</span>
+  <span id="Q{{ questionNumber }}-LNA" class="hidden"> N/A</span>
 </td>
 <td class="Q{{ questionNumber }}-assessment">
   {% for level in (0..4) %}{%
     assign assesmentString = questionNumberString | append: "-a" | append: level
   %}<span id="Q{{ questionNumber }}-A{{ level }}" class="hidden">{{ page.questions[assesmentString] }}</span>{%
   endfor %}
+  <span id="Q{{ questionNumber }}-ANA" class="hidden"></span>
 </td>
 <td><span id="Q{{ questionNumber }}-rational"></span></td>
 </tr>{%
@@ -64,5 +65,9 @@ endfor %}
 
 </tbody>
 </table>
+
+<button type="button" class="btn btn-default">Download as PDF</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden), .non-scoring-result td", "container": "#results-table", "filename": "assurance-level-assessment" }'>{{ site.DownloadCSV[page.lang] }}</button>
+<button type="button" class="btn btn-default">Sent to TBS</button>
 
 </section>

@@ -8,7 +8,7 @@
 This repo is for the development of the assurance level tool. Other functions from the Government of Canada Digital Playbook have been
 removed for quicker site building. The tool can be accessed at the following address:
 
-([Assurance Level Tool](https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html))
+[Assurance Level Tool](https://adamprins.github.io/digital-playbook-guide-numerique/views-vues/assurance-level-requirement/en/assurance-level-requirement.html)
 
 The following is the original README
 

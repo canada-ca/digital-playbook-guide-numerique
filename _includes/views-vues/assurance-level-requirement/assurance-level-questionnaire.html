@@ -19,7 +19,7 @@
       <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-L{{ level }}, #Q{{ question }}-A{{ level }}", "class": "hidden" }'>{{ page.questions[ questionAnswerString ] }}</li>
     {% endif %}
   {% endfor %}
-  <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-NA", "class": "hidden" }'>{{ page.notApplicable }}</li>
+  <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-LNA, #Q{{ question }}-ANA", "class": "hidden" }'>{{ page.notApplicable }}</li>
 </ul>
 </div>
 <div>
