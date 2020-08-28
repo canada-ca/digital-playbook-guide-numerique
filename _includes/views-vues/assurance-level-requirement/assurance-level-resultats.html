@@ -1,11 +1,13 @@
 <!--Results-->
-<section>
+<section id="section-results">
+<link rel="stylesheet" href="{{ site.baseurl }}/views-vues/assurance-level-requirement/resultTable.css" type="text/css"/>
 
 <h2>{{ site.Results[ page.lang ] }}</h2>
 
 <!-- Results table -->
-<table id="results-table" class="table table-bordered table-condensed">
-<thead>
+<div id="table-results" class="table-results">
+
+<table class="table-results-details">
   <tr>
   {% assign rowNumber = 1 %}
   <th id="r{{ rowNumber }}h1">{{ page.detail["1"] }}</th>
@@ -20,16 +22,20 @@
   <th id="r{{ rowNumber }}h3">{{ page.detail["4"] }}</th>
   <td><span id="D4">{{ "now" | date: "%Y-%m-%d" }}</span></td>
   </tr>
+</table>
+
+<table class="table-striped-results">
+<thead>
+  {% assign rowNumber = rowNumber | plus: 1 %}
+  {% assign headerRowNumber = rowNumber %}
+  <th id="r{{ headerRowNumber }}h1" style="width: 30%;"">{{ site.Criteria[ page.lang ] }}</th>
+  <th id="r{{ headerRowNumber }}h2" style="width: 10%;">{{ page.level }}</th>
+  <th id="r{{ headerRowNumber }}h3" style="width: 30%;">{{ page.assessment }}</th>
+  <th id="r{{ headerRowNumber }}h4" style="width: 30%;">{{ page.rational }}</th>
+  </tr>
 </thead>
 <tbody>
 <tr>
-{% assign rowNumber = rowNumber | plus: 1 %}
-{% assign headerRowNumber = rowNumber %}
-<th id="r{{ headerRowNumber }}h1">{{ site.Criteria[ page.lang ] }}</th>
-<th id="r{{ headerRowNumber }}h2">{{ page.level }}</th>
-<th id="r{{ headerRowNumber }}h3">{{ page.assessment }}</th>
-<th id="r{{ headerRowNumber }}h4">{{ page.rational }}</th>
-</tr>
 {% for questionNumber in (1..8) %}{%
   assign questionNumberString = questionNumber | downcase %}{%
   assign questionString = page.questions[ questionNumberString ] %}{%
@@ -61,13 +67,31 @@ endfor %}
   <span id="max-assurance-level-used">0</span>
 </td>
 <td></td>
+<td></td>
 </tr>
 
 </tbody>
 </table>
+</div>
 
-<button type="button" class="btn btn-default">Download as PDF</button>
-<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden), .non-scoring-result td", "container": "#results-table", "filename": "assurance-level-assessment" }'>{{ site.DownloadCSV[page.lang] }}</button>
-<button type="button" class="btn btn-default">Sent to TBS</button>
+<button type="button" class="btn btn-default" onclick="javascript:window.print();">Download as PDF</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td span:not(.hidden), .non-scoring-result td", "container": "#table-results", "filename": "assurance-level-assessment" }'>{{ site.DownloadCSV[page.lang] }}</button>
+<button type="button" class="btn btn-default">Sent to TBS (TODO)</button>
+
+<script language="javascript" type="text/javascript">
+  function printDiv(divID) {
+    let divElements = document.getElementById(divID).innerHTML;
+    let oldPage = document.body.innerHTML;
+
+    document.body.innerHTML =
+      "<html><head><title></title></head><body>" +
+      divElements + "</body>";
+
+    window.print();
+
+    document.body.innerHTML = oldPage;
+  }
+</script>
+
 
 </section>
