@@ -4,7 +4,7 @@
 
 <h2>{{ site.Results[ page.lang ] }}</h2>
 
-<!-- Results table -->
+<!-- Details Table -->
 <div id="table-results" class="table-results">
 
 <table class="table-results-details">
@@ -24,6 +24,7 @@
   </tr>
 </table>
 
+<!-- Results table -->
 <table class="table-striped-results">
 <thead>
   {% assign rowNumber = rowNumber | plus: 1 %}
@@ -35,13 +36,14 @@
   </tr>
 </thead>
 <tbody>
+<!-- Body Rows -->
 <tr>
 {% for questionNumber in (1..8) %}{%
   assign questionNumberString = questionNumber | downcase %}{%
   assign questionString = page.questions[ questionNumberString ] %}{%
   assign rowNumber = rowNumber | plus: 1
 %}<tr class="question-{{ questionNumber }}-ele question-row">
-<th headers="r1h1" id="r{{ rowNumber }}h1">{{ questionString }}</th>
+<th headers="r1h1" id="r{{ rowNumber }}h1">{{ questionNumberString }}. {{ questionString }}</th>
 <td style="text-align: center; font-size: 30px;" class="Q{{ questionNumber }}-level">
   {% for level in (0..4) %}
   <span id="Q{{ questionNumber }}-L{{ level }}" class="hidden assurance-level-element"> {{ level }}</span>
@@ -60,8 +62,8 @@
 endfor %}
 
 <!-- Summary row -->
-<tr style="border: solid; border-width: 2px;">
-<th headers="r{{ headerRowNumber }}h1" id="r{{ rowNumber }}h1">{{ page.overallAssesment }}</th>
+<tr style="border: solid; border-width: 2px; font-size: 30px;">
+<th headers="r{{ headerRowNumber }}h1" id="r{{ rowNumber }}h1">{{ page.overallAssessment }}</th>
 <td headers="r{{ headerRowNumber }}h2" id="r{{ rowNumber }}h2" style="text-align: center; font-size: 30px;" class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
     { "type": "max", "query": ".question-row:not(.hidden) .assurance-level-element:not(.hidden)", "outputTarget": "#max-assurance-level-used" }]}'>
   <span id="max-assurance-level-used">0</span>

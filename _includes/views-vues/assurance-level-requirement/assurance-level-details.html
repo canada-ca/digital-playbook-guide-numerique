@@ -7,8 +7,26 @@
     {% if detail == 4 %}
     {% assign initialValue = "now" | date: "%Y-%m-%d" %}
     {% endif %}
+
   <div>
   <label for="detail-{{ detail }}" style="display:block;">{{ page.detail[ detailNumberString ] }}:</label>
+  {% if detail == 3 %}
+  <select id="detail-{{ detail }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#detail-{{ detail }}", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#D{{ detail }}", "operations": [
+          { "type": "string", "query": "#detail-{{ detail }}", "sourceAttribute": "value" }
+        ] }
+      ]
+    }
+  ] }'>
+  <option value="">{{ aiaDataSource.questions[ subLabel ][ page.lang ] }}</option>{%
+  assign departmentNames = site.data.departments | sort: page.lang %}{%
+  for department in departmentNames %}
+  <option value="{{ department[ page.lang ] }}">{{ department[ page.lang ] }}</option>{%
+  endfor %}
+  </select>
+  {% else %}
   <input id="detail-{{ detail }}" type="text" class="wb-calculate" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#detail-{{ detail }}", "operations": [
     { "type": "action",
       "inputs": [
@@ -18,7 +36,8 @@
       ]
     }
   ] }'>
-</input>
+  </input>
+  {% endif %}
   </div>
 {% endfor %}
 

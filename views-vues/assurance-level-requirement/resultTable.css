@@ -14,14 +14,6 @@
   width: 25%;
 }
 
-.table-results-details th {
-  background-color: #bfe5ff;
-}
-
-.table-results-details td {
-  background-color: #d1ecff;
-}
-
 .table-striped-results tr:nth-child(even) {
   background-color: #bfe5ff;
 }

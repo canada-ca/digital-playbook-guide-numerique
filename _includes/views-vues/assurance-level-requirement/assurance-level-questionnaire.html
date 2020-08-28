@@ -11,7 +11,7 @@
 <!-- Question {{ question }} -->
 <div class="question-{{ question }}-ele">
 <div id="question-{{ question }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas":"radio", "noForm": true, "base": { "live": true }, "default": [{ "action": "addClass", "source": ".Q{{ question }}-level > span", "class": "hidden" }, {"action": "addClass", "source": ".Q{{ question }}-assessment > span", "class": "hidden"}], "noreqlabel": true }'>
-<p>{{ page.questions[ questionNumberString ] }}</p>
+<p>{{ question }}. {{ page.questions[ questionNumberString ] }}</p>
 <ul>
   {% for level in (0..4) %}{%
     assign questionAnswerString = question | append: "-a" | append: level %}
@@ -32,7 +32,7 @@
       ] }
     ]
   }
-] }' cols="70" rows="3"></textarea>
+] }' cols="100" rows="3"></textarea>
 </div>
 </div>
 {% endfor %}
