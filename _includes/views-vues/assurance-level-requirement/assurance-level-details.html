@@ -10,6 +10,7 @@
 
   <div>
   <label for="detail-{{ detail }}" style="display:block;">{{ page.detail[ detailNumberString ] }}:</label>
+
   {% if detail == 3 %}
   <select id="detail-{{ detail }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#detail-{{ detail }}", "operations": [
     { "type": "action",
@@ -20,14 +21,16 @@
       ]
     }
   ] }'>
-  <option value="">{{ aiaDataSource.questions[ subLabel ][ page.lang ] }}</option>{%
+  <option value="">{{ aiaDataSource.questions[ subLabel ][ page.lang ] }}</option>
+  <option value="{{ page.other }}">{{ page.other }}</option>{%
   assign departmentNames = site.data.departments | sort: page.lang %}{%
   for department in departmentNames %}
   <option value="{{ department[ page.lang ] }}">{{ department[ page.lang ] }}</option>{%
   endfor %}
   </select>
+
   {% else %}
-  <input id="detail-{{ detail }}" type="text" class="wb-calculate" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#detail-{{ detail }}", "operations": [
+  <input id="detail-{{ detail }}" type="text" size="85" class="wb-calculate" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#detail-{{ detail }}", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#D{{ detail }}", "operations": [
