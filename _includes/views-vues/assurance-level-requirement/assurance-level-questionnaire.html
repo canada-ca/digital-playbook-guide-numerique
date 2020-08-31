@@ -10,13 +10,19 @@
   assign questionNumberString = question | downcase %}
 <!-- Question {{ question }} -->
 <div class="question-{{ question }}-ele">
-<div id="question-{{ question }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas":"radio", "noForm": true, "base": { "live": true }, "default": [{ "action": "addClass", "source": ".Q{{ question }}-level > span", "class": "hidden" }, {"action": "addClass", "source": ".Q{{ question }}-assessment > span", "class": "hidden"}], "noreqlabel": true }'>
+<div id="question-{{ question }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas":"radio", "noForm": true, "noreqlabel": true, "base": { "live": true }, "default": [{ "action": "addClass", "source": ".Q{{ question }}-level > span", "class": "hidden" }, {"action": "addClass", "source": ".Q{{ question }}-assessment > span", "class": "hidden"}] }'>
 <p>{{ question }}. {{ page.questions[ questionNumberString ] }}</p>
 <ul>
   {% for level in (0..4) %}{%
-    assign questionAnswerString = question | append: "-a" | append: level %}
+    assign questionAnswerString = question | append: "-a" | append: level %}{%
+    assign questionHintString = question | append: "-hint-a" | append: level %}
     {% if page.questions[ questionAnswerString ] %}
-      <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-L{{ level }}, #Q{{ question }}-A{{ level }}", "class": "hidden" }'>{{ page.questions[ questionAnswerString ] }}</li>
+      <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-L{{ level }}, #Q{{ question }}-A{{ level }}", "class": "hidden" }'>
+        {{ page.questions[ questionAnswerString ] }}
+        {% if level > 0 %}
+        &lt;abbr title=&quot;{{ page.questions[ questionHintString ] }}&quot;&gt;(more info)&lt;/abbr&gt;
+        {% endif %}
+      </li>
     {% endif %}
   {% endfor %}
   <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-LNA, #Q{{ question }}-ANA", "class": "hidden" }'>{{ page.notApplicable }}</li>
