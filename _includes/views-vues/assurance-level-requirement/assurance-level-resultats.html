@@ -29,10 +29,11 @@
 <thead>
   {% assign rowNumber = rowNumber | plus: 1 %}
   {% assign headerRowNumber = rowNumber %}
-  <th id="r{{ headerRowNumber }}h1" style="width: 30%;"">{{ site.Criteria[ page.lang ] }}</th>
-  <th id="r{{ headerRowNumber }}h2" style="width: 10%;">{{ page.level }}</th>
-  <th id="r{{ headerRowNumber }}h3" style="width: 30%;">{{ page.assessment }}</th>
-  <th id="r{{ headerRowNumber }}h4" style="width: 30%;">{{ page.rational }}</th>
+  <th id="r{{ headerRowNumber }}h1" style="width: 23%;"">{{ site.Criteria[ page.lang ] }}</th>
+  <th id="r{{ headerRowNumber }}h2" style="width: 08%;">{{ page.level }}</th>
+  <th id="r{{ headerRowNumber }}h3" style="width: 23%;">{{ page.assessment }}</th>
+  <th id="r{{ headerRowNumber }}h4" style="width: 23%;">{{ page.harm }}</th>
+  <th id="r{{ headerRowNumber }}h5" style="width: 23%;">{{ page.rational }}</th>
   </tr>
 </thead>
 <tbody>
@@ -43,20 +44,33 @@
   assign questionString = page.questions[ questionNumberString ] %}{%
   assign rowNumber = rowNumber | plus: 1
 %}<tr class="question-{{ questionNumber }}-ele question-row">
+  <!-- Header -->
 <th headers="r1h1" id="r{{ rowNumber }}h1">{{ questionNumberString }}. {{ questionString }}</th>
+  <!-- Assurance Numbers -->
 <td style="text-align: center; font-size: 30px;" class="Q{{ questionNumber }}-level">
   {% for level in (0..4) %}
   <span id="Q{{ questionNumber }}-L{{ level }}" class="hidden assurance-level-element"> {{ level }}</span>
   {% endfor %}
   <span id="Q{{ questionNumber }}-LNA"> N/A</span>
 </td>
+  <!-- Assessment Strings -->
 <td class="Q{{ questionNumber }}-assessment">
   {% for level in (0..4) %}{%
     assign assesmentString = questionNumberString | append: "-a" | append: level
   %}<span id="Q{{ questionNumber }}-A{{ level }}" class="hidden">{{ page.questions[assesmentString] }}</span>{%
   endfor %}
   <span id="Q{{ questionNumber }}-ANA" class="hidden"></span>
+  <!-- Harm Strings -->
+<td class="Q{{ questionNumber }}-harm">
+  <span id="question0-harm-NA" class="hidden"></span>
+  {% for level in (1..4) %}{%
+    assign harmString = questionNumberString | append: "-hint-a" | append: level %}{%
+    assign harmString = page.questions[harmString] | remove_first: "• " | replace: " • ", "</li><li>" | prepend: "<ul><li>" | append: "</li></ul>" }}
+  %}<span id="question{{ questionNumber }}-harm-{{ level }}" class="hidden">{{ harmString }}</span>{%
+  endfor %}
+  <span id="question{{ questionNumber }}-harm-NA" class="hidden"></span>
 </td>
+  <!-- Rational -->
 <td><span id="Q{{ questionNumber }}-rational"></span></td>
 </tr>{%
 endfor %}
@@ -68,6 +82,7 @@ endfor %}
     { "type": "max", "query": ".question-row:not(.hidden) .assurance-level-element:not(.hidden)", "outputTarget": "#max-assurance-level-used" }]}'>
   <span id="max-assurance-level-used">0</span>
 </td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
