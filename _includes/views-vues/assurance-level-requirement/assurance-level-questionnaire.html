@@ -20,7 +20,7 @@
       <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-L{{ level }}, #Q{{ question }}-A{{ level }}", "class": "hidden" }'>
         {{ page.questions[ questionAnswerString ] }}
         {% if level > 0 %}
-        &lt;abbr title=&quot;{{ page.questions[ questionHintString ] }}&quot;&gt;(more info)&lt;/abbr&gt;
+        &lt;abbr title=&quot;{{ page.questions[ questionHintString ] | prepend: " " }}&quot;&gt;(more info)&lt;/abbr&gt;
         {% endif %}
       </li>
     {% endif %}
