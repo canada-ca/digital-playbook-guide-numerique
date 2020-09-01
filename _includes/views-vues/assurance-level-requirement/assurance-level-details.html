@@ -1,3 +1,4 @@
+<section id="section-details">
 <div id="assurance-level-details" class="wb-frmvld">
 <form method="post" action="#">
 
@@ -6,17 +7,19 @@
     assign detailNumberString = detail | downcase %}
     {% if detail == 4 %}
     {% assign initialValue = "now" | date: "%Y-%m-%d" %}
+    {% else %}
+    {% assign initialValue = "" %}
     {% endif %}
 
   <div>
-  <label for="detail-{{ detail }}" style="display:block;">{{ page.detail[ detailNumberString ] }}:</label>
+  <label for="question-detail-{{ detail }}" style="display:block;">{{ page.detail[ detailNumberString ] }}:</label>
 
   {% if detail == 3 %}
-  <select id="detail-{{ detail }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#detail-{{ detail }}", "operations": [
+  <select id="question-detail-{{ detail }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "outputValue", "outputTarget": "#D{{ detail }}", "operations": [
-          { "type": "string", "query": "#detail-{{ detail }}", "sourceAttribute": "value" }
+        { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}", "operations": [
+          { "type": "string", "query": "#question-detail-{{ detail }}", "sourceAttribute": "value" }
         ] }
       ]
     }
@@ -30,11 +33,11 @@
   </select>
 
   {% else %}
-  <input id="detail-{{ detail }}" type="text" size="85" class="wb-calculate" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#detail-{{ detail }}", "operations": [
+  <input id="question-detail-{{ detail }}" type="text" size="85" class="wb-calculate" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "outputValue", "outputTarget": "#D{{ detail }}", "operations": [
-          { "type": "string", "query": "#detail-{{ detail }}", "sourceAttribute": "value" }
+        { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}", "operations": [
+          { "type": "string", "query": "#question-detail-{{ detail }}", "sourceAttribute": "value" }
         ] }
       ]
     }
@@ -46,3 +49,4 @@
 
 </form>
 </div>
+</section>

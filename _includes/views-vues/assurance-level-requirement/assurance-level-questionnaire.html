@@ -1,3 +1,4 @@
+<section id="section-questions">
 <div id="assurance-level-questionnaire" class="wb-frmvld">
 <form method="post" action="#">
 
@@ -9,32 +10,30 @@
 {% for question in (1..8) %}{%
   assign questionNumberString = question | downcase %}
 <!-- Question {{ question }} -->
-<div class="question-{{ question }}-ele">
-<div id="question-{{ question }}" class="wb-fieldflow" data-wb-fieldflow='{ "renderas":"radio", "noForm": true, "noreqlabel": true, "base": { "live": true }, "default": [{ "action": "addClass", "source": ".Q{{ question }}-level > span", "class": "hidden" }, {"action": "addClass", "source": ".Q{{ question }}-assessment > span", "class": "hidden"}, {"action": "addClass", "source": ".Q{{ questionNumber }}-harm > span", "class": "hidden"}] }'>
+<div class="question-{{ question }}-div">
+<div id="question-{{ question }}-question" class="wb-fieldflow" data-wb-fieldflow='{ "renderas":"radio", "noForm": true, "noreqlabel": true, "base": { "live": true }, "default": [{ "action": "addClass", "source": ".table-question-{{ question }}-level > span", "class": "hidden" }, {"action": "addClass", "source": ".table-question-{{ question }}-assessment > span", "class": "hidden"}, {"action": "addClass", "source": ".table-question-{{ question }}-harm > span", "class": "hidden"}] }'>
 <p>{{ question }}. {{ page.questions[ questionNumberString ] }}</p>
 <ul>
-  {% for level in (0..4) %}{%
+  {% for level in (1..4) %}{%
     assign questionAnswerString = question | append: "-a" | append: level %}{%
     assign questionHintString = question | append: "-hint-a" | append: level %}
     {% if page.questions[ questionAnswerString ] %}
-      <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-L{{ level }}, #Q{{ question }}-A{{ level }}, #question{{ question }}-harm-{{ level }}", "class": "hidden" }'>
+      <li data-wb-fieldflow='{ "action": "removeClass", "source": "#table-question-{{ question }}-level-{{ level }}, #table-question-{{ question }}-assessment-{{ level }}, #table-question-{{ question }}-harm-{{ level }}", "class": "hidden" }'>
         {{ page.questions[ questionAnswerString ] }}
-        {% if level > 0 %}
         &lt;abbr title=&quot;{{ page.questions[ questionHintString ] | prepend: " " }}&quot;&gt;(more info)&lt;/abbr&gt;
-        {% endif %}
       </li>
     {% endif %}
   {% endfor %}
-  <li data-wb-fieldflow='{ "action": "removeClass", "source": "#Q{{ question }}-LNA, #Q{{ question }}-ANA, #question{{ questionNumber }}-harm-NA", "class": "hidden" }'>{{ page.notApplicable }}</li>
+  <li data-wb-fieldflow='{ "action": "removeClass", "source": "#table-question-{{ question }}-level-NA, #table-question-{{ question }}-assessment-NA, #table-question-{{ question }}-harm-NA", "class": "hidden" }'>{{ page.notApplicable }}</li>
 </ul>
 </div>
 <div>
-<label for="question-{{ question }}-rational" style="display:block;">{{ page.rational }}:</label>
-<textarea id="question-{{ question }}-rational" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ question }}-rational", "operations": [
+<label for="question-{{ question }}-rationale" style="display:block;">{{ page.rationale }}:</label>
+<textarea id="question-{{ question }}-rationale" type="text" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ question }}-rationale", "operations": [
   { "type": "action",
     "inputs": [
-      { "type": "outputValue", "outputTarget": "#Q{{ question }}-rational", "operations": [
-        { "type": "string", "query": "#question-{{ question }}-rational", "sourceAttribute": "value" }
+      { "type": "outputValue", "outputTarget": "#table-question-{{ question }}-rationale", "operations": [
+        { "type": "string", "query": "#question-{{ question }}-rationale", "sourceAttribute": "value" }
       ] }
     ]
   }
@@ -47,3 +46,4 @@
 
 </form>
 </div>
+</section>
