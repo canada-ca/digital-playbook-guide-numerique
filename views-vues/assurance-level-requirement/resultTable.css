@@ -1,4 +1,4 @@
-.table-results {
+#table-results {
   width:1000px;
 }
 
@@ -27,35 +27,13 @@
 }
 
 @page {
-  size: auto;
-  margin: 0mm;
-  size: A4;
+  margin: 10mm;
 }
 
 @media print {
 
-  body * {
-    visibility: hidden;
+  body{
+    display:block;
   }
 
-  section:not(#section-results) {
-    display: none;
-  }
-
-  #table-results, #table-results * {
-    visibility: visible;
-  }
-
-  #table-results {
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 15px;
-    font-size: 14px;
-    line-height: 18px;
-  }
 }
