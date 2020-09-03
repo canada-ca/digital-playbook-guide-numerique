@@ -15,22 +15,46 @@
   <label for="question-detail-{{ detail }}" style="display:block;">{{ page.detail[ detailNumberString ] }}:</label>
 
   {% if detail == 3 %}
-  <select id="question-detail-{{ detail }}" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
+  <select id="question-detail-{{ detail }}" onchange="document.getElementById('question-detail-{{ detail }}-other').value = '' " class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}", "operations": [
           { "type": "string", "query": "#question-detail-{{ detail }}", "sourceAttribute": "value" }
+        ] },
+        { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}-other", "operations": [
+          { "type": "string", "value": "" }
+        ] }
+      ]
+    }, { "type": "conditional", "inputs": [
+      { "type": "=", "inputs": [
+        { "type": "string", "query": "#question-detail-{{ detail }}", "sourceAttribute": "value" },
+        { "type": "string", "value": "{{ page.other }} - " }
+      ] }
+  ], "actionsTrue": [
+    { "type": "removeClass", "outputTarget": "#question-detail-{{ detail }}-other, #question-detail-{{ detail }}-other-label", "class": "hidden" }
+  ], "actionsFalse": [
+    { "type": "addClass", "outputTarget": "#question-detail-{{ detail }}-other, #question-detail-{{ detail }}-other-label", "class": "hidden" }
+  ] }
+  ] }'>
+  <option value="">{{ aiaDataSource.questions[ subLabel ][ page.lang ] }}</option>
+  <option value="{{ page.other }} - ">{{ page.other }}</option>{%
+  assign departmentNames = site.data.departments | sort: page.lang %}{%
+  for department in departmentNames %}
+    <option value="{{ department[ page.lang ] }}">{{ department[ page.lang ] }}</option>{%
+  endfor %}
+  </select>
+
+  <label id="question-detail-{{ detail }}-other-label" for="question-detail-{{ detail }}-other" class="hidden" style="display:block;">{{ page.otherLabel }}:</label>
+  <input id="question-detail-{{ detail }}-other" type="text" size="85" class="wb-calculate hidden" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}-other", "operations": [
+    { "type": "action",
+      "inputs": [
+        { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}-other", "operations": [
+          { "type": "string", "query": "#question-detail-{{ detail }}-other", "sourceAttribute": "value" }
         ] }
       ]
     }
   ] }'>
-  <option value="">{{ aiaDataSource.questions[ subLabel ][ page.lang ] }}</option>
-  <option value="{{ page.other }}">{{ page.other }}</option>{%
-  assign departmentNames = site.data.departments | sort: page.lang %}{%
-  for department in departmentNames %}
-  <option value="{{ department[ page.lang ] }}">{{ department[ page.lang ] }}</option>{%
-  endfor %}
-  </select>
+  </input>
 
   {% else %}
   <input id="question-detail-{{ detail }}" type="text" size="85" class="wb-calculate" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
