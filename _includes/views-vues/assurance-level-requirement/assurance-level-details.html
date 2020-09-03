@@ -20,15 +20,12 @@
       "inputs": [
         { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}", "operations": [
           { "type": "string", "query": "#question-detail-{{ detail }}", "sourceAttribute": "value" }
-        ] },
-        { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}-other", "operations": [
-          { "type": "string", "value": "" }
         ] }
       ]
     }, { "type": "conditional", "inputs": [
       { "type": "=", "inputs": [
         { "type": "string", "query": "#question-detail-{{ detail }}", "sourceAttribute": "value" },
-        { "type": "string", "value": "{{ page.other }} - " }
+        { "type": "string", "value": "{{ page.other }}" }
       ] }
   ], "actionsTrue": [
     { "type": "removeClass", "outputTarget": "#question-detail-{{ detail }}-other, #question-detail-{{ detail }}-other-label", "class": "hidden" }
@@ -37,7 +34,7 @@
   ] }
   ] }'>
   <option value="">{{ aiaDataSource.questions[ subLabel ][ page.lang ] }}</option>
-  <option value="{{ page.other }} - ">{{ page.other }}</option>{%
+  <option value="{{ page.other }}">{{ page.other }}</option>{%
   assign departmentNames = site.data.departments | sort: page.lang %}{%
   for department in departmentNames %}
     <option value="{{ department[ page.lang ] }}">{{ department[ page.lang ] }}</option>{%
@@ -48,7 +45,7 @@
   <input id="question-detail-{{ detail }}-other" type="text" size="85" class="wb-calculate hidden" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}-other", "operations": [
     { "type": "action",
       "inputs": [
-        { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}-other", "operations": [
+        { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}", "operations": [
           { "type": "string", "query": "#question-detail-{{ detail }}-other", "sourceAttribute": "value" }
         ] }
       ]
