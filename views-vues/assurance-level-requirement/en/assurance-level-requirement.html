@@ -186,3 +186,18 @@ assign dataSource = site.data[dataVariable] %}
 {% include views-vues/assurance-level-requirement/assurance-level-questionnaire.html %}
 
 {% include views-vues/assurance-level-requirement/assurance-level-resultats.html %}
+
+<!-- Sets the date for all elements with class date-current -->
+<script>
+  const n =  new Date();
+  const y = n.getFullYear();
+  const m = n.getMonth() + 1;
+  const d = n.getDate();
+  const dateString = y + "-" + m.toString().padStart(2, "0") + "-" + d.toString().padStart(2, "0");
+
+  const elems = document.getElementsByClassName("date-current");
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].setAttribute("value", dateString);
+    elems[i].innerHTML = dateString;
+  }
+</script>

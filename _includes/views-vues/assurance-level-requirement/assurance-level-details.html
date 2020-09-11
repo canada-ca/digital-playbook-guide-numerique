@@ -5,11 +5,6 @@
   <h2>{{ page.detailTitle }}:</h2>
   {% for detail in (1..4) %}{%
     assign detailNumberString = detail | downcase %}
-    {% if detail == 4 %}
-    {% assign initialValue = "now" | date: "%Y-%m-%d" %}
-    {% else %}
-    {% assign initialValue = "" %}
-    {% endif %}
 
   <div>
   <label for="question-detail-{{ detail }}" style="display:block;">{{ page.detail[ detailNumberString ] }}:</label>
@@ -42,7 +37,7 @@
   </select>
 
   <label id="question-detail-{{ detail }}-other-label" for="question-detail-{{ detail }}-other" class="hidden" style="display:block;">{{ page.otherLabel }}:</label>
-  <input id="question-detail-{{ detail }}-other" type="text" size="85" class="wb-calculate hidden" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}-other", "operations": [
+  <input id="question-detail-{{ detail }}-other" type="text" size="85" class="wb-calculate hidden" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}-other", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}", "operations": [
@@ -52,9 +47,8 @@
     }
   ] }'>
   </input>
-
   {% else %}
-  <input id="question-detail-{{ detail }}" type="text" size="85" class="wb-calculate" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
+  <input id="question-detail-{{ detail }}" type="text" size="85" class="wb-calculate {% if detail == 4 %} date-current {% endif %}" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
     { "type": "action",
       "inputs": [
         { "type": "outputValue", "outputTarget": "#table-detail-{{ detail }}", "operations": [
