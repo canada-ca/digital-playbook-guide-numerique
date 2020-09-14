@@ -175,6 +175,49 @@ assuranceTitle: Assurance Levels
 assuranceQuestion: To determine the level of assurance required, complete the following sentence using the statements in the cells below and check the appropriate boxes
 assuranceSentence: "If the program, activity, service or transaction above is compromised, it could result in…"
 notApplicable: Not Applicable
+
+afterwards: Afterwards
+
+authentication: Authentication Option
+implementation: Implementation Option
+withinDepartment: Within the Department
+anotherParty: Rely On Another Party
+
+authOption:
+  "1": Equal to assurance level requirement
+  "1a": <ul><li>Ensure that department complies with requirements for assurance level requirement determined above</li></ul>
+  "1b":
+    <ul><li>Ensure that provider complies with requirements for assurance level requirement determined</ul></li>
+    <p>If participant in federation&#58;</p>
+    <ul><li>Ensure that member (or service provider) meets criteria established by federation to provide assurance level determined above</ul></li>
+  "2": Lower than assurance level requirement
+  "2a":
+    <ul>
+    <li>Provide rationale for selecting implementation using lower assurance level (e.g., cost, usability, mandatory service, technical feasibility)</li>
+    <li>Describe potential threats and vulnerabilities that might be exploited, including breaches</li>
+    <li>Describe risk mitigation measures for identity, credential and/or authentication risk</li>
+    <li>Include descriptions of the following&#58; <ul>
+        <li>Compensating factors</li>
+        <li>Other safeguards</li>
+        <li>Acceptance of risk</li>
+    </ul></li>
+    <li>Ensure that department complies with requirements for lower assurance level requirement determined above</li>
+  "2b":
+    <ul>
+    <li>Provide rationale for selecting provider at lower assurance level (e.g., cost, usability, mandatory service, technical feasibility)</li>
+    <li>Describe potential threats and vulnerabilities that might be exploited, including breaches with the department or the provider</li>
+    <li>Describe risk mitigation measures, including terms and conditions in specified in contracts or agreements with provider or federation members</li>
+    <li>Include descriptions of&#58; <ul>
+        <li>Compensating factors</li>
+        <li>Other safeguards</li>
+        <li>Acceptance of risk</li>
+    </ul></li></ul>
+
+    <p>If participant in federation&#58;</p>
+    <ul>
+    <li>Ensure that member (or service provider) meets criteria established by federation to provide assurance level as determined above</li>
+    <li>Ensure that department understands its responsibilities for managing residual risk</li>
+    </ul>
 ---
 {% assign dataVariable = site.playbookData[page.lang] %}{%
 assign dataSource = site.data[dataVariable] %}
@@ -186,6 +229,8 @@ assign dataSource = site.data[dataVariable] %}
 {% include views-vues/assurance-level-requirement/assurance-level-questionnaire.html %}
 
 {% include views-vues/assurance-level-requirement/assurance-level-resultats.html %}
+
+{% include views-vues/assurance-level-requirement/assurance-level-post.html %}
 
 <!-- Sets the date for all elements with class date-current -->
 <script>

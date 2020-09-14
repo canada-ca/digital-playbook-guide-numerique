@@ -1,0 +1,42 @@
+<!--Post-Results-->
+<section id="section-post-results">
+
+<h2>{{ page.afterwards }}</h2>
+
+<p>
+  The following table outlines what departments should do when a selected
+  authentication option is equal to the assurance level requirement determined
+  above and when the selected option is lower than the assurance level
+  requirement determined above.
+</p>
+
+<!-- Options Header -->
+<table class="table-striped-results table-results">
+<thead>
+  <tr>
+    <th id="authentication-option" style="width: 20%;" rowspan="2">{{ page.authentication }}</th>
+    <th id="implementation-option" style="width: 80%;" colspan="2">{{ page.implementation }}</th>
+  </tr>
+  <tr>
+    <th id="within-department" header="implementation-option">{{ page.withinDepartment }}</th>
+    <th id="another-party" header="implementation-option">{{ page.anotherParty }}</th>
+  </tr>
+  </tr>
+</thead>
+<tbody>
+<!-- Body Rows -->
+{% for option in (1..2) %}{%
+  assign optionNumber = option | downcase %}{%
+  assign optionNumberA = optionNumber | append: "a" %}{%
+  assign optionNumberB = optionNumber | append: "b" %}
+<tr>
+  <td header="authentication-option">{{ page.authOption[ optionNumber ] }}</td>
+  <td header="within-department">{{ page.authOption[ optionNumberA ] }}</td>
+  <td header="another-party">{{ page.authOption[ optionNumberB ] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+</section>
