@@ -1,0 +1,60 @@
+<div id="save-restore-download-buttons" class="hidden btn-group mrgn-tp-md">
+<!-- Button for saving progress to a JSON file -->
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "json", "filename": "assessment", "source": "sessionStorage", "key": "assessment" }'>{{ site.SaveToFile[ page.lang ] }}</button>
+<!-- Button for restoring progress from a JSON file. This button triggers the hidden input type="file" field. This is done to give more visual control over the appearance than what the input type="file" field allows. -->
+<button id="restore-from-file-button" type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "eventTrigger": "click", "eventElement": "#restore-from-file-button", "operations": [
+  { "type": "event", "outputTarget": "#restore-from-file", "outputEvent": "click" }
+] }'>{{ site.RestoreFromFile[ page.lang ] }}</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "filename": "assessment", "source": "sessionStorage", "key": "assessment", "headerRow": [
+  "{{ page.domain.title }}",
+  "{{ page.activity[ 'activity-label' ] }}",
+  "{{ page.component.title }} - {{ page.component[ 'component-label' ] }}",
+  "{{ page.component.title }} - {{ page.component[ 'component-description-label' ] }}",
+  "{{ page.component.title }} - {{ page.component[ 'component-type-label' ] }}",
+  "{{ page.component.title }} - {{ page.component[ 'authoritative-source-label' ] }}",
+  "{{ page.summaryReport.domainTable.col2aHeader }} - {{ page.lossOfCommon[ 'failure-scenario-label' ] }}", 
+  "{{ page.summaryReport.domainTable.col2aHeader }} - {{ page.lossOfCommon[ 'failure-scenario-table-heading' ] }}", 
+  "{{ page.summaryReport.domainTable.col2aHeader }} - {{ page.lossOfCommon[ 'injury-significance-table-heading' ] }}", 
+  "{{ page.summaryReport.domainTable.col2aHeader }} - {{ page.lossOfCommon[ 'analysis-label' ] }}", 
+  "{{ page.summaryReport.domainTable.col2bHeader }} - {{ page.lossOfCommon[ 'failure-scenario-label' ] }}", 
+  "{{ page.summaryReport.domainTable.col2bHeader }} - {{ page.lossOfCommon[ 'failure-scenario-table-heading' ] }}", 
+  "{{ page.summaryReport.domainTable.col2bHeader }} - {{ page.lossOfCommon[ 'injury-significance-table-heading' ] }}", 
+  "{{ page.summaryReport.domainTable.col2bHeader }} - {{ page.lossOfCommon[ 'analysis-label' ] }}", 
+  "{{ page.summaryReport.domainTable.col2cHeader }} - {{ page.lossOfCommon[ 'failure-scenario-label' ] }}", 
+  "{{ page.summaryReport.domainTable.col2cHeader }} - {{ page.lossOfCommon[ 'failure-scenario-table-heading' ] }}", 
+  "{{ page.summaryReport.domainTable.col2cHeader }} - {{ page.lossOfCommon[ 'injury-significance-table-heading' ] }}", 
+  "{{ page.summaryReport.domainTable.col2cHeader }} - {{ page.lossOfCommon[ 'analysis-label' ] }}"
+], "tableColSpecs": [
+  { "relativeToColumn": -1, "dataContainerSource": [], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 0, "dataContainerSource": [ "activities" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 1, "dataContainerSource": [ 0, "components" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 1, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "confidentiality" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 6, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "integrity" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 10, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] },
+  { "relativeToColumn": 2, "dataContainerSource": [ 0, "availability" ], "dataElementSource": [ 0, "state" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 1, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 2, "text" ] },
+  { "relativeToColumn": 14, "dataContainerSource": [], "dataElementSource": [ 3, "state" ] }
+] }'>{{ page.downloadAssessment }}</button>
+</div>
+<div class="hidden">
+<input id="restore-from-file" type="file" class="wb-format-gen wb-calculate" data-wb-format-gen='[
+  { "eventTrigger": "change", "eventElement": "#restore-from-file", "operations": [
+    { "type": "json", "action": "restore-storage", "target": "sessionStorage", "key": "assessment" }
+  ] },
+  { "eventTrigger": "storage-restored-from-file.wb-format-gen", "operations": [
+    { "type": "dataAttribute", "element": "#sec-cat-form-properties", "key": "data-sec-cat-form-state", "indexesKeys": [ "current-domain" ], "action": "replace", "data": 0 },
+    { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "restore-domain" },
+    { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "default-domain-buttons" },
+    { "type": "event", "outputTarget": "#sec-cat-form-properties", "outputEvent": "show-domain" }
+  ] }
+]' />
+</div>

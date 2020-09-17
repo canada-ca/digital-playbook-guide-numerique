@@ -1,0 +1,207 @@
+<div class="wb-frmvld">
+<form action="#" method="post">
+<section id="step-1-section">
+
+<!-- Step 1. At least one question must be answered yes to proceed to step 2, otherwise the result will be a fail (with a fail message being displayed). -->
+<h2>{{ page.step1.title }}</h2>
+
+<!-- Question 1 -->
+<div id="step1-q1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>1. {{ page.step1.q1Label }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step1-fail", "class": "hidden" },
+  { "action": "removeClass", "source": "#step2-3-4-wrapper", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step2-3-4-wrapper", "class": "hidden" },
+  { "action": "append", "source": "#step1-q2" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+{% for qNumber in (2..11) %}{%
+  assign qNumberNext = qNumber | plus: 1 %}{%
+  assign labelKey = "q" | append: qNumber | append: "Label" %}
+<!-- Question {{ qNumber }} -->
+<div id="step1-q{{ qNumber }}" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas":"radio", "inline": true }'>
+<p>{{ qNumber }}. {{ page.step1[ labelKey ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step1-fail", "class": "hidden" },
+  { "action": "removeClass", "source": "#step2-3-4-wrapper", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step2-3-4-wrapper", "class": "hidden" },{%
+  if qNumber == 11 %}
+  { "action": "removeClass", "source": "#step1-fail", "class": "hidden" }{%
+  else %}
+  { "action": "append", "source": "#step1-q{{ qNumberNext }}" }{%
+  endif %}
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+{% endfor %}
+
+<div id="step1-fail" class="panel panel-danger hidden">
+<header class="panel-heading">
+<h3 class="panel-title">{{ page.step1.failTitle }}</h3>
+</header>
+<div class="panel-body">
+<p>{{ page.step1.failBody }}</p>
+<p>{{ page.fail.help1 }}{{ site.Colon[ page.lang ] }}</p>
+<ul>
+<li>{{ page.fail.helpConsult }} <a href="{{ page.guidebook.url }}">{{ page.guidebook.linkText }}</a><br />{{ page.fail.helpOr }}</li>
+<li>{{ page.fail.helpContact }} <a href="mailto:{{ page.contactEmail }}">{{ page.contactEmail }}</a></li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<div id="step2-3-4-wrapper" class="hidden">
+
+<!-- Step 2. All questions must be answered no to proceed to step 3, otherwise the result will be a fail (with a fail message being displayed). -->
+<section id="step2-section">
+
+<h2>{{ page.step2.title }}</h2>
+
+<!-- Question 1 -->
+<div id="step2-q1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>1. {{ page.step2.q1Label }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
+  { "action": "addClass", "source": "#step2-q2-fieldset, #footnotes-aside, #step2-q3-4-5-6-wrapper, #step3-4-wrapper", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step2-fail", "class": "hidden" },
+  { "action": "removeClass", "source": "#step2-q2-fieldset, #footnotes-aside", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+<!-- Question 2 -->
+<fieldset id="step2-q2-fieldset" class="hidden">
+<legend class="mrgn-bttm-0 h5 required">2. {{ page.step2.q2Label1 }}<sup id="fn1-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">{{ site.Footnote[ page.lang ] }} </span>1</a></sup> {{ page.step2.q2Label2 }} <strong class="required">({{ site.required[ page.lang ] }})</strong></legend>
+<div class="clearfix"></div>
+
+<div id="step2-q2Sub1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>{{ page.step2.q2Sub1Label }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
+  { "action": "addClass", "source": "#step3-4-wrapper", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step2-fail", "class": "hidden" },
+  { "action": "append", "source": "#step2-q2Sub2" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+{% for qNumber in (2..6) %}{%
+  assign qNumberNext = qNumber | plus: 1 %}{%
+  assign labelKey = "q2Sub" | append: qNumber | append: "Label" %}
+<!-- Question {{ qNumber }} -->
+<div id="step2-q2Sub{{ qNumber }}" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas":"radio", "inline": true }'>
+<p>{{ page.step2[ labelKey ] }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#step2-fail", "class": "hidden" },
+  { "action": "addClass", "source": "#step3-4-wrapper", "class": "hidden" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step2-fail", "class": "hidden" },{%
+  if qNumber == 6 %}
+  { "action": "removeClass", "source": "#step3-4-wrapper", "class": "hidden" }{%
+  else %}
+  { "action": "append", "source": "#step2-q2Sub{{ qNumberNext }}" }{%
+  endif %}
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+{% endfor %}
+
+</fieldset>
+
+<div id="step2-fail" class="panel panel-danger hidden">
+<header class="panel-heading">
+<h3 class="panel-title">{{ page.step2.failTitle }}</h3>
+</header>
+<div class="panel-body">
+<p>{{ page.step2.failBody }}</p>
+<p>{{ page.fail.help1 }}{{ site.Colon[ page.lang ] }}</p>
+<ul>
+<li>{{ page.fail.helpConsult }} <a href="{{ page.guidebook.url }}">{{ page.guidebook.linkText }}</a><br />{{ page.fail.helpOr }}</li>
+<li>{{ page.fail.helpContact }} <a href="mailto:{{ page.contactEmail }}">{{ page.contactEmail }}</a></li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<div id="step3-4-wrapper" class="hidden">
+
+<!-- Step 3. All questions must be answered yes to proceed to step 4, otherwise the result will be a fail (with a fail message being displayed). -->
+<section id="step-3-section">
+
+<h2>{{ page.step3.title }}</h2>
+
+<!-- Question 1 -->
+<div id="step3-q1" class="wb-fieldflow" data-wb-fieldflow='{ "renderas": "radio", "inline": true, "noForm": true, "base": { "live": true } }'>
+<p>1. {{ page.step3.q1Label1 }} <a href="{{ page.step3.q1LabelLinkURL }}">{{ page.step3.q1LabelLinkText }}</a>? {{ page.step3.q1Label2 }}</p>
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step3-fail", "class": "hidden" },
+  { "action": "append", "source": "#step3-q2" }
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#step3-fail", "class": "hidden" },
+  { "action": "addClass", "source": "#step4-section", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+
+{% for qNumber in (2..6) %}{%
+  assign qNumberNext = qNumber | plus: 1 %}{%
+  assign labelKey = "q" | append: qNumber | append: "Label" %}
+<!-- Question {{ qNumber }} -->
+<div id="step3-q{{ qNumber }}" class="hidden wb-fieldflow-sub" data-wb-fieldflow='{ "renderas":"radio", "inline": true }'>{%
+if qNumber == 3 %}
+<p>{{ qNumber }}. {{ page.step3.q3Label }} <a href="{{ page.step3.q3LabelLinkURL }}">{{ page.step3.q3LabelLinkText }}</a>?</p>{%
+else %}
+<p>{{ qNumber }}. {{ page.step3[ labelKey ] }}</p>{%
+endif %}
+<ul>
+<li data-wb-fieldflow='[
+  { "action": "addClass", "source": "#step3-fail", "class": "hidden" },{%
+  if qNumber == 6 %}
+  { "action": "removeClass", "source": "#step4-section", "class": "hidden" }{%
+  else %}
+  { "action": "append", "source": "#step3-q{{ qNumberNext }}" }{%
+  endif %}
+]'>{{ site.Yes[ page.lang ] }}</li>
+<li data-wb-fieldflow='[
+  { "action": "removeClass", "source": "#step3-fail", "class": "hidden" },
+  { "action": "addClass", "source": "#step4-section", "class": "hidden" }
+]'>{{ site.No[ page.lang ] }}</li>
+</ul>
+</div>
+{% endfor %}
+
+<div id="step3-fail" class="panel panel-danger hidden">
+<header class="panel-heading">
+<h3 class="panel-title">{{ page.step3.failTitle }}</h3>
+</header>
+<div class="panel-body">
+<p>{{ page.step3.failBody }}</p>
+<p>{{ page.fail.help1 }}{{ site.Colon[ page.lang ] }}</p>
+<ul>
+<li>{{ page.fail.helpConsult }} <a href="{{ page.guidebook.url }}">{{ page.guidebook.linkText }}</a><br />{{ page.fail.helpOr }}</li>
+<li>{{ page.fail.helpContact }} <a href="mailto:{{ page.contactEmail }}">{{ page.contactEmail }}</a></li>
+</ul>
+</div>
+</div>
+
+</section>

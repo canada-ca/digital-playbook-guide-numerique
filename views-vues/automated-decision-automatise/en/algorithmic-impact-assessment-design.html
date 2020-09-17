@@ -1,0 +1,18 @@
+---
+layout: default
+title: Algorithmic Impact Assessment (Archived) - Design
+lang: en
+altLang: fr
+altLangPage: evaluation-impact-algorithmique-conception
+collectionDirectory: views-vues/automated-decision-automatise
+aiaView: design-conception
+---
+{% assign dataVariable = site.playbookData[ page.lang ] %}{%
+assign dataSource = site.data[ dataVariable ] %}{%
+assign aiaDataSource = site.data[ "views-vues" ][ "automated-decision-automatise" ][ "aia-data-donnees-eia" ] %}
+
+{% include views-vues/automated-decision-automatise/aia-intro-eia-design-conception.html %}
+
+{% include views-vues/automated-decision-automatise/aia-questionnaire-eia-design-conception.html %}
+
+{% include views-vues/automated-decision-automatise/aia-results-resultats-eia-design-conception.html %}
