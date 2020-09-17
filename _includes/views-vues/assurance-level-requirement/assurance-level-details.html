@@ -28,7 +28,7 @@
     { "type": "addClass", "outputTarget": "#question-detail-{{ detail }}-other, #question-detail-{{ detail }}-other-label", "class": "hidden" }
   ] }
   ] }'>
-  <option value="">{{ detail["3b"] }}</option>
+  <option value="">{{ page.detail["3b"] }}</option>
   <option value="{{ page.other }}">{{ page.other }}</option>{%
   assign departmentNames = site.data.departments | sort: page.lang %}{%
   for department in departmentNames %}
