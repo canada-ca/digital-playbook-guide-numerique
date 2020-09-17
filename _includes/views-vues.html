@@ -2,21 +2,171 @@
 comment %}@param lang {String} Which language to return (defaults to page.lang){% endcomment %}{%
 comment %}@return {String} View links in the specified language{% endcomment %}{%
 if include.lang == "en" or include.lang.size < 2 and page.lang == "en" %}
+<section class="dpgn-data-ignore">
+  <h3 class="dpgn-data-ignore">Digital Playbook views</h3>
+  <p class="dpgn-data-ignore"><a href="{{ site.baseurl }}/docs/en/views.html">Digital Playbook views</a> are generated from the <a href="https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/playbook.json">Digital Playbook dataset</a> and can make the Digital Playbook more relevant and easier to use for certain tasks by providing only the information that is relevant to the task and ordering it in a way that makes sense for the user.</p>
+
+<div class="wb-filter dpgn-data-ignore" data-wb-filter='{ "section": "section" }'>
 
 <section class="dpgn-data-ignore">
-  <h4 class="dpgn-data-ignore">Assurance Level Tool</h4>
+  <h4 class="dpgn-data-ignore">Agile views</h4>
   <ul class="dpgn-data-ignore list-unstyled">
-    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/assurance-level-requirement/en/assurance-level-requirement.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-check mrgn-rght-sm" aria-hidden="true"></span>Create Assurance Level Document (draft)</span></a><span class="hidden"> (Keywords: Assurance level)</span></li>
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/agile/en/agile-use-when.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-check mrgn-rght-sm" aria-hidden="true"></span>Is Agile Right for My Project? (draft)</span></a><span class="hidden"> (Keywords: agile)</span></li>
   </ul>
 </section>
 
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Artificial Intelligence (AI) views</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-check mrgn-rght-sm" aria-hidden="true"></span>Algorithmic Impact Assessment (Archived)</span></a><span class="hidden"> (Keywords: artificial intelligence, ai)</span></li>
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/automated-decision-automatise/en/automated-decision.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-tasks mrgn-rght-sm" aria-hidden="true"></span>How should I implement an Automated Decision System? (draft)</span></a><span class="hidden"> (Keywords: artificial intelligence, ai)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Cloud views</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/cloud-nuage/en/cloud-decision-tool.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-cloud mrgn-rght-sm" aria-hidden="true"></span>Right Cloud Decision Tool (draft)</span></a><span class="hidden"> (Keywords: cloud)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Open Government views</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/open-gov-gouv-ouvert/en/release-content.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-globe mrgn-rght-sm" aria-hidden="true"></span>How do I decide whether to release content on the Open Government Portal? (draft)</span></a><span class="hidden"> (Keywords: open government)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Security views</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/security-securite/en/categorization-tool.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-dashboard mrgn-rght-sm" aria-hidden="true"></span>Security Categorization Tool (draft)</span></a><span class="hidden"> (Keywords: security)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Digital Architectural Standards views</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/gc-earb-ceai/en/gc-earb.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-check mrgn-rght-sm" aria-hidden="true"></span>How should I ensure my project meets GC EARB requirements? (draft)</span></a><span class="hidden"> (Keywords: digital architectural standards, earb, enterprise architecture)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Digital Standards views</h4>
+
+{% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" appendHiddenText=" (Keywords: digital standards)" %}
+
+  <ul class="colcount-md-2 list-unstyled dpgn-data-ignore"> 
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/single-page-seule/en/digital-standards.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-book mrgn-rght-sm" aria-hidden="true"></span>Digital Standards - Single page view</span></a><span class="hidden"> (Keywords: digital standards)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Development stage views</h4>
+  <ul class="dpgn-data-ignore colcount-md-3 list-unstyled">
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/en/alpha.html"><span class="glyphicon glyphicon-cog mrgn-rght-sm" aria-hidden="true"></span>Alpha stage</a><span class="hidden"> (Keywords: alpha, development stage)</span></li>
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/en/beta.html"><span class="glyphicon glyphicon-user mrgn-rght-sm" aria-hidden="true"></span>Beta stage</a><span class="hidden"> (Keywords: beta, development stage)</span></li>
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/en/live.html"><span class="glyphicon glyphicon-globe mrgn-rght-sm" aria-hidden="true"></span>Live stage</a><span class="hidden"> (Keywords: live, development stage)</span></li>
+  </ul>
+
+  <ul class="dpgn-data-ignore colcount-md-2 list-unstyled">
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/en/development-stages.html"><span class="glyphicon glyphicon-th-list mrgn-rght-sm" aria-hidden="true"></span>Development stages</a><span class="hidden"> (Keywords: development stage)</span></li>
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/en/development-stages.html"><span class="glyphicon glyphicon glyphicon-list-alt mrgn-rght-sm" aria-hidden="true"></span>Development stages - Checklists only</a><span class="hidden"> (Keywords: development stage)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Other views</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/comparison-comparatif/en/gc-digital-playbook-comparison-table.html"><span class="btn-block text-left"><span class="glyphicon glyphicon glyphicon-th mrgn-rght-sm" aria-hidden="true"></span>Government of Canada Digital Playbook comparison table</span></a><span class="hidden"> (Keywords: other, comparison)</span></li>
+  </ul>
+</section>
+
+</div>
+
+</section>
 {% elsif include.lang == "fr" or include.lang.size < 2 and page.lang == "fr" %}
+<section class="dpgn-data-ignore">
+  <h3 class="dpgn-data-ignore">Vues du guide numérique</h3>
+  <p class="dpgn-data-ignore">Les <a href="{{ site.baseurl }}/docs/fr/vues.html">vues du guide numérique</a> sont générés à partir du <a href="https://github.com/canada-ca/digital-playbook-guide-numerique/blob/master/_data/guide.json">jeu de données du guide numérique</a> et peuvent rendre le guide numérique plus pertinent et plus facile à utiliser pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur.</p>
+
+<div class="wb-filter dpgn-data-ignore" data-wb-filter='{ "section": "section" }'>
 
 <section class="dpgn-data-ignore">
-  <h4 class="dpgn-data-ignore">Assurance Level Tool TODO</h4>
+  <h4 class="dpgn-data-ignore">Vues basées sur Agile</h4>
   <ul class="dpgn-data-ignore list-unstyled">
-    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/assurance-level-requirement/en/assurance-level-requirement.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-check mrgn-rght-sm" aria-hidden="true"></span>Create Assurance Level Document (draft) TODO</span></a><span class="hidden"> (Keywords: Assurance level TODO)</span></li>
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/agile/fr/agile-quand-utiliser.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-check mrgn-rght-sm" aria-hidden="true"></span>Est-ce que Agile est juste pour mon projet? (ébauche)</span></a><span class="hidden"> (Mots clés : agile)</span></li>
   </ul>
 </section>
 
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Vues basées sur l'intelligence artificielle (IA)</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/automated-decision-automatise/fr/evaluation-impact-algorithmique.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-check mrgn-rght-sm" aria-hidden="true"></span>Évaluation d'impact algorithmique (Archivée)</span></a><span class="hidden"> (Mots clés : intelligence artificielle, ia, ai)</span></li>
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/automated-decision-automatise/fr/decision-automatise.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-tasks mrgn-rght-sm" aria-hidden="true"></span>Comment dois-je mettre en place un système de décision automatisé? (ébauche)</span></a><span class="hidden"> (Mots clés : intelligence artificielle, ia, ai)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Vues basées sur l'informatique en nuage</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/cloud-nuage/fr/nuage-outil-decisionnel.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-cloud mrgn-rght-sm" aria-hidden="true"></span>Outil décisionnel du nuage approprié (ébauche)</span></a><span class="hidden"> (Mots clés : informatique en nuage, cloud)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Vues basées sur le gouvernement ouvert</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/open-gov-gouv-ouvert/fr/ajouter-contenu.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-globe mrgn-rght-sm" aria-hidden="true"></span>Comment puis-je décider de publier du contenu dans le Portail du gouvernement ouvert? (ébauche)</span></a><span class="hidden"> (Mots clés : gouvernement ouvert)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Vues basées sur le sécurité</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/security-securite/fr/outil-categorisation.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-dashboard mrgn-rght-sm" aria-hidden="true"></span>Outil de categorisation de sécurité (ébauche)</span></a><span class="hidden"> (Mots clés : sécurité)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Vues basées sur les normes architecturales sur le numérique</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/gc-earb-ceai/fr/ceai-gc.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-check mrgn-rght-sm" aria-hidden="true"></span>Comment dois-je m'assurer que mon projet respecte les exigences du CEAI GC? (ébauche)</span></a><span class="hidden"> (Mots clés : normes architecturales sur le numérique, normes architecturales numérique, ceai, earb)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Vues basées sur les normes numériques</h4>
+  
+{% include /functions/standard-links.html samePage=false listClasses="colcount-md-2 list-unstyled dpgn-data-ignore" linkClasses="btn btn-default btn-lg mrgn-bttm-md" subLinkClasses="btn-block text-left" appendHiddenText=" (Mots clés : normes numériques)" %}
+
+  <ul class="colcount-md-2 list-unstyled dpgn-data-ignore"> 
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/single-page-seule/fr/normes-numeriques.html"><span class="btn-block text-left"><span class="glyphicon glyphicon-book mrgn-rght-sm" aria-hidden="true"></span>Normes numériques - Affichage d'une seule page</span></a><span class="hidden"> (Mots clés : normes numériques)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Vues basées sur les stages de développement</h4>
+  <ul class="dpgn-data-ignore colcount-md-3 list-unstyled">
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/fr/alpha.html"><span class="glyphicon glyphicon-cog mrgn-rght-sm" aria-hidden="true"></span>Stage alpha</a><span class="hidden"> (Mots clés : alpha, stages de développement, stage développement)</span></li>
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/fr/beta.html"><span class="glyphicon glyphicon-user mrgn-rght-sm" aria-hidden="true"></span>Stage bêta</a><span class="hidden"> (Mots clés : bêta, stages de développement, stage développement)</span></li>
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/fr/en-direct.html"><span class="glyphicon glyphicon-globe mrgn-rght-sm" aria-hidden="true"></span>Stage en direct</a><span class="hidden"> (Mots clés : en direct, stages de développement, stage développement)</span></li>
+  </ul>
+
+  <ul class="dpgn-data-ignore colcount-md-2 list-unstyled">
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/fr/stages-developpement.html"><span class="glyphicon glyphicon-th-list mrgn-rght-sm" aria-hidden="true"></span>Stages de développement</a><span class="hidden"> (Mots clés : stage de développement, stage développement)</span></li>
+    <li><a class="btn btn-block btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/dev-stages/fr/stages-developpement.html"><span class="glyphicon glyphicon glyphicon-list-alt mrgn-rght-sm" aria-hidden="true"></span>Stages de développement - Listes de contrôle seulement</a><span class="hidden"> (Mots clés : stage de développement, stage développement)</span></li>
+  </ul>
+</section>
+
+<section class="dpgn-data-ignore">
+  <h4 class="dpgn-data-ignore">Autres vues</h4>
+  <ul class="dpgn-data-ignore list-unstyled">
+    <li><a class="btn btn-default btn-lg mrgn-bttm-md" href="{{ site.baseurl }}/views-vues/comparison-comparatif/fr/tableau-comparatif-guide-numerique-gc.html"><span class="btn-block text-left"><span class="glyphicon glyphicon glyphicon-th mrgn-rght-sm" aria-hidden="true"></span>Tableau comparatif du guide numérique du gouvernement du Canada</span></a><span class="hidden"> (Mots clés : autres, comparaison)</span></li>
+  </ul>
+</section>
+
+</div>
+
+</section>
 {% endif %}
