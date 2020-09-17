@@ -12,8 +12,8 @@
   <tr>
   <th id='header-{{ page.detail["1"] }}'>{{ page.detail["1"] }}</th>
   <td headers='header-{{ page.detail["1"] }}'><div id="table-detail-1"></div></td>
-  <th id='header-{{ page.detail["2"] }}'>{{ page.detail["2"] }}</th>
-  <td headers='header-{{ page.detail["2"] }}'><div id="table-detail-2"></div></td>
+  <th id='header-{{ page.detail["2a"] }}'>{{ page.detail["2a"] }}</th>
+  <td headers='header-{{ page.detail["2a"] }}'><div id="table-detail-2"></div></td>
   </tr>
   <!-- Row Two -->
   <tr>
@@ -29,6 +29,7 @@
 <thead>
   {% assign rowNumber = rowNumber | plus: 1 %}
   {% assign headerRowNumber = rowNumber %}
+  <tr>
   <th style="width: 23%;">{{ site.Criteria[ page.lang ] }}</th>
   <th style="width: 08%;">{{ page.level }}</th>
   <th style="width: 23%;">{{ page.assessment }}</th>
@@ -38,12 +39,12 @@
 </thead>
 <tbody>
 <!-- Body Rows -->
-<tr>
 {% for question in (1..8) %}{%
   assign questionNumber = question | downcase %}{%
   assign questionString = page.questions[ questionNumber ] %}{%
   assign rowNumber = rowNumber | plus: 1
-%}<tr>
+%}
+<tr>
   <!-- Header -->
 <th>{{ questionNumber }}. {{ questionString }}</th>
   <!-- Assurance Numbers -->
