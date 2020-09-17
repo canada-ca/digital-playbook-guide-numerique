@@ -18,8 +18,8 @@
     <th id="implementation-option" style="width: 80%;" colspan="2">{{ page.implementation }}</th>
   </tr>
   <tr>
-    <th id="within-department" header="implementation-option">{{ page.withinDepartment }}</th>
-    <th id="another-party" header="implementation-option">{{ page.anotherParty }}</th>
+    <th id="within-department" headers=""="implementation-option">{{ page.withinDepartment }}</th>
+    <th id="another-party" headers="implementation-option">{{ page.anotherParty }}</th>
   </tr>
   </tr>
 </thead>
@@ -30,9 +30,9 @@
   assign optionNumberA = optionNumber | append: "a" %}{%
   assign optionNumberB = optionNumber | append: "b" %}
 <tr>
-  <td header="authentication-option">{{ page.authOption[ optionNumber ] }}</td>
-  <td header="within-department">{{ page.authOption[ optionNumberA ] }}</td>
-  <td header="another-party">{{ page.authOption[ optionNumberB ] }}</td>
+  <td headers="authentication-option">{{ page.authOption[ optionNumber ] }}</td>
+  <td headers="within-department">{{ page.authOption[ optionNumberA ] }}</td>
+  <td headers="another-party">{{ page.authOption[ optionNumberB ] }}</td>
 </tr>
 {% endfor %}
 </tbody>

@@ -45,8 +45,7 @@
         ] }
       ]
     }
-  ] }'>
-  </input>
+  ] }' />
   {% else %}
   <input id="question-detail-{{ detail }}" type="text" size="85" class="wb-calculate {% if detail == 4 %} date-current {% endif %}" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
     { "type": "action",
@@ -56,8 +55,7 @@
         ] }
       ]
     }
-  ] }'>
-  </input>
+  ] }' / >
   {% endif %}
   </div>
 {% endfor %}
