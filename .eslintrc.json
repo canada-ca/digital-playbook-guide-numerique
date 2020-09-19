@@ -1,12 +1,16 @@
 {
     "env": {
-        "browser": true
+        "browser": true,
+        "jquery": true
     },
     "extends": [
         "eslint:recommended"
     ],
+    "globals": {
+      "wb": true
+    },
     "parserOptions": {
-        "ecmaVersion": 5
+        "ecmaVersion": 6
     },
     "ignorePatterns": ["_site/**"],
     "rules": {

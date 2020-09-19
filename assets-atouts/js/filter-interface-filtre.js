@@ -38,7 +38,6 @@ var componentName = "wb-contentfilter",
           exclusiveFiltersLen = $exclusiveFilters.length,
           rememberCheckbox = document.getElementById( rememberId ),
           fromStorage = false,
-          eventData = event.data,
           filtersChecked, filterIndex, filterId, $filterTargets;
 
       // Replicate exclusive filter tag to all ancestors and descendents of the tagged element
@@ -73,6 +72,7 @@ var componentName = "wb-contentfilter",
               rememberCheckbox.checked = true;
             }
           } catch ( error ) {
+            /* empty */
           }
         }
         wb.ready( $( elm ), componentName );
@@ -92,7 +92,7 @@ $document.on( "click", selector + " input:checkbox", function( event )  {
       $parentListItem = $target.parent(),
       $parentCheckbox = $parentListItem.parent().siblings( "input:checkbox" ),
       targetChecked = target.checked,
-      $siblingCheckboxes, numChecked;
+      $siblingCheckboxes;
 
   // If the checkbox has children checkboxes, then check/uncheck them all when the parent checkbox is checked/unchecked
   $target.siblings( "ul" ).find( "input:checkbox" ).prop( "checked", targetChecked );
@@ -117,7 +117,7 @@ $document.on( "click", buttonClass, function( event, fromStorage ) {
     filtersChecked = "",
 		hideClass = "hidden",
     rememberCheckbox = document.getElementById( rememberId ),
-		filterId, allDisabled, groupShowSelector, groupHideSelector, $group, filter, filtersEnabledLen, filtersDisabledLen,
+		filterId, allDisabled, groupShowSelector, groupHideSelector, $group, filtersEnabledLen, filtersDisabledLen,
     groupIndex, filterIndex, $filters, $filtersEnabled, $filtersDisabled, isExclusiveFiltersGroup, exclusiveNot;
 
 	// If there are no groups (i.e., fieldsets), then consider the form itself to be the one group
@@ -159,7 +159,7 @@ $document.on( "click", buttonClass, function( event, fromStorage ) {
             exclusiveNot += ":not(." + filterId + "):not(." + filterId + "-descendent):not(." + filterId + "-ancestor)";
           }
         }
-			} 
+			}
       groupShowSelector = groupShowSelector.substr( 2 );
 			showSelector += ", " + groupShowSelector;
 		} else if ( isExclusiveFiltersGroup ) {
@@ -200,6 +200,7 @@ $document.on( "click", buttonClass, function( event, fromStorage ) {
         sessionStorage.setItem( componentName, filtersChecked );
       }
     } catch ( error ) {
+      /* empty */
     }
   }
 
@@ -209,11 +210,11 @@ $document.on( "click", buttonClass, function( event, fromStorage ) {
 	// Hide any content that should be hidden but is currently visible
 	$( hideSelector ).not( hideClass ).addClass( hideClass );
 } );
-  
+
 // Bind the init event of the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
-  
+
 } )( jQuery, window, document, wb );

@@ -134,7 +134,7 @@
                     "tags": [
                       "dpgn-overview-end"
                     ],
-                    "content": "Le guide numérique est composé de plusieurs vues différentes qui sont conçues pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur. Chacune de ces vues pourrait être composée d'un ou plusieurs des éléments suivants :"
+                    "content": "Le guide numérique est composé de plusieurs vues différentes qui sont conçues pour certaines tâches en fournissant uniquement les informations pertinentes à la tâche et en les ordonnant d'une manière logique pour l'utilisateur. Chacune de ces vues pourrait être composée d'un ou plusieurs des éléments suivants :"
                   }
                 ]
               },
@@ -4455,7 +4455,7 @@
                             "tags": [
                               "dpgn-standards-hide"
                             ],
-                            "content": "S'assurer que les employés pertinents sont suffisament formés lors de la conception, de la fonction et de la mise en œuvre du système décisionnel automatisé pour être en mesure d'examiner, d'expliquer et de superviser le processus décisionnel automatisé, comme il est prescrit dans ce qui suit :\n        "
+                            "content": "S'assurer que les employés pertinents sont suffisament formés lors de la conception, de la fonction et de la mise en œuvre du système décisionnel automatisé pour être en mesure d'examiner, d'expliquer et de superviser le processus décisionnel automatisé, comme il est prescrit dans ce qui suit :\n        "
                           },
                           {
                             "content_type": "block",
@@ -10862,7 +10862,7 @@
                                 "content": [
                                   {
                                     "content_type": "inline",
-                                    "content": "Exigence d'approbation :\n            "
+                                    "content": "Exigence d'approbation :\n            "
                                   },
                                   {
                                     "content_type": "block",
@@ -11040,7 +11040,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Informer les personnes touchées que la décision rendue sera prise en totalité ou en partie par un système décisionnel automatisé comme prescrit dans ce qui suit :\n        "
+                            "content": "Informer les personnes touchées que la décision rendue sera prise en totalité ou en partie par un système décisionnel automatisé comme prescrit dans ce qui suit :\n        "
                           },
                           {
                             "content_type": "block",
@@ -11167,7 +11167,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iii"
                                             ],
-                                            "content": "Le site Web doit renvoyer à des renseignements supplémentaires où des renseignements sur le système l'information sont fournis, y compris :\n                "
+                                            "content": "Le site Web doit renvoyer à des renseignements supplémentaires où des renseignements sur le système l'information sont fournis, y compris :\n                "
                                           },
                                           {
                                             "content_type": "block",
@@ -11324,7 +11324,7 @@
                                             "tags": [
                                               "dpgn-automated-decision-level-iv"
                                             ],
-                                            "content": "Le site Web doit renvoyer à des renseignements supplémentaires où des renseignements sur le système l'information sont fournis, y compris :\n                "
+                                            "content": "Le site Web doit renvoyer à des renseignements supplémentaires où des renseignements sur le système l'information sont fournis, y compris :\n                "
                                           },
                                           {
                                             "content_type": "block",
@@ -11414,7 +11414,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Fournir une explication significative aux personnes touchées de la façon dont la décision a été prise et de la raison pour laquelle elle a été prise, comme le prescrit ce qui suit :\n        "
+                            "content": "Fournir une explication significative aux personnes touchées de la façon dont la décision a été prise et de la raison pour laquelle elle a été prise, comme le prescrit ce qui suit :\n        "
                           },
                           {
                             "content_type": "block",
@@ -11438,7 +11438,7 @@
                                     "tags": [
                                       "dpgn-automated-decision-type-risk"
                                     ],
-                                    "content": "Explication de l'exigence pour la recommendation :\n            "
+                                    "content": "Explication de l'exigence pour la recommendation :\n            "
                                   },
                                   {
                                     "content_type": "block",
@@ -11610,7 +11610,7 @@
                                       "dpgn-automated-decision-type-recommendation",
                                       "dpgn-automated-decision-type-decision"
                                     ],
-                                    "content": "Explication de l'exigence pour les décisions :\n            "
+                                    "content": "Explication de l'exigence pour les décisions :\n            "
                                   },
                                   {
                                     "content_type": "block",
@@ -11865,7 +11865,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Sous réservé des exigences prescrites dans ce qui suit, veiller à ce que des processus ou des systèmes d'urgence soient disponibles si le système décisionnel automatisé est indisponible pour une période prolongée :\n        "
+                            "content": "Sous réservé des exigences prescrites dans ce qui suit, veiller à ce que des processus ou des systèmes d'urgence soient disponibles si le système décisionnel automatisé est indisponible pour une période prolongée :\n        "
                           },
                           {
                             "content_type": "block",
@@ -12325,7 +12325,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Conserver les experts suivants pour examiner le système décisionnel automatisé, en fonction du niveau d'évaluation de l'impact :\n        "
+                            "content": "Conserver les experts suivants pour examiner le système décisionnel automatisé, en fonction du niveau d'évaluation de l'impact :\n        "
                           },
                           {
                             "content_type": "block",
@@ -12368,7 +12368,7 @@
                                     "tags": [
                                       "dpgn-automated-decision-level-ii"
                                     ],
-                                    "content": "<strong>Niveau II :</strong> Au moins l'une des suivantes :\n            "
+                                    "content": "<strong>Niveau II :</strong> Au moins l'une des suivantes :\n            "
                                   },
                                   {
                                     "content_type": "block",
@@ -12494,7 +12494,7 @@
                                     "tags": [
                                       "dpgn-automated-decision-level-iii"
                                     ],
-                                    "content": "<strong>Niveau III :</strong> Au moins l'une des suivantes :\n            "
+                                    "content": "<strong>Niveau III :</strong> Au moins l'une des suivantes :\n            "
                                   },
                                   {
                                     "content_type": "block",
@@ -12620,7 +12620,7 @@
                                     "tags": [
                                       "dpgn-automated-decision-level-iv"
                                     ],
-                                    "content": "<strong>Niveau IV :</strong> Au moins deux des suivantes :\n            "
+                                    "content": "<strong>Niveau IV :</strong> Au moins deux des suivantes :\n            "
                                   },
                                   {
                                     "content_type": "block",

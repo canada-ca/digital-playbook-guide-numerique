@@ -26,7 +26,7 @@ var componentName = "wb-calculate",
      * @param {jQuery Event} event Event that triggered the function call
      * @param {string} string Optional selector for the checked filter checkboxes (if triggered manually)
      */
-    init = function( event, contentfilter ) {
+    init = function( event ) {
 
       // Start initialization
       // returns DOM object = proceed with init
@@ -128,7 +128,7 @@ var componentName = "wb-calculate",
             if ( outputAttribute ) {
               target.setAttribute( outputAttribute, result );
             } else if ( outputProperty ) {
-              target[ outputProperty ] = result; 
+              target[ outputProperty ] = result;
             } else {
               target.textContent = result ;
             }
@@ -151,7 +151,7 @@ var componentName = "wb-calculate",
      * - length: Calculate the length of a retrieved string
      * - percent: Calculate the percentage using two numbers (i.e., (a / b) * 100)
      * - add: Calculate the result of adding two or more numbers in sequence (e.g., a + b + c)
-     * - subtract: Calculate the result of subtracting two or more numbers in sequence (e.g., a - b - c) 
+     * - subtract: Calculate the result of subtracting two or more numbers in sequence (e.g., a - b - c)
      * - multiply: Calculate the result of multiplying two or more numbers in sequence (e.g., a * b * c)
      * - divide: Calculate the result of dividing two or more numbers in sequence (e.g., a / b / c)
      * - pow: Calculate the result of the powers of two or more numbers in sequence (e.g., ab = Math.pow( a, b ), abc = Math.pow( ab, c ))
@@ -176,10 +176,10 @@ var componentName = "wb-calculate",
      * increment {Integer} Optional (can only be used with "count" type). The size of the increment to use for each item counted.
      * actionsTrue {Array} Optional (required for "conditional" type). Actions to proceed with if all conditons are met (e.g., "event", "operations", "addClass", "removeClass", "conditional").
      * actionsFalse {Array} Optional (can only be used for "conditional" type). Actions to process with if one of the conditions is not met (e.g., "event", "operations", "addClass", "removeClass", "outputValue", "conditional").
-     * outputEvent {String/Operation object} Optional (required for action type of "event" for "conditional" type). Event type 
+     * outputEvent {String/Operation object} Optional (required for action type of "event" for "conditional" type). Event type
      * outputEventParameter {Array/Plain object} Optional (only used for action type of "event" for "conditional" type).
      * operations {Array} Optional (required for action type of "operations" for "conditional" type). Operations to execute.
-     * class {String/Operation object} Optional (required for action type of "addClass" or "removeClass" for "conditional" type). Class to add or remove.  
+     * class {String/Operation object} Optional (required for action type of "addClass" or "removeClass" for "conditional" type). Class to add or remove.
      * outputTarget {String/Operation object} Optional (required for operations that output the result and for the action type of "event", "addClass", "removeClass" and "outputValue" and for the "conditional" type). CSS selector for where to output the result of the operation or for where to trigger the event.
      * outputAttribute {String/Operation object} Optional (can be used for operations that output the result and the outputValue action). Attribute on the outputTarget to update (e.g., class, tabindex, data-*).
      * outputProperty {String/Operation object} Optional (can be used for operations that output the result and the outputValue action). Property on the outputTarget to update (e.g., disabled, selected, checked).
@@ -196,10 +196,10 @@ var componentName = "wb-calculate",
           value = typeof operation[ "value" ] === "object" ? calculate( operation[ "value" ] ) : operation[ "value" ],
           queryParam = typeof operation[ "query" ] === "object" ? calculate( operation[ "query" ] ) : operation[ "query" ],
           query = value || !queryParam ? null : document.querySelectorAll( queryParam ),
-          queryResultsSize = !query ? null : query.length, 
+          queryResultsSize = !query ? null : query.length,
           decimalPlaces = typeof operation[ "decimalPlaces" ] === "object" ? calculate( operation[ "decimalPlaces" ] ) : operation[ "decimalPlaces" ],
           indexesKeysUsed = false,
-          inputs, inputsLength, values, item, index, length, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
+          inputs, inputsLength, values, item, index, conditionMet, actions, actionsLength, action, actionType, sourceAttribute,
           sourceProperty, outputTargets, outputTarget, outputAttribute, outputProperty, outputType, currentValue, outputValue,
           outputTargetIndex, outputTargetsLength, indexesKeys, sourceStorage;
 
@@ -515,9 +515,8 @@ var componentName = "wb-calculate",
           target = event.target,
           dataAttributeValue = settingsParam ? settingsParam : JSON.parse( target.getAttribute( dataAttribute ) ),
           returnFalse = false,
-          allSettings = Array.isArray( settingsParam ) ? settingsParam : [ settingsParam ],
-          settings, operations, eventTrigger, type, source, action, data, storedData, key, index, length, result,
-          resetForm, settingsIndex, settingsLength, processedValues;
+          settings, operations, eventTrigger,
+          settingsIndex, settingsLength;
 
       if ( !Array.isArray( dataAttributeValue ) ) {
         dataAttributeValue = [ dataAttributeValue ];
@@ -531,7 +530,7 @@ var componentName = "wb-calculate",
         operations = settings[ "operations" ];
         eventTrigger = ( typeof settings[ "eventTrigger" ] === "object" ? calculate( settings[ "eventTrigger" ] ) : settings[ "eventTrigger" ] );
 
-        // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
+        // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger
         if ( !ignoreTriggerCheck && eventTrigger && eventTrigger.indexOf( eventType ) === -1 ) {
           continue;
         }
