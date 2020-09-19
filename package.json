@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/canada-ca/digital-playbook-guide-numerique#readme",
   "devDependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.1.0",
     "eslint": "^7.9.0",
     "glob": "^7.1.6",
     "markdown-link-check": "^3.8.3",
