@@ -8,6 +8,12 @@
     },
     {
       "pattern": "https://www.digital.govt.nz/"
+    },
+    {
+      "pattern": "http://www.finance.gov.au/"
+    },
+    {
+      "pattern": "http://finance.gov.au/"
     }
   ],
   "replacementPatterns": [
