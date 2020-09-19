@@ -1,0 +1,22 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+    "ignorePatterns": ["_site/**"],
+    "rules": {
+    },
+    "overrides": [
+      {
+        "files": ["link-check.js"],
+        "env": {
+          "node": true
+        }
+    }
+    ]
+}
