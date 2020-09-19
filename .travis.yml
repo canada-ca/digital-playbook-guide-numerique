@@ -10,10 +10,10 @@ node_js:
   - "node"
 
 rvm:
-  - "2.2"
+  - "2.7.1"
 
 before_install:
   - bundle install
 
 before_script:
-  - bundle exec jekyll build --verbose
+  - bundle exec jekyll build
