@@ -1,4 +1,8 @@
-
+/**
+ * @title Print Element
+ * @overview Takes a HTML element, opens it in a new window, and calls print on that window
+ */
+ /*global PrintElem */
 function PrintElem(elem, title, offset)
 {
   // Title constructor
@@ -8,7 +12,7 @@ function PrintElem(elem, title, offset)
 
   // Loading start
   var dStart = Math.round(new Date().getTime()/1000),
-      $html = $('html');
+      $html = $('html'),
       i = 0;
 
   // Start building HTML

@@ -1,5 +1,7 @@
-
-// Sets the date for all elements with class date-current
+/**
+ * @title set Date
+ * @overview Sets the date for all elements with class date-current
+ */
 const n =  new Date();
 const y = n.getFullYear();
 const m = n.getMonth() + 1;
