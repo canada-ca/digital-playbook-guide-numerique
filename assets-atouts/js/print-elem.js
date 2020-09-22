@@ -64,9 +64,6 @@ function PrintElem(elem, title, offset)
           HTML+= '<link rel="stylesheet" href="' + $(this).attr('href') + '" />';
           i++;
       }).promise().done(function(){
-          // Print setup
-          HTML+= '<link rel="stylesheet" href="{{ site.baseurl }}/views-vues/assurance-level-requirement/resultTable.css" type="text/css"/>';
-
           // Finish HTML
           HTML+= '</head><body>';
           HTML+= '<h1 class="text-center mb-3">' + title  + '</h1>';
