@@ -3,9 +3,9 @@
 <h2>{{ site.Results[ page.lang ] }}</h2>
 
 <!-- Details Table -->
-<div id="table-results-div" style="border-color: #000000;">
+<div id="table-results-div">
 
-<table class="table table-bordered table-results" style="margin-bottom: 0px;">
+<table class="table table-bordered table-results" style="margin-bottom: 0px; border: solid; border-width: 2px;">
   <!-- Row One -->
   <tr>
   <th id='header-{{ page.detail["1"] }}' style="width: 20%;">{{ page.detail["1"] }}</th>
@@ -23,7 +23,7 @@
 </table>
 
 <!-- Results table -->
-<table class="table table-striped table-hover table-bordered table-results">
+<table class="table table-striped table-hover table-bordered table-results" style="border: solid; border-width: 2px;">
 <thead>
   {% assign rowNumber = rowNumber | plus: 1 %}
   {% assign headerRowNumber = rowNumber %}
@@ -102,7 +102,7 @@ endfor %}
   <div id="assurance-NA-table" class="hidden"></div>
 </td>
 </tr>
-<tr>
+<tr style="border: solid; border-width: 2px;">
   <td colspan="5" style="text-align: center"> {{ page.version }} </td>
 </tr>
 </tbody>
