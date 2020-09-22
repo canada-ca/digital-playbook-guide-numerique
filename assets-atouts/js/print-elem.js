@@ -2,7 +2,7 @@
  * @title Print Element
  * @overview Takes a HTML element, opens it in a new window, and calls print on that window
  */
- /*global PrintElem */
+// eslint-disable-next-line
 function PrintElem(elem, title, offset)
 {
   // Title constructor
