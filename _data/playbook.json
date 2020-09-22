@@ -2416,6 +2416,19 @@
                       },
                       {
                         "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.3.3, Directive on Automated Decision-Making (draft) (GC)"
+                        },
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices in accordance with the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742\">Policy on Information Management</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
                         "source_element": "li",
                         "tags": [
                           "dpgn-standards-hide"
@@ -2443,19 +2456,6 @@
                               "dpgn-standards-hide"
                             ],
                             "content": "Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 6.3.3, Directive on Automated Decision-Making (draft) (GC)"
-                        },
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate and up-to-date and follow any applicable policy or guidelines with regards to data management practices in accordance with the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12742\">Policy on Information Management</a>."
                           }
                         ]
                       }
@@ -3241,6 +3241,32 @@
                       },
                       {
                         "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.5.1, Directive on Automated Decision-Making (draft) (GC)"
+                        },
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Publish information on the effectiveness and efficiency of Automated Decision Systems annually on a website or service designated by the Treasury Board of Canada."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.5.2, Directive on Automated Decision-Making (draft) (GC)"
+                        },
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "When requested, provide information on the achievement of the expected results of the Automated Decision System and compliance with the <a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Directive on Automated Decision-Making (draft) (GC)</a> will be provided to the Treasury Board of Canada Secretariat."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
                         "source_element": "li",
                         "content": [
                           {
@@ -3276,32 +3302,6 @@
                           {
                             "content_type": "inline",
                             "content": "Apply oversight and lifecycle management to digital investments through governance"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 6.5.1, Directive on Automated Decision-Making (draft) (GC)"
-                        },
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Publish information on the effectiveness and efficiency of Automated Decision Systems annually on a website or service designated by the Treasury Board of Canada."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 6.5.2, Directive on Automated Decision-Making (draft) (GC)"
-                        },
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "When requested, provide information on the achievement of the expected results of the Automated Decision System and compliance with the <a href=\"https://docs.google.com/document/d/1LdciG-UYeokx3U7ZzRng3u4T3IHrBXXk9JddjjueQok\">Directive on Automated Decision-Making (draft) (GC)</a> will be provided to the Treasury Board of Canada Secretariat."
                           }
                         ]
                       }
@@ -3647,36 +3647,6 @@
                       },
                       {
                         "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Make source code open and reusable under an appropriate open source software license"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Expose public data to implement Open Data and Open Information initiatives"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Share code publicly when appropriate, and when not, share within the Government of Canada"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
                         "content_source": {
                           "title": "Section 6.1.4, Directive on Automated Decision-Making (draft) (GC)"
                         },
@@ -3697,7 +3667,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Make available to the public all of the source code used for the Automated Decision Systems on the <a href=\"https://canada-ca.github.io/ore-ero/home.html\">Open Resource Exchange</a>."
+                            "content": "Make available to the public all of the source code used for the Automated Decision Systems on the <a href=\"https://canada-ca.github.io/ore-ero/en/index.html\">Open Resource Exchange</a>."
                           }
                         ]
                       },
@@ -3750,6 +3720,36 @@
                           {
                             "content_type": "inline",
                             "content": "Ensure that Canada maintains the right to have access to foreground intellectual property to respond to any legal challenges."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Make source code open and reusable under an appropriate open source software license"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Expose public data to implement Open Data and Open Information initiatives"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Share code publicly when appropriate, and when not, share within the Government of Canada"
                           }
                         ]
                       }
@@ -4219,7 +4219,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "In considering how to manage security risks, departments and agencies must follow the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html\">GC Cloud Security Risk Management Approach and Procedures</a> and the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>."
+                            "content": "In considering how to manage security risks, departments and agencies must follow the <a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/cloud-security-risk-management-approach-procedures.html\">GC Cloud Security Risk Management Approach and Procedures</a> and the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>."
                           }
                         ]
                       },
@@ -4229,7 +4229,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Departments and agencies may deploy solutions that have data-categorization requirements that fall outside of a particular cloud security control profile, as described in the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>, with appropriate risk-mitigation measures that have been developed in consultation with GC security partners."
+                            "content": "Departments and agencies may deploy solutions that have data-categorization requirements that fall outside of a particular cloud security control profile, as described in the <a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>, with appropriate risk-mitigation measures that have been developed in consultation with GC security partners."
                           }
                         ]
                       },
@@ -4260,116 +4260,6 @@
                           {
                             "content_type": "inline",
                             "content": "Departments and agencies should consider portability and interoperability of services when designing cloud-based solutions."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Define program services as business capabilities to establish a common vocabulary between business, development, and operation"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Model business processes using Unified Modelling language to identify common enterprise processes"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Avoid lock-in and seek independence and substitutability where open source software or open standards are available"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Design for cloud mobility and develop an exit strategy to avoid vendor lock-in"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Design for resiliency"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Ensure response times meet user needs, and critical services are highly available"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Support zero-downtime deployments for planned and unplanned maintenance"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Use distributed architectures, assume failure will happen, handle errors gracefully, and monitor actively"
                           }
                         ]
                       },
@@ -4618,6 +4508,116 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Define program services as business capabilities to establish a common vocabulary between business, development, and operation"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Model business processes using Unified Modelling language to identify common enterprise processes"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Avoid lock-in and seek independence and substitutability where open source software or open standards are available"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Design for cloud mobility and develop an exit strategy to avoid vendor lock-in"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Design for resiliency"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Ensure response times meet user needs, and critical services are highly available"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Support zero-downtime deployments for planned and unplanned maintenance"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Use distributed architectures, assume failure will happen, handle errors gracefully, and monitor actively"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -4799,7 +4799,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-right-cloud-selection-guidance.html\">Government of Canada Right Cloud Selection Guidance</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/government-canada-right-cloud-selection-guidance.html\">Government of Canada Right Cloud Selection Guidance</a>"
                           }
                         ]
                       },
@@ -4817,7 +4817,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/government-canada-security-control-profile-cloud-based-it-services.html\">Government of Canada Security Control Profile for Cloud-Based GC IT Services</a>"
                           }
                         ]
                       },
@@ -4835,7 +4835,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
                           }
                         ]
                       },
@@ -4853,7 +4853,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/gc-white-paper-data-sovereignty-public-cloud.html\">Government of Canada White Paper: Data Sovereignty and Public Cloud</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/gc-white-paper-data-sovereignty-public-cloud.html\">Government of Canada White Paper: Data Sovereignty and Public Cloud</a>"
                           }
                         ]
                       },
@@ -4871,7 +4871,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/cloud-computing/cloud-security-risk-management-approach-procedures.html\">Government of Canada Cloud Security Risk Management Approach and Procedures</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/cloud-security-risk-management-approach-procedures.html\">Government of Canada Cloud Security Risk Management Approach and Procedures</a>"
                           }
                         ]
                       },
@@ -6249,6 +6249,19 @@
                       },
                       {
                         "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.3.7, Directive on Automated Decision-Making (draft) (GC)"
+                        },
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Conduct risk assessments throughout the development of the system and ensure appropriate safeguards to be applied, as per the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578\">Policy on Government Security</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
                         "source_element": "li",
                         "content": [
                           {
@@ -6284,19 +6297,6 @@
                           {
                             "content_type": "inline",
                             "content": "Balance user and business needs with proportionate security measures"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 6.3.7, Directive on Automated Decision-Making (draft) (GC)"
-                        },
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Conduct risk assessments throughout the development of the system and ensure appropriate safeguards to be applied, as per the <a href=\"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578\">Policy on Government Security</a>."
                           }
                         ]
                       }
@@ -12215,16 +12215,6 @@
                       },
                       {
                         "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Include all skillsets required for delivery, including for requirements, design, development, and operations"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
                         "content_source": {
                           "title": "Section 6.3.4 and Appendix C, Directive on Automated Decision-Making (draft) (GC)"
                         },
@@ -12639,6 +12629,16 @@
                                 ]
                               }
                             ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Include all skillsets required for delivery, including for requirements, design, development, and operations"
                           }
                         ]
                       }

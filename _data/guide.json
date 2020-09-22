@@ -2483,6 +2483,19 @@
                       },
                       {
                         "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.3.3, Directive sur les processus décisionnels automatisés (ébauche) (GC)"
+                        },
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Veiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l'essai pour s'assurer qu'elles sont toujours pertinentes, exactes et à jour, et respectent toute politique ou directive liée aux pratiques de gestion des données conformément à la <a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=12742\">Politique sur la gestion de l'information</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
                         "source_element": "li",
                         "tags": [
                           "dpgn-standards-hide"
@@ -2510,19 +2523,6 @@
                               "dpgn-standards-hide"
                             ],
                             "content": "Encourager et adopter le développement piloté par les tests (DPT) pour améliorer la confiance qui règne entre les entreprises et la TI"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 6.3.3, Directive sur les processus décisionnels automatisés (ébauche) (GC)"
-                        },
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Veiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l'essai pour s'assurer qu'elles sont toujours pertinentes, exactes et à jour, et respectent toute politique ou directive liée aux pratiques de gestion des données conformément à la <a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=12742\">Politique sur la gestion de l'information</a>."
                           }
                         ]
                       }
@@ -3308,6 +3308,19 @@
                       },
                       {
                         "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.5.1, Directive sur les processus décisionnels automatisés (ébauche) (GC)"
+                        },
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Publier des renseignements sur le'efficacité et l'efficience des systèmes décisionnels automatisés chaqu année dans un site Web ou un service désigné par le Conseil du Trésor du Canada."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
                         "source_element": "li",
                         "content": [
                           {
@@ -3343,19 +3356,6 @@
                           {
                             "content_type": "inline",
                             "content": "Appliquer des principes de surveillance et de gestion du cycle de vie aux investissements numériques par l’entremise de la gouvernance"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 6.5.1, Directive sur les processus décisionnels automatisés (ébauche) (GC)"
-                        },
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Publier des renseignements sur le'efficacité et l'efficience des systèmes décisionnels automatisés chaqu année dans un site Web ou un service désigné par le Conseil du Trésor du Canada."
                           }
                         ]
                       }
@@ -3701,36 +3701,6 @@
                       },
                       {
                         "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Rendre le code source ouvert et réutilisable en vertu d’une licence de logiciel à source ouverte"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Exposer les données publiques afin de procéder à la mise en œuvre d’initiatives sur les données ouvertes et l’information ouverte"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Partager le code publiquement lorsqu’il est approprié de le faire et, lorsqu’il n’est pas pratique de le faire, le partager au sein du gouvernement du Canada"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
                         "content_source": {
                           "title": "Section 6.1.4, Directive sur les processus décisionnels automatisés (ébauche) (GC)"
                         },
@@ -3751,7 +3721,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Mettre à la disposition du public tous les codes sources utilisés pour le système décisionnel automatisé sur l'<a href=\"https://canada-ca.github.io/ore-ero/accueil.html\">Échange de ressources ouvert</a>."
+                            "content": "Mettre à la disposition du public tous les codes sources utilisés pour le système décisionnel automatisé sur l'<a href=\"https://canada-ca.github.io/ore-ero/fr/index.html\">Échange de ressources ouvert</a>."
                           }
                         ]
                       },
@@ -3817,6 +3787,36 @@
                           {
                             "content_type": "inline",
                             "content": "Sur demande, fournir des renseignements sur l'atteinte des résultats escomptés du système décisionnel automatisé et la conformité à la <a href=\"https://docs.google.com/document/d/18Tq0piuD03wVr27ZPdQbkq-huZxkIzv7r4IZHt0nezI\">Directive sur les processus décisionnels automatisés (ébauche) (GC)</a> au SCT."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Rendre le code source ouvert et réutilisable en vertu d’une licence de logiciel à source ouverte"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Exposer les données publiques afin de procéder à la mise en œuvre d’initiatives sur les données ouvertes et l’information ouverte"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Partager le code publiquement lorsqu’il est approprié de le faire et, lorsqu’il n’est pas pratique de le faire, le partager au sein du gouvernement du Canada"
                           }
                         ]
                       }
@@ -4286,7 +4286,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Pour déterminer comment gérer les risques pour la sécurité, les ministères et organismes doivent observer le contenu des documents <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html\">Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage du gouvernement du Canada</a> et <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/orientation-utilisation-securisee-services-commerciaux-informatique-nuage-amops.html\">Orientation sur l’utilisation sécurisée des services commerciaux d’informatique en nuage : Avis de mise en œuvre de la Politique sur la sécurité (AMOPS)</a>."
+                            "content": "Pour déterminer comment gérer les risques pour la sécurité, les ministères et organismes doivent observer le contenu des documents <a href=\"https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/technologiques-modernes-nouveaux/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html\">Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage du gouvernement du Canada</a> et <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/acces-information-protection-reseignements-personnels/gestion-securite-identite/orientation-utilisation-securisee-services-commerciaux-informatique-nuage-amops.html\">Orientation sur l’utilisation sécurisée des services commerciaux d’informatique en nuage : Avis de mise en œuvre de la Politique sur la sécurité (AMOPS)</a>."
                           }
                         ]
                       },
@@ -4296,7 +4296,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "Les ministères et organismes peuvent déployer des solutions dont les exigences en matière de catégorisation de données ne correspondent pas à un profil de contrôle de sécurité de l’informatique en nuage donné, comme il est indiqué dans le <a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html\">Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l’informatique en nuage</a>, avec des mesures d’atténuation des risques appropriées élaborées de concert avec des partenaires de la sécurité du GC."
+                            "content": "Les ministères et organismes peuvent déployer des solutions dont les exigences en matière de catégorisation de données ne correspondent pas à un profil de contrôle de sécurité de l’informatique en nuage donné, comme il est indiqué dans le <a href=\"https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/technologiques-modernes-nouveaux/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html\">Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l’informatique en nuage</a>, avec des mesures d’atténuation des risques appropriées élaborées de concert avec des partenaires de la sécurité du GC."
                           }
                         ]
                       },
@@ -4327,116 +4327,6 @@
                           {
                             "content_type": "inline",
                             "content": "Les ministères et organismes devraient tenir compte de la transférabilité et de l’interopérabilité des services au moment d’élaborer des solutions d’informatique en nuage."
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Définir les services de programme en tant que fonctionnalités métier permettant d'établir un vocabulaire commun entre les activités, le développement et les opérations"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Modélisation des processus métier à l'aide du langage de modélisation unifiée pour identifier les processus d'entreprise communs"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Éviter l'enfermement et rechercher l'indépendance et la substituabilité lorsque des logiciels libres ou des normes ouvertes sont disponibles"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Préconiser cet ordre de préférences : source ouverte d’abord, puis les logiciels disponibles sur le marché qui sont indifférents à la plateforme, puis les logiciels disponibles sur le marché exclusifs, puis en dernier lieu, les logiciels conçus sur mesure"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Préconiser cet ordre de préférences : Logiciel comme service (SaaS) d’abord, puis Plateforme comme service (PaaS), et en dernier lieu, l’Infrastructure comme service (IaaS)"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Préconiser cet ordre de préférences : Le nuage public d’abord, ensuite, le nuage hybride, puis le nuage privé et, en dernier lieu, les solutions non nuagiques (sur site)"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Concevoir en vue d’une mobilité nuagique, et élaborer une stratégie de sortie afin d’éviter l’enfermement propriétaire"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Concevoir à des fins de résilience"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Veiller à ce que les temps de réponse répondent aux besoins des utilisateurs, et que les services critiques soient grandement disponibles"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Appuyer les déploiements sans temps morts, dans les cas de maintenance planifiée et non planifiée"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Se servir d’architectures distribuées, en présumant que des échecs se produiront, traiter des erreurs avec dignité, et surveiller activement"
                           }
                         ]
                       },
@@ -4685,6 +4575,116 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Définir les services de programme en tant que fonctionnalités métier permettant d'établir un vocabulaire commun entre les activités, le développement et les opérations"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Modélisation des processus métier à l'aide du langage de modélisation unifiée pour identifier les processus d'entreprise communs"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Éviter l'enfermement et rechercher l'indépendance et la substituabilité lorsque des logiciels libres ou des normes ouvertes sont disponibles"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Préconiser cet ordre de préférences : source ouverte d’abord, puis les logiciels disponibles sur le marché qui sont indifférents à la plateforme, puis les logiciels disponibles sur le marché exclusifs, puis en dernier lieu, les logiciels conçus sur mesure"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Préconiser cet ordre de préférences : Logiciel comme service (SaaS) d’abord, puis Plateforme comme service (PaaS), et en dernier lieu, l’Infrastructure comme service (IaaS)"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Préconiser cet ordre de préférences : Le nuage public d’abord, ensuite, le nuage hybride, puis le nuage privé et, en dernier lieu, les solutions non nuagiques (sur site)"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Concevoir en vue d’une mobilité nuagique, et élaborer une stratégie de sortie afin d’éviter l’enfermement propriétaire"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Concevoir à des fins de résilience"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Veiller à ce que les temps de réponse répondent aux besoins des utilisateurs, et que les services critiques soient grandement disponibles"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Appuyer les déploiements sans temps morts, dans les cas de maintenance planifiée et non planifiée"
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Se servir d’architectures distribuées, en présumant que des échecs se produiront, traiter des erreurs avec dignité, et surveiller activement"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -4866,7 +4866,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/gouvernement-canada-guide-selection-nuage-approprie.html\">Gouvernement du Canada Guide de Sélection du Nuage Approprié</a>"
+                            "content": "<a href=\"https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/technologiques-modernes-nouveaux/informatique-nuage/gouvernement-canada-guide-selection-nuage-approprie.html\">Gouvernement du Canada Guide de Sélection du Nuage Approprié</a>"
                           }
                         ]
                       },
@@ -4884,7 +4884,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html\">Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l'informatique en nuage</a>"
+                            "content": "<a href=\"https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/technologiques-modernes-nouveaux/informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html\">Profil de contrôle de sécurité pour les services de la TI du GC fondés sur l'informatique en nuage</a>"
                           }
                         ]
                       },
@@ -4902,7 +4902,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/strategie-adoption-information-nuage-gouvernement-canada.html\">Stratégie d’adoption de l’informatique en nuage du Gouvernement du Canada</a>"
+                            "content": "<a href=\"https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/technologiques-modernes-nouveaux/informatique-nuage/strategie-adoption-information-nuage-gouvernement-canada.html\">Stratégie d’adoption de l’informatique en nuage du Gouvernement du Canada</a>"
                           }
                         ]
                       },
@@ -4920,7 +4920,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/gc-livre-blanc-souverainete-donnees-nuage-public.html\">Gouvernement du Canada Livre blanc : Souveraineté des données et nuage public</a>"
+                            "content": "<a href=\"https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/technologiques-modernes-nouveaux/informatique-nuage/gc-livre-blanc-souverainete-donnees-nuage-public.html\">Gouvernement du Canada Livre blanc : Souveraineté des données et nuage public</a>"
                           }
                         ]
                       },
@@ -4938,7 +4938,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/fr/secretariat-conseil-tresor/services/technologie-information/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html\">Gouvernement du Canada Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage</a>"
+                            "content": "<a href=\"https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/technologiques-modernes-nouveaux/informatique-nuage/approche-procedures-gestion-risques-securite-informatique-nuage.html\">Gouvernement du Canada Approche et procédures de gestion des risques à la sécurité de l’informatique en nuage</a>"
                           }
                         ]
                       },
@@ -6316,6 +6316,19 @@
                       },
                       {
                         "content_type": "block",
+                        "content_source": {
+                          "title": "Section 6.3.7, Directive sur les processus décisionnels automatisés (ébauche) (GC)"
+                        },
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Effectuer des évaluations des risques tout au long de l'élaboration du système et s'assurer des mesures de protection appropriées à appliquer, conformément à la <a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=16578\">Politique sur la sécurité du gouvernement</a>."
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
                         "source_element": "li",
                         "content": [
                           {
@@ -6351,19 +6364,6 @@
                           {
                             "content_type": "inline",
                             "content": "Équilibrer les besoins des utilisateurs aux besoins organisationnels en se dotant de mesures de sécurité proportionnelles"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
-                        "content_source": {
-                          "title": "Section 6.3.7, Directive sur les processus décisionnels automatisés (ébauche) (GC)"
-                        },
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Effectuer des évaluations des risques tout au long de l'élaboration du système et s'assurer des mesures de protection appropriées à appliquer, conformément à la <a href=\"https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=16578\">Politique sur la sécurité du gouvernement</a>."
                           }
                         ]
                       }
@@ -12308,16 +12308,6 @@
                       },
                       {
                         "content_type": "block",
-                        "source_element": "li",
-                        "content": [
-                          {
-                            "content_type": "inline",
-                            "content": "Tenir compte de toutes les compétences nécessaires à la prestation, y compris celles qui ont trait aux exigences, à la conception, à l’élaboration et aux opérations"
-                          }
-                        ]
-                      },
-                      {
-                        "content_type": "block",
                         "content_source": {
                           "title": "Section 6.3.4 et Annexe C, Directive sur les processus décisionnels automatisés (ébauche) (GC)"
                         },
@@ -12732,6 +12722,16 @@
                                 ]
                               }
                             ]
+                          }
+                        ]
+                      },
+                      {
+                        "content_type": "block",
+                        "source_element": "li",
+                        "content": [
+                          {
+                            "content_type": "inline",
+                            "content": "Tenir compte de toutes les compétences nécessaires à la prestation, y compris celles qui ont trait aux exigences, à la conception, à l’élaboration et aux opérations"
                           }
                         ]
                       }

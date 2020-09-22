@@ -27,7 +27,7 @@ var componentName = "wb-format-gen",
      * @param {jQuery Event} event Event that triggered the function call
      * @param {string} string Optional selector for the checked filter checkboxes (if triggered manually)
      */
-    init = function( event, contentfilter ) {
+    init = function( event ) {
 
       // Start initialization
       // returns DOM object = proceed with init
@@ -133,7 +133,7 @@ var componentName = "wb-format-gen",
      * @method htmlToJSON
      * @overview Generates JSON data from specific content in the current page
      * @param container {HTML node} Container of the data to output to JSON
-     * @param structure {String} Defines the structure of the JSON to output. The following is an example: 
+     * @param structure {String} Defines the structure of the JSON to output. The following is an example:
      * {
      *   "type": "array",
      *   "selector": "input",
@@ -155,7 +155,7 @@ var componentName = "wb-format-gen",
      * @return {String/Object} JSON output
      */
     htmlToJSON = function( container, structure, outputAsString ) {
-      var selector = structure.selector, 
+      var selector = structure.selector,
           nodes, length, node, items, properties, property, index, itemType, subContainer, valueSource, key, value;
 
       if ( structure.type.toLowerCase() === "array" ) {
@@ -173,7 +173,7 @@ var componentName = "wb-format-gen",
           // String, number or boolean
           valueSource = structure.valueSource;
           for ( index = 0; index < length; index += 1 ) {
-            node = nodes[ index ];           
+            node = nodes[ index ];
 
             if ( !valueSource ) {
               value = node.textContent.trim();
@@ -193,7 +193,7 @@ var componentName = "wb-format-gen",
         subContainer = {};
 
         for ( key in properties ) {
-          if ( properties.hasOwnProperty( key ) ) {
+          if ( Object.hasOwnProperty.call(properties,  key ) ) {
             property = properties[ key ];
             itemType = property.type.toLowerCase();
 
@@ -262,7 +262,7 @@ var componentName = "wb-format-gen",
     csvToArray = function( fileText ) {
       var csvRows = fileText.split( "\n" ),
           length = csvRows.length,
-          csvCells, outputArray, index;
+          index;
 
       for ( index = 0; index < length; index += 1 ) {
         csvRows[ index ] = csvRows[ index ].split( "," );
@@ -368,11 +368,11 @@ var componentName = "wb-format-gen",
      * @overview Converts data in an object or array to a table array
      * @param data {Object/Array} Object/array containing all of the data for the table.
      * @param tableColSpecs {Array} Specification objects for each column, where each object includes the following information:
-     *    relativeToColumn {Integer} (defaults to -1) Index of column that this column is relative to. A 0 or higher index means it has 
-     *      either a sibling relationship (1 to 1) or a parent/child relationship (1 to many) with the specified columnwhile -1 means it 
+     *    relativeToColumn {Integer} (defaults to -1) Index of column that this column is relative to. A 0 or higher index means it has
+     *      either a sibling relationship (1 to 1) or a parent/child relationship (1 to many) with the specified columnwhile -1 means it
      *      is relative to the row (so has a 1 to 1 relationship with each row).
      *    dataContainerSource {Array} Source of the column data array within the passed data object/array in the form of a series of
-     *      indexes/keys applied sequentially. If relativeToColumn is not -1, then the indexes/keys are relative to the data source of     
+     *      indexes/keys applied sequentially. If relativeToColumn is not -1, then the indexes/keys are relative to the data source of
      *      the specified column (an empty array means a sibling relationship), otherwise they are relative to the passed data object/array.
      *    dataElementSource {Array} Source of the data within each column data array element if the data is not the column data array
      *      element itself (empty array is allowed). Indexes/keys are relative to the column data array element.
@@ -385,14 +385,14 @@ var componentName = "wb-format-gen",
      *    tableArray {Array} Table array which is an array of rows containing an array of columns with each column containing a primitive value (e.g., number, string, boolean), an array of primitive values, or nested arrays of primitive values. Nesting denotes 1 to many relationships between a parent and child cells (where rowspan would be used).
      *    tableCountArray {Array} Array with the same structure as tableArray except it has rowspans instead of values for each of the cells
      */
-    dataToTableArray = function( data, tableColSpecs, repeatValues ) {
+    dataToTableArray = function( data, tableColSpecs ) {
       var tableArray = [],
           tableCountArray = [],
           tableColSpecsLength = tableColSpecs.length,
           rowIndex, numOuterRows, rowArray, tableColSpec, tableColSpecIndex, relativeToColumn,
-          index, index2, length, length2, indexesKeys, indexKey, indexKeyIndex, indexesKeysLength, indexesKeysArray, dataNode,
-          columnSourceArray, relativeToArray, rowspan, elementCounts, elementArray, element, countArray, count, relativeCount,
-          indexesArray, maxRows, result, totalCountArray, dataContainerSource, nestedArrayCount;
+          index, length, indexesKeys, indexesKeysArray, dataNode,
+          relativeToArray, element, countArray, count, relativeCount,
+          maxRows, result, totalCountArray, dataContainerSource, nestedArrayCount;
 
       // Handle no data being passed
       if ( !data || data.length === 0 ) {
@@ -456,7 +456,7 @@ var componentName = "wb-format-gen",
             while ( typeof relativeToColumn !== "undefined" && relativeToColumn !== -1 ) {
               relativeToArray.unshift( relativeToColumn );
               dataContainerSource = tableColSpecs[ relativeToColumn ].relativeToColumn === -1 ?
-                tableColSpecs[ relativeToColumn ].dataContainerSource.concat( [ rowIndex ] ) : 
+                tableColSpecs[ relativeToColumn ].dataContainerSource.concat( [ rowIndex ] ) :
                 tableColSpecs[ relativeToColumn ].dataContainerSource;
 
               if ( dataContainerSource && dataContainerSource.length > 0 ) {
@@ -654,7 +654,7 @@ var componentName = "wb-format-gen",
       for ( index = 0; index < length; index += 1 ) {
         element = array[ index ];
         if ( Array.isArray( element ) ) {
-          if ( onlyDeepestLevel && hasNestedArray ) { 
+          if ( onlyDeepestLevel && hasNestedArray ) {
             flattenedArray.push( flattenArray( element, onlyDeepestLevel ) );
           } else {
             flattenedArray = flattenedArray.concat( flattenArray( element ) );
@@ -717,7 +717,7 @@ var componentName = "wb-format-gen",
 
         if ( length > 0 ) {
           dataResults = [];
-     
+
           for ( index = 0; index < length; index += 1 ) {
             result = findData( dataNode[ index ], indexesKeysArray.slice( 1 ), currEmptyResult );
             dataResults.push( result );
@@ -757,7 +757,7 @@ var componentName = "wb-format-gen",
      *   value is its ranking. Can be used to filter out array items that are outside of the desired rank. When a ranking object is
      *   provided, the included values will be used for filtering purposes instead of the data itself (data becomes the way of accessing
      *   the ranking value).
-     * @return {Object} Object containing the filtered array (filteredArray) and the number of unused sibling concats based on 
+     * @return {Object} Object containing the filtered array (filteredArray) and the number of unused sibling concats based on
      *   what was specified for numSiblingLevelsToConcat and the number of concats performed (numSiblingLevelsToConcat).
      */
     filterArray = function( data, filterType, filterCriteria, numSiblingLevelsToConcat, ranking ) {
@@ -880,7 +880,7 @@ var componentName = "wb-format-gen",
       var totalElementCount = 0,
           isConstraintDataArray = Array.isArray( constraintData ),
           returnSubElementCount = ( isConstraintDataArray || constraintData === null || typeof constraintData === "undefined" ) ? true : false,
-          arrayLength, elementCount, result, resultTotalCount, resultElementCounts, descendantElementCountArray, index, length, dataNode;
+          arrayLength, elementCount, result, index, dataNode;
 
       if ( !Array.isArray( data ) ) {
         totalElementCount = 1;
@@ -909,38 +909,6 @@ var componentName = "wb-format-gen",
       return { totalElementCount: totalElementCount, subElementCount: elementCount };
     },
 
-    /**
-     * @method getElementsAtSpecificArrayDepth
-     * @overview Returns an array of all the elements at a specific depth within a multi-dimensional array
-     * @param data {Array} Multi-dimensional array from which the elements will be retrievedArray
-     * @param depth {Number} Number of levels deep to retrieve the elements (e.g., 2 = two levels deep (e.g., grandchildren of top-level array))
-     * @return {Array} Array containing all the array elements at the specific depth
-     */
-    getElementsAtSpecificArrayDepth = function( data, depth ) {
-      var elements, length, index, dataNode, result;
-
-      if ( depth === 0 ) {
-        return data;
-      } else {
-        elements = [];
-        length = data.length;
-
-        if ( depth === 1 ) {
-          for ( index = 0; index < length; index += 1 ) {
-            elements.push( data[ index ] );
-          }
-        } else {
-          for ( index = 0; index < length; index += 1 ) {
-            dataNode = data[ index ];
-            if ( Array.isArray( dataNode ) ) {
-              elements.concat( getElementsAtSpecificArrayDepth( dataNode, depth - 1 ) );
-            }
-          }
-        }
-      }
-
-      return elements;
-    },
 
     /**
      * @method outputFile
@@ -962,7 +930,7 @@ var componentName = "wb-format-gen",
           httpEventTarget = processedValues[ 8 ],
           httpEventOnSuccess = processedValues[ 9 ],
           httpEventOnError = processedValues[ 10 ],
-          fileData, mimeType, blobOutput, urlOutput, action, indexesKeys, storedData, headerRow, xhttpRequest, httpEvent;
+          fileData, mimeType, blobOutput, urlOutput, indexesKeys, storedData, headerRow, xhttpRequest, httpEvent;
 
       if ( type === "csv" ) {
         if ( source === "sessionStorage" || source === "localStorage" || source === "dataAttribute" ) {
@@ -1089,14 +1057,13 @@ var componentName = "wb-format-gen",
              }
 
              if ( action === "restore-form-state" ) {
-               container = retrieveValue( settings[ "container" ] );
                setFormFieldStatus( settings[ "container" ], fileData, settings[ "noEvent" ] );
 
                // Trigger an event indicating that the form state has been restored
                $document.trigger( "form-state-restored-from-file" + selector );
              } else if ( action === "restore-storage" ) {
                processedValues = retrieveValue( [ settings[ "key" ], settings[ "target" ], settings[ "element" ] ] );
-               storeData( "replace", processedValues[ 0 ], settings[ "indexesKeys" ], processedValues[ 1 ], fileData, processedValues[ 2 ] );
+               storeData( "replace", processedValues[ 0 ], settings[ "indexesKeys" ], processedValues[ 1 ], fileData, processedValues[ 2 ] );
 
                // Trigger an event indicating that the storage has been restored
                $document.trigger( "storage-restored-from-file" + selector );
@@ -1124,7 +1091,7 @@ var componentName = "wb-format-gen",
       var processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "action" ], settings[ "key" ], settings[ "container" ], settings[ "element" ] ] ),
           type = processedValues[ 0 ],
           source = processedValues[ 1 ],
-          action = processedValues[ 2 ],
+          action = processedValues[ 2 ],
           key = processedValues[ 3 ],
           container = processedValues[ 4 ],
           element = processedValues[ 5 ],
@@ -1172,7 +1139,7 @@ var componentName = "wb-format-gen",
       var processedValues = retrieveValue( [ settings[ "type" ], settings[ "source" ], settings[ "action" ], settings[ "key" ], settings[ "container" ], settings[ "element" ], settings[ "returnAs" ] ] ),
           type = processedValues[ 0 ],
           source = processedValues[ 1 ],
-          action = processedValues[ 2 ],
+          action = processedValues[ 2 ],
           key = processedValues[ 3 ],
           container = processedValues[ 4 ],
           element = processedValues[ 5 ],
@@ -1211,14 +1178,14 @@ var componentName = "wb-format-gen",
     /**
      * @method storeData
      * @overview Stores data in sessionStorage, localStorage or a data attribute using a key and optionally in nested arrays/objects
-     * @param action {String} Action to take on the stored data (options: replace, replace-primitives (iterates through the passed data and 
+     * @param action {String} Action to take on the stored data (options: replace, replace-primitives (iterates through the passed data and
      *   only uses the primitives to update the target), append, prepend, delete, increment, decrement)
      * @param key {String/Number} Key for storing the data. Must be a string for sessionStorage, localStorage and dataAttribute types.
      *   Can be a string (for objects), number (for arrays) or null (to do nothing) for the object storage type.
      * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to store data in nested arrays/objects in the data
      * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute", "object")
      * @param data {String/Array/Object/Other} (not used for "delete" action) Data to store
-     * @param dataSources {String/DOM node/jQuery object/Other} (optional, required for dataAttribute and object storage types) 
+     * @param dataSources {String/DOM node/jQuery object/Other} (optional, required for dataAttribute and object storage types)
      *   For dataAttribute type, dataSource is the selector, DOM node or jQuery object for the element(s) containing the data attribute.
      *   For object type, it is the data itself (actions affect the data that is passed directly if it is an array or object).
      * @return {String/Array/Object/Other} Returns the updated data
@@ -1321,7 +1288,7 @@ var componentName = "wb-format-gen",
                     currDataSource.delete( key );
                   }
                 } else if ( typeof currDataSource === "string" ) {
-                  currDataSource = currDataSource.slice( 0, key - 1 ) + str.slice( key + 1 );
+                  currDataSource = currDataSource.slice( 0, key - 1 ) + currDataSource.slice( key + 1 );
                 }
               } else {
                 currDataSource = null;
@@ -1412,7 +1379,7 @@ var componentName = "wb-format-gen",
                   currDataSource.delete( key );
                 }
               } else if ( typeof currDataSource === "string" ) {
-                currDataSource = currDataSource.slice( 0, key - 1 ) + str.slice( key + 1 );
+                currDataSource = currDataSource.slice( 0, key - 1 ) + currDataSource.slice( key + 1 );
               }
             } else {
               currDataSource = null;
@@ -1457,7 +1424,7 @@ var componentName = "wb-format-gen",
               if ( typeof currDataSource === "object" ) {
                 currDataSource[ key ] = resultData;
               } else if ( typeof currDataSource === "string" ) {
-                currDataSource = currDataSource.slice( 0, key - 1 ) + resultData + str.slice( key + 1 );
+                currDataSource = currDataSource.slice( 0, key - 1 ) + resultData + currDataSource.slice( key + 1 );
               }
             } else {
               currDataSource = resultData;
@@ -1483,7 +1450,7 @@ var componentName = "wb-format-gen",
      * @param indexesKeys {Array} (defaults to empty array) Indexes and/or keys used to retrieve data from nested arrays/objects in the data
      * @param storageType {String} (defaults to "sessionStorage") Where to store the data (e.g., "sessionStorage", "localStorage", "dataAttribute", "object")
      * @param returnAs {String} (Optional, defaults to the source type) What to return the data as (i.e., "string", "number", "boolean", "object" )
-     * @param dataSource {String/DOM node/jQuery object/Other} (optional, required for dataAttribute and object storage types) 
+     * @param dataSource {String/DOM node/jQuery object/Other} (optional, required for dataAttribute and object storage types)
      *   For dataAttribute type, dataSource is the selector, DOM node or jQuery object for the element containing the data attribute.
      *   For object type, it is the data itself.
      * @return {String/Other} Returns the stored data.
@@ -1544,7 +1511,7 @@ var componentName = "wb-format-gen",
       var forms = document.querySelectorAll( formsSelector ),
           numForms = forms.length,
           fieldObjects = [],
-          form, formIndex, fields, numFields, index, field, nodeName, type, radioButtons, name, hasChecked;
+          form, formIndex, fields, numFields, index, field, nodeName, type, name, hasChecked;
 
       for ( formIndex = 0; formIndex < numForms; formIndex += 1 ) {
         form = forms[ formIndex ];
@@ -1580,8 +1547,8 @@ var componentName = "wb-format-gen",
             } else if ( type === "checkbox" ) {
               fieldObjects.push( { selector: "#" + field.id, state: field.checked, value: field.value } );
             } else if ( type !== "button" && type !== "reset" && type !== "submit" && type !== "image" ) {
-              fieldObjects.push( { selector: "#" + field.id, state: field.value } );
-            } 
+              fieldObjects.push( { selector: "#" + field.id, state: field.value } );
+            }
           } else if ( nodeName === "select" ) {
             if ( field.selectedIndex !== -1 ) {
               fieldObjects.push( { selector: "#" + field.id + " option:nth-child(" + ( field.selectedIndex + 1 ) + ")", state: true, value: field.selectedValue, text: field.options[ field.selectedIndex ].text } );
@@ -1589,7 +1556,7 @@ var componentName = "wb-format-gen",
               fieldObjects.push( { selector: "#" + field.id + " option", state: false } );
             }
           } else if ( nodeName === "textarea" ) {
-            fieldObjects.push( { selector: "#" + field.id, state: field.value } );
+            fieldObjects.push( { selector: "#" + field.id, state: field.value } );
           }
         }
       }
@@ -1646,7 +1613,7 @@ var componentName = "wb-format-gen",
               } else if ( type !== "file" && type !== "button" && type !== "reset" && type !== "submit" && type !== "image" ) {
                 subField.value = fieldObject.state;
                 fireChangeEvent = true;
-              } 
+              }
             } else if ( nodeName === "option" ) {
               if ( subField.selected !== fieldObject.state ) {
                 subField.selected = fieldObject.state;
@@ -1703,7 +1670,7 @@ var componentName = "wb-format-gen",
     generateTableRows = function( data, outputFormat, rowspans, splitRowspans ) {
       var tableRows = "",
           rowIndex, numRows, columns, column, columnIndex, numColumns, columnRowspans, rowspan, rowspanTracker,
-          index, length, index2, length2, outputRow, cell, rowspanCells, rowOpen, rowClose, columnOpenStart, columnOpenEnd, columnClose;
+          index, outputRow, cell, rowspanCells, rowOpen, rowClose, columnOpenStart, columnOpenEnd, columnClose;
 
       // Handle no data being passed
       if ( !data || data.length === 0 ) {
@@ -1856,7 +1823,7 @@ var componentName = "wb-format-gen",
           target = event.target,
           dataAttributeValue = settingsParam ? settingsParam : JSON.parse( target.getAttribute( dataAttribute ) ),
           returnFalse = false,
-          settings, operations, eventTrigger, type, source, action, data, storedData, key, index, length, result,
+          settings, operations, eventTrigger, type, source, index, length, result,
           resetForm, settingsIndex, settingsLength, processedValues;
 
       if ( !Array.isArray( dataAttributeValue ) ) {
@@ -1870,7 +1837,7 @@ var componentName = "wb-format-gen",
         operations = settings[ "operations" ];
         eventTrigger = retrieveValue( settings[ "eventTrigger" ] );
 
-        // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger 
+        // If eventTrigger is specified, then ignore any event types that don't match the eventTrigger
         if ( !ignoreTriggerCheck && eventTrigger && eventTrigger.indexOf( eventType ) === -1 ) {
           continue;
         }
@@ -1884,7 +1851,7 @@ var componentName = "wb-format-gen",
               returnFalse = true;
             }
           }
- 
+
           if ( returnFalse ) {
             return false;
           }
@@ -1945,5 +1912,5 @@ wb[ "wb-format-gen" ] = { retrieveValue: retrieveValue, findData: findData };
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
-  
+
 } )( jQuery, window, document, wb );
