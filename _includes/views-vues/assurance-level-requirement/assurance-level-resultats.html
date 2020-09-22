@@ -4,11 +4,6 @@
 
 <!-- Details Table -->
 <div id="table-results-div" style="border-color: #000000;">
-<style>
-  .table-results th, .table-results td {
-    border-color: #000 !important;
-  }
-</style>
 
 <table class="table table-bordered table-results" style="margin-bottom: 0px;">
   <!-- Row One -->
@@ -68,7 +63,7 @@
 <td class="table-question-{{ question }}-harm">
   {% for level in (1..4) %}{%
     assign harmString = questionNumber | append: "-hint-a" | append: level %}{%
-    assign harmString = page.questions[harmString] | remove_first: "• " | replace: " • ", "</li><li>" | prepend: "<ul><li>" | append: "</li></ul>" }}
+    assign harmString = page.questions[harmString]
   %}<div id="table-question-{{ question }}-harm-{{ level }}" class="hidden">{{ harmString }}</div>{%
   endfor %}
   <div id="table-question-{{ question }}-harm-NA" class="hidden"></div>

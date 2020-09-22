@@ -3,13 +3,12 @@
 <form method="post" action="#">
 
   <h2>{{ page.detailTitle }}:</h2>
-  {% for detail in (1..4) %}{%
+  {%- for detail in (1..4) -%}{%
     assign detailNumberString = detail | downcase %}
-
   <div>
   <label for="question-detail-{{ detail }}" style="display:block;">{{ page.detail[ detailNumberString ] }}:</label>
 
-  {% if detail == 3 %}
+  {%- if detail == 3 -%}
   <select id="question-detail-{{ detail }}" onchange="document.getElementById('question-detail-{{ detail }}-other').value = '' " class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
     { "type": "action",
       "inputs": [
@@ -32,10 +31,9 @@
   <option value="{{ page.other }}">{{ page.other }}</option>{%
   assign departmentNames = site.data.departments | sort: page.lang %}{%
   for department in departmentNames %}
-    <option value="{{ department[ page.lang ] }}">{{ department[ page.lang ] }}</option>{%
-  endfor %}
+    <option value="{{ department[ page.lang ] }}">{{ department[ page.lang ] }}</option>
+  {%- endfor -%}
   </select>
-
   <label id="question-detail-{{ detail }}-other-label" for="question-detail-{{ detail }}-other" class="hidden" style="display:block;">{{ page.otherLabel }}:</label>
   <input id="question-detail-{{ detail }}-other" type="text" size="85" class="wb-calculate hidden" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}-other", "operations": [
     { "type": "action",
@@ -46,7 +44,7 @@
       ]
     }
   ] }' />
-  {% else %}
+  {%- else -%}
   <input id="question-detail-{{ detail }}" type="text" size="85" class="wb-calculate {% if detail == 4 %} date-current {% endif %}" value='{{ initialValue }}' data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-detail-{{ detail }}", "operations": [
     { "type": "action",
       "inputs": [
@@ -56,10 +54,9 @@
       ]
     }
   ] }' />
-  {% endif %}
+  {%- endif -%}
   </div>
-{% endfor %}
-
+{%- endfor -%}
 </form>
 </div>
 </section>
