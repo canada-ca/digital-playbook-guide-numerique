@@ -3,7 +3,7 @@
 <form method="post" action="#">
 <section>
 <h2>{{ page.assuranceTitle }}</h2>
-<p><b> {{ page.assuranceQuestion }} </b></p>
+<p><strong>{{ page.assuranceQuestion }}</strong></p>
 <p> {{ page.assuranceSentence }}</p>
 {%- for question in (1..8) -%}{%
   assign questionNumberString = question | downcase %}
