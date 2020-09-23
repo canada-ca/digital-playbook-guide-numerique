@@ -1,0 +1,115 @@
+<!--Results-->
+<section id="section-results">
+<h2>{{ site.Results[ page.lang ] }}</h2>
+
+<!-- Details Table -->
+<div id="table-results-div">
+
+<table class="table table-bordered table-results" style="margin-bottom: 0px; border: solid; border-width: 2px;">
+  <!-- Row One -->
+  <tr>
+  <th id='header-{{ page.detail["1"] }}' style="width: 20%;">{{ page.detail["1"] }}</th>
+  <td headers='header-{{ page.detail["1"] }}' style="width: 30%;"><div id="table-detail-1"></div></td>
+  <th id='header-{{ page.detail["2a"] }}' style="width: 20%;">{{ page.detail["2a"] }}</th>
+  <td headers='header-{{ page.detail["2a"] }}' style="width: 30%;"><div id="table-detail-2"></div></td>
+  </tr>
+  <!-- Row Two -->
+  <tr>
+  <th id='header-{{ page.detail["3"] }}'>{{ page.detail["3"] }}</th>
+  <td headers='header-{{ page.detail["3"] }}'><div id="table-detail-3"></div></td>
+  <th id='header-{{ page.detail["4"] }}'>{{ page.detail["4"] }}</th>
+  <td headers='header-{{ page.detail["4"] }}'><div id="table-detail-4" class="date-current"></div></td>
+  </tr>
+</table>
+
+<!-- Results table -->
+<table class="table table-striped table-hover table-bordered table-results" style="border: solid; border-width: 2px;">
+<thead>
+  {% assign rowNumber = rowNumber | plus: 1 %}
+  {% assign headerRowNumber = rowNumber %}
+  <tr>
+  <th style="width: 23%;">{{ site.Criteria[ page.lang ] }}</th>
+  <th style="width: 8%;">{{ page.level }}</th>
+  <th style="width: 23%;">{{ page.assessment }}</th>
+  <th style="width: 23%;">{{ page.potentialHarm }}</th>
+  <th style="width: 23%;">{{ page.rationale }}</th>
+  </tr>
+</thead>
+<tbody>
+<!-- Body Rows -->
+{% for question in (1..8) %}{%
+  assign questionNumber = question | downcase %}{%
+  assign questionString = page.questions[ questionNumber ] %}{%
+  assign rowNumber = rowNumber | plus: 1
+%}
+<tr>
+  <!-- Header -->
+<th>{{ questionNumber }}. {{ questionString }}</th>
+  <!-- Assurance Numbers -->
+<td style="text-align: center; font-size: 30px;" class="table-question-{{ question }}-level">
+  {% for level in (1..4) %}
+  <div id="table-question-{{ question }}-level-{{ level }}" class="hidden assurance-level-element"> {{ level }}</div>
+  {% endfor %}
+  <div id="table-question-{{ question }}-level-NA"> N/A</div>
+</td>
+  <!-- Assessment Strings -->
+<td class="table-question-{{ question }}-assessment">
+  {% for level in (1..4) %}{%
+    assign assesmentString = questionNumber | append: "-a" | append: level
+  %}<div id="table-question-{{ question }}-assessment-{{ level }}" class="hidden">{{ page.questions[assesmentString] }}</div>{%
+  endfor %}
+  <div id="table-question-{{ question }}-assessment-NA" class="hidden"></div>
+  <!-- Harm Strings -->
+<td class="table-question-{{ question }}-harm">
+  {% for level in (1..4) %}{%
+    assign harmString = questionNumber | append: "-hint-a" | append: level %}{%
+    assign harmString = page.questions[harmString]
+  %}<div id="table-question-{{ question }}-harm-{{ level }}" class="hidden">{{ harmString }}</div>{%
+  endfor %}
+  <div id="table-question-{{ question }}-harm-NA" class="hidden"></div>
+</td>
+  <!-- Rationale -->
+<td><div id="table-question-{{ question }}-rationale"></div></td>
+</tr>{%
+endfor %}
+
+<!-- Summary row -->
+<tr style="border: solid; border-width: 2px; font-size: 30px;">
+<th id="header-summary">{{ page.overallAssessment }}</th>
+<td headers="header-summary" id="r{{ rowNumber }}h2" style="text-align: center; font-size: 30px;" class="wb-calculate" data-wb-calculate='{ "onInit": true, "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+    { "type": "max", "query": ".assurance-level-element:not(.hidden), #min-assurance-level", "outputTarget": "#max-assurance-level-used" }]}'>
+  <div id="min-assurance-level" class="hidden">1</div>
+  <div id="max-assurance-level-used">1</div>
+</td>
+<td headers="header-summary" colspan="3" style="font-size: 20px;">
+  {% for level in (1..4) %}{%
+    assign assuranceLevel = level | downcase %}
+    <div id="assurance-{{ level }}-table" class="wb-calculate {% if level > 1 %} hidden {% endif %}" data-wb-calculate='{ "eventTrigger": "removeClass.action.wb-fieldflow", "operations": [
+          { "type": "conditional", "inputs": [
+            { "type": "=", "inputs": [
+              { "type": "number", "query": "#max-assurance-level-used" },
+              {{ level }}
+            ] }
+        ], "actionsTrue": [
+          { "type": "removeClass", "outputTarget": "#assurance-{{ level }}-table", "class": "hidden" }
+        ], "actionsFalse": [
+          { "type": "addClass", "outputTarget": "#assurance-{{ level }}-table", "class": "hidden" }
+        ] }
+      ] }'>
+     {{ page.assurance[ assuranceLevel ] }}
+    </div>{%
+  endfor %}
+  <div id="assurance-NA-table" class="hidden"></div>
+</td>
+</tr>
+<tr style="border: solid; border-width: 2px;">
+  <td colspan="5" style="text-align: center"> {{ page.version }} </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<button type="button" class="btn btn-default" onclick="javascript:PrintElem($( '#table-results-div' ), 'LOA Assessment - ' + $('#table-detail-3').text() + ' - ' + $('#table-detail-2').text());">Print / Download PDF</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr", "colSelector": "th, td div:not(.hidden)", "container": "#table-results-div", "filename": "assurance-level-assessment" }'>{{ site.DownloadCSV[page.lang] }}</button>
+
+</section>

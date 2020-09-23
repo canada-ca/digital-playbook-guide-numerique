@@ -1,0 +1,59 @@
+<section id="section-questions">
+<div id="assurance-level-questionnaire" class="wb-frmvld">
+<form method="post" action="#">
+<section>
+<h2>{{ page.assuranceTitle }}</h2>
+<p><strong>{{ page.assuranceQuestion }}</strong></p>
+<p> {{ page.assuranceSentence }}</p>
+{%- for question in (1..8) -%}{%
+  assign questionNumberString = question | downcase %}
+<!-- Question {{ question }} -->
+<div class="question-{{ question }}-div">
+  <div id="question-{{ question }}-question" class="wb-fieldflow" data-wb-fieldflow='{ "renderas":"radio", "noForm": true, "noreqlabel": true, "base": { "live": true }, "default": [{ "action": "addClass", "source": ".table-question-{{ question }}-level > div", "class": "hidden" }, {"action": "addClass", "source": ".table-question-{{ question }}-assessment > div", "class": "hidden"}, {"action": "addClass", "source": ".table-question-{{ question }}-harm > div", "class": "hidden"}] }'>
+    <p>{{ question }}. {{ page.questions[ questionNumberString ] }}</p>
+    <ul>
+      {%- for level in (1..4) -%}{%
+        assign questionAnswerString = question | append: "-a" | append: level %}{%
+        assign questionHintString = question | append: "-hint-a" | append: level %}
+        {%- if page.questions[ questionAnswerString ] -%}
+          <li data-wb-fieldflow='{ "action": "removeClass", "source": "#table-question-{{ question }}-level-{{ level }}, #table-question-{{ question }}-assessment-{{ level }}, #table-question-{{ question }}-harm-{{ level }}", "class": "hidden" }'>
+            {{ page.questions[ questionAnswerString ] }}
+            &lt;a href=&quot;#hint-panel-{{ question }}-level-{{ level }}&quot; aria-controls=&quot;bottom-bar&quot; class=&quot;overlay-lnk&quot; role=&quot;button&quot;&gt;{{ page.moreInfo }}&lt;/a&gt;
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+      <li data-wb-fieldflow='{ "action": "removeClass", "source": "#table-question-{{ question }}-level-NA, #table-question-{{ question }}-assessment-NA, #table-question-{{ question }}-harm-NA", "class": "hidden" }'>{{ page.notApplicable }}</li>
+    </ul>
+  </div>
+  {%- for level in (1..4) -%}{%
+    assign questionAnswerString = question | append: "-a" | append: level %}{%
+    assign questionHintString = question | append: "-hint-a" | append: level %}
+    {%- if page.questions[ questionAnswerString ] -%}
+    <section id="hint-panel-{{ question }}-level-{{ level }}" class="wb-overlay modal-content overlay-def wb-bar-b">
+      <header class="modal-header">
+        <h2 class="modal-title">Harms for Question-{{ question }} Level-{{ level }}</h2>
+      </header>
+      <div class="modal-body">
+        {{ page.questions[ questionHintString ] }}
+      </div>
+    </section>
+    {%- endif -%}
+  {%- endfor -%}
+  <div>
+    <label for="question-{{ question }}-rationale" style="display:block;">{{ page.rationale }}:</label>
+    <textarea id="question-{{ question }}-rationale" class="wb-calculate" data-wb-calculate='{ "eventTrigger": "change", "eventElement": "#question-{{ question }}-rationale", "operations": [
+      { "type": "action",
+        "inputs": [
+          { "type": "outputValue", "outputTarget": "#table-question-{{ question }}-rationale", "operations": [
+            { "type": "string", "query": "#question-{{ question }}-rationale", "sourceAttribute": "value" }
+          ] }
+        ]
+      }
+    ] }' cols="100" rows="3"></textarea>
+  </div>
+</div>
+{%- endfor -%}
+</section>
+</form>
+</div>
+</section>
