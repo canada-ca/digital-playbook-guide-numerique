@@ -1,0 +1,18 @@
+---
+layout: default
+title: Évaluation d'impact algorithmique (Archivée)
+lang: fr
+altLang: en
+altLangPage: algorithmic-impact-assessment
+collectionDirectory: views-vues/automated-decision-automatise
+aiaView: standard
+---
+{% assign dataVariable = site.playbookData[ page.lang ] %}{%
+assign dataSource = site.data[ dataVariable ] %}{%
+assign aiaDataSource = site.data[ "views-vues" ][ "automated-decision-automatise" ][ "aia-data-donnees-eia" ] %}
+
+{% include views-vues/automated-decision-automatise/aia-intro-eia-pre-implementation-pre-mise-en-oeuvre.html %}
+
+{% include views-vues/automated-decision-automatise/aia-questionnaire-eia-pre-implementation-pre-mise-en-oeuvre.html %}
+
+{% include views-vues/automated-decision-automatise/aia-results-resultats-eia-pre-implementation-pre-mise-en-oeuvre.html %}

@@ -110,6 +110,6 @@ endfor %}
 </div>
 
 <button type="button" class="btn btn-default" onclick="javascript:PrintElem($( '#table-results-div' ), 'LOA Assessment - ' + $('#table-detail-3').text() + ' - ' + $('#table-detail-2').text());">Print / Download PDF</button>
-<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr", "colSelector": "th, td div:not(.hidden)", "container": "#table-results-div", "filename": "assurance-level-assessment" }'>{{ site.DownloadCSV[page.lang] }}</button>
+<button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr:not(.hidden)", "colSelector": "th, td div:not(.hidden), .non-scoring-result td", "container": "#table-results-div", "filename": "assurance-level-assessment" }'>{{ site.DownloadCSV[page.lang] }}</button>
 
 </section>

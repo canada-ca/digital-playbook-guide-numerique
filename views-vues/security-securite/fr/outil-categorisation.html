@@ -1,0 +1,157 @@
+---
+layout: default
+title: Outil de categorisation de sécurité (ébauche)
+lang: fr
+altLang: en
+altLangPage: categorization-tool
+collectionDirectory: views-vues/security-securite
+common:
+  save: Sauvegarder
+  cancel: Annuler
+  delete: Supprimer
+  startAssessment: Commencer une nouvelle évaluation
+  resumeAssessment: Reprendre l'évaluation en cours
+youAreHere: Localisation actuelle
+welcome:
+  heading: Bienvenue dans l'outil de catégorisation de sécurité
+  intro1: La catégorisation de sécurité est le processus d'identification des blessures potentielles pouvant résulter de la compromission des processus métier et des informations associées at à déterminer leur catégorie de sécurité.
+  intro2: L'outil de catégorisation de sécurité est un instrument destiné à être utilisé par les analystes des activités pour aider à organiser les processus métier et les actifs informationnels, mener une évaluation des blessures et déterminer la catégorie de sécurité. Les analystes des activités peut ensuite utiliser cet outil pour communiquer les résultats de la catégorisation de la sécurité aux praticiens de la sécurité afin de créer la sécurité adéquate dans les systèmes d'information pris en charge.
+  intro3: Cette version Web de l'outil est conçue pour faciliter le processus de catégorisation de la sécurité pour les analystes des activités.
+  menu:
+    heading: Qu'est-ce que tu aimerais faire?
+domain:
+  title: Domaine opérationnel
+  intro: Un domaine opérationnel est un environnement opérationnel dans lequel un service exerce des activités répondant à des objectifs organisationnels communs.
+  "domain-field-label": Quel est votre domaine opérationnel?
+  "add-domain-button": Ajouter un autre domaine
+  "add-activity-button": Ajouter une activité
+  previous: Domaine précédent
+  next: Domaine prochain
+  "first-child": Première activité
+activity:
+  title: Activité opérationnelle
+  intro1: Toute activité réalisée par un ministère dans le cadre de ses opérations pour fournir ou soutenir la prestation de ses programmes ou services. Une activité est composée d’un ou de plusieurs processus et actifs d’information associés.
+  intro2: Les activités opérationnelles seront classées par catégories en déterminant les dommages attendus résultant de l'atteinte à la menace liée aux technologies de l'information et aux intérêts nationaux et non nationaux que ces activités servent, puis en déterminant le montant de ces dommages attendus.
+  "activity-label": Activité opérationnelle
+  "add-activity-button": Ajouter une autre activité
+  "add-component-button": Ajouter un composant
+  previous: Activité précédente
+  next: Activité prochaine
+  return: Retour au domaine
+  "first-child": Composant premier
+component:
+  title: Composant opérationnel
+  "component-label": Composante de l&apos;activité opérationnelle
+  "component-description-label": Description du composant
+  "component-type-label": Type
+  "component-type-sub-label": Sélectionnez un type
+  "component-type-option-1": Processus
+  "component-type-option-2": Information
+  "authoritative-source-label": Source faisant autorité
+  "add-component-button": Ajouter un autre composant
+  previous: Composant précédent
+  next: Composant prochain
+  return: Retour à l'activité
+  "first-child-confidentiality": Première perte de confidentialité
+  "first-child-integrity": Première perte d'intégrité
+  "first-child-availability": Première perte de disponibilité
+lossTypes: [ "confidentiality", "integrity", "availability" ]
+confidentiality:
+  title: Perte de confidentialité
+  intro: Assurer la confidentialité des activités commerciales et des actifs informatiques contre un ensemble spécifique de menaces afin d'éviter de porter préjudice aux intérêts nationaux ou aux intérêts non nationaux.
+  processNoteTitle: Remarque
+  processNote: Dans la plupart des cas, les processus métier n'ont pas de dimension de confidentialité. Veuillez indiquer clairement le raisonnement dans le champ Analyse s'il s'agit d'une exception.
+  "type-of-injury-label": Quel type de blessure est le plus susceptible de résulter d'une perte de confidentialité?
+  example1: Exemple d'une telle blessure
+  example2: par exemple, émeute
+  "add-confidentiality-button": Ajouter une perte de confidentialité
+  "add-another-confidentiality-button": Ajouter une autre perte de confidentialité
+  previous: Perte de confidentialité précédente
+  next: Perte de confidentialité prochaine
+  return: Retour au composant
+integrity:
+  title: Perte d'intégrité
+  intro: Garantir l'intégrité d'une activité commerciale ou d'un actif informatique par rapport à un ensemble spécifié de menaces afin d'éviter tout préjudice causé à des intérêts nationaux ou à des intérêts non nationaux.
+  "type-of-injury-label": Quel type de blessure est le plus susceptible de résulter d'une perte d'intégrité?
+  example1: Exemple d'une telle blessure
+  example2: par exemple, détresse, traumatisme psychologiqueie
+  "add-integrity-button": Ajouter une perte d'intégrité
+  "add-another-integrity-button": Ajouter une autre perte d'intégrité
+  previous: Perte d'intégrité précédente
+  next: Perte d'intégrité prochaine
+  return: Retour au composant
+availability:
+  title: Perte de disponibilité
+  intro: Garantir la disponibilité d'une activité commerciale ou d'un actif informatique contre un ensemble spécifié de menaces afin d'éviter toute atteinte aux intérêts nationaux ou aux intérêts non nationaux.
+  "type-of-injury-label": Quel type de blessure est le plus susceptible de résulter d'une perte de disponibilité?
+  example1: Exemple d'une telle blessure
+  example2: par exemple, affectant la performance du programme
+  "add-availability-button": Ajouter une perte de disponibilité
+  "add-another-availability-button": Ajouter une autre perte de disponibilité
+  previous: Perte de disponibilité précédente
+  next: Perte de disponibilité prochaine
+  return: Retour au composant
+lossOfCommon:
+  "failure-scenario-label": Scénario d&apos;échec (dans le contexte)
+  "failure-scenario-sub-label": Sélectionnez un type de blessure
+  "failure-scenario-table-heading": Type de blessure
+  "failure-scenario-option-1": Désordre ou agitation civil
+  "failure-scenario-option-2": Dommage physique aux personnes
+  "failure-scenario-option-3": Dommage psychologique aux personnes
+  "failure-scenario-option-4": Perte financière pour les individus
+  "failure-scenario-option-5": Perte financière pour les entreprises canadiennes
+  "failure-scenario-option-6": Perte financière pour le gouvernement canadien
+  "failure-scenario-option-7": Atteinte à l'économie canadienne
+  "failure-scenario-option-8": Atteinte à la réputation du Canada
+  "failure-scenario-option-9": Atteinte à l'intérêt national
+  "failure-scenario-option-0": Aucune blessure attendue
+  "injury-significance": Quelle est l'importance de la blessure attendue?
+  "injury-significance-sub-label": Sélectionnez l'importance de la blessure
+  "injury-significance-table-heading": L&apos;importance de la blessure
+  "injury-significance-options":
+    "1": Très faible
+    "2": Faible
+    "3": Moyenne
+    "4": Élevé
+    "5": Très élevé
+    "0": s.o.
+  "analysis-label": Analyse
+summaryReport:
+  title: Rapport sommaire
+  intro: Le rapport de synthèse exprime le plus haut niveau attendu de blessures résultant d'une atteinte aux menaces par rapport aux objectifs de sécurité en matière de confidentialité, d'intégrité et de disponibilité.
+  activityTable:
+    caption: Ventilation par activités opérationnelles
+    col1Header: Domaine opérationnel
+    col2Header: Activité opérationnelle
+    col3Header: Catégorie de sécurité
+    col3aHeader: Confidentialité
+    col3bHeader: Intégrité
+    col3cHeader: Disponibilité
+  componentTable:
+    caption: Ventilation par composant
+    col1Header: Domaine opérationnel
+    col2Header: Activité opérationnelle
+    col3Header: Composant
+    col4Header: Type
+    col5Header: Catégorie de sécurité
+    col5aHeader: Confidentialité
+    col5bHeader: Intégrité
+    col5cHeader: Disponibilité
+detailedReport:
+  title: Rapport détaillé
+  intro1: La catégorisation de sécurité est le processus d'identification des blessures potentielles pouvant résulter de la compromission des processus métier et des informations associées.
+  intro2: Le rapport suivant fournit l’évaluation détaillée de la lésion réalisée pour chaque processus ou élément d’information en ce qui concerne la confidentialité, l’intégrité et la disponibilité.
+downloadAssessment: Téléchargez l'évaluation au format CSV
+labelGridClass: col-sm-4
+fieldGridClass: col-sm-8
+---
+{% assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}
+
+{% include views-vues/security-securite/categorization-tool-status-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-form-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-save-restore-sauvegarder-restaurer-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-results-resultats-outil-categorisation.html %}

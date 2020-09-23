@@ -1,0 +1,158 @@
+---
+layout: default
+title: Security Categorization Tool (draft)
+lang: en
+altLang: fr
+altLangPage: outil-categorisation
+collectionDirectory: views-vues/security-securite
+common:
+  save: Save
+  cancel: Cancel
+  delete: Delete
+  startAssessment: Start new assessment
+  resumeAssessment: Resume current assessment
+currentLocation: Current Location
+welcome:
+  heading: Welcome to the Security Categorization Tool
+  intro1: Security categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information and determining their security category.
+  intro2: The Security Categorization Tool is an instrument meant to be used by business analysts to help organize business processes and information assets, conduct injury assessment, and determine security category. Business analysts can then use the tool to communicate security categorization results to security practitioners for the purposes of building the right security in supporting information systems.
+  intro3: This web-based version of the tool is meant to make the security categorization process easier for business analysts.
+  menu:
+    heading: What Would You Like to Do?
+domain:
+  title: Business Domain
+  intro: A business domain is an operational environment where a department performs business activities supporting common organizational objectives.
+  "domain-field-label": What is your business domain?
+  "add-domain-button": Add another domain
+  "add-activity-button": Add activity
+  previous: Previous domain
+  next: Next domain
+  "first-child": First activity
+activity:
+  title: Business Activity
+  intro1: Any activity performed by a department in the course of its operations to deliver or support the delivery of its programs or services. A business activity is composed of one or several business processes and related information assets.
+  intro2: Business activities will be categorized by determining the expected injuries from IT-related threat compromise to the national and non-national interests that the business activities serve, and then determining the lveral of these expected injuries.
+  "activity-label": Business Activity
+  "add-activity-button": Add another activity
+  "add-component-button": Add component
+  previous: Previous activity
+  next: Next activity
+  return: Return to domain
+  "first-child": First component
+component:
+  title: Business Component
+  "component-label": Business Activity Component
+  "component-description-label": Component Description
+  "component-type-label": Type
+  "component-type-sub-label": Select a type
+  "component-type-option-1": Process
+  "component-type-option-2": Information
+  "authoritative-source-label": Authoritative Source
+  "add-component-button": Add another component
+  previous: Previous component
+  next: Next component
+  return: Return to activity
+  "first-child-confidentiality": First loss of confidentiality
+  "first-child-integrity": First loss of integrity
+  "first-child-availability": First loss of availability
+lossTypes: [ "confidentiality", "integrity", "availability" ]
+confidentiality:
+  title: Loss of Confidentiality
+  intro: To ensure the confidentiality of business activites and IT assets against a specified set of theats in order to prevent injury to national interests or non-national interests.
+  processNoteTitle: Note
+  processNote: In most cases business processes do not have a confidentiality dimension. Please provide clear reasoning in the Analysis field if this is an exception.
+  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of confidentiality?
+  example1: Example of such injury
+  example2: e.g., Riot
+  "add-confidentiality-button": Add loss of confidentiality
+  "add-another-confidentiality-button": Add another loss of confidentiality
+  previous: Previous loss of confidentiality
+  next: Next loss of confidentiality
+  return: Return to component
+integrity:
+  title: Loss of Integrity
+  intro: To ensure the integrity of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
+  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of integrity?
+  example1: Example of such injury
+  example2: e.g., Distress, psychological trauma
+  "add-integrity-button": Add loss of integrity
+  "add-another-integrity-button": Add another loss of integrity
+  previous: Previous loss of integrity
+  next: Next loss of integrity
+  return: Return to component
+availability:
+  title: Loss of Availability
+  intro: To ensure the availability of a business activity or IT asset against a specified set of threats in order to prevent injury to national interests or non-national interests.
+  "type-of-injury-label": What is the type of injury that is most likely to result from a loss of availability?
+  example1: Example of such injury
+  example2: e.g., Affecting program performance
+  "add-availability-button": Add loss of availability
+  "add-another-availability-button": Add another loss of availability
+  previous: Previous loss of availability
+  next: Next loss of availability
+  return: Return to component
+lossOfCommon:
+  "failure-scenario-label": Failure Scenario (in context)
+  "failure-scenario-sub-label": Select a type of injury
+  "failure-scenario-table-heading": Type of injury
+  "failure-scenario-option-1": Civil disorder or unrest
+  "failure-scenario-option-2": Physical harm to people
+  "failure-scenario-option-3": Psychological harm to people
+  "failure-scenario-option-4": Financial loss to individuals
+  "failure-scenario-option-5": Financial loss to Canadian companies
+  "failure-scenario-option-6": Financial loss to Canadian governement
+  "failure-scenario-option-7": Harm to Canadian economy
+  "failure-scenario-option-8": Harm to Canada's reputation
+  "failure-scenario-option-9": Harm to National Interest
+  "failure-scenario-option-0": No expected injury
+  "injury-significance": How significant is the expected injury?
+  "injury-significance-sub-label": Select the significance of injury
+  "injury-significance-table-heading": Significance of injury
+  "injury-significance-options":
+    "1": Very low
+    "2": Low
+    "3": Medium
+    "4": High
+    "5": Very high
+    "0": n/a
+  "significance-ranking": 
+  "analysis-label": Analysis
+summaryReport:
+  title: Summary Report
+  intro: The summary report expresses the highest level of expected injuries from threat compromise with respect to the security objectives of confidentiality, integrity, and availability.
+  activityTable:
+    caption: Breakdown by Business Activities
+    col1Header: Business Domain
+    col2Header: Business Activity
+    col3Header: Security Category
+    col3aHeader: Confidentiality
+    col3bHeader: Integrity
+    col3cHeader: Availability
+  componentTable:
+    caption: Breakdown by Component
+    col1Header: Business Domain
+    col2Header: Business Activity
+    col3Header: Component
+    col4Header: Type
+    col5Header: Security Category
+    col5aHeader: Confidentiality
+    col5bHeader: Integrity
+    col5cHeader: Availability
+detailedReport:
+  title: Detailed Report
+  intro1: Security Categorization is the process of identifying the potential injuries that could result from compromises of business processes and related information.
+  intro2: The following report provides the detailed injury assessment performed for each process or information component with respect to confidentiality, integrity and availability.
+downloadAssessment: Download assessment in CSV format
+labelGridClass: col-sm-4
+fieldGridClass: col-sm-8
+---
+{% assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}
+
+{% include views-vues/security-securite/categorization-tool-status-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-form-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-save-restore-sauvegarder-restaurer-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-results-resultats-outil-categorisation.html %}
