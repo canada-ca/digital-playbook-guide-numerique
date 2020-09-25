@@ -50,7 +50,7 @@
   {% for level in (1..4) %}
   <div id="table-question-{{ question }}-level-{{ level }}" class="hidden assurance-level-element"> {{ level }}</div>
   {% endfor %}
-  <div id="table-question-{{ question }}-level-NA"> N/A</div>
+  <div id="table-question-{{ question }}-level-NA"> {{ page.notApplicableAbbr }}</div>
 </td>
   <!-- Assessment Strings -->
 <td class="table-question-{{ question }}-assessment">
@@ -109,7 +109,7 @@ endfor %}
 </table>
 </div>
 
-<button type="button" class="btn btn-default" onclick="javascript:PrintElem($( '#table-results-div' ), 'LOA Assessment - ' + $('#table-detail-3').text() + ' - ' + $('#table-detail-2').text());">Print / Download PDF</button>
+<button type="button" class="btn btn-default" onclick="javascript:PrintElem($( '#table-results-div' ), 'LOA Assessment - ' + $('#table-detail-3').text() + ' - ' + $('#table-detail-2').text());">{{ page.printButton }}</button>
 <button type="button" class="btn btn-default wb-format-gen" data-wb-format-gen='{ "type": "csv", "rowSelector": "tr", "colSelector": "th, td div:not(.hidden)", "container": "#table-results-div", "filename": "assurance-level-assessment" }'>{{ site.DownloadCSV[page.lang] }}</button>
 
 </section>
