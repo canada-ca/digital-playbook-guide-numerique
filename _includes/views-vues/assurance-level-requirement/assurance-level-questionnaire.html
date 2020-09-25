@@ -22,7 +22,7 @@
           </li>
         {%- endif -%}
       {%- endfor -%}
-      <li data-wb-fieldflow='{ "action": "removeClass", "source": "#table-question-{{ question }}-level-NA, #table-question-{{ question }}-assessment-NA, #table-question-{{ question }}-harm-NA", "class": "hidden" }'>{{ page.notApplicable }}</li>
+      <li data-wb-fieldflow='{ "action": "removeClass", "source": "#table-question-{{ question }}-level-NA, #table-question-{{ question }}-assessment-NA, #table-question-{{ question }}-harm-NA", "class": "hidden" }'>{{ site.NotApplicable[page.lang] }}</li>
     </ul>
   </div>
   {%- for level in (1..4) -%}{%
@@ -31,7 +31,7 @@
     {%- if page.questions[ questionAnswerString ] -%}
     <section id="hint-panel-{{ question }}-level-{{ level }}" class="wb-overlay modal-content overlay-def wb-bar-b">
       <header class="modal-header">
-        <h2 class="modal-title">Harms for Question-{{ question }} Level-{{ level }}</h2>
+        <h2 class="modal-title">{{ page.potentialHarm }} {{ site.Question[page.lang] }}-{{ question }} {{ site.Level[page.lang]}}-{{ level }}</h2>
       </header>
       <div class="modal-body">
         {{ page.questions[ questionHintString ] }}
