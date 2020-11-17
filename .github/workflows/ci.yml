@@ -1,0 +1,39 @@
+name: Build and test website
+
+on:
+  push:
+    branches-ignore:
+      - "dependabot/**"
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Main repo
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
+
+      - name: Install Ruby dependencies
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+
+      - name: Run HTMLProofer
+        run: htmlproofer --disable-external --allow-hash-href ./_site
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+
+      - name: Install NPM dependencies
+        run: npm ci
+
+      - name: Run test
+        run: npm test
