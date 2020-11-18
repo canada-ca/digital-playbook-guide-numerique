@@ -123,7 +123,7 @@ Using open source software means you can benefit from:
 
 - [Open Standards (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/2_Open_Standards.md)
 - [Open Source Software Use (Open First Whitepaper (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/en/3_Open_Source_Software_Use.md)
-- [Natural Resources Canada Free and Open Source Software Licensing Primer (GC)](http://ftp.maps.canada.ca/pub/nrcan_rncan/publications/ess_sst/295/295663/cgdi_ip_33_e.pdf)
+- [Natural Resources Canada Free and Open Source Software Licensing Primer (GC)](https://ftp.maps.canada.ca/pub/nrcan_rncan/publications/STPublications_PublicationsST/295/295663/cgdi_ip_33_e.pdf)
 - [Logiciels libres et ouverts - Guide de référence (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf)
 - [Politique du libre (Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
 - [18F Open Source Policy (US)](https://github.com/18F/open-source-policy/blob/master/policy.md)
