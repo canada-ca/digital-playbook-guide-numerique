@@ -64,7 +64,6 @@ typings/
 
 # local bundler files
 .bundle
-Gemfile.lock
 vendor
 
 # local Jekyll files
