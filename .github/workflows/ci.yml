@@ -26,9 +26,6 @@ jobs:
       - name: Build with Jekyll
         run: bundle exec jekyll build
 
-      - name: Run HTMLProofer
-        run: htmlproofer --disable-external --allow-hash-href ./_site
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
 
