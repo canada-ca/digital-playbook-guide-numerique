@@ -123,7 +123,7 @@ Utiliser un logiciel libre signifie que vous pouvez bénéficier de:
 
 - [Normes ouvertes (Livre blanc ouvert en premier (GC)](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/2_Normes_ouvertes.md)
 - [Logiciels libres - Utilisation (Livre blanc ouvert en premier (GC))](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/fr/3_Logiciel_libre_Utilisation.md)
-- [Ressources naturelles Canada - Guide d'introduction aux licences de logiciel libre avec code source ouvert (GC)](http://ftp.maps.canada.ca/pub/nrcan_rncan/publications/ess_sst/295/295664/cgdi_ip_33_f.pdf)
+- [Ressources naturelles Canada - Guide d'introduction aux licences de logiciel libre avec code source ouvert (GC)](https://ftp.maps.canada.ca/pub/nrcan_rncan/publications/STPublications_PublicationsST/295/295664/cgdi_ip_33_f.pdf)
 - [Logiciels libres et ouverts - Guide de référence (Québec)](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/logiciels_libres/ll.pdf)
 - [Politique du libre (Montréal)](https://github.com/VilledeMontreal/politique-libre/blob/master/Politique/PolitiqueDuLibre.md)
 - [18F Open Source Policy (US)](https://github.com/18F/open-source-policy/blob/master/policy.md)
