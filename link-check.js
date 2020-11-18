@@ -10,11 +10,13 @@ var chalk = require("chalk");
 
 var files = glob.sync("**/*.md", {ignore: ["node_modules/**/*.md", "**/digital-playbook.md", "**/guide-numerique.md"]})
 
-var opts = JSON.parse(fs.readFileSync(".markdown-link-check.json"));
+var config = JSON.parse(fs.readFileSync(".markdown-link-check.json"));
 
 files.forEach(function(file) {
   var markdown = fs.readFileSync(file).toString();
-  opts.baseUrl = path.basename(__dirname) + "/"
+  let opts = Object.assign({}, config);
+
+  opts.baseUrl = path.dirname(path.resolve(file)) + '/';
 
   markdownLinkCheck(markdown, opts, function (err, results) {
     if (err) {
