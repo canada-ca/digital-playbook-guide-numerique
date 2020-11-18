@@ -4219,7 +4219,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "In considering how to manage security risks, departments and agencies must follow the <a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/cloud-security-risk-management-approach-procedures.html\">GC Cloud Security Risk Management Approach and Procedures</a> and the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>."
+                            "content": "In considering how to manage security risks, departments and agencies must follow the <a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/cloud-security-risk-management-approach-procedures.html\">GC Cloud Security Risk Management Approach and Procedures</a> and the <a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>."
                           }
                         ]
                       },
@@ -4239,7 +4239,7 @@
                         "content": [
                           {
                             "content_type": "inline",
-                            "content": "To ensure, to the greatest extent possible, the GC’s continuous access to sensitive data, departments and agencies must comply with the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>."
+                            "content": "To ensure, to the greatest extent possible, the GC’s continuous access to sensitive data, departments and agencies must comply with the <a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>."
                           }
                         ]
                       },
@@ -4799,7 +4799,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/government-canada-right-cloud-selection-guidance.html\">Government of Canada Right Cloud Selection Guidance</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/government-canada-right-cloud-selection-guidance.html\">Government of Canada Right Cloud Selection Guidance</a>"
                           }
                         ]
                       },
@@ -4835,7 +4835,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/government-canada-cloud-adoption-strategy.html\">Government of Canada Cloud Adoption Strategy</a>"
                           }
                         ]
                       },
@@ -4871,7 +4871,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-computing/cloud-security-risk-management-approach-procedures.html\">Government of Canada Cloud Security Risk Management Approach and Procedures</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/cloud-security-risk-management-approach-procedures.html\">Government of Canada Cloud Security Risk Management Approach and Procedures</a>"
                           }
                         ]
                       },
@@ -4889,7 +4889,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/security-identity-management/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/direction-secure-use-commercial-cloud-services-spin.html\">Direction on the Secure Use of Commercial Cloud Services: Security Policy Implementation Notice (SPIN)</a>"
                           }
                         ]
                       },
@@ -4907,7 +4907,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-cloud-first"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>"
                           }
                         ]
                       }
@@ -6526,7 +6526,7 @@
                               "dpgn-digital-architectural",
                               "dpgn-digital-architectural-security-privacy"
                             ],
-                            "content": "<a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/policy-implementation-notices/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>"
+                            "content": "<a href=\"https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/cloud-services/direction-electronic-data-residency.html\">Direction for Electronic Data Residency</a>"
                           }
                         ]
                       },
