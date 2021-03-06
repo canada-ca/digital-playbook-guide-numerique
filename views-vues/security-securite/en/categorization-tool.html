@@ -146,3 +146,13 @@ downloadAssessment: Download assessment in CSV format
 labelGridClass: col-sm-4
 fieldGridClass: col-sm-8
 ---
+{% assign dataVariable = site.playbookData[page.lang] %}{%
+assign dataSource = site.data[dataVariable] %}
+
+{% include views-vues/security-securite/categorization-tool-status-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-form-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-save-restore-sauvegarder-restaurer-outil-categorisation.html %}
+
+{% include views-vues/security-securite/categorization-tool-results-resultats-outil-categorisation.html %}
