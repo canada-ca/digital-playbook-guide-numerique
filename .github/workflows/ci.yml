@@ -27,7 +27,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.5
+        uses: actions/setup-node@v3.5.1
 
       - name: Install NPM dependencies
         run: npm ci
